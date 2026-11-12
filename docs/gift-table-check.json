@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "host": "Codex / Windows / Chrome",
+  "scope": "3부 인물 탭의 전체 61명, canonical people-display의 선물 값과 실제 2열 표를 대조",
+  "rows": [
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "light",
+      "people": 61,
+      "matched": 61,
+      "horizontalScroll": 0
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "dark",
+      "people": 61,
+      "matched": 61,
+      "horizontalScroll": 0
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "theme": "light",
+      "people": 61,
+      "matched": 61,
+      "horizontalScroll": 0
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "theme": "dark",
+      "people": 61,
+      "matched": 61,
+      "horizontalScroll": 0
+    }
+  ]
+}
