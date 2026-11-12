@@ -7,3 +7,4 @@ public/reference-data/
 *.tsbuildinfo
 test-results/
 playwright-report/
+docs/screens/
