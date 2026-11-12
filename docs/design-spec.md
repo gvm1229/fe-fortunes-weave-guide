@@ -20,11 +20,11 @@ primary는 배경과 큰 면을 차지한다. secondary는 두 번째 면, 보�
 | 카이 어둡게 | #0B1A33 | #102A57 | #12264A | #18315C | #7AA5F7 / #0B1A33 | #A9784F / #160E07 | #3A2A1C | #E3C25A / #1B1405 | #EAF0FA | #A9B6CF | #23406F |
 | 세오도라 밝게 | #F6E7A8 | #D9A70C | #FFFBEA | #FBF0C7 | #D9A70C / #241805 | #6B4423 / #FFFFFF | #EBDCC7 | #8C5E0E / #FFFFFF | #2B1D07 | #6B5A3A | #E6D38A |
 | 세오도라 어둡게 | #231A06 | #3B2C08 | #2F240A | #3D2F0E | #F2C230 / #231A06 | #B88A5E / #1C1105 | #3F2E1B | #E0AE3C / #231A06 | #FBF3DA | #CBB993 | #4E3D14 |
-| 디트리히 밝게 | #E9E7E2 | #121214 | #FFFFFF | #F4F3F0 | #121214 / #FFFFFF | #FFFFFF / #121214 | #F4F3F0 | #A8811F / #FFFFFF | #121214 | #55534D | #D6D3CB |
+| 디트리히 밝게 | #E9E7E2 | #121214 | #FFFFFF | #F4F3F0 | #121214 / #FFFFFF | #FFFFFF / #121214 | #F4F3F0 | #A8811F / #121214 | #121214 | #55534D | #D6D3CB |
 | 디트리히 어둡게 | #0E0E10 | #000000 | #1A1A1D | #232327 | #F5F5F2 / #0E0E10 | #2C2C31 / #F5F5F2 | #26262A | #D4AF37 / #0E0E10 | #F5F5F2 | #B3B1AA | #33333A |
-| 레다 밝게 | #F7D9E3 | #C2185B | #FFF6F9 | #FBE6EE | #C2185B / #FFFFFF | #7A1238 / #FFFFFF | #F1D0DC | #B08A26 / #FFFFFF | #2A0B17 | #74475A | #EDB9CB |
+| 레다 밝게 | #F7D9E3 | #C2185B | #FFF6F9 | #FBE6EE | #C2185B / #FFFFFF | #7A1238 / #FFFFFF | #F1D0DC | #B08A26 / #2A0B17 | #2A0B17 | #74475A | #EDB9CB |
 | 레다 어둡게 | #2A0A17 | #4A0F28 | #3A1122 | #4A1830 | #F06292 / #2A0A17 | #B03A64 / #FFFFFF | #4C1A2E | #E2BE5A / #2A0A17 | #FBE9EF | #D7A9BA | #5C2340 |
-| 3부 밝게 | #E5DBF6 | #5B34A6 | #FAF7FE | #EEE6FA | #5B34A6 / #FFFFFF | #34195F / #FFFFFF | #DED1F2 | #B08A26 / #FFFFFF | #1C1030 | #57487A | #CDBCEB |
+| 3부 밝게 | #E5DBF6 | #5B34A6 | #FAF7FE | #EEE6FA | #5B34A6 / #FFFFFF | #34195F / #FFFFFF | #DED1F2 | #B08A26 / #1C1030 | #1C1030 | #57487A | #CDBCEB |
 | 3부 어둡게 | #170C2B | #2A1450 | #22133D | #2D1A4F | #A98BE8 / #170C2B | #5B3A99 / #FFFFFF | #2F1E52 | #E2BE5A / #170C2B | #F1EAFB | #BBA9DB | #3B2766 |
 | 첫 화면·팀 (공통) | 밝게 #EFEBE3 / 어둡게 #121116 | — | 밝게 #FFFFFF / 어둡게 #1C1B22 | — | 밝게 #1C1B22 / 어둡게 #F2EFE8 | — | — | #B8902A | 밝게 #1C1B22 / 어둡게 #F2EFE8 | 밝게 #5A5650 / 어둡게 #B5B0A6 | 밝게 #D9D3C7 / 어둡게 #2E2C35 |
 
@@ -150,3 +150,5 @@ primary는 배경과 큰 면을 차지한다. secondary는 두 번째 면, 보�
 - 장 머리 그림의 고정 높이 잘라내기(예: theo06-crystal.png가 일부만 보임)를 없앤다.
 - 그림을 누르면 원본 크기 보기 시트를 연다.
 - verify 또는 브라우저 검사: 표시된 모든 그림의 표시 비율과 원본 비율 차이가 1% 이내여야 한다. 예외는 얼굴 토큰(7.4)과 대시보드 hero뿐이다. 위반 목록이 0이어야 한다.
+
+- 2026-11-13 대비 수정: 밝은 디트리히·레다·3부의 accent-fg를 흰색에서 각 루트 text 색으로 바꿨다(금색 위 흰 글씨 3.2~3.6:1 → 4.5:1 이상).
