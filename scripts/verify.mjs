@@ -4,6 +4,7 @@ import assert from 'node:assert/strict';
 import { resolve } from 'node:path';
 import { checked, validateChecks } from '../lib/check-state.ts';
 import { scopeTree, scopeMarkdown } from '../lib/scope.ts';
+import './verify-image-parity.mjs';
 const read=p=>JSON.parse(readFileSync(p,'utf8'));
 const manifest=read('content/transfer-manifest.json');
 const playbook=read('content/data/playbook.json');

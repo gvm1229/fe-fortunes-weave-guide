@@ -4,6 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "design:tokens": "node scripts/design-tokens.mjs",
+    "derive:checklist": "node scripts/derive-checklist.mjs",
     "dev": "node scripts/run.mjs dev",
     "build": "node scripts/run.mjs build",
     "lint": "eslint .",
