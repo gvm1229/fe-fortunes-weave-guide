@@ -1,0 +1,247 @@
+{
+  "scope": "팀에서 참고할 백마법21종",
+  "items": [
+    {
+      "id": "physic",
+      "name": "리브로",
+      "english": "Physic",
+      "group": "회복·해제",
+      "range": "1~10",
+      "effect": "떨어진 아군 한 명의 HP를 회복한다. 기본 회복 위력은8이며 실제 회복량은 시전자 보정을 반영한다.",
+      "traitLabel": "원거리 회복",
+      "trait": "heal",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625353"
+    },
+    {
+      "id": "fortify",
+      "name": "리저브",
+      "english": "Fortify",
+      "group": "회복·해제",
+      "range": "1~5",
+      "effect": "범위 안의 여러 아군 HP를 함께 회복한다. 기본 회복 위력은20이다.",
+      "traitLabel": "범위 회복",
+      "trait": "area",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625771"
+    },
+    {
+      "id": "restore",
+      "name": "레스트",
+      "english": "Restore",
+      "group": "회복·해제",
+      "range": "1~3",
+      "effect": "아군의 상태 이상을 해제한다. HP를 크게 회복하는 리커버와 다르다.",
+      "traitLabel": "상태 해제",
+      "trait": "cleanse",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625347"
+    },
+    {
+      "id": "recover",
+      "name": "리커버",
+      "english": "Recover",
+      "group": "회복·해제",
+      "range": "1",
+      "effect": "인접한 아군 한 명을 크게 회복한다. 기본 회복 위력은30이다.",
+      "traitLabel": "대회복",
+      "trait": "heal",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625348"
+    },
+    {
+      "id": "heal",
+      "name": "라이브",
+      "english": "Heal",
+      "group": "회복·해제",
+      "range": "1",
+      "effect": "아군 한 명의 HP를 회복한다. 기본 회복 위력은10이다.",
+      "traitLabel": "회복",
+      "trait": "heal",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625344"
+    },
+    {
+      "id": "laia",
+      "name": "라이아",
+      "english": "Laia",
+      "group": "회복·해제",
+      "range": "1",
+      "effect": "아군 한 명의 HP를 조금 회복한다. 기본 위력은3이다. 공개 설명에 확률 추가 회복도 있으나 발동률은 미확인이다.",
+      "traitLabel": "소회복",
+      "trait": "heal",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625350"
+    },
+    {
+      "id": "regenera",
+      "name": "리제네라",
+      "english": "Regenera",
+      "group": "회복·해제",
+      "range": "1",
+      "effect": "대상에게5턴 동안 자기 페이즈 시작 시 조금씩 회복하는 효과를 준다. 즉시 대회복용은 아니다.",
+      "traitLabel": "지속 회복",
+      "trait": "regen",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629256"
+    },
+    {
+      "id": "warp",
+      "name": "워프",
+      "english": "Warp",
+      "group": "이동·구조",
+      "range": "대상1 · 도착5칸 이내",
+      "effect": "인접한 아군을 주위5칸 안으로 옮긴다. 먼 아군을 자기 옆으로 끌어오는 레스큐와 구별한다.",
+      "traitLabel": "아군 이동",
+      "trait": "move",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625772",
+      "localSource": "units.html"
+    },
+    {
+      "id": "rescue",
+      "name": "레스큐",
+      "english": "Rescue",
+      "group": "이동·구조",
+      "range": "2~10",
+      "effect": "떨어진 아군 한 명을 시전자 옆으로 끌어온다. 고립되거나 위험한 아군을 구할 때 쓴다.",
+      "traitLabel": "아군 구조",
+      "trait": "pull",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629257"
+    },
+    {
+      "id": "resquia",
+      "name": "레스키아",
+      "english": "Resquia",
+      "group": "이동·구조",
+      "range": "2~3",
+      "effect": "2~3칸 떨어진 아군을 시전자 옆으로 끌어온다. 레스큐보다 짧은 거리에서 쓰는 구조 마법이다.",
+      "traitLabel": "단거리 구조",
+      "trait": "pull",
+      "source": "https://yuphastemple.com/?item=resquia",
+      "nameSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/spell-resquia/"
+    },
+    {
+      "id": "silence",
+      "name": "사일런스",
+      "english": "Silence",
+      "group": "제어·보호",
+      "range": "1~10",
+      "effect": "적에게 침묵 상태를 건다. 적의 마법 사용을 막는 용도이며 명중 여부를 확인한다.",
+      "traitLabel": "침묵",
+      "trait": "silence",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625346"
+    },
+    {
+      "id": "freeze",
+      "name": "프리즈",
+      "english": "Freeze",
+      "group": "제어·보호",
+      "range": "1~10",
+      "effect": "적에게 이동 불가 상태를 건다. 적을 그 자리에 묶는 용도이며 명중 여부를 확인한다.",
+      "traitLabel": "이동 불가",
+      "trait": "freeze",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625761"
+    },
+    {
+      "id": "berserk",
+      "name": "버서크",
+      "english": "Berserk",
+      "group": "제어·보호",
+      "range": "1~10",
+      "effect": "적에게 혼란 상태를 건다. 적 행동을 교란하는 용도이며 명중 여부를 확인한다.",
+      "traitLabel": "혼란",
+      "trait": "confusion",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625773"
+    },
+    {
+      "id": "emergis",
+      "name": "이머지스",
+      "english": "Emergis",
+      "group": "제어·보호",
+      "range": "1~10",
+      "effect": "다음 자기 페이즈까지 아군의 필살 회피를30 올린다. 일반 회피나 방어력을 올리는 마법은 아니다.",
+      "traitLabel": "필살 회피 +30",
+      "trait": "shield",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625349"
+    },
+    {
+      "id": "ward",
+      "name": "매직 실드",
+      "english": "Ward",
+      "group": "제어·보호",
+      "range": "1",
+      "effect": "다음 자기 페이즈까지 아군의 마방을10 올린다. 강한 마법을 맞아야 할 동료에게 쓴다.",
+      "traitLabel": "마방 +10",
+      "trait": "shield",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625769",
+      "nameSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/spell-ward/"
+    },
+    {
+      "id": "barrier",
+      "name": "배리어",
+      "english": "Barrier",
+      "group": "제어·보호",
+      "range": "1",
+      "effect": "대상이 다음 한 번의 전투에서 받는 피해를 절반으로 줄인다. 여러 전투 내내 유지되는 효과로 계산하지 않는다.",
+      "traitLabel": "다음 전투 피해 반감",
+      "trait": "shield",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629903",
+      "nameSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/spell-barrier/"
+    },
+    {
+      "id": "torch",
+      "name": "토치",
+      "english": "Torch",
+      "group": "제어·보호",
+      "range": "자신",
+      "effect": "다음 자기 페이즈까지 시야를3 늘린다. 안개 때문에 주변이 보이지 않을 때 쓴다.",
+      "traitLabel": "시야 +3",
+      "trait": "vision",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625345"
+    },
+    {
+      "id": "seraphim",
+      "name": "엔젤",
+      "english": "Seraphim",
+      "group": "공격",
+      "range": "1~2",
+      "effect": "명마(Undead)에게 유효한 백마법 공격이다. 기본 위력10·명중75. 특효 대상 표시와 공격 예측을 확인한다.",
+      "traitLabel": "명마 유효",
+      "trait": "undead",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625352"
+    },
+    {
+      "id": "starlight",
+      "name": "스타라이트",
+      "english": "Starlight",
+      "group": "공격",
+      "range": "1~3",
+      "effect": "명마 유효가 있는3칸 백마법 공격이다. 기본 위력13·명중90. 무거운 마법이므로 사용 시 공격 속도도 확인한다.",
+      "traitLabel": "명마 유효",
+      "trait": "undead",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625354"
+    },
+    {
+      "id": "nosferatu",
+      "name": "리자이어",
+      "english": "Nosferatu",
+      "group": "공격",
+      "range": "1~2",
+      "effect": "공격으로 준 피해의 절반만큼 자기 HP를 회복한다. 피해가 적으면 회복도 적다.",
+      "traitLabel": "피해량의 절반 흡수",
+      "trait": "drain",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625351"
+    },
+    {
+      "id": "aura",
+      "name": "오라",
+      "english": "Aura",
+      "group": "공격",
+      "range": "1~2",
+      "effect": "기본 위력22·명중70인 강한 백마법 공격이다. 명마 특효 마법으로 표시된 것은 아니다.",
+      "traitLabel": "고위력 공격",
+      "trait": "attack",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625770"
+    }
+  ],
+  "notes": [
+    "기본 사거리이며 병과·개인 스킬의 보정을 받은 실제 선택창을 우선한다.",
+    "회복 위력은 실제 회복량과 다르다. 사용 가능한 횟수도 병과에 따라 달라지므로 표에서 현재 횟수를 추정하지 않는다.",
+    "워프는 로컬 공략의 인접 대상·주위5칸 설명을 사용했다. Game8의 레스큐 문구 혼재를 그대로 옮기지 않았다.",
+    "배리어·레스키아·매직 실드는 한국어 도감의 개별 항목명과 대조했다.",
+    "명마 특효의 대상은 Undead다. 모든 적에게 같은 특효가 붙는다고 계산하지 않는다."
+  ]
+}

@@ -1,0 +1,659 @@
+{
+  "reviewed": "2026-11-04",
+  "meaning": "각 장의 전직 준비 점검선. 장을 끝내기 위한 강제 레벨·경험치 상한이 아님.",
+  "renown": [
+    {
+      "renown": 0,
+      "tier": "기본",
+      "recommendedLevel": null,
+      "nextRenown": 1,
+      "nextRecommendedLevel": 5,
+      "reviewBeforeLevel": 5,
+      "levelCap": null
+    },
+    {
+      "renown": 1,
+      "tier": "초급",
+      "recommendedLevel": 5,
+      "nextRenown": 4,
+      "nextRecommendedLevel": 20,
+      "reviewBeforeLevel": 19,
+      "levelCap": null
+    },
+    {
+      "renown": 2,
+      "tier": "초급",
+      "recommendedLevel": 5,
+      "nextRenown": 4,
+      "nextRecommendedLevel": 20,
+      "reviewBeforeLevel": 19,
+      "levelCap": null
+    },
+    {
+      "renown": 3,
+      "tier": "초급",
+      "recommendedLevel": 5,
+      "nextRenown": 4,
+      "nextRecommendedLevel": 20,
+      "reviewBeforeLevel": 19,
+      "levelCap": null
+    },
+    {
+      "renown": 4,
+      "tier": "중급",
+      "recommendedLevel": 20,
+      "nextRenown": 8,
+      "nextRecommendedLevel": 35,
+      "reviewBeforeLevel": 34,
+      "levelCap": null
+    },
+    {
+      "renown": 5,
+      "tier": "중급",
+      "recommendedLevel": 20,
+      "nextRenown": 8,
+      "nextRecommendedLevel": 35,
+      "reviewBeforeLevel": 34,
+      "levelCap": null
+    },
+    {
+      "renown": 6,
+      "tier": "중급",
+      "recommendedLevel": 20,
+      "nextRenown": 8,
+      "nextRecommendedLevel": 35,
+      "reviewBeforeLevel": 34,
+      "levelCap": null
+    },
+    {
+      "renown": 7,
+      "tier": "중급",
+      "recommendedLevel": 20,
+      "nextRenown": 8,
+      "nextRecommendedLevel": 35,
+      "reviewBeforeLevel": 34,
+      "levelCap": null
+    },
+    {
+      "renown": 8,
+      "tier": "상급",
+      "recommendedLevel": 35,
+      "nextRenown": null,
+      "nextRecommendedLevel": 45,
+      "reviewBeforeLevel": null,
+      "levelCap": null
+    },
+    {
+      "renown": 9,
+      "tier": "상급",
+      "recommendedLevel": 35,
+      "nextRenown": null,
+      "nextRecommendedLevel": 45,
+      "reviewBeforeLevel": null,
+      "levelCap": null
+    },
+    {
+      "renown": 10,
+      "tier": "상급",
+      "recommendedLevel": 35,
+      "nextRenown": null,
+      "nextRecommendedLevel": 45,
+      "reviewBeforeLevel": null,
+      "levelCap": null
+    },
+    {
+      "renown": 11,
+      "tier": "상급",
+      "recommendedLevel": 35,
+      "nextRenown": null,
+      "nextRecommendedLevel": 45,
+      "reviewBeforeLevel": null,
+      "levelCap": null
+    },
+    {
+      "renown": 12,
+      "tier": "상급",
+      "recommendedLevel": 35,
+      "nextRenown": null,
+      "nextRecommendedLevel": 45,
+      "reviewBeforeLevel": null,
+      "levelCap": null
+    }
+  ],
+  "chapters": {
+    "theodora:1": {
+      "anchor": "theo-01",
+      "chapter": 1,
+      "reviewLevel": 5,
+      "examRecommendedLevel": 5,
+      "examRenown": 1,
+      "instruction": "시설이 열리면 초급 시험 확인. 강제 이야기 중에는 레벨을 맞추려고 멈추지 않는다.",
+      "notArmyLevelTarget": true
+    },
+    "theodora:2": {
+      "anchor": "theo-route-02",
+      "chapter": 2,
+      "reviewLevel": 5,
+      "examRecommendedLevel": 5,
+      "examRenown": 1,
+      "instruction": "시설이 열리면 초급 시험 확인. 강제 이야기 중에는 레벨을 맞추려고 멈추지 않는다.",
+      "notArmyLevelTarget": true
+    },
+    "theodora:3": {
+      "anchor": "miss-theo03-outfit",
+      "chapter": 3,
+      "reviewLevel": 5,
+      "examRecommendedLevel": 5,
+      "examRenown": 1,
+      "instruction": "시설이 열리면 초급 시험 확인. 강제 이야기 중에는 레벨을 맞추려고 멈추지 않는다.",
+      "notArmyLevelTarget": true
+    },
+    "theodora:4": {
+      "anchor": "theo-02",
+      "chapter": 4,
+      "reviewLevel": 5,
+      "examRecommendedLevel": 5,
+      "examRenown": 1,
+      "instruction": "4장 자격시험 안내를 마친 뒤 명성1·기능·합격률100%를 갖춘 필요한 초급 자격만 취득한다. 중급은 실제 명성4 뒤에 확인한다.",
+      "notArmyLevelTarget": true
+    },
+    "theodora:5": {
+      "anchor": "miss-theo05-anatolia",
+      "chapter": 5,
+      "reviewLevel": 19,
+      "examRecommendedLevel": 20,
+      "examRenown": 4,
+      "instruction": "Lv19 전후인 인물만 중급 조건을 미리 확인한다. 아직 명성4가 아니면 초급을 유지하고 추가 경험치10%만OFF로 조절한다. 이 장에서Lv20 달성·중급 전직을 필수로 삼지 않는다.",
+      "notArmyLevelTarget": true,
+      "renownStatus": "현재5장 명성2. 지금 시험은 초급이며 중급은 명성4까지 기다린다."
+    },
+    "theodora:6": {
+      "anchor": "theo-04",
+      "chapter": 6,
+      "reviewLevel": 19,
+      "examRecommendedLevel": 20,
+      "examRenown": 4,
+      "instruction": "Lv19 전후인 인물만 중급 조건을 미리 확인한다. 아직 명성4가 아니면 초급을 유지하고 추가 경험치10%만OFF로 조절한다. 이 장에서Lv20 달성·중급 전직을 필수로 삼지 않는다.",
+      "notArmyLevelTarget": true,
+      "renownStatus": "6장 명성3은 현재 예상이다. 군비증강·4/6 특별 시합 등으로 실제 명성4가 되면 중급 시험을 확인할 수 있으므로3을 고정 상한으로 삼지 않는다."
+    },
+    "theodora:7": {
+      "anchor": "miss-theo07-alexandra",
+      "chapter": 7,
+      "reviewLevel": 34,
+      "examRecommendedLevel": 35,
+      "examRenown": 8,
+      "instruction": "명성4 미만은 초급을 유지한다.4~7이면 중급 조건을 확인하고8 이상일 때만 상급 조건을 확인한다. 이미 합격한 자격은 다시 따지 않으며 알렉산드라의 상급 보류는 계속 지킨다.",
+      "notArmyLevelTarget": true,
+      "reviewLabel": "Lv19・34 전후에 닿은 인물만 실제 명성부터 확인",
+      "examLabel": "명성4: 중급·권장Lv20 / 명성8: 상급·권장Lv35",
+      "renownStatus": "이 장의 명성은 고정값이 아니다. 실제 명성·기능·병종 해금·증서·합격률100%를 모두 확인한다."
+    },
+    "theodora:8": {
+      "anchor": "theo-07",
+      "chapter": 8,
+      "reviewLevel": 34,
+      "examRecommendedLevel": 35,
+      "examRenown": 8,
+      "instruction": "명성4 미만은 초급을 유지한다.4~7이면 중급 조건을 확인하고8 이상일 때만 상급 조건을 확인한다. 이미 합격한 자격은 다시 따지 않으며 알렉산드라의 상급 보류는 계속 지킨다.",
+      "notArmyLevelTarget": true,
+      "reviewLabel": "Lv19・34 전후에 닿은 인물만 실제 명성부터 확인",
+      "examLabel": "명성4: 중급·권장Lv20 / 명성8: 상급·권장Lv35",
+      "renownStatus": "이 장의 명성은 고정값이 아니다. 실제 명성·기능·병종 해금·증서·합격률100%를 모두 확인한다."
+    },
+    "theodora:9": {
+      "anchor": "theo-08",
+      "chapter": 9,
+      "reviewLevel": 35,
+      "examRecommendedLevel": 35,
+      "examRenown": 8,
+      "instruction": "명성4 미만은 초급을 유지한다.4~7이면 중급 조건을 확인하고8 이상일 때만 상급 조건을 확인한다. 이미 합격한 자격은 다시 따지 않으며 알렉산드라의 상급 보류는 계속 지킨다.",
+      "notArmyLevelTarget": true,
+      "reviewLabel": "Lv19・34 전후에 닿은 인물만 실제 명성부터 확인",
+      "examLabel": "명성4: 중급·권장Lv20 / 명성8: 상급·권장Lv35",
+      "renownStatus": "이 장의 명성은 고정값이 아니다. 실제 명성·기능·병종 해금·증서·합격률100%를 모두 확인한다."
+    },
+    "theodora:10": {
+      "anchor": "miss-theo10-back-entrance",
+      "chapter": 10,
+      "reviewLevel": 35,
+      "examRecommendedLevel": 35,
+      "examRenown": 8,
+      "instruction": "명성4 미만은 초급을 유지한다.4~7이면 중급 조건을 확인하고8 이상일 때만 상급 조건을 확인한다. 이미 합격한 자격은 다시 따지 않으며 알렉산드라의 상급 보류는 계속 지킨다.",
+      "notArmyLevelTarget": true,
+      "reviewLabel": "Lv19・34 전후에 닿은 인물만 실제 명성부터 확인",
+      "examLabel": "명성4: 중급·권장Lv20 / 명성8: 상급·권장Lv35",
+      "renownStatus": "이 장의 명성은 고정값이 아니다. 실제 명성·기능·병종 해금·증서·합격률100%를 모두 확인한다."
+    },
+    "theodora:11": {
+      "anchor": "theo-10",
+      "chapter": 11,
+      "reviewLevel": 35,
+      "examRecommendedLevel": 35,
+      "examRenown": 8,
+      "instruction": "명성4 미만은 초급을 유지한다.4~7이면 중급 조건을 확인하고8 이상일 때만 상급 조건을 확인한다. 이미 합격한 자격은 다시 따지 않으며 알렉산드라의 상급 보류는 계속 지킨다.",
+      "notArmyLevelTarget": true,
+      "reviewLabel": "Lv19・34 전후에 닿은 인물만 실제 명성부터 확인",
+      "examLabel": "명성4: 중급·권장Lv20 / 명성8: 상급·권장Lv35",
+      "renownStatus": "이 장의 명성은 고정값이 아니다. 실제 명성·기능·병종 해금·증서·합격률100%를 모두 확인한다."
+    },
+    "theodora:12": {
+      "anchor": "xp-review-theodora-12",
+      "chapter": 12,
+      "reviewLevel": 35,
+      "examRecommendedLevel": 35,
+      "examRenown": 8,
+      "instruction": "명성4 미만은 초급을 유지한다.4~7이면 중급 조건을 확인하고8 이상일 때만 상급 조건을 확인한다. 이미 합격한 자격은 다시 따지 않으며 알렉산드라의 상급 보류는 계속 지킨다.",
+      "notArmyLevelTarget": true,
+      "reviewLabel": "Lv19・34 전후에 닿은 인물만 실제 명성부터 확인",
+      "examLabel": "명성4: 중급·권장Lv20 / 명성8: 상급·권장Lv35",
+      "renownStatus": "이 장의 명성은 고정값이 아니다. 실제 명성·기능·병종 해금·증서·합격률100%를 모두 확인한다."
+    },
+    "leda:1": {
+      "anchor": "leda-01",
+      "chapter": 1,
+      "reviewLevel": 5,
+      "examRecommendedLevel": 5,
+      "examRenown": 1,
+      "instruction": "시설이 열리면 초급 시험 확인. 강제 이야기 중에는 레벨을 맞추려고 멈추지 않는다.",
+      "notArmyLevelTarget": true
+    },
+    "leda:2": {
+      "anchor": "buy-leda02-mini-bow",
+      "chapter": 2,
+      "reviewLevel": 5,
+      "examRecommendedLevel": 5,
+      "examRenown": 1,
+      "instruction": "시설이 열리면 초급 시험 확인. 강제 이야기 중에는 레벨을 맞추려고 멈추지 않는다.",
+      "notArmyLevelTarget": true
+    },
+    "leda:3": {
+      "anchor": "leda-route-03",
+      "chapter": 3,
+      "reviewLevel": 5,
+      "examRecommendedLevel": 5,
+      "examRenown": 1,
+      "instruction": "시설이 열리면 초급 시험 확인. 강제 이야기 중에는 레벨을 맞추려고 멈추지 않는다.",
+      "notArmyLevelTarget": true
+    },
+    "leda:4": {
+      "anchor": "miss-leda04-mikaela",
+      "chapter": 4,
+      "reviewLevel": 19,
+      "examRecommendedLevel": 20,
+      "examRenown": 4,
+      "instruction": "Lv19에 닿은 본대만 중급 준비 확인. 명성4·기능·합격률이 갖춰지면 전직한다.",
+      "notArmyLevelTarget": true
+    },
+    "leda:5": {
+      "anchor": "miss-leda05-kalla",
+      "chapter": 5,
+      "reviewLevel": 19,
+      "examRecommendedLevel": 20,
+      "examRenown": 4,
+      "instruction": "Lv19에 닿은 본대만 중급 준비 확인. 명성4·기능·합격률이 갖춰지면 전직한다.",
+      "notArmyLevelTarget": true
+    },
+    "leda:6": {
+      "anchor": "miss-leda06-olympia",
+      "chapter": 6,
+      "reviewLevel": 19,
+      "examRecommendedLevel": 20,
+      "examRenown": 4,
+      "instruction": "Lv19에 닿은 본대만 중급 준비 확인. 명성4·기능·합격률이 갖춰지면 전직한다.",
+      "notArmyLevelTarget": true
+    },
+    "leda:7": {
+      "anchor": "leda-05",
+      "chapter": 7,
+      "reviewLevel": 34,
+      "examRecommendedLevel": 35,
+      "examRenown": 8,
+      "instruction": "Lv34에 닿은 본대만 상급 준비 확인. 명성8·기능·합격률을 갖추면 상급으로 바꿔 이후 레벨업한다.",
+      "notArmyLevelTarget": true
+    },
+    "leda:8": {
+      "anchor": "leda-06",
+      "chapter": 8,
+      "reviewLevel": 34,
+      "examRecommendedLevel": 35,
+      "examRenown": 8,
+      "instruction": "Lv34에 닿은 본대만 상급 준비 확인. 명성8·기능·합격률을 갖추면 상급으로 바꿔 이후 레벨업한다.",
+      "notArmyLevelTarget": true
+    },
+    "leda:9": {
+      "anchor": "miss-leda09-sirocco",
+      "chapter": 9,
+      "reviewLevel": 35,
+      "examRecommendedLevel": 35,
+      "examRenown": 8,
+      "instruction": "상급 목표를 먼저 갖추고 계속 성장. 명성9~12에 대응하는 별도 레벨 제한은 없다.",
+      "notArmyLevelTarget": true
+    },
+    "leda:10": {
+      "anchor": "leda-10",
+      "chapter": 10,
+      "reviewLevel": 35,
+      "examRecommendedLevel": 35,
+      "examRenown": 8,
+      "instruction": "상급 목표를 먼저 갖추고 계속 성장. 명성9~12에 대응하는 별도 레벨 제한은 없다.",
+      "notArmyLevelTarget": true
+    },
+    "leda:11": {
+      "anchor": "leda-11",
+      "chapter": 11,
+      "reviewLevel": 35,
+      "examRecommendedLevel": 35,
+      "examRenown": 8,
+      "instruction": "상급 목표를 먼저 갖추고 계속 성장. 명성9~12에 대응하는 별도 레벨 제한은 없다.",
+      "notArmyLevelTarget": true
+    },
+    "leda:12": {
+      "anchor": "xp-review-leda-12",
+      "chapter": 12,
+      "reviewLevel": 35,
+      "examRecommendedLevel": 35,
+      "examRenown": 8,
+      "instruction": "상급 목표를 먼저 갖추고 계속 성장. 명성9~12에 대응하는 별도 레벨 제한은 없다.",
+      "notArmyLevelTarget": true
+    },
+    "dietrich:1": {
+      "anchor": "di-01",
+      "chapter": 1,
+      "reviewLevel": 5,
+      "examRecommendedLevel": 5,
+      "examRenown": 1,
+      "instruction": "시설이 열리면 초급 시험 확인. 강제 이야기 중에는 레벨을 맞추려고 멈추지 않는다.",
+      "notArmyLevelTarget": true
+    },
+    "dietrich:2": {
+      "anchor": "di-route-02",
+      "chapter": 2,
+      "reviewLevel": 5,
+      "examRecommendedLevel": 5,
+      "examRenown": 1,
+      "instruction": "시설이 열리면 초급 시험 확인. 강제 이야기 중에는 레벨을 맞추려고 멈추지 않는다.",
+      "notArmyLevelTarget": true
+    },
+    "dietrich:3": {
+      "anchor": "di-route-03",
+      "chapter": 3,
+      "reviewLevel": 5,
+      "examRecommendedLevel": 5,
+      "examRenown": 1,
+      "instruction": "시설이 열리면 초급 시험 확인. 강제 이야기 중에는 레벨을 맞추려고 멈추지 않는다.",
+      "notArmyLevelTarget": true
+    },
+    "dietrich:4": {
+      "anchor": "miss-di04-south",
+      "chapter": 4,
+      "reviewLevel": 19,
+      "examRecommendedLevel": 20,
+      "examRenown": 4,
+      "instruction": "Lv19에 닿은 본대만 중급 준비 확인. 명성4·기능·합격률이 갖춰지면 전직한다.",
+      "notArmyLevelTarget": true
+    },
+    "dietrich:5": {
+      "anchor": "miss-di05-fabio-chain",
+      "chapter": 5,
+      "reviewLevel": 19,
+      "examRecommendedLevel": 20,
+      "examRenown": 4,
+      "instruction": "Lv19에 닿은 본대만 중급 준비 확인. 명성4·기능·합격률이 갖춰지면 전직한다.",
+      "notArmyLevelTarget": true
+    },
+    "dietrich:6": {
+      "anchor": "miss-di06-alexandra",
+      "chapter": 6,
+      "reviewLevel": 19,
+      "examRecommendedLevel": 20,
+      "examRenown": 4,
+      "instruction": "Lv19에 닿은 본대만 중급 준비 확인. 명성4·기능·합격률이 갖춰지면 전직한다.",
+      "notArmyLevelTarget": true
+    },
+    "dietrich:7": {
+      "anchor": "di-08",
+      "chapter": 7,
+      "reviewLevel": 34,
+      "examRecommendedLevel": 35,
+      "examRenown": 8,
+      "instruction": "Lv34에 닿은 본대만 상급 준비 확인. 명성8·기능·합격률을 갖추면 상급으로 바꿔 이후 레벨업한다.",
+      "notArmyLevelTarget": true
+    },
+    "dietrich:8": {
+      "anchor": "miss-di08-night",
+      "chapter": 8,
+      "reviewLevel": 34,
+      "examRecommendedLevel": 35,
+      "examRenown": 8,
+      "instruction": "Lv34에 닿은 본대만 상급 준비 확인. 명성8·기능·합격률을 갖추면 상급으로 바꿔 이후 레벨업한다.",
+      "notArmyLevelTarget": true
+    },
+    "dietrich:9": {
+      "anchor": "di-12",
+      "chapter": 9,
+      "reviewLevel": 35,
+      "examRecommendedLevel": 35,
+      "examRenown": 8,
+      "instruction": "상급 목표를 먼저 갖추고 계속 성장. 명성9~12에 대응하는 별도 레벨 제한은 없다.",
+      "notArmyLevelTarget": true
+    },
+    "dietrich:10": {
+      "anchor": "miss-di10-fabio-chain",
+      "chapter": 10,
+      "reviewLevel": 35,
+      "examRecommendedLevel": 35,
+      "examRenown": 8,
+      "instruction": "상급 목표를 먼저 갖추고 계속 성장. 명성9~12에 대응하는 별도 레벨 제한은 없다.",
+      "notArmyLevelTarget": true
+    },
+    "dietrich:11": {
+      "anchor": "di-20",
+      "chapter": 11,
+      "reviewLevel": 35,
+      "examRecommendedLevel": 35,
+      "examRenown": 8,
+      "instruction": "상급 목표를 먼저 갖추고 계속 성장. 명성9~12에 대응하는 별도 레벨 제한은 없다.",
+      "notArmyLevelTarget": true
+    },
+    "dietrich:12": {
+      "anchor": "xp-review-dietrich-12",
+      "chapter": 12,
+      "reviewLevel": 35,
+      "examRecommendedLevel": 35,
+      "examRenown": 8,
+      "instruction": "상급 목표를 먼저 갖추고 계속 성장. 명성9~12에 대응하는 별도 레벨 제한은 없다.",
+      "notArmyLevelTarget": true
+    },
+    "kai:1": {
+      "anchor": "kai-01",
+      "chapter": 1,
+      "reviewLevel": 5,
+      "examRecommendedLevel": 5,
+      "examRenown": 1,
+      "instruction": "시설이 열리면 초급 시험 확인. 강제 이야기 중에는 레벨을 맞추려고 멈추지 않는다.",
+      "notArmyLevelTarget": true
+    },
+    "kai:2": {
+      "anchor": "miss-kai02-stairs",
+      "chapter": 2,
+      "reviewLevel": 5,
+      "examRecommendedLevel": 5,
+      "examRenown": 1,
+      "instruction": "시설이 열리면 초급 시험 확인. 강제 이야기 중에는 레벨을 맞추려고 멈추지 않는다.",
+      "notArmyLevelTarget": true
+    },
+    "kai:3": {
+      "anchor": "kai-route-03",
+      "chapter": 3,
+      "reviewLevel": 5,
+      "examRecommendedLevel": 5,
+      "examRenown": 1,
+      "instruction": "시설이 열리면 초급 시험 확인. 강제 이야기 중에는 레벨을 맞추려고 멈추지 않는다.",
+      "notArmyLevelTarget": true
+    },
+    "kai:4": {
+      "anchor": "miss-kai04-bertrand",
+      "chapter": 4,
+      "reviewLevel": 19,
+      "examRecommendedLevel": 20,
+      "examRenown": 4,
+      "instruction": "Lv19에 닿은 본대만 중급 준비 확인. 명성4·기능·합격률이 갖춰지면 전직한다.",
+      "notArmyLevelTarget": true
+    },
+    "kai:5": {
+      "anchor": "kai-03",
+      "chapter": 5,
+      "reviewLevel": 19,
+      "examRecommendedLevel": 20,
+      "examRenown": 4,
+      "instruction": "Lv19에 닿은 본대만 중급 준비 확인. 명성4·기능·합격률이 갖춰지면 전직한다.",
+      "notArmyLevelTarget": true
+    },
+    "kai:6": {
+      "anchor": "miss-kai06-mural",
+      "chapter": 6,
+      "reviewLevel": 19,
+      "examRecommendedLevel": 20,
+      "examRenown": 4,
+      "instruction": "Lv19에 닿은 본대만 중급 준비 확인. 명성4·기능·합격률이 갖춰지면 전직한다.",
+      "notArmyLevelTarget": true
+    },
+    "kai:7": {
+      "anchor": "kai-05",
+      "chapter": 7,
+      "reviewLevel": 34,
+      "examRecommendedLevel": 35,
+      "examRenown": 8,
+      "instruction": "Lv34에 닿은 본대만 상급 준비 확인. 명성8·기능·합격률을 갖추면 상급으로 바꿔 이후 레벨업한다.",
+      "notArmyLevelTarget": true
+    },
+    "kai:8": {
+      "anchor": "kai-route-08",
+      "chapter": 8,
+      "reviewLevel": 34,
+      "examRecommendedLevel": 35,
+      "examRenown": 8,
+      "instruction": "Lv34에 닿은 본대만 상급 준비 확인. 명성8·기능·합격률을 갖추면 상급으로 바꿔 이후 레벨업한다.",
+      "notArmyLevelTarget": true
+    },
+    "kai:9": {
+      "anchor": "kai-route-09",
+      "chapter": 9,
+      "reviewLevel": 35,
+      "examRecommendedLevel": 35,
+      "examRenown": 8,
+      "instruction": "상급 목표를 먼저 갖추고 계속 성장. 명성9~12에 대응하는 별도 레벨 제한은 없다.",
+      "notArmyLevelTarget": true
+    },
+    "kai:10": {
+      "anchor": "kai-route-10",
+      "chapter": 10,
+      "reviewLevel": 35,
+      "examRecommendedLevel": 35,
+      "examRenown": 8,
+      "instruction": "상급 목표를 먼저 갖추고 계속 성장. 명성9~12에 대응하는 별도 레벨 제한은 없다.",
+      "notArmyLevelTarget": true
+    },
+    "kai:11": {
+      "anchor": "kai-route-11",
+      "chapter": 11,
+      "reviewLevel": 35,
+      "examRecommendedLevel": 35,
+      "examRenown": 8,
+      "instruction": "상급 목표를 먼저 갖추고 계속 성장. 명성9~12에 대응하는 별도 레벨 제한은 없다.",
+      "notArmyLevelTarget": true
+    },
+    "kai:12": {
+      "anchor": "xp-review-kai-12",
+      "chapter": 12,
+      "reviewLevel": 35,
+      "examRecommendedLevel": 35,
+      "examRenown": 8,
+      "instruction": "상급 목표를 먼저 갖추고 계속 성장. 명성9~12에 대응하는 별도 레벨 제한은 없다.",
+      "notArmyLevelTarget": true
+    }
+  },
+  "sources": [
+    "index.html#레벨업과-전직",
+    "tips.html#레벨업과-병종",
+    "https://gamewith.jp/fefw/577109",
+    "https://gamewith.jp/fefw/577365"
+  ],
+  "xpRule": "레벨업 때는 현재 병과의 성장 보정이 적용됩니다. 명성별 권장 레벨은 성장률이 더 좋은 목표 병과로 제때 전직하기 위한 점검선입니다. 중급 Lv20·명성4, 상급 Lv35·명성8 전후에 전직 조건을 기다릴 때 추가 경험치 효과를 잠시0%로 낮춥니다. 목표 병과로 전직하면 다시 켭니다. OFF여도 기본 경험치는 계속 들어옵니다.",
+  "war": [
+    {
+      "chapter": 1,
+      "level": 35,
+      "rule": "상급 권장Lv35·기존 합격 자격을 확인하고 성장 병종으로 계속 레벨업한다. 새로운 명성-레벨 목표를 만들지 않는다. 아직 자격이 없으면 준비 화면의 시험 조건을 확인한다."
+    },
+    {
+      "chapter": 2,
+      "level": 35,
+      "rule": "상급 권장Lv35·기존 합격 자격을 확인하고 성장 병종으로 계속 레벨업한다. 새로운 명성-레벨 목표를 만들지 않는다. 아직 자격이 없으면 준비 화면의 시험 조건을 확인한다."
+    },
+    {
+      "chapter": 3,
+      "level": 35,
+      "rule": "상급 권장Lv35·기존 합격 자격을 확인하고 성장 병종으로 계속 레벨업한다. 새로운 명성-레벨 목표를 만들지 않는다. 아직 자격이 없으면 준비 화면의 시험 조건을 확인한다."
+    },
+    {
+      "chapter": 4,
+      "level": 35,
+      "rule": "상급 권장Lv35·기존 합격 자격을 확인하고 성장 병종으로 계속 레벨업한다. 새로운 명성-레벨 목표를 만들지 않는다. 아직 자격이 없으면 준비 화면의 시험 조건을 확인한다."
+    },
+    {
+      "chapter": 5,
+      "level": 35,
+      "rule": "상급 권장Lv35·기존 합격 자격을 확인하고 성장 병종으로 계속 레벨업한다. 새로운 명성-레벨 목표를 만들지 않는다.5~6장의 시험 메뉴는 미확인이므로 앞 장에서 자격을 준비하고 이 장은 보유 자격을 쓴다."
+    },
+    {
+      "chapter": 6,
+      "level": 35,
+      "rule": "상급 권장Lv35·기존 합격 자격을 확인하고 성장 병종으로 계속 레벨업한다. 새로운 명성-레벨 목표를 만들지 않는다.5~6장의 시험 메뉴는 미확인이므로 앞 장에서 자격을 준비하고 이 장은 보유 자격을 쓴다."
+    }
+  ],
+  "part3": [
+    {
+      "chapter": 1,
+      "anchor": "p3-roster",
+      "level": 45,
+      "rule": "구세1구간 완료 뒤 일반 최상급 해금. 전용 신전 병종은 별도 의뢰를 기다린다."
+    },
+    {
+      "chapter": 2,
+      "anchor": "miss-p3-02-cai",
+      "level": 45,
+      "rule": "해금된 최상급과 실제 기능·합격률을 확인한다. 명성 수치에 맞춰 레벨을 낮추지 않는다."
+    },
+    {
+      "chapter": 3,
+      "anchor": "miss-p3-03-fortuna",
+      "level": 45,
+      "rule": "신전 의뢰 뒤 하이 에피타프 등 전용 최상급 해금. 실제 개별 자격을 확인한다."
+    },
+    {
+      "chapter": 4,
+      "anchor": "miss-p3-04-fortuna",
+      "level": 45,
+      "rule": "신장직 해금은 전용 아이템·개별S기능·동시1명 제한을 확인한다. 신장직 공통 필수 레벨을45라고 단정하지 않는다."
+    },
+    {
+      "chapter": 5,
+      "anchor": "collect-p3-aswan-bow",
+      "level": 45,
+      "rule": "현재 최종 병종에서 계속 성장. 새 영입자는 실제 가입 병종·기능부터 확인한다."
+    },
+    {
+      "chapter": 6,
+      "anchor": "miss-post-prologue",
+      "level": 45,
+      "rule": "보유 최종 자격과 무기·공속·전투 예측 확인. 높은 레벨 자체에 따른 명성 벌점은 없다."
+    }
+  ],
+  "growthTiming": {
+    "reason": "레벨업 때는 현재 병과의 성장 보정이 적용됩니다. 명성별 권장 레벨은 성장률이 더 좋은 목표 병과로 제때 전직하기 위한 점검선입니다.",
+    "off": "중급 Lv20·명성4, 상급 Lv35·명성8 전후에 전직 조건을 기다릴 때 추가 경험치 효과를 잠시0%로 낮춥니다.",
+    "on": "목표 병과로 전직하면 다시 켭니다. OFF여도 기본 경험치는 계속 들어옵니다."
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "scope": "현재 팀 화면의 영문 무기·마법명 대조",
+  "indexSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/directory/",
+  "items": {
+    "spell-barrier": {
+      "name": "배리어",
+      "source": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/spell-barrier/",
+      "verified": "2026-11-06",
+      "headingVerified": true
+    },
+    "spell-resquia": {
+      "name": "레스키아",
+      "source": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/spell-resquia/",
+      "verified": "2026-11-06",
+      "headingVerified": true
+    },
+    "spell-ward": {
+      "name": "매직 실드",
+      "source": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/spell-ward/",
+      "verified": "2026-11-06",
+      "headingVerified": true
+    },
+    "horsekiller-bow": {
+      "name": "말 킬러의 활",
+      "source": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/horsekiller-bow/",
+      "verified": "2026-11-06",
+      "headingVerified": true
+    },
+    "mahadus-spear": {
+      "name": "마하마두의 창",
+      "source": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/mahadus-spear/",
+      "verified": "2026-11-06",
+      "headingVerified": true
+    },
+    "star-spear": {
+      "name": "아우로라의 성창",
+      "source": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/star-spear/",
+      "verified": "2026-11-06",
+      "headingVerified": true
+    },
+    "zerberus": {
+      "name": "체르베루스",
+      "source": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/zerberus/",
+      "verified": "2026-11-06",
+      "headingVerified": true
+    },
+    "zalmoxis": {
+      "name": "잘목시스",
+      "source": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/zalmoxis/",
+      "verified": "2026-11-06",
+      "headingVerified": true
+    },
+    "idahs-bow": {
+      "name": "이데아의 활",
+      "source": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/idahs-bow/",
+      "verified": "2026-11-06",
+      "headingVerified": true
+    },
+    "shining-spear": {
+      "name": "소렐의 휘창",
+      "source": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/shining-spear/",
+      "verified": "2026-11-06",
+      "headingVerified": true
+    },
+    "veroquine": {
+      "name": "사검 벨로키네",
+      "source": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/veroquine/",
+      "verified": "2026-11-06",
+      "headingVerified": true
+    }
+  },
+  "aliases": {
+    "Shining Spear": "소렐의 휘창",
+    "Star Spear": "아우로라의 성창",
+    "Mahadu's Spear": "마하마두의 창",
+    "Zalmoxis": "잘목시스",
+    "Horsekiller Bow": "말 킬러의 활",
+    "Idah's Bow": "이데아의 활",
+    "Zerberus": "체르베루스",
+    "Resquia": "레스키아",
+    "M실드": "매직 실드",
+    "Barrier": "배리어"
+  }
+}

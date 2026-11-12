@@ -1,0 +1,1873 @@
+{
+  "schemaVersion": 1,
+  "sourceFiles": [
+    {
+      "source": "data/action-migration.json",
+      "target": "content/data/action-migration.json",
+      "sha256": "ee61d14f357c8325784ee46e5e78e2c81c411da3263b48d70f6a7041c8fd5b5b"
+    },
+    {
+      "source": "data/affordable-gifts.json",
+      "target": "content/data/affordable-gifts.json",
+      "sha256": "be0c1dedb8de51796385c55f0fc63f1a9e18a663b23b8df765b92c4eefa26c5c"
+    },
+    {
+      "source": "data/army-actions.json",
+      "target": "content/data/army-actions.json",
+      "sha256": "3f72fb28c5a69a0eac32ff991c6a01741e4bfb68c503d40cba276f5f7e8ada13"
+    },
+    {
+      "source": "data/boon-price-sources.json",
+      "target": "content/data/boon-price-sources.json",
+      "sha256": "d55bffd05235377fa45984c68f6bbccd365ca73afb90c7a6cb8185e4061546c7"
+    },
+    {
+      "source": "data/boon-prices-user-reported.json",
+      "target": "content/data/boon-prices-user-reported.json",
+      "sha256": "9d0187adb9ec6fe22b813240a2fc1b0b06f481b8a5e29d20b58e28802e6fdb94"
+    },
+    {
+      "source": "data/carry-state.json",
+      "target": "content/data/carry-state.json",
+      "sha256": "826e3032d1afe9079757e91e974bf039ce5277d5a90d1205eb16dd2ede4a273b"
+    },
+    {
+      "source": "data/chapter-gold.json",
+      "target": "content/data/chapter-gold.json",
+      "sha256": "08042dc1b8f47e71f62eccd313811a994aad88330fde35d24b1d1f47599f3aba"
+    },
+    {
+      "source": "data/chapter-progression.json",
+      "target": "content/data/chapter-progression.json",
+      "sha256": "03d47cf8b3bdf814db784c78b990144ff2134f6ff368f4ebde17c20991b773d4"
+    },
+    {
+      "source": "data/checklist-display-names.json",
+      "target": "content/data/checklist-display-names.json",
+      "sha256": "b01dae7d7382a65b78bcfaeaf52bea273a13d708ce20c333284ffae5132a557b"
+    },
+    {
+      "source": "data/checklist.json",
+      "target": "content/data/checklist.json",
+      "sha256": "167377201425c5ae4fda6f30e20b125e3a22fe8e0a3d647c337c11b71cf5bdef"
+    },
+    {
+      "source": "data/class-details.json",
+      "target": "content/data/class-details.json",
+      "sha256": "252169ca229fb4e9987e838bed54c5cf5c10eeb74f57cf75f5733d3f2087e575"
+    },
+    {
+      "source": "data/class-path-reasons.json",
+      "target": "content/data/class-path-reasons.json",
+      "sha256": "f51214976bec299f994999e6a4b2a3bd0660c634fadb048456e417986912b64b"
+    },
+    {
+      "source": "data/final-roster.json",
+      "target": "content/data/final-roster.json",
+      "sha256": "194525d0e32cdc757059cfa318d2b834237f62b212a66ed48c0740002b9e14ad"
+    },
+    {
+      "source": "data/god-service-plan.json",
+      "target": "content/data/god-service-plan.json",
+      "sha256": "6d465b6a4f8f343bf35da0d9f7ab2e7a14eccc0f58c809e09d757b1c49f116eb"
+    },
+    {
+      "source": "data/missable-events.json",
+      "target": "content/data/missable-events.json",
+      "sha256": "1e2078ecaac713a55e6fa5457eb838137f2cbc1f2ebd47b694eba29c6f7b7227"
+    },
+    {
+      "source": "data/modal-scope-plan.json",
+      "target": "content/data/modal-scope-plan.json",
+      "sha256": "c32ed5e7bb323848b6d9f7da25e41d57e1178785e338b626b28e8b2a97f0a6a0"
+    },
+    {
+      "source": "data/multi-route-audit.json",
+      "target": "content/data/multi-route-audit.json",
+      "sha256": "1534d90f1a9c1e50a74360a38fbf5f3b36639525bd9b8cbb28b55ce1e74a3cfa"
+    },
+    {
+      "source": "data/optional-growth-review.json",
+      "target": "content/data/optional-growth-review.json",
+      "sha256": "3992f345a0cfeb0a4ca3843b38c91c944dcaeb06ff488f4c9f0fc9e282997b67"
+    },
+    {
+      "source": "data/optional-schedules.json",
+      "target": "content/data/optional-schedules.json",
+      "sha256": "869b67ba5f2a7c2546f07c97551fc48db322c4c6f1239c64104496e2bba585f4"
+    },
+    {
+      "source": "data/people-display.json",
+      "target": "content/data/people-display.json",
+      "sha256": "beae9095832ba3c25c67a1721e13597eb69cf5d345cc887666fbacf60c741ebe"
+    },
+    {
+      "source": "data/phase-goals.json",
+      "target": "content/data/phase-goals.json",
+      "sha256": "487d22e9d7a97d18d23bd97175e4d6b8746d25f533e874eb262a2dfc872d5efe"
+    },
+    {
+      "source": "data/playbook.json",
+      "target": "content/data/playbook.json",
+      "sha256": "7496b4620652caa1a701fff3437c50bed144ddd6defb236b91ede061d9bfee2f"
+    },
+    {
+      "source": "data/purchase-plan.json",
+      "target": "content/data/purchase-plan.json",
+      "sha256": "6cf9033aafdc933a0e4d476438c1869d994eb354ee5c58256c63d659db6e472b"
+    },
+    {
+      "source": "data/readiness-profile-sources.json",
+      "target": "content/data/readiness-profile-sources.json",
+      "sha256": "e2012f84cd59e9ac74f0aeacc542652fe6aaecb8c265af4cf783429fca4e6521"
+    },
+    {
+      "source": "data/recruit-all-plan.json",
+      "target": "content/data/recruit-all-plan.json",
+      "sha256": "5af1f61a1300152085960087f4acd139e9c62d06c08bc2d6f26f20b6170f29d8"
+    },
+    {
+      "source": "data/recruit-materials.json",
+      "target": "content/data/recruit-materials.json",
+      "sha256": "84335464d093c215bb2698bca86a642d59844ec973be1206dc4d51a7f9e1a19f"
+    },
+    {
+      "source": "data/recruitment-build-audit.json",
+      "target": "content/data/recruitment-build-audit.json",
+      "sha256": "cfb7b0338c4f863676c3205718807891a7225021f4504f99d1ac1bc3a391da84"
+    },
+    {
+      "source": "data/recruitment-gates.json",
+      "target": "content/data/recruitment-gates.json",
+      "sha256": "f977a8f77aaafeb5de1286b8f252123e165849270f564ee14c9316fbb0e284f4"
+    },
+    {
+      "source": "data/roster-plan.json",
+      "target": "content/data/roster-plan.json",
+      "sha256": "6ee03cb1cec09793bd95d04a2a0d08d89b0ec4eb2617ce62ae4461111717f71b"
+    },
+    {
+      "source": "data/roster-selection-sources.json",
+      "target": "content/data/roster-selection-sources.json",
+      "sha256": "39b1189c1c9a93b2634e81af025a91baddc1ad79c9cb96a486579a610125a339"
+    },
+    {
+      "source": "data/roster-selection.json",
+      "target": "content/data/roster-selection.json",
+      "sha256": "6f11e8c8368f0df1a965b79738eba1898a0ab34dc37e2b16fcb15278a8faddce"
+    },
+    {
+      "source": "data/sequential-training-plan.json",
+      "target": "content/data/sequential-training-plan.json",
+      "sha256": "2c072128de0c6a6956611e152911c14c0e70f0ff0066cd10633664906e9ae009"
+    },
+    {
+      "source": "data/starter-handoffs.json",
+      "target": "content/data/starter-handoffs.json",
+      "sha256": "cdf46ff03a1436d1a5726854bdc212a1e32a573e7f40023ccf7ac8373edd6a67"
+    },
+    {
+      "source": "data/team-korean-name-sources.json",
+      "target": "content/data/team-korean-name-sources.json",
+      "sha256": "042ee245604359ee71a74663dc29d68a60090dde7531f429d01497187348f9fb"
+    },
+    {
+      "source": "data/team-reference-sections.json",
+      "target": "content/data/team-reference-sections.json",
+      "sha256": "6efa5d9803ea0e08d395e19777dcc24e06e695a542a3ed356641711b4555f4f9"
+    },
+    {
+      "source": "data/team-signature-learning.json",
+      "target": "content/data/team-signature-learning.json",
+      "sha256": "3b1c66aa865c601bc3e60cb33e3a176c1f834aa2474fdd27149ab0f095beba95"
+    },
+    {
+      "source": "data/team-signature-weapons.json",
+      "target": "content/data/team-signature-weapons.json",
+      "sha256": "01c129cf7f95e99980092f700fb2860980d00e0275837760182252a4e29e5e7a"
+    },
+    {
+      "source": "data/team-specialty-review.json",
+      "target": "content/data/team-specialty-review.json",
+      "sha256": "2d2090e47009556f9f5a8f3c9442472bd00af5c90e9139df6328cbabc0b6f87f"
+    },
+    {
+      "source": "data/team-specialty-sources.json",
+      "target": "content/data/team-specialty-sources.json",
+      "sha256": "4555ee4977902f61b8e4ebc71d3e09d41f0588fb73a1395516fcf1f21932a286"
+    },
+    {
+      "source": "data/team-white-highlights.json",
+      "target": "content/data/team-white-highlights.json",
+      "sha256": "2548bd6efebf25816e03dbdca817f9f0855220dc356df519ea6d7edce3d97d01"
+    },
+    {
+      "source": "data/team-white-spells.json",
+      "target": "content/data/team-white-spells.json",
+      "sha256": "28662812039b52e9254b644ee290d5210cf3d7616af0858e4fdefb7e19fc78be"
+    },
+    {
+      "source": "data/theodora-timing.json",
+      "target": "content/data/theodora-timing.json",
+      "sha256": "c04f4da45c778364257c5e08618a038ed83138e4a6510bf620bdcf66066f6dab"
+    },
+    {
+      "source": "data/timed-acquisitions.json",
+      "target": "content/data/timed-acquisitions.json",
+      "sha256": "5f01df6431c68da7bff7b772b4587ee8da57657b8eb17fd62a6c2bdaf3554397"
+    },
+    {
+      "source": "data/training-priorities.json",
+      "target": "content/data/training-priorities.json",
+      "sha256": "2c4f75fb1087cc6f4450e02aeb3c20fca6c6289540a23f39243d51102cf533e8"
+    },
+    {
+      "source": "data/training-sources.json",
+      "target": "content/data/training-sources.json",
+      "sha256": "aa2be133c16d4e25f95aada4be5027c17e0db4b354133f03c42f125b17e45def"
+    },
+    {
+      "source": "data/unit-readiness.json",
+      "target": "content/data/unit-readiness.json",
+      "sha256": "9cb7cf407d1f23aaccf5bf16fb8f47621682fb42e2ec7ccf9fffee4a472d4db7"
+    },
+    {
+      "source": "data/weapon-buy-sources.json",
+      "target": "content/data/weapon-buy-sources.json",
+      "sha256": "410e5dd880c8fae08e4c8c0ffd00687e03ce5485961142bfde0a835c89438c55"
+    },
+    {
+      "source": "data/weekly-support.json",
+      "target": "content/data/weekly-support.json",
+      "sha256": "b4cfac827823a2fd769b3d6d933be9baf9cc4931958f52868d8d833ebe3c310e"
+    },
+    {
+      "source": "data/weekly-training.json",
+      "target": "content/data/weekly-training.json",
+      "sha256": "778f2088d85f798160f83203ea5ada5053686e813949ea88dc834c5a82c9aa9c"
+    },
+    {
+      "source": "notes/arena-training-review.md",
+      "target": "content/notes/arena-training-review.md",
+      "sha256": "87a4311b29438410cdfd159845f2fcb054d13a0b1339c2961c5f205b2ed262a7"
+    },
+    {
+      "source": "notes/army-readiness-review.md",
+      "target": "content/notes/army-readiness-review.md",
+      "sha256": "4a4b7227ad890a171c08e8bd9ca7b747f8746b174b6dfe30b0ed23255960cc40"
+    },
+    {
+      "source": "notes/aurora-price-review.md",
+      "target": "content/notes/aurora-price-review.md",
+      "sha256": "4fdf37d7ca8142500bb367c1a50d78e9615fb3a1a4324fa62d8456bc41a33723"
+    },
+    {
+      "source": "notes/backups/final25-apply-20261104/notes/chapter-gold-review.md",
+      "target": "content/notes/backups/final25-apply-20261104/notes/chapter-gold-review.md",
+      "sha256": "a3c42bf24c065a229fd597ac85979653f8f4e2795e6b6982d2d94eabc74264a0"
+    },
+    {
+      "source": "notes/backups/final25-apply-20261104/notes/chapter-route-plan.md",
+      "target": "content/notes/backups/final25-apply-20261104/notes/chapter-route-plan.md",
+      "sha256": "ce554efd5f6070e7d2c54e9bb51993adb0fe0b7ac521f67e9739047774e879a7"
+    },
+    {
+      "source": "notes/backups/final25-apply-20261104/notes/roster-build-review.md",
+      "target": "content/notes/backups/final25-apply-20261104/notes/roster-build-review.md",
+      "sha256": "305964ec8c4dbd81b0813f3b9ea3f5ef191285f0e04a1750f2fb64a1e043dbef"
+    },
+    {
+      "source": "notes/backups/final25-apply-20261104/notes/roster-selection-review.md",
+      "target": "content/notes/backups/final25-apply-20261104/notes/roster-selection-review.md",
+      "sha256": "ab77fa27e4e88a964d98881e23c6233ebf947444b03fbb65952ce5fde04d2f6a"
+    },
+    {
+      "source": "notes/backups/final25-apply-20261104/notes/training-priorities-review.md",
+      "target": "content/notes/backups/final25-apply-20261104/notes/training-priorities-review.md",
+      "sha256": "ba40a3acf70b8d6c7b1f9c616520c6e7664a185fc5287d968af0df4d903a1afa"
+    },
+    {
+      "source": "notes/backups/final25-apply-20261104/notes/weekly-support-review.md",
+      "target": "content/notes/backups/final25-apply-20261104/notes/weekly-support-review.md",
+      "sha256": "d040e7b26ada69047d4015e6927c8fed277e73dda80786e057167aa007e4da18"
+    },
+    {
+      "source": "notes/backups/final25-apply-20261104/progress.md",
+      "target": "content/notes/backups/final25-apply-20261104/progress.md",
+      "sha256": "054be79fffde6c9ab9a7cb949719b92f5aaeb09741bd96639ee03410a2b1545f"
+    },
+    {
+      "source": "notes/backups/final25-apply-20261104/routes/dietrich/progress.md",
+      "target": "content/notes/backups/final25-apply-20261104/routes/dietrich/progress.md",
+      "sha256": "9ec9ef63fa564fd0b4764d4fce13b896d1fa69edf7d0914663d5accbd1ad19a7"
+    },
+    {
+      "source": "notes/backups/final25-apply-20261104/routes/kai/progress.md",
+      "target": "content/notes/backups/final25-apply-20261104/routes/kai/progress.md",
+      "sha256": "e269e3514b33468576ab5f0ec528e52b73134df97e688a752b83817b68e84599"
+    },
+    {
+      "source": "notes/backups/final25-apply-20261104/routes/leda/progress.md",
+      "target": "content/notes/backups/final25-apply-20261104/routes/leda/progress.md",
+      "sha256": "60228c21f1c72c901026521d90f10b779cbcce2be09fb8ac5af01760db141b14"
+    },
+    {
+      "source": "notes/backups/final25-apply-20261104/routes/part3/progress.md",
+      "target": "content/notes/backups/final25-apply-20261104/routes/part3/progress.md",
+      "sha256": "2c7f227f5c1fad66474dc6d371b8368e9deeafa2fc617e53e33a5ea641e51fc6"
+    },
+    {
+      "source": "notes/backups/final25-apply-20261104/routes/theodora/progress.md",
+      "target": "content/notes/backups/final25-apply-20261104/routes/theodora/progress.md",
+      "sha256": "ac2de1ea701a2ce03c47451e4bc7b16caa5f556534ffb9711191ea981afc24a0"
+    },
+    {
+      "source": "notes/boon-buy-review.md",
+      "target": "content/notes/boon-buy-review.md",
+      "sha256": "bfac3d1dfc25d745b23c20d6ef645b08f0bb9786f68862b0512b001d2e41cfc3"
+    },
+    {
+      "source": "notes/cai-carriage-guide.md",
+      "target": "content/notes/cai-carriage-guide.md",
+      "sha256": "792651b322e1edb430545d1680a259d012d9d938b2c7871b5ecfe0afdba55b05"
+    },
+    {
+      "source": "notes/carry-hard-review.md",
+      "target": "content/notes/carry-hard-review.md",
+      "sha256": "38f543aa4469155ed27579bbd51cc6ef2f9bc91ba8505666afc2038c76f31156"
+    },
+    {
+      "source": "notes/chapter-gold-review.md",
+      "target": "content/notes/chapter-gold-review.md",
+      "sha256": "f38587ace8f0290679213fd2f7e399a7de5cb2e8073f36c235089c8de7d8c2bf"
+    },
+    {
+      "source": "notes/chapter-route-plan.md",
+      "target": "content/notes/chapter-route-plan.md",
+      "sha256": "ef4433452c99fe8ccd876681fd802e106c6e21f0354db8a8d2e5ad8ac739b5f2"
+    },
+    {
+      "source": "notes/checklist-full-review.md",
+      "target": "content/notes/checklist-full-review.md",
+      "sha256": "1025689f274b4b49a6d7247c2eae2ed4b213b4a76a6f18ea8b4094d39ee42c55"
+    },
+    {
+      "source": "notes/checklist-order-plan.md",
+      "target": "content/notes/checklist-order-plan.md",
+      "sha256": "0e83fae3803c62e621812cdf97dfee850ce4ffd5ac2a3ee3416901fa9e241b79"
+    },
+    {
+      "source": "notes/checklist-order-review.md",
+      "target": "content/notes/checklist-order-review.md",
+      "sha256": "57c292d1379e54dfa738d2f6a841b6177944fd11e9ba533ba36256493c1ec257"
+    },
+    {
+      "source": "notes/class-capabilities-review.md",
+      "target": "content/notes/class-capabilities-review.md",
+      "sha256": "5cf43df3f36f341d07626619de6af5744f036f23f2d6513962facae8543daeca"
+    },
+    {
+      "source": "notes/class-capability-expansion-review.md",
+      "target": "content/notes/class-capability-expansion-review.md",
+      "sha256": "5bd8353bb9fffbd4417a7dc0e3f148441e46e386bead189190e76dcfe8a3a296"
+    },
+    {
+      "source": "notes/class-differences-preview-plan.md",
+      "target": "content/notes/class-differences-preview-plan.md",
+      "sha256": "068f1214dc1d1df9c0bcf807d1e289d4462bdd20a8f021c1a2a1d08e5357a271"
+    },
+    {
+      "source": "notes/class-modal-review.md",
+      "target": "content/notes/class-modal-review.md",
+      "sha256": "3d8b8938799f0176714f45d84e73797a9b8a930e30bae44ead3da910d6d8061d"
+    },
+    {
+      "source": "notes/class-path-reasons-plan.md",
+      "target": "content/notes/class-path-reasons-plan.md",
+      "sha256": "492455b25a2f56bdd76917f1107e4ff8a9294b625ff4d3a9009ab7042a058c19"
+    },
+    {
+      "source": "notes/class-path-reasons-review.md",
+      "target": "content/notes/class-path-reasons-review.md",
+      "sha256": "f1a1a230f0437695799c0be075109e1119d32ea658ea745cc2516880104b49fe"
+    },
+    {
+      "source": "notes/classes/archer.md",
+      "target": "content/notes/classes/archer.md",
+      "sha256": "48e0d725134d2835ec6ea77ad396783640695e219ceef166f7538f9f5d871160"
+    },
+    {
+      "source": "notes/classes/armored-knight.md",
+      "target": "content/notes/classes/armored-knight.md",
+      "sha256": "57f1a2621d5b15aec1d2d6c567ac2762acffdcc12c6035aeb42f3f82339c80d9"
+    },
+    {
+      "source": "notes/classes/armored-ornius-rider.md",
+      "target": "content/notes/classes/armored-ornius-rider.md",
+      "sha256": "569c413a2892c774c8907cd82832923e84bdcae0ef4e7200f0d9a3bd63d452b8"
+    },
+    {
+      "source": "notes/classes/bardinger.md",
+      "target": "content/notes/classes/bardinger.md",
+      "sha256": "9f859de5f3d48b9fa1192191d4eea355ec1b4c76f385c628fbde382d5de9d5df"
+    },
+    {
+      "source": "notes/classes/battlemaster.md",
+      "target": "content/notes/classes/battlemaster.md",
+      "sha256": "e3eba76bbc8d97f60d76a2a2e83f5b8ae649594489dc7c91998bce9673f5f554"
+    },
+    {
+      "source": "notes/classes/bau-lord.md",
+      "target": "content/notes/classes/bau-lord.md",
+      "sha256": "3557e2df713147002aa23f33a1878d2f5c768334bce19fdbe88b840228ee23c0"
+    },
+    {
+      "source": "notes/classes/bishop.md",
+      "target": "content/notes/classes/bishop.md",
+      "sha256": "39cf12cec472d83e3ec2cde8e9d0e91f137ea0babc59116f9ecc1d950617f058"
+    },
+    {
+      "source": "notes/classes/blacksmith.md",
+      "target": "content/notes/classes/blacksmith.md",
+      "sha256": "48e9de42c6caf4abb69a56a992623b6ff80a3d9890b694acd601b0a9df6a2d5b"
+    },
+    {
+      "source": "notes/classes/bow-adept.md",
+      "target": "content/notes/classes/bow-adept.md",
+      "sha256": "86cc221fb39954664e3231293fbb0ec42ccc570ea9c0f1e93a0aff41b7c1a63d"
+    },
+    {
+      "source": "notes/classes/bow-knight.md",
+      "target": "content/notes/classes/bow-knight.md",
+      "sha256": "a1f9ca0de36d7bfab9729db20a8f6f566a47f474dc4f724c7ef344b55e7c1dae"
+    },
+    {
+      "source": "notes/classes/brigand.md",
+      "target": "content/notes/classes/brigand.md",
+      "sha256": "ec1ca6cc81510642553d07905956c767751fa86ee3489a1d5499ae2d6f6a4630"
+    },
+    {
+      "source": "notes/classes/caladrius.md",
+      "target": "content/notes/classes/caladrius.md",
+      "sha256": "85af9447517c0bd1b29aa82b4424b8e1aad7cc84943125335bfc2d9dc389b0e8"
+    },
+    {
+      "source": "notes/classes/castle-knight.md",
+      "target": "content/notes/classes/castle-knight.md",
+      "sha256": "7a8fc481816da5828653c103c1964200b25f92c786b12aba7725f1d89c7f97e7"
+    },
+    {
+      "source": "notes/classes/cataphract.md",
+      "target": "content/notes/classes/cataphract.md",
+      "sha256": "45baaf6384f395676314cdd9fd6f1fa790fb2029382554e7590c1022251463e8"
+    },
+    {
+      "source": "notes/classes/celestial-trooper.md",
+      "target": "content/notes/classes/celestial-trooper.md",
+      "sha256": "2b89d868fe1428ec575a958a7cc8e6fefd992ad127c1a226f39dfc98f77503f3"
+    },
+    {
+      "source": "notes/classes/charioteer.md",
+      "target": "content/notes/classes/charioteer.md",
+      "sha256": "bc178280c121b6968f75981ded02b0174dce8afa8210a8db278a21f9301a76f4"
+    },
+    {
+      "source": "notes/classes/dancer.md",
+      "target": "content/notes/classes/dancer.md",
+      "sha256": "c0f35f8638f3e9d3cf6920e838c5ad5361a0447cacb7da0c1b5c3d1f2367cc68"
+    },
+    {
+      "source": "notes/classes/diviner.md",
+      "target": "content/notes/classes/diviner.md",
+      "sha256": "5b619418d724d93809f5483f37226f601013f63454f46c6df254c47648aaba67"
+    },
+    {
+      "source": "notes/classes/dragoon.md",
+      "target": "content/notes/classes/dragoon.md",
+      "sha256": "45e509af7e3afe6bb32c243c7a23aed8198274875c66c3b461bc0d684ea34163"
+    },
+    {
+      "source": "notes/classes/dreadnought.md",
+      "target": "content/notes/classes/dreadnought.md",
+      "sha256": "244441da948d53d418db07fffd70f9f70c2d1c6e46efd628fae61416914c592f"
+    },
+    {
+      "source": "notes/classes/druid.md",
+      "target": "content/notes/classes/druid.md",
+      "sha256": "331e192fbd26dce90d626f905a861b990d889c74265660d0a50a871fbbe3b608"
+    },
+    {
+      "source": "notes/classes/elephant-rider.md",
+      "target": "content/notes/classes/elephant-rider.md",
+      "sha256": "3963f1a24fd448316a64835407c7943fd32e6c303a43b83bb8e64acf05707278"
+    },
+    {
+      "source": "notes/classes/forest-knight.md",
+      "target": "content/notes/classes/forest-knight.md",
+      "sha256": "dfd957b15db32a86768f9e28be56df5f9d3280085761f0832f771fc5aba0c56e"
+    },
+    {
+      "source": "notes/classes/gladiator.md",
+      "target": "content/notes/classes/gladiator.md",
+      "sha256": "02e217020a92e6a091ca7bb24387d1a1f5df8b6473659da1b0d4f6041cb18ae7"
+    },
+    {
+      "source": "notes/classes/great-knight.md",
+      "target": "content/notes/classes/great-knight.md",
+      "sha256": "a3d201d6b9e6d63626d7f8ff42565145065af152dec4d58e9798520d9dae2c48"
+    },
+    {
+      "source": "notes/classes/guardian.md",
+      "target": "content/notes/classes/guardian.md",
+      "sha256": "9d473721f1b8063b291b22213ff5825c2b3a8036602f46d84d474a9da97776be"
+    },
+    {
+      "source": "notes/classes/high-savant.md",
+      "target": "content/notes/classes/high-savant.md",
+      "sha256": "a851dd7cde92fd9bb0eabfae0a9558bac5c4561c96c564490cc8f8b00c44d971"
+    },
+    {
+      "source": "notes/classes/hunter.md",
+      "target": "content/notes/classes/hunter.md",
+      "sha256": "3ec895d938148399902efb6948d83340c0da58d5da534713f79cbb5abad31f0e"
+    },
+    {
+      "source": "notes/classes/light-cavalry.md",
+      "target": "content/notes/classes/light-cavalry.md",
+      "sha256": "cfa4c6ace5762a79e5e556d4f2988d417c4cc7edf6f90279d00da88c9b99eb7b"
+    },
+    {
+      "source": "notes/classes/myrmidon.md",
+      "target": "content/notes/classes/myrmidon.md",
+      "sha256": "33c8d0894c94e7043938fa3835888008dec802d7f278c7929c08e4c554c4ecee"
+    },
+    {
+      "source": "notes/classes/orichalda.md",
+      "target": "content/notes/classes/orichalda.md",
+      "sha256": "2397afc27fa9a392f9488ab669ebeb290cfe1e94217f727139ba7a712f2f9995"
+    },
+    {
+      "source": "notes/classes/ornius-rider.md",
+      "target": "content/notes/classes/ornius-rider.md",
+      "sha256": "ac3e62a96969e6afc4664e5e5bc28bb705a7a7866ac1145ce4cee1ae477d7a50"
+    },
+    {
+      "source": "notes/classes/ovate.md",
+      "target": "content/notes/classes/ovate.md",
+      "sha256": "847a742e2af501261b1a5620b215132ca0c7f8dcaaa46162bd6f8d0779516efd"
+    },
+    {
+      "source": "notes/classes/priest.md",
+      "target": "content/notes/classes/priest.md",
+      "sha256": "c2828b56b3d316020373313801f463cbe3a60e3fcea49c1736a922b99b058771"
+    },
+    {
+      "source": "notes/classes/pugilist.md",
+      "target": "content/notes/classes/pugilist.md",
+      "sha256": "e5a228e5750495655b69c436a67083aed4c621bc389d45c572fe9ea4911f9678"
+    },
+    {
+      "source": "notes/classes/ranger.md",
+      "target": "content/notes/classes/ranger.md",
+      "sha256": "cb8c57431be96728ba17cfa28e427382aa3f94a8c363c01d4723a9233b6db50d"
+    },
+    {
+      "source": "notes/classes/rogue.md",
+      "target": "content/notes/classes/rogue.md",
+      "sha256": "e4a3349710a41bd19470c5b8ca73a6c3118a108a6e35f74f36e0b92e7be8e65a"
+    },
+    {
+      "source": "notes/classes/sentinel.md",
+      "target": "content/notes/classes/sentinel.md",
+      "sha256": "0c70deb292f9e1defbb485de3df722ad4a518c5d2eb6bd9e35a088967c197a46"
+    },
+    {
+      "source": "notes/classes/shadow-seeker.md",
+      "target": "content/notes/classes/shadow-seeker.md",
+      "sha256": "2184b4e20fe1b59414d8aae745835aa5d7661c6d24603cf028e9106431833610"
+    },
+    {
+      "source": "notes/classes/shaman.md",
+      "target": "content/notes/classes/shaman.md",
+      "sha256": "0c38b7b234a858735f763ee943970dca269abef4e6d709b4990851ce6a12fe01"
+    },
+    {
+      "source": "notes/classes/shido.md",
+      "target": "content/notes/classes/shido.md",
+      "sha256": "1bb6a52aa4848d8bd6ca23ae5cf7ca009ad82488806017fbecdd85ee29978b48"
+    },
+    {
+      "source": "notes/classes/sniper.md",
+      "target": "content/notes/classes/sniper.md",
+      "sha256": "a9d8d39b1efa3ca6cc680d669d7b98ef29c907bb0ca74de7a935fe55ea550cdb"
+    },
+    {
+      "source": "notes/classes/soldier.md",
+      "target": "content/notes/classes/soldier.md",
+      "sha256": "c5a8f29b6a2a9d3dcc6693faa82c2b6434b145656791b00eef03cf21bb678734"
+    },
+    {
+      "source": "notes/classes/swordmaster.md",
+      "target": "content/notes/classes/swordmaster.md",
+      "sha256": "8e98ca235d8f763ad5956a2851d9779107b00834a120f562eb4cd78b61df9738"
+    },
+    {
+      "source": "notes/classes/the-apsara.md",
+      "target": "content/notes/classes/the-apsara.md",
+      "sha256": "37557941690de3f8359ba368ffe6426f8fb4baec39591bdf81771ce656f4e0fe"
+    },
+    {
+      "source": "notes/classes/the-avatar.md",
+      "target": "content/notes/classes/the-avatar.md",
+      "sha256": "0e1312ed15150008d266f5bdc31f0f310051a5df01be1f4e81f839ca299b6cc5"
+    },
+    {
+      "source": "notes/classes/the-blade.md",
+      "target": "content/notes/classes/the-blade.md",
+      "sha256": "144745b7a698bf1c69a26f749e16b736ce96fd05a9dbbc3c028d0d5065293679"
+    },
+    {
+      "source": "notes/classes/the-calamity.md",
+      "target": "content/notes/classes/the-calamity.md",
+      "sha256": "b2d57d478a24878d53a6145030ee8c110424bef9752a8eb02d753c0394ac99ef"
+    },
+    {
+      "source": "notes/classes/the-cavalier.md",
+      "target": "content/notes/classes/the-cavalier.md",
+      "sha256": "c7756ca7987ce10339d0fb38b2cebcc25024da59ab372961755fd305c169275e"
+    },
+    {
+      "source": "notes/classes/the-eternal.md",
+      "target": "content/notes/classes/the-eternal.md",
+      "sha256": "339a7eae1807970002bf3079634faf56d904566269de52dbabdae8441ff85021"
+    },
+    {
+      "source": "notes/classes/the-godhand.md",
+      "target": "content/notes/classes/the-godhand.md",
+      "sha256": "be913e2ae8096a0108e4408697ef86779ffe73a6b82541727974f5744554069d"
+    },
+    {
+      "source": "notes/classes/the-trident.md",
+      "target": "content/notes/classes/the-trident.md",
+      "sha256": "adf10117a60bd14bb73d3d0c35b5cca8772b9c0bafdb9d86d683005a3ea55d09"
+    },
+    {
+      "source": "notes/classes/troubadour.md",
+      "target": "content/notes/classes/troubadour.md",
+      "sha256": "84ea538e9264a1cd426e311d274558b1f72f46da45a154b36b2623011583e490"
+    },
+    {
+      "source": "notes/classes/valkyrium.md",
+      "target": "content/notes/classes/valkyrium.md",
+      "sha256": "5e294c31966f546922316c60b38122491a49b9692aef6d3be959002c521588bf"
+    },
+    {
+      "source": "notes/classes/war-monk.md",
+      "target": "content/notes/classes/war-monk.md",
+      "sha256": "dcae0400597eb9d6d8e1ab9b2f7eeb9267e209a626ab4c40fd44d750c5dc81d2"
+    },
+    {
+      "source": "notes/classes/warrior.md",
+      "target": "content/notes/classes/warrior.md",
+      "sha256": "a88e1db6ef0e852f4dcd8132036f6bf6ab685176d4a9de236f226585614cc870"
+    },
+    {
+      "source": "notes/classes/wing-soldier.md",
+      "target": "content/notes/classes/wing-soldier.md",
+      "sha256": "f46bee21fb448cf6371142f3691500fef5d11fd322541ff9bb7eb0a37c40be5c"
+    },
+    {
+      "source": "notes/classes/wiseman.md",
+      "target": "content/notes/classes/wiseman.md",
+      "sha256": "97fb2fea35138f76515876a6faf3ffdd67512672bf50f8a7b6663637e80e90aa"
+    },
+    {
+      "source": "notes/combat-review.md",
+      "target": "content/notes/combat-review.md",
+      "sha256": "b3dc40785a1f1814cbb5bace4994d178b12883d8486bece80f54bd718e6e48b9"
+    },
+    {
+      "source": "notes/community-classes-research-plan.md",
+      "target": "content/notes/community-classes-research-plan.md",
+      "sha256": "4e57a1f28515dbdb2bae1dd4c7d413e1ff3e722c1d8219232bb064f7e1aa72a5"
+    },
+    {
+      "source": "notes/community-classes-review.md",
+      "target": "content/notes/community-classes-review.md",
+      "sha256": "88a50afc63309fafe98d787d3362c373dcab45191d5346c9017bf5f73733f0de"
+    },
+    {
+      "source": "notes/compact-people-plan.md",
+      "target": "content/notes/compact-people-plan.md",
+      "sha256": "d66d2f05564e3b1c39d25e587ada098d0135402ffe7f9142d8640fcad8c76585"
+    },
+    {
+      "source": "notes/compact-people-review.md",
+      "target": "content/notes/compact-people-review.md",
+      "sha256": "40a1a69a2814c867797c789f89d7836469cac043b2bc34add3e671c5996e3bc5"
+    },
+    {
+      "source": "notes/context-tabs-review.md",
+      "target": "content/notes/context-tabs-review.md",
+      "sha256": "b199e610ce8e94689340d865da1bb39c53a5d60bfbe117972fee399d3c18d110"
+    },
+    {
+      "source": "notes/dark-mode-audit-plan.md",
+      "target": "content/notes/dark-mode-audit-plan.md",
+      "sha256": "6ba37b6ec8af1853696503c2b415d675658c48072511a56e7c929871b31707d7"
+    },
+    {
+      "source": "notes/dark-mode-audit-review.md",
+      "target": "content/notes/dark-mode-audit-review.md",
+      "sha256": "0603799a32948f0666dc592c9b3f834e5c197ca511961e83e4077b99f80e6b92"
+    },
+    {
+      "source": "notes/dark-mode-review.md",
+      "target": "content/notes/dark-mode-review.md",
+      "sha256": "db7a5806d7c4d8f7fb955aa8e9af3ad0e82f3ea387fa5680828484212244ed70"
+    },
+    {
+      "source": "notes/defense-five-cai-mount-review.md",
+      "target": "content/notes/defense-five-cai-mount-review.md",
+      "sha256": "f3e9f6091f335f29e99a7db9d0dc21fd239117c0e086c755c23666a1e4521214"
+    },
+    {
+      "source": "notes/dungeon-respawn-review.md",
+      "target": "content/notes/dungeon-respawn-review.md",
+      "sha256": "89db2e8df1c265efc2da20fc1c9258013b413915d65f656044a6c641e0039b2d"
+    },
+    {
+      "source": "notes/events/miss-di04-inn.md",
+      "target": "content/notes/events/miss-di04-inn.md",
+      "sha256": "734f0958a6936b5ccd970078bbf4fb4d7b4c237f9ea9a365ff56cef817b9c87d"
+    },
+    {
+      "source": "notes/events/miss-di04-mikaela.md",
+      "target": "content/notes/events/miss-di04-mikaela.md",
+      "sha256": "18358b8f5068b0b76ee6f79b30c4993e982d822727120b108232e55116fb6caa"
+    },
+    {
+      "source": "notes/events/miss-di04-south.md",
+      "target": "content/notes/events/miss-di04-south.md",
+      "sha256": "1bcfac0b6889ca58e06b2fa264f4fbe453beccde82aca725ef001db9e9b4bc44"
+    },
+    {
+      "source": "notes/events/miss-di05-fabio-chain.md",
+      "target": "content/notes/events/miss-di05-fabio-chain.md",
+      "sha256": "b7122f189d7464e20395f0b60b11ac6729ac85e99d92d182e3e5921541e9c1a5"
+    },
+    {
+      "source": "notes/events/miss-di06-alexandra.md",
+      "target": "content/notes/events/miss-di06-alexandra.md",
+      "sha256": "7cae1fb91ad853436e5661c5b819a7c72cf5a2865904eb2b81864452d3f6b972"
+    },
+    {
+      "source": "notes/events/miss-di08-night.md",
+      "target": "content/notes/events/miss-di08-night.md",
+      "sha256": "4cfe18a788865cf52d605246adbee3756abbd2d7714a79c104663ea9d6da730a"
+    },
+    {
+      "source": "notes/events/miss-di10-fabio-chain.md",
+      "target": "content/notes/events/miss-di10-fabio-chain.md",
+      "sha256": "44db9a54427938aa1853a12f163409b7a8a7dbe2518f31967d99d52b44e2a85a"
+    },
+    {
+      "source": "notes/events/miss-di10-ribeira.md",
+      "target": "content/notes/events/miss-di10-ribeira.md",
+      "sha256": "d94298dd95ff7889113afdb2c4e6ba1a7489b7617129921d00f4867f5d4dd42a"
+    },
+    {
+      "source": "notes/events/miss-di12-answerer.md",
+      "target": "content/notes/events/miss-di12-answerer.md",
+      "sha256": "08aa803724001ed4646631d1fefb87bb00f3a047e097b33da3402a973c407569"
+    },
+    {
+      "source": "notes/events/miss-di12-fina.md",
+      "target": "content/notes/events/miss-di12-fina.md",
+      "sha256": "75a5e0be8567a948f0dfe5487bfc457838c58ac3b1cc99947c79928903566f8d"
+    },
+    {
+      "source": "notes/events/miss-kai02-stairs.md",
+      "target": "content/notes/events/miss-kai02-stairs.md",
+      "sha256": "abae1a71b8ca6152b98ef28d10307bcf60493be78fdfd40a3b4ad8466d50cfe1"
+    },
+    {
+      "source": "notes/events/miss-kai04-bertrand.md",
+      "target": "content/notes/events/miss-kai04-bertrand.md",
+      "sha256": "b0ea765b831e98fd9d11f9bb24837c576b700ad8d7c6f143253bd75db2289dc1"
+    },
+    {
+      "source": "notes/events/miss-kai06-mural.md",
+      "target": "content/notes/events/miss-kai06-mural.md",
+      "sha256": "6567ce09e5b9a62e9ef6eabe8667223fc16576df267b2a48bf20bf2927241efd"
+    },
+    {
+      "source": "notes/events/miss-leda04-itemshop.md",
+      "target": "content/notes/events/miss-leda04-itemshop.md",
+      "sha256": "f5715fdd824ec00a7dcf524721fecea8bc7500ab103b00e6aff1a5351d4d91a0"
+    },
+    {
+      "source": "notes/events/miss-leda04-mikaela.md",
+      "target": "content/notes/events/miss-leda04-mikaela.md",
+      "sha256": "a8aaab5f68c79d24f70457cda4ba60fb87d102035234323b1f038cbc357e6a46"
+    },
+    {
+      "source": "notes/events/miss-leda05-kalla.md",
+      "target": "content/notes/events/miss-leda05-kalla.md",
+      "sha256": "03d520ccabc34c85b8d6c8c7c9d4f3d8094d2e7e6ec615794debf4acba41d3a4"
+    },
+    {
+      "source": "notes/events/miss-leda06-alexandra.md",
+      "target": "content/notes/events/miss-leda06-alexandra.md",
+      "sha256": "031290fb713b1ff0d41156a1f7299ebed6190dbd7884cd6654a5a4773b7861c2"
+    },
+    {
+      "source": "notes/events/miss-leda06-olympia.md",
+      "target": "content/notes/events/miss-leda06-olympia.md",
+      "sha256": "9cd6069b1c51714e80a0403a3f40dcd8c12d361524d5b5a6052b0938dd4ebc1e"
+    },
+    {
+      "source": "notes/events/miss-leda09-sirocco.md",
+      "target": "content/notes/events/miss-leda09-sirocco.md",
+      "sha256": "339a0492f68ffc0b9331ad79cb8ffadf082f27db6e4411fbf02654515239b448"
+    },
+    {
+      "source": "notes/events/miss-leda10-kalla-bow.md",
+      "target": "content/notes/events/miss-leda10-kalla-bow.md",
+      "sha256": "badcaf8cf56c4cee64b431e67845ed100c3ef5aed3e5d1a225c19f54e30f12f2"
+    },
+    {
+      "source": "notes/events/miss-p3-02-cai.md",
+      "target": "content/notes/events/miss-p3-02-cai.md",
+      "sha256": "fd0c0fbd496069e16a532e96b1c36af78fd18b734c48d840abd3b08c00321554"
+    },
+    {
+      "source": "notes/events/miss-p3-02-centurio.md",
+      "target": "content/notes/events/miss-p3-02-centurio.md",
+      "sha256": "9ade3dfce6d894b773b06081fa9641bb473dcb682c205ff0ba0021146cf91972"
+    },
+    {
+      "source": "notes/events/miss-p3-02-dietrich.md",
+      "target": "content/notes/events/miss-p3-02-dietrich.md",
+      "sha256": "9984fdd7be1da826c4d7afd421dc67f2a14d3ab76f1a1828f4a6ac59087a1d9a"
+    },
+    {
+      "source": "notes/events/miss-p3-02-fortuna.md",
+      "target": "content/notes/events/miss-p3-02-fortuna.md",
+      "sha256": "3b3020fa56e86b7382c4f4e3fa413fe858657ea583bfd43a6536ee92ded65995"
+    },
+    {
+      "source": "notes/events/miss-p3-02-leda.md",
+      "target": "content/notes/events/miss-p3-02-leda.md",
+      "sha256": "1d0453120e5e407841541b1fe37d181101e957f06fbeb40c962c041e0cf416fc"
+    },
+    {
+      "source": "notes/events/miss-p3-02-theodora.md",
+      "target": "content/notes/events/miss-p3-02-theodora.md",
+      "sha256": "53ea39088e339e6e60aac055d1d1b98d844f073cc65ad9b518d29404b1124ee6"
+    },
+    {
+      "source": "notes/events/miss-p3-03-fortuna.md",
+      "target": "content/notes/events/miss-p3-03-fortuna.md",
+      "sha256": "e888491aeb53205b576f133303c4079c23b2b305733c95764645b704923a4909"
+    },
+    {
+      "source": "notes/events/miss-p3-04-fortuna.md",
+      "target": "content/notes/events/miss-p3-04-fortuna.md",
+      "sha256": "158d8b6dad1f3c77521f76dcb8636f7958727e8711ff212a881fb9d42e01c303"
+    },
+    {
+      "source": "notes/events/miss-p3-05-fortuna.md",
+      "target": "content/notes/events/miss-p3-05-fortuna.md",
+      "sha256": "5851139252d1c827c4f736c41dfc8e2b2e06ffa47b5c5bacc1a256d3e75f4390"
+    },
+    {
+      "source": "notes/events/miss-p3-credna-spear.md",
+      "target": "content/notes/events/miss-p3-credna-spear.md",
+      "sha256": "93021c07ca4e91284ebd86da9202be48906daeb6a29237d14822a7810edf2131"
+    },
+    {
+      "source": "notes/events/miss-post-prologue-2.md",
+      "target": "content/notes/events/miss-post-prologue-2.md",
+      "sha256": "034391b9ba1828131ebfdb9d131dfe9354b2992dd717af416f7b81cfdefbec51"
+    },
+    {
+      "source": "notes/events/miss-post-prologue-3.md",
+      "target": "content/notes/events/miss-post-prologue-3.md",
+      "sha256": "d3683a14c7c4306e4b654813671c7afb43eccc6eec83691c3728917d18582b0c"
+    },
+    {
+      "source": "notes/events/miss-theo03-outfit.md",
+      "target": "content/notes/events/miss-theo03-outfit.md",
+      "sha256": "17dc61dbd3be437de644f85830749be5cf93e20bc307004a71c85ab686c721fd"
+    },
+    {
+      "source": "notes/events/miss-theo05-anatolia.md",
+      "target": "content/notes/events/miss-theo05-anatolia.md",
+      "sha256": "20a6bab0495eb6e003efb5ed188b36864c961e94246d71c11f453d7f3b4c6eec"
+    },
+    {
+      "source": "notes/events/miss-theo06-crystal.md",
+      "target": "content/notes/events/miss-theo06-crystal.md",
+      "sha256": "8e3101e6a966e9f7de57d04fa309d82ee2c1c4918e9abf719e65d3a6b6564913"
+    },
+    {
+      "source": "notes/events/miss-theo07-alexandra.md",
+      "target": "content/notes/events/miss-theo07-alexandra.md",
+      "sha256": "2b9c12c67ba163faf6064f58187a04c1dbfdc184d4850f5684cd9071fbc385b1"
+    },
+    {
+      "source": "notes/events/miss-theo10-back-entrance.md",
+      "target": "content/notes/events/miss-theo10-back-entrance.md",
+      "sha256": "24a94e920827823de394cad93407b234cb1bc29ff10114bfd2c417329025df18"
+    },
+    {
+      "source": "notes/events/miss-theo10-ship.md",
+      "target": "content/notes/events/miss-theo10-ship.md",
+      "sha256": "d26fddc168e9fec9f4a7d5c1ab7fd1f6e0602cd4f7982320d611d435b484731b"
+    },
+    {
+      "source": "notes/events/miss-theo11-return.md",
+      "target": "content/notes/events/miss-theo11-return.md",
+      "sha256": "1ac0761111c0723a67780f6c358bbf1b1470f4a8a11a92ca777451d11667c35f"
+    },
+    {
+      "source": "notes/events/miss-theo12-followup.md",
+      "target": "content/notes/events/miss-theo12-followup.md",
+      "sha256": "b5a78c9b7d5eae2436212294c735b07db435fac508a6c2675a913d6733a5af49"
+    },
+    {
+      "source": "notes/events/miss-war02-creek.md",
+      "target": "content/notes/events/miss-war02-creek.md",
+      "sha256": "00442ac716966cf67b4dc2b1a8818f5605d87d865f7164d7ddc28cb411e17a2b"
+    },
+    {
+      "source": "notes/events/miss-war03-nathan.md",
+      "target": "content/notes/events/miss-war03-nathan.md",
+      "sha256": "5fffc349403305e47e055730604c01bb188bdebea42fff3913bb32b1ebb4f754"
+    },
+    {
+      "source": "notes/exp-boon-decision-review.md",
+      "target": "content/notes/exp-boon-decision-review.md",
+      "sha256": "b5cfe0f57a7349a6c9472302b80cb394859ba0277f8890f84d8dd4aca3bf0c63"
+    },
+    {
+      "source": "notes/final-builds-apply-plan.md",
+      "target": "content/notes/final-builds-apply-plan.md",
+      "sha256": "5593fa075b5c6f9cea4c3590b91815e14014e00e7bf5cfe647d22ec7c42f26d1"
+    },
+    {
+      "source": "notes/final-builds-apply-review.md",
+      "target": "content/notes/final-builds-apply-review.md",
+      "sha256": "ea1366979b460b42ad87df8a317101ee780838f9783a4043d06f2b1aa989983a"
+    },
+    {
+      "source": "notes/final25-apply-evidence.md",
+      "target": "content/notes/final25-apply-evidence.md",
+      "sha256": "6ca4f7f1f2c2f35c0bbe33ca30ea1559f43dccb44d34f54260a79198d2a2e8a1"
+    },
+    {
+      "source": "notes/final25-apply-plan.md",
+      "target": "content/notes/final25-apply-plan.md",
+      "sha256": "f922d39fb69addbc89ba357b35500a26760d016706a6714e4526f31a5481b59c"
+    },
+    {
+      "source": "notes/final25-team-guide.md",
+      "target": "content/notes/final25-team-guide.md",
+      "sha256": "ba053fbc12144de58770a2cba85fe287e1b65de862a8045ff3b9da871e954093"
+    },
+    {
+      "source": "notes/game8-final25-review-plan.md",
+      "target": "content/notes/game8-final25-review-plan.md",
+      "sha256": "4369b7bb53645b11fd9ec1e131fa5f3fcfc12314445a781c739488044e75fda8"
+    },
+    {
+      "source": "notes/game8-final25-review.md",
+      "target": "content/notes/game8-final25-review.md",
+      "sha256": "3e450a934dffece2fba3546b010be95ac8006a5d3ca7b84a2c424107975405cb"
+    },
+    {
+      "source": "notes/gift-disclosure-plan.md",
+      "target": "content/notes/gift-disclosure-plan.md",
+      "sha256": "93277cae305d05da2d7eeb4833b8a30291acdcd062d6d4afadef7da23603aa7b"
+    },
+    {
+      "source": "notes/gift-item-travel-review.md",
+      "target": "content/notes/gift-item-travel-review.md",
+      "sha256": "b2eeab291b4e07742bfc8ec72139abf227f5cef7bc88de851a6cd19e64d16d7a"
+    },
+    {
+      "source": "notes/god-service-review.md",
+      "target": "content/notes/god-service-review.md",
+      "sha256": "c2ef612aadd5f449db2044822be56faf867dfd7a3b5c2dfae2478c3a42af5e04"
+    },
+    {
+      "source": "notes/growth-timing-review.md",
+      "target": "content/notes/growth-timing-review.md",
+      "sha256": "213da6fb63b1dabeb2201d0f0f256232ca324dee70ab169b8d09c73b53f1454b"
+    },
+    {
+      "source": "notes/halvin-lilian-review-plan.md",
+      "target": "content/notes/halvin-lilian-review-plan.md",
+      "sha256": "3d744438c5fc5f4382c550a6e290f9384765c8d052fb51389ecfbd89397005c2"
+    },
+    {
+      "source": "notes/halvin-lilian-review.md",
+      "target": "content/notes/halvin-lilian-review.md",
+      "sha256": "802387269309ccbe8102171ee3f026d3b332baeaaafe4fd80f197a0d79e190da"
+    },
+    {
+      "source": "notes/halvin-real-use-lilian-one-route-review.md",
+      "target": "content/notes/halvin-real-use-lilian-one-route-review.md",
+      "sha256": "fb02fc0327438c6b1941155dbbbed4583a057b74e77cb80bca8298284a560acd"
+    },
+    {
+      "source": "notes/haphazard-training-review.md",
+      "target": "content/notes/haphazard-training-review.md",
+      "sha256": "6f97e38aebf0182a08a66d02cc4b571473c3f04ca36684afafb3ee3bee8d2fd8"
+    },
+    {
+      "source": "notes/healing-roster-review.md",
+      "target": "content/notes/healing-roster-review.md",
+      "sha256": "30739cb338b6601c3b50c067cd3e91bb2ed5cb10b97889c56231b608182b9f86"
+    },
+    {
+      "source": "notes/hive-local-setup-review.md",
+      "target": "content/notes/hive-local-setup-review.md",
+      "sha256": "eda1446043892a65523dc3a69e0febd5423d29ee9dec009d38cfeea0d25c0231"
+    },
+    {
+      "source": "notes/inventory-mount-review.md",
+      "target": "content/notes/inventory-mount-review.md",
+      "sha256": "a9c3c0d80f788d9deeabe334e491a1541dd011203afa5140cb18c2d5efd0627e"
+    },
+    {
+      "source": "notes/knowledge/auto-capture.md",
+      "target": "content/notes/knowledge/auto-capture.md",
+      "sha256": "1c2ec82936dd06f4c861e6ce452c526dd3a261a9139e68e35c50453fa77f884f"
+    },
+    {
+      "source": "notes/knowledge/final25-targets.md",
+      "target": "content/notes/knowledge/final25-targets.md",
+      "sha256": "774a70258c0480924c28d5aa22d5086e3a1f6e24a9eaa730d10799a91a2ad9d7"
+    },
+    {
+      "source": "notes/knowledge/guide-workflow.md",
+      "target": "content/notes/knowledge/guide-workflow.md",
+      "sha256": "6853ba27ae0f248fcf2b35a4de053c331e91b739cda56b21ae3e0815333dc834"
+    },
+    {
+      "source": "notes/knowledge/interface.md",
+      "target": "content/notes/knowledge/interface.md",
+      "sha256": "6c9c9dae09578dd9a6c030c7df6f728b26c3e217ef914e6dd507b0c99b8c6a0d"
+    },
+    {
+      "source": "notes/knowledge/merge-gate-safety.md",
+      "target": "content/notes/knowledge/merge-gate-safety.md",
+      "sha256": "bfc68a19fc92aa51fb3032c150aa579c8d66a0fb585632cbd14a5b2d8ae6992d"
+    },
+    {
+      "source": "notes/knowledge/preferences.md",
+      "target": "content/notes/knowledge/preferences.md",
+      "sha256": "5ade3a1a4cadb066a6ce1e12fdeef79a701e36e6995efee83aa2bec89026534a"
+    },
+    {
+      "source": "notes/knowledge/README.md",
+      "target": "content/notes/knowledge/README.md",
+      "sha256": "a5ba18873d36dc640e2ad7ff24c43787c2bd617c1fbcb4ab4bdb49abcd956b75"
+    },
+    {
+      "source": "notes/knowledge/session-review-20261104.md",
+      "target": "content/notes/knowledge/session-review-20261104.md",
+      "sha256": "da0d6e66896f5bf0ee51abacf00bd26a9af97d9aa7dd5168306af2504fe2dca2"
+    },
+    {
+      "source": "notes/knowledge/sources.md",
+      "target": "content/notes/knowledge/sources.md",
+      "sha256": "c531e373bb2e171a5c2d0f0296d77d9db1d3ea987804bc348118846c616ee36b"
+    },
+    {
+      "source": "notes/knowledge/support-word-meaning.md",
+      "target": "content/notes/knowledge/support-word-meaning.md",
+      "sha256": "447e5a8258a454a4c8bf9d34efe34006c89d7237be1c107996e5a87b050449bb"
+    },
+    {
+      "source": "notes/knowledge/team-results-page.md",
+      "target": "content/notes/knowledge/team-results-page.md",
+      "sha256": "214e90cd3d2bae56586a73a1f13cb4b92b9cc93244a1a83b866199bcf468870c"
+    },
+    {
+      "source": "notes/knowledge/training-advice-guardrails.md",
+      "target": "content/notes/knowledge/training-advice-guardrails.md",
+      "sha256": "2dc0c16818bcd6b84ff077e62dca5ea7f5a0d5c45dd00a2bf16ccbdaa0cc5aba"
+    },
+    {
+      "source": "notes/late-recruit-review.md",
+      "target": "content/notes/late-recruit-review.md",
+      "sha256": "9e4d48aa9022b27d3cfaa9c76ad5e9b5256f521695a1530559ad52993f44b32e"
+    },
+    {
+      "source": "notes/leda-equipment-spoiler.md",
+      "target": "content/notes/leda-equipment-spoiler.md",
+      "sha256": "9d677973517ed3f970ec37d7b2d5ece3e04a2fa01052904999ffc094bd155954"
+    },
+    {
+      "source": "notes/level-renown-review.md",
+      "target": "content/notes/level-renown-review.md",
+      "sha256": "5a9a6f0ffb7adc0294d0647f822b6350d9c7f1c38ad24429e73a4f773cef8368"
+    },
+    {
+      "source": "notes/levin-materials-review.md",
+      "target": "content/notes/levin-materials-review.md",
+      "sha256": "44c4e086d868d4f7f40153c950d423e51025348e0404b9e3421cf8c8cb56cd94"
+    },
+    {
+      "source": "notes/lilian-dietrich-armor-video-review.md",
+      "target": "content/notes/lilian-dietrich-armor-video-review.md",
+      "sha256": "220ef2a780af6300160afdc5988ca1039d60f9b69f472cdf22ae3879310722b7"
+    },
+    {
+      "source": "notes/lilian-final25-apply-plan.md",
+      "target": "content/notes/lilian-final25-apply-plan.md",
+      "sha256": "25caf72c4f1ee97c51d6bc5c90cb62e60db77c48323bbc59eb4820b407e17e1d"
+    },
+    {
+      "source": "notes/lilian-final25-apply-review.md",
+      "target": "content/notes/lilian-final25-apply-review.md",
+      "sha256": "30a58927ccc2cfbba451bd8911eeefacd2b890cad15a0eeb4e6940c0cdc49b3b"
+    },
+    {
+      "source": "notes/loretta-archer-build.md",
+      "target": "content/notes/loretta-archer-build.md",
+      "sha256": "9436824612a9d604c2c1cfa59addfa4d8b88ac3bf1aac75ac6fdff9d708ca37d"
+    },
+    {
+      "source": "notes/loretta-calamity-research-plan.md",
+      "target": "content/notes/loretta-calamity-research-plan.md",
+      "sha256": "bf9138ecf66ffa2fbc62646d531d84321a493dd59fcf3cc6e36946cd72bef54b"
+    },
+    {
+      "source": "notes/loretta-calamity-research.md",
+      "target": "content/notes/loretta-calamity-research.md",
+      "sha256": "28dc0f709d8bd0f3f55a45463b3233f4335f03fe6e55ca3894f4d195728081f1"
+    },
+    {
+      "source": "notes/material-reference-review.md",
+      "target": "content/notes/material-reference-review.md",
+      "sha256": "7cd01d9b6f0cbc9aba913314c89eadf035124a09e2019435e24e491e37319310"
+    },
+    {
+      "source": "notes/missables-shopping-review.md",
+      "target": "content/notes/missables-shopping-review.md",
+      "sha256": "a718eb7f643d2a7e2a9ef71542a673d2d03d11fe03399234d6a9d608e8813ae0"
+    },
+    {
+      "source": "notes/modal-reading-review.md",
+      "target": "content/notes/modal-reading-review.md",
+      "sha256": "2039a9a7ab300185a8c8b939e457d1fb11b993f67e990e9956ed3192d125ffc5"
+    },
+    {
+      "source": "notes/modal-route-scope-review.md",
+      "target": "content/notes/modal-route-scope-review.md",
+      "sha256": "a7b8f4660c2a4f954d45b5698c20049a9f72598b501523b3505cf3141b69d6b9"
+    },
+    {
+      "source": "notes/next-action-scroll-plan.md",
+      "target": "content/notes/next-action-scroll-plan.md",
+      "sha256": "a20908d2ba2a1bed22bf3d29f099d157fb89501eea163ed211c3c06268d577a9"
+    },
+    {
+      "source": "notes/next-action-scroll-review.md",
+      "target": "content/notes/next-action-scroll-review.md",
+      "sha256": "56e52a577a675457f73ef8fee72f73c33b5f072fe45e477eb29cdb651d17ee3f"
+    },
+    {
+      "source": "notes/normal-part1-level-comparison.md",
+      "target": "content/notes/normal-part1-level-comparison.md",
+      "sha256": "7bc18aa68b088c22942003860129720c91ec8eda0862245fa325e820a86dea0f"
+    },
+    {
+      "source": "notes/optional-schedules-review.md",
+      "target": "content/notes/optional-schedules-review.md",
+      "sha256": "766783a64af6c8c7b07ad48f292395428bc152a78fe4bfb59319b1663c55a13e"
+    },
+    {
+      "source": "notes/other-routes-schedules-review.md",
+      "target": "content/notes/other-routes-schedules-review.md",
+      "sha256": "28fbf60c7343e04227c42469e4336d123c0fb8c5e4306bbe46abf1dd225111a4"
+    },
+    {
+      "source": "notes/panel-visibility-review.md",
+      "target": "content/notes/panel-visibility-review.md",
+      "sha256": "e5af2c351722a449e0ba052322953f2467ad7167993c80d59ffbd263651a1123"
+    },
+    {
+      "source": "notes/part1-paths-review.md",
+      "target": "content/notes/part1-paths-review.md",
+      "sha256": "df726c473c131b66c16bfc922f772f79947a91130920ee21d93fe201ae89ac52"
+    },
+    {
+      "source": "notes/personalized-evidence.md",
+      "target": "content/notes/personalized-evidence.md",
+      "sha256": "988368e07f6dd2fc19f28fc07c107f439f24a40a772c0a8a61ccb2425dababc0"
+    },
+    {
+      "source": "notes/personalized-fact-check.md",
+      "target": "content/notes/personalized-fact-check.md",
+      "sha256": "310a24a5f780b1542419f8996da711297f27e26bfc46417f563e4b2acd6768ac"
+    },
+    {
+      "source": "notes/personalized-readability-review.md",
+      "target": "content/notes/personalized-readability-review.md",
+      "sha256": "2bd1a0043b2c66dbc601c1995a3c45b530e5cb3b13be3118615ed2f103b1a202"
+    },
+    {
+      "source": "notes/phase-goals-review.md",
+      "target": "content/notes/phase-goals-review.md",
+      "sha256": "58c4f2521cc0ea610fe0deda8ffff34dd689ec5b4a613cbf41b6454987feec31"
+    },
+    {
+      "source": "notes/plan.md",
+      "target": "content/notes/plan.md",
+      "sha256": "54575000417e81a3c08ea101e3fcc6f25d70c563131a27d7e50071d40e591053"
+    },
+    {
+      "source": "notes/playbook-review.md",
+      "target": "content/notes/playbook-review.md",
+      "sha256": "9ea3266519e34e9177846fa441a4a46201fbfbea979f626f7cef249a53168e0c"
+    },
+    {
+      "source": "notes/poet-copy-review.md",
+      "target": "content/notes/poet-copy-review.md",
+      "sha256": "746ddbc8f8baa72fbf87dc7f1a5e407fefe2138345c4015567e8a748ecdc5720"
+    },
+    {
+      "source": "notes/proposals/final25-swap-review-20261104.md",
+      "target": "content/notes/proposals/final25-swap-review-20261104.md",
+      "sha256": "d538859c4fff3e8990900e4ae8fed13e6e2c00a40809ebeb150b951c234e616b"
+    },
+    {
+      "source": "notes/proposals/part3-candidates-plan.md",
+      "target": "content/notes/proposals/part3-candidates-plan.md",
+      "sha256": "6717da8c8e686b589004c00e8dbd890f8751864e92423c4a250523304d2fac69"
+    },
+    {
+      "source": "notes/proposals/part3-candidates-review.md",
+      "target": "content/notes/proposals/part3-candidates-review.md",
+      "sha256": "8db6b272ec23d541bb262de13d0f344e7740de6342b122c3a23f01cf41ab5fd1"
+    },
+    {
+      "source": "notes/proposals/team-review-20261104-plan.md",
+      "target": "content/notes/proposals/team-review-20261104-plan.md",
+      "sha256": "f5d63a1c2b3c94c705c595d715bc2cf6955d72b3bdc516696bc14993643de95e"
+    },
+    {
+      "source": "notes/proposals/team-review-20261104.md",
+      "target": "content/notes/proposals/team-review-20261104.md",
+      "sha256": "6846d96bc711d45d33f89b0ab7fbab7167478545aac26a442587b0b9303aa6f8"
+    },
+    {
+      "source": "notes/questions.md",
+      "target": "content/notes/questions.md",
+      "sha256": "7508d3d237dcb1d2010c3adf9ad69d683f1de6e9a860be62d5627d4e6d131304"
+    },
+    {
+      "source": "notes/react-canonical-review.md",
+      "target": "content/notes/react-canonical-review.md",
+      "sha256": "86a887cc90d9e81e6574493d1f8603ce34005d789219d03e2f950d345d454fae"
+    },
+    {
+      "source": "notes/react-personalized-plan.md",
+      "target": "content/notes/react-personalized-plan.md",
+      "sha256": "909fa8306ffb05611f2892309e6606be3c02bf6fb780031ab6d52502af74829c"
+    },
+    {
+      "source": "notes/react-personalized-review.md",
+      "target": "content/notes/react-personalized-review.md",
+      "sha256": "87abf112a225cff07685244decf68440eec28f94e47aca570477f39640f37b80"
+    },
+    {
+      "source": "notes/readiness-rework-plan.md",
+      "target": "content/notes/readiness-rework-plan.md",
+      "sha256": "aeb348c476e8e3c3b0945f312a8219d427695e3cc645bf596b97845f3a34eab0"
+    },
+    {
+      "source": "notes/recruit-all-review.md",
+      "target": "content/notes/recruit-all-review.md",
+      "sha256": "1c6dabd4a215704561cddf89d196523ca75732efd3fa25215e6e4f2e08677498"
+    },
+    {
+      "source": "notes/recruit-material-review.md",
+      "target": "content/notes/recruit-material-review.md",
+      "sha256": "ee7c603324da9d397effa87f49c8dfed678c9283f04bc328f65b5db97ccc3473"
+    },
+    {
+      "source": "notes/recruitment/aurum-rose.md",
+      "target": "content/notes/recruitment/aurum-rose.md",
+      "sha256": "5e9999975aeef731af76112f7326ec2822ffd278a3fde75d0ef3c46175ff7a69"
+    },
+    {
+      "source": "notes/recruitment/azure-heart.md",
+      "target": "content/notes/recruitment/azure-heart.md",
+      "sha256": "4dcf98d120f6b8888fc327efb5c9402e69c8b6c6036e2f0048eaefa340c0c579"
+    },
+    {
+      "source": "notes/recruitment/bronze-axe.md",
+      "target": "content/notes/recruitment/bronze-axe.md",
+      "sha256": "9ba0a60bcb4339a545ed40d4bffe243f15be7a47e8741f23675edc3d75fd4705"
+    },
+    {
+      "source": "notes/recruitment/dates.md",
+      "target": "content/notes/recruitment/dates.md",
+      "sha256": "85055caa4f5e650932280b6a9b92d899c55f1e07f382bb3c5e6186c7e2043009"
+    },
+    {
+      "source": "notes/recruitment/fabio-proof.md",
+      "target": "content/notes/recruitment/fabio-proof.md",
+      "sha256": "b22756852b60c10a3657e3bff8c6367a58bad07fb86fabcb0e78d4b5c05d7a2e"
+    },
+    {
+      "source": "notes/recruitment/fabled-ginji.md",
+      "target": "content/notes/recruitment/fabled-ginji.md",
+      "sha256": "22f99b3dfcefa7d537bc8c74f13ba22f753afc1285bdf322bf5dc0cc2be44728"
+    },
+    {
+      "source": "notes/recruitment/giant-meat.md",
+      "target": "content/notes/recruitment/giant-meat.md",
+      "sha256": "603d378a98d6c594a606bd96b7b8f3b1f45072ee8f1334ac1ee137e804f927f3"
+    },
+    {
+      "source": "notes/recruitment/gift-box.md",
+      "target": "content/notes/recruitment/gift-box.md",
+      "sha256": "6ac525824533e8fedc434126b5e01d630e414a321d3fbd60c45cbaac86b8b71b"
+    },
+    {
+      "source": "notes/recruitment/glirmosa.md",
+      "target": "content/notes/recruitment/glirmosa.md",
+      "sha256": "64e8129419dc0cf5252781cd6f3f1500eb47853e4db83303f61a22b1a99341fe"
+    },
+    {
+      "source": "notes/recruitment/holy-water.md",
+      "target": "content/notes/recruitment/holy-water.md",
+      "sha256": "4f0140c3381fab001e20185529124f2979f754f069636b95d6ec154cb4e1a5b5"
+    },
+    {
+      "source": "notes/recruitment/iron-axe.md",
+      "target": "content/notes/recruitment/iron-axe.md",
+      "sha256": "2bac8b946f5845a7fadc315c16b4b08aa444dc5b416477213748cee8f335ddeb"
+    },
+    {
+      "source": "notes/recruitment/iron-bow.md",
+      "target": "content/notes/recruitment/iron-bow.md",
+      "sha256": "128f1c84369fc92ce05ea6168129743807de364371782f0178920d71ce6a7576"
+    },
+    {
+      "source": "notes/recruitment/iron-lance.md",
+      "target": "content/notes/recruitment/iron-lance.md",
+      "sha256": "d3137c9d8b12abe3cb47cad3dfa6e28c2ae6eb67c8c056af1c38615952d4bec3"
+    },
+    {
+      "source": "notes/recruitment/iron-sword.md",
+      "target": "content/notes/recruitment/iron-sword.md",
+      "sha256": "5ea3ee6411e5bdfc87aabe1075a207dc71f24c360538036594ead33a2bf1bcde"
+    },
+    {
+      "source": "notes/recruitment/kosharuga.md",
+      "target": "content/notes/recruitment/kosharuga.md",
+      "sha256": "f24a092187b592343d234bbfbf2ef9e2f60cdd351512d3b3bfc5e315c495d527"
+    },
+    {
+      "source": "notes/recruitment/paradise-fish.md",
+      "target": "content/notes/recruitment/paradise-fish.md",
+      "sha256": "6aa11bb702b888b2f706cf8e47470b6b158de59233bb3a3dc58f93d5ab620bb2"
+    },
+    {
+      "source": "notes/recruitment/poet-copy.md",
+      "target": "content/notes/recruitment/poet-copy.md",
+      "sha256": "1245598ba25fcef5ce87d2de6fa5cae02eb8472f4d69ab0078894e8172504005"
+    },
+    {
+      "source": "notes/recruitment/sandworm-meat.md",
+      "target": "content/notes/recruitment/sandworm-meat.md",
+      "sha256": "345f701b97d91cbe549b6ee792c0202ce51844d58d1d0ab374d691592e729a56"
+    },
+    {
+      "source": "notes/recruitment/scarlet-drops.md",
+      "target": "content/notes/recruitment/scarlet-drops.md",
+      "sha256": "c748b0fdd98ced2777d5caf8617091595f02dcd54c19a72862cea4127ef6f3f3"
+    },
+    {
+      "source": "notes/recruitment-gates-review.md",
+      "target": "content/notes/recruitment-gates-review.md",
+      "sha256": "d518e6319683b78cf8c5a010971a9681a70a7fef4d154759bb960738453cc694"
+    },
+    {
+      "source": "notes/reference-modal-review.md",
+      "target": "content/notes/reference-modal-review.md",
+      "sha256": "fad6816708581c0128a36dbf52172c6a6a799bc3a75e837346f166fe4cd53f8b"
+    },
+    {
+      "source": "notes/reference-reader-review.md",
+      "target": "content/notes/reference-reader-review.md",
+      "sha256": "13083482d6726500279c3d7ee635b7bd30aa39317bf3fa3528d3417ba6bcc8c3"
+    },
+    {
+      "source": "notes/restart-review.md",
+      "target": "content/notes/restart-review.md",
+      "sha256": "72e4ff7c301ddf7fc7aae4bd869a870f338bea7a96dffc8be5dc6e89b2949f70"
+    },
+    {
+      "source": "notes/roster-build-review.md",
+      "target": "content/notes/roster-build-review.md",
+      "sha256": "dc3982c04856e0564d6dd45b1db884a7e00b0414057a384a9e52d183737d9b73"
+    },
+    {
+      "source": "notes/roster-selection-review.md",
+      "target": "content/notes/roster-selection-review.md",
+      "sha256": "7765c139e0a618e016dbd346219e0e55b162c067220ae62a43e3eaf265893b67"
+    },
+    {
+      "source": "notes/sequential-routes-apply-plan.md",
+      "target": "content/notes/sequential-routes-apply-plan.md",
+      "sha256": "0779a5cd082eacaaffcc0020118028bbc3f4c47a6fd6e1796fc478ef48fd916f"
+    },
+    {
+      "source": "notes/sequential-routes-apply-review.md",
+      "target": "content/notes/sequential-routes-apply-review.md",
+      "sha256": "69d8aa919555668c5f22cad2d1b5e3e6b5460d56297968dcb3ab0d38a23d42f3"
+    },
+    {
+      "source": "notes/sequential-routes-training-review.md",
+      "target": "content/notes/sequential-routes-training-review.md",
+      "sha256": "9e79653e2d3bbac0057cd0d3a7e505fc721a52331a0e6698858b3e45b7d57827"
+    },
+    {
+      "source": "notes/shadow-calamity-plan.md",
+      "target": "content/notes/shadow-calamity-plan.md",
+      "sha256": "87a520cc055998b00012f9a2eff85e6c48ef25db108a4a207c15931e2b28c88c"
+    },
+    {
+      "source": "notes/shadow-calamity-review.md",
+      "target": "content/notes/shadow-calamity-review.md",
+      "sha256": "b8b8d80d3ec977cdb9b4f7cc85e59a17446448cca3cd23322fc514cf64b64470"
+    },
+    {
+      "source": "notes/starter-handoff-plan.md",
+      "target": "content/notes/starter-handoff-plan.md",
+      "sha256": "b7346be774cc30863f488166ff0e0f0849c14c6b10186eac8114c33299c8f254"
+    },
+    {
+      "source": "notes/starter-handoff-review.md",
+      "target": "content/notes/starter-handoff-review.md",
+      "sha256": "0a595545e78bc9701203ef5b068c054033f00cab2d781afe138f0010faf10929"
+    },
+    {
+      "source": "notes/support-follow-along.md",
+      "target": "content/notes/support-follow-along.md",
+      "sha256": "fcc23e4e19e51eef2062d4b60cbb3ba22e796e3ef8d61bff9d3da885bf54f109"
+    },
+    {
+      "source": "notes/support-pairs-by-route.md",
+      "target": "content/notes/support-pairs-by-route.md",
+      "sha256": "dbdbfc53f26496d17dbe564f1d279bc1f2d6850dea6b23aa007a6f7493d14247"
+    },
+    {
+      "source": "notes/sword-xp-review.md",
+      "target": "content/notes/sword-xp-review.md",
+      "sha256": "cb00177e7f23b205bc8072a2800509964fc9e7365afd40cc98b0de0166adcf7f"
+    },
+    {
+      "source": "notes/team-4k-polish-plan.md",
+      "target": "content/notes/team-4k-polish-plan.md",
+      "sha256": "03cb121051042618182084e6ef90604eee0d23fe26b8a8c3a5b7636ec61bb9ff"
+    },
+    {
+      "source": "notes/team-4k-polish-review.md",
+      "target": "content/notes/team-4k-polish-review.md",
+      "sha256": "7eee13e8b344485d76a6776146f3466b335e24feadebaf9ce9eb48a313b47de6"
+    },
+    {
+      "source": "notes/team-balance-recheck-plan.md",
+      "target": "content/notes/team-balance-recheck-plan.md",
+      "sha256": "6d9777496a85cb812d381ccef4557098ba236b3be5f17ab91fc06e6f96e87f9e"
+    },
+    {
+      "source": "notes/team-balance-recheck-review.md",
+      "target": "content/notes/team-balance-recheck-review.md",
+      "sha256": "ed3d82b2078ef3e9a69a736ffefbe7a32eff2f5863fbb81be2ab7140690e794b"
+    },
+    {
+      "source": "notes/team-page-followup-layout.md",
+      "target": "content/notes/team-page-followup-layout.md",
+      "sha256": "7b319b98939bedab8f8e928eb4f5495ae49c39b75cb4207f11eb26387833460f"
+    },
+    {
+      "source": "notes/team-page-merge-plan.md",
+      "target": "content/notes/team-page-merge-plan.md",
+      "sha256": "0c342df0d02724cac94a2de116e639042ce6f912671648bc0418d29aca6ebef0"
+    },
+    {
+      "source": "notes/team-page-merge-review.md",
+      "target": "content/notes/team-page-merge-review.md",
+      "sha256": "aeb761b259453df6eb50df01d99106a259ed7478a7a039496179a49b5e66624d"
+    },
+    {
+      "source": "notes/team-scenario-differences-plan.md",
+      "target": "content/notes/team-scenario-differences-plan.md",
+      "sha256": "8d60a3d5967aa7cb80fb848329254375168eaf00c92b40fefb933f37a6cbaa16"
+    },
+    {
+      "source": "notes/team-scenario-differences-review.md",
+      "target": "content/notes/team-scenario-differences-review.md",
+      "sha256": "6d1ca7eb468c094113a242df7603a077faef3482ce95f5ab3d1232e0b56d88a6"
+    },
+    {
+      "source": "notes/team-signature-weapons-plan.md",
+      "target": "content/notes/team-signature-weapons-plan.md",
+      "sha256": "46c4d6a4659be0f3aa86e05e3201ac32ea6b4c726531c6e20022e7a1f071076c"
+    },
+    {
+      "source": "notes/team-signature-weapons-review.md",
+      "target": "content/notes/team-signature-weapons-review.md",
+      "sha256": "bddb55369347aa3bef011d4e66e6fa389adf43207a56cb7db5dd072ef26cb04d"
+    },
+    {
+      "source": "notes/team-single-view-restored.md",
+      "target": "content/notes/team-single-view-restored.md",
+      "sha256": "d61dbc3da79ad1d03005d726db3747f0345a85bc1e586a123646fae0905c4bd7"
+    },
+    {
+      "source": "notes/team-spacing-text-review.md",
+      "target": "content/notes/team-spacing-text-review.md",
+      "sha256": "f922312d6f97f5e8a97a37a450535bde7c33287de1ac4e0177c68af25fa6dea7"
+    },
+    {
+      "source": "notes/team-specialties-fit-plan.md",
+      "target": "content/notes/team-specialties-fit-plan.md",
+      "sha256": "f51b2b74c7a0abe6ff41060934a42a91fdc678c0b3281a70849a4090e8f67b22"
+    },
+    {
+      "source": "notes/team-specialties-fit-review.md",
+      "target": "content/notes/team-specialties-fit-review.md",
+      "sha256": "80e7d8aedbc7b2258de24e125fc4145522d06e8a42546ead1ed4faa08607654a"
+    },
+    {
+      "source": "notes/team-specialty-row-plan.md",
+      "target": "content/notes/team-specialty-row-plan.md",
+      "sha256": "a3d0c64d564572bee75162802f1aac372ddacbbafbe5dda5b101eef12cf79611"
+    },
+    {
+      "source": "notes/team-specialty-row-review.md",
+      "target": "content/notes/team-specialty-row-review.md",
+      "sha256": "b6145d311683c434032a32399ed1d8c1243df9330f50e5b11a03b54adbe75329"
+    },
+    {
+      "source": "notes/theodora-ch5-review.md",
+      "target": "content/notes/theodora-ch5-review.md",
+      "sha256": "f2bf5c65fb5545fac6a7d17042c728d96ad65db1ba970e53dce870b914301ebf"
+    },
+    {
+      "source": "notes/theodora-first-war-preservation.md",
+      "target": "content/notes/theodora-first-war-preservation.md",
+      "sha256": "50549137bc052235773cc72b01965cd0336df1311db93ae6dfde11bf608a9f2e"
+    },
+    {
+      "source": "notes/theodora-inn-versus-field-exp-review.md",
+      "target": "content/notes/theodora-inn-versus-field-exp-review.md",
+      "sha256": "154792028e976fd6faf1262d046f206731e4983fd365c2e60d6a7d44df2e2c41"
+    },
+    {
+      "source": "notes/theodora-lv20-class-review.md",
+      "target": "content/notes/theodora-lv20-class-review.md",
+      "sha256": "a29f9e2b9274448d1b7f1968a8873a5e84797e898860ef4ba959242c9fefbad6"
+    },
+    {
+      "source": "notes/theodora-renown-review.md",
+      "target": "content/notes/theodora-renown-review.md",
+      "sha256": "1ce559741799899753f21f08b3604bf1845df25ba42ae9d10b854451e7f38481"
+    },
+    {
+      "source": "notes/theodora-timing-review.md",
+      "target": "content/notes/theodora-timing-review.md",
+      "sha256": "5dd3118d912c6f2cde4f281bbdba7f712df8277d2d7afd34923de952cc11b6a4"
+    },
+    {
+      "source": "notes/three-houses-xp-reference.md",
+      "target": "content/notes/three-houses-xp-reference.md",
+      "sha256": "3a2503cf1f47662559590aeeee60e57a1f648b7580f5164da6e473de1928a3e3"
+    },
+    {
+      "source": "notes/thry-fruit-name-review.md",
+      "target": "content/notes/thry-fruit-name-review.md",
+      "sha256": "506410a2256344b2f62e774eef2ef66b83cdc81281cbf08782cd78e23ab5dce2"
+    },
+    {
+      "source": "notes/timed-checklist-review.md",
+      "target": "content/notes/timed-checklist-review.md",
+      "sha256": "67f79834a8277cb13b83a77f58a7d2d50a0a8b3c37461ab32f6d52a235bff332"
+    },
+    {
+      "source": "notes/training-priorities-review.md",
+      "target": "content/notes/training-priorities-review.md",
+      "sha256": "ddba6de337d9d5da465bf064a09506846cecc8c32506092e9529d22e91bdf40f"
+    },
+    {
+      "source": "notes/ui-alignment-review.md",
+      "target": "content/notes/ui-alignment-review.md",
+      "sha256": "dd830acbd87c350f112d9395c5fe9ae90f88bfc8145885af56344de3b884af7c"
+    },
+    {
+      "source": "notes/underworld-merge-safety-plan.md",
+      "target": "content/notes/underworld-merge-safety-plan.md",
+      "sha256": "acb50cd23aad05ea8479120dab9c9e88d21ab73849c14bb557576d2fccd4cc44"
+    },
+    {
+      "source": "notes/underworld-merge-safety-review.md",
+      "target": "content/notes/underworld-merge-safety-review.md",
+      "sha256": "073d6ec76d9fad2d431d142e9fb81e8e0e4e06d28ff770ad6fc9acf07eb4fb3b"
+    },
+    {
+      "source": "notes/underworld-merge-safety.md",
+      "target": "content/notes/underworld-merge-safety.md",
+      "sha256": "41b2f3d73499d2f7000c731a6e01284dbf41e1c083f831ff4109cc17f4e78f5c"
+    },
+    {
+      "source": "notes/visual-review.md",
+      "target": "content/notes/visual-review.md",
+      "sha256": "a232ae7436ce792d3d68be56bad44509300009a28d0138a6bff82c3bcb33634b"
+    },
+    {
+      "source": "notes/weapons/answerer-arisen.md",
+      "target": "content/notes/weapons/answerer-arisen.md",
+      "sha256": "c009c2234e4469d6bbe71f8d9596a14e12964f48cc9e5520b152c630e674480a"
+    },
+    {
+      "source": "notes/weapons/answerer.md",
+      "target": "content/notes/weapons/answerer.md",
+      "sha256": "1b71792a175d8b27b03ae02ade2548c09a3bca58047a1c5df4177b588bbcb53d"
+    },
+    {
+      "source": "notes/weapons/assal.md",
+      "target": "content/notes/weapons/assal.md",
+      "sha256": "42484db906641fb3643e0e61a7bffc379d1a5289e6cc15bf56b838f5bb4c3c24"
+    },
+    {
+      "source": "notes/weapons/bardiche.md",
+      "target": "content/notes/weapons/bardiche.md",
+      "sha256": "781c6a5eda3e2c4fa67c1ae8daafdca85ea6eb41b1b8f52fb929d18975296ae4"
+    },
+    {
+      "source": "notes/weapons/cleansing-blade.md",
+      "target": "content/notes/weapons/cleansing-blade.md",
+      "sha256": "873d798d737fdbf49e60b419f0ae8301a0a78365b7e4c5f8922069133e1f1022"
+    },
+    {
+      "source": "notes/weapons/credna-s-mallet.md",
+      "target": "content/notes/weapons/credna-s-mallet.md",
+      "sha256": "ecdb1562a4848a3f8fddde8843e27ea0b9c944659e04433e16e0c1f7db5388a8"
+    },
+    {
+      "source": "notes/weapons/da-mina-gauntlets.md",
+      "target": "content/notes/weapons/da-mina-gauntlets.md",
+      "sha256": "080ab5ba2be797e55678cf8655779a3fac4ab7cae03fff055f78f656d00b1cb4"
+    },
+    {
+      "source": "notes/weapons/da-mina-sword.md",
+      "target": "content/notes/weapons/da-mina-sword.md",
+      "sha256": "7ed1913ab093571e7acd2991df54a1b2ff3179f28de809d0e9dbac4ecceb7d18"
+    },
+    {
+      "source": "notes/weapons/flyssa.md",
+      "target": "content/notes/weapons/flyssa.md",
+      "sha256": "f0448c94c935c238d0e26cb6261f3786586bc6180c42534655aeccaced056145"
+    },
+    {
+      "source": "notes/weapons/grasitha.md",
+      "target": "content/notes/weapons/grasitha.md",
+      "sha256": "a9327d37373a980438c958959f53e598d4a47a32f75f733eed2b236188991e46"
+    },
+    {
+      "source": "notes/weapons/greatsword.md",
+      "target": "content/notes/weapons/greatsword.md",
+      "sha256": "129dbc8588ad7230234fa9ef9e9e497e44b320f500c49764faf37f05c86c4c45"
+    },
+    {
+      "source": "notes/weapons/halberd.md",
+      "target": "content/notes/weapons/halberd.md",
+      "sha256": "a62c3b7028f707acc5db9bd1a153ce5eb9dd76fc51c352659a483f9e4d5cf96a"
+    },
+    {
+      "source": "notes/weapons/hammer.md",
+      "target": "content/notes/weapons/hammer.md",
+      "sha256": "17f6a86b8494a478315c46e851b140c3621a798383f2c6c4e342611f6c21bf0f"
+    },
+    {
+      "source": "notes/weapons/horsekiller-bow.md",
+      "target": "content/notes/weapons/horsekiller-bow.md",
+      "sha256": "27d09cc05e6913afcd1a300efb3c910a769918bc52e9452b1619d6c439e60877"
+    },
+    {
+      "source": "notes/weapons/hunter-s-bow.md",
+      "target": "content/notes/weapons/hunter-s-bow.md",
+      "sha256": "2ce3c33aee52b80da8653d43e37ab835c3da3af15b40ab3dda51905da476be48"
+    },
+    {
+      "source": "notes/weapons/idah-s-bow.md",
+      "target": "content/notes/weapons/idah-s-bow.md",
+      "sha256": "ba9b262bb5f7144b1b2c3dd167bd52c710805961d7d1b79c75eee0f811e8da58"
+    },
+    {
+      "source": "notes/weapons/ji.md",
+      "target": "content/notes/weapons/ji.md",
+      "sha256": "977cf62b9e7954e5c1ceaad695187150b1dd042f56a3f80ed569a7f3002ca679"
+    },
+    {
+      "source": "notes/weapons/kalla-s-bow.md",
+      "target": "content/notes/weapons/kalla-s-bow.md",
+      "sha256": "ae5c764591c7649a69cbb594be15914a69e37f415377ec4865723fe347e92e39"
+    },
+    {
+      "source": "notes/weapons/levin-sword.md",
+      "target": "content/notes/weapons/levin-sword.md",
+      "sha256": "93cf6ae0b2cde9ddb917fdf1ccd7a054899485b569c6a3bc3a1bf6f99d5c6485"
+    },
+    {
+      "source": "notes/weapons/longbow.md",
+      "target": "content/notes/weapons/longbow.md",
+      "sha256": "56dd80582cdf8bc3ab1a28abe16ee4a57d622a8d704349ec0f816fca59df4eed"
+    },
+    {
+      "source": "notes/weapons/mace.md",
+      "target": "content/notes/weapons/mace.md",
+      "sha256": "bc32ffd136bd988f7a954ba33b7d13ed271d4dc19e7201eec37b8f6dced36262"
+    },
+    {
+      "source": "notes/weapons/mahadu-s-spear.md",
+      "target": "content/notes/weapons/mahadu-s-spear.md",
+      "sha256": "05f0744fbc7a2b76391d9549d862b33c889172ad5f3aa9d0657cc998e2abcdca"
+    },
+    {
+      "source": "notes/weapons/mini-bow.md",
+      "target": "content/notes/weapons/mini-bow.md",
+      "sha256": "877cab238d5e7b04e3388c371a7a77442b18e71fa04ef1918348ec311ad00c67"
+    },
+    {
+      "source": "notes/weapons/pilum.md",
+      "target": "content/notes/weapons/pilum.md",
+      "sha256": "344ad195a5c1ba91d65368268546b500e42fa390b426b2c86679b4cc0383c5c1"
+    },
+    {
+      "source": "notes/weapons/qiankun-circles.md",
+      "target": "content/notes/weapons/qiankun-circles.md",
+      "sha256": "5b27d83f313cd93ac64a42e5bbd876cec7928153a16842bc860886974dec54c0"
+    },
+    {
+      "source": "notes/weapons/ridersbane.md",
+      "target": "content/notes/weapons/ridersbane.md",
+      "sha256": "adec6e75606d7bf5e0a5550b0dc430d6a24fdc9f2fc5f44cfd76140fb6d44fb9"
+    },
+    {
+      "source": "notes/weapons/shining-spear.md",
+      "target": "content/notes/weapons/shining-spear.md",
+      "sha256": "148ac8ac16bef12ebeae5e4232258830f258a1b08897dcb35faae8702afeca29"
+    },
+    {
+      "source": "notes/weapons/smyrnos-s-channels.md",
+      "target": "content/notes/weapons/smyrnos-s-channels.md",
+      "sha256": "be4ef8ed5f45013ec342116685ac3fb3d5c81ae95575a362a2a2970bb57e1dcc"
+    },
+    {
+      "source": "notes/weapons/star-spear.md",
+      "target": "content/notes/weapons/star-spear.md",
+      "sha256": "1cc5d2b70b008e33d61c8fb74d18d1b737139c745685046114cbd0c73eacf695"
+    },
+    {
+      "source": "notes/weapons/vendetta.md",
+      "target": "content/notes/weapons/vendetta.md",
+      "sha256": "5ad99730ff0318dcffee227dd2e5e837da977829f33170e60e0fb8cdfe8057e5"
+    },
+    {
+      "source": "notes/weapons/venin-bow.md",
+      "target": "content/notes/weapons/venin-bow.md",
+      "sha256": "8ba85deac658e18989bcf36b09973a973101463ca81fb2e224f2b602ef39ffb5"
+    },
+    {
+      "source": "notes/weapons/whirlwind-blade.md",
+      "target": "content/notes/weapons/whirlwind-blade.md",
+      "sha256": "e5afb3e8cf8494accdfd51a741e044bba0e3fb9c555d7aebd3a6059d069301b7"
+    },
+    {
+      "source": "notes/weapons/windfire-rings.md",
+      "target": "content/notes/weapons/windfire-rings.md",
+      "sha256": "f4786abe272a8d234625b3cdbc144960e83aa6299976cf0dd2678b832a572f6e"
+    },
+    {
+      "source": "notes/weapons/you-sou-fu.md",
+      "target": "content/notes/weapons/you-sou-fu.md",
+      "sha256": "793d70648a50a203635ff6b2bdd8a18b243fe20d95f4072e8a5ab8f1b5428615"
+    },
+    {
+      "source": "notes/weapons/zalmoxis.md",
+      "target": "content/notes/weapons/zalmoxis.md",
+      "sha256": "24d9d3edabff3bc0d7d9c5fcb2cef982b1585598af327a55023ab5e0435fe2a3"
+    },
+    {
+      "source": "notes/weapons/zanbato.md",
+      "target": "content/notes/weapons/zanbato.md",
+      "sha256": "c2e50dfad8eedc22f3ad1aef29cc821874cf57d806d4c1b401802042e7b19670"
+    },
+    {
+      "source": "notes/weapons/zerberus.md",
+      "target": "content/notes/weapons/zerberus.md",
+      "sha256": "6632e534e56e0473990dd5b64c822ecfcb960d487f3aaea9e44bf3ffed59108b"
+    },
+    {
+      "source": "notes/weekly-support-review.md",
+      "target": "content/notes/weekly-support-review.md",
+      "sha256": "9783b7362910fdb994756677e927953f56f7529254fb7f25ed88ba07d371e3b2"
+    },
+    {
+      "source": "notes/workspace-fixed-review.md",
+      "target": "content/notes/workspace-fixed-review.md",
+      "sha256": "9ea1c2c41edf801ba92f4877e9c149bb0bc5a69ac71d68e916f40fd989f965d6"
+    },
+    {
+      "source": "notes/xp-checklist-review.md",
+      "target": "content/notes/xp-checklist-review.md",
+      "sha256": "3f285e23493d03e5ecd633834e44057629928f8f44601e9570d166f6de4218ef"
+    }
+  ],
+  "generatedSourceSha256": "06493121960bcb717b626a51204c1b620c8bfd5e0042db7d95dd869ebc1f7871",
+  "activeActions": 1858,
+  "checkIds": 2817,
+  "peopleByRoute": {
+    "theodora": 16,
+    "leda": 16,
+    "dietrich": 16,
+    "kai": 13
+  },
+  "peopleByStage": {
+    "theodora-plan": 16,
+    "leda-plan": 16,
+    "dietrich-plan": 16,
+    "kai-plan": 13,
+    "theodora-war-plan": 16,
+    "leda-war-plan": 16,
+    "dietrich-war-plan": 16,
+    "kai-war-plan": 13,
+    "part3-plan": 61
+  },
+  "recruitAssignments": 63,
+  "referenceDocs": 318,
+  "oldBlockCounts": {
+    "theodora-plan": 181,
+    "leda-plan": 177,
+    "dietrich-plan": 198,
+    "kai-plan": 170,
+    "theodora-war-plan": 17,
+    "leda-war-plan": 24,
+    "dietrich-war-plan": 16,
+    "kai-war-plan": 17,
+    "part3-plan": 71
+  }
+}

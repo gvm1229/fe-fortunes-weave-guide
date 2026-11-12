@@ -1,0 +1,55 @@
+{
+  "contextual": [
+    "support-follow-along",
+    "weekly-support-review",
+    "missables-shopping-review",
+    "training-priorities-review",
+    "roster-selection-review",
+    "roster-build-review",
+    "part1-paths-review",
+    "late-recruit-review",
+    "phase-goals-review",
+    "chapter-route-plan",
+    "boon-buy-review",
+    "chapter-gold-review",
+    "poet-copy-review",
+    "recruitment-gates-review",
+    "god-service-review",
+    "level-renown-review",
+    "cai-carriage-guide",
+    "starter-handoff-review",
+    "support-pairs-by-route"
+  ],
+  "common": [
+    "inventory-mount-review",
+    "carry-hard-review",
+    "restart-review",
+    "personalized-evidence",
+    "personalized-fact-check",
+    "combat-review",
+    "aurora-price-review",
+    "sword-xp-review",
+    "three-houses-xp-reference",
+    "normal-part1-level-comparison",
+    "timed-checklist-review",
+    "ui-alignment-review"
+  ],
+  "personSpecific": [
+    "training-priorities-review",
+    "phase-goals-review",
+    "late-recruit-review",
+    "part1-paths-review"
+  ],
+  "fixedPart1": [
+    "part1-paths-review",
+    "late-recruit-review",
+    "chapter-route-plan",
+    "poet-copy-review",
+    "cai-carriage-guide"
+  ],
+  "labels": {
+    "common": "공통 규칙·근거",
+    "history": "기존 진행 기록",
+    "contextual": "현재 루트 기준"
+  }
+}

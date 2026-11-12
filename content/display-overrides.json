@@ -1,0 +1,23 @@
+{
+  "actions": {
+    "prep-no-old-skip--082f661242": "이전에 시작한 저장 기록과 이번 직접 진행을 구분한다. 다른 완료 자료로 먼저 스킵·완료하지 않는다.",
+    "prep-no-old-skip--6fa26cfe8f": "현재 루트의 직접 진행과 이월 준비를 먼저 마친다. 다른 루트의 준비를 현재 완료로 세지 않는다.",
+    "reward-theodora-part1--start-leda-part1": "이 루트의 1부 완료 자료를 저장하고 같은 루트의 2부 1장으로 간다. 이월된 가호·지도·공통 의뢰를 확인한다.",
+    "sequential-theodora-war-reward-20261108--2": "이 루트의 2부 완료 뒤 실제 가호·구매 축복과 잔액을 확인한다.",
+    "sequential-theodora-register-20261108--start-leda-war": "이 루트의 직접 완료와 장착 자료 등록을 마친다. 다음 루트는 첫 화면에서 선택한다.",
+    "leda-post-clear-boons-20261110--start-dietrich-part1": "구매를 마치면 이 루트의 1부 완료 자료를 저장하고 같은 루트의 2부 1장으로 간다.",
+    "war-creek-nathan--194939803d": "레다 2부 2장에서 키릭을 격파해 영입한다. 레다 1부 「죽은 여동생의 장신구」 완료가 필요하다.",
+    "sequential-leda-war-reward-20261108--2": "이 루트의 2부 완료 뒤 실제 가호·구매 축복과 잔액을 확인한다.",
+    "sequential-leda-war-reward-20261108--start-dietrich-war": "이 루트의 2부 직접 완료와 장착 자료를 확인한다. 다음 루트는 첫 화면에서 선택한다.",
+    "di-27--start-kai-part1": "이 루트의 1부 완료 자료를 저장하고 같은 루트의 2부 1장으로 간다.",
+    "sequential-dietrich-war-reward-20261108--2": "이 루트의 2부 완료 뒤 실제 가호·구매 축복과 잔액을 확인한다.",
+    "sequential-dietrich-war-reward-20261108--start-kai-war": "이 루트의 2부 직접 완료와 장착 자료를 확인한다. 다음 루트는 첫 화면에서 선택한다.",
+    "reward-kai-part1--start-theodora-war": "이 루트의 1부 완료 자료를 확인하고 같은 루트의 2부 1장으로 간다."
+  },
+  "groups": {
+    "prep-no-old-skip": "시작 전 · 기존 완료와 이번 직접 진행 구분"
+  },
+  "notes": {
+    "prep-no-old-skip": [{"category":"완료 자료 구분","text":"첫 일반 물품 반입과 직접 진행의 준비를 구분한다. 다른 루트의 과거 기록은 팀 화면의 전체 참고 문서에서 확인한다."}]
+  }
+}

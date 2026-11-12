@@ -1,0 +1,492 @@
+{
+  "reviewed": "2026-11-04",
+  "weapons": {
+    "cleansing-blade": {
+      "name": "재계의 검",
+      "kind": "shop",
+      "primaryGroup": "shop-p3-osiris",
+      "groups": [
+        "buy-theodora-first",
+        "buy-leda-first",
+        "buy-leda08-cleansing-ground",
+        "buy-dietrich-first",
+        "buy-kai-first",
+        "shop-p3-osiris"
+      ],
+      "byStage": {
+        "theodora-plan": "buy-theodora-first",
+        "leda-plan": "buy-leda-first",
+        "dietrich-plan": "buy-dietrich-first",
+        "kai-plan": "buy-kai-first",
+        "part3-plan": "shop-p3-osiris"
+      },
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624713"
+    },
+    "levin-sword": {
+      "name": "선더 소드",
+      "kind": "shop",
+      "primaryGroup": "shop-p3-callianeira",
+      "groups": [
+        "buy-theodora-first",
+        "buy-leda-first",
+        "buy-dietrich-first",
+        "buy-kai-first",
+        "buy-part3-swords",
+        "shop-p3-callianeira",
+        "theo-levin-plan",
+        "theo-levin-thry",
+        "theo-levin-yunamei",
+        "theo-levin-trade"
+      ],
+      "byStage": {
+        "theodora-plan": "theo-levin-plan",
+        "leda-plan": "buy-leda-first",
+        "dietrich-plan": "buy-dietrich-first",
+        "kai-plan": "buy-kai-first",
+        "part3-plan": "buy-part3-swords"
+      },
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628011"
+    },
+    "zalmoxis": {
+      "name": "잘목시스",
+      "kind": "fixed",
+      "primaryGroup": "collect-p3-initial-weapons",
+      "groups": [
+        "collect-p3-initial-weapons"
+      ],
+      "byStage": {
+        "part3-plan": "collect-p3-initial-weapons"
+      },
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629915"
+    },
+    "smyrnos-s-channels": {
+      "name": "스미르노스 보상 건틀릿",
+      "kind": "fixed",
+      "primaryGroup": "buy-p3-smyrnos-s-channels",
+      "groups": [
+        "buy-p3-smyrnos-s-channels"
+      ],
+      "byStage": {
+        "part3-plan": "buy-p3-smyrnos-s-channels"
+      },
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628047"
+    },
+    "shining-spear": {
+      "name": "크레르 의뢰 강화창",
+      "kind": "fixed",
+      "primaryGroup": "miss-p3-credna-spear",
+      "groups": [
+        "miss-p3-credna-spear"
+      ],
+      "byStage": {
+        "part3-plan": "miss-p3-credna-spear"
+      },
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/630454"
+    },
+    "kalla-s-bow": {
+      "name": "칼라의 활",
+      "kind": "fixed",
+      "primaryGroup": "leda-10",
+      "groups": [
+        "leda-10"
+      ],
+      "byStage": {
+        "leda-plan": "leda-10"
+      },
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/626044"
+    },
+    "zanbato": {
+      "name": "참마도",
+      "kind": "shop",
+      "primaryGroup": "shop-p3-fina",
+      "groups": [
+        "shop-p3-fina"
+      ],
+      "byStage": {
+        "part3-plan": "shop-p3-fina"
+      },
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628010"
+    },
+    "flyssa": {
+      "name": "플리사",
+      "kind": "shop",
+      "primaryGroup": "shop-p3-callianeira",
+      "groups": [
+        "shop-p3-callianeira"
+      ],
+      "byStage": {
+        "part3-plan": "shop-p3-callianeira"
+      },
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628015"
+    },
+    "mahadu-s-spear": {
+      "name": "마하마두의 창",
+      "kind": "fixed",
+      "primaryGroup": "theo-01",
+      "groups": [
+        "theo-01"
+      ],
+      "byStage": {
+        "theodora-plan": "theo-01"
+      },
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628072"
+    },
+    "ridersbane": {
+      "name": "나이트 킬러",
+      "kind": "shop",
+      "primaryGroup": "shop-p3-megaira",
+      "groups": [
+        "shop-p3-megaira"
+      ],
+      "byStage": {
+        "part3-plan": "shop-p3-megaira"
+      },
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628075"
+    },
+    "star-spear": {
+      "name": "카이 9장 지급창",
+      "kind": "fixed",
+      "primaryGroup": "kai-route-09",
+      "groups": [
+        "kai-route-09"
+      ],
+      "byStage": {
+        "kai-plan": "kai-route-09"
+      },
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628488"
+    },
+    "ji": {
+      "name": "극",
+      "kind": "shop",
+      "primaryGroup": "shop-p3-messalina",
+      "groups": [
+        "shop-p3-messalina"
+      ],
+      "byStage": {
+        "part3-plan": "shop-p3-messalina"
+      },
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628078"
+    },
+    "grasitha": {
+      "name": "마창 그라시더",
+      "kind": "fixed",
+      "primaryGroup": "di-11",
+      "groups": [
+        "di-11"
+      ],
+      "byStage": {
+        "dietrich-plan": "di-11"
+      },
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628081"
+    },
+    "hammer": {
+      "name": "해머",
+      "kind": "shop",
+      "primaryGroup": "shop-p3-grand-aragon",
+      "groups": [
+        "shop-p3-grand-aragon"
+      ],
+      "byStage": {
+        "part3-plan": "shop-p3-grand-aragon"
+      },
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628026"
+    },
+    "hunter-s-bow": {
+      "name": "수렵의 활",
+      "kind": "shop",
+      "primaryGroup": "shop-p3-ribeira",
+      "groups": [
+        "theo-08",
+        "shop-p3-ribeira"
+      ],
+      "byStage": {
+        "theodora-plan": "theo-08",
+        "part3-plan": "shop-p3-ribeira"
+      },
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628039"
+    },
+    "horsekiller-bow": {
+      "name": "말 킬러의 활",
+      "kind": "shop",
+      "primaryGroup": "shop-p3-yaaman",
+      "groups": [
+        "shop-p3-yaaman"
+      ],
+      "byStage": {
+        "part3-plan": "shop-p3-yaaman"
+      },
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628036"
+    },
+    "zerberus": {
+      "name": "체르베루스",
+      "kind": "fixed",
+      "primaryGroup": "collect-p3-initial-weapons",
+      "groups": [
+        "collect-p3-initial-weapons"
+      ],
+      "byStage": {
+        "part3-plan": "collect-p3-initial-weapons"
+      },
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628056"
+    },
+    "idah-s-bow": {
+      "name": "아스완 지참 활",
+      "kind": "fixed",
+      "primaryGroup": "collect-p3-aswan-bow",
+      "groups": [
+        "collect-p3-aswan-bow"
+      ],
+      "byStage": {
+        "part3-plan": "collect-p3-aswan-bow"
+      },
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628032"
+    },
+    "credna-s-mallet": {
+      "name": "크레르 시련 보상 도끼",
+      "kind": "fixed",
+      "primaryGroup": "buy-p3-credna-s-mallet",
+      "groups": [
+        "buy-p3-credna-s-mallet"
+      ],
+      "byStage": {
+        "part3-plan": "buy-p3-credna-s-mallet"
+      },
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/630070"
+    },
+    "answerer-arisen": {
+      "name": "강화 앤서러",
+      "kind": "fixed",
+      "primaryGroup": "miss-di12-answerer",
+      "groups": [
+        "miss-di12-answerer"
+      ],
+      "byStage": {
+        "dietrich-plan": "miss-di12-answerer"
+      },
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/630455"
+    },
+    "greatsword": {
+      "name": "그레이트 소드",
+      "kind": "shop",
+      "primaryGroup": "shop-p3-grand-aragon",
+      "groups": [
+        "shop-p3-grand-aragon"
+      ],
+      "byStage": {
+        "part3-plan": "shop-p3-grand-aragon"
+      },
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628485"
+    },
+    "halberd": {
+      "name": "핼버드",
+      "kind": "shop",
+      "primaryGroup": "shop-p3-raivo",
+      "groups": [
+        "shop-p3-raivo"
+      ],
+      "byStage": {
+        "part3-plan": "shop-p3-raivo"
+      },
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628076"
+    },
+    "mace": {
+      "name": "메이스",
+      "kind": "shop",
+      "primaryGroup": "shop-p3-twalinn",
+      "groups": [
+        "shop-p3-twalinn"
+      ],
+      "byStage": {
+        "part3-plan": "shop-p3-twalinn"
+      },
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629152"
+    },
+    "bardiche": {
+      "name": "바르디슈",
+      "kind": "shop",
+      "primaryGroup": "shop-p3-benetnasch",
+      "groups": [
+        "shop-p3-benetnasch"
+      ],
+      "byStage": {
+        "part3-plan": "shop-p3-benetnasch"
+      },
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628025"
+    },
+    "longbow": {
+      "name": "롱 보우",
+      "kind": "shop",
+      "primaryGroup": "shop-p3-vandahl",
+      "groups": [
+        "buy-theodora-first",
+        "buy-leda-first",
+        "buy-dietrich-first",
+        "buy-kai-first",
+        "shop-p3-vandahl"
+      ],
+      "byStage": {
+        "theodora-plan": "buy-theodora-first",
+        "leda-plan": "buy-leda-first",
+        "dietrich-plan": "buy-dietrich-first",
+        "kai-plan": "buy-kai-first",
+        "part3-plan": "shop-p3-vandahl"
+      },
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628043"
+    },
+    "da-mina-gauntlets": {
+      "name": "다 미나의 건틀릿",
+      "kind": "shop",
+      "primaryGroup": "shop-p3-daimon",
+      "groups": [
+        "shop-p3-daimon"
+      ],
+      "byStage": {
+        "part3-plan": "shop-p3-daimon"
+      },
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628050"
+    },
+    "qiankun-circles": {
+      "name": "건곤권",
+      "kind": "shop",
+      "primaryGroup": "shop-p3-alecto",
+      "groups": [
+        "leda-01",
+        "buy-leda-first",
+        "shop-p3-alecto"
+      ],
+      "byStage": {
+        "leda-plan": "leda-01",
+        "part3-plan": "shop-p3-alecto"
+      },
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628052"
+    },
+    "windfire-rings": {
+      "name": "풍화륜",
+      "kind": "fixed",
+      "primaryGroup": "collect-p3-windfire",
+      "groups": [
+        "collect-p3-windfire"
+      ],
+      "byStage": {
+        "part3-plan": "collect-p3-windfire"
+      },
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629916"
+    },
+    "mini-bow": {
+      "name": "미니 보우",
+      "kind": "fixed",
+      "primaryGroup": "buy-leda02-mini-bow",
+      "groups": [
+        "buy-leda02-mini-bow"
+      ],
+      "byStage": {
+        "leda-plan": "buy-leda02-mini-bow"
+      },
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628044"
+    },
+    "answerer": {
+      "name": "앤서러",
+      "kind": "fixed",
+      "primaryGroup": "di-01",
+      "groups": [
+        "di-01"
+      ],
+      "byStage": {
+        "dietrich-plan": "di-01"
+      },
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/627976"
+    },
+    "da-mina-sword": {
+      "name": "다 미나의 검",
+      "kind": "shop",
+      "primaryGroup": "shop-p3-grand-aragon",
+      "groups": [
+        "shop-p3-grand-aragon"
+      ],
+      "byStage": {
+        "part3-plan": "shop-p3-grand-aragon"
+      },
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/627437"
+    },
+    "whirlwind-blade": {
+      "name": "질풍의 검",
+      "kind": "shop",
+      "primaryGroup": "shop-p3-whill",
+      "groups": [
+        "shop-p3-whill"
+      ],
+      "byStage": {
+        "part3-plan": "shop-p3-whill"
+      },
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628484"
+    },
+    "assal": {
+      "name": "아살",
+      "kind": "fixed",
+      "primaryGroup": "kai-04",
+      "groups": [
+        "kai-04"
+      ],
+      "byStage": {
+        "kai-plan": "kai-04"
+      },
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628079"
+    },
+    "pilum": {
+      "name": "슬렌드 스피어",
+      "kind": "shop",
+      "primaryGroup": "shop-p3-dagsion",
+      "groups": [
+        "shop-p3-dagsion"
+      ],
+      "byStage": {
+        "part3-plan": "shop-p3-dagsion"
+      },
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628069"
+    },
+    "vendetta": {
+      "name": "요창 벤데타",
+      "kind": "fixed",
+      "primaryGroup": "collect-war06-vendetta",
+      "groups": [
+        "collect-war06-vendetta"
+      ],
+      "byStage": {
+        "war-plan": "collect-war06-vendetta"
+      },
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628064"
+    },
+    "you-sou-fu": {
+      "name": "매 발톱 도끼",
+      "kind": "shop",
+      "primaryGroup": "shop-p3-twalinn",
+      "groups": [
+        "shop-p3-twalinn"
+      ],
+      "byStage": {
+        "part3-plan": "shop-p3-twalinn"
+      },
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628019"
+    },
+    "venin-bow": {
+      "name": "독의 활",
+      "kind": "shop",
+      "primaryGroup": "shop-p3-yaaman",
+      "groups": [
+        "buy-leda-first",
+        "shop-p3-yaaman"
+      ],
+      "byStage": {
+        "leda-plan": "buy-leda-first",
+        "part3-plan": "shop-p3-yaaman"
+      },
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628042"
+    }
+  },
+  "rules": [
+    "42개 장면의 시간·장소·선행 행동은 현재 장의 본문 체크에 표시.",
+    "37종의 확정 보상과 상점 재구매를 구분. 무작위 상자를 필수 확정 입수로 지정하지 않음.",
+    "상점 해금 장·날짜가 확인되지 않은 경우 실제 길·재고가 열렸을 때 첫 방문 체크.",
+    "진행률 체크는 게임 획득 자동 판정이 아니며 현재 체크 기록은 보존."
+  ]
+}

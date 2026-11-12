@@ -1,0 +1,1264 @@
+{
+  "reviewed": "2026-11-04",
+  "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+  "events": [
+    {
+      "sourceRow": 1,
+      "id": "miss-kai02-stairs",
+      "stage": "kai-plan",
+      "title": "2장 다그시온 도착 후 · 북동쪽 계단 장면",
+      "anchor": "kai-route-02",
+      "position": "before",
+      "actions": [
+        "다그시온 도착 뒤 피터르에게 다음 이야기를 진행하기 전에 시가지 북동쪽 계단 아래로 가서 카스토르·센트리온의 대화 장면을 본다. 갈렌 요새 안의 계단으로 찾지 않는다."
+      ],
+      "people": [
+        "카이"
+      ],
+      "existingGroup": null,
+      "automatic": false,
+      "note": "피터르에게 다음 이야기를 진행하기 전에 확인한다. 요새 내부 장면과 구별한다.",
+      "order": 0,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623229",
+      "image": {
+        "url": "https://img.game8.co/4645105/66eba330bf4823f81407270d94c2f997.png/show",
+        "file": "assets/events/kai02-stairs.png",
+        "caption": "2장 · 여관으로 돌아가기 전 · 위치 화면"
+      },
+      "checkGroup": "miss-kai02-stairs",
+      "coverage": "new",
+      "checkActions": [
+        "miss-kai02-stairs--view"
+      ]
+    },
+    {
+      "sourceRow": 2,
+      "id": "miss-kai04-bertrand",
+      "stage": "kai-plan",
+      "title": "4장 · 자유행동 시작 직후 지하 투기장",
+      "anchor": "kai-02",
+      "position": "before",
+      "actions": [
+        "자유행동이 열리면 투기장 지하의 베르트랑과 대화한다. 긴 원정 전에 검술 보너스가 있는 장면을 본다."
+      ],
+      "people": [
+        "베르트랑",
+        "카이"
+      ],
+      "existingGroup": null,
+      "automatic": false,
+      "note": "이 장 자유행동은24턴. 보너스를 위해 무한 전투하지 않음.",
+      "order": 0,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623319",
+      "image": {
+        "url": "https://img.game8.co/4645201/cbfe241edf3cdce41135b3f74aed8a7d.png/show",
+        "file": "assets/events/kai04-bertrand.png",
+        "caption": "4장 · 자유행동 시작 직후 지하 투기장 · 위치 화면"
+      },
+      "checkGroup": "miss-kai04-bertrand",
+      "coverage": "new",
+      "checkActions": [
+        "miss-kai04-bertrand--view"
+      ]
+    },
+    {
+      "sourceRow": 3,
+      "id": "miss-kai06-mural",
+      "stage": "kai-plan",
+      "title": "6장 메인 진행 중 · 아므루 벽화",
+      "anchor": "kai-04",
+      "position": "before",
+      "actions": [
+        "6장 메인 진행으로 죽은 도시 아므루에 들어갔을 때 티아라가 가리키는 벽화를 조사해 선택 장면을 본다. 다음 주 목표로 진행하기 전에 확인한다."
+      ],
+      "people": [
+        "티아라"
+      ],
+      "existingGroup": null,
+      "automatic": false,
+      "note": "자유행동 종료 뒤 아므루에 도착해 티아라에게 안내를 받고 벽화를 조사한다.",
+      "order": 0,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623753",
+      "image": {
+        "url": "https://img.game8.co/4645205/b3a5dbe0018d061e064ca2525c8cd754.png/show",
+        "file": "assets/events/kai06-mural.png",
+        "caption": "6장 · 아므루의 주 목표를 누르기 전 · 위치 화면"
+      },
+      "checkGroup": "miss-kai06-mural",
+      "coverage": "new",
+      "checkActions": [
+        "miss-kai06-mural--view"
+      ]
+    },
+    {
+      "sourceRow": 4,
+      "id": "miss-di04-south",
+      "stage": "dietrich-plan",
+      "title": "4장 · 하층 술집 장면 직후 남쪽",
+      "anchor": "di-02",
+      "position": "before",
+      "actions": [
+        "하층 술집의 이야기 장면이 끝나면 남쪽으로 가서 선택 장면을 본다. 이어지는 이벤트·전투 표시도 확인한다."
+      ],
+      "people": [
+        "디트리히",
+        "타리문"
+      ],
+      "existingGroup": null,
+      "automatic": false,
+      "note": "",
+      "order": 0,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623933",
+      "image": {
+        "url": "https://img.game8.co/4645106/e63ea7b6dc0eb8c76e952db9a62019fd.png/show",
+        "file": "assets/events/di04-south.png",
+        "caption": "4장 · 하층 술집 장면 직후 남쪽 · 위치 화면"
+      },
+      "checkGroup": "miss-di04-south",
+      "coverage": "new",
+      "checkActions": [
+        "miss-di04-south--view"
+      ]
+    },
+    {
+      "sourceRow": 5,
+      "id": "miss-di04-inn",
+      "stage": "dietrich-plan",
+      "title": "4장 · 자유행동이 열리면 여관 입구",
+      "anchor": "di-02",
+      "position": "after",
+      "actions": [
+        "자유행동 시작 뒤 도시 여관(City Inn) 입구 안쪽에 들어가 선택 장면을 본다."
+      ],
+      "people": [
+        "디트리히"
+      ],
+      "existingGroup": null,
+      "automatic": false,
+      "note": "",
+      "order": 0,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623933",
+      "image": {
+        "url": "https://img.game8.co/4645107/994af67e8a8232a191eff5336f873cd8.png/show",
+        "file": "assets/events/di04-inn.png",
+        "caption": "4장 · 자유행동이 열리면 여관 입구 · 위치 화면"
+      },
+      "checkGroup": "miss-di04-inn",
+      "coverage": "new",
+      "checkActions": [
+        "miss-di04-inn--view"
+      ]
+    },
+    {
+      "sourceRow": 6,
+      "id": "miss-di04-mikaela",
+      "stage": "dietrich-plan",
+      "title": "4장 · 미카엘라 대화 뒤 상점가",
+      "anchor": "di-03",
+      "position": "before",
+      "actions": [
+        "4장 자유행동이 열리면 투기장 앞의 미카엘라에게 먼저 말을 건다. 그 뒤 미카엘라가 언급한 상점가로 가서 후속 선택 장면을 본다.",
+        "투기장 근처 미카엘라와 먼저 대화한다.",
+        "미카엘라와 대화한 뒤 상점가(Shopping Arcade)로 가서 후속 선택 장면을 본다."
+      ],
+      "people": [
+        "미카엘라"
+      ],
+      "existingGroup": null,
+      "automatic": false,
+      "note": "",
+      "order": 0,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623933",
+      "image": {
+        "url": "https://img.game8.co/4645129/7f89c6dac1b9a06d767b2e2d0d4a7a77.png/show",
+        "file": "assets/events/di04-mikaela.png",
+        "caption": "4장 · 미카엘라 대화 뒤 상점가 · 위치 화면"
+      },
+      "checkGroup": "miss-di04-mikaela",
+      "coverage": "new",
+      "checkActions": [
+        "miss-di04-mikaela--preceding-pair",
+        "miss-di04-mikaela--preceding-dialogue",
+        "miss-di04-mikaela--view"
+      ]
+    },
+    {
+      "sourceRow": 7,
+      "id": "miss-di05-fabio-chain",
+      "stage": "dietrich-plan",
+      "title": "5장 · 파비오 연속 이벤트의 시작",
+      "anchor": "di-04",
+      "position": "before",
+      "actions": [
+        "자유행동이 열리면 신전가의 파비오와 대화한다. 이어 중층 동쪽 골목으로 가서 숨은 장면을 발동한다."
+      ],
+      "people": [
+        "파비오"
+      ],
+      "existingGroup": null,
+      "automatic": false,
+      "note": "10장 장면의 선행 조건. 새 재육성에서는 기억 서고 등록만 믿고 건너뛰지 않는다.5장과10장을 따로 재시작하는 방식으로 이어지지 않음.",
+      "order": 0,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624085",
+      "image": {
+        "url": "https://img.game8.co/4645130/58c3a4501d1d532bbe4e3b0fdf83cb94.png/show",
+        "file": "assets/events/di05-fabio-chain.png",
+        "caption": "5장 · 파비오 연속 이벤트의 시작 · 위치 화면"
+      },
+      "checkGroup": "miss-di05-fabio-chain",
+      "coverage": "new",
+      "checkActions": [
+        "miss-di05-fabio-chain--preceding-dialogue",
+        "miss-di05-fabio-chain--view"
+      ]
+    },
+    {
+      "sourceRow": 8,
+      "id": "miss-di06-alexandra",
+      "stage": "dietrich-plan",
+      "title": "6장 · 알렉산드라 대화 뒤 하층",
+      "anchor": "di-06",
+      "position": "before",
+      "actions": [
+        "중층 알렉산드라와 대화한 뒤 하층으로 내려가 후속 장면을 본다. 영입 조건 확인과 별개다."
+      ],
+      "people": [
+        "알렉산드라"
+      ],
+      "existingGroup": null,
+      "automatic": false,
+      "note": "",
+      "order": 0,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624232",
+      "image": {
+        "url": "https://img.game8.co/4645141/15b014c3d3f9cb0dbfdad0f143658bd4.png/show",
+        "file": "assets/events/di06-alexandra.png",
+        "caption": "6장 · 알렉산드라 대화 뒤 하층 · 위치 화면"
+      },
+      "checkGroup": "miss-di06-alexandra",
+      "coverage": "new",
+      "checkActions": [
+        "miss-di06-alexandra--preceding-dialogue",
+        "miss-di06-alexandra--view"
+      ]
+    },
+    {
+      "sourceRow": 9,
+      "id": "miss-di08-night",
+      "stage": "dietrich-plan",
+      "title": "8장 · 18:00~23:59 하층 남동쪽",
+      "anchor": "di-11",
+      "position": "before",
+      "actions": [
+        "8장 초반의18:00~23:59 장면을 볼 수 있게 다그시온으로 귀환한다. 자료의 마지막 기회7/20 18:00까지 미루지 말고 자유행동 초반에 본다.",
+        "자유행동 중18:00~23:59에 하층 남동쪽의 선택 장면을 본다. 밤 동선을 다른 제도 용무와 묶는다."
+      ],
+      "people": [],
+      "existingGroup": null,
+      "automatic": false,
+      "note": "",
+      "order": 0,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624303",
+      "image": {
+        "url": "https://img.game8.co/4645154/7957052d87d27a4d2a05c92ee1040a10.png/show",
+        "file": "assets/events/di08-night.png",
+        "caption": "8장 · 18:00~23:59 하층 남동쪽 · 위치 화면"
+      },
+      "checkGroup": "miss-di08-night",
+      "coverage": "new",
+      "checkActions": [
+        "miss-di08-night--return",
+        "miss-di08-night--view"
+      ]
+    },
+    {
+      "sourceRow": 10,
+      "id": "miss-di10-fabio-chain",
+      "stage": "dietrich-plan",
+      "title": "10장 · 5장 파비오 장면을 봤다면 밤에",
+      "anchor": "di-19",
+      "position": "before",
+      "actions": [
+        "10장 자유행동이 열리면 제도에서18:00~23:59 후속 장면을 먼저 볼 동선을 잡는다.5장의 파비오 선행 장면을 같은 진행에서 봤는지 확인하고 긴 원정 전에 처리한다.",
+        "5장 파비오 숨은 장면을 같은 진행에서 발동했는지 확인하고,18:00~23:59에 상층 신전가 남서쪽으로 가서 후속 장면을 본다.",
+        "첫 파비오 후속 장면이 끝나면 그 통로의 더 안쪽으로 가서 이어지는 대화·장면 표시를 다시 확인한다. 첫 장면만 보고 바로 떠나지 않는다."
+      ],
+      "people": [
+        "파비오"
+      ],
+      "existingGroup": null,
+      "automatic": false,
+      "note": "5장 장면을 놓쳤으면5장부터9장까지 이어서 다시 진행해야 한다는 Game8 설명. 단독10장 재시작만으로 선행 장면을 만든다고 가정하지 않음.",
+      "order": 0,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624397",
+      "image": {
+        "url": "https://img.game8.co/4645158/e0859fe47465a5b597d768bd0879c6b5.png/show",
+        "file": "assets/events/di10-fabio-chain.png",
+        "caption": "10장 · 5장 파비오 장면을 봤다면 밤에 · 위치 화면"
+      },
+      "checkGroup": "miss-di10-fabio-chain",
+      "coverage": "new",
+      "checkActions": [
+        "miss-di10-fabio-chain--return",
+        "miss-di10-fabio-chain--view",
+        "miss-di10-fabio-chain--follow-inside"
+      ]
+    },
+    {
+      "sourceRow": 11,
+      "id": "miss-di10-ribeira",
+      "stage": "dietrich-plan",
+      "title": "10장 · 리베이라의 선택 대화",
+      "anchor": "di-19",
+      "position": "after",
+      "actions": [
+        "자유행동이 열리면 세계지도의 리베이라(Ribeira)에 있는 두 대화 표시를 확인한다. 다른 리베이라 용무와 함께 처리한다."
+      ],
+      "people": [],
+      "existingGroup": null,
+      "automatic": false,
+      "note": "",
+      "order": 0,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624397",
+      "image": {
+        "url": "https://img.game8.co/4645211/2e476327e8d9b3af742cded9f640d5c6.png/show",
+        "file": "assets/events/di10-ribeira.png",
+        "caption": "10장 · 리베이라의 선택 대화 · 위치 화면"
+      },
+      "checkGroup": "miss-di10-ribeira",
+      "coverage": "new",
+      "checkActions": [
+        "miss-di10-ribeira--view"
+      ]
+    },
+    {
+      "sourceRow": 12,
+      "id": "miss-di12-answerer",
+      "stage": "dietrich-plan",
+      "title": "12장 · 주 전투 전에 앤서러 강화 대화",
+      "anchor": "di-23",
+      "position": "before",
+      "actions": [
+        "자유행동 시작 뒤 중층 동쪽 골목의 파비오와 대화한다. 주 전투 시작 때 앤서러가 강화되는 것을 확인한다."
+      ],
+      "people": [
+        "파비오",
+        "디트리히"
+      ],
+      "existingGroup": null,
+      "automatic": false,
+      "note": "상점에서 사는 업그레이드가 아니다. 새 디트리히 자료로2부에 가져가려면 이 진행에서도 완료한다.",
+      "order": 0,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625187",
+      "image": {
+        "url": "https://img.game8.co/4645161/375542effdfb2e1f5cf60bb487346152.png/show",
+        "file": "assets/events/di12-answerer.png",
+        "caption": "12장 · 주 전투 전에 앤서러 강화 대화 · 위치 화면"
+      },
+      "checkGroup": "miss-di12-answerer",
+      "coverage": "new",
+      "checkActions": [
+        "miss-di12-answerer--view"
+      ]
+    },
+    {
+      "sourceRow": 13,
+      "id": "miss-di12-fina",
+      "stage": "dietrich-plan",
+      "title": "12장 · 피나의 선택 대화",
+      "anchor": "di-23",
+      "position": "after",
+      "actions": [
+        "세계지도의 피나(Fina)에 있는 두 대화 표시를 확인한다.12장 자유행동을 끝내기 전에 기존 동선과 묶는다."
+      ],
+      "people": [],
+      "existingGroup": null,
+      "automatic": false,
+      "note": "",
+      "order": 0,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625187",
+      "image": {
+        "url": "https://img.game8.co/4645212/51026f4efd6d7dfe7022fd915dbbd8a4.png/show",
+        "file": "assets/events/di12-fina.png",
+        "caption": "12장 · 피나의 선택 대화 · 위치 화면"
+      },
+      "checkGroup": "miss-di12-fina",
+      "coverage": "new",
+      "checkActions": [
+        "miss-di12-fina--view"
+      ]
+    },
+    {
+      "sourceRow": 14,
+      "id": "miss-theo03-outfit",
+      "stage": "theodora-plan",
+      "title": "3장 · 다그시온 탐색을 시작하기 전",
+      "anchor": "theo-route-03",
+      "position": "before",
+      "actions": [
+        "도시 탐색을 진행하기 전에 보나파르트에게 말을 걸어 의상 관련 선택 장면을 본다."
+      ],
+      "people": [
+        "보나파르트",
+        "세오도라"
+      ],
+      "existingGroup": null,
+      "automatic": false,
+      "note": "",
+      "order": 0,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623896",
+      "image": {
+        "url": "https://img.game8.co/4645215/76141125d8f8352cc7e97b33c19fe956.png/show",
+        "file": "assets/events/theo03-outfit.png",
+        "caption": "3장 · 다그시온 탐색을 시작하기 전 · 위치 화면"
+      },
+      "checkGroup": "miss-theo03-outfit",
+      "coverage": "new",
+      "checkActions": [
+        "miss-theo03-outfit--view"
+      ]
+    },
+    {
+      "sourceRow": 15,
+      "id": "miss-theo05-anatolia",
+      "stage": "theodora-plan",
+      "title": "5장 · 중층 동쪽의 선택 장면",
+      "anchor": "theo-03",
+      "position": "before",
+      "actions": [
+        "자유행동 시작 뒤 중층 동쪽 아나톨리아에게 접근해 장면을 본다."
+      ],
+      "people": [
+        "아나톨리아"
+      ],
+      "existingGroup": null,
+      "automatic": false,
+      "note": "",
+      "order": 0,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624078",
+      "image": {
+        "url": "https://img.game8.co/4646506/551d13ae158af5f423e18b6edc4987b5.png/show",
+        "file": "assets/events/theo05-anatolia.png",
+        "caption": "5장 · 중층 동쪽의 선택 장면 · 위치 화면"
+      },
+      "checkGroup": "miss-theo05-anatolia",
+      "coverage": "new",
+      "checkActions": [
+        "miss-theo05-anatolia--view"
+      ]
+    },
+    {
+      "sourceRow": 16,
+      "id": "miss-theo06-crystal",
+      "stage": "theodora-plan",
+      "title": "6장 · 4/6 18:00 특별 시합",
+      "anchor": "theo-05",
+      "position": "after",
+      "actions": [
+        "4/6 18:00 특별 시합을 놓치지 않도록 가능하면4/5 안에 다그시온으로 돌아와 크리스탈 팰리스 접수 위치를 확인한다. 이미 제도에 있으면4/6 18:00 전에 먼 원정을 나가지 않는다.",
+        "4/6 18:00~23:59에 크리스탈 팰리스 접수처로 가서 대화하고 특별 시합을 관전한다.",
+        "베르트랑을 반드시 격파해야 하는 전투가 아니므로 승리 조건을 확인합니다.",
+        "이어지는 지정 참가자3명 전투의 승리 조건을 보고 승리한다. 명성500 보상을 확인한다."
+      ],
+      "people": [
+        "베르트랑"
+      ],
+      "existingGroup": "theo-05",
+      "automatic": false,
+      "note": "4/6 18:00~23:59에 크리스탈 팰리스 접수처와 대화·관전한다. 이어지는3명 전투에서 이기면 명성500.",
+      "order": 0,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624243",
+      "image": {
+        "url": "https://img.game8.co/4646508/103fcb72ebdbce6b277e7963de05a84f.png/show",
+        "file": "assets/events/theo06-crystal.png",
+        "caption": "6장 · 4/6 18:00 특별 시합 · 위치 화면"
+      },
+      "checkGroup": "theo-05",
+      "coverage": "existing",
+      "checkActions": [
+        "theo-05--return-before-event",
+        "theo-05--35559a7bfe",
+        "theo-05--36d8ce3bb9",
+        "theo-05--contest-finish"
+      ]
+    },
+    {
+      "sourceRow": 17,
+      "id": "miss-theo07-alexandra",
+      "stage": "theodora-plan",
+      "title": "7장 · 알렉산드라 대화 뒤 하층",
+      "anchor": "theo-06",
+      "position": "before",
+      "actions": [
+        "중층 알렉산드라와 먼저 대화하고 하층으로 내려가 후속 장면을 본다."
+      ],
+      "people": [
+        "알렉산드라"
+      ],
+      "existingGroup": null,
+      "automatic": false,
+      "note": "",
+      "order": 0,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624301",
+      "image": {
+        "url": "https://img.game8.co/4645141/15b014c3d3f9cb0dbfdad0f143658bd4.png/show",
+        "file": "assets/events/theo07-alexandra.png",
+        "caption": "7장 · 알렉산드라 대화 뒤 하층 · 위치 화면"
+      },
+      "checkGroup": "miss-theo07-alexandra",
+      "coverage": "new",
+      "checkActions": [
+        "miss-theo07-alexandra--preceding-dialogue",
+        "miss-theo07-alexandra--view"
+      ]
+    },
+    {
+      "sourceRow": 18,
+      "id": "miss-theo10-back-entrance",
+      "stage": "theodora-plan",
+      "title": "10장 · 극장 옆 신전 뒷문",
+      "anchor": "theo-09",
+      "position": "before",
+      "actions": [
+        "자유행동 시작 뒤 극장 옆 뒷문으로 유파스 신전(Yu Phas's Temple)에 들어가 선택 장면을 본다."
+      ],
+      "people": [],
+      "existingGroup": null,
+      "automatic": false,
+      "note": "",
+      "order": 0,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624385",
+      "image": {
+        "url": "https://img.game8.co/4646509/1d0e30ec13e510b103117fa4a7ea31a1.png/show",
+        "file": "assets/events/theo10-back-entrance.png",
+        "caption": "10장 · 극장 옆 신전 뒷문 · 위치 화면"
+      },
+      "checkGroup": "miss-theo10-back-entrance",
+      "coverage": "new",
+      "checkActions": [
+        "miss-theo10-back-entrance--view"
+      ]
+    },
+    {
+      "sourceRow": 19,
+      "id": "miss-theo10-ship",
+      "stage": "theodora-plan",
+      "title": "10장 · 아나톨리아에게 배 빌려주기",
+      "anchor": "theo-09",
+      "position": "after",
+      "actions": [],
+      "people": [
+        "아나톨리아"
+      ],
+      "existingGroup": "theo-09",
+      "automatic": false,
+      "note": "현재 진행의 투기장 근처 대화. 해상 재료는9장에 미리 모으고 가능하면8/25 첫날 수락. 최종 수락기한9/15 23:59. 상세 공략은 반납예정9/21, 숨은 장면 글은 귀환 장면9/28 18:00으로 구분해 적음.",
+      "order": 0,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624385",
+      "image": {
+        "url": "https://img.game8.co/4646544/45ef99bbfea4319eb6f870a06c9f850f.png/show",
+        "file": "assets/events/theo10-ship.png",
+        "caption": "10장 · 아나톨리아에게 배 빌려주기 · 위치 화면"
+      },
+      "checkGroup": "theo-09",
+      "coverage": "existing",
+      "checkActions": [
+        "theo-09--33f025d38e",
+        "theo-09--1ee6e78afa",
+        "theo-09--4773fdfd26",
+        "theo-09--5af03924c2",
+        "theo-09--4df17cae69",
+        "theo-09--982537b236"
+      ]
+    },
+    {
+      "sourceRow": 20,
+      "id": "miss-theo11-return",
+      "stage": "theodora-plan",
+      "title": "11장 · 9/28 18:00 이후 제도 귀환 장면",
+      "anchor": "theo-10",
+      "position": "after",
+      "actions": [
+        "10장에서 배를 빌려줬다면9/28 18:00 이후 다그시온에서 아나톨리아의 후속 장면을 확인한다."
+      ],
+      "people": [
+        "아나톨리아"
+      ],
+      "existingGroup": null,
+      "automatic": false,
+      "note": "",
+      "order": 0,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624500",
+      "image": {
+        "url": "https://img.game8.co/4646887/744151e452a0d3084b82ae74f937621a.png/show",
+        "file": "assets/events/theo11-return.png",
+        "caption": "11장 · 9/28 18:00 이후 제도 귀환 장면 · 위치 화면"
+      },
+      "checkGroup": "miss-theo11-return",
+      "coverage": "new",
+      "checkActions": [
+        "miss-theo11-return--view"
+      ]
+    },
+    {
+      "sourceRow": 21,
+      "id": "miss-theo12-followup",
+      "stage": "theodora-plan",
+      "title": "12장 · 배 대여의 후속 장면",
+      "anchor": "theo-12",
+      "position": "after",
+      "actions": [],
+      "people": [
+        "아나톨리아"
+      ],
+      "existingGroup": "theo-09",
+      "automatic": true,
+      "note": "현재 진행에서 배를 빌려줬다면12장 주 전투 중 자연스럽게 이어진다.",
+      "order": 0,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624686",
+      "checkGroup": "miss-theo12-ship-followup",
+      "coverage": "inline-auto-confirmation",
+      "checkActions": [
+        "miss-theo12-ship-followup--view"
+      ]
+    },
+    {
+      "sourceRow": 22,
+      "id": "miss-leda04-mikaela",
+      "stage": "leda-plan",
+      "title": "4장 · 자유행동 시작 직후 상점가",
+      "anchor": "leda-02",
+      "position": "before",
+      "actions": [
+        "자유행동 시작 뒤 상점가의 미카엘라에게 접근해 선택 장면을 본다."
+      ],
+      "people": [
+        "미카엘라"
+      ],
+      "existingGroup": null,
+      "automatic": false,
+      "note": "",
+      "order": 0,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624028",
+      "image": {
+        "url": "https://img.game8.co/4645132/2ab756ace67b425956097e2b8729f13e.png/show",
+        "file": "assets/events/leda04-mikaela.png",
+        "caption": "4장 · 자유행동 시작 직후 상점가 · 위치 화면"
+      },
+      "checkGroup": "miss-leda04-mikaela",
+      "coverage": "new",
+      "checkActions": [
+        "miss-leda04-mikaela--view"
+      ]
+    },
+    {
+      "sourceRow": 23,
+      "id": "miss-leda04-itemshop",
+      "stage": "leda-plan",
+      "title": "4장 · 다른 할 일을 1턴 처리한 뒤 도구점",
+      "anchor": "leda-02",
+      "position": "after",
+      "actions": [
+        "기존 준비·이동 등으로 최소1턴을 보낸 뒤 상점가 도구점 근처로 가서 장면을 본다. 이 장면만을 위해 불필요한 숙박은 하지 않는다."
+      ],
+      "people": [],
+      "existingGroup": null,
+      "automatic": false,
+      "note": "",
+      "order": 0,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624028",
+      "image": {
+        "url": "https://img.game8.co/4646545/7038334aa2b97e7a123192875c28b62e.png/show",
+        "file": "assets/events/leda04-itemshop.png",
+        "caption": "4장 · 다른 할 일을 1턴 처리한 뒤 도구점 · 위치 화면"
+      },
+      "checkGroup": "miss-leda04-itemshop",
+      "coverage": "new",
+      "checkActions": [
+        "miss-leda04-itemshop--view"
+      ]
+    },
+    {
+      "sourceRow": 24,
+      "id": "miss-leda05-kalla",
+      "stage": "leda-plan",
+      "title": "5장 · 칼라 분전의 대화",
+      "anchor": "leda-03",
+      "position": "before",
+      "actions": [
+        "자유행동이 열리면 칼라 분전(Branch Temple)의 칼라와 대화한다.10장의 본전 활 시련과 장소·시기를 구분한다."
+      ],
+      "people": [],
+      "existingGroup": null,
+      "automatic": false,
+      "note": "",
+      "order": 0,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624253",
+      "image": {
+        "url": "https://img.game8.co/4646826/fbf0907cb500d217620ad269bb446941.png/show",
+        "file": "assets/events/leda05-kalla.png",
+        "caption": "5장 · 칼라 분전의 대화 · 위치 화면"
+      },
+      "checkGroup": "miss-leda05-kalla",
+      "coverage": "new",
+      "checkActions": [
+        "miss-leda05-kalla--view"
+      ]
+    },
+    {
+      "sourceRow": 25,
+      "id": "miss-leda06-olympia",
+      "stage": "leda-plan",
+      "title": "6장 · 신전가 남쪽 올림피아",
+      "anchor": "leda-04",
+      "position": "before",
+      "actions": [
+        "자유행동 시작 뒤 신전가 남쪽 올림피아와 대화해 장면을 본다."
+      ],
+      "people": [
+        "올림피아"
+      ],
+      "existingGroup": null,
+      "automatic": false,
+      "note": "",
+      "order": 0,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624336",
+      "image": {
+        "url": "https://img.game8.co/4646546/f1a77cc40d0e9924c6c7c7c17f26ed57.png/show",
+        "file": "assets/events/leda06-olympia.png",
+        "caption": "6장 · 신전가 남쪽 올림피아 · 위치 화면"
+      },
+      "checkGroup": "miss-leda06-olympia",
+      "coverage": "new",
+      "checkActions": [
+        "miss-leda06-olympia--view"
+      ]
+    },
+    {
+      "sourceRow": 26,
+      "id": "miss-leda06-alexandra",
+      "stage": "leda-plan",
+      "title": "6장 · 알렉산드라 대화 뒤 하층",
+      "anchor": "leda-04",
+      "position": "after",
+      "actions": [
+        "중층 알렉산드라와 먼저 대화하고 하층으로 내려가 후속 장면을 본다."
+      ],
+      "people": [
+        "알렉산드라"
+      ],
+      "existingGroup": null,
+      "automatic": false,
+      "note": "",
+      "order": 0,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624336",
+      "image": {
+        "url": "https://img.game8.co/4645141/15b014c3d3f9cb0dbfdad0f143658bd4.png/show",
+        "file": "assets/events/leda06-alexandra.png",
+        "caption": "6장 · 알렉산드라 대화 뒤 하층 · 위치 화면"
+      },
+      "checkGroup": "miss-leda06-alexandra",
+      "coverage": "new",
+      "checkActions": [
+        "miss-leda06-alexandra--preceding-dialogue",
+        "miss-leda06-alexandra--view"
+      ]
+    },
+    {
+      "sourceRow": 27,
+      "id": "miss-leda09-sirocco",
+      "stage": "leda-plan",
+      "title": "9장 · 밤의 시로코 대화 두 번",
+      "anchor": "leda-07",
+      "position": "before",
+      "actions": [
+        "18:00~23:59에 하층 신전가의 시로코에게 접근한다. 그가 북서쪽 통로로 옮기면 다시 대화해 장면을 마친다."
+      ],
+      "people": [
+        "시로코"
+      ],
+      "existingGroup": null,
+      "automatic": false,
+      "note": "",
+      "order": 0,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624544",
+      "image": {
+        "url": "https://img.game8.co/4646641/7b4faed447757b23c57a2d16b11f9086.png/show",
+        "file": "assets/events/leda09-sirocco.png",
+        "caption": "9장 · 밤의 시로코 대화 두 번 · 위치 화면"
+      },
+      "checkGroup": "miss-leda09-sirocco",
+      "coverage": "new",
+      "checkActions": [
+        "miss-leda09-sirocco--preceding-dialogue",
+        "miss-leda09-sirocco--view"
+      ]
+    },
+    {
+      "sourceRow": 28,
+      "id": "miss-leda10-kalla-bow",
+      "stage": "leda-plan",
+      "title": "10장 · 표식 없는 칼라의 활 시련",
+      "anchor": "leda-10",
+      "position": "after",
+      "actions": [],
+      "people": [
+        "레다"
+      ],
+      "existingGroup": "leda-10",
+      "automatic": false,
+      "note": "칼라 본전 접수처에서 시련. 높은 명중의 본대를 준비하고2연전 승리 뒤 활 수령. 활 장착 조건은 궁술A,1부 종료 후에는 이 시련 불가.",
+      "order": 0,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624690",
+      "image": {
+        "url": "https://img.game8.co/4635969/0c7424944a295a89ba1909c03c689450.png/show",
+        "file": "assets/events/leda10-kalla-bow.png",
+        "caption": "칼라 본전 위치 참고. 발동 시기는1부10장이고 그림의 날짜·파티는 별도 진행 예시."
+      },
+      "checkGroup": "leda-10",
+      "coverage": "existing",
+      "checkActions": [
+        "leda-10--e3a90fede3",
+        "leda-10--0f36d686d3",
+        "leda-10--ec7463dc48",
+        "leda-10--58972f9601",
+        "leda-10--af8a19eabb",
+        "leda-10--645a24f156",
+        "leda-10--fcd401485b",
+        "leda-10--fd55d97017",
+        "leda-10--a27e63dedb",
+        "leda-10--9878b59a18"
+      ]
+    },
+    {
+      "sourceRow": 29,
+      "id": "miss-war02-creek",
+      "stage": "war-plan",
+      "title": "2부2장 · 키릭 영입",
+      "anchor": "war-creek-nathan",
+      "position": "after",
+      "actions": [],
+      "people": [
+        "키릭"
+      ],
+      "existingGroup": "war-creek-nathan",
+      "automatic": false,
+      "note": "레다/디트리히.1부 키릭 의뢰 완료 후 키릭 격파·합류 확인.",
+      "order": 0,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624684",
+      "image": {
+        "url": "https://img.game8.co/4625805/44ff925849aabda97ab07cfc87009029.png/show",
+        "file": "assets/events/war02-creek.png",
+        "caption": "2부2장 · 키릭 영입 · 위치 화면"
+      },
+      "checkGroup": "war-creek-nathan",
+      "coverage": "existing",
+      "checkActions": [
+        "war-creek-nathan--194939803d",
+        "war-creek-nathan--437b0832d1",
+        "war-creek-nathan--25d80e1ad1"
+      ]
+    },
+    {
+      "sourceRow": 30,
+      "id": "miss-war03-nathan",
+      "stage": "war-plan",
+      "title": "2부3장 · 키릭으로 네이선 막타",
+      "anchor": "war-creek-nathan",
+      "position": "after",
+      "actions": [],
+      "people": [
+        "네이선",
+        "키릭"
+      ],
+      "existingGroup": "war-creek-nathan",
+      "automatic": false,
+      "note": "2장 키릭 영입이 선행. 다른 인물로 마무리하지 않음.",
+      "order": 0,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624688",
+      "image": {
+        "url": "https://img.game8.co/4625836/bb8d81b6c8fadb4a6abfce81473872ab.png/show",
+        "file": "assets/events/war03-nathan.png",
+        "caption": "2부3장 · 키릭으로 네이선 막타 · 위치 화면"
+      },
+      "checkGroup": "war-creek-nathan",
+      "coverage": "existing",
+      "checkActions": [
+        "war-creek-nathan--194939803d",
+        "war-creek-nathan--437b0832d1",
+        "war-creek-nathan--25d80e1ad1"
+      ]
+    },
+    {
+      "sourceRow": 31,
+      "id": "miss-p3-02-cai",
+      "stage": "part3-plan",
+      "title": "2구간 · 카이의 선택 장면",
+      "anchor": "p3-merge",
+      "position": "after",
+      "actions": [
+        "카이의 정식 합류 처리 뒤 중층 동쪽으로 접근해 선택 장면을 본다."
+      ],
+      "people": [
+        "카이"
+      ],
+      "existingGroup": null,
+      "automatic": false,
+      "note": "",
+      "order": 210,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625318",
+      "image": {
+        "url": "https://img.game8.co/4646651/b70b84869e17aefcc181d90d5c7ed1d5.png/show",
+        "file": "assets/events/p3-02-cai.png",
+        "caption": "2구간 · 카이의 선택 장면 · 위치 화면"
+      },
+      "checkGroup": "miss-p3-02-cai",
+      "coverage": "new",
+      "checkActions": [
+        "miss-p3-02-cai--view"
+      ]
+    },
+    {
+      "sourceRow": 32,
+      "id": "miss-p3-02-dietrich",
+      "stage": "part3-plan",
+      "title": "2구간 · 디트리히의 선택 장면",
+      "anchor": "p3-merge",
+      "position": "after",
+      "actions": [
+        "디트리히의 정식 합류 처리 뒤 하층 항구로 올라가는 길에서 장면을 본다."
+      ],
+      "people": [
+        "디트리히"
+      ],
+      "existingGroup": null,
+      "automatic": false,
+      "note": "",
+      "order": 211,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625318",
+      "image": {
+        "url": "https://img.game8.co/4646655/f56a7a96ebedeaa1f9277705bbed4e4c.png/show",
+        "file": "assets/events/p3-02-dietrich.png",
+        "caption": "2구간 · 디트리히의 선택 장면 · 위치 화면"
+      },
+      "checkGroup": "miss-p3-02-dietrich",
+      "coverage": "new",
+      "checkActions": [
+        "miss-p3-02-dietrich--view"
+      ]
+    },
+    {
+      "sourceRow": 33,
+      "id": "miss-p3-02-theodora",
+      "stage": "part3-plan",
+      "title": "2구간 · 세오도라의 선택 장면",
+      "anchor": "p3-merge",
+      "position": "after",
+      "actions": [
+        "세오도라의 정식 합류 처리 뒤 상층 객관·횃대 근처에서 장면을 본다."
+      ],
+      "people": [
+        "세오도라"
+      ],
+      "existingGroup": null,
+      "automatic": false,
+      "note": "",
+      "order": 212,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625318",
+      "image": {
+        "url": "https://img.game8.co/4646779/809cd01ee763688b5719330bbeb42f7f.png/show",
+        "file": "assets/events/p3-02-theodora.png",
+        "caption": "2구간 · 세오도라의 선택 장면 · 위치 화면"
+      },
+      "checkGroup": "miss-p3-02-theodora",
+      "coverage": "new",
+      "checkActions": [
+        "miss-p3-02-theodora--view"
+      ]
+    },
+    {
+      "sourceRow": 34,
+      "id": "miss-p3-02-leda",
+      "stage": "part3-plan",
+      "title": "2구간 · 레다의 선택 장면",
+      "anchor": "p3-merge",
+      "position": "after",
+      "actions": [
+        "레다의 정식 합류 처리 뒤 중층 투기장 광장 분수 근처에서 장면을 본다."
+      ],
+      "people": [
+        "레다"
+      ],
+      "existingGroup": null,
+      "automatic": false,
+      "note": "",
+      "order": 213,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625318",
+      "image": {
+        "url": "https://img.game8.co/4646781/f4c6b09e90f1655cf7c08cb5287c7e19.png/show",
+        "file": "assets/events/p3-02-leda.png",
+        "caption": "2구간 · 레다의 선택 장면 · 위치 화면"
+      },
+      "checkGroup": "miss-p3-02-leda",
+      "coverage": "new",
+      "checkActions": [
+        "miss-p3-02-leda--view"
+      ]
+    },
+    {
+      "sourceRow": 35,
+      "id": "miss-p3-02-centurio",
+      "stage": "part3-plan",
+      "title": "2구간 · 센트리온 구출 뒤 대화 순서",
+      "anchor": "p3-merge",
+      "position": "after",
+      "actions": [
+        "센트리온 구출 의뢰를 완료한다.",
+        "다그시온에서 센트리온과 먼저 대화한 뒤 신전가 남쪽 아우로라의 선택 장면을 본다."
+      ],
+      "people": [
+        "센트리온"
+      ],
+      "existingGroup": null,
+      "automatic": false,
+      "note": "",
+      "order": 220,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625318",
+      "image": {
+        "url": "https://img.game8.co/4646782/83e3f1471addc0605db6f875a2bf70fd.png/show",
+        "file": "assets/events/p3-02-centurio.png",
+        "caption": "2구간 · 센트리온 구출 뒤 대화 순서 · 위치 화면"
+      },
+      "checkGroup": "miss-p3-02-centurio",
+      "coverage": "new",
+      "checkActions": [
+        "miss-p3-02-centurio--view-1",
+        "miss-p3-02-centurio--preceding-dialogue",
+        "miss-p3-02-centurio--view-2"
+      ]
+    },
+    {
+      "sourceRow": 36,
+      "id": "miss-p3-credna-spear",
+      "stage": "part3-plan",
+      "title": "2구간 이후 · 크레르 의뢰 완료 직후 강화창",
+      "anchor": "p3-merge",
+      "position": "after",
+      "actions": [
+        "크레르의 의뢰를 완료하면 다그시온 분전의 크레르에게 다시 말해 The Nameless의 강화·무기 수령을 확인한다."
+      ],
+      "people": [],
+      "existingGroup": null,
+      "automatic": false,
+      "note": "이 대화는 표식이 없으며 뒤 구간에도 가능. 본전 추가 시련의 도끼 보상과 구분. 이름 없는 창은 팔지 않는다.",
+      "order": 340,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625318",
+      "checkGroup": "miss-p3-credna-spear",
+      "coverage": "new",
+      "checkActions": [
+        "miss-p3-credna-spear--view"
+      ]
+    },
+    {
+      "sourceRow": 37,
+      "id": "miss-p3-02-fortuna",
+      "stage": "part3-plan",
+      "title": "2구간 · 테르메 근처 포트나",
+      "anchor": "p3-merge",
+      "position": "after",
+      "actions": [
+        "자유행동 시작 뒤 테르메 근처 포트나의 선택 장면을 본다.3→4→5구간 연속 장면과는 별개의 장면이다."
+      ],
+      "people": [],
+      "existingGroup": null,
+      "automatic": false,
+      "note": "",
+      "order": 250,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625318",
+      "image": {
+        "url": "https://img.game8.co/4645073/2a1e42f0973337fc02e234492d1b1212.png/show",
+        "file": "assets/events/p3-02-fortuna.png",
+        "caption": "2구간 · 테르메 근처 포트나 · 위치 화면"
+      },
+      "checkGroup": "miss-p3-02-fortuna",
+      "coverage": "new",
+      "checkActions": [
+        "miss-p3-02-fortuna--view"
+      ]
+    },
+    {
+      "sourceRow": 38,
+      "id": "miss-p3-03-fortuna",
+      "stage": "part3-plan",
+      "title": "3구간 · 포트나 연속 장면의 시작",
+      "anchor": "p3-merge",
+      "position": "after",
+      "actions": [
+        "자유행동이 열리면 테르메 근처 포트나와 대화한다.4·5구간 장면의 선행이므로 지나치지 않는다."
+      ],
+      "people": [],
+      "existingGroup": null,
+      "automatic": false,
+      "note": "",
+      "order": 300,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625535",
+      "image": {
+        "url": "https://img.game8.co/4645073/2a1e42f0973337fc02e234492d1b1212.png/show",
+        "file": "assets/events/p3-03-fortuna.png",
+        "caption": "3구간 · 포트나 연속 장면의 시작 · 위치 화면"
+      },
+      "checkGroup": "miss-p3-03-fortuna",
+      "coverage": "new",
+      "checkActions": [
+        "miss-p3-03-fortuna--view"
+      ]
+    },
+    {
+      "sourceRow": 39,
+      "id": "miss-p3-04-fortuna",
+      "stage": "part3-plan",
+      "title": "4구간 · 3구간 장면을 본 뒤 포트나",
+      "anchor": "p3-merge",
+      "position": "after",
+      "actions": [
+        "3구간 포트나 장면을 본 진행에서 테르메 근처로 가서4구간 장면을 본다."
+      ],
+      "people": [],
+      "existingGroup": null,
+      "automatic": false,
+      "note": "",
+      "order": 400,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625606",
+      "image": {
+        "url": "https://img.game8.co/4645073/2a1e42f0973337fc02e234492d1b1212.png/show",
+        "file": "assets/events/p3-04-fortuna.png",
+        "caption": "4구간 · 3구간 장면을 본 뒤 포트나 · 위치 화면"
+      },
+      "checkGroup": "miss-p3-04-fortuna",
+      "coverage": "new",
+      "checkActions": [
+        "miss-p3-04-fortuna--view"
+      ]
+    },
+    {
+      "sourceRow": 40,
+      "id": "miss-p3-05-fortuna",
+      "stage": "part3-plan",
+      "title": "5구간 · 4구간 장면을 본 뒤 포트나",
+      "anchor": "p3-merge",
+      "position": "after",
+      "actions": [
+        "4구간 포트나 장면을 본 진행에서 테르메 근처로 가서5구간 장면을 본다."
+      ],
+      "people": [],
+      "existingGroup": null,
+      "automatic": false,
+      "note": "",
+      "order": 500,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625819",
+      "image": {
+        "url": "https://img.game8.co/4645073/2a1e42f0973337fc02e234492d1b1212.png/show",
+        "file": "assets/events/p3-05-fortuna.png",
+        "caption": "5구간 · 4구간 장면을 본 뒤 포트나 · 위치 화면"
+      },
+      "checkGroup": "miss-p3-05-fortuna",
+      "coverage": "new",
+      "checkActions": [
+        "miss-p3-05-fortuna--view"
+      ]
+    },
+    {
+      "sourceRow": 41,
+      "id": "miss-post-prologue-3",
+      "stage": "part3-plan",
+      "title": "3부 완료 후 · 추가 서막 장면을 한 번에",
+      "anchor": "p3-merge",
+      "position": "after",
+      "actions": [
+        "3부 진행 조건으로 열린 추가 서막 장면을 확인한다."
+      ],
+      "people": [],
+      "existingGroup": null,
+      "automatic": false,
+      "note": "2부 한 루트6장 직접 완료와3부 진행 조건을 모두 갖춘 뒤 재강림1회로 두 장면을 모아 본다. 방첨탑 저장→제목 재강림→하드·캐주얼 유지→커스터마이즈와 서막 진행. 새 저장 만들기가 아니다. Game8은 복귀까지 약20분, 기존 이야기·능력·축복 유지라고 설명하며 게임1.1.0 직접 재현은 하지 않음.",
+      "order": 600,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/622612",
+      "checkGroup": "miss-post-prologue",
+      "coverage": "new",
+      "checkActions": [
+        "miss-post-prologue--save",
+        "miss-post-prologue--descend",
+        "miss-post-prologue--settings",
+        "miss-post-prologue--both-scenes"
+      ]
+    },
+    {
+      "sourceRow": 42,
+      "id": "miss-post-prologue-2",
+      "stage": "part3-plan",
+      "title": "추가 서막 · 2부 직접 완료 조건",
+      "anchor": "p3-merge",
+      "position": "after",
+      "actions": [
+        "2부 한 루트를 스킵 없이 직접 완료한 조건의 추가 서막 장면도 확인한다."
+      ],
+      "people": [],
+      "existingGroup": null,
+      "automatic": false,
+      "note": "앞의 재강림과 같은 한 번의 진행에서 확인. 스킵만으로는 해금되지 않음.",
+      "order": 601,
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+      "chapterSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/622612",
+      "checkGroup": "miss-post-prologue",
+      "coverage": "new",
+      "checkActions": [
+        "miss-post-prologue--save",
+        "miss-post-prologue--descend",
+        "miss-post-prologue--settings",
+        "miss-post-prologue--both-scenes"
+      ]
+    }
+  ],
+  "scope": "원문 표42개. 기한이 있는 외전·일반 의뢰는 기존 장별 체크와 별도로 대조. 실제 장면 시청 완료를 추정하지 않음."
+}

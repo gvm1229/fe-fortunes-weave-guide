@@ -1,0 +1,4544 @@
+{
+  "version": 1,
+  "date": "2026-11-12",
+  "scope": "3부에서 모든 지원 대화를 보기 위한 전원 영입 배정 검토 · 실제 게임 진행·체크 변경 없음",
+  "supportRules": [
+    {
+      "rule": "지원 수치는 네 루트·3부가 모두 공유한다. 한 루트에서 올린 지원은 다른 루트 영입 조건에도 그대로 쓰인다.",
+      "confidence": "확인(여러 출처)",
+      "sources": [
+        "https://annasnotebook.net/en/mechanics/route-inheritance/",
+        "https://www.rpgsite.net/guide/21393-how-to-raise-support-level-quickly-in-fire-emblem-fortunes-weave",
+        "https://allthings.how/fire-emblem-fortune-s-weave-support-level-rewards-bonuses-and-conversations/"
+      ]
+    },
+    {
+      "rule": "지원 대화는 여관에서 본다. 이미 본 대화는 성소(인과의 제단) '추억'에서 다시 볼 수 있다.",
+      "confidence": "확인",
+      "sources": [
+        "https://allthings.how/fire-emblem-fortune-s-weave-support-level-rewards-bonuses-and-conversations/",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/631340"
+      ]
+    },
+    {
+      "rule": "대부분의 지원 대화는 두 인물이 모두 합류해 있어야 한다. 일부는 한 명만 합류해도 된다. 제스터·우술라처럼 영입 전에는 안 나오는 인물도 있다.",
+      "confidence": "확인(Game8·Anna 일치)",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/631340",
+        "https://annasnotebook.net/en/mechanics/support-conditions/"
+      ]
+    },
+    {
+      "rule": "대화마다 열리는 기간이 따로 있다. 전체 190쌍 중 약 110쌍은 C 대화를 3부 전에만 볼 수 있다. 3부 전에 C를 놓치면 그 쌍은 3부에서 전부 막힌다.",
+      "confidence": "단일 출처(Anna's Notebook) · 게임 내 미확인",
+      "sources": [
+        "https://annasnotebook.net/en/mechanics/support-conditions/"
+      ]
+    },
+    {
+      "rule": "루트 유닛은 루트마다 따로 저장된다. 따라서 1·2부 한정 대화는 두 인물이 같은 루트에 함께 영입돼 있어야 볼 수 있다고 판단한다.",
+      "confidence": "추정(유닛 분리 규칙 + '둘 다 합류' 조건에서 추론)",
+      "sources": [
+        "https://annasnotebook.net/en/mechanics/route-inheritance/",
+        "https://annasnotebook.net/en/mechanics/support-conditions/"
+      ]
+    },
+    {
+      "rule": "A 대화 20개는 3부에서 처음 볼 수 없다(1부 한정 9개, 1·2부 한정 11개). Game8은 같은 성격의 목록 15개를 제시한다.",
+      "confidence": "확인(두 출처, 개수 차이 있음)",
+      "sources": [
+        "https://annasnotebook.net/en/mechanics/support-conditions/",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/631340"
+      ]
+    },
+    {
+      "rule": "3부에서만 열리는 쌍이 28쌍 있다. 이스마르는 48명과 A·S 대화가 있고 모두 3부에서 본다. S는 지원 Lv5와 A 대화가 필요하며 여관이 아닌 곳에서 나온다.",
+      "confidence": "단일 출처(Anna's Notebook)",
+      "sources": [
+        "https://annasnotebook.net/en/mechanics/support-conditions/"
+      ]
+    },
+    {
+      "rule": "이스마르와의 지원은 1부에서 '흰 까마귀 먹이 주기'(주1회)로만 올린다. 2·3부 합류 인물과 트로이아·세테스·키로이카·누조는 이스마르와 A가 없다.",
+      "confidence": "확인(두 출처)",
+      "sources": [
+        "https://allthings.how/fire-emblem-fortune-s-weave-support-level-rewards-bonuses-and-conversations/",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628208"
+      ]
+    },
+    {
+      "rule": "앞 루트에서 본 대화는 그 루트 1부 완료 + 2부 완료(또는 스킵) 뒤에만 3부에 반영된다. 놓친 대화는 오벨리스크로 해당 장을 다시 해서 볼 수 있다.",
+      "confidence": "단일 출처(Anna's Notebook)",
+      "sources": [
+        "https://annasnotebook.net/en/mechanics/support-conditions/"
+      ]
+    },
+    {
+      "rule": "보는 순서가 틀리면 잠기는 묶음이 있다: 라이선더·릴리안 B → 세오도라·릴리안 B 순서, 티아라·피터르·울턴드 B 순서.",
+      "confidence": "확인(Game8·Anna 일치)",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/631340",
+        "https://annasnotebook.net/en/mechanics/support-conditions/"
+      ]
+    },
+    {
+      "rule": "3부 버전 선택·인과 융합(300파편)은 능력·기능·레벨에 관한 것이다. 지원은 공유 수치라 고른 버전과 무관하다고 판단한다. 지원 상한·동시 A/S 수 제한은 찾지 못했다.",
+      "confidence": "추정 · 상한은 미확인",
+      "sources": [
+        "https://www.siliconera.com/how-does-the-fire-emblem-fortunes-weave-part-3-character-merge-work/",
+        "https://annasnotebook.net/en/mechanics/route-inheritance/",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628208"
+      ]
+    },
+    {
+      "rule": "3부 재영입은 그 인물을 영입한 루트의 2부를 완료해야 한다. 2부를 스킵해도 인정된다는 설명(Anna)과 완료만 적은 설명(RPG Site)이 있다.",
+      "confidence": "확인(조건 표현 차이)",
+      "sources": [
+        "https://www.rpgsite.net/guide/21433-fire-emblem-fortunes-weave-part-iii-salvation-walkthrough",
+        "https://annasnotebook.net/en/mechanics/support-conditions/",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/618838"
+      ]
+    },
+    {
+      "rule": "3부의 모든 서브 퀘스트는 6/6까지다.",
+      "confidence": "단일 출처(RPG Site)",
+      "sources": [
+        "https://www.rpgsite.net/guide/21433-fire-emblem-fortunes-weave-part-iii-salvation-walkthrough"
+      ]
+    }
+  ],
+  "assignments": [
+    {
+      "name": "세오도라",
+      "route": "theodora",
+      "fame": 0,
+      "sup": 0,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "진영장",
+      "deadline": {
+        "chapter": "1장",
+        "dates": ""
+      },
+      "role": "본대",
+      "avoid": false,
+      "reason": "루트 주인공",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "data/recruitment-gates.json"
+      ]
+    },
+    {
+      "name": "보나파르트",
+      "route": "theodora",
+      "fame": 0,
+      "sup": 0,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "자동",
+      "deadline": {
+        "chapter": "1장",
+        "dates": ""
+      },
+      "role": "본대",
+      "avoid": false,
+      "reason": "세오도라 전용",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "data/recruitment-gates.json"
+      ]
+    },
+    {
+      "name": "토비아스",
+      "route": "theodora",
+      "fame": 0,
+      "sup": 0,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "자동",
+      "deadline": {
+        "chapter": "1장",
+        "dates": ""
+      },
+      "role": "본대",
+      "avoid": false,
+      "reason": "세오도라 전용",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "data/recruitment-gates.json"
+      ]
+    },
+    {
+      "name": "라이선더",
+      "route": "theodora",
+      "fame": 0,
+      "sup": 0,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "자동(4장)",
+      "deadline": {
+        "chapter": "4장",
+        "dates": ""
+      },
+      "role": "보완",
+      "avoid": false,
+      "reason": "세오도라 자동 합류",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "data/recruitment-gates.json"
+      ]
+    },
+    {
+      "name": "릴리안",
+      "route": "theodora",
+      "fame": 0,
+      "sup": 0,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "자동(4장)",
+      "deadline": {
+        "chapter": "4장",
+        "dates": ""
+      },
+      "role": "본대",
+      "avoid": false,
+      "reason": "세오도라 자동 합류",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "data/recruitment-gates.json"
+      ]
+    },
+    {
+      "name": "레다",
+      "route": "leda",
+      "fame": 0,
+      "sup": 0,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "진영장",
+      "deadline": {
+        "chapter": "1장",
+        "dates": ""
+      },
+      "role": "본대",
+      "avoid": false,
+      "reason": "루트 주인공",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "data/recruitment-gates.json"
+      ]
+    },
+    {
+      "name": "디트리히",
+      "route": "dietrich",
+      "fame": 0,
+      "sup": 0,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "진영장",
+      "deadline": {
+        "chapter": "1장",
+        "dates": ""
+      },
+      "role": "본대",
+      "avoid": false,
+      "reason": "루트 주인공",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "data/recruitment-gates.json"
+      ]
+    },
+    {
+      "name": "카이",
+      "route": "kai",
+      "fame": 0,
+      "sup": 0,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "진영장",
+      "deadline": {
+        "chapter": "1장",
+        "dates": ""
+      },
+      "role": "본대",
+      "avoid": false,
+      "reason": "루트 주인공",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "data/recruitment-gates.json"
+      ]
+    },
+    {
+      "name": "시로코",
+      "route": "leda",
+      "fame": 0,
+      "sup": 0,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "자동",
+      "deadline": {
+        "chapter": "1장",
+        "dates": ""
+      },
+      "role": "본대",
+      "avoid": false,
+      "reason": "레다 자동. 세오도라판은 능력 보완 중복",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "data/recruitment-gates.json"
+      ]
+    },
+    {
+      "name": "무우",
+      "route": "leda",
+      "fame": 0,
+      "sup": 0,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "자동",
+      "deadline": {
+        "chapter": "1장",
+        "dates": ""
+      },
+      "role": "본대",
+      "avoid": false,
+      "reason": "레다 자동",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "data/recruitment-gates.json"
+      ]
+    },
+    {
+      "name": "올림피아",
+      "route": "leda",
+      "fame": 0,
+      "sup": 0,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "자동(3장)",
+      "deadline": {
+        "chapter": "3장",
+        "dates": ""
+      },
+      "role": "본대",
+      "avoid": false,
+      "reason": "레다 자동",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "data/recruitment-gates.json"
+      ]
+    },
+    {
+      "name": "버커니어",
+      "route": "leda",
+      "fame": 0,
+      "sup": 0,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "자동",
+      "deadline": {
+        "chapter": "1장",
+        "dates": ""
+      },
+      "role": "수집",
+      "avoid": false,
+      "reason": "레다 자동",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "data/recruitment-gates.json"
+      ]
+    },
+    {
+      "name": "에스메랄다",
+      "route": "dietrich",
+      "fame": 0,
+      "sup": 0,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "자동(2장)",
+      "deadline": {
+        "chapter": "2장",
+        "dates": ""
+      },
+      "role": "본대",
+      "avoid": false,
+      "reason": "디트리히 자동. 레다판은 능력 보완",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "data/recruitment-gates.json"
+      ]
+    },
+    {
+      "name": "미카엘라",
+      "route": "dietrich",
+      "fame": 0,
+      "sup": 0,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "자동(4장)",
+      "deadline": {
+        "chapter": "4장",
+        "dates": ""
+      },
+      "role": "본대",
+      "avoid": false,
+      "reason": "디트리히 자동. 카이판은 능력 보완",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "data/recruitment-gates.json"
+      ]
+    },
+    {
+      "name": "파비오",
+      "route": "dietrich",
+      "fame": 0,
+      "sup": 0,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "자동",
+      "deadline": {
+        "chapter": "1장",
+        "dates": ""
+      },
+      "role": "본대",
+      "avoid": false,
+      "reason": "디트리히 자동",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "data/recruitment-gates.json"
+      ]
+    },
+    {
+      "name": "티아라",
+      "route": "kai",
+      "fame": 0,
+      "sup": 0,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "자동",
+      "deadline": {
+        "chapter": "1장",
+        "dates": ""
+      },
+      "role": "본대",
+      "avoid": false,
+      "reason": "카이 자동",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "data/recruitment-gates.json"
+      ]
+    },
+    {
+      "name": "피터르",
+      "route": "kai",
+      "fame": 0,
+      "sup": 0,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "자동",
+      "deadline": {
+        "chapter": "1장",
+        "dates": ""
+      },
+      "role": "본대",
+      "avoid": false,
+      "reason": "카이 자동",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "data/recruitment-gates.json"
+      ]
+    },
+    {
+      "name": "울턴드",
+      "route": "kai",
+      "fame": 0,
+      "sup": 0,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "자동(6장)",
+      "deadline": {
+        "chapter": "6장",
+        "dates": ""
+      },
+      "role": "본대",
+      "avoid": false,
+      "reason": "카이 자동. 디트리히판은 조건부 능력 보완",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "data/recruitment-gates.json"
+      ]
+    },
+    {
+      "name": "소피아",
+      "route": "theodora",
+      "fame": 2,
+      "sup": 1,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "",
+      "deadline": {
+        "chapter": "5장~",
+        "dates": "1부 12장 종료 전"
+      },
+      "role": "본대",
+      "avoid": false,
+      "reason": "가장 쉬운 조건",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "data/recruitment-gates.json"
+      ]
+    },
+    {
+      "name": "녹투라",
+      "route": "theodora",
+      "fame": 3,
+      "sup": 1,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "",
+      "deadline": {
+        "chapter": "5장~",
+        "dates": "1부 12장 종료 전"
+      },
+      "role": "본대",
+      "avoid": false,
+      "reason": "가장 쉬운 조건. 카이판은 실전 보완",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "data/recruitment-gates.json"
+      ]
+    },
+    {
+      "name": "리네",
+      "route": "theodora",
+      "fame": 6,
+      "sup": 3,
+      "items": [
+        "반짝반짝어 1"
+      ],
+      "gold": 0,
+      "prerequisite": "",
+      "deadline": {
+        "chapter": "5장~",
+        "dates": "1부 12장 종료 전"
+      },
+      "role": "본대",
+      "avoid": false,
+      "reason": "희망 인물. 디트리히·카이판은 능력 보완·회복 실전",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "data/recruitment-gates.json"
+      ]
+    },
+    {
+      "name": "단테",
+      "route": "theodora",
+      "fame": 6,
+      "sup": 3,
+      "items": [],
+      "gold": 8000,
+      "prerequisite": "",
+      "deadline": {
+        "chapter": "5장~",
+        "dates": "1부 12장 종료 전"
+      },
+      "role": "본대",
+      "avoid": false,
+      "reason": "희망 인물. 디트리히판은 선택 능력 보완",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "data/recruitment-gates.json"
+      ]
+    },
+    {
+      "name": "알렉산드라",
+      "route": "theodora",
+      "fame": 6,
+      "sup": 1,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "",
+      "deadline": {
+        "chapter": "8장~",
+        "dates": "1부 12장 종료 전"
+      },
+      "role": "본대",
+      "avoid": false,
+      "reason": "희망 인물. 네 루트 모두 탈것 보존",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "data/recruitment-gates.json"
+      ]
+    },
+    {
+      "name": "우술라",
+      "route": "dietrich",
+      "fame": 7,
+      "sup": 3,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "타리문 외전 클리어 + 질문 3개 '예'",
+      "deadline": {
+        "chapter": "9장 외전 9/17~9/19, 10/1~10/12",
+        "dates": "1부 12장 종료 전"
+      },
+      "role": "본대",
+      "avoid": false,
+      "reason": "희망 인물. 세오도라판은 능력 보완",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624240",
+        "data/recruitment-gates.json"
+      ]
+    },
+    {
+      "name": "이오",
+      "route": "dietrich",
+      "fame": 3,
+      "sup": 2,
+      "items": [],
+      "gold": 800,
+      "prerequisite": "",
+      "deadline": {
+        "chapter": "4장~",
+        "dates": "1부 12장 종료 전"
+      },
+      "role": "보완",
+      "avoid": false,
+      "reason": "가장 쉬운 조건(800G). 나머지 세 루트는 탈것 보존",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "data/recruitment-gates.json"
+      ]
+    },
+    {
+      "name": "누조",
+      "route": "kai",
+      "fame": 6,
+      "sup": 2,
+      "items": [
+        "철의 활 3"
+      ],
+      "gold": 0,
+      "prerequisite": "",
+      "deadline": {
+        "chapter": "6장~",
+        "dates": "1부 12장 종료 전"
+      },
+      "role": "본대",
+      "avoid": false,
+      "reason": "카이 궁수. 세오도라·디트리히판은 선더 소드 지참품 조건부",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "data/recruitment-gates.json"
+      ]
+    },
+    {
+      "name": "로레타",
+      "route": "theodora",
+      "fame": 5,
+      "sup": 3,
+      "items": [
+        "철의 검 3"
+      ],
+      "gold": 0,
+      "prerequisite": "",
+      "deadline": {
+        "chapter": "5장~",
+        "dates": "1부 12장 종료 전"
+      },
+      "role": "본대",
+      "avoid": false,
+      "reason": "레다(5/3)와 같고 먼저 진행. 카이판은 능력 보완",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "data/recruitment-gates.json"
+      ]
+    },
+    {
+      "name": "루루디아",
+      "route": "theodora",
+      "fame": 7,
+      "sup": 3,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "칼리아네이라 항구 정보 → 보고",
+      "deadline": {
+        "chapter": "5장~",
+        "dates": "1부 12장 종료 전"
+      },
+      "role": "보완",
+      "avoid": false,
+      "reason": "레다(7/3)와 같고 먼저 진행",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "data/recruitment-gates.json"
+      ]
+    },
+    {
+      "name": "그자람",
+      "route": "leda",
+      "fame": 3,
+      "sup": 1,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "",
+      "deadline": {
+        "chapter": "4장~",
+        "dates": "1부 12장 종료 전"
+      },
+      "role": "본대",
+      "avoid": false,
+      "reason": "카이(2/1)도 쉬움. 두 판 모두 능력 보완 목적",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "data/recruitment-gates.json"
+      ]
+    },
+    {
+      "name": "카타냐",
+      "route": "leda",
+      "fame": 2,
+      "sup": 1,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "",
+      "deadline": {
+        "chapter": "4장~",
+        "dates": "1부 12장 종료 전"
+      },
+      "role": "본대",
+      "avoid": false,
+      "reason": "가장 쉬운 조건. 디트리히판은 능력 보완",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "data/recruitment-gates.json"
+      ]
+    },
+    {
+      "name": "피아나",
+      "route": "leda",
+      "fame": 5,
+      "sup": 3,
+      "items": [],
+      "gold": 3000,
+      "prerequisite": "",
+      "deadline": {
+        "chapter": "5장~",
+        "dates": "1부 12장 종료 전"
+      },
+      "role": "본대",
+      "avoid": false,
+      "reason": "가장 쉬운 조건. 디트리히판은 실전 회복",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "data/recruitment-gates.json"
+      ]
+    },
+    {
+      "name": "이니오니",
+      "route": "leda",
+      "fame": 7,
+      "sup": 1,
+      "items": [],
+      "gold": 3000,
+      "prerequisite": "",
+      "deadline": {
+        "chapter": "9장~(7/10쯤 등장)",
+        "dates": "1부 12장 종료 전"
+      },
+      "role": "본대",
+      "avoid": false,
+      "reason": "가장 쉬운 조건(3,000G)",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "https://www.rpgsite.net/guide/21391-fire-emblem-fortunes-weave-recruitment-guide-all-characters-in-game-how-to-recruit-them"
+      ]
+    },
+    {
+      "name": "자스민",
+      "route": "leda",
+      "fame": 4,
+      "sup": 2,
+      "items": [],
+      "gold": 500,
+      "prerequisite": "",
+      "deadline": {
+        "chapter": "6장~(5/8쯤 등장)",
+        "dates": "1부 12장 종료 전"
+      },
+      "role": "수집",
+      "avoid": true,
+      "reason": "가장 쉬운 조건(500G). 지양 인물",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "https://www.rpgsite.net/guide/21391-fire-emblem-fortunes-weave-recruitment-guide-all-characters-in-game-how-to-recruit-them",
+        "https://www.keengamer.com/articles/guides/fire-emblem-fortunes-weave-all-characters-recruitment-guide/"
+      ]
+    },
+    {
+      "name": "사란",
+      "route": "leda",
+      "fame": 8,
+      "sup": 3,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "아나톨리아 외전 클리어 + 질문 3개",
+      "deadline": {
+        "chapter": "10장 외전 10/5~10/17",
+        "dates": "1부 12장 종료 전"
+      },
+      "role": "수집",
+      "avoid": false,
+      "reason": "디트리히(10/3)보다 쉬움",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624240"
+      ]
+    },
+    {
+      "name": "하르빈",
+      "route": "leda",
+      "fame": 7,
+      "sup": 3,
+      "items": [
+        "대추야자 10"
+      ],
+      "gold": 0,
+      "prerequisite": "",
+      "deadline": {
+        "chapter": "4장~",
+        "dates": "1부 12장 종료 전"
+      },
+      "role": "보완",
+      "avoid": false,
+      "reason": "레다 실전 체험 결정(2026-11-07)",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "data/recruitment-gates.json"
+      ]
+    },
+    {
+      "name": "게이츠",
+      "route": "dietrich",
+      "fame": 10,
+      "sup": 3,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "베르트랑 외전(9/17 하루) + 12장 진입",
+      "deadline": {
+        "chapter": "9장 9/17",
+        "dates": "1부 12장 종료 전"
+      },
+      "role": "본대",
+      "avoid": false,
+      "reason": "디트리히 전용",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624240"
+      ]
+    },
+    {
+      "name": "제스터",
+      "route": "dietrich",
+      "fame": 6,
+      "sup": 3,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "전투 의뢰 3개 연속",
+      "deadline": {
+        "chapter": "4장~",
+        "dates": "1부 12장 종료 전"
+      },
+      "role": "수집",
+      "avoid": false,
+      "reason": "가장 쉬운 조건",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "data/recruitment-gates.json"
+      ]
+    },
+    {
+      "name": "세테스",
+      "route": "kai",
+      "fame": 6,
+      "sup": 3,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "황혼의 흉적 토벌 의뢰",
+      "deadline": {
+        "chapter": "3장~",
+        "dates": "1부 12장 종료 전"
+      },
+      "role": "본대",
+      "avoid": false,
+      "reason": "세오도라(6/3)와 같지만 카이 실전·로레타 A 대화",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "data/recruitment-gates.json"
+      ]
+    },
+    {
+      "name": "누디누",
+      "route": "theodora",
+      "fame": 5,
+      "sup": 3,
+      "items": [
+        "철의 도끼 3"
+      ],
+      "gold": 0,
+      "prerequisite": "",
+      "deadline": {
+        "chapter": "5장~",
+        "dates": "1부 12장 종료 전"
+      },
+      "role": "수집·육성 안 함",
+      "avoid": false,
+      "reason": "단테·릴리안(1·2부 한정 C·B)과 보나파르트(2부~, 세오도라 동석) 대화 상대가 모두 세오도라에 있다. 카이 6/1·청동 도끼 2보다 조건은 조금 어렵지만 대화 손실이 없다.",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "https://www.keengamer.com/articles/guides/fire-emblem-fortunes-weave-all-characters-recruitment-guide/",
+        "https://www.rpgsite.net/guide/21391-fire-emblem-fortunes-weave-recruitment-guide-all-characters-in-game-how-to-recruit-them",
+        "https://annasnotebook.net/en/mechanics/support-conditions/"
+      ]
+    },
+    {
+      "name": "나타",
+      "route": "theodora",
+      "fame": 6,
+      "sup": 2,
+      "items": [
+        "모래 벌레 고기 3"
+      ],
+      "gold": 0,
+      "prerequisite": "",
+      "deadline": {
+        "chapter": "5장~",
+        "dates": "1부 12장 종료 전"
+      },
+      "role": "수집·육성 안 함",
+      "avoid": false,
+      "reason": "네 루트 중 가장 쉬움. 세오도라와의 C(1부·둘 다 합류)와 대도 C·B(1부)를 같은 루트에서 본다.",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "https://www.keengamer.com/articles/guides/fire-emblem-fortunes-weave-all-characters-recruitment-guide/",
+        "https://annasnotebook.net/en/mechanics/support-conditions/"
+      ]
+    },
+    {
+      "name": "자코네",
+      "route": "theodora",
+      "fame": 4,
+      "sup": 1,
+      "items": [],
+      "gold": 10,
+      "prerequisite": "교섭에서 '거절'을 반복해 10G까지 낮춘 뒤 지급",
+      "deadline": {
+        "chapter": "5장~",
+        "dates": "1부 12장 종료 전"
+      },
+      "role": "수집·육성 안 함",
+      "avoid": true,
+      "reason": "가장 쉬움. 대화 상대(게이츠 2부~, 시몬·하르빈 어느 부든)가 3부에서도 열린다.",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "https://www.keengamer.com/articles/guides/fire-emblem-fortunes-weave-all-characters-recruitment-guide/",
+        "https://annasnotebook.net/en/mechanics/support-conditions/"
+      ]
+    },
+    {
+      "name": "밴디츠",
+      "route": "theodora",
+      "fame": 8,
+      "sup": 1,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "",
+      "deadline": {
+        "chapter": "6장~",
+        "dates": "1부 12장 종료 전"
+      },
+      "role": "수집·육성 안 함",
+      "avoid": true,
+      "reason": "지원1로 가장 쉬움. 루루디아 대화는 어느 부든 가능.",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "https://www.keengamer.com/articles/guides/fire-emblem-fortunes-weave-all-characters-recruitment-guide/",
+        "https://annasnotebook.net/en/mechanics/support-conditions/"
+      ]
+    },
+    {
+      "name": "대도",
+      "route": "theodora",
+      "fame": 5,
+      "sup": 2,
+      "items": [
+        "코샬루 가아 2"
+      ],
+      "gold": 0,
+      "prerequisite": "",
+      "deadline": {
+        "chapter": "5장~",
+        "dates": "1부 12장 종료 전"
+      },
+      "role": "수집·육성 안 함",
+      "avoid": true,
+      "reason": "레다(5/2)와 조건이 같고 먼저 진행. 나타와 1부 C·B를 함께 본다. 에스메랄다 C는 디트리히 전용이라 별도 판단 필요.",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "https://www.keengamer.com/articles/guides/fire-emblem-fortunes-weave-all-characters-recruitment-guide/",
+        "https://annasnotebook.net/en/mechanics/support-conditions/"
+      ]
+    },
+    {
+      "name": "페페",
+      "route": "kai",
+      "fame": 9,
+      "sup": 1,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "베르트랑 외전 클리어",
+      "deadline": {
+        "chapter": "10장 외전 9/17~9/25",
+        "dates": "1부 12장 종료 전"
+      },
+      "role": "수집·육성 안 함",
+      "avoid": false,
+      "reason": "세오도라 7/2가 조금 쉽지만 1·2부 한정 대화 상대(울턴드·리네·무우) 중 카이에 둘(울턴드·리네), 세오도라에는 하나(리네)만 있다. 대화 우선이면 카이, 조건 우선이면 세오도라.",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624240",
+        "https://annasnotebook.net/en/mechanics/support-conditions/"
+      ]
+    },
+    {
+      "name": "디에고",
+      "route": "leda",
+      "fame": 8,
+      "sup": 3,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "오르헬 외전 '오르헬의 미련' 클리어",
+      "deadline": {
+        "chapter": "11장 외전 10/18~10/27",
+        "dates": "1부 12장 종료 전"
+      },
+      "role": "수집·육성 안 함",
+      "avoid": false,
+      "reason": "세오도라(8/2)는 외전 마감 10/24가 1부 자유행동 끝과 같아 위험하다. 레다는 12장이 남고, 1부 한정 대화 상대(사란·하르빈)와 이오(오르헬 동석)가 모두 레다에 있다.",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624240",
+        "https://annasnotebook.net/en/mechanics/support-conditions/"
+      ]
+    },
+    {
+      "name": "시몬",
+      "route": "dietrich",
+      "fame": 7,
+      "sup": 3,
+      "items": [],
+      "gold": 500,
+      "prerequisite": "500G 지급 후 '뒤' 선택",
+      "deadline": {
+        "chapter": "4장~",
+        "dates": "1부 12장 종료 전"
+      },
+      "role": "수집·육성 안 함",
+      "avoid": false,
+      "reason": "레다 6/3이 조금 쉽지만 1부 한정 대화 상대 미카엘라·우술라·피아나·타리문(외전)이 디트리히에 모여 있다. 레다에는 피아나만 있다.",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "https://www.keengamer.com/articles/guides/fire-emblem-fortunes-weave-all-characters-recruitment-guide/",
+        "https://annasnotebook.net/en/mechanics/support-conditions/"
+      ]
+    },
+    {
+      "name": "키로이카",
+      "route": "leda",
+      "fame": 4,
+      "sup": 1,
+      "items": [
+        "성수 3"
+      ],
+      "gold": 0,
+      "prerequisite": "",
+      "deadline": {
+        "chapter": "5장~(5/4쯤 등장)",
+        "dates": "1부 12장 종료 전"
+      },
+      "role": "수집·육성 안 함",
+      "avoid": true,
+      "reason": "디트리히(4/1·성수3)와 같고 먼저 진행. 1·2부 한정 에스메랄다 C 상대가 레다에 있다.",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "https://www.keengamer.com/articles/guides/fire-emblem-fortunes-weave-all-characters-recruitment-guide/",
+        "https://www.rpgsite.net/guide/21391-fire-emblem-fortunes-weave-recruitment-guide-all-characters-in-game-how-to-recruit-them",
+        "https://annasnotebook.net/en/mechanics/support-conditions/"
+      ]
+    },
+    {
+      "name": "양계",
+      "route": "dietrich",
+      "fame": 0,
+      "sup": 0,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "영입 튜토리얼로 자동 합류",
+      "deadline": {
+        "chapter": "4장",
+        "dates": "1부 12장 종료 전"
+      },
+      "role": "수집·육성 안 함",
+      "avoid": true,
+      "reason": "디트리히 재육성 때 자동. 로레타 C·B(1부 한정)는 디트리히에 로레타가 없어 별도 판단.",
+      "sources": [
+        "https://www.keengamer.com/articles/guides/fire-emblem-fortunes-weave-all-characters-recruitment-guide/",
+        "https://www.rpgsite.net/guide/21391-fire-emblem-fortunes-weave-recruitment-guide-all-characters-in-game-how-to-recruit-them",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957"
+      ]
+    },
+    {
+      "name": "골라이어스",
+      "route": "dietrich",
+      "fame": 6,
+      "sup": 3,
+      "items": [
+        "거대 고기 3"
+      ],
+      "gold": 0,
+      "prerequisite": "",
+      "deadline": {
+        "chapter": "4장~",
+        "dates": "1부 12장 종료 전"
+      },
+      "role": "수집·육성 안 함",
+      "avoid": true,
+      "reason": "가장 쉬움. 제스터 A(1·2부 한정)를 디트리히에서 함께 본다.",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "https://www.keengamer.com/articles/guides/fire-emblem-fortunes-weave-all-characters-recruitment-guide/",
+        "https://annasnotebook.net/en/mechanics/support-conditions/"
+      ]
+    },
+    {
+      "name": "마지데",
+      "route": "kai",
+      "fame": 5,
+      "sup": 2,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "스카우트 3회: '필요하다'×2 → '진심으로 필요하다'",
+      "deadline": {
+        "chapter": "5장~",
+        "dates": "1부 12장 종료 전"
+      },
+      "role": "수집·육성 안 함",
+      "avoid": true,
+      "reason": "가장 쉬움. 대화 상대(오르헬 3부, 나타 어느 부든)는 3부에서 열린다.",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "https://www.keengamer.com/articles/guides/fire-emblem-fortunes-weave-all-characters-recruitment-guide/",
+        "https://annasnotebook.net/en/mechanics/support-conditions/"
+      ]
+    },
+    {
+      "name": "이스마르",
+      "route": "part3",
+      "fame": null,
+      "sup": null,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "3부 주인공",
+      "deadline": {
+        "chapter": "공통",
+        "dates": ""
+      },
+      "role": "본대",
+      "avoid": false,
+      "reason": "별도 합류: 공통",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/618838"
+      ]
+    },
+    {
+      "name": "홍화",
+      "route": "part3",
+      "fame": null,
+      "sup": null,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "3부 프롤로그 뒤 자동 합류",
+      "deadline": {
+        "chapter": "공통",
+        "dates": ""
+      },
+      "role": "수집",
+      "avoid": false,
+      "reason": "별도 합류: 공통",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/618838"
+      ]
+    },
+    {
+      "name": "트로이아",
+      "route": "part3",
+      "fame": null,
+      "sup": null,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "3부 프롤로그 뒤 자동 합류",
+      "deadline": {
+        "chapter": "공통",
+        "dates": ""
+      },
+      "role": "수집",
+      "avoid": false,
+      "reason": "별도 합류: 공통",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/618838"
+      ]
+    },
+    {
+      "name": "베르트랑",
+      "route": "theodora",
+      "fame": null,
+      "sup": null,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "1부 베르트랑 외전 클리어 → 3부 1구간 정식 합류",
+      "deadline": {
+        "chapter": "세오도라 11장 9/17~9/25(페페 조건과 공유)",
+        "dates": ""
+      },
+      "role": "수집",
+      "avoid": false,
+      "reason": "별도 합류: 세오도라 11장 9/17~9/25(페페 조건과 공유)",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624240",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/618791"
+      ]
+    },
+    {
+      "name": "타리문",
+      "route": "dietrich",
+      "fame": null,
+      "sup": null,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "1부 타리문 외전 클리어 → 3부 1구간 정식 합류",
+      "deadline": {
+        "chapter": "디트리히 9장(우술라 조건과 공유). 세오도라 11장도 가능",
+        "dates": ""
+      },
+      "role": "수집",
+      "avoid": false,
+      "reason": "별도 합류: 디트리히 9장(우술라 조건과 공유). 세오도라 11장도 가능",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624240",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/618791"
+      ]
+    },
+    {
+      "name": "아나톨리아",
+      "route": "leda",
+      "fame": null,
+      "sup": null,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "1부 아나톨리아 외전 클리어 → 3부 1구간 정식 합류",
+      "deadline": {
+        "chapter": "레다 10장 10/5~10/17(사란 조건과 공유)",
+        "dates": ""
+      },
+      "role": "수집",
+      "avoid": false,
+      "reason": "별도 합류: 레다 10장 10/5~10/17(사란 조건과 공유)",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624240",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/618791"
+      ]
+    },
+    {
+      "name": "오르헬",
+      "route": "leda",
+      "fame": null,
+      "sup": null,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "1부 오르헬 외전 클리어 → 3부 1구간 정식 합류",
+      "deadline": {
+        "chapter": "레다 11장 10/18~10/27(디에고 조건과 공유)",
+        "dates": ""
+      },
+      "role": "수집",
+      "avoid": false,
+      "reason": "별도 합류: 레다 11장 10/18~10/27(디에고 조건과 공유)",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624240",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/618791"
+      ]
+    },
+    {
+      "name": "키릭",
+      "route": "leda",
+      "fame": null,
+      "sup": null,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "1부 9장 '죽은 여동생의 장신구' 완료 → 2부 2장에서 격파해 영입 → 3부에서 다시 대화",
+      "deadline": {
+        "chapter": "레다 또는 디트리히(한 루트면 충분) · 레다 우선",
+        "dates": ""
+      },
+      "role": "수집",
+      "avoid": false,
+      "reason": "별도 합류: 레다 또는 디트리히(한 루트면 충분) · 레다 우선",
+      "sources": [
+        "https://www.siliconera.com/can-you-recruit-creek-in-fire-emblem-fortunes-weave/",
+        "https://raiderking.com/fire-emblem-fortunes-weave-how-to-recruit-nathan-and-creek/",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/618838"
+      ]
+    },
+    {
+      "name": "네이선",
+      "route": "leda",
+      "fame": null,
+      "sup": null,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "2부 3장에서 키릭으로 막타 → 영입 → 3부에서 다시 대화",
+      "deadline": {
+        "chapter": "키릭과 같은 루트",
+        "dates": ""
+      },
+      "role": "수집",
+      "avoid": false,
+      "reason": "별도 합류: 키릭과 같은 루트",
+      "sources": [
+        "https://www.siliconera.com/can-you-recruit-creek-in-fire-emblem-fortunes-weave/",
+        "https://raiderking.com/fire-emblem-fortunes-weave-how-to-recruit-nathan-and-creek/",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/618838"
+      ]
+    },
+    {
+      "name": "아스완",
+      "route": "theodora",
+      "fame": null,
+      "sup": null,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "2부 3장 게스트로 생존 → 3부 5구간 자동 합류",
+      "deadline": {
+        "chapter": "로컬은 세오도라 2부 3장. Game8은 카이/레다 루트 필요 가능성 표기 · 미확인",
+        "dates": ""
+      },
+      "role": "수집",
+      "avoid": false,
+      "reason": "별도 합류: 로컬은 세오도라 2부 3장. Game8은 카이/레다 루트 필요 가능성 표기 · 미확인",
+      "sources": [
+        "https://www.rpgsite.net/guide/21391-fire-emblem-fortunes-weave-recruitment-guide-all-characters-in-game-how-to-recruit-them",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/618838"
+      ]
+    },
+    {
+      "name": "타호니아",
+      "route": "theodora",
+      "fame": null,
+      "sup": null,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "아스완과 같음",
+      "deadline": {
+        "chapter": "아스완과 같음 · 미확인",
+        "dates": ""
+      },
+      "role": "수집",
+      "avoid": true,
+      "reason": "별도 합류: 아스완과 같음 · 미확인",
+      "sources": [
+        "https://www.rpgsite.net/guide/21391-fire-emblem-fortunes-weave-recruitment-guide-all-characters-in-game-how-to-recruit-them",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/618838"
+      ]
+    },
+    {
+      "name": "센트리온",
+      "route": "part3",
+      "fame": null,
+      "sup": null,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "3부 2구간 의뢰 '센트리온 구출' 완료 → 다그시온에서 대화",
+      "deadline": {
+        "chapter": "3부 · 카이가 3부에 있어야 할 수 있음(카이 1부+2부 필요)",
+        "dates": ""
+      },
+      "role": "수집",
+      "avoid": true,
+      "reason": "별도 합류: 3부 · 카이가 3부에 있어야 할 수 있음(카이 1부+2부 필요)",
+      "sources": [
+        "https://www.rpgsite.net/guide/21391-fire-emblem-fortunes-weave-recruitment-guide-all-characters-in-game-how-to-recruit-them",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/618838",
+        "https://www.rpgsite.net/guide/21433-fire-emblem-fortunes-weave-part-iii-salvation-walkthrough"
+      ]
+    },
+    {
+      "name": "클라프카",
+      "route": "part3",
+      "fame": null,
+      "sup": null,
+      "items": [],
+      "gold": 0,
+      "prerequisite": "3부 5구간 게스트(마하두전)로 생존 → 6구간 자동 합류",
+      "deadline": {
+        "chapter": "3부 · 세오도라 루트 관련 가능성(Game8) · 미확인. 로컬 도감에 없음",
+        "dates": ""
+      },
+      "role": "수집",
+      "avoid": false,
+      "reason": "별도 합류: 3부 · 세오도라 루트 관련 가능성(Game8) · 미확인. 로컬 도감에 없음",
+      "sources": [
+        "https://www.rpgsite.net/guide/21391-fire-emblem-fortunes-weave-recruitment-guide-all-characters-in-game-how-to-recruit-them",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/618838",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/618791"
+      ]
+    }
+  ],
+  "duplicates": [
+    {
+      "name": "알렉산드라",
+      "routes": [
+        "theodora",
+        "leda",
+        "dietrich",
+        "kai"
+      ],
+      "purpose": "특별 탈것 보존(네 루트) + 세오도라·디트리히 실전. 카이판은 카이–알렉산드라 A(1부 한정)도 해결",
+      "ok": true
+    },
+    {
+      "name": "이오",
+      "routes": [
+        "theodora",
+        "leda",
+        "dietrich",
+        "kai"
+      ],
+      "purpose": "특별 탈것 보존 + 디트리히 실전",
+      "ok": true
+    },
+    {
+      "name": "누조",
+      "routes": [
+        "theodora",
+        "dietrich",
+        "kai"
+      ],
+      "purpose": "카이 실전 + 세오도라·디트리히 선더 소드 지참품(부족할 때만)",
+      "ok": true
+    },
+    {
+      "name": "소피아",
+      "routes": [
+        "theodora",
+        "leda",
+        "dietrich"
+      ],
+      "purpose": "세 루트 1·2부 실전 회복",
+      "ok": true
+    },
+    {
+      "name": "리네",
+      "routes": [
+        "theodora",
+        "dietrich",
+        "kai"
+      ],
+      "purpose": "세오도라·디트리히 능력 융합 + 카이 실전 회복",
+      "ok": true
+    },
+    {
+      "name": "시로코",
+      "routes": [
+        "leda",
+        "theodora"
+      ],
+      "purpose": "레다 자동 + 세오도라 2부 검 공격·능력 보완",
+      "ok": true
+    },
+    {
+      "name": "단테",
+      "routes": [
+        "theodora",
+        "dietrich"
+      ],
+      "purpose": "능력 보완(디트리히판은 선택 편성일 때만)",
+      "ok": true,
+      "note": "조건부 목적. 디트리히에서 실제 출격하지 않으면 근거가 약하다"
+    },
+    {
+      "name": "우술라",
+      "routes": [
+        "dietrich",
+        "theodora"
+      ],
+      "purpose": "디트리히 실전 + 세오도라 능력 보완",
+      "ok": true
+    },
+    {
+      "name": "로레타",
+      "routes": [
+        "theodora",
+        "leda",
+        "kai"
+      ],
+      "purpose": "능력 융합(검·속도 + 전차병 힘·기술) + 카이 로레타–세테스 A",
+      "ok": true,
+      "supportPurpose": "지원 대화 · 세오도라: 울턴드–로레타, 로레타–세테스, 로레타–토비아스; 레다: 골라이어스–로레타, 로레타–사란; 카이: 울턴드–로레타, 골라이어스–로레타, 미카엘라–로레타, 로레타–세테스, 로레타–양계"
+    },
+    {
+      "name": "에스메랄다",
+      "routes": [
+        "leda",
+        "dietrich",
+        "kai"
+      ],
+      "purpose": "능력 융합(수비/마방)",
+      "ok": true,
+      "supportPurpose": "지원 대화 · 레다: 에스메랄다–레다, 에스메랄다–키로이카; 디트리히: 디트리히–에스메랄다, 에스메랄다–미카엘라, 에스메랄다–라이선더, 에스메랄다–대도; 카이: 카이–에스메랄다"
+    },
+    {
+      "name": "그자람",
+      "routes": [
+        "leda",
+        "kai"
+      ],
+      "purpose": "능력 융합 + 카이 실전",
+      "ok": true
+    },
+    {
+      "name": "카타냐",
+      "routes": [
+        "leda",
+        "dietrich"
+      ],
+      "purpose": "능력 보완(마력·마방)",
+      "ok": true
+    },
+    {
+      "name": "피아나",
+      "routes": [
+        "theodora",
+        "leda",
+        "dietrich"
+      ],
+      "purpose": "디트리히 실전 회복·구조",
+      "ok": true,
+      "supportPurpose": "지원 대화 · 세오도라: 오르헬–피아나, 세오도라–피아나, 라이선더–피아나, 타리문–피아나, 우술라–피아나, 루루디아–피아나; 레다: 오르헬–피아나, 피아나–올림피아; 디트리히: 라이선더–피아나, 타리문–피아나, 우술라–피아나, 루루디아–피아나, 시몬–피아나"
+    },
+    {
+      "name": "미카엘라",
+      "routes": [
+        "dietrich",
+        "kai"
+      ],
+      "purpose": "능력 융합(카이 전차병) + 실전",
+      "ok": true
+    },
+    {
+      "name": "울턴드",
+      "routes": [
+        "theodora",
+        "dietrich",
+        "kai"
+      ],
+      "purpose": "능력 보완(HP·힘·수비, 빈칸일 때만)",
+      "ok": true,
+      "note": "조건부 목적. 디트리히 출격 칸이 없으면 생략 후보",
+      "supportPurpose": "지원 대화 · 세오도라: 티아라–울턴드, 울턴드–오르헬, 울턴드–로레타, 울턴드–나타; 디트리히: 피터르–울턴드; 카이: 카이–울턴드, 티아라–울턴드, 피터르–울턴드, 울턴드–로레타, 울턴드–페페"
+    },
+    {
+      "name": "녹투라",
+      "routes": [
+        "theodora",
+        "dietrich",
+        "kai"
+      ],
+      "purpose": "카이 실전·기능 보완",
+      "ok": true,
+      "supportPurpose": "지원 대화 · 디트리히: 제스터–녹투라, 골라이어스–녹투라; 카이: 골라이어스–녹투라"
+    },
+    {
+      "name": "대도",
+      "routes": [
+        "theodora",
+        "dietrich"
+      ],
+      "purpose": "지원 대화 · 세오도라: 버커니어–대도, 나타–대도; 디트리히: 피터르–대도, 에스메랄다–대도",
+      "ok": true
+    },
+    {
+      "name": "디에고",
+      "routes": [
+        "theodora",
+        "leda"
+      ],
+      "purpose": "지원 대화 · 세오도라: 디에고–세테스, 디에고–하르빈; 레다: 디에고–사란, 디에고–하르빈",
+      "ok": true
+    },
+    {
+      "name": "라이선더",
+      "routes": [
+        "theodora",
+        "dietrich"
+      ],
+      "purpose": "지원 대화 · 세오도라: 세오도라–라이선더, 라이선더–릴리안, 라이선더–피아나; 디트리히: 에스메랄다–라이선더, 라이선더–릴리안, 라이선더–피아나",
+      "ok": true
+    },
+    {
+      "name": "루루디아",
+      "routes": [
+        "theodora",
+        "dietrich"
+      ],
+      "purpose": "지원 대화 · 세오도라: 티아라–루루디아, 세테스–루루디아, 루루디아–피아나, 루루디아–버커니어; 디트리히: 게이츠–루루디아, 루루디아–피아나",
+      "ok": true
+    },
+    {
+      "name": "릴리안",
+      "routes": [
+        "theodora",
+        "dietrich"
+      ],
+      "purpose": "지원 대화 · 세오도라: 세오도라–릴리안, 릴리안–누디누, 라이선더–릴리안; 디트리히: 게이츠–릴리안, 릴리안–시몬, 릴리안–무우, 라이선더–릴리안",
+      "ok": true
+    },
+    {
+      "name": "버커니어",
+      "routes": [
+        "theodora",
+        "leda"
+      ],
+      "purpose": "지원 대화 · 세오도라: 루루디아–버커니어, 버커니어–대도; 레다: 레다–버커니어, 버커니어–시로코, 버커니어–무우",
+      "ok": true
+    },
+    {
+      "name": "세테스",
+      "routes": [
+        "theodora",
+        "kai"
+      ],
+      "purpose": "지원 대화 · 세오도라: 티아라–세테스, 단테–세테스, 디에고–세테스, 로레타–세테스, 세테스–루루디아; 카이: 티아라–세테스, 로레타–세테스",
+      "ok": true
+    },
+    {
+      "name": "자스민",
+      "routes": [
+        "theodora",
+        "leda"
+      ],
+      "purpose": "지원 대화 · 세오도라: 우술라–자스민",
+      "ok": true
+    },
+    {
+      "name": "티아라",
+      "routes": [
+        "theodora",
+        "kai"
+      ],
+      "purpose": "지원 대화 · 세오도라: 티아라–울턴드, 티아라–세테스, 티아라–보나파르트, 티아라–타리문, 티아라–루루디아, 티아라–이오; 카이: 카이–티아라, 티아라–피터르, 티아라–울턴드, 티아라–세테스, 티아라–이오",
+      "ok": true
+    },
+    {
+      "name": "하르빈",
+      "routes": [
+        "theodora",
+        "leda",
+        "dietrich"
+      ],
+      "purpose": "지원 대화 · 세오도라: 디에고–하르빈, 보나파르트–하르빈, 나타–하르빈; 레다: 제스터–하르빈, 디에고–하르빈, 사란–하르빈; 디트리히: 제스터–하르빈, 디트리히–하르빈",
+      "ok": true
+    },
+    {
+      "name": "골라이어스",
+      "routes": [
+        "leda",
+        "dietrich",
+        "kai"
+      ],
+      "purpose": "지원 대화 · 레다: 제스터–골라이어스, 골라이어스–로레타, 골라이어스–올림피아; 디트리히: 게이츠–골라이어스, 제스터–골라이어스, 골라이어스–단테, 골라이어스–녹투라; 카이: 카이–골라이어스, 골라이어스–로레타, 골라이어스–녹투라",
+      "ok": true
+    },
+    {
+      "name": "무우",
+      "routes": [
+        "leda",
+        "dietrich",
+        "kai"
+      ],
+      "purpose": "지원 대화 · 레다: 레다–무우, 버커니어–무우, 시로코–무우, 올림피아–무우; 디트리히: 피터르–무우, 미카엘라–무우, 릴리안–무우; 카이: 카이–무우, 피터르–무우, 무우–그자람, 무우–페페",
+      "ok": true
+    },
+    {
+      "name": "제스터",
+      "routes": [
+        "leda",
+        "dietrich"
+      ],
+      "purpose": "지원 대화 · 레다: 제스터–골라이어스, 제스터–레다, 제스터–하르빈; 디트리히: 피터르–제스터, 제스터–골라이어스, 제스터–단테, 제스터–미카엘라, 제스터–하르빈, 제스터–녹투라",
+      "ok": true
+    },
+    {
+      "name": "양계",
+      "routes": [
+        "dietrich",
+        "kai"
+      ],
+      "purpose": "지원 대화 · 카이: 로레타–양계",
+      "ok": true
+    },
+    {
+      "name": "피터르",
+      "routes": [
+        "dietrich",
+        "kai"
+      ],
+      "purpose": "지원 대화 · 디트리히: 피터르–울턴드, 피터르–제스터, 피터르–리네, 피터르–우술라, 피터르–무우, 피터르–대도, 피터르–소피아; 카이: 카이–피터르, 티아라–피터르, 피터르–울턴드, 피터르–리네, 피터르–무우",
+      "ok": true
+    }
+  ],
+  "supportExtraDecisions": [
+    {
+      "pair": "티아라–보나파르트 A",
+      "window": "1·2부(세오도라에서만 가능: 보나파르트 전용)",
+      "fix": "세오도라에서 티아라 영입(명성10·지원3·카이 외전 10/16~10/22 클리어·3,000G, 10/24까지)",
+      "cost": "높음·기한 촉박",
+      "sources": [
+        "https://annasnotebook.net/en/mechanics/support-conditions/",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/631340",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624240",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957"
+      ]
+    },
+    {
+      "pair": "에스메랄다–라이선더 A",
+      "window": "1부 한정",
+      "fix": "디트리히에서 라이선더 영입(명성6·지원3·철의 창5). 대안: 레다 7/3·철의 창5, 세오도라 에스메랄다 9/3·해수 토벌",
+      "cost": "중간",
+      "sources": [
+        "https://annasnotebook.net/en/mechanics/support-conditions/",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/631340",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957"
+      ]
+    },
+    {
+      "pair": "카이–에스메랄다 A",
+      "window": "1·2부",
+      "fix": "카이에서 에스메랄다 영입 복원(명성7·지원2·해수 무리 토벌). 현재 감축 결정과 충돌",
+      "cost": "중간",
+      "sources": [
+        "https://annasnotebook.net/en/mechanics/support-conditions/",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/631340",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957"
+      ]
+    },
+    {
+      "pair": "대도–에스메랄다 C",
+      "window": "1부·디트리히 전용(비석 이벤트 뒤)",
+      "fix": "디트리히에서 대도 영입(명성10·지원3·코샬루 가아2)",
+      "cost": "높음·지양 인물",
+      "sources": [
+        "https://annasnotebook.net/en/mechanics/support-conditions/"
+      ]
+    },
+    {
+      "pair": "양계–로레타 C·B",
+      "window": "1부",
+      "fix": "카이에서 양계 추가 영입(명성3·지원2·질문) 또는 세오도라 9/3",
+      "cost": "낮음(카이)·지양 인물",
+      "sources": [
+        "https://annasnotebook.net/en/mechanics/support-conditions/",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957"
+      ]
+    },
+    {
+      "pair": "골라이어스–올림피아 C·B / 골라이어스–녹투라 C·B",
+      "window": "1·2부",
+      "fix": "디트리히에 녹투라(6/1)·올림피아(6/3·의뢰3개) 추가 또는 다른 루트에 골라이어스 추가",
+      "cost": "중간·지양 인물",
+      "sources": [
+        "https://annasnotebook.net/en/mechanics/support-conditions/",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957"
+      ]
+    },
+    {
+      "pair": "나타–울턴드 C / 나타–하르빈 C",
+      "window": "1부",
+      "fix": "나타를 카이(6/3) 또는 레다(9/3)에 추가",
+      "cost": "중간",
+      "sources": [
+        "https://annasnotebook.net/en/mechanics/support-conditions/",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957"
+      ]
+    },
+    {
+      "pair": "페페–무우 C·B",
+      "window": "1·2부(베르트랑 외전 뒤)",
+      "fix": "카이 무우(9/3·글루마오사3) 또는 페페를 디트리히(8/3)에 두고 무우 7/3",
+      "cost": "중간",
+      "sources": [
+        "https://annasnotebook.net/en/mechanics/support-conditions/",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957"
+      ]
+    },
+    {
+      "pair": "시몬–릴리안 C",
+      "window": "1부",
+      "fix": "세오도라에도 시몬(7/3·500G)",
+      "cost": "낮음",
+      "sources": [
+        "https://annasnotebook.net/en/mechanics/support-conditions/",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957"
+      ]
+    },
+    {
+      "pair": "대도–피터르 C / 대도–버커니어 C",
+      "window": "1·2부",
+      "fix": "대도를 레다(버커니어)·카이(피터르, 7/3)에 추가",
+      "cost": "중간·지양 인물",
+      "sources": [
+        "https://annasnotebook.net/en/mechanics/support-conditions/",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957"
+      ]
+    },
+    {
+      "pair": "자스민–우술라 C·B",
+      "window": "1·2부",
+      "fix": "우술라가 있는 세오도라(8/3·5,000G) 또는 디트리히(9/3·5,000G)에 자스민 추가",
+      "cost": "높음·지양 인물",
+      "sources": [
+        "https://annasnotebook.net/en/mechanics/support-conditions/",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957"
+      ]
+    }
+  ],
+  "corrections": [
+    {
+      "file": "data/recruitment-gates.json",
+      "path": "characters.누디누.gates[route=theodora].localCondition",
+      "current": "청동 도끼 2개",
+      "correct": "철의 도끼 3개",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "https://www.keengamer.com/articles/guides/fire-emblem-fortunes-weave-all-characters-recruitment-guide/",
+        "https://www.rpgsite.net/guide/21391-fire-emblem-fortunes-weave-recruitment-guide-all-characters-in-game-how-to-recruit-them"
+      ]
+    },
+    {
+      "file": "data/recruitment-gates.json",
+      "path": "characters.누디누.gates[route=leda].localCondition",
+      "current": "청동 도끼 2개",
+      "correct": "철의 도끼 3개",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "https://www.keengamer.com/articles/guides/fire-emblem-fortunes-weave-all-characters-recruitment-guide/",
+        "https://www.rpgsite.net/guide/21391-fire-emblem-fortunes-weave-recruitment-guide-all-characters-in-game-how-to-recruit-them"
+      ]
+    },
+    {
+      "file": "data/recruitment-gates.json",
+      "path": "characters.키로이카.gates[route=theodora].localCondition",
+      "current": "성수 3개",
+      "correct": "성수 8개",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "https://www.keengamer.com/articles/guides/fire-emblem-fortunes-weave-all-characters-recruitment-guide/",
+        "https://www.rpgsite.net/guide/21391-fire-emblem-fortunes-weave-recruitment-guide-all-characters-in-game-how-to-recruit-them"
+      ]
+    },
+    {
+      "file": "data/recruitment-gates.json",
+      "path": "characters.키로이카.gates[route=kai].localCondition",
+      "current": "성수 3개",
+      "correct": "성수 8개",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "https://www.keengamer.com/articles/guides/fire-emblem-fortunes-weave-all-characters-recruitment-guide/",
+        "https://www.rpgsite.net/guide/21391-fire-emblem-fortunes-weave-recruitment-guide-all-characters-in-game-how-to-recruit-them"
+      ]
+    },
+    {
+      "file": "data/recruitment-gates.json",
+      "path": "characters.양계.gates[route=dietrich].localCondition",
+      "current": "질문 3개에 답하기",
+      "correct": "조건 없음 · 영입 튜토리얼 자동 합류(Game8은 4장·지원1·명성2만 표기)",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "https://www.keengamer.com/articles/guides/fire-emblem-fortunes-weave-all-characters-recruitment-guide/",
+        "https://www.rpgsite.net/guide/21391-fire-emblem-fortunes-weave-recruitment-guide-all-characters-in-game-how-to-recruit-them"
+      ]
+    },
+    {
+      "file": "data/recruitment-gates.json",
+      "path": "characters.이오.gates[route=theodora].localCondition",
+      "current": "800G",
+      "correct": "기본 4,000G(로컬 다른 문서와 일치 · 교섭 감액은 실제 화면 확인)",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "https://www.keengamer.com/articles/guides/fire-emblem-fortunes-weave-all-characters-recruitment-guide/",
+        "https://www.rpgsite.net/guide/21391-fire-emblem-fortunes-weave-recruitment-guide-all-characters-in-game-how-to-recruit-them"
+      ]
+    },
+    {
+      "file": "data/recruitment-gates.json",
+      "path": "characters.이오.gates[route=leda].localCondition",
+      "current": "800G",
+      "correct": "1,500G",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "https://www.keengamer.com/articles/guides/fire-emblem-fortunes-weave-all-characters-recruitment-guide/",
+        "https://www.rpgsite.net/guide/21391-fire-emblem-fortunes-weave-recruitment-guide-all-characters-in-game-how-to-recruit-them"
+      ]
+    },
+    {
+      "file": "data/recruitment-gates.json",
+      "path": "characters.이오.gates[route=kai].localCondition",
+      "current": "800G",
+      "correct": "4,000G",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "https://www.keengamer.com/articles/guides/fire-emblem-fortunes-weave-all-characters-recruitment-guide/",
+        "https://www.rpgsite.net/guide/21391-fire-emblem-fortunes-weave-recruitment-guide-all-characters-in-game-how-to-recruit-them"
+      ]
+    },
+    {
+      "file": "data/recruitment-gates.json",
+      "path": "characters.자스민.gates[route=theodora].localCondition",
+      "current": "2,000G",
+      "correct": "5,000G",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "https://www.keengamer.com/articles/guides/fire-emblem-fortunes-weave-all-characters-recruitment-guide/",
+        "https://www.rpgsite.net/guide/21391-fire-emblem-fortunes-weave-recruitment-guide-all-characters-in-game-how-to-recruit-them"
+      ]
+    },
+    {
+      "file": "data/recruitment-gates.json",
+      "path": "characters.자스민.gates[route=dietrich].localCondition",
+      "current": "2,000G",
+      "correct": "5,000G",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "https://www.keengamer.com/articles/guides/fire-emblem-fortunes-weave-all-characters-recruitment-guide/",
+        "https://www.rpgsite.net/guide/21391-fire-emblem-fortunes-weave-recruitment-guide-all-characters-in-game-how-to-recruit-them"
+      ]
+    },
+    {
+      "file": "data/recruitment-gates.json",
+      "path": "characters.자스민.gates[route=leda].localCondition",
+      "current": "2,000G",
+      "correct": "500G",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "https://www.keengamer.com/articles/guides/fire-emblem-fortunes-weave-all-characters-recruitment-guide/",
+        "https://www.rpgsite.net/guide/21391-fire-emblem-fortunes-weave-recruitment-guide-all-characters-in-game-how-to-recruit-them"
+      ]
+    },
+    {
+      "file": "data/recruitment-gates.json",
+      "path": "characters.이니오니.gates[route=theodora].localCondition",
+      "current": "6,000G",
+      "correct": "4,000G",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "https://www.keengamer.com/articles/guides/fire-emblem-fortunes-weave-all-characters-recruitment-guide/",
+        "https://www.rpgsite.net/guide/21391-fire-emblem-fortunes-weave-recruitment-guide-all-characters-in-game-how-to-recruit-them"
+      ]
+    },
+    {
+      "file": "data/recruitment-gates.json",
+      "path": "characters.이니오니.gates[route=leda].localCondition",
+      "current": "6,000G",
+      "correct": "3,000G",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "https://www.keengamer.com/articles/guides/fire-emblem-fortunes-weave-all-characters-recruitment-guide/",
+        "https://www.rpgsite.net/guide/21391-fire-emblem-fortunes-weave-recruitment-guide-all-characters-in-game-how-to-recruit-them"
+      ]
+    },
+    {
+      "file": "data/recruitment-gates.json",
+      "path": "characters.누조.gates[route=dietrich].localCondition",
+      "current": "철의 활 3개",
+      "correct": "철의 활 2개(AGENTS.md·Game8과 일치)",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+        "AGENTS.md"
+      ]
+    },
+    {
+      "file": "data/recruitment-gates.json",
+      "path": "characters.양계.gates[*].localCondition",
+      "current": "치즈 → 보름달이 뜬 밤 → 과일",
+      "correct": "상충: KeenGamer·RPG Site는 치즈·달·감자(Potatoes). 세 번째 답은 게임 화면 확인",
+      "sources": [
+        "https://www.keengamer.com/articles/guides/fire-emblem-fortunes-weave-all-characters-recruitment-guide/",
+        "https://www.rpgsite.net/guide/21391-fire-emblem-fortunes-weave-recruitment-guide-all-characters-in-game-how-to-recruit-them"
+      ]
+    },
+    {
+      "file": "data/recruitment-gates.json",
+      "path": "characters.클라프카",
+      "current": "없음(로컬 도감 62명에 미포함)",
+      "correct": "3부 5구간 게스트로 생존 → 6구간 자동 합류. 추가 필요",
+      "sources": [
+        "https://www.rpgsite.net/guide/21391-fire-emblem-fortunes-weave-recruitment-guide-all-characters-in-game-how-to-recruit-them",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/618838",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/618791"
+      ]
+    },
+    {
+      "file": "data/recruitment-gates.json",
+      "path": "characters.골라이어스.gates[*].localCondition",
+      "current": "비오의 제단 고급 고기 상자에서 랜덤",
+      "correct": "보충: 모래그림자 요새에서 1개 확정, 거인 표시 전투에서 추가(KeenGamer 단일 출처)",
+      "sources": [
+        "https://www.keengamer.com/articles/guides/fire-emblem-fortunes-weave-all-characters-recruitment-guide/"
+      ]
+    }
+  ],
+  "nonStandardJoins": [
+    {
+      "name": "이스마르",
+      "how": "3부 주인공",
+      "route": "공통",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/618838"
+      ]
+    },
+    {
+      "name": "홍화",
+      "how": "3부 프롤로그 뒤 자동 합류",
+      "route": "공통",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/618838"
+      ]
+    },
+    {
+      "name": "트로이아",
+      "how": "3부 프롤로그 뒤 자동 합류",
+      "route": "공통",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/618838"
+      ]
+    },
+    {
+      "name": "베르트랑",
+      "how": "1부 베르트랑 외전 클리어 → 3부 1구간 정식 합류",
+      "route": "세오도라 11장 9/17~9/25(페페 조건과 공유)",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624240",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/618791"
+      ]
+    },
+    {
+      "name": "타리문",
+      "how": "1부 타리문 외전 클리어 → 3부 1구간 정식 합류",
+      "route": "디트리히 9장(우술라 조건과 공유). 세오도라 11장도 가능",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624240",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/618791"
+      ]
+    },
+    {
+      "name": "아나톨리아",
+      "how": "1부 아나톨리아 외전 클리어 → 3부 1구간 정식 합류",
+      "route": "레다 10장 10/5~10/17(사란 조건과 공유)",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624240",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/618791"
+      ]
+    },
+    {
+      "name": "오르헬",
+      "how": "1부 오르헬 외전 클리어 → 3부 1구간 정식 합류",
+      "route": "레다 11장 10/18~10/27(디에고 조건과 공유)",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624240",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/618791"
+      ]
+    },
+    {
+      "name": "키릭",
+      "how": "1부 9장 '죽은 여동생의 장신구' 완료 → 2부 2장에서 격파해 영입 → 3부에서 다시 대화",
+      "route": "레다 또는 디트리히(한 루트면 충분) · 레다 우선",
+      "sources": [
+        "https://www.siliconera.com/can-you-recruit-creek-in-fire-emblem-fortunes-weave/",
+        "https://raiderking.com/fire-emblem-fortunes-weave-how-to-recruit-nathan-and-creek/",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/618838"
+      ]
+    },
+    {
+      "name": "네이선",
+      "how": "2부 3장에서 키릭으로 막타 → 영입 → 3부에서 다시 대화",
+      "route": "키릭과 같은 루트",
+      "sources": [
+        "https://www.siliconera.com/can-you-recruit-creek-in-fire-emblem-fortunes-weave/",
+        "https://raiderking.com/fire-emblem-fortunes-weave-how-to-recruit-nathan-and-creek/",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/618838"
+      ]
+    },
+    {
+      "name": "아스완",
+      "how": "2부 3장 게스트로 생존 → 3부 5구간 자동 합류",
+      "route": "로컬은 세오도라 2부 3장. Game8은 카이/레다 루트 필요 가능성 표기 · 미확인",
+      "sources": [
+        "https://www.rpgsite.net/guide/21391-fire-emblem-fortunes-weave-recruitment-guide-all-characters-in-game-how-to-recruit-them",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/618838"
+      ]
+    },
+    {
+      "name": "타호니아",
+      "how": "아스완과 같음",
+      "route": "아스완과 같음 · 미확인",
+      "sources": [
+        "https://www.rpgsite.net/guide/21391-fire-emblem-fortunes-weave-recruitment-guide-all-characters-in-game-how-to-recruit-them",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/618838"
+      ]
+    },
+    {
+      "name": "센트리온",
+      "how": "3부 2구간 의뢰 '센트리온 구출' 완료 → 다그시온에서 대화",
+      "route": "3부 · 카이가 3부에 있어야 할 수 있음(카이 1부+2부 필요)",
+      "sources": [
+        "https://www.rpgsite.net/guide/21391-fire-emblem-fortunes-weave-recruitment-guide-all-characters-in-game-how-to-recruit-them",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/618838",
+        "https://www.rpgsite.net/guide/21433-fire-emblem-fortunes-weave-part-iii-salvation-walkthrough"
+      ]
+    },
+    {
+      "name": "클라프카",
+      "how": "3부 5구간 게스트(마하두전)로 생존 → 6구간 자동 합류",
+      "route": "3부 · 세오도라 루트 관련 가능성(Game8) · 미확인. 로컬 도감에 없음",
+      "sources": [
+        "https://www.rpgsite.net/guide/21391-fire-emblem-fortunes-weave-recruitment-guide-all-characters-in-game-how-to-recruit-them",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/618838",
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/618791"
+      ]
+    }
+  ],
+  "unknowns": [
+    "1·2부 한정 대화를 보려면 두 인물이 '같은 루트'에 영입돼 있어야 하는지: 유닛이 루트별로 따로 저장된다는 규칙에서 추론. 게임 내 확인 필요.",
+    "2026-11-12 Anna’s Notebook 표를 다시 읽어 1·2부 한정 111쌍 전부를 같은 루트 기준으로 대조했다(pairCoverage). 외전 인물의 동석은 추정.",
+    "A 잠금 목록: Anna 20개, Game8 15개. 셋째 인물 동석 같은 추가 조건은 전부 확인하지 못했다.",
+    "아스완·타호니아가 어느 루트 2부 3장에 나오는지(로컬: 세오도라, Game8: 카이/레다 가능성).",
+    "클라프카의 루트 조건.",
+    "양계 질문 세 번째 답(과일 vs 감자).",
+    "Game8 영입표는 행마다 루트 이름이 붙어 있지 않아 페이지 순서(카이·디트리히·세오도라·레다)로 대응했다. RPG Site의 루트 표기·로컬 값과 대부분 일치해 신뢰하지만 화면 확인이 우선이다.",
+    "Game8·KeenGamer·RPG Site 영입표는 서로 같은 원자료를 옮겼을 수 있어 독립 근거 3개로 세지 않는다.",
+    "세오도라 12장에서 카이 외전 클리어 뒤 10/24 안에 티아라 영입이 가능한지(티아라–보나파르트 A).",
+    "이오·자스민 등의 교섭 감액이 루트별 기본 금액에 어떻게 적용되는지.",
+    "3부 지원 상한·버전 선택이 지원에 영향을 주는지(공유 수치라 무관하다고 추정)."
+  ],
+  "coverage": "Game8 영입표로 1부 영입 가능 50명(진영장 포함) 전원을 대조. RPG Site·KeenGamer로 금액·물품·합류 방식 차이 14건 교차 확인. 3부 지원 규칙은 Anna's Notebook·Game8·RPG Site·allthings.how.",
+  "pairCoverage": {
+    "date": "2026-11-12",
+    "source": "https://annasnotebook.net/en/mechanics/support-conditions/ (2026-11-12 다시 읽음 · 단일 출처)",
+    "method": "C·B·A 중 하나라도 1부/1·2부/2부에서만 열리는 쌍을 3부 전 한정 쌍으로 셈. 두 인물이 같은 루트에 영입(또는 외전 클리어로 동석)되어 있고 루트 제한·동석 조건을 만족하면 해결로 봄.",
+    "assumptions": [
+      "같은 루트에 둘 다 있어야 1·2부 대화를 볼 수 있다는 점은 유닛이 루트별로 저장된다는 규칙에서 추론했다.",
+      "베르트랑·타리문·아나톨리아·오르헬은 그 루트에서 외전을 클리어하면 동석한다고 보았다(추정). 외전 루트·날짜는 Game8 외전 표를 따른다.",
+      "지원 레벨은 사용자 방법(마법1회 소모 → 마법 회복 없는 고기로 식사 반복 · 고기가 떨어지면 장 다시 시작)으로 올린다고 보고 제약으로 세지 않았다. 사용자 보고이며 우리가 확인하지 않았다."
+    ],
+    "counts": {
+      "total": 188,
+      "prePart3": 111,
+      "covered": 109,
+      "coveredRisky": 6,
+      "uncoverable": 2,
+      "unresolved": 0,
+      "part3Only": 27,
+      "anyPart": 50
+    },
+    "extraRecruits": {
+      "theodora": [
+        {
+          "name": "울턴드",
+          "for": [
+            "티아라–울턴드",
+            "울턴드–오르헬",
+            "울턴드–로레타",
+            "울턴드–나타"
+          ]
+        },
+        {
+          "name": "하르빈",
+          "for": [
+            "디에고–하르빈",
+            "보나파르트–하르빈",
+            "나타–하르빈"
+          ]
+        },
+        {
+          "name": "세테스",
+          "for": [
+            "티아라–세테스",
+            "단테–세테스",
+            "디에고–세테스",
+            "로레타–세테스",
+            "세테스–루루디아"
+          ]
+        },
+        {
+          "name": "피아나",
+          "for": [
+            "오르헬–피아나",
+            "세오도라–피아나",
+            "라이선더–피아나",
+            "타리문–피아나",
+            "우술라–피아나",
+            "루루디아–피아나"
+          ]
+        },
+        {
+          "name": "버커니어",
+          "for": [
+            "루루디아–버커니어",
+            "버커니어–대도"
+          ]
+        },
+        {
+          "name": "자스민",
+          "for": [
+            "우술라–자스민"
+          ]
+        },
+        {
+          "name": "디에고",
+          "for": [
+            "디에고–세테스",
+            "디에고–하르빈"
+          ]
+        }
+      ],
+      "dietrich": [
+        {
+          "name": "피터르",
+          "for": [
+            "피터르–울턴드",
+            "피터르–제스터",
+            "피터르–리네",
+            "피터르–우술라",
+            "피터르–무우",
+            "피터르–대도",
+            "피터르–소피아"
+          ]
+        },
+        {
+          "name": "녹투라",
+          "for": [
+            "제스터–녹투라",
+            "골라이어스–녹투라"
+          ]
+        },
+        {
+          "name": "릴리안",
+          "for": [
+            "게이츠–릴리안",
+            "릴리안–시몬",
+            "릴리안–무우",
+            "라이선더–릴리안"
+          ]
+        },
+        {
+          "name": "루루디아",
+          "for": [
+            "게이츠–루루디아",
+            "루루디아–피아나"
+          ]
+        },
+        {
+          "name": "하르빈",
+          "for": [
+            "제스터–하르빈",
+            "디트리히–하르빈"
+          ]
+        },
+        {
+          "name": "무우",
+          "for": [
+            "피터르–무우",
+            "미카엘라–무우",
+            "릴리안–무우"
+          ]
+        },
+        {
+          "name": "대도",
+          "for": [
+            "피터르–대도",
+            "에스메랄다–대도"
+          ]
+        }
+      ],
+      "leda": [
+        {
+          "name": "제스터",
+          "for": [
+            "제스터–골라이어스",
+            "제스터–레다",
+            "제스터–하르빈"
+          ]
+        },
+        {
+          "name": "로레타",
+          "for": [
+            "골라이어스–로레타",
+            "로레타–사란"
+          ]
+        },
+        {
+          "name": "골라이어스",
+          "for": [
+            "제스터–골라이어스",
+            "골라이어스–로레타",
+            "골라이어스–올림피아"
+          ]
+        }
+      ],
+      "kai": [
+        {
+          "name": "골라이어스",
+          "for": [
+            "카이–골라이어스",
+            "골라이어스–로레타",
+            "골라이어스–녹투라"
+          ]
+        },
+        {
+          "name": "무우",
+          "for": [
+            "카이–무우",
+            "피터르–무우",
+            "무우–그자람",
+            "무우–페페"
+          ]
+        },
+        {
+          "name": "양계",
+          "for": [
+            "로레타–양계"
+          ]
+        }
+      ]
+    },
+    "extraCount": 20,
+    "paralogues": {
+      "theodora": [
+        "베르트랑",
+        "타리문",
+        "오르헬"
+      ],
+      "leda": [
+        "아나톨리아",
+        "오르헬"
+      ],
+      "dietrich": [
+        "타리문",
+        "아나톨리아"
+      ],
+      "kai": [
+        "베르트랑"
+      ]
+    },
+    "paralogueSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624240",
+    "orderLocks": [
+      "라이선더·릴리안 B를 세오도라·릴리안 B·세오도라·라이선더 B보다 먼저 본다(세오도라 루트).",
+      "티아라·피터르 B → 피터르·울턴드 B → 티아라·피터르 A 순서(카이 루트). 티아라·울턴드 B는 둘이 다투는 동안 막힌다.",
+      "티아라·보나파르트 C는 세오도라·보나파르트 B 뒤(세오도라 루트)."
+    ],
+    "routeRoster": {
+      "theodora": [
+        "나타",
+        "녹투라",
+        "누디누",
+        "누조",
+        "단테",
+        "대도",
+        "디에고",
+        "라이선더",
+        "로레타",
+        "루루디아",
+        "리네",
+        "릴리안",
+        "밴디츠",
+        "버커니어",
+        "베르트랑",
+        "보나파르트",
+        "세오도라",
+        "세테스",
+        "소피아",
+        "시로코",
+        "알렉산드라",
+        "오르헬",
+        "우술라",
+        "울턴드",
+        "이오",
+        "자스민",
+        "자코네",
+        "타리문",
+        "토비아스",
+        "티아라",
+        "피아나",
+        "하르빈"
+      ],
+      "leda": [
+        "골라이어스",
+        "그자람",
+        "네이선",
+        "디에고",
+        "레다",
+        "로레타",
+        "무우",
+        "버커니어",
+        "사란",
+        "소피아",
+        "시로코",
+        "아나톨리아",
+        "알렉산드라",
+        "에스메랄다",
+        "오르헬",
+        "올림피아",
+        "이니오니",
+        "이오",
+        "자스민",
+        "제스터",
+        "카타냐",
+        "키로이카",
+        "키릭",
+        "피아나",
+        "하르빈"
+      ],
+      "dietrich": [
+        "게이츠",
+        "골라이어스",
+        "녹투라",
+        "누조",
+        "단테",
+        "대도",
+        "디트리히",
+        "라이선더",
+        "루루디아",
+        "리네",
+        "릴리안",
+        "무우",
+        "미카엘라",
+        "소피아",
+        "시몬",
+        "아나톨리아",
+        "알렉산드라",
+        "양계",
+        "에스메랄다",
+        "우술라",
+        "울턴드",
+        "이오",
+        "제스터",
+        "카타냐",
+        "타리문",
+        "파비오",
+        "피아나",
+        "피터르",
+        "하르빈"
+      ],
+      "kai": [
+        "골라이어스",
+        "그자람",
+        "녹투라",
+        "누조",
+        "로레타",
+        "리네",
+        "마지데",
+        "무우",
+        "미카엘라",
+        "베르트랑",
+        "세테스",
+        "알렉산드라",
+        "양계",
+        "에스메랄다",
+        "울턴드",
+        "이오",
+        "카이",
+        "티아라",
+        "페페",
+        "피터르"
+      ]
+    },
+    "pairs": [
+      {
+        "pair": "카이–티아라",
+        "C": "1·2부",
+        "B": "1·2부",
+        "A": "1·2부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "kai"
+        ]
+      },
+      {
+        "pair": "카이–피터르",
+        "C": "1·2부",
+        "B": "1·2부",
+        "A": "1·2부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "kai"
+        ]
+      },
+      {
+        "pair": "카이–울턴드",
+        "C": "1부",
+        "B": "1부",
+        "A": "1부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "kai"
+        ],
+        "note": "C는 영웅 대회 개막 뒤"
+      },
+      {
+        "pair": "카이–베르트랑",
+        "C": "없음",
+        "B": "3부",
+        "A": "3부",
+        "window": "3부만",
+        "status": "3부에서 보기"
+      },
+      {
+        "pair": "카이–골라이어스",
+        "C": "1·2부",
+        "B": "1·2부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "kai"
+        ],
+        "note": "C는 적성 시험 뒤",
+        "addedFor": [
+          "골라이어스"
+        ]
+      },
+      {
+        "pair": "카이–디트리히",
+        "C": "없음",
+        "B": "3부",
+        "A": "3부",
+        "window": "3부만",
+        "status": "3부에서 보기"
+      },
+      {
+        "pair": "카이–에스메랄다",
+        "C": "1·2부",
+        "B": "1·2부",
+        "A": "1·2부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "kai"
+        ],
+        "note": "C는 밴디츠 전투 뒤"
+      },
+      {
+        "pair": "카이–리네",
+        "C": "3부",
+        "B": "3부",
+        "A": "없음",
+        "window": "3부만",
+        "status": "3부에서 보기",
+        "note": "아우로라 귀환 뒤"
+      },
+      {
+        "pair": "카이–세오도라",
+        "C": "없음",
+        "B": "3부",
+        "A": "3부",
+        "window": "3부만",
+        "status": "3부에서 보기"
+      },
+      {
+        "pair": "카이–레다",
+        "C": "없음",
+        "B": "3부",
+        "A": "3부",
+        "window": "3부만",
+        "status": "3부에서 보기"
+      },
+      {
+        "pair": "카이–무우",
+        "C": "1부",
+        "B": "3부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "위험",
+        "routes": [
+          "kai"
+        ],
+        "risk": "카이·무우 대회 시합 시작 전에 카이 루트 무우(명성9·지원3·글루마오사3) 영입 필요 · 시점 미확인",
+        "note": "C는 카이·무우 대회 시합 전 · B는 센트리온 동석",
+        "addedFor": [
+          "무우"
+        ]
+      },
+      {
+        "pair": "카이–아나톨리아",
+        "C": "없음",
+        "B": "3부",
+        "A": "3부",
+        "window": "3부만",
+        "status": "3부에서 보기"
+      },
+      {
+        "pair": "카이–알렉산드라",
+        "C": "1부",
+        "B": "1부",
+        "A": "1부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "kai"
+        ]
+      },
+      {
+        "pair": "카이–센트리온",
+        "C": "3부",
+        "B": "없음",
+        "A": "없음",
+        "window": "3부만",
+        "status": "3부에서 보기"
+      },
+      {
+        "pair": "티아라–피터르",
+        "C": "1·2부",
+        "B": "1·2부",
+        "A": "1부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "kai"
+        ],
+        "note": "A는 피터르·울턴드 B 뒤"
+      },
+      {
+        "pair": "티아라–울턴드",
+        "C": "1·2부",
+        "B": "1·2부",
+        "A": "1·2부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "theodora",
+          "kai"
+        ],
+        "note": "B는 다툼 중 막힘",
+        "addedFor": [
+          "울턴드"
+        ]
+      },
+      {
+        "pair": "티아라–세테스",
+        "C": "1·2부",
+        "B": "1·2부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "theodora",
+          "kai"
+        ],
+        "addedFor": [
+          "세테스"
+        ]
+      },
+      {
+        "pair": "티아라–세오도라",
+        "C": "3부",
+        "B": "3부",
+        "A": "없음",
+        "window": "3부만",
+        "status": "3부에서 보기",
+        "note": "카이 동석"
+      },
+      {
+        "pair": "티아라–보나파르트",
+        "C": "1·2부",
+        "B": "1·2부",
+        "A": "1·2부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "위험",
+        "routes": [
+          "theodora"
+        ],
+        "risk": "세오도라 12장 카이 외전(10/16~10/22) 뒤 10/24까지 티아라 영입",
+        "note": "C는 세오도라·보나파르트 B 뒤"
+      },
+      {
+        "pair": "티아라–타리문",
+        "C": "1·2부",
+        "B": "1·2부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "theodora"
+        ]
+      },
+      {
+        "pair": "티아라–루루디아",
+        "C": "1·2부",
+        "B": "1·2부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "theodora"
+        ]
+      },
+      {
+        "pair": "티아라–이오",
+        "C": "1·2부",
+        "B": "3부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "theodora",
+          "kai"
+        ]
+      },
+      {
+        "pair": "티아라–키릭",
+        "C": "3부",
+        "B": "없음",
+        "A": "없음",
+        "window": "3부만",
+        "status": "3부에서 보기"
+      },
+      {
+        "pair": "피터르–울턴드",
+        "C": "1부",
+        "B": "1부",
+        "A": "1부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "dietrich",
+          "kai"
+        ],
+        "note": "B는 티아라·피터르 B 뒤",
+        "addedFor": [
+          "피터르"
+        ]
+      },
+      {
+        "pair": "피터르–제스터",
+        "C": "1부",
+        "B": "3부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "dietrich"
+        ],
+        "addedFor": [
+          "피터르"
+        ]
+      },
+      {
+        "pair": "피터르–리네",
+        "C": "1·2부",
+        "B": "1·2부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "dietrich",
+          "kai"
+        ],
+        "addedFor": [
+          "피터르"
+        ]
+      },
+      {
+        "pair": "피터르–우술라",
+        "C": "1부",
+        "B": "1부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "dietrich"
+        ],
+        "addedFor": [
+          "피터르"
+        ]
+      },
+      {
+        "pair": "피터르–무우",
+        "C": "1부",
+        "B": "1부",
+        "A": "3부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "dietrich",
+          "kai"
+        ],
+        "note": "C·B는 다그시온 도착 뒤",
+        "addedFor": [
+          "무우",
+          "피터르"
+        ]
+      },
+      {
+        "pair": "피터르–대도",
+        "C": "1·2부",
+        "B": "3부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "dietrich"
+        ],
+        "addedFor": [
+          "대도",
+          "피터르"
+        ]
+      },
+      {
+        "pair": "피터르–소피아",
+        "C": "1·2부",
+        "B": "1·2부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "dietrich"
+        ],
+        "addedFor": [
+          "피터르"
+        ]
+      },
+      {
+        "pair": "울턴드–골라이어스",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "어느 부",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능"
+      },
+      {
+        "pair": "울턴드–오르헬",
+        "C": "1부",
+        "B": "없음",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "위험",
+        "routes": [
+          "theodora"
+        ],
+        "risk": "세오도라 12장 오르헬 외전 필요",
+        "addedFor": [
+          "울턴드"
+        ]
+      },
+      {
+        "pair": "울턴드–로레타",
+        "C": "1부",
+        "B": "1·2부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "theodora",
+          "kai"
+        ],
+        "addedFor": [
+          "울턴드"
+        ]
+      },
+      {
+        "pair": "울턴드–토비아스",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "없음",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능"
+      },
+      {
+        "pair": "울턴드–나타",
+        "C": "1부",
+        "B": "2부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "theodora"
+        ],
+        "addedFor": [
+          "울턴드"
+        ]
+      },
+      {
+        "pair": "울턴드–페페",
+        "C": "1·2부",
+        "B": "1·2부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "kai"
+        ],
+        "note": "베르트랑 외전 뒤"
+      },
+      {
+        "pair": "울턴드–센트리온",
+        "C": "1부",
+        "B": "없음",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "불가",
+        "reason": "센트리온은 3부에서만 합류 · 1부 C 조건을 영입으로 맞출 수 없음(카이 1부 이야기 등장 여부 미확인)"
+      },
+      {
+        "pair": "베르트랑–세오도라",
+        "C": "없음",
+        "B": "3부",
+        "A": "없음",
+        "window": "3부만",
+        "status": "3부에서 보기"
+      },
+      {
+        "pair": "베르트랑–타리문",
+        "C": "없음",
+        "B": "3부",
+        "A": "3부",
+        "window": "3부만",
+        "status": "3부에서 보기"
+      },
+      {
+        "pair": "게이츠–골라이어스",
+        "C": "1부",
+        "B": "어느 부",
+        "A": "어느 부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "dietrich"
+        ],
+        "note": "게이츠 정체 공개 전"
+      },
+      {
+        "pair": "게이츠–단테",
+        "C": "1부",
+        "B": "없음",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "dietrich"
+        ],
+        "note": "게이츠 정체 공개 전"
+      },
+      {
+        "pair": "게이츠–릴리안",
+        "C": "2부",
+        "B": "어느 부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "dietrich"
+        ],
+        "note": "2부 2장부터",
+        "addedFor": [
+          "릴리안"
+        ]
+      },
+      {
+        "pair": "게이츠–우술라",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "어느 부",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능"
+      },
+      {
+        "pair": "게이츠–루루디아",
+        "C": "1부",
+        "B": "어느 부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "dietrich"
+        ],
+        "note": "게이츠 정체 공개 전",
+        "addedFor": [
+          "루루디아"
+        ]
+      },
+      {
+        "pair": "게이츠–자코네",
+        "C": "어느 부",
+        "B": "없음",
+        "A": "없음",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능",
+        "note": "2부부터"
+      },
+      {
+        "pair": "게이츠–알렉산드라",
+        "C": "1부",
+        "B": "어느 부",
+        "A": "어느 부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "dietrich"
+        ]
+      },
+      {
+        "pair": "제스터–골라이어스",
+        "C": "1·2부",
+        "B": "1·2부",
+        "A": "1·2부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "leda",
+          "dietrich"
+        ],
+        "addedFor": [
+          "골라이어스",
+          "제스터"
+        ]
+      },
+      {
+        "pair": "제스터–단테",
+        "C": "1·2부",
+        "B": "1·2부",
+        "A": "3부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "dietrich"
+        ]
+      },
+      {
+        "pair": "제스터–미카엘라",
+        "C": "1부",
+        "B": "1·2부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "dietrich"
+        ]
+      },
+      {
+        "pair": "제스터–레다",
+        "C": "1부",
+        "B": "3부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "위험",
+        "routes": [
+          "leda"
+        ],
+        "risk": "레다 1부 4~10장 안에 제스터(명성10·지원3) 영입 필요 · 기한 안 명성10 도달이 어려울 수 있음",
+        "note": "C는 레다 1부 4~10장",
+        "addedFor": [
+          "제스터"
+        ]
+      },
+      {
+        "pair": "제스터–버커니어",
+        "C": "없음",
+        "B": "3부",
+        "A": "없음",
+        "window": "3부만",
+        "status": "3부에서 보기"
+      },
+      {
+        "pair": "제스터–하르빈",
+        "C": "1·2부",
+        "B": "1·2부",
+        "A": "3부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "leda",
+          "dietrich"
+        ],
+        "addedFor": [
+          "제스터",
+          "하르빈"
+        ]
+      },
+      {
+        "pair": "제스터–녹투라",
+        "C": "1·2부",
+        "B": "3부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "dietrich"
+        ],
+        "addedFor": [
+          "녹투라"
+        ]
+      },
+      {
+        "pair": "골라이어스–단테",
+        "C": "1부",
+        "B": "어느 부",
+        "A": "어느 부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "dietrich"
+        ]
+      },
+      {
+        "pair": "골라이어스–로레타",
+        "C": "1부",
+        "B": "1부",
+        "A": "3부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "leda",
+          "kai"
+        ],
+        "addedFor": [
+          "골라이어스",
+          "로레타"
+        ]
+      },
+      {
+        "pair": "골라이어스–올림피아",
+        "C": "1·2부",
+        "B": "1·2부",
+        "A": "어느 부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "leda"
+        ],
+        "addedFor": [
+          "골라이어스"
+        ]
+      },
+      {
+        "pair": "골라이어스–녹투라",
+        "C": "1·2부",
+        "B": "1·2부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "dietrich",
+          "kai"
+        ],
+        "addedFor": [
+          "골라이어스",
+          "녹투라"
+        ]
+      },
+      {
+        "pair": "단테–세테스",
+        "C": "1부",
+        "B": "어느 부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "theodora"
+        ],
+        "addedFor": [
+          "세테스"
+        ]
+      },
+      {
+        "pair": "단테–타리문",
+        "C": "1·2부",
+        "B": "1·2부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "theodora",
+          "dietrich"
+        ]
+      },
+      {
+        "pair": "단테–레다",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "없음",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능",
+        "note": "베르트랑 동석"
+      },
+      {
+        "pair": "단테–시로코",
+        "C": "1부",
+        "B": "1부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "theodora"
+        ]
+      },
+      {
+        "pair": "단테–아나톨리아",
+        "C": "1부",
+        "B": "없음",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "dietrich"
+        ]
+      },
+      {
+        "pair": "단테–누디누",
+        "C": "1·2부",
+        "B": "1·2부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "theodora"
+        ]
+      },
+      {
+        "pair": "디트리히–파비오",
+        "C": "1부",
+        "B": "어느 부",
+        "A": "어느 부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "dietrich"
+        ]
+      },
+      {
+        "pair": "디트리히–에스메랄다",
+        "C": "1부",
+        "B": "1부",
+        "A": "1부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "dietrich"
+        ]
+      },
+      {
+        "pair": "디트리히–미카엘라",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "어느 부",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능"
+      },
+      {
+        "pair": "디트리히–세테스",
+        "C": "3부",
+        "B": "없음",
+        "A": "없음",
+        "window": "3부만",
+        "status": "3부에서 보기"
+      },
+      {
+        "pair": "디트리히–세오도라",
+        "C": "없음",
+        "B": "3부",
+        "A": "3부",
+        "window": "3부만",
+        "status": "3부에서 보기"
+      },
+      {
+        "pair": "디트리히–타리문",
+        "C": "없음",
+        "B": "3부",
+        "A": "3부",
+        "window": "3부만",
+        "status": "3부에서 보기"
+      },
+      {
+        "pair": "디트리히–레다",
+        "C": "없음",
+        "B": "3부",
+        "A": "3부",
+        "window": "3부만",
+        "status": "3부에서 보기"
+      },
+      {
+        "pair": "디트리히–버커니어",
+        "C": "어느 부",
+        "B": "3부",
+        "A": "없음",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능",
+        "note": "레다 동석"
+      },
+      {
+        "pair": "디트리히–하르빈",
+        "C": "1부",
+        "B": "1·2부",
+        "A": "3부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "dietrich"
+        ],
+        "addedFor": [
+          "하르빈"
+        ]
+      },
+      {
+        "pair": "디트리히–카타냐",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "없음",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능"
+      },
+      {
+        "pair": "파비오–에스메랄다",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "어느 부",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능",
+        "note": "1·2부는 디트리히 편"
+      },
+      {
+        "pair": "파비오–미카엘라",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "어느 부",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능",
+        "note": "1·2부는 디트리히 편"
+      },
+      {
+        "pair": "파비오–토비아스",
+        "C": "3부",
+        "B": "3부",
+        "A": "3부",
+        "window": "3부만",
+        "status": "3부에서 보기"
+      },
+      {
+        "pair": "파비오–아나톨리아",
+        "C": "3부",
+        "B": "3부",
+        "A": "없음",
+        "window": "3부만",
+        "status": "3부에서 보기"
+      },
+      {
+        "pair": "파비오–나타",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "없음",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능",
+        "note": "2부부터"
+      },
+      {
+        "pair": "파비오–하르빈",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "없음",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능",
+        "note": "1·2부 C는 디트리히 편"
+      },
+      {
+        "pair": "에스메랄다–미카엘라",
+        "C": "1부",
+        "B": "1·2부",
+        "A": "1·2부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "dietrich"
+        ],
+        "note": "B·A는 무우 동석"
+      },
+      {
+        "pair": "에스메랄다–디에고",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "어느 부",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능"
+      },
+      {
+        "pair": "에스메랄다–라이선더",
+        "C": "1부",
+        "B": "1부",
+        "A": "1부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "dietrich"
+        ]
+      },
+      {
+        "pair": "에스메랄다–루루디아",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "없음",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능"
+      },
+      {
+        "pair": "에스메랄다–레다",
+        "C": "1부",
+        "B": "1부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "leda"
+        ],
+        "note": "B는 2부 4장 전·디트리히 동석"
+      },
+      {
+        "pair": "에스메랄다–대도",
+        "C": "1부",
+        "B": "1·2부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "dietrich"
+        ],
+        "note": "비석 이벤트 뒤",
+        "addedFor": [
+          "대도"
+        ]
+      },
+      {
+        "pair": "에스메랄다–키로이카",
+        "C": "1·2부",
+        "B": "없음",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "leda"
+        ]
+      },
+      {
+        "pair": "미카엘라–로레타",
+        "C": "1부",
+        "B": "1부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "kai"
+        ]
+      },
+      {
+        "pair": "미카엘라–시몬",
+        "C": "1부",
+        "B": "1부",
+        "A": "어느 부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "dietrich"
+        ]
+      },
+      {
+        "pair": "미카엘라–무우",
+        "C": "1·2부",
+        "B": "3부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "dietrich"
+        ],
+        "note": "마을 대화 뒤",
+        "addedFor": [
+          "무우"
+        ]
+      },
+      {
+        "pair": "미카엘라–그자람",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "없음",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능"
+      },
+      {
+        "pair": "미카엘라–소피아",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "없음",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능"
+      },
+      {
+        "pair": "오르헬–리네",
+        "C": "1부",
+        "B": "없음",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "위험",
+        "routes": [
+          "theodora"
+        ],
+        "risk": "세오도라 12장 오르헬 외전 필요"
+      },
+      {
+        "pair": "오르헬–보나파르트",
+        "C": "1부",
+        "B": "1부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "위험",
+        "routes": [
+          "theodora"
+        ],
+        "risk": "세오도라 12장 오르헬 외전(10/18~10/24) 클리어 필요 · 카이 외전과 같은 기간"
+      },
+      {
+        "pair": "오르헬–피아나",
+        "C": "1부",
+        "B": "없음",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "theodora",
+          "leda"
+        ],
+        "addedFor": [
+          "피아나"
+        ]
+      },
+      {
+        "pair": "오르헬–레다",
+        "C": "없음",
+        "B": "3부",
+        "A": "없음",
+        "window": "3부만",
+        "status": "3부에서 보기"
+      },
+      {
+        "pair": "오르헬–마지데",
+        "C": "3부",
+        "B": "없음",
+        "A": "없음",
+        "window": "3부만",
+        "status": "3부에서 보기"
+      },
+      {
+        "pair": "디에고–세테스",
+        "C": "1부",
+        "B": "없음",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "theodora"
+        ],
+        "addedFor": [
+          "디에고",
+          "세테스"
+        ]
+      },
+      {
+        "pair": "디에고–리네",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "어느 부",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능",
+        "note": "오르헬 동석"
+      },
+      {
+        "pair": "디에고–세오도라",
+        "C": "어느 부",
+        "B": "없음",
+        "A": "없음",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능",
+        "note": "2부부터"
+      },
+      {
+        "pair": "디에고–릴리안",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "없음",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능"
+      },
+      {
+        "pair": "디에고–사란",
+        "C": "1부",
+        "B": "없음",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "leda"
+        ]
+      },
+      {
+        "pair": "디에고–하르빈",
+        "C": "1부",
+        "B": "1부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "theodora",
+          "leda"
+        ],
+        "addedFor": [
+          "디에고",
+          "하르빈"
+        ]
+      },
+      {
+        "pair": "디에고–이오",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "없음",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능",
+        "note": "오르헬 동석·1부 또는 3부"
+      },
+      {
+        "pair": "디에고–누조",
+        "C": "어느 부",
+        "B": "없음",
+        "A": "없음",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능"
+      },
+      {
+        "pair": "로레타–세테스",
+        "C": "1부",
+        "B": "1부",
+        "A": "1부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "theodora",
+          "kai"
+        ],
+        "addedFor": [
+          "세테스"
+        ]
+      },
+      {
+        "pair": "로레타–토비아스",
+        "C": "1부",
+        "B": "1부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "theodora"
+        ]
+      },
+      {
+        "pair": "로레타–사란",
+        "C": "1부",
+        "B": "1·2부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "leda"
+        ],
+        "addedFor": [
+          "로레타"
+        ]
+      },
+      {
+        "pair": "로레타–양계",
+        "C": "1부",
+        "B": "1부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "kai"
+        ],
+        "addedFor": [
+          "양계"
+        ]
+      },
+      {
+        "pair": "세테스–루루디아",
+        "C": "1부",
+        "B": "1부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "theodora"
+        ],
+        "addedFor": [
+          "세테스"
+        ]
+      },
+      {
+        "pair": "세테스–대도",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "어느 부",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능"
+      },
+      {
+        "pair": "리네–라이선더",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "없음",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능"
+      },
+      {
+        "pair": "리네–시몬",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "없음",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능"
+      },
+      {
+        "pair": "리네–시로코",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "없음",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능"
+      },
+      {
+        "pair": "리네–페페",
+        "C": "1·2부",
+        "B": "1·2부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "kai"
+        ],
+        "note": "베르트랑 외전 뒤"
+      },
+      {
+        "pair": "세오도라–라이선더",
+        "C": "1·2부",
+        "B": "1·2부",
+        "A": "1·2부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "theodora"
+        ]
+      },
+      {
+        "pair": "세오도라–시몬",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "없음",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능"
+      },
+      {
+        "pair": "세오도라–나타",
+        "C": "1부",
+        "B": "어느 부",
+        "A": "어느 부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "theodora"
+        ]
+      },
+      {
+        "pair": "세오도라–트로이아",
+        "C": "3부",
+        "B": "없음",
+        "A": "없음",
+        "window": "3부만",
+        "status": "3부에서 보기"
+      },
+      {
+        "pair": "세오도라–알렉산드라",
+        "C": "1부",
+        "B": "없음",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "theodora"
+        ]
+      },
+      {
+        "pair": "세오도라–보나파르트",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "어느 부",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능"
+      },
+      {
+        "pair": "세오도라–토비아스",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "어느 부",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능"
+      },
+      {
+        "pair": "세오도라–릴리안",
+        "C": "1·2부",
+        "B": "1·2부",
+        "A": "1·2부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "theodora"
+        ],
+        "note": "순서 잠금"
+      },
+      {
+        "pair": "세오도라–피아나",
+        "C": "1부",
+        "B": "1부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "theodora"
+        ],
+        "note": "피아나 기억 회복 전",
+        "addedFor": [
+          "피아나"
+        ]
+      },
+      {
+        "pair": "세오도라–카타냐",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "없음",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능",
+        "note": "2부 2장부터·베르트랑 동석"
+      },
+      {
+        "pair": "세오도라–타리문",
+        "C": "없음",
+        "B": "3부",
+        "A": "없음",
+        "window": "3부만",
+        "status": "3부에서 보기"
+      },
+      {
+        "pair": "보나파르트–우술라",
+        "C": "1부",
+        "B": "1부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "theodora"
+        ]
+      },
+      {
+        "pair": "보나파르트–하르빈",
+        "C": "1부",
+        "B": "1부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "theodora"
+        ],
+        "addedFor": [
+          "하르빈"
+        ]
+      },
+      {
+        "pair": "보나파르트–트로이아",
+        "C": "3부",
+        "B": "없음",
+        "A": "없음",
+        "window": "3부만",
+        "status": "3부에서 보기"
+      },
+      {
+        "pair": "보나파르트–누디누",
+        "C": "어느 부",
+        "B": "없음",
+        "A": "없음",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능",
+        "note": "2부부터·세오도라 동석"
+      },
+      {
+        "pair": "토비아스–올림피아",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "어느 부",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능"
+      },
+      {
+        "pair": "토비아스–아나톨리아",
+        "C": "1부",
+        "B": "1부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "불가",
+        "reason": "토비아스는 세오도라 전용, 아나톨리아 외전은 레다·디트리히에만 있음"
+      },
+      {
+        "pair": "토비아스–소피아",
+        "C": "1·2부",
+        "B": "없음",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "theodora"
+        ]
+      },
+      {
+        "pair": "릴리안–타리문",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "없음",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능"
+      },
+      {
+        "pair": "릴리안–시몬",
+        "C": "1부",
+        "B": "어느 부",
+        "A": "어느 부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "dietrich"
+        ],
+        "addedFor": [
+          "릴리안"
+        ]
+      },
+      {
+        "pair": "릴리안–무우",
+        "C": "1·2부",
+        "B": "1·2부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "dietrich"
+        ],
+        "addedFor": [
+          "릴리안",
+          "무우"
+        ]
+      },
+      {
+        "pair": "릴리안–누디누",
+        "C": "1·2부",
+        "B": "1·2부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "theodora"
+        ]
+      },
+      {
+        "pair": "라이선더–보나파르트",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "어느 부",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능"
+      },
+      {
+        "pair": "라이선더–토비아스",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "어느 부",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능"
+      },
+      {
+        "pair": "라이선더–릴리안",
+        "C": "1·2부",
+        "B": "1·2부",
+        "A": "1·2부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "theodora",
+          "dietrich"
+        ],
+        "note": "순서 잠금",
+        "addedFor": [
+          "릴리안"
+        ]
+      },
+      {
+        "pair": "라이선더–피아나",
+        "C": "1부",
+        "B": "1부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "theodora",
+          "dietrich"
+        ],
+        "note": "피아나 기억 회복 전",
+        "addedFor": [
+          "피아나"
+        ]
+      },
+      {
+        "pair": "라이선더–카타냐",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "없음",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능",
+        "note": "2부 2장부터"
+      },
+      {
+        "pair": "타리문–시몬",
+        "C": "1부",
+        "B": "어느 부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "dietrich"
+        ]
+      },
+      {
+        "pair": "타리문–피아나",
+        "C": "1·2부",
+        "B": "1·2부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "theodora",
+          "dietrich"
+        ],
+        "addedFor": [
+          "피아나"
+        ]
+      },
+      {
+        "pair": "타리문–레다",
+        "C": "없음",
+        "B": "3부",
+        "A": "3부",
+        "window": "3부만",
+        "status": "3부에서 보기"
+      },
+      {
+        "pair": "우술라–시몬",
+        "C": "1부",
+        "B": "어느 부",
+        "A": "3부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "dietrich"
+        ]
+      },
+      {
+        "pair": "우술라–피아나",
+        "C": "1부",
+        "B": "어느 부",
+        "A": "어느 부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "theodora",
+          "dietrich"
+        ],
+        "note": "B·A는 타리문 동석",
+        "addedFor": [
+          "피아나"
+        ]
+      },
+      {
+        "pair": "우술라–시로코",
+        "C": "1부",
+        "B": "1부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "theodora"
+        ]
+      },
+      {
+        "pair": "우술라–자스민",
+        "C": "1·2부",
+        "B": "1·2부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "theodora"
+        ],
+        "addedFor": [
+          "자스민"
+        ]
+      },
+      {
+        "pair": "루루디아–시몬",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "어느 부",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능"
+      },
+      {
+        "pair": "루루디아–피아나",
+        "C": "1·2부",
+        "B": "1·2부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "theodora",
+          "dietrich"
+        ],
+        "note": "타리문·우술라 동석",
+        "addedFor": [
+          "루루디아",
+          "피아나"
+        ]
+      },
+      {
+        "pair": "루루디아–버커니어",
+        "C": "1·2부",
+        "B": "1·2부",
+        "A": "어느 부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "theodora"
+        ],
+        "addedFor": [
+          "버커니어"
+        ]
+      },
+      {
+        "pair": "루루디아–밴디츠",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "없음",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능"
+      },
+      {
+        "pair": "시몬–피아나",
+        "C": "1·2부",
+        "B": "1·2부",
+        "A": "1·2부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "dietrich"
+        ]
+      },
+      {
+        "pair": "시몬–자코네",
+        "C": "어느 부",
+        "B": "없음",
+        "A": "없음",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능"
+      },
+      {
+        "pair": "피아나–올림피아",
+        "C": "1부",
+        "B": "3부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "leda"
+        ]
+      },
+      {
+        "pair": "레다–버커니어",
+        "C": "1부",
+        "B": "2부",
+        "A": "3부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "leda"
+        ]
+      },
+      {
+        "pair": "레다–시로코",
+        "C": "1부",
+        "B": "1부",
+        "A": "어느 부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "leda"
+        ]
+      },
+      {
+        "pair": "레다–올림피아",
+        "C": "1부",
+        "B": "1·2부",
+        "A": "어느 부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "leda"
+        ]
+      },
+      {
+        "pair": "레다–무우",
+        "C": "1부",
+        "B": "1·2부",
+        "A": "1·2부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "leda"
+        ]
+      },
+      {
+        "pair": "레다–그자람",
+        "C": "어느 부",
+        "B": "3부",
+        "A": "없음",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능"
+      },
+      {
+        "pair": "레다–아스완",
+        "C": "3부",
+        "B": "없음",
+        "A": "없음",
+        "window": "3부만",
+        "status": "3부에서 보기"
+      },
+      {
+        "pair": "버커니어–시로코",
+        "C": "1부",
+        "B": "1부",
+        "A": "어느 부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "leda"
+        ]
+      },
+      {
+        "pair": "버커니어–올림피아",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "어느 부",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능"
+      },
+      {
+        "pair": "버커니어–무우",
+        "C": "1·2부",
+        "B": "1·2부",
+        "A": "1·2부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "leda"
+        ]
+      },
+      {
+        "pair": "버커니어–대도",
+        "C": "1·2부",
+        "B": "어느 부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "theodora"
+        ],
+        "addedFor": [
+          "버커니어"
+        ]
+      },
+      {
+        "pair": "버커니어–자스민",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "없음",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능"
+      },
+      {
+        "pair": "시로코–올림피아",
+        "C": "1부",
+        "B": "1부",
+        "A": "1부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "leda"
+        ]
+      },
+      {
+        "pair": "시로코–무우",
+        "C": "1부",
+        "B": "1부",
+        "A": "3부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "leda"
+        ]
+      },
+      {
+        "pair": "시로코–아나톨리아",
+        "C": "1·2부",
+        "B": "없음",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "leda"
+        ]
+      },
+      {
+        "pair": "시로코–사란",
+        "C": "1부",
+        "B": "1·2부",
+        "A": "3부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "leda"
+        ]
+      },
+      {
+        "pair": "시로코–알렉산드라",
+        "C": "어느 부",
+        "B": "없음",
+        "A": "없음",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능"
+      },
+      {
+        "pair": "올림피아–무우",
+        "C": "1부",
+        "B": "1부",
+        "A": "3부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "leda"
+        ]
+      },
+      {
+        "pair": "올림피아–자스민",
+        "C": "어느 부",
+        "B": "없음",
+        "A": "없음",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능",
+        "note": "레다 동석"
+      },
+      {
+        "pair": "올림피아–알렉산드라",
+        "C": "1·2부",
+        "B": "1·2부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "leda"
+        ]
+      },
+      {
+        "pair": "올림피아–키릭",
+        "C": "어느 부",
+        "B": "없음",
+        "A": "없음",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능"
+      },
+      {
+        "pair": "무우–그자람",
+        "C": "1·2부",
+        "B": "없음",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "kai"
+        ],
+        "note": "미카엘라 동석",
+        "addedFor": [
+          "무우"
+        ]
+      },
+      {
+        "pair": "무우–페페",
+        "C": "1·2부",
+        "B": "1·2부",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "kai"
+        ],
+        "note": "베르트랑 외전 뒤",
+        "addedFor": [
+          "무우"
+        ]
+      },
+      {
+        "pair": "아나톨리아–양계",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "없음",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능"
+      },
+      {
+        "pair": "사란–나타",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "없음",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능"
+      },
+      {
+        "pair": "사란–하르빈",
+        "C": "1부",
+        "B": "어느 부",
+        "A": "어느 부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "leda"
+        ]
+      },
+      {
+        "pair": "사란–홍화",
+        "C": "3부",
+        "B": "없음",
+        "A": "없음",
+        "window": "3부만",
+        "status": "3부에서 보기"
+      },
+      {
+        "pair": "사란–양계",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "없음",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능",
+        "note": "사란 생일 뒤"
+      },
+      {
+        "pair": "나타–대도",
+        "C": "1부",
+        "B": "1부",
+        "A": "어느 부",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "theodora"
+        ]
+      },
+      {
+        "pair": "나타–하르빈",
+        "C": "1부",
+        "B": "없음",
+        "A": "없음",
+        "window": "1·2부 한정 단계 있음",
+        "status": "해결",
+        "routes": [
+          "theodora"
+        ],
+        "addedFor": [
+          "하르빈"
+        ]
+      },
+      {
+        "pair": "나타–마지데",
+        "C": "어느 부",
+        "B": "없음",
+        "A": "없음",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능"
+      },
+      {
+        "pair": "대도–이니오니",
+        "C": "어느 부",
+        "B": "어느 부",
+        "A": "없음",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능"
+      },
+      {
+        "pair": "하르빈–자코네",
+        "C": "어느 부",
+        "B": "없음",
+        "A": "없음",
+        "window": "3부에서도 가능",
+        "status": "3부에서도 가능"
+      },
+      {
+        "pair": "네이선–키릭",
+        "C": "3부",
+        "B": "3부",
+        "A": "없음",
+        "window": "3부만",
+        "status": "3부에서 보기"
+      }
+    ]
+  },
+  "decision": {
+    "date": "2026-11-12",
+    "text": "모든 지원 대화 목표 · 1·2부 한정 쌍 전부 같은 루트 영입 · 누디누 세오도라·페페 카이·시몬 디트리히·디에고 레다 · 라이선더 디트리히·에스메랄다 카이·티아라 세오도라 · 지원 레벨은 사용자 식사 반복 방법(미검증)으로 제약 아님",
+    "applied": "tools/apply_recruit_all_20261112.py"
+  }
+}

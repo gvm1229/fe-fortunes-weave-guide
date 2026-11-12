@@ -1,0 +1,1012 @@
+{
+  "date": "2026-11-04",
+  "method": "Game8 색인·영입표·인물 상세·추천 편성과 로컬 본문을 대조. 성장률은 병종 보정 제외.",
+  "characters": {
+    "세오도라": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620411",
+      "growthWithoutClass": {
+        "HP": 70,
+        "Str": 50,
+        "Mag": 30,
+        "Spd": 40,
+        "Dex": 40,
+        "Def": 40,
+        "Res": 30,
+        "Lck": 30,
+        "Cha": 50
+      },
+      "recruitableRoutes": [
+        "theodora"
+      ],
+      "localRoutes": [
+        "theodora"
+      ],
+      "routeAgreement": true,
+      "routeBasis": "Game8 루트별 추천의 교체 불가 로드 + 로컬 시작 인물"
+    },
+    "토비아스": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623758",
+      "growthWithoutClass": {
+        "HP": 55,
+        "Str": 60,
+        "Mag": 15,
+        "Spd": 25,
+        "Dex": 30,
+        "Def": 45,
+        "Res": 20,
+        "Lck": 40,
+        "Cha": 35
+      },
+      "recruitableRoutes": [
+        "theodora"
+      ],
+      "localRoutes": [
+        "theodora"
+      ],
+      "routeAgreement": true
+    },
+    "보나파르트": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623614",
+      "growthWithoutClass": {
+        "HP": 35,
+        "Str": 35,
+        "Mag": 45,
+        "Spd": 40,
+        "Dex": 50,
+        "Def": 30,
+        "Res": 40,
+        "Lck": 35,
+        "Cha": 40
+      },
+      "recruitableRoutes": [
+        "theodora"
+      ],
+      "localRoutes": [
+        "theodora"
+      ],
+      "routeAgreement": true
+    },
+    "릴리안": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624009",
+      "growthWithoutClass": {
+        "HP": 35,
+        "Str": 35,
+        "Mag": 30,
+        "Spd": 40,
+        "Dex": 55,
+        "Def": 30,
+        "Res": 35,
+        "Lck": 50,
+        "Cha": 25
+      },
+      "recruitableRoutes": [
+        "kai",
+        "dietrich",
+        "theodora",
+        "leda"
+      ],
+      "localRoutes": [
+        "theodora",
+        "leda",
+        "dietrich",
+        "kai"
+      ],
+      "routeAgreement": true
+    },
+    "소피아": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623986",
+      "growthWithoutClass": {
+        "HP": 35,
+        "Str": 30,
+        "Mag": 45,
+        "Spd": 30,
+        "Dex": 40,
+        "Def": 25,
+        "Res": 40,
+        "Lck": 30,
+        "Cha": 40
+      },
+      "recruitableRoutes": [
+        "kai",
+        "dietrich",
+        "theodora",
+        "leda"
+      ],
+      "localRoutes": [
+        "theodora",
+        "leda",
+        "dietrich",
+        "kai"
+      ],
+      "routeAgreement": true
+    },
+    "녹투라": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623984",
+      "growthWithoutClass": {
+        "HP": 50,
+        "Str": 45,
+        "Mag": 20,
+        "Spd": 45,
+        "Dex": 40,
+        "Def": 40,
+        "Res": 20,
+        "Lck": 35,
+        "Cha": 30
+      },
+      "recruitableRoutes": [
+        "kai",
+        "dietrich",
+        "theodora",
+        "leda"
+      ],
+      "localRoutes": [
+        "theodora",
+        "leda",
+        "dietrich",
+        "kai"
+      ],
+      "routeAgreement": true
+    },
+    "리네": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623990",
+      "growthWithoutClass": {
+        "HP": 45,
+        "Str": 45,
+        "Mag": 35,
+        "Spd": 35,
+        "Dex": 45,
+        "Def": 35,
+        "Res": 45,
+        "Lck": 50,
+        "Cha": 40
+      },
+      "recruitableRoutes": [
+        "kai",
+        "dietrich",
+        "theodora",
+        "leda"
+      ],
+      "localRoutes": [
+        "theodora",
+        "leda",
+        "dietrich",
+        "kai"
+      ],
+      "routeAgreement": true
+    },
+    "단테": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624018",
+      "growthWithoutClass": {
+        "HP": 30,
+        "Str": 30,
+        "Mag": 45,
+        "Spd": 40,
+        "Dex": 40,
+        "Def": 20,
+        "Res": 40,
+        "Lck": 45,
+        "Cha": 30
+      },
+      "recruitableRoutes": [
+        "kai",
+        "dietrich",
+        "theodora",
+        "leda"
+      ],
+      "localRoutes": [
+        "theodora",
+        "leda",
+        "dietrich",
+        "kai"
+      ],
+      "routeAgreement": true
+    },
+    "알렉산드라": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623983",
+      "growthWithoutClass": {
+        "HP": 30,
+        "Str": 35,
+        "Mag": 35,
+        "Spd": 55,
+        "Dex": 45,
+        "Def": 30,
+        "Res": 40,
+        "Lck": 50,
+        "Cha": 50
+      },
+      "recruitableRoutes": [
+        "kai",
+        "dietrich",
+        "theodora",
+        "leda"
+      ],
+      "localRoutes": [
+        "theodora",
+        "leda",
+        "dietrich",
+        "kai"
+      ],
+      "routeAgreement": true
+    },
+    "시로코": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624006",
+      "growthWithoutClass": {
+        "HP": 40,
+        "Str": 40,
+        "Mag": 40,
+        "Spd": 45,
+        "Dex": 50,
+        "Def": 35,
+        "Res": 35,
+        "Lck": 50,
+        "Cha": 45
+      },
+      "recruitableRoutes": [
+        "kai",
+        "dietrich",
+        "theodora",
+        "leda"
+      ],
+      "localRoutes": [
+        "theodora",
+        "leda",
+        "dietrich",
+        "kai"
+      ],
+      "routeAgreement": true
+    },
+    "우술라": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624015",
+      "growthWithoutClass": {
+        "HP": 40,
+        "Str": 35,
+        "Mag": 35,
+        "Spd": 50,
+        "Dex": 50,
+        "Def": 35,
+        "Res": 30,
+        "Lck": 40,
+        "Cha": 45
+      },
+      "recruitableRoutes": [
+        "kai",
+        "dietrich",
+        "theodora"
+      ],
+      "localRoutes": [
+        "theodora",
+        "dietrich",
+        "kai"
+      ],
+      "routeAgreement": true
+    },
+    "라이선더": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624002",
+      "growthWithoutClass": {
+        "HP": 45,
+        "Str": 40,
+        "Mag": 25,
+        "Spd": 50,
+        "Dex": 35,
+        "Def": 40,
+        "Res": 25,
+        "Lck": 30,
+        "Cha": 30
+      },
+      "recruitableRoutes": [
+        "kai",
+        "dietrich",
+        "theodora",
+        "leda"
+      ],
+      "localRoutes": [
+        "theodora",
+        "leda",
+        "dietrich",
+        "kai"
+      ],
+      "routeAgreement": true
+    },
+    "이오": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623980",
+      "growthWithoutClass": {
+        "HP": 45,
+        "Str": 40,
+        "Mag": 25,
+        "Spd": 35,
+        "Dex": 45,
+        "Def": 40,
+        "Res": 25,
+        "Lck": 35,
+        "Cha": 35
+      },
+      "recruitableRoutes": [
+        "kai",
+        "dietrich",
+        "theodora",
+        "leda"
+      ],
+      "localRoutes": [
+        "theodora",
+        "leda",
+        "dietrich",
+        "kai"
+      ],
+      "routeAgreement": true
+    },
+    "누조": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623987",
+      "growthWithoutClass": {
+        "HP": 50,
+        "Str": 50,
+        "Mag": 15,
+        "Spd": 55,
+        "Dex": 45,
+        "Def": 20,
+        "Res": 15,
+        "Lck": 25,
+        "Cha": 35
+      },
+      "recruitableRoutes": [
+        "kai",
+        "dietrich",
+        "theodora",
+        "leda"
+      ],
+      "localRoutes": [
+        "theodora",
+        "leda",
+        "dietrich",
+        "kai"
+      ],
+      "routeAgreement": true
+    },
+    "레다": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620437",
+      "growthWithoutClass": {
+        "HP": 40,
+        "Str": 35,
+        "Mag": 35,
+        "Spd": 65,
+        "Dex": 50,
+        "Def": 30,
+        "Res": 35,
+        "Lck": 25,
+        "Cha": 55
+      },
+      "recruitableRoutes": [
+        "leda"
+      ],
+      "localRoutes": [
+        "leda"
+      ],
+      "routeAgreement": true,
+      "routeBasis": "Game8 루트별 추천의 교체 불가 로드 + 로컬 시작 인물"
+    },
+    "무우": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624010",
+      "growthWithoutClass": {
+        "HP": 50,
+        "Str": 50,
+        "Mag": 25,
+        "Spd": 50,
+        "Dex": 50,
+        "Def": 40,
+        "Res": 30,
+        "Lck": 30,
+        "Cha": 40
+      },
+      "recruitableRoutes": [
+        "kai",
+        "dietrich",
+        "theodora",
+        "leda"
+      ],
+      "localRoutes": [
+        "theodora",
+        "leda",
+        "dietrich",
+        "kai"
+      ],
+      "routeAgreement": true
+    },
+    "올림피아": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624011",
+      "growthWithoutClass": {
+        "HP": 35,
+        "Str": 35,
+        "Mag": 50,
+        "Spd": 35,
+        "Dex": 35,
+        "Def": 30,
+        "Res": 40,
+        "Lck": 40,
+        "Cha": 40
+      },
+      "recruitableRoutes": [
+        "kai",
+        "dietrich",
+        "theodora",
+        "leda"
+      ],
+      "localRoutes": [
+        "theodora",
+        "leda",
+        "dietrich",
+        "kai"
+      ],
+      "routeAgreement": true
+    },
+    "그자람": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623978",
+      "growthWithoutClass": {
+        "HP": 45,
+        "Str": 45,
+        "Mag": 20,
+        "Spd": 50,
+        "Dex": 45,
+        "Def": 35,
+        "Res": 20,
+        "Lck": 45,
+        "Cha": 30
+      },
+      "recruitableRoutes": [
+        "kai",
+        "dietrich",
+        "theodora",
+        "leda"
+      ],
+      "localRoutes": [
+        "theodora",
+        "leda",
+        "dietrich",
+        "kai"
+      ],
+      "routeAgreement": true
+    },
+    "에스메랄다": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624005",
+      "growthWithoutClass": {
+        "HP": 55,
+        "Str": 55,
+        "Mag": 20,
+        "Spd": 35,
+        "Dex": 35,
+        "Def": 45,
+        "Res": 25,
+        "Lck": 35,
+        "Cha": 30
+      },
+      "recruitableRoutes": [
+        "kai",
+        "dietrich",
+        "theodora",
+        "leda"
+      ],
+      "localRoutes": [
+        "theodora",
+        "leda",
+        "dietrich",
+        "kai"
+      ],
+      "routeAgreement": true
+    },
+    "카타냐": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623981",
+      "growthWithoutClass": {
+        "HP": 35,
+        "Str": 35,
+        "Mag": 35,
+        "Spd": 55,
+        "Dex": 50,
+        "Def": 30,
+        "Res": 35,
+        "Lck": 40,
+        "Cha": 45
+      },
+      "recruitableRoutes": [
+        "kai",
+        "dietrich",
+        "theodora",
+        "leda"
+      ],
+      "localRoutes": [
+        "theodora",
+        "leda",
+        "dietrich",
+        "kai"
+      ],
+      "routeAgreement": true
+    },
+    "키로이카": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623994",
+      "growthWithoutClass": {
+        "HP": 55,
+        "Str": 40,
+        "Mag": 15,
+        "Spd": 55,
+        "Dex": 50,
+        "Def": 30,
+        "Res": 15,
+        "Lck": 30,
+        "Cha": 25
+      },
+      "recruitableRoutes": [
+        "kai",
+        "dietrich",
+        "theodora",
+        "leda"
+      ],
+      "localRoutes": [
+        "theodora",
+        "leda",
+        "dietrich",
+        "kai"
+      ],
+      "routeAgreement": true
+    },
+    "피아나": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623995",
+      "growthWithoutClass": {
+        "HP": 30,
+        "Str": 35,
+        "Mag": 55,
+        "Spd": 30,
+        "Dex": 40,
+        "Def": 20,
+        "Res": 45,
+        "Lck": 25,
+        "Cha": 40
+      },
+      "recruitableRoutes": [
+        "kai",
+        "dietrich",
+        "theodora",
+        "leda"
+      ],
+      "localRoutes": [
+        "theodora",
+        "leda",
+        "dietrich",
+        "kai"
+      ],
+      "routeAgreement": true
+    },
+    "미카엘라": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624008",
+      "growthWithoutClass": {
+        "HP": 50,
+        "Str": 45,
+        "Mag": 30,
+        "Spd": 40,
+        "Dex": 35,
+        "Def": 40,
+        "Res": 25,
+        "Lck": 30,
+        "Cha": 40
+      },
+      "recruitableRoutes": [
+        "kai",
+        "dietrich",
+        "theodora",
+        "leda"
+      ],
+      "localRoutes": [
+        "theodora",
+        "leda",
+        "dietrich",
+        "kai"
+      ],
+      "routeAgreement": true
+    },
+    "버커니어": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624003",
+      "growthWithoutClass": {
+        "HP": 50,
+        "Str": 50,
+        "Mag": 20,
+        "Spd": 25,
+        "Dex": 40,
+        "Def": 45,
+        "Res": 20,
+        "Lck": 30,
+        "Cha": 35
+      },
+      "recruitableRoutes": [
+        "dietrich",
+        "theodora",
+        "leda"
+      ],
+      "localRoutes": [
+        "theodora",
+        "leda",
+        "dietrich"
+      ],
+      "routeAgreement": true
+    },
+    "디트리히": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620168",
+      "growthWithoutClass": {
+        "HP": 50,
+        "Str": 45,
+        "Mag": 30,
+        "Spd": 50,
+        "Dex": 60,
+        "Def": 40,
+        "Res": 30,
+        "Lck": 50,
+        "Cha": 60
+      },
+      "recruitableRoutes": [
+        "dietrich"
+      ],
+      "localRoutes": [
+        "dietrich"
+      ],
+      "routeAgreement": true,
+      "routeBasis": "Game8 루트별 추천의 교체 불가 로드 + 로컬 시작 인물"
+    },
+    "파비오": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623964",
+      "growthWithoutClass": {
+        "HP": 40,
+        "Str": 25,
+        "Mag": 50,
+        "Spd": 35,
+        "Dex": 40,
+        "Def": 30,
+        "Res": 45,
+        "Lck": 35,
+        "Cha": 30
+      },
+      "recruitableRoutes": [
+        "dietrich",
+        "leda"
+      ],
+      "localRoutes": [
+        "leda",
+        "dietrich"
+      ],
+      "routeAgreement": true
+    },
+    "양계": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623985",
+      "growthWithoutClass": {
+        "HP": 50,
+        "Str": 35,
+        "Mag": 40,
+        "Spd": 35,
+        "Dex": 35,
+        "Def": 30,
+        "Res": 40,
+        "Lck": 40,
+        "Cha": 25
+      },
+      "recruitableRoutes": [
+        "kai",
+        "dietrich",
+        "theodora",
+        "leda"
+      ],
+      "localRoutes": [
+        "theodora",
+        "leda",
+        "dietrich",
+        "kai"
+      ],
+      "routeAgreement": true
+    },
+    "게이츠": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624014",
+      "growthWithoutClass": {
+        "HP": 50,
+        "Str": 50,
+        "Mag": 20,
+        "Spd": 40,
+        "Dex": 45,
+        "Def": 45,
+        "Res": 25,
+        "Lck": 40,
+        "Cha": 45
+      },
+      "recruitableRoutes": [
+        "dietrich"
+      ],
+      "localRoutes": [
+        "dietrich"
+      ],
+      "routeAgreement": true
+    },
+    "제스터": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623991",
+      "growthWithoutClass": {
+        "HP": 40,
+        "Str": 35,
+        "Mag": 15,
+        "Spd": 60,
+        "Dex": 45,
+        "Def": 35,
+        "Res": 25,
+        "Lck": 40,
+        "Cha": 40
+      },
+      "recruitableRoutes": [
+        "kai",
+        "dietrich",
+        "theodora",
+        "leda"
+      ],
+      "localRoutes": [
+        "theodora",
+        "leda",
+        "dietrich",
+        "kai"
+      ],
+      "routeAgreement": true
+    },
+    "카이": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620167",
+      "growthWithoutClass": {
+        "HP": 45,
+        "Str": 45,
+        "Mag": 40,
+        "Spd": 45,
+        "Dex": 45,
+        "Def": 35,
+        "Res": 35,
+        "Lck": 40,
+        "Cha": 40
+      },
+      "recruitableRoutes": [
+        "kai"
+      ],
+      "localRoutes": [
+        "kai"
+      ],
+      "routeAgreement": true,
+      "routeBasis": "Game8 루트별 추천의 교체 불가 로드 + 로컬 시작 인물"
+    },
+    "티아라": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623941",
+      "growthWithoutClass": {
+        "HP": 30,
+        "Str": 25,
+        "Mag": 45,
+        "Spd": 35,
+        "Dex": 40,
+        "Def": 20,
+        "Res": 40,
+        "Lck": 50,
+        "Cha": 45
+      },
+      "recruitableRoutes": [
+        "kai",
+        "dietrich",
+        "theodora",
+        "leda"
+      ],
+      "localRoutes": [
+        "theodora",
+        "leda",
+        "dietrich",
+        "kai"
+      ],
+      "routeAgreement": true
+    },
+    "피터르": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624004",
+      "growthWithoutClass": {
+        "HP": 40,
+        "Str": 35,
+        "Mag": 20,
+        "Spd": 45,
+        "Dex": 60,
+        "Def": 30,
+        "Res": 25,
+        "Lck": 35,
+        "Cha": 30
+      },
+      "recruitableRoutes": [
+        "kai",
+        "dietrich",
+        "theodora",
+        "leda"
+      ],
+      "localRoutes": [
+        "theodora",
+        "leda",
+        "dietrich",
+        "kai"
+      ],
+      "routeAgreement": true
+    },
+    "울턴드": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624007",
+      "growthWithoutClass": {
+        "HP": 45,
+        "Str": 40,
+        "Mag": 40,
+        "Spd": 35,
+        "Dex": 40,
+        "Def": 35,
+        "Res": 45,
+        "Lck": 55,
+        "Cha": 50
+      },
+      "recruitableRoutes": [
+        "kai",
+        "dietrich",
+        "theodora",
+        "leda"
+      ],
+      "localRoutes": [
+        "theodora",
+        "leda",
+        "dietrich",
+        "kai"
+      ],
+      "routeAgreement": true
+    },
+    "세테스": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623993",
+      "growthWithoutClass": {
+        "HP": 45,
+        "Str": 45,
+        "Mag": 30,
+        "Spd": 40,
+        "Dex": 45,
+        "Def": 40,
+        "Res": 35,
+        "Lck": 30,
+        "Cha": 50
+      },
+      "recruitableRoutes": [
+        "kai",
+        "theodora",
+        "leda"
+      ],
+      "localRoutes": [
+        "theodora",
+        "leda",
+        "kai"
+      ],
+      "routeAgreement": true
+    },
+    "마지데": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623988",
+      "growthWithoutClass": {
+        "HP": 65,
+        "Str": 50,
+        "Mag": 15,
+        "Spd": 20,
+        "Dex": 30,
+        "Def": 40,
+        "Res": 10,
+        "Lck": 25,
+        "Cha": 5
+      },
+      "recruitableRoutes": [
+        "kai",
+        "dietrich",
+        "theodora",
+        "leda"
+      ],
+      "localRoutes": [
+        "theodora",
+        "leda",
+        "dietrich",
+        "kai"
+      ],
+      "routeAgreement": true
+    }
+  },
+  "routeExclusive": {
+    "세오도라": "theodora",
+    "토비아스": "theodora",
+    "보나파르트": "theodora",
+    "레다": "leda",
+    "디트리히": "dietrich",
+    "게이츠": "dietrich",
+    "카이": "kai"
+  },
+  "references": {
+    "index": "https://game8.co/games/Fire-Emblem-Fortunes-Weave",
+    "teams": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/630593",
+    "recruitment": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
+    "part2": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624554"
+  },
+  "capacitySource": "theodora.html·leda.html·dietrich.html·kai.html·part2.html. Game8 개요에서 로드 측13/14명을 독립 재확인하지 못함. 각 전투 출격 준비 화면이 우선.",
+  "limit": "게임 저장·전투 재현 없음. 성장률·역할·합류·고유 자료 기회로 추천하며 총합 성장률만으로 절대 우열을 단정하지 않음.",
+  "additionalCandidates": {
+    "나타": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623977",
+      "growthWithoutClass": {
+        "HP": 45,
+        "Str": 45,
+        "Mag": 25,
+        "Spd": 45,
+        "Dex": 50,
+        "Def": 35,
+        "Res": 25,
+        "Lck": 30,
+        "Cha": 25
+      },
+      "decision": "녹투라보다 기술 성장50% 대40%가 높지만 HP·수비는 낮다. 확실한 전체 우위는 아니며 추가 모래벌레 고기·지원 원정을 기본에 넣지 않음."
+    },
+    "로레타": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623996",
+      "growthWithoutClass": {
+        "HP": 35,
+        "Str": 35,
+        "Mag": 35,
+        "Spd": 55,
+        "Dex": 40,
+        "Def": 30,
+        "Res": 40,
+        "Lck": 30,
+        "Cha": 30
+      },
+      "decision": "좋은 비행 대안이지만 희망 알렉산드라와 기동 역할이 겹친다. 현재9명 계획에 새 비병을 추가하지 않으며 카이에서도 필요할 때만 대안."
+    },
+    "시몬": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624019",
+      "growthWithoutClass": {
+        "HP": 50,
+        "Str": 50,
+        "Mag": 20,
+        "Spd": 35,
+        "Dex": 40,
+        "Def": 40,
+        "Res": 25,
+        "Lck": 50,
+        "Cha": 35
+      },
+      "decision": "좋은 물리 전열이나 토비아스의 힘60%·수비45%보다 모두 높지는 않다. 전용 인물 우선 후 추가 전열이 필요할 때 대안."
+    },
+    "이니오니": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624001",
+      "growthWithoutClass": {
+        "HP": 40,
+        "Str": 50,
+        "Mag": 20,
+        "Spd": 35,
+        "Dex": 40,
+        "Def": 40,
+        "Res": 30,
+        "Lck": 40,
+        "Cha": 30
+      },
+      "decision": "힘 성장50%의 강한 궁수 대안. 현재 레다 키로이카·카이 한혈마3명에 경험치를 모으므로 기본 명단에 네 번째 궁수를 추가하지 않음."
+    },
+    "사란": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624017",
+      "growthWithoutClass": {
+        "HP": 35,
+        "Str": 30,
+        "Mag": 45,
+        "Spd": 35,
+        "Dex": 50,
+        "Def": 30,
+        "Res": 45,
+        "Lck": 35,
+        "Cha": 40
+      },
+      "decision": "벽 생성·회복은 별도 장점. 레다는 올림피아·소피아·피아나로 회복과 구조를 분담하며 벽이 꼭 필요한 전투의 대안으로 둠."
+    },
+    "밴디츠": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623982",
+      "growthWithoutClass": {
+        "HP": 50,
+        "Str": 35,
+        "Mag": 20,
+        "Spd": 35,
+        "Dex": 50,
+        "Def": 35,
+        "Res": 25,
+        "Lck": 30,
+        "Cha": 35
+      },
+      "decision": "전차병 전용 운용은 강점. 현재 한혈마3두를 이미 배분했으므로 네 번째 말 포획·친밀도 작업을 기본 의무로 만들지 않음."
+    }
+  }
+}

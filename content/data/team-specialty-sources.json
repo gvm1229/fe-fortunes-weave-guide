@@ -1,0 +1,1008 @@
+{
+  "reviewed": "2026-11-05",
+  "scope": "현재25명·수장·후기/예비 후보36명. 공개 원문에서 필요한 사실만 구조화.",
+  "characters": {
+    "세오도라": {
+      "source": "https://yuphastemple.com/theodora/",
+      "strengths": [
+        "창술",
+        "백마술",
+        "지휘술"
+      ],
+      "weaknesses": [
+        "흑마술"
+      ],
+      "initialRanks": {
+        "검술": "E",
+        "창술": "D",
+        "도끼술": "E",
+        "궁술": "E",
+        "격투술": "E",
+        "흑마술": "E",
+        "백마술": "E",
+        "지휘술": "E+",
+        "보병술": "E",
+        "기마술": "E",
+        "중갑술": "E",
+        "비행술": "E"
+      },
+      "personal": "Royal Resolve: Unit takes half damage when attacked. Trigger % = 30. Royal Resolve+: Unit takes half damage when attacked. Trigger % = 50.",
+      "growth": "HP 70, Str 50, Mag 30, Spd 40, Dex 40, Def 40, Res 30, Lck 30, Cha 50",
+      "white": "Heal (D), Seraphim (C), Physic (B), Barrier (A), Aura (S)"
+    },
+    "이스마르": {
+      "source": "https://yuphastemple.com/eshmel/",
+      "strengths": [
+        "창술",
+        "지휘술"
+      ],
+      "weaknesses": [],
+      "initialRanks": {
+        "검술": "E",
+        "창술": "A",
+        "도끼술": "E",
+        "궁술": "E",
+        "격투술": "E",
+        "흑마술": "D",
+        "백마술": "D",
+        "지휘술": "C",
+        "보병술": "C",
+        "기마술": "E",
+        "중갑술": "E",
+        "비행술": "E"
+      },
+      "personal": "Light of Salvation: Neutralizes Underworld Boon on foes within 2 spaces. Light of Salvation+: Neutralizes Underworld Boon on foes within 3 spaces.",
+      "growth": "HP 50, Str 45, Mag 45, Spd 45, Dex 45, Def 35, Res 35, Lck 40, Cha 50",
+      "white": "Heal (D+), Seraphim (C), Recover (B), Fortify (A), Aura (S)"
+    },
+    "디트리히": {
+      "source": "https://yuphastemple.com/dietrich/",
+      "strengths": [
+        "검술",
+        "보병술"
+      ],
+      "weaknesses": [
+        "백마술"
+      ],
+      "initialRanks": {
+        "검술": "D+",
+        "창술": "E",
+        "도끼술": "E",
+        "궁술": "E",
+        "격투술": "E",
+        "흑마술": "E",
+        "백마술": "E",
+        "지휘술": "E",
+        "보병술": "D+",
+        "기마술": "E",
+        "중갑술": "E",
+        "비행술": "E"
+      },
+      "personal": "Murderous Intent: If unit attacks first, grants Crit+5 during combat. Murderous Intent+: If unit attacks first, grants Crit+10 during combat.",
+      "growth": "HP 50, Str 45, Mag 30, Spd 50, Dex 60, Def 40, Res 30, Lck 50, Cha 60",
+      "white": "Heal (D), Nosferatu (C), Silence (B), Berserk (A)"
+    },
+    "카이": {
+      "source": "https://yuphastemple.com/cai/",
+      "strengths": [
+        "검술",
+        "창술",
+        "백마술",
+        "기마술"
+      ],
+      "weaknesses": [
+        "궁술",
+        "비행술"
+      ],
+      "initialRanks": {
+        "검술": "E+",
+        "창술": "D",
+        "도끼술": "E",
+        "궁술": "E",
+        "격투술": "E",
+        "흑마술": "E",
+        "백마술": "E+",
+        "지휘술": "E",
+        "보병술": "E",
+        "기마술": "E+",
+        "중갑술": "E",
+        "비행술": "E"
+      },
+      "personal": "Brio: Grants Mov+1. Brio+: Grants Mov+2.",
+      "growth": "HP 45, Str 45, Mag 40, Spd 45, Dex 45, Def 35, Res 35, Lck 40, Cha 40",
+      "white": "Heal (D), Nosferatu (C), Seraphim (B), Recover (A), Warp (S)"
+    },
+    "미카엘라": {
+      "source": "https://yuphastemple.com/mikaela/",
+      "strengths": [
+        "도끼술",
+        "궁술",
+        "보병술"
+      ],
+      "weaknesses": [
+        "흑마술",
+        "백마술",
+        "기마술",
+        "비행술"
+      ],
+      "initialRanks": {
+        "검술": "E",
+        "창술": "E",
+        "도끼술": "D",
+        "궁술": "D",
+        "격투술": "E",
+        "흑마술": "E",
+        "백마술": "E",
+        "지휘술": "E",
+        "보병술": "E",
+        "기마술": "E+",
+        "중갑술": "E",
+        "비행술": "E"
+      },
+      "personal": "Veteran's Mettle: Grants Hit+10 during combat against an adjacent foe.",
+      "growth": "HP 50, Str 45, Mag 30, Spd 40, Dex 35, Def 40, Res 25, Lck 30, Cha 40",
+      "white": "Laia (D), Torch (C), Resquia (B), Fortify (A)"
+    },
+    "무우": {
+      "source": "https://yuphastemple.com/mu/",
+      "strengths": [
+        "검술",
+        "도끼술",
+        "격투술",
+        "백마술"
+      ],
+      "weaknesses": [],
+      "initialRanks": {
+        "검술": "E",
+        "창술": "E",
+        "도끼술": "E",
+        "궁술": "E",
+        "격투술": "D",
+        "흑마술": "E",
+        "백마술": "E",
+        "지휘술": "E",
+        "보병술": "E",
+        "기마술": "E",
+        "중갑술": "E",
+        "비행술": "E"
+      },
+      "personal": "Signs of Growth: When unit levels up, grants enhanced basic stat growth.",
+      "growth": "HP 30, Str 30, Mag 5, Spd 30, Dex 30, Def 20, Res 10, Lck 10, Cha 20",
+      "white": "Heal (D), Nosferatu (C), Regenera (B), Warp (A), Aura (S)"
+    },
+    "그자람": {
+      "source": "https://yuphastemple.com/guzran/",
+      "strengths": [
+        "검술",
+        "격투술",
+        "보병술"
+      ],
+      "weaknesses": [
+        "흑마술",
+        "백마술"
+      ],
+      "initialRanks": {
+        "검술": "D",
+        "창술": "E",
+        "도끼술": "D",
+        "궁술": "E",
+        "격투술": "D",
+        "흑마술": "E",
+        "백마술": "E",
+        "지휘술": "E",
+        "보병술": "D",
+        "기마술": "E",
+        "중갑술": "E",
+        "비행술": "E"
+      },
+      "personal": "Hot-Headed: Grants one of Hit+10, Avo+10, or Crit+10 during combat.",
+      "growth": "HP 45, Str 45, Mag 20, Spd 50, Dex 45, Def 35, Res 20, Lck 45, Cha 30",
+      "white": "Laia (D), Nosferatu (C), Emergis (B), Recover (A)"
+    },
+    "레다": {
+      "source": "https://yuphastemple.com/leda/",
+      "strengths": [
+        "검술",
+        "궁술",
+        "백마술",
+        "보병술"
+      ],
+      "weaknesses": [
+        "창술"
+      ],
+      "initialRanks": {
+        "검술": "D",
+        "창술": "E",
+        "도끼술": "E",
+        "궁술": "D",
+        "격투술": "E",
+        "흑마술": "E",
+        "백마술": "E+",
+        "지휘술": "E",
+        "보병술": "E",
+        "기마술": "E",
+        "중갑술": "E",
+        "비행술": "E"
+      },
+      "personal": "Blindside: If unit attacks first, cannot be countered during combat. Trigger % = 5. Blindside+: If unit attacks first, cannot be countered during combat. Trigger % = 10.",
+      "growth": "HP 40, Str 35, Mag 35, Spd 65, Dex 50, Def 30, Res 35, Lck 25, Cha 55",
+      "white": "Heal (D), Nosferatu (C), Seraphim (B), Recover (A), Fortify (S)"
+    },
+    "카타냐": {
+      "source": "https://yuphastemple.com/catania/",
+      "strengths": [
+        "검술",
+        "창술",
+        "비행술"
+      ],
+      "weaknesses": [
+        "중갑술"
+      ],
+      "initialRanks": {
+        "검술": "E+",
+        "창술": "D",
+        "도끼술": "E",
+        "궁술": "E",
+        "격투술": "E",
+        "흑마술": "E",
+        "백마술": "E",
+        "지휘술": "E",
+        "보병술": "E",
+        "기마술": "E",
+        "중갑술": "E",
+        "비행술": "D"
+      },
+      "personal": "Punishing Squall: If AS ≥ foe's AS+3, grants Hit+20 during combat.",
+      "growth": "HP 35, Str 35, Mag 35, Spd 55, Dex 50, Def 30, Res 35, Lck 40, Cha 45",
+      "white": "Heal (D), Seraphim (C), Physic (B), Warp (A)"
+    },
+    "에스메랄다": {
+      "source": "https://yuphastemple.com/esmeralda/",
+      "strengths": [
+        "창술",
+        "도끼술",
+        "중갑술"
+      ],
+      "weaknesses": [
+        "검술",
+        "흑마술"
+      ],
+      "initialRanks": {
+        "검술": "E",
+        "창술": "D",
+        "도끼술": "E+",
+        "궁술": "E",
+        "격투술": "E",
+        "흑마술": "E",
+        "백마술": "E",
+        "지휘술": "E",
+        "보병술": "E",
+        "기마술": "E",
+        "중갑술": "E+",
+        "비행술": "E"
+      },
+      "personal": "Brawn: Reduces Wt of unit's equipment to 80%. (The Wt reduction is per item, and resulting Wt of each round down)",
+      "growth": "HP 55, Str 55, Mag 20, Spd 35, Dex 35, Def 45, Res 25, Lck 35, Cha 30",
+      "white": "Laia (D), Restore (C), Seraphim (B), Barrier (A)"
+    },
+    "파비오": {
+      "source": "https://yuphastemple.com/fabio/",
+      "strengths": [
+        "흑마술",
+        "지휘술"
+      ],
+      "weaknesses": [
+        "궁술"
+      ],
+      "initialRanks": {
+        "검술": "E",
+        "창술": "E",
+        "도끼술": "E",
+        "궁술": "E",
+        "격투술": "E",
+        "흑마술": "D",
+        "백마술": "D",
+        "지휘술": "E",
+        "보병술": "D",
+        "기마술": "E",
+        "중갑술": "E",
+        "비행술": "E"
+      },
+      "personal": "Dark Calling: Inflicts Ddg-5 on adjacent foes.",
+      "growth": "HP 40, Str 25, Mag 50, Spd 35, Dex 40, Def 30, Res 45, Lck 35, Cha 30",
+      "white": "Heal (D), Nosferatu (C), Recover (B), Ward (A)"
+    },
+    "시로코": {
+      "source": "https://yuphastemple.com/sirocco/",
+      "strengths": [
+        "검술",
+        "흑마술",
+        "백마술",
+        "지휘술"
+      ],
+      "weaknesses": [
+        "중갑술"
+      ],
+      "initialRanks": {
+        "검술": "D",
+        "창술": "E",
+        "도끼술": "E",
+        "궁술": "E",
+        "격투술": "E",
+        "흑마술": "D",
+        "백마술": "D",
+        "지휘술": "E",
+        "보병술": "E",
+        "기마술": "E",
+        "중갑술": "E",
+        "비행술": "E"
+      },
+      "personal": "Goddess's Favor: After combat, restores 5 HP to unit.",
+      "growth": "HP 40, Str 40, Mag 40, Spd 45, Dex 50, Def 35, Res 35, Lck 50, Cha 45",
+      "white": "Heal (D), Restore (C), Recover (B), Fortify (A), Warp (S)"
+    },
+    "단테": {
+      "source": "https://yuphastemple.com/dante/",
+      "strengths": [
+        "흑마술",
+        "백마술",
+        "지휘술"
+      ],
+      "weaknesses": [
+        "격투술"
+      ],
+      "initialRanks": {
+        "검술": "E",
+        "창술": "E",
+        "도끼술": "E",
+        "궁술": "E",
+        "격투술": "E",
+        "흑마술": "D",
+        "백마술": "D",
+        "지휘술": "E",
+        "보병술": "E",
+        "기마술": "E",
+        "중갑술": "E",
+        "비행술": "E"
+      },
+      "personal": "Stage Directions: Grants Ddg+10 to allies within 2 spaces during their combats. Trigger % = ally's Cha ÷ 2.",
+      "growth": "HP 30, Str 30, Mag 45, Spd 40, Dex 40, Def 20, Res 40, Lck 45, Cha 30",
+      "white": "Heal (D), Nosferatu (C), Recover (B), Freeze (A)"
+    },
+    "티아라": {
+      "source": "https://yuphastemple.com/tialla/",
+      "strengths": [
+        "흑마술",
+        "백마술",
+        "지휘술"
+      ],
+      "weaknesses": [
+        "검술"
+      ],
+      "initialRanks": {
+        "검술": "E",
+        "창술": "E",
+        "도끼술": "E",
+        "궁술": "E",
+        "격투술": "E",
+        "흑마술": "D",
+        "백마술": "D",
+        "지휘술": "D",
+        "보병술": "E",
+        "기마술": "E",
+        "중갑술": "E",
+        "비행술": "E"
+      },
+      "personal": "Tactician's Wit: Grants Rng +1 to combat arts usable on allies.",
+      "growth": "HP 30, Str 25, Mag 45, Spd 35, Dex 40, Def 20, Res 40, Lck 50, Cha 45",
+      "white": "Heal (D), Physic (C), Recover (B), Seraphim (A), Aura (S)"
+    },
+    "피터르": {
+      "source": "https://yuphastemple.com/peter/",
+      "strengths": [
+        "궁술",
+        "보병술"
+      ],
+      "weaknesses": [
+        "중갑술"
+      ],
+      "initialRanks": {
+        "검술": "E",
+        "창술": "E",
+        "도끼술": "E",
+        "궁술": "D",
+        "격투술": "E",
+        "흑마술": "E",
+        "백마술": "E",
+        "지휘술": "E",
+        "보병술": "E",
+        "기마술": "E",
+        "중갑술": "E",
+        "비행술": "E"
+      },
+      "personal": "Steady Aim: Grants Rng +1 when attacking with a bow combat art.",
+      "growth": "HP 40, Str 35, Mag 20, Spd 45, Dex 60, Def 30, Res 25, Lck 35, Cha 30",
+      "white": "Laia (D), Restore (C), Freeze (B), Physic (A)"
+    },
+    "리네": {
+      "source": "https://yuphastemple.com/ninae/",
+      "strengths": [
+        "창술",
+        "백마술",
+        "기마술"
+      ],
+      "weaknesses": [
+        "궁술"
+      ],
+      "initialRanks": {
+        "검술": "E",
+        "창술": "D",
+        "도끼술": "E+",
+        "궁술": "E",
+        "격투술": "E",
+        "흑마술": "E",
+        "백마술": "D",
+        "지휘술": "E",
+        "보병술": "E",
+        "기마술": "D",
+        "중갑술": "E",
+        "비행술": "E"
+      },
+      "personal": "Spirits' Voices: If foe uses magic, grants Hit/Avo+10 to unit during combat.",
+      "growth": "HP 45, Str 45, Mag 35, Spd 35, Dex 45, Def 35, Res 45, Lck 50, Cha 40",
+      "white": "Heal (D), Nosferatu (C), Physic (B), Ward (A), Aura (S)"
+    },
+    "이니오니": {
+      "source": "https://yuphastemple.com/inyoni/",
+      "strengths": [
+        "도끼술",
+        "궁술"
+      ],
+      "weaknesses": [
+        "흑마술",
+        "백마술"
+      ],
+      "initialRanks": {
+        "검술": "D",
+        "창술": "E",
+        "도끼술": "E",
+        "궁술": "C+",
+        "격투술": "E",
+        "흑마술": "E",
+        "백마술": "E",
+        "지휘술": "E",
+        "보병술": "E",
+        "기마술": "E",
+        "중갑술": "E",
+        "비행술": "E"
+      },
+      "personal": "Heavy-Bow User: When equipped with a bow, grants Str+3.",
+      "growth": "HP 40, Str 50, Mag 20, Spd 35, Dex 40, Def 40, Res 30, Lck 40, Cha 30",
+      "white": "Laia (D), Nosferatu (C), Berserk (B), Ward (A)"
+    },
+    "울턴드": {
+      "source": "https://yuphastemple.com/ultand/",
+      "strengths": [
+        "창술",
+        "백마술",
+        "비행술"
+      ],
+      "weaknesses": [
+        "검술"
+      ],
+      "initialRanks": {
+        "검술": "E",
+        "창술": "D",
+        "도끼술": "E",
+        "궁술": "E",
+        "격투술": "E",
+        "흑마술": "D",
+        "백마술": "D",
+        "지휘술": "E",
+        "보병술": "E",
+        "기마술": "E",
+        "중갑술": "E",
+        "비행술": "E"
+      },
+      "personal": "Patch Up: After an adjacent ally's combat, restores a little HP to that ally.",
+      "growth": "HP 45, Str 40, Mag 40, Spd 35, Dex 40, Def 35, Res 45, Lck 55, Cha 50",
+      "white": "Heal (D), Seraphim (C), Emergis (B), Ward (A), Aura (S)"
+    },
+    "우술라": {
+      "source": "https://yuphastemple.com/ursula/",
+      "strengths": [
+        "검술",
+        "궁술",
+        "격투술"
+      ],
+      "weaknesses": [],
+      "initialRanks": {
+        "검술": "D",
+        "창술": "E",
+        "도끼술": "E",
+        "궁술": "D",
+        "격투술": "E",
+        "흑마술": "E",
+        "백마술": "E",
+        "지휘술": "E",
+        "보병술": "D",
+        "기마술": "E",
+        "중갑술": "E",
+        "비행술": "E"
+      },
+      "personal": "Management Skills: Allows storage access to unit and allies within 2 spaces.",
+      "growth": "HP 40, Str 35, Mag 35, Spd 50, Dex 50, Def 35, Res 30, Lck 40, Cha 45",
+      "white": "Heal (D), Restore (C), Ward (B), Fortify (A)"
+    },
+    "소피아": {
+      "source": "https://yuphastemple.com/sofia/",
+      "strengths": [
+        "궁술",
+        "백마술"
+      ],
+      "weaknesses": [
+        "도끼술"
+      ],
+      "initialRanks": {
+        "검술": "E",
+        "창술": "E",
+        "도끼술": "E",
+        "궁술": "E+",
+        "격투술": "E",
+        "흑마술": "E+",
+        "백마술": "D",
+        "지휘술": "E",
+        "보병술": "E",
+        "기마술": "E",
+        "중갑술": "E",
+        "비행술": "E"
+      },
+      "personal": "Healing Knowledge: When healing an ally with magic, restores +10 HP.",
+      "growth": "HP 35, Str 30, Mag 45, Spd 30, Dex 40, Def 25, Res 40, Lck 30, Cha 40",
+      "white": "Heal (D), Nosferatu (C), Physic (B), Recover (A), Aura (S)"
+    },
+    "로레타": {
+      "source": "https://yuphastemple.com/loretta/",
+      "strengths": [
+        "검술",
+        "창술",
+        "비행술"
+      ],
+      "weaknesses": [
+        "중갑술"
+      ],
+      "initialRanks": {
+        "검술": "D",
+        "창술": "D",
+        "도끼술": "E",
+        "궁술": "E",
+        "격투술": "E",
+        "흑마술": "E",
+        "백마술": "E",
+        "지휘술": "E",
+        "보병술": "E",
+        "기마술": "E",
+        "중갑술": "E",
+        "비행술": "D"
+      },
+      "personal": "Steadfast: If unit's HP ≥ 50%, grants Avo+10 during combat.",
+      "growth": "HP 35, Str 35, Mag 35, Spd 55, Dex 40, Def 30, Res 40, Lck 30, Cha 30",
+      "white": "Heal (D), Restore (C), Seraphim (B), Recover (A), Rescue (S)"
+    },
+    "올림피아": {
+      "source": "https://yuphastemple.com/olympia/",
+      "strengths": [
+        "도끼술",
+        "백마술"
+      ],
+      "weaknesses": [
+        "창술"
+      ],
+      "initialRanks": {
+        "검술": "E",
+        "창술": "E",
+        "도끼술": "E",
+        "궁술": "E",
+        "격투술": "E",
+        "흑마술": "E+",
+        "백마술": "D",
+        "지휘술": "E",
+        "보병술": "E",
+        "기마술": "E",
+        "중갑술": "E",
+        "비행술": "E"
+      },
+      "personal": "Competitive Zeal: When equipped with magic, grants Crit+10.",
+      "growth": "HP 35, Str 35, Mag 50, Spd 35, Dex 35, Def 30, Res 40, Lck 40, Cha 40",
+      "white": "Heal (D), Nosferatu (D), Emergis (C), Physic (B), Silence (A), Berserk (S)"
+    },
+    "피아나": {
+      "source": "https://yuphastemple.com/fianna/",
+      "strengths": [
+        "흑마술",
+        "백마술",
+        "기마술"
+      ],
+      "weaknesses": [
+        "검술",
+        "격투술"
+      ],
+      "initialRanks": {
+        "검술": "E",
+        "창술": "E",
+        "도끼술": "E",
+        "궁술": "E",
+        "격투술": "E",
+        "흑마술": "D",
+        "백마술": "D",
+        "지휘술": "E",
+        "보병술": "E",
+        "기마술": "D",
+        "중갑술": "E",
+        "비행술": "E"
+      },
+      "personal": "Graceful Light: When healing an ally with magic, reduces magic cost to 0. Trigger % = Lck.",
+      "growth": "HP 30, Str 35, Mag 55, Spd 30, Dex 40, Def 20, Res 45, Lck 25, Cha 40",
+      "white": "Heal (D), Seraphim (C), Recover (B), Regenera (A), Rescue (S)"
+    },
+    "오르헬": {
+      "source": "https://yuphastemple.com/orchel/",
+      "strengths": [
+        "도끼술",
+        "흑마술",
+        "백마술"
+      ],
+      "weaknesses": [
+        "검술",
+        "기마술",
+        "비행술"
+      ],
+      "initialRanks": {
+        "검술": "E",
+        "창술": "E",
+        "도끼술": "D",
+        "궁술": "E",
+        "격투술": "E",
+        "흑마술": "D",
+        "백마술": "D",
+        "지휘술": "E",
+        "보병술": "E",
+        "기마술": "X",
+        "중갑술": "E+",
+        "비행술": "X"
+      },
+      "personal": "Solid and Sturdy: Grants Def+5. Unit is armored. Cannot change class to cavalry or flying. Solid and Sturdy+: Grants Def+5, Dex+10. Unit is armored. Cannot change to cavalry or flying.",
+      "growth": "HP 30, Str 60, Mag 45, Spd 10, Dex 20, Def 60, Res 60, Lck 20, Cha 60",
+      "white": "Heal (D), Seraphim (D), Physic (C), Recover (B), Starlight (B), Aura (A), Fortify (S)"
+    },
+    "하르빈": {
+      "source": "https://yuphastemple.com/halvin/",
+      "strengths": [
+        "궁술",
+        "기마술"
+      ],
+      "weaknesses": [
+        "도끼술"
+      ],
+      "initialRanks": {
+        "검술": "E",
+        "창술": "E",
+        "도끼술": "E",
+        "궁술": "D",
+        "격투술": "E",
+        "흑마술": "E",
+        "백마술": "E",
+        "지휘술": "E",
+        "보병술": "E",
+        "기마술": "D",
+        "중갑술": "E",
+        "비행술": "E"
+      },
+      "personal": "Adaptability: After combat, grants Hit+2 until the end of the map. (Max +30)",
+      "growth": "HP 35, Str 35, Mag 30, Spd 45, Dex 60, Def 30, Res 25, Lck 40, Cha 35",
+      "white": "Heal (D), Restore (C), Resquia (B), Berserk (A)"
+    },
+    "타리문": {
+      "source": "https://yuphastemple.com/talimun/",
+      "strengths": [
+        "검술",
+        "흑마술",
+        "지휘술"
+      ],
+      "weaknesses": [
+        "중갑술"
+      ],
+      "initialRanks": {
+        "검술": "E+",
+        "창술": "E",
+        "도끼술": "E",
+        "궁술": "E",
+        "격투술": "E",
+        "흑마술": "D",
+        "백마술": "D",
+        "지휘술": "D",
+        "보병술": "E",
+        "기마술": "E",
+        "중갑술": "E",
+        "비행술": "E"
+      },
+      "personal": "Swashbuckler's Luck: Grants Lck+3. Swashbuckler's Luck+: Grants Lck+5 to unit and all allies.",
+      "growth": "HP 45, Str 40, Mag 45, Spd 40, Dex 45, Def 35, Res 40, Lck 60, Cha 50",
+      "white": "Heal (D), Seraphim (C), Recover (B), Physic (A)"
+    },
+    "아나톨리아": {
+      "source": "https://yuphastemple.com/anatolia/",
+      "strengths": [
+        "격투술",
+        "흑마술",
+        "보병술"
+      ],
+      "weaknesses": [
+        "중갑술"
+      ],
+      "initialRanks": {
+        "검술": "E",
+        "창술": "E",
+        "도끼술": "E",
+        "궁술": "E",
+        "격투술": "D",
+        "흑마술": "D",
+        "백마술": "E",
+        "지휘술": "E",
+        "보병술": "D",
+        "기마술": "E",
+        "중갑술": "E",
+        "비행술": "E"
+      },
+      "personal": "Celestial Flow: Grants Avo+3.",
+      "growth": "HP 40, Str 35, Mag 50, Spd 50, Dex 45, Def 35, Res 40, Lck 40, Cha 50",
+      "white": "Heal (D), Silence (C), Ward (B), Warp (A)"
+    },
+    "트로이아": {
+      "source": "https://yuphastemple.com/troy/",
+      "strengths": [
+        "격투술",
+        "흑마술",
+        "백마술"
+      ],
+      "weaknesses": [],
+      "initialRanks": {
+        "검술": "E",
+        "창술": "E",
+        "도끼술": "E",
+        "궁술": "E",
+        "격투술": "A",
+        "흑마술": "C",
+        "백마술": "A",
+        "지휘술": "D",
+        "보병술": "D",
+        "기마술": "E",
+        "중갑술": "E",
+        "비행술": "E"
+      },
+      "personal": "Yun Shou: When equipped with gauntlets, grants Hit+10.",
+      "growth": "HP 40, Str 45, Mag 45, Spd 50, Dex 40, Def 30, Res 30, Lck 30, Cha 30",
+      "white": "Heal (D), Physic (A+), Restore (A+), Recover (S), Barrier (S)"
+    },
+    "아스완": {
+      "source": "https://yuphastemple.com/aswan/",
+      "strengths": [
+        "궁술",
+        "지휘술",
+        "보병술"
+      ],
+      "weaknesses": [],
+      "initialRanks": {
+        "검술": "E",
+        "창술": "E",
+        "도끼술": "E",
+        "궁술": "B",
+        "격투술": "E",
+        "흑마술": "E",
+        "백마술": "E",
+        "지휘술": "B",
+        "보병술": "C",
+        "기마술": "E",
+        "중갑술": "E",
+        "비행술": "E"
+      },
+      "personal": "Princess of Arrows: When equipped with a bow, grants Hit+20. Crests Diadem of the Earth: Grants Atk+7 when attacking. Trigger % = 3.",
+      "growth": "HP 40, Str 35, Mag 10, Spd 40, Dex 50, Def 30, Res 15, Lck 30, Cha 20",
+      "white": "Heal (D), Nosferatu (C), Seraphim (B), Warp (A)"
+    },
+    "베르트랑": {
+      "source": "https://yuphastemple.com/bertrand/",
+      "strengths": [
+        "검술",
+        "도끼술",
+        "격투술",
+        "지휘술"
+      ],
+      "weaknesses": [
+        "흑마술",
+        "백마술"
+      ],
+      "initialRanks": {
+        "검술": "D",
+        "창술": "E",
+        "도끼술": "D",
+        "궁술": "E",
+        "격투술": "E",
+        "흑마술": "E",
+        "백마술": "E",
+        "지휘술": "D",
+        "보병술": "D",
+        "기마술": "E",
+        "중갑술": "E",
+        "비행술": "E"
+      },
+      "personal": "Requiem Style: Unit makes a follow-up regardless of AS during combat. Trigger % = 5. Requiem Style+: Unit makes a follow-up regardless of AS during combat. Trigger % = 10.",
+      "growth": "HP 50, Str 55, Mag 15, Spd 45, Dex 50, Def 45, Res 20, Lck 30, Cha 50",
+      "white": "Heal (D), Nosferatu (C), Regenera (B), Berserk (A)"
+    },
+    "세테스": {
+      "source": "https://yuphastemple.com/seteth/",
+      "strengths": [
+        "창술",
+        "도끼술",
+        "지휘술",
+        "비행술"
+      ],
+      "weaknesses": [],
+      "initialRanks": {
+        "검술": "E",
+        "창술": "D",
+        "도끼술": "E+",
+        "궁술": "E",
+        "격투술": "E",
+        "흑마술": "E",
+        "백마술": "E",
+        "지휘술": "E+",
+        "보병술": "E",
+        "기마술": "E",
+        "중갑술": "E",
+        "비행술": "D"
+      },
+      "personal": "Ready for Battle: For the first combat in enemy's phase, unit attacks first. Trigger % = 50.",
+      "growth": "HP 45, Str 45, Mag 30, Spd 40, Dex 45, Def 40, Res 35, Lck 30, Cha 50",
+      "white": "Heal (D), Resquia (C), Regenera (B), Warp (A)"
+    },
+    "홍화": {
+      "source": "https://yuphastemple.com/hong-hua/",
+      "strengths": [
+        "흑마술",
+        "백마술"
+      ],
+      "weaknesses": [
+        "도끼술",
+        "중갑술"
+      ],
+      "initialRanks": {
+        "검술": "E",
+        "창술": "E",
+        "도끼술": "E",
+        "궁술": "E",
+        "격투술": "E",
+        "흑마술": "A",
+        "백마술": "C",
+        "지휘술": "D",
+        "보병술": "D",
+        "기마술": "E",
+        "중갑술": "E",
+        "비행술": "E"
+      },
+      "personal": "Zhu Ming: When equipped with magic, grants Hit+10.",
+      "growth": "HP 40, Str 30, Mag 45, Spd 45, Dex 45, Def 30, Res 45, Lck 30, Cha 40",
+      "white": "Heal (C+), Rescue (B), Ward (A), Warp (S)"
+    },
+    "루루디아": {
+      "source": "https://yuphastemple.com/ludia/",
+      "strengths": [
+        "검술",
+        "창술",
+        "보병술"
+      ],
+      "weaknesses": [
+        "도끼술",
+        "흑마술"
+      ],
+      "initialRanks": {
+        "검술": "D",
+        "창술": "E",
+        "도끼술": "E",
+        "궁술": "E",
+        "격투술": "E",
+        "흑마술": "E",
+        "백마술": "E",
+        "지휘술": "E",
+        "보병술": "D",
+        "기마술": "E",
+        "중갑술": "E",
+        "비행술": "E"
+      },
+      "personal": "Falcon: If unit attacks first, grants AS+3 during combat.",
+      "growth": "HP 40, Str 35, Mag 20, Spd 55, Dex 45, Def 30, Res 20, Lck 30, Cha 30",
+      "white": "Laia (D), Nosferatu (C), Seraphim (B), Berserk (A)"
+    },
+    "사란": {
+      "source": "https://yuphastemple.com/sha-lan/",
+      "strengths": [
+        "창술",
+        "백마술",
+        "지휘술"
+      ],
+      "weaknesses": [
+        "검술"
+      ],
+      "initialRanks": {
+        "검술": "E",
+        "창술": "E+",
+        "도끼술": "E",
+        "궁술": "E",
+        "격투술": "E",
+        "흑마술": "D",
+        "백마술": "D",
+        "지휘술": "D",
+        "보병술": "E",
+        "기마술": "E",
+        "중갑술": "E",
+        "비행술": "E"
+      },
+      "personal": "Cooler Heads: After using Draw Back, unit can use assist magic.",
+      "growth": "HP 35, Str 30, Mag 45, Spd 35, Dex 50, Def 30, Res 45, Lck 35, Cha 40",
+      "white": "Heal (D), Nosferatu (C), Recover (B), Rescue (A), Fortify (S)"
+    },
+    "릴리안": {
+      "source": "https://yuphastemple.com/lilian/",
+      "strengths": [
+        "궁술",
+        "보병술"
+      ],
+      "weaknesses": [
+        "격투술"
+      ],
+      "initialRanks": {
+        "검술": "E",
+        "창술": "E",
+        "도끼술": "E",
+        "궁술": "D",
+        "격투술": "E",
+        "흑마술": "E",
+        "백마술": "E",
+        "지휘술": "E",
+        "보병술": "D",
+        "기마술": "E",
+        "중갑술": "E",
+        "비행술": "E"
+      },
+      "personal": "Safety First: If foe cannot counter, grants Hit+10 to unit during combat.",
+      "growth": "HP 35, Str 35, Mag 30, Spd 40, Dex 55, Def 30, Res 35, Lck 50, Cha 25",
+      "white": "Heal (D), Restore (C), Physic (B), Ward (A)"
+    },
+    "알렉산드라": {
+      "source": "https://yuphastemple.com/alexandra/",
+      "strengths": [
+        "검술",
+        "창술",
+        "비행술"
+      ],
+      "weaknesses": [
+        "도끼술",
+        "흑마술"
+      ],
+      "initialRanks": {
+        "검술": "C",
+        "창술": "C",
+        "비행술": "D"
+      },
+      "personal": "Silver Maiden: Grants Hit/Avo+5 to unit for each adjacent ally.",
+      "growth": "HP 30, Str 35, Mag 35, Spd 55, Dex 45, Def 30, Res 40, Lck 50, Cha 50",
+      "white": "Heal (D), Seraphim (C), Ward (B), Recover (A)"
+    }
+  },
+  "errors": [],
+  "limits": [
+    "팬 데이터베이스 원문 대조. 게임v1.1.0 실측은 아님.",
+    "시로코 백마법C/B는 사용자 제공 표가 우선."
+  ]
+}
