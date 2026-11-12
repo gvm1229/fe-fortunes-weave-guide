@@ -78,11 +78,28 @@ progress{appearance:none;border:0;border-radius:8px;overflow:hidden;height:8px;b
 .prep-content [data-face-list] [data-face-row]{display:flex;margin:0}
 .document-definition dt{font-weight:700;margin:12px 0 4px}
 .document-definition dd{margin:0}
+/* 디자인 정본 §8 */
+.check-toolbar>.save-status{display:flex;align-items:center;flex-shrink:0;margin:0}
+.sidebar-bottom{flex-direction:column;align-items:stretch}
+.sidebar-bottom>.icon-button{align-self:flex-start}
+.sidebar-bottom>.button{width:100%;white-space:nowrap}
+.source-markup .reference-chip,.source-markup .text-link{display:inline-flex;align-items:center;vertical-align:middle;gap:4px;height:30px;min-height:30px;padding:0 8px;margin:0;border:0;border-radius:8px;background:var(--secondary-soft);color:var(--text);font-size:18px;line-height:30px;white-space:nowrap}
+.source-markup .inline-class-icon{width:20px;height:auto;max-height:20px;margin:0;object-fit:contain}
+.chapter-section[data-completed=true]:not([open])>summary{height:48px;padding:0 16px;flex-wrap:nowrap}
+.chapter-section[data-completed=true]:not([open])>summary h2{margin:0}
+.checklist>li{position:relative}
+/* 사라짐 시간은 기존 버튼의 .15s 전환값을 재사용한다. */
+.checklist>li.target-highlight::after{content:'';position:absolute;inset:0;border:2px solid var(--accent);border-radius:8px;pointer-events:none;animation:target-highlight .15s linear 2s forwards}
+@keyframes target-highlight{from{opacity:1}to{opacity:0}}
+.person-info .readable-group[data-expanded=false]>.readable-body{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;max-height:none}
+.person-info .readable-body>:first-child{margin-top:0}
+.person-info .prose-toggle{margin-left:0;margin-right:0}
 @media(min-width:768px) and (max-width:1199px){.context-rail{position:static;height:auto;overflow:visible}}
 @media(max-width:767px){
   .mobile-header{position:fixed;top:0;left:0;right:0;z-index:35}
   .workspace main{padding-top:80px}
   .check-toolbar{top:56px;padding:8px 0}
+  .check-toolbar{grid-template-columns:auto minmax(0,1fr) auto}
   .chapter-section{scroll-margin-top:calc(56px + var(--task-header-height,112px) + 8px)}
   .person>.person-info{width:calc(100% - 32px)}
   .person-info th,.records th,[data-info-table] th{width:96px}

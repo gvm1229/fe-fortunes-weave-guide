@@ -16,7 +16,11 @@ export function RecordRows({value,label}:{value:unknown;label:string}){
       if(v.some(item=>item&&typeof item==='object'&&!('$prose' in item)))v.forEach((item,i)=>collect(item,`${title} ${i+1}`));
       else rows.push({label:title,value:v});
     }else if(typeof v==='object'&&!('$prose' in v)){
-      for(const [key,child]of Object.entries(v))if(!hidden.has(key))collect(child,key==='text'?title:labels[key]||(/^[123]$/.test(key)?`${title} ${key}부`:/[가-힣]/.test(key)?key:title));
+      for(const [key,child]of Object.entries(v))if(!hidden.has(key)){
+        if(['sup','support','fame','renown'].includes(key)&&String(child).trim()==='0')continue;
+        const displayValue=key==='entryTier'?({0:'초급 전',1:'초급',2:'중급',3:'상급'} as Record<string,string>)[String(child)]:child;
+        collect(displayValue,key==='text'?title:labels[key]||(/^[123]$/.test(key)?`${title} ${key}부`:/[가-힣]/.test(key)?key:title));
+      }
     }else rows.push({label:title,value:v});
   }
   collect(value,label);

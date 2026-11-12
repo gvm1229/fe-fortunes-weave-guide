@@ -1,0 +1,1365 @@
+{
+  "status": "passed",
+  "host": "Codex / Windows / installed Chrome / Playwright",
+  "base": "http://localhost:3000",
+  "rows": [
+    {
+      "label": "theodora-todo-1440x900-light",
+      "width": 1440,
+      "height": 900,
+      "theme": "light",
+      "view": "todo",
+      "horizontalOverflow": 0,
+      "minimumFont": 18,
+      "imageCount": 79,
+      "maxImageRatioError": 0.0005977836023360883,
+      "imageRatioViolations": [],
+      "brokenImages": [],
+      "chipSizes": [
+        {
+          "name": "병사",
+          "height": 30,
+          "font": 18,
+          "padding": "8px",
+          "icons": [
+            {
+              "left": 533.671875,
+              "top": 3182.828125,
+              "right": 553.671875,
+              "bottom": 3202.828125,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "name": "샤먼",
+          "height": 30,
+          "font": 18,
+          "padding": "8px",
+          "icons": [
+            {
+              "left": 344,
+              "top": 3775.53125,
+              "right": 364,
+              "bottom": 3795.53125,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "name": "프리스트",
+          "height": 30,
+          "font": 18,
+          "padding": "8px",
+          "icons": [
+            {
+              "left": 546.0625,
+              "top": 3775.53125,
+              "right": 566.0625,
+              "bottom": 3795.53125,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "name": "병사",
+          "height": 30,
+          "font": 18,
+          "padding": "8px",
+          "icons": [
+            {
+              "left": 623.09375,
+              "top": 3123.21875,
+              "right": 643.09375,
+              "bottom": 3143.21875,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "name": "샤먼",
+          "height": 30,
+          "font": 18,
+          "padding": "8px",
+          "icons": [
+            {
+              "left": 395.59375,
+              "top": 12342.84375,
+              "right": 415.59375,
+              "bottom": 12362.84375,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "name": "프리스트",
+          "height": 30,
+          "font": 18,
+          "padding": "8px",
+          "icons": [
+            {
+              "left": 558.0625,
+              "top": 12342.84375,
+              "right": 578.0625,
+              "bottom": 12362.84375,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "name": "브리건드",
+          "height": 30,
+          "font": 18,
+          "padding": "8px",
+          "icons": [
+            {
+              "left": 768.921875,
+              "top": 12342.84375,
+              "right": 788.921875,
+              "bottom": 12362.84375,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "name": "검사",
+          "height": 30,
+          "font": 18,
+          "padding": "8px",
+          "icons": [
+            {
+              "left": 356,
+              "top": 12375.546875,
+              "right": 376,
+              "bottom": 12395.546875,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        }
+      ],
+      "completed": [
+        {
+          "title": "시작 전",
+          "open": false,
+          "height": 48,
+          "children": [
+            "H2",
+            "SPAN",
+            "svg"
+          ],
+          "summary": 48
+        },
+        {
+          "title": "1장",
+          "open": false,
+          "height": 48,
+          "children": [
+            "H2",
+            "SPAN",
+            "svg"
+          ],
+          "summary": 48
+        },
+        {
+          "title": "2장",
+          "open": false,
+          "height": 48,
+          "children": [
+            "H2",
+            "SPAN",
+            "svg"
+          ],
+          "summary": 48
+        },
+        {
+          "title": "3장",
+          "open": false,
+          "height": 48,
+          "children": [
+            "H2",
+            "SPAN",
+            "svg"
+          ],
+          "summary": 48
+        },
+        {
+          "title": "4장",
+          "open": false,
+          "height": 48,
+          "children": [
+            "H2",
+            "SPAN",
+            "svg"
+          ],
+          "summary": 48
+        },
+        {
+          "title": "5장",
+          "open": false,
+          "height": 48,
+          "children": [
+            "H2",
+            "SPAN",
+            "svg"
+          ],
+          "summary": 48
+        }
+      ],
+      "partialLines": [],
+      "sourceCounts": {
+        "portraits": 513,
+        "skills": 358,
+        "gods": 187,
+        "classes": 57,
+        "guides": 45,
+        "locations": 73
+      },
+      "duplicateChipIcons": [],
+      "orphanStatusLines": 0,
+      "certificateNoticeInTasks": false,
+      "saveInToolbar": true,
+      "saveRightOfProgress": true,
+      "zeroChips": [],
+      "rawTierRows": [],
+      "tierLabels": [],
+      "joinLabels": [],
+      "home": {
+        "width": 216,
+        "parentWidth": 216,
+        "text": "첫 화면",
+        "textFits": true,
+        "themeAbove": true
+      }
+    },
+    {
+      "label": "theodora-people-1440x900-light",
+      "width": 1440,
+      "height": 900,
+      "theme": "light",
+      "view": "people",
+      "horizontalOverflow": 0,
+      "minimumFont": 18,
+      "imageCount": 44,
+      "maxImageRatioError": 0,
+      "imageRatioViolations": [],
+      "brokenImages": [],
+      "chipSizes": [],
+      "completed": [],
+      "partialLines": [],
+      "sourceCounts": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      },
+      "duplicateChipIcons": [],
+      "orphanStatusLines": 0,
+      "certificateNoticeInTasks": false,
+      "saveInToolbar": false,
+      "saveRightOfProgress": null,
+      "zeroChips": [],
+      "rawTierRows": [],
+      "tierLabels": [
+        "중급",
+        "초급",
+        "초급 전"
+      ],
+      "joinLabels": [
+        "시작 동료",
+        "시작 동료",
+        "시작 동료",
+        "자동 합류 4장",
+        "자동 합류 4장"
+      ],
+      "home": {
+        "width": 216,
+        "parentWidth": 216,
+        "text": "첫 화면",
+        "textFits": true,
+        "themeAbove": true
+      }
+    },
+    {
+      "label": "theodora-todo-1440x900-dark",
+      "width": 1440,
+      "height": 900,
+      "theme": "dark",
+      "view": "todo",
+      "horizontalOverflow": 0,
+      "minimumFont": 18,
+      "imageCount": 79,
+      "maxImageRatioError": 0.0005977836023360883,
+      "imageRatioViolations": [],
+      "brokenImages": [],
+      "chipSizes": [
+        {
+          "name": "병사",
+          "height": 30,
+          "font": 18,
+          "padding": "8px",
+          "icons": [
+            {
+              "left": 533.671875,
+              "top": 3182.828125,
+              "right": 553.671875,
+              "bottom": 3202.828125,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "name": "샤먼",
+          "height": 30,
+          "font": 18,
+          "padding": "8px",
+          "icons": [
+            {
+              "left": 344,
+              "top": 3775.53125,
+              "right": 364,
+              "bottom": 3795.53125,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "name": "프리스트",
+          "height": 30,
+          "font": 18,
+          "padding": "8px",
+          "icons": [
+            {
+              "left": 546.0625,
+              "top": 3775.53125,
+              "right": 566.0625,
+              "bottom": 3795.53125,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "name": "병사",
+          "height": 30,
+          "font": 18,
+          "padding": "8px",
+          "icons": [
+            {
+              "left": 623.09375,
+              "top": 3123.21875,
+              "right": 643.09375,
+              "bottom": 3143.21875,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "name": "샤먼",
+          "height": 30,
+          "font": 18,
+          "padding": "8px",
+          "icons": [
+            {
+              "left": 395.59375,
+              "top": 12342.84375,
+              "right": 415.59375,
+              "bottom": 12362.84375,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "name": "프리스트",
+          "height": 30,
+          "font": 18,
+          "padding": "8px",
+          "icons": [
+            {
+              "left": 558.0625,
+              "top": 12342.84375,
+              "right": 578.0625,
+              "bottom": 12362.84375,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "name": "브리건드",
+          "height": 30,
+          "font": 18,
+          "padding": "8px",
+          "icons": [
+            {
+              "left": 768.921875,
+              "top": 12342.84375,
+              "right": 788.921875,
+              "bottom": 12362.84375,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "name": "검사",
+          "height": 30,
+          "font": 18,
+          "padding": "8px",
+          "icons": [
+            {
+              "left": 356,
+              "top": 12375.546875,
+              "right": 376,
+              "bottom": 12395.546875,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        }
+      ],
+      "completed": [
+        {
+          "title": "시작 전",
+          "open": false,
+          "height": 48,
+          "children": [
+            "H2",
+            "SPAN",
+            "svg"
+          ],
+          "summary": 48
+        },
+        {
+          "title": "1장",
+          "open": false,
+          "height": 48,
+          "children": [
+            "H2",
+            "SPAN",
+            "svg"
+          ],
+          "summary": 48
+        },
+        {
+          "title": "2장",
+          "open": false,
+          "height": 48,
+          "children": [
+            "H2",
+            "SPAN",
+            "svg"
+          ],
+          "summary": 48
+        },
+        {
+          "title": "3장",
+          "open": false,
+          "height": 48,
+          "children": [
+            "H2",
+            "SPAN",
+            "svg"
+          ],
+          "summary": 48
+        },
+        {
+          "title": "4장",
+          "open": false,
+          "height": 48,
+          "children": [
+            "H2",
+            "SPAN",
+            "svg"
+          ],
+          "summary": 48
+        },
+        {
+          "title": "5장",
+          "open": false,
+          "height": 48,
+          "children": [
+            "H2",
+            "SPAN",
+            "svg"
+          ],
+          "summary": 48
+        }
+      ],
+      "partialLines": [],
+      "sourceCounts": {
+        "portraits": 513,
+        "skills": 358,
+        "gods": 187,
+        "classes": 57,
+        "guides": 45,
+        "locations": 73
+      },
+      "duplicateChipIcons": [],
+      "orphanStatusLines": 0,
+      "certificateNoticeInTasks": false,
+      "saveInToolbar": true,
+      "saveRightOfProgress": true,
+      "zeroChips": [],
+      "rawTierRows": [],
+      "tierLabels": [],
+      "joinLabels": [],
+      "home": {
+        "width": 216,
+        "parentWidth": 216,
+        "text": "첫 화면",
+        "textFits": true,
+        "themeAbove": true
+      }
+    },
+    {
+      "label": "theodora-people-1440x900-dark",
+      "width": 1440,
+      "height": 900,
+      "theme": "dark",
+      "view": "people",
+      "horizontalOverflow": 0,
+      "minimumFont": 18,
+      "imageCount": 44,
+      "maxImageRatioError": 0,
+      "imageRatioViolations": [],
+      "brokenImages": [],
+      "chipSizes": [],
+      "completed": [],
+      "partialLines": [],
+      "sourceCounts": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      },
+      "duplicateChipIcons": [],
+      "orphanStatusLines": 0,
+      "certificateNoticeInTasks": false,
+      "saveInToolbar": false,
+      "saveRightOfProgress": null,
+      "zeroChips": [],
+      "rawTierRows": [],
+      "tierLabels": [
+        "중급",
+        "초급",
+        "초급 전"
+      ],
+      "joinLabels": [
+        "시작 동료",
+        "시작 동료",
+        "시작 동료",
+        "자동 합류 4장",
+        "자동 합류 4장"
+      ],
+      "home": {
+        "width": 216,
+        "parentWidth": 216,
+        "text": "첫 화면",
+        "textFits": true,
+        "themeAbove": true
+      }
+    },
+    {
+      "label": "theodora-todo-375x812-light",
+      "width": 375,
+      "height": 812,
+      "theme": "light",
+      "view": "todo",
+      "horizontalOverflow": 0,
+      "minimumFont": 18,
+      "imageCount": 76,
+      "maxImageRatioError": 0.0005977836023360883,
+      "imageRatioViolations": [],
+      "brokenImages": [],
+      "chipSizes": [
+        {
+          "name": "병사",
+          "height": 30,
+          "font": 18,
+          "padding": "8px",
+          "icons": [
+            {
+              "left": 253.671875,
+              "top": 4053.859375,
+              "right": 273.671875,
+              "bottom": 4073.859375,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "name": "샤먼",
+          "height": 30,
+          "font": 18,
+          "padding": "8px",
+          "icons": [
+            {
+              "left": 165.484375,
+              "top": 5030.5625,
+              "right": 185.484375,
+              "bottom": 5050.5625,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "name": "프리스트",
+          "height": 30,
+          "font": 18,
+          "padding": "8px",
+          "icons": [
+            {
+              "left": 86.3125,
+              "top": 5063.265625,
+              "right": 106.3125,
+              "bottom": 5083.265625,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "name": "병사",
+          "height": 30,
+          "font": 18,
+          "padding": "8px",
+          "icons": [
+            {
+              "left": 76,
+              "top": 3967.046875,
+              "right": 96,
+              "bottom": 3987.046875,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "name": "샤먼",
+          "height": 30,
+          "font": 18,
+          "padding": "8px",
+          "icons": [
+            {
+              "left": 115.59375,
+              "top": 14576.1875,
+              "right": 135.59375,
+              "bottom": 14596.1875,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "name": "프리스트",
+          "height": 30,
+          "font": 18,
+          "padding": "8px",
+          "icons": [
+            {
+              "left": 76,
+              "top": 14608.890625,
+              "right": 96,
+              "bottom": 14628.890625,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "name": "브리건드",
+          "height": 30,
+          "font": 18,
+          "padding": "8px",
+          "icons": [
+            {
+              "left": 76,
+              "top": 14641.59375,
+              "right": 96,
+              "bottom": 14661.59375,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "name": "검사",
+          "height": 30,
+          "font": 18,
+          "padding": "8px",
+          "icons": [
+            {
+              "left": 76,
+              "top": 14674.296875,
+              "right": 96,
+              "bottom": 14694.296875,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        }
+      ],
+      "completed": [
+        {
+          "title": "시작 전",
+          "open": false,
+          "height": 48,
+          "children": [
+            "H2",
+            "SPAN",
+            "svg"
+          ],
+          "summary": 48
+        },
+        {
+          "title": "1장",
+          "open": false,
+          "height": 48,
+          "children": [
+            "H2",
+            "SPAN",
+            "svg"
+          ],
+          "summary": 48
+        },
+        {
+          "title": "2장",
+          "open": false,
+          "height": 48,
+          "children": [
+            "H2",
+            "SPAN",
+            "svg"
+          ],
+          "summary": 48
+        },
+        {
+          "title": "3장",
+          "open": false,
+          "height": 48,
+          "children": [
+            "H2",
+            "SPAN",
+            "svg"
+          ],
+          "summary": 48
+        },
+        {
+          "title": "4장",
+          "open": false,
+          "height": 48,
+          "children": [
+            "H2",
+            "SPAN",
+            "svg"
+          ],
+          "summary": 48
+        },
+        {
+          "title": "5장",
+          "open": false,
+          "height": 48,
+          "children": [
+            "H2",
+            "SPAN",
+            "svg"
+          ],
+          "summary": 48
+        }
+      ],
+      "partialLines": [],
+      "sourceCounts": {
+        "portraits": 513,
+        "skills": 358,
+        "gods": 187,
+        "classes": 57,
+        "guides": 45,
+        "locations": 73
+      },
+      "duplicateChipIcons": [],
+      "orphanStatusLines": 0,
+      "certificateNoticeInTasks": false,
+      "saveInToolbar": true,
+      "saveRightOfProgress": true,
+      "zeroChips": [],
+      "rawTierRows": [],
+      "tierLabels": [],
+      "joinLabels": [],
+      "home": null
+    },
+    {
+      "label": "theodora-people-375x812-light",
+      "width": 375,
+      "height": 812,
+      "theme": "light",
+      "view": "people",
+      "horizontalOverflow": 0,
+      "minimumFont": 18,
+      "imageCount": 44,
+      "maxImageRatioError": 0,
+      "imageRatioViolations": [],
+      "brokenImages": [],
+      "chipSizes": [],
+      "completed": [],
+      "partialLines": [],
+      "sourceCounts": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      },
+      "duplicateChipIcons": [],
+      "orphanStatusLines": 0,
+      "certificateNoticeInTasks": false,
+      "saveInToolbar": false,
+      "saveRightOfProgress": null,
+      "zeroChips": [],
+      "rawTierRows": [],
+      "tierLabels": [
+        "중급",
+        "초급",
+        "초급 전"
+      ],
+      "joinLabels": [
+        "시작 동료",
+        "시작 동료",
+        "시작 동료",
+        "자동 합류 4장",
+        "자동 합류 4장"
+      ],
+      "home": null
+    },
+    {
+      "label": "theodora-todo-375x812-dark",
+      "width": 375,
+      "height": 812,
+      "theme": "dark",
+      "view": "todo",
+      "horizontalOverflow": 0,
+      "minimumFont": 18,
+      "imageCount": 76,
+      "maxImageRatioError": 0.0005977836023360883,
+      "imageRatioViolations": [],
+      "brokenImages": [],
+      "chipSizes": [
+        {
+          "name": "병사",
+          "height": 30,
+          "font": 18,
+          "padding": "8px",
+          "icons": [
+            {
+              "left": 253.671875,
+              "top": 4053.859375,
+              "right": 273.671875,
+              "bottom": 4073.859375,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "name": "샤먼",
+          "height": 30,
+          "font": 18,
+          "padding": "8px",
+          "icons": [
+            {
+              "left": 165.484375,
+              "top": 5030.5625,
+              "right": 185.484375,
+              "bottom": 5050.5625,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "name": "프리스트",
+          "height": 30,
+          "font": 18,
+          "padding": "8px",
+          "icons": [
+            {
+              "left": 86.3125,
+              "top": 5063.265625,
+              "right": 106.3125,
+              "bottom": 5083.265625,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "name": "병사",
+          "height": 30,
+          "font": 18,
+          "padding": "8px",
+          "icons": [
+            {
+              "left": 76,
+              "top": 3967.046875,
+              "right": 96,
+              "bottom": 3987.046875,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "name": "샤먼",
+          "height": 30,
+          "font": 18,
+          "padding": "8px",
+          "icons": [
+            {
+              "left": 115.59375,
+              "top": 14576.1875,
+              "right": 135.59375,
+              "bottom": 14596.1875,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "name": "프리스트",
+          "height": 30,
+          "font": 18,
+          "padding": "8px",
+          "icons": [
+            {
+              "left": 76,
+              "top": 14608.890625,
+              "right": 96,
+              "bottom": 14628.890625,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "name": "브리건드",
+          "height": 30,
+          "font": 18,
+          "padding": "8px",
+          "icons": [
+            {
+              "left": 76,
+              "top": 14641.59375,
+              "right": 96,
+              "bottom": 14661.59375,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "name": "검사",
+          "height": 30,
+          "font": 18,
+          "padding": "8px",
+          "icons": [
+            {
+              "left": 76,
+              "top": 14674.296875,
+              "right": 96,
+              "bottom": 14694.296875,
+              "width": 20,
+              "height": 20
+            }
+          ]
+        }
+      ],
+      "completed": [
+        {
+          "title": "시작 전",
+          "open": false,
+          "height": 48,
+          "children": [
+            "H2",
+            "SPAN",
+            "svg"
+          ],
+          "summary": 48
+        },
+        {
+          "title": "1장",
+          "open": false,
+          "height": 48,
+          "children": [
+            "H2",
+            "SPAN",
+            "svg"
+          ],
+          "summary": 48
+        },
+        {
+          "title": "2장",
+          "open": false,
+          "height": 48,
+          "children": [
+            "H2",
+            "SPAN",
+            "svg"
+          ],
+          "summary": 48
+        },
+        {
+          "title": "3장",
+          "open": false,
+          "height": 48,
+          "children": [
+            "H2",
+            "SPAN",
+            "svg"
+          ],
+          "summary": 48
+        },
+        {
+          "title": "4장",
+          "open": false,
+          "height": 48,
+          "children": [
+            "H2",
+            "SPAN",
+            "svg"
+          ],
+          "summary": 48
+        },
+        {
+          "title": "5장",
+          "open": false,
+          "height": 48,
+          "children": [
+            "H2",
+            "SPAN",
+            "svg"
+          ],
+          "summary": 48
+        }
+      ],
+      "partialLines": [],
+      "sourceCounts": {
+        "portraits": 513,
+        "skills": 358,
+        "gods": 187,
+        "classes": 57,
+        "guides": 45,
+        "locations": 73
+      },
+      "duplicateChipIcons": [],
+      "orphanStatusLines": 0,
+      "certificateNoticeInTasks": false,
+      "saveInToolbar": true,
+      "saveRightOfProgress": true,
+      "zeroChips": [],
+      "rawTierRows": [],
+      "tierLabels": [],
+      "joinLabels": [],
+      "home": null
+    },
+    {
+      "label": "theodora-people-375x812-dark",
+      "width": 375,
+      "height": 812,
+      "theme": "dark",
+      "view": "people",
+      "horizontalOverflow": 0,
+      "minimumFont": 18,
+      "imageCount": 44,
+      "maxImageRatioError": 0,
+      "imageRatioViolations": [],
+      "brokenImages": [],
+      "chipSizes": [],
+      "completed": [],
+      "partialLines": [],
+      "sourceCounts": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      },
+      "duplicateChipIcons": [],
+      "orphanStatusLines": 0,
+      "certificateNoticeInTasks": false,
+      "saveInToolbar": false,
+      "saveRightOfProgress": null,
+      "zeroChips": [],
+      "rawTierRows": [],
+      "tierLabels": [
+        "중급",
+        "초급",
+        "초급 전"
+      ],
+      "joinLabels": [
+        "시작 동료",
+        "시작 동료",
+        "시작 동료",
+        "자동 합류 4장",
+        "자동 합류 4장"
+      ],
+      "home": null
+    }
+  ],
+  "interactions": [
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "light",
+      "check": "load-current-chapter",
+      "scrollY": 841,
+      "current": "6장",
+      "top": 93.390625,
+      "toolbarBottom": 85.796875
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "light",
+      "check": "jump-focus-highlight",
+      "focused": true,
+      "border": "2px",
+      "color": "rgb(140, 94, 14)",
+      "accent": "rgb(140, 94, 14)",
+      "duration": "0.15s",
+      "delay": "2s",
+      "opacity": "1",
+      "targetViewport": {
+        "top": 384.75,
+        "bottom": 514.546875,
+        "toolbarBottom": 85.796875,
+        "visibleBottom": 900,
+        "mobileHeaderTop": null
+      },
+      "fading": 0.907933,
+      "removed": true
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "light",
+      "check": "class-chip-opens-document",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "light",
+      "check": "person-disclosure-preserves-content",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "light",
+      "check": "certificate-notice-only-in-gold-table",
+      "count": 1
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "dark",
+      "check": "load-current-chapter",
+      "scrollY": 841,
+      "current": "6장",
+      "top": 93.390625,
+      "toolbarBottom": 85.796875
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "dark",
+      "check": "jump-focus-highlight",
+      "focused": true,
+      "border": "2px",
+      "color": "rgb(224, 174, 60)",
+      "accent": "rgb(224, 174, 60)",
+      "duration": "0.15s",
+      "delay": "2s",
+      "opacity": "1",
+      "targetViewport": {
+        "top": 384.75,
+        "bottom": 514.546875,
+        "toolbarBottom": 85.796875,
+        "visibleBottom": 900,
+        "mobileHeaderTop": null
+      },
+      "fading": 0.94528,
+      "removed": true
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "dark",
+      "check": "class-chip-opens-document",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "dark",
+      "check": "person-disclosure-preserves-content",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "dark",
+      "check": "certificate-notice-only-in-gold-table",
+      "count": 1
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "theme": "light",
+      "check": "load-current-chapter",
+      "scrollY": 893,
+      "current": "6장",
+      "top": 198.1875,
+      "toolbarBottom": 189.796875
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "theme": "light",
+      "check": "jump-focus-highlight",
+      "focused": true,
+      "border": "2px",
+      "color": "rgb(140, 94, 14)",
+      "accent": "rgb(140, 94, 14)",
+      "duration": "0.15s",
+      "delay": "2s",
+      "opacity": "1",
+      "targetViewport": {
+        "top": 302.5,
+        "bottom": 509.09375,
+        "toolbarBottom": 189.796875,
+        "visibleBottom": 728.609375,
+        "mobileHeaderTop": 0
+      },
+      "fading": 0.927307,
+      "removed": true
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "theme": "light",
+      "check": "class-chip-opens-document",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "theme": "light",
+      "check": "person-disclosure-preserves-content",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "theme": "light",
+      "check": "certificate-notice-only-in-gold-table",
+      "count": 1
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "theme": "dark",
+      "check": "load-current-chapter",
+      "scrollY": 893,
+      "current": "6장",
+      "top": 198.1875,
+      "toolbarBottom": 189.796875
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "theme": "dark",
+      "check": "jump-focus-highlight",
+      "focused": true,
+      "border": "2px",
+      "color": "rgb(224, 174, 60)",
+      "accent": "rgb(224, 174, 60)",
+      "duration": "0.15s",
+      "delay": "2s",
+      "opacity": "1",
+      "targetViewport": {
+        "top": 302.5,
+        "bottom": 509.09375,
+        "toolbarBottom": 189.796875,
+        "visibleBottom": 728.609375,
+        "mobileHeaderTop": 0
+      },
+      "fading": 0.945747,
+      "removed": true
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "theme": "dark",
+      "check": "class-chip-opens-document",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "theme": "dark",
+      "check": "person-disclosure-preserves-content",
+      "passed": true
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "theme": "dark",
+      "check": "certificate-notice-only-in-gold-table",
+      "count": 1
+    }
+  ],
+  "errors": [],
+  "screens": [
+    "docs/screens/design-lead/theodora-todo-1440x900-light.png",
+    "docs/screens/design-lead/theodora-todo-1440x900-light-jump.png",
+    "docs/screens/design-lead/theodora-todo-1440x900-light-top.png",
+    "docs/screens/design-lead/theodora-todo-1440x900-light-chips.png",
+    "docs/screens/design-lead/theodora-people-1440x900-light.png",
+    "docs/screens/design-lead/theodora-todo-1440x900-dark.png",
+    "docs/screens/design-lead/theodora-todo-1440x900-dark-jump.png",
+    "docs/screens/design-lead/theodora-todo-1440x900-dark-top.png",
+    "docs/screens/design-lead/theodora-todo-1440x900-dark-chips.png",
+    "docs/screens/design-lead/theodora-people-1440x900-dark.png",
+    "docs/screens/design-lead/theodora-todo-375x812-light.png",
+    "docs/screens/design-lead/theodora-todo-375x812-light-jump.png",
+    "docs/screens/design-lead/theodora-todo-375x812-light-top.png",
+    "docs/screens/design-lead/theodora-todo-375x812-light-chips.png",
+    "docs/screens/design-lead/theodora-people-375x812-light.png",
+    "docs/screens/design-lead/theodora-todo-375x812-dark.png",
+    "docs/screens/design-lead/theodora-todo-375x812-dark-jump.png",
+    "docs/screens/design-lead/theodora-todo-375x812-dark-top.png",
+    "docs/screens/design-lead/theodora-todo-375x812-dark-chips.png",
+    "docs/screens/design-lead/theodora-people-375x812-dark.png"
+  ],
+  "limits": "세오도라 1부의 1440×900·375×812, 밝게·어둡게. 얼굴 토큰은 그림 비율 검사에서 제외한다. 다른 루트·운영체제·브라우저·배포 빌드는 증명하지 않는다."
+}
