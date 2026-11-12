@@ -12,24 +12,26 @@ export function Records({value}:{value:unknown}){
   if(Array.isArray(value))return <ul className="record-list">{value.map((v,i)=><li key={i}><Records value={v}/></li>)}</ul>;
   return <dl className="records">{Object.entries(value).filter(([k,v])=>!hidden.has(k)&&v!==null&&v!==undefined&&(!Array.isArray(v)||v.length>0)).map(([k,v])=><Fragment key={k}><dt>{labels[k]||(/^[123]$/.test(k)?`${k}부`:/[가-힣]/.test(k)?k:'추가 안내')}</dt><dd><Records value={v}/></dd></Fragment>)}</dl>;
 }
-const allowed=new Set(['section','article','div','p','span','strong','b','em','small','h2','h3','h4','h5','ul','ol','li','dl','dt','dd','table','thead','tbody','tr','th','td','figure','figcaption','br','details','summary','a','img']);
-export function Semantic({nodes,route,part,onDoc,hidePortraits=false}:{nodes:Tree[];route:string;part:string;onDoc?:(url:string)=>void;hidePortraits?:boolean}){
+const allowed=new Set(['section','article','div','p','span','strong','b','em','small','h2','h3','h4','h5','ul','ol','li','dl','dt','dd','table','caption','colgroup','col','thead','tbody','tfoot','tr','th','td','figure','figcaption','br','details','summary','a','img']);
+export function Semantic({nodes,route,part,onDoc,hidePortraits=false,hideGodPortraits=false}:{nodes:Tree[];route:string;part:string;onDoc?:(url:string)=>void;hidePortraits?:boolean;hideGodPortraits?:boolean}){
   const seen=new Set<string>();
   function render(n:Tree,i:number):React.ReactNode {
     if(typeof n==='string')return displayText(n);
     const a=n.attrs;
+    const children=()=>n.children.filter(child=>!['table','thead','tbody','tfoot','tr','colgroup'].includes(n.tag)||typeof child!=='string'||child.trim()).map(render);
     if(n.tag==='tr'||n.tag==='li')seen.clear();
     if(n.tag==='br')return <br key={i}/>;
+    if(n.tag==='col')return <col key={i}/>;
     for(const key of ['data-weekly-route','data-material-route','data-route','data-roster-route','data-modal-routes'])if(a[key]&&route!=='all'&&!a[key].split(' ').includes(route))return null;
     for(const key of ['data-goal-phase','data-modal-parts'])if(a[key]&&!a[key].split(' ').includes(part))return null;
     if(a['data-modal-all-only']&&route!=='all')return null;
     if(n.tag==='img'){
-      if(!a.src||hidePortraits&&a.src.includes('/portraits/'))return null;
+      if(!a.src||hidePortraits&&a.src.includes('/portraits/')||hideGodPortraits&&a.src.includes('/gods/'))return null;
       if(a.src.includes('/gods/')){if(seen.has(a.src))return null;seen.add(a.src);}
       return <img key={i} src={`/${a.src.replace(/^\/+/, '')}`} alt={a.alt||''} title={a.title} loading="lazy" className={a.src.includes('/classes/')||a.src.includes('/skills/')?'inline-icon':a.src.includes('/gods/')?'god-portrait':''}/>;
     }
     if(n.tag==='a'&&a.href){if(/^(https?:|#)/.test(a.href))return <a key={i} href={a.href} target={a.href.startsWith('http')?'_blank':undefined} rel="noreferrer">{n.children.map(render)}</a>;return <button key={i} className="text-link" onClick={()=>onDoc?.(a.href!)}>{n.children.map(render)}</button>;}
-    return createElement(allowed.has(n.tag)?n.tag:'div',{key:i},n.children.map(render));
+    return createElement(allowed.has(n.tag)?n.tag:'div',{key:i},children());
   }
   return <div className="semantic">{nodes.map(render)}</div>;
 }
