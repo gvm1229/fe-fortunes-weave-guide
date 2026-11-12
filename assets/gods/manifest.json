@@ -1,0 +1,89 @@
+{
+  "reviewed": "2026-11-04",
+  "portraits": {
+    "아우로라": {
+      "file": "assets/gods/aurora.png",
+      "source": "https://fireemblemwiki.org/wiki/File:FEFW_Aurora_portrait.png",
+      "imageUrl": "https://cdn.fireemblemwiki.org/thumb/8/8f/FEFW_Aurora_portrait.png/180px-FEFW_Aurora_portrait.png",
+      "originalImageUrl": "https://cdn.fireemblemwiki.org/8/8f/FEFW_Aurora_portrait.png",
+      "size": [
+        180,
+        169
+      ],
+      "credit": "Nintendo / INTELLIGENT SYSTEMS · Fire Emblem Wiki 수록 공식 초상화",
+      "reviewed": "2026-11-04"
+    },
+    "주라": {
+      "file": "assets/gods/jurah.png",
+      "source": "https://fireemblemwiki.org/wiki/File:FEFW_Jurah_portrait.png",
+      "imageUrl": "https://cdn.fireemblemwiki.org/thumb/4/4e/FEFW_Jurah_portrait.png/180px-FEFW_Jurah_portrait.png",
+      "originalImageUrl": "https://cdn.fireemblemwiki.org/4/4e/FEFW_Jurah_portrait.png",
+      "size": [
+        180,
+        189
+      ],
+      "credit": "Nintendo / INTELLIGENT SYSTEMS · Fire Emblem Wiki 수록 공식 초상화",
+      "reviewed": "2026-11-04"
+    },
+    "마스": {
+      "file": "assets/gods/mars.png",
+      "source": "https://fireemblemwiki.org/wiki/File:FEFW_Mars_portrait.png",
+      "imageUrl": "https://cdn.fireemblemwiki.org/thumb/d/d2/FEFW_Mars_portrait.png/180px-FEFW_Mars_portrait.png",
+      "originalImageUrl": "https://cdn.fireemblemwiki.org/d/d2/FEFW_Mars_portrait.png",
+      "size": [
+        180,
+        158
+      ],
+      "credit": "Nintendo / INTELLIGENT SYSTEMS · Fire Emblem Wiki 수록 공식 초상화",
+      "reviewed": "2026-11-04"
+    },
+    "스미르노스": {
+      "file": "assets/gods/smyrnos.png",
+      "source": "https://fireemblemwiki.org/wiki/File:FEFW_Smyrnos_portrait.png",
+      "imageUrl": "https://cdn.fireemblemwiki.org/thumb/e/e1/FEFW_Smyrnos_portrait.png/180px-FEFW_Smyrnos_portrait.png",
+      "originalImageUrl": "https://cdn.fireemblemwiki.org/e/e1/FEFW_Smyrnos_portrait.png",
+      "size": [
+        180,
+        224
+      ],
+      "credit": "Nintendo / INTELLIGENT SYSTEMS · Fire Emblem Wiki 수록 공식 초상화",
+      "reviewed": "2026-11-04"
+    },
+    "칼라": {
+      "file": "assets/gods/kalla.png",
+      "source": "https://fireemblemwiki.org/wiki/File:FEFW_Kalla_portrait.png",
+      "imageUrl": "https://cdn.fireemblemwiki.org/thumb/d/d0/FEFW_Kalla_portrait.png/180px-FEFW_Kalla_portrait.png",
+      "originalImageUrl": "https://cdn.fireemblemwiki.org/d/d0/FEFW_Kalla_portrait.png",
+      "size": [
+        180,
+        182
+      ],
+      "credit": "Nintendo / INTELLIGENT SYSTEMS · Fire Emblem Wiki 수록 공식 초상화",
+      "reviewed": "2026-11-04"
+    },
+    "크레르": {
+      "file": "assets/gods/credna.png",
+      "source": "https://fireemblemwiki.org/wiki/File:Portrait_credna_fe18.png",
+      "imageUrl": "https://cdn.fireemblemwiki.org/thumb/1/1c/Portrait_credna_fe18.png/180px-Portrait_credna_fe18.png",
+      "originalImageUrl": "https://cdn.fireemblemwiki.org/1/1c/Portrait_credna_fe18.png",
+      "size": [
+        180,
+        214
+      ],
+      "credit": "Nintendo / INTELLIGENT SYSTEMS · Fire Emblem Wiki 수록 공식 초상화",
+      "reviewed": "2026-11-04"
+    },
+    "포트나": {
+      "file": "assets/gods/fortuna.png",
+      "source": "https://fireemblemwiki.org/wiki/File:FEFW_Fortuna_portrait.png",
+      "imageUrl": "https://cdn.fireemblemwiki.org/thumb/9/90/FEFW_Fortuna_portrait.png/180px-FEFW_Fortuna_portrait.png",
+      "originalImageUrl": "https://cdn.fireemblemwiki.org/9/90/FEFW_Fortuna_portrait.png",
+      "size": [
+        180,
+        164
+      ],
+      "credit": "Nintendo / INTELLIGENT SYSTEMS · Fire Emblem Wiki 수록 공식 초상화",
+      "reviewed": "2026-11-04"
+    }
+  }
+}

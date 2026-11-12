@@ -1,0 +1,42 @@
+# 선택 장면 위치 그림
+
+출처: [Game8 숨은 장면](https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932). 위치 참고용이며 스토리 결과 그림은 사용하지 않는다.
+
+- assets/events/kai02-stairs.png — https://img.game8.co/4645105/66eba330bf4823f81407270d94c2f997.png/show
+- assets/events/kai04-bertrand.png — https://img.game8.co/4645201/cbfe241edf3cdce41135b3f74aed8a7d.png/show
+- assets/events/kai06-mural.png — https://img.game8.co/4645205/b3a5dbe0018d061e064ca2525c8cd754.png/show
+- assets/events/di04-south.png — https://img.game8.co/4645106/e63ea7b6dc0eb8c76e952db9a62019fd.png/show
+- assets/events/di04-inn.png — https://img.game8.co/4645107/994af67e8a8232a191eff5336f873cd8.png/show
+- assets/events/di04-mikaela.png — https://img.game8.co/4645129/7f89c6dac1b9a06d767b2e2d0d4a7a77.png/show
+- assets/events/di05-fabio-chain.png — https://img.game8.co/4645130/58c3a4501d1d532bbe4e3b0fdf83cb94.png/show
+- assets/events/di06-alexandra.png — https://img.game8.co/4645141/15b014c3d3f9cb0dbfdad0f143658bd4.png/show
+- assets/events/di08-night.png — https://img.game8.co/4645154/7957052d87d27a4d2a05c92ee1040a10.png/show
+- assets/events/di10-fabio-chain.png — https://img.game8.co/4645158/e0859fe47465a5b597d768bd0879c6b5.png/show
+- assets/events/di10-ribeira.png — https://img.game8.co/4645211/2e476327e8d9b3af742cded9f640d5c6.png/show
+- assets/events/di12-answerer.png — https://img.game8.co/4645161/375542effdfb2e1f5cf60bb487346152.png/show
+- assets/events/di12-fina.png — https://img.game8.co/4645212/51026f4efd6d7dfe7022fd915dbbd8a4.png/show
+- assets/events/theo03-outfit.png — https://img.game8.co/4645215/76141125d8f8352cc7e97b33c19fe956.png/show
+- assets/events/theo05-anatolia.png — https://img.game8.co/4646506/551d13ae158af5f423e18b6edc4987b5.png/show
+- assets/events/theo06-crystal.png — https://img.game8.co/4646508/103fcb72ebdbce6b277e7963de05a84f.png/show
+- assets/events/theo07-alexandra.png — https://img.game8.co/4645141/15b014c3d3f9cb0dbfdad0f143658bd4.png/show
+- assets/events/theo10-back-entrance.png — https://img.game8.co/4646509/1d0e30ec13e510b103117fa4a7ea31a1.png/show
+- assets/events/theo10-ship.png — https://img.game8.co/4646544/45ef99bbfea4319eb6f870a06c9f850f.png/show
+- assets/events/theo11-return.png — https://img.game8.co/4646887/744151e452a0d3084b82ae74f937621a.png/show
+- assets/events/leda04-mikaela.png — https://img.game8.co/4645132/2ab756ace67b425956097e2b8729f13e.png/show
+- assets/events/leda04-itemshop.png — https://img.game8.co/4646545/7038334aa2b97e7a123192875c28b62e.png/show
+- assets/events/leda05-kalla.png — https://img.game8.co/4646826/fbf0907cb500d217620ad269bb446941.png/show
+- assets/events/leda06-olympia.png — https://img.game8.co/4646546/f1a77cc40d0e9924c6c7c7c17f26ed57.png/show
+- assets/events/leda06-alexandra.png — https://img.game8.co/4645141/15b014c3d3f9cb0dbfdad0f143658bd4.png/show
+- assets/events/leda09-sirocco.png — https://img.game8.co/4646641/7b4faed447757b23c57a2d16b11f9086.png/show
+- assets/events/leda10-kalla-bow.png — https://img.game8.co/4635969/0c7424944a295a89ba1909c03c689450.png/show
+- assets/events/war02-creek.png — https://img.game8.co/4625805/44ff925849aabda97ab07cfc87009029.png/show
+- assets/events/war03-nathan.png — https://img.game8.co/4625836/bb8d81b6c8fadb4a6abfce81473872ab.png/show
+- assets/events/p3-02-cai.png — https://img.game8.co/4646651/b70b84869e17aefcc181d90d5c7ed1d5.png/show
+- assets/events/p3-02-dietrich.png — https://img.game8.co/4646655/f56a7a96ebedeaa1f9277705bbed4e4c.png/show
+- assets/events/p3-02-theodora.png — https://img.game8.co/4646779/809cd01ee763688b5719330bbeb42f7f.png/show
+- assets/events/p3-02-leda.png — https://img.game8.co/4646781/f4c6b09e90f1655cf7c08cb5287c7e19.png/show
+- assets/events/p3-02-centurio.png — https://img.game8.co/4646782/83e3f1471addc0605db6f875a2bf70fd.png/show
+- assets/events/p3-02-fortuna.png — https://img.game8.co/4645073/2a1e42f0973337fc02e234492d1b1212.png/show
+- assets/events/p3-03-fortuna.png — https://img.game8.co/4645073/2a1e42f0973337fc02e234492d1b1212.png/show
+- assets/events/p3-04-fortuna.png — https://img.game8.co/4645073/2a1e42f0973337fc02e234492d1b1212.png/show
+- assets/events/p3-05-fortuna.png — https://img.game8.co/4645073/2a1e42f0973337fc02e234492d1b1212.png/show

@@ -1,0 +1,115 @@
+{
+  "reviewed": "2026-11-04",
+  "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+  "note": "Game8 선물 도감의 실제 공용 선물 종류 아이콘. 개별 선물 외형으로 오해하지 않도록 이름과 함께 표시.",
+  "items": {
+    "결정 사탕": {
+      "english": "Candy Crystals",
+      "file": "assets/gifts/gift-1.png",
+      "imageSource": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625969"
+    },
+    "군략서 사본": {
+      "english": "Strategy Manuscript",
+      "file": "assets/gifts/gift-1.png",
+      "imageSource": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625904"
+    },
+    "동방 연애담": {
+      "english": "Eastern Love Story",
+      "file": "assets/gifts/gift-1.png",
+      "imageSource": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625925"
+    },
+    "동방 최고급 찻잎": {
+      "english": "Eastern Tea Leaves",
+      "file": "assets/gifts/gift-1.png",
+      "imageSource": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625988"
+    },
+    "동양 흑비단": {
+      "english": "Eastern Black Silk",
+      "file": "assets/gifts/gift-2.png",
+      "imageSource": "https://img.game8.co/4613654/b7fabb107c3e56c7ec58c54eeb905dca.png/show",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625919"
+    },
+    "동양식 귀걸이": {
+      "english": "Eastern Earrings",
+      "file": "assets/gifts/gift-1.png",
+      "imageSource": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625989"
+    },
+    "두 자루 생선칼": {
+      "english": "Dual Fish Knives",
+      "file": "assets/gifts/gift-1.png",
+      "imageSource": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625389"
+    },
+    "모험 이야기": {
+      "english": "Tales of Adventure",
+      "file": "assets/gifts/gift-1.png",
+      "imageSource": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625955"
+    },
+    "소립 커피": {
+      "english": "Common Coffee",
+      "file": "assets/gifts/gift-1.png",
+      "imageSource": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625950"
+    },
+    "수염풀": {
+      "english": "Dagda Beard Grass",
+      "file": "assets/gifts/gift-1.png",
+      "imageSource": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625964"
+    },
+    "알렉토 가룸": {
+      "english": "Alecto Garum",
+      "file": "assets/gifts/gift-1.png",
+      "imageSource": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625945"
+    },
+    "위인 시집": {
+      "english": "Poems of the Greats",
+      "file": "assets/gifts/gift-1.png",
+      "imageSource": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625991"
+    },
+    "진홍 고슈": {
+      "english": "Crimson Ghosh",
+      "file": "assets/gifts/gift-2.png",
+      "imageSource": "https://img.game8.co/4613654/b7fabb107c3e56c7ec58c54eeb905dca.png/show",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625992"
+    },
+    "커피 구운 과자": {
+      "english": "Coffee Pastries",
+      "file": "assets/gifts/gift-1.png",
+      "imageSource": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625942"
+    },
+    "특제 「약」": {
+      "english": "Special “Medicine”",
+      "file": "assets/gifts/gift-1.png",
+      "imageSource": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625998"
+    },
+    "파란 장미 꽃다발": {
+      "english": "Blue-Rose Bouquet",
+      "file": "assets/gifts/gift-1.png",
+      "imageSource": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625982"
+    },
+    "화산 고슈": {
+      "english": "Volcano Ghosh",
+      "file": "assets/gifts/gift-1.png",
+      "imageSource": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625391"
+    },
+    "화살촉 보석": {
+      "english": "Arrowhead Gem",
+      "file": "assets/gifts/gift-2.png",
+      "imageSource": "https://img.game8.co/4613654/b7fabb107c3e56c7ec58c54eeb905dca.png/show",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625999"
+    }
+  }
+}

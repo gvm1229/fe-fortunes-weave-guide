@@ -1,0 +1,17 @@
+{
+  "undead": {
+    "file": "assets/traits/undead.png",
+    "url": "https://yuphastemple.com/images/effective/undead.png",
+    "source": "https://yuphastemple.com/?item=seraphim",
+    "sourceCode": "https://yuphastemple.com/data/app.js",
+    "kind": "game-original",
+    "variant": "Effective vs. undead"
+  },
+  "eshmelFemale": {
+    "file": "assets/portraits/eshmel-female.png",
+    "url": "https://cdn.fireemblemwiki.org/thumb/5/52/Medium_portrait_eshmel_type_b_fe18.png/120px-Medium_portrait_eshmel_type_b_fe18.png",
+    "source": "https://fireemblemwiki.org/wiki/Eshmel",
+    "kind": "game-original",
+    "variant": "default Type B"
+  }
+}

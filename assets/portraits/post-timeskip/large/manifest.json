@@ -1,0 +1,379 @@
+{
+  "alexandra": {
+    "page": "https://fireemblemwiki.org/wiki/Alexandra",
+    "source": "https://cdn.fireemblemwiki.org/e/e2/Portrait_alexandra_02_fe18.png",
+    "description": "Portrait of Alexandra in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/alexandra.png",
+    "status": "confirmed"
+  },
+  "anatolia": {
+    "page": "https://fireemblemwiki.org/wiki/Anatolia",
+    "source": "https://cdn.fireemblemwiki.org/a/a7/Portrait_anatolia_02_fe18.png",
+    "description": "Portrait of Anatolia in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/anatolia.png",
+    "status": "confirmed"
+  },
+  "aswan": {
+    "page": "https://fireemblemwiki.org/wiki/Aswan",
+    "status": "no-confirmed-part3-portrait"
+  },
+  "benditz": {
+    "page": "https://fireemblemwiki.org/wiki/Benditz",
+    "status": "no-confirmed-part3-portrait"
+  },
+  "bertrand": {
+    "page": "https://fireemblemwiki.org/wiki/Bertrand",
+    "source": "https://cdn.fireemblemwiki.org/a/ad/Portrait_bertrand_04_fe18.png",
+    "description": "Portrait of Bertrand in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/bertrand.png",
+    "status": "confirmed"
+  },
+  "bonaventure": {
+    "page": "https://fireemblemwiki.org/wiki/Bonaventure",
+    "source": "https://cdn.fireemblemwiki.org/5/59/Portrait_bonaventure_02_fe18.png",
+    "description": "Portrait of Bonaventure in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/bonaventure.png",
+    "status": "confirmed"
+  },
+  "buccar": {
+    "page": "https://fireemblemwiki.org/wiki/Buccar",
+    "source": "https://cdn.fireemblemwiki.org/d/d1/Portrait_buccar_02_fe18.png",
+    "description": "Portrait of Buccar in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/buccar.png",
+    "status": "confirmed"
+  },
+  "cai": {
+    "page": "https://fireemblemwiki.org/wiki/Cai",
+    "source": "https://cdn.fireemblemwiki.org/0/0b/Portrait_cai_03_fe18.png",
+    "description": "Portrait of Cai in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/cai.png",
+    "status": "confirmed"
+  },
+  "catania": {
+    "page": "https://fireemblemwiki.org/wiki/Catania",
+    "source": "https://cdn.fireemblemwiki.org/3/34/Portrait_catania_02_fe18.png",
+    "description": "Portrait of Catania in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/catania.png",
+    "status": "confirmed"
+  },
+  "centurio": {
+    "page": "https://fireemblemwiki.org/wiki/Centurio",
+    "status": "no-confirmed-part3-portrait"
+  },
+  "creek": {
+    "page": "https://fireemblemwiki.org/wiki/Creek",
+    "status": "no-confirmed-part3-portrait"
+  },
+  "dadao": {
+    "page": "https://fireemblemwiki.org/wiki/Dadao",
+    "source": "https://cdn.fireemblemwiki.org/5/5d/Portrait_dadao_02_fe18.png",
+    "description": "Portrait of Dadao in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/dadao.png",
+    "status": "confirmed"
+  },
+  "dante": {
+    "page": "https://fireemblemwiki.org/wiki/Dante",
+    "source": "https://cdn.fireemblemwiki.org/1/12/Portrait_dante_02_fe18.png",
+    "description": "Portrait of Dante in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/dante.png",
+    "status": "confirmed"
+  },
+  "diego": {
+    "page": "https://fireemblemwiki.org/wiki/Diego",
+    "source": "https://cdn.fireemblemwiki.org/a/a7/Portrait_diego_02_fe18.png",
+    "description": "Portrait of Diego in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/diego.png",
+    "status": "confirmed"
+  },
+  "dietrich": {
+    "page": "https://fireemblemwiki.org/wiki/Dietrich",
+    "source": "https://cdn.fireemblemwiki.org/f/f9/Portrait_dietrich_02_fe18.png",
+    "description": "Portrait of Dietrich in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/dietrich.png",
+    "status": "confirmed"
+  },
+  "eshmel": {
+    "page": "https://fireemblemwiki.org/wiki/Eshmel",
+    "status": "no-confirmed-part3-portrait"
+  },
+  "esmeralda": {
+    "page": "https://fireemblemwiki.org/wiki/Esmeralda",
+    "source": "https://cdn.fireemblemwiki.org/9/9b/Portrait_esmeralda_02_fe18.png",
+    "description": "Portrait of Esmeralda in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/esmeralda.png",
+    "status": "confirmed"
+  },
+  "fabio": {
+    "page": "https://fireemblemwiki.org/wiki/Fabio",
+    "status": "no-confirmed-part3-portrait"
+  },
+  "gaitz": {
+    "page": "https://fireemblemwiki.org/wiki/Gaitz",
+    "source": "https://cdn.fireemblemwiki.org/7/73/Portrait_gaitz_02_fe18.png",
+    "description": "Portrait of Gaitz in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/gaitz.png",
+    "status": "confirmed"
+  },
+  "guzran": {
+    "page": "https://fireemblemwiki.org/wiki/Guzran",
+    "status": "no-confirmed-part3-portrait"
+  },
+  "hong-hua": {
+    "page": "https://fireemblemwiki.org/wiki/Hong_Hua",
+    "status": "no-confirmed-part3-portrait"
+  },
+  "leda": {
+    "page": "https://fireemblemwiki.org/wiki/Leda",
+    "source": "https://cdn.fireemblemwiki.org/6/61/Portrait_leda_02_fe18.png",
+    "description": "Portrait of Leda in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/leda.png",
+    "status": "confirmed"
+  },
+  "lilian": {
+    "page": "https://fireemblemwiki.org/wiki/Lilian",
+    "source": "https://cdn.fireemblemwiki.org/e/e4/Portrait_lilian_02_fe18.png",
+    "description": "Portrait of Lilian in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/lilian.png",
+    "status": "confirmed"
+  },
+  "loretta": {
+    "page": "https://fireemblemwiki.org/wiki/Loretta",
+    "source": "https://cdn.fireemblemwiki.org/a/a1/Portrait_loretta_02_fe18.png",
+    "description": "Portrait of Loretta in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/loretta.png",
+    "status": "confirmed"
+  },
+  "lysander": {
+    "page": "https://fireemblemwiki.org/wiki/Lysander",
+    "source": "https://cdn.fireemblemwiki.org/a/ae/Portrait_lysander_02_fe18.png",
+    "description": "Portrait of Lysander in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/lysander.png",
+    "status": "confirmed"
+  },
+  "mikaela": {
+    "page": "https://fireemblemwiki.org/wiki/Mikaela",
+    "source": "https://cdn.fireemblemwiki.org/c/c2/Portrait_mikaela_02_fe18.png",
+    "description": "Portrait of Mikaela in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/mikaela.png",
+    "status": "confirmed"
+  },
+  "mu": {
+    "page": "https://fireemblemwiki.org/wiki/Mu",
+    "source": "https://cdn.fireemblemwiki.org/2/2c/Portrait_mu_02_fe18.png",
+    "description": "Portrait of Mu in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/mu.png",
+    "status": "confirmed"
+  },
+  "nathan": {
+    "page": "https://fireemblemwiki.org/wiki/Nathan",
+    "status": "no-confirmed-part3-portrait"
+  },
+  "ninae": {
+    "page": "https://fireemblemwiki.org/wiki/Ninae",
+    "status": "no-confirmed-part3-portrait"
+  },
+  "noctula": {
+    "page": "https://fireemblemwiki.org/wiki/Noctula",
+    "source": "https://cdn.fireemblemwiki.org/2/23/Portrait_noctula_02_fe18.png",
+    "description": "Portrait of Noctula in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/noctula.png",
+    "status": "confirmed"
+  },
+  "nuzzuo": {
+    "page": "https://fireemblemwiki.org/wiki/Nuzzuo",
+    "status": "no-confirmed-part3-portrait"
+  },
+  "nydine": {
+    "page": "https://fireemblemwiki.org/wiki/Nydine",
+    "source": "https://cdn.fireemblemwiki.org/d/d3/Portrait_nydine_02_fe18.png",
+    "description": "Portrait of Nydine in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/nydine.png",
+    "status": "confirmed"
+  },
+  "olympia": {
+    "page": "https://fireemblemwiki.org/wiki/Olympia",
+    "source": "https://cdn.fireemblemwiki.org/5/51/Portrait_olympia_02_fe18.png",
+    "description": "Portrait of Olympia in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/olympia.png",
+    "status": "confirmed"
+  },
+  "orchel": {
+    "page": "https://fireemblemwiki.org/wiki/Orchel",
+    "source": "https://cdn.fireemblemwiki.org/e/e8/Portrait_orchel_03_fe18.png",
+    "description": "Portrait of Orchel in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/orchel.png",
+    "status": "confirmed"
+  },
+  "peter": {
+    "page": "https://fireemblemwiki.org/wiki/Peter",
+    "source": "https://cdn.fireemblemwiki.org/8/88/Portrait_peter_02_fe18.png",
+    "description": "Portrait of Peter in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/peter.png",
+    "status": "confirmed"
+  },
+  "seteth": {
+    "page": "https://fireemblemwiki.org/wiki/Seteth",
+    "source": "https://cdn.fireemblemwiki.org/8/8a/Portrait_seteth_02_fe18.png",
+    "description": "Portrait of Seteth in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/seteth.png",
+    "status": "confirmed"
+  },
+  "sha-lan": {
+    "page": "https://fireemblemwiki.org/wiki/Sha_Lan",
+    "source": "https://cdn.fireemblemwiki.org/9/98/Portrait_sha_lan_02_fe18.png",
+    "description": "Portrait of Sha Lan in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/sha-lan.png",
+    "status": "confirmed"
+  },
+  "sirocco": {
+    "page": "https://fireemblemwiki.org/wiki/Sirocco",
+    "source": "https://cdn.fireemblemwiki.org/f/fc/Portrait_sirocco_02_fe18.png",
+    "description": "Portrait of Sirocco in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/sirocco.png",
+    "status": "confirmed"
+  },
+  "sofia": {
+    "page": "https://fireemblemwiki.org/wiki/Sofia",
+    "source": "https://cdn.fireemblemwiki.org/4/4d/Portrait_sofia_02_fe18.png",
+    "description": "Portrait of Sofia in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/sofia.png",
+    "status": "confirmed"
+  },
+  "talimun": {
+    "page": "https://fireemblemwiki.org/wiki/Talimun",
+    "source": "https://cdn.fireemblemwiki.org/6/62/Portrait_talimun_02_fe18.png",
+    "description": "Portrait of Talimun in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/talimun.png",
+    "status": "confirmed"
+  },
+  "theodora": {
+    "page": "https://fireemblemwiki.org/wiki/Theodora",
+    "source": "https://cdn.fireemblemwiki.org/e/e9/Portrait_theodora_04_fe18.png",
+    "description": "Portrait of Theodora in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/theodora.png",
+    "status": "confirmed"
+  },
+  "tialla": {
+    "page": "https://fireemblemwiki.org/wiki/Tialla",
+    "source": "https://cdn.fireemblemwiki.org/4/42/Portrait_tialla_02_fe18.png",
+    "description": "Portrait of Tialla in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/tialla.png",
+    "status": "confirmed"
+  },
+  "tobias": {
+    "page": "https://fireemblemwiki.org/wiki/Tobias",
+    "source": "https://cdn.fireemblemwiki.org/5/5f/Portrait_tobias_02_fe18.png",
+    "description": "Portrait of Tobias in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/tobias.png",
+    "status": "confirmed"
+  },
+  "troy": {
+    "page": "https://fireemblemwiki.org/wiki/Troy",
+    "status": "no-confirmed-part3-portrait"
+  },
+  "ultand": {
+    "page": "https://fireemblemwiki.org/wiki/Ultand",
+    "source": "https://cdn.fireemblemwiki.org/3/37/Portrait_ultand_02_fe18.png",
+    "description": "Portrait of Ultand in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/ultand.png",
+    "status": "confirmed"
+  },
+  "ursula": {
+    "page": "https://fireemblemwiki.org/wiki/Ursula_(Fortune%27s_Weave)",
+    "source": "https://cdn.fireemblemwiki.org/a/ac/Portrait_ursula_02_fe18.png",
+    "description": "Portrait of Ursula in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/ursula.png",
+    "status": "confirmed"
+  },
+  "yang-jie": {
+    "page": "https://fireemblemwiki.org/wiki/Yang_Jie",
+    "status": "no-confirmed-part3-portrait"
+  },
+  "zarcone": {
+    "page": "https://fireemblemwiki.org/wiki/Zarcone",
+    "status": "no-confirmed-part3-portrait"
+  },
+  "nezha": {
+    "page": "https://fireemblemwiki.org/wiki/Nezha",
+    "source": "https://cdn.fireemblemwiki.org/0/02/Portrait_nezha_02_fe18.png",
+    "description": "Portrait of Nezha in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/nezha.png",
+    "status": "confirmed"
+  },
+  "peppe": {
+    "page": "https://fireemblemwiki.org/wiki/Peppe",
+    "source": "https://cdn.fireemblemwiki.org/6/6e/Portrait_peppe_02_fe18.png",
+    "description": "Portrait of Peppe in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/peppe.png",
+    "status": "confirmed"
+  },
+  "ludia": {
+    "page": "https://fireemblemwiki.org/wiki/Ludia",
+    "source": "https://cdn.fireemblemwiki.org/5/54/Portrait_ludia_02_fe18.png",
+    "description": "Portrait of Ludia in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/ludia.png",
+    "status": "confirmed"
+  },
+  "simon": {
+    "page": "https://fireemblemwiki.org/wiki/Simon",
+    "source": "https://cdn.fireemblemwiki.org/8/85/Portrait_simon_02_fe18.png",
+    "description": "Portrait of Simon in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/simon.png",
+    "status": "confirmed"
+  },
+  "halvin": {
+    "page": "https://fireemblemwiki.org/wiki/Halvin",
+    "source": "https://cdn.fireemblemwiki.org/f/f2/Portrait_halvin_02_fe18.png",
+    "description": "Portrait of Halvin in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/halvin.png",
+    "status": "confirmed"
+  },
+  "goliath": {
+    "page": "https://fireemblemwiki.org/wiki/Goliath",
+    "source": "https://cdn.fireemblemwiki.org/1/19/Portrait_goliath_02_fe18.png",
+    "description": "Portrait of Goliath in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/goliath.png",
+    "status": "confirmed"
+  },
+  "jester": {
+    "page": "https://fireemblemwiki.org/wiki/Jester",
+    "status": "no-confirmed-part3-portrait"
+  },
+  "fianna": {
+    "page": "https://fireemblemwiki.org/wiki/Fianna",
+    "source": "https://cdn.fireemblemwiki.org/5/56/Portrait_fianna_02_fe18.png",
+    "description": "Portrait of Fianna in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/fianna.png",
+    "status": "confirmed"
+  },
+  "io": {
+    "page": "https://fireemblemwiki.org/wiki/Io",
+    "source": "https://cdn.fireemblemwiki.org/0/0e/Portrait_io_02_fe18.png",
+    "description": "Portrait of Io in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/io.png",
+    "status": "confirmed"
+  },
+  "majide": {
+    "page": "https://fireemblemwiki.org/wiki/Majide",
+    "status": "no-confirmed-part3-portrait"
+  },
+  "kiroc": {
+    "page": "https://fireemblemwiki.org/wiki/Kiroc",
+    "status": "no-confirmed-part3-portrait"
+  },
+  "jasmine": {
+    "page": "https://fireemblemwiki.org/wiki/Jasmine",
+    "status": "no-confirmed-part3-portrait"
+  },
+  "inyoni": {
+    "page": "https://fireemblemwiki.org/wiki/Inyoni",
+    "source": "https://cdn.fireemblemwiki.org/5/55/Portrait_inyoni_02_fe18.png",
+    "description": "Portrait of Inyoni in Part III of Fortune's Weave.",
+    "path": "assets/portraits/post-timeskip/large/inyoni.png",
+    "status": "confirmed"
+  },
+  "tahonia": {
+    "page": "https://fireemblemwiki.org/wiki/Tahonia",
+    "status": "no-confirmed-part3-portrait"
+  }
+}

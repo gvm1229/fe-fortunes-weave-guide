@@ -1,0 +1,1345 @@
+{
+  "classes": {
+    "병사": {
+      "slug": "soldier",
+      "ja": "兵士",
+      "tier": "초급직",
+      "level": "5",
+      "renown": "1",
+      "required": "–",
+      "choice": "창술 D / 도끼술 D",
+      "url": "https://img.game8.jp/13008842/659acc645855e92e1ceb86fbbcc94759.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816668",
+      "file": "assets/classes/soldier.webp",
+      "weapons": [
+        "검술",
+        "창술",
+        "도끼술"
+      ],
+      "traits": [
+        "보병술",
+        "중갑술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624052",
+      "sourceType": "Heavy Armor Infantry"
+    },
+    "비약 타조병": {
+      "slug": "ornius-rider",
+      "ja": "飛駝兵",
+      "tier": "초급직",
+      "level": "5",
+      "renown": "1",
+      "required": "기마술 E+",
+      "choice": "창술 D / 도끼술 D",
+      "url": "https://img.game8.jp/13008850/aa46460e19d5ef8daa9ba1106ea63168.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816667",
+      "file": "assets/classes/ornius-rider.webp",
+      "weapons": [
+        "검술",
+        "창술",
+        "도끼술"
+      ],
+      "traits": [
+        "기마술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624051",
+      "sourceType": "Cavalry"
+    },
+    "사냥병": {
+      "slug": "hunter",
+      "ja": "猟兵",
+      "tier": "초급직",
+      "level": "5",
+      "renown": "1",
+      "required": "–",
+      "choice": "검술 D / 궁술 D",
+      "url": "https://img.game8.jp/13008843/6dee3c01da724386c48df4c3b27ac83c.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816669",
+      "file": "assets/classes/hunter.webp",
+      "weapons": [
+        "검술",
+        "궁술"
+      ],
+      "traits": [
+        "보병술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624053",
+      "sourceType": "Infantry"
+    },
+    "주술사": {
+      "slug": "diviner",
+      "ja": "呪い師",
+      "tier": "초급직",
+      "level": "5",
+      "renown": "1",
+      "required": "–",
+      "choice": "흑마술 D / 백마술 D",
+      "url": "https://img.game8.jp/13008845/f7390082f21cb05e25ca0d939c34e997.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816666",
+      "file": "assets/classes/diviner.webp",
+      "weapons": [
+        "검술",
+        "도끼술",
+        "격투술",
+        "흑마술",
+        "백마술"
+      ],
+      "traits": [
+        "보병술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624050",
+      "sourceType": "Infantry"
+    },
+    "투사": {
+      "slug": "gladiator",
+      "ja": "闘士",
+      "tier": "초급직",
+      "level": "5",
+      "renown": "1",
+      "required": "–",
+      "choice": "검술 D / 도끼술 D / 격투술 D",
+      "url": "https://img.game8.jp/13008841/1dba540f7f729f8a224ccef782a4cb66.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816670",
+      "file": "assets/classes/gladiator.webp",
+      "weapons": [
+        "검술",
+        "도끼술",
+        "격투술"
+      ],
+      "traits": [
+        "보병술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624054",
+      "sourceType": "Infantry"
+    },
+    "검사": {
+      "slug": "myrmidon",
+      "ja": "剣士",
+      "tier": "중급직",
+      "level": "20",
+      "renown": "4",
+      "required": "검술 C",
+      "choice": "–",
+      "url": "https://img.game8.jp/13008851/c41b9c4f3c1bfc04e740d788fb66134c.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816665",
+      "file": "assets/classes/myrmidon.webp",
+      "weapons": [
+        "검술",
+        "창술"
+      ],
+      "traits": [
+        "보병술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624044",
+      "sourceType": "Infantry"
+    },
+    "경기병": {
+      "slug": "light-cavalry",
+      "ja": "軽騎兵",
+      "tier": "중급직",
+      "level": "20",
+      "renown": "4",
+      "required": "기마술 D",
+      "choice": "검술 C / 창술 C",
+      "url": "https://img.game8.jp/13008863/00eb088e598c27b26df1d24034bf1470.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816659",
+      "file": "assets/classes/light-cavalry.webp",
+      "weapons": [
+        "검술",
+        "창술",
+        "도끼술"
+      ],
+      "traits": [
+        "기마술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624045",
+      "sourceType": "Cavalry"
+    },
+    "기갑 타조병": {
+      "slug": "armored-ornius-rider",
+      "ja": "騎甲駝兵",
+      "tier": "중급직",
+      "level": "20",
+      "renown": "4",
+      "required": "기마술 D",
+      "choice": "창술 C / 도끼술 C",
+      "url": "https://img.game8.jp/13008852/575e77e76dea8ea5a9cad62daf7a5f78.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816657",
+      "file": "assets/classes/armored-ornius-rider.webp",
+      "weapons": [
+        "검술",
+        "창술",
+        "도끼술"
+      ],
+      "traits": [
+        "기마술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624041",
+      "sourceType": "Cavalry"
+    },
+    "로그": {
+      "slug": "rogue",
+      "ja": "ローグ",
+      "tier": "중급직",
+      "level": "20",
+      "renown": "4",
+      "required": "–",
+      "choice": "검술 C / 궁술 C",
+      "url": "https://img.game8.jp/13008846/08bb59161b0264e79b3ee961c295af69.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816661",
+      "file": "assets/classes/rogue.webp",
+      "weapons": [
+        "검술",
+        "궁술"
+      ],
+      "traits": [
+        "보병술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624043",
+      "sourceType": "Infantry"
+    },
+    "브리건드": {
+      "slug": "brigand",
+      "ja": "ブリガンド",
+      "tier": "중급직",
+      "level": "20",
+      "renown": "4",
+      "required": "–",
+      "choice": "검술 C / 도끼술 C",
+      "url": "https://img.game8.jp/13008853/79c4b19219530ab1b5b706c81bdb217c.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816664",
+      "file": "assets/classes/brigand.webp",
+      "weapons": [
+        "검술",
+        "도끼술",
+        "격투술"
+      ],
+      "traits": [
+        "보병술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624048",
+      "sourceType": "Infantry"
+    },
+    "샤먼": {
+      "slug": "shaman",
+      "ja": "シャーマン",
+      "tier": "중급직",
+      "level": "20",
+      "renown": "4",
+      "required": "흑마술 C",
+      "choice": "–",
+      "url": "https://img.game8.jp/13008849/01dce648d3181b5a75c4c38a6c773e3e.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816655",
+      "file": "assets/classes/shaman.webp",
+      "weapons": [
+        "검술",
+        "격투술",
+        "흑마술",
+        "백마술"
+      ],
+      "traits": [
+        "보병술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624042",
+      "sourceType": "Infantry"
+    },
+    "세스타스": {
+      "slug": "pugilist",
+      "ja": "セスタス",
+      "tier": "중급직",
+      "level": "20",
+      "renown": "4",
+      "required": "격투술 C",
+      "choice": "–",
+      "url": "https://img.game8.jp/13008861/8685a8bbad83470df44ca3df28999660.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816663",
+      "file": "assets/classes/pugilist.webp",
+      "weapons": [
+        "격투술"
+      ],
+      "traits": [
+        "보병술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624029",
+      "sourceType": "Infantry"
+    },
+    "아처": {
+      "slug": "archer",
+      "ja": "アーチャー",
+      "tier": "중급직",
+      "level": "20",
+      "renown": "4",
+      "required": "궁술 C",
+      "choice": "–",
+      "url": "https://img.game8.jp/13008866/f7e121eb92b677ee3c75c951d7d42793.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816662",
+      "file": "assets/classes/archer.webp",
+      "weapons": [
+        "궁술"
+      ],
+      "traits": [
+        "보병술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624046",
+      "sourceType": "Infantry"
+    },
+    "전차병": {
+      "slug": "charioteer",
+      "ja": "戦車兵",
+      "tier": "중급직",
+      "level": "20",
+      "renown": "4",
+      "required": "기마술 D, 궁술 C",
+      "choice": "–",
+      "url": "https://img.game8.jp/13008862/632cbbc30f8d47614d7bff74e04e6227.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816658",
+      "file": "assets/classes/charioteer.webp",
+      "weapons": [
+        "궁술"
+      ],
+      "traits": [
+        "기마술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624047",
+      "sourceType": "Cavalry"
+    },
+    "중갑 보병": {
+      "slug": "armored-knight",
+      "ja": "重装歩兵",
+      "tier": "중급직",
+      "level": "20",
+      "renown": "4",
+      "required": "중장술 E+",
+      "choice": "창술 C / 도끼술 C",
+      "url": "https://img.game8.jp/13008859/7d9f7393b284a1b3a3b16df3909036c1.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816660",
+      "file": "assets/classes/armored-knight.webp",
+      "weapons": [
+        "검술",
+        "창술",
+        "도끼술"
+      ],
+      "traits": [
+        "보병술",
+        "중갑술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624049",
+      "sourceType": "Heavy Armor Infantry"
+    },
+    "천익병": {
+      "slug": "wing-soldier",
+      "ja": "天翼兵",
+      "tier": "중급직",
+      "level": "20",
+      "renown": "4",
+      "required": "비행술 D",
+      "choice": "검술 C / 창술 C",
+      "url": "https://img.game8.jp/13008860/e3af62405befaaa62699127cddcd849a.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816656",
+      "file": "assets/classes/wing-soldier.webp",
+      "weapons": [
+        "검술",
+        "창술"
+      ],
+      "traits": [
+        "비행술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624038",
+      "sourceType": "Flier"
+    },
+    "프리스트": {
+      "slug": "priest",
+      "ja": "プリースト",
+      "tier": "중급직",
+      "level": "20",
+      "renown": "4",
+      "required": "백마술 C",
+      "choice": "–",
+      "url": "https://img.game8.jp/13008864/4f640dcaa577dad6f8cc8328b1689b46.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816654",
+      "file": "assets/classes/priest.webp",
+      "weapons": [
+        "도끼술",
+        "격투술",
+        "흑마술",
+        "백마술"
+      ],
+      "traits": [
+        "보병술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624039",
+      "sourceType": "Infantry"
+    },
+    "가디언": {
+      "slug": "guardian",
+      "ja": "ガーディアン",
+      "tier": "상급직",
+      "level": "35",
+      "renown": "8",
+      "required": "창술 B",
+      "choice": "–",
+      "url": "https://img.game8.jp/13015154/f1ccf4e76ba9e5f7f44c4b99a73199ba.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816860",
+      "file": "assets/classes/guardian.webp",
+      "weapons": [
+        "창술",
+        "백마술"
+      ],
+      "traits": [
+        "보병술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624254",
+      "sourceType": "Infantry"
+    },
+    "대장장이": {
+      "slug": "blacksmith",
+      "ja": "鍛冶師",
+      "tier": "상급직",
+      "level": "35",
+      "renown": "–",
+      "required": "흑마술 D, 도끼술 C",
+      "choice": "–",
+      "url": "https://img.game8.jp/13019787/35bd52b6966b7774c7ee13f43e5d7eca.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816973",
+      "file": "assets/classes/blacksmith.webp",
+      "weapons": [
+        "도끼술",
+        "흑마술"
+      ],
+      "traits": [
+        "보병술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624388",
+      "sourceType": "Infantry"
+    },
+    "드래군": {
+      "slug": "dragoon",
+      "ja": "ドラグーン",
+      "tier": "상급직",
+      "level": "35",
+      "renown": "–",
+      "required": "비행술 C",
+      "choice": "도끼술 B / 창술 B",
+      "url": "https://img.game8.jp/13012935/1962a6bb44f55a2fd52ac85532081739.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816716",
+      "file": "assets/classes/dragoon.webp",
+      "weapons": [
+        "검술",
+        "창술",
+        "도끼술"
+      ],
+      "traits": [
+        "비행술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624233",
+      "sourceType": "Flier"
+    },
+    "레인저": {
+      "slug": "ranger",
+      "ja": "レンジャー",
+      "tier": "상급직",
+      "level": "35",
+      "renown": "8",
+      "required": "–",
+      "choice": "궁술 B / 검술 B",
+      "url": "https://img.game8.jp/13015155/5d50c63ee9d21d5978d7ee67dff83e1f.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816859",
+      "file": "assets/classes/ranger.webp",
+      "weapons": [
+        "검술",
+        "궁술"
+      ],
+      "traits": [
+        "보병술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624384",
+      "sourceType": "Infantry"
+    },
+    "무희": {
+      "slug": "dancer",
+      "ja": "踊り子",
+      "tier": "상급직",
+      "level": "35",
+      "renown": "8",
+      "required": "–",
+      "choice": "궁술 B / 검술 B",
+      "url": "https://img.game8.jp/13015153/86a4ec6f91f9dbddac186db044c6c648.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816861",
+      "file": "assets/classes/dancer.webp",
+      "weapons": [
+        "검술",
+        "궁술"
+      ],
+      "traits": [
+        "보병술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624375",
+      "sourceType": "Infantry"
+    },
+    "바딩거": {
+      "slug": "bardinger",
+      "ja": "バーディンガー",
+      "tier": "상급직",
+      "level": "35",
+      "renown": "8",
+      "required": "기마술 C",
+      "choice": "검술 B / 창술 B",
+      "url": "https://img.game8.jp/13008844/e68d28b29377ded9816e72e582971791.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816648",
+      "file": "assets/classes/bardinger.webp",
+      "weapons": [
+        "검술",
+        "창술",
+        "도끼술"
+      ],
+      "traits": [
+        "기마술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624033",
+      "sourceType": "Cavalry"
+    },
+    "바테스": {
+      "slug": "ovate",
+      "ja": "ウァテス",
+      "tier": "상급직",
+      "level": "35",
+      "renown": "8",
+      "required": "흑마술 B",
+      "choice": "–",
+      "url": "https://img.game8.jp/13008857/b8c87e7c59e42540c5228f8e5168f11c.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816647",
+      "file": "assets/classes/ovate.webp",
+      "weapons": [
+        "검술",
+        "격투술",
+        "흑마술",
+        "백마술"
+      ],
+      "traits": [
+        "보병술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624032",
+      "sourceType": "Infantry"
+    },
+    "비숍": {
+      "slug": "bishop",
+      "ja": "ビショップ",
+      "tier": "상급직",
+      "level": "35",
+      "renown": "8",
+      "required": "백마술 B",
+      "choice": "–",
+      "url": "https://img.game8.jp/13008848/8e8fa2aabcb7651852d040acae1516ac.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816645",
+      "file": "assets/classes/bishop.webp",
+      "weapons": [
+        "도끼술",
+        "격투술",
+        "흑마술",
+        "백마술"
+      ],
+      "traits": [
+        "보병술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624031",
+      "sourceType": "Infantry"
+    },
+    "사도": {
+      "slug": "shido",
+      "ja": "シドー",
+      "tier": "상급직",
+      "level": "35",
+      "renown": "8",
+      "required": "검술 B",
+      "choice": "–",
+      "url": "https://img.game8.jp/13008854/8e01e6336740da6d442b921143616d33.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816653",
+      "file": "assets/classes/shido.webp",
+      "weapons": [
+        "검술",
+        "창술"
+      ],
+      "traits": [
+        "보병술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624030",
+      "sourceType": "Infantry"
+    },
+    "스나이퍼": {
+      "slug": "sniper",
+      "ja": "スナイパー",
+      "tier": "상급직",
+      "level": "35",
+      "renown": "8",
+      "required": "궁술 B",
+      "choice": "–",
+      "url": "https://img.game8.jp/13008858/5a0b48681a250f0eaee596a589a9a5f8.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816651",
+      "file": "assets/classes/sniper.webp",
+      "weapons": [
+        "궁술"
+      ],
+      "traits": [
+        "보병술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624036",
+      "sourceType": "Infantry"
+    },
+    "워리어": {
+      "slug": "warrior",
+      "ja": "ウォーリアー",
+      "tier": "상급직",
+      "level": "35",
+      "renown": "8",
+      "required": "–",
+      "choice": "검술 B / 도끼술 B / 격투술 B",
+      "url": "https://img.game8.jp/13008865/535512d78bd25e7094f9a7c2eaae8a8b.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816652",
+      "file": "assets/classes/warrior.webp",
+      "weapons": [
+        "검술",
+        "도끼술",
+        "격투술"
+      ],
+      "traits": [
+        "보병술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624037",
+      "sourceType": "Infantry"
+    },
+    "카타프락토스": {
+      "slug": "cataphract",
+      "ja": "カタフラクト",
+      "tier": "상급직",
+      "level": "35",
+      "renown": "8",
+      "required": "중장술 E+, 기마술 D",
+      "choice": "도끼술 B / 창술 B",
+      "url": "https://img.game8.jp/13015284/98fc02cc284e92be07db8b0d02b6d31e.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816858",
+      "file": "assets/classes/cataphract.webp",
+      "weapons": [
+        "검술",
+        "창술",
+        "도끼술"
+      ],
+      "traits": [
+        "중갑술",
+        "기마술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624275",
+      "sourceType": "Cavalry Heavy Armor"
+    },
+    "칼라드리오스": {
+      "slug": "caladrius",
+      "ja": "カラドリオス",
+      "tier": "상급직",
+      "level": "35",
+      "renown": "–",
+      "required": "기마술 D, 흑마술 B  우리 공략  필수 기술이 기마술 D가 아니라  기마술 B  + 흑마술 B일 수 있다. 카이편 명성 7 카스톨 훈련 뒤 시험 화면에서 확인하고, D로 응시가 안 되면 기마술 B까지 올린다",
+      "choice": "–",
+      "url": "https://img.game8.jp/13012926/fac1b17a30cebfda9f75725b6f48b639.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816717",
+      "file": "assets/classes/caladrius.webp",
+      "weapons": [
+        "검술",
+        "창술",
+        "도끼술",
+        "흑마술"
+      ],
+      "traits": [
+        "기마술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624235",
+      "sourceType": "Cavalry"
+    },
+    "코끼리병": {
+      "slug": "elephant-rider",
+      "ja": "戦象兵",
+      "tier": "상급직",
+      "level": "35",
+      "renown": "–",
+      "required": "기마술 C",
+      "choice": "–",
+      "url": "https://img.game8.jp/13012932/a92e09f34ab995db87ba30e445a605c1.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816718",
+      "file": "assets/classes/elephant-rider.webp",
+      "weapons": [],
+      "traits": [
+        "기마술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621166",
+      "sourceType": "Cavalry",
+      "capabilitiesNote": "원문에 Weapons 행 없음. 무기 종류를 추정해 추가하지 않음."
+    },
+    "트루바두르": {
+      "slug": "troubadour",
+      "ja": "トルバドール",
+      "tier": "상급직",
+      "level": "35",
+      "renown": "–",
+      "required": "기마술 D",
+      "choice": "백마술 B / 흑마술 B",
+      "url": "https://img.game8.jp/13012933/5ec592c2e98e7f2687144d8bc776e56d.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816715",
+      "file": "assets/classes/troubadour.webp",
+      "weapons": [
+        "흑마술",
+        "백마술"
+      ],
+      "traits": [
+        "기마술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624234",
+      "sourceType": "Cavalry"
+    },
+    "포레스트 나이트": {
+      "slug": "forest-knight",
+      "ja": "フォレストナイト",
+      "tier": "상급직",
+      "level": "35",
+      "renown": "8",
+      "required": "기마술 D, 궁술 B",
+      "choice": "–",
+      "url": "https://img.game8.jp/13008856/25f786d29cd0e531685defac76599511.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816650",
+      "file": "assets/classes/forest-knight.webp",
+      "weapons": [
+        "검술",
+        "궁술"
+      ],
+      "traits": [
+        "기마술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624035",
+      "sourceType": "Cavalry"
+    },
+    "헤비 아머": {
+      "slug": "dreadnought",
+      "ja": "ヘヴィアーマー",
+      "tier": "상급직",
+      "level": "35",
+      "renown": "8",
+      "required": "중장술 D",
+      "choice": "창술 B / 도끼술 B",
+      "url": "https://img.game8.jp/13008847/e7d8e9e9660e4cad59b641ec9d33d338.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816649",
+      "file": "assets/classes/dreadnought.webp",
+      "weapons": [
+        "창술",
+        "도끼술"
+      ],
+      "traits": [
+        "보병술",
+        "중갑술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624034",
+      "sourceType": "Heavy Armor Infantry"
+    },
+    "그레이트 나이트": {
+      "slug": "great-knight",
+      "ja": "グレートナイト",
+      "tier": "최상급직",
+      "level": "45",
+      "renown": "–",
+      "required": "중장술 D, 기마술 D",
+      "choice": "도끼술 A / 창술 A",
+      "url": "https://img.game8.jp/13018526/508acab5bf8be7e154bca4ea714f5db2.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816948",
+      "file": "assets/classes/great-knight.webp",
+      "weapons": [
+        "검술",
+        "창술",
+        "도끼술"
+      ],
+      "traits": [
+        "중갑술",
+        "기마술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624451",
+      "sourceType": "Cavalry Heavy Armor"
+    },
+    "드래곤 마스터": {
+      "slug": "bau-lord",
+      "ja": "ドラゴンマスター",
+      "tier": "최상급직",
+      "level": "45",
+      "renown": "–",
+      "required": "비행술 C",
+      "choice": "도끼술 A / 창술 A",
+      "url": "https://img.game8.jp/13012929/def68dc406e3d5d4443306d3982d0a19.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816707",
+      "file": "assets/classes/bau-lord.webp",
+      "weapons": [
+        "검술",
+        "창술",
+        "도끼술"
+      ],
+      "traits": [
+        "비행술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624364",
+      "sourceType": "Flier"
+    },
+    "드루이드": {
+      "slug": "druid",
+      "ja": "ドルイド",
+      "tier": "최상급직",
+      "level": "45",
+      "renown": "–",
+      "required": "흑마술 A",
+      "choice": "–",
+      "url": "https://img.game8.jp/13012927/5c6fd9723b1c3dbc714474f1ea0fd929.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816706",
+      "file": "assets/classes/druid.webp",
+      "weapons": [
+        "검술",
+        "격투술",
+        "흑마술"
+      ],
+      "traits": [
+        "보병술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624360",
+      "sourceType": "Infantry"
+    },
+    "마스터 아치": {
+      "slug": "bow-adept",
+      "ja": "マスターアーチ",
+      "tier": "최상급직",
+      "level": "45",
+      "renown": "–",
+      "required": "궁술 A",
+      "choice": "–",
+      "url": "https://img.game8.jp/13012958/4de0be8fd5165ac7c426e49f578d46d3.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816713",
+      "file": "assets/classes/bow-adept.webp",
+      "weapons": [
+        "궁술"
+      ],
+      "traits": [
+        "보병술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624362",
+      "sourceType": "Infantry"
+    },
+    "발키리움": {
+      "slug": "valkyrium",
+      "ja": "ヴァルキュリウム",
+      "tier": "최상급직",
+      "level": "45",
+      "renown": "–",
+      "required": "기마술 D",
+      "choice": "백마술 A / 흑마술 A",
+      "url": "https://img.game8.jp/13018522/08b4cc1b2db2a501411d30ecafe0519e.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816947",
+      "file": "assets/classes/valkyrium.webp",
+      "weapons": [
+        "흑마술",
+        "백마술"
+      ],
+      "traits": [
+        "기마술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624450",
+      "sourceType": "Cavalry"
+    },
+    "배틀 마스터": {
+      "slug": "battlemaster",
+      "ja": "バトルマスター",
+      "tier": "최상급직",
+      "level": "45",
+      "renown": "–",
+      "required": "–",
+      "choice": "격투술 A / 도끼술 A / 검술 A",
+      "url": "https://img.game8.jp/13012957/8ebec5e28ad2324b93c4023ce5d3e7ec.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816714",
+      "file": "assets/classes/battlemaster.webp",
+      "weapons": [
+        "검술",
+        "도끼술",
+        "격투술"
+      ],
+      "traits": [
+        "보병술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624357",
+      "sourceType": "Infantry"
+    },
+    "배틀 몽크": {
+      "slug": "war-monk",
+      "ja": "バトルモンク",
+      "tier": "최상급직",
+      "level": "45",
+      "renown": "–",
+      "required": "백마술 D, 격투술 B",
+      "choice": "–",
+      "url": "https://img.game8.jp/13018530/b9588f1802ae2f1050b1e529fa908f9b.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816950",
+      "file": "assets/classes/war-monk.webp",
+      "weapons": [
+        "격투술",
+        "백마술"
+      ],
+      "traits": [
+        "보병술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624444",
+      "sourceType": "Infantry"
+    },
+    "보우 나이트": {
+      "slug": "bow-knight",
+      "ja": "ボウナイト",
+      "tier": "최상급직",
+      "level": "45",
+      "renown": "–",
+      "required": "기마술 D, 궁술 A",
+      "choice": "–",
+      "url": "https://img.game8.jp/13018519/6d3a96ec6ed55fa30eb742fab731f419.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816949",
+      "file": "assets/classes/bow-knight.webp",
+      "weapons": [
+        "검술",
+        "궁술"
+      ],
+      "traits": [
+        "기마술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624449",
+      "sourceType": "Cavalry"
+    },
+    "섀도 시커": {
+      "slug": "shadow-seeker",
+      "ja": "シャドーシーカー",
+      "tier": "최상급직",
+      "level": "45",
+      "renown": "–",
+      "required": "–",
+      "choice": "궁술 A / 검술 A",
+      "url": "https://img.game8.jp/13012956/b69da221f73e80fe99c1def056b941f5.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816712",
+      "file": "assets/classes/shadow-seeker.webp",
+      "weapons": [
+        "검술",
+        "궁술"
+      ],
+      "traits": [
+        "보병술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624358",
+      "sourceType": "Infantry"
+    },
+    "성천익병": {
+      "slug": "celestial-trooper",
+      "ja": "聖天翼兵",
+      "tier": "최상급직",
+      "level": "45",
+      "renown": "–",
+      "required": "비행술 C",
+      "choice": "창술 A / 검술 A",
+      "url": "https://img.game8.jp/13013053/8e1605b278f6c0f8f9f8e3ab1a35e395.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816708",
+      "file": "assets/classes/celestial-trooper.webp",
+      "weapons": [
+        "검술",
+        "창술"
+      ],
+      "traits": [
+        "비행술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624361",
+      "sourceType": "Flier"
+    },
+    "소드 마스터": {
+      "slug": "swordmaster",
+      "ja": "ソードマスター",
+      "tier": "최상급직",
+      "level": "45",
+      "renown": "–",
+      "required": "검술 A",
+      "choice": "–",
+      "url": "https://img.game8.jp/13018531/fdbd6e2b583d5c8316ff564b8ee4408d.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816951",
+      "file": "assets/classes/swordmaster.webp",
+      "weapons": [
+        "검술",
+        "창술"
+      ],
+      "traits": [
+        "보병술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624426",
+      "sourceType": "Infantry"
+    },
+    "오리할디아": {
+      "slug": "orichalda",
+      "ja": "オリハルディア",
+      "tier": "최상급직",
+      "level": "45",
+      "renown": "–",
+      "required": "기마술 B",
+      "choice": "창술 A / 검술 A",
+      "url": "https://img.game8.jp/13012931/ab76d8f818e22321f4abf1642cd0b8a2.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816709",
+      "file": "assets/classes/orichalda.webp",
+      "weapons": [
+        "검술",
+        "창술",
+        "도끼술"
+      ],
+      "traits": [
+        "기마술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624359",
+      "sourceType": "Cavalry"
+    },
+    "와이즈맨": {
+      "slug": "wiseman",
+      "ja": "ワイズマン",
+      "tier": "최상급직",
+      "level": "45",
+      "renown": "–",
+      "required": "백마술 A",
+      "choice": "–",
+      "url": "https://img.game8.jp/13012928/bca724dfb40f76d8d83f6e55450c3783.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816705",
+      "file": "assets/classes/wiseman.webp",
+      "weapons": [
+        "도끼술",
+        "격투술",
+        "백마술"
+      ],
+      "traits": [
+        "보병술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624355",
+      "sourceType": "Infantry"
+    },
+    "포트리스": {
+      "slug": "castle-knight",
+      "ja": "フォートレス",
+      "tier": "최상급직",
+      "level": "45",
+      "renown": "–",
+      "required": "중장술 C",
+      "choice": "도끼술 A / 창술 A",
+      "url": "https://img.game8.jp/13012930/679324288231566034fe50d15b29d939.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816710",
+      "file": "assets/classes/castle-knight.webp",
+      "weapons": [
+        "창술",
+        "도끼술"
+      ],
+      "traits": [
+        "보병술",
+        "중갑술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624363",
+      "sourceType": "Infantry Heavy Armor"
+    },
+    "하이 에피타프": {
+      "slug": "high-savant",
+      "ja": "ハイエピタフ",
+      "tier": "최상급직",
+      "level": "45",
+      "renown": "–",
+      "required": "기마술 D, 흑마술 D, 검술 B",
+      "choice": "–",
+      "url": "https://img.game8.jp/13018529/39ecef56cc92bcfc454346b3aef38272.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816946",
+      "file": "assets/classes/high-savant.webp",
+      "weapons": [
+        "검술",
+        "흑마술"
+      ],
+      "traits": [
+        "기마술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624445",
+      "sourceType": "Cavalry"
+    },
+    "홀리 랜서": {
+      "slug": "sentinel",
+      "ja": "ホーリーランサー",
+      "tier": "최상급직",
+      "level": "45",
+      "renown": "–",
+      "required": "창술 A",
+      "choice": "–",
+      "url": "https://img.game8.jp/13012934/3d7e9242e9cf6cf65ede02d299fc64d9.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816711",
+      "file": "assets/classes/sentinel.webp",
+      "weapons": [
+        "창술",
+        "백마술"
+      ],
+      "traits": [
+        "보병술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624356",
+      "sourceType": "Infantry"
+    },
+    "더 갓 핸드": {
+      "slug": "the-godhand",
+      "ja": "ザ・ゴッドハンド",
+      "tier": "신장직",
+      "level": "–",
+      "renown": "–",
+      "required": "백마술 C, 격투술 S",
+      "choice": "–",
+      "url": "https://img.game8.jp/13018523/e59f51625a05078bf1c50d476fac33c0.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816942",
+      "file": "assets/classes/the-godhand.webp",
+      "weapons": [
+        "격투술",
+        "백마술"
+      ],
+      "traits": [
+        "보병술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625306",
+      "sourceType": "Infantry"
+    },
+    "더 블레이드": {
+      "slug": "the-blade",
+      "ja": "ザ・ブレイド",
+      "tier": "신장직",
+      "level": "–",
+      "renown": "–",
+      "required": "검술 S",
+      "choice": "–",
+      "url": "https://img.game8.jp/13018527/2a6a2527a61ca7bc35c4980393e98df3.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816945",
+      "file": "assets/classes/the-blade.webp",
+      "weapons": [
+        "검술",
+        "창술"
+      ],
+      "traits": [
+        "보병술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625255",
+      "sourceType": "Infantry"
+    },
+    "더 캐벌리어": {
+      "slug": "the-cavalier",
+      "ja": "ザ・キャバリアー",
+      "tier": "신장직",
+      "level": "–",
+      "renown": "–",
+      "required": "기마술 A",
+      "choice": "도끼술 S / 창술 S / 검술 S",
+      "url": "https://img.game8.jp/13018521/3dbc248babf19409b163d1c6db282424.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816939",
+      "file": "assets/classes/the-cavalier.webp",
+      "weapons": [
+        "검술",
+        "창술",
+        "도끼술"
+      ],
+      "traits": [
+        "기마술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625310",
+      "sourceType": "Cavalry"
+    },
+    "더 캘러미티": {
+      "slug": "the-calamity",
+      "ja": "ザ・カラミティ",
+      "tier": "신장직",
+      "level": "–",
+      "renown": "–",
+      "required": "–",
+      "choice": "궁술 S / 검술 S",
+      "url": "https://img.game8.jp/13018525/fb583c3ca80a6d968ee249a1bf34328d.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816941",
+      "file": "assets/classes/the-calamity.webp",
+      "weapons": [
+        "검술",
+        "궁술"
+      ],
+      "traits": [
+        "보병술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625308",
+      "sourceType": "Infantry"
+    },
+    "더 트라이던트": {
+      "slug": "the-trident",
+      "ja": "ザ・トライデント",
+      "tier": "신장직",
+      "level": "–",
+      "renown": "–",
+      "required": "창술 S",
+      "choice": "–",
+      "url": "https://img.game8.jp/13018528/c483e190623632130197aa1e5d234618.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816940",
+      "file": "assets/classes/the-trident.webp",
+      "weapons": [
+        "창술",
+        "백마술"
+      ],
+      "traits": [
+        "보병술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625309",
+      "sourceType": "Infantry"
+    },
+    "디 아바타르": {
+      "slug": "the-avatar",
+      "ja": "ジ・アヴァタール",
+      "tier": "신장직",
+      "level": "–",
+      "renown": "–",
+      "required": "–",
+      "choice": "백마술 S / 흑마술 S",
+      "url": "https://img.game8.jp/13018520/b394abc027c16b095c10a76d66657159.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816938",
+      "file": "assets/classes/the-avatar.webp",
+      "weapons": [
+        "검술",
+        "도끼술",
+        "격투술",
+        "흑마술",
+        "백마술"
+      ],
+      "traits": [
+        "보병술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625311",
+      "sourceType": "Infantry"
+    },
+    "디 압사라스": {
+      "slug": "the-apsara",
+      "ja": "ジ・アプサラス",
+      "tier": "신장직",
+      "level": "–",
+      "renown": "–",
+      "required": "궁술 C, 검술 A",
+      "choice": "–",
+      "url": "https://img.game8.jp/13018518/f25e2b9aa127242bb3adb488c0deddc4.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816944",
+      "file": "assets/classes/the-apsara.webp",
+      "weapons": [
+        "검술",
+        "궁술"
+      ],
+      "traits": [
+        "보병술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625301",
+      "sourceType": "Infantry"
+    },
+    "디 이터널": {
+      "slug": "the-eternal",
+      "ja": "ジ・エターナル",
+      "tier": "신장직",
+      "level": "–",
+      "renown": "–",
+      "required": "–",
+      "choice": "격투술 S / 도끼술 S / 검술 S",
+      "url": "https://img.game8.jp/13018524/7be0681e711fdbbe7a30d5f7799f7bb2.webp/show",
+      "source": "https://game8.jp/fe-banshisenko/816943",
+      "file": "assets/classes/the-eternal.webp",
+      "weapons": [
+        "검술",
+        "도끼술",
+        "격투술"
+      ],
+      "traits": [
+        "보병술"
+      ],
+      "capabilitiesSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625305",
+      "sourceType": "Infantry"
+    }
+  },
+  "skills": {
+    "검술": {
+      "slug": "sword",
+      "ja": "剣術",
+      "url": "https://img.game8.jp/13007558/bf55166f377706442f37e7f6eb9884de.webp/show",
+      "file": "assets/skills/sword.webp"
+    },
+    "도끼술": {
+      "slug": "axe",
+      "ja": "斧術",
+      "url": "https://img.game8.jp/13007559/0c13519e0ccd3e7d2ffc02a9765d3e30.webp/show",
+      "file": "assets/skills/axe.webp"
+    },
+    "격투술": {
+      "slug": "brawl",
+      "ja": "格闘術",
+      "url": "https://img.game8.jp/13007564/9ad582168654a05a01d6057ec16b7f44.webp/show",
+      "file": "assets/skills/brawl.webp"
+    },
+    "궁술": {
+      "slug": "bow",
+      "ja": "弓術",
+      "url": "https://img.game8.jp/13007573/61bf6411c768e5f4cd880a8ae86f4c03.webp/show",
+      "file": "assets/skills/bow.webp"
+    },
+    "창술": {
+      "slug": "lance",
+      "ja": "槍術",
+      "url": "https://img.game8.jp/13007571/330e102868c6f2fd15a546b53fc83f61.webp/show",
+      "file": "assets/skills/lance.webp"
+    },
+    "기마술": {
+      "slug": "riding",
+      "ja": "馬術",
+      "url": "https://img.game8.jp/13007576/e53dde7df56033473d51ce206de8573d.webp/show",
+      "file": "assets/skills/riding.webp"
+    },
+    "흑마술": {
+      "slug": "black-magic",
+      "ja": "黒魔術",
+      "url": "https://img.game8.jp/13007556/b9ebbf92f619ab66992d27ee53752a83.webp/show",
+      "file": "assets/skills/black-magic.webp"
+    },
+    "백마술": {
+      "slug": "white-magic",
+      "ja": "白魔術",
+      "url": "https://img.game8.jp/13007575/9cfcd74aa7a79f2d2e0dbdfa3e5b5258.webp/show",
+      "file": "assets/skills/white-magic.webp"
+    },
+    "중갑술": {
+      "slug": "armor",
+      "ja": "重装術",
+      "url": "https://img.game8.jp/13007565/34d7fdb8ab2274401fca9b636b45024e.webp/show",
+      "file": "assets/skills/armor.webp"
+    },
+    "비행술": {
+      "slug": "flying",
+      "ja": "飛行術",
+      "url": "https://img.game8.jp/13007570/d891aa626349b8420803f977112d9806.webp/show",
+      "file": "assets/skills/flying.webp"
+    },
+    "보병술": {
+      "slug": "infantry",
+      "ja": "歩兵術",
+      "url": "https://img.game8.jp/13007561/fe2292e7767093bcbfff785aaf19c91a.webp/show",
+      "file": "assets/skills/infantry.webp"
+    },
+    "지휘술": {
+      "slug": "authority",
+      "ja": "指揮術",
+      "url": "https://img.game8.jp/13007560/da4adc34b66a81196af5ef709ca57a76.webp/show",
+      "file": "assets/skills/authority.webp"
+    }
+  },
+  "capabilityIconOrder": [
+    "검술",
+    "창술",
+    "도끼술",
+    "궁술",
+    "격투술",
+    "흑마술",
+    "백마술",
+    "지휘술",
+    "보병술",
+    "중갑술",
+    "기마술",
+    "비행술"
+  ],
+  "capabilitiesReviewed": "2026-11-04"
+}

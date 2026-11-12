@@ -1,0 +1,432 @@
+{
+  "alexandra": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/5/52/Medium_portrait_alexandra_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_alexandra_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/alexandra.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/e/e2/Portrait_alexandra_02_fe18.png"
+  },
+  "anatolia": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/c/cb/Medium_portrait_anatolia_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_anatolia_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/anatolia.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/a/a7/Portrait_anatolia_02_fe18.png"
+  },
+  "bertrand": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/7/7a/Medium_portrait_bertrand_04_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_bertrand_04_fe18.png",
+    "path": "assets/portraits/post-timeskip/bertrand.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/a/ad/Portrait_bertrand_04_fe18.png"
+  },
+  "bonaventure": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/6/6d/Medium_portrait_bonaventure_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_bonaventure_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/bonaventure.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/5/59/Portrait_bonaventure_02_fe18.png"
+  },
+  "buccar": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/0/0d/Medium_portrait_buccar_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_buccar_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/buccar.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/d/d1/Portrait_buccar_02_fe18.png"
+  },
+  "cai": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/1/1b/Medium_portrait_cai_03_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_cai_03_fe18.png",
+    "path": "assets/portraits/post-timeskip/cai.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/0/0b/Portrait_cai_03_fe18.png"
+  },
+  "catania": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/0/04/Medium_portrait_catania_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_catania_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/catania.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/3/34/Portrait_catania_02_fe18.png"
+  },
+  "dadao": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/9/9a/Medium_portrait_dadao_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_dadao_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/dadao.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/5/5d/Portrait_dadao_02_fe18.png"
+  },
+  "dante": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/7/7f/Medium_portrait_dante_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_dante_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/dante.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/1/12/Portrait_dante_02_fe18.png"
+  },
+  "diego": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/2/24/Medium_portrait_diego_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_diego_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/diego.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/a/a7/Portrait_diego_02_fe18.png"
+  },
+  "dietrich": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/1/13/Medium_portrait_dietrich_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_dietrich_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/dietrich.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/f/f9/Portrait_dietrich_02_fe18.png"
+  },
+  "esmeralda": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/f/f3/Medium_portrait_esmeralda_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_esmeralda_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/esmeralda.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/9/9b/Portrait_esmeralda_02_fe18.png"
+  },
+  "gaitz": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/f/f9/Medium_portrait_gaitz_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_gaitz_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/gaitz.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/7/73/Portrait_gaitz_02_fe18.png"
+  },
+  "leda": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/9/9e/Medium_portrait_leda_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_leda_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/leda.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/6/61/Portrait_leda_02_fe18.png"
+  },
+  "lilian": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/5/5d/Medium_portrait_lilian_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_lilian_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/lilian.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/e/e4/Portrait_lilian_02_fe18.png"
+  },
+  "loretta": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/a/a5/Medium_portrait_loretta_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_loretta_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/loretta.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/a/a1/Portrait_loretta_02_fe18.png"
+  },
+  "lysander": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/e/e1/Medium_portrait_lysander_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_lysander_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/lysander.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/a/ae/Portrait_lysander_02_fe18.png"
+  },
+  "mikaela": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/2/2c/Medium_portrait_mikaela_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_mikaela_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/mikaela.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/c/c2/Portrait_mikaela_02_fe18.png"
+  },
+  "mu": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/8/8e/Medium_portrait_mu_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_mu_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/mu.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/2/2c/Portrait_mu_02_fe18.png"
+  },
+  "noctula": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/8/8d/Medium_portrait_noctula_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_noctula_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/noctula.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/2/23/Portrait_noctula_02_fe18.png"
+  },
+  "nydine": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/a/a7/Medium_portrait_nydine_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_nydine_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/nydine.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/d/d3/Portrait_nydine_02_fe18.png"
+  },
+  "olympia": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/6/6d/Medium_portrait_olympia_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_olympia_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/olympia.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/5/51/Portrait_olympia_02_fe18.png"
+  },
+  "orchel": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/2/28/Medium_portrait_orchel_03_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_orchel_03_fe18.png",
+    "path": "assets/portraits/post-timeskip/orchel.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/e/e8/Portrait_orchel_03_fe18.png"
+  },
+  "peter": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/7/74/Medium_portrait_peter_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_peter_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/peter.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/8/88/Portrait_peter_02_fe18.png"
+  },
+  "seteth": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/1/13/Medium_portrait_seteth_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_seteth_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/seteth.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/8/8a/Portrait_seteth_02_fe18.png"
+  },
+  "sha-lan": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/d/d8/Medium_portrait_sha_lan_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_sha_lan_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/sha-lan.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/9/98/Portrait_sha_lan_02_fe18.png"
+  },
+  "sirocco": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/9/93/Medium_portrait_sirocco_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_sirocco_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/sirocco.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/f/fc/Portrait_sirocco_02_fe18.png"
+  },
+  "sofia": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/d/dd/Medium_portrait_sofia_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_sofia_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/sofia.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/4/4d/Portrait_sofia_02_fe18.png"
+  },
+  "talimun": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/8/8f/Medium_portrait_talimun_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_talimun_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/talimun.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/6/62/Portrait_talimun_02_fe18.png"
+  },
+  "theodora": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/f/fe/Medium_portrait_theodora_04_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_theodora_04_fe18.png",
+    "path": "assets/portraits/post-timeskip/theodora.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/e/e9/Portrait_theodora_04_fe18.png"
+  },
+  "tialla": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/9/96/Medium_portrait_tialla_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_tialla_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/tialla.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/4/42/Portrait_tialla_02_fe18.png"
+  },
+  "tobias": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/9/97/Medium_portrait_tobias_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_tobias_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/tobias.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/5/5f/Portrait_tobias_02_fe18.png"
+  },
+  "ultand": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/6/6e/Medium_portrait_ultand_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_ultand_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/ultand.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/3/37/Portrait_ultand_02_fe18.png"
+  },
+  "ursula": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/9/97/Medium_portrait_ursula_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_ursula_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/ursula.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/a/ac/Portrait_ursula_02_fe18.png"
+  },
+  "nezha": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/3/39/Medium_portrait_nezha_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_nezha_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/nezha.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/0/02/Portrait_nezha_02_fe18.png"
+  },
+  "peppe": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/9/95/Medium_portrait_peppe_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_peppe_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/peppe.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/6/6e/Portrait_peppe_02_fe18.png"
+  },
+  "ludia": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/7/77/Medium_portrait_ludia_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_ludia_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/ludia.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/5/54/Portrait_ludia_02_fe18.png"
+  },
+  "simon": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/d/da/Medium_portrait_simon_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_simon_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/simon.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/8/85/Portrait_simon_02_fe18.png"
+  },
+  "halvin": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/1/16/Medium_portrait_halvin_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_halvin_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/halvin.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/f/f2/Portrait_halvin_02_fe18.png"
+  },
+  "goliath": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/6/62/Medium_portrait_goliath_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_goliath_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/goliath.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/1/19/Portrait_goliath_02_fe18.png"
+  },
+  "fianna": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/4/48/Medium_portrait_fianna_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_fianna_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/fianna.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/5/56/Portrait_fianna_02_fe18.png"
+  },
+  "io": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/0/03/Medium_portrait_io_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_io_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/io.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/0/0e/Portrait_io_02_fe18.png"
+  },
+  "inyoni": {
+    "status": "downloaded",
+    "source": "https://cdn.fireemblemwiki.org/8/81/Medium_portrait_inyoni_02_fe18.png",
+    "page": "https://fireemblemwiki.org/wiki/File:Medium_portrait_inyoni_02_fe18.png",
+    "path": "assets/portraits/post-timeskip/inyoni.png",
+    "width": 350,
+    "height": 350,
+    "description": "",
+    "correspondingLarge": "https://cdn.fireemblemwiki.org/5/55/Portrait_inyoni_02_fe18.png"
+  }
+}

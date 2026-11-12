@@ -1,0 +1,56 @@
+{
+  "reviewed": "2026-11-04",
+  "method": "공개 원본 그대로 다운로드 후 각각 직접 시각 확인. 편집·재생성 없음.",
+  "images": {
+    "kroios-map.png": {
+      "url": "https://img.gamewith.jp/img/2b0d3e36a5ae35e5c76cc663ec5f58ec.png",
+      "source": "https://gamewith.jp/fefw/577850",
+      "shows": "콜로이오스 요새 지도"
+    },
+    "gift-box-floor.png": {
+      "url": "https://img.gamewith.jp/img/aa1173bcb0fefc162aaebd5f6f883da3.png",
+      "source": "https://gamewith.jp/fefw/577850",
+      "shows": "선물 상자 바닥의 빛나는 지점"
+    },
+    "aegina-map.png": {
+      "url": "https://img.gamewith.jp/img/8c1be27ff7f745e7808875dc487e0924.png",
+      "source": "https://gamewith.jp/fefw/578987",
+      "shows": "우르카역에서 아이기나 산으로 가는 경로"
+    },
+    "daybreak-map.png": {
+      "url": "https://img.gamewith.jp/img/d60c17ba367bb6ba39997442fd1f248e.png",
+      "source": "https://gamewith.jp/fefw/577867",
+      "shows": "새벽 평원 지도"
+    },
+    "valhalla-map.png": {
+      "url": "https://img.gamewith.jp/img/c9340d4383e7165b25f2d7800ba7cb2d.png",
+      "source": "https://gamewith.jp/fefw/577865",
+      "shows": "발할라 광산 지도"
+    },
+    "klytius-map.jpg": {
+      "url": "https://img.gamewith.jp/img/ceb65cb9bad7d97098ab5c529f22d479.jpeg",
+      "source": "https://gamewith.jp/fefw/577309",
+      "shows": "크리테이오스 평원 경로"
+    },
+    "azure-crystal-map.jpg": {
+      "url": "https://img.gamewith.jp/img/b65976036fdcb5d053aaf2bab888df63.jpg",
+      "source": "https://gamewith.jp/fefw/577309",
+      "shows": "벽정 동굴 경로"
+    },
+    "baina-map.jpg": {
+      "url": "https://img.gamewith.jp/img/cd2f71d803f0006233173adcd1424c1c.jpeg",
+      "source": "https://gamewith.jp/fefw/577309",
+      "shows": "바이나 오아시스 경로"
+    },
+    "secret-altar-map.png": {
+      "url": "https://img.gamewith.jp/img/cac0c4bcf90eafa6f0981c6a36598d45.png",
+      "source": "https://gamewith.jp/fefw/577823",
+      "shows": "비오의 제단 지도"
+    },
+    "temple-service.png": {
+      "url": "https://img.game8.co/4612376/257ef5c29fc5f04b9cd07d80cb28770e.png/show",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623536",
+      "shows": "봉사 장면 예시"
+    }
+  }
+}
