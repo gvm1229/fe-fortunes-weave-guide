@@ -1,0 +1,717 @@
+{
+  "reviewed": "2026-11-04",
+  "lastReported": {
+    "아우로라": 3,
+    "주라": 2,
+    "마스": 0,
+    "스미르노스": 0,
+    "칼라": 0,
+    "크레르": 0
+  },
+  "priority": [
+    {
+      "god": "크레르",
+      "level": 1,
+      "effect": "시야+5"
+    },
+    {
+      "god": "칼라",
+      "level": 3,
+      "effect": "회피+50·속도+5·이동+2"
+    },
+    {
+      "god": "크레르",
+      "level": 3,
+      "effect": "내구 소모0·적 턴 선공"
+    },
+    {
+      "god": "주라",
+      "level": 3,
+      "effect": "특효·추격·필살 방지"
+    },
+    {
+      "god": "마스",
+      "level": 3,
+      "effect": "물리 명중+50·격파 회복·힘+5"
+    },
+    {
+      "god": "스미르노스",
+      "level": 3,
+      "effect": "마법 명중+50·사거리+1·마력+5"
+    }
+  ],
+  "routes": {
+    "theodora": {
+      "label": "세오도라",
+      "start": "실제 마지막 보고: 아우로라3·주라2, 나머지0",
+      "queue": "크레르1 → 칼라3 → 크레르3",
+      "end": "칼라3·크레르2를 우선 목표. 크레르3은 남은 주에 계속.",
+      "carry": "이번1·2부의 실제 가호 레벨·게이지·새 보상·구매 여부를 확인한 뒤 다음 루트 준비 · 이미 달성/구매한 단계 반복 없음",
+      "boons": [
+        [
+          "칼라20%",
+          300
+        ],
+        [
+          "크레르20%",
+          300
+        ]
+      ]
+    },
+    "leda": {
+      "label": "레다",
+      "start": "앞 루트1·2부를 연속 완료한 실제 가호/게이지 확인 · 이전 예상 목표를 달성값으로 쓰지 않음",
+      "queue": "크레르3 → 주라3 → 마스3",
+      "end": "크레르3·주라3을 먼저 완성하고 남는 주는 마스3을 향해 계속.",
+      "carry": "이번1·2부의 실제 가호 레벨·게이지·새 보상·구매 여부를 확인한 뒤 다음 루트 준비 · 이미 달성/구매한 단계 반복 없음",
+      "boons": [
+        [
+          "칼라50%",
+          300
+        ],
+        [
+          "크레르50%",
+          300
+        ]
+      ]
+    },
+    "dietrich": {
+      "label": "디트리히",
+      "start": "앞 루트1·2부를 연속 완료한 실제 가호/게이지 확인 · 이전 예상 목표를 달성값으로 쓰지 않음",
+      "queue": "남은 마스3 → 스미르노스3",
+      "end": "마스3·스미르노스2 이상을 목표. 여유가 있으면 스미르노스3까지.",
+      "carry": "이번1·2부의 실제 가호 레벨·게이지·새 보상·구매 여부를 확인한 뒤 다음 루트 준비 · 이미 달성/구매한 단계 반복 없음",
+      "boons": [
+        [
+          "주라20%",
+          300
+        ],
+        [
+          "마스20%",
+          300
+        ]
+      ]
+    },
+    "kai": {
+      "label": "카이",
+      "start": "앞 루트1·2부를 연속 완료한 실제 가호/게이지 확인 · 이전 예상 목표를 달성값으로 쓰지 않음",
+      "queue": "미달 목표부터 → 스미르노스3",
+      "end": "6신 모두3을3부 준비 목표로 둔다. 모두3이면 추가 봉사를 하지 않는다.",
+      "carry": "이번1·2부의 실제 가호 레벨·게이지·새 보상·구매 여부를 확인한 뒤 다음 루트 준비 · 이미 달성/구매한 단계 반복 없음",
+      "boons": [
+        [
+          "스미르노스20%",
+          300
+        ],
+        [
+          "스미르노스50%",
+          300
+        ]
+      ]
+    }
+  },
+  "weeklyRules": [
+    "전 신전 합쳐 주1회. 일요일0시 초기화. 일요일은 모든 신 길일.",
+    "도감/정보의 신 가호에서 현재 레벨·남은 게이지를 보고 가장 앞의 미달 목표에 봉사.",
+    "같은 주에 다른 신에게 한 번씩 할 수 있는 것이 아님. 신전 간 주간 횟수 공유.",
+    "별표/득의 표시의 인물2명, 각 의욕1을 준비. 훈련·봉사 뒤 식사로 회복.",
+    "목표 달성 즉시 다음 신으로. 명성·참여자 적성·결과가 달라 정확한 몇 주 달성을 보장하지 않음.",
+    "장 다시 하기는 그 장 봉사 진도를 되돌릴 수 있으므로 지원 루프로 봉사를 중복해 쌓는다고 보지 않음.",
+    "다음 루트는 현재 루트1부를 끝낸 뒤1장부터. 동시 진행의 가호 실시간 공유가 아님.",
+    "루트1·2부 연속 진행 · 2부 봉사는 실제 필요한 가호가 미달일 때 · 다음1부에 예측 수치를 자동 복사하지 않음"
+  ],
+  "capacityAssumption": "사용자가 제시한 한 루트0→3 한 신+0→2 한 신을 목표 규모로 사용. 수치별 필요 기여도·주당 획득량은 확정하지 않아 레다 말 마스의 레벨을 임의 확정하지 않음.",
+  "sources": [
+    "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623536",
+    "https://gamewith.jp/fefw/574812",
+    "https://annasnotebook.net/en/blessings/service/",
+    "https://annasnotebook.net/ja/blessings/",
+    "https://hyperwiki.jp/fefw/achivement/",
+    "https://marigoldfe.com/fortunes-weave/calendar"
+  ],
+  "weeklyActions": [
+    {
+      "route": "theodora",
+      "chapter": 4,
+      "date": "3/4",
+      "id": "service-theodora-0304"
+    },
+    {
+      "route": "theodora",
+      "chapter": 5,
+      "date": "3/11",
+      "id": "service-theodora-0311"
+    },
+    {
+      "route": "theodora",
+      "chapter": 5,
+      "date": "3/18",
+      "id": "service-theodora-0318"
+    },
+    {
+      "route": "theodora",
+      "chapter": 6,
+      "date": "3/25",
+      "id": "service-theodora-0325"
+    },
+    {
+      "route": "theodora",
+      "chapter": 6,
+      "date": "4/1",
+      "id": "service-theodora-0401"
+    },
+    {
+      "route": "theodora",
+      "chapter": 6,
+      "date": "4/8",
+      "id": "service-theodora-0408"
+    },
+    {
+      "route": "theodora",
+      "chapter": 6,
+      "date": "4/15",
+      "id": "service-theodora-0415"
+    },
+    {
+      "route": "theodora",
+      "chapter": 7,
+      "date": "4/22",
+      "id": "service-theodora-0422"
+    },
+    {
+      "route": "theodora",
+      "chapter": 7,
+      "date": "4/29",
+      "id": "service-theodora-0429"
+    },
+    {
+      "route": "theodora",
+      "chapter": 7,
+      "date": "5/6",
+      "id": "service-theodora-0506"
+    },
+    {
+      "route": "theodora",
+      "chapter": 7,
+      "date": "5/13",
+      "id": "service-theodora-0513"
+    },
+    {
+      "route": "theodora",
+      "chapter": 7,
+      "date": "5/20",
+      "id": "service-theodora-0520"
+    },
+    {
+      "route": "theodora",
+      "chapter": 7,
+      "date": "5/27",
+      "id": "service-theodora-0527"
+    },
+    {
+      "route": "theodora",
+      "chapter": 8,
+      "date": "6/3",
+      "id": "service-theodora-0603"
+    },
+    {
+      "route": "theodora",
+      "chapter": 8,
+      "date": "6/10",
+      "id": "service-theodora-0610"
+    },
+    {
+      "route": "theodora",
+      "chapter": 8,
+      "date": "6/17",
+      "id": "service-theodora-0617"
+    },
+    {
+      "route": "theodora",
+      "chapter": 8,
+      "date": "6/24",
+      "id": "service-theodora-0624"
+    },
+    {
+      "route": "theodora",
+      "chapter": 9,
+      "date": "7/1",
+      "id": "service-theodora-0701"
+    },
+    {
+      "route": "theodora",
+      "chapter": 9,
+      "date": "7/8",
+      "id": "service-theodora-0708"
+    },
+    {
+      "route": "theodora",
+      "chapter": 9,
+      "date": "7/15",
+      "id": "service-theodora-0715"
+    },
+    {
+      "route": "theodora",
+      "chapter": 9,
+      "date": "7/22",
+      "id": "service-theodora-0722"
+    },
+    {
+      "route": "theodora",
+      "chapter": 9,
+      "date": "7/29",
+      "id": "service-theodora-0729"
+    },
+    {
+      "route": "theodora",
+      "chapter": 9,
+      "date": "8/5",
+      "id": "service-theodora-0805"
+    },
+    {
+      "route": "theodora",
+      "chapter": 9,
+      "date": "8/12",
+      "id": "service-theodora-0812"
+    },
+    {
+      "route": "theodora",
+      "chapter": 9,
+      "date": "8/19",
+      "id": "service-theodora-0819"
+    },
+    {
+      "route": "theodora",
+      "chapter": 10,
+      "date": "8/26",
+      "id": "service-theodora-0826"
+    },
+    {
+      "route": "theodora",
+      "chapter": 10,
+      "date": "9/2",
+      "id": "service-theodora-0902"
+    },
+    {
+      "route": "theodora",
+      "chapter": 10,
+      "date": "9/9",
+      "id": "service-theodora-0909"
+    },
+    {
+      "route": "theodora",
+      "chapter": 10,
+      "date": "9/16",
+      "id": "service-theodora-0916"
+    },
+    {
+      "route": "theodora",
+      "chapter": 11,
+      "date": "9/23",
+      "id": "service-theodora-0923"
+    },
+    {
+      "route": "theodora",
+      "chapter": 11,
+      "date": "9/30",
+      "id": "service-theodora-0930"
+    },
+    {
+      "route": "theodora",
+      "chapter": 11,
+      "date": "10/7",
+      "id": "service-theodora-1007"
+    },
+    {
+      "route": "theodora",
+      "chapter": 11,
+      "date": "10/14",
+      "id": "service-theodora-1014"
+    },
+    {
+      "route": "theodora",
+      "chapter": 12,
+      "date": "10/21",
+      "id": "service-theodora-1021"
+    },
+    {
+      "route": "leda",
+      "chapter": 4,
+      "date": "3/25",
+      "id": "service-leda-0325"
+    },
+    {
+      "route": "leda",
+      "chapter": 4,
+      "date": "4/1",
+      "id": "service-leda-0401"
+    },
+    {
+      "route": "leda",
+      "chapter": 5,
+      "date": "4/8",
+      "id": "service-leda-0408"
+    },
+    {
+      "route": "leda",
+      "chapter": 5,
+      "date": "4/15",
+      "id": "service-leda-0415"
+    },
+    {
+      "route": "leda",
+      "chapter": 5,
+      "date": "4/22",
+      "id": "service-leda-0422"
+    },
+    {
+      "route": "leda",
+      "chapter": 5,
+      "date": "4/29",
+      "id": "service-leda-0429"
+    },
+    {
+      "route": "leda",
+      "chapter": 5,
+      "date": "5/6",
+      "id": "service-leda-0506"
+    },
+    {
+      "route": "leda",
+      "chapter": 6,
+      "date": "5/13",
+      "id": "service-leda-0513"
+    },
+    {
+      "route": "leda",
+      "chapter": 6,
+      "date": "5/20",
+      "id": "service-leda-0520"
+    },
+    {
+      "route": "leda",
+      "chapter": 6,
+      "date": "5/27",
+      "id": "service-leda-0527"
+    },
+    {
+      "route": "leda",
+      "chapter": 7,
+      "date": "6/3",
+      "id": "service-leda-0603"
+    },
+    {
+      "route": "leda",
+      "chapter": 7,
+      "date": "6/10",
+      "id": "service-leda-0610"
+    },
+    {
+      "route": "leda",
+      "chapter": 7,
+      "date": "6/17",
+      "id": "service-leda-0617"
+    },
+    {
+      "route": "leda",
+      "chapter": 7,
+      "date": "6/24",
+      "id": "service-leda-0624"
+    },
+    {
+      "route": "leda",
+      "chapter": 8,
+      "date": "7/1",
+      "id": "service-leda-0701"
+    },
+    {
+      "route": "leda",
+      "chapter": 8,
+      "date": "7/8",
+      "id": "service-leda-0708"
+    },
+    {
+      "route": "leda",
+      "chapter": 9,
+      "date": "7/15",
+      "id": "service-leda-0715"
+    },
+    {
+      "route": "leda",
+      "chapter": 9,
+      "date": "7/22",
+      "id": "service-leda-0722"
+    },
+    {
+      "route": "leda",
+      "chapter": 9,
+      "date": "7/29",
+      "id": "service-leda-0729"
+    },
+    {
+      "route": "leda",
+      "chapter": 9,
+      "date": "8/5",
+      "id": "service-leda-0805"
+    },
+    {
+      "route": "leda",
+      "chapter": 9,
+      "date": "8/12",
+      "id": "service-leda-0812"
+    },
+    {
+      "route": "leda",
+      "chapter": 9,
+      "date": "8/19",
+      "id": "service-leda-0819"
+    },
+    {
+      "route": "leda",
+      "chapter": 9,
+      "date": "8/26",
+      "id": "service-leda-0826"
+    },
+    {
+      "route": "leda",
+      "chapter": 10,
+      "date": "9/30",
+      "id": "service-leda-0930"
+    },
+    {
+      "route": "leda",
+      "chapter": 10,
+      "date": "10/7",
+      "id": "service-leda-1007"
+    },
+    {
+      "route": "leda",
+      "chapter": 10,
+      "date": "10/14",
+      "id": "service-leda-1014"
+    },
+    {
+      "route": "leda",
+      "chapter": 11,
+      "date": "10/21",
+      "id": "service-leda-1021"
+    },
+    {
+      "route": "leda",
+      "chapter": 11,
+      "date": "10/28",
+      "id": "service-leda-1028"
+    },
+    {
+      "route": "leda",
+      "chapter": 11,
+      "date": "11/4",
+      "id": "service-leda-1104"
+    },
+    {
+      "route": "leda",
+      "chapter": 12,
+      "date": "11/11",
+      "id": "service-leda-1111"
+    },
+    {
+      "route": "leda",
+      "chapter": 12,
+      "date": "11/18",
+      "id": "service-leda-1118"
+    },
+    {
+      "route": "leda",
+      "chapter": 12,
+      "date": "11/25",
+      "id": "service-leda-1125"
+    },
+    {
+      "route": "dietrich",
+      "chapter": 4,
+      "date": "4/1",
+      "id": "service-dietrich-0401"
+    },
+    {
+      "route": "dietrich",
+      "chapter": 4,
+      "date": "4/8",
+      "id": "service-dietrich-0408"
+    },
+    {
+      "route": "dietrich",
+      "chapter": 5,
+      "date": "4/15",
+      "id": "service-dietrich-0415"
+    },
+    {
+      "route": "dietrich",
+      "chapter": 5,
+      "date": "4/22",
+      "id": "service-dietrich-0422"
+    },
+    {
+      "route": "dietrich",
+      "chapter": 5,
+      "date": "4/29",
+      "id": "service-dietrich-0429"
+    },
+    {
+      "route": "dietrich",
+      "chapter": 6,
+      "date": "5/6",
+      "id": "service-dietrich-0506"
+    },
+    {
+      "route": "dietrich",
+      "chapter": 6,
+      "date": "5/13",
+      "id": "service-dietrich-0513"
+    },
+    {
+      "route": "dietrich",
+      "chapter": 6,
+      "date": "5/20",
+      "id": "service-dietrich-0520"
+    },
+    {
+      "route": "dietrich",
+      "chapter": 6,
+      "date": "5/27",
+      "id": "service-dietrich-0527"
+    },
+    {
+      "route": "dietrich",
+      "chapter": 7,
+      "date": "6/3",
+      "id": "service-dietrich-0603"
+    },
+    {
+      "route": "dietrich",
+      "chapter": 7,
+      "date": "6/10",
+      "id": "service-dietrich-0610"
+    },
+    {
+      "route": "dietrich",
+      "chapter": 8,
+      "date": "6/17",
+      "id": "service-dietrich-0617"
+    },
+    {
+      "route": "dietrich",
+      "chapter": 8,
+      "date": "6/24",
+      "id": "service-dietrich-0624"
+    },
+    {
+      "route": "dietrich",
+      "chapter": 8,
+      "date": "7/1",
+      "id": "service-dietrich-0701"
+    },
+    {
+      "route": "dietrich",
+      "chapter": 8,
+      "date": "7/8",
+      "id": "service-dietrich-0708"
+    },
+    {
+      "route": "dietrich",
+      "chapter": 8,
+      "date": "7/15",
+      "id": "service-dietrich-0715"
+    },
+    {
+      "route": "dietrich",
+      "chapter": 9,
+      "date": "8/12",
+      "id": "service-dietrich-0812"
+    },
+    {
+      "route": "dietrich",
+      "chapter": 9,
+      "date": "8/19",
+      "id": "service-dietrich-0819"
+    },
+    {
+      "route": "dietrich",
+      "chapter": 9,
+      "date": "8/26",
+      "id": "service-dietrich-0826"
+    },
+    {
+      "route": "dietrich",
+      "chapter": 9,
+      "date": "9/2",
+      "id": "service-dietrich-0902"
+    },
+    {
+      "route": "dietrich",
+      "chapter": 9,
+      "date": "9/9",
+      "id": "service-dietrich-0909"
+    },
+    {
+      "route": "dietrich",
+      "chapter": 9,
+      "date": "9/16",
+      "id": "service-dietrich-0916"
+    },
+    {
+      "route": "dietrich",
+      "chapter": 10,
+      "date": "9/30",
+      "id": "service-dietrich-0930"
+    },
+    {
+      "route": "dietrich",
+      "chapter": 11,
+      "date": "10/7",
+      "id": "service-dietrich-1007"
+    },
+    {
+      "route": "dietrich",
+      "chapter": 11,
+      "date": "10/14",
+      "id": "service-dietrich-1014"
+    },
+    {
+      "route": "dietrich",
+      "chapter": 11,
+      "date": "10/21",
+      "id": "service-dietrich-1021"
+    },
+    {
+      "route": "dietrich",
+      "chapter": 11,
+      "date": "10/28",
+      "id": "service-dietrich-1028"
+    },
+    {
+      "route": "dietrich",
+      "chapter": 12,
+      "date": "11/4",
+      "id": "service-dietrich-1104"
+    },
+    {
+      "route": "dietrich",
+      "chapter": 12,
+      "date": "11/11",
+      "id": "service-dietrich-1111"
+    },
+    {
+      "route": "dietrich",
+      "chapter": 12,
+      "date": "11/18",
+      "id": "service-dietrich-1118"
+    },
+    {
+      "route": "dietrich",
+      "chapter": 12,
+      "date": "11/25",
+      "id": "service-dietrich-1125"
+    }
+  ],
+  "calendarLimits": "카이 날짜와 장 경계의 부분 주는 확정 달력으로 만들지 않음. 카이는 실제 일요일 리셋 주차 칸으로 확인. 레다9/2~9/27처럼 이야기로 건너뛰는 기간은 봉사 날짜를 추가하지 않음. 2026-11-05 선택 일정 배치에서는 카이 주차를 영문 팬 달력의 참고 날짜와 연결했다. 실제 게임 달력이 우선이며 추가 주차가 없으면 봉사를 만들지 않는다."
+}

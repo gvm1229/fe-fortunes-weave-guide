@@ -1,0 +1,2224 @@
+{
+  "reviewed": "2026-11-04",
+  "scope": "로컬 시험 조건·명칭, Game8에서 읽은 병과/마스터 효과. 수치 충돌은 로컬 우선·차이 표시.",
+  "classes": {
+    "병사": {
+      "slug": "soldier",
+      "tier": "초급직",
+      "recommendedLevel": "5",
+      "renown": "1",
+      "required": "–",
+      "choice": "창술 D / 도끼술 D",
+      "license": "초급 시험 증표",
+      "unlock": "–",
+      "conditionNotes": [],
+      "skills": [],
+      "master": [
+        {
+          "name": "방위의 기본",
+          "effect": "수비 +1.",
+          "originalName": "Defense Basics",
+          "originalEffect": "Grants Def +1.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624052",
+      "localSource": "classes.html#class-soldier",
+      "skillNotes": []
+    },
+    "비약 타조병": {
+      "slug": "ornius-rider",
+      "tier": "초급직",
+      "recommendedLevel": "5",
+      "renown": "1",
+      "required": "기마술 E+",
+      "choice": "창술 D / 도끼술 D",
+      "license": "초급 시험 증표",
+      "unlock": "–",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "타기 내리기",
+          "effect": "타기·내리기 명령을 사용할 수 있습니다.",
+          "originalName": "Mount/Dismount",
+          "originalEffect": "Allows use of Mount and Dismount commands."
+        }
+      ],
+      "master": [
+        {
+          "name": "공세의 기본",
+          "effect": "힘·마력 +1.",
+          "originalName": "Offense Basics",
+          "originalEffect": "Grants Str/Mag +1.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624051",
+      "localSource": "classes.html#class-ornius-rider",
+      "skillNotes": []
+    },
+    "사냥병": {
+      "slug": "hunter",
+      "tier": "초급직",
+      "recommendedLevel": "5",
+      "renown": "1",
+      "required": "–",
+      "choice": "검술 D / 궁술 D",
+      "license": "초급 시험 증표",
+      "unlock": "–",
+      "conditionNotes": [],
+      "skills": [],
+      "master": [
+        {
+          "name": "수렵의 기본",
+          "effect": "기술·속도 +1.",
+          "originalName": "Hunting Basics",
+          "originalEffect": "Grants Dex/Spd +1",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624053",
+      "localSource": "classes.html#class-hunter",
+      "skillNotes": []
+    },
+    "주술사": {
+      "slug": "diviner",
+      "tier": "초급직",
+      "recommendedLevel": "5",
+      "renown": "1",
+      "required": "–",
+      "choice": "흑마술 D / 백마술 D",
+      "license": "초급 시험 증표",
+      "unlock": "–",
+      "conditionNotes": [],
+      "skills": [],
+      "master": [
+        {
+          "name": "마도의 기본",
+          "effect": "마력·마방 +1.",
+          "originalName": "Magic Basics",
+          "originalEffect": "Grants Mag/Res+1",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624050",
+      "localSource": "classes.html#class-diviner",
+      "skillNotes": []
+    },
+    "투사": {
+      "slug": "gladiator",
+      "tier": "초급직",
+      "recommendedLevel": "5",
+      "renown": "1",
+      "required": "–",
+      "choice": "검술 D / 도끼술 D / 격투술 D",
+      "license": "초급 시험 증표",
+      "unlock": "–",
+      "conditionNotes": [],
+      "skills": [],
+      "master": [
+        {
+          "name": "공격의 기본",
+          "effect": "힘 +1.",
+          "originalName": "Attack Basics",
+          "originalEffect": "Grants Str +1.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624054",
+      "localSource": "classes.html#class-gladiator",
+      "skillNotes": []
+    },
+    "검사": {
+      "slug": "myrmidon",
+      "tier": "중급직",
+      "recommendedLevel": "20",
+      "renown": "4",
+      "required": "검술 C",
+      "choice": "–",
+      "license": "중급 시험 증표",
+      "unlock": "–",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "전투 기술 장비 +1",
+          "effect": "장비 가능한 전투 기술 수 +1.",
+          "originalName": "Combat Arts +1",
+          "originalEffect": "Unit can equip +1 combat arts."
+        },
+        {
+          "name": "검 필살 +3",
+          "effect": "검 장비 시 필살 +3.",
+          "originalName": "Sword Crit +3",
+          "originalEffect": "When equipped with a sword, grants Crit +3."
+        }
+      ],
+      "master": [
+        {
+          "name": "뛰어난 기술",
+          "effect": "필살이 발생하면 피해 +6.",
+          "originalName": "Ravaging Arts",
+          "originalEffect": "If unit makes a critical, deal +6 damage.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624044",
+      "localSource": "classes.html#class-myrmidon",
+      "skillNotes": []
+    },
+    "경기병": {
+      "slug": "light-cavalry",
+      "tier": "중급직",
+      "recommendedLevel": "20",
+      "renown": "4",
+      "required": "기마술 D",
+      "choice": "검술 C / 창술 C",
+      "license": "중급 시험 증표",
+      "unlock": "–",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "타기 내리기",
+          "effect": "타기·내리기 명령을 사용할 수 있습니다.",
+          "originalName": "Mount/Dismount",
+          "originalEffect": "Allows use of Mount and Dismount commands."
+        }
+      ],
+      "master": [
+        {
+          "name": "체력의 강화",
+          "effect": "최대 HP +3.",
+          "originalName": "Bolster Health",
+          "originalEffect": "Grants max HP +3.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624045",
+      "localSource": "classes.html#class-light-cavalry",
+      "skillNotes": []
+    },
+    "기갑 타조병": {
+      "slug": "armored-ornius-rider",
+      "tier": "중급직",
+      "recommendedLevel": "20",
+      "renown": "4",
+      "required": "기마술 D",
+      "choice": "창술 C / 도끼술 C",
+      "license": "중급 시험 증표",
+      "unlock": "–",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "타기 내리기",
+          "effect": "타기·내리기 명령을 사용할 수 있습니다.",
+          "originalName": "Mount/Dismount",
+          "originalEffect": "Allows use of Mount and Dismount commands."
+        }
+      ],
+      "master": [
+        {
+          "name": "위협 감지",
+          "effect": "상대가 자신에게 특효를 낼 때 해당 전투 동안 회피 +20.",
+          "originalName": "Sense Threat",
+          "originalEffect": "If foe is effective against unit, grants Avo +20 to unit during combat.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624041",
+      "localSource": "classes.html#class-armored-ornius-rider",
+      "skillNotes": []
+    },
+    "로그": {
+      "slug": "rogue",
+      "tier": "중급직",
+      "recommendedLevel": "20",
+      "renown": "4",
+      "required": "–",
+      "choice": "검술 C / 궁술 C",
+      "license": "중급 시험 증표",
+      "unlock": "–",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "전투 기술 장비 +1",
+          "effect": "장비 가능한 전투 기술 수 +1.",
+          "originalName": "Combat Arts +1",
+          "originalEffect": "Unit can equip +1 combat arts."
+        },
+        {
+          "name": "자물쇠 열기",
+          "effect": "열쇠 없이 보물상자를 열 수 있습니다.",
+          "originalName": "Locktouch",
+          "originalEffect": "Allows the opening of chests even without keys."
+        },
+        {
+          "name": "탐색술",
+          "effect": "탐색 결과가 PERFECT가 될 확률이 높아집니다.",
+          "originalName": "Search",
+          "originalEffect": "Search results are more likely to be perfect."
+        }
+      ],
+      "master": [
+        {
+          "name": "그림자 숨기",
+          "effect": "적 처치 후 다음 전투까지 회피 +10.",
+          "originalName": "In Shadow",
+          "originalEffect": "After defeating a foe, grants Avo +10 through unit's next combat.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624043",
+      "localSource": "classes.html#class-rogue",
+      "skillNotes": []
+    },
+    "브리건드": {
+      "slug": "brigand",
+      "tier": "중급직",
+      "recommendedLevel": "20",
+      "renown": "4",
+      "required": "–",
+      "choice": "검술 C / 도끼술 C",
+      "license": "중급 시험 증표",
+      "unlock": "–",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "전투 기술 장비 +1",
+          "effect": "장비 가능한 전투 기술 수 +1.",
+          "originalName": "Combat Arts +1",
+          "originalEffect": "Unit can equip +1 combat arts."
+        },
+        {
+          "name": "도끼 명중 +3",
+          "effect": "도끼 장비 시 명중 +3.",
+          "originalName": "Axe Hit +3",
+          "originalEffect": "When equipped with an axe, grants Hit +3."
+        }
+      ],
+      "master": [
+        {
+          "name": "재정비",
+          "effect": "적이 내 공격을 피하면 해당 전투 동안 내 회피 +20.",
+          "originalName": "Regroup",
+          "originalEffect": "When foe avoids an attack, grants Avo +20 to unit during combat.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624048",
+      "localSource": "classes.html#class-brigand",
+      "skillNotes": []
+    },
+    "샤먼": {
+      "slug": "shaman",
+      "tier": "중급직",
+      "recommendedLevel": "20",
+      "renown": "4",
+      "required": "흑마술 C",
+      "choice": "–",
+      "license": "중급 시험 증표",
+      "unlock": "–",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "흑마술의 탐구",
+          "effect": "흑마술 사용 횟수가 2배가 됩니다.",
+          "originalName": "Black-Magic Seeker",
+          "originalEffect": "Multiplies black magic uses by 2."
+        },
+        {
+          "name": "마법 명중 +3",
+          "effect": "마법 장비 시 명중 +3.",
+          "originalName": "Magic Hit +3",
+          "originalEffect": "When equipped with magic, grants Hit +3."
+        }
+      ],
+      "master": [
+        {
+          "name": "기술의 주박",
+          "effect": "인접한 적의 기술 -3.",
+          "originalName": "Bind Dexterity",
+          "originalEffect": "Inflicts Dex-3 on adjacent foes.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624042",
+      "localSource": "classes.html#class-shaman",
+      "skillNotes": []
+    },
+    "세스타스": {
+      "slug": "pugilist",
+      "tier": "중급직",
+      "recommendedLevel": "20",
+      "renown": "4",
+      "required": "격투술 C",
+      "choice": "–",
+      "license": "중급 시험 증표",
+      "unlock": "–",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "전투 기술 장비 +1",
+          "effect": "장비 가능한 전투 기술 수 +1.",
+          "originalName": "Combat Arts +1",
+          "originalEffect": "Unit can equip +1 combat arts."
+        },
+        {
+          "name": "격투 회피 +3",
+          "effect": "건틀릿 장비 시 회피 +3.",
+          "originalName": "Brawl Avo +3",
+          "originalEffect": "When equipped with gauntlets, grants Avo +3."
+        }
+      ],
+      "master": [
+        {
+          "name": "히트&어웨이",
+          "effect": "전투 기술을 사용하면 해당 전투 동안 회피 +10.",
+          "originalName": "Attack, Get Back",
+          "originalEffect": "When using a combat art, grants Avo +10 during combat.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624029",
+      "localSource": "classes.html#class-pugilist",
+      "skillNotes": []
+    },
+    "아처": {
+      "slug": "archer",
+      "tier": "중급직",
+      "recommendedLevel": "20",
+      "renown": "4",
+      "required": "궁술 C",
+      "choice": "–",
+      "license": "중급 시험 증표",
+      "unlock": "–",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "전투 기술 장비 +1",
+          "effect": "장비 가능한 전투 기술 수 +1.",
+          "originalName": "Combat Arts +1",
+          "originalEffect": "Unit can equip +1 combat arts."
+        },
+        {
+          "name": "활 명중 +5",
+          "effect": "활 장비 시 명중 +5.",
+          "originalName": "Bow Hit +5",
+          "originalEffect": "When equipped with a bow, grants Hit +5."
+        }
+      ],
+      "master": [
+        {
+          "name": "호조",
+          "effect": "적을 처치할 때마다 이 전투 맵이 끝날 때까지 명중 +3. 최대 +30.",
+          "originalName": "Crescendo",
+          "originalEffect": "After defeating a foe, grants Hit +3 until the end of the map. (Max +30)",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624046",
+      "localSource": "classes.html#class-archer",
+      "skillNotes": []
+    },
+    "전차병": {
+      "slug": "charioteer",
+      "tier": "중급직",
+      "recommendedLevel": "20",
+      "renown": "4",
+      "required": "기마술 D, 궁술 C",
+      "choice": "–",
+      "license": "중급 시험 증표",
+      "unlock": "–",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "전차의 장갑",
+          "effect": "방어력 +5. 공격을 회피할 수 없습니다.",
+          "originalName": "Chariot Armor",
+          "originalEffect": "Grants Shield +5. Unit cannot avoid attacks."
+        },
+        {
+          "name": "전차병의 전술",
+          "effect": "타기·내리기를 사용합니다. 기병 탑승 중에는 돌진도 사용합니다.",
+          "originalName": "Charioteer Tactics",
+          "originalEffect": "Allows use of the Mount and Dismount commands. (Cavalry) Allows use of the Charge command."
+        },
+        {
+          "name": "전차병의 길",
+          "effect": "자신의 레벨이 높아질수록 성장률도 높아집니다.",
+          "originalName": "Charioteer's Path",
+          "originalEffect": "Unit's growth rate increases with level."
+        }
+      ],
+      "master": [
+        {
+          "name": "돌격 태세",
+          "effect": "돌진을 쓰면 다음 자신의 페이즈까지 물리 방어 +10.",
+          "originalName": "Charger",
+          "originalEffect": "When using Charge, grants Prt +10 until unit's next phase.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624047",
+      "localSource": "classes.html#class-charioteer",
+      "skillNotes": []
+    },
+    "중갑 보병": {
+      "slug": "armored-knight",
+      "tier": "중급직",
+      "recommendedLevel": "20",
+      "renown": "4",
+      "required": "중장술 E+",
+      "choice": "창술 C / 도끼술 C",
+      "license": "중급 시험 증표",
+      "unlock": "–",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "후공 수비 +3",
+          "effect": "적이 먼저 공격하면 해당 전투 동안 물리 방어 +3.",
+          "originalName": "Strike-Last Def +3",
+          "originalEffect": "If foe attacks first, grants Prt +3 to unit during combat."
+        },
+        {
+          "name": "전투 기술 장비 +1",
+          "effect": "장비 가능한 전투 기술 수 +1.",
+          "originalName": "Combat Arts +1",
+          "originalEffect": "Unit can equip +1 combat arts."
+        }
+      ],
+      "master": [
+        {
+          "name": "대반격",
+          "effect": "적이 먼저 공격하면 해당 전투 동안 공격력 +3.",
+          "originalName": "Great Counter",
+          "originalEffect": "If foe attacks first, grants Atk +3 to unit during combat.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624049",
+      "localSource": "classes.html#class-armored-knight",
+      "skillNotes": []
+    },
+    "천익병": {
+      "slug": "wing-soldier",
+      "tier": "중급직",
+      "recommendedLevel": "20",
+      "renown": "4",
+      "required": "비행술 D",
+      "choice": "검술 C / 창술 C",
+      "license": "중급 시험 증표",
+      "unlock": "–",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "타기 내리기",
+          "effect": "타기·내리기 명령을 사용할 수 있습니다.",
+          "originalName": "Mount/Dismount",
+          "originalEffect": "Allows use of Mount and Dismount commands."
+        }
+      ],
+      "master": [
+        {
+          "name": "천마의 가호",
+          "effect": "마방 +3.",
+          "originalName": "Protecting Wings",
+          "originalEffect": "Grants Res +3.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624038",
+      "localSource": "classes.html#class-wing-soldier",
+      "skillNotes": []
+    },
+    "프리스트": {
+      "slug": "priest",
+      "tier": "중급직",
+      "recommendedLevel": "20",
+      "renown": "4",
+      "required": "백마술 C",
+      "choice": "–",
+      "license": "중급 시험 증표",
+      "unlock": "–",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "백마술의 탐구",
+          "effect": "백마술 사용 횟수가 2배가 됩니다.",
+          "originalName": "White-Magic Seeker",
+          "originalEffect": "Multiplies white magic uses by 2."
+        },
+        {
+          "name": "마법 회복 +5",
+          "effect": "마법으로 아군을 회복할 때 회복량 +5.",
+          "originalName": "Magic Heal +5",
+          "originalEffect": "When healing an ally with magic, restores +5 HP."
+        }
+      ],
+      "master": [
+        {
+          "name": "신앙심",
+          "effect": "행운 +3.",
+          "originalName": "Piety",
+          "originalEffect": "Grants Lck +3.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624039",
+      "localSource": "classes.html#class-priest",
+      "skillNotes": []
+    },
+    "가디언": {
+      "slug": "guardian",
+      "tier": "상급직",
+      "recommendedLevel": "35",
+      "renown": "8",
+      "required": "창술 B",
+      "choice": "–",
+      "license": "상급 시험 증표",
+      "unlock": "· 명성 Lv.6에서 도전장 「도전자 모집! 비창의 일·이라」 클리어 · 9장까지 모든 전비 증강 달성",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "전투 기술 장비 +2",
+          "effect": "장비 가능한 전투 기술 수 +2.",
+          "originalName": "Combat Arts +2",
+          "originalEffect": "Unit can equip +2 combat arts."
+        },
+        {
+          "name": "마법 회복 +10",
+          "effect": "마법으로 아군을 회복할 때 회복량 +10.",
+          "originalName": "Magic Heal +10",
+          "originalEffect": "When healing an ally with magic, restores +10 HP."
+        }
+      ],
+      "master": [
+        {
+          "name": "가다듬기",
+          "effect": "적 처치 후 다음 자신의 페이즈까지 물리 방어 +3.",
+          "originalName": "Brace",
+          "originalEffect": "After defeating a foe, grants Prt +3 until unit's next phase.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624254",
+      "localSource": "classes.html#class-guardian",
+      "skillNotes": []
+    },
+    "대장장이": {
+      "slug": "blacksmith",
+      "tier": "상급직",
+      "recommendedLevel": "35",
+      "renown": "–",
+      "required": "흑마술 D, 도끼술 C",
+      "choice": "–",
+      "license": "상급 시험 증표",
+      "unlock": "· 전기 강화를 10회 이상 수행한 뒤 스미르노스 신전 접수처에 말 걸기",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "흑마술의 탐구",
+          "effect": "흑마술 사용 횟수가 2배가 됩니다.",
+          "originalName": "Black-Magic Seeker",
+          "originalEffect": "Multiplies black magic uses by 2."
+        },
+        {
+          "name": "도끼 명중 +5",
+          "effect": "도끼 장비 시 명중 +5.",
+          "originalName": "Axe Hit +5",
+          "originalEffect": "When equipped with an axe, grants Hit +5."
+        }
+      ],
+      "master": [
+        {
+          "name": "즉석 수리",
+          "effect": "전투 기술 사용 시 10% 확률로 해당 전투의 무기 내구도 소모가 0이 됩니다.",
+          "originalName": "Makeshift",
+          "originalEffect": "When using a combat art, reduces weapon durability cost to 0 during combat. Trigger % = 10.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624388",
+      "localSource": "classes.html#class-blacksmith",
+      "skillNotes": []
+    },
+    "드래군": {
+      "slug": "dragoon",
+      "tier": "상급직",
+      "recommendedLevel": "35",
+      "renown": "–",
+      "required": "비행술 C",
+      "choice": "도끼술 B / 창술 B",
+      "license": "상급 시험 증표",
+      "unlock": "· 명성 Lv.8에서 아우로라의 의뢰 클리어 이 조건은 카이편 경로다. 세오도라편은 11장까지 군비증강 전부 달성 으로 열리고, 해금은 뒤 루트로 이월된다",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "타기 내리기",
+          "effect": "타기·내리기 명령을 사용할 수 있습니다.",
+          "originalName": "Mount/Dismount",
+          "originalEffect": "Allows use of Mount and Dismount commands."
+        },
+        {
+          "name": "전투 기술 장비 +1",
+          "effect": "장비 가능한 전투 기술 수 +1.",
+          "originalName": "Combat Arts +1",
+          "originalEffect": "Unit can equip +1 combat arts."
+        }
+      ],
+      "master": [
+        {
+          "name": "농성 무너트리기",
+          "effect": "적이 유리한 지형에 있으면 해당 전투 동안 명중 +20.",
+          "originalName": "Besieger",
+          "originalEffect": "If foe is on favorable terrain, grants Hit +20 to unit during combat.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624233",
+      "localSource": "classes.html#class-dragoon",
+      "skillNotes": []
+    },
+    "레인저": {
+      "slug": "ranger",
+      "tier": "상급직",
+      "recommendedLevel": "35",
+      "renown": "8",
+      "required": "–",
+      "choice": "궁술 B / 검술 B",
+      "license": "상급 시험 증표",
+      "unlock": "· 명성 Lv.10에서 도전장 「도전자 모집! 필멸의 오우코」 클리어 · 흥행 「신상품을 만들어 선보이고 싶다 4」 클리어",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "전투 기술 장비 +2",
+          "effect": "장비 가능한 전투 기술 수 +2.",
+          "originalName": "Combat Arts +2",
+          "originalEffect": "Unit can equip +2 combat arts."
+        },
+        {
+          "name": "자물쇠 열기",
+          "effect": "열쇠 없이 보물상자를 열 수 있습니다.",
+          "originalName": "Locktouch",
+          "originalEffect": "Allows the opening of chests even without keys."
+        },
+        {
+          "name": "상급 탐색술",
+          "effect": "탐색 결과가 PERFECT가 될 확률이 높아집니다.",
+          "originalName": "Advanced Search",
+          "originalEffect": "Search results are more likely to be perfect."
+        }
+      ],
+      "master": [
+        {
+          "name": "반격 사격",
+          "effect": "활 장비 중 50% 확률로 인접한 적에게 반격합니다.",
+          "originalName": "Countershot",
+          "originalEffect": "When equipped with a bow, unit can counter adjacent foes during combat. Trigger % = 50.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624384",
+      "localSource": "classes.html#class-ranger",
+      "skillNotes": []
+    },
+    "무희": {
+      "slug": "dancer",
+      "tier": "상급직",
+      "recommendedLevel": "35",
+      "renown": "8",
+      "required": "–",
+      "choice": "궁술 B / 검술 B",
+      "license": "무희의 목걸이",
+      "unlock": "· 9장 진입 시 해금",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "전투 기술 장비 +2",
+          "effect": "장비 가능한 전투 기술 수 +2.",
+          "originalName": "Combat Arts +2",
+          "originalEffect": "Unit can equip +2 combat arts."
+        },
+        {
+          "name": "춤추기",
+          "effect": "전투 기술 ‘춤추기’를 사용할 수 있습니다.",
+          "originalName": "Dance",
+          "originalEffect": "Allows the use of the Dance combat art."
+        }
+      ],
+      "master": [
+        {
+          "name": "특별한 춤",
+          "effect": "춤추기를 받은 아군의 기술·속도 +3. 해당 페이즈 동안 적용됩니다.",
+          "originalName": "Special Dance",
+          "originalEffect": "When using Dance, grants Dex/Spd +3 to target ally for the current phase.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624375",
+      "localSource": "classes.html#class-dancer",
+      "skillNotes": []
+    },
+    "바딩거": {
+      "slug": "bardinger",
+      "tier": "상급직",
+      "recommendedLevel": "35",
+      "renown": "8",
+      "required": "기마술 C",
+      "choice": "검술 B / 창술 B",
+      "license": "상급 시험 증표",
+      "unlock": "–",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "전투 기술 장비 +2",
+          "effect": "장비 가능한 전투 기술 수 +2.",
+          "originalName": "Combat Arts +2",
+          "originalEffect": "Unit can equip +2 combat arts."
+        },
+        {
+          "name": "타기 내리기",
+          "effect": "타기·내리기 명령을 사용할 수 있습니다.",
+          "originalName": "Mount/Dismount",
+          "originalEffect": "Allows use of Mount and Dismount commands."
+        }
+      ],
+      "master": [
+        {
+          "name": "성스러운 방패",
+          "effect": "마법 공격을 받을 때 20% 확률로 받는 피해가 절반이 됩니다.",
+          "originalName": "Aegis",
+          "originalEffect": "Unit takes half damage when attacked with a magical attack. Trigger % = 20.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624033",
+      "localSource": "classes.html#class-bardinger",
+      "skillNotes": []
+    },
+    "바테스": {
+      "slug": "ovate",
+      "tier": "상급직",
+      "recommendedLevel": "35",
+      "renown": "8",
+      "required": "흑마술 B",
+      "choice": "–",
+      "license": "상급 시험 증표",
+      "unlock": "–",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "흑마술의 탐구",
+          "effect": "흑마술 사용 횟수가 2배가 됩니다.",
+          "originalName": "Black-Magic Seeker",
+          "originalEffect": "Multiplies black magic uses by 2."
+        },
+        {
+          "name": "마법 명중 +5",
+          "effect": "마법 장비 시 명중 +5.",
+          "originalName": "Magic Hit +5",
+          "originalEffect": "When equipped with magic, grants Hit +5."
+        }
+      ],
+      "master": [
+        {
+          "name": "속도의 주박",
+          "effect": "인접한 적의 속도 -3.",
+          "originalName": "Bind Speed",
+          "originalEffect": "Inflict Spd -3 on adjacent foes.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624032",
+      "localSource": "classes.html#class-ovate",
+      "skillNotes": []
+    },
+    "비숍": {
+      "slug": "bishop",
+      "tier": "상급직",
+      "recommendedLevel": "35",
+      "renown": "8",
+      "required": "백마술 B",
+      "choice": "–",
+      "license": "상급 시험 증표",
+      "unlock": "–",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "백마술의 탐구",
+          "effect": "백마술 사용 횟수가 2배가 됩니다.",
+          "originalName": "White-Magic Seeker",
+          "originalEffect": "Multiplies white magic uses by 2."
+        },
+        {
+          "name": "마법 회복 +10",
+          "effect": "마법으로 아군을 회복할 때 회복량 +10.",
+          "originalName": "Magic Heal +10",
+          "originalEffect": "When healing an ally with magic, restores +10 HP."
+        }
+      ],
+      "master": [
+        {
+          "name": "결계",
+          "effect": "인접한 아군의 마방 +3.",
+          "originalName": "Barrier",
+          "originalEffect": "Grants Res +3 to adjacent allies.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624031",
+      "localSource": "classes.html#class-bishop",
+      "skillNotes": []
+    },
+    "사도": {
+      "slug": "shido",
+      "tier": "상급직",
+      "recommendedLevel": "35",
+      "renown": "8",
+      "required": "검술 B",
+      "choice": "–",
+      "license": "상급 시험 증표",
+      "unlock": "–",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "전투 기술 장비 +2",
+          "effect": "장비 가능한 전투 기술 수 +2.",
+          "originalName": "Combat Arts +2",
+          "originalEffect": "Unit can equip +2 combat arts."
+        },
+        {
+          "name": "검 필살 +5",
+          "effect": "검 장비 시 필살 +5.",
+          "originalName": "Sword Crit +5",
+          "originalEffect": "When equipped with a sword, grants Crit +5."
+        }
+      ],
+      "master": [
+        {
+          "name": "후비심",
+          "effect": "필살 공격으로 적을 처치하면 자신의 HP를 조금 회복합니다.",
+          "originalName": "Ever Vigilant",
+          "originalEffect": "After defeating a foe with a critical attack, restores a little HP to unit.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624030",
+      "localSource": "classes.html#class-shido",
+      "skillNotes": []
+    },
+    "스나이퍼": {
+      "slug": "sniper",
+      "tier": "상급직",
+      "recommendedLevel": "35",
+      "renown": "8",
+      "required": "궁술 B",
+      "choice": "–",
+      "license": "상급 시험 증표",
+      "unlock": "–",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "전투 기술 장비 +2",
+          "effect": "장비 가능한 전투 기술 수 +2.",
+          "originalName": "Combat Arts +2",
+          "originalEffect": "Unit can equip +2 combat arts."
+        },
+        {
+          "name": "활 명중 +10",
+          "effect": "활 장비 시 명중 +10.",
+          "originalName": "Bow Hit +10",
+          "originalEffect": "When equipped with a bow, grants Hit +10."
+        }
+      ],
+      "master": [
+        {
+          "name": "사격의 달인",
+          "effect": "활 장비 시 명중 +15.",
+          "originalName": "Marksmanship",
+          "originalEffect": "When equipped with a bow, grants Hit +15.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624036",
+      "localSource": "classes.html#class-sniper",
+      "skillNotes": []
+    },
+    "워리어": {
+      "slug": "warrior",
+      "tier": "상급직",
+      "recommendedLevel": "35",
+      "renown": "8",
+      "required": "–",
+      "choice": "검술 B / 도끼술 B / 격투술 B",
+      "license": "상급 시험 증표",
+      "unlock": "–",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "전투 기술 장비 +2",
+          "effect": "장비 가능한 전투 기술 수 +2.",
+          "originalName": "Combat Arts +2",
+          "originalEffect": "Unit can equip +2 combat arts."
+        },
+        {
+          "name": "도끼 명중 +5",
+          "effect": "도끼 장비 시 명중 +5.",
+          "originalName": "Axe Hit +5",
+          "originalEffect": "When equipped with an axe, grants Hit +5."
+        },
+        {
+          "name": "격투 명중 +5",
+          "effect": "건틀릿 장비 시 명중 +5.",
+          "originalName": "Brawl Hit +5",
+          "originalEffect": "When equipped with gauntlets, grants Hit +5."
+        }
+      ],
+      "master": [
+        {
+          "name": "숙련된 기술",
+          "effect": "전투 기술로 공격할 때 명중 +10.",
+          "originalName": "Practiced Art",
+          "originalEffect": "Grants Hit +10 when attacking, with a combat art.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624037",
+      "localSource": "classes.html#class-warrior",
+      "skillNotes": []
+    },
+    "카타프락토스": {
+      "slug": "cataphract",
+      "tier": "상급직",
+      "recommendedLevel": "35",
+      "renown": "8",
+      "required": "중장술 E+, 기마술 D",
+      "choice": "도끼술 B / 창술 B",
+      "license": "상급 시험 증표",
+      "unlock": "· 8장까지 모든 전비 증강 달성",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "타기 내리기",
+          "effect": "타기·내리기 명령을 사용할 수 있습니다.",
+          "originalName": "Mount/Dismount",
+          "originalEffect": "Allows use of Mount and Dismount commands."
+        },
+        {
+          "name": "후공 수비 +3",
+          "effect": "적이 먼저 공격하면 해당 전투 동안 물리 방어 +3.",
+          "originalName": "Strike-Last Def +3",
+          "originalEffect": "If foe attacks first, grants Prt +3 to unit during combat."
+        },
+        {
+          "name": "전투 기술 장비 +1",
+          "effect": "장비 가능한 전투 기술 수 +1.",
+          "originalName": "Combat Arts +1",
+          "originalEffect": "Unit can equip +1 combat arts."
+        }
+      ],
+      "master": [
+        {
+          "name": "Pavise",
+          "effect": "물리 공격을 받을 때 20% 확률로 받는 피해가 절반이 됩니다.",
+          "originalName": "Pavise",
+          "originalEffect": "Unit takes half damage when attacked with a physical attack. Trigger % = 20.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624275",
+      "localSource": "classes.html#class-cataphract",
+      "skillNotes": []
+    },
+    "칼라드리오스": {
+      "slug": "caladrius",
+      "tier": "상급직",
+      "recommendedLevel": "35",
+      "renown": "–",
+      "required": "기마술 D, 흑마술 B  우리 공략  필수 기술이 기마술 D가 아니라  기마술 B  + 흑마술 B일 수 있다. 카이편 명성 7 카스톨 훈련 뒤 시험 화면에서 확인하고, D로 응시가 안 되면 기마술 B까지 올린다",
+      "choice": "–",
+      "license": "상급 시험 증표",
+      "unlock": "· 명성 Lv.7에서 카스톨의 의뢰 클리어",
+      "conditionNotes": [
+        "필수 기술이 기마술 D가 아니라 기마술 B + 흑마술 B일 수 있다. 카이편 명성 7 카스톨 훈련 뒤 시험 화면에서 확인하고, D로 응시가 안 되면 기마술 B까지 올린다"
+      ],
+      "skills": [
+        {
+          "name": "타기 내리기",
+          "effect": "타기·내리기 명령을 사용할 수 있습니다.",
+          "originalName": "Mount/Dismount",
+          "originalEffect": "Allows use of Mount and Dismount commands."
+        },
+        {
+          "name": "흑마술의 탐구",
+          "effect": "흑마술 사용 횟수가 2배가 됩니다.",
+          "originalName": "Black-Magic Seeker",
+          "originalEffect": "Multiplies black magic uses by 2."
+        },
+        {
+          "name": "전투 기술 장비 +1",
+          "effect": "장비 가능한 전투 기술 수 +1.",
+          "originalName": "Combat Arts +1",
+          "originalEffect": "Unit can equip +1 combat arts."
+        }
+      ],
+      "master": [
+        {
+          "name": "빠져나가기",
+          "effect": "적 처치 후 다음 턴이 끝날 때까지 이동력 +1. 최대 +3.",
+          "originalName": "Overtake",
+          "originalEffect": "After defeating a foe, grant Mov +1 through the end of the next turn. (Max +3)",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624235",
+      "localSource": "classes.html#class-caladrius",
+      "skillNotes": []
+    },
+    "코끼리병": {
+      "slug": "elephant-rider",
+      "tier": "상급직",
+      "recommendedLevel": "35",
+      "renown": "–",
+      "required": "기마술 C",
+      "choice": "–",
+      "license": "코끼리병 시험 증표",
+      "unlock": "· 구세편 1구간 클리어",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "War-Elephant Boots",
+          "effect": "공격받는 피해가 절반이 됩니다. 공격을 회피할 수 없습니다.",
+          "originalName": "War-Elephant Boots",
+          "originalEffect": "Unit takes half damage when attacked. Unit cannot avoid attacks."
+        },
+        {
+          "name": "Elephant Tactics",
+          "effect": "타기·내리기와 Heavy Charge 명령(강한 돌진)을 사용할 수 있습니다.",
+          "originalName": "Elephant Tactics",
+          "originalEffect": "Allows use of the Mount and Dismount commands. Allows use of the Heavy Charge Commands."
+        },
+        {
+          "name": "Elephant Rider's Path",
+          "effect": "자신의 레벨이 높아질수록 성장률도 높아집니다.",
+          "originalName": "Elephant Rider's Path",
+          "originalEffect": "Unit's growth rate increases with level."
+        }
+      ],
+      "master": [
+        {
+          "name": "Elephant Vanguard",
+          "effect": "코끼리병일 때 명중 +10.",
+          "originalName": "Elephant Vanguard",
+          "originalEffect": "If unit is an elephant rider, grants Hit +10.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621166",
+      "localSource": "classes.html#class-elephant-rider",
+      "skillNotes": []
+    },
+    "트루바두르": {
+      "slug": "troubadour",
+      "tier": "상급직",
+      "recommendedLevel": "35",
+      "renown": "–",
+      "required": "기마술 D",
+      "choice": "백마술 B / 흑마술 B",
+      "license": "상급 시험 증표",
+      "unlock": "· 명성 Lv.10에서 백발귀의 의뢰 클리어 · 흥행 「신상품을 만들어 선보이고 싶다 4」 클리어",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "타기 내리기",
+          "effect": "타기·내리기 명령을 사용할 수 있습니다.",
+          "originalName": "Mount/Dismount",
+          "originalEffect": "Allows use of Mount and Dismount commands."
+        },
+        {
+          "name": "마법 명중 +3",
+          "effect": "마법 장비 시 명중 +3.",
+          "originalName": "Magic Hit +3",
+          "originalEffect": "When equipped with magic, grants Hit +3."
+        },
+        {
+          "name": "마법 회복 +5",
+          "effect": "마법으로 아군을 회복할 때 회복량 +5.",
+          "originalName": "Magic Heal +5",
+          "originalEffect": "When healing an ally with magic, restores +5 HP."
+        }
+      ],
+      "master": [
+        {
+          "name": "용기의 노래",
+          "effect": "범위 안 아군의 기술·속도 +2. 다음 자신의 페이즈까지 적용됩니다.",
+          "originalName": "Song of Courage",
+          "originalEffect": "Grants Dex/Spd +2 to allies in range until unit's next phase.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624234",
+      "localSource": "classes.html#class-troubadour",
+      "skillNotes": []
+    },
+    "포레스트 나이트": {
+      "slug": "forest-knight",
+      "tier": "상급직",
+      "recommendedLevel": "35",
+      "renown": "8",
+      "required": "기마술 D, 궁술 B",
+      "choice": "–",
+      "license": "상급 시험 증표",
+      "unlock": "–",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "타기 내리기",
+          "effect": "타기·내리기 명령을 사용할 수 있습니다.",
+          "originalName": "Mount/Dismount",
+          "originalEffect": "Allows use of Mount and Dismount commands."
+        },
+        {
+          "name": "전투 기술 장비 +1",
+          "effect": "장비 가능한 전투 기술 수 +1.",
+          "originalName": "Combat Arts +1",
+          "originalEffect": "Unit can equip +1 combat arts."
+        },
+        {
+          "name": "활 명중 +5",
+          "effect": "활 장비 시 명중 +5.",
+          "originalName": "Bow Hit +5",
+          "originalEffect": "When equipped with a bow, grants Hit +5."
+        }
+      ],
+      "master": [
+        {
+          "name": "활을 장비한 상태에서 추격 시 공격력 +3",
+          "effect": "활 장비 중 추격 공격을 할 때 공격력 +3.",
+          "originalName": "Hunter's Eye",
+          "originalEffect": "When equipped with a bow, grants Atk +3 when making a follow-up.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624035",
+      "localSource": "classes.html#class-forest-knight",
+      "skillNotes": []
+    },
+    "헤비 아머": {
+      "slug": "dreadnought",
+      "tier": "상급직",
+      "recommendedLevel": "35",
+      "renown": "8",
+      "required": "중장술 D",
+      "choice": "창술 B / 도끼술 B",
+      "license": "상급 시험 증표",
+      "unlock": "–",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "후공 수비 +5",
+          "effect": "적이 먼저 공격하면 해당 전투 동안 물리 방어 +5.",
+          "originalName": "Strike-Last Def +5",
+          "originalEffect": "If foe attacks first, grants Prt +5 to unit during combat."
+        },
+        {
+          "name": "전투 기술 장비 +2",
+          "effect": "장비 가능한 전투 기술 수 +2.",
+          "originalName": "Combat Arts +2",
+          "originalEffect": "Unit can equip +2 combat arts."
+        }
+      ],
+      "master": [
+        {
+          "name": "집중 반격",
+          "effect": "적이 먼저 공격하면 해당 전투 동안 명중 +10.",
+          "originalName": "Focused Counter",
+          "originalEffect": "If foe attacks first, grants Hit +10 to unit during combat.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624034",
+      "localSource": "classes.html#class-dreadnought",
+      "skillNotes": []
+    },
+    "그레이트 나이트": {
+      "slug": "great-knight",
+      "tier": "최상급직",
+      "recommendedLevel": "45",
+      "renown": "–",
+      "required": "중장술 D, 기마술 D",
+      "choice": "도끼술 A / 창술 A",
+      "license": "최상급 시험 증표",
+      "unlock": "· 구세편 3구간에서 「크레르 신전」 복원 후 발생하는 서브 퀘스트 클리어",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "전투 기술 장비 +2",
+          "effect": "장비 가능한 전투 기술 수 +2.",
+          "originalName": "Combat Arts +2",
+          "originalEffect": "Unit can equip +2 combat arts."
+        },
+        {
+          "name": "타기 내리기",
+          "effect": "타기·내리기 명령을 사용할 수 있습니다.",
+          "originalName": "Mount/Dismount",
+          "originalEffect": "Allows use of Mount and Dismount commands."
+        }
+      ],
+      "master": [
+        {
+          "name": "Fierce Shield",
+          "effect": "자신이 먼저 공격하면 50% 확률로 해당 전투에서 받는 피해가 절반이 됩니다.",
+          "originalName": "Fierce Shield",
+          "originalEffect": "If unit attacks first, unit takes half damage during combat. Trigger % = 50.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624451",
+      "localSource": "classes.html#class-great-knight",
+      "skillNotes": []
+    },
+    "드래곤 마스터": {
+      "slug": "bau-lord",
+      "tier": "최상급직",
+      "recommendedLevel": "45",
+      "renown": "–",
+      "required": "비행술 C",
+      "choice": "도끼술 A / 창술 A",
+      "license": "최상급 시험 증표",
+      "unlock": "· 구세편 1구간 클리어",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "전투 기술 장비 +1",
+          "effect": "장비 가능한 전투 기술 수 +1.",
+          "originalName": "Combat Arts +2",
+          "originalEffect": "Unit can equip +2 combat arts."
+        },
+        {
+          "name": "타기 내리기",
+          "effect": "타기·내리기 명령을 사용할 수 있습니다.",
+          "originalName": "Mount/Dismount",
+          "originalEffect": "Allows use of Mount and Dismount commands."
+        }
+      ],
+      "master": [
+        {
+          "name": "습격",
+          "effect": "일반 유닛이 들어갈 수 없는 지형에 있으면 공격력 +4.",
+          "originalName": "Ambush",
+          "originalEffect": "If unit is on inaccessible terrain, grants Atk +4.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624364",
+      "localSource": "classes.html#class-bau-lord",
+      "skillNotes": [
+        "전투 기술 장비 수: 로컬은 +1, Game8은 +2. 이 문서는 로컬 수치를 쓰며 실제 병과 화면의 수치를 확인해야 합니다."
+      ]
+    },
+    "드루이드": {
+      "slug": "druid",
+      "tier": "최상급직",
+      "recommendedLevel": "45",
+      "renown": "–",
+      "required": "흑마술 A",
+      "choice": "–",
+      "license": "최상급 시험 증표",
+      "unlock": "· 구세편 1구간 클리어",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "흑마술의 탐구",
+          "effect": "흑마술 사용 횟수가 2배가 됩니다.",
+          "originalName": "Black-Magic Seeker",
+          "originalEffect": "Multiplies black magic uses by 2."
+        },
+        {
+          "name": "마법 명중 +7",
+          "effect": "마법 장비 시 명중 +7.",
+          "originalName": "Magic Hit +7",
+          "originalEffect": "When equipped with magic, grants Hit +7."
+        }
+      ],
+      "master": [
+        {
+          "name": "마방의 주박",
+          "effect": "인접한 적의 마방 -3.",
+          "originalName": "Bind Resistance",
+          "originalEffect": "Inflict Res -3 on adjacent foes.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624360",
+      "localSource": "classes.html#class-druid",
+      "skillNotes": []
+    },
+    "마스터 아치": {
+      "slug": "bow-adept",
+      "tier": "최상급직",
+      "recommendedLevel": "45",
+      "renown": "–",
+      "required": "궁술 A",
+      "choice": "–",
+      "license": "최상급 시험 증표",
+      "unlock": "· 구세편 1구간 클리어",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "전투 기술 장비 +3",
+          "effect": "장비 가능한 전투 기술 수 +3.",
+          "originalName": "Combat Arts +3",
+          "originalEffect": "Unit can equip +3 combat arts."
+        },
+        {
+          "name": "활 명중 +15",
+          "effect": "활 장비 시 명중 +15.",
+          "originalName": "Bow Hit +15",
+          "originalEffect": "When equipped with a bow, grants Hit +15."
+        }
+      ],
+      "master": [
+        {
+          "name": "스카이 헌터",
+          "effect": "적이 비행 병과이면 명중 +50.",
+          "originalName": "Sky Hunter",
+          "originalEffect": "If foe is flying, grants Hit +50.",
+          "kind": "전투 기술"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624362",
+      "localSource": "classes.html#class-bow-adept",
+      "skillNotes": []
+    },
+    "발키리움": {
+      "slug": "valkyrium",
+      "tier": "최상급직",
+      "recommendedLevel": "45",
+      "renown": "–",
+      "required": "기마술 D",
+      "choice": "백마술 A / 흑마술 A",
+      "license": "최상급 시험 증표",
+      "unlock": "· 구세편 3구간에서 「주라 신전」 복원 후 발생하는 서브 퀘스트 클리어",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "타기 내리기",
+          "effect": "타기·내리기 명령을 사용할 수 있습니다.",
+          "originalName": "Mount/Dismount",
+          "originalEffect": "Allows use of Mount and Dismount commands."
+        },
+        {
+          "name": "마법 회복 +10",
+          "effect": "마법으로 아군을 회복할 때 회복량 +10.",
+          "originalName": "Magic Heal +10",
+          "originalEffect": "When healing an ally with magic, restores +10 HP."
+        }
+      ],
+      "master": [
+        {
+          "name": "Song of Calm",
+          "effect": "범위 안 아군의 마방 +2. 다음 자신의 페이즈까지 적용됩니다.",
+          "originalName": "Song of Calm",
+          "originalEffect": "Grants Res +2 to allies in range until unit's next phase.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624450",
+      "localSource": "classes.html#class-valkyrium",
+      "skillNotes": []
+    },
+    "배틀 마스터": {
+      "slug": "battlemaster",
+      "tier": "최상급직",
+      "recommendedLevel": "45",
+      "renown": "–",
+      "required": "–",
+      "choice": "격투술 A / 도끼술 A / 검술 A",
+      "license": "최상급 시험 증표",
+      "unlock": "· 구세편 1구간 클리어",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "전투 기술 장비 +2",
+          "effect": "장비 가능한 전투 기술 수 +2.",
+          "originalName": "Combat Arts +3",
+          "originalEffect": "Unit can equip +3 combat arts."
+        },
+        {
+          "name": "도끼 명중 +7",
+          "effect": "도끼 장비 시 명중 +7.",
+          "originalName": "Axe Hit +7",
+          "originalEffect": "When equipped with an axe, grants Hit +7."
+        },
+        {
+          "name": "격투 명중 +7",
+          "effect": "건틀릿 장비 시 명중 +7.",
+          "originalName": "Brawl Hit +7",
+          "originalEffect": "When equipped with gauntlets, grants Hit+7."
+        }
+      ],
+      "master": [
+        {
+          "name": "전귀의 일격",
+          "effect": "이 전투 기술로 주는 피해는 1.5배입니다.",
+          "originalName": "War Master's Strike",
+          "originalEffect": "Multiplies damage dealt by 1.5.",
+          "kind": "전투 기술"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624357",
+      "localSource": "classes.html#class-battlemaster",
+      "skillNotes": [
+        "전투 기술 장비 수: 로컬은 +2, Game8은 +3. 이 문서는 로컬 수치를 쓰며 실제 병과 화면의 수치를 확인해야 합니다."
+      ]
+    },
+    "배틀 몽크": {
+      "slug": "war-monk",
+      "tier": "최상급직",
+      "recommendedLevel": "45",
+      "renown": "–",
+      "required": "백마술 D, 격투술 B",
+      "choice": "–",
+      "license": "최상급 시험 증표",
+      "unlock": "· 구세편 2구간 잔여 1턴에 발생하는 서브 퀘스트 「아우로라의 의뢰」 클리어",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "백마술의 탐구",
+          "effect": "백마술 사용 횟수가 2배가 됩니다.",
+          "originalName": "White-Magic Seeker",
+          "originalEffect": "Multiplies white magic uses by 2."
+        },
+        {
+          "name": "전투 기술 장비 +3",
+          "effect": "장비 가능한 전투 기술 수 +3.",
+          "originalName": "Combat Arts +3",
+          "originalEffect": "Unit can equip +3 combat arts."
+        },
+        {
+          "name": "격투 회피 +7",
+          "effect": "건틀릿 장비 시 회피 +7.",
+          "originalName": "Brawl Avo +7",
+          "originalEffect": "When equipped with gauntlets, grants Avo +7."
+        }
+      ],
+      "master": [
+        {
+          "name": "Strike and Heal",
+          "effect": "전투 후 보조 마법을 사용할 수 있습니다.",
+          "originalName": "Strike and Heal",
+          "originalEffect": "After combat, unit can use assist magic.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624444",
+      "localSource": "classes.html#class-war-monk",
+      "skillNotes": []
+    },
+    "보우 나이트": {
+      "slug": "bow-knight",
+      "tier": "최상급직",
+      "recommendedLevel": "45",
+      "renown": "–",
+      "required": "기마술 D, 궁술 A",
+      "choice": "–",
+      "license": "최상급 시험 증표",
+      "unlock": "· 구세편 3구간에서 「칼라 신전」 복원 후 발생하는 서브 퀘스트 클리어",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "전투 기술 장비 +2",
+          "effect": "장비 가능한 전투 기술 수 +2.",
+          "originalName": "Combat Arts +2",
+          "originalEffect": "Unit can equip +2 combat arts."
+        },
+        {
+          "name": "타기 내리기",
+          "effect": "타기·내리기 명령을 사용할 수 있습니다.",
+          "originalName": "Mount/Dismount",
+          "originalEffect": "Allows use of Mount and Dismount commands."
+        },
+        {
+          "name": "활 명중 +10",
+          "effect": "활 장비 시 명중 +10.",
+          "originalName": "Bow Hit +10",
+          "originalEffect": "When equipped with a bow, grants Hit +10."
+        }
+      ],
+      "master": [
+        {
+          "name": "Hunter's Cross",
+          "effect": "명중·필살이 높습니다. 원문에 구체 수치는 없습니다.",
+          "originalName": "Hunter's Cross",
+          "originalEffect": "High Hit/Crit",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624449",
+      "localSource": "classes.html#class-bow-knight",
+      "skillNotes": []
+    },
+    "섀도 시커": {
+      "slug": "shadow-seeker",
+      "tier": "최상급직",
+      "recommendedLevel": "45",
+      "renown": "–",
+      "required": "–",
+      "choice": "궁술 A / 검술 A",
+      "license": "최상급 시험 증표",
+      "unlock": "· 구세편 1구간 클리어",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "자물쇠 열기",
+          "effect": "열쇠 없이 보물상자를 열 수 있습니다.",
+          "originalName": "Locktouch",
+          "originalEffect": "Allows the opening of chests even without keys."
+        },
+        {
+          "name": "전투 기술 장비 +3",
+          "effect": "장비 가능한 전투 기술 수 +3.",
+          "originalName": "Combat Arts +3",
+          "originalEffect": "Unit can equip +3 combat arts."
+        },
+        {
+          "name": "최상급 탐색술",
+          "effect": "탐색 결과가 PERFECT가 될 확률이 크게 높아집니다.",
+          "originalName": "Master Search",
+          "originalEffect": "Search results are considerably more likely to be perfect."
+        }
+      ],
+      "master": [
+        {
+          "name": "낙영의 칼날",
+          "effect": "적에게 유리한 지형 효과를 무시하는 전투 기술입니다.",
+          "originalName": "Dropshadow Blade",
+          "originalEffect": "If foe is on favorable terrain, ignores those terrain effects.",
+          "kind": "전투 기술"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624358",
+      "localSource": "classes.html#class-shadow-seeker",
+      "skillNotes": []
+    },
+    "성천익병": {
+      "slug": "celestial-trooper",
+      "tier": "최상급직",
+      "recommendedLevel": "45",
+      "renown": "–",
+      "required": "비행술 C",
+      "choice": "창술 A / 검술 A",
+      "license": "최상급 시험 증표",
+      "unlock": "· 구세편 1구간 클리어",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "타기 내리기",
+          "effect": "타기·내리기 명령을 사용할 수 있습니다.",
+          "originalName": "Mount/Dismount",
+          "originalEffect": "Allows use of Mount and Dismount commands."
+        },
+        {
+          "name": "전투 기술 장비 +1",
+          "effect": "장비 가능한 전투 기술 수 +1.",
+          "originalName": "Combat Arts +1",
+          "originalEffect": "Unit can equip +1 combat arts."
+        },
+        {
+          "name": "비행 회피 +7",
+          "effect": "회피 +7.",
+          "originalName": "Flying Avo +7",
+          "originalEffect": "Grants Avo +7."
+        }
+      ],
+      "master": [
+        {
+          "name": "신뢰 풍렬",
+          "effect": "자신이 선공하고 공격 속도가 적보다 10 이상 높으면, 내 추격이 적의 반격보다 먼저 나갑니다.",
+          "originalName": "Lightning Reflexes",
+          "originalEffect": "If unit attacks first, and AS ≥ foe's AS +10, unit's follow-up occurs before foe's counter during combat.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624361",
+      "localSource": "classes.html#class-celestial-trooper",
+      "skillNotes": []
+    },
+    "소드 마스터": {
+      "slug": "swordmaster",
+      "tier": "최상급직",
+      "recommendedLevel": "45",
+      "renown": "–",
+      "required": "검술 A",
+      "choice": "–",
+      "license": "최상급 시험 증표",
+      "unlock": "· 구세편 3구간에서 「마스 신전」 복원 후 발생하는 서브 퀘스트 클리어",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "전투 기술 장비 +3",
+          "effect": "장비 가능한 전투 기술 수 +3.",
+          "originalName": "Combat Arts +3",
+          "originalEffect": "Unit can equip +3 combat arts."
+        },
+        {
+          "name": "검 필살 +7",
+          "effect": "검 장비 시 필살 +7.",
+          "originalName": "Sword Crit +7",
+          "originalEffect": "When equipped with a sword, grants Crit +7."
+        }
+      ],
+      "master": [
+        {
+          "name": "Astra",
+          "effect": "피해 50%로 5회 공격합니다.",
+          "originalName": "Astra",
+          "originalEffect": "Strikes 5 times at 50% damage.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624426",
+      "localSource": "classes.html#class-swordmaster",
+      "skillNotes": []
+    },
+    "오리할디아": {
+      "slug": "orichalda",
+      "tier": "최상급직",
+      "recommendedLevel": "45",
+      "renown": "–",
+      "required": "기마술 B",
+      "choice": "창술 A / 검술 A",
+      "license": "최상급 시험 증표",
+      "unlock": "· 구세편 1구간 클리어",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "타기 내리기",
+          "effect": "타기·내리기 명령을 사용할 수 있습니다.",
+          "originalName": "Mount/Dismount",
+          "originalEffect": "Allows use of Mount and Dismount commands."
+        },
+        {
+          "name": "전투 기술 장비 +3",
+          "effect": "장비 가능한 전투 기술 수 +3.",
+          "originalName": "Combat Arts +3",
+          "originalEffect": "Unit can equip +3 combat arts."
+        }
+      ],
+      "master": [
+        {
+          "name": "기사 열창",
+          "effect": "전투 중 적의 추격 공격을 받지 않습니다.",
+          "originalName": "Fierce Spear",
+          "originalEffect": "Unit cannot suffer a follow-up during combat.",
+          "kind": "전투 기술"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624359",
+      "localSource": "classes.html#class-orichalda",
+      "skillNotes": []
+    },
+    "와이즈맨": {
+      "slug": "wiseman",
+      "tier": "최상급직",
+      "recommendedLevel": "45",
+      "renown": "–",
+      "required": "백마술 A",
+      "choice": "–",
+      "license": "최상급 시험 증표",
+      "unlock": "· 구세편 1구간 클리어",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "백마술의 탐구",
+          "effect": "백마술 사용 횟수가 2배가 됩니다.",
+          "originalName": "White-Magic Seeker",
+          "originalEffect": "Multiplies white magic uses by 2."
+        },
+        {
+          "name": "마법 회복 +15",
+          "effect": "마법으로 아군을 회복할 때 회복량 +15.",
+          "originalName": "Magic Heal +15",
+          "originalEffect": "When healing an ally with magic, restores +15 HP."
+        }
+      ],
+      "master": [
+        {
+          "name": "마력 장악",
+          "effect": "적이 마법을 장비했을 때 10% 확률로 해당 전투에서 반격을 받지 않습니다.",
+          "originalName": "Dominate Magic",
+          "originalEffect": "If foe uses magic, unit cannot be countered during combat. Trigger % = 10.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624355",
+      "localSource": "classes.html#class-wiseman",
+      "skillNotes": []
+    },
+    "포트리스": {
+      "slug": "castle-knight",
+      "tier": "최상급직",
+      "recommendedLevel": "45",
+      "renown": "–",
+      "required": "중장술 C",
+      "choice": "도끼술 A / 창술 A",
+      "license": "최상급 시험 증표",
+      "unlock": "· 구세편 1구간 클리어",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "전투 기술 장비 +3",
+          "effect": "장비 가능한 전투 기술 수 +3.",
+          "originalName": "Combat Arts +3",
+          "originalEffect": "Unit can equip +3 combat arts."
+        },
+        {
+          "name": "후공 수비 +7",
+          "effect": "적이 먼저 공격하면 해당 전투 동안 물리 방어 +7.",
+          "originalName": "Strike-Last Def +7",
+          "originalEffect": "If foe attacks first, grants Prt +7 to unit during combat."
+        }
+      ],
+      "master": [
+        {
+          "name": "차단",
+          "effect": "공격받을 때 받는 피해 -5.",
+          "originalName": "Intercept",
+          "originalEffect": "Reduces damage taken by 5 when attacked.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624363",
+      "localSource": "classes.html#class-castle-knight",
+      "skillNotes": []
+    },
+    "하이 에피타프": {
+      "slug": "high-savant",
+      "tier": "최상급직",
+      "recommendedLevel": "45",
+      "renown": "–",
+      "required": "기마술 D, 흑마술 D, 검술 B",
+      "choice": "–",
+      "license": "최상급 시험 증표",
+      "unlock": "· 구세편 3구간에서 「스미르노스 신전」 복원 후 발생하는 서브 퀘스트 클리어",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "전투 기술 장비 +2",
+          "effect": "장비 가능한 전투 기술 수 +2.",
+          "originalName": "Combat Arts +2",
+          "originalEffect": "Unit can equip +2 combat arts."
+        },
+        {
+          "name": "타기 내리기",
+          "effect": "타기·내리기 명령을 사용할 수 있습니다.",
+          "originalName": "Mount/Dismount",
+          "originalEffect": "Allows use of Mount and Dismount commands."
+        },
+        {
+          "name": "흑마술의 탐구",
+          "effect": "흑마술 사용 횟수가 2배가 됩니다.",
+          "originalName": "Black-Magic Seeker",
+          "originalEffect": "Multiplies black magic uses by 2."
+        }
+      ],
+      "master": [
+        {
+          "name": "Dark Moon",
+          "effect": "공격할 때 10% 확률로 적의 방어력을 절반으로 계산합니다.",
+          "originalName": "Dark Moon",
+          "originalEffect": "Halves foe's Shld when attacking. Trigger % = 10.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624445",
+      "localSource": "classes.html#class-high-savant",
+      "skillNotes": []
+    },
+    "홀리 랜서": {
+      "slug": "sentinel",
+      "tier": "최상급직",
+      "recommendedLevel": "45",
+      "renown": "–",
+      "required": "창술 A",
+      "choice": "–",
+      "license": "최상급 시험 증표",
+      "unlock": "· 구세편 1구간 클리어",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "백마술의 탐구",
+          "effect": "백마술 사용 횟수가 2배가 됩니다.",
+          "originalName": "White-Magic Seeker",
+          "originalEffect": "Multiplies white magic uses by 2."
+        },
+        {
+          "name": "마법 회복 +10",
+          "effect": "마법으로 아군을 회복할 때 회복량 +10.",
+          "originalName": "Magic Heal +10",
+          "originalEffect": "When healing an ally with magic, restores +10 HP."
+        },
+        {
+          "name": "전투 기술 장비 +3",
+          "effect": "장비 가능한 전투 기술 수 +3.",
+          "originalName": "Combat Arts +3",
+          "originalEffect": "Unit can equip +3 combat arts."
+        }
+      ],
+      "master": [
+        {
+          "name": "불굴의 자세",
+          "effect": "HP가 가득 차 있으면 해당 전투 동안 방어력 +5.",
+          "originalName": "Resolute Stance",
+          "originalEffect": "If unit's HP = 100%, grants Shld +5 during combat.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624356",
+      "localSource": "classes.html#class-sentinel",
+      "skillNotes": []
+    },
+    "더 갓 핸드": {
+      "slug": "the-godhand",
+      "tier": "신장직",
+      "recommendedLevel": "–",
+      "renown": "–",
+      "required": "백마술 C, 격투술 S",
+      "choice": "–",
+      "license": "대제의 복대",
+      "unlock": "· 구세편 4구간 시작 시 해금 (천관의 신전에서 「대제의 복대」 입수 시 전직 가능)",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "전투 기술 장비 +3",
+          "effect": "장비 가능한 전투 기술 수 +3.",
+          "originalName": "Combat Arts +3",
+          "originalEffect": "Unit can equip +3 combat arts."
+        },
+        {
+          "name": "격투 회피 +10",
+          "effect": "건틀릿 장비 시 회피 +10.",
+          "originalName": "Brawl Avo +10",
+          "originalEffect": "When equipped with gauntlets, grants Avo +10."
+        },
+        {
+          "name": "White-Magic Zenith",
+          "effect": "백마술 사용 횟수가 3배가 됩니다.",
+          "originalName": "White-Magic Zenith",
+          "originalEffect": "Multiplies white magic uses by 3."
+        }
+      ],
+      "master": [
+        {
+          "name": "Divine Adornment",
+          "effect": "마방 +10.",
+          "originalName": "Divine Adornment",
+          "originalEffect": "Grants Res +10.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625306",
+      "localSource": "classes.html#class-the-godhand",
+      "skillNotes": []
+    },
+    "더 블레이드": {
+      "slug": "the-blade",
+      "tier": "신장직",
+      "recommendedLevel": "–",
+      "renown": "–",
+      "required": "검술 S",
+      "choice": "–",
+      "license": "요도의 코등이",
+      "unlock": "· 구세편 4구간 시작 시 해금 (천관의 신전에서 「요도의 코등이」 입수 시 전직 가능)",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "전투 기술 장비 +3",
+          "effect": "장비 가능한 전투 기술 수 +3.",
+          "originalName": "Combat Arts +3",
+          "originalEffect": "Unit can equip +3 combat arts."
+        },
+        {
+          "name": "검 필살 +10",
+          "effect": "검 장비 시 필살 +10.",
+          "originalName": "Sword Crit +10",
+          "originalEffect": "When equipped with a sword, grants Crit +10."
+        }
+      ],
+      "master": [
+        {
+          "name": "Divine Insight",
+          "effect": "속도 +10.",
+          "originalName": "Divine Insight",
+          "originalEffect": "Grants Spd +10.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625255",
+      "localSource": "classes.html#class-the-blade",
+      "skillNotes": []
+    },
+    "더 캐벌리어": {
+      "slug": "the-cavalier",
+      "tier": "신장직",
+      "recommendedLevel": "–",
+      "renown": "–",
+      "required": "기마술 A",
+      "choice": "도끼술 S / 창술 S / 검술 S",
+      "license": "신철의 안장",
+      "unlock": "· 구세편 4구간 시작 시 해금 (천관의 신전에서 「신철의 안장」 입수 시 전직 가능)",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "타기 내리기",
+          "effect": "타기·내리기 명령을 사용할 수 있습니다.",
+          "originalName": "Mount/Dismount",
+          "originalEffect": "Allows use of Mount and Dismount commands."
+        },
+        {
+          "name": "전투 기술 장비 +3",
+          "effect": "장비 가능한 전투 기술 수 +3.",
+          "originalName": "Combat Arts +3",
+          "originalEffect": "Unit can equip +3 combat arts."
+        },
+        {
+          "name": "Golden Ride",
+          "effect": "자신에게 적용되는 기병 특효를 무효화합니다.",
+          "originalName": "Golden Ride",
+          "originalEffect": "Neutralizes effective vs. cavalry."
+        }
+      ],
+      "master": [
+        {
+          "name": "Divine Dexterity",
+          "effect": "기술 +10.",
+          "originalName": "Divine Dexterity",
+          "originalEffect": "Grants Dex +10.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625310",
+      "localSource": "classes.html#class-the-cavalier",
+      "skillNotes": []
+    },
+    "더 캘러미티": {
+      "slug": "the-calamity",
+      "tier": "신장직",
+      "recommendedLevel": "–",
+      "renown": "–",
+      "required": "–",
+      "choice": "궁술 S / 검술 S",
+      "license": "어둠의 결정",
+      "unlock": "· 구세편 4구간 시작 시 해금 (천관의 신전에서 「어둠의 결정」 입수 시 전직 가능)",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "자물쇠 열기",
+          "effect": "열쇠 없이 보물상자를 열 수 있습니다.",
+          "originalName": "Locktouch",
+          "originalEffect": "Allows the opening of chests even without keys."
+        },
+        {
+          "name": "전투 기술 장비 +3",
+          "effect": "장비 가능한 전투 기술 수 +3.",
+          "originalName": "Combat Arts +3",
+          "originalEffect": "Unit can equip +3 combat arts."
+        },
+        {
+          "name": "Ultimate Search",
+          "effect": "탐색 결과가 PERFECT가 될 확률이 매우 크게 높아집니다.",
+          "originalName": "Ultimate Search",
+          "originalEffect": "Search results are exceedingly more likely to be perfect."
+        }
+      ],
+      "master": [
+        {
+          "name": "Divine Will",
+          "effect": "행운 +10.",
+          "originalName": "Divine Will",
+          "originalEffect": "Grants Lck +10.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625308",
+      "localSource": "classes.html#class-the-calamity",
+      "skillNotes": []
+    },
+    "더 트라이던트": {
+      "slug": "the-trident",
+      "tier": "신장직",
+      "recommendedLevel": "–",
+      "renown": "–",
+      "required": "창술 S",
+      "choice": "–",
+      "license": "삼차의 창",
+      "unlock": "· 구세편 4구간 시작 시 해금 (천관의 신전에서 「삼차의 창」 입수 시 전직 가능)",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "마법 회복 +10",
+          "effect": "마법으로 아군을 회복할 때 회복량 +10.",
+          "originalName": "Magic Heal +10",
+          "originalEffect": "When healing an ally with magic, restores +10 HP."
+        },
+        {
+          "name": "전투 기술 장비 +3",
+          "effect": "장비 가능한 전투 기술 수 +3.",
+          "originalName": "Combat Arts +3",
+          "originalEffect": "Unit can equip +3 combat arts."
+        },
+        {
+          "name": "White-Magic Zenith",
+          "effect": "백마술 사용 횟수가 3배가 됩니다.",
+          "originalName": "White-Magic Zenith",
+          "originalEffect": "Multiplies white magic uses by 3."
+        }
+      ],
+      "master": [
+        {
+          "name": "Divine Wall",
+          "effect": "수비 +10.",
+          "originalName": "Divine Wall",
+          "originalEffect": "Grants Def +10.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625309",
+      "localSource": "classes.html#class-the-trident",
+      "skillNotes": []
+    },
+    "디 아바타르": {
+      "slug": "the-avatar",
+      "tier": "신장직",
+      "recommendedLevel": "–",
+      "renown": "–",
+      "required": "–",
+      "choice": "백마술 S / 흑마술 S",
+      "license": "전생의 연화",
+      "unlock": "· 구세편 4구간 시작 시 해금 (천관의 신전에서 「전생의 연화」 입수 시 전직 가능)",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "마법 명중 +10",
+          "effect": "마법 장비 시 명중 +10.",
+          "originalName": "Magic Hit +10",
+          "originalEffect": "When equipped with magic, grants Hit +10."
+        },
+        {
+          "name": "마법 회복 +20",
+          "effect": "마법으로 아군을 회복할 때 회복량 +20.",
+          "originalName": "Magic Heal +20",
+          "originalEffect": "When healing an ally with magic, restores +20 HP."
+        },
+        {
+          "name": "All-Magic Zenith",
+          "effect": "흑마술·백마술 사용 횟수가 3배가 됩니다.",
+          "originalName": "All-Magic Zenith",
+          "originalEffect": "Multiplies black magic and white magic uses by 3."
+        }
+      ],
+      "master": [
+        {
+          "name": "Divine Law",
+          "effect": "마력 +10.",
+          "originalName": "Divine Law",
+          "originalEffect": "Grants Mag +10.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625311",
+      "localSource": "classes.html#class-the-avatar",
+      "skillNotes": []
+    },
+    "디 압사라스": {
+      "slug": "the-apsara",
+      "tier": "신장직",
+      "recommendedLevel": "–",
+      "renown": "–",
+      "required": "궁술 C, 검술 A",
+      "choice": "–",
+      "license": "무사의 목걸이",
+      "unlock": "· 구세편 4구간 시작 시 해금 (천관의 신전에서 「무사의 목걸이」 입수 시 전직 가능)",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "전투 기술 장비 +3",
+          "effect": "장비 가능한 전투 기술 수 +3.",
+          "originalName": "Combat Arts +3",
+          "originalEffect": "Unit can equip +3 combat arts."
+        },
+        {
+          "name": "춤추기",
+          "effect": "전투 기술 ‘춤추기’를 사용할 수 있습니다.",
+          "originalName": "Dance",
+          "originalEffect": "Allows the use of the Dance combat art."
+        }
+      ],
+      "master": [
+        {
+          "name": "Divine Dance",
+          "effect": "매력 +10.",
+          "originalName": "Divine Dance",
+          "originalEffect": "Grants Cha +10.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625301",
+      "localSource": "classes.html#class-the-apsara",
+      "skillNotes": []
+    },
+    "디 이터널": {
+      "slug": "the-eternal",
+      "tier": "신장직",
+      "recommendedLevel": "–",
+      "renown": "–",
+      "required": "–",
+      "choice": "격투술 S / 도끼술 S / 검술 S",
+      "license": "심판의 천칭",
+      "unlock": "· 구세편 4구간 시작 시 해금 (천관의 신전에서 「심판의 천칭」 입수 시 전직 가능)",
+      "conditionNotes": [],
+      "skills": [
+        {
+          "name": "전투 기술 장비 +3",
+          "effect": "장비 가능한 전투 기술 수 +3.",
+          "originalName": "Combat Arts +3",
+          "originalEffect": "Unit can equip +3 combat arts."
+        },
+        {
+          "name": "도끼 명중 +10",
+          "effect": "도끼 장비 시 명중 +10.",
+          "originalName": "Axe Hit +10",
+          "originalEffect": "When equipped with an axe, grants Hit+10."
+        },
+        {
+          "name": "격투 명중 +10",
+          "effect": "건틀릿 장비 시 명중 +10.",
+          "originalName": "Brawl Hit +10",
+          "originalEffect": "When equipped with gauntlets, grants Hit+10."
+        }
+      ],
+      "master": [
+        {
+          "name": "Divine Might",
+          "effect": "힘 +10.",
+          "originalName": "Divine Might",
+          "originalEffect": "Grants Str +10.",
+          "kind": "마스터 보상"
+        }
+      ],
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625305",
+      "localSource": "classes.html#class-the-eternal",
+      "skillNotes": []
+    }
+  },
+  "conflicts": [
+    {
+      "class": "드래곤 마스터",
+      "note": "전투 기술 장비 수: 로컬은 +1, Game8은 +2. 이 문서는 로컬 수치를 쓰며 실제 병과 화면의 수치를 확인해야 합니다."
+    },
+    {
+      "class": "배틀 마스터",
+      "note": "전투 기술 장비 수: 로컬은 +2, Game8은 +3. 이 문서는 로컬 수치를 쓰며 실제 병과 화면의 수치를 확인해야 합니다."
+    }
+  ]
+}

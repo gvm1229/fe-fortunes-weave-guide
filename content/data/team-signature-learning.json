@@ -1,0 +1,165 @@
+{
+  "reviewed": "2026-11-06",
+  "people": {
+    "리네": {
+      "source": "https://yuphastemple.com/ninae/",
+      "selectedSpells": {
+        "physic": {
+          "skill": "백마술",
+          "rank": "B",
+          "english": "Physic"
+        }
+      }
+    },
+    "시로코": {
+      "source": "https://yuphastemple.com/sirocco/",
+      "selectedSpells": {
+        "thoron": {
+          "skill": "흑마술",
+          "rank": "A",
+          "english": "Thoron"
+        }
+      }
+    },
+    "파비오": {
+      "source": "https://yuphastemple.com/fabio/",
+      "selectedSpells": {
+        "death": {
+          "skill": "흑마술",
+          "rank": "B",
+          "english": "Death Γ"
+        },
+        "luna": {
+          "skill": "흑마술",
+          "rank": "A",
+          "english": "Luna Λ"
+        }
+      }
+    },
+    "단테": {
+      "source": "https://yuphastemple.com/dante/",
+      "selectedSpells": {
+        "thoron": {
+          "skill": "흑마술",
+          "rank": "A",
+          "english": "Thoron"
+        },
+        "cutting-gale": {
+          "skill": "흑마술",
+          "rank": "B",
+          "english": "Cutting Gale"
+        }
+      }
+    },
+    "울턴드": {
+      "source": "https://yuphastemple.com/ultand/",
+      "selectedSpells": {
+        "seraphim": {
+          "skill": "백마술",
+          "rank": "C",
+          "english": "Seraphim"
+        }
+      }
+    },
+    "소피아": {
+      "source": "https://yuphastemple.com/sofia/",
+      "selectedSpells": {
+        "physic": {
+          "skill": "백마술",
+          "rank": "B",
+          "english": "Physic"
+        },
+        "nosferatu": {
+          "skill": "백마술",
+          "rank": "C",
+          "english": "Nosferatu"
+        }
+      }
+    },
+    "올림피아": {
+      "source": "https://yuphastemple.com/olympia/",
+      "selectedSpells": {
+        "physic": {
+          "skill": "백마술",
+          "rank": "B",
+          "english": "Physic"
+        },
+        "silence": {
+          "skill": "백마술",
+          "rank": "A",
+          "english": "Silence"
+        }
+      }
+    },
+    "피아나": {
+      "source": "https://yuphastemple.com/fianna/",
+      "selectedSpells": {
+        "seraphim": {
+          "skill": "백마술",
+          "rank": "C",
+          "english": "Seraphim"
+        },
+        "rescue": {
+          "skill": "백마술",
+          "rank": "S",
+          "english": "Rescue"
+        }
+      }
+    },
+    "아나톨리아": {
+      "source": "https://yuphastemple.com/anatolia/",
+      "selectedSpells": {
+        "thoron": {
+          "skill": "흑마술",
+          "rank": "A",
+          "english": "Thoron"
+        },
+        "excalibur": {
+          "skill": "흑마술",
+          "rank": "S",
+          "english": "Excalibur"
+        }
+      }
+    },
+    "오르헬": {
+      "source": "https://yuphastemple.com/orchel/",
+      "selectedSpells": {
+        "seraphim": {
+          "skill": "백마술",
+          "rank": "D",
+          "english": "Seraphim"
+        },
+        "physic": {
+          "skill": "백마술",
+          "rank": "C",
+          "english": "Physic"
+        }
+      }
+    },
+    "홍화": {
+      "source": "https://yuphastemple.com/hong-hua/",
+      "selectedSpells": {
+        "rescue": {
+          "skill": "백마술",
+          "rank": "B",
+          "english": "Rescue"
+        },
+        "warp": {
+          "skill": "백마술",
+          "rank": "S",
+          "english": "Warp"
+        }
+      }
+    },
+    "타리문": {
+      "source": "https://yuphastemple.com/talimun/",
+      "selectedSpells": {
+        "thoron": {
+          "skill": "흑마술",
+          "rank": "A",
+          "english": "Thoron"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,290 @@
+{
+  "scope": "육성 목표·현재 습득을 추정하지 않음",
+  "spells": {
+    "세오도라": [
+      {
+        "name": "엔젤",
+        "rank": "C",
+        "purpose": "명마 특효"
+      },
+      {
+        "name": "리브로",
+        "rank": "B",
+        "purpose": "원거리 회복"
+      },
+      {
+        "name": "매직 실드",
+        "rank": "A",
+        "purpose": "마법 대응"
+      }
+    ],
+    "소피아": [
+      {
+        "name": "리브로",
+        "rank": "B",
+        "purpose": "원거리 회복"
+      }
+    ],
+    "리네": [
+      {
+        "name": "리브로",
+        "rank": "B",
+        "purpose": "원거리 회복"
+      }
+    ],
+    "올림피아": [
+      {
+        "name": "리브로",
+        "rank": "B",
+        "purpose": "원거리 회복"
+      },
+      {
+        "name": "사일런스",
+        "rank": "A",
+        "purpose": "적 마법 봉쇄"
+      },
+      {
+        "name": "버서크",
+        "rank": "S",
+        "purpose": "적 교란"
+      }
+    ],
+    "피아나": [
+      {
+        "name": "엔젤",
+        "rank": "C",
+        "purpose": "명마 특효"
+      },
+      {
+        "name": "레스큐",
+        "rank": "S",
+        "purpose": "아군 구조"
+      }
+    ],
+    "무우": [
+      {
+        "name": "워프",
+        "rank": "A",
+        "purpose": "아군 이동"
+      }
+    ],
+    "시로코": [
+      {
+        "name": "레스트",
+        "rank": "C",
+        "purpose": "상태 이상 해제"
+      },
+      {
+        "name": "리저브",
+        "rank": "A",
+        "purpose": "범위 회복"
+      },
+      {
+        "name": "워프",
+        "rank": "S",
+        "purpose": "아군 이동"
+      }
+    ],
+    "티아라": [
+      {
+        "name": "리브로",
+        "rank": "C",
+        "purpose": "원거리 회복"
+      },
+      {
+        "name": "엔젤",
+        "rank": "A",
+        "purpose": "명마 특효"
+      }
+    ],
+    "울턴드": [
+      {
+        "name": "엔젤",
+        "rank": "C",
+        "purpose": "명마 특효"
+      },
+      {
+        "name": "이머지스",
+        "rank": "B",
+        "purpose": "필살 회피 +30"
+      },
+      {
+        "name": "매직 실드",
+        "rank": "A",
+        "purpose": "마법 대응"
+      }
+    ],
+    "단테": [
+      {
+        "name": "프리즈",
+        "rank": "A",
+        "purpose": "적 이동 제어"
+      }
+    ],
+    "보나파르트": [
+      {
+        "name": "사일런스",
+        "rank": "A",
+        "purpose": "적 마법 봉쇄"
+      }
+    ],
+    "로레타": [
+      {
+        "name": "레스큐",
+        "rank": "S",
+        "purpose": "아군 구조"
+      }
+    ],
+    "홍화": [
+      {
+        "name": "레스큐",
+        "rank": "B",
+        "purpose": "아군 구조"
+      },
+      {
+        "name": "워프",
+        "rank": "S",
+        "purpose": "아군 이동"
+      }
+    ],
+    "오르헬": [
+      {
+        "name": "엔젤",
+        "rank": "C",
+        "purpose": "명마 특효"
+      },
+      {
+        "name": "리브로",
+        "rank": "C",
+        "purpose": "원거리 회복"
+      },
+      {
+        "name": "리저브",
+        "rank": "S",
+        "purpose": "범위 회복"
+      },
+      {
+        "name": "스타라이트",
+        "rank": "B",
+        "purpose": "명마 특효 · 3칸 공격"
+      }
+    ],
+    "트로이아": [
+      {
+        "name": "리브로",
+        "rank": "A+",
+        "purpose": "원거리 회복"
+      },
+      {
+        "name": "레스트",
+        "rank": "A+",
+        "purpose": "상태 이상 해제"
+      },
+      {
+        "name": "배리어",
+        "rank": "S",
+        "purpose": "다음 전투 피해 반감"
+      }
+    ],
+    "센트리온": [
+      {
+        "name": "레스큐",
+        "rank": "C",
+        "purpose": "아군 구조"
+      }
+    ],
+    "타호니아": [
+      {
+        "name": "레스큐",
+        "rank": "A",
+        "purpose": "아군 구조"
+      }
+    ],
+    "이스마르": [
+      {
+        "name": "엔젤",
+        "rank": "C",
+        "purpose": "명마 특효"
+      }
+    ],
+    "아나톨리아": [
+      {
+        "name": "사일런스",
+        "rank": "C",
+        "purpose": "적 마법 봉쇄"
+      },
+      {
+        "name": "매직 실드",
+        "rank": "B",
+        "purpose": "마법 대응"
+      },
+      {
+        "name": "워프",
+        "rank": "A",
+        "purpose": "아군 이동"
+      }
+    ],
+    "카타냐": [
+      {
+        "name": "엔젤",
+        "rank": "C",
+        "purpose": "명마 특효"
+      },
+      {
+        "name": "리브로",
+        "rank": "B",
+        "purpose": "원격 회복"
+      },
+      {
+        "name": "워프",
+        "rank": "A",
+        "purpose": "아군 이동"
+      }
+    ],
+    "릴리안": [
+      {
+        "name": "리브로",
+        "rank": "B",
+        "purpose": "병과 변경 시 원거리 회복"
+      }
+    ]
+  },
+  "notes": {
+    "아나톨리아": "학습표 기준. 드루이드에서는 백마법을 시전하지 못하며 실제 사용할 전투는 바테스·발키리움 등 보유 자격으로 변경.",
+    "카타냐": "성천익병에서는 백마법 사용 불가. 주력은 비행 공격이며 이 마법을 쓰려고 추가 반복 훈련을 강제하지 않음.",
+    "릴리안": "보우 나이트·스나이퍼에서는 백마법 사용 불가 · 리브로를 배워도 현 편성의 회복 담당으로 세지 않음 · 궁수 육성에 백마술 B 추가 훈련 강제 없음"
+  },
+  "sources": [
+    "characters.html",
+    "data/phase-goals.json",
+    "data/training-sources.json",
+    "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624006",
+    "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620411",
+    "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623941",
+    "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624018",
+    "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624013",
+    "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624393",
+    "https://annasnotebook.net/en/weapons/rescue/",
+    "https://annasnotebook.net/en/characters/hong-hua/"
+  ],
+  "siroccoEvidence": {
+    "kind": "user-provided-learning-table",
+    "date": "2026-11-04",
+    "white": {
+      "D": "라이브",
+      "C": "레스트",
+      "B": "리커버",
+      "A": "리저브",
+      "S": "워프"
+    },
+    "black": {
+      "D": "윈드",
+      "C": "선더",
+      "B": "셰이버",
+      "A": "트론",
+      "S": "엑스칼리버"
+    },
+    "replaces": "Game8 레스트B/리커버C·이전 C/B 미확인",
+    "actualLearnedRanksReported": false
+  }
+}

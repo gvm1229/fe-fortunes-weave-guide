@@ -1,0 +1,65 @@
+{
+  "reported": "2026-11-04",
+  "scope": "current-project",
+  "source": "사용자 실제 구매 메뉴 보고; 에이전트가 게임을 조작해 재현한 것은 아님",
+  "unlockContext": "현재1루트 클리어. 구매 가능한 EXP 상한30%;40%는 다음 상한을 잘못 보고 말한 옛 보고이며 현재 구매 가능한 값이 아님.",
+  "exp": [
+    {
+      "effectPercent": 10,
+      "stepCost": 500,
+      "cumulativeCost": 500
+    },
+    {
+      "effectPercent": 20,
+      "stepCost": 500,
+      "cumulativeCost": 1000
+    },
+    {
+      "effectPercent": 30,
+      "stepCost": 1000,
+      "cumulativeCost": 2000
+    }
+  ],
+  "classExp": [
+    {
+      "effect": 1,
+      "stepCost": 1000
+    }
+  ],
+  "skillExpPerSkill": [
+    {
+      "effect": 1,
+      "stepCost": 300,
+      "cumulativeCost": 300
+    },
+    {
+      "effect": 2,
+      "stepCost": 300,
+      "cumulativeCost": 600
+    }
+  ],
+  "shopDiscountSameCategory": [
+    {
+      "effectPercent": 10,
+      "stepCost": 300,
+      "cumulativeCost": 300
+    },
+    {
+      "effectPercent": 20,
+      "stepCost": 300,
+      "cumulativeCost": 600
+    }
+  ],
+  "purchaseExecuted": true,
+  "laterUnlockCapsOrPrices": "40%는 다음 상한으로 언급됐으나 해금 시점·가격은 미확인",
+  "expControls": {
+    "onOffOnly": true,
+    "canSelectLowerPurchasedRate": false,
+    "source": "사용자의 현재 버전 직접 확인 답변"
+  },
+  "correction": "최신10/20/30% 보고가 이전10/20/40% 보고를 대체",
+  "currentExpCapPercent": 30,
+  "purchaseExecutionSource": "사용자가 실제 구매 완료를 보고. 에이전트 게임 조작 아님",
+  "reportedExpPurchasedPercent": 10,
+  "reportedRemainingShards": 2605
+}

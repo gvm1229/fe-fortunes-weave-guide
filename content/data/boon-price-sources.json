@@ -1,0 +1,50 @@
+{
+  "reviewed": "2026-11-04",
+  "scope": "current-project",
+  "priceUnit": "구세의 파편",
+  "primaryTable": {
+    "url": "https://hyperwiki.jp/fefw/achivement/",
+    "title": "偉業録と救世の祝福",
+    "updated": "2026-11-03",
+    "readMethod": "원문HTML 표 직접 읽음. Jina는 앞의 위업록 표만 추출해 원문HTML에서 축복 표를 추가 확인.",
+    "rows": [
+      {
+        "name": "아우로라 가호 소비 감소",
+        "original": "アウロラの加護の消費減少",
+        "tierEffects": [
+          20,
+          50
+        ],
+        "perTierPrices": [
+          300,
+          300
+        ]
+      },
+      {
+        "name": "주라 가호 소비 감소",
+        "original": "ジュラの加護の消費減少",
+        "tierEffects": [
+          20,
+          50
+        ],
+        "perTierPrices": [
+          300,
+          300
+        ]
+      }
+    ]
+  },
+  "corroboratingArticle": {
+    "url": "https://sportsrant.indiatimes.com/gaming/fire-emblem-fortunes-weave-boons-of-salvation-guide-best-upgrades-to-buy-first/articleshow/134455427.html",
+    "published": "2026-09-24",
+    "finding": "아우로라·칼라20/50% 각단계300을 명시.",
+    "limit": "병과경험치300 표기는 hyperWiki1000/2000과 충돌하므로 그 기사 전체 가격을 채택하지 않음."
+  },
+  "serenesForest": {
+    "index": "https://forums.serenesforest.net/forum/109-fire-emblem-fortunes-weave/",
+    "discussion": "https://forums.serenesforest.net/topic/108486-should-fortunas-blessing-cost-divine-sand/",
+    "finding": "가호 할인 후 백사 사용량과 하드 운용 경험은 있으나 읽은 글에서20% 구매 가격은 확인되지 않음.",
+    "coverage": "목록1·4·5·6·7쪽과 관련 토론·데이터 조사글 읽음. 목록2·3쪽은 확인 화면으로 본문 미확보. 모든172개 글을 다 읽었다고 주장하지 않음."
+  },
+  "purchaseExecuted": false
+}

@@ -1,0 +1,730 @@
+{
+  "reviewed": "2026-11-04",
+  "rules": [
+    "출격 준비창의 실제 아군 칸 수가 최우선 · 보통1부 진영장 외6~7명,최종전 무렵8명 · 현재 세오도라7장 보고는 주력5동료로 칸이 찬 실제 상태 우선 · 완성 명단 크기와 구별",
+    "아직 영입하지 않은 인물을 출격 인원에 넣지 않는다. 시작·자동 동료로 빈 역할을 채우며, 대체 인물이 실제 합류하고 필요한 역할을 맡을 수 있을 때 교대한다.",
+    "본대가 출격 칸을 채우면 나머지 동료의 추가 막타·유료 투기장 훈련·시험 증서·전용 강화 투자를 중단한다. 고유 인물도 같은 기준이다.",
+    "빠진 동료의 현재 병종·자격·능력은 그대로 보관한다. 장비는 계속 출격하는 동료에게 옮기고, 영입·대화·외전 회수는 육성과 구분한다.",
+    "다음 부에서 정원이 늘거나 필수 역할에 빈자리가 생겨 실제로 다시 출격시킬 때만 투자를 재개한다. 보유·지급 증서를 먼저 쓰며 예비 전원 상급·기능A를 목표로 삼지 않는다."
+  ],
+  "routes": {
+    "theodora": {
+      "name": "세오도라",
+      "starter": [
+        "세오도라",
+        "토비아스",
+        "보나파르트"
+      ],
+      "automatic": {
+        "릴리안": 4,
+        "라이선더": 4
+      },
+      "core": [
+        "세오도라",
+        "보나파르트",
+        "토비아스",
+        "녹투라",
+        "릴리안",
+        "소피아"
+      ],
+      "bridge": [
+        "라이선더",
+        "시로코",
+        "로레타"
+      ],
+      "handoff": "현재 세오도라·보나파르트·토비아스·녹투라·릴리안·소피아 유지 · 라이선더는 거의 미사용인 실제 상태 우선 · 신규 동료는 던전에서 준비해 역할 가능할 때 교대",
+      "after": "세오도라·보나파르트·토비아스·녹투라·릴리안·소피아 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "part2": "현재 주력이 승리 담당 · 준비된 예약자를 단계적으로 추가 · 인원 채우기용 전원 동급/상급 육성 없음 · 실제 출격 칸/게스트 확인",
+      "source": "theodora.html",
+      "extraSlots": [
+        "단테",
+        "리네",
+        "알렉산드라"
+      ],
+      "dungeonAndPart2": [
+        "시로코",
+        "로레타",
+        "우술라"
+      ]
+    },
+    "leda": {
+      "name": "레다",
+      "starter": [
+        "레다",
+        "무우",
+        "시로코",
+        "버커니어"
+      ],
+      "automatic": {
+        "올림피아": 3
+      },
+      "core": [
+        "레다",
+        "무우",
+        "시로코",
+        "올림피아",
+        "그자람",
+        "카타냐",
+        "에스메랄다"
+      ],
+      "bridge": [
+        "버커니어",
+        "피아나",
+        "하르빈"
+      ],
+      "handoff": "버커니어는 초반 물리 벽이다. 에스메랄다가 실제 합류해 전열을 맡고 본대가 정원을 채우기 전까지 사용한다. 영입이 늦으면 계속 쓰되8장 마지막 날 장비 회수는 별도로 끝낸다.",
+      "after": "레다·무우·시로코·올림피아·그자람·카타냐·에스메랄다 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "part2": "현재 주력이 승리 담당 · 준비된 예약자를 단계적으로 추가 · 인원 채우기용 전원 동급/상급 육성 없음 · 실제 출격 칸/게스트 확인",
+      "source": "leda.html",
+      "extraSlots": [
+        "이니오니"
+      ],
+      "dungeonAndPart2": [
+        "피아나",
+        "소피아",
+        "하르빈"
+      ]
+    },
+    "dietrich": {
+      "name": "디트리히",
+      "starter": [
+        "디트리히",
+        "파비오"
+      ],
+      "automatic": {
+        "에스메랄다": 2,
+        "미카엘라": 4
+      },
+      "core": [
+        "디트리히",
+        "에스메랄다",
+        "파비오",
+        "미카엘라",
+        "우술라",
+        "리네",
+        "소피아"
+      ],
+      "bridge": [
+        "이오",
+        "피아나",
+        "카타냐",
+        "울턴드"
+      ],
+      "handoff": "에스메랄다2장·미카엘라4장 합류 뒤 육성 · 이오는4장 영입 뒤5장 레버·기동 · 피아나 명성7 합류 전 파비오·도구,리네는 실제 백마법 자격일 때만 리브로,소피아 명성9 합류 뒤 원격 회복 · 본대9명 충족 뒤 이오 투자 중단",
+      "after": "디트리히·에스메랄다·파비오·미카엘라·우술라·리네·소피아 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "part2": "현재 주력이 승리 담당 · 준비된 예약자를 단계적으로 추가 · 인원 채우기용 전원 동급/상급 육성 없음 · 실제 출격 칸/게스트 확인",
+      "source": "dietrich.html",
+      "extraSlots": [
+        "알렉산드라",
+        "게이츠"
+      ],
+      "dungeonAndPart2": [
+        "피아나",
+        "카타냐"
+      ]
+    },
+    "kai": {
+      "name": "카이",
+      "starter": [
+        "카이",
+        "티아라",
+        "피터르"
+      ],
+      "automatic": {
+        "울턴드": 6
+      },
+      "core": [
+        "카이",
+        "티아라",
+        "피터르",
+        "그자람",
+        "미카엘라",
+        "울턴드",
+        "로레타"
+      ],
+      "bridge": [
+        "녹투라"
+      ],
+      "handoff": "초기 동료와 실제 합류한 전차병 대상 우선 · 녹투라는 빈 역할 대체 · 세테스/누조/알렉산드라는 맵 역할에 맞춰 교대하고 같은 레벨 강제 없음",
+      "after": "카이·티아라·피터르·그자람·미카엘라·울턴드·로레타 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "part2": "현재 주력이 승리 담당 · 준비된 예약자를 단계적으로 추가 · 인원 채우기용 전원 동급/상급 육성 없음 · 실제 출격 칸/게스트 확인",
+      "source": "kai.html",
+      "extraSlots": [
+        "세테스",
+        "누조",
+        "알렉산드라"
+      ],
+      "dungeonAndPart2": [
+        "리네"
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "source": "theodora.html",
+      "fact": "1장 첫 턴 세오도라 단독·2턴째 토비아스/보나파르트.3장 끝 릴리안/라이선더 합류·4장부터 출격. 기본9명 전후·12장10명."
+    },
+    {
+      "source": "leda.html",
+      "fact": "초반4명 중 버커니어는 벽,3장 종료 올림피아 합류.8장 마지막 날까지 장비 이전.9장 상태 변화의 구체 이유는 스포일러 문서로 분리."
+    },
+    {
+      "source": "dietrich.html",
+      "fact": "1장 디트리히/파비오,2장 에스메랄다,4장 미카엘라.4장 이오 영입·5장 기동 역할. 소피아는 명성9."
+    },
+    {
+      "source": "kai.html",
+      "fact": "카이/티아라/피터르는1장 자동. 그자람3장·미카엘라5장. 울턴드는 원문3~6장 표기·현재 개인화6장 확인을 따르며 실제 합류 전 배분하지 않음."
+    },
+    {
+      "source": "part2.html",
+      "fact": "로드 측 기본13명·세오도라14명. 실제 전투 정원·강제 출격·게스트 표시가 우선. 현재 모든 전투의 정원을 게임에서 실측한 자료는 아님."
+    }
+  ],
+  "supportQueues": {
+    "theodora": {
+      "anchor": "theo-03",
+      "targets": [
+        "우술라",
+        "루루디아",
+        "이오"
+      ],
+      "conditional": [],
+      "startLabel": "5장 스카우트 개방 뒤부터",
+      "openingNote": "세오도라의 선물·스카우트와 영입 대상 지원 준비는5장 군비증강 안내를 마친 뒤 시작한다.4장 자유행동과 구분한다. 등장과 영입은 별개다. 알렉산드라는8장·명성6, 누조는9장·명성6, 우술라는11장 타리문 외전 완료·명성9, 이오는명성10을 채운 뒤 실제 영입한다.",
+      "completedRecruits": [
+        "단테",
+        "로레타",
+        "리네",
+        "시로코"
+      ]
+    },
+    "leda": {
+      "anchor": "leda-02",
+      "targets": [
+        "에스메랄다",
+        "소피아",
+        "피아나",
+        "하르빈",
+        "알렉산드라",
+        "자스민",
+        "사란"
+      ],
+      "conditional": []
+    },
+    "dietrich": {
+      "anchor": "di-02",
+      "targets": [
+        "이오",
+        "우술라",
+        "리네",
+        "알렉산드라",
+        "게이츠",
+        "피아나",
+        "단테",
+        "울턴드",
+        "제스터",
+        "소피아"
+      ],
+      "conditional": [
+        "단테",
+        "울턴드"
+      ]
+    },
+    "kai": {
+      "anchor": "kai-route-03",
+      "targets": [
+        "미카엘라",
+        "세테스",
+        "누조",
+        "로레타",
+        "이오",
+        "알렉산드라",
+        "리네"
+      ],
+      "conditional": []
+    }
+  },
+  "chapters": {
+    "theodora:1": {
+      "route": "theodora",
+      "chapter": 1,
+      "anchor": "theo-01",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "세오도라·토비아스·녹투라·릴리안·보나파르트의 현재 공격 역할 유지 · 소피아 회복 · 신규 동료 때문에 강제 교체하지 않음",
+      "handoff": "세오도라·보나파르트·토비아스·녹투라·릴리안·소피아 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "theo-01--deployment-budget"
+    },
+    "theodora:2": {
+      "route": "theodora",
+      "chapter": 2,
+      "anchor": "theo-route-02",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "세오도라·토비아스·녹투라·릴리안·보나파르트의 현재 공격 역할 유지 · 소피아 회복 · 신규 동료 때문에 강제 교체하지 않음",
+      "handoff": "세오도라·보나파르트·토비아스·녹투라·릴리안·소피아 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "theo-route-02--deployment-budget"
+    },
+    "theodora:3": {
+      "route": "theodora",
+      "chapter": 3,
+      "anchor": "miss-theo03-outfit",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "세오도라·토비아스·녹투라·릴리안·보나파르트의 현재 공격 역할 유지 · 소피아 회복 · 신규 동료 때문에 강제 교체하지 않음",
+      "handoff": "세오도라·보나파르트·토비아스·녹투라·릴리안·소피아 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "miss-theo03-outfit--deployment-budget"
+    },
+    "theodora:4": {
+      "route": "theodora",
+      "chapter": 4,
+      "anchor": "theo-02",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "세오도라·토비아스·녹투라·릴리안·보나파르트의 현재 공격 역할 유지 · 소피아 회복 · 신규 동료 때문에 강제 교체하지 않음",
+      "handoff": "세오도라·보나파르트·토비아스·녹투라·릴리안·소피아 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "theo-02--deployment-budget"
+    },
+    "theodora:5": {
+      "route": "theodora",
+      "chapter": 5,
+      "anchor": "miss-theo05-anatolia",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "세오도라·토비아스·녹투라·릴리안·보나파르트의 현재 공격 역할 유지 · 소피아 회복 · 신규 동료 때문에 강제 교체하지 않음",
+      "handoff": "세오도라·보나파르트·토비아스·녹투라·릴리안·소피아 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "miss-theo05-anatolia--deployment-budget"
+    },
+    "theodora:6": {
+      "route": "theodora",
+      "chapter": 6,
+      "anchor": "theo-04",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "세오도라·토비아스·녹투라·릴리안·보나파르트의 현재 공격 역할 유지 · 소피아 회복 · 신규 동료 때문에 강제 교체하지 않음",
+      "handoff": "세오도라·보나파르트·토비아스·녹투라·릴리안·소피아 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "theo-04--deployment-budget"
+    },
+    "theodora:7": {
+      "route": "theodora",
+      "chapter": 7,
+      "anchor": "miss-theo07-alexandra",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "세오도라·토비아스·녹투라·릴리안·보나파르트의 현재 공격 역할 유지 · 소피아 회복 · 신규 동료 때문에 강제 교체하지 않음",
+      "handoff": "세오도라·보나파르트·토비아스·녹투라·릴리안·소피아 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "miss-theo07-alexandra--deployment-budget"
+    },
+    "theodora:8": {
+      "route": "theodora",
+      "chapter": 8,
+      "anchor": "theo-07",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "세오도라·토비아스·녹투라·릴리안·보나파르트의 현재 공격 역할 유지 · 소피아 회복 · 신규 동료 때문에 강제 교체하지 않음",
+      "handoff": "세오도라·보나파르트·토비아스·녹투라·릴리안·소피아 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "theo-07--deployment-budget"
+    },
+    "theodora:9": {
+      "route": "theodora",
+      "chapter": 9,
+      "anchor": "theo-08",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "세오도라·토비아스·녹투라·릴리안·보나파르트의 현재 공격 역할 유지 · 소피아 회복 · 신규 동료 때문에 강제 교체하지 않음",
+      "handoff": "세오도라·보나파르트·토비아스·녹투라·릴리안·소피아 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "theo-08--deployment-budget"
+    },
+    "theodora:10": {
+      "route": "theodora",
+      "chapter": 10,
+      "anchor": "miss-theo10-back-entrance",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "세오도라·토비아스·녹투라·릴리안·보나파르트의 현재 공격 역할 유지 · 소피아 회복 · 신규 동료 때문에 강제 교체하지 않음",
+      "handoff": "세오도라·보나파르트·토비아스·녹투라·릴리안·소피아 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "miss-theo10-back-entrance--deployment-budget"
+    },
+    "theodora:11": {
+      "route": "theodora",
+      "chapter": 11,
+      "anchor": "theo-10",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "세오도라·토비아스·녹투라·릴리안·보나파르트의 현재 공격 역할 유지 · 소피아 회복 · 신규 동료 때문에 강제 교체하지 않음",
+      "handoff": "세오도라·보나파르트·토비아스·녹투라·릴리안·소피아 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "theo-10--deployment-budget"
+    },
+    "theodora:12": {
+      "route": "theodora",
+      "chapter": 12,
+      "anchor": "theo-12",
+      "planningSlots": 10,
+      "actualWindowFirst": true,
+      "finish": "세오도라·토비아스·녹투라·릴리안·보나파르트의 현재 공격 역할 유지 · 소피아 회복 · 신규 동료 때문에 강제 교체하지 않음",
+      "handoff": "세오도라·보나파르트·토비아스·녹투라·릴리안·소피아 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "theo-12--deployment-budget"
+    },
+    "leda:1": {
+      "route": "leda",
+      "chapter": 1,
+      "anchor": "leda-01",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "무우·시로코·그자람·카타냐와 실제 합류한 에스메랄다의 공격 역할 우선 · 레다 재행동·올림피아 회복 · 이니오니/하르빈 합류 뒤 역할별 교대 · 같은 레벨 강제 없음",
+      "handoff": "레다·무우·시로코·올림피아·그자람·카타냐·에스메랄다 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "leda-01--deployment-budget"
+    },
+    "leda:2": {
+      "route": "leda",
+      "chapter": 2,
+      "anchor": "buy-leda02-mini-bow",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "무우·시로코·그자람·카타냐와 실제 합류한 에스메랄다의 공격 역할 우선 · 레다 재행동·올림피아 회복 · 이니오니/하르빈 합류 뒤 역할별 교대 · 같은 레벨 강제 없음",
+      "handoff": "레다·무우·시로코·올림피아·그자람·카타냐·에스메랄다 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "buy-leda02-mini-bow--deployment-budget"
+    },
+    "leda:3": {
+      "route": "leda",
+      "chapter": 3,
+      "anchor": "leda-route-03",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "무우·시로코·그자람·카타냐와 실제 합류한 에스메랄다의 공격 역할 우선 · 레다 재행동·올림피아 회복 · 이니오니/하르빈 합류 뒤 역할별 교대 · 같은 레벨 강제 없음",
+      "handoff": "레다·무우·시로코·올림피아·그자람·카타냐·에스메랄다 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "leda-route-03--deployment-budget"
+    },
+    "leda:4": {
+      "route": "leda",
+      "chapter": 4,
+      "anchor": "miss-leda04-mikaela",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "무우·시로코·그자람·카타냐와 실제 합류한 에스메랄다의 공격 역할 우선 · 레다 재행동·올림피아 회복 · 이니오니/하르빈 합류 뒤 역할별 교대 · 같은 레벨 강제 없음",
+      "handoff": "레다·무우·시로코·올림피아·그자람·카타냐·에스메랄다 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "miss-leda04-mikaela--deployment-budget"
+    },
+    "leda:5": {
+      "route": "leda",
+      "chapter": 5,
+      "anchor": "miss-leda05-kalla",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "무우·시로코·그자람·카타냐와 실제 합류한 에스메랄다의 공격 역할 우선 · 레다 재행동·올림피아 회복 · 이니오니/하르빈 합류 뒤 역할별 교대 · 같은 레벨 강제 없음",
+      "handoff": "레다·무우·시로코·올림피아·그자람·카타냐·에스메랄다 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "miss-leda05-kalla--deployment-budget"
+    },
+    "leda:6": {
+      "route": "leda",
+      "chapter": 6,
+      "anchor": "miss-leda06-olympia",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "무우·시로코·그자람·카타냐와 실제 합류한 에스메랄다의 공격 역할 우선 · 레다 재행동·올림피아 회복 · 이니오니/하르빈 합류 뒤 역할별 교대 · 같은 레벨 강제 없음",
+      "handoff": "레다·무우·시로코·올림피아·그자람·카타냐·에스메랄다 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "miss-leda06-olympia--deployment-budget"
+    },
+    "leda:7": {
+      "route": "leda",
+      "chapter": 7,
+      "anchor": "leda-05",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "무우·시로코·그자람·카타냐와 실제 합류한 에스메랄다의 공격 역할 우선 · 레다 재행동·올림피아 회복 · 이니오니/하르빈 합류 뒤 역할별 교대 · 같은 레벨 강제 없음",
+      "handoff": "레다·무우·시로코·올림피아·그자람·카타냐·에스메랄다 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "leda-05--deployment-budget"
+    },
+    "leda:8": {
+      "route": "leda",
+      "chapter": 8,
+      "anchor": "leda-06",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "무우·시로코·그자람·카타냐와 실제 합류한 에스메랄다의 공격 역할 우선 · 레다 재행동·올림피아 회복 · 이니오니/하르빈 합류 뒤 역할별 교대 · 같은 레벨 강제 없음",
+      "handoff": "레다·무우·시로코·올림피아·그자람·카타냐·에스메랄다 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "leda-06--deployment-budget"
+    },
+    "leda:9": {
+      "route": "leda",
+      "chapter": 9,
+      "anchor": "miss-leda09-sirocco",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "무우·시로코·그자람·카타냐와 실제 합류한 에스메랄다의 공격 역할 우선 · 레다 재행동·올림피아 회복 · 이니오니/하르빈 합류 뒤 역할별 교대 · 같은 레벨 강제 없음",
+      "handoff": "레다·무우·시로코·올림피아·그자람·카타냐·에스메랄다 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "miss-leda09-sirocco--deployment-budget"
+    },
+    "leda:10": {
+      "route": "leda",
+      "chapter": 10,
+      "anchor": "leda-10",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "무우·시로코·그자람·카타냐와 실제 합류한 에스메랄다의 공격 역할 우선 · 레다 재행동·올림피아 회복 · 이니오니/하르빈 합류 뒤 역할별 교대 · 같은 레벨 강제 없음",
+      "handoff": "레다·무우·시로코·올림피아·그자람·카타냐·에스메랄다 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "leda-10--deployment-budget"
+    },
+    "leda:11": {
+      "route": "leda",
+      "chapter": 11,
+      "anchor": "leda-11",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "무우·시로코·그자람·카타냐와 실제 합류한 에스메랄다의 공격 역할 우선 · 레다 재행동·올림피아 회복 · 이니오니/하르빈 합류 뒤 역할별 교대 · 같은 레벨 강제 없음",
+      "handoff": "레다·무우·시로코·올림피아·그자람·카타냐·에스메랄다 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "leda-11--deployment-budget"
+    },
+    "leda:12": {
+      "route": "leda",
+      "chapter": 12,
+      "anchor": "leda-13",
+      "planningSlots": 10,
+      "actualWindowFirst": true,
+      "finish": "무우·시로코·그자람·카타냐와 실제 합류한 에스메랄다의 공격 역할 우선 · 레다 재행동·올림피아 회복 · 이니오니/하르빈 합류 뒤 역할별 교대 · 같은 레벨 강제 없음",
+      "handoff": "레다·무우·시로코·올림피아·그자람·카타냐·에스메랄다 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "leda-13--deployment-budget"
+    },
+    "dietrich:1": {
+      "route": "dietrich",
+      "chapter": 1,
+      "anchor": "di-01",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "디트리히·에스메랄다·파비오만 독점하지 않도록 실제 준비된 미카엘라·우술라에게 안전한 막타 · 소피아/피아나/마법 가능 리네의 회복 역할 보존",
+      "handoff": "디트리히·에스메랄다·파비오·미카엘라·우술라·리네·소피아 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "di-01--deployment-budget"
+    },
+    "dietrich:2": {
+      "route": "dietrich",
+      "chapter": 2,
+      "anchor": "di-route-02",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "디트리히·에스메랄다·파비오만 독점하지 않도록 실제 준비된 미카엘라·우술라에게 안전한 막타 · 소피아/피아나/마법 가능 리네의 회복 역할 보존",
+      "handoff": "디트리히·에스메랄다·파비오·미카엘라·우술라·리네·소피아 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "di-route-02--deployment-budget"
+    },
+    "dietrich:3": {
+      "route": "dietrich",
+      "chapter": 3,
+      "anchor": "di-route-03",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "디트리히·에스메랄다·파비오만 독점하지 않도록 실제 준비된 미카엘라·우술라에게 안전한 막타 · 소피아/피아나/마법 가능 리네의 회복 역할 보존",
+      "handoff": "디트리히·에스메랄다·파비오·미카엘라·우술라·리네·소피아 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "di-route-03--deployment-budget"
+    },
+    "dietrich:4": {
+      "route": "dietrich",
+      "chapter": 4,
+      "anchor": "miss-di04-south",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "디트리히·에스메랄다·파비오만 독점하지 않도록 실제 준비된 미카엘라·우술라에게 안전한 막타 · 소피아/피아나/마법 가능 리네의 회복 역할 보존",
+      "handoff": "디트리히·에스메랄다·파비오·미카엘라·우술라·리네·소피아 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "miss-di04-south--deployment-budget"
+    },
+    "dietrich:5": {
+      "route": "dietrich",
+      "chapter": 5,
+      "anchor": "miss-di05-fabio-chain",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "디트리히·에스메랄다·파비오만 독점하지 않도록 실제 준비된 미카엘라·우술라에게 안전한 막타 · 소피아/피아나/마법 가능 리네의 회복 역할 보존",
+      "handoff": "디트리히·에스메랄다·파비오·미카엘라·우술라·리네·소피아 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "miss-di05-fabio-chain--deployment-budget"
+    },
+    "dietrich:6": {
+      "route": "dietrich",
+      "chapter": 6,
+      "anchor": "miss-di06-alexandra",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "디트리히·에스메랄다·파비오만 독점하지 않도록 실제 준비된 미카엘라·우술라에게 안전한 막타 · 소피아/피아나/마법 가능 리네의 회복 역할 보존",
+      "handoff": "디트리히·에스메랄다·파비오·미카엘라·우술라·리네·소피아 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "miss-di06-alexandra--deployment-budget"
+    },
+    "dietrich:7": {
+      "route": "dietrich",
+      "chapter": 7,
+      "anchor": "di-08",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "디트리히·에스메랄다·파비오만 독점하지 않도록 실제 준비된 미카엘라·우술라에게 안전한 막타 · 소피아/피아나/마법 가능 리네의 회복 역할 보존",
+      "handoff": "디트리히·에스메랄다·파비오·미카엘라·우술라·리네·소피아 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "di-08--deployment-budget"
+    },
+    "dietrich:8": {
+      "route": "dietrich",
+      "chapter": 8,
+      "anchor": "miss-di08-night",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "디트리히·에스메랄다·파비오만 독점하지 않도록 실제 준비된 미카엘라·우술라에게 안전한 막타 · 소피아/피아나/마법 가능 리네의 회복 역할 보존",
+      "handoff": "디트리히·에스메랄다·파비오·미카엘라·우술라·리네·소피아 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "miss-di08-night--deployment-budget"
+    },
+    "dietrich:9": {
+      "route": "dietrich",
+      "chapter": 9,
+      "anchor": "di-12",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "디트리히·에스메랄다·파비오만 독점하지 않도록 실제 준비된 미카엘라·우술라에게 안전한 막타 · 소피아/피아나/마법 가능 리네의 회복 역할 보존",
+      "handoff": "디트리히·에스메랄다·파비오·미카엘라·우술라·리네·소피아 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "di-12--deployment-budget"
+    },
+    "dietrich:10": {
+      "route": "dietrich",
+      "chapter": 10,
+      "anchor": "miss-di10-fabio-chain",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "디트리히·에스메랄다·파비오만 독점하지 않도록 실제 준비된 미카엘라·우술라에게 안전한 막타 · 소피아/피아나/마법 가능 리네의 회복 역할 보존",
+      "handoff": "디트리히·에스메랄다·파비오·미카엘라·우술라·리네·소피아 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "miss-di10-fabio-chain--deployment-budget"
+    },
+    "dietrich:11": {
+      "route": "dietrich",
+      "chapter": 11,
+      "anchor": "di-20",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "디트리히·에스메랄다·파비오만 독점하지 않도록 실제 준비된 미카엘라·우술라에게 안전한 막타 · 소피아/피아나/마법 가능 리네의 회복 역할 보존",
+      "handoff": "디트리히·에스메랄다·파비오·미카엘라·우술라·리네·소피아 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "di-20--deployment-budget"
+    },
+    "dietrich:12": {
+      "route": "dietrich",
+      "chapter": 12,
+      "anchor": "miss-di12-answerer",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "디트리히·에스메랄다·파비오만 독점하지 않도록 실제 준비된 미카엘라·우술라에게 안전한 막타 · 소피아/피아나/마법 가능 리네의 회복 역할 보존",
+      "handoff": "디트리히·에스메랄다·파비오·미카엘라·우술라·리네·소피아 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "miss-di12-answerer--deployment-budget"
+    },
+    "kai:1": {
+      "route": "kai",
+      "chapter": 1,
+      "anchor": "kai-01",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "피터르·그자람→미카엘라→로레타의 실제 합류 순서로 성장 확대 · 네 명 같은 레벨 강제 없음 · 티아라·울턴드는 회복 · 새 보완판보다 현재 전차병 대상 우선",
+      "handoff": "카이·티아라·피터르·그자람·미카엘라·울턴드·로레타 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "kai-01--deployment-budget"
+    },
+    "kai:2": {
+      "route": "kai",
+      "chapter": 2,
+      "anchor": "miss-kai02-stairs",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "피터르·그자람→미카엘라→로레타의 실제 합류 순서로 성장 확대 · 네 명 같은 레벨 강제 없음 · 티아라·울턴드는 회복 · 새 보완판보다 현재 전차병 대상 우선",
+      "handoff": "카이·티아라·피터르·그자람·미카엘라·울턴드·로레타 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "miss-kai02-stairs--deployment-budget"
+    },
+    "kai:3": {
+      "route": "kai",
+      "chapter": 3,
+      "anchor": "kai-route-03",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "피터르·그자람→미카엘라→로레타의 실제 합류 순서로 성장 확대 · 네 명 같은 레벨 강제 없음 · 티아라·울턴드는 회복 · 새 보완판보다 현재 전차병 대상 우선",
+      "handoff": "카이·티아라·피터르·그자람·미카엘라·울턴드·로레타 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "kai-route-03--deployment-budget"
+    },
+    "kai:4": {
+      "route": "kai",
+      "chapter": 4,
+      "anchor": "miss-kai04-bertrand",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "피터르·그자람→미카엘라→로레타의 실제 합류 순서로 성장 확대 · 네 명 같은 레벨 강제 없음 · 티아라·울턴드는 회복 · 새 보완판보다 현재 전차병 대상 우선",
+      "handoff": "카이·티아라·피터르·그자람·미카엘라·울턴드·로레타 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "miss-kai04-bertrand--deployment-budget"
+    },
+    "kai:5": {
+      "route": "kai",
+      "chapter": 5,
+      "anchor": "kai-03",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "피터르·그자람→미카엘라→로레타의 실제 합류 순서로 성장 확대 · 네 명 같은 레벨 강제 없음 · 티아라·울턴드는 회복 · 새 보완판보다 현재 전차병 대상 우선",
+      "handoff": "카이·티아라·피터르·그자람·미카엘라·울턴드·로레타 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "kai-03--deployment-budget"
+    },
+    "kai:6": {
+      "route": "kai",
+      "chapter": 6,
+      "anchor": "miss-kai06-mural",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "피터르·그자람→미카엘라→로레타의 실제 합류 순서로 성장 확대 · 네 명 같은 레벨 강제 없음 · 티아라·울턴드는 회복 · 새 보완판보다 현재 전차병 대상 우선",
+      "handoff": "카이·티아라·피터르·그자람·미카엘라·울턴드·로레타 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "miss-kai06-mural--deployment-budget"
+    },
+    "kai:7": {
+      "route": "kai",
+      "chapter": 7,
+      "anchor": "kai-05",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "피터르·그자람→미카엘라→로레타의 실제 합류 순서로 성장 확대 · 네 명 같은 레벨 강제 없음 · 티아라·울턴드는 회복 · 새 보완판보다 현재 전차병 대상 우선",
+      "handoff": "카이·티아라·피터르·그자람·미카엘라·울턴드·로레타 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "kai-05--deployment-budget"
+    },
+    "kai:8": {
+      "route": "kai",
+      "chapter": 8,
+      "anchor": "kai-route-08",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "피터르·그자람→미카엘라→로레타의 실제 합류 순서로 성장 확대 · 네 명 같은 레벨 강제 없음 · 티아라·울턴드는 회복 · 새 보완판보다 현재 전차병 대상 우선",
+      "handoff": "카이·티아라·피터르·그자람·미카엘라·울턴드·로레타 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "kai-route-08--deployment-budget"
+    },
+    "kai:9": {
+      "route": "kai",
+      "chapter": 9,
+      "anchor": "kai-route-09",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "피터르·그자람→미카엘라→로레타의 실제 합류 순서로 성장 확대 · 네 명 같은 레벨 강제 없음 · 티아라·울턴드는 회복 · 새 보완판보다 현재 전차병 대상 우선",
+      "handoff": "카이·티아라·피터르·그자람·미카엘라·울턴드·로레타 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "kai-route-09--deployment-budget"
+    },
+    "kai:10": {
+      "route": "kai",
+      "chapter": 10,
+      "anchor": "kai-route-10",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "피터르·그자람→미카엘라→로레타의 실제 합류 순서로 성장 확대 · 네 명 같은 레벨 강제 없음 · 티아라·울턴드는 회복 · 새 보완판보다 현재 전차병 대상 우선",
+      "handoff": "카이·티아라·피터르·그자람·미카엘라·울턴드·로레타 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "kai-route-10--deployment-budget"
+    },
+    "kai:11": {
+      "route": "kai",
+      "chapter": 11,
+      "anchor": "kai-route-11",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "피터르·그자람→미카엘라→로레타의 실제 합류 순서로 성장 확대 · 네 명 같은 레벨 강제 없음 · 티아라·울턴드는 회복 · 새 보완판보다 현재 전차병 대상 우선",
+      "handoff": "카이·티아라·피터르·그자람·미카엘라·울턴드·로레타 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "kai-route-11--deployment-budget"
+    },
+    "kai:12": {
+      "route": "kai",
+      "chapter": 12,
+      "anchor": "kai-06",
+      "planningSlots": 9,
+      "actualWindowFirst": true,
+      "finish": "피터르·그자람→미카엘라→로레타의 실제 합류 순서로 성장 확대 · 네 명 같은 레벨 강제 없음 · 티아라·울턴드는 회복 · 새 보완판보다 현재 전차병 대상 우선",
+      "handoff": "카이·티아라·피터르·그자람·미카엘라·울턴드·로레타 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
+      "checkId": "kai-06--deployment-budget"
+    }
+  }
+}

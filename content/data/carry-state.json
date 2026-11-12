@@ -1,0 +1,188 @@
+{
+  "reviewed": "2026-11-05",
+  "scope": "current-project",
+  "difficulty": {
+    "requested": "하드·캐주얼",
+    "fixedFor": [
+      "세오도라",
+      "레다",
+      "디트리히 재진입",
+      "카이",
+      "2부",
+      "3부"
+    ],
+    "gameSettingChangedByAgent": false
+  },
+  "lastReported": {
+    "part1Complete": [
+      "디트리히"
+    ],
+    "part2LastConfirmed": "디트리히2부1장 첫 전투 전. 군행동·상급증서5장 사용 완료.",
+    "part2CompletionInLatestMessage": "1부12장 완료·2부 첫 전투 전 그대로로 사용자 재확인",
+    "shards": 2605,
+    "boonsBought": 13,
+    "claimedPart1ShardsIncluded": 5000,
+    "blessingLevels": {
+      "아우로라": 3,
+      "주라": 2,
+      "마스": 0,
+      "스미르노스": 0,
+      "칼라": 0,
+      "크레르": 0
+    },
+    "chosenBlessings": [
+      "포트나",
+      "아우로라",
+      "주라"
+    ],
+    "stations": "전부 해금",
+    "mapExcept": [
+      "사막",
+      "동쪽 끝"
+    ],
+    "commonSubquests": "당시 디트리히에서 가능한 공통 서브퀘스트 전부 완료라는 사용자 보고",
+    "unlockedSpecialClasses": [
+      "레인저"
+    ],
+    "specialClassesNotUnlocked": [
+      "대장장이",
+      "트루바두르",
+      "드래군",
+      "카타프락토스"
+    ],
+    "guardianNote": "리네의 현재 병종 가디언 사용 확인. 모든 인물의 자격·새 루트 시험 목록을 자동 확정하지 않음.",
+    "paraloguesDone": [
+      "타리문",
+      "오르헬",
+      "아나톨리아",
+      "안나",
+      "세오도라",
+      "레다"
+    ],
+    "paralogueMissed": [
+      "베르트랑"
+    ],
+    "creekQuest": "죽은 여동생의 장신구 완료",
+    "oldRenown": 12,
+    "oldGold": 70193,
+    "part2Completed": false,
+    "part2Skipped": false,
+    "part2StatusConfirmedDate": "2026-11-04",
+    "boonPurchaseConfirmedDate": "2026-11-04",
+    "boonPurchaseBeforeRoute": "세오도라1부",
+    "boonPurchaseSpent": 4800,
+    "boonsPurchased": [
+      "획득 경험치 증가10%",
+      "병과 경험치 증가+1",
+      "검술 경험치 증가+1",
+      "창술 경험치 증가+1",
+      "도끼술 경험치 증가+1",
+      "궁술 경험치 증가+1",
+      "격투술 경험치 증가+1",
+      "흑마술 경험치 증가+1",
+      "백마술 경험치 증가+1",
+      "무기 가격 할인10%",
+      "아우로라의 가호 백사 소비20% 감소",
+      "칼라의 가호 백사 소비20% 감소",
+      "크레르의 가호 백사 소비20% 감소"
+    ],
+    "newRouteCurrentChapter": "세오도라1부7장후반·세오도라Lv20·명성6·중급 전직 가능. 실제 전직 완료는 미확인.",
+    "activeRouteProgress": {
+      "route": "theodora",
+      "part": 1,
+      "chapter": 7,
+      "chapterPhase": "후반",
+      "protagonistLevel": 20,
+      "renown": 6,
+      "intermediatePromotionAvailable": true,
+      "intermediatePromotionCompleted": null,
+      "currentClass": null,
+      "reportedDate": "2026-11-05",
+      "source": "사용자의 현재 경기병 경로·EXP 질문에서 직접 보고"
+    }
+  },
+  "carry": [
+    {
+      "item": "가호 레벨",
+      "kind": "1부 완료 뒤 새1장에 반영",
+      "known": "아우로라3·주라2",
+      "todo": "아우로라3을 다시 올리지 않고 크레르1→칼라3→크레르3→주라3→마스3→스미르노스3 순서로 매주 봉사. 루트별 목표와 실제 보고를 구분.",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624227"
+    },
+    {
+      "item": "구세의 축복·파편·위업록",
+      "kind": "같은 저장의 공유 상태",
+      "known": "현재2,605파편·13개 구매 완료. 기존7,405에서4,800 사용. 디트리히 첫1부5,000은 기존 잔액에 포함.",
+      "todo": "보유13개 적용 상태를 확인하고 같은 단계는 다시 사지 않음. 다음 새1부 첫 보상은 실제 수령 뒤 잔액에 반영.",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/622788"
+    },
+    {
+      "item": "지도·역",
+      "kind": "완료 자료를 새1장에 반영",
+      "known": "역 전부, 사막·동쪽 끝 외 개방",
+      "todo": "이동 기능이 열리면 기존 역·개방지를 이용. 같은 길을 재탐색하지 않고 필요한 소재만 수집. 이야기 제한은 그대로 확인.",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624227"
+    },
+    {
+      "item": "공통 의뢰 완료·보상",
+      "kind": "새 루트와 공유하는 의뢰만 반영",
+      "known": "기존 가능 공통 의뢰 완료",
+      "todo": "세오도라 자유행동에서 완료 표시·받을 보상·실제 명성 확인. 완료분 재납품 생략. 군비증강·공연 등 루트 전용은 별도.",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624227"
+    },
+    {
+      "item": "지원 관계",
+      "kind": "같은 두 인물 사이의 값 공유",
+      "known": "디트리히와 영입했던 희망 동료의 요구 지원은 충족했던 상태",
+      "todo": "디트리히 재진입 때 남은 값은 반복 작업 생략. 세오도라와 해당 동료 사이의 값은 직접 확인하고 부족한 조만 식사.",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624227"
+    },
+    {
+      "item": "병종 해금",
+      "kind": "전역 해금과 개인 자격 구분",
+      "known": "레인저 해금 명시 확인,네 특수 병종 미해금",
+      "todo": "이미 열린 병종은 다시 여는 목적의 반복 과제 생략. 새 인물의 실제 자격·기능·시험은 따로 확인.",
+      "source": "index.html"
+    }
+  ],
+  "notDirectCarry": [
+    {
+      "item": "캐릭터 레벨·능력·기능·개인 자격",
+      "known": "디트리히46 등 기존 수치",
+      "todo": "세오도라 새 인물에게 그대로 부여되는 것이 아님. 각 합류 때 실제 병종·기능부터."
+    },
+    {
+      "item": "소지금·일반 물품·무기·탈것",
+      "known": "70,193G·선더 소드1자루 등 옛 디트리히 물품",
+      "todo": "새 세오도라 재고로 세지 않음. 일반 물품3부 반입·특별 탈것 보존은 별도 절차."
+    },
+    {
+      "item": "명성 수치",
+      "known": "디트리히 마지막12",
+      "todo": "새 세오도라의 명성12를 가정하지 않음. 공유 의뢰 보상이 반영된 실제 값으로 영입 시기 조정."
+    },
+    {
+      "item": "가호 선택·남은 백사",
+      "known": "기존 선택은 포트나·아우로라·주라,잔량 미확인",
+      "todo": "새1장 첫 전투 전 선택 상태 확인. 레벨과 발동·선택은 다르며 백사는 장마다 회복."
+    },
+    {
+      "item": "루트 전용 의뢰·조건",
+      "known": "세오도라 군비증강·레다 공연 등",
+      "todo": "공통 완료와 구분해 해당 루트의 새 조건을 실행. 외전도 완료 표시가 확인된 것만 생략."
+    }
+  ],
+  "sources": {
+    "game8Carry": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624227",
+    "game8Switch": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/618795",
+    "game8Blessings": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623536",
+    "game8Boons": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/622788",
+    "replay": "https://www.rpgsite.net/guide/21394-fire-emblem-fortunes-weave-new-game-guide-what-carries-over-how-replay-function-works"
+  },
+  "limits": [
+    "현재 디트리히2부 미완료. 첫 일반 물품 반입은 아직 확정되지 않음.",
+    "13개 구매 완료·현재2,605는 사용자 직접 보고. 에이전트가 게임에서 구매하지 않음.",
+    "이월은 현재 저장에서1장부터 시작하는 범위. 새 저장 파일을 만든다는 뜻이 아님.",
+    "상위 경험치 메뉴의 추가값과 총 적용값을 혼동하지 않으며 현재 해금은 실제 메뉴로 확인."
+  ]
+}

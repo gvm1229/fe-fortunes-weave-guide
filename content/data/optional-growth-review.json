@@ -1,0 +1,1130 @@
+{
+  "reviewed": "2026-11-06",
+  "scope": "최종25명×네 루트. 실제 합류 병종·성장 실험이 아닌 현재 계획의 추가 투자 판단.",
+  "rows": [
+    {
+      "route": "theodora",
+      "name": "이스마르",
+      "requirement": null,
+      "decision": "추가 안 함",
+      "reason": "이 루트 일반 스카우트 자료가 없거나 영입 불가. 다른 루트·3부 합류판을 사용.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "theodora",
+      "name": "디트리히",
+      "requirement": null,
+      "decision": "추가 안 함",
+      "reason": "이 루트 일반 스카우트 자료가 없거나 영입 불가. 다른 루트·3부 합류판을 사용.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "theodora",
+      "name": "카이",
+      "requirement": null,
+      "decision": "추가 안 함",
+      "reason": "이 루트 일반 스카우트 자료가 없거나 영입 불가. 다른 루트·3부 합류판을 사용.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "theodora",
+      "name": "세오도라",
+      "requirement": {
+        "sup": "0",
+        "fame": "0",
+        "init": "귀족"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "theodora",
+      "name": "레다",
+      "requirement": null,
+      "decision": "추가 안 함",
+      "reason": "이 루트 일반 스카우트 자료가 없거나 영입 불가. 다른 루트·3부 합류판을 사용.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "theodora",
+      "name": "미카엘라",
+      "requirement": {
+        "sup": "3",
+        "fame": "8",
+        "init": "투사"
+      },
+      "decision": "추가 보류",
+      "reason": "현재9명 본대와 지정 보완판에 우선 투자. 추가 지원·의뢰·시험을 거쳐 같은 출격 칸을 나눌 만큼의 이득이 확인되지 않아 반복 육성을 기본 과제로 추가하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "theodora",
+      "name": "무우",
+      "requirement": {
+        "sup": "3",
+        "fame": "9",
+        "init": "평민"
+      },
+      "decision": "추가 보류",
+      "reason": "현재9명 본대와 지정 보완판에 우선 투자. 추가 지원·의뢰·시험을 거쳐 같은 출격 칸을 나눌 만큼의 이득이 확인되지 않아 반복 육성을 기본 과제로 추가하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "theodora",
+      "name": "그자람",
+      "requirement": {
+        "sup": "3",
+        "fame": "8",
+        "init": "투사"
+      },
+      "decision": "추가 보류",
+      "reason": "현재9명 본대와 지정 보완판에 우선 투자. 추가 지원·의뢰·시험을 거쳐 같은 출격 칸을 나눌 만큼의 이득이 확인되지 않아 반복 육성을 기본 과제로 추가하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "theodora",
+      "name": "에스메랄다",
+      "requirement": {
+        "sup": "3",
+        "fame": "9",
+        "init": "병사"
+      },
+      "decision": "추가 보류",
+      "reason": "현재9명 본대와 지정 보완판에 우선 투자. 추가 지원·의뢰·시험을 거쳐 같은 출격 칸을 나눌 만큼의 이득이 확인되지 않아 반복 육성을 기본 과제로 추가하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "theodora",
+      "name": "카타냐",
+      "requirement": {
+        "sup": "3",
+        "fame": "7",
+        "init": "병사"
+      },
+      "decision": "추가 보류",
+      "reason": "현재9명 본대와 지정 보완판에 우선 투자. 추가 지원·의뢰·시험을 거쳐 같은 출격 칸을 나눌 만큼의 이득이 확인되지 않아 반복 육성을 기본 과제로 추가하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "theodora",
+      "name": "리네",
+      "requirement": {
+        "sup": "3",
+        "fame": "6",
+        "init": "병사"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "theodora",
+      "name": "시로코",
+      "requirement": {
+        "sup": "1",
+        "fame": "5",
+        "init": "평민"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "theodora",
+      "name": "파비오",
+      "requirement": null,
+      "decision": "추가 안 함",
+      "reason": "이 루트 일반 스카우트 자료가 없거나 영입 불가. 다른 루트·3부 합류판을 사용.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "theodora",
+      "name": "단테",
+      "requirement": {
+        "sup": "3",
+        "fame": "6",
+        "init": "주술사"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "theodora",
+      "name": "티아라",
+      "requirement": {
+        "sup": "3",
+        "fame": "10",
+        "init": "평민"
+      },
+      "decision": "추가 보류",
+      "reason": "현재9명 본대와 지정 보완판에 우선 투자. 추가 지원·의뢰·시험을 거쳐 같은 출격 칸을 나눌 만큼의 이득이 확인되지 않아 반복 육성을 기본 과제로 추가하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "theodora",
+      "name": "울턴드",
+      "requirement": {
+        "sup": "3",
+        "fame": "6",
+        "init": "주술사"
+      },
+      "decision": "추가 보류",
+      "reason": "세오도라 명성6·지원3은 리네·단테 본대 준비와 겹치고, 레다 명성8은 더 늦다. 더 이른 디트리히 명성5판만 선택 보완으로 둠.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "theodora",
+      "name": "하르빈",
+      "requirement": {
+        "sup": "3",
+        "fame": "7",
+        "init": "사냥병"
+      },
+      "decision": "추가 보류",
+      "reason": "현재9명 본대와 지정 보완판에 우선 투자. 추가 지원·의뢰·시험을 거쳐 같은 출격 칸을 나눌 만큼의 이득이 확인되지 않아 반복 육성을 기본 과제로 추가하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "theodora",
+      "name": "피터르",
+      "requirement": {
+        "sup": "3",
+        "fame": "7",
+        "init": "평민"
+      },
+      "decision": "추가 보류",
+      "reason": "현재9명 본대와 지정 보완판에 우선 투자. 추가 지원·의뢰·시험을 거쳐 같은 출격 칸을 나눌 만큼의 이득이 확인되지 않아 반복 육성을 기본 과제로 추가하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "theodora",
+      "name": "이니오니",
+      "requirement": {
+        "sup": "1",
+        "fame": "9",
+        "init": "아처"
+      },
+      "decision": "추가 보류",
+      "reason": "현재9명 본대와 지정 보완판에 우선 투자. 추가 지원·의뢰·시험을 거쳐 같은 출격 칸을 나눌 만큼의 이득이 확인되지 않아 반복 육성을 기본 과제로 추가하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "theodora",
+      "name": "우술라",
+      "requirement": {
+        "sup": "3",
+        "fame": "9",
+        "init": "사냥병"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "theodora",
+      "name": "알렉산드라",
+      "requirement": {
+        "sup": "1",
+        "fame": "6",
+        "init": "천익병"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "theodora",
+      "name": "로레타",
+      "requirement": {
+        "sup": "3",
+        "fame": "5",
+        "init": "투사"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "theodora",
+      "name": "소피아",
+      "requirement": {
+        "sup": "1",
+        "fame": "2",
+        "init": "주술사"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "theodora",
+      "name": "올림피아",
+      "requirement": {
+        "sup": "3",
+        "fame": "9",
+        "init": "주술사"
+      },
+      "decision": "추가 보류",
+      "reason": "현재9명 본대와 지정 보완판에 우선 투자. 추가 지원·의뢰·시험을 거쳐 같은 출격 칸을 나눌 만큼의 이득이 확인되지 않아 반복 육성을 기본 과제로 추가하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "theodora",
+      "name": "피아나",
+      "requirement": {
+        "sup": "3",
+        "fame": "9",
+        "init": "주술사"
+      },
+      "decision": "추가 보류",
+      "reason": "현재9명 본대와 지정 보완판에 우선 투자. 추가 지원·의뢰·시험을 거쳐 같은 출격 칸을 나눌 만큼의 이득이 확인되지 않아 반복 육성을 기본 과제로 추가하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "leda",
+      "name": "이스마르",
+      "requirement": null,
+      "decision": "추가 안 함",
+      "reason": "이 루트 일반 스카우트 자료가 없거나 영입 불가. 다른 루트·3부 합류판을 사용.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "leda",
+      "name": "디트리히",
+      "requirement": null,
+      "decision": "추가 안 함",
+      "reason": "이 루트 일반 스카우트 자료가 없거나 영입 불가. 다른 루트·3부 합류판을 사용.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "leda",
+      "name": "카이",
+      "requirement": null,
+      "decision": "추가 안 함",
+      "reason": "이 루트 일반 스카우트 자료가 없거나 영입 불가. 다른 루트·3부 합류판을 사용.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "leda",
+      "name": "세오도라",
+      "requirement": null,
+      "decision": "추가 안 함",
+      "reason": "이 루트 일반 스카우트 자료가 없거나 영입 불가. 다른 루트·3부 합류판을 사용.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "leda",
+      "name": "레다",
+      "requirement": {
+        "sup": "0",
+        "fame": "0",
+        "init": "사냥병"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "leda",
+      "name": "미카엘라",
+      "requirement": {
+        "sup": "3",
+        "fame": "6",
+        "init": "투사"
+      },
+      "decision": "기본 제외",
+      "reason": "디트리히 도끼·격투와 카이 전차병 물리 두 판으로 분담",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "leda",
+      "name": "무우",
+      "requirement": {
+        "sup": "0",
+        "fame": "0",
+        "init": "평민"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "leda",
+      "name": "그자람",
+      "requirement": {
+        "sup": "1",
+        "fame": "3",
+        "init": "투사"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "leda",
+      "name": "에스메랄다",
+      "requirement": {
+        "sup": "3",
+        "fame": "6",
+        "init": "병사"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "leda",
+      "name": "카타냐",
+      "requirement": {
+        "sup": "1",
+        "fame": "2",
+        "init": "병사"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "leda",
+      "name": "리네",
+      "requirement": {
+        "sup": "3",
+        "fame": "8",
+        "init": "병사"
+      },
+      "decision": "추가 보류",
+      "reason": "현재9명 본대와 지정 보완판에 우선 투자. 추가 지원·의뢰·시험을 거쳐 같은 출격 칸을 나눌 만큼의 이득이 확인되지 않아 반복 육성을 기본 과제로 추가하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "leda",
+      "name": "시로코",
+      "requirement": {
+        "sup": "0",
+        "fame": "0",
+        "init": "평민"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "leda",
+      "name": "파비오",
+      "requirement": {
+        "sup": "3",
+        "fame": "9",
+        "init": "평민"
+      },
+      "decision": "추가 보류",
+      "reason": "현재9명 본대와 지정 보완판에 우선 투자. 추가 지원·의뢰·시험을 거쳐 같은 출격 칸을 나눌 만큼의 이득이 확인되지 않아 반복 육성을 기본 과제로 추가하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "leda",
+      "name": "단테",
+      "requirement": {
+        "sup": "3",
+        "fame": "10",
+        "init": "주술사"
+      },
+      "decision": "추가 보류",
+      "reason": "현재9명 본대와 지정 보완판에 우선 투자. 추가 지원·의뢰·시험을 거쳐 같은 출격 칸을 나눌 만큼의 이득이 확인되지 않아 반복 육성을 기본 과제로 추가하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "leda",
+      "name": "티아라",
+      "requirement": {
+        "sup": "3",
+        "fame": "8",
+        "init": "평민"
+      },
+      "decision": "추가 보류",
+      "reason": "현재9명 본대와 지정 보완판에 우선 투자. 추가 지원·의뢰·시험을 거쳐 같은 출격 칸을 나눌 만큼의 이득이 확인되지 않아 반복 육성을 기본 과제로 추가하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "leda",
+      "name": "울턴드",
+      "requirement": {
+        "sup": "3",
+        "fame": "8",
+        "init": "주술사"
+      },
+      "decision": "추가 보류",
+      "reason": "세오도라 명성6·지원3은 리네·단테 본대 준비와 겹치고, 레다 명성8은 더 늦다. 더 이른 디트리히 명성5판만 선택 보완으로 둠.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "leda",
+      "name": "하르빈",
+      "requirement": {
+        "sup": "3",
+        "fame": "7",
+        "init": "사냥병"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "leda",
+      "name": "피터르",
+      "requirement": {
+        "sup": "3",
+        "fame": "10",
+        "init": "평민"
+      },
+      "decision": "추가 보류",
+      "reason": "현재9명 본대와 지정 보완판에 우선 투자. 추가 지원·의뢰·시험을 거쳐 같은 출격 칸을 나눌 만큼의 이득이 확인되지 않아 반복 육성을 기본 과제로 추가하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "leda",
+      "name": "이니오니",
+      "requirement": {
+        "sup": "1",
+        "fame": "7",
+        "init": "아처"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "leda",
+      "name": "우술라",
+      "requirement": null,
+      "decision": "추가 안 함",
+      "reason": "이 루트 일반 스카우트 자료가 없거나 영입 불가. 다른 루트·3부 합류판을 사용.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "leda",
+      "name": "알렉산드라",
+      "requirement": {
+        "sup": "3",
+        "fame": "10",
+        "init": "천익병"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "leda",
+      "name": "로레타",
+      "requirement": {
+        "sup": "3",
+        "fame": "5",
+        "init": "투사"
+      },
+      "decision": "추가 보류",
+      "reason": "세오도라 검 성장과 카이 비행 성장을 이미 준비. 레다의 한정 경험치는 레다판 본대와 하르빈에 우선 투자.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "leda",
+      "name": "소피아",
+      "requirement": {
+        "sup": "3",
+        "fame": "7",
+        "init": "주술사"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "leda",
+      "name": "올림피아",
+      "requirement": {
+        "sup": "0",
+        "fame": "0",
+        "init": "주술사"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "leda",
+      "name": "피아나",
+      "requirement": {
+        "sup": "3",
+        "fame": "5",
+        "init": "주술사"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "dietrich",
+      "name": "이스마르",
+      "requirement": null,
+      "decision": "추가 안 함",
+      "reason": "이 루트 일반 스카우트 자료가 없거나 영입 불가. 다른 루트·3부 합류판을 사용.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "dietrich",
+      "name": "디트리히",
+      "requirement": {
+        "sup": "0",
+        "fame": "0",
+        "init": "평민"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "dietrich",
+      "name": "카이",
+      "requirement": null,
+      "decision": "추가 안 함",
+      "reason": "이 루트 일반 스카우트 자료가 없거나 영입 불가. 다른 루트·3부 합류판을 사용.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "dietrich",
+      "name": "세오도라",
+      "requirement": null,
+      "decision": "추가 안 함",
+      "reason": "이 루트 일반 스카우트 자료가 없거나 영입 불가. 다른 루트·3부 합류판을 사용.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "dietrich",
+      "name": "레다",
+      "requirement": null,
+      "decision": "추가 안 함",
+      "reason": "이 루트 일반 스카우트 자료가 없거나 영입 불가. 다른 루트·3부 합류판을 사용.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "dietrich",
+      "name": "미카엘라",
+      "requirement": {
+        "sup": "0",
+        "fame": "0",
+        "init": "투사"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "dietrich",
+      "name": "무우",
+      "requirement": {
+        "sup": "3",
+        "fame": "7",
+        "init": "평민"
+      },
+      "decision": "추가 보류",
+      "reason": "현재9명 본대와 지정 보완판에 우선 투자. 추가 지원·의뢰·시험을 거쳐 같은 출격 칸을 나눌 만큼의 이득이 확인되지 않아 반복 육성을 기본 과제로 추가하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "dietrich",
+      "name": "그자람",
+      "requirement": {
+        "sup": "3",
+        "fame": "8",
+        "init": "투사"
+      },
+      "decision": "기본 제외",
+      "reason": "레다 검·속도와 카이 전차병 물리 두 판으로 분담",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "dietrich",
+      "name": "에스메랄다",
+      "requirement": {
+        "sup": "0",
+        "fame": "0",
+        "init": "병사"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "dietrich",
+      "name": "카타냐",
+      "requirement": {
+        "sup": "1",
+        "fame": "8",
+        "init": "병사"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "dietrich",
+      "name": "리네",
+      "requirement": {
+        "sup": "3",
+        "fame": "8",
+        "init": "병사"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "dietrich",
+      "name": "시로코",
+      "requirement": {
+        "sup": "3",
+        "fame": "9",
+        "init": "평민"
+      },
+      "decision": "추가 보류",
+      "reason": "현재9명 본대와 지정 보완판에 우선 투자. 추가 지원·의뢰·시험을 거쳐 같은 출격 칸을 나눌 만큼의 이득이 확인되지 않아 반복 육성을 기본 과제로 추가하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "dietrich",
+      "name": "파비오",
+      "requirement": {
+        "sup": "0",
+        "fame": "0",
+        "init": "평민"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "dietrich",
+      "name": "단테",
+      "requirement": {
+        "sup": "2",
+        "fame": "8",
+        "init": "주술사"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "dietrich",
+      "name": "티아라",
+      "requirement": {
+        "sup": "3",
+        "fame": "9",
+        "init": "평민"
+      },
+      "decision": "추가 보류",
+      "reason": "현재9명 본대와 지정 보완판에 우선 투자. 추가 지원·의뢰·시험을 거쳐 같은 출격 칸을 나눌 만큼의 이득이 확인되지 않아 반복 육성을 기본 과제로 추가하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "dietrich",
+      "name": "울턴드",
+      "requirement": {
+        "sup": "3",
+        "fame": "5",
+        "init": "주술사"
+      },
+      "decision": "새 선택 보완판",
+      "reason": "명성5로 본대 완성 전 빈 공격 칸 활용 가능. 지원3·본대 예산 여유가 있을 때만 HP·힘·수비 보완. 카이 흑마법 성장과 구분하고9칸 충원 뒤 중단.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "dietrich",
+      "name": "하르빈",
+      "requirement": {
+        "sup": "3",
+        "fame": "9",
+        "init": "사냥병"
+      },
+      "decision": "추가 보류",
+      "reason": "현재9명 본대와 지정 보완판에 우선 투자. 추가 지원·의뢰·시험을 거쳐 같은 출격 칸을 나눌 만큼의 이득이 확인되지 않아 반복 육성을 기본 과제로 추가하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "dietrich",
+      "name": "피터르",
+      "requirement": {
+        "sup": "3",
+        "fame": "8",
+        "init": "평민"
+      },
+      "decision": "추가 보류",
+      "reason": "현재9명 본대와 지정 보완판에 우선 투자. 추가 지원·의뢰·시험을 거쳐 같은 출격 칸을 나눌 만큼의 이득이 확인되지 않아 반복 육성을 기본 과제로 추가하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "dietrich",
+      "name": "이니오니",
+      "requirement": {
+        "sup": "3",
+        "fame": "8",
+        "init": "아처"
+      },
+      "decision": "추가 보류",
+      "reason": "현재9명 본대와 지정 보완판에 우선 투자. 추가 지원·의뢰·시험을 거쳐 같은 출격 칸을 나눌 만큼의 이득이 확인되지 않아 반복 육성을 기본 과제로 추가하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "dietrich",
+      "name": "우술라",
+      "requirement": {
+        "sup": "3",
+        "fame": "7",
+        "init": "사냥병"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "dietrich",
+      "name": "알렉산드라",
+      "requirement": {
+        "sup": "3",
+        "fame": "8",
+        "init": "천익병"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "dietrich",
+      "name": "로레타",
+      "requirement": {
+        "sup": "3",
+        "fame": "9",
+        "init": "투사"
+      },
+      "decision": "추가 보류",
+      "reason": "현재9명 본대와 지정 보완판에 우선 투자. 추가 지원·의뢰·시험을 거쳐 같은 출격 칸을 나눌 만큼의 이득이 확인되지 않아 반복 육성을 기본 과제로 추가하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "dietrich",
+      "name": "소피아",
+      "requirement": {
+        "sup": "3",
+        "fame": "9",
+        "init": "주술사"
+      },
+      "decision": "회복 실전 영입 유지",
+      "reason": "원격 회복을 맡겨 리네의 중갑 성장과 회복 겸임 충돌 해소 · 스탯3회 작업은 제외",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "dietrich",
+      "name": "올림피아",
+      "requirement": {
+        "sup": "3",
+        "fame": "6",
+        "init": "주술사"
+      },
+      "decision": "추가 보류",
+      "reason": "현재9명 본대와 지정 보완판에 우선 투자. 추가 지원·의뢰·시험을 거쳐 같은 출격 칸을 나눌 만큼의 이득이 확인되지 않아 반복 육성을 기본 과제로 추가하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "dietrich",
+      "name": "피아나",
+      "requirement": {
+        "sup": "3",
+        "fame": "7",
+        "init": "주술사"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "kai",
+      "name": "이스마르",
+      "requirement": null,
+      "decision": "추가 안 함",
+      "reason": "이 루트 일반 스카우트 자료가 없거나 영입 불가. 다른 루트·3부 합류판을 사용.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "kai",
+      "name": "디트리히",
+      "requirement": null,
+      "decision": "추가 안 함",
+      "reason": "이 루트 일반 스카우트 자료가 없거나 영입 불가. 다른 루트·3부 합류판을 사용.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "kai",
+      "name": "카이",
+      "requirement": {
+        "sup": "0",
+        "fame": "0",
+        "init": "평민"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "kai",
+      "name": "세오도라",
+      "requirement": null,
+      "decision": "추가 안 함",
+      "reason": "이 루트 일반 스카우트 자료가 없거나 영입 불가. 다른 루트·3부 합류판을 사용.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "kai",
+      "name": "레다",
+      "requirement": null,
+      "decision": "추가 안 함",
+      "reason": "이 루트 일반 스카우트 자료가 없거나 영입 불가. 다른 루트·3부 합류판을 사용.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "kai",
+      "name": "미카엘라",
+      "requirement": {
+        "sup": "3",
+        "fame": "5",
+        "init": "투사"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "kai",
+      "name": "무우",
+      "requirement": {
+        "sup": "3",
+        "fame": "9",
+        "init": "평민"
+      },
+      "decision": "추가 보류",
+      "reason": "현재9명 본대와 지정 보완판에 우선 투자. 추가 지원·의뢰·시험을 거쳐 같은 출격 칸을 나눌 만큼의 이득이 확인되지 않아 반복 육성을 기본 과제로 추가하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "kai",
+      "name": "그자람",
+      "requirement": {
+        "sup": "1",
+        "fame": "2",
+        "init": "투사"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "kai",
+      "name": "에스메랄다",
+      "requirement": {
+        "sup": "2",
+        "fame": "7",
+        "init": "병사"
+      },
+      "decision": "기본 제외",
+      "reason": "디트리히 수비와 레다 가디언 마방 두 판으로 분담",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "kai",
+      "name": "카타냐",
+      "requirement": {
+        "sup": "3",
+        "fame": "10",
+        "init": "병사"
+      },
+      "decision": "추가 보류",
+      "reason": "현재9명 본대와 지정 보완판에 우선 투자. 추가 지원·의뢰·시험을 거쳐 같은 출격 칸을 나눌 만큼의 이득이 확인되지 않아 반복 육성을 기본 과제로 추가하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "kai",
+      "name": "리네",
+      "requirement": {
+        "sup": "3",
+        "fame": "6",
+        "init": "병사"
+      },
+      "decision": "회복 실전 영입 유지",
+      "reason": "계획12/13명 · 티아라와 리브로 분담 · 기갑 타조병의 세 번째 속도판은 제외",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "kai",
+      "name": "시로코",
+      "requirement": {
+        "sup": "3",
+        "fame": "9",
+        "init": "평민"
+      },
+      "decision": "추가 보류",
+      "reason": "현재9명 본대와 지정 보완판에 우선 투자. 추가 지원·의뢰·시험을 거쳐 같은 출격 칸을 나눌 만큼의 이득이 확인되지 않아 반복 육성을 기본 과제로 추가하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "kai",
+      "name": "파비오",
+      "requirement": null,
+      "decision": "추가 안 함",
+      "reason": "이 루트 일반 스카우트 자료가 없거나 영입 불가. 다른 루트·3부 합류판을 사용.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "kai",
+      "name": "단테",
+      "requirement": {
+        "sup": "3",
+        "fame": "10",
+        "init": "주술사"
+      },
+      "decision": "추가 보류",
+      "reason": "현재9명 본대와 지정 보완판에 우선 투자. 추가 지원·의뢰·시험을 거쳐 같은 출격 칸을 나눌 만큼의 이득이 확인되지 않아 반복 육성을 기본 과제로 추가하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "kai",
+      "name": "티아라",
+      "requirement": {
+        "sup": "0",
+        "fame": "0",
+        "init": "평민"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "kai",
+      "name": "울턴드",
+      "requirement": {
+        "sup": "0",
+        "fame": "0",
+        "init": "주술사"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "kai",
+      "name": "하르빈",
+      "requirement": {
+        "sup": "3",
+        "fame": "5",
+        "init": "사냥병"
+      },
+      "decision": "추가 보류",
+      "reason": "명성5여도 활 성장 역할은 피터르·그자람·미카엘라와 겹침. 최종판은 레다에서 키우므로 추가 카이판은 기본에서 제외.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "kai",
+      "name": "피터르",
+      "requirement": {
+        "sup": "0",
+        "fame": "0",
+        "init": "평민"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "kai",
+      "name": "이니오니",
+      "requirement": {
+        "sup": "3",
+        "fame": "8",
+        "init": "아처"
+      },
+      "decision": "추가 보류",
+      "reason": "현재9명 본대와 지정 보완판에 우선 투자. 추가 지원·의뢰·시험을 거쳐 같은 출격 칸을 나눌 만큼의 이득이 확인되지 않아 반복 육성을 기본 과제로 추가하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "kai",
+      "name": "우술라",
+      "requirement": {
+        "sup": "3",
+        "fame": "10",
+        "init": "사냥병"
+      },
+      "decision": "추가 보류",
+      "reason": "현재9명 본대와 지정 보완판에 우선 투자. 추가 지원·의뢰·시험을 거쳐 같은 출격 칸을 나눌 만큼의 이득이 확인되지 않아 반복 육성을 기본 과제로 추가하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "kai",
+      "name": "알렉산드라",
+      "requirement": {
+        "sup": "2",
+        "fame": "7",
+        "init": "천익병"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "kai",
+      "name": "로레타",
+      "requirement": {
+        "sup": "3",
+        "fame": "7",
+        "init": "투사"
+      },
+      "decision": "현재 계획 유지",
+      "reason": "현재 본대·보완·선택·수집 역할과 출격 자리가 있을 때만 육성. 같은 기능을 여러 판에서 반복 훈련하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "kai",
+      "name": "소피아",
+      "requirement": {
+        "sup": "3",
+        "fame": "9",
+        "init": "주술사"
+      },
+      "decision": "추가 보류",
+      "reason": "현재9명 본대와 지정 보완판에 우선 투자. 추가 지원·의뢰·시험을 거쳐 같은 출격 칸을 나눌 만큼의 이득이 확인되지 않아 반복 육성을 기본 과제로 추가하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "kai",
+      "name": "올림피아",
+      "requirement": {
+        "sup": "3",
+        "fame": "8",
+        "init": "주술사"
+      },
+      "decision": "추가 보류",
+      "reason": "현재9명 본대와 지정 보완판에 우선 투자. 추가 지원·의뢰·시험을 거쳐 같은 출격 칸을 나눌 만큼의 이득이 확인되지 않아 반복 육성을 기본 과제로 추가하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    },
+    {
+      "route": "kai",
+      "name": "피아나",
+      "requirement": {
+        "sup": "3",
+        "fame": "8",
+        "init": "주술사"
+      },
+      "decision": "추가 보류",
+      "reason": "현재9명 본대와 지정 보완판에 우선 투자. 추가 지원·의뢰·시험을 거쳐 같은 출격 칸을 나눌 만큼의 이득이 확인되지 않아 반복 육성을 기본 과제로 추가하지 않음.",
+      "source": "data/recruitment-build-audit.json"
+    }
+  ]
+}

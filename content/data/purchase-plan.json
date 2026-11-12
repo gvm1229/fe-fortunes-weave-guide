@@ -1,0 +1,491 @@
+{
+  "version": 1,
+  "reviewed": "2026-11-04",
+  "sources": {
+    "missables": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932",
+    "limited": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624310",
+    "boons": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/622788",
+    "weapons": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/630713"
+  },
+  "rules": [
+    "현재 루트 소지품·수송대부터 확인. 옛 디트리히 물품을 새 세오도라 재고로 세지 않음.",
+    "필수 영입비·다음 시험비를 남긴 돈으로, 미보유 목표 수량까지만 확보.",
+    "보이면 구매는 판매가 실제로 열렸을 때의 판단. 없는 재고를 찾으러 같은 상점을 반복 순회하지 않음.",
+    "기능 등급뿐 아니라 담당자의 병종·사용 가능 표시·장착 후 공격 속도를 확인.",
+    "고유 무기·한정 보상은 낮은 평가 등급이어도 팔거나 파괴하지 않음.",
+    "S평가 선더 소드도 명부의 가호를 자체 무효화하지 않음. 무효/특효/마법 공격을 구별.",
+    "고급 무기 상자는 무작위. 선더 소드 확정 상품으로 취급하거나 반복 뽑기를 기본 의무로 만들지 않음."
+  ],
+  "reserves": {
+    "theodora": "현재5장 명성2에서는 부족한 지원의 식사·기존 동료의 필요한 초급 시험과 회복 비용부터 남긴다. 중급 증서는 실제 명성4, 로레타 철의 검3개는5, 단테8,000G는6을 채워 해당 행동을 하기 직전에 준비한다.",
+    "leda": "미지급 피아나3,000G·자스민2,000G·이니오니 안전6,000G와 다음 시험비부터 확보. 미카엘라 추가 영입비는 기본에서 제외.",
+    "dietrich": "피아나3,000G와 다음 시험비 우선. 단테8,000G는 이 루트에서 추가 영입하기로 고른 경우만.",
+    "kai": "미지급 미카엘라3,000G와 다음 시험비·말 먹이 준비가 우선.",
+    "part3": "융합은 파편, 물품·강화는 골드와 소재. 재고2자루가 있으면 고가 선더 소드+2를 자동으로 추가 구매하지 않음.",
+    "war": "1부 종료 전 실제 쓸 물품을 준비. 첫2부 완료 전에 보존 절차 확인. 새 검의 무료 물품 융합을 기대하지 않음."
+  },
+  "routes": {
+    "theodora": [
+      {
+        "weapon": "levin-sword",
+        "priority": "now",
+        "target": "우선2자루·여유 있으면 총3",
+        "users": [
+          "보나파르트",
+          "알렉산드라"
+        ],
+        "condition": "실제 교환 재고가 있을 때 필요한 수량부터 확보한다. 한 자루는 태양 열매10·유나메이1, 두 자루는20·2. 군비증강30개는 별도다.6장 재고를 확정하지 않는다. 세 번째는 단테 검C·예산 여유가 있을 때."
+      },
+      {
+        "weapon": "cleansing-blade",
+        "priority": "now",
+        "target": "1자루",
+        "users": [
+          "토비아스",
+          "보나파르트",
+          "단테"
+        ],
+        "condition": "미보유 상태로 확정 판매품을 만나면1. 명부 무효는 무강화부터 작동. 확정 입수를 우선."
+      },
+      {
+        "weapon": "longbow",
+        "priority": "now",
+        "target": "1자루",
+        "users": [
+          "릴리안"
+        ],
+        "condition": "궁술C에서 장거리 전투기술용. 이미 소지하면 중복 구매 안 함."
+      },
+      {
+        "weapon": "hunter-s-bow",
+        "priority": "now",
+        "target": "1자루",
+        "users": [
+          "릴리안"
+        ],
+        "condition": "9장 짐승전 전에 미보유면 리베이라(Ribeira) 무기점에서1자루. 자동 지급 보상으로 기다리지 않는다."
+      },
+      {
+        "weapon": "ridersbane",
+        "priority": "conditional",
+        "target": "1자루",
+        "users": [
+          "세오도라",
+          "알렉산드라"
+        ],
+        "condition": "기마 적을 맡길 창C 담당에게 다른 대기마 수단이 없을 때."
+      },
+      {
+        "weapon": "hammer",
+        "priority": "conditional",
+        "target": "1자루",
+        "users": [
+          "토비아스",
+          "녹투라"
+        ],
+        "condition": "중갑을 물리로 처리할 때만. 마법·선더 소드로 충분하면 추가 구매 생략."
+      }
+    ],
+    "leda": [
+      {
+        "weapon": "mini-bow",
+        "priority": "reward",
+        "target": "1자루",
+        "users": [
+          "레다"
+        ],
+        "condition": "2장 보스 근처 상자를 주 전투 종료 전에 회수.1~2칸 보조 활이며 이미 받으면 추가 구매 없음."
+      },
+      {
+        "weapon": "levin-sword",
+        "priority": "now",
+        "target": "우선2자루·여유 있으면 총3",
+        "users": [
+          "시로코",
+          "카타냐"
+        ],
+        "condition": "검C의 두 주력에게 각1. 교환은6장부터 확인하고 실제 재고가 열릴 때 확보."
+      },
+      {
+        "weapon": "cleansing-blade",
+        "priority": "reward",
+        "target": "1자루",
+        "users": [
+          "카타냐",
+          "시로코"
+        ],
+        "condition": "8장 예선전 시작 지점 근처 금색 반짝임을 직접 회수. 받았으면 추가 구매 안 함."
+      },
+      {
+        "weapon": "longbow",
+        "priority": "now",
+        "target": "1자루",
+        "users": [
+          "이니오니"
+        ],
+        "condition": "레다가 춤·노래를 쓰는 턴의 장거리 궁수용. 궁술C·미보유일 때."
+      },
+      {
+        "weapon": "venin-bow",
+        "priority": "conditional",
+        "target": "1자루",
+        "users": [
+          "이니오니"
+        ],
+        "condition": "상태이상용 활이나 수집용1자루가 필요할 때만. 특정 지양 인물의 고유 능력을 전제로 사지 않음."
+      },
+      {
+        "weapon": "qiankun-circles",
+        "priority": "conditional",
+        "target": "1개",
+        "users": [
+          "무우"
+        ],
+        "condition": "검D·격투C 표기. 시작 소지품을 먼저 확인하고 없을 때만1. 실제 사용 가능 표시 우선."
+      },
+      {
+        "weapon": "hunter-s-bow",
+        "priority": "conditional",
+        "target": "1자루",
+        "users": [
+          "이니오니"
+        ],
+        "condition": "짐승 특효 활이 없고 해당 적을 맡길 때만."
+      }
+    ],
+    "dietrich": [
+      {
+        "weapon": "levin-sword",
+        "priority": "now",
+        "target": "우선2자루·여유 있으면 총3",
+        "users": [
+          "파비오",
+          "알렉산드라",
+          "카타냐"
+        ],
+        "condition": "검C·검 사용 병종. 당장 쓸2자루부터, 카타냐 보완판을 쓰면 세 번째 검을 배정."
+      },
+      {
+        "weapon": "cleansing-blade",
+        "priority": "now",
+        "target": "1자루",
+        "users": [
+          "디트리히",
+          "카타냐"
+        ],
+        "condition": "미보유 확정 판매품이면1. 헤비 아머·가디언은 검을 못 쓰므로 그 병종의 에스메랄다·리네에게 배정하지 않음."
+      },
+      {
+        "weapon": "longbow",
+        "priority": "now",
+        "target": "1자루",
+        "users": [
+          "우술라"
+        ],
+        "condition": "궁술C·미보유일 때. 근접 반격 손해를 줄이는 원거리 선택지."
+      },
+      {
+        "weapon": "ridersbane",
+        "priority": "conditional",
+        "target": "1자루",
+        "users": [
+          "에스메랄다",
+          "리네",
+          "게이츠"
+        ],
+        "condition": "창C의 대기마 담당에게 부족할 때만. 특효라도 적 반격 예측은 확인."
+      },
+      {
+        "weapon": "flyssa",
+        "priority": "conditional",
+        "target": "1자루",
+        "users": [
+          "디트리히"
+        ],
+        "condition": "중갑 특효 검이 필요하고 그레이트 소드 등이 없거나 무게 부담이 클 때만."
+      }
+    ],
+    "kai": [
+      {
+        "weapon": "levin-sword",
+        "priority": "now",
+        "target": "우선2자루·여유 있으면 총3",
+        "users": [
+          "울턴드",
+          "카이"
+        ],
+        "condition": "명성6 훈련 보상을 먼저 확인. 검C일 때 실제 쓸 담당에게, 이미2자루면 추가는 여유분."
+      },
+      {
+        "weapon": "cleansing-blade",
+        "priority": "now",
+        "target": "1자루",
+        "users": [
+          "카이",
+          "울턴드",
+          "세테스"
+        ],
+        "condition": "검 사용 병종의 명부 대책. 미보유 확정 판매품을 만나면1."
+      },
+      {
+        "weapon": "longbow",
+        "priority": "now",
+        "target": "1자루",
+        "users": [
+          "피터르",
+          "누조"
+        ],
+        "condition": "궁술C 담당에게1. 전차병3명 모두에게 같은 활을 각각 살 필요 없음."
+      },
+      {
+        "weapon": "horsekiller-bow",
+        "priority": "conditional",
+        "target": "1자루",
+        "users": [
+          "피터르",
+          "그자람",
+          "미카엘라"
+        ],
+        "condition": "궁술C. 궁수에게 대기마 역할까지 맡길 때만."
+      },
+      {
+        "weapon": "ridersbane",
+        "priority": "conditional",
+        "target": "1자루",
+        "users": [
+          "카이",
+          "세테스"
+        ],
+        "condition": "창C. 활 쪽 대기마 장비와 역할이 겹치면 한쪽만 먼저 확보."
+      },
+      {
+        "weapon": "hunter-s-bow",
+        "priority": "conditional",
+        "target": "1자루",
+        "users": [
+          "피터르"
+        ],
+        "condition": "짐승 특효 활이 없는 경우만."
+      }
+    ],
+    "part3": [
+      {
+        "weapon": "levin-sword",
+        "priority": "conditional",
+        "target": "최종+3 두 자루",
+        "users": [
+          "시로코",
+          "카타냐"
+        ],
+        "condition": "남쪽 통로 상자+3을 먼저. 기존 검을 강화해 두 자루가 되면 충분. 항구+2는 재고 부족·전혼석 부족 때의 고가 대안."
+      },
+      {
+        "weapon": "cleansing-blade",
+        "priority": "now",
+        "target": "반입분 포함 합계3자루",
+        "users": [
+          "디트리히",
+          "시로코",
+          "카타냐"
+        ],
+        "condition": "여러 부대에 나눠줄 기존 반입분부터. 부족분만 확정 판매처에서 구매. 모든 동료에게 한 자루씩 강요하지 않음."
+      },
+      {
+        "weapon": "smyrnos-s-channels",
+        "priority": "reward",
+        "target": "1개",
+        "users": [
+          "무우"
+        ],
+        "condition": "격투A. 스미르노스 의뢰 뒤 신전 시련을 수락·승리. 권장Lv60, 상점 구매 아님."
+      },
+      {
+        "weapon": "shining-spear",
+        "priority": "reward",
+        "target": "1자루",
+        "users": [
+          "이스마르"
+        ],
+        "condition": "창A. 크레르 의뢰 뒤 다그시온 분전에서 다시 대화, The Nameless 강화."
+      },
+      {
+        "weapon": "zalmoxis",
+        "priority": "reward",
+        "target": "1개",
+        "users": [
+          "베르트랑"
+        ],
+        "condition": "외전 조건을 충족한 베르트랑 정식 합류 지참. 무기를 사려고 상점을 돌지 않음."
+      },
+      {
+        "weapon": "idah-s-bow",
+        "priority": "reward",
+        "target": "1자루",
+        "users": [
+          "아스완"
+        ],
+        "condition": "3부5구간 합류 지참. 궁술B, 따로 구매 없음."
+      },
+      {
+        "weapon": "credna-s-mallet",
+        "priority": "reward",
+        "target": "1개",
+        "users": [
+          "토비아스",
+          "녹투라"
+        ],
+        "condition": "도끼A. 크레르 본전 의뢰·추가 시련의 보상. 강화창의 분전 대화와 구분."
+      }
+    ],
+    "war": []
+  },
+  "boons": {
+    "lastReportedShards": 2605,
+    "lastReportedBought": 13,
+    "firstTierPackage": [
+      {
+        "name": "획득 경험치 증가10%",
+        "price": 500,
+        "taskId": "prep-boons--5d107be39e",
+        "purchased": true,
+        "reason": "획득 경험치 증가10%를500파편에 구매했다. 목표 성장 병과 준비 전에는 OFF, 전직 후에는 ON으로 사용한다."
+      },
+      {
+        "name": "병과 경험치 증가+1",
+        "price": 1000,
+        "taskId": "prep-boons--class-exp-i",
+        "purchased": true,
+        "reason": "병과 경험치 증가+1을1,000파편에 구매했다. 병과 마스터를 돕는다. 인물 레벨·기술 능력 경험치와는 다른 효과다."
+      },
+      {
+        "name": "검술 경험치 증가+1",
+        "price": 300,
+        "taskId": "prep-boons--sword-exp-i",
+        "purchased": true,
+        "reason": "검술 경험치 증가+1을300파편에 구매했다. 레다의 시로코·카타냐 등도 같은 구매 효과를 이어 쓴다."
+      },
+      {
+        "name": "창술 경험치 증가+1",
+        "price": 300,
+        "taskId": "prep-boons--spear-exp-i",
+        "purchased": true,
+        "reason": "창술 경험치 증가+1을300파편에 구매했다. 세오도라·리네·알렉산드라의 실제 창 전투에 사용한다."
+      },
+      {
+        "name": "도끼술 경험치 증가+1",
+        "price": 300,
+        "taskId": "prep-boons--axe-exp-i",
+        "purchased": true,
+        "reason": "도끼술 경험치 증가+1을300파편에 구매했다. 토비아스·녹투라와 이후 미카엘라의 실제 도끼 전투에 사용한다."
+      },
+      {
+        "name": "궁술 경험치 증가+1",
+        "price": 300,
+        "taskId": "prep-boons--bow-exp-i",
+        "purchased": true,
+        "reason": "궁술 경험치 증가+1을300파편에 구매했다. 릴리안·우술라 등 실제 출격하는 궁수에게 사용한다."
+      },
+      {
+        "name": "격투술 경험치 증가+1",
+        "price": 300,
+        "taskId": "prep-boons--fist-exp-i",
+        "purchased": true,
+        "reason": "격투술 경험치 증가+1을300파편에 구매했다. 이후 레다·디트리히의 격투 담당도 같은 효과를 이어 쓴다."
+      },
+      {
+        "name": "흑마술 경험치 증가+1",
+        "price": 300,
+        "taskId": "prep-boons--black-exp-i",
+        "purchased": true,
+        "reason": "흑마술 경험치 증가+1을300파편에 구매했다. 단테·보나파르트 등 실제 마법 전투에 사용하며 투기장 훈련 획득량을 늘리는 효과는 아니다."
+      },
+      {
+        "name": "백마술 경험치 증가+1",
+        "price": 300,
+        "taskId": "prep-boons--white-exp-i",
+        "purchased": true,
+        "reason": "백마술 경험치 증가+1을300파편에 구매했다. 소피아·리네 등 실제 백마술 사용에 적용하며 투기장 훈련 획득량을 늘리는 효과는 아니다."
+      },
+      {
+        "name": "무기 가격 할인10%",
+        "price": 300,
+        "taskId": "prep-boons--weapon-discount-i",
+        "purchased": true,
+        "reason": "무기 가격 할인10%를300파편에 구매했다. 무기 구입 전에 적용하며 영입금·시험비·교환 소재 할인으로 계산하지 않는다."
+      },
+      {
+        "name": "아우로라의 가호 백사 소비20% 감소",
+        "price": 300,
+        "taskId": "prep-boons--0c34c5be60",
+        "purchased": true,
+        "reason": "아우로라의 가호 백사 소비20% 감소를300파편에 구매했다. 하드 비용20→16이며 기존 아우로라3을 활용한다."
+      },
+      {
+        "name": "칼라의 가호 백사 소비20% 감소",
+        "price": 300,
+        "taskId": "prep-boons--kalla20",
+        "purchased": true,
+        "reason": "칼라의 가호 백사 소비20% 감소를300파편에 구매했다. 실제 칼라1을 해금한 뒤 사용하며 구매만으로 가호 레벨이 오르지는 않는다."
+      },
+      {
+        "name": "크레르의 가호 백사 소비20% 감소",
+        "price": 300,
+        "taskId": "prep-boons--credna20",
+        "purchased": true,
+        "reason": "크레르의 가호 백사 소비20% 감소를300파편에 구매했다. 실제 크레르1을 해금한 뒤 사용하며 구매만으로 가호 레벨이 오르지는 않는다."
+      }
+    ],
+    "packageTotal": 4800,
+    "packageBalance": 2605,
+    "reserveFloor": 3000,
+    "hardBattlePriority": "아우로라3은 유지하고 크레르1→칼라3을 먼저 육성. 칼라/크레르20% 감소를 시작 전 패키지에 포함.",
+    "nextRoute": {
+      "theodora": "13개 구매 완료·현재2,605. 지금 추가 구매 보류. 다음 새1부 첫 보상은 실제 수령 뒤 계산.",
+      "leda": "레다 1부 보상 수령 뒤 병과 경험치 +2(2,000), 주력 기능 7종 +3(4,200), 크레르 50%(300), 인물 경험치 +20%(500). 보유 단계를 확인하고 3부 전에 융합용 5,100파편을 확보한다.",
+      "dietrich": "주라20%·마스20% 각300, 합계600(실제 사용·해금 충족 시).공유 축복의 미구매 단계만 검토. 디트리히 재완료에 첫 보상5,000을 다시 더하지 않음.",
+      "kai": "스미르노스20%→50% 각300, 합계600(실제 사용·해금 충족 시). 기마·비행+1은 실제 목표 기능이 막힐 때만 각300. 구입한 단계 중복 없음."
+    },
+    "conditional": [
+      "현재 잔액2,605에서는 추가 구매 보류. 예비3,000은 계획 여유 기준이며 모자란395를 벌기 위한 반복 전투를 새 과제로 만들지 않음.",
+      "레다 1부 완료 뒤 기존 주력 기능 7종의 미구매 +2·+3을 산다. 기능당 각 단계 300파편. 일반 전투에서 쓰고 훈련·던전 간이 전투의 효과는 구분한다.",
+      "인물 경험치는 현재 10% 보유. 레다 1부 뒤 20%까지 추가 500, 30%는 기본 구매에서 보류. 낮은 비율 선택 없이 ON/OFF만 가능하다.",
+      "무기10%→20%는 추가300. 같은 분류의 잦은 실제 구매로 이득이 생길 때만. 선물·도구 할인도 자동 최우선으로 두지 않음.",
+      "지휘·보병·중갑·기마·비행+1은 현재 구매 목록에 없음. 실제 목표 기능·군단 운용이 막힐 때만 추가 검토.",
+      "병과+1은 이미 구매. 이를 이유로 불필요한 하급직 마스터를 추가하지 않음.",
+      "새1부 첫 완료 보상5,000은 실제 수령 뒤 반영. 디트리히의 첫 보상은 기존7,405에 이미 포함."
+    ],
+    "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/622788",
+    "discountPricing": {
+      "aurora20": 300,
+      "jurah20": 300,
+      "unverifiedPrice": false,
+      "source": "https://hyperwiki.jp/fefw/achivement/",
+      "confirmedFromWebDate": "2026-11-04",
+      "purchasedDiscountsUserConfirmed": [
+        "아우로라20%",
+        "칼라20%",
+        "크레르20%"
+      ],
+      "jurahPurchased": false,
+      "purchasedPackageCount": 13,
+      "purchasedPackageTotal": 4800,
+      "reportedBalance": 2605
+    },
+    "lastReportedDate": "2026-11-04",
+    "openingShardsBeforePurchase": 7405,
+    "packageStatus": "purchased",
+    "purchaseSource": "사용자가 세오도라 시작 전13개 구매 완료와 잔액2,605를 직접 확인",
+    "agentBoughtInGame": false,
+    "reservePolicy": "레다 1부 완료 뒤 승인된 축복은 미구매 단계만 구입. 이후 선택 구매보다 3부 융합용 5,100파편 확보를 우선한다.",
+    "expPurchasePolicy": {
+      "currentPercent": 10,
+      "currentCapPercent": 30,
+      "canSelectLowerRate": false,
+      "twentyAdditionalCost": 500,
+      "thirtyAdditionalCost": 1500,
+      "default": "keep10",
+      "twentyWhen": "레다 1부 보상 수령 뒤 20%를 구입하고 목표 성장 병과의 시험 준비 뒤 켠다.",
+      "thirtyWhen": "기본 보류. 이후 넓은 후보 육성에서 실제 필요와 충분한 잔액을 확인한 뒤"
+    }
+  }
+}

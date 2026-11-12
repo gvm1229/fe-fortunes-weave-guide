@@ -1,0 +1,407 @@
+{
+  "reviewed": "2026-11-04",
+  "method": "사용자 제공 Game8 색인 → 인물35명·병종32종·기능/마법/융합 상세 원문. agent-reach Jina Reader. 추천 순위는 자료를 바탕으로 한 개인화 판단.",
+  "characters": {
+    "세오도라": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620411",
+      "facts": "백마술 B 리브로. 지휘 D 인접 적 회피 -3·C 인접 아군 공격 +1. 가디언·홀리 랜서·더 트라이던트는 창+백마법."
+    },
+    "토비아스": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623758",
+      "facts": "보병 C는 보병의 필살 회피 +10. 지휘 D는 인접 적 필살 -5. 검은 약점이므로 추가 무기는 도끼를 우선."
+    },
+    "보나파르트": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623614",
+      "facts": "백마술 B 리커버, 보병 D는 보병의 활·마법 명중 +5. 바테스는 흑·백마법, 드루이드는 흑마법만 시전."
+    },
+    "릴리안": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624009",
+      "facts": "보병 A는 보병의 지형 이동 비용 -1(최저 1). 보우 나이트 대안은 궁술 A+기마 D, 마스터 아치는 활만 사용."
+    },
+    "소피아": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623986",
+      "facts": "백마술 B 리브로·A 리커버. 보병 C는 보병으로 3칸 이상 거리의 적 상대 회피 +10. 와이즈맨은 백마법만 시전."
+    },
+    "녹투라": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623984",
+      "facts": "도끼·격투·보병 특기. 보병 C는 보병으로 활·마법 상대 회피 +5. 배틀 마스터는 도끼·격투·검."
+    },
+    "리네": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623990",
+      "facts": "백마술 B 리브로·A Ward. 보병 D는 보병의 필살 회피 +10. 가디언·홀리 랜서는 백마법 가능, 바딩거는 불가."
+    },
+    "단테": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624018",
+      "facts": "흑마술 A 트론·S Bolting(선더 스톰). 백마술 B 리커버. 보병 D는 보병의 활·마법 명중 +5. 격투는 약점."
+    },
+    "알렉산드라": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623983",
+      "facts": "비행 C+는 비행으로 선공할 때 공격 속도 +2. 천익병·성천익병은 창·검. 성천익병은 비행 C+검/창 A 중 선택."
+    },
+    "시로코": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624006",
+      "facts": "흑마술 A 트론·S 엑스칼리버. 백마술 B 레스트·A 리저브. 하이 에피타프는 검 B·흑마 D·기마 D와 검+흑마법."
+    },
+    "우술라": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624015",
+      "facts": "검·궁술 특기. 보병 C는 보병으로 3칸 이상 거리의 적 상대 회피 +10. 레인저는 활+검, 마스터 아치는 활."
+    },
+    "라이선더": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624002",
+      "facts": "창·도끼·기마 특기, 검 약점. 지휘 D 인접 적 명중 -3. 기마 C 바딩거·B 오리할디아."
+    },
+    "이오": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623980",
+      "facts": "창·도끼·기마 특기. 지휘 D 인접 적 필살 -5. 오리할디아는 기마 B+검/창 A 중 선택."
+    },
+    "누조": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623987",
+      "facts": "검·궁술·격투 특기. 지휘 D 인접 적 회피 -3. 마스터 아치 또는 기마 D를 더한 보우 나이트."
+    },
+    "레다": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620437",
+      "facts": "보병 C/B는 보병으로 활·마법 상대 회피 +5/+10. 무희·디 압사라스는 검+활이며 백마법은 사용 불가. 칼라의 활은 궁술 A 필요(Game8 활 목록)."
+    },
+    "무우": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624010",
+      "facts": "격투·도끼·검·백마 특기. 더 갓 핸드는 격투 S+백마 C이며 격투+백마법. Game8 인물표의 백마 A는 미기입."
+    },
+    "올림피아": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624011",
+      "facts": "백마술 B 리브로·A 사일런스, 흑마술 B 트론. 보병 D 활·마법 명중 +5. 지휘 D 인접 아군 공격 +1."
+    },
+    "그자람": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623978",
+      "facts": "검·격투·보병 특기, 흑·백마 약점. 지휘 D 인접 적 명중 -3. 더 캘러미티는 검+활, 소드 마스터는 검+창."
+    },
+    "에스메랄다": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624005",
+      "facts": "창·도끼·중갑 특기. 중갑 C의 활 상대 방호 +5는 중갑 한정. 지휘 D 인접 적 필살 -5. 백마 C 레스트. 고유 창 유지가 사용자 우선 조건."
+    },
+    "카타냐": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623981",
+      "facts": "보병 C는 보병으로 유리한 지형에서 명중 +15. 소드 마스터는 흑마법 시전 불가. 하이 에피타프는 검+흑마법."
+    },
+    "키로이카": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623994",
+      "facts": "보병 D는 보병의 활·마법 명중 +5. 보우 나이트 대안은 궁술 A+기마 D."
+    },
+    "피아나": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623995",
+      "facts": "백마술 C 엔젤·B 리커버·A Regenera. 로컬은 A 레스큐라 써 명칭·효과는 대조 미완. 리브로 없음. 보병 D 활·마법 명중 +5."
+    },
+    "미카엘라": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624008",
+      "facts": "도끼·궁술·보병 특기, 기마 약점. 전차병·포레스트 나이트·보우 나이트 시험은 기마 D로 충분. 보우 나이트는 활+검."
+    },
+    "버커니어": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624003",
+      "facts": "중갑 D/B는 장착 시 중갑의 이동 +1/+2. 포트리스는 창·도끼 사용. 보병 C의 필살 회피 +10은 중갑에서 비활성."
+    },
+    "디트리히": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620168",
+      "facts": "보병 A는 보병의 지형 이동 비용 -1(최저 1). 지휘 D 인접 적 필살 -5. 더 블레이드는 검+창."
+    },
+    "파비오": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623964",
+      "facts": "흑마술 B 데스·A 루나. 백마술 B 리커버. 보병 D는 보병의 활·마법 명중 +5. 드루이드는 백마법 불가."
+    },
+    "양계": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623985",
+      "facts": "백마술 B 리브로·A 리커버. 흑마술 C 썬더. 기마 약점이나 트루바두르·발키리움에는 D만 필요."
+    },
+    "게이츠": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624014",
+      "facts": "디트리히 전용.12장·베르트랑 외전 완료·명성10·지원3. 인접 아군 수비+3. 지휘D는 별도로 인접 적 명중-3. 창 A·기마 B로 오리할디아. 로컬 초기 바딩거/경로 병사 상충은 실제 가입 화면 확인."
+    },
+    "제스터": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623991",
+      "facts": "검·궁술·보병 특기. 지휘 D 인접 적 명중 -3. 섀도 시커는 검+활."
+    },
+    "카이": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620167",
+      "facts": "지휘 D 인접 아군 공격 +1. 바딩거 기마 C·오리할디아 기마 B·더 캐벌리어 기마 A와 주력 S. 모두 창 사용 가능."
+    },
+    "티아라": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623941",
+      "facts": "백마술 C부터 리브로·B 리커버·A 엔젤. 보병 D 활·마법 명중 +5. 검 약점이라 무희 시험 대안은 궁술 B 선택."
+    },
+    "피터르": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624004",
+      "facts": "전차병은 활만 사용. 포레스트 나이트·보우 나이트는 활+검. 세 병종 모두 기마 D 조건. 기병에서는 보병 전용 스킬 비활성."
+    },
+    "울턴드": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624007",
+      "facts": "백마술 C 엔젤. 칼라드리오스·드루이드는 백마법 불가. 엔젤은 바테스 등의 백마법 사용 병종으로 바꿔 사용. 기마 D 표기는 Game8 기준."
+    },
+    "세테스": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623993",
+      "facts": "창·도끼·지휘·비행 특기. 지휘 D 인접 적 명중 -3. 바딩거 기마 C·오리할디아 기마 B."
+    },
+    "마지데": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/623988",
+      "facts": "도끼·격투 특기. 지휘 D 인접 적 필살 -5. 헤비 아머 중갑 D·포트리스 중갑 C."
+    }
+  },
+  "classes": {
+    "포레스트 나이트": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624035",
+      "weapons": [
+        "궁술",
+        "검술"
+      ]
+    },
+    "레인저": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624384",
+      "weapons": [
+        "궁술",
+        "검술"
+      ]
+    },
+    "바딩거": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624033",
+      "weapons": [
+        "창술",
+        "검술",
+        "도끼술"
+      ]
+    },
+    "칼라드리오스": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624235",
+      "weapons": [
+        "창술",
+        "검술",
+        "도끼술",
+        "흑마술"
+      ]
+    },
+    "보우 나이트": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624449",
+      "weapons": [
+        "궁술",
+        "검술"
+      ]
+    },
+    "발키리움": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624450",
+      "weapons": [
+        "백마술",
+        "흑마술"
+      ]
+    },
+    "더 갓 핸드": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625306",
+      "weapons": [
+        "격투술",
+        "백마술"
+      ]
+    },
+    "더 캘러미티": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625308",
+      "weapons": [
+        "궁술",
+        "검술"
+      ]
+    },
+    "무희": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624375",
+      "weapons": [
+        "궁술",
+        "검술"
+      ]
+    },
+    "드루이드": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624360",
+      "weapons": [
+        "검술",
+        "격투술",
+        "흑마술"
+      ]
+    },
+    "와이즈맨": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624355",
+      "weapons": [
+        "격투술",
+        "도끼술",
+        "백마술"
+      ]
+    },
+    "전차병": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624047",
+      "weapons": [
+        "궁술"
+      ]
+    },
+    "천익병": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624038",
+      "weapons": [
+        "창술",
+        "검술"
+      ]
+    },
+    "가디언": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624254",
+      "weapons": [
+        "창술",
+        "백마술"
+      ]
+    },
+    "바테스": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624032",
+      "weapons": [
+        "검술",
+        "격투술",
+        "백마술",
+        "흑마술"
+      ]
+    },
+    "비숍": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624031",
+      "weapons": [
+        "격투술",
+        "도끼술",
+        "백마술",
+        "흑마술"
+      ]
+    },
+    "트루바두르": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624234",
+      "weapons": [
+        "백마술",
+        "흑마술"
+      ]
+    },
+    "하이 에피타프": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624445",
+      "weapons": [
+        "검술",
+        "흑마술"
+      ]
+    },
+    "배틀 마스터": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624357",
+      "weapons": [
+        "검술",
+        "격투술",
+        "도끼술"
+      ]
+    },
+    "마스터 아치": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624362",
+      "weapons": [
+        "궁술"
+      ]
+    },
+    "섀도 시커": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624358",
+      "weapons": [
+        "궁술",
+        "검술"
+      ]
+    },
+    "홀리 랜서": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624356",
+      "weapons": [
+        "창술",
+        "백마술"
+      ]
+    },
+    "포트리스": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624363",
+      "weapons": [
+        "창술",
+        "도끼술"
+      ]
+    },
+    "오리할디아": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624359",
+      "weapons": [
+        "창술",
+        "검술",
+        "도끼술"
+      ]
+    },
+    "성천익병": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624361",
+      "weapons": [
+        "창술",
+        "검술"
+      ]
+    },
+    "더 블레이드": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625255",
+      "weapons": [
+        "창술",
+        "검술"
+      ]
+    },
+    "디 압사라스": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625301",
+      "weapons": [
+        "궁술",
+        "검술"
+      ]
+    },
+    "디 이터널": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625305",
+      "weapons": [
+        "검술",
+        "격투술",
+        "도끼술"
+      ]
+    },
+    "더 트라이던트": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625309",
+      "weapons": [
+        "창술",
+        "백마술"
+      ]
+    },
+    "더 캐벌리어": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625310",
+      "weapons": [
+        "창술",
+        "검술",
+        "도끼술"
+      ]
+    },
+    "디 아바타르": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625311",
+      "weapons": [
+        "검술",
+        "격투술",
+        "도끼술",
+        "백마술",
+        "흑마술"
+      ]
+    },
+    "소드 마스터": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624426",
+      "weapons": [
+        "창술",
+        "검술"
+      ]
+    }
+  },
+  "localSources": [
+    "characters.html",
+    "classes.html",
+    "part3.html",
+    "data/roster-plan.json",
+    "data/phase-goals.json",
+    "notes/inventory-mount-review.md"
+  ],
+  "uncertainties": [
+    "에스메랄다의 고유 창 유지가 지역 3부 디 이터널 배정보다 우선. 사용자가 명시한 조건.",
+    "Game8도 미기입/표기 차이가 있음. 피아나 A Regenera/레스큐, 무우 A 워프, 세오도라 백마 A 이름은 확정하지 않음.",
+    "신장직 검·궁술 S 또는 복수 S의 AND/OR 차이는 실제 시험창 확인.",
+    "기능 융합은 파편 비용과 실제 상승 여부를 확인한 뒤 선택. 모든 루트판에 같은 훈련을 반복하지 않음."
+  ],
+  "weaponSources": {
+    "칼라의 활": {
+      "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621074",
+      "detail": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/626044",
+      "required": "궁술 A"
+    }
+  }
+}

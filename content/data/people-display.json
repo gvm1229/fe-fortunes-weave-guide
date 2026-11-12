@@ -1,0 +1,450 @@
+{
+  "세오도라": {
+    "portrait": "assets/portraits/c06.webp",
+    "gifts": [
+      "수염풀",
+      "동양 흑비단",
+      "동방 최고급 찻잎"
+    ]
+  },
+  "보나파르트": {
+    "portrait": "assets/portraits/c14.webp",
+    "gifts": [
+      "진홍 고슈",
+      "군략서 사본",
+      "화산 고슈"
+    ]
+  },
+  "토비아스": {
+    "portrait": "assets/portraits/c15.webp",
+    "gifts": [
+      "군략서 사본",
+      "모험 이야기",
+      "화산 고슈"
+    ]
+  },
+  "라이선더": {
+    "portrait": "assets/portraits/c17.webp",
+    "gifts": [
+      "수염풀",
+      "동방 최고급 찻잎",
+      "말 손질 키트"
+    ]
+  },
+  "릴리안": {
+    "portrait": "assets/portraits/c16.webp",
+    "gifts": [
+      "동양식 귀걸이",
+      "동방 최고급 찻잎",
+      "위인 시집"
+    ]
+  },
+  "소피아": {
+    "portrait": "assets/portraits/c42.webp",
+    "gifts": [
+      "파란 장미 꽃다발",
+      "두 자루 생선칼",
+      "화산 고슈"
+    ]
+  },
+  "녹투라": {
+    "portrait": "assets/portraits/c41.webp",
+    "gifts": [
+      "군략서 사본",
+      "모험 이야기",
+      "동방 최고급 찻잎"
+    ]
+  },
+  "자코네": {
+    "portrait": "assets/portraits/c52.webp",
+    "gifts": [
+      "동방 최고급 찻잎",
+      "동양식 귀걸이",
+      "요란한 팔찌"
+    ]
+  },
+  "시로코": {
+    "portrait": "assets/portraits/c19.webp",
+    "gifts": [
+      "화살촉 보석",
+      "진홍 고슈",
+      "화산 고슈"
+    ]
+  },
+  "대도": {
+    "portrait": "assets/portraits/c49.webp",
+    "gifts": [
+      "위인 시집",
+      "군략서 사본",
+      "모험 이야기"
+    ]
+  },
+  "누디누": {
+    "portrait": "assets/portraits/c37.webp",
+    "gifts": [
+      "군략서 사본",
+      "모험 이야기",
+      "동방 연애담"
+    ]
+  },
+  "로레타": {
+    "portrait": "assets/portraits/c45.webp",
+    "gifts": [
+      "화살촉 보석",
+      "진홍 고슈",
+      "꿀 우유"
+    ]
+  },
+  "나타": {
+    "portrait": "assets/portraits/c33.webp",
+    "gifts": [
+      "군략서 사본",
+      "모험 이야기",
+      "동방 최고급 찻잎"
+    ]
+  },
+  "단테": {
+    "portrait": "assets/portraits/c24.webp",
+    "gifts": [
+      "화살촉 보석",
+      "소립 커피",
+      "진홍 고슈"
+    ]
+  },
+  "리네": {
+    "portrait": "assets/portraits/c30.webp",
+    "gifts": [
+      "군략서 사본",
+      "모험 이야기",
+      "화살촉 보석"
+    ]
+  },
+  "세테스": {
+    "portrait": "assets/portraits/c44.webp",
+    "gifts": [
+      "위인 시집",
+      "군략서 사본",
+      "모험 이야기"
+    ]
+  },
+  "울턴드": {
+    "portrait": "assets/portraits/c10.webp",
+    "gifts": [
+      "파란 장미 꽃다발",
+      "진홍 고슈",
+      "동방 연애담"
+    ]
+  },
+  "페페": {
+    "portrait": "assets/portraits/c43.webp",
+    "gifts": [
+      "화살촉 보석",
+      "소립 커피",
+      "진홍 고슈"
+    ]
+  },
+  "루루디아": {
+    "portrait": "assets/portraits/c48.webp",
+    "gifts": [
+      "동양 흑비단",
+      "동양식 귀걸이",
+      "동방 연애담"
+    ]
+  },
+  "시몬": {
+    "portrait": "assets/portraits/c27.webp",
+    "gifts": [
+      "진홍 고슈",
+      "두 자루 생선칼",
+      "수호 인형"
+    ]
+  },
+  "카타냐": {
+    "portrait": "assets/portraits/c36.webp",
+    "gifts": [
+      "동양 흑비단",
+      "동양식 귀걸이",
+      "동방 최고급 찻잎"
+    ]
+  },
+  "피터르": {
+    "portrait": "assets/portraits/c09.webp",
+    "gifts": [
+      "커피 구운 과자",
+      "수염풀",
+      "동방 최고급 찻잎"
+    ]
+  },
+  "하르빈": {
+    "portrait": "assets/portraits/c51.webp",
+    "gifts": [
+      "동양 흑비단",
+      "동양식 귀걸이",
+      "가룸"
+    ]
+  },
+  "디에고": {
+    "portrait": "assets/portraits/c29.webp",
+    "gifts": [
+      "화살촉 보석",
+      "진홍 고슈",
+      "관절 보호 장갑"
+    ]
+  },
+  "그자람": {
+    "portrait": "assets/portraits/c34.webp",
+    "gifts": [
+      "군략서 사본",
+      "모험 이야기",
+      "화산 고슈"
+    ]
+  },
+  "미카엘라": {
+    "portrait": "assets/portraits/c13.webp",
+    "gifts": [
+      "모험 이야기",
+      "화산 고슈",
+      "알렉토 가룸"
+    ]
+  },
+  "버커니어": {
+    "portrait": "assets/portraits/c18.webp",
+    "gifts": [
+      "진홍 고슈",
+      "두 자루 생선칼",
+      "화살촉 보석"
+    ]
+  },
+  "골라이어스": {
+    "portrait": "assets/portraits/c47.webp",
+    "gifts": [
+      "군략서 사본",
+      "화산 고슈",
+      "향긋한 소슈"
+    ]
+  },
+  "무우": {
+    "portrait": "assets/portraits/c21.webp",
+    "gifts": [
+      "화살촉 보석",
+      "결정 사탕",
+      "꿀 구운 과자"
+    ]
+  },
+  "양계": {
+    "portrait": "assets/portraits/c40.webp",
+    "gifts": [
+      "동방 최고급 찻잎",
+      "위인 시집",
+      "군략서 사본"
+    ]
+  },
+  "에스메랄다": {
+    "portrait": "assets/portraits/c12.webp",
+    "gifts": [
+      "동양식 귀걸이",
+      "모험 이야기",
+      "알렉토 가룸"
+    ]
+  },
+  "올림피아": {
+    "portrait": "assets/portraits/c20.webp",
+    "gifts": [
+      "동양식 귀걸이",
+      "동방 최고급 찻잎",
+      "오거스 커피"
+    ]
+  },
+  "우술라": {
+    "portrait": "assets/portraits/c26.webp",
+    "gifts": [
+      "화살촉 보석",
+      "소립 커피",
+      "진홍 고슈"
+    ]
+  },
+  "제스터": {
+    "portrait": "assets/portraits/c46.webp",
+    "gifts": [
+      "화살촉 보석",
+      "진홍 고슈",
+      "두 자루 생선칼"
+    ]
+  },
+  "피아나": {
+    "portrait": "assets/portraits/c50.webp",
+    "gifts": [
+      "화살촉 보석",
+      "파란 장미 꽃다발",
+      "화산 고슈"
+    ]
+  },
+  "이오": {
+    "portrait": "assets/portraits/c35.webp",
+    "gifts": [
+      "화살촉 보석",
+      "소립 커피",
+      "진홍 고슈"
+    ]
+  },
+  "티아라": {
+    "portrait": "assets/portraits/c08.webp",
+    "gifts": [
+      "알렉토 가룸",
+      "동방 연애담",
+      "동방 최고급 찻잎"
+    ]
+  },
+  "마지데": {
+    "portrait": "assets/portraits/c53.webp",
+    "gifts": [
+      "화살촉 보석",
+      "진홍 고슈",
+      "두 자루 생선칼"
+    ]
+  },
+  "밴디츠": {
+    "portrait": "assets/portraits/c38.webp",
+    "gifts": [
+      "동양 흑비단",
+      "동양식 귀걸이",
+      "동방 최고급 찻잎"
+    ]
+  },
+  "키로이카": {
+    "portrait": "assets/portraits/c55.webp",
+    "gifts": [
+      "화살촉 보석",
+      "진홍 고슈",
+      "화산 고슈"
+    ]
+  },
+  "자스민": {
+    "portrait": "assets/portraits/c56.webp",
+    "gifts": [
+      "화살촉 보석",
+      "진홍 고슈",
+      "두 자루 생선칼"
+    ]
+  },
+  "알렉산드라": {
+    "portrait": "assets/portraits/c39.webp",
+    "gifts": [
+      "동양식 귀걸이",
+      "군략서 사본",
+      "모험 이야기"
+    ]
+  },
+  "누조": {
+    "portrait": "assets/portraits/c57.webp",
+    "gifts": [
+      "화살촉 보석",
+      "두 자루 생선칼",
+      "소립 커피"
+    ]
+  },
+  "이니오니": {
+    "portrait": "assets/portraits/c58.webp",
+    "gifts": [
+      "군략서 사본",
+      "모험 이야기",
+      "동양 흑비단"
+    ]
+  },
+  "레다": {
+    "portrait": "assets/portraits/c07.webp",
+    "gifts": [
+      "동양 흑비단",
+      "동양식 귀걸이",
+      "모험 이야기"
+    ]
+  },
+  "파비오": {
+    "portrait": "assets/portraits/c11.webp",
+    "gifts": [
+      "모험 이야기",
+      "화산 고슈",
+      "향긋한 소슈"
+    ]
+  },
+  "사란": {
+    "portrait": "assets/portraits/c32.webp",
+    "gifts": [
+      "특제 「약」",
+      "소립 커피",
+      "원기 고슈"
+    ]
+  },
+  "디트리히": {
+    "portrait": "assets/portraits/c05.webp",
+    "gifts": [
+      "화살촉 보석",
+      "진홍 고슈",
+      "긴지 세르비"
+    ]
+  },
+  "게이츠": {
+    "portrait": "assets/portraits/c23.webp",
+    "gifts": [
+      "화살촉 보석",
+      "소립 커피",
+      "진홍 고슈"
+    ]
+  },
+  "이스마르": {
+    "portrait": "assets/portraits/c01.webp",
+    "gifts": []
+  },
+  "홍화": {
+    "portrait": "assets/portraits/c02.webp",
+    "gifts": []
+  },
+  "트로이아": {
+    "portrait": "assets/portraits/c03.webp",
+    "gifts": []
+  },
+  "카이": {
+    "portrait": "assets/portraits/c04.webp",
+    "gifts": [
+      "화살촉 보석",
+      "진홍 고슈",
+      "낚싯바늘"
+    ]
+  },
+  "베르트랑": {
+    "portrait": "assets/portraits/c22.webp",
+    "gifts": []
+  },
+  "아나톨리아": {
+    "portrait": "assets/portraits/c31.webp",
+    "gifts": []
+  },
+  "오르헬": {
+    "portrait": "assets/portraits/c28.webp",
+    "gifts": []
+  },
+  "타리문": {
+    "portrait": "assets/portraits/c25.webp",
+    "gifts": []
+  },
+  "센트리온": {
+    "portrait": "assets/portraits/c54.webp",
+    "gifts": []
+  },
+  "키릭": {
+    "portrait": "assets/portraits/c59.webp",
+    "gifts": []
+  },
+  "네이선": {
+    "portrait": "assets/portraits/c60.webp",
+    "gifts": []
+  },
+  "아스완": {
+    "portrait": "assets/portraits/c61.webp",
+    "gifts": []
+  },
+  "타호니아": {
+    "portrait": "assets/portraits/c62.webp",
+    "gifts": []
+  }
+}

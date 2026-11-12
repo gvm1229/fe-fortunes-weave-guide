@@ -1,0 +1,724 @@
+{
+  "count": 50,
+  "recruitByRoute": {
+    "theodora": [
+      "세오도라",
+      "토비아스",
+      "보나파르트",
+      "릴리안",
+      "소피아",
+      "녹투라",
+      "리네",
+      "단테",
+      "알렉산드라",
+      "시로코",
+      "우술라",
+      "라이선더",
+      "이오",
+      "누조",
+      "로레타",
+      "루루디아",
+      "나타",
+      "누디누",
+      "대도",
+      "디에고",
+      "밴디츠",
+      "버커니어",
+      "세테스",
+      "울턴드",
+      "자스민",
+      "자코네",
+      "티아라",
+      "피아나",
+      "하르빈"
+    ],
+    "leda": [
+      "레다",
+      "무우",
+      "시로코",
+      "올림피아",
+      "그자람",
+      "에스메랄다",
+      "카타냐",
+      "피아나",
+      "소피아",
+      "이오",
+      "알렉산드라",
+      "이니오니",
+      "자스민",
+      "사란",
+      "하르빈",
+      "골라이어스",
+      "디에고",
+      "로레타",
+      "버커니어",
+      "제스터",
+      "키로이카"
+    ],
+    "dietrich": [
+      "디트리히",
+      "에스메랄다",
+      "파비오",
+      "미카엘라",
+      "우술라",
+      "리네",
+      "알렉산드라",
+      "이오",
+      "카타냐",
+      "단테",
+      "피아나",
+      "게이츠",
+      "누조",
+      "제스터",
+      "울턴드",
+      "소피아",
+      "골라이어스",
+      "녹투라",
+      "대도",
+      "라이선더",
+      "루루디아",
+      "릴리안",
+      "무우",
+      "시몬",
+      "양계",
+      "피터르",
+      "하르빈"
+    ],
+    "kai": [
+      "카이",
+      "티아라",
+      "피터르",
+      "그자람",
+      "미카엘라",
+      "울턴드",
+      "녹투라",
+      "세테스",
+      "누조",
+      "이오",
+      "알렉산드라",
+      "로레타",
+      "리네",
+      "골라이어스",
+      "마지데",
+      "무우",
+      "양계",
+      "에스메랄다",
+      "페페"
+    ]
+  },
+  "uniquePool": [
+    "게이츠",
+    "골라이어스",
+    "그자람",
+    "나타",
+    "녹투라",
+    "누디누",
+    "누조",
+    "단테",
+    "대도",
+    "디에고",
+    "디트리히",
+    "라이선더",
+    "레다",
+    "로레타",
+    "루루디아",
+    "리네",
+    "릴리안",
+    "마지데",
+    "무우",
+    "미카엘라",
+    "밴디츠",
+    "버커니어",
+    "보나파르트",
+    "사란",
+    "세오도라",
+    "세테스",
+    "소피아",
+    "시로코",
+    "시몬",
+    "알렉산드라",
+    "양계",
+    "에스메랄다",
+    "올림피아",
+    "우술라",
+    "울턴드",
+    "이니오니",
+    "이오",
+    "자스민",
+    "자코네",
+    "제스터",
+    "카이",
+    "카타냐",
+    "키로이카",
+    "토비아스",
+    "티아라",
+    "파비오",
+    "페페",
+    "피아나",
+    "피터르",
+    "하르빈"
+  ],
+  "trainedCandidates": [
+    "게이츠",
+    "그자람",
+    "녹투라",
+    "누조",
+    "단테",
+    "디트리히",
+    "라이선더",
+    "레다",
+    "로레타",
+    "루루디아",
+    "리네",
+    "릴리안",
+    "무우",
+    "미카엘라",
+    "보나파르트",
+    "세오도라",
+    "세테스",
+    "소피아",
+    "시로코",
+    "알렉산드라",
+    "에스메랄다",
+    "올림피아",
+    "우술라",
+    "울턴드",
+    "이니오니",
+    "카이",
+    "카타냐",
+    "토비아스",
+    "티아라",
+    "파비오",
+    "피아나",
+    "피터르",
+    "하르빈"
+  ],
+  "final25Example": [
+    {
+      "name": "이스마르",
+      "role": "창 전열·명부 대응",
+      "class": "더 트라이던트",
+      "classTier": "신장직",
+      "classIcon": "assets/classes/the-trident.webp",
+      "weapons": [
+        {
+          "skill": "창술",
+          "label": "창",
+          "icon": "assets/skills/lance.webp",
+          "priority": "주력"
+        }
+      ]
+    },
+    {
+      "name": "디트리히",
+      "role": "검·보스 마무리",
+      "class": "더 블레이드",
+      "classTier": "신장직",
+      "classIcon": "assets/classes/the-blade.webp",
+      "weapons": [
+        {
+          "skill": "검술",
+          "label": "검",
+          "icon": "assets/skills/sword.webp",
+          "priority": "주력"
+        }
+      ]
+    },
+    {
+      "name": "카이",
+      "role": "기동 공격·돌파",
+      "class": "더 캐벌리어",
+      "classTier": "신장직",
+      "classIcon": "assets/classes/the-cavalier.webp",
+      "weapons": [
+        {
+          "skill": "창술",
+          "label": "창",
+          "icon": "assets/skills/lance.webp",
+          "priority": "주력"
+        }
+      ]
+    },
+    {
+      "name": "세오도라",
+      "role": "창 전열·군단",
+      "class": "홀리 랜서",
+      "classTier": "최상급직",
+      "classIcon": "assets/classes/sentinel.webp",
+      "weapons": [
+        {
+          "skill": "창술",
+          "label": "창",
+          "icon": "assets/skills/lance.webp",
+          "priority": "주력"
+        },
+        {
+          "skill": "백마술",
+          "label": "백마법",
+          "icon": "assets/skills/white-magic.webp",
+          "priority": "보조"
+        }
+      ]
+    },
+    {
+      "name": "레다",
+      "role": "춤·노래",
+      "class": "디 압사라스",
+      "classTier": "신장직",
+      "classIcon": "assets/classes/the-apsara.webp",
+      "weapons": [
+        {
+          "skill": "검술",
+          "label": "검",
+          "icon": "assets/skills/sword.webp",
+          "priority": "주력"
+        },
+        {
+          "skill": "궁술",
+          "label": "활",
+          "icon": "assets/skills/bow.webp",
+          "priority": "보조"
+        }
+      ]
+    },
+    {
+      "name": "미카엘라",
+      "role": "도끼·근접 화력",
+      "class": "디 이터널",
+      "classTier": "신장직",
+      "classIcon": "assets/classes/the-eternal.webp",
+      "weapons": [
+        {
+          "skill": "도끼술",
+          "label": "도끼",
+          "icon": "assets/skills/axe.webp",
+          "priority": "주력"
+        },
+        {
+          "skill": "격투술",
+          "label": "격투",
+          "icon": "assets/skills/brawl.webp",
+          "priority": "보조"
+        }
+      ]
+    },
+    {
+      "name": "무우",
+      "role": "격투 전열·보조 마법",
+      "class": "더 갓 핸드",
+      "classTier": "신장직",
+      "classIcon": "assets/classes/the-godhand.webp",
+      "weapons": [
+        {
+          "skill": "격투술",
+          "label": "격투",
+          "icon": "assets/skills/brawl.webp",
+          "priority": "주력"
+        },
+        {
+          "skill": "백마술",
+          "label": "백마법",
+          "icon": "assets/skills/white-magic.webp",
+          "priority": "보조"
+        }
+      ]
+    },
+    {
+      "name": "그자람",
+      "role": "고속 검·물리 마무리",
+      "class": "소드 마스터",
+      "classTier": "최상급직",
+      "classIcon": "assets/classes/swordmaster.webp",
+      "weapons": [
+        {
+          "skill": "검술",
+          "label": "검",
+          "icon": "assets/skills/sword.webp",
+          "priority": "주력"
+        }
+      ]
+    },
+    {
+      "name": "에스메랄다",
+      "role": "창 전열·물리 탱커",
+      "class": "포트리스",
+      "classTier": "최상급직",
+      "classIcon": "assets/classes/castle-knight.webp",
+      "weapons": [
+        {
+          "skill": "창술",
+          "label": "창",
+          "icon": "assets/skills/lance.webp",
+          "priority": "주력"
+        }
+      ]
+    },
+    {
+      "name": "카타냐",
+      "role": "비행 급습·마무리",
+      "class": "성천익병",
+      "classTier": "최상급직",
+      "classIcon": "assets/classes/celestial-trooper.webp",
+      "weapons": [
+        {
+          "skill": "창술",
+          "label": "창",
+          "icon": "assets/skills/lance.webp",
+          "priority": "주력"
+        },
+        {
+          "skill": "검술",
+          "label": "검",
+          "icon": "assets/skills/sword.webp",
+          "priority": "보조"
+        }
+      ]
+    },
+    {
+      "name": "리네",
+      "role": "전열·리브로 회복",
+      "class": "홀리 랜서",
+      "classTier": "최상급직",
+      "classIcon": "assets/classes/sentinel.webp",
+      "weapons": [
+        {
+          "skill": "창술",
+          "label": "창",
+          "icon": "assets/skills/lance.webp",
+          "priority": "주력"
+        },
+        {
+          "skill": "백마술",
+          "label": "백마법",
+          "icon": "assets/skills/white-magic.webp",
+          "priority": "보조"
+        }
+      ]
+    },
+    {
+      "name": "시로코",
+      "role": "검·마법 혼합 공격",
+      "class": "디 아바타르",
+      "classTier": "신장직",
+      "classIcon": "assets/classes/the-avatar.webp",
+      "weapons": [
+        {
+          "skill": "흑마술",
+          "label": "흑마법",
+          "icon": "assets/skills/black-magic.webp",
+          "priority": "주력"
+        },
+        {
+          "skill": "검술",
+          "label": "검",
+          "icon": "assets/skills/sword.webp",
+          "priority": "보조"
+        },
+        {
+          "skill": "백마술",
+          "label": "백마법",
+          "icon": "assets/skills/white-magic.webp",
+          "priority": "보조"
+        }
+      ]
+    },
+    {
+      "name": "파비오",
+      "role": "흑마법·지속 화력",
+      "class": "드루이드",
+      "classTier": "최상급직",
+      "classIcon": "assets/classes/druid.webp",
+      "weapons": [
+        {
+          "skill": "흑마술",
+          "label": "흑마법",
+          "icon": "assets/skills/black-magic.webp",
+          "priority": "주력"
+        },
+        {
+          "skill": "검술",
+          "label": "검",
+          "icon": "assets/skills/sword.webp",
+          "priority": "보조"
+        }
+      ]
+    },
+    {
+      "name": "단테",
+      "role": "기동 마법·프리즈",
+      "class": "발키리움",
+      "classTier": "최상급직",
+      "classIcon": "assets/classes/valkyrium.webp",
+      "weapons": [
+        {
+          "skill": "흑마술",
+          "label": "흑마법",
+          "icon": "assets/skills/black-magic.webp",
+          "priority": "주력"
+        },
+        {
+          "skill": "백마술",
+          "label": "백마법",
+          "icon": "assets/skills/white-magic.webp",
+          "priority": "보조"
+        }
+      ]
+    },
+    {
+      "name": "티아라",
+      "role": "2칸 춤·보조",
+      "class": "무희",
+      "classTier": "상급직",
+      "classIcon": "assets/classes/dancer.webp",
+      "weapons": [
+        {
+          "skill": "궁술",
+          "label": "활",
+          "icon": "assets/skills/bow.webp",
+          "priority": "주력"
+        }
+      ]
+    },
+    {
+      "name": "울턴드",
+      "role": "창 전열·인접 회복",
+      "class": "홀리 랜서",
+      "classTier": "최상급직",
+      "classIcon": "assets/classes/sentinel.webp",
+      "weapons": [
+        {
+          "skill": "창술",
+          "label": "창",
+          "icon": "assets/skills/lance.webp",
+          "priority": "주력"
+        },
+        {
+          "skill": "백마술",
+          "label": "백마법",
+          "icon": "assets/skills/white-magic.webp",
+          "priority": "보조"
+        }
+      ]
+    },
+    {
+      "name": "릴리안",
+      "role": "기동 활·안전한 마무리",
+      "class": "보우 나이트",
+      "classTier": "최상급직",
+      "classIcon": "assets/classes/bow-knight.webp",
+      "weapons": [
+        {
+          "skill": "궁술",
+          "label": "활",
+          "icon": "assets/skills/bow.webp",
+          "priority": "주력"
+        }
+      ]
+    },
+    {
+      "name": "피터르",
+      "role": "활 기술·장거리 저격",
+      "class": "마스터 아치",
+      "classTier": "최상급직",
+      "classIcon": "assets/classes/bow-adept.webp",
+      "weapons": [
+        {
+          "skill": "궁술",
+          "label": "활",
+          "icon": "assets/skills/bow.webp",
+          "priority": "주력"
+        }
+      ]
+    },
+    {
+      "name": "이니오니",
+      "role": "활 단발 화력",
+      "class": "마스터 아치",
+      "classTier": "최상급직",
+      "classIcon": "assets/classes/bow-adept.webp",
+      "weapons": [
+        {
+          "skill": "궁술",
+          "label": "활",
+          "icon": "assets/skills/bow.webp",
+          "priority": "주력"
+        }
+      ]
+    },
+    {
+      "name": "우술라",
+      "role": "검·활 공격·상자·탐색",
+      "class": "더 캘러미티",
+      "classTier": "신장직",
+      "classIcon": "assets/classes/the-calamity.webp",
+      "weapons": [
+        {
+          "skill": "궁술",
+          "label": "활",
+          "icon": "assets/skills/bow.webp",
+          "priority": "주력"
+        },
+        {
+          "skill": "검술",
+          "label": "검",
+          "icon": "assets/skills/sword.webp",
+          "priority": "보조"
+        }
+      ]
+    },
+    {
+      "name": "알렉산드라",
+      "role": "비행 기동·후열 급습",
+      "class": "성천익병",
+      "classTier": "최상급직",
+      "classIcon": "assets/classes/celestial-trooper.webp",
+      "weapons": [
+        {
+          "skill": "검술",
+          "label": "검",
+          "icon": "assets/skills/sword.webp",
+          "priority": "주력"
+        },
+        {
+          "skill": "창술",
+          "label": "창",
+          "icon": "assets/skills/lance.webp",
+          "priority": "보조"
+        }
+      ]
+    },
+    {
+      "name": "로레타",
+      "role": "명중 보강 난사·회피 보조",
+      "class": "마스터 아치",
+      "classTier": "최상급직",
+      "classIcon": "assets/classes/bow-adept.webp",
+      "weapons": [
+        {
+          "skill": "궁술",
+          "label": "활",
+          "icon": "assets/skills/bow.webp",
+          "priority": "주력"
+        }
+      ]
+    },
+    {
+      "name": "소피아",
+      "role": "리브로·원격 회복",
+      "class": "와이즈맨",
+      "classTier": "최상급직",
+      "classIcon": "assets/classes/wiseman.webp",
+      "weapons": [
+        {
+          "skill": "백마술",
+          "label": "백마법",
+          "icon": "assets/skills/white-magic.webp",
+          "priority": "주력"
+        }
+      ]
+    },
+    {
+      "name": "올림피아",
+      "role": "회복·마법 봉쇄",
+      "class": "와이즈맨",
+      "classTier": "최상급직",
+      "classIcon": "assets/classes/wiseman.webp",
+      "weapons": [
+        {
+          "skill": "백마술",
+          "label": "백마법",
+          "icon": "assets/skills/white-magic.webp",
+          "priority": "주력"
+        }
+      ]
+    },
+    {
+      "name": "피아나",
+      "role": "기동 구조·큰 회복",
+      "class": "발키리움",
+      "classTier": "최상급직",
+      "classIcon": "assets/classes/valkyrium.webp",
+      "weapons": [
+        {
+          "skill": "백마술",
+          "label": "백마법",
+          "icon": "assets/skills/white-magic.webp",
+          "priority": "주력"
+        },
+        {
+          "skill": "흑마술",
+          "label": "흑마법",
+          "icon": "assets/skills/black-magic.webp",
+          "priority": "보조"
+        }
+      ]
+    }
+  ],
+  "backup": [
+    "게이츠",
+    "녹투라",
+    "누조",
+    "라이선더",
+    "루루디아",
+    "하르빈",
+    "보나파르트",
+    "세테스",
+    "토비아스"
+  ],
+  "minimumPrepOnly": [
+    "사란",
+    "이오",
+    "자스민",
+    "제스터"
+  ],
+  "notCounted": [
+    "키릭·네이선의2부 합류",
+    "3부 신규 동료",
+    "버커니어의 장기 합류 여부"
+  ],
+  "stageDeployments": {
+    "normal": 9,
+    "large": 17,
+    "final": 25
+  },
+  "proof": "최종25명은 이스마르와 1·2부 육성24명 · 릴리안은 세오도라 기준판의 보우 나이트 · 하르빈은 레다1·2부 실전 체험 후3부 예비 · 최종 밖9명도 실제 출격할 때만 추가 투자 · 지양10명 제외",
+  "classNotes": [
+    "우술라 더 캘러미티 · 그자람 소드 마스터 · 로레타 마스터 아치 · 피터르·이니오니·아스완의 마스터 아치 유지",
+    "우술라는 검·활 특기와 자물쇠 열기·고급 탐색 · 로레타는 궁술 A 난사와 활 명중 보강 · 디트리히 더 블레이드 고정",
+    "이스마르 트라이던트 · 카이 캐벌리어 · 디트리히 블레이드 · 레다 압사라스 · 미카엘라 이터널 · 무우 갓 핸드 · 시로코 아바타르 · 우술라 캘러미티",
+    "릴리안은 스나이퍼→보우 나이트 · 궁술 A·기마술 D · 사격의 달인 명중+15 권장 · 포레스트 나이트 선행 시험/마스터 불필요 · 마스터 아치3명 유지"
+  ],
+  "weaponMeaning": "최종 병종에서 실제 사용할 주력·보조 무기 종류와 마법. 병종의 모든 사용 가능 무기나 현재 보유 아이템 목록이 아님. 마법검은 검에 포함. 모든 보조 무기를 추가로 최상위 훈련하라는 뜻이 아님.",
+  "approved": "2026-11-07 하르빈 대신 릴리안 최종25명 승인 · 하르빈 최소1루트 실전 사용 희망",
+  "appliedToPersonalGuide": true,
+  "dance": {
+    "person": "티아라",
+    "class": "무희",
+    "range": "1~2칸",
+    "reason": "참모의 재능은 아군 대상 전투 기술인 춤에도 사거리+1을 적용.",
+    "healers": [
+      "소피아",
+      "올림피아",
+      "리네"
+    ],
+    "otherDancer": "레다 · 디 압사라스",
+    "notRequired": "무희 마스터는2칸 춤의 선행 조건이 아님.",
+    "sources": [
+      "https://annasnotebook.net/en/skills/tacticians-wit/",
+      "https://gamefaqs.gamespot.com/boards/559193-fire-emblem-fortunes-weave/81199147"
+    ]
+  },
+  "avoidDefault": [
+    "양계",
+    "키로이카",
+    "밴디츠",
+    "마지데",
+    "골라이어스",
+    "자코네",
+    "대도",
+    "자스민",
+    "센트리온",
+    "타호니아"
+  ],
+  "avoidRule": "양계·키로이카·밴디츠·마지데·골라이어스·자코네·대도·자스민·센트리온·타호니아은 영입만 하고 출격·육성하지 않음. 지원 대화를 위한 영입과 전투 사용을 구별."
+}

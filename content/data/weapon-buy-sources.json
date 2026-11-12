@@ -1,0 +1,1206 @@
+{
+  "reviewed": "2026-11-04",
+  "weapons": {
+    "cleansing-blade": {
+      "name": "재계의 검",
+      "english": "Cleansing Blade",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624713",
+      "game8Tier": "S",
+      "skill": "검술",
+      "requirements": [
+        {
+          "skill": "검술",
+          "rank": "E"
+        }
+      ],
+      "merchantNames": [
+        "Osiris Armory"
+      ],
+      "fixedAcquisition": "레다8장 예선전 시작 위치 근처 금색 반짝임을 직접 회수. 자동 지급으로 생각하지 않음.",
+      "sourceImages": [
+        {
+          "caption": "Image 2: Osiris Armory Map Location",
+          "url": "https://img.game8.co/4631184/82693c3f425c637e9742e0e5f5facc24.png/show"
+        },
+        {
+          "caption": "Image 4: Anna Map Location",
+          "url": "https://img.game8.co/4631182/f60cefa85fea1bf0f238f2898ad1a93a.png/show"
+        }
+      ],
+      "randomCrate": "Luxury",
+      "purchasePrice": null,
+      "note": "판매 시점·재고·가격은 실제 물품창 확인. 신전 보상·지참품을 상점 구매품으로 만들지 않음.",
+      "images": [
+        {
+          "caption": "Image 2: Osiris Armory Map Location",
+          "url": "https://img.game8.co/4631184/82693c3f425c637e9742e0e5f5facc24.png/show",
+          "file": "assets/shopping/cleansing-blade-1.png"
+        }
+      ],
+      "rewardImage": {
+        "caption": "Image 1: Leda Chapter 8 Cleansing Sword",
+        "url": "https://img.game8.co/4626495/2c84e9bbd9621e26034d7d59f9dfef8f.png/show",
+        "file": "assets/shopping/cleansing-blade-leda8.png"
+      },
+      "buyDecision": "우선 확보.1부는 해당 루트 미보유1,3부는 반입분 포함 여러 부대용3자루 안팎. 검 사용 병종에만 배정."
+    },
+    "levin-sword": {
+      "name": "선더 소드",
+      "english": "Levin Sword",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628011",
+      "game8Tier": "S",
+      "skill": "검술",
+      "requirements": [
+        {
+          "skill": "검술",
+          "rank": "C"
+        }
+      ],
+      "merchantNames": [
+        "Callianeira Port Armory"
+      ],
+      "fixedAcquisition": "",
+      "sourceImages": [
+        {
+          "caption": "Image 1: Callianeira Port Armory Map Location",
+          "url": "https://img.game8.co/4629953/c70bd5b4d00720c73d8dcd1b8a394b20.png/show"
+        },
+        {
+          "caption": "Image 3: Anna Map Location",
+          "url": "https://img.game8.co/4631182/f60cefa85fea1bf0f238f2898ad1a93a.png/show"
+        }
+      ],
+      "randomCrate": "Luxury",
+      "purchasePrice": null,
+      "note": "판매 시점·재고·가격은 실제 물품창 확인. 신전 보상·지참품을 상점 구매품으로 만들지 않음.",
+      "images": [
+        {
+          "caption": "Image 1: Callianeira Port Armory Map Location",
+          "url": "https://img.game8.co/4629953/c70bd5b4d00720c73d8dcd1b8a394b20.png/show",
+          "file": "assets/shopping/levin-sword-1.png"
+        }
+      ],
+      "dungeon3": {
+        "name": "니시아데스 사막의 남쪽 통로(남쪽 통로)",
+        "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625787",
+        "chestContentSource": "part3.html",
+        "image": {
+          "file": "assets/shopping/southern-passage.png",
+          "url": "https://img.game8.co/4629151/75a16bf3b69736fcd2dfb9a196e42811.png/show",
+          "caption": "남쪽 통로 던전 위치·상자 참고.1부와3부 상자 내용은 다릅니다."
+        }
+      },
+      "buyDecision": "우선 확보. 당장 쓸2자루부터, 예비는 총3까지. 검C·마력 활용 담당에게. 무료 추가분은 보관.",
+      "tradeRecipe": {
+        "perWeapon": {
+          "태양 열매": 10,
+          "유나메이": 1
+        },
+        "twoWeapons": {
+          "태양 열매": 20,
+          "유나메이": 2
+        },
+        "theodoraPart7ArmyReserve": 30,
+        "freshTwoWeaponsAndArmyThryTotal": 50,
+        "locations": {
+          "태양 열매": "발레리 협곡",
+          "유나메이": "다마센 곶"
+        },
+        "availabilityRule": "현재 교환창의 실제 재고·수량 우선.6장 확보를 확정하지 않음.8장부터라는 자료와 구분.",
+        "sources": [
+          "https://game8.jp/fe-banshisenko/817018",
+          "https://gamewith.jp/fefw/578035",
+          "https://annasnotebook.net/ja/items/it-315/"
+        ],
+        "images": [
+          "assets/guide/valeri-map.jpg",
+          "assets/guide/damasen-map.jpg"
+        ]
+      }
+    },
+    "zalmoxis": {
+      "name": "잘목시스",
+      "english": "Zalmoxis",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629915",
+      "game8Tier": "S",
+      "skill": "도끼술",
+      "requirements": [
+        {
+          "skill": "도끼술",
+          "rank": "E"
+        }
+      ],
+      "merchantNames": [],
+      "fixedAcquisition": "베르트랑 외전 완료 후3부 정식 합류 시 지참. 상점 탐색 대신 외전 기한을 지킨다.",
+      "sourceImages": [],
+      "randomCrate": "",
+      "purchasePrice": null,
+      "note": "판매 시점·재고·가격은 실제 물품창 확인. 신전 보상·지참품을 상점 구매품으로 만들지 않음.",
+      "images": [
+        {
+          "caption": "Image 1: How to Get Zalmoxis",
+          "url": "https://img.game8.co/4641580/b35029e5f3605abc99302cb15b73ba8b.png/show",
+          "file": "assets/shopping/zalmoxis-reward.png"
+        }
+      ],
+      "buyDecision": "진행·지참·상자 보상부터 확인. 별도로 상점을 찾아 구매하지 않고 받은 무기는 보관. 베르트랑 외전 완료 후3부 정식 합류 시 지참. 상점 탐색 대신 외전 기한을 지킨다."
+    },
+    "smyrnos-s-channels": {
+      "name": "스미르노스 보상 건틀릿",
+      "english": "Smyrnos's Channels",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628047",
+      "game8Tier": "S",
+      "skill": "격투술",
+      "requirements": [
+        {
+          "skill": "격투술",
+          "rank": "A"
+        }
+      ],
+      "merchantNames": [],
+      "fixedAcquisition": "3부 스미르노스 의뢰 후 신전의 시련을 수락·클리어해 수령. 화면 권장Lv60, 격투A.",
+      "sourceImages": [],
+      "randomCrate": "",
+      "purchasePrice": null,
+      "note": "판매 시점·재고·가격은 실제 물품창 확인. 신전 보상·지참품을 상점 구매품으로 만들지 않음.",
+      "images": [
+        {
+          "caption": "Image 1: How to Get Smyrnos",
+          "url": "https://img.game8.co/4641212/2a8c2290d83438c186a712ac9622f3b9.png/show",
+          "file": "assets/shopping/smyrnos-s-channels-reward.png"
+        }
+      ],
+      "trialSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/627957",
+      "buyDecision": "진행·지참·상자 보상부터 확인. 별도로 상점을 찾아 구매하지 않고 받은 무기는 보관. 3부 스미르노스 의뢰 후 신전의 시련을 수락·클리어해 수령. 화면 권장Lv60, 격투A."
+    },
+    "shining-spear": {
+      "name": "크레르 의뢰 강화창",
+      "english": "Shining Spear",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/630454",
+      "game8Tier": "S",
+      "skill": "창술",
+      "requirements": [
+        {
+          "skill": "창술",
+          "rank": "A"
+        }
+      ],
+      "merchantNames": [],
+      "fixedAcquisition": "3부 크레르 의뢰 완료 후 다그시온 분전에서 다시 대화해 The Nameless를 강화.",
+      "sourceImages": [],
+      "randomCrate": "",
+      "purchasePrice": null,
+      "note": "판매 시점·재고·가격은 실제 물품창 확인. 신전 보상·지참품을 상점 구매품으로 만들지 않음.",
+      "images": [
+        {
+          "caption": "Image 1: How to Get Shining Spear",
+          "url": "https://img.game8.co/4643915/89a9edb58f33397ddc45d27adac0e44c.png/show",
+          "file": "assets/shopping/shining-spear-reward.png"
+        }
+      ],
+      "buyDecision": "진행·지참·상자 보상부터 확인. 별도로 상점을 찾아 구매하지 않고 받은 무기는 보관. 3부 크레르 의뢰 완료 후 다그시온 분전에서 다시 대화해 The Nameless를 강화."
+    },
+    "kalla-s-bow": {
+      "name": "칼라의 활",
+      "english": "Kalla's Bow",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/626044",
+      "game8Tier": "S",
+      "skill": "궁술",
+      "requirements": [
+        {
+          "skill": "궁술",
+          "rank": "A"
+        }
+      ],
+      "merchantNames": [],
+      "fixedAcquisition": "레다1부10장부터 본전 접수처의 표식 없는 시련.1부 종료 전에 획득.",
+      "sourceImages": [],
+      "randomCrate": "",
+      "purchasePrice": null,
+      "note": "판매 시점·재고·가격은 실제 물품창 확인. 신전 보상·지참품을 상점 구매품으로 만들지 않음.",
+      "buyDecision": "진행·지참·상자 보상부터 확인. 별도로 상점을 찾아 구매하지 않고 받은 무기는 보관. 레다1부10장부터 본전 접수처의 표식 없는 시련.1부 종료 전에 획득."
+    },
+    "zanbato": {
+      "name": "참마도",
+      "english": "Zanbato",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628010",
+      "game8Tier": "A+",
+      "skill": "검술",
+      "requirements": [
+        {
+          "skill": "검술",
+          "rank": "D"
+        }
+      ],
+      "merchantNames": [
+        "Fina Armorer"
+      ],
+      "fixedAcquisition": "",
+      "sourceImages": [
+        {
+          "caption": "Image 1: Fina Armorer Map Location",
+          "url": "https://img.game8.co/4629945/1c8e102057a79768cbd6945500c97f93.png/show"
+        }
+      ],
+      "randomCrate": "Quality",
+      "purchasePrice": null,
+      "note": "판매 시점·재고·가격은 실제 물품창 확인. 신전 보상·지참품을 상점 구매품으로 만들지 않음.",
+      "buyDecision": "조건부1. 디트리히 등 검 담당이 기마 적을 처리해야 할 때. 창 담당의 특효로 충분하면 후순위."
+    },
+    "flyssa": {
+      "name": "플리사",
+      "english": "Flyssa",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628015",
+      "game8Tier": "A+",
+      "skill": "검술",
+      "requirements": [
+        {
+          "skill": "검술",
+          "rank": "C"
+        }
+      ],
+      "merchantNames": [
+        "Callianeira Port Armory",
+        "Zoste Armory"
+      ],
+      "fixedAcquisition": "",
+      "sourceImages": [
+        {
+          "caption": "Image 1: Callianeira Port Armory Map Location",
+          "url": "https://img.game8.co/4629953/c70bd5b4d00720c73d8dcd1b8a394b20.png/show"
+        },
+        {
+          "caption": "Image 2: Zoste Armory Map Location",
+          "url": "https://img.game8.co/4631201/ffc0080ce5a864d211e64ce14218bf98.png/show"
+        }
+      ],
+      "randomCrate": "",
+      "purchasePrice": null,
+      "note": "판매 시점·재고·가격은 실제 물품창 확인. 신전 보상·지참품을 상점 구매품으로 만들지 않음.",
+      "images": [
+        {
+          "caption": "Image 1: Callianeira Port Armory Map Location",
+          "url": "https://img.game8.co/4629953/c70bd5b4d00720c73d8dcd1b8a394b20.png/show",
+          "file": "assets/shopping/flyssa-1.png"
+        },
+        {
+          "caption": "Image 2: Zoste Armory Map Location",
+          "url": "https://img.game8.co/4631201/ffc0080ce5a864d211e64ce14218bf98.png/show",
+          "file": "assets/shopping/flyssa-2.png"
+        }
+      ],
+      "buyDecision": "조건부1. 검 담당의 중갑 특효가 부족할 때. 기존 중갑 대책·무게·사용 가능 표시를 먼저 비교."
+    },
+    "mahadu-s-spear": {
+      "name": "마하마두의 창",
+      "english": "Mahadu's Spear",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628072",
+      "game8Tier": "A+",
+      "skill": "창술",
+      "requirements": [
+        {
+          "skill": "창술",
+          "rank": "E"
+        }
+      ],
+      "merchantNames": [],
+      "fixedAcquisition": "세오도라1장 신전 전투 중 획득.",
+      "sourceImages": [],
+      "randomCrate": "",
+      "purchasePrice": null,
+      "note": "판매 시점·재고·가격은 실제 물품창 확인. 신전 보상·지참품을 상점 구매품으로 만들지 않음.",
+      "buyDecision": "진행·지참·상자 보상부터 확인. 별도로 상점을 찾아 구매하지 않고 받은 무기는 보관. 세오도라1장 신전 전투 중 획득."
+    },
+    "ridersbane": {
+      "name": "나이트 킬러",
+      "english": "Ridersbane",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628075",
+      "game8Tier": "A+",
+      "skill": "창술",
+      "requirements": [
+        {
+          "skill": "창술",
+          "rank": "C"
+        }
+      ],
+      "merchantNames": [
+        "Megaira Armory",
+        "Zoste Armory"
+      ],
+      "fixedAcquisition": "",
+      "sourceImages": [
+        {
+          "caption": "Image 1: Megaira Armory Map Location",
+          "url": "https://img.game8.co/4629949/67ab08c8d11133c6ef44bc019f56157b.png/show"
+        },
+        {
+          "caption": "Image 2: Zoste Armory Map Location",
+          "url": "https://img.game8.co/4631201/ffc0080ce5a864d211e64ce14218bf98.png/show"
+        }
+      ],
+      "randomCrate": "Quality",
+      "purchasePrice": null,
+      "note": "판매 시점·재고·가격은 실제 물품창 확인. 신전 보상·지참품을 상점 구매품으로 만들지 않음.",
+      "images": [
+        {
+          "caption": "Image 1: Megaira Armory Map Location",
+          "url": "https://img.game8.co/4629949/67ab08c8d11133c6ef44bc019f56157b.png/show",
+          "file": "assets/shopping/ridersbane-1.png"
+        },
+        {
+          "caption": "Image 2: Zoste Armory Map Location",
+          "url": "https://img.game8.co/4631201/ffc0080ce5a864d211e64ce14218bf98.png/show",
+          "file": "assets/shopping/ridersbane-2.png"
+        }
+      ],
+      "buyDecision": "조건부1. 세오도라·에스메랄다·리네·게이츠·카이 등 실제 대기마 창 담당에게. 다른 특효와 중복 구입 줄임."
+    },
+    "star-spear": {
+      "name": "카이 9장 지급창",
+      "english": "Star Spear",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628488",
+      "game8Tier": "A+",
+      "skill": "창술",
+      "requirements": [
+        {
+          "skill": "창술",
+          "rank": "C"
+        }
+      ],
+      "merchantNames": [],
+      "fixedAcquisition": "카이9장 주 전투 직전에 자동 지급.",
+      "sourceImages": [],
+      "randomCrate": "",
+      "purchasePrice": null,
+      "note": "판매 시점·재고·가격은 실제 물품창 확인. 신전 보상·지참품을 상점 구매품으로 만들지 않음.",
+      "buyDecision": "진행·지참·상자 보상부터 확인. 별도로 상점을 찾아 구매하지 않고 받은 무기는 보관. 카이9장 주 전투 직전에 자동 지급."
+    },
+    "ji": {
+      "name": "극",
+      "english": "Ji",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628078",
+      "game8Tier": "A+",
+      "skill": "창술",
+      "requirements": [
+        {
+          "skill": "창술",
+          "rank": "B"
+        },
+        {
+          "skill": "도끼술",
+          "rank": "D"
+        }
+      ],
+      "merchantNames": [
+        "Messalina Orchards Market",
+        "Port of Pandora Armory"
+      ],
+      "fixedAcquisition": "",
+      "sourceImages": [
+        {
+          "caption": "Image 1: Messalina Orchards Market Map Location",
+          "url": "https://img.game8.co/4631183/21e90373ba07fcfc909b4977dc3a4f5e.png/show"
+        },
+        {
+          "caption": "Image 2: Port of Pandora Armory Map Location",
+          "url": "https://img.game8.co/4629948/9e2c132b8e0f66b30806130762fa1311.png/show"
+        }
+      ],
+      "randomCrate": "Luxury",
+      "purchasePrice": null,
+      "note": "판매 시점·재고·가격은 실제 물품창 확인. 신전 보상·지참품을 상점 구매품으로 만들지 않음.",
+      "buyDecision": "조건부1. 창 담당의 중갑 대책이 부족할 때. 창B·도끼D의 실제 요구 조합과 사용 가능 표시를 확인."
+    },
+    "grasitha": {
+      "name": "마창 그라시더",
+      "english": "Grasitha",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628081",
+      "game8Tier": "A+",
+      "skill": "창술",
+      "requirements": [
+        {
+          "skill": "창술",
+          "rank": "B"
+        }
+      ],
+      "merchantNames": [],
+      "fixedAcquisition": "디트리히8장 해수 주 전투 완료 시 지급.",
+      "sourceImages": [],
+      "randomCrate": "",
+      "purchasePrice": null,
+      "note": "판매 시점·재고·가격은 실제 물품창 확인. 신전 보상·지참품을 상점 구매품으로 만들지 않음.",
+      "buyDecision": "진행·지참·상자 보상부터 확인. 별도로 상점을 찾아 구매하지 않고 받은 무기는 보관. 디트리히8장 해수 주 전투 완료 시 지급."
+    },
+    "hammer": {
+      "name": "해머",
+      "english": "Hammer",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628026",
+      "game8Tier": "A+",
+      "skill": "도끼술",
+      "requirements": [
+        {
+          "skill": "도끼술",
+          "rank": "D"
+        }
+      ],
+      "merchantNames": [
+        "Grand Aragon Armory"
+      ],
+      "fixedAcquisition": "",
+      "sourceImages": [
+        {
+          "caption": "Image 1: Grand Aragon Armory Map Location",
+          "url": "https://img.game8.co/4631196/ceed3a1ef4764a4e5e9f5c00c3dab72e.png/show"
+        },
+        {
+          "caption": "Image 2: Nemea Cavern Map Location",
+          "url": "https://img.game8.co/4632590/7e9e14e1004c6a6d65fb5d1864221a7b.png/show"
+        }
+      ],
+      "randomCrate": "",
+      "purchasePrice": null,
+      "note": "판매 시점·재고·가격은 실제 물품창 확인. 신전 보상·지참품을 상점 구매품으로 만들지 않음.",
+      "images": [
+        {
+          "caption": "Image 1: Grand Aragon Armory Map Location",
+          "url": "https://img.game8.co/4631196/ceed3a1ef4764a4e5e9f5c00c3dab72e.png/show",
+          "file": "assets/shopping/hammer-1.png"
+        }
+      ],
+      "buyDecision": "조건부1. 토비아스·녹투라 등 도끼 담당이 중갑을 맡을 때. 마법·마법검으로 충분하면 후순위."
+    },
+    "hunter-s-bow": {
+      "name": "수렵의 활",
+      "english": "Hunter's Bow",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628039",
+      "game8Tier": "A+",
+      "skill": "궁술",
+      "requirements": [
+        {
+          "skill": "궁술",
+          "rank": "D"
+        }
+      ],
+      "merchantNames": [
+        "Ribeira Armorer"
+      ],
+      "fixedAcquisition": "",
+      "sourceImages": [
+        {
+          "caption": "Image 1: Ribeira Armorer Map Location",
+          "url": "https://img.game8.co/4629951/b2f35ce94c1a29d53c225ae0f2c5a02a.png/show"
+        },
+        {
+          "caption": "Image 2: Galen Fort Ruins Map Location",
+          "url": "https://img.game8.co/4632602/c85a985236f5a808803ab9c4bc8999ae.png/show"
+        }
+      ],
+      "randomCrate": "Quality",
+      "purchasePrice": null,
+      "note": "판매 시점·재고·가격은 실제 물품창 확인. 신전 보상·지참품을 상점 구매품으로 만들지 않음.",
+      "images": [
+        {
+          "caption": "Image 1: Ribeira Armorer Map Location",
+          "url": "https://img.game8.co/4629951/b2f35ce94c1a29d53c225ae0f2c5a02a.png/show",
+          "file": "assets/shopping/hunter-s-bow-1.png"
+        }
+      ],
+      "buyDecision": "세오도라9장 전 미보유면 우선1. 다른 루트도 짐승 담당 궁수에게 필요할 때만. 자동 지급으로 기다리지 않음."
+    },
+    "horsekiller-bow": {
+      "name": "말 킬러의 활",
+      "english": "Horsekiller Bow",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628036",
+      "game8Tier": "A+",
+      "skill": "궁술",
+      "requirements": [
+        {
+          "skill": "궁술",
+          "rank": "C"
+        }
+      ],
+      "merchantNames": [
+        "Yaaman Armory"
+      ],
+      "fixedAcquisition": "",
+      "sourceImages": [
+        {
+          "caption": "Image 1: Yaaman Armory Map Location",
+          "url": "https://img.game8.co/4629952/f4db666f0d22eeb28d62d31278afb6be.png/show"
+        },
+        {
+          "caption": "Image 2: Corroios Fort Ruins Map Location",
+          "url": "https://img.game8.co/4632586/11f9b4003ebd46ce7e2d118ca867f4e2.png/show"
+        }
+      ],
+      "randomCrate": "Quality",
+      "purchasePrice": null,
+      "note": "판매 시점·재고·가격은 실제 물품창 확인. 신전 보상·지참품을 상점 구매품으로 만들지 않음.",
+      "images": [
+        {
+          "caption": "Image 1: Yaaman Armory Map Location",
+          "url": "https://img.game8.co/4629952/f4db666f0d22eeb28d62d31278afb6be.png/show",
+          "file": "assets/shopping/horsekiller-bow-1.png"
+        }
+      ],
+      "buyDecision": "조건부1. 카이의 궁수 등에게 대기마 역할까지 맡길 때. 창 담당으로 충분하면 생략."
+    },
+    "zerberus": {
+      "name": "체르베루스",
+      "english": "Zerberus",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628056",
+      "game8Tier": "A+",
+      "skill": "격투술",
+      "requirements": [
+        {
+          "skill": "격투술",
+          "rank": "A"
+        }
+      ],
+      "merchantNames": [],
+      "fixedAcquisition": "트로이아 합류 시 지참.",
+      "sourceImages": [],
+      "randomCrate": "",
+      "purchasePrice": null,
+      "note": "판매 시점·재고·가격은 실제 물품창 확인. 신전 보상·지참품을 상점 구매품으로 만들지 않음.",
+      "buyDecision": "진행·지참·상자 보상부터 확인. 별도로 상점을 찾아 구매하지 않고 받은 무기는 보관. 트로이아 합류 시 지참."
+    },
+    "idah-s-bow": {
+      "name": "아스완 지참 활",
+      "english": "Idah's Bow",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628032",
+      "game8Tier": "A+",
+      "skill": "궁술",
+      "requirements": [
+        {
+          "skill": "궁술",
+          "rank": "B"
+        }
+      ],
+      "merchantNames": [],
+      "fixedAcquisition": "3부5구간 아스완 합류 시 지참.",
+      "sourceImages": [],
+      "randomCrate": "",
+      "purchasePrice": null,
+      "note": "판매 시점·재고·가격은 실제 물품창 확인. 신전 보상·지참품을 상점 구매품으로 만들지 않음.",
+      "images": [],
+      "buyDecision": "진행·지참·상자 보상부터 확인. 별도로 상점을 찾아 구매하지 않고 받은 무기는 보관. 3부5구간 아스완 합류 시 지참."
+    },
+    "credna-s-mallet": {
+      "name": "크레르 시련 보상 도끼",
+      "english": "Credna's Mallet",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/630070",
+      "game8Tier": "A+",
+      "skill": "도끼술",
+      "requirements": [
+        {
+          "skill": "도끼술",
+          "rank": "A"
+        }
+      ],
+      "merchantNames": [],
+      "fixedAcquisition": "3부 크레르 신전 복원·의뢰 뒤 시련 보상.",
+      "sourceImages": [],
+      "randomCrate": "",
+      "purchasePrice": null,
+      "note": "판매 시점·재고·가격은 실제 물품창 확인. 신전 보상·지참품을 상점 구매품으로 만들지 않음.",
+      "images": [
+        {
+          "caption": "Image 1: Credna Location.png",
+          "url": "https://img.game8.co/4636152/298f9b1fd9b27564ae8c49f524f47fb4.png/show",
+          "file": "assets/shopping/credna-s-mallet-reward.png"
+        }
+      ],
+      "trialSource": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/627956",
+      "buyDecision": "진행·지참·상자 보상부터 확인. 별도로 상점을 찾아 구매하지 않고 받은 무기는 보관. 3부 크레르 신전 복원·의뢰 뒤 시련 보상."
+    },
+    "answerer-arisen": {
+      "name": "강화 앤서러",
+      "english": "Answerer Arisen",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/630455",
+      "game8Tier": "A+",
+      "skill": "검술",
+      "requirements": [
+        {
+          "skill": "검술",
+          "rank": "E"
+        }
+      ],
+      "merchantNames": [],
+      "fixedAcquisition": "디트리히12장 자유행동에서 파비오 대화 후 주 전투 시작 때 강화.",
+      "sourceImages": [],
+      "randomCrate": "",
+      "purchasePrice": null,
+      "note": "판매 시점·재고·가격은 실제 물품창 확인. 신전 보상·지참품을 상점 구매품으로 만들지 않음.",
+      "buyDecision": "진행·지참·상자 보상부터 확인. 별도로 상점을 찾아 구매하지 않고 받은 무기는 보관. 디트리히12장 자유행동에서 파비오 대화 후 주 전투 시작 때 강화."
+    },
+    "greatsword": {
+      "name": "그레이트 소드",
+      "english": "Greatsword",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628485",
+      "game8Tier": "A",
+      "skill": "검술",
+      "requirements": [
+        {
+          "skill": "검술",
+          "rank": "D"
+        },
+        {
+          "skill": "도끼술",
+          "rank": "D"
+        }
+      ],
+      "merchantNames": [
+        "Grand Aragon Armory"
+      ],
+      "fixedAcquisition": "",
+      "sourceImages": [
+        {
+          "caption": "Image 1: Grand Aragon Armory Map Location",
+          "url": "https://img.game8.co/4631196/ceed3a1ef4764a4e5e9f5c00c3dab72e.png/show"
+        },
+        {
+          "caption": "Image 2: Masked Woods Map Location",
+          "url": "https://img.game8.co/4632606/a553636e8b76bbba5a1b5ccc0f99f796.png/show"
+        }
+      ],
+      "randomCrate": "Luxury",
+      "purchasePrice": null,
+      "note": "판매 시점·재고·가격은 실제 물품창 확인. 신전 보상·지참품을 상점 구매품으로 만들지 않음.",
+      "buyDecision": "조건부1. 디트리히 등 물리 검 담당에게 중갑 대책이 필요할 때. 복수 기능 표기와 공격 속도를 확인하고 기존 검과 비교."
+    },
+    "halberd": {
+      "name": "핼버드",
+      "english": "Halberd",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628076",
+      "game8Tier": "A",
+      "skill": "창술",
+      "requirements": [
+        {
+          "skill": "창술",
+          "rank": "D"
+        },
+        {
+          "skill": "도끼술",
+          "rank": "D"
+        }
+      ],
+      "merchantNames": [
+        "Raivo Port Armory"
+      ],
+      "fixedAcquisition": "",
+      "sourceImages": [
+        {
+          "caption": "Image 1: Raivo Port Armory Map Location",
+          "url": "https://img.game8.co/4629975/7af1d4227fcea1b12bf4e1e1442cca41.png/show"
+        },
+        {
+          "caption": "Image 3: Anna Map Location",
+          "url": "https://img.game8.co/4631182/f60cefa85fea1bf0f238f2898ad1a93a.png/show"
+        }
+      ],
+      "randomCrate": "Luxury",
+      "purchasePrice": null,
+      "note": "판매 시점·재고·가격은 실제 물품창 확인. 신전 보상·지참품을 상점 구매품으로 만들지 않음.",
+      "buyDecision": "조건부1. 에스메랄다 등 창 담당의 중갑 대책이 필요할 때. 복수 기능·실제 사용 가능 표시와 기존 특효를 비교."
+    },
+    "mace": {
+      "name": "메이스",
+      "english": "Mace",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629152",
+      "game8Tier": "A",
+      "skill": "도끼술",
+      "requirements": [
+        {
+          "skill": "도끼술",
+          "rank": "E"
+        }
+      ],
+      "merchantNames": [
+        "Twalinn Armory"
+      ],
+      "fixedAcquisition": "",
+      "sourceImages": [
+        {
+          "caption": "Image 1: Twalinn Armory Map Location",
+          "url": "https://img.game8.co/4631197/4418c022249cfbd3e7b940f8a25d656c.png/show"
+        }
+      ],
+      "randomCrate": "",
+      "purchasePrice": null,
+      "note": "판매 시점·재고·가격은 실제 물품창 확인. 신전 보상·지참품을 상점 구매품으로 만들지 않음.",
+      "buyDecision": "조건부1. 도끼 담당에게 낮은 무게·명중·마법 전투기술이 실제 이득일 때. 마력이 낮으면 마법 기술만 보고 최우선으로 사지 않음."
+    },
+    "bardiche": {
+      "name": "바르디슈",
+      "english": "Bardiche",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628025",
+      "game8Tier": "A",
+      "skill": "도끼술",
+      "requirements": [
+        {
+          "skill": "창술",
+          "rank": "D"
+        },
+        {
+          "skill": "도끼술",
+          "rank": "D"
+        }
+      ],
+      "merchantNames": [
+        "Benetnasch Armory"
+      ],
+      "fixedAcquisition": "",
+      "sourceImages": [
+        {
+          "caption": "Image 1: Benetnasch Armory Map Location",
+          "url": "https://img.game8.co/4631199/4195ae1d25b85f0866b230b8a2e4acf7.png/show"
+        },
+        {
+          "caption": "Image 3: Anna Map Location",
+          "url": "https://img.game8.co/4631182/f60cefa85fea1bf0f238f2898ad1a93a.png/show"
+        }
+      ],
+      "randomCrate": "Luxury",
+      "purchasePrice": null,
+      "note": "판매 시점·재고·가격은 실제 물품창 확인. 신전 보상·지참품을 상점 구매품으로 만들지 않음.",
+      "buyDecision": "조건부1. 토비아스·녹투라 등 도끼 담당이 기마 적을 맡을 때. 이미 대기마 창이 맡으면 후순위."
+    },
+    "longbow": {
+      "name": "롱 보우",
+      "english": "Longbow",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628043",
+      "game8Tier": "A",
+      "skill": "궁술",
+      "requirements": [
+        {
+          "skill": "궁술",
+          "rank": "C"
+        }
+      ],
+      "merchantNames": [
+        "Dagsion Vandahl Merchant",
+        "Aguino Armory"
+      ],
+      "fixedAcquisition": "",
+      "sourceImages": [
+        {
+          "caption": "Image 1: Dagsion Vandahl Merchant Map Location",
+          "url": "https://img.game8.co/4631202/7487f105bae8e96466f333dbb19aad87.png/show"
+        },
+        {
+          "caption": "Image 2: Aguino Armory Map Location",
+          "url": "https://img.game8.co/4629956/dbc1f106f564bf7192e17394b9e0414e.png/show"
+        }
+      ],
+      "randomCrate": "Quality",
+      "purchasePrice": null,
+      "note": "판매 시점·재고·가격은 실제 물품창 확인. 신전 보상·지참품을 상점 구매품으로 만들지 않음.",
+      "images": [
+        {
+          "caption": "Image 1: Dagsion Vandahl Merchant Map Location",
+          "url": "https://img.game8.co/4631202/7487f105bae8e96466f333dbb19aad87.png/show",
+          "file": "assets/shopping/longbow-1.png"
+        },
+        {
+          "caption": "Image 2: Aguino Armory Map Location",
+          "url": "https://img.game8.co/4629956/dbc1f106f564bf7192e17394b9e0414e.png/show",
+          "file": "assets/shopping/longbow-2.png"
+        }
+      ],
+      "buyDecision": "우선 확보. 궁술C의 본대 궁수에게 장거리 전투기술용1자루. 기존 소지하면 중복 구매 안 함."
+    },
+    "da-mina-gauntlets": {
+      "name": "다 미나의 건틀릿",
+      "english": "Da Mina Gauntlets",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628050",
+      "game8Tier": "A",
+      "skill": "격투술",
+      "requirements": [
+        {
+          "skill": "격투술",
+          "rank": "C"
+        }
+      ],
+      "merchantNames": [
+        "Daimon Armory",
+        "Niiza Port Armory",
+        "Da Mina Armory",
+        "Mons Armory"
+      ],
+      "fixedAcquisition": "",
+      "sourceImages": [
+        {
+          "caption": "Image 1: Daimon Armory Map Location",
+          "url": "https://img.game8.co/4631185/6da515e809bf73b10659072378531374.png/show"
+        },
+        {
+          "caption": "Image 2: Niiza Port Armory Map Location",
+          "url": "https://img.game8.co/4631193/897bf0a33937d470155ab9f05a613b95.png/show"
+        }
+      ],
+      "randomCrate": "",
+      "purchasePrice": null,
+      "note": "판매 시점·재고·가격은 실제 물품창 확인. 신전 보상·지참품을 상점 구매품으로 만들지 않음.",
+      "buyDecision": "조건부1. 무우 등 실제 격투 담당에게 주먹 장비가 부족할 때. 건곤권·기존 철 건틀릿을 먼저 비교."
+    },
+    "qiankun-circles": {
+      "name": "건곤권",
+      "english": "Qiankun Circles",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628052",
+      "game8Tier": "A",
+      "skill": "격투술",
+      "requirements": [
+        {
+          "skill": "검술",
+          "rank": "D"
+        },
+        {
+          "skill": "격투술",
+          "rank": "C"
+        }
+      ],
+      "merchantNames": [
+        "Alecto Armory"
+      ],
+      "fixedAcquisition": "",
+      "sourceImages": [
+        {
+          "caption": "Image 1: Alecto Armory Map Location",
+          "url": "https://img.game8.co/4629947/6fca1c6d13984701b7b8694b75a152ca.png/show"
+        },
+        {
+          "caption": "Image 3: Anna Map Location",
+          "url": "https://img.game8.co/4631182/f60cefa85fea1bf0f238f2898ad1a93a.png/show"
+        }
+      ],
+      "randomCrate": "Luxury",
+      "purchasePrice": null,
+      "note": "판매 시점·재고·가격은 실제 물품창 확인. 신전 보상·지참품을 상점 구매품으로 만들지 않음.",
+      "images": [
+        {
+          "caption": "Image 1: Alecto Armory Map Location",
+          "url": "https://img.game8.co/4629947/6fca1c6d13984701b7b8694b75a152ca.png/show",
+          "file": "assets/shopping/qiankun-circles-1.png"
+        }
+      ],
+      "buyDecision": "조건부1. 무우 시작 소지품에 없을 때만.1~2칸 물리 격투를 쓸 담당이 있고 요구 기능이 맞을 때."
+    },
+    "windfire-rings": {
+      "name": "풍화륜",
+      "english": "Windfire Rings",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629916",
+      "game8Tier": "A",
+      "skill": "격투술",
+      "requirements": [
+        {
+          "skill": "검술",
+          "rank": "D"
+        },
+        {
+          "skill": "격투술",
+          "rank": "B"
+        }
+      ],
+      "merchantNames": [],
+      "fixedAcquisition": "3부 Dione Fort 상자.",
+      "sourceImages": [
+        {
+          "caption": "Image 1: Dione Fort Map Location",
+          "url": "https://img.game8.co/4632599/1e0a298f3bea1ebccbcc516e7740d6b5.png/show"
+        }
+      ],
+      "randomCrate": "",
+      "purchasePrice": null,
+      "note": "판매 시점·재고·가격은 실제 물품창 확인. 신전 보상·지참품을 상점 구매품으로 만들지 않음.",
+      "buyDecision": "진행·지참·상자 보상부터 확인. 별도로 상점을 찾아 구매하지 않고 받은 무기는 보관. 3부 Dione Fort 상자.",
+      "images": [
+        {
+          "caption": "Image 1: Dione Fort Map Location",
+          "url": "https://img.game8.co/4632599/1e0a298f3bea1ebccbcc516e7740d6b5.png/show",
+          "file": "assets/shopping/windfire-rings-dione.png"
+        }
+      ]
+    },
+    "mini-bow": {
+      "name": "미니 보우",
+      "english": "Mini Bow",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628044",
+      "game8Tier": "A",
+      "skill": "궁술",
+      "requirements": [
+        {
+          "skill": "궁술",
+          "rank": "D"
+        }
+      ],
+      "merchantNames": [],
+      "fixedAcquisition": "레다2장 보스 근처 상자.",
+      "sourceImages": [],
+      "randomCrate": "Quality",
+      "purchasePrice": null,
+      "note": "판매 시점·재고·가격은 실제 물품창 확인. 신전 보상·지참품을 상점 구매품으로 만들지 않음.",
+      "buyDecision": "진행·지참·상자 보상부터 확인. 별도로 상점을 찾아 구매하지 않고 받은 무기는 보관. 레다2장 보스 근처 상자.",
+      "images": [
+        {
+          "caption": "레다2장 보스 근처 상자",
+          "url": "https://img.game8.co/4622113/947672d27c55b6e72d0abc5bfeae0293.png/show",
+          "file": "assets/shopping/mini-bow-leda2.png"
+        }
+      ]
+    },
+    "answerer": {
+      "name": "앤서러",
+      "english": "Answerer",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/627976",
+      "game8Tier": "A",
+      "skill": "검술",
+      "requirements": [
+        {
+          "skill": "검술",
+          "rank": "E"
+        }
+      ],
+      "merchantNames": [],
+      "fixedAcquisition": "디트리히 시작 지참.",
+      "sourceImages": [],
+      "randomCrate": "",
+      "purchasePrice": null,
+      "note": "판매 시점·재고·가격은 실제 물품창 확인. 신전 보상·지참품을 상점 구매품으로 만들지 않음.",
+      "buyDecision": "진행·지참·상자 보상부터 확인. 별도로 상점을 찾아 구매하지 않고 받은 무기는 보관. 디트리히 시작 지참."
+    },
+    "da-mina-sword": {
+      "name": "다 미나의 검",
+      "english": "Da Mina Sword",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/627437",
+      "game8Tier": "B",
+      "skill": "검술",
+      "requirements": [
+        {
+          "skill": "검술",
+          "rank": "C"
+        }
+      ],
+      "merchantNames": [
+        "Grand Aragon Armory",
+        "Osiris Armory",
+        "Callianeira Port Armory",
+        "Whill Armory",
+        "Da Mina Armory"
+      ],
+      "fixedAcquisition": "",
+      "sourceImages": [
+        {
+          "caption": "Image 1: Grand Aragon Armory Map Location",
+          "url": "https://img.game8.co/4631196/ceed3a1ef4764a4e5e9f5c00c3dab72e.png/show"
+        },
+        {
+          "caption": "Image 2: Osiris Armory Map Location",
+          "url": "https://img.game8.co/4631184/82693c3f425c637e9742e0e5f5facc24.png/show"
+        }
+      ],
+      "randomCrate": "",
+      "purchasePrice": null,
+      "note": "판매 시점·재고·가격은 실제 물품창 확인. 신전 보상·지참품을 상점 구매품으로 만들지 않음.",
+      "buyDecision": "조건부1. 검 주력의 일반 공격 장비가 실제로 개선될 때. 현재 고유 검·강화 철검보다 낫지 않으면 구매 생략."
+    },
+    "whirlwind-blade": {
+      "name": "질풍의 검",
+      "english": "Whirlwind Blade",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628484",
+      "game8Tier": "B",
+      "skill": "검술",
+      "requirements": [
+        {
+          "skill": "검술",
+          "rank": "C"
+        }
+      ],
+      "merchantNames": [
+        "Whill Armory"
+      ],
+      "fixedAcquisition": "",
+      "sourceImages": [
+        {
+          "caption": "Image 1: Whill Armory Map Location",
+          "url": "https://img.game8.co/4631192/9d63b78b39ec4bcb2fe524f43a476b9c.png/show"
+        },
+        {
+          "caption": "Image 3: Anna Map Location",
+          "url": "https://img.game8.co/4631182/f60cefa85fea1bf0f238f2898ad1a93a.png/show"
+        }
+      ],
+      "randomCrate": "Luxury",
+      "purchasePrice": null,
+      "note": "판매 시점·재고·가격은 실제 물품창 확인. 신전 보상·지참품을 상점 구매품으로 만들지 않음.",
+      "buyDecision": "조건부1. 카타냐·그자람 등 검 회피 전열에 실제 이득이 있을 때. 디트리히 고유 검을 버리는 필수 교체품은 아님."
+    },
+    "assal": {
+      "name": "아살",
+      "english": "Assal",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628079",
+      "game8Tier": "B",
+      "skill": "창술",
+      "requirements": [
+        {
+          "skill": "창술",
+          "rank": "D"
+        }
+      ],
+      "merchantNames": [],
+      "fixedAcquisition": "세테스 영입 시 지참.",
+      "sourceImages": [],
+      "randomCrate": "",
+      "purchasePrice": null,
+      "note": "판매 시점·재고·가격은 실제 물품창 확인. 신전 보상·지참품을 상점 구매품으로 만들지 않음.",
+      "buyDecision": "진행·지참·상자 보상부터 확인. 별도로 상점을 찾아 구매하지 않고 받은 무기는 보관. 세테스 영입 시 지참."
+    },
+    "pilum": {
+      "name": "슬렌드 스피어",
+      "english": "Pilum",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628069",
+      "game8Tier": "B",
+      "skill": "창술",
+      "requirements": [
+        {
+          "skill": "창술",
+          "rank": "B"
+        }
+      ],
+      "merchantNames": [
+        "Dagsion Armorer",
+        "Port of Pandora Armory",
+        "Shama Port Armory"
+      ],
+      "fixedAcquisition": "",
+      "sourceImages": [
+        {
+          "caption": "Image 1: Dagsion Armorer Map Location",
+          "url": "https://img.game8.co/4631187/e441aa2656b79fd07e940974413d6ccd.png/show"
+        },
+        {
+          "caption": "Image 2: Port of Pandora Armory Map Location",
+          "url": "https://img.game8.co/4629948/9e2c132b8e0f66b30806130762fa1311.png/show"
+        }
+      ],
+      "randomCrate": "Luxury",
+      "purchasePrice": null,
+      "note": "판매 시점·재고·가격은 실제 물품창 확인. 신전 보상·지참품을 상점 구매품으로 만들지 않음.",
+      "buyDecision": "조건부1. 창B 담당의1~2칸 물리 투창이 부족할 때. 쇼트 스피어·그라시더 등 이미 있는 원거리 창부터 확인."
+    },
+    "vendetta": {
+      "name": "요창 벤데타",
+      "english": "Vendetta",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628064",
+      "game8Tier": "B",
+      "skill": "창술",
+      "requirements": [
+        {
+          "skill": "창술",
+          "rank": "A"
+        }
+      ],
+      "merchantNames": [],
+      "fixedAcquisition": "2부6장 완료 보상.",
+      "sourceImages": [],
+      "randomCrate": "",
+      "purchasePrice": null,
+      "note": "판매 시점·재고·가격은 실제 물품창 확인. 신전 보상·지참품을 상점 구매품으로 만들지 않음.",
+      "buyDecision": "진행·지참·상자 보상부터 확인. 별도로 상점을 찾아 구매하지 않고 받은 무기는 보관. 2부6장 완료 보상."
+    },
+    "you-sou-fu": {
+      "name": "매 발톱 도끼",
+      "english": "You Sou Fu",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628019",
+      "game8Tier": "B",
+      "skill": "도끼술",
+      "requirements": [
+        {
+          "skill": "검술",
+          "rank": "D"
+        },
+        {
+          "skill": "도끼술",
+          "rank": "D"
+        }
+      ],
+      "merchantNames": [
+        "Twalinn Armory"
+      ],
+      "fixedAcquisition": "",
+      "sourceImages": [
+        {
+          "caption": "Image 1: Twalinn Armory Map Location",
+          "url": "https://img.game8.co/4631197/4418c022249cfbd3e7b940f8a25d656c.png/show"
+        },
+        {
+          "caption": "Image 2: Rubess Forest Map Location",
+          "url": "https://img.game8.co/4632604/07e7e39a5ce4338b733d4c54d4fba8d8.png/show"
+        }
+      ],
+      "randomCrate": "Luxury",
+      "purchasePrice": null,
+      "note": "판매 시점·재고·가격은 실제 물품창 확인. 신전 보상·지참품을 상점 구매품으로 만들지 않음.",
+      "buyDecision": "조건부1. 도끼 담당의1~2칸 공격이 없고 실제 사용 가능할 때. 다른 투척 도끼로 충분하면 후순위."
+    },
+    "venin-bow": {
+      "name": "독의 활",
+      "english": "Venin Bow",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628042",
+      "game8Tier": "B",
+      "skill": "궁술",
+      "requirements": [
+        {
+          "skill": "궁술",
+          "rank": "D"
+        }
+      ],
+      "merchantNames": [
+        "Yaaman Armory",
+        "Kira Armory"
+      ],
+      "fixedAcquisition": "",
+      "sourceImages": [
+        {
+          "caption": "Image 1: Yaaman Armory Map Location",
+          "url": "https://img.game8.co/4629952/f4db666f0d22eeb28d62d31278afb6be.png/show"
+        },
+        {
+          "caption": "Image 2: Kira Armory Map Location",
+          "url": "https://img.game8.co/4629946/63982487c32273541f122e78a98d6208.png/show"
+        }
+      ],
+      "randomCrate": "",
+      "purchasePrice": null,
+      "note": "판매 시점·재고·가격은 실제 물품창 확인. 신전 보상·지참품을 상점 구매품으로 만들지 않음.",
+      "images": [
+        {
+          "caption": "Image 1: Yaaman Armory Map Location",
+          "url": "https://img.game8.co/4629952/f4db666f0d22eeb28d62d31278afb6be.png/show",
+          "file": "assets/shopping/venin-bow-1.png"
+        },
+        {
+          "caption": "Image 2: Kira Armory Map Location",
+          "url": "https://img.game8.co/4629946/63982487c32273541f122e78a98d6208.png/show",
+          "file": "assets/shopping/venin-bow-2.png"
+        }
+      ],
+      "buyDecision": "조건부1. 주로 레다 키로이카의 상태이상 고유 능력과 함께 쓸 때. 아무 궁수에게나 여러 자루 사지 않음."
+    }
+  },
+  "rawStoredInProject": false,
+  "sources": [
+    "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/630713"
+  ],
+  "limits": [
+    "판매처 목록이 모든 루트의 최초 판매 장·재고 수량을 확정하지 않음.",
+    "아이템 페이지에 기본 구매가가 없으면 임의 가격을 넣지 않음.",
+    "여러 기능이 함께 적힌 무기는 실제 물품창의 요구 조합·사용 가능 표시 우선.",
+    "Game8의 S/A 평가는 기능 등급 S/A가 아님."
+  ],
+  "descendImage": {
+    "caption": "제목 화면의 재강림 선택",
+    "url": "https://img.game8.co/4622097/657841e8daf11d76c63ffb1598a66d97.png/show",
+    "file": "assets/events/descend-again-menu.png"
+  }
+}

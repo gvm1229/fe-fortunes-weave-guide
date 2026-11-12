@@ -1,0 +1,253 @@
+{
+  "reviewed": "2026-11-05",
+  "scope": "세오도라1부6~12장·관련 영입·시험·군비증강",
+  "renownRule": "장별 명성 고정표를 두지 않는다.5장 실제2,6장3은 예상. 이후는 메뉴의 실제 값으로 판단.",
+  "features": {
+    "4": [
+      "훈련",
+      "자격시험",
+      "군단 배치"
+    ],
+    "5": [
+      "군비증강",
+      "탐색·파견",
+      "선물·스카우트"
+    ],
+    "6": [
+      "반다르 상회 교환",
+      "병사 모집",
+      "대장간"
+    ],
+    "7": [
+      "군병 수송"
+    ]
+  },
+  "exams": [
+    {
+      "tier": "초급",
+      "renown": 1,
+      "recommendedLevel": 5
+    },
+    {
+      "tier": "중급",
+      "renown": 4,
+      "recommendedLevel": 20
+    },
+    {
+      "tier": "상급",
+      "renown": 8,
+      "recommendedLevel": 35
+    }
+  ],
+  "extraExamGates": [
+    "사용자 개인의 목표 병종 해금",
+    "기능",
+    "해당 증서",
+    "합격률100%",
+    "알렉산드라 상급 보류"
+  ],
+  "military": {
+    "5": [
+      [
+        "마름쇠꽃",
+        5
+      ],
+      [
+        "흰송어",
+        20
+      ]
+    ],
+    "6": [
+      [
+        "옥강",
+        20
+      ],
+      [
+        "멜라라",
+        10
+      ]
+    ],
+    "7": [
+      [
+        "태양 열매",
+        30
+      ],
+      [
+        "카르나가다랑어",
+        30
+      ]
+    ],
+    "8": [
+      [
+        "강철어",
+        10
+      ],
+      [
+        "라돈 잉어",
+        35
+      ]
+    ],
+    "9": [
+      [
+        "로카",
+        35
+      ],
+      [
+        "코샤루가",
+        10
+      ]
+    ],
+    "10": [
+      [
+        "사막기장",
+        35
+      ],
+      [
+        "독석",
+        35
+      ]
+    ],
+    "11": [
+      [
+        "릴피시",
+        35
+      ],
+      [
+        "해성석",
+        35
+      ]
+    ]
+  },
+  "militaryFinalDeadline": "10/24",
+  "classUnlocks": {
+    "카타프락토스": "8장까지 누적8건",
+    "가디언": "9장까지 누적10건",
+    "드래군": "11장까지 누적14건"
+  },
+  "fish": {
+    "라돈 잉어": {
+      "legacyNames": [
+        "라돈로치",
+        "라돈 로치"
+      ],
+      "count": 35,
+      "purpose": "8장 군비증강",
+      "preparationFrom": 6
+    },
+    "라돈 꼬치고기": {
+      "legacyNames": [
+        "라돈 파이크"
+      ],
+      "count": 3,
+      "purpose": "6장 교환소 개방 뒤 정화의 검 교환(필요할 때)",
+      "source": "https://game8.jp/fe-banshisenko/817071"
+    }
+  },
+  "chapterSources": {
+    "6": "https://game8.jp/fe-banshisenko/816565",
+    "7": "https://game8.jp/fe-banshisenko/816772",
+    "8": "https://game8.jp/fe-banshisenko/816869",
+    "9": "https://game8.jp/fe-banshisenko/816880",
+    "10": "https://game8.jp/fe-banshisenko/816934",
+    "11": "https://game8.jp/fe-banshisenko/816972",
+    "12": "https://game8.jp/fe-banshisenko/817101"
+  },
+  "recruitmentSources": {
+    "알렉산드라": "https://game8.jp/fe-banshisenko/816445",
+    "누조": "https://game8.jp/fe-banshisenko/816462",
+    "우술라": "https://game8.jp/fe-banshisenko/816434",
+    "루루디아": "https://game8.jp/fe-banshisenko/816454",
+    "이오": "https://gamewith.jp/fefw/577299"
+  },
+  "systemSources": [
+    "https://game8.jp/fe-banshisenko/817097",
+    "https://game8.jp/fe-banshisenko/817102",
+    "https://game8.jp/fe-banshisenko/816408",
+    "https://note.com/yaoya_neko/n/n8a4e9ed94bb2"
+  ],
+  "limits": [
+    "게임 실행·하드/캐주얼 재현은 하지 않음",
+    "각 장의 실제 도달 명성을 확정하지 않음",
+    "한국어 물고기 이름은 사용자 인게임 확인을 우선",
+    "예전 공략의 임시 음역과 현재 한국어 이름을 혼동하지 않음"
+  ],
+  "recruits": [
+    {
+      "name": "소피아",
+      "earliestChapter": 5,
+      "renown": 2,
+      "support": 1,
+      "extra": "없음"
+    },
+    {
+      "name": "녹투라",
+      "earliestChapter": 5,
+      "renown": 3,
+      "support": 1,
+      "extra": "없음"
+    },
+    {
+      "name": "시로코",
+      "earliestChapter": 5,
+      "renown": 5,
+      "support": 1,
+      "extra": "본인 의뢰 수주→전용 사본 회수→귀환 보고"
+    },
+    {
+      "name": "로레타",
+      "earliestChapter": 5,
+      "renown": 5,
+      "support": 3,
+      "extra": "철의 검3"
+    },
+    {
+      "name": "리네",
+      "earliestChapter": 5,
+      "renown": 6,
+      "support": 3,
+      "extra": "반짝반짝어1"
+    },
+    {
+      "name": "단테",
+      "earliestChapter": 5,
+      "renown": 6,
+      "support": 3,
+      "extra": "8,000G"
+    },
+    {
+      "name": "알렉산드라",
+      "earliestChapter": 8,
+      "renown": 6,
+      "support": 1,
+      "extra": "상급 시험 보류"
+    },
+    {
+      "name": "누조",
+      "earliestChapter": 9,
+      "renown": 6,
+      "support": 1,
+      "extra": "철의 활3"
+    },
+    {
+      "name": "루루디아",
+      "earliestChapter": 5,
+      "renown": 7,
+      "support": 3,
+      "extra": "본인 수주→항구 대화→귀환 보고"
+    },
+    {
+      "name": "우술라",
+      "earliestChapter": 5,
+      "renown": 9,
+      "support": 3,
+      "extra": "실제 영입은 타리문 외전 완료 뒤. 이 루트 외전은11장부터"
+    },
+    {
+      "name": "이오",
+      "earliestChapter": 5,
+      "renown": 10,
+      "support": 3,
+      "extra": "기본4,000G·교섭 성공800G 화면 확정 시 적용"
+    }
+  ]
+}

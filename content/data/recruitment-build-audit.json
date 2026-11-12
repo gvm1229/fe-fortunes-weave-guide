@@ -1,0 +1,1564 @@
+{
+  "schemaVersion": 1,
+  "scope": "characters.html의 고유 인물 및 개인화 편성 전원; 게임 내 전원 재현 검증 아님",
+  "characters": {
+    "세오도라": {
+      "slug": "theodora",
+      "catalogInitialClass": "귀족",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 귀족. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "0",
+          "fame": "0",
+          "init": "귀족"
+        }
+      }
+    },
+    "보나파르트": {
+      "slug": "bonaventure",
+      "catalogInitialClass": "귀족",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 귀족. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "0",
+          "fame": "0",
+          "init": "귀족"
+        }
+      }
+    },
+    "토비아스": {
+      "slug": "tobias",
+      "catalogInitialClass": "귀족",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 귀족. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "0",
+          "fame": "0",
+          "init": "귀족"
+        }
+      }
+    },
+    "라이선더": {
+      "slug": "lysander",
+      "catalogInitialClass": "비약 타조병",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감의 비약 타조병에서 시작하는 이동 전력. 늦으면 현재 기병 자격을 쓰고 병사 시험을 추가하지 않음.",
+      "costNote": "기마·주력 무기를 맞춘 뒤 필요한 중급/상급 자격만. 병사 마스터 생략.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "0",
+          "fame": "0",
+          "init": "비약 타조병"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "7",
+          "init": "비약 타조병"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "6",
+          "init": "비약 타조병"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "8",
+          "init": "비약 타조병"
+        }
+      }
+    },
+    "릴리안": {
+      "slug": "lilian",
+      "catalogInitialClass": "사냥병",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 사냥병. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "0",
+          "fame": "0",
+          "init": "사냥병"
+        },
+        "leda": {
+          "sup": "2",
+          "fame": "7",
+          "init": "사냥병"
+        },
+        "dietrich": {
+          "sup": "2",
+          "fame": "8",
+          "init": "사냥병"
+        },
+        "kai": {
+          "sup": "2",
+          "fame": "8",
+          "init": "사냥병"
+        }
+      }
+    },
+    "소피아": {
+      "slug": "sofia",
+      "catalogInitialClass": "주술사",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 주술사. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {
+        "theodora": "백마술 C면 프리스트, B·Lv35면 비숍 직접. 주술사 마스터 불필요.",
+        "leda": "늦은 가입 때 백마술 B·Lv35를 갖췄으면 비숍 직접. 초급직을 전부 소급하지 않음."
+      },
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "1",
+          "fame": "2",
+          "init": "주술사"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "7",
+          "init": "주술사"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "9",
+          "init": "주술사"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "9",
+          "init": "주술사"
+        }
+      }
+    },
+    "녹투라": {
+      "slug": "noctula",
+      "catalogInitialClass": "투사",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 투사. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "1",
+          "fame": "3",
+          "init": "투사"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "8",
+          "init": "투사"
+        },
+        "dietrich": {
+          "sup": "1",
+          "fame": "6",
+          "init": "투사"
+        },
+        "kai": {
+          "sup": "1",
+          "fame": "4",
+          "init": "투사"
+        }
+      }
+    },
+    "자코네": {
+      "slug": "zarcone",
+      "catalogInitialClass": "투사",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 투사. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "1",
+          "fame": "4",
+          "init": "투사"
+        },
+        "leda": {
+          "sup": "2",
+          "fame": "5",
+          "init": "투사"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "7",
+          "init": "투사"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "8",
+          "init": "투사"
+        }
+      }
+    },
+    "시로코": {
+      "slug": "sirocco",
+      "catalogInitialClass": "평민",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 평민. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {
+        "leda": "초반에 마법 계통으로 직접 키울 수 있는 기준판. 실제 보유 자격을 사용하고 필요한 샤먼·바테스 시험만.",
+        "theodora": "물리 보완은 이미 검 B면 워리어로 바로. 투사·브리건드 시험과 마스터를 추가하지 않음. 새 무기 B·중갑 D가 필요한 헤비 아머 우회는 기본에서 제외."
+      },
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "1",
+          "fame": "5",
+          "init": "평민"
+        },
+        "leda": {
+          "sup": "0",
+          "fame": "0",
+          "init": "평민"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "9",
+          "init": "평민"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "9",
+          "init": "평민"
+        }
+      }
+    },
+    "대도": {
+      "slug": "dadao",
+      "catalogInitialClass": "투사",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 투사. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "2",
+          "fame": "5",
+          "init": "투사"
+        },
+        "leda": {
+          "sup": "2",
+          "fame": "5",
+          "init": "투사"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "10",
+          "init": "투사"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "7",
+          "init": "투사"
+        }
+      }
+    },
+    "누디누": {
+      "slug": "nydine",
+      "catalogInitialClass": "비약 타조병",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "기승 병종을 유지. 낮은 보병 병종으로 내려갈 이유가 약하므로 주력으로 쓸 때만 목표 상급 시험.",
+      "costNote": "수집용이면 추가 증서 없음. 늦은 육성 우선순위는 낮음.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "3",
+          "fame": "5",
+          "init": "비약 타조병"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "10",
+          "init": "비약 타조병"
+        },
+        "dietrich": {
+          "sup": "2",
+          "fame": "5",
+          "init": "비약 타조병"
+        },
+        "kai": {
+          "sup": "1",
+          "fame": "6",
+          "init": "비약 타조병"
+        }
+      }
+    },
+    "로레타": {
+      "slug": "loretta",
+      "catalogInitialClass": "투사",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 투사. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "3",
+          "fame": "5",
+          "init": "투사"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "5",
+          "init": "투사"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "9",
+          "init": "투사"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "7",
+          "init": "투사"
+        }
+      }
+    },
+    "나타": {
+      "slug": "nezha",
+      "catalogInitialClass": "투사",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 투사. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "2",
+          "fame": "6",
+          "init": "투사"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "9",
+          "init": "투사"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "10",
+          "init": "투사"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "6",
+          "init": "투사"
+        }
+      }
+    },
+    "단테": {
+      "slug": "dante",
+      "catalogInitialClass": "주술사",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 주술사. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {
+        "theodora": "실제 가입 시 흑마술 C면 샤먼, B·Lv35면 바테스 직접. 주술사의 낮은 능력 최저 보장 때문에 초급 증서를 쓰지 않음.",
+        "dietrich": "세오도라판이 주전 기준이면 이 판은 현재 마법 병종 유지도 가능. 같은 기능을 다시 끝까지 키우지 않음."
+      },
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "3",
+          "fame": "6",
+          "init": "주술사"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "10",
+          "init": "주술사"
+        },
+        "dietrich": {
+          "sup": "2",
+          "fame": "8",
+          "init": "주술사"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "10",
+          "init": "주술사"
+        }
+      }
+    },
+    "리네": {
+      "slug": "ninae",
+      "catalogInitialClass": "병사",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "늦은 디트리히 영입은 경기병이었던 사용자 관찰이 있다. 병사·중갑 보병을 거치지 말고 목표 시험을 바로 준비.",
+      "costNote": "가디언은 창 B·권장 Lv35·명성 8·해금 확인 후 상급 증서 1장(3,000G). 병사·중갑 보병의 증서는 기본 0장.",
+      "routeNotes": {
+        "theodora": "실제 가입 병종을 확인한 뒤 백마술 C면 프리스트, B·Lv35면 비숍으로 바로. 주술사 마스터를 먼저 요구하지 않음.",
+        "dietrich": "경기병 → 가디언을 직접 준비. 창 B가 충분하면 병사·중갑 보병 시험을 생략. 백마술 B 리브로는 가디언에서도 사용.",
+        "kai": "기갑 타조병은 HP·힘·수비 성장에 실제 시간을 쓸 때만. 늦고 바딩거 조건이 이미 되면 바로 상급으로 가거나 기존 기병을 유지."
+      },
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "3",
+          "fame": "6",
+          "init": "병사"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "8",
+          "init": "병사"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "8",
+          "init": "병사"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "6",
+          "init": "병사"
+        }
+      }
+    },
+    "세테스": {
+      "slug": "seteth",
+      "catalogInitialClass": "병사",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 병사. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {
+        "kai": "현재 기병을 활용해 바딩거 준비. 비약 타조병→경기병을 소급해서 전부 마스터하지 않음."
+      },
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "3",
+          "fame": "6",
+          "init": "병사"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "10",
+          "init": "병사"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "6",
+          "init": "병사"
+        }
+      }
+    },
+    "울턴드": {
+      "slug": "ultand",
+      "catalogInitialClass": "주술사",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 주술사. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {
+        "kai": "현재 마법 자격 유지. 해금 뒤 흑마술 B·기마 조건을 확인해 칼라드리오스 직접. 기마 D/B 자료 차이는 실제 시험창 확인."
+      },
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "3",
+          "fame": "6",
+          "init": "주술사"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "8",
+          "init": "주술사"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "5",
+          "init": "주술사"
+        },
+        "kai": {
+          "sup": "0",
+          "fame": "0",
+          "init": "주술사"
+        }
+      }
+    },
+    "페페": {
+      "slug": "peppe",
+      "catalogInitialClass": "사냥병",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 사냥병. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "2",
+          "fame": "7",
+          "init": "사냥병"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "8",
+          "init": "사냥병"
+        },
+        "kai": {
+          "sup": "1",
+          "fame": "9",
+          "init": "사냥병"
+        }
+      }
+    },
+    "루루디아": {
+      "slug": "ludia",
+      "catalogInitialClass": "투사",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 투사. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "3",
+          "fame": "7",
+          "init": "투사"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "7",
+          "init": "투사"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "9",
+          "init": "투사"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "9",
+          "init": "투사"
+        }
+      }
+    },
+    "시몬": {
+      "slug": "simon",
+      "catalogInitialClass": "투사",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 투사. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "3",
+          "fame": "7",
+          "init": "투사"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "6",
+          "init": "투사"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "7",
+          "init": "투사"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "8",
+          "init": "투사"
+        }
+      }
+    },
+    "카타냐": {
+      "slug": "catania",
+      "catalogInitialClass": "병사",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 병사. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {
+        "dietrich": "마법 보완은 흑마술 C에 샤먼, 이미 B·Lv35면 바테스 직접. 주술사 기본치가 실제 마력보다 낮으면 초급 시험 생략."
+      },
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "3",
+          "fame": "7",
+          "init": "병사"
+        },
+        "leda": {
+          "sup": "1",
+          "fame": "2",
+          "init": "병사"
+        },
+        "dietrich": {
+          "sup": "1",
+          "fame": "8",
+          "init": "병사"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "10",
+          "init": "병사"
+        }
+      }
+    },
+    "피터르": {
+      "slug": "peter",
+      "catalogInitialClass": "평민",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 평민. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {
+        "kai": "전차병의 한혈마 성장 2배가 목적. 이미 조건을 갖췄다면 사냥병 시험 없이 바로 전차병. 성장할 때 전차병, 어려운 실전은 보유 상급 자격 활용."
+      },
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "3",
+          "fame": "7",
+          "init": "평민"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "10",
+          "init": "평민"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "8",
+          "init": "평민"
+        },
+        "kai": {
+          "sup": "0",
+          "fame": "0",
+          "init": "평민"
+        }
+      }
+    },
+    "하르빈": {
+      "slug": "halvin",
+      "catalogInitialClass": "사냥병",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 사냥병. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "3",
+          "fame": "7",
+          "init": "사냥병"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "7",
+          "init": "사냥병"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "9",
+          "init": "사냥병"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "5",
+          "init": "사냥병"
+        }
+      }
+    },
+    "디에고": {
+      "slug": "diego",
+      "catalogInitialClass": "사냥병",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 사냥병. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "2",
+          "fame": "8",
+          "init": "사냥병"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "8",
+          "init": "사냥병"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "9",
+          "init": "사냥병"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "10",
+          "init": "사냥병"
+        }
+      }
+    },
+    "그자람": {
+      "slug": "guzran",
+      "catalogInitialClass": "투사",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 투사. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {
+        "dietrich": "이미 검 B를 활용해 레인저 직접. 활 B를 새로 만드는 우회는 불필요.",
+        "kai": "전차병의 말 성장 2배가 목적. 사냥병·아처를 모두 거칠 필요 없음."
+      },
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "3",
+          "fame": "8",
+          "init": "투사"
+        },
+        "leda": {
+          "sup": "1",
+          "fame": "3",
+          "init": "투사"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "8",
+          "init": "투사"
+        },
+        "kai": {
+          "sup": "1",
+          "fame": "2",
+          "init": "투사"
+        }
+      }
+    },
+    "미카엘라": {
+      "slug": "mikaela",
+      "catalogInitialClass": "투사",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 투사. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {
+        "dietrich": "검/궁술 B·Lv35가 되면 레인저 직접. 사냥병·아처 마스터는 필수 아님.",
+        "kai": "한혈마 친밀도 5·기마 D·궁술 C가 되면 전차병 직접. 말 성장 2배를 실제 레벨업에 쓰므로 이 중급 유지에는 분명한 목적이 있음."
+      },
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "3",
+          "fame": "8",
+          "init": "투사"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "6",
+          "init": "투사"
+        },
+        "dietrich": {
+          "sup": "0",
+          "fame": "0",
+          "init": "투사"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "5",
+          "init": "투사"
+        }
+      }
+    },
+    "버커니어": {
+      "slug": "buccar",
+      "catalogInitialClass": "평민",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 평민. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "3",
+          "fame": "8",
+          "init": "평민"
+        },
+        "leda": {
+          "sup": "0",
+          "fame": "0",
+          "init": "평민"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "8",
+          "init": "평민"
+        }
+      }
+    },
+    "골라이어스": {
+      "slug": "goliath",
+      "catalogInitialClass": "병사",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 병사. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "3",
+          "fame": "9",
+          "init": "병사"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "10",
+          "init": "병사"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "6",
+          "init": "병사"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "7",
+          "init": "병사"
+        }
+      }
+    },
+    "무우": {
+      "slug": "mu",
+      "catalogInitialClass": "평민",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 평민. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {
+        "leda": "기존 격투 병종을 쓰다가 검/도끼/격투 B 중 갖춘 계통으로 워리어 직접. 투사 마스터만 얻으려고 내려가지 않음."
+      },
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "3",
+          "fame": "9",
+          "init": "평민"
+        },
+        "leda": {
+          "sup": "0",
+          "fame": "0",
+          "init": "평민"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "7",
+          "init": "평민"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "9",
+          "init": "평민"
+        }
+      }
+    },
+    "양계": {
+      "slug": "yang-jie",
+      "catalogInitialClass": "주술사",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 주술사. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {
+        "dietrich": "현재 회복 병종을 쓰다 백마술 B·Lv35에서 비숍 직접. 초급 마스터 때문에 회복 병종을 낮추지 않음.",
+        "kai": "백마술 B·기마 D면 트루바두르 직접. 기존 회복 자격·리브로를 그대로 활용."
+      },
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "3",
+          "fame": "9",
+          "init": "주술사"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "8",
+          "init": "주술사"
+        },
+        "dietrich": {
+          "sup": "1",
+          "fame": "2",
+          "init": "주술사"
+        },
+        "kai": {
+          "sup": "2",
+          "fame": "3",
+          "init": "주술사"
+        }
+      }
+    },
+    "에스메랄다": {
+      "slug": "esmeralda",
+      "catalogInitialClass": "병사",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 병사. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {
+        "dietrich": "창/도끼 B·중갑 D·Lv35가 되면 헤비 아머 직접. 병사·중갑 보병 마스터를 조건으로 삼지 않음.",
+        "leda": "마방 보완은 가디언 성장 중 레벨이 올라야 생김. 이미 창 B면 가디언 직접, 중갑 보병 우회 생략.",
+        "kai": "기갑 타조병은 속도 보완용 레벨업 기간이 남을 때만 유지. 이미 상급이거나 남은 성장이 적으면 추가 중급 시험부터 강제하지 않음."
+      },
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "3",
+          "fame": "9",
+          "init": "병사"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "6",
+          "init": "병사"
+        },
+        "dietrich": {
+          "sup": "0",
+          "fame": "0",
+          "init": "병사"
+        },
+        "kai": {
+          "sup": "2",
+          "fame": "7",
+          "init": "병사"
+        }
+      }
+    },
+    "올림피아": {
+      "slug": "olympia",
+      "catalogInitialClass": "주술사",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 주술사. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {
+        "leda": "초반 자동 합류부터 회복 계통으로 자연 성장. 이미 다음 시험 조건이 되면 앞 병종 마스터를 기다리지 않음."
+      },
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "3",
+          "fame": "9",
+          "init": "주술사"
+        },
+        "leda": {
+          "sup": "0",
+          "fame": "0",
+          "init": "주술사"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "6",
+          "init": "주술사"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "8",
+          "init": "주술사"
+        }
+      }
+    },
+    "우술라": {
+      "slug": "ursula",
+      "catalogInitialClass": "사냥병",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 사냥병. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {
+        "dietrich": "레인저는 검 B 또는 궁술 B 중 하나를 활용해 직접 시험. 사냥병·아처를 모두 마스터할 필요 없음.",
+        "theodora": "명성 9의 늦은 힘 보완은 기본 제외. 이미 검 B·Lv35라 워리어를 바로 쓸 수 있을 때만. 초급·중급 우회 생략."
+      },
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "3",
+          "fame": "9",
+          "init": "사냥병"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "7",
+          "init": "사냥병"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "10",
+          "init": "사냥병"
+        }
+      }
+    },
+    "제스터": {
+      "slug": "jester",
+      "catalogInitialClass": "투사",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 투사. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "3",
+          "fame": "9",
+          "init": "투사"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "10",
+          "init": "투사"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "6",
+          "init": "투사"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "10",
+          "init": "투사"
+        }
+      }
+    },
+    "피아나": {
+      "slug": "fianna",
+      "catalogInitialClass": "주술사",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 주술사. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {
+        "dietrich": "백마술 B·기마 D면 트루바두르 직접. 주술사·프리스트 마스터는 불필요. 기마 훈련이 부담이면 보유 회복 병종 유지."
+      },
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "3",
+          "fame": "9",
+          "init": "주술사"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "5",
+          "init": "주술사"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "7",
+          "init": "주술사"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "8",
+          "init": "주술사"
+        }
+      }
+    },
+    "이오": {
+      "slug": "io",
+      "catalogInitialClass": "경기병",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "경기병으로 합류. 이동·전용 말이 목적이면 그대로 사용. 낮은 병종의 성장 작업을 추가하지 않음.",
+      "costNote": "첫 보관용 비탑승 중급 자격이 없을 때만 중급 증서 1장(500G). 이미 상급 합격 상태면 같은 등급 비탑승 자격을 별도 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "3",
+          "fame": "10",
+          "init": "경기병"
+        },
+        "leda": {
+          "sup": "1",
+          "fame": "6",
+          "init": "경기병"
+        },
+        "dietrich": {
+          "sup": "2",
+          "fame": "3",
+          "init": "경기병"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "10",
+          "init": "경기병"
+        }
+      }
+    },
+    "티아라": {
+      "slug": "tialla",
+      "catalogInitialClass": "평민",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 평민. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "3",
+          "fame": "10",
+          "init": "평민"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "8",
+          "init": "평민"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "9",
+          "init": "평민"
+        },
+        "kai": {
+          "sup": "0",
+          "fame": "0",
+          "init": "평민"
+        }
+      }
+    },
+    "마지데": {
+      "slug": "majide",
+      "catalogInitialClass": "투사",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 투사. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {
+        "kai": "물리 탱커. 현재 자격을 쓰다가 창/도끼 B·중갑 D로 헤비 아머 직접. 새 사냥병·전차병 작업은 여분의 말이 있을 때만."
+      },
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "3",
+          "fame": "8",
+          "init": "투사"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "9",
+          "init": "투사"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "8",
+          "init": "투사"
+        },
+        "kai": {
+          "sup": "2",
+          "fame": "5",
+          "init": "투사"
+        }
+      }
+    },
+    "밴디츠": {
+      "slug": "benditz",
+      "catalogInitialClass": "전차병",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "전차병으로 합류. 말 친밀도·성장 보너스가 목적이면 그대로 유지하며 사냥병·아처로 내려가지 않음.",
+      "costNote": "현재 역할을 유지하면 추가 증서 없음.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "1",
+          "fame": "8",
+          "init": "전차병"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "7",
+          "init": "전차병"
+        },
+        "dietrich": {
+          "sup": "2",
+          "fame": "7",
+          "init": "전차병"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "9",
+          "init": "전차병"
+        }
+      }
+    },
+    "키로이카": {
+      "slug": "kiroc",
+      "catalogInitialClass": "사냥병",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 사냥병. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "3",
+          "fame": "10",
+          "init": "사냥병"
+        },
+        "leda": {
+          "sup": "1",
+          "fame": "4",
+          "init": "사냥병"
+        },
+        "dietrich": {
+          "sup": "1",
+          "fame": "4",
+          "init": "사냥병"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "8",
+          "init": "사냥병"
+        }
+      }
+    },
+    "자스민": {
+      "slug": "jasmine",
+      "catalogInitialClass": "병사",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 병사. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "3",
+          "fame": "8",
+          "init": "병사"
+        },
+        "leda": {
+          "sup": "2",
+          "fame": "4",
+          "init": "병사"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "9",
+          "init": "병사"
+        },
+        "kai": {
+          "sup": "1",
+          "fame": "8",
+          "init": "병사"
+        }
+      }
+    },
+    "알렉산드라": {
+      "slug": "alexandra",
+      "catalogInitialClass": "천익병",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "천익병으로 합류. 그대로 사용하며 초급직·다른 중급직의 능력 보완은 기본에서 제외.",
+      "costNote": "첫 탈것 보관용 비탑승 중급 자격이 없을 때만 중급 증서 1장(500G). 이후 천익병 복귀는 무료. 천익병 마스터의 마방 +3은 그대로 쓰며 자연히 확보. 초급 증서·새 마스터 작업 불필요.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "1",
+          "fame": "6",
+          "init": "천익병"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "10",
+          "init": "천익병"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "8",
+          "init": "천익병"
+        },
+        "kai": {
+          "sup": "2",
+          "fame": "7",
+          "init": "천익병"
+        }
+      }
+    },
+    "누조": {
+      "slug": "nuzzuo",
+      "catalogInitialClass": "사냥병",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 사냥병. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "1",
+          "fame": "6",
+          "init": "사냥병"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "9",
+          "init": "사냥병"
+        },
+        "dietrich": {
+          "sup": "1",
+          "fame": "9",
+          "init": "사냥병"
+        },
+        "kai": {
+          "sup": "2",
+          "fame": "6",
+          "init": "사냥병"
+        }
+      }
+    },
+    "이니오니": {
+      "slug": "inyoni",
+      "catalogInitialClass": "아처",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "아처로 합류. 사냥병으로 내려가지 않고 현재 활 병종을 쓰다가 목표 상급만 준비.",
+      "costNote": "이미 보유한 자격·기능을 확인하고 미합격인 상급 증서만 준비.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "theodora": {
+          "sup": "1",
+          "fame": "9",
+          "init": "아처"
+        },
+        "leda": {
+          "sup": "1",
+          "fame": "7",
+          "init": "아처"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "8",
+          "init": "아처"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "8",
+          "init": "아처"
+        }
+      }
+    },
+    "레다": {
+      "slug": "leda",
+      "catalogInitialClass": "사냥병",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 사냥병. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "leda": {
+          "sup": "0",
+          "fame": "0",
+          "init": "사냥병"
+        }
+      }
+    },
+    "파비오": {
+      "slug": "fabio",
+      "catalogInitialClass": "평민",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 평민. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "leda": {
+          "sup": "3",
+          "fame": "9",
+          "init": "평민"
+        },
+        "dietrich": {
+          "sup": "0",
+          "fame": "0",
+          "init": "평민"
+        }
+      }
+    },
+    "사란": {
+      "slug": "sha-lan",
+      "catalogInitialClass": "주술사",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 주술사. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "leda": {
+          "sup": "3",
+          "fame": "8",
+          "init": "주술사"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "10",
+          "init": "주술사"
+        }
+      }
+    },
+    "디트리히": {
+      "slug": "dietrich",
+      "catalogInitialClass": "평민",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 평민. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "dietrich": {
+          "sup": "0",
+          "fame": "0",
+          "init": "평민"
+        }
+      }
+    },
+    "게이츠": {
+      "slug": "gaitz",
+      "catalogInitialClass": "병사",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 병사. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "dietrich": {
+          "sup": "3",
+          "fame": "10",
+          "init": "병사"
+        }
+      }
+    },
+    "이스마르": {
+      "slug": "eshmel",
+      "catalogInitialClass": "가디언",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "가디언으로 합류하는 특수 인물. 이전 단계 시험을 역순으로 따지 않음.",
+      "costNote": "현재 역할을 유지하고 3부에 실제 열린 상위 자격만 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false
+    },
+    "홍화": {
+      "slug": "hong-hua",
+      "catalogInitialClass": "–",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "전투 가입 정보가 없는 인물. 개인 전투 육성·하급직 시험을 배정하지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false
+    },
+    "트로이아": {
+      "slug": "troy",
+      "catalogInitialClass": "–",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "전투 가입 정보가 없는 인물. 개인 전투 육성·하급직 시험을 배정하지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false
+    },
+    "카이": {
+      "slug": "cai",
+      "catalogInitialClass": "평민",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 평민. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false,
+      "routeRequirements": {
+        "kai": {
+          "sup": "0",
+          "fame": "0",
+          "init": "평민"
+        }
+      }
+    },
+    "베르트랑": {
+      "slug": "bertrand",
+      "catalogInitialClass": "투사",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 투사. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false
+    },
+    "아나톨리아": {
+      "slug": "anatolia",
+      "catalogInitialClass": "주술사",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 주술사. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false
+    },
+    "오르헬": {
+      "slug": "orchel",
+      "catalogInitialClass": "주술사",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 주술사. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false
+    },
+    "타리문": {
+      "slug": "talimun",
+      "catalogInitialClass": "주술사",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "도감 기본 병종은 주술사. 실제 가입 병종·보유 자격이 더 높으면 그곳에서 시작하고, 목표 시험의 선행 초급/중급 자격·마스터는 필수로 두지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false
+    },
+    "센트리온": {
+      "slug": "centurio",
+      "catalogInitialClass": "중갑 보병",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "중갑 보병 자격을 출발점으로 전열 역할을 유지. 병사 시험을 소급하지 않음.",
+      "costNote": "추가 능력 최저 보장 ▲가 실제로 있는 시험만 선택.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false
+    },
+    "키릭": {
+      "slug": "creek",
+      "catalogInitialClass": "–",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "전투 가입 정보가 없는 인물. 개인 전투 육성·하급직 시험을 배정하지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false
+    },
+    "네이선": {
+      "slug": "nathan",
+      "catalogInitialClass": "–",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "전투 가입 정보가 없는 인물. 개인 전투 육성·하급직 시험을 배정하지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false
+    },
+    "아스완": {
+      "slug": "aswan",
+      "catalogInitialClass": "–",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "전투 가입 정보가 없는 인물. 개인 전투 육성·하급직 시험을 배정하지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false
+    },
+    "타호니아": {
+      "slug": "tahonia",
+      "catalogInitialClass": "–",
+      "joinStatus": "도감 기본값; 루트·영입 시기별 실제 가입 병종과 구별",
+      "decision": "전투 가입 정보가 없는 인물. 개인 전투 육성·하급직 시험을 배정하지 않음.",
+      "costNote": "미합격인 목표 시험만 구매. 초급 300G·중급 500G·상급 3,000G. 실제 화면의 할인·재고 확인.",
+      "routeNotes": {},
+      "lowerMasteryRequired": false
+    }
+  }
+}

@@ -1,0 +1,1611 @@
+{
+  "reviewed": "2026-11-06",
+  "people": {
+    "게이츠": {
+      "cheap": [
+        "coffee-pastries",
+        "common-coffee",
+        "history-of-a-master",
+        "select-coffee",
+        "orgus-coffee",
+        "southern-coffee"
+      ],
+      "owned": [
+        "tales-of-adventure",
+        "portrait-of-yu-phas",
+        "tome-from-away"
+      ],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/gaitz/"
+    },
+    "그자람": {
+      "cheap": [
+        "coffee-pastries",
+        "young-ghosh",
+        "brined-fish-guts",
+        "common-coffee",
+        "history-of-a-master",
+        "light-shosh"
+      ],
+      "owned": [
+        "crimson-ghosh",
+        "ceremonial-spear",
+        "rugged-blade"
+      ],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/guzran/"
+    },
+    "녹투라": {
+      "cheap": [
+        "history-of-a-master",
+        "protection-figurine",
+        "antique-medal",
+        "joint-relief-gloves",
+        "rancid-garum",
+        "tales-of-adventure"
+      ],
+      "owned": [
+        "ceremonial-spear",
+        "rugged-blade",
+        "legendary-garum"
+      ],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/noctula/"
+    },
+    "누조": {
+      "cheap": [
+        "coffee-pastries",
+        "garum",
+        "odd-vegetable-seeds",
+        "rare-southern-seeds",
+        "common-coffee",
+        "history-of-a-master"
+      ],
+      "owned": [
+        "rancid-garum",
+        "legendary-garum",
+        "ceremonial-spear"
+      ],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/nuzzuo/"
+    },
+    "단테": {
+      "cheap": [
+        "coffee-pastries",
+        "common-coffee",
+        "history-of-a-master",
+        "select-coffee",
+        "orgus-coffee",
+        "southern-coffee"
+      ],
+      "owned": [
+        "tales-of-adventure",
+        "portrait-of-yu-phas",
+        "tome-from-away"
+      ],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/dante/"
+    },
+    "디트리히": {
+      "cheap": [
+        "fragrant-pastries",
+        "honey-pastries",
+        "mellow-pastries",
+        "simple-pastries",
+        "history-of-a-master",
+        "honey-milk"
+      ],
+      "owned": [
+        "candy-crystals",
+        "ceremonial-spear",
+        "rugged-blade"
+      ],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/dietrich/"
+    },
+    "라이선더": {
+      "cheap": [
+        "rare-southern-seeds",
+        "history-of-a-master",
+        "sharp-fishhook",
+        "dagda-beard-grass",
+        "protection-figurine",
+        "antique-medal"
+      ],
+      "owned": [
+        "portrait-of-yu-phas",
+        "ceremonial-spear",
+        "rugged-blade"
+      ],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/lysander/"
+    },
+    "레다": {
+      "cheap": [
+        "young-ghosh",
+        "brined-fish-guts",
+        "history-of-a-master",
+        "kitten-figurine",
+        "light-shosh",
+        "mature-ghosh"
+      ],
+      "owned": [
+        "tales-of-adventure",
+        "legendary-garum",
+        "portrait-of-yu-phas"
+      ],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/leda/"
+    },
+    "로레타": {
+      "cheap": [
+        "coffee-pastries",
+        "fragrant-pastries",
+        "honey-pastries",
+        "mellow-pastries",
+        "simple-pastries",
+        "history-of-a-master"
+      ],
+      "owned": [
+        "candy-crystals",
+        "ceremonial-spear",
+        "rugged-blade"
+      ],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/loretta/"
+    },
+    "루루디아": {
+      "cheap": [
+        "coffee-pastries",
+        "rare-southern-seeds",
+        "common-coffee",
+        "history-of-a-master",
+        "select-coffee",
+        "sharp-fishhook"
+      ],
+      "owned": [
+        "tales-of-adventure",
+        "portrait-of-yu-phas",
+        "tome-from-away"
+      ],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/ludia/"
+    },
+    "리네": {
+      "cheap": [
+        "history-of-a-master",
+        "crimson-ghosh",
+        "pack-of-pastels",
+        "poems-of-the-greats",
+        "tales-of-adventure",
+        "rare-spices"
+      ],
+      "owned": [
+        "eastern-black-silk",
+        "legendary-garum",
+        "portrait-of-yu-phas"
+      ],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/ninae/"
+    },
+    "릴리안": {
+      "cheap": [
+        "history-of-a-master",
+        "energizing-ghosh",
+        "volcano-ghosh",
+        "board-game-tactics",
+        "pastry-cookbook",
+        "school-scandal"
+      ],
+      "owned": [
+        "tales-of-adventure",
+        "tome-from-away",
+        "arrowhead-gem"
+      ],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/lilian/"
+    },
+    "무우": {
+      "cheap": [
+        "coffee-pastries",
+        "fragrant-pastries",
+        "honey-pastries",
+        "mellow-pastries",
+        "simple-pastries",
+        "garum"
+      ],
+      "owned": [
+        "legendary-garum",
+        "candy-crystals",
+        "eastern-tea-leaves"
+      ],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/mu/"
+    },
+    "미카엘라": {
+      "cheap": [
+        "coffee-pastries",
+        "garum",
+        "young-ghosh",
+        "brined-fish-guts",
+        "common-coffee",
+        "history-of-a-master"
+      ],
+      "owned": [
+        "rancid-garum",
+        "legendary-garum",
+        "crimson-ghosh"
+      ],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/mikaela/"
+    },
+    "버커니어": {
+      "cheap": [
+        "garum",
+        "young-ghosh",
+        "brined-fish-guts",
+        "history-of-a-master",
+        "light-shosh",
+        "mature-ghosh"
+      ],
+      "owned": [
+        "rancid-garum",
+        "legendary-garum",
+        "crimson-ghosh"
+      ],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/buccar/"
+    },
+    "사란": {
+      "cheap": [
+        "coffee-pastries",
+        "garum",
+        "odd-vegetable-seeds",
+        "rare-southern-seeds",
+        "common-coffee",
+        "history-of-a-master"
+      ],
+      "owned": [
+        "tales-of-adventure",
+        "legendary-garum",
+        "portrait-of-yu-phas"
+      ],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/sha-lan/"
+    },
+    "세오도라": {
+      "cheap": [
+        "orgus-coffee",
+        "dagda-beard-grass",
+        "joint-relief-gloves",
+        "mane-ornament",
+        "wing-fletching",
+        "horse-grooming-kit"
+      ],
+      "owned": [
+        "portrait-of-yu-phas",
+        "ahm-lu-cloth",
+        "legendary-garum"
+      ],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/theodora/"
+    },
+    "세테스": {
+      "cheap": [
+        "coffee-pastries",
+        "brined-fish-guts",
+        "common-coffee",
+        "history-of-a-master",
+        "select-coffee",
+        "sharp-fishhook"
+      ],
+      "owned": [
+        "tales-of-adventure",
+        "tome-from-away",
+        "morfis-almanac"
+      ],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/seteth/"
+    },
+    "소피아": {
+      "cheap": [
+        "coffee-pastries",
+        "fragrant-pastries",
+        "honey-pastries",
+        "mellow-pastries",
+        "simple-pastries",
+        "garum"
+      ],
+      "owned": [
+        "rancid-garum",
+        "legendary-garum",
+        "candy-crystals"
+      ],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/sofia/"
+    },
+    "시로코": {
+      "cheap": [
+        "young-ghosh",
+        "brined-fish-guts",
+        "history-of-a-master",
+        "light-shosh",
+        "mature-ghosh",
+        "rustic-ghosh"
+      ],
+      "owned": [
+        "portrait-of-yu-phas",
+        "crimson-ghosh",
+        "candy-crystals"
+      ],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/sirocco/"
+    },
+    "알렉산드라": {
+      "cheap": [
+        "garum",
+        "rare-southern-seeds",
+        "history-of-a-master",
+        "kitten-figurine",
+        "smooth-garum",
+        "concentrated-garum"
+      ],
+      "owned": [
+        "legendary-garum",
+        "ceremonial-spear",
+        "rugged-blade"
+      ],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/alexandra/"
+    },
+    "에스메랄다": {
+      "cheap": [
+        "coffee-pastries",
+        "fragrant-pastries",
+        "honey-pastries",
+        "mellow-pastries",
+        "simple-pastries",
+        "garum"
+      ],
+      "owned": [
+        "rancid-garum",
+        "legendary-garum",
+        "candy-crystals"
+      ],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/esmeralda/"
+    },
+    "올림피아": {
+      "cheap": [
+        "coffee-pastries",
+        "rare-southern-seeds",
+        "common-coffee",
+        "history-of-a-master",
+        "select-coffee",
+        "orgus-coffee"
+      ],
+      "owned": [
+        "portrait-of-yu-phas",
+        "candy-crystals",
+        "arrowhead-gem"
+      ],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/olympia/"
+    },
+    "우술라": {
+      "cheap": [
+        "coffee-pastries",
+        "common-coffee",
+        "history-of-a-master",
+        "kitten-figurine",
+        "select-coffee",
+        "orgus-coffee"
+      ],
+      "owned": [
+        "portrait-of-yu-phas",
+        "solomon-coffee",
+        "flower-painting"
+      ],
+      "categoryNote": "테프류 · 매우 좋아함과 좋아함 구별",
+      "source": "https://yuphastemple.com/ursula/"
+    },
+    "울턴드": {
+      "cheap": [
+        "garum",
+        "history-of-a-master",
+        "smooth-garum",
+        "concentrated-garum",
+        "crimson-ghosh",
+        "pastry-cookbook"
+      ],
+      "owned": [
+        "rancid-garum",
+        "legendary-garum",
+        "tales-of-adventure"
+      ],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/ultand/"
+    },
+    "이니오니": {
+      "cheap": [
+        "history-of-a-master",
+        "sharp-fishhook",
+        "protection-figurine",
+        "antique-medal",
+        "bow-repair-kit",
+        "eastern-love-story"
+      ],
+      "owned": [
+        "ceremonial-spear",
+        "rugged-blade",
+        "arrowhead-gem"
+      ],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/inyoni/"
+    },
+    "이오": {
+      "cheap": [
+        "mane-ornament",
+        "horse-grooming-kit",
+        "coffee-pastries",
+        "common-coffee",
+        "history-of-a-master",
+        "kitten-figurine"
+      ],
+      "owned": [
+        "ceremonial-spear",
+        "rugged-blade",
+        "solomon-coffee"
+      ],
+      "categoryNote": "말 용품·테프·동물 장식",
+      "source": "https://yuphastemple.com/io/"
+    },
+    "자스민": {
+      "cheap": [
+        "coffee-pastries",
+        "fragrant-pastries",
+        "honey-pastries",
+        "mellow-pastries",
+        "simple-pastries",
+        "garum"
+      ],
+      "owned": [
+        "history-of-a-master",
+        "rancid-garum",
+        "legendary-garum"
+      ],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/jasmine/"
+    },
+    "제스터": {
+      "cheap": [
+        "coffee-pastries",
+        "garum",
+        "common-coffee",
+        "history-of-a-master",
+        "select-coffee",
+        "smooth-garum"
+      ],
+      "owned": [
+        "rancid-garum",
+        "legendary-garum",
+        "arrowhead-gem"
+      ],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/jester/"
+    },
+    "카이": {
+      "cheap": [
+        "odd-vegetable-seeds",
+        "rare-southern-seeds",
+        "brined-fish-guts",
+        "history-of-a-master",
+        "kitten-figurine",
+        "sharp-fishhook"
+      ],
+      "owned": [
+        "rancid-garum",
+        "tales-of-adventure",
+        "legendary-garum"
+      ],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/cai/"
+    },
+    "카타냐": {
+      "cheap": [
+        "coffee-pastries",
+        "rare-southern-seeds",
+        "common-coffee",
+        "history-of-a-master",
+        "kitten-figurine",
+        "select-coffee"
+      ],
+      "owned": [
+        "portrait-of-yu-phas",
+        "candy-crystals",
+        "arrowhead-gem"
+      ],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/catania/"
+    },
+    "토비아스": {
+      "cheap": [
+        "garum",
+        "young-ghosh",
+        "brined-fish-guts",
+        "history-of-a-master",
+        "kitten-figurine",
+        "light-shosh"
+      ],
+      "owned": [
+        "rancid-garum",
+        "legendary-garum",
+        "crimson-ghosh"
+      ],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/tobias/"
+    },
+    "티아라": {
+      "cheap": [
+        "garum",
+        "jamel-milk",
+        "odd-vegetable-seeds",
+        "rare-southern-seeds",
+        "weak-cervi",
+        "yarc-milk"
+      ],
+      "owned": [
+        "history-of-a-master",
+        "tales-of-adventure",
+        "legendary-garum"
+      ],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/tialla/"
+    },
+    "파비오": {
+      "cheap": [
+        "coffee-pastries",
+        "odd-vegetable-seeds",
+        "rare-southern-seeds",
+        "young-ghosh",
+        "brined-fish-guts",
+        "common-coffee"
+      ],
+      "owned": [
+        "portrait-of-yu-phas",
+        "crimson-ghosh",
+        "solomon-coffee"
+      ],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/fabio/"
+    },
+    "피아나": {
+      "cheap": [
+        "rare-southern-seeds",
+        "common-coffee",
+        "history-of-a-master",
+        "pickled-bulbs",
+        "select-coffee",
+        "energizing-ghosh"
+      ],
+      "owned": [
+        "arrowhead-gem",
+        "morfis-almanac",
+        "eastern-tea-leaves"
+      ],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/fianna/"
+    },
+    "피터르": {
+      "cheap": [
+        "coffee-pastries",
+        "fragrant-pastries",
+        "honey-pastries",
+        "mellow-pastries",
+        "simple-pastries",
+        "garum"
+      ],
+      "owned": [
+        "candy-crystals",
+        "arrowhead-gem",
+        "history-of-a-master"
+      ],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/peter/"
+    },
+    "하르빈": {
+      "cheap": [
+        "coffee-pastries",
+        "fragrant-pastries",
+        "honey-pastries",
+        "mellow-pastries",
+        "simple-pastries",
+        "garum"
+      ],
+      "owned": [
+        "rancid-garum",
+        "legendary-garum",
+        "arrowhead-gem"
+      ],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/halvin/"
+    },
+    "보나파르트": {
+      "cheap": [
+        "coffee-pastries",
+        "garum",
+        "young-ghosh",
+        "brined-fish-guts",
+        "common-coffee",
+        "history-of-a-master"
+      ],
+      "owned": [
+        "tales-of-adventure",
+        "legendary-garum",
+        "crimson-ghosh"
+      ],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/bonaventure/"
+    }
+  },
+  "items": {
+    "coffee-pastries": {
+      "id": "coffee-pastries",
+      "english": "Coffee Pastries",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=coffee-pastries",
+      "korean": "테프 페이스트리",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/halvin/",
+      "cost": 30,
+      "icon": "assets/gifts/coffee-pastries.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/coffee-pastries.webp?h=6a13bd3a",
+      "locations": [
+        "Dagsion",
+        "Megaira"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "common-coffee": {
+      "id": "common-coffee",
+      "english": "Common Coffee",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=common-coffee",
+      "korean": "보통 테프",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/fianna/",
+      "cost": 100,
+      "icon": "assets/gifts/common-coffee.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/common-coffee.webp?h=9ccd0fd2",
+      "locations": [
+        "Dagsion",
+        "Megaira",
+        "Regia",
+        "Shama Port"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "history-of-a-master": {
+      "id": "history-of-a-master",
+      "english": "History of a Master",
+      "reaction": "매우 좋아함",
+      "url": "https://yuphastemple.com/?item=history-of-a-master",
+      "korean": "여행 노사의 구전록",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/peter/",
+      "cost": 100,
+      "icon": "assets/gifts/history-of-a-master.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/history-of-a-master.webp?h=435d24da",
+      "locations": [
+        "Twalinn"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "select-coffee": {
+      "id": "select-coffee",
+      "english": "Select Coffee",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=select-coffee",
+      "korean": "엄선 테프",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/fianna/",
+      "cost": 100,
+      "icon": "assets/gifts/select-coffee.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/select-coffee.webp?h=469c4343",
+      "locations": [
+        "Dagsion",
+        "Megaira",
+        "Shama Port"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "orgus-coffee": {
+      "id": "orgus-coffee",
+      "english": "Orgus Coffee",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=orgus-coffee",
+      "korean": "오르구스 테프",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/fianna/",
+      "cost": 150,
+      "icon": "assets/gifts/orgus-coffee.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/orgus-coffee.webp?h=c7e783fa",
+      "locations": [
+        "Dagsion",
+        "Whill"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "southern-coffee": {
+      "id": "southern-coffee",
+      "english": "Southern Coffee",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=southern-coffee",
+      "korean": "남방 테프",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/fianna/",
+      "cost": 150,
+      "icon": "assets/gifts/southern-coffee.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/southern-coffee.webp?h=6a13bd3a",
+      "locations": [
+        "Dagsion",
+        "Megaira"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "tales-of-adventure": {
+      "id": "tales-of-adventure",
+      "english": "Tales of Adventure",
+      "reaction": "매우 좋아함",
+      "url": "https://yuphastemple.com/?item=tales-of-adventure",
+      "korean": "모험 이야기",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/fianna/",
+      "cost": 300,
+      "icon": "assets/gifts/tales-of-adventure.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/tales-of-adventure.webp?h=94627d7e",
+      "locations": [
+        "Alecto"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "portrait-of-yu-phas": {
+      "id": "portrait-of-yu-phas",
+      "english": "Portrait of Yu Phas",
+      "reaction": "매우 좋아함",
+      "url": "https://yuphastemple.com/?item=portrait-of-yu-phas",
+      "korean": "유파스의 초상화",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/peter/",
+      "cost": null,
+      "icon": "assets/gifts/portrait-of-yu-phas.webp",
+      "imageSource": "https://yuphastemple.com/images/items/gift_rare2.png",
+      "locations": [],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "tome-from-away": {
+      "id": "tome-from-away",
+      "english": "Tome from Away",
+      "reaction": "매우 좋아함",
+      "url": "https://yuphastemple.com/?item=tome-from-away",
+      "korean": "바다 저편의 고서",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/tialla/",
+      "cost": 500,
+      "icon": "assets/gifts/tome-from-away.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/tome-from-away.webp?h=72f1eab9",
+      "locations": [
+        "Port of Pandora"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "young-ghosh": {
+      "id": "young-ghosh",
+      "english": "Young Ghosh",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=young-ghosh",
+      "korean": "햇홍소",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/fabio/",
+      "cost": 50,
+      "icon": "assets/gifts/young-ghosh.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/young-ghosh.webp?h=bc233686",
+      "locations": [
+        "Barsk Post Town",
+        "Dagsion",
+        "Fina",
+        "Mons"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "brined-fish-guts": {
+      "id": "brined-fish-guts",
+      "english": "Brined Fish Guts",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=brined-fish-guts",
+      "korean": "생선 내장 절임",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/fabio/",
+      "cost": 100,
+      "icon": "assets/gifts/brined-fish-guts.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/brined-fish-guts.webp?h=c0f3c800",
+      "locations": [
+        "Kira"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "light-shosh": {
+      "id": "light-shosh",
+      "english": "Light Shosh",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=light-shosh",
+      "korean": "가벼운 창소",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/fabio/",
+      "cost": 100,
+      "icon": "assets/gifts/light-shosh.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/light-shosh.webp?h=43fa4df7",
+      "locations": [
+        "Dagsion",
+        "Mons",
+        "Niiza Port"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "crimson-ghosh": {
+      "id": "crimson-ghosh",
+      "english": "Crimson Ghosh",
+      "reaction": "매우 좋아함",
+      "url": "https://yuphastemple.com/?item=crimson-ghosh",
+      "korean": "진홍 홍소",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/halvin/",
+      "cost": 200,
+      "icon": "assets/gifts/crimson-ghosh.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/crimson-ghosh.webp?h=171e7b8d",
+      "locations": [
+        "Barsk Post Town",
+        "Grand Aragon"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "ceremonial-spear": {
+      "id": "ceremonial-spear",
+      "english": "Ceremonial Spear",
+      "reaction": "매우 좋아함",
+      "url": "https://yuphastemple.com/?item=ceremonial-spear",
+      "korean": "의장용 창",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/tobias/",
+      "cost": 1000,
+      "icon": "assets/gifts/ceremonial-spear.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/ceremonial-spear.webp?h=3be02e6e",
+      "locations": [
+        "Da Mina",
+        "Grand Aragon"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "rugged-blade": {
+      "id": "rugged-blade",
+      "english": "Rugged Blade",
+      "reaction": "매우 좋아함",
+      "url": "https://yuphastemple.com/?item=rugged-blade",
+      "korean": "투박한 명검",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/tobias/",
+      "cost": 1000,
+      "icon": "assets/gifts/rugged-blade.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/rugged-blade.webp?h=fdce2568",
+      "locations": [
+        "Whill"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "protection-figurine": {
+      "id": "protection-figurine",
+      "english": "Protection Figurine",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=protection-figurine",
+      "korean": "수호 인형",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/tialla/",
+      "cost": 200,
+      "icon": "assets/gifts/protection-figurine.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/protection-figurine.webp?h=0d800c06",
+      "locations": [
+        "Dagsion",
+        "Fina",
+        "Niiza Port"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "antique-medal": {
+      "id": "antique-medal",
+      "english": "Antique Medal",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=antique-medal",
+      "korean": "골동품 전공 훈장",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/tobias/",
+      "cost": 300,
+      "icon": "assets/gifts/antique-medal.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/antique-medal.webp?h=fc4aa83e",
+      "locations": [
+        "Zoste"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "joint-relief-gloves": {
+      "id": "joint-relief-gloves",
+      "english": "Joint-Relief Gloves",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=joint-relief-gloves",
+      "korean": "관절 보호용 장갑",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/fianna/",
+      "cost": 300,
+      "icon": "assets/gifts/joint-relief-gloves.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/joint-relief-gloves.webp?h=f42f6a65",
+      "locations": [
+        "Breston",
+        "Dagsion"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "rancid-garum": {
+      "id": "rancid-garum",
+      "english": "Rancid Garum",
+      "reaction": "매우 좋아함",
+      "url": "https://yuphastemple.com/?item=rancid-garum",
+      "korean": "쿰쿰한 가룸",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/cai/",
+      "cost": 300,
+      "icon": "assets/gifts/rancid-garum.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/rancid-garum.webp?h=92734e43",
+      "locations": [
+        "Benetnasch"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "legendary-garum": {
+      "id": "legendary-garum",
+      "english": "Legendary Garum",
+      "reaction": "매우 좋아함",
+      "url": "https://yuphastemple.com/?item=legendary-garum",
+      "korean": "환상의 가룸",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/catania/",
+      "cost": 2000,
+      "icon": "assets/gifts/legendary-garum.webp",
+      "imageSource": "https://yuphastemple.com/images/items/gift_rare2.png",
+      "locations": [],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "garum": {
+      "id": "garum",
+      "english": "Garum",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=garum",
+      "korean": "가룸",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/halvin/",
+      "cost": 50,
+      "icon": "assets/gifts/garum.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/garum.webp?h=c1acd44d",
+      "locations": [
+        "Dagsion"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "odd-vegetable-seeds": {
+      "id": "odd-vegetable-seeds",
+      "english": "Odd Vegetable Seeds",
+      "reaction": "매우 좋아함",
+      "url": "https://yuphastemple.com/?item=odd-vegetable-seeds",
+      "korean": "기묘한 채소 씨앗",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/halvin/",
+      "cost": 50,
+      "icon": "assets/gifts/odd-vegetable-seeds.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/odd-vegetable-seeds.webp?h=fc4aa83e",
+      "locations": [
+        "Zoste"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "rare-southern-seeds": {
+      "id": "rare-southern-seeds",
+      "english": "Rare Southern Seeds",
+      "reaction": "매우 좋아함",
+      "url": "https://yuphastemple.com/?item=rare-southern-seeds",
+      "korean": "남부의 희귀 종자",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/halvin/",
+      "cost": 50,
+      "icon": "assets/gifts/rare-southern-seeds.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/rare-southern-seeds.webp?h=c0f3c800",
+      "locations": [
+        "Kira"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "fragrant-pastries": {
+      "id": "fragrant-pastries",
+      "english": "Fragrant Pastries",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=fragrant-pastries",
+      "korean": "향긋한 페이스트리",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/halvin/",
+      "cost": 30,
+      "icon": "assets/gifts/fragrant-pastries.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/fragrant-pastries.webp?h=137efdee",
+      "locations": [
+        "Dagsion",
+        "Mons",
+        "Orens"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "honey-pastries": {
+      "id": "honey-pastries",
+      "english": "Honey Pastries",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=honey-pastries",
+      "korean": "꿀 페이스트리",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/halvin/",
+      "cost": 30,
+      "icon": "assets/gifts/honey-pastries.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/honey-pastries.webp?h=440f09af",
+      "locations": [
+        "Regia"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "mellow-pastries": {
+      "id": "mellow-pastries",
+      "english": "Mellow Pastries",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=mellow-pastries",
+      "korean": "부드러운 페이스트리",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/halvin/",
+      "cost": 30,
+      "icon": "assets/gifts/mellow-pastries.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/mellow-pastries.webp?h=be063d95",
+      "locations": [
+        "Dagsion",
+        "Orens"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "simple-pastries": {
+      "id": "simple-pastries",
+      "english": "Simple Pastries",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=simple-pastries",
+      "korean": "소박한 구운 과자",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/halvin/",
+      "cost": 30,
+      "icon": "assets/gifts/simple-pastries.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/simple-pastries.webp?h=7873126e",
+      "locations": [
+        "Benetnasch",
+        "Dagsion",
+        "Orens"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "honey-milk": {
+      "id": "honey-milk",
+      "english": "Honey Milk",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=honey-milk",
+      "korean": "벌꿀 젖",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/halvin/",
+      "cost": 100,
+      "icon": "assets/gifts/honey-milk.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/honey-milk.webp?h=b639d31d",
+      "locations": [
+        "Dagsion",
+        "Regia"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "candy-crystals": {
+      "id": "candy-crystals",
+      "english": "Candy Crystals",
+      "reaction": "매우 좋아함",
+      "url": "https://yuphastemple.com/?item=candy-crystals",
+      "korean": "수정 사탕",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/peter/",
+      "cost": 1000,
+      "icon": "assets/gifts/candy-crystals.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/candy-crystals.webp?h=d375aaae",
+      "locations": [
+        "Dagsion"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "sharp-fishhook": {
+      "id": "sharp-fishhook",
+      "english": "Sharp Fishhook",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=sharp-fishhook",
+      "korean": "예리한 낚싯바늘",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/tialla/",
+      "cost": 100,
+      "icon": "assets/gifts/sharp-fishhook.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/sharp-fishhook.webp?h=2e7d9062",
+      "locations": [
+        "Alecto",
+        "Fina",
+        "Niiza Port",
+        "Raivo Port"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "dagda-beard-grass": {
+      "id": "dagda-beard-grass",
+      "english": "Dagda Beard Grass",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=dagda-beard-grass",
+      "korean": "다그다 수염풀",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/peter/",
+      "cost": 200,
+      "icon": "assets/gifts/dagda-beard-grass.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/dagda-beard-grass.webp?h=be063d95",
+      "locations": [
+        "Dagsion",
+        "Orens"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "kitten-figurine": {
+      "id": "kitten-figurine",
+      "english": "Kitten Figurine",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=kitten-figurine",
+      "korean": "새끼 고양이 장식",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/halvin/",
+      "cost": 100,
+      "icon": "assets/gifts/kitten-figurine.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/kitten-figurine.webp?h=3106890f",
+      "locations": [
+        "Dagsion",
+        "Orens",
+        "Osiris"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "mature-ghosh": {
+      "id": "mature-ghosh",
+      "english": "Mature Ghosh",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=mature-ghosh",
+      "korean": "숙성 홍소",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/fabio/",
+      "cost": 100,
+      "icon": "assets/gifts/mature-ghosh.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/mature-ghosh.webp?h=1cd3e1ae",
+      "locations": [
+        "Barsk Post Town",
+        "Dagsion",
+        "Fina",
+        "Mahon Castle Town"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "pack-of-pastels": {
+      "id": "pack-of-pastels",
+      "english": "Pack of Pastels",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=pack-of-pastels",
+      "korean": "파스텔 세트",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/halvin/",
+      "cost": 300,
+      "icon": "assets/gifts/pack-of-pastels.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/pack-of-pastels.webp?h=b639d31d",
+      "locations": [
+        "Dagsion",
+        "Regia"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "poems-of-the-greats": {
+      "id": "poems-of-the-greats",
+      "english": "Poems of the Greats",
+      "reaction": "매우 좋아함",
+      "url": "https://yuphastemple.com/?item=poems-of-the-greats",
+      "korean": "거장들의 시집",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/fianna/",
+      "cost": 300,
+      "icon": "assets/gifts/poems-of-the-greats.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/poems-of-the-greats.webp?h=6f0018a4",
+      "locations": [
+        "Raivo Port"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "rare-spices": {
+      "id": "rare-spices",
+      "english": "Rare Spices",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=rare-spices",
+      "korean": "진귀한 향신료",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/halvin/",
+      "cost": 500,
+      "icon": "assets/gifts/rare-spices.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/rare-spices.webp?h=1992182c",
+      "locations": [
+        "Callianeira Port",
+        "Dagsion",
+        "Shama Port"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "eastern-black-silk": {
+      "id": "eastern-black-silk",
+      "english": "Eastern Black Silk",
+      "reaction": "매우 좋아함",
+      "url": "https://yuphastemple.com/?item=eastern-black-silk",
+      "korean": "동방의 칠흑 비단",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/halvin/",
+      "cost": 3000,
+      "icon": "assets/gifts/eastern-black-silk.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/eastern-black-silk.webp?h=94364f73",
+      "locations": [
+        "Callianeira Port"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "energizing-ghosh": {
+      "id": "energizing-ghosh",
+      "english": "Energizing Ghosh",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=energizing-ghosh",
+      "korean": "자극적인 홍소",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/fabio/",
+      "cost": 150,
+      "icon": "assets/gifts/energizing-ghosh.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/energizing-ghosh.webp?h=44f34f97",
+      "locations": [
+        "Benetnasch",
+        "Dagsion",
+        "Megaira"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "volcano-ghosh": {
+      "id": "volcano-ghosh",
+      "english": "Volcano Ghosh",
+      "reaction": "매우 좋아함",
+      "url": "https://yuphastemple.com/?item=volcano-ghosh",
+      "korean": "화산 홍소",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/fianna/",
+      "cost": 150,
+      "icon": "assets/gifts/volcano-ghosh.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/volcano-ghosh.webp?h=9ac949bf",
+      "locations": [
+        "Barsk Post Town",
+        "Da Mina",
+        "Dagsion",
+        "Mahon Castle Town"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "board-game-tactics": {
+      "id": "board-game-tactics",
+      "english": "Board-Game Tactics",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=board-game-tactics",
+      "korean": "보드게임 정석집",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/tialla/",
+      "cost": 200,
+      "icon": "assets/gifts/board-game-tactics.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/board-game-tactics.webp?h=692122c2",
+      "locations": [
+        "Breston"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "pastry-cookbook": {
+      "id": "pastry-cookbook",
+      "english": "Pastry Cookbook",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=pastry-cookbook",
+      "korean": "페이스트리 요리책",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/halvin/",
+      "cost": 200,
+      "icon": "assets/gifts/pastry-cookbook.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/pastry-cookbook.webp?h=b639d31d",
+      "locations": [
+        "Dagsion",
+        "Regia"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "school-scandal": {
+      "id": "school-scandal",
+      "english": "School Scandal",
+      "reaction": "매우 좋아함",
+      "url": "https://yuphastemple.com/?item=school-scandal",
+      "korean": "교직원 사건부",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/tialla/",
+      "cost": 200,
+      "icon": "assets/gifts/school-scandal.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/school-scandal.webp?h=7178e81f",
+      "locations": [
+        "Cougar Woodlands",
+        "Mons"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "arrowhead-gem": {
+      "id": "arrowhead-gem",
+      "english": "Arrowhead Gem",
+      "reaction": "매우 좋아함",
+      "url": "https://yuphastemple.com/?item=arrowhead-gem",
+      "korean": "화살촉 모양 보석",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/peter/",
+      "cost": 1500,
+      "icon": "assets/gifts/arrowhead-gem.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/arrowhead-gem.webp?h=5e1d19a0",
+      "locations": [
+        "Breston"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "eastern-tea-leaves": {
+      "id": "eastern-tea-leaves",
+      "english": "Eastern Tea Leaves",
+      "reaction": "매우 좋아함",
+      "url": "https://yuphastemple.com/?item=eastern-tea-leaves",
+      "korean": "동방의 찻잎",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/halvin/",
+      "cost": 2000,
+      "icon": "assets/gifts/eastern-tea-leaves.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/eastern-tea-leaves.webp?h=60795bd8",
+      "locations": [
+        "Callianeira Port"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "mane-ornament": {
+      "id": "mane-ornament",
+      "english": "Mane Ornament",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=mane-ornament",
+      "korean": "갈기 장식",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/catania/",
+      "cost": 300,
+      "icon": "assets/gifts/mane-ornament.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/mane-ornament.webp?h=d2d35dbc",
+      "locations": [
+        "Dagsion",
+        "Grand Aragon"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "wing-fletching": {
+      "id": "wing-fletching",
+      "english": "Wing Fletching",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=wing-fletching",
+      "korean": "바람을 가르는 깃",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/peter/",
+      "cost": 300,
+      "icon": "assets/gifts/wing-fletching.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/wing-fletching.webp?h=86021651",
+      "locations": [
+        "Ribeira"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "horse-grooming-kit": {
+      "id": "horse-grooming-kit",
+      "english": "Horse-Grooming Kit",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=horse-grooming-kit",
+      "korean": "말 손질 키트",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/tobias/",
+      "cost": 400,
+      "icon": "assets/gifts/horse-grooming-kit.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/horse-grooming-kit.webp?h=8f8fe14c",
+      "locations": [
+        "Aguiño",
+        "Dagsion",
+        "Grand Aragon"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "ahm-lu-cloth": {
+      "id": "ahm-lu-cloth",
+      "english": "Ahm Lu Cloth",
+      "reaction": "매우 좋아함",
+      "url": "https://yuphastemple.com/?item=ahm-lu-cloth",
+      "korean": "아무 르 직물",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/tialla/",
+      "cost": null,
+      "icon": "assets/gifts/ahm-lu-cloth.webp",
+      "imageSource": "https://yuphastemple.com/images/items/gift_uncommon.png",
+      "locations": [],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "morfis-almanac": {
+      "id": "morfis-almanac",
+      "english": "Morfis Almanac",
+      "reaction": "매우 좋아함",
+      "url": "https://yuphastemple.com/?item=morfis-almanac",
+      "korean": "모르피스 연감",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/fianna/",
+      "cost": 1500,
+      "icon": "assets/gifts/morfis-almanac.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/morfis-almanac.webp?h=8de42171",
+      "locations": [
+        "Dagsion",
+        "Port of Pandora"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "rustic-ghosh": {
+      "id": "rustic-ghosh",
+      "english": "Rustic Ghosh",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=rustic-ghosh",
+      "korean": "소박한 홍소",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/fabio/",
+      "cost": 100,
+      "icon": "assets/gifts/rustic-ghosh.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/rustic-ghosh.webp?h=bcb84efc",
+      "locations": [
+        "Daimon",
+        "Ribeira"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "smooth-garum": {
+      "id": "smooth-garum",
+      "english": "Smooth Garum",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=smooth-garum",
+      "korean": "부드러운 가룸",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/tialla/",
+      "cost": 100,
+      "icon": "assets/gifts/smooth-garum.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/smooth-garum.webp?h=6f0018a4",
+      "locations": [
+        "Raivo Port"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "concentrated-garum": {
+      "id": "concentrated-garum",
+      "english": "Concentrated Garum",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=concentrated-garum",
+      "korean": "농후한 가룸",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/tialla/",
+      "cost": 150,
+      "icon": "assets/gifts/concentrated-garum.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/concentrated-garum.webp?h=f4795f9c",
+      "locations": [
+        "Port of Pandora"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "solomon-coffee": {
+      "id": "solomon-coffee",
+      "english": "Solomon Coffee",
+      "reaction": "매우 좋아함",
+      "url": "https://yuphastemple.com/?item=solomon-coffee",
+      "korean": "환상의 솔로몬 테프",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/fianna/",
+      "cost": 2000,
+      "icon": "assets/gifts/solomon-coffee.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/solomon-coffee.webp?h=549c2e24",
+      "locations": [
+        "Dagsion",
+        "Shama Port"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "flower-painting": {
+      "id": "flower-painting",
+      "english": "Flower Painting",
+      "reaction": "매우 좋아함",
+      "url": "https://yuphastemple.com/?item=flower-painting",
+      "korean": "작고 흰 꽃 그림",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/halvin/",
+      "cost": null,
+      "icon": "assets/gifts/flower-painting.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/flower-painting.webp?h=dd7d4e1f",
+      "locations": [
+        "Stoppered Shrine"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "bow-repair-kit": {
+      "id": "bow-repair-kit",
+      "english": "Bow Repair Kit",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=bow-repair-kit",
+      "korean": "활 손질 도구",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/inyoni/",
+      "cost": 300,
+      "icon": "assets/gifts/bow-repair-kit.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/bow-repair-kit.webp?h=fc4aa83e",
+      "locations": [
+        "Zoste"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "eastern-love-story": {
+      "id": "eastern-love-story",
+      "english": "Eastern Love Story",
+      "reaction": "매우 좋아함",
+      "url": "https://yuphastemple.com/?item=eastern-love-story",
+      "korean": "동방의 연애 이야기",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/fianna/",
+      "cost": 300,
+      "icon": "assets/gifts/eastern-love-story.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/eastern-love-story.webp?h=c1acd44d",
+      "locations": [
+        "Dagsion"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "jamel-milk": {
+      "id": "jamel-milk",
+      "english": "Jamel Milk",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=jamel-milk",
+      "korean": "자멜의 젖",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/peter/",
+      "cost": 50,
+      "icon": "assets/gifts/jamel-milk.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/jamel-milk.webp?h=b70b0b4d",
+      "locations": [
+        "Dagsion",
+        "Daimon",
+        "Osiris",
+        "Twalinn"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "weak-cervi": {
+      "id": "weak-cervi",
+      "english": "Weak Cervi",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=weak-cervi",
+      "korean": "연한 세르비",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/peter/",
+      "cost": 50,
+      "icon": "assets/gifts/weak-cervi.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/weak-cervi.webp?h=f421f676",
+      "locations": [
+        "Dagsion",
+        "Kassite",
+        "Orens",
+        "Raivo Port"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "yarc-milk": {
+      "id": "yarc-milk",
+      "english": "Yarc Milk",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=yarc-milk",
+      "korean": "야크의 젖",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/peter/",
+      "cost": 50,
+      "icon": "assets/gifts/yarc-milk.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/yarc-milk.webp?h=2c1f2117",
+      "locations": [
+        "Dagsion",
+        "Ribeira"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "pickled-bulbs": {
+      "id": "pickled-bulbs",
+      "english": "Pickled Bulbs",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=pickled-bulbs",
+      "korean": "알뿌리 식초 절임",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/tialla/",
+      "cost": 100,
+      "icon": "assets/gifts/pickled-bulbs.webp",
+      "imageSource": "https://yuphastemple.com/images/map-items/pickled-bulbs.webp?h=73e5eb41",
+      "locations": [
+        "Aguiño"
+      ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    }
+  },
+  "errors": [],
+  "priceRule": "표시 가격은 할인 전 기본값 · 실제 재고·루트·할인 가격 우선 · 이미 선물로 인연을 열었으면 반복 구입 불필요",
+  "sources": [
+    "https://yuphastemple.com/",
+    "https://yuphastemple.com/data/locations.json",
+    "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/ursula/",
+    "units.html"
+  ]
+}

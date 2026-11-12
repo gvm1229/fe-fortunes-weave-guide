@@ -1,0 +1,1994 @@
+{
+  "reviewed": "2026-11-04",
+  "scope": "로컬 도감62명·네 루트의 모든 추가 조건",
+  "characters": {
+    "세오도라": {
+      "routes": {
+        "theodora": {
+          "sup": "0",
+          "fame": "0",
+          "init": "귀족"
+        }
+      },
+      "gates": []
+    },
+    "보나파르트": {
+      "routes": {
+        "theodora": {
+          "sup": "0",
+          "fame": "0",
+          "init": "귀족"
+        }
+      },
+      "gates": []
+    },
+    "토비아스": {
+      "routes": {
+        "theodora": {
+          "sup": "0",
+          "fame": "0",
+          "init": "귀족"
+        }
+      },
+      "gates": []
+    },
+    "라이선더": {
+      "routes": {
+        "theodora": {
+          "sup": "0",
+          "fame": "0",
+          "init": "비약 타조병"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "7",
+          "init": "비약 타조병"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "6",
+          "init": "비약 타조병"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "8",
+          "init": "비약 타조병"
+        }
+      },
+      "gates": [
+        {
+          "route": "leda",
+          "localCondition": "아이템철의 창 5개제도 무기점에 입하될 때마다 사 모아둘 것."
+        },
+        {
+          "route": "dietrich",
+          "localCondition": "아이템철의 창 5개제도 무기점에 입하될 때마다 사 모아둘 것."
+        },
+        {
+          "route": "kai",
+          "localCondition": "아이템철의 창 5개제도 무기점에 입하될 때마다 사 모아둘 것."
+        }
+      ],
+      "materials": [
+        "iron-lance"
+      ]
+    },
+    "릴리안": {
+      "routes": {
+        "theodora": {
+          "sup": "0",
+          "fame": "0",
+          "init": "사냥병"
+        },
+        "leda": {
+          "sup": "2",
+          "fame": "7",
+          "init": "사냥병"
+        },
+        "dietrich": {
+          "sup": "2",
+          "fame": "8",
+          "init": "사냥병"
+        },
+        "kai": {
+          "sup": "2",
+          "fame": "8",
+          "init": "사냥병"
+        }
+      },
+      "gates": [
+        {
+          "route": "leda",
+          "localCondition": "금전5,000골드 지급"
+        },
+        {
+          "route": "dietrich",
+          "localCondition": "금전5,000골드 지급"
+        },
+        {
+          "route": "kai",
+          "localCondition": "금전5,000골드 지급"
+        }
+      ]
+    },
+    "소피아": {
+      "routes": {
+        "theodora": {
+          "sup": "1",
+          "fame": "2",
+          "init": "주술사"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "7",
+          "init": "주술사"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "9",
+          "init": "주술사"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "9",
+          "init": "주술사"
+        }
+      },
+      "gates": []
+    },
+    "녹투라": {
+      "routes": {
+        "theodora": {
+          "sup": "1",
+          "fame": "3",
+          "init": "투사"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "8",
+          "init": "투사"
+        },
+        "dietrich": {
+          "sup": "1",
+          "fame": "6",
+          "init": "투사"
+        },
+        "kai": {
+          "sup": "1",
+          "fame": "4",
+          "init": "투사"
+        }
+      },
+      "gates": []
+    },
+    "자코네": {
+      "routes": {
+        "theodora": {
+          "sup": "1",
+          "fame": "4",
+          "init": "투사"
+        },
+        "leda": {
+          "sup": "2",
+          "fame": "5",
+          "init": "투사"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "7",
+          "init": "투사"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "8",
+          "init": "투사"
+        }
+      },
+      "gates": [
+        {
+          "route": "theodora",
+          "localCondition": "금전10,000골드 지급「거절」을 반복하면 10골드까지 값을 깎을 수 있다. 10골드에서 한 번 더 거절하면 교섭 결렬. 깎아도 능력치 하락 같은 불이익은 없으므로 10골드가 최선."
+        },
+        {
+          "route": "leda",
+          "localCondition": "금전10,000골드 지급「거절」을 반복하면 10골드까지 값을 깎을 수 있다. 10골드에서 한 번 더 거절하면 교섭 결렬. 깎아도 능력치 하락 같은 불이익은 없으므로 10골드가 최선."
+        },
+        {
+          "route": "dietrich",
+          "localCondition": "금전10,000골드 지급「거절」을 반복하면 10골드까지 값을 깎을 수 있다. 10골드에서 한 번 더 거절하면 교섭 결렬. 깎아도 능력치 하락 같은 불이익은 없으므로 10골드가 최선."
+        },
+        {
+          "route": "kai",
+          "localCondition": "금전10,000골드 지급「거절」을 반복하면 10골드까지 값을 깎을 수 있다. 10골드에서 한 번 더 거절하면 교섭 결렬. 깎아도 능력치 하락 같은 불이익은 없으므로 10골드가 최선."
+        }
+      ]
+    },
+    "시로코": {
+      "routes": {
+        "theodora": {
+          "sup": "1",
+          "fame": "5",
+          "init": "평민"
+        },
+        "leda": {
+          "sup": "0",
+          "fame": "0",
+          "init": "평민"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "9",
+          "init": "평민"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "9",
+          "init": "평민"
+        }
+      },
+      "gates": [
+        {
+          "route": "theodora",
+          "localCondition": "아이템「시인의 비석 사본」 1개권장 Lv 33기한 있음명성5·지원1을 채워 본인에게 스카우트→의뢰 수락·진행 중 확인 후에만 입수. 야시로 요새 탐색→이아페토스 대동굴의 다른 출구→아트라 산맥에서 탐색하고 귀환 보고한다. 수주 전 선채집 불가.솔리다스 주 권장 레벨이 33으로 높다. 지정 기일까지 넘기지 못하면 이 회차에서는 영입 불가."
+        },
+        {
+          "route": "dietrich",
+          "localCondition": "아이템「시인의 비석 사본」 1개권장 Lv 33기한 있음명성9·지원3을 채워 본인에게 스카우트→의뢰 수락·진행 중 확인 후에만 입수. 야시로 요새 탐색→이아페토스 대동굴의 다른 출구→아트라 산맥에서 탐색하고 귀환 보고한다. 수주 전 선채집 불가.솔리다스 주 권장 레벨이 33으로 높다. 지정 기일까지 넘기지 못하면 이 회차에서는 영입 불가."
+        },
+        {
+          "route": "kai",
+          "localCondition": "아이템「시인의 비석 사본」 1개목적지 전력 확인기한 있음명성9·지원3을 채워 본인에게 스카우트→의뢰 수락 후에만 입수. 카이는5장3/15부터 의뢰를 받고 금단의 숲(Masked Woods)의 다른 출구→Secret Altar에서 탐색한다. 아트라 산맥은 다른 루트의 목적지다.수주 전 사본은 입수할 수 없다. 현재 의뢰 목록의 기한 안에 탐색·납품·보고해야 한다."
+        }
+      ],
+      "materials": [
+        "poet-copy"
+      ]
+    },
+    "대도": {
+      "routes": {
+        "theodora": {
+          "sup": "2",
+          "fame": "5",
+          "init": "투사"
+        },
+        "leda": {
+          "sup": "2",
+          "fame": "5",
+          "init": "투사"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "10",
+          "init": "투사"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "7",
+          "init": "투사"
+        }
+      },
+      "gates": [
+        {
+          "route": "theodora",
+          "localCondition": "아이템코샬루 가아 2마리제도 바로 남쪽 「코샬루 호수」 탐색. 출현 어종이 랜덤이라 여러 번 반복해야 할 수 있다."
+        },
+        {
+          "route": "leda",
+          "localCondition": "아이템코샬루 가아 2마리제도 바로 남쪽 「코샬루 호수」 탐색. 출현 어종이 랜덤이라 여러 번 반복해야 할 수 있다."
+        },
+        {
+          "route": "dietrich",
+          "localCondition": "아이템코샬루 가아 2마리제도 바로 남쪽 「코샬루 호수」 탐색. 출현 어종이 랜덤이라 여러 번 반복해야 할 수 있다."
+        },
+        {
+          "route": "kai",
+          "localCondition": "아이템코샬루 가아 2마리제도 바로 남쪽 「코샬루 호수」 탐색. 출현 어종이 랜덤이라 여러 번 반복해야 할 수 있다."
+        }
+      ],
+      "materials": [
+        "kosharuga"
+      ]
+    },
+    "누디누": {
+      "routes": {
+        "theodora": {
+          "sup": "3",
+          "fame": "5",
+          "init": "비약 타조병"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "10",
+          "init": "비약 타조병"
+        },
+        "dietrich": {
+          "sup": "2",
+          "fame": "5",
+          "init": "비약 타조병"
+        },
+        "kai": {
+          "sup": "1",
+          "fame": "6",
+          "init": "비약 타조병"
+        }
+      },
+      "gates": [
+        {
+          "route": "theodora",
+          "localCondition": "아이템철의 도끼 3개제도 다그시온 무기점에서 구매.",
+          "corrected": "20261112"
+        },
+        {
+          "route": "leda",
+          "localCondition": "아이템철의 도끼 3개제도 다그시온 무기점에서 구매.",
+          "corrected": "20261112"
+        },
+        {
+          "route": "dietrich",
+          "localCondition": "아이템청동 도끼 2개제도 다그시온 무기점에서 구매."
+        },
+        {
+          "route": "kai",
+          "localCondition": "아이템청동 도끼 2개제도 다그시온 무기점에서 구매."
+        }
+      ],
+      "materials": [
+        "bronze-axe",
+        "iron-axe"
+      ]
+    },
+    "로레타": {
+      "routes": {
+        "theodora": {
+          "sup": "3",
+          "fame": "5",
+          "init": "투사"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "5",
+          "init": "투사"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "9",
+          "init": "투사"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "7",
+          "init": "투사"
+        }
+      },
+      "gates": [
+        {
+          "route": "theodora",
+          "localCondition": "아이템철의 검 3개스토리를 진행하면 다그시온 무기점에서 3개까지 구매 가능."
+        },
+        {
+          "route": "leda",
+          "localCondition": "아이템철의 검 3개스토리를 진행하면 다그시온 무기점에서 3개까지 구매 가능."
+        },
+        {
+          "route": "dietrich",
+          "localCondition": "아이템철의 검 3개스토리를 진행하면 다그시온 무기점에서 3개까지 구매 가능."
+        },
+        {
+          "route": "kai",
+          "localCondition": "아이템철의 검 3개스토리를 진행하면 다그시온 무기점에서 3개까지 구매 가능."
+        }
+      ],
+      "materials": [
+        "iron-sword"
+      ]
+    },
+    "나타": {
+      "routes": {
+        "theodora": {
+          "sup": "2",
+          "fame": "6",
+          "init": "투사"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "9",
+          "init": "투사"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "10",
+          "init": "투사"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "6",
+          "init": "투사"
+        }
+      },
+      "gates": [
+        {
+          "route": "theodora",
+          "localCondition": "아이템모래 벌레 고기 3개벌레계 적 드롭으로도 나오지만, 남쪽 「비오의 제단」 탐색의 고급 고기 상자가 확률이 높다."
+        },
+        {
+          "route": "leda",
+          "localCondition": "아이템모래 벌레 고기 3개벌레계 적 드롭으로도 나오지만, 남쪽 「비오의 제단」 탐색의 고급 고기 상자가 확률이 높다."
+        },
+        {
+          "route": "dietrich",
+          "localCondition": "아이템모래 벌레 고기 3개벌레계 적 드롭으로도 나오지만, 남쪽 「비오의 제단」 탐색의 고급 고기 상자가 확률이 높다."
+        },
+        {
+          "route": "kai",
+          "localCondition": "아이템모래 벌레 고기 3개벌레계 적 드롭으로도 나오지만, 남쪽 「비오의 제단」 탐색의 고급 고기 상자가 확률이 높다."
+        }
+      ],
+      "materials": [
+        "sandworm-meat"
+      ]
+    },
+    "단테": {
+      "routes": {
+        "theodora": {
+          "sup": "3",
+          "fame": "6",
+          "init": "주술사"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "10",
+          "init": "주술사"
+        },
+        "dietrich": {
+          "sup": "2",
+          "fame": "8",
+          "init": "주술사"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "10",
+          "init": "주술사"
+        }
+      },
+      "gates": [
+        {
+          "route": "theodora",
+          "localCondition": "금전8,000골드 지급"
+        },
+        {
+          "route": "leda",
+          "localCondition": "금전8,000골드 지급"
+        },
+        {
+          "route": "dietrich",
+          "localCondition": "금전8,000골드 지급"
+        },
+        {
+          "route": "kai",
+          "localCondition": "금전8,000골드 지급"
+        }
+      ]
+    },
+    "리네": {
+      "routes": {
+        "theodora": {
+          "sup": "3",
+          "fame": "6",
+          "init": "병사"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "8",
+          "init": "병사"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "8",
+          "init": "병사"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "6",
+          "init": "병사"
+        }
+      },
+      "gates": [
+        {
+          "route": "theodora",
+          "localCondition": "아이템반짝반짝어 1마리월드맵 남쪽 「브론테스 호수」 탐색. 레어도가 높아 여러 번 탐색이 필요하다."
+        },
+        {
+          "route": "leda",
+          "localCondition": "아이템반짝반짝어 1마리월드맵 남쪽 「브론테스 호수」 탐색. 레어도가 높아 여러 번 탐색이 필요하다."
+        },
+        {
+          "route": "dietrich",
+          "localCondition": "아이템반짝반짝어 1마리월드맵 남쪽 「브론테스 호수」 탐색. 레어도가 높아 여러 번 탐색이 필요하다."
+        },
+        {
+          "route": "kai",
+          "localCondition": "아이템반짝반짝어 1마리월드맵 남쪽 「브론테스 호수」 탐색. 레어도가 높아 여러 번 탐색이 필요하다."
+        }
+      ],
+      "materials": [
+        "paradise-fish"
+      ]
+    },
+    "세테스": {
+      "routes": {
+        "theodora": {
+          "sup": "3",
+          "fame": "6",
+          "init": "병사"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "10",
+          "init": "병사"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "6",
+          "init": "병사"
+        }
+      },
+      "gates": [
+        {
+          "route": "theodora",
+          "localCondition": "전투오거스 산길에서 「황혼의 흉적」 토벌권장 Lv 35기한 있음월드맵 남서 바시테아 주. 왕도 브레스턴 시장에서 「바시테아 지도」(100골드)를 사야 길이 열린다. 카이론역을 해방했다면 승합마차로 근처까지 이동 가능.가는 길이 처음엔 막혀 있다. 지정 기일까지 넘기면 이 회차에서는 영입 불가. 적은 전원 검 계열."
+        },
+        {
+          "route": "leda",
+          "localCondition": "전투오거스 산길에서 「황혼의 흉적」 토벌권장 Lv 35기한 있음월드맵 남서 바시테아 주. 왕도 브레스턴 시장에서 「바시테아 지도」(100골드)를 사야 길이 열린다. 카이론역을 해방했다면 승합마차로 근처까지 이동 가능.가는 길이 처음엔 막혀 있다. 지정 기일까지 넘기면 이 회차에서는 영입 불가. 적은 전원 검 계열."
+        },
+        {
+          "route": "kai",
+          "localCondition": "전투오거스 산길에서 「황혼의 흉적」 토벌권장 Lv 35기한 있음월드맵 남서 바시테아 주. 왕도 브레스턴 시장에서 「바시테아 지도」(100골드)를 사야 길이 열린다. 카이론역을 해방했다면 승합마차로 근처까지 이동 가능.가는 길이 처음엔 막혀 있다. 지정 기일까지 넘기면 이 회차에서는 영입 불가. 적은 전원 검 계열."
+        }
+      ]
+    },
+    "울턴드": {
+      "routes": {
+        "theodora": {
+          "sup": "3",
+          "fame": "6",
+          "init": "주술사"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "8",
+          "init": "주술사"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "5",
+          "init": "주술사"
+        },
+        "kai": {
+          "sup": "0",
+          "fame": "0",
+          "init": "주술사"
+        }
+      },
+      "gates": [
+        {
+          "route": "theodora",
+          "localCondition": "아이템「선물 상자」 1개제도 북서 방향 「콜로이오스 요새」에서 습득."
+        },
+        {
+          "route": "leda",
+          "localCondition": "아이템「선물 상자」 1개제도 북서 방향 「콜로이오스 요새」에서 습득."
+        },
+        {
+          "route": "dietrich",
+          "localCondition": "아이템「선물 상자」 1개제도 북서 방향 「콜로이오스 요새」에서 습득."
+        }
+      ],
+      "materials": [
+        "gift-box"
+      ]
+    },
+    "페페": {
+      "routes": {
+        "theodora": {
+          "sup": "2",
+          "fame": "7",
+          "init": "사냥병"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "8",
+          "init": "사냥병"
+        },
+        "kai": {
+          "sup": "1",
+          "fame": "9",
+          "init": "사냥병"
+        }
+      },
+      "gates": [
+        {
+          "route": "theodora",
+          "localCondition": "외전 선행베르트랑 외전 클리어기한 있음기간을 놓치면 외전 자체가 사라져 영입도 불가능해진다."
+        },
+        {
+          "route": "dietrich",
+          "localCondition": "외전 선행베르트랑 외전 클리어기한 있음기간을 놓치면 외전 자체가 사라져 영입도 불가능해진다."
+        },
+        {
+          "route": "kai",
+          "localCondition": "외전 선행베르트랑 외전 클리어기한 있음기간을 놓치면 외전 자체가 사라져 영입도 불가능해진다."
+        }
+      ]
+    },
+    "루루디아": {
+      "routes": {
+        "theodora": {
+          "sup": "3",
+          "fame": "7",
+          "init": "투사"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "7",
+          "init": "투사"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "9",
+          "init": "투사"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "9",
+          "init": "투사"
+        }
+      },
+      "gates": [
+        {
+          "route": "theodora",
+          "localCondition": "퀘스트서브 퀘스트 「루루디아의 부탁」 클리어다그시온 남동 「칼리아네이라 항구」에서 어부의 이야기를 듣고 루루디아에게 보고. 동아말테아역 → 페로니아역으로 이동 가능."
+        },
+        {
+          "route": "leda",
+          "localCondition": "퀘스트서브 퀘스트 「루루디아의 부탁」 클리어다그시온 남동 「칼리아네이라 항구」에서 어부의 이야기를 듣고 루루디아에게 보고. 동아말테아역 → 페로니아역으로 이동 가능."
+        },
+        {
+          "route": "dietrich",
+          "localCondition": "퀘스트서브 퀘스트 「루루디아의 부탁」 클리어다그시온 남동 「칼리아네이라 항구」에서 어부의 이야기를 듣고 루루디아에게 보고. 동아말테아역 → 페로니아역으로 이동 가능."
+        },
+        {
+          "route": "kai",
+          "localCondition": "퀘스트서브 퀘스트 「루루디아의 부탁」 클리어다그시온 남동 「칼리아네이라 항구」에서 어부의 이야기를 듣고 루루디아에게 보고. 동아말테아역 → 페로니아역으로 이동 가능."
+        }
+      ]
+    },
+    "시몬": {
+      "routes": {
+        "theodora": {
+          "sup": "3",
+          "fame": "7",
+          "init": "투사"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "6",
+          "init": "투사"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "7",
+          "init": "투사"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "8",
+          "init": "투사"
+        }
+      },
+      "gates": [
+        {
+          "route": "theodora",
+          "localCondition": "금전500골드 지급 + 이어지는 선택지에서 「뒤(裏)」 선택「앞(表)」을 골라도 재도전할 수 있지만, 재도전마다 500골드가 다시 든다."
+        },
+        {
+          "route": "leda",
+          "localCondition": "금전500골드 지급 + 이어지는 선택지에서 「뒤(裏)」 선택「앞(表)」을 골라도 재도전할 수 있지만, 재도전마다 500골드가 다시 든다."
+        },
+        {
+          "route": "dietrich",
+          "localCondition": "금전500골드 지급 + 이어지는 선택지에서 「뒤(裏)」 선택「앞(表)」을 골라도 재도전할 수 있지만, 재도전마다 500골드가 다시 든다."
+        },
+        {
+          "route": "kai",
+          "localCondition": "금전500골드 지급 + 이어지는 선택지에서 「뒤(裏)」 선택「앞(表)」을 골라도 재도전할 수 있지만, 재도전마다 500골드가 다시 든다."
+        }
+      ]
+    },
+    "카타냐": {
+      "routes": {
+        "theodora": {
+          "sup": "3",
+          "fame": "7",
+          "init": "병사"
+        },
+        "leda": {
+          "sup": "1",
+          "fame": "2",
+          "init": "병사"
+        },
+        "dietrich": {
+          "sup": "1",
+          "fame": "8",
+          "init": "병사"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "10",
+          "init": "병사"
+        }
+      },
+      "gates": []
+    },
+    "피터르": {
+      "routes": {
+        "theodora": {
+          "sup": "3",
+          "fame": "7",
+          "init": "평민"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "10",
+          "init": "평민"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "8",
+          "init": "평민"
+        },
+        "kai": {
+          "sup": "0",
+          "fame": "0",
+          "init": "평민"
+        }
+      },
+      "gates": [
+        {
+          "route": "theodora",
+          "localCondition": "아이템「환상의 긴지」 1개맵 동쪽 「우르카역」 근처 탐색 포인트."
+        },
+        {
+          "route": "leda",
+          "localCondition": "아이템「환상의 긴지」 1개맵 동쪽 「우르카역」 근처 탐색 포인트."
+        },
+        {
+          "route": "dietrich",
+          "localCondition": "아이템「환상의 긴지」 1개맵 동쪽 「우르카역」 근처 탐색 포인트."
+        }
+      ],
+      "materials": [
+        "fabled-ginji"
+      ]
+    },
+    "하르빈": {
+      "routes": {
+        "theodora": {
+          "sup": "3",
+          "fame": "7",
+          "init": "사냥병"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "7",
+          "init": "사냥병"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "9",
+          "init": "사냥병"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "5",
+          "init": "사냥병"
+        }
+      },
+      "gates": [
+        {
+          "route": "theodora",
+          "localCondition": "아이템대추야자(데이츠) 10개카이편 — 8장 서브 퀘스트 「털북숭이 거대한 짐승」 보상 → 재배. 그 외 루트 — 사막 「탈보스 남도」 야채 탐색 포인트.카이편에는 대추야자가 나오는 탐색 포인트가 없다. 서브 퀘스트 보상으로 1개를 받아 재배로 10개까지 늘리는 것이 유일한 방법."
+        },
+        {
+          "route": "leda",
+          "localCondition": "아이템대추야자(데이츠) 10개카이편 — 8장 서브 퀘스트 「털북숭이 거대한 짐승」 보상 → 재배. 그 외 루트 — 사막 「탈보스 남도」 야채 탐색 포인트.카이편에는 대추야자가 나오는 탐색 포인트가 없다. 서브 퀘스트 보상으로 1개를 받아 재배로 10개까지 늘리는 것이 유일한 방법."
+        },
+        {
+          "route": "dietrich",
+          "localCondition": "아이템대추야자(데이츠) 10개카이편 — 8장 서브 퀘스트 「털북숭이 거대한 짐승」 보상 → 재배. 그 외 루트 — 사막 「탈보스 남도」 야채 탐색 포인트.카이편에는 대추야자가 나오는 탐색 포인트가 없다. 서브 퀘스트 보상으로 1개를 받아 재배로 10개까지 늘리는 것이 유일한 방법."
+        },
+        {
+          "route": "kai",
+          "localCondition": "아이템대추야자(데이츠) 10개카이편 — 8장 서브 퀘스트 「털북숭이 거대한 짐승」 보상 → 재배. 그 외 루트 — 사막 「탈보스 남도」 야채 탐색 포인트.카이편에는 대추야자가 나오는 탐색 포인트가 없다. 서브 퀘스트 보상으로 1개를 받아 재배로 10개까지 늘리는 것이 유일한 방법."
+        }
+      ],
+      "materials": [
+        "dates"
+      ]
+    },
+    "디에고": {
+      "routes": {
+        "theodora": {
+          "sup": "2",
+          "fame": "8",
+          "init": "사냥병"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "8",
+          "init": "사냥병"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "9",
+          "init": "사냥병"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "10",
+          "init": "사냥병"
+        }
+      },
+      "gates": [
+        {
+          "route": "theodora",
+          "localCondition": "외전 선행오르헬 외전 「오르헬의 미련」 클리어기한 있음카이편 수주 기간은 10/18~10/19 또는 10/18~10/27로 알려져 있다. 카이편에서는 짧은 쪽을 기준으로 서두르는 편이 안전하다."
+        },
+        {
+          "route": "leda",
+          "localCondition": "외전 선행오르헬 외전 「오르헬의 미련」 클리어기한 있음카이편 수주 기간은 10/18~10/19 또는 10/18~10/27로 알려져 있다. 카이편에서는 짧은 쪽을 기준으로 서두르는 편이 안전하다."
+        },
+        {
+          "route": "dietrich",
+          "localCondition": "외전 선행오르헬 외전 「오르헬의 미련」 클리어기한 있음카이편 수주 기간은 10/18~10/19 또는 10/18~10/27로 알려져 있다. 카이편에서는 짧은 쪽을 기준으로 서두르는 편이 안전하다."
+        },
+        {
+          "route": "kai",
+          "localCondition": "외전 선행오르헬 외전 「오르헬의 미련」 클리어기한 있음카이편 수주 기간은 10/18~10/19 또는 10/18~10/27로 알려져 있다. 카이편에서는 짧은 쪽을 기준으로 서두르는 편이 안전하다."
+        }
+      ]
+    },
+    "그자람": {
+      "routes": {
+        "theodora": {
+          "sup": "3",
+          "fame": "8",
+          "init": "투사"
+        },
+        "leda": {
+          "sup": "1",
+          "fame": "3",
+          "init": "투사"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "8",
+          "init": "투사"
+        },
+        "kai": {
+          "sup": "1",
+          "fame": "2",
+          "init": "투사"
+        }
+      },
+      "gates": []
+    },
+    "미카엘라": {
+      "routes": {
+        "theodora": {
+          "sup": "3",
+          "fame": "8",
+          "init": "투사"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "6",
+          "init": "투사"
+        },
+        "dietrich": {
+          "sup": "0",
+          "fame": "0",
+          "init": "투사"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "5",
+          "init": "투사"
+        }
+      },
+      "gates": [
+        {
+          "route": "theodora",
+          "localCondition": "금전3,000골드 지급아이템이나 별도 절차는 필요 없고 골드만 있으면 된다."
+        },
+        {
+          "route": "leda",
+          "localCondition": "금전3,000골드 지급아이템이나 별도 절차는 필요 없고 골드만 있으면 된다."
+        },
+        {
+          "route": "kai",
+          "localCondition": "금전3,000골드 지급아이템이나 별도 절차는 필요 없고 골드만 있으면 된다."
+        }
+      ]
+    },
+    "버커니어": {
+      "routes": {
+        "theodora": {
+          "sup": "3",
+          "fame": "8",
+          "init": "평민"
+        },
+        "leda": {
+          "sup": "0",
+          "fame": "0",
+          "init": "평민"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "8",
+          "init": "평민"
+        }
+      },
+      "gates": [
+        {
+          "route": "theodora",
+          "localCondition": "외전 선행레다 외전 클리어 (레다편 외 루트에서만 필요)기한 있음레다편에서는 처음부터 초기 캐릭터로 합류하므로 외전이 필요 없다."
+        },
+        {
+          "route": "leda",
+          "localCondition": "외전 선행레다 외전 클리어 (레다편 외 루트에서만 필요)기한 있음레다편에서는 처음부터 초기 캐릭터로 합류하므로 외전이 필요 없다."
+        },
+        {
+          "route": "dietrich",
+          "localCondition": "외전 선행레다 외전 클리어 (레다편 외 루트에서만 필요)기한 있음레다편에서는 처음부터 초기 캐릭터로 합류하므로 외전이 필요 없다."
+        }
+      ]
+    },
+    "골라이어스": {
+      "routes": {
+        "theodora": {
+          "sup": "3",
+          "fame": "9",
+          "init": "병사"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "10",
+          "init": "병사"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "6",
+          "init": "병사"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "7",
+          "init": "병사"
+        }
+      },
+      "gates": [
+        {
+          "route": "theodora",
+          "localCondition": "아이템거대 고기 3개남서 「비오의 제단」 탐색으로 얻는 고급 고기 상자에서 랜덤 입수. 해도 알렉토의 반달 상회에서 연옥초 10개와 교환(재고 2개)도 가능."
+        },
+        {
+          "route": "leda",
+          "localCondition": "아이템거대 고기 3개남서 「비오의 제단」 탐색으로 얻는 고급 고기 상자에서 랜덤 입수. 해도 알렉토의 반달 상회에서 연옥초 10개와 교환(재고 2개)도 가능."
+        },
+        {
+          "route": "dietrich",
+          "localCondition": "아이템거대 고기 3개남서 「비오의 제단」 탐색으로 얻는 고급 고기 상자에서 랜덤 입수. 해도 알렉토의 반달 상회에서 연옥초 10개와 교환(재고 2개)도 가능."
+        },
+        {
+          "route": "kai",
+          "localCondition": "아이템거대 고기 3개남서 「비오의 제단」 탐색으로 얻는 고급 고기 상자에서 랜덤 입수. 해도 알렉토의 반달 상회에서 연옥초 10개와 교환(재고 2개)도 가능."
+        }
+      ],
+      "materials": [
+        "giant-meat"
+      ]
+    },
+    "무우": {
+      "routes": {
+        "theodora": {
+          "sup": "3",
+          "fame": "9",
+          "init": "평민"
+        },
+        "leda": {
+          "sup": "0",
+          "fame": "0",
+          "init": "평민"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "7",
+          "init": "평민"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "9",
+          "init": "평민"
+        }
+      },
+      "gates": [
+        {
+          "route": "theodora",
+          "localCondition": "아이템글루마오사 3개탐색 — 거인의 언덕 / 돌아오지 않는 숲 / 뒷산길 / 오거스 산길. 구매 — 메실리나 행상인, 1개 4,000골드.행상인은 월드맵 녹색 아이콘 칸에 있고 시점에 따라 위치가 바뀐다."
+        },
+        {
+          "route": "dietrich",
+          "localCondition": "아이템글루마오사 3개탐색 — 거인의 언덕 / 돌아오지 않는 숲 / 뒷산길 / 오거스 산길. 구매 — 메실리나 행상인, 1개 4,000골드.행상인은 월드맵 녹색 아이콘 칸에 있고 시점에 따라 위치가 바뀐다."
+        },
+        {
+          "route": "kai",
+          "localCondition": "아이템글루마오사 3개탐색 — 거인의 언덕 / 돌아오지 않는 숲 / 뒷산길 / 오거스 산길. 구매 — 메실리나 행상인, 1개 4,000골드.행상인은 월드맵 녹색 아이콘 칸에 있고 시점에 따라 위치가 바뀐다."
+        }
+      ],
+      "materials": [
+        "glirmosa"
+      ]
+    },
+    "양계": {
+      "routes": {
+        "theodora": {
+          "sup": "3",
+          "fame": "9",
+          "init": "주술사"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "8",
+          "init": "주술사"
+        },
+        "dietrich": {
+          "sup": "1",
+          "fame": "2",
+          "init": "주술사"
+        },
+        "kai": {
+          "sup": "2",
+          "fame": "3",
+          "init": "주술사"
+        }
+      },
+      "gates": [
+        {
+          "route": "theodora",
+          "localCondition": "선택지질문 3개에 「치즈」 → 「보름달이 뜬 밤」 → 「과일」 순으로 답한다"
+        },
+        {
+          "route": "leda",
+          "localCondition": "선택지질문 3개에 「치즈」 → 「보름달이 뜬 밤」 → 「과일」 순으로 답한다"
+        },
+        {
+          "route": "dietrich",
+          "localCondition": "조건 없음영입 튜토리얼에서 자동 합류한다(Game8은 4장·지원1·명성2만 표기).",
+          "corrected": "20261112"
+        },
+        {
+          "route": "kai",
+          "localCondition": "선택지질문 3개에 「치즈」 → 「보름달이 뜬 밤」 → 「과일」 순으로 답한다"
+        }
+      ]
+    },
+    "에스메랄다": {
+      "routes": {
+        "theodora": {
+          "sup": "3",
+          "fame": "9",
+          "init": "병사"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "6",
+          "init": "병사"
+        },
+        "dietrich": {
+          "sup": "0",
+          "fame": "0",
+          "init": "병사"
+        },
+        "kai": {
+          "sup": "2",
+          "fame": "7",
+          "init": "병사"
+        }
+      },
+      "gates": [
+        {
+          "route": "theodora",
+          "localCondition": "전투다마센곶에서 해수 무리 토벌다그시온 북쪽. 동아말테아역 → 에오히드역 이동으로 왕복 약 10턴.해수는 Lv28로 필드 적 중에서도 높은 편이라 부대를 미리 강화해 둘 것."
+        },
+        {
+          "route": "leda",
+          "localCondition": "전투다마센곶에서 해수 무리 토벌다그시온 북쪽. 동아말테아역 → 에오히드역 이동으로 왕복 약 10턴.해수는 Lv28로 필드 적 중에서도 높은 편이라 부대를 미리 강화해 둘 것."
+        },
+        {
+          "route": "kai",
+          "localCondition": "전투다마센곶에서 해수 무리 토벌다그시온 북쪽. 동아말테아역 → 에오히드역 이동으로 왕복 약 10턴.해수는 Lv28로 필드 적 중에서도 높은 편이라 부대를 미리 강화해 둘 것."
+        }
+      ]
+    },
+    "올림피아": {
+      "routes": {
+        "theodora": {
+          "sup": "3",
+          "fame": "9",
+          "init": "주술사"
+        },
+        "leda": {
+          "sup": "0",
+          "fame": "0",
+          "init": "주술사"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "6",
+          "init": "주술사"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "8",
+          "init": "주술사"
+        }
+      },
+      "gates": [
+        {
+          "route": "theodora",
+          "localCondition": "아이템「비작의 물방울」 1개다그시온 남동 「새벽 평원」 탐색. 동아말테아역 → 페로니아역 이동으로 왕복 약 5턴."
+        },
+        {
+          "route": "dietrich",
+          "localCondition": "아이템「비작의 물방울」 1개다그시온 남동 「새벽 평원」 탐색. 동아말테아역 → 페로니아역 이동으로 왕복 약 5턴."
+        },
+        {
+          "route": "kai",
+          "localCondition": "아이템「비작의 물방울」 1개다그시온 남동 「새벽 평원」 탐색. 동아말테아역 → 페로니아역 이동으로 왕복 약 5턴."
+        }
+      ],
+      "materials": [
+        "scarlet-drops",
+        "aurum-rose",
+        "azure-heart"
+      ]
+    },
+    "우술라": {
+      "routes": {
+        "theodora": {
+          "sup": "3",
+          "fame": "9",
+          "init": "사냥병"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "7",
+          "init": "사냥병"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "10",
+          "init": "사냥병"
+        }
+      },
+      "gates": [
+        {
+          "route": "theodora",
+          "localCondition": "선택지질문 3개에 모두 「예」를 선택외전 선행타리문 외전 「사라진 마차의 비밀」 클리어기한 있음"
+        },
+        {
+          "route": "dietrich",
+          "localCondition": "선택지질문 3개에 모두 「예」를 선택외전 선행타리문 외전 「사라진 마차의 비밀」 클리어기한 있음"
+        },
+        {
+          "route": "kai",
+          "localCondition": "선택지질문 3개에 모두 「예」를 선택외전 선행타리문 외전 「사라진 마차의 비밀」 클리어기한 있음"
+        }
+      ]
+    },
+    "제스터": {
+      "routes": {
+        "theodora": {
+          "sup": "3",
+          "fame": "9",
+          "init": "투사"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "10",
+          "init": "투사"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "6",
+          "init": "투사"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "10",
+          "init": "투사"
+        }
+      },
+      "gates": [
+        {
+          "route": "theodora",
+          "localCondition": "퀘스트전투 퀘스트 3회 클리어하나를 클리어해 보고하면 다음 퀘스트가 열리는 순차 구조."
+        },
+        {
+          "route": "leda",
+          "localCondition": "퀘스트전투 퀘스트 3회 클리어하나를 클리어해 보고하면 다음 퀘스트가 열리는 순차 구조."
+        },
+        {
+          "route": "dietrich",
+          "localCondition": "퀘스트전투 퀘스트 3회 클리어하나를 클리어해 보고하면 다음 퀘스트가 열리는 순차 구조."
+        },
+        {
+          "route": "kai",
+          "localCondition": "퀘스트전투 퀘스트 3회 클리어하나를 클리어해 보고하면 다음 퀘스트가 열리는 순차 구조."
+        }
+      ]
+    },
+    "피아나": {
+      "routes": {
+        "theodora": {
+          "sup": "3",
+          "fame": "9",
+          "init": "주술사"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "5",
+          "init": "주술사"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "7",
+          "init": "주술사"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "8",
+          "init": "주술사"
+        }
+      },
+      "gates": [
+        {
+          "route": "theodora",
+          "localCondition": "금전3,000골드 지급"
+        },
+        {
+          "route": "leda",
+          "localCondition": "금전3,000골드 지급"
+        },
+        {
+          "route": "dietrich",
+          "localCondition": "금전3,000골드 지급"
+        },
+        {
+          "route": "kai",
+          "localCondition": "금전3,000골드 지급"
+        }
+      ]
+    },
+    "이오": {
+      "routes": {
+        "theodora": {
+          "sup": "3",
+          "fame": "10",
+          "init": "경기병"
+        },
+        "leda": {
+          "sup": "1",
+          "fame": "6",
+          "init": "경기병"
+        },
+        "dietrich": {
+          "sup": "2",
+          "fame": "3",
+          "init": "경기병"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "10",
+          "init": "경기병"
+        }
+      },
+      "gates": [
+        {
+          "route": "theodora",
+          "localCondition": "금전기본 4,000골드 지급교섭 감액은 실제 화면에서 확인한다.",
+          "corrected": "20261112"
+        },
+        {
+          "route": "leda",
+          "localCondition": "금전1,500골드 지급지원·명성 조건을 채운 상태로 말을 걸면 그 자리에서 금액을 요구한다.",
+          "corrected": "20261112"
+        },
+        {
+          "route": "dietrich",
+          "localCondition": "금전800골드 지급지원·명성 조건을 채운 상태로 말을 걸면 그 자리에서 금액을 요구한다."
+        },
+        {
+          "route": "kai",
+          "localCondition": "금전4,000골드 지급지원·명성 조건을 채운 상태로 말을 걸면 그 자리에서 금액을 요구한다.",
+          "corrected": "20261112"
+        }
+      ]
+    },
+    "티아라": {
+      "routes": {
+        "theodora": {
+          "sup": "3",
+          "fame": "10",
+          "init": "평민"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "8",
+          "init": "평민"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "9",
+          "init": "평민"
+        },
+        "kai": {
+          "sup": "0",
+          "fame": "0",
+          "init": "평민"
+        }
+      },
+      "gates": [
+        {
+          "route": "theodora",
+          "localCondition": "금전3,000골드 지급값을 깎을 수 없다.외전 선행카이 외전 클리어 (카이편 외 루트에서만 필요)기한 있음카이편에서는 1장 「도적과의 전투」에서 자동 합류한다."
+        },
+        {
+          "route": "leda",
+          "localCondition": "금전3,000골드 지급값을 깎을 수 없다.외전 선행카이 외전 클리어 (카이편 외 루트에서만 필요)기한 있음카이편에서는 1장 「도적과의 전투」에서 자동 합류한다."
+        },
+        {
+          "route": "dietrich",
+          "localCondition": "금전3,000골드 지급값을 깎을 수 없다.외전 선행카이 외전 클리어 (카이편 외 루트에서만 필요)기한 있음카이편에서는 1장 「도적과의 전투」에서 자동 합류한다."
+        },
+        {
+          "route": "kai",
+          "localCondition": "외전 선행카이 외전 클리어 (카이편 외 루트에서만 필요)기한 있음카이편에서는 1장 「도적과의 전투」에서 자동 합류한다."
+        }
+      ]
+    },
+    "마지데": {
+      "routes": {
+        "theodora": {
+          "sup": "3",
+          "fame": "8",
+          "init": "투사"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "9",
+          "init": "투사"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "8",
+          "init": "투사"
+        },
+        "kai": {
+          "sup": "2",
+          "fame": "5",
+          "init": "투사"
+        }
+      },
+      "gates": [
+        {
+          "route": "theodora",
+          "localCondition": "선택지스카우트로 3번 말을 걸어 1·2회는 「필요하다」, 3회는 「진심으로 필요하다」 선택1·2회차는 스카우트 실패로 표시되지만 정상 진행이다. 포기하지 않고 3회차까지 말을 걸 것."
+        },
+        {
+          "route": "leda",
+          "localCondition": "선택지스카우트로 3번 말을 걸어 1·2회는 「필요하다」, 3회는 「진심으로 필요하다」 선택1·2회차는 스카우트 실패로 표시되지만 정상 진행이다. 포기하지 않고 3회차까지 말을 걸 것."
+        },
+        {
+          "route": "dietrich",
+          "localCondition": "선택지스카우트로 3번 말을 걸어 1·2회는 「필요하다」, 3회는 「진심으로 필요하다」 선택1·2회차는 스카우트 실패로 표시되지만 정상 진행이다. 포기하지 않고 3회차까지 말을 걸 것."
+        },
+        {
+          "route": "kai",
+          "localCondition": "선택지스카우트로 3번 말을 걸어 1·2회는 「필요하다」, 3회는 「진심으로 필요하다」 선택1·2회차는 스카우트 실패로 표시되지만 정상 진행이다. 포기하지 않고 3회차까지 말을 걸 것."
+        }
+      ]
+    },
+    "밴디츠": {
+      "routes": {
+        "theodora": {
+          "sup": "1",
+          "fame": "8",
+          "init": "전차병"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "7",
+          "init": "전차병"
+        },
+        "dietrich": {
+          "sup": "2",
+          "fame": "7",
+          "init": "전차병"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "9",
+          "init": "전차병"
+        }
+      },
+      "gates": []
+    },
+    "키로이카": {
+      "routes": {
+        "theodora": {
+          "sup": "3",
+          "fame": "10",
+          "init": "사냥병"
+        },
+        "leda": {
+          "sup": "1",
+          "fame": "4",
+          "init": "사냥병"
+        },
+        "dietrich": {
+          "sup": "1",
+          "fame": "4",
+          "init": "사냥병"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "8",
+          "init": "사냥병"
+        }
+      },
+      "gates": [
+        {
+          "route": "theodora",
+          "localCondition": "아이템성수 8개제도 다그시온 도구점에서 구매.",
+          "corrected": "20261112"
+        },
+        {
+          "route": "leda",
+          "localCondition": "아이템성수 3개제도 다그시온 도구점에서 구매."
+        },
+        {
+          "route": "dietrich",
+          "localCondition": "아이템성수 3개제도 다그시온 도구점에서 구매."
+        },
+        {
+          "route": "kai",
+          "localCondition": "아이템성수 8개제도 다그시온 도구점에서 구매.",
+          "corrected": "20261112"
+        }
+      ],
+      "materials": [
+        "holy-water"
+      ]
+    },
+    "자스민": {
+      "routes": {
+        "theodora": {
+          "sup": "3",
+          "fame": "8",
+          "init": "병사"
+        },
+        "leda": {
+          "sup": "2",
+          "fame": "4",
+          "init": "병사"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "9",
+          "init": "병사"
+        },
+        "kai": {
+          "sup": "1",
+          "fame": "8",
+          "init": "병사"
+        }
+      },
+      "gates": [
+        {
+          "route": "theodora",
+          "localCondition": "금전5,000골드 지급퀘스트·서브 퀘스트로 미리 자금을 모아둘 것.",
+          "corrected": "20261112"
+        },
+        {
+          "route": "leda",
+          "localCondition": "금전500골드 지급퀘스트·서브 퀘스트로 미리 자금을 모아둘 것.",
+          "corrected": "20261112"
+        },
+        {
+          "route": "dietrich",
+          "localCondition": "금전5,000골드 지급퀘스트·서브 퀘스트로 미리 자금을 모아둘 것.",
+          "corrected": "20261112"
+        },
+        {
+          "route": "kai",
+          "localCondition": "금전2,000골드 지급퀘스트·서브 퀘스트로 미리 자금을 모아둘 것."
+        }
+      ]
+    },
+    "알렉산드라": {
+      "routes": {
+        "theodora": {
+          "sup": "1",
+          "fame": "6",
+          "init": "천익병"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "10",
+          "init": "천익병"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "8",
+          "init": "천익병"
+        },
+        "kai": {
+          "sup": "2",
+          "fame": "7",
+          "init": "천익병"
+        }
+      },
+      "gates": []
+    },
+    "누조": {
+      "routes": {
+        "theodora": {
+          "sup": "1",
+          "fame": "6",
+          "init": "사냥병"
+        },
+        "leda": {
+          "sup": "3",
+          "fame": "9",
+          "init": "사냥병"
+        },
+        "dietrich": {
+          "sup": "1",
+          "fame": "9",
+          "init": "사냥병"
+        },
+        "kai": {
+          "sup": "2",
+          "fame": "6",
+          "init": "사냥병"
+        }
+      },
+      "gates": [
+        {
+          "route": "theodora",
+          "localCondition": "아이템철의 활 3개제도 다그시온 무기점·행상인에게서 구매."
+        },
+        {
+          "route": "leda",
+          "localCondition": "아이템철의 활 3개제도 다그시온 무기점·행상인에게서 구매."
+        },
+        {
+          "route": "dietrich",
+          "localCondition": "아이템철의 활 2개제도 다그시온 무기점·행상인에게서 구매.",
+          "corrected": "20261112"
+        },
+        {
+          "route": "kai",
+          "localCondition": "아이템철의 활 3개제도 다그시온 무기점·행상인에게서 구매."
+        }
+      ],
+      "materials": [
+        "iron-bow"
+      ]
+    },
+    "이니오니": {
+      "routes": {
+        "theodora": {
+          "sup": "1",
+          "fame": "9",
+          "init": "아처"
+        },
+        "leda": {
+          "sup": "1",
+          "fame": "7",
+          "init": "아처"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "8",
+          "init": "아처"
+        },
+        "kai": {
+          "sup": "3",
+          "fame": "8",
+          "init": "아처"
+        }
+      },
+      "gates": [
+        {
+          "route": "theodora",
+          "localCondition": "금전4,000골드 지급값을 깎을 수 없다.",
+          "corrected": "20261112"
+        },
+        {
+          "route": "leda",
+          "localCondition": "금전3,000골드 지급값을 깎을 수 없다.",
+          "corrected": "20261112"
+        },
+        {
+          "route": "dietrich",
+          "localCondition": "금전6,000골드 지급값을 깎을 수 없다."
+        },
+        {
+          "route": "kai",
+          "localCondition": "금전6,000골드 지급값을 깎을 수 없다."
+        }
+      ]
+    },
+    "레다": {
+      "routes": {
+        "leda": {
+          "sup": "0",
+          "fame": "0",
+          "init": "사냥병"
+        }
+      },
+      "gates": []
+    },
+    "파비오": {
+      "routes": {
+        "leda": {
+          "sup": "3",
+          "fame": "9",
+          "init": "평민"
+        },
+        "dietrich": {
+          "sup": "0",
+          "fame": "0",
+          "init": "평민"
+        }
+      },
+      "gates": [
+        {
+          "route": "leda",
+          "localCondition": "외전 선행디트리히 외전 클리어 + 레다편 11/4 이후기한 있음스카우트 가능한 루트는 레다편뿐이고, 11/4 전에는 디트리히 진영이 탈락하지 않아 다른 조건을 다 채워도 목록에 뜨지 않는다.아이템교섭에서 보여줄 아이템 1개 — 「정화의 검」 추천8장 보스 이니오니전 이벤트에서 입수. 스카우트가 열리는 시점이면 대개 소지 중이다."
+        },
+        {
+          "route": "dietrich",
+          "localCondition": "외전 선행디트리히 외전 클리어 + 레다편 11/4 이후기한 있음스카우트 가능한 루트는 레다편뿐이고, 11/4 전에는 디트리히 진영이 탈락하지 않아 다른 조건을 다 채워도 목록에 뜨지 않는다."
+        }
+      ],
+      "materials": [
+        "fabio-proof"
+      ]
+    },
+    "사란": {
+      "routes": {
+        "leda": {
+          "sup": "3",
+          "fame": "8",
+          "init": "주술사"
+        },
+        "dietrich": {
+          "sup": "3",
+          "fame": "10",
+          "init": "주술사"
+        }
+      },
+      "gates": [
+        {
+          "route": "leda",
+          "localCondition": "선택지질문 3개에 「사라미스 왕국」 → 「다 미나」 → 「좌초된 대형선」 순으로 답한다외전 선행아나톨리아 외전 클리어기한 있음"
+        },
+        {
+          "route": "dietrich",
+          "localCondition": "선택지질문 3개에 「사라미스 왕국」 → 「다 미나」 → 「좌초된 대형선」 순으로 답한다외전 선행아나톨리아 외전 클리어기한 있음"
+        }
+      ]
+    },
+    "디트리히": {
+      "routes": {
+        "dietrich": {
+          "sup": "0",
+          "fame": "0",
+          "init": "평민"
+        }
+      },
+      "gates": []
+    },
+    "게이츠": {
+      "routes": {
+        "dietrich": {
+          "sup": "3",
+          "fame": "10",
+          "init": "병사"
+        }
+      },
+      "gates": [
+        {
+          "route": "dietrich",
+          "localCondition": "외전 선행베르트랑 외전 클리어 + 12장 진입기한 있음디트리히편의 베르트랑 외전은 9월 17일 단 하루만 발생한다. 외전을 깨도 12장에 들어가기 전에는 스카우트 목록에 뜨지 않는다."
+        }
+      ]
+    },
+    "이스마르": {
+      "routes": {},
+      "gates": []
+    },
+    "홍화": {
+      "routes": {},
+      "gates": []
+    },
+    "트로이아": {
+      "routes": {},
+      "gates": []
+    },
+    "카이": {
+      "routes": {
+        "kai": {
+          "sup": "0",
+          "fame": "0",
+          "init": "평민"
+        }
+      },
+      "gates": []
+    },
+    "베르트랑": {
+      "routes": {},
+      "gates": []
+    },
+    "아나톨리아": {
+      "routes": {},
+      "gates": []
+    },
+    "오르헬": {
+      "routes": {},
+      "gates": []
+    },
+    "타리문": {
+      "routes": {},
+      "gates": []
+    },
+    "센트리온": {
+      "routes": {},
+      "gates": []
+    },
+    "키릭": {
+      "routes": {},
+      "gates": []
+    },
+    "네이선": {
+      "routes": {},
+      "gates": []
+    },
+    "아스완": {
+      "routes": {},
+      "gates": []
+    },
+    "타호니아": {
+      "routes": {},
+      "gates": []
+    },
+    "클라프카": {
+      "routes": {},
+      "gates": [],
+      "join": "3부 5구간 게스트로 생존 → 6구간 자동 합류(Game8·RPG Site) · 루트 조건 미확인 · 로컬 도감에 없음",
+      "sources": [
+        "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/618838"
+      ]
+    }
+  },
+  "materials": {
+    "paradise-fish": {
+      "name": "반짝반짝어",
+      "kind": "ordinary",
+      "sources": [
+        {
+          "title": "GameWith · 일반 어종과 사용처",
+          "url": "https://gamewith.jp/fefw/577827"
+        }
+      ]
+    },
+    "poet-copy": {
+      "name": "시인의 비문 사본",
+      "kind": "quest",
+      "sources": [
+        {
+          "title": "GameWith 시로코의 의뢰 · 수주 조건과 입수 순서",
+          "url": "https://gamewith.jp/fefw/577860"
+        },
+        {
+          "title": "GameWith 비문 사본 · 수주 전 입수 불가·루트별 위치",
+          "url": "https://gamewith.jp/fefw/577823"
+        },
+        {
+          "title": "Anna’s Notebook · 영어 영입 순서",
+          "url": "https://annasnotebook.net/en/recruit/by-route/"
+        }
+      ]
+    },
+    "holy-water": {
+      "name": "성수",
+      "kind": "ordinary",
+      "sources": []
+    },
+    "iron-bow": {
+      "name": "철의 활",
+      "kind": "ordinary",
+      "sources": []
+    },
+    "kosharuga": {
+      "name": "코샬루 가아",
+      "kind": "ordinary",
+      "sources": [
+        {
+          "title": "GameWith · 일반 어종과 사용처",
+          "url": "https://gamewith.jp/fefw/577822"
+        }
+      ]
+    },
+    "bronze-axe": {
+      "name": "청동 도끼",
+      "kind": "ordinary",
+      "sources": [
+        {
+          "title": "로컬 도감·루트별 교섭 요구품",
+          "url": "../../characters.html"
+        }
+      ]
+    },
+    "iron-sword": {
+      "name": "철의 검",
+      "kind": "ordinary",
+      "sources": [
+        {
+          "title": "로컬 도감·루트별 교섭 요구품",
+          "url": "../../characters.html"
+        }
+      ]
+    },
+    "iron-lance": {
+      "name": "철의 창",
+      "kind": "ordinary",
+      "sources": [
+        {
+          "title": "로컬 도감·루트별 교섭 요구품",
+          "url": "../../characters.html"
+        }
+      ]
+    },
+    "sandworm-meat": {
+      "name": "모래벌레 고기",
+      "kind": "ordinary",
+      "sources": [
+        {
+          "title": "로컬 도감·루트별 교섭 요구품",
+          "url": "../../characters.html"
+        }
+      ]
+    },
+    "giant-meat": {
+      "name": "거대 고기",
+      "kind": "ordinary",
+      "sources": [
+        {
+          "title": "로컬 도감·루트별 교섭 요구품",
+          "url": "../../characters.html"
+        }
+      ]
+    },
+    "glirmosa": {
+      "name": "글루마오사",
+      "kind": "ordinary",
+      "sources": [
+        {
+          "title": "로컬 도감·루트별 교섭 요구품",
+          "url": "../../characters.html"
+        }
+      ]
+    },
+    "dates": {
+      "name": "대추야자",
+      "kind": "ordinary",
+      "sources": [
+        {
+          "title": "GameWith · 대추야자 구입·채집·재배",
+          "url": "https://gamewith.jp/fefw/577341"
+        }
+      ]
+    },
+    "fabio-proof": {
+      "name": "정화의 검",
+      "kind": "ordinary",
+      "sources": [
+        {
+          "title": "로컬 도감·루트별 교섭 요구품",
+          "url": "../../characters.html"
+        }
+      ]
+    },
+    "gift-box": {
+      "name": "선물 상자",
+      "kind": "quest",
+      "sources": [
+        {
+          "title": "GameWith · 수주·입수·귀환 보고",
+          "url": "https://gamewith.jp/fefw/577850"
+        }
+      ]
+    },
+    "fabled-ginji": {
+      "name": "환상의 긴지",
+      "kind": "quest",
+      "sources": [
+        {
+          "title": "GameWith · 수주·입수·귀환 보고",
+          "url": "https://gamewith.jp/fefw/578987"
+        }
+      ]
+    },
+    "scarlet-drops": {
+      "name": "비작의 물방울",
+      "kind": "quest",
+      "sources": [
+        {
+          "title": "GameWith · 수주·입수·귀환 보고",
+          "url": "https://gamewith.jp/fefw/577867"
+        }
+      ]
+    },
+    "aurum-rose": {
+      "name": "아우람 로즈",
+      "kind": "quest",
+      "sources": [
+        {
+          "title": "GameWith · 수주·입수·귀환 보고",
+          "url": "https://gamewith.jp/fefw/578553"
+        }
+      ]
+    },
+    "azure-heart": {
+      "name": "푸른 심장",
+      "kind": "quest",
+      "sources": [
+        {
+          "title": "GameWith · 수주·입수·귀환 보고",
+          "url": "https://gamewith.jp/fefw/578598"
+        }
+      ]
+    },
+    "iron-axe": {
+      "name": "철의 도끼",
+      "kind": "ordinary",
+      "sources": [
+        {
+          "title": "Game8 영입표 · 누디누 세오도라/레다",
+          "url": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957"
+        }
+      ]
+    }
+  },
+  "uncertainties": [
+    "아우람 로즈의 세오도라/디트리히 수주 전 판매 해금은 미확인. 안전한 수주 후 구매로 작성.",
+    "일반 물품 선확보 가능은 상점·지도·재배가 열렸을 때라는 뜻이며 확정 채집 횟수는 아님.",
+    "양계 질문 세 번째 답은 자료가 상충한다(로컬: 과일, KeenGamer·RPG Site: 감자). 게임 화면을 확인한다.",
+    "골라이어스 거대 고기는 모래그림자 요새에서 1개 확정이라는 자료가 있다(KeenGamer 단일 출처)."
+  ]
+}

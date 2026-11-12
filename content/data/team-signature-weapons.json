@@ -1,0 +1,1143 @@
+{
+  "reviewed": "2026-11-06",
+  "scope": "최종 팀 결과의 대표 무기·마법2개. 현재 보유·습득 완료나 구매 의무를 뜻하지 않음",
+  "itemDefinitions": {
+    "shining-spear": [
+      "소렐의 휘창",
+      "ソレルの輝槍",
+      "창술"
+    ],
+    "assal": [
+      "아살",
+      "聖槍アッサル",
+      "창술"
+    ],
+    "answerer-arisen": [
+      "강화 앤서러",
+      "アンスウェラー改",
+      "검술"
+    ],
+    "cleansing-blade": [
+      "재계의 검",
+      "清めの剣",
+      "검술"
+    ],
+    "star-spear": [
+      "아우로라의 성창",
+      "アウロラの星槍",
+      "창술"
+    ],
+    "ridersbane": [
+      "나이트 킬러",
+      "ナイトキラー",
+      "창술"
+    ],
+    "mahadu-s-spear": [
+      "마하마두의 창",
+      "マハマドゥの槍",
+      "창술"
+    ],
+    "pilum": [
+      "슬렌드 스피어",
+      "スレンドスピア",
+      "창술"
+    ],
+    "kalla-s-bow": [
+      "칼라의 활",
+      "カーラの弓",
+      "궁술"
+    ],
+    "zalmoxis": [
+      "잘목시스",
+      "ザルモクシス",
+      "도끼술"
+    ],
+    "counter-gauntlets": [
+      "반격의 건틀릿",
+      "反撃の籠手",
+      "격투술"
+    ],
+    "da-mina-gauntlets": [
+      "다 미나의 건틀릿",
+      "ダ・ミナの籠手",
+      "격투술"
+    ],
+    "qiankun-circles": [
+      "건곤권",
+      "乾坤圏",
+      "격투술"
+    ],
+    "ursa-s-right-claw": [
+      "큰 곰의 오른 발톱",
+      "大熊の右鉤爪",
+      "격투술"
+    ],
+    "killing-edge": [
+      "킬 소드",
+      "キルソード",
+      "검술"
+    ],
+    "flyssa": [
+      "플리사",
+      "フリッサ",
+      "검술"
+    ],
+    "grasitha": [
+      "마창 그라시더",
+      "魔槍グラシーダ",
+      "창술"
+    ],
+    "sinza-s-trident": [
+      "신자의 작살",
+      "シンザのモリ",
+      "창술"
+    ],
+    "levin-sword": [
+      "선더 소드",
+      "サンダーソード",
+      "검술"
+    ],
+    "guandao": [
+      "언월도",
+      "偃月刀",
+      "창술"
+    ],
+    "da-mina-spear": [
+      "다 미나의 창",
+      "ダ・ミナの槍",
+      "창술"
+    ],
+    "short-spear": [
+      "쇼트 스피어",
+      "ショートスピア",
+      "창술"
+    ],
+    "hunter-s-bow": [
+      "수렵의 활",
+      "獣狩りの弓",
+      "궁술"
+    ],
+    "longbow": [
+      "롱 보우",
+      "ロングボウ",
+      "궁술"
+    ],
+    "da-mina-bow": [
+      "다 미나의 활",
+      "ダ・ミナの弓",
+      "궁술"
+    ],
+    "war-bow": [
+      "배틀 보우",
+      "バトルボウ",
+      "궁술"
+    ],
+    "horsekiller-bow": [
+      "말 킬러의 활",
+      "馬殺しの弓",
+      "궁술"
+    ],
+    "mini-bow": [
+      "미니 보우",
+      "ショートボウ",
+      "궁술"
+    ],
+    "venin-bow": [
+      "독의 활",
+      "毒の弓",
+      "궁술"
+    ],
+    "idah-s-bow": [
+      "이데아의 활",
+      "イデアの弓",
+      "궁술"
+    ],
+    "zerberus": [
+      "체르베루스",
+      "ツェルベルス",
+      "격투술"
+    ],
+    "thoron": [
+      "트론",
+      "トロン",
+      "흑마술"
+    ],
+    "cutting-gale": [
+      "셰이버",
+      "シェイバー",
+      "흑마술"
+    ],
+    "death": [
+      "데스",
+      "デスΓ",
+      "흑마술"
+    ],
+    "luna": [
+      "루나",
+      "ルナΛ",
+      "흑마술"
+    ],
+    "excalibur": [
+      "엑스칼리버",
+      "エクスカリバー",
+      "흑마술"
+    ],
+    "physic": [
+      "리브로",
+      "リブロー",
+      "백마술"
+    ],
+    "nosferatu": [
+      "리자이어",
+      "リザイア",
+      "백마술"
+    ],
+    "seraphim": [
+      "엔젤",
+      "エンジェル",
+      "백마술"
+    ],
+    "rescue": [
+      "레스큐",
+      "レスキュー",
+      "백마술"
+    ],
+    "warp": [
+      "워프",
+      "ワープ",
+      "백마술"
+    ],
+    "silence": [
+      "사일런스",
+      "サイレス",
+      "백마술"
+    ],
+    "veroquine": [
+      "사검 벨로키네",
+      "邪剣ヴェロキネ",
+      "검술"
+    ]
+  },
+  "people": {
+    "이스마르": [
+      [
+        "shining-spear",
+        "강화창으로 근접 화력·회복 전투 기술 활용"
+      ],
+      [
+        "pilum",
+        "근접 반격을 피하는1~2칸 투창"
+      ]
+    ],
+    "디트리히": [
+      [
+        "answerer-arisen",
+        "고유 전투 기술을 쓰는 전용 주력"
+      ],
+      [
+        "veroquine",
+        "검술 B·도끼술 C 필요 · 주보 · 절화 활용"
+      ]
+    ],
+    "카이": [
+      [
+        "star-spear",
+        "9장 지급창을 활용하는 기본 주력"
+      ],
+      [
+        "ridersbane",
+        "기마 적의 약점을 노리는 보조"
+      ]
+    ],
+    "세오도라": [
+      [
+        "mahadu-s-spear",
+        "1부에서 확보하는 로드의 주력 창"
+      ],
+      [
+        "pilum",
+        "근접 반격을 피하는1~2칸 투창"
+      ]
+    ],
+    "레다": [
+      [
+        "kalla-s-bow",
+        "먼 적을 공격하는 전투 기술용. 재행동이 먼저"
+      ],
+      [
+        "cleansing-blade",
+        "검 공격이 필요한 명부 적에게만 사용"
+      ]
+    ],
+    "미카엘라": [
+      [
+        "zalmoxis",
+        "전열을 뚫는 고위력 도끼·전투 기술"
+      ],
+      [
+        "counter-gauntlets",
+        "후공으로 싸울 때 선택하는 근접 보조"
+      ]
+    ],
+    "베르트랑": [
+      [
+        "zalmoxis",
+        "미카엘라 대신 편성하는 경우 같은 도끼 배정"
+      ],
+      [
+        "da-mina-gauntlets",
+        "높은 힘으로 격투 전투 기술 사용"
+      ]
+    ],
+    "무우": [
+      [
+        "qiankun-circles",
+        "1~2칸 격투로 반격 범위 조절"
+      ],
+      [
+        "ursa-s-right-claw",
+        "가벼운 주보로 근접 화력 보강. 백사 확인"
+      ]
+    ],
+    "그자람": [
+      [
+        "killing-edge",
+        "검 필살 보정과 전투 기술 활용"
+      ],
+      [
+        "flyssa",
+        "높은 물리 방어를 가진 적에게 교체"
+      ]
+    ],
+    "에스메랄다": [
+      [
+        "grasitha",
+        "본인만 쓸 수 있는 전투 기술을 갖춘 주력"
+      ],
+      [
+        "sinza-s-trident",
+        "고유 작살의 투척 전투 기술용"
+      ]
+    ],
+    "카타냐": [
+      [
+        "levin-sword",
+        "마법검 기준판으로 육성한 경우 고수비 적 공략"
+      ],
+      [
+        "guandao",
+        "가벼운 물리 창으로 공격 속도·명중 보존"
+      ]
+    ],
+    "리네": [
+      [
+        "da-mina-spear",
+        "창 전투 기술로 전열 보조"
+      ],
+      [
+        "physic",
+        "백마술B. 떨어진 아군 회복"
+      ]
+    ],
+    "시로코": [
+      [
+        "levin-sword",
+        "검·마법 혼합 육성의 마법검 주력"
+      ],
+      [
+        "thoron",
+        "흑마술A. 높은 마력으로 원거리 공격"
+      ]
+    ],
+    "파비오": [
+      [
+        "death",
+        "흑마술B. 원거리 공격. 무게·공격 속도 확인"
+      ],
+      [
+        "luna",
+        "흑마술A. 상대의 마법 방어를 공략할 선택지"
+      ]
+    ],
+    "단테": [
+      [
+        "thoron",
+        "흑마술A. 기본 공격 마법"
+      ],
+      [
+        "cutting-gale",
+        "흑마술B. 적·무게에 맞춰 고르는 바람 마법"
+      ]
+    ],
+    "티아라": [
+      [
+        "mini-bow",
+        "춤이 필요 없는 턴의1~2칸 보조"
+      ],
+      [
+        "venin-bow",
+        "춤이 필요 없는 턴에 독을 노리는 선택"
+      ]
+    ],
+    "울턴드": [
+      [
+        "assal",
+        "창으로 전열의 공격 보조"
+      ],
+      [
+        "seraphim",
+        "백마술C. 명마 특효 공격"
+      ]
+    ],
+    "피터르": [
+      [
+        "longbow",
+        "활 전투 기술 사거리 보정과 저격 병행"
+      ],
+      [
+        "da-mina-bow",
+        "전투 기술 명중 보정의 일반 주력"
+      ]
+    ],
+    "이니오니": [
+      [
+        "war-bow",
+        "힘 보정과 함께 단발 화력 확보. 명중 확인"
+      ],
+      [
+        "horsekiller-bow",
+        "기마 적을 상대하는 특효 선택"
+      ]
+    ],
+    "우술라": [
+      [
+        "da-mina-bow",
+        "활 전투 기술 명중 보정의 기본 주력"
+      ],
+      [
+        "flyssa",
+        "중갑 상대 물리검 보조. 마력 육성 불필요"
+      ]
+    ],
+    "알렉산드라": [
+      [
+        "levin-sword",
+        "기존 마법검 기준판으로 고수비 적 공략"
+      ],
+      [
+        "short-spear",
+        "물리 투창으로 적의 방어·반격에 대응"
+      ]
+    ],
+    "로레타": [
+      [
+        "da-mina-bow",
+        "명중을 보강해 난사·활 전투 기술 사용"
+      ],
+      [
+        "mini-bow",
+        "사거리1~2 · 근접 반격이 필요한 활 전투"
+      ]
+    ],
+    "소피아": [
+      [
+        "physic",
+        "백마술B. 원격 회복이 우선"
+      ],
+      [
+        "nosferatu",
+        "백마술C. 공격이 필요한 턴의 흡수 마법"
+      ]
+    ],
+    "올림피아": [
+      [
+        "physic",
+        "백마술B. 원격 회복"
+      ],
+      [
+        "silence",
+        "백마술A. 위험한 마법 적 봉쇄"
+      ]
+    ],
+    "피아나": [
+      [
+        "seraphim",
+        "백마술C. 명마 상대 공격"
+      ],
+      [
+        "rescue",
+        "백마술S. 아군을 끌어내는 구조"
+      ]
+    ],
+    "아나톨리아": [
+      [
+        "thoron",
+        "흑마술A. 빠른 원거리 공격"
+      ],
+      [
+        "excalibur",
+        "흑마술S까지 준비한 뒤의 상위 공격 마법"
+      ]
+    ],
+    "오르헬": [
+      [
+        "seraphim",
+        "백마술D. 명마 상대 공격"
+      ],
+      [
+        "physic",
+        "백마술C. 원격 회복"
+      ]
+    ],
+    "홍화": [
+      [
+        "rescue",
+        "백마술B. 아군 구조"
+      ],
+      [
+        "warp",
+        "백마술S. 아군을 원하는 위치로 이동"
+      ]
+    ],
+    "타리문": [
+      [
+        "thoron",
+        "흑마술A. 마력 주력 공격"
+      ],
+      [
+        "cleansing-blade",
+        "명부 적과 검 공격이 필요한 상황의 보조"
+      ]
+    ],
+    "트로이아": [
+      [
+        "zerberus",
+        "본인 전용 휴대 화기. 마법 피해·잔탄 확인"
+      ],
+      [
+        "da-mina-gauntlets",
+        "힘을 쓰는 일반 격투·전투 기술"
+      ]
+    ],
+    "아스완": [
+      [
+        "idah-s-bow",
+        "합류 지참 활의 전투 기술 활용"
+      ],
+      [
+        "hunter-s-bow",
+        "야수 상대의 명중·유효를 비교해 교체"
+      ]
+    ],
+    "릴리안": [
+      [
+        "da-mina-bow",
+        "반격 불가 위치와 예측 명중100%를 확인해 일반 사격"
+      ],
+      [
+        "longbow",
+        "반격 범위 밖 사격 · 거리에 따른 실제 명중은 예측창 확인"
+      ]
+    ]
+  },
+  "nameNotes": "한국어 도감에서 확인한 품목명 사용. 원문 식별자·일문명·주소는 유지. 그림은 원문의 무기/주보/마법 종류 아이콘이며 품목마다 별도 그림이 있다고 추정하지 않음",
+  "limits": [
+    "대표2개는 역할을 보여 주는 추천이며 소지품2칸 제한이나 나머지 무기 금지를 뜻하지 않음",
+    "마법은 구입 장비와 구별하며 각 인물의 실제 학습 등급을 먼저 충족",
+    "희귀 무기의 추가 복사본을 보유했다고 가정하지 않음. 미카엘라와 베르트랑은 교대 편성의 동일 도끼 배정",
+    "강화 단계·현재 보유량·실제 능력·공격 속도는 사용자 저장 데이터에서 확인",
+    "이 결과는 대표 무기 표시만 보완하며 과정의 구매·훈련·체크를 자동 변경하지 않음"
+  ],
+  "items": {
+    "shining-spear": {
+      "name": "소렐의 휘창",
+      "japanese": "ソレルの輝槍",
+      "skill": "창술",
+      "kind": "무기",
+      "rank": "A",
+      "source": "https://game8.jp/fe-banshisenko/822164",
+      "listSource": "https://game8.jp/fe-banshisenko/817514",
+      "imageSource": "https://img.game8.jp/13027786/4d3457237d82bbd64dc433323308eef1.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-1474739a52a9.webp",
+      "nameSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/shining-spear/"
+    },
+    "assal": {
+      "name": "아살",
+      "japanese": "聖槍アッサル",
+      "skill": "창술",
+      "kind": "무기",
+      "rank": "D",
+      "source": "https://game8.jp/fe-banshisenko/819509",
+      "listSource": "https://game8.jp/fe-banshisenko/817514",
+      "imageSource": "https://img.game8.jp/13027786/4d3457237d82bbd64dc433323308eef1.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-1474739a52a9.webp"
+    },
+    "answerer-arisen": {
+      "name": "강화 앤서러",
+      "japanese": "アンスウェラー改",
+      "skill": "검술",
+      "kind": "무기",
+      "rank": "E",
+      "source": "https://game8.jp/fe-banshisenko/822268",
+      "listSource": "https://game8.jp/fe-banshisenko/817514",
+      "imageSource": "https://img.game8.jp/13027785/83b67bd5599aa44038f3840b5d18b078.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-3e8974379abc.webp"
+    },
+    "cleansing-blade": {
+      "name": "재계의 검",
+      "japanese": "清めの剣",
+      "skill": "검술",
+      "kind": "무기",
+      "rank": "E",
+      "source": "https://game8.jp/fe-banshisenko/819533",
+      "listSource": "https://game8.jp/fe-banshisenko/817514",
+      "imageSource": "https://img.game8.jp/13027785/83b67bd5599aa44038f3840b5d18b078.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-3e8974379abc.webp"
+    },
+    "star-spear": {
+      "name": "아우로라의 성창",
+      "japanese": "アウロラの星槍",
+      "skill": "창술",
+      "kind": "무기",
+      "rank": "C",
+      "source": "https://game8.jp/fe-banshisenko/819504",
+      "listSource": "https://game8.jp/fe-banshisenko/817514",
+      "imageSource": "https://img.game8.jp/13027786/4d3457237d82bbd64dc433323308eef1.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-1474739a52a9.webp",
+      "nameSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/star-spear/"
+    },
+    "ridersbane": {
+      "name": "나이트 킬러",
+      "japanese": "ナイトキラー",
+      "skill": "창술",
+      "kind": "무기",
+      "rank": "C",
+      "source": "https://game8.jp/fe-banshisenko/819505",
+      "listSource": "https://game8.jp/fe-banshisenko/817514",
+      "imageSource": "https://img.game8.jp/13027786/4d3457237d82bbd64dc433323308eef1.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-1474739a52a9.webp"
+    },
+    "mahadu-s-spear": {
+      "name": "마하마두의 창",
+      "japanese": "マハマドゥの槍",
+      "skill": "창술",
+      "kind": "무기",
+      "rank": "E",
+      "source": "https://game8.jp/fe-banshisenko/819513",
+      "listSource": "https://game8.jp/fe-banshisenko/817514",
+      "imageSource": "https://img.game8.jp/13027786/4d3457237d82bbd64dc433323308eef1.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-1474739a52a9.webp",
+      "nameSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/mahadus-spear/"
+    },
+    "pilum": {
+      "name": "슬렌드 스피어",
+      "japanese": "スレンドスピア",
+      "skill": "창술",
+      "kind": "무기",
+      "rank": "B",
+      "source": "https://game8.jp/fe-banshisenko/819501",
+      "listSource": "https://game8.jp/fe-banshisenko/817514",
+      "imageSource": "https://img.game8.jp/13027786/4d3457237d82bbd64dc433323308eef1.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-1474739a52a9.webp"
+    },
+    "kalla-s-bow": {
+      "name": "칼라의 활",
+      "japanese": "カーラの弓",
+      "skill": "궁술",
+      "kind": "무기",
+      "rank": "A",
+      "source": "https://game8.jp/fe-banshisenko/822280",
+      "listSource": "https://game8.jp/fe-banshisenko/817514",
+      "imageSource": "https://img.game8.jp/13027787/4ea24420373cb90207e80928b18eea52.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-d36f4cad9901.webp"
+    },
+    "zalmoxis": {
+      "name": "잘목시스",
+      "japanese": "ザルモクシス",
+      "skill": "도끼술",
+      "kind": "무기",
+      "rank": "E",
+      "source": "https://game8.jp/fe-banshisenko/819493",
+      "listSource": "https://game8.jp/fe-banshisenko/817514",
+      "imageSource": "https://img.game8.jp/13027788/6460258a43d88b35ad5128524e6f381f.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-10bcdf2e5f08.webp",
+      "nameSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/zalmoxis/"
+    },
+    "counter-gauntlets": {
+      "name": "반격의 건틀릿",
+      "japanese": "反撃の籠手",
+      "skill": "격투술",
+      "kind": "무기",
+      "rank": "C",
+      "source": "https://game8.jp/fe-banshisenko/819460",
+      "listSource": "https://game8.jp/fe-banshisenko/817514",
+      "imageSource": "https://img.game8.jp/13027784/57c2531e2f6370f38a1cb0c44010e326.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-d377c1b7902a.webp"
+    },
+    "da-mina-gauntlets": {
+      "name": "다 미나의 건틀릿",
+      "japanese": "ダ・ミナの籠手",
+      "skill": "격투술",
+      "kind": "무기",
+      "rank": "C",
+      "source": "https://game8.jp/fe-banshisenko/819463",
+      "listSource": "https://game8.jp/fe-banshisenko/817514",
+      "imageSource": "https://img.game8.jp/13027784/57c2531e2f6370f38a1cb0c44010e326.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-d377c1b7902a.webp"
+    },
+    "qiankun-circles": {
+      "name": "건곤권",
+      "japanese": "乾坤圏",
+      "skill": "격투술",
+      "kind": "무기",
+      "rank": "D",
+      "source": "https://game8.jp/fe-banshisenko/819459",
+      "listSource": "https://game8.jp/fe-banshisenko/817514",
+      "imageSource": "https://img.game8.jp/13027784/57c2531e2f6370f38a1cb0c44010e326.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-d377c1b7902a.webp"
+    },
+    "ursa-s-right-claw": {
+      "name": "큰 곰의 오른 발톱",
+      "japanese": "大熊の右鉤爪",
+      "skill": "격투술",
+      "kind": "무기",
+      "rank": "B",
+      "source": "https://game8.jp/fe-banshisenko/819458",
+      "listSource": "https://game8.jp/fe-banshisenko/817514",
+      "imageSource": "https://img.game8.jp/13028687/38afa98f0550d42e280a56b1e8cd2f41.webp/show",
+      "cursed": true,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-fffc003ab338.webp"
+    },
+    "killing-edge": {
+      "name": "킬 소드",
+      "japanese": "キルソード",
+      "skill": "검술",
+      "kind": "무기",
+      "rank": "C",
+      "source": "https://game8.jp/fe-banshisenko/819523",
+      "listSource": "https://game8.jp/fe-banshisenko/817514",
+      "imageSource": "https://img.game8.jp/13027785/83b67bd5599aa44038f3840b5d18b078.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-3e8974379abc.webp"
+    },
+    "flyssa": {
+      "name": "플리사",
+      "japanese": "フリッサ",
+      "skill": "검술",
+      "kind": "무기",
+      "rank": "C",
+      "source": "https://game8.jp/fe-banshisenko/819522",
+      "listSource": "https://game8.jp/fe-banshisenko/817514",
+      "imageSource": "https://img.game8.jp/13027785/83b67bd5599aa44038f3840b5d18b078.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-3e8974379abc.webp"
+    },
+    "grasitha": {
+      "name": "마창 그라시더",
+      "japanese": "魔槍グラシーダ",
+      "skill": "창술",
+      "kind": "무기",
+      "rank": "B",
+      "source": "https://game8.jp/fe-banshisenko/819500",
+      "listSource": "https://game8.jp/fe-banshisenko/817514",
+      "imageSource": "https://img.game8.jp/13027786/4d3457237d82bbd64dc433323308eef1.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-1474739a52a9.webp"
+    },
+    "sinza-s-trident": {
+      "name": "신자의 작살",
+      "japanese": "シンザのモリ",
+      "skill": "창술",
+      "kind": "무기",
+      "rank": "E",
+      "source": "https://game8.jp/fe-banshisenko/819515",
+      "listSource": "https://game8.jp/fe-banshisenko/817514",
+      "imageSource": "https://img.game8.jp/13027786/4d3457237d82bbd64dc433323308eef1.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-1474739a52a9.webp"
+    },
+    "levin-sword": {
+      "name": "선더 소드",
+      "japanese": "サンダーソード",
+      "skill": "검술",
+      "kind": "무기",
+      "rank": "C",
+      "source": "https://game8.jp/fe-banshisenko/819521",
+      "listSource": "https://game8.jp/fe-banshisenko/817514",
+      "imageSource": "https://img.game8.jp/13027785/83b67bd5599aa44038f3840b5d18b078.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-3e8974379abc.webp"
+    },
+    "guandao": {
+      "name": "언월도",
+      "japanese": "偃月刀",
+      "skill": "창술",
+      "kind": "무기",
+      "rank": "D",
+      "source": "https://game8.jp/fe-banshisenko/819502",
+      "listSource": "https://game8.jp/fe-banshisenko/817514",
+      "imageSource": "https://img.game8.jp/13027786/4d3457237d82bbd64dc433323308eef1.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-1474739a52a9.webp"
+    },
+    "da-mina-spear": {
+      "name": "다 미나의 창",
+      "japanese": "ダ・ミナの槍",
+      "skill": "창술",
+      "kind": "무기",
+      "rank": "C",
+      "source": "https://game8.jp/fe-banshisenko/819507",
+      "listSource": "https://game8.jp/fe-banshisenko/817514",
+      "imageSource": "https://img.game8.jp/13027786/4d3457237d82bbd64dc433323308eef1.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-1474739a52a9.webp"
+    },
+    "short-spear": {
+      "name": "쇼트 스피어",
+      "japanese": "ショートスピア",
+      "skill": "창술",
+      "kind": "무기",
+      "rank": "C",
+      "source": "https://game8.jp/fe-banshisenko/819506",
+      "listSource": "https://game8.jp/fe-banshisenko/817514",
+      "imageSource": "https://img.game8.jp/13027786/4d3457237d82bbd64dc433323308eef1.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-1474739a52a9.webp"
+    },
+    "hunter-s-bow": {
+      "name": "수렵의 활",
+      "japanese": "獣狩りの弓",
+      "skill": "궁술",
+      "kind": "무기",
+      "rank": "D",
+      "source": "https://game8.jp/fe-banshisenko/819477",
+      "listSource": "https://game8.jp/fe-banshisenko/817514",
+      "imageSource": "https://img.game8.jp/13027787/4ea24420373cb90207e80928b18eea52.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-d36f4cad9901.webp"
+    },
+    "longbow": {
+      "name": "롱 보우",
+      "japanese": "ロングボウ",
+      "skill": "궁술",
+      "kind": "무기",
+      "rank": "C",
+      "source": "https://game8.jp/fe-banshisenko/819474",
+      "listSource": "https://game8.jp/fe-banshisenko/817514",
+      "imageSource": "https://img.game8.jp/13027787/4ea24420373cb90207e80928b18eea52.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-d36f4cad9901.webp"
+    },
+    "da-mina-bow": {
+      "name": "다 미나의 활",
+      "japanese": "ダ・ミナの弓",
+      "skill": "궁술",
+      "kind": "무기",
+      "rank": "C",
+      "source": "https://game8.jp/fe-banshisenko/819475",
+      "listSource": "https://game8.jp/fe-banshisenko/817514",
+      "imageSource": "https://img.game8.jp/13027787/4ea24420373cb90207e80928b18eea52.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-d36f4cad9901.webp"
+    },
+    "war-bow": {
+      "name": "배틀 보우",
+      "japanese": "バトルボウ",
+      "skill": "궁술",
+      "kind": "무기",
+      "rank": "C",
+      "source": "https://game8.jp/fe-banshisenko/819472",
+      "listSource": "https://game8.jp/fe-banshisenko/817514",
+      "imageSource": "https://img.game8.jp/13027787/4ea24420373cb90207e80928b18eea52.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-d36f4cad9901.webp"
+    },
+    "horsekiller-bow": {
+      "name": "말 킬러의 활",
+      "japanese": "馬殺しの弓",
+      "skill": "궁술",
+      "kind": "무기",
+      "rank": "C",
+      "source": "https://game8.jp/fe-banshisenko/819471",
+      "listSource": "https://game8.jp/fe-banshisenko/817514",
+      "imageSource": "https://img.game8.jp/13027787/4ea24420373cb90207e80928b18eea52.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-d36f4cad9901.webp",
+      "nameSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/horsekiller-bow/"
+    },
+    "mini-bow": {
+      "name": "미니 보우",
+      "japanese": "ショートボウ",
+      "skill": "궁술",
+      "kind": "무기",
+      "rank": "D",
+      "source": "https://game8.jp/fe-banshisenko/822149",
+      "listSource": "https://game8.jp/fe-banshisenko/817514",
+      "imageSource": "https://img.game8.jp/13027787/4ea24420373cb90207e80928b18eea52.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-d36f4cad9901.webp"
+    },
+    "venin-bow": {
+      "name": "독의 활",
+      "japanese": "毒の弓",
+      "skill": "궁술",
+      "kind": "무기",
+      "rank": "D",
+      "source": "https://game8.jp/fe-banshisenko/819476",
+      "listSource": "https://game8.jp/fe-banshisenko/817514",
+      "imageSource": "https://img.game8.jp/13027787/4ea24420373cb90207e80928b18eea52.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-d36f4cad9901.webp"
+    },
+    "idah-s-bow": {
+      "name": "이데아의 활",
+      "japanese": "イデアの弓",
+      "skill": "궁술",
+      "kind": "무기",
+      "rank": "B",
+      "source": "https://game8.jp/fe-banshisenko/822160",
+      "listSource": "https://game8.jp/fe-banshisenko/817514",
+      "imageSource": "https://img.game8.jp/13027787/4ea24420373cb90207e80928b18eea52.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-d36f4cad9901.webp",
+      "nameSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/idahs-bow/"
+    },
+    "zerberus": {
+      "name": "체르베루스",
+      "japanese": "ツェルベルス",
+      "skill": "격투술",
+      "kind": "무기",
+      "rank": "A",
+      "source": "https://game8.jp/fe-banshisenko/819457",
+      "listSource": "https://game8.jp/fe-banshisenko/817514",
+      "imageSource": "https://img.game8.jp/13027784/57c2531e2f6370f38a1cb0c44010e326.webp/show",
+      "cursed": false,
+      "restrictedTo": [
+        "트로이아"
+      ],
+      "icon": "assets/weapons/item-d377c1b7902a.webp",
+      "nameSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/zerberus/"
+    },
+    "thoron": {
+      "name": "트론",
+      "japanese": "トロン",
+      "skill": "흑마술",
+      "kind": "마법",
+      "rank": null,
+      "source": "https://game8.jp/fe-banshisenko/818772",
+      "listSource": "https://game8.jp/fe-banshisenko/817283",
+      "imageSource": "https://img.game8.jp/13007556/b9ebbf92f619ab66992d27ee53752a83.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-08c97b353f3f.webp"
+    },
+    "cutting-gale": {
+      "name": "셰이버",
+      "japanese": "シェイバー",
+      "skill": "흑마술",
+      "kind": "마법",
+      "rank": null,
+      "source": "https://game8.jp/fe-banshisenko/818778",
+      "listSource": "https://game8.jp/fe-banshisenko/817283",
+      "imageSource": "https://img.game8.jp/13007556/b9ebbf92f619ab66992d27ee53752a83.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-08c97b353f3f.webp"
+    },
+    "death": {
+      "name": "데스",
+      "japanese": "デスΓ",
+      "skill": "흑마술",
+      "kind": "마법",
+      "rank": null,
+      "source": "https://game8.jp/fe-banshisenko/818774",
+      "listSource": "https://game8.jp/fe-banshisenko/817283",
+      "imageSource": "https://img.game8.jp/13007556/b9ebbf92f619ab66992d27ee53752a83.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-08c97b353f3f.webp"
+    },
+    "luna": {
+      "name": "루나",
+      "japanese": "ルナΛ",
+      "skill": "흑마술",
+      "kind": "마법",
+      "rank": null,
+      "source": "https://game8.jp/fe-banshisenko/818768",
+      "listSource": "https://game8.jp/fe-banshisenko/817283",
+      "imageSource": "https://img.game8.jp/13007556/b9ebbf92f619ab66992d27ee53752a83.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-08c97b353f3f.webp"
+    },
+    "excalibur": {
+      "name": "엑스칼리버",
+      "japanese": "エクスカリバー",
+      "skill": "흑마술",
+      "kind": "마법",
+      "rank": null,
+      "source": "https://game8.jp/fe-banshisenko/826987",
+      "listSource": "https://game8.jp/fe-banshisenko/817283",
+      "imageSource": "https://img.game8.jp/13007556/b9ebbf92f619ab66992d27ee53752a83.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-08c97b353f3f.webp"
+    },
+    "physic": {
+      "name": "리브로",
+      "japanese": "リブロー",
+      "skill": "백마술",
+      "kind": "마법",
+      "rank": null,
+      "source": "https://game8.jp/fe-banshisenko/818754",
+      "listSource": "https://game8.jp/fe-banshisenko/817283",
+      "imageSource": "https://img.game8.jp/13007575/9cfcd74aa7a79f2d2e0dbdfa3e5b5258.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-cae5fd8b4ffa.webp"
+    },
+    "nosferatu": {
+      "name": "리자이어",
+      "japanese": "リザイア",
+      "skill": "백마술",
+      "kind": "마법",
+      "rank": null,
+      "source": "https://game8.jp/fe-banshisenko/818755",
+      "listSource": "https://game8.jp/fe-banshisenko/817283",
+      "imageSource": "https://img.game8.jp/13007575/9cfcd74aa7a79f2d2e0dbdfa3e5b5258.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-cae5fd8b4ffa.webp"
+    },
+    "seraphim": {
+      "name": "엔젤",
+      "japanese": "エンジェル",
+      "skill": "백마술",
+      "kind": "마법",
+      "rank": null,
+      "source": "https://game8.jp/fe-banshisenko/818766",
+      "listSource": "https://game8.jp/fe-banshisenko/817283",
+      "imageSource": "https://img.game8.jp/13007575/9cfcd74aa7a79f2d2e0dbdfa3e5b5258.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-cae5fd8b4ffa.webp"
+    },
+    "rescue": {
+      "name": "레스큐",
+      "japanese": "レスキュー",
+      "skill": "백마술",
+      "kind": "마법",
+      "rank": null,
+      "source": "https://yuphastemple.com/?item=rescue",
+      "listSource": "https://game8.jp/fe-banshisenko/817283",
+      "imageSource": "https://img.game8.jp/13007575/9cfcd74aa7a79f2d2e0dbdfa3e5b5258.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-cae5fd8b4ffa.webp"
+    },
+    "warp": {
+      "name": "워프",
+      "japanese": "ワープ",
+      "skill": "백마술",
+      "kind": "마법",
+      "rank": null,
+      "source": "https://game8.jp/fe-banshisenko/818752",
+      "listSource": "https://game8.jp/fe-banshisenko/817283",
+      "imageSource": "https://img.game8.jp/13007575/9cfcd74aa7a79f2d2e0dbdfa3e5b5258.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-cae5fd8b4ffa.webp"
+    },
+    "silence": {
+      "name": "사일런스",
+      "japanese": "サイレス",
+      "skill": "백마술",
+      "kind": "마법",
+      "rank": null,
+      "source": "https://game8.jp/fe-banshisenko/818764",
+      "listSource": "https://game8.jp/fe-banshisenko/817283",
+      "imageSource": "https://img.game8.jp/13007575/9cfcd74aa7a79f2d2e0dbdfa3e5b5258.webp/show",
+      "cursed": false,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-cae5fd8b4ffa.webp"
+    },
+    "veroquine": {
+      "name": "사검 벨로키네",
+      "japanese": "邪剣ヴェロキネ",
+      "skill": "검술",
+      "kind": "무기",
+      "rank": "B",
+      "source": "https://game8.jp/fe-banshisenko/819519",
+      "listSource": "https://game8.jp/fe-banshisenko/817514",
+      "imageSource": "https://img.game8.jp/13028686/bea60b6f357a0e5a401cf0a557bd03a6.webp/show",
+      "cursed": true,
+      "curse": 2,
+      "restrictedTo": [],
+      "icon": "assets/weapons/item-ea9379ad0d17.webp",
+      "nameSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/veroquine/",
+      "requirements": [
+        {
+          "skill": "검술",
+          "rank": "B"
+        },
+        {
+          "skill": "도끼술",
+          "rank": "C"
+        }
+      ]
+    }
+  },
+  "nameSources": {
+    "shining-spear": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/shining-spear/",
+    "star-spear": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/star-spear/",
+    "mahadu-s-spear": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/mahadus-spear/",
+    "zalmoxis": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/zalmoxis/",
+    "horsekiller-bow": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/horsekiller-bow/",
+    "idah-s-bow": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/idahs-bow/",
+    "zerberus": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/zerberus/",
+    "veroquine": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/veroquine/"
+  }
+}
