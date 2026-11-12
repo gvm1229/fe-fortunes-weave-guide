@@ -1,0 +1,38 @@
+{
+  "cai": {
+    "path": "assets/design/emblems/cai.webp",
+    "width": 427,
+    "height": 334,
+    "source": "https://www.nintendo.com/kr/games/switch2/aacsa/assets/data/webp/character/clan_1_pc.webp",
+    "page": "https://www.nintendo.com/kr/games/switch2/aacsa/character/index.html",
+    "sha256": "8ef1a6c7129a92599b9b9b535498ba564a1425cd4ed63cb02d50950de69c4e60",
+    "policy": "공식 원본 바이트 그대로. 편집·변환·생성 없음."
+  },
+  "dietrich": {
+    "path": "assets/design/emblems/dietrich.webp",
+    "width": 427,
+    "height": 358,
+    "source": "https://www.nintendo.com/kr/games/switch2/aacsa/assets/data/webp/character/clan_2_pc.webp",
+    "page": "https://www.nintendo.com/kr/games/switch2/aacsa/character/index.html",
+    "sha256": "07071b55e0f2d5959c8c03ac42b5eb9950d4811715dd17e3aa0e5d3a0f795cd8",
+    "policy": "공식 원본 바이트 그대로. 편집·변환·생성 없음."
+  },
+  "theodora": {
+    "path": "assets/design/emblems/theodora.webp",
+    "width": 459,
+    "height": 338,
+    "source": "https://www.nintendo.com/kr/games/switch2/aacsa/assets/data/webp/character/clan_3_pc.webp",
+    "page": "https://www.nintendo.com/kr/games/switch2/aacsa/character/index.html",
+    "sha256": "de9b685912de5f68e3b290b7a82dc1775e7cc9201f10ec0ec7009fe1a83a6d1c",
+    "policy": "공식 원본 바이트 그대로. 편집·변환·생성 없음."
+  },
+  "leda": {
+    "path": "assets/design/emblems/leda.webp",
+    "width": 379,
+    "height": 342,
+    "source": "https://www.nintendo.com/kr/games/switch2/aacsa/assets/data/webp/character/clan_4_pc.webp",
+    "page": "https://www.nintendo.com/kr/games/switch2/aacsa/character/index.html",
+    "sha256": "fdc1e4e399770d0b5b2e9246781c859c3e30e01b6dbb07932b41b11a47af167c",
+    "policy": "공식 원본 바이트 그대로. 편집·변환·생성 없음."
+  }
+}

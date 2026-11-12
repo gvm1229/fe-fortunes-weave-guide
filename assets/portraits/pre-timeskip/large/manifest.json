@@ -1,0 +1,38 @@
+{
+  "cai": {
+    "path": "assets/portraits/pre-timeskip/large/cai.webp",
+    "width": 1546,
+    "height": 1510,
+    "source": "https://www.nintendo.com/kr/games/switch2/aacsa/assets/data/webp/character/main/img_chara_w1_pc.webp",
+    "page": "https://www.nintendo.com/kr/games/switch2/aacsa/character/index.html",
+    "sha256": "b86467dc807fd6f356917b3f7f4f34a22b115f7493050c9830aa0fa287b42e1b",
+    "policy": "공식 원본 바이트 그대로. 편집·변환·생성 없음."
+  },
+  "dietrich": {
+    "path": "assets/portraits/pre-timeskip/large/dietrich.webp",
+    "width": 1774,
+    "height": 1712,
+    "source": "https://www.nintendo.com/kr/games/switch2/aacsa/assets/data/webp/character/main/img_chara_w2_pc.webp",
+    "page": "https://www.nintendo.com/kr/games/switch2/aacsa/character/index.html",
+    "sha256": "a4831af48227dc775be219f9597601066219d60f3a46c70815ca4fa840132e72",
+    "policy": "공식 원본 바이트 그대로. 편집·변환·생성 없음."
+  },
+  "theodora": {
+    "path": "assets/portraits/pre-timeskip/large/theodora.webp",
+    "width": 1698,
+    "height": 1692,
+    "source": "https://www.nintendo.com/kr/games/switch2/aacsa/assets/data/webp/character/main/img_chara_w3_pc.webp",
+    "page": "https://www.nintendo.com/kr/games/switch2/aacsa/character/index.html",
+    "sha256": "3e99bac5a82c0ce9c4f0c8177dc620f1017d9534d5e3ba6d37c075a8f4098864",
+    "policy": "공식 원본 바이트 그대로. 편집·변환·생성 없음."
+  },
+  "leda": {
+    "path": "assets/portraits/pre-timeskip/large/leda.webp",
+    "width": 964,
+    "height": 1562,
+    "source": "https://www.nintendo.com/kr/games/switch2/aacsa/assets/data/webp/character/main/img_chara_w4_pc.webp",
+    "page": "https://www.nintendo.com/kr/games/switch2/aacsa/character/index.html",
+    "sha256": "38436b93eb933c20eebecb031841d22173a136c961d612998d58c6f673db2ede",
+    "policy": "공식 원본 바이트 그대로. 편집·변환·생성 없음."
+  }
+}

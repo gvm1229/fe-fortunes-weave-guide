@@ -1,0 +1,226 @@
+{
+  "host": "Codex / Windows / Chrome",
+  "base": "http://localhost:3000",
+  "rows": [
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "light",
+      "tiles": [
+        {
+          "route": "kai",
+          "tile": [
+            330,
+            700
+          ],
+          "hero": [
+            330,
+            471.21875
+          ],
+          "fit": "cover"
+        },
+        {
+          "route": "dietrich",
+          "tile": [
+            330,
+            700
+          ],
+          "hero": [
+            330,
+            471.21875
+          ],
+          "fit": "cover"
+        },
+        {
+          "route": "theodora",
+          "tile": [
+            330,
+            700
+          ],
+          "hero": [
+            330,
+            471.21875
+          ],
+          "fit": "cover"
+        },
+        {
+          "route": "leda",
+          "tile": [
+            330,
+            700
+          ],
+          "hero": [
+            330,
+            471.21875
+          ],
+          "fit": "cover"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "dark",
+      "tiles": [
+        {
+          "route": "kai",
+          "tile": [
+            330,
+            700
+          ],
+          "hero": [
+            330,
+            471.21875
+          ],
+          "fit": "cover"
+        },
+        {
+          "route": "dietrich",
+          "tile": [
+            330,
+            700
+          ],
+          "hero": [
+            330,
+            471.21875
+          ],
+          "fit": "cover"
+        },
+        {
+          "route": "theodora",
+          "tile": [
+            330,
+            700
+          ],
+          "hero": [
+            330,
+            471.21875
+          ],
+          "fit": "cover"
+        },
+        {
+          "route": "leda",
+          "tile": [
+            330,
+            700
+          ],
+          "hero": [
+            330,
+            471.21875
+          ],
+          "fit": "cover"
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "theme": "light",
+      "tiles": [
+        {
+          "route": "kai",
+          "tile": [
+            165.5,
+            304
+          ],
+          "hero": [
+            165.5,
+            137.234375
+          ],
+          "fit": "cover"
+        },
+        {
+          "route": "dietrich",
+          "tile": [
+            165.5,
+            304
+          ],
+          "hero": [
+            165.5,
+            137.234375
+          ],
+          "fit": "cover"
+        },
+        {
+          "route": "theodora",
+          "tile": [
+            165.5,
+            304
+          ],
+          "hero": [
+            165.5,
+            137.234375
+          ],
+          "fit": "cover"
+        },
+        {
+          "route": "leda",
+          "tile": [
+            165.5,
+            304
+          ],
+          "hero": [
+            165.5,
+            137.234375
+          ],
+          "fit": "cover"
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "theme": "dark",
+      "tiles": [
+        {
+          "route": "kai",
+          "tile": [
+            165.5,
+            304
+          ],
+          "hero": [
+            165.5,
+            137.234375
+          ],
+          "fit": "cover"
+        },
+        {
+          "route": "dietrich",
+          "tile": [
+            165.5,
+            304
+          ],
+          "hero": [
+            165.5,
+            137.234375
+          ],
+          "fit": "cover"
+        },
+        {
+          "route": "theodora",
+          "tile": [
+            165.5,
+            304
+          ],
+          "hero": [
+            165.5,
+            137.234375
+          ],
+          "fit": "cover"
+        },
+        {
+          "route": "leda",
+          "tile": [
+            165.5,
+            304
+          ],
+          "hero": [
+            165.5,
+            137.234375
+          ],
+          "fit": "cover"
+        }
+      ]
+    }
+  ]
+}
