@@ -12,7 +12,7 @@
 | 준비·구매·문서 | 서버에서 루트·부별 선택 후 전달 | 다른 루트 자료 노출 방지. 전체 원문은 팀 화면의 전체 참고에서 제공 |
 | 다음 할 일 | 문서 흐름 안에 배치 | 고정 막대와 장 제목 겹침 방지 |
 | 체크 | 개별 false > 묶음 상속, inheritLegacy:false 존중 | 원본 checks.ts/check-state.ts의 실제 동작 보존 |
-| 문장 자산 | 중립 Shield | assets에서 emblem/crest 자산을 찾지 못함. 가짜 공식 그림 생성 없음 |
+| 문장 자산 | 사용자 제공 원본의 네 사분면을 자른 문장 | `assets/design/route-emblems-source.webp`와 §3의 위치를 그대로 사용 |
 
 ## 오래된 루트 전환 문구
 
@@ -41,3 +41,18 @@
 주요 행동·인물 목표·영입·구매·팀은 JSON 정본에서 읽는다. 복잡한 기존 보충 설명은 생성 화면을 의미 있는 요소의 나무 구조로 해독한 `display-parity.json`으로 보존하며 HTML을 직접 삽입하지 않는다. Markdown은 정본 파일을 그대로 읽는다.
 
 검사는 원본 파일 해시, 9단계의 표시 블록 수, 행동·체크 ID·영입·부별 인물 수·문서·미디어 존재를 증명한다. 원본의 모든 게임 사실이 게임 안에서 맞는지는 이번 이전 작업에서 새로 실측하지 않았다.
+
+## 2026-11-13 원본 다시 동기화
+
+현재 Windows에서 `npm run transfer`와 `npm run derive:checklist`를 실제 실행했다. 원본 저장소는 읽기만 했다. 원본 367파일(자료 JSON 49개, 문서 318개)을 다시 복사했으며 전후 SHA-256(파일 내용의 지문)이 달라진 원본 문서는 아래 4개다. 처음 3개를 반영한 뒤 최종 검사 중 원본 interface 문서가 한 번 더 바뀌어 다시 동기화했다.
+
+| 새로 반영한 파일 | 현재 원본 SHA-256 |
+|---|---|
+| `content/notes/knowledge/guide-workflow.md` | `72c547215738a1c3f8578d792f88b3c552924e0291a9035f1caf7a487926376a` |
+| `content/notes/knowledge/interface.md` | `c6650db6de166c3b3e933241873f8fbfd84d657f601909d0438f7f9f66a801de` |
+| `content/notes/knowledge/sources.md` | `44eb042a525468a8232076b2cc926bb3d76e405e28f1ddb5590a0072fa5d10a6` |
+| `content/notes/plan.md` | `1ebd07a2334da68ef0c449c426b50f0c84a6010588c5959ee233995b4418dac8` |
+
+`content/transfer-manifest.json`도 새 해시로 갱신했다. `content/display-parity.json`, `content/check-ids.json`, `content/checklist-seed.json`, `content/derived/checklist.json`은 재생성했지만 내용 지문은 이전과 같았다. 게임 행동·체크 기록을 새 사실로 바꾸지 않았다.
+
+`npm run verify`에서 367파일의 현재 원본·복사본·기록 해시 일치를 확인했다. 추가로 62개 루트·부·장과 각 묶음의 그림·위치 버튼을 원본과 대조했다. 이 검사는 이전 보존을 증명하며, 원본 게임 정보의 정확성이나 실제 게임 진행을 새로 증명하지 않는다.

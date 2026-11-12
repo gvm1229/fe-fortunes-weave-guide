@@ -143,3 +143,5 @@
 
 ## 새 사이트로 재구축 · 2026-11-12
 개인화 공략은 `C:\Users\hojin\Documents\fe-fortunes-weave-guide-megi`(원본 포크, 원본은 `archive/` 참고용)에서 Next.js·Tailwind·shadcn·Pretendard·lucide로 새로 만든다. 데스크톱·휴대폰 반응형, 밝게/어둡게, 루트별 테마색(카이 파랑·갈색·금 / 세오도라 노랑·갈색·금 / 디트리히 검정·흰색·금 / 레다 장미·진한 장미·금 / 3부 보라·진한 보라·금), 루트 간 정보 분리. 할 일 하나마다 커밋하고 작성자는 사용자 본인, 한국어 Conventional Commit 제목, 공동 작성자·세션 링크 없음. Netlify `fe-fortunes-weave-guide-megi`에 배포. Claude는 계획·검토만, 구현은 Codex(gpt-6.1-sol, priority). [출처](sources.md#rebuild-megi-20261112)
+- 2026-11-13 정정: 디자인 결정은 Claude가 직접 하고 Codex는 사양대로 구현만 한다(Codex 추론 단계 xhigh, 모델 gpt-6.1-sol 유지). 시각 검토는 Claude가 직접 한다. 버튼은 채운 버튼, 루트 primary 색이 배경과 큰 면을 차지, 장식 문구(AI 상투 문구) 금지, 첫 화면은 군주 초상화로 스크롤 없이 한 화면, 공략 화면에는 초상화·지도·아이콘을 원래처럼 표시. 정본 사양: megi 저장소 `docs/design-spec.md`. [출처](sources.md#design-lead-20261113)
+- 2026-11-13 표시 규칙: 1·2부 화면과 대시보드 루트 칸은 타임스킵 전 초상화, 타임스킵 후 초상화는 3부에서만. 대시보드 군주 순서는 게임 오벨리스크 순서 카이→디트리히→세오도라→레다이고, 초상화 위에 이 공략의 진행 순서 배지("루트 진행 순서: 1st", 세오도라 1·레다 2·디트리히 3·카이 4). 문장은 공식 게임 그림을 쓰며 사용자가 준 견본은 색 참고용이다. [출처](sources.md#design-lead-20261113)

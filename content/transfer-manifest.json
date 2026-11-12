@@ -1054,12 +1054,12 @@
     {
       "source": "notes/knowledge/guide-workflow.md",
       "target": "content/notes/knowledge/guide-workflow.md",
-      "sha256": "6853ba27ae0f248fcf2b35a4de053c331e91b739cda56b21ae3e0815333dc834"
+      "sha256": "72c547215738a1c3f8578d792f88b3c552924e0291a9035f1caf7a487926376a"
     },
     {
       "source": "notes/knowledge/interface.md",
       "target": "content/notes/knowledge/interface.md",
-      "sha256": "6c9c9dae09578dd9a6c030c7df6f728b26c3e217ef914e6dd507b0c99b8c6a0d"
+      "sha256": "c6650db6de166c3b3e933241873f8fbfd84d657f601909d0438f7f9f66a801de"
     },
     {
       "source": "notes/knowledge/merge-gate-safety.md",
@@ -1084,7 +1084,7 @@
     {
       "source": "notes/knowledge/sources.md",
       "target": "content/notes/knowledge/sources.md",
-      "sha256": "c531e373bb2e171a5c2d0f0296d77d9db1d3ea987804bc348118846c616ee36b"
+      "sha256": "44eb042a525468a8232076b2cc926bb3d76e405e28f1ddb5590a0072fa5d10a6"
     },
     {
       "source": "notes/knowledge/support-word-meaning.md",
@@ -1229,7 +1229,7 @@
     {
       "source": "notes/plan.md",
       "target": "content/notes/plan.md",
-      "sha256": "54575000417e81a3c08ea101e3fcc6f25d70c563131a27d7e50071d40e591053"
+      "sha256": "1ebd07a2334da68ef0c449c426b50f0c84a6010588c5959ee233995b4418dac8"
     },
     {
       "source": "notes/playbook-review.md",
