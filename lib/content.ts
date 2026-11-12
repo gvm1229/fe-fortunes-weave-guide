@@ -4,6 +4,7 @@ import path from 'node:path';
 import overrides from '@/content/display-overrides.json';
 import { scopeTree } from './scope';
 import { displayText } from './display';
+import type { Chapter } from './checklist';
 export type Route = 'theodora' | 'leda' | 'dietrich' | 'kai' | 'part3';
 export type Part = '1' | '2' | '3';
 export type Action = { id: string; category: string; text: string; inheritLegacy: boolean };
@@ -23,6 +24,7 @@ export function groupsFor(route: Route, part: Part) {
   const notes=overrides.notes as Record<string,Group['notes']>;
   return json<{groups: Group[]}>('data/playbook').groups.filter(g => g.stage === stageId(route, part)).map(g=>({...g,title:displayText(titles[g.id]||g.title),notes:(notes[g.id]||g.notes).map(n=>({...n,text:displayText(n.text)})),actions:g.actions.map(a=>({...a,text:displayText(texts[a.id]||a.text)}))}));
 }
+export function chaptersForRoute(route:Route,part:Part):Chapter[]{return json<{stages:{id:string;chapters:Chapter[]}[]}>('derived/checklist').stages.find(s=>s.id===stageId(route,part))!.chapters;}
 export function routeParams() { return routes.flatMap(r => (r.id === 'part3' ? ['3'] : ['1','2']).map(part => ({ route: r.id, part }))); }
 export function validScope(route: string, part: string): route is Route { return routeParams().some(p => p.route === route && p.part === part); }
 export type Person = { name: string; route: Route; role: string; portrait: string; classes: string[]; goal: unknown; readiness: unknown; recruitment: unknown; gates: unknown; details?: Tree[] };
