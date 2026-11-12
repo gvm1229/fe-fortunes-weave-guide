@@ -23,3 +23,71 @@ progress{appearance:none;border:0;border-radius:8px;overflow:hidden;height:8px;b
 @media(max-width:1199px){.people-grid{grid-template-columns:1fr}.team-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:767px){.app-shell{display:block}.sidebar{display:contents}.sidebar>.rail-lord,.sidebar>.brand,.sidebar>.part-links,.sidebar>.sidebar-bottom,.sidebar>.team-link,.sidebar>.back-link,.sidebar>.route-name{display:none}.view-nav{position:fixed;bottom:0;left:0;right:0;z-index:30;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;padding:8px 4px max(8px,env(safe-area-inset-bottom));background:var(--rail);color:var(--rail-fg)}.view-nav button{flex-direction:column;gap:4px;padding:8px 0;justify-content:center;font-size:18px;line-height:1.3;border-radius:8px;background:var(--rail);color:var(--rail-fg)}.view-nav .nav-full{display:none}.view-nav .nav-short{display:block}.mobile-header{height:56px;display:flex;align-items:center;gap:8px;padding:0 16px;background:var(--rail);color:var(--rail-fg)}.mobile-header strong{font-size:18px;margin-right:auto}.mobile-header img{width:32px;height:32px;object-fit:cover;object-position:top;border-radius:50%}.workspace main{padding:16px 16px 128px}.next-action,.action-group{padding:16px}.page-heading{margin-bottom:24px}.chapter-section>summary{flex-wrap:wrap;gap:8px;padding:16px}.chapter-date{width:100%}.check-toolbar{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px}.toolbar-actions{grid-column:1/-1}.check-toolbar .toolbar-actions .button{flex:1}.chapter-picker select{max-width:112px}.records{grid-template-columns:1fr;gap:4px}.records dd{margin-bottom:12px}.person>.person-heading{padding:16px}.person>*:not(.person-heading){margin:16px}.semantic table,.semantic tbody,.semantic tr,.semantic td,.semantic th,.source-markup table,.source-markup tbody,.source-markup tr,.source-markup td,.source-markup th{display:block}.semantic thead,.source-markup thead{display:none}.sheet-scroll .document-table{display:none}.document-definitions{display:block}.document-definitions>dl{padding:12px 0;border-bottom:1px solid var(--line)}.sheet-heading,.sheet-scroll{padding:16px}.sheet-heading{padding-right:80px}.team-grid{grid-template-columns:1fr;gap:24px}.team-page{padding:16px}.team-unit{padding:16px}.team-stripe{margin:-16px -16px 16px}}
 @media(min-width:2400px){.team-grid{grid-template-columns:repeat(5,minmax(0,1fr))}}
+
+/* 디자인 정본 §7: 앞 절의 충돌 값보다 우선한다. */
+:root{--face-inline:28px;--face-list:48px;--face-card:96px}
+.route-order{position:absolute;top:8px;left:8px;max-width:calc(100% - 16px);padding:4px 8px;border-radius:8px;background:var(--accent);color:var(--accent-fg);font-size:18px;line-height:1.3;font-weight:700;z-index:1}
+.lord-portrait{padding-top:56px}
+.check-toolbar{position:sticky;top:0;z-index:25;background:var(--bg);border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:24px}
+.chapter-section{scroll-margin-top:calc(var(--task-header-height,96px) + 8px)}
+.context-rail{position:sticky;top:0;height:100dvh;overflow:auto;overscroll-behavior:contain;align-content:start;scrollbar-color:var(--line) var(--surface-2)}
+.rail-lord img,.mobile-header img,.portrait,.group-portraits img,.context-people img,.god-list img,.media-portrait,.god-portrait,.lord-faces img{border-radius:8px}
+.group-portraits img,.tasks-main .source-markup .media-portrait,.tasks-main .source-markup img[src*="/gods/"]{width:var(--face-inline);height:var(--face-inline);object-fit:contain;object-position:top}
+.context-people img,.prep-content img[src*="/portraits/"],.prep-content img[src*="/gods/"],.god-list img{width:var(--face-list);height:var(--face-list);max-height:var(--face-list);object-fit:contain;object-position:top;border-radius:8px;flex-shrink:0}
+.person-heading .portrait{width:var(--face-card);height:var(--face-card);object-fit:contain;object-position:top;border-radius:8px}
+.prep-content [data-face-row]{display:inline-flex;align-items:center;gap:12px;min-height:48px;margin:4px 16px 4px 0}
+.records,.person-info{display:table;width:100%;border-collapse:collapse;table-layout:fixed;margin:16px 0;font-size:20px}
+.person>.person-info{width:calc(100% - 48px)}
+.records th,.person-info th{width:132px;background:var(--surface-2);font-weight:700;text-align:left}
+.records td,.records th,.person-info td,.person-info th{padding:12px 16px;border-bottom:1px solid var(--line);vertical-align:top;overflow-wrap:anywhere}
+.records tr:nth-child(even),.person-info tr:nth-child(even){background:color-mix(in srgb,var(--secondary-soft) 40%,transparent)}
+.records .records{margin:0;table-layout:auto}
+.records .records th{width:auto}
+.person-info .records{display:block;margin:0}
+.person-info .records>tbody,.person-info .records>tbody>tr,.person-info .records>tbody>tr>th,.person-info .records>tbody>tr>td{display:block;width:auto;padding-left:0;padding-right:0}
+.person-info .records>tbody>tr>th{background:transparent;padding-bottom:4px;border-bottom:0}
+.person-info .records>tbody>tr>td{padding-top:0}
+.class-path{gap:8px;margin:0}
+.class-path li{flex-wrap:wrap}
+.class-path .role-chip{font-size:18px}
+.readable-body{line-height:1.6}
+.readable-group[data-expanded=false]>.readable-body{max-height:3lh;overflow:hidden}
+.readable-group[data-expanded=false]>.readable-body .image-open{display:none}
+.readable-body p:last-child,.readable-body ul:last-child{margin-bottom:0}
+.prose-toggle{min-height:32px;padding:4px 8px;margin-top:8px}
+.image-open{display:block;width:100%;padding:0;border:0;background:transparent;text-align:left;cursor:zoom-in}
+.image-open>img,.chapter-event,.source-markup .media-guide,.semantic .image-open>img,.map-thumbnail img{display:block;width:auto;height:auto;max-width:100%;max-height:480px;aspect-ratio:auto;object-fit:contain;margin:16px auto;border-radius:8px}
+.map-thumbnail img{max-width:120px;max-height:80px;margin:0;flex-shrink:0}
+.image-original>img{display:block;width:auto;height:auto;max-width:none;max-height:none;object-fit:contain}
+.source-markup .media-icon,.semantic .inline-icon,.class-path img,.team-fields img{height:auto;object-fit:contain}
+.gold-table,[data-gold-table],[data-info-table]{display:table;width:100%;table-layout:fixed;border-collapse:collapse;margin:16px 0;font-size:20px}
+.gold-table th,.gold-table td,[data-gold-table] th,[data-gold-table] td,[data-info-table] th,[data-info-table] td{display:table-cell;padding:12px 16px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left;overflow-wrap:anywhere}
+.gold-table thead,[data-gold-table] thead{display:table-header-group;background:var(--surface-2)}
+.gold-table tbody,[data-gold-table] tbody,[data-info-table] tbody{display:table-row-group}
+.gold-table tr,[data-gold-table] tr,[data-info-table] tr{display:table-row}
+.gold-table th:nth-child(2),.gold-table .amount,[data-gold-table] [data-amount]{text-align:right;font-weight:700;font-variant-numeric:tabular-nums}
+.gold-table,[data-gold-table]{table-layout:auto}
+.gold-table .amount,[data-gold-table] [data-amount]{white-space:nowrap}
+[data-info-table] th{width:132px;background:var(--surface-2)}
+.gold-tables>section{margin:32px 0}
+.condition-chip,[data-condition-chip]{display:inline-block;background:var(--secondary-soft);color:var(--text);border-radius:8px;padding:4px 8px;margin:0 4px 4px 0;font-size:18px}
+.info-notice{display:flex;gap:8px;align-items:flex-start;font-size:18px}
+.context-rail .map-thumbnail img{width:auto;height:auto;max-width:120px;max-height:80px}
+.prep-content [data-face-list]{list-style:none;padding:0;margin:12px 0}
+.prep-content [data-face-list]>li{margin:0 0 12px}
+.prep-content [data-face-list] [data-face-row]{display:flex;margin:0}
+.document-definition dt{font-weight:700;margin:12px 0 4px}
+.document-definition dd{margin:0}
+@media(min-width:768px) and (max-width:1199px){.context-rail{position:static;height:auto;overflow:visible}}
+@media(max-width:767px){
+  .mobile-header{position:fixed;top:0;left:0;right:0;z-index:35}
+  .workspace main{padding-top:80px}
+  .check-toolbar{top:56px;padding:8px 0}
+  .chapter-section{scroll-margin-top:calc(56px + var(--task-header-height,112px) + 8px)}
+  .person>.person-info{width:calc(100% - 32px)}
+  .person-info th,.records th,[data-info-table] th{width:96px}
+  .records td,.records th,.person-info td,.person-info th,.gold-table td,.gold-table th,[data-gold-table] td,[data-gold-table] th,[data-info-table] td,[data-info-table] th{padding:12px}
+  .image-open>img,.chapter-event,.source-markup .media-guide,.semantic .image-open>img{max-height:60vh}
+  .map-thumbnail img{max-height:80px}
+  .person-info td,.person-info th,.records td,.records th,[data-info-table] td,[data-info-table] th{padding:12px 16px}
+}
