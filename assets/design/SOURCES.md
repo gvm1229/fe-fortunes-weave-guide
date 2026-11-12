@@ -1,5 +1,7 @@
 # 공식 배너와 화면 색
 
+- `route-emblems-source.webp`는 사용자가 제공한 공식 문장 이미지다. `emblem-cai.webp`, `emblem-theodora.webp`, `emblem-dietrich.webp`, `emblem-leda.webp`는 각각 왼쪽 위·오른쪽 위·왼쪽 아래·오른쪽 아래를 자른 파생 파일이다.
+
 - 원본: [한국닌텐도 공식 메인](https://www.nintendo.com/kr/games/switch2/aacsa/index.html)의 메인 이미지.
 - 이미지 주소: https://www.nintendo.com/kr/games/switch2/aacsa/assets/data/webp/top/main/kv.webp
 - 로컬 파일: official-banner.webp. Nintendo / INTELLIGENT SYSTEMS의 공개 홍보 이미지이며 재배포 허가를 새로 주장하지 않는다.
