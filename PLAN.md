@@ -43,3 +43,7 @@
 2~12번의 구현과 Windows 검증을 실행했다. 세부 결과는 [구현 기록](docs/implementation.md), [이전 검토](docs/transfer-review.md), [브라우저 측정 결과](docs/browser-results.json)를 따른다.
 
 항목별 커밋·푸시는 미실행이다. 현재 실행 계정에 `.git` 쓰기 권한이 없어 `index.lock` 생성이 거부됐다. 승인은 이미 받았으며, 추가 승인이 아닌 실행 환경의 쓰기 권한 복구가 필요하다. 13번 배포는 요청 범위에서 제외했다.
+
+## 배포 · 2026-11-13
+
+Netlify 사이트 `fe-fortunes-weave-guide-megi`에 정적 빌드(`out/`)를 배포했다. 주소: https://fe-fortunes-weave-guide-megi.netlify.app
