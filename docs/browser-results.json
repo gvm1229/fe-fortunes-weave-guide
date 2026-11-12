@@ -1,0 +1,892 @@
+{
+  "status": "passed",
+  "host": "Windows / installed Chrome / Playwright",
+  "results": [
+    {
+      "label": "/ 3840 light",
+      "width": 3840,
+      "height": 2160,
+      "scrollWidth": 3840,
+      "small": [],
+      "background": "rgb(250, 248, 243)",
+      "theme": "light"
+    },
+    {
+      "label": "/theodora/1/ 3840 light",
+      "width": 3840,
+      "height": 2160,
+      "scrollWidth": 3840,
+      "small": [],
+      "background": "rgb(250, 248, 243)",
+      "theme": "light"
+    },
+    {
+      "label": "인물 3840 light",
+      "width": 3840,
+      "height": 2160,
+      "scrollWidth": 3840,
+      "small": [],
+      "background": "rgb(250, 248, 243)",
+      "theme": "light"
+    },
+    {
+      "label": "준비 3840 light",
+      "width": 3840,
+      "height": 2160,
+      "scrollWidth": 3840,
+      "small": [],
+      "background": "rgb(250, 248, 243)",
+      "theme": "light"
+    },
+    {
+      "label": "재료·구매 3840 light",
+      "width": 3840,
+      "height": 2160,
+      "scrollWidth": 3840,
+      "small": [],
+      "background": "rgb(250, 248, 243)",
+      "theme": "light"
+    },
+    {
+      "label": "참고 문서 3840 light",
+      "width": 3840,
+      "height": 2160,
+      "scrollWidth": 3840,
+      "small": [],
+      "background": "rgb(250, 248, 243)",
+      "theme": "light"
+    },
+    {
+      "label": "문서 3840 light",
+      "width": 3840,
+      "height": 2160,
+      "scrollWidth": 3840,
+      "small": [],
+      "background": "rgb(250, 248, 243)",
+      "theme": "light"
+    },
+    {
+      "label": "/team/ 3840 light",
+      "width": 3840,
+      "height": 2160,
+      "scrollWidth": 3840,
+      "small": [],
+      "background": "rgb(250, 248, 243)",
+      "theme": "light"
+    },
+    {
+      "label": "/ 3840 dark",
+      "width": 3840,
+      "height": 2160,
+      "scrollWidth": 3840,
+      "small": [],
+      "background": "rgb(23, 25, 29)",
+      "theme": "dark"
+    },
+    {
+      "label": "/theodora/1/ 3840 dark",
+      "width": 3840,
+      "height": 2160,
+      "scrollWidth": 3840,
+      "small": [],
+      "background": "rgb(23, 25, 29)",
+      "theme": "dark"
+    },
+    {
+      "label": "인물 3840 dark",
+      "width": 3840,
+      "height": 2160,
+      "scrollWidth": 3840,
+      "small": [],
+      "background": "rgb(23, 25, 29)",
+      "theme": "dark"
+    },
+    {
+      "label": "준비 3840 dark",
+      "width": 3840,
+      "height": 2160,
+      "scrollWidth": 3840,
+      "small": [],
+      "background": "rgb(23, 25, 29)",
+      "theme": "dark"
+    },
+    {
+      "label": "재료·구매 3840 dark",
+      "width": 3840,
+      "height": 2160,
+      "scrollWidth": 3840,
+      "small": [],
+      "background": "rgb(23, 25, 29)",
+      "theme": "dark"
+    },
+    {
+      "label": "참고 문서 3840 dark",
+      "width": 3840,
+      "height": 2160,
+      "scrollWidth": 3840,
+      "small": [],
+      "background": "rgb(23, 25, 29)",
+      "theme": "dark"
+    },
+    {
+      "label": "문서 3840 dark",
+      "width": 3840,
+      "height": 2160,
+      "scrollWidth": 3840,
+      "small": [],
+      "background": "rgb(23, 25, 29)",
+      "theme": "dark"
+    },
+    {
+      "label": "/team/ 3840 dark",
+      "width": 3840,
+      "height": 2160,
+      "scrollWidth": 3840,
+      "small": [],
+      "background": "rgb(23, 25, 29)",
+      "theme": "dark"
+    },
+    {
+      "label": "/ 375 light",
+      "width": 375,
+      "height": 812,
+      "scrollWidth": 375,
+      "small": [],
+      "background": "rgb(250, 248, 243)",
+      "theme": "light"
+    },
+    {
+      "label": "/theodora/1/ 375 light",
+      "width": 375,
+      "height": 812,
+      "scrollWidth": 375,
+      "small": [],
+      "background": "rgb(250, 248, 243)",
+      "theme": "light"
+    },
+    {
+      "label": "인물 375 light",
+      "width": 375,
+      "height": 812,
+      "scrollWidth": 375,
+      "small": [],
+      "background": "rgb(250, 248, 243)",
+      "theme": "light"
+    },
+    {
+      "label": "준비 375 light",
+      "width": 375,
+      "height": 812,
+      "scrollWidth": 375,
+      "small": [],
+      "background": "rgb(250, 248, 243)",
+      "theme": "light"
+    },
+    {
+      "label": "재료·구매 375 light",
+      "width": 375,
+      "height": 812,
+      "scrollWidth": 375,
+      "small": [],
+      "background": "rgb(250, 248, 243)",
+      "theme": "light"
+    },
+    {
+      "label": "참고 문서 375 light",
+      "width": 375,
+      "height": 812,
+      "scrollWidth": 375,
+      "small": [],
+      "background": "rgb(250, 248, 243)",
+      "theme": "light"
+    },
+    {
+      "label": "문서 375 light",
+      "width": 375,
+      "height": 812,
+      "scrollWidth": 375,
+      "small": [],
+      "background": "rgb(250, 248, 243)",
+      "theme": "light"
+    },
+    {
+      "label": "/team/ 375 light",
+      "width": 375,
+      "height": 812,
+      "scrollWidth": 375,
+      "small": [],
+      "background": "rgb(250, 248, 243)",
+      "theme": "light"
+    },
+    {
+      "label": "/ 375 dark",
+      "width": 375,
+      "height": 812,
+      "scrollWidth": 375,
+      "small": [],
+      "background": "rgb(23, 25, 29)",
+      "theme": "dark"
+    },
+    {
+      "label": "/theodora/1/ 375 dark",
+      "width": 375,
+      "height": 812,
+      "scrollWidth": 375,
+      "small": [],
+      "background": "rgb(23, 25, 29)",
+      "theme": "dark"
+    },
+    {
+      "label": "인물 375 dark",
+      "width": 375,
+      "height": 812,
+      "scrollWidth": 375,
+      "small": [],
+      "background": "rgb(23, 25, 29)",
+      "theme": "dark"
+    },
+    {
+      "label": "준비 375 dark",
+      "width": 375,
+      "height": 812,
+      "scrollWidth": 375,
+      "small": [],
+      "background": "rgb(23, 25, 29)",
+      "theme": "dark"
+    },
+    {
+      "label": "재료·구매 375 dark",
+      "width": 375,
+      "height": 812,
+      "scrollWidth": 375,
+      "small": [],
+      "background": "rgb(23, 25, 29)",
+      "theme": "dark"
+    },
+    {
+      "label": "참고 문서 375 dark",
+      "width": 375,
+      "height": 812,
+      "scrollWidth": 375,
+      "small": [],
+      "background": "rgb(23, 25, 29)",
+      "theme": "dark"
+    },
+    {
+      "label": "문서 375 dark",
+      "width": 375,
+      "height": 812,
+      "scrollWidth": 375,
+      "small": [],
+      "background": "rgb(23, 25, 29)",
+      "theme": "dark"
+    },
+    {
+      "label": "/team/ 375 dark",
+      "width": 375,
+      "height": 812,
+      "scrollWidth": 375,
+      "small": [],
+      "background": "rgb(23, 25, 29)",
+      "theme": "dark"
+    },
+    {
+      "label": "/ 768 light",
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 768,
+      "small": [],
+      "background": "rgb(250, 248, 243)",
+      "theme": "light"
+    },
+    {
+      "label": "/theodora/1/ 768 light",
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 768,
+      "small": [],
+      "background": "rgb(250, 248, 243)",
+      "theme": "light"
+    },
+    {
+      "label": "인물 768 light",
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 768,
+      "small": [],
+      "background": "rgb(250, 248, 243)",
+      "theme": "light"
+    },
+    {
+      "label": "준비 768 light",
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 768,
+      "small": [],
+      "background": "rgb(250, 248, 243)",
+      "theme": "light"
+    },
+    {
+      "label": "재료·구매 768 light",
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 768,
+      "small": [],
+      "background": "rgb(250, 248, 243)",
+      "theme": "light"
+    },
+    {
+      "label": "참고 문서 768 light",
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 768,
+      "small": [],
+      "background": "rgb(250, 248, 243)",
+      "theme": "light"
+    },
+    {
+      "label": "문서 768 light",
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 768,
+      "small": [],
+      "background": "rgb(250, 248, 243)",
+      "theme": "light"
+    },
+    {
+      "label": "/team/ 768 light",
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 768,
+      "small": [],
+      "background": "rgb(250, 248, 243)",
+      "theme": "light"
+    },
+    {
+      "label": "/ 768 dark",
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 768,
+      "small": [],
+      "background": "rgb(23, 25, 29)",
+      "theme": "dark"
+    },
+    {
+      "label": "/theodora/1/ 768 dark",
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 768,
+      "small": [],
+      "background": "rgb(23, 25, 29)",
+      "theme": "dark"
+    },
+    {
+      "label": "인물 768 dark",
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 768,
+      "small": [],
+      "background": "rgb(23, 25, 29)",
+      "theme": "dark"
+    },
+    {
+      "label": "준비 768 dark",
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 768,
+      "small": [],
+      "background": "rgb(23, 25, 29)",
+      "theme": "dark"
+    },
+    {
+      "label": "재료·구매 768 dark",
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 768,
+      "small": [],
+      "background": "rgb(23, 25, 29)",
+      "theme": "dark"
+    },
+    {
+      "label": "참고 문서 768 dark",
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 768,
+      "small": [],
+      "background": "rgb(23, 25, 29)",
+      "theme": "dark"
+    },
+    {
+      "label": "문서 768 dark",
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 768,
+      "small": [],
+      "background": "rgb(23, 25, 29)",
+      "theme": "dark"
+    },
+    {
+      "label": "/team/ 768 dark",
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 768,
+      "small": [],
+      "background": "rgb(23, 25, 29)",
+      "theme": "dark"
+    },
+    {
+      "label": "/ 1920 light",
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "small": [],
+      "background": "rgb(250, 248, 243)",
+      "theme": "light"
+    },
+    {
+      "label": "/theodora/1/ 1920 light",
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "small": [],
+      "background": "rgb(250, 248, 243)",
+      "theme": "light"
+    },
+    {
+      "label": "인물 1920 light",
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "small": [],
+      "background": "rgb(250, 248, 243)",
+      "theme": "light"
+    },
+    {
+      "label": "준비 1920 light",
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "small": [],
+      "background": "rgb(250, 248, 243)",
+      "theme": "light"
+    },
+    {
+      "label": "재료·구매 1920 light",
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "small": [],
+      "background": "rgb(250, 248, 243)",
+      "theme": "light"
+    },
+    {
+      "label": "참고 문서 1920 light",
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "small": [],
+      "background": "rgb(250, 248, 243)",
+      "theme": "light"
+    },
+    {
+      "label": "문서 1920 light",
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "small": [],
+      "background": "rgb(250, 248, 243)",
+      "theme": "light"
+    },
+    {
+      "label": "/team/ 1920 light",
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "small": [],
+      "background": "rgb(250, 248, 243)",
+      "theme": "light"
+    },
+    {
+      "label": "/ 1920 dark",
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "small": [],
+      "background": "rgb(23, 25, 29)",
+      "theme": "dark"
+    },
+    {
+      "label": "/theodora/1/ 1920 dark",
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "small": [],
+      "background": "rgb(23, 25, 29)",
+      "theme": "dark"
+    },
+    {
+      "label": "인물 1920 dark",
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "small": [],
+      "background": "rgb(23, 25, 29)",
+      "theme": "dark"
+    },
+    {
+      "label": "준비 1920 dark",
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "small": [],
+      "background": "rgb(23, 25, 29)",
+      "theme": "dark"
+    },
+    {
+      "label": "재료·구매 1920 dark",
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "small": [],
+      "background": "rgb(23, 25, 29)",
+      "theme": "dark"
+    },
+    {
+      "label": "참고 문서 1920 dark",
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "small": [],
+      "background": "rgb(23, 25, 29)",
+      "theme": "dark"
+    },
+    {
+      "label": "문서 1920 dark",
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "small": [],
+      "background": "rgb(23, 25, 29)",
+      "theme": "dark"
+    },
+    {
+      "label": "/team/ 1920 dark",
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "small": [],
+      "background": "rgb(23, 25, 29)",
+      "theme": "dark"
+    }
+  ],
+  "contrast": [
+    {
+      "route": "theodora",
+      "theme": "light",
+      "token": "foreground",
+      "ratio": 14.07905662832162
+    },
+    {
+      "route": "theodora",
+      "theme": "light",
+      "token": "primary",
+      "ratio": 6.331800933557358
+    },
+    {
+      "route": "theodora",
+      "theme": "light",
+      "token": "secondary",
+      "ratio": 7.671856274514967
+    },
+    {
+      "route": "theodora",
+      "theme": "light",
+      "token": "accent",
+      "ratio": 5.7779815963911245
+    },
+    {
+      "route": "theodora",
+      "theme": "light",
+      "token": "muted",
+      "ratio": 6.0815348239825555
+    },
+    {
+      "route": "leda",
+      "theme": "light",
+      "token": "foreground",
+      "ratio": 14.07905662832162
+    },
+    {
+      "route": "leda",
+      "theme": "light",
+      "token": "primary",
+      "ratio": 6.588912975074416
+    },
+    {
+      "route": "leda",
+      "theme": "light",
+      "token": "secondary",
+      "ratio": 9.733950621869322
+    },
+    {
+      "route": "leda",
+      "theme": "light",
+      "token": "accent",
+      "ratio": 5.7779815963911245
+    },
+    {
+      "route": "leda",
+      "theme": "light",
+      "token": "muted",
+      "ratio": 6.0815348239825555
+    },
+    {
+      "route": "dietrich",
+      "theme": "light",
+      "token": "foreground",
+      "ratio": 14.07905662832162
+    },
+    {
+      "route": "dietrich",
+      "theme": "light",
+      "token": "primary",
+      "ratio": 14.584317917157511
+    },
+    {
+      "route": "dietrich",
+      "theme": "light",
+      "token": "secondary",
+      "ratio": 7.9177263245993235
+    },
+    {
+      "route": "dietrich",
+      "theme": "light",
+      "token": "accent",
+      "ratio": 5.7779815963911245
+    },
+    {
+      "route": "dietrich",
+      "theme": "light",
+      "token": "muted",
+      "ratio": 6.0815348239825555
+    },
+    {
+      "route": "kai",
+      "theme": "light",
+      "token": "foreground",
+      "ratio": 14.07905662832162
+    },
+    {
+      "route": "kai",
+      "theme": "light",
+      "token": "primary",
+      "ratio": 8.055934400035252
+    },
+    {
+      "route": "kai",
+      "theme": "light",
+      "token": "secondary",
+      "ratio": 7.671856274514967
+    },
+    {
+      "route": "kai",
+      "theme": "light",
+      "token": "accent",
+      "ratio": 5.7779815963911245
+    },
+    {
+      "route": "kai",
+      "theme": "light",
+      "token": "muted",
+      "ratio": 6.0815348239825555
+    },
+    {
+      "route": "part3",
+      "theme": "light",
+      "token": "foreground",
+      "ratio": 14.07905662832162
+    },
+    {
+      "route": "part3",
+      "theme": "light",
+      "token": "primary",
+      "ratio": 7.63283152905657
+    },
+    {
+      "route": "part3",
+      "theme": "light",
+      "token": "secondary",
+      "ratio": 10.512455828123748
+    },
+    {
+      "route": "part3",
+      "theme": "light",
+      "token": "accent",
+      "ratio": 5.7779815963911245
+    },
+    {
+      "route": "part3",
+      "theme": "light",
+      "token": "muted",
+      "ratio": 6.0815348239825555
+    },
+    {
+      "route": "theodora",
+      "theme": "dark",
+      "token": "foreground",
+      "ratio": 14.650137341495874
+    },
+    {
+      "route": "theodora",
+      "theme": "dark",
+      "token": "primary",
+      "ratio": 11.389514497380803
+    },
+    {
+      "route": "theodora",
+      "theme": "dark",
+      "token": "secondary",
+      "ratio": 9.39467490425885
+    },
+    {
+      "route": "theodora",
+      "theme": "dark",
+      "token": "accent",
+      "ratio": 10.727518533498975
+    },
+    {
+      "route": "theodora",
+      "theme": "dark",
+      "token": "muted",
+      "ratio": 9.000990847308843
+    },
+    {
+      "route": "leda",
+      "theme": "dark",
+      "token": "foreground",
+      "ratio": 14.650137341495874
+    },
+    {
+      "route": "leda",
+      "theme": "dark",
+      "token": "primary",
+      "ratio": 9.592912916359873
+    },
+    {
+      "route": "leda",
+      "theme": "dark",
+      "token": "secondary",
+      "ratio": 8.06402287017599
+    },
+    {
+      "route": "leda",
+      "theme": "dark",
+      "token": "accent",
+      "ratio": 10.727518533498975
+    },
+    {
+      "route": "leda",
+      "theme": "dark",
+      "token": "muted",
+      "ratio": 9.000990847308843
+    },
+    {
+      "route": "dietrich",
+      "theme": "dark",
+      "token": "foreground",
+      "ratio": 14.650137341495874
+    },
+    {
+      "route": "dietrich",
+      "theme": "dark",
+      "token": "primary",
+      "ratio": 15.43330504902494
+    },
+    {
+      "route": "dietrich",
+      "theme": "dark",
+      "token": "secondary",
+      "ratio": 10.188940678558074
+    },
+    {
+      "route": "dietrich",
+      "theme": "dark",
+      "token": "accent",
+      "ratio": 10.727518533498975
+    },
+    {
+      "route": "dietrich",
+      "theme": "dark",
+      "token": "muted",
+      "ratio": 9.000990847308843
+    },
+    {
+      "route": "kai",
+      "theme": "dark",
+      "token": "foreground",
+      "ratio": 14.650137341495874
+    },
+    {
+      "route": "kai",
+      "theme": "dark",
+      "token": "primary",
+      "ratio": 9.63599507669422
+    },
+    {
+      "route": "kai",
+      "theme": "dark",
+      "token": "secondary",
+      "ratio": 9.39467490425885
+    },
+    {
+      "route": "kai",
+      "theme": "dark",
+      "token": "accent",
+      "ratio": 10.727518533498975
+    },
+    {
+      "route": "kai",
+      "theme": "dark",
+      "token": "muted",
+      "ratio": 9.000990847308843
+    },
+    {
+      "route": "part3",
+      "theme": "dark",
+      "token": "foreground",
+      "ratio": 14.650137341495874
+    },
+    {
+      "route": "part3",
+      "theme": "dark",
+      "token": "primary",
+      "ratio": 9.727941350883668
+    },
+    {
+      "route": "part3",
+      "theme": "dark",
+      "token": "secondary",
+      "ratio": 8.124827288546467
+    },
+    {
+      "route": "part3",
+      "theme": "dark",
+      "token": "accent",
+      "ratio": 10.727518533498975
+    },
+    {
+      "route": "part3",
+      "theme": "dark",
+      "token": "muted",
+      "ratio": 9.000990847308843
+    }
+  ],
+  "checks": [
+    "체크 재로딩 보존",
+    "저장 실패 시 미반영",
+    "9개 범위 URL",
+    "팀 편성안 각각 25명",
+    "문서 열기·닫기"
+  ],
+  "errors": []
+}
