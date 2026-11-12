@@ -1,0 +1,27 @@
+{
+  "name": "fortunes-weave-guide",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/run.mjs dev",
+    "build": "node scripts/run.mjs build",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "transfer": "node scripts/transfer.mjs",
+    "verify": "node scripts/verify.mjs",
+    "test:browser": "node scripts/browser-check.mjs"
+  },
+  "dependencies": {
+    "next": "^16.0.0", "react": "^19.0.0", "react-dom": "^19.0.0",
+    "next-themes": "^0.4.6", "lucide-react": "^0.468.0",
+    "@radix-ui/react-slot": "^1.2.0", "@radix-ui/react-dialog": "^1.1.0",
+    "class-variance-authority": "^0.7.1", "clsx": "^2.1.1", "tailwind-merge": "^3.0.0",
+    "react-markdown": "^10.1.0", "remark-gfm": "^4.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0", "@types/node": "^22.0.0", "@types/react": "^19.0.0", "@types/react-dom": "^19.0.0",
+    "tailwindcss": "^4.0.0", "@tailwindcss/postcss": "^4.0.0", "eslint": "^9.0.0", "eslint-config-next": "^16.0.0",
+    "@playwright/test": "^1.51.0", "cheerio": "^1.0.0"
+  }
+}

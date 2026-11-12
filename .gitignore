@@ -1,0 +1,9 @@
+node_modules/
+.next/
+out/
+.tmp/
+public/assets/
+public/reference-data/
+*.tsbuildinfo
+test-results/
+playwright-report/

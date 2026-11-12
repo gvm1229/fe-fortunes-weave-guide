@@ -1,0 +1,10 @@
+import { mkdirSync, cpSync } from 'node:fs';
+import { resolve } from 'node:path';
+import { spawnSync } from 'node:child_process';
+const temp = resolve('.tmp');
+mkdirSync(temp, { recursive: true });
+process.env.TEMP = process.env.TMP = temp;
+cpSync('assets', 'public/assets', { recursive: true });
+cpSync('content/data', 'public/reference-data', { recursive: true });
+const result = spawnSync(process.execPath, ['node_modules/next/dist/bin/next', process.argv[2], '--webpack'], { stdio: 'inherit', env: process.env });
+process.exit(result.status ?? 1);
