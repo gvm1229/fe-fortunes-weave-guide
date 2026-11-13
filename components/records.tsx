@@ -1,3 +1,4 @@
+import { GameText } from './game-text';
 import { createElement } from 'react';
 import type { Tree } from '@/lib/content';
 import { displayText } from '@/lib/display';
@@ -25,21 +26,22 @@ export function RecordRows({value,label}:{value:unknown;label:string}){
     }else rows.push({label:title,value:v});
   }
   collect(value,label);
-  return rows.map((row,i)=><tr key={i}><th scope="row">{row.label}</th><td><ReadMore><Records value={row.value} disclose={false}/></ReadMore></td></tr>);
+  return rows.map((row,i)=><tr key={i}><th scope="row"><GameText text={row.label}/></th><td><ReadMore><Records value={row.value} disclose={false}/></ReadMore></td></tr>);
 }
 export function Records({value,disclose=true}:{value:unknown;disclose?:boolean}){
   if(value===null||value===undefined||value==='')return null;
   if(typeof value==='boolean')return <span>{value?'예':'아니요'}</span>;
-  if(typeof value!=='object')return <span>{displayText(itemNames[String(value)]||String(value))}</span>;
-  if('$prose' in value){const parts=(value as {$prose:string[]}).$prose,content=parts.length>2?<ul>{parts.map((s,i)=><li key={i}>{displayText(s)}</li>)}</ul>:<p>{parts.map(displayText).join(' ')}</p>;return disclose?<ReadMore>{content}</ReadMore>:content;}
+  if(typeof value!=='object')return <span><GameText text={displayText(itemNames[String(value)]||String(value))} withSkills/></span>;
+  if('$prose' in value){const parts=(value as {$prose:string[]}).$prose,content=parts.length>2?<ul>{parts.map((s,i)=><li key={i}><GameText text={displayText(s)} withSkills/></li>)}</ul>:<p><GameText text={parts.map(displayText).join(' ')} withSkills/></p>;return disclose?<ReadMore>{content}</ReadMore>:content;}
   if(Array.isArray(value))return <ul className="record-list">{value.map((v,i)=><li key={i}><Records value={v} disclose={disclose}/></li>)}</ul>;
   return <table className="records"><tbody>{Object.entries(value).filter(([k,v])=>!hidden.has(k)&&v!==null&&v!==undefined&&(!Array.isArray(v)||v.length>0)).map(([k,v])=><tr key={k}><th scope="row">{labels[k]||(/^[123]$/.test(k)?`${k}부`:/[가-힣]/.test(k)?k:'추가 안내')}</th><td><ReadMore><Records value={v} disclose={false}/></ReadMore></td></tr>)}</tbody></table>;
 }
 const allowed=new Set(['nav','section','article','div','p','span','strong','b','em','small','h2','h3','h4','h5','ul','ol','li','dl','dt','dd','table','caption','colgroup','col','thead','tbody','tfoot','tr','th','td','figure','figcaption','br','details','summary','a','img']);
 export function Semantic({nodes,route,part,onDoc,onSpell,hidePortraits=false,hideGodPortraits=false,changesOnly=false}:{nodes:Tree[];route:string;part:string;onDoc?:(url:string)=>void;onSpell?:(id:string)=>void;hidePortraits?:boolean;hideGodPortraits?:boolean;changesOnly?:boolean}){
   const seen=new Set<string>();
+  const enrichSkills=!JSON.stringify(nodes).includes("/skills/");
   function render(n:Tree,i:number):React.ReactNode {
-    if(typeof n==='string')return displayText(n);
+    if(typeof n==='string')return <GameText key={i} text={displayText(n)} part={part} withSkills={enrichSkills}/>;
     const a=n.attrs;
     if(changesOnly&&a['data-change']==='keep')return null;
     if(a['data-shared-notice'])return null;
@@ -56,10 +58,10 @@ export function Semantic({nodes,route,part,onDoc,onSpell,hidePortraits=false,hid
     if(n.tag==='img'){
       if(!a.src||hidePortraits&&a.src.includes('/portraits/')||hideGodPortraits&&a.src.includes('/gods/'))return null;
       if(a.src.includes('/gods/')){if(seen.has(a.src))return null;seen.add(a.src);}
-      if(!/\/(portraits|gods|classes|skills|weapons)\//.test(a.src))return <GuideImage key={i} src={`/${a.src.replace(/^\/+/, '')}`} alt={a.alt}/>;
-      return <img key={i} src={`/${personPortrait(a.src,part,a.alt?.replace(/ 초상화.*$/,''))}`} alt={a.alt||''} title={a.title} loading="lazy" className={a.src.includes('/classes/')||a.src.includes('/skills/')?'inline-icon':a.src.includes('/gods/')?'god-portrait':'media-portrait'}/>;
+      if(!/\/(portraits|gods|classes|skills|weapons|traits)\//.test(a.src))return <GuideImage key={i} src={`/${a.src.replace(/^\/+/, '')}`} alt={a.alt}/>;
+      return <img key={i} src={`/${personPortrait(a.src,part,a.alt?.replace(/ 초상화.*$/,''))}`} alt={a.alt||''} title={a.title} loading="lazy" className={a.src.includes('/classes/')||a.src.includes('/skills/')||a.src.includes('/traits/')?'inline-icon':a.src.includes('/gods/')?'god-portrait':'media-portrait'}/>;
     }
-    if(n.tag==='a'&&n.children.some(child=>typeof child!=='string'&&child.tag==='img'&&!/\/(portraits|gods|classes|skills|weapons)\//.test(child.attrs.src||'')))return <span key={i}>{n.children.map(render)}</span>;
+    if(n.tag==='a'&&n.children.some(child=>typeof child!=='string'&&child.tag==='img'&&!/\/(portraits|gods|classes|skills|weapons|traits)\//.test(child.attrs.src||'')))return <span key={i}>{n.children.map(render)}</span>;
     if(n.tag==='button'){
       const url=a['data-reference-url']||a['data-unit-review']||(a['data-class-slug']?`notes/classes/${a['data-class-slug']}.md`:undefined);
       if(url||a['data-spell-jump'])return <button key={i} className="text-link" title={a.title} onClick={()=>a['data-spell-jump']?onSpell?.(a['data-spell-jump']):onDoc?.(url!)}>{children()}</button>;

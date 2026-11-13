@@ -8,6 +8,8 @@ import './verify-image-parity.mjs';
 import './verify-readability.mjs';
 import './verify-design-assets.mjs';
 import './verify-feature-parity.mjs';
+import './verify-redesign.mjs';
+import './verify-character-copy.mjs';
 const read=p=>JSON.parse(readFileSync(p,'utf8'));
 const manifest=read('content/transfer-manifest.json');
 const playbook=read('content/data/playbook.json');

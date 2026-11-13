@@ -1,5 +1,7 @@
 'use client';
 import Link from 'next/link';
+import { Progress } from './progress';
+import { ArrowRight } from 'lucide-react';
 import { ThemeSwitch } from './theme';
 import type { Group, Route } from '@/lib/content';
 import { useChecks } from './checks';
@@ -19,9 +21,9 @@ export function Home({routes}:{routes:{id:Route;label:string;parts:{part:string;
         <img className="route-emblem" src={`/assets/design/emblems/${lordFiles[r.id]}.webp`} alt=""/>
         <img className="lord-portrait" src={lordPortrait(r.id,'1',true)} alt={r.label}/>
         <span className="route-order">루트 진행 순서: {playOrder[r.id]}</span>
-        <div className="route-card-content"><h2>{r.label}</h2>{r.parts.map(p=>{const x=progress(p.groups);return <div className="route-progress" key={p.part}><span>{p.part}부</span><progress value={x.done} max={x.total} aria-label={`${r.label} ${p.part}부 진행률`}/><span>{x.done}/{x.total}</span></div>;})}<span className="button button-accent">이어하기</span></div>
+        <div className="route-card-content"><h2>{r.label}</h2>{r.parts.map(p=>{const x=progress(p.groups);return <div className="route-progress" key={p.part}><span>{p.part}부</span><Progress value={x.done} max={x.total} label={`${r.label} ${p.part}부 진행률`}/><span>{x.done}/{x.total}</span></div>;})}<span className="button button-accent">이어하기</span></div>
       </Link>;
     })}</div>
-    <section className="third-band" data-route="part3"><div className="lord-faces">{lords.map(r=><img key={r.id} src={`/assets/portraits/post-timeskip/large/${lordFiles[r.id]}.png`} alt={r.label}/>)}</div><div className="third-progress"><span>{thirdProgress.done}/{thirdProgress.total}</span><progress value={thirdProgress.done} max={thirdProgress.total} aria-label="3부 진행률"/></div><Link className="button button-accent" href="/part3/3/">3부</Link></section>
+    <Link className="third-band" data-route="part3" href="/part3/3/" aria-label="3부 이어하기"><div className="lord-faces">{lords.map(r=><img key={r.id} src={`/assets/portraits/post-timeskip/large/${lordFiles[r.id]}.png`} alt={r.label}/>)}</div><div className="third-progress"><div className="third-heading"><strong>3부</strong><span>{thirdProgress.done}/{thirdProgress.total}</span></div><Progress value={thirdProgress.done} max={thirdProgress.total} label="3부 진행률"/></div><ArrowRight size={28}/></Link>
   </main>;
 }
