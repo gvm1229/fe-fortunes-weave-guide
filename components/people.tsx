@@ -19,17 +19,18 @@ const norm=(text:string)=>text.replace(/[\s·.,]/g,'');
 /** 제목–설명 쌍. 앞 쌍이나 요약 표와 같은 설명은 버린다. */
 function pairs(person:Person,part:string,summaryText:string[],classes:Record<string,ClassInfo>){
   const d=person.data,ready=(person.readiness&&typeof person.readiness==='object'?person.readiness:{}) as Record<string,unknown>,goal=(person.goal&&typeof person.goal==='object'?person.goal:{}) as Record<string,unknown>;
-  const list:{title:string;lines:string[]}[]=[];
-  const add=(title:string,...lines:(string|undefined)[])=>{const kept=lines.map(l=>l?plainCharacterText(l).trim():'').filter(Boolean);if(kept.length)list.push({title,lines:kept});};
+  const list:{title:string;lines:string[];keep?:boolean}[]=[];
+  const add=(title:string,...lines:(string|undefined)[])=>{const kept=lines.map(l=>l?plainCharacterText(l).trim():'').filter(Boolean);if(kept.length)list.push({title,lines:kept,keep:title.endsWith(' 시험')});};
+  const addRaw=(title:string,line:string)=>{if(line.trim())list.push({title,lines:[line.trim()]});};
   if(!d.avoid){
-    for(const c of [...new Set([...d.classes,...d.finalClasses])]){const e=d.exams[c];if(!e)continue;const weapons=e.weapons.length?e.weapons:classes[c]?.weapons||[],unlock=e.unlock.replace(/^[s·]+/,'');add(`${c} 시험`,[e.tier,`권장 Lv${e.level}`,/^d/.test(e.renown)?`명성 ${e.renown}`:'',e.required&&`필수 ${e.required}`,e.choice&&`선택 ${e.choice}`].filter(Boolean).join(' · '),weapons.length?`무기 ${weapons.join(' · ')}`:undefined,unlock?`해금 ${unlock}`:undefined,d.steps[c]);}
+    for(const c of [...new Set([...d.classes,...d.finalClasses])]){const e=d.exams[c];if(!e)continue;const weapons=e.weapons.length?e.weapons:classes[c]?.weapons||[],unlock=e.unlock.replace(/^[\s·]+/,'');add(`${c} 시험`,[e.tier,/^\d/.test(e.level)?`권장 Lv${e.level}`:'',/^\d/.test(e.renown)?`명성 ${e.renown}`:'',e.required&&`필수 ${e.required}`,e.choice&&`선택 ${e.choice}`].filter(Boolean).join(' · '),weapons.length?`무기 ${weapons.join(' · ')}`:undefined,unlock?`해금 ${unlock}`:undefined,d.steps[c]);}
     for(const s of d.skills)add(`${s.skill} ${s.target} · ${s.kind}`,[s.when,s.why].filter(Boolean).join('. '));
     add('기능 메모',d.skillNote);
     add('전차병으로 키우는 이유',d.charioteer);
     if(part==='1')add('준비 마감',[d.charioteer?'전차병':ready.middleClass,d.charioteer?'기마술 D · 궁술 C':ready.middleExam,ready.middleBy].map(words).filter(Boolean).join(' · '),[ready.part1Skills,ready.skillsBy].map(words).filter(Boolean).join(' · '));
     add('육성 시작',words((ready.starts as Record<string,unknown>|undefined)?.[part]));
     if(!d.charioteer)add('레벨업·실전 병종',[words(ready.growthClass)+(ready.battleClass&&ready.battleClass!==ready.growthClass?` / ${words(ready.battleClass)}`:''),words(ready.swapReason)].filter(Boolean).join(' · '));
-    add('육성판',[ready.kind,ready.merge,goal.fusion].map(words).filter(Boolean).join(' · '));
+    addRaw('육성판',[ready.kind,ready.merge,goal.fusion].map(words).filter(Boolean).join(' · '));
   }
   for(const g of (Array.isArray(person.gates)?person.gates:[]) as Record<string,unknown>[])add('영입 조건',words(g.localCondition));
   const init=words((person.recruitment as Record<string,unknown>|undefined)?.init);if(init)add('가입 병종',init);
@@ -37,7 +38,7 @@ function pairs(person:Person,part:string,summaryText:string[],classes:Record<str
   if(part==='1'&&!d.avoid)add('경로 안내',words(goal.pathNotes));
   if(person.gifts.length)add('선물',person.gifts.join(' · '));
   const seen=new Set(summaryText.map(norm));
-  return list.map(p=>({...p,lines:p.lines.filter(l=>{const k=norm(l);if(seen.has(k))return false;seen.add(k);return true;})})).filter(p=>p.lines.length);
+  return list.map(p=>({...p,lines:p.lines.filter(l=>{const k=norm(l);if(seen.has(k)&&!p.keep)return false;seen.add(k);return true;})})).filter(p=>p.lines.length);
 }
 export function PersonInfo({person,classes,part="1",onDoc,openKey}:{person:Person;classes:Record<string,ClassInfo>;part?:string;onDoc?:(url:string)=>void;openKey?:string}){
   const summary=characterSummary(person,part),d=person.data,self=new Set([person.name]);

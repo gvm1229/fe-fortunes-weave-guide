@@ -85,7 +85,7 @@
   .unit-card{border-radius:10px}
   .unit-face{inline-size:clamp(24px,calc(100cqh - 32px),96px)}
   .unit-name{font-size:14px;line-height:16px;letter-spacing:-.02em}
-  .swap-badge{flex-direction:column;align-items:flex-end;block-size:auto;gap:0;padding:1px 4px;inset-block-start:-10px;inset-inline-end:2px;font-size:14px;line-height:15px;border-radius:5px}
+  .swap-badge{flex-direction:row;gap:3px;block-size:auto;padding:0 4px;inset-block-start:-8px;inset-inline-end:0;font-size:14px;line-height:16px;border-radius:5px}
   .swap-badge img{display:none}
 }
 /* 백마술·루트 편성·비교 근거 탭: 하나의 왼쪽 선, 본문 최대 폭 */
@@ -106,7 +106,7 @@
 .priority-chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:12px 0}
 .priority-chips li{display:inline-flex;align-items:center;gap:6px;background:var(--secondary-soft);border-radius:8px;padding:4px 10px 4px 4px;font-weight:600}
 .priority-chips img{inline-size:28px;block-size:28px;border-radius:6px;object-fit:contain}
-.route-notes{margin:0;padding-inline-start:24px}.route-notes li{margin-block:4px}
+.route-notes{margin:0;padding-inline-start:0;list-style:none}.route-notes li{margin-block:4px}
 .route-unit-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px;align-items:start}
 @media(max-width:767px){.route-unit-grid{grid-template-columns:minmax(0,1fr)}}
 .route-unit{padding:20px}
@@ -130,7 +130,7 @@
 .detail-accordion .semantic{max-inline-size:880px}
 .reference-docs{display:grid;gap:16px;justify-items:start}
 .spell-book .semantic{max-inline-size:none}
-.spell-book .semantic>section>div:has(> [id^="spell-"]),.spell-book .semantic [data-spell-grid]{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.spell-book .semantic>section{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;align-items:start}.spell-book .semantic>section>:not([id^="spell-"]){grid-column:1/-1}
 .team-panel [id^="spell-"]{padding:20px;margin:0;border:0;border-radius:16px;background:var(--surface)}
 .team-panel [id^="spell-"] h4{font-size:22px;font-weight:700;text-decoration:none;margin:0 0 8px}
 .unit-sheet .person-heading{display:flex;gap:16px;align-items:center;margin-block-end:16px}

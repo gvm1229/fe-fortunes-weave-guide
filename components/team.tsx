@@ -28,7 +28,9 @@ import { TeamRoutes } from './team-routes';
 
 type Data=ReturnType<typeof teamData>;
 const tabs=[['final','최종 25인'],['spells','백마술'],['routes','루트 편성'],['details','비교 근거']] as const;
-function sectionTitle(n:Tree):string{if(typeof n==='string')return '';if(n.tag==='h2')return flat(n.children);for(const c of n.children){const t=sectionTitle(c);if(t)return t;}return '';}
+const sectionNames:Record<string,string>={comparison:'교체 비교','recruitment-pool':'확보·예비'};
+/** 구역의 직접 자식 h2(또는 머리 div 안 h2)만 제목으로 쓴다. 안쪽 소제목을 집지 않는다. */
+function sectionTitle(n:Tree):string{if(typeof n==='string')return '';const direct=n.children.find((c):c is Exclude<Tree,string>=>typeof c!=='string'&&(c.tag==='h2'||(c.tag==='div'&&c.children.some(h=>typeof h!=='string'&&h.tag==='h2'))));if(!direct)return '';return direct.tag==='h2'?flat(direct.children):flat((direct.children.find(h=>typeof h!=='string'&&h.tag==='h2') as Exclude<Tree,string>).children);}
 function flat(nodes:Tree[]):string{return nodes.map(n=>typeof n==='string'?n:flat(n.children)).join('').trim();}
 function withoutNav(n:Tree):Tree|null{if(typeof n==='string')return n;if(n.tag==='nav')return null;if(n.attrs.id==='roster'&&!n.children.some(c=>typeof c!=='string'||c.trim()))return null;return {...n,children:n.children.map(withoutNav).filter((c):c is Tree=>c!==null)};}
 
@@ -86,8 +88,8 @@ export function Team({data,classes,docs}:{data:Data;classes:Record<string,ClassI
       </div>}
     </header>
     <TabsContent value="final" className="final-panel">
-      <ol className="final-grid" id="final-25" aria-label="최종 25인">{names.map((name,i)=>{const u=data.units[name],out=outgoingOf(name);return <li key={name} className="unit-cell" style={{viewTransitionName:`team-unit-${i}`}}>
-        <button type="button" className="unit-card" data-swapped={out?true:undefined} aria-label={out?`${name} · ${out} 대신`:name} onClick={()=>setUnit(name)}>
+      <ol className="final-grid" id="final-25" aria-label="최종 25인">{names.map(name=>{const u=data.units[name],out=outgoingOf(name);return <li key={name} className="unit-cell" style={{viewTransitionName:`team-unit-${Object.keys(data.units).indexOf(name)}`}}>
+        <button type="button" className="unit-card" data-swapped={out?true:undefined} aria-label={`${name}, ${u.class}, ${u.role}${out?`, ${out} 대신`:''}`} onClick={()=>setUnit(name)}>
           <img className="unit-face" src={'/'+personPortrait(u.portrait,part,name)} alt="" loading="eager"/>
           <span className="unit-text"><strong className="unit-name">{name}</strong><span className="unit-class">{classes[u.class]&&<img src={'/'+classes[u.class].file} alt=""/>}{u.class}</span><span className="unit-role">{u.role}</span><span className="unit-weapons">{(u.usableWeapons||u.weapons).map(w=><Tooltip key={w.label}><TooltipTrigger asChild><img src={'/'+w.icon} alt={w.label.replace('백마법','백마술')} tabIndex={-1}/></TooltipTrigger><TooltipContent>{w.label.replace('백마법','백마술')}</TooltipContent></Tooltip>)}</span></span>
         </button>
@@ -99,7 +101,7 @@ export function Team({data,classes,docs}:{data:Data;classes:Record<string,ClassI
     <TabsContent value="details" className="team-panel">
       <Card className="chosen-plan"><h2>선택한 편성 · {chosen.title}</h2><p><GameText text={chosen.description} part={part}/></p>{Object.keys(swaps).length>0&&<ul className="swap-list">{Object.entries(swaps).map(([out,inn])=><li key={out}><strong>{out} → {inn}</strong><span className="muted"> · {data.units[inn]?.role}</span>{(data.proposal.roleTradeoffs[out+'→'+inn]||data.units[inn]?.loss)&&<p>{data.proposal.roleTradeoffs[out+'→'+inn]||data.units[inn]?.loss}</p>}</li>)}</ul>}{trials.length>0&&<p className="muted">켜진 체험: {data.proposal.trials.filter(t=>trials.includes(t.id)).map(t=>trialLabel(t.label)).join(' · ')}</p>}</Card>
       {details[0]&&<Card className="detail-section"><Semantic nodes={[withoutNav(details[0])!]} {...semanticProps}/></Card>}
-      <Accordion type="multiple" className="detail-accordion" value={openSections} onValueChange={setOpenSections}>{details.slice(1).map((s,i)=>{const id=s.attrs.id||`section-${i}`,title=sectionTitle(s)||(id==='recruitment-pool'?'확보·예비':id);return <AccordionItem key={id} value={id}><AccordionTrigger>{title}</AccordionTrigger><AccordionContent><Semantic nodes={[withoutNav(s)!]} {...semanticProps}/></AccordionContent></AccordionItem>;})}</Accordion>
+      <Accordion type="multiple" className="detail-accordion" value={openSections} onValueChange={setOpenSections}>{details.slice(1).map((s,i)=>{const id=s.attrs.id||`section-${i}`,title=sectionTitle(s)||sectionNames[id]||id;return <AccordionItem key={id} value={id}><AccordionTrigger>{title}</AccordionTrigger><AccordionContent><Semantic nodes={[withoutNav(s)!]} {...semanticProps}/></AccordionContent></AccordionItem>;})}</Accordion>
       <div className="reference-docs"><Button variant="secondary" onClick={()=>setReferences(!references)}><BookOpen size={22}/> 전체 참고 문서</Button>{references&&<DocList docs={docs} onOpen={setDoc}/>}</div>
     </TabsContent>
     <Sheet open={!!selected} onOpenChange={open=>{if(!open)setUnit(null);}}><SheetContent themeRoute="all">{selected&&unit&&<UnitSheet name={unit} u={selected} out={selectedOut} data={data} classes={classes} part={part} onDoc={setDoc} onSpell={id=>jump('spell-'+id)} semanticProps={semanticProps}/>}</SheetContent></Sheet>
@@ -113,7 +115,7 @@ function UnitSheet({name,u,out,data,classes,part,onDoc,semanticProps}:{name:stri
     <div className="person-heading"><img className="portrait" src={'/'+personPortrait(u.portrait,part,name)} alt=""/><div><p className="unit-sheet-role">{u.role}</p><div className="tags">{u.favorite&&<Badge variant="strong">희망 인물</Badge>}{out&&<Badge variant="swap">{out} 대신</Badge>}</div></div></div>
     <dl className="detail-pairs">
       <div><dt>최종 병종</dt><dd className="route-unit-class">{classes[u.class]&&<img src={'/'+classes[u.class].file} alt=""/>}<button className="text-link" onClick={()=>onDoc(`notes/classes/${u.classSlug}.md`)}>{u.class}</button><Badge>{u.classTier}</Badge></dd></div>
-      {e&&<div><dt>시험 조건</dt><dd><p>{[e.tier,`권장 Lv${e.level}`,/^\d/.test(e.renown)?`명성 ${e.renown}`:'',e.required&&`필수 ${e.required}`,e.choice&&`선택 ${e.choice}`].filter(Boolean).join(' · ')}</p>{e.unlock&&<p>해금 {e.unlock.replace(/^[\s·]+/,'')}</p>}</dd></div>}
+      {e&&<div><dt>시험 조건</dt><dd><p>{[e.tier,/^\d/.test(e.level)?`권장 Lv${e.level}`:'',/^\d/.test(e.renown)?`명성 ${e.renown}`:'',e.required&&`필수 ${e.required}`,e.choice&&`선택 ${e.choice}`].filter(Boolean).join(' · ')}</p>{e.unlock&&<p>해금 {e.unlock.replace(/^[\s·]+/,'')}</p>}</dd></div>}
       <div><dt>병과의 사용 가능 무기</dt><dd className="route-weapons">{(u.usableWeapons||u.weapons).map(w=><span key={w.label}><img src={'/'+w.icon} alt=""/>{w.label.replace('백마법','백마술')}</span>)}</dd></div>
       <div><dt>특기</dt><dd className="route-weapons">{u.specialtyIcons.map(s=><span key={s.skill}><img src={'/'+s.icon} alt=""/>{s.skill}</span>)}</dd></div>
       <div><dt>주요 무기·마법</dt><dd>{u.signatureWeapons.map(w=><div key={w.name} className="signature"><p><img className="game-skill" src={'/'+w.icon} alt=""/><strong>{w.name}</strong> · {w.rank}</p><Records value={{$prose:w.note.split(/(?<=[.!?。])\s+|(?<=[.!?。])(?=[가-힣])/u)}} disclose={false}/></div>)}</dd></div>
