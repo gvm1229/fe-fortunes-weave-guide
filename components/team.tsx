@@ -3,7 +3,7 @@ import { characterReason } from '@/lib/character-summary';
 import { GameText } from './game-text';
 import type { Tree } from '@/lib/content';
 import { Sheet,SheetContent,SheetTitle } from './ui/sheet';
-import { useState } from 'react';
+import { useState, ViewTransition } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, BookOpen, SlidersHorizontal } from 'lucide-react';
 import type { teamData, TeamUnit } from '@/lib/team';
@@ -69,7 +69,7 @@ export function Team({data,classes,docs}:{data:Data;classes:Record<string,ClassI
   const selected=unit?data.units[unit]:undefined,selectedOut=unit?outgoingOf(unit):undefined;
   const trialLabel=(label:string)=>label.split(' · ')[0];
   const options=<><ToggleGroup type="multiple" value={trials} onValueChange={v=>change(()=>setTrials(v))} aria-label="체험 교체">{data.proposal.trials.map(t=><ToggleGroupItem key={t.id} value={t.id} aria-label={t.label}>{trialLabel(t.label)}</ToggleGroupItem>)}</ToggleGroup><Toggle pressed={timeskip} onPressedChange={v=>change(()=>setTimeskip(v))}>시간 경과 후 초상화</Toggle></>;
-  return <Tabs value={tab} onValueChange={v=>change(()=>setTab(v))} asChild><main className="team-page" data-tab={tab}>
+  return <ViewTransition default="page-fade"><Tabs value={tab} onValueChange={v=>change(()=>setTab(v))} asChild><main className="team-page" data-tab={tab}>
     <header className="team-head">
       <div className="team-row">
         <Link href="/" className="back-link" aria-label="루트 선택으로"><ArrowLeft size={22}/><span className="team-back-label">루트 선택</span></Link>
@@ -104,7 +104,7 @@ export function Team({data,classes,docs}:{data:Data;classes:Record<string,ClassI
     </TabsContent>
     <Sheet open={!!selected} onOpenChange={open=>{if(!open)setUnit(null);}}><SheetContent themeRoute="all">{selected&&unit&&<UnitSheet name={unit} u={selected} out={selectedOut} data={data} classes={classes} part={part} onDoc={setDoc} onSpell={id=>jump('spell-'+id)} semanticProps={semanticProps}/>}</SheetContent></Sheet>
     <Sheet open={spell!==null} onOpenChange={open=>{if(!open)setSpell(null);}}><SheetContent themeRoute="all"><div className="sheet-heading"><SheetTitle>백마술</SheetTitle></div><div className="sheet-scroll spell-panel"><Semantic nodes={spellNodes.length?spellNodes:data.sections.spells.tree} {...semanticProps}/></div></SheetContent></Sheet><DocumentSheet docs={docs} current={doc} onOpen={setDoc} onClose={()=>setDoc(null)} route="all"/>
-  </main></Tabs>;
+  </main></Tabs></ViewTransition>;
 }
 
 function UnitSheet({name,u,out,data,classes,part,onDoc,semanticProps}:{name:string;u:TeamUnit;out?:string;data:Data;classes:Record<string,ClassInfo>;part:string;onDoc:(url:string)=>void;onSpell:(id:string)=>void;semanticProps:{route:string;part:string;onDoc:(url:string)=>void;onSpell:(id:string)=>void}}){
