@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "host": "Codex / Windows / Chrome / isolated Playwright context",
+  "siteId": "ca844312-b942-4708-a9a2-7bcf0c812fe5",
+  "deployId": "6af6b4739c55c6b580a2c36c",
+  "url": "https://fe-fortunes-weave-guide-megi.netlify.app",
+  "files": [
+    {
+      "path": "/",
+      "status": 200,
+      "sha256": "df705d98eb6130f3b481636920c6402afaa33c81c5a2961136b9900c09fb000e"
+    },
+    {
+      "path": "/theodora/1/",
+      "status": 200,
+      "sha256": "290330f49b9a69fcc91a92defd7e1675ded24b3c1e51be79e9d8cf03dbcf2575"
+    },
+    {
+      "path": "/team/",
+      "status": 200,
+      "sha256": "7b4b152f44bfc101d6ea99653faaea6be9317fd66999a4f291e6e31f79481cdf"
+    },
+    {
+      "path": "/part3/3/",
+      "status": 200,
+      "sha256": "9414947414be547afa754bd21394a3db6f15956f531ee547c30fbca1344ecbda"
+    },
+    {
+      "path": "/reference-data/checklist.json",
+      "status": 200,
+      "sha256": "167377201425c5ae4fda6f30e20b125e3a22fe8e0a3d647c337c11b71cf5bdef"
+    },
+    {
+      "path": "/assets/portraits/post-timeskip/theodora.png",
+      "status": 200,
+      "sha256": "eb45bf725e7437890da08bdc29faf9189354c072565470c285554a8fe99cb0a1"
+    }
+  ],
+  "checks": [
+    "운영 태블릿 초상화 위치",
+    "운영 세오도라 실제 첫 값 185/439",
+    "운영 시험 안내",
+    "운영 복원 인물 문서·체험 교체",
+    "운영 설정 기억",
+    "운영 휴대폰 마법표 열 표시"
+  ],
+  "errors": [],
+  "htmlNormalization": "Netlify가 삽입한 호스팅 주석과 public HUD 스크립트만 제외한 HTML 바이트를 비교",
+  "limits": "운영 표본 6파일의 빌드 일치와 주요 동작 검사. 사용자 실제 브라우저 저장소는 사용하지 않음."
+}
