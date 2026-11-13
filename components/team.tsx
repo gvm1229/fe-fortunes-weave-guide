@@ -119,7 +119,7 @@ function UnitSheet({name,u,out,data,classes,part,onDoc,semanticProps}:{name:stri
       <div><dt>병과의 사용 가능 무기</dt><dd className="route-weapons">{(u.usableWeapons||u.weapons).map(w=><span className="game-badge" data-kind="skill" key={w.label}><img src={'/'+w.icon} alt=""/>{w.label.replace('백마법','백마술')}</span>)}</dd></div>
       <div><dt>특기</dt><dd className="route-weapons">{u.specialtyIcons.map(s=><span className="game-badge" data-kind="skill" key={s.skill}><img src={'/'+s.icon} alt=""/>{s.skill}</span>)}</dd></div>
       <div><dt>주요 무기·마법</dt><dd>{u.signatureWeapons.map(w=><div key={w.name} className="signature"><p><img className="game-skill" src={'/'+w.icon} alt=""/><strong>{w.name}</strong> · {w.rank}</p><Records value={{$prose:w.note.split(/(?<=[.!?。])\s+|(?<=[.!?。])(?=[가-힣])/u)}} disclose={false}/></div>)}</dd></div>
-      {data.white[name]?.tree.length>0&&<div><dt>핵심 백마술</dt><dd><Semantic nodes={data.white[name].tree} {...semanticProps}/></dd></div>}
+      {data.white[name]?.tree.length>0&&<div><dt>백마술</dt><dd><Semantic nodes={data.white[name].tree} {...semanticProps}/></dd></div>}
       {u.growthGoal&&<div><dt>경유</dt><dd>{u.growthGoal.via} → {u.growthGoal.skill} {u.growthGoal.rank} · {u.growthGoal.unlock}</dd></div>}
       <div><dt>역할 설명</dt><dd><GameText text={characterReason(name)||u.classReason} part={part} skip={skip}/></dd></div>
       {out&&<div><dt>교체 손익</dt><dd>{data.proposal.roleTradeoffs[out+'→'+name]||u.loss}</dd></div>}
