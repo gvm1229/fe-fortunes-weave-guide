@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "host": "Windows / Node.js / Git",
+  "scope": "HEAD",
+  "files": 947,
+  "method": "원본 SHA-256과 현재 파일을 대조하고, 파일 바이트로 만든 Git blob ID를 Git에 저장된 ID와 비교",
+  "limits": "지정한 원본 자료·미디어의 저장 바이트만 검증. 실행 동작과 원격 푸시는 별도 확인."
+}

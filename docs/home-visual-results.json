@@ -1,0 +1,269 @@
+{
+  "status": "passed",
+  "errors": [],
+  "host": "Codex / Windows / Chrome / static build",
+  "base": "http://localhost:3000",
+  "rows": [
+    {
+      "width": 375,
+      "height": 812,
+      "theme": "light",
+      "horizontal": 0,
+      "vertical": 0,
+      "cards": [
+        {
+          "route": "kai",
+          "clearance": 1.21875
+        },
+        {
+          "route": "dietrich",
+          "clearance": 1.21875
+        },
+        {
+          "route": "theodora",
+          "clearance": 1.21875
+        },
+        {
+          "route": "leda",
+          "clearance": 1.21875
+        }
+      ],
+      "screenshot": ".tmp/final-home/375-light.png"
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "theme": "dark",
+      "horizontal": 0,
+      "vertical": 0,
+      "cards": [
+        {
+          "route": "kai",
+          "clearance": 1.21875
+        },
+        {
+          "route": "dietrich",
+          "clearance": 1.21875
+        },
+        {
+          "route": "theodora",
+          "clearance": 1.21875
+        },
+        {
+          "route": "leda",
+          "clearance": 1.21875
+        }
+      ],
+      "screenshot": ".tmp/final-home/375-dark.png"
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "theme": "light",
+      "horizontal": 0,
+      "vertical": 0,
+      "cards": [
+        {
+          "route": "kai",
+          "clearance": 1.21875
+        },
+        {
+          "route": "dietrich",
+          "clearance": 1.21875
+        },
+        {
+          "route": "theodora",
+          "clearance": 1.21875
+        },
+        {
+          "route": "leda",
+          "clearance": 1.21875
+        }
+      ],
+      "screenshot": ".tmp/final-home/768-light.png"
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "theme": "dark",
+      "horizontal": 0,
+      "vertical": 0,
+      "cards": [
+        {
+          "route": "kai",
+          "clearance": 1.21875
+        },
+        {
+          "route": "dietrich",
+          "clearance": 1.21875
+        },
+        {
+          "route": "theodora",
+          "clearance": 1.21875
+        },
+        {
+          "route": "leda",
+          "clearance": 1.21875
+        }
+      ],
+      "screenshot": ".tmp/final-home/768-dark.png"
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "theme": "light",
+      "horizontal": 0,
+      "vertical": 0,
+      "cards": [
+        {
+          "route": "kai",
+          "clearance": 16.609375
+        },
+        {
+          "route": "dietrich",
+          "clearance": 16.609375
+        },
+        {
+          "route": "theodora",
+          "clearance": 16.609375
+        },
+        {
+          "route": "leda",
+          "clearance": 16.609375
+        }
+      ],
+      "screenshot": ".tmp/final-home/1280-light.png"
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "theme": "dark",
+      "horizontal": 0,
+      "vertical": 0,
+      "cards": [
+        {
+          "route": "kai",
+          "clearance": 16.609375
+        },
+        {
+          "route": "dietrich",
+          "clearance": 16.609375
+        },
+        {
+          "route": "theodora",
+          "clearance": 16.609375
+        },
+        {
+          "route": "leda",
+          "clearance": 16.609375
+        }
+      ],
+      "screenshot": ".tmp/final-home/1280-dark.png"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "light",
+      "horizontal": 0,
+      "vertical": 0,
+      "cards": [
+        {
+          "route": "kai",
+          "clearance": 16.609375
+        },
+        {
+          "route": "dietrich",
+          "clearance": 16.609375
+        },
+        {
+          "route": "theodora",
+          "clearance": 16.609375
+        },
+        {
+          "route": "leda",
+          "clearance": 16.609375
+        }
+      ],
+      "screenshot": ".tmp/final-home/1440-light.png"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "dark",
+      "horizontal": 0,
+      "vertical": 0,
+      "cards": [
+        {
+          "route": "kai",
+          "clearance": 16.609375
+        },
+        {
+          "route": "dietrich",
+          "clearance": 16.609375
+        },
+        {
+          "route": "theodora",
+          "clearance": 16.609375
+        },
+        {
+          "route": "leda",
+          "clearance": 16.609375
+        }
+      ],
+      "screenshot": ".tmp/final-home/1440-dark.png"
+    },
+    {
+      "width": 3840,
+      "height": 2160,
+      "theme": "light",
+      "horizontal": 0,
+      "vertical": 0,
+      "cards": [
+        {
+          "route": "kai",
+          "clearance": 16.609375
+        },
+        {
+          "route": "dietrich",
+          "clearance": 16.609375
+        },
+        {
+          "route": "theodora",
+          "clearance": 16.609375
+        },
+        {
+          "route": "leda",
+          "clearance": 16.609375
+        }
+      ],
+      "screenshot": ".tmp/final-home/3840-light.png"
+    },
+    {
+      "width": 3840,
+      "height": 2160,
+      "theme": "dark",
+      "horizontal": 0,
+      "vertical": 0,
+      "cards": [
+        {
+          "route": "kai",
+          "clearance": 16.609375
+        },
+        {
+          "route": "dietrich",
+          "clearance": 16.609375
+        },
+        {
+          "route": "theodora",
+          "clearance": 16.609375
+        },
+        {
+          "route": "leda",
+          "clearance": 16.609375
+        }
+      ],
+      "screenshot": ".tmp/final-home/3840-dark.png"
+    }
+  ],
+  "limits": "창 크기 재현이며 실제 휴대폰·다른 브라우저 검사는 아님."
+}
