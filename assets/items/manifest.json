@@ -1,0 +1,2115 @@
+{
+  "reviewed": "2026-11-14",
+  "scope": "공략 본문에 나오는 물품 이름의 게임 내 아이콘. 이 게임은 물품마다 고유 그림이 아니라 종류·등급별 공용 아이콘을 쓰므로 같은 파일을 여러 물품이 공유한다. 무기·선물은 기존 assets/weapons·assets/gifts 파일을 재사용.",
+  "sources": [
+    "https://game8.jp/fe-banshisenko/816980",
+    "https://game8.jp/fe-banshisenko/817514",
+    "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621281",
+    "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624947",
+    "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624946",
+    "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621538",
+    "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621537",
+    "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535"
+  ],
+  "fallbackValues": [
+    "fish",
+    "ore",
+    "meat",
+    "gift",
+    "coin",
+    "sword",
+    "gem",
+    "box"
+  ],
+  "items": {
+    "태양 열매": {
+      "file": "assets/items/vegetable-common.webp",
+      "source": "https://game8.jp/fe-banshisenko/817056",
+      "image": "https://img.game8.jp/13010017/b8e86753d00cce6bbd81a28ab11b4639.webp/show",
+      "kind": "material",
+      "aliases": [],
+      "japanese": "サンノミ",
+      "english": "Thry Fruit"
+    },
+    "유나메이": {
+      "file": "assets/items/vegetable-epic.webp",
+      "source": "https://game8.jp/fe-banshisenko/817018",
+      "image": "https://img.game8.jp/13010018/63a4f31144642a7d0280c6d637e75f97.webp/show",
+      "kind": "material",
+      "aliases": [],
+      "japanese": "ユナメイ",
+      "english": "Yuna Mei"
+    },
+    "멜라라": {
+      "file": "assets/items/vegetable-rare.webp",
+      "source": "https://game8.jp/fe-banshisenko/817041",
+      "image": "https://img.game8.jp/13010019/5571e49bb58a4a3049910b8f7f01d1c6.webp/show",
+      "kind": "material",
+      "aliases": [],
+      "japanese": "メララ",
+      "english": "Melara"
+    },
+    "리나리아": {
+      "file": "assets/items/vegetable-common.webp",
+      "source": "https://game8.jp/fe-banshisenko/817057",
+      "image": "https://img.game8.jp/13010017/b8e86753d00cce6bbd81a28ab11b4639.webp/show",
+      "kind": "material",
+      "aliases": [],
+      "japanese": "リナリア",
+      "english": "Linaria"
+    },
+    "리가네트": {
+      "file": "assets/items/vegetable-epic.webp",
+      "source": "https://game8.jp/fe-banshisenko/817014",
+      "image": "https://img.game8.jp/13010018/63a4f31144642a7d0280c6d637e75f97.webp/show",
+      "kind": "material",
+      "aliases": [],
+      "japanese": "リガネット",
+      "english": "Liganet"
+    },
+    "마름쇠꽃": {
+      "file": "assets/items/vegetable-rare.webp",
+      "source": "https://game8.jp/fe-banshisenko/817040",
+      "image": "https://img.game8.jp/13010019/5571e49bb58a4a3049910b8f7f01d1c6.webp/show",
+      "kind": "material",
+      "aliases": [],
+      "japanese": "ヒシバナ",
+      "english": "Caltrop Flower"
+    },
+    "사막기장": {
+      "file": "assets/items/vegetable-common.webp",
+      "source": "https://game8.jp/fe-banshisenko/817043",
+      "image": "https://img.game8.jp/13010017/b8e86753d00cce6bbd81a28ab11b4639.webp/show",
+      "kind": "material",
+      "aliases": [],
+      "japanese": "サバクキビ",
+      "english": "Desert Millet"
+    },
+    "로카": {
+      "file": "assets/items/vegetable-common.webp",
+      "source": "https://game8.jp/fe-banshisenko/817049",
+      "image": "https://img.game8.jp/13010017/b8e86753d00cce6bbd81a28ab11b4639.webp/show",
+      "kind": "material",
+      "aliases": [],
+      "japanese": "ロカ",
+      "english": "Roca"
+    },
+    "대추야자": {
+      "file": "assets/items/vegetable-common.webp",
+      "source": "https://game8.jp/fe-banshisenko/816871",
+      "image": "https://img.game8.jp/13010017/b8e86753d00cce6bbd81a28ab11b4639.webp/show",
+      "kind": "material",
+      "aliases": [
+        "데이츠"
+      ],
+      "japanese": "デーツ",
+      "english": "Dates"
+    },
+    "글루마오사": {
+      "file": "assets/items/vegetable-rare.webp",
+      "source": "https://game8.jp/fe-banshisenko/817031",
+      "image": "https://img.game8.jp/13010019/5571e49bb58a4a3049910b8f7f01d1c6.webp/show",
+      "kind": "material",
+      "aliases": [
+        "구르마오사",
+        "그루마오사"
+      ],
+      "japanese": "グルマオサ",
+      "english": "Glirmosa"
+    },
+    "힝가샤": {
+      "file": "assets/items/vegetable-epic.webp",
+      "source": "https://game8.jp/fe-banshisenko/817015",
+      "image": "https://img.game8.jp/13010018/63a4f31144642a7d0280c6d637e75f97.webp/show",
+      "kind": "material",
+      "aliases": [],
+      "japanese": "ヒンガシャ",
+      "english": "Hingosh"
+    },
+    "원더 리프": {
+      "file": "assets/items/vegetable-common.webp",
+      "source": "https://game8.jp/fe-banshisenko/817045",
+      "image": "https://img.game8.jp/13010017/b8e86753d00cce6bbd81a28ab11b4639.webp/show",
+      "kind": "material",
+      "aliases": [],
+      "japanese": "ワンダーリーフ",
+      "english": "Wonder Leaves"
+    },
+    "스위트 리프": {
+      "file": "assets/items/vegetable-common.webp",
+      "source": "https://game8.jp/fe-banshisenko/817046",
+      "image": "https://img.game8.jp/13010017/b8e86753d00cce6bbd81a28ab11b4639.webp/show",
+      "kind": "material",
+      "aliases": [],
+      "japanese": "スウィートリーフ",
+      "english": "Sweet Leaves"
+    },
+    "비터 리프": {
+      "file": "assets/items/vegetable-common.webp",
+      "source": "https://game8.jp/fe-banshisenko/817044",
+      "image": "https://img.game8.jp/13010017/b8e86753d00cce6bbd81a28ab11b4639.webp/show",
+      "kind": "material",
+      "aliases": [],
+      "japanese": "ビターリーフ",
+      "english": "Bitter Leaves"
+    },
+    "스파이스 리프": {
+      "file": "assets/items/vegetable-common.webp",
+      "source": "https://game8.jp/fe-banshisenko/817047",
+      "image": "https://img.game8.jp/13010017/b8e86753d00cce6bbd81a28ab11b4639.webp/show",
+      "kind": "material",
+      "aliases": [
+        "스파이시 리프"
+      ],
+      "japanese": "スパイスリーフ",
+      "english": "Pepper Leaves"
+    },
+    "흰송어": {
+      "file": "assets/items/fish-common.webp",
+      "source": "https://game8.jp/fe-banshisenko/817076",
+      "image": "https://img.game8.jp/13010026/5d5de4ef29a0825db729687dea6b09c5.webp/show",
+      "kind": "fish",
+      "aliases": [
+        "순백의 송어"
+      ],
+      "japanese": "ホワイトトラウト",
+      "english": "White Trout"
+    },
+    "코샬루 가아": {
+      "file": "assets/items/fish-common.webp",
+      "source": "https://game8.jp/fe-banshisenko/817074",
+      "image": "https://img.game8.jp/13010026/5d5de4ef29a0825db729687dea6b09c5.webp/show",
+      "kind": "fish",
+      "aliases": [
+        "코샤루가",
+        "코샤루 가아"
+      ],
+      "japanese": "コーシャルーガー",
+      "english": "Kothar Gar"
+    },
+    "라돈 잉어": {
+      "file": "assets/items/fish-common.webp",
+      "source": "https://game8.jp/fe-banshisenko/817073",
+      "image": "https://img.game8.jp/13010026/5d5de4ef29a0825db729687dea6b09c5.webp/show",
+      "kind": "fish",
+      "aliases": [],
+      "japanese": "ラドンローチ",
+      "english": "Ladon Loach"
+    },
+    "라돈 꼬치고기": {
+      "file": "assets/items/fish-common.webp",
+      "source": "https://game8.jp/fe-banshisenko/817071",
+      "image": "https://img.game8.jp/13010026/5d5de4ef29a0825db729687dea6b09c5.webp/show",
+      "kind": "fish",
+      "aliases": [],
+      "japanese": "ラドンパイク",
+      "english": "Ladon Pike"
+    },
+    "카르나가다랑어": {
+      "file": "assets/items/fish-common.webp",
+      "source": "https://game8.jp/fe-banshisenko/817070",
+      "image": "https://img.game8.jp/13010026/5d5de4ef29a0825db729687dea6b09c5.webp/show",
+      "kind": "fish",
+      "aliases": [
+        "카르네 가다랑어"
+      ],
+      "japanese": "カーネボニート",
+      "english": "Carna Bonito"
+    },
+    "릴피시": {
+      "file": "assets/items/fish-common.webp",
+      "source": "https://game8.jp/fe-banshisenko/817068",
+      "image": "https://img.game8.jp/13010026/5d5de4ef29a0825db729687dea6b09c5.webp/show",
+      "kind": "fish",
+      "aliases": [],
+      "japanese": "リルフィッシュ",
+      "english": "Lir Fish"
+    },
+    "강철어": {
+      "file": "assets/items/fish-common.webp",
+      "source": "https://game8.jp/fe-banshisenko/817066",
+      "image": "https://img.game8.jp/13010026/5d5de4ef29a0825db729687dea6b09c5.webp/show",
+      "kind": "fish",
+      "aliases": [],
+      "japanese": "ハードフィッシュ",
+      "english": "Steelfish"
+    },
+    "반짝반짝어": {
+      "file": "assets/items/fish-epic.webp",
+      "source": "https://game8.jp/fe-banshisenko/816890",
+      "image": "https://img.game8.jp/13010016/c07fb895f7da714ab7b222af71adfa16.webp/show",
+      "kind": "fish",
+      "aliases": [],
+      "japanese": "カガヤキウオ",
+      "english": "Paradise Fish"
+    },
+    "옥강": {
+      "file": "assets/items/ore-common.webp",
+      "source": "https://game8.jp/fe-banshisenko/817000",
+      "image": "https://img.game8.jp/13010023/a37e68c9770247f480a8475c85d496bb.webp/show",
+      "kind": "ore",
+      "aliases": [],
+      "japanese": "玉鋼",
+      "english": "Black-Sand Steel"
+    },
+    "독석": {
+      "file": "assets/items/ore-common.webp",
+      "source": "https://game8.jp/fe-banshisenko/817002",
+      "image": "https://img.game8.jp/13010023/a37e68c9770247f480a8475c85d496bb.webp/show",
+      "kind": "ore",
+      "aliases": [],
+      "japanese": "毒石",
+      "english": "Venomstone"
+    },
+    "해성석": {
+      "file": "assets/items/ore-common.webp",
+      "source": "https://game8.jp/fe-banshisenko/816999",
+      "image": "https://img.game8.jp/13010023/a37e68c9770247f480a8475c85d496bb.webp/show",
+      "kind": "ore",
+      "aliases": [],
+      "japanese": "海星石",
+      "english": "Sea-Star Stone"
+    },
+    "뇌석": {
+      "file": "assets/items/ore-rare.webp",
+      "source": "https://game8.jp/fe-banshisenko/816997",
+      "image": "https://img.game8.jp/13010022/7ab00ddfbaeb20d8ea739dccd145bca6.webp/show",
+      "kind": "ore",
+      "aliases": [],
+      "japanese": "雷石",
+      "english": "Thunderstone"
+    },
+    "모래벌레 고기": {
+      "file": "assets/items/meat-epic.webp",
+      "source": "https://game8.jp/fe-banshisenko/817080",
+      "image": "https://img.game8.jp/13010020/5aea644513dfa3e3dc78223e32e44518.webp/show",
+      "kind": "meat",
+      "aliases": [
+        "모래 벌레 고기"
+      ],
+      "japanese": "砂虫肉",
+      "english": "Sandworm Meat"
+    },
+    "거대 고기": {
+      "file": "assets/items/meat-epic.webp",
+      "source": "https://game8.jp/fe-banshisenko/817081",
+      "image": "https://img.game8.jp/13010020/5aea644513dfa3e3dc78223e32e44518.webp/show",
+      "kind": "meat",
+      "aliases": [
+        "거대한 고기",
+        "거대고기"
+      ],
+      "japanese": "巨大肉",
+      "english": "Giants' Meat"
+    },
+    "전혼석": {
+      "file": "assets/items/ore-rare.webp",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628094",
+      "image": "https://img.game8.jp/13010022/7ab00ddfbaeb20d8ea739dccd145bca6.webp/show",
+      "kind": "ore",
+      "aliases": [],
+      "english": "Warrior's Soulstone",
+      "note": "game8.jp 소재 목록에 없음. game8.co 광석 목록에서 뇌석(Thunderstone)과 같은 등급 아이콘을 쓰므로 같은 그림 사용"
+    },
+    "성수": {
+      "file": "assets/items/holy-water.webp",
+      "source": "https://game8.jp/fe-banshisenko/816980",
+      "image": "https://img.game8.jp/13032319/ef1d7ab7db7dd097256d677277c2e8fb.webp/show",
+      "kind": "consumable",
+      "aliases": [],
+      "japanese": "聖水",
+      "english": "Pure Water"
+    },
+    "시인의 비문 사본": {
+      "file": "assets/items/monument-verse.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625206",
+      "image": "https://img.game8.co/4628337/add50ee2b9ca42df495201a253a37f99.png/show",
+      "kind": "other",
+      "aliases": [
+        "시인의 비석 사본"
+      ],
+      "english": "Monument Verse"
+    },
+    "아우람 로즈": {
+      "file": "assets/items/key-item.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/626122",
+      "image": "https://img.game8.co/4625195/2f738c2d1598f0ff927d40ea5367ca6a.png/show",
+      "kind": "other",
+      "aliases": [
+        "아우룸 로즈",
+        "아우람로즈"
+      ],
+      "english": "Aurum Rose"
+    },
+    "푸른 심장": {
+      "file": "assets/items/key-item.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/626123",
+      "image": "https://img.game8.co/4625195/2f738c2d1598f0ff927d40ea5367ca6a.png/show",
+      "kind": "other",
+      "aliases": [
+        "벽빛 심장",
+        "푸른빛 심장"
+      ],
+      "english": "Azure Heart"
+    },
+    "비작의 물방울": {
+      "file": "assets/items/key-item.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/626117",
+      "image": "https://img.game8.co/4625195/2f738c2d1598f0ff927d40ea5367ca6a.png/show",
+      "kind": "other",
+      "aliases": [],
+      "english": "Scarlet Firedrops"
+    },
+    "선물 상자": {
+      "file": "assets/items/crate.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624946",
+      "image": "https://img.game8.co/4613673/6b72c7b6cccbfcbbaabc462fc2f80051.png/show",
+      "kind": "other",
+      "aliases": [
+        "선물이 든 상자"
+      ],
+      "english": "Gift Box"
+    },
+    "재건자재": {
+      "file": "assets/items/building-materials.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/632261",
+      "image": "https://img.game8.co/4633104/c449838aa1036201c7fd227816177fe5.png/show",
+      "kind": "consumable",
+      "aliases": [],
+      "english": "Building Materials"
+    },
+    "고기 상자": {
+      "file": "assets/items/crate.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/631468",
+      "image": "https://img.game8.co/4613673/6b72c7b6cccbfcbbaabc462fc2f80051.png/show",
+      "kind": "other",
+      "aliases": [
+        "일반 고기 상자"
+      ],
+      "english": "Meat Crate"
+    },
+    "고급 고기 상자": {
+      "file": "assets/items/crate.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/631472",
+      "image": "https://img.game8.co/4613673/6b72c7b6cccbfcbbaabc462fc2f80051.png/show",
+      "kind": "other",
+      "aliases": [],
+      "english": "Luxury Meat Crate"
+    },
+    "초급 시험 증표": {
+      "file": "assets/items/license-basic.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/631448",
+      "image": "https://img.game8.co/4614940/b40fe8586a1b5cef41dc617f5da2b992.png/show",
+      "kind": "seal",
+      "aliases": [
+        "초급 시험 증서"
+      ],
+      "english": "Beginner License"
+    },
+    "중급 시험 증표": {
+      "file": "assets/items/license-basic.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/631372",
+      "image": "https://img.game8.co/4614940/b40fe8586a1b5cef41dc617f5da2b992.png/show",
+      "kind": "seal",
+      "aliases": [
+        "중급 시험 증서"
+      ],
+      "english": "Specialty License"
+    },
+    "상급 시험 증표": {
+      "file": "assets/items/license-advanced.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/631137",
+      "image": "https://img.game8.co/4613538/00c87999cfe73bea282c8943a7d85e6f.png/show",
+      "kind": "seal",
+      "aliases": [
+        "상급 시험 증서"
+      ],
+      "english": "Advanced License"
+    },
+    "최상급 시험 증표": {
+      "file": "assets/items/license-master.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/631362",
+      "image": "https://img.game8.co/4633105/7a21c33f72a7844f10a52ed4abf06e4d.png/show",
+      "kind": "seal",
+      "aliases": [
+        "최상급 시험 증서"
+      ],
+      "english": "Master License"
+    },
+    "무희의 목걸이": {
+      "file": "assets/items/dancers-necklace.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624947",
+      "image": "https://img.game8.co/4648452/2a2ce5952becc05dab5444a4bd6179d5.png/show",
+      "kind": "seal",
+      "aliases": [
+        "무용수의 목걸이"
+      ],
+      "english": "Dancer's Necklace"
+    },
+    "코끼리병 시험 증표": {
+      "file": null,
+      "source": null,
+      "image": null,
+      "kind": "seal",
+      "aliases": [
+        "코끼리병 시험 증서"
+      ],
+      "fallback": "gem",
+      "english": "Elephant License",
+      "note": "game8.co 시험 증서 목록의 그림이 채소 아이콘과 같아 오기로 보고 사용하지 않음"
+    },
+    "무사의 목걸이": {
+      "file": null,
+      "source": null,
+      "image": null,
+      "kind": "seal",
+      "aliases": [
+        "뮤즈의 목걸이"
+      ],
+      "fallback": "gem",
+      "english": "Muses' Necklace",
+      "note": "game8 jp/co 목록에서 아이콘 미확인"
+    },
+    "대제의 복대": {
+      "file": null,
+      "source": null,
+      "image": null,
+      "kind": "seal",
+      "aliases": [],
+      "fallback": "gem",
+      "english": "Emperor's Sash",
+      "note": "game8 jp/co 목록에서 아이콘 미확인"
+    },
+    "요도의 코등이": {
+      "file": null,
+      "source": null,
+      "image": null,
+      "kind": "seal",
+      "aliases": [],
+      "fallback": "gem",
+      "english": null,
+      "note": "game8 jp/co 목록에서 아이콘 미확인"
+    },
+    "신철의 안장": {
+      "file": null,
+      "source": null,
+      "image": null,
+      "kind": "seal",
+      "aliases": [],
+      "fallback": "gem",
+      "english": "Divinium Saddle",
+      "note": "game8 jp/co 목록에서 아이콘 미확인"
+    },
+    "어둠의 결정": {
+      "file": null,
+      "source": null,
+      "image": null,
+      "kind": "seal",
+      "aliases": [
+        "암흑 결정"
+      ],
+      "fallback": "gem",
+      "english": "Crystal of Darkness",
+      "note": "game8 jp/co 목록에서 아이콘 미확인"
+    },
+    "삼차의 창": {
+      "file": null,
+      "source": null,
+      "image": null,
+      "kind": "seal",
+      "aliases": [],
+      "fallback": "gem",
+      "english": null,
+      "note": "game8 jp/co 목록에서 아이콘 미확인"
+    },
+    "전생의 연화": {
+      "file": null,
+      "source": null,
+      "image": null,
+      "kind": "seal",
+      "aliases": [],
+      "fallback": "gem",
+      "english": null,
+      "note": "game8 jp/co 목록에서 아이콘 미확인"
+    },
+    "심판의 천칭": {
+      "file": null,
+      "source": null,
+      "image": null,
+      "kind": "seal",
+      "aliases": [],
+      "fallback": "gem",
+      "english": "Scales of Judgement",
+      "note": "game8 jp/co 목록에서 아이콘 미확인"
+    },
+    "환상의 긴지": {
+      "file": null,
+      "source": null,
+      "image": null,
+      "kind": "other",
+      "aliases": [],
+      "fallback": "gem",
+      "english": "Phantom Ginji",
+      "note": "game8 jp 채소 목록·co 기타 아이템 목록에 없음"
+    },
+    "차축 부품": {
+      "file": null,
+      "source": null,
+      "image": null,
+      "kind": "other",
+      "aliases": [],
+      "fallback": "box",
+      "english": "Custom Axle",
+      "note": "game8 jp/co 아이템 목록에 없음"
+    },
+    "소렐의 휘창": {
+      "file": "assets/weapons/item-1474739a52a9.webp",
+      "source": "https://game8.jp/fe-banshisenko/822164",
+      "image": "https://img.game8.jp/13027786/4d3457237d82bbd64dc433323308eef1.webp/show",
+      "kind": "weapon",
+      "aliases": [
+        "크레르 의뢰 강화창"
+      ],
+      "japanese": "ソレルの輝槍",
+      "english": "Shining Spear"
+    },
+    "아살": {
+      "file": "assets/weapons/item-1474739a52a9.webp",
+      "source": "https://game8.jp/fe-banshisenko/819509",
+      "image": "https://img.game8.jp/13027786/4d3457237d82bbd64dc433323308eef1.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "聖槍アッサル",
+      "english": "Assal"
+    },
+    "강화 앤서러": {
+      "file": "assets/weapons/item-3e8974379abc.webp",
+      "source": "https://game8.jp/fe-banshisenko/822268",
+      "image": "https://img.game8.jp/13027785/83b67bd5599aa44038f3840b5d18b078.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "アンスウェラー改",
+      "english": "Answerer Arisen"
+    },
+    "재계의 검": {
+      "file": "assets/weapons/item-3e8974379abc.webp",
+      "source": "https://game8.jp/fe-banshisenko/819533",
+      "image": "https://img.game8.jp/13027785/83b67bd5599aa44038f3840b5d18b078.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "清めの剣",
+      "english": "Cleansing Blade"
+    },
+    "아우로라의 성창": {
+      "file": "assets/weapons/item-1474739a52a9.webp",
+      "source": "https://game8.jp/fe-banshisenko/819504",
+      "image": "https://img.game8.jp/13027786/4d3457237d82bbd64dc433323308eef1.webp/show",
+      "kind": "weapon",
+      "aliases": [
+        "카이 9장 지급창"
+      ],
+      "japanese": "アウロラの星槍",
+      "english": "Star Spear"
+    },
+    "나이트 킬러": {
+      "file": "assets/weapons/item-1474739a52a9.webp",
+      "source": "https://game8.jp/fe-banshisenko/819505",
+      "image": "https://img.game8.jp/13027786/4d3457237d82bbd64dc433323308eef1.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "ナイトキラー",
+      "english": "Ridersbane"
+    },
+    "마하마두의 창": {
+      "file": "assets/weapons/item-1474739a52a9.webp",
+      "source": "https://game8.jp/fe-banshisenko/819513",
+      "image": "https://img.game8.jp/13027786/4d3457237d82bbd64dc433323308eef1.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "マハマドゥの槍",
+      "english": "Mahadu's Spear"
+    },
+    "슬렌드 스피어": {
+      "file": "assets/weapons/item-1474739a52a9.webp",
+      "source": "https://game8.jp/fe-banshisenko/819501",
+      "image": "https://img.game8.jp/13027786/4d3457237d82bbd64dc433323308eef1.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "スレンドスピア",
+      "english": "Pilum"
+    },
+    "칼라의 활": {
+      "file": "assets/weapons/item-d36f4cad9901.webp",
+      "source": "https://game8.jp/fe-banshisenko/822280",
+      "image": "https://img.game8.jp/13027787/4ea24420373cb90207e80928b18eea52.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "カーラの弓",
+      "english": "Kalla's Bow"
+    },
+    "잘목시스": {
+      "file": "assets/weapons/item-10bcdf2e5f08.webp",
+      "source": "https://game8.jp/fe-banshisenko/819493",
+      "image": "https://img.game8.jp/13027788/6460258a43d88b35ad5128524e6f381f.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "ザルモクシス",
+      "english": "Zalmoxis"
+    },
+    "반격의 건틀릿": {
+      "file": "assets/weapons/item-d377c1b7902a.webp",
+      "source": "https://game8.jp/fe-banshisenko/819460",
+      "image": "https://img.game8.jp/13027784/57c2531e2f6370f38a1cb0c44010e326.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "反撃の籠手"
+    },
+    "다 미나의 건틀릿": {
+      "file": "assets/weapons/item-d377c1b7902a.webp",
+      "source": "https://game8.jp/fe-banshisenko/819463",
+      "image": "https://img.game8.jp/13027784/57c2531e2f6370f38a1cb0c44010e326.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "ダ・ミナの籠手",
+      "english": "Da Mina Gauntlets"
+    },
+    "건곤권": {
+      "file": "assets/weapons/item-d377c1b7902a.webp",
+      "source": "https://game8.jp/fe-banshisenko/819459",
+      "image": "https://img.game8.jp/13027784/57c2531e2f6370f38a1cb0c44010e326.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "乾坤圏",
+      "english": "Qiankun Circles"
+    },
+    "큰 곰의 오른 발톱": {
+      "file": "assets/weapons/item-fffc003ab338.webp",
+      "source": "https://game8.jp/fe-banshisenko/819458",
+      "image": "https://img.game8.jp/13028687/38afa98f0550d42e280a56b1e8cd2f41.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "大熊の右鉤爪"
+    },
+    "킬 소드": {
+      "file": "assets/weapons/item-3e8974379abc.webp",
+      "source": "https://game8.jp/fe-banshisenko/819523",
+      "image": "https://img.game8.jp/13027785/83b67bd5599aa44038f3840b5d18b078.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "キルソード"
+    },
+    "플리사": {
+      "file": "assets/weapons/item-3e8974379abc.webp",
+      "source": "https://game8.jp/fe-banshisenko/819522",
+      "image": "https://img.game8.jp/13027785/83b67bd5599aa44038f3840b5d18b078.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "フリッサ",
+      "english": "Flyssa"
+    },
+    "마창 그라시더": {
+      "file": "assets/weapons/item-1474739a52a9.webp",
+      "source": "https://game8.jp/fe-banshisenko/819500",
+      "image": "https://img.game8.jp/13027786/4d3457237d82bbd64dc433323308eef1.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "魔槍グラシーダ",
+      "english": "Grasitha"
+    },
+    "신자의 작살": {
+      "file": "assets/weapons/item-1474739a52a9.webp",
+      "source": "https://game8.jp/fe-banshisenko/819515",
+      "image": "https://img.game8.jp/13027786/4d3457237d82bbd64dc433323308eef1.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "シンザのモリ"
+    },
+    "선더 소드": {
+      "file": "assets/weapons/item-3e8974379abc.webp",
+      "source": "https://game8.jp/fe-banshisenko/819521",
+      "image": "https://img.game8.jp/13027785/83b67bd5599aa44038f3840b5d18b078.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "サンダーソード",
+      "english": "Levin Sword"
+    },
+    "언월도": {
+      "file": "assets/weapons/item-1474739a52a9.webp",
+      "source": "https://game8.jp/fe-banshisenko/819502",
+      "image": "https://img.game8.jp/13027786/4d3457237d82bbd64dc433323308eef1.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "偃月刀"
+    },
+    "다 미나의 창": {
+      "file": "assets/weapons/item-1474739a52a9.webp",
+      "source": "https://game8.jp/fe-banshisenko/819507",
+      "image": "https://img.game8.jp/13027786/4d3457237d82bbd64dc433323308eef1.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "ダ・ミナの槍"
+    },
+    "쇼트 스피어": {
+      "file": "assets/weapons/item-1474739a52a9.webp",
+      "source": "https://game8.jp/fe-banshisenko/819506",
+      "image": "https://img.game8.jp/13027786/4d3457237d82bbd64dc433323308eef1.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "ショートスピア"
+    },
+    "수렵의 활": {
+      "file": "assets/weapons/item-d36f4cad9901.webp",
+      "source": "https://game8.jp/fe-banshisenko/819477",
+      "image": "https://img.game8.jp/13027787/4ea24420373cb90207e80928b18eea52.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "獣狩りの弓",
+      "english": "Hunter's Bow"
+    },
+    "롱 보우": {
+      "file": "assets/weapons/item-d36f4cad9901.webp",
+      "source": "https://game8.jp/fe-banshisenko/819474",
+      "image": "https://img.game8.jp/13027787/4ea24420373cb90207e80928b18eea52.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "ロングボウ",
+      "english": "Longbow"
+    },
+    "다 미나의 활": {
+      "file": "assets/weapons/item-d36f4cad9901.webp",
+      "source": "https://game8.jp/fe-banshisenko/819475",
+      "image": "https://img.game8.jp/13027787/4ea24420373cb90207e80928b18eea52.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "ダ・ミナの弓"
+    },
+    "배틀 보우": {
+      "file": "assets/weapons/item-d36f4cad9901.webp",
+      "source": "https://game8.jp/fe-banshisenko/819472",
+      "image": "https://img.game8.jp/13027787/4ea24420373cb90207e80928b18eea52.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "バトルボウ"
+    },
+    "말 킬러의 활": {
+      "file": "assets/weapons/item-d36f4cad9901.webp",
+      "source": "https://game8.jp/fe-banshisenko/819471",
+      "image": "https://img.game8.jp/13027787/4ea24420373cb90207e80928b18eea52.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "馬殺しの弓",
+      "english": "Horsekiller Bow"
+    },
+    "미니 보우": {
+      "file": "assets/weapons/item-d36f4cad9901.webp",
+      "source": "https://game8.jp/fe-banshisenko/822149",
+      "image": "https://img.game8.jp/13027787/4ea24420373cb90207e80928b18eea52.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "ショートボウ",
+      "english": "Mini Bow"
+    },
+    "독의 활": {
+      "file": "assets/weapons/item-d36f4cad9901.webp",
+      "source": "https://game8.jp/fe-banshisenko/819476",
+      "image": "https://img.game8.jp/13027787/4ea24420373cb90207e80928b18eea52.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "毒の弓",
+      "english": "Venin Bow"
+    },
+    "이데아의 활": {
+      "file": "assets/weapons/item-d36f4cad9901.webp",
+      "source": "https://game8.jp/fe-banshisenko/822160",
+      "image": "https://img.game8.jp/13027787/4ea24420373cb90207e80928b18eea52.webp/show",
+      "kind": "weapon",
+      "aliases": [
+        "아스완 지참 활"
+      ],
+      "japanese": "イデアの弓",
+      "english": "Idah's Bow"
+    },
+    "체르베루스": {
+      "file": "assets/weapons/item-d377c1b7902a.webp",
+      "source": "https://game8.jp/fe-banshisenko/819457",
+      "image": "https://img.game8.jp/13027784/57c2531e2f6370f38a1cb0c44010e326.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "ツェルベルス",
+      "english": "Zerberus"
+    },
+    "트론": {
+      "file": "assets/weapons/item-08c97b353f3f.webp",
+      "source": "https://game8.jp/fe-banshisenko/818772",
+      "image": "https://img.game8.jp/13007556/b9ebbf92f619ab66992d27ee53752a83.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "トロン"
+    },
+    "셰이버": {
+      "file": "assets/weapons/item-08c97b353f3f.webp",
+      "source": "https://game8.jp/fe-banshisenko/818778",
+      "image": "https://img.game8.jp/13007556/b9ebbf92f619ab66992d27ee53752a83.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "シェイバー"
+    },
+    "데스": {
+      "file": "assets/weapons/item-08c97b353f3f.webp",
+      "source": "https://game8.jp/fe-banshisenko/818774",
+      "image": "https://img.game8.jp/13007556/b9ebbf92f619ab66992d27ee53752a83.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "デスΓ"
+    },
+    "루나": {
+      "file": "assets/weapons/item-08c97b353f3f.webp",
+      "source": "https://game8.jp/fe-banshisenko/818768",
+      "image": "https://img.game8.jp/13007556/b9ebbf92f619ab66992d27ee53752a83.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "ルナΛ"
+    },
+    "엑스칼리버": {
+      "file": "assets/weapons/item-08c97b353f3f.webp",
+      "source": "https://game8.jp/fe-banshisenko/826987",
+      "image": "https://img.game8.jp/13007556/b9ebbf92f619ab66992d27ee53752a83.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "エクスカリバー"
+    },
+    "리브로": {
+      "file": "assets/weapons/item-cae5fd8b4ffa.webp",
+      "source": "https://game8.jp/fe-banshisenko/818754",
+      "image": "https://img.game8.jp/13007575/9cfcd74aa7a79f2d2e0dbdfa3e5b5258.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "リブロー"
+    },
+    "리자이어": {
+      "file": "assets/weapons/item-cae5fd8b4ffa.webp",
+      "source": "https://game8.jp/fe-banshisenko/818755",
+      "image": "https://img.game8.jp/13007575/9cfcd74aa7a79f2d2e0dbdfa3e5b5258.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "リザイア"
+    },
+    "엔젤": {
+      "file": "assets/weapons/item-cae5fd8b4ffa.webp",
+      "source": "https://game8.jp/fe-banshisenko/818766",
+      "image": "https://img.game8.jp/13007575/9cfcd74aa7a79f2d2e0dbdfa3e5b5258.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "エンジェル"
+    },
+    "레스큐": {
+      "file": "assets/weapons/item-cae5fd8b4ffa.webp",
+      "source": "https://yuphastemple.com/?item=rescue",
+      "image": "https://img.game8.jp/13007575/9cfcd74aa7a79f2d2e0dbdfa3e5b5258.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "レスキュー"
+    },
+    "워프": {
+      "file": "assets/weapons/item-cae5fd8b4ffa.webp",
+      "source": "https://game8.jp/fe-banshisenko/818752",
+      "image": "https://img.game8.jp/13007575/9cfcd74aa7a79f2d2e0dbdfa3e5b5258.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "ワープ"
+    },
+    "사일런스": {
+      "file": "assets/weapons/item-cae5fd8b4ffa.webp",
+      "source": "https://game8.jp/fe-banshisenko/818764",
+      "image": "https://img.game8.jp/13007575/9cfcd74aa7a79f2d2e0dbdfa3e5b5258.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "サイレス"
+    },
+    "사검 벨로키네": {
+      "file": "assets/weapons/item-ea9379ad0d17.webp",
+      "source": "https://game8.jp/fe-banshisenko/819519",
+      "image": "https://img.game8.jp/13028686/bea60b6f357a0e5a401cf0a557bd03a6.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "邪剣ヴェロキネ"
+    },
+    "스미르노스 보상 건틀릿": {
+      "file": "assets/weapons/item-d377c1b7902a.webp",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628047",
+      "image": "https://img.game8.jp/13027784/57c2531e2f6370f38a1cb0c44010e326.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "english": "Smyrnos's Channels",
+      "note": "격투술 공용 무기 아이콘(game8.jp 무기 목록 기준)"
+    },
+    "참마도": {
+      "file": "assets/weapons/item-3e8974379abc.webp",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628010",
+      "image": "https://img.game8.jp/13027785/83b67bd5599aa44038f3840b5d18b078.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "english": "Zanbato",
+      "note": "검술 공용 무기 아이콘(game8.jp 무기 목록 기준)"
+    },
+    "극": {
+      "file": "assets/weapons/item-1474739a52a9.webp",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628078",
+      "image": "https://img.game8.jp/13027786/4d3457237d82bbd64dc433323308eef1.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "english": "Ji",
+      "note": "창술 공용 무기 아이콘(game8.jp 무기 목록 기준)"
+    },
+    "해머": {
+      "file": "assets/weapons/item-10bcdf2e5f08.webp",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628026",
+      "image": "https://img.game8.jp/13027788/6460258a43d88b35ad5128524e6f381f.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "english": "Hammer",
+      "note": "도끼술 공용 무기 아이콘(game8.jp 무기 목록 기준)"
+    },
+    "크레르 시련 보상 도끼": {
+      "file": "assets/weapons/item-10bcdf2e5f08.webp",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/630070",
+      "image": "https://img.game8.jp/13027788/6460258a43d88b35ad5128524e6f381f.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "english": "Credna's Mallet",
+      "note": "도끼술 공용 무기 아이콘(game8.jp 무기 목록 기준)"
+    },
+    "그레이트 소드": {
+      "file": "assets/weapons/item-3e8974379abc.webp",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628485",
+      "image": "https://img.game8.jp/13027785/83b67bd5599aa44038f3840b5d18b078.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "english": "Greatsword",
+      "note": "검술 공용 무기 아이콘(game8.jp 무기 목록 기준)"
+    },
+    "핼버드": {
+      "file": "assets/weapons/item-1474739a52a9.webp",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628076",
+      "image": "https://img.game8.jp/13027786/4d3457237d82bbd64dc433323308eef1.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "english": "Halberd",
+      "note": "창술 공용 무기 아이콘(game8.jp 무기 목록 기준)"
+    },
+    "메이스": {
+      "file": "assets/weapons/item-10bcdf2e5f08.webp",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629152",
+      "image": "https://img.game8.jp/13027788/6460258a43d88b35ad5128524e6f381f.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "english": "Mace",
+      "note": "도끼술 공용 무기 아이콘(game8.jp 무기 목록 기준)"
+    },
+    "바르디슈": {
+      "file": "assets/weapons/item-10bcdf2e5f08.webp",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628025",
+      "image": "https://img.game8.jp/13027788/6460258a43d88b35ad5128524e6f381f.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "english": "Bardiche",
+      "note": "도끼술 공용 무기 아이콘(game8.jp 무기 목록 기준)"
+    },
+    "풍화륜": {
+      "file": "assets/weapons/item-d377c1b7902a.webp",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629916",
+      "image": "https://img.game8.jp/13027784/57c2531e2f6370f38a1cb0c44010e326.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "english": "Windfire Rings",
+      "note": "격투술 공용 무기 아이콘(game8.jp 무기 목록 기준)"
+    },
+    "앤서러": {
+      "file": "assets/weapons/item-3e8974379abc.webp",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/627976",
+      "image": "https://img.game8.jp/13027785/83b67bd5599aa44038f3840b5d18b078.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "english": "Answerer",
+      "note": "검술 공용 무기 아이콘(game8.jp 무기 목록 기준)"
+    },
+    "다 미나의 검": {
+      "file": "assets/weapons/item-3e8974379abc.webp",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/627437",
+      "image": "https://img.game8.jp/13027785/83b67bd5599aa44038f3840b5d18b078.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "english": "Da Mina Sword",
+      "note": "검술 공용 무기 아이콘(game8.jp 무기 목록 기준)"
+    },
+    "질풍의 검": {
+      "file": "assets/weapons/item-3e8974379abc.webp",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628484",
+      "image": "https://img.game8.jp/13027785/83b67bd5599aa44038f3840b5d18b078.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "english": "Whirlwind Blade",
+      "note": "검술 공용 무기 아이콘(game8.jp 무기 목록 기준)"
+    },
+    "요창 벤데타": {
+      "file": "assets/items/cursed-lance.webp",
+      "source": "https://game8.jp/fe-banshisenko/819497",
+      "image": "https://img.game8.jp/13028683/31c0fd33ee9604260d2096c923fd0710.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "妖槍ヴェンデッタ",
+      "english": "Vendetta"
+    },
+    "매 발톱 도끼": {
+      "file": "assets/weapons/item-10bcdf2e5f08.webp",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628019",
+      "image": "https://img.game8.jp/13027788/6460258a43d88b35ad5128524e6f381f.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "english": "You Sou Fu",
+      "note": "도끼술 공용 무기 아이콘(game8.jp 무기 목록 기준)"
+    },
+    "사창 무엔": {
+      "file": "assets/items/cursed-lance.webp",
+      "source": "https://game8.jp/fe-banshisenko/819499",
+      "image": "https://img.game8.jp/13028683/31c0fd33ee9604260d2096c923fd0710.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "邪槍ムーエン",
+      "english": "Muen"
+    },
+    "사창 하노어": {
+      "file": "assets/items/cursed-lance.webp",
+      "source": "https://game8.jp/fe-banshisenko/819498",
+      "image": "https://img.game8.jp/13028683/31c0fd33ee9604260d2096c923fd0710.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "邪槍ハノーア",
+      "english": "Onoa"
+    },
+    "철의 검": {
+      "file": "assets/weapons/item-3e8974379abc.webp",
+      "source": "https://game8.jp/fe-banshisenko/819528",
+      "image": "https://img.game8.jp/13027785/83b67bd5599aa44038f3840b5d18b078.webp/show",
+      "kind": "weapon",
+      "aliases": [
+        "철 검"
+      ],
+      "japanese": "鉄の剣",
+      "english": "Iron Sword",
+      "note": "검술 공용 무기 아이콘(game8.jp 무기 목록 기준)"
+    },
+    "철의 창": {
+      "file": "assets/weapons/item-1474739a52a9.webp",
+      "source": "https://game8.jp/fe-banshisenko/819512",
+      "image": "https://img.game8.jp/13027786/4d3457237d82bbd64dc433323308eef1.webp/show",
+      "kind": "weapon",
+      "aliases": [
+        "철 창"
+      ],
+      "japanese": "鉄の槍",
+      "english": "Iron Spear",
+      "note": "창술 공용 무기 아이콘(game8.jp 무기 목록 기준)"
+    },
+    "철의 도끼": {
+      "file": "assets/weapons/item-10bcdf2e5f08.webp",
+      "source": "https://game8.jp/fe-banshisenko/819492",
+      "image": "https://img.game8.jp/13027788/6460258a43d88b35ad5128524e6f381f.webp/show",
+      "kind": "weapon",
+      "aliases": [
+        "철 도끼"
+      ],
+      "japanese": "鉄の斧",
+      "english": "Iron Axe",
+      "note": "도끼술 공용 무기 아이콘(game8.jp 무기 목록 기준)"
+    },
+    "철의 활": {
+      "file": "assets/weapons/item-d36f4cad9901.webp",
+      "source": "https://game8.jp/fe-banshisenko/819478",
+      "image": "https://img.game8.jp/13027787/4ea24420373cb90207e80928b18eea52.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": "鉄の弓",
+      "english": "Iron Bow",
+      "note": "궁술 공용 무기 아이콘(game8.jp 무기 목록 기준)"
+    },
+    "청동 도끼": {
+      "file": "assets/weapons/item-10bcdf2e5f08.webp",
+      "source": "https://game8.jp/fe-banshisenko/819495",
+      "image": "https://img.game8.jp/13027788/6460258a43d88b35ad5128524e6f381f.webp/show",
+      "kind": "weapon",
+      "aliases": [
+        "청동의 도끼"
+      ],
+      "japanese": "青銅の斧",
+      "english": "Bronze Axe",
+      "note": "도끼술 공용 무기 아이콘(game8.jp 무기 목록 기준)"
+    },
+    "정화의 검": {
+      "file": "assets/weapons/item-3e8974379abc.webp",
+      "source": "https://game8.jp/fe-banshisenko/819521",
+      "image": "https://img.game8.jp/13027785/83b67bd5599aa44038f3840b5d18b078.webp/show",
+      "kind": "weapon",
+      "aliases": [],
+      "japanese": null,
+      "english": null,
+      "note": "저장소의 영입 재료(fabio-proof) 표기. 재계의 검(Cleansing Blade)과 같은 물건인지 미확정 · 어느 쪽이든 검 공용 아이콘"
+    },
+    "테프 페이스트리": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625942",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [
+        "커피 구운 과자"
+      ],
+      "english": "Coffee Pastries"
+    },
+    "보통 테프": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625950",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [
+        "소립 커피"
+      ],
+      "english": "Common Coffee"
+    },
+    "여행 노사의 구전록": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "History of a Master"
+    },
+    "엄선 테프": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Select Coffee"
+    },
+    "오르구스 테프": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Orgus Coffee"
+    },
+    "남방 테프": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Southern Coffee"
+    },
+    "모험 이야기": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625955",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Tales of Adventure"
+    },
+    "유파스의 초상화": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Portrait of Yu Phas"
+    },
+    "바다 저편의 고서": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Tome from Away"
+    },
+    "햇홍소": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Young Ghosh"
+    },
+    "생선 내장 절임": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Brined Fish Guts"
+    },
+    "가벼운 창소": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Light Shosh"
+    },
+    "진홍 홍소": {
+      "file": "assets/gifts/gift-2.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625992",
+      "image": "https://img.game8.co/4613654/b7fabb107c3e56c7ec58c54eeb905dca.png/show",
+      "kind": "gift",
+      "aliases": [
+        "진홍 고슈"
+      ],
+      "english": "Crimson Ghosh"
+    },
+    "의장용 창": {
+      "file": "assets/gifts/gift-2.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613654/b7fabb107c3e56c7ec58c54eeb905dca.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Ceremonial Spear"
+    },
+    "투박한 명검": {
+      "file": "assets/gifts/gift-2.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613654/b7fabb107c3e56c7ec58c54eeb905dca.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Rugged Blade"
+    },
+    "수호 인형": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Protection Figurine"
+    },
+    "골동품 전공 훈장": {
+      "file": "assets/gifts/gift-2.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613654/b7fabb107c3e56c7ec58c54eeb905dca.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Antique Medal"
+    },
+    "관절 보호용 장갑": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Joint-Relief Gloves"
+    },
+    "쿰쿰한 가룸": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Rancid Garum"
+    },
+    "환상의 가룸": {
+      "file": "assets/gifts/gift-2.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613654/b7fabb107c3e56c7ec58c54eeb905dca.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Legendary Garum"
+    },
+    "가룸": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Garum"
+    },
+    "기묘한 채소 씨앗": {
+      "file": "assets/gifts/gift-2.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613654/b7fabb107c3e56c7ec58c54eeb905dca.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Odd Vegetable Seeds"
+    },
+    "남부의 희귀 종자": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Rare Southern Seeds"
+    },
+    "향긋한 페이스트리": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Fragrant Pastries"
+    },
+    "꿀 페이스트리": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Honey Pastries"
+    },
+    "부드러운 페이스트리": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Mellow Pastries"
+    },
+    "소박한 구운 과자": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Simple Pastries"
+    },
+    "벌꿀 젖": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Honey Milk"
+    },
+    "수정 사탕": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625969",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [
+        "결정 사탕"
+      ],
+      "english": "Candy Crystals"
+    },
+    "예리한 낚싯바늘": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Sharp Fishhook"
+    },
+    "다그다 수염풀": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625964",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [
+        "수염풀"
+      ],
+      "english": "Dagda Beard Grass"
+    },
+    "새끼 고양이 장식": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Kitten Figurine"
+    },
+    "숙성 홍소": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Mature Ghosh"
+    },
+    "파스텔 세트": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Pack of Pastels"
+    },
+    "거장들의 시집": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625991",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [
+        "위인 시집"
+      ],
+      "english": "Poems of the Greats"
+    },
+    "진귀한 향신료": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Rare Spices"
+    },
+    "동방의 칠흑 비단": {
+      "file": "assets/gifts/gift-2.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625919",
+      "image": "https://img.game8.co/4613654/b7fabb107c3e56c7ec58c54eeb905dca.png/show",
+      "kind": "gift",
+      "aliases": [
+        "동양 흑비단"
+      ],
+      "english": "Eastern Black Silk"
+    },
+    "자극적인 홍소": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Energizing Ghosh"
+    },
+    "화산 홍소": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625391",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [
+        "화산 고슈"
+      ],
+      "english": "Volcano Ghosh"
+    },
+    "보드게임 정석집": {
+      "file": "assets/gifts/gift-2.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613654/b7fabb107c3e56c7ec58c54eeb905dca.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Board-Game Tactics"
+    },
+    "페이스트리 요리책": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Pastry Cookbook"
+    },
+    "교직원 사건부": {
+      "file": "assets/gifts/gift-2.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613654/b7fabb107c3e56c7ec58c54eeb905dca.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "School Scandal"
+    },
+    "화살촉 모양 보석": {
+      "file": "assets/gifts/gift-2.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625999",
+      "image": "https://img.game8.co/4613654/b7fabb107c3e56c7ec58c54eeb905dca.png/show",
+      "kind": "gift",
+      "aliases": [
+        "화살촉 보석"
+      ],
+      "english": "Arrowhead Gem"
+    },
+    "동방의 찻잎": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625988",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [
+        "동방 최고급 찻잎"
+      ],
+      "english": "Eastern Tea Leaves"
+    },
+    "갈기 장식": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Mane Ornament"
+    },
+    "바람을 가르는 깃": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Wing Fletching"
+    },
+    "말 손질 키트": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Horse-Grooming Kit"
+    },
+    "아무 르 직물": {
+      "file": "assets/gifts/gift-2.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613654/b7fabb107c3e56c7ec58c54eeb905dca.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Ahm Lu Cloth"
+    },
+    "모르피스 연감": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Morfis Almanac"
+    },
+    "소박한 홍소": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Rustic Ghosh"
+    },
+    "부드러운 가룸": {
+      "file": "assets/gifts/gift-2.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613654/b7fabb107c3e56c7ec58c54eeb905dca.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Smooth Garum"
+    },
+    "농후한 가룸": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Concentrated Garum"
+    },
+    "환상의 솔로몬 테프": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Solomon Coffee"
+    },
+    "작고 흰 꽃 그림": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Flower Painting"
+    },
+    "활 손질 도구": {
+      "file": "assets/gifts/gift-2.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613654/b7fabb107c3e56c7ec58c54eeb905dca.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Bow Repair Kit"
+    },
+    "동방의 연애 이야기": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625925",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [
+        "동방 연애담"
+      ],
+      "english": "Eastern Love Story"
+    },
+    "자멜의 젖": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Jamel Milk"
+    },
+    "연한 세르비": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Weak Cervi"
+    },
+    "야크의 젖": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Yarc Milk"
+    },
+    "알뿌리 식초 절임": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Pickled Bulbs"
+    },
+    "예쁜 장식용 화살": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Decorative Arrows"
+    },
+    "흑단제 보드게임": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Ebony Game Board"
+    },
+    "방패들의 초상화": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Shield Portrait"
+    },
+    "페가수스 풍경화": {
+      "file": "assets/gifts/gift-2.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613654/b7fabb107c3e56c7ec58c54eeb905dca.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Pegasus Panorama"
+    },
+    "약초 요리 대백과": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Herbal Recipe Guide"
+    },
+    "가정 요리책": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Home-Recipe Book"
+    },
+    "단테 작품집": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "The Works of Dante"
+    },
+    "튼튼한 배낭": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Sturdy Rucksack"
+    },
+    "단련용 돌기둥": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Training Pillar"
+    },
+    "정령 보드게임": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Spirit Board Game"
+    },
+    "날카로운 조각도": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Crafting Knives"
+    },
+    "날카로운 소형 단검": {
+      "file": "assets/gifts/gift-2.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613654/b7fabb107c3e56c7ec58c54eeb905dca.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Sharp Dagger"
+    },
+    "이국의 두꺼운 책": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Thick Foreign Tome"
+    },
+    "무술 훈련용 추": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Training Weights"
+    },
+    "진홍색 황소 조각상": {
+      "file": "assets/gifts/gift-2.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613654/b7fabb107c3e56c7ec58c54eeb905dca.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Crimson Bull Figure"
+    },
+    "비취색 표범 조각상": {
+      "file": "assets/gifts/gift-2.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613654/b7fabb107c3e56c7ec58c54eeb905dca.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Jade Panther Figure"
+    },
+    "포드라 홍차": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Fodlan Tea"
+    },
+    "모르피스 홍차": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Morfis Tea"
+    },
+    "전략 원고": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625904",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [
+        "군략서 사본"
+      ],
+      "english": "Strategy Manuscript"
+    },
+    "백약의 물방울": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625998",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [
+        "특제 「약」"
+      ],
+      "english": "Special “Medicine”"
+    },
+    "비취 홍소": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Jade Ghosh"
+    },
+    "남방 홍소": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Southern Ghosh"
+    },
+    "생선 눈알": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Huge Fish Eyeball"
+    },
+    "향긋한 창소": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Aromatic Shosh"
+    },
+    "비밀의 홍소": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Secret Ghosh"
+    },
+    "창공의 창소": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Blue Shosh"
+    },
+    "태양의 홍소": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Sun Ghosh"
+    },
+    "농후 조미료": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Strong Seasonings"
+    },
+    "파란 장미 꽃다발": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625982",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Blue-Rose Bouquet"
+    },
+    "햇창소": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Young Shosh"
+    },
+    "숙성 창소": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Mature Shosh"
+    },
+    "훈련 팔찌": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Training Bracelet"
+    },
+    "한 쌍의 회칼": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625389",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [
+        "두 자루 생선칼"
+      ],
+      "english": "Dual Fish Knives"
+    },
+    "채소 병절임": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Pickled Vegetables"
+    },
+    "화분 채소": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Potted Vegetables"
+    },
+    "알렉토 가룸": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625945",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Alecto Garum"
+    },
+    "니자산 가룸": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Niiza Garum"
+    },
+    "야외용 조리 도구": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Outdoor Cooking Set"
+    },
+    "투기장 이야기 사본": {
+      "file": "assets/gifts/gift-2.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613654/b7fabb107c3e56c7ec58c54eeb905dca.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Tales of the Arena"
+    },
+    "간단한 마술 도구": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Magic-Trick Set"
+    },
+    "서민 요모조모": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Everyday Scenes"
+    },
+    "살라미스 과자": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Saraminian Sweets"
+    },
+    "긴지 세르비": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Ginji Cervi"
+    },
+    "순백의 세르비": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Pure-White Cervi"
+    },
+    "모조 무공 훈장": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Imitation Medal"
+    },
+    "동양식 귀걸이": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625989",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Eastern Earrings"
+    },
+    "화려한 팔찌": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Gaudy Bangle"
+    },
+    "피부 연고": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Skin Balm"
+    },
+    "화려한 보석 반지": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Exquisite Ring"
+    },
+    "실용적인 재봉 도구": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Full Sewing Kit"
+    },
+    "주홍빛 머리장식": {
+      "file": "assets/gifts/gift-2.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613654/b7fabb107c3e56c7ec58c54eeb905dca.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Red Hair Clip"
+    },
+    "시골 요리 모음집": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Village Recipes"
+    },
+    "진홍빛 장미 꽃다발": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Red-Rose Bouquet"
+    },
+    "진한 세르비": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Strong Cervi"
+    },
+    "숙성 건조 세르비": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Mature Dried Cervi"
+    },
+    "유연한 낚싯대": {
+      "file": "assets/gifts/gift-1.png",
+      "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/621535",
+      "image": "https://img.game8.co/4613653/8eab8b1c6a62bf530f0e298327237b6c.png/show",
+      "kind": "gift",
+      "aliases": [],
+      "english": "Flexible Fishing Rod"
+    }
+  }
+}
