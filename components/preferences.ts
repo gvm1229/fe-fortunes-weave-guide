@@ -9,7 +9,7 @@ let loaded = false;
 const listeners = new Set<() => void>();
 const subscribe = (listener: () => void) => { listeners.add(listener); return () => { listeners.delete(listener); }; };
 
-export function usePreference<T extends Value>(name: string, fallback: T): [T, (value: T) => void] {
+export function usePreference<T extends Value>(name: string, fallback: T): [T, (value: T | ((previous: T) => T)) => void] {
   const state = useSyncExternalStore(subscribe, () => values, () => empty);
   useEffect(() => {
     if (loaded) return;
@@ -21,8 +21,10 @@ export function usePreference<T extends Value>(name: string, fallback: T): [T, (
     listeners.forEach(listener => listener());
   }, []);
   const saved = state[name];
-  const value = (Array.isArray(fallback) ? Array.isArray(saved) : typeof saved === typeof fallback) ? saved as T : fallback;
-  return [value, next => {
+  const read = (v: Value | undefined) => (Array.isArray(fallback) ? Array.isArray(v) : typeof v === typeof fallback) ? v as T : fallback;
+  const value = read(saved);
+  return [value, update => {
+    const next = typeof update === 'function' ? update(read(values[name])) : update;
     values = { ...values, [name]: next };
     try { localStorage.setItem(key, JSON.stringify(values)); } catch { /* 저장이 막혀도 현재 화면의 조작은 유지한다. */ }
     listeners.forEach(listener => listener());

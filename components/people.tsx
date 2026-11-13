@@ -56,7 +56,7 @@ export function PersonInfo({person,classes,part="1",onDoc,openKey}:{person:Perso
     <tr><th scope="row">멈출 때</th><td><ul className="summary-points">{summary.stop.map((line,i)=><li key={i}><GameText text={line} part={part} skip={self}/></li>)}</ul></td></tr>
     {!!summary.caution.length&&<tr><th scope="row">보존 주의</th><td>{summary.caution.map(line=><strong key={line}>{line}</strong>)}</td></tr>}
     </tbody></table>
-    <Accordion type="multiple" className="person-more" value={mine.map(k=>k.slice(person.name.length+1))} onValueChange={v=>setOpen([...open.filter(k=>!k.startsWith(person.name+':')),...v.map(k=>person.name+':'+k)])}>
+    <Accordion type="multiple" className="person-more" value={mine.map(k=>k.slice(person.name.length+1))} onValueChange={v=>setOpen(prev=>[...prev.filter(k=>!k.startsWith(person.name+':')),...v.map(k=>person.name+':'+k)])}>
       {detail.length>0&&<AccordionItem value="plan"><AccordionTrigger>시험 조건·시기별 계획</AccordionTrigger><AccordionContent><dl className="detail-pairs">{detail.map((p,i)=><div key={i}><dt>{p.title}</dt><dd>{p.lines.map((l,j)=><p key={j}><GameText text={l} withSkills part={part} skip={self}/></p>)}</dd></div>)}</dl></AccordionContent></AccordionItem>}
       {!!person.details?.length&&<AccordionItem value="raw"><AccordionTrigger>원문 기록</AccordionTrigger><AccordionContent><Semantic nodes={person.details} route={person.route} part={part} onDoc={onDoc} hidePortraits/></AccordionContent></AccordionItem>}
     </Accordion></>;
