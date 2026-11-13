@@ -24,7 +24,7 @@ export function TeamRoutes({data,classes,onDoc,onSpell}:{data:Data;classes:Recor
       <div className="route-unit-head"><img className="route-unit-face" src={'/'+u.portrait} alt="" loading="lazy"/><div><h3>{u.name}</h3><p><GameText text={u.reason} skip={allNames}/></p></div></div>
       <dl className="detail-pairs">
         <div><dt>병종</dt><dd className="route-unit-class">{classes[u.className]&&<img src={'/'+classes[u.className].file} alt="" loading="lazy"/>}{u.classSlug?<button className="text-link" onClick={()=>onDoc(`notes/classes/${u.classSlug}.md`)}>{u.className}</button>:<strong>{u.className}</strong>}<Badge>{u.classTier}</Badge></dd></div>
-        {u.weapons.length>0&&<div><dt>병종 무기</dt><dd className="route-weapons">{u.weapons.map(w=><span key={w.skill}><img src={'/'+w.icon} alt="" loading="lazy"/>{w.skill}</span>)}</dd></div>}
+        {u.weapons.length>0&&<div><dt>병종 무기</dt><dd className="route-weapons">{u.weapons.map(w=><span className="game-badge" data-kind="skill" key={w.skill}><img src={'/'+w.icon} alt="" loading="lazy"/>{w.skill}</span>)}</dd></div>}
         {u.white&&<div><dt>{u.white.allowed?u.white.title||'핵심 백마술':'백마술 · 병종 변경 시'}</dt><dd>{u.white.spells.length>0&&<div className="spell-chips">{u.white.spells.map(s=><button key={s.id} className="button" title={s.title} onClick={()=>onSpell(s.id)}>{s.name}<Badge variant="strong">{s.rank}</Badge></button>)}</div>}{u.white.notes.map(n=><p key={n} className="muted">{n}</p>)}</dd></div>}
         {u.goal.length>0&&<div><dt>목표</dt><dd>{u.goal.map(g=><p key={g}><GameText text={g} skip={allNames} withSkills/></p>)}</dd></div>}
       </dl>

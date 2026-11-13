@@ -40,3 +40,10 @@ const skipped=load(renderToStaticMarkup(createElement(GameText,{text:'시로코 
 assert.equal(skipped.root().text(),'시로코 학습표 · 시로코 경기병 · 경기병');
 assert.equal(skipped('.named-person img').length,0,'skip 인물은 그림 없음');assert.equal(skipped('.named-class img').length,1,'같은 글 안 반복 병종은 그림 1개');
 console.log('통과: 같은 묶음의 인물·병종 그림 중복 제거');
+
+const badges=load(renderToStaticMarkup(createElement(GameText,{text:'지원 3 · 명성 6 · 1,000G · 검술 C · 라돈 꼬치고기 ×3 · 세오도라 가디언',withSkills:true})),null,false);
+assert.equal(badges.root().text(),'지원 3 · 명성 6 · 1,000G · 검술 C · 라돈 꼬치고기 ×3 · 세오도라 가디언','배지도 원문 보존');
+assert.deepEqual(badges('.game-badge').map((_,e)=>badges(e).text()).get(),['지원 3','명성 6','1,000G','검술 C','라돈 꼬치고기 ×3','세오도라','가디언']);
+assert.deepEqual(badges('.game-badge').map((_,e)=>badges(e).attr('data-kind')).get(),['bond','renown','gold','skill','material','person','class']);
+assert.equal(badges('.named-person.game-badge').length,1);assert.equal(badges('.named-class.game-badge').length,1);
+console.log('통과: 그림이 붙는 말은 값과 함께 배지 하나');
