@@ -50,7 +50,7 @@ try{
  await page.locator('[data-person="리네"]').getByRole('button',{name:'리네',exact:true}).click();await page.getByRole('dialog').waitFor();assert.ok((await page.locator('.sheet-scroll').innerText()).includes('리네'));await page.keyboard.press('Escape');
  await page.locator('[data-person="리네"]').getByRole('button',{name:'리브로 B',exact:true}).click();
  await page.waitForTimeout(100);assert.ok(await page.locator('#spell-physic').isVisible());
- checks.push('체험·초상화 기억·복원한 인물 문서·백마법 이동');
+ checks.push('체험·초상화 기억·복원한 인물 문서·백마술 이동');
  await page.getByRole('button',{name:'루트 편성',exact:true}).click();
  for(const route of ['theodora','leda','dietrich','kai'])for(const part of ['1','2','3']){
    await page.getByLabel('편성 루트',{exact:true}).selectOption(route);await page.getByLabel('편성 부',{exact:true}).selectOption(part);
@@ -60,15 +60,15 @@ try{
  checks.push('네 루트 × 세 부 편성·변경 인물 필터');
  for(const [width,height]of [[375,812],[768,1024],[3840,2160]]){
    await page.setViewportSize({width,height});
-   for(const tab of ['백마법','루트 편성','비교·근거']){
+   for(const tab of ['백마술','루트 편성','비교·근거']){
      await page.getByRole('group',{name:'팀 참고 정보'}).getByRole('button',{name:tab,exact:true}).click();
      await page.locator('.team-reference').scrollIntoViewIfNeeded();await layout(tab+' '+width);
-     if(tab==='백마법'){
+     if(tab==='백마술'){
        const table=page.locator('.team-reference .semantic table').first();
        const geometry=await table.evaluate(e=>({width:e.getBoundingClientRect().width,caption:e.caption?.getBoundingClientRect().width,headers:getComputedStyle(e.tHead).display}));
        assert.ok(geometry.caption>=geometry.width-2,JSON.stringify(geometry));assert.equal(geometry.headers,'table-header-group');
      }
-     const path='.tmp/feature-'+width+'-'+({'백마법':'spells','루트 편성':'routes','비교·근거':'details'}[tab])+'.png';await page.screenshot({path});screens.push(path);
+     const path='.tmp/feature-'+width+'-'+({'백마술':'spells','루트 편성':'routes','비교·근거':'details'}[tab])+'.png';await page.screenshot({path});screens.push(path);
    }
  }
  await page.setViewportSize({width:1440,height:900});await page.getByRole('button',{name:'전체 참고 문서',exact:true}).click();
