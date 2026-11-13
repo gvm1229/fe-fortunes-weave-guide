@@ -56,7 +56,7 @@ export function Team({data,classes,docs}:{data:Data;classes:Record<string,ClassI
   const change=(update:()=>void)=>withViewTransition(update);
   const details=data.sections.details.tree.filter((n):n is Exclude<Tree,string>=>typeof n!=='string');
   function jump(id:string){
-    if(id.startsWith('spell-')||id==='white-spell-book'){setSpell(id);return;}
+    if(id.startsWith('spell-')||id==='white-spell-book'){setUnit(null);setSpell(id);return;}
     if(id==='final-25'){change(()=>setTab('final'));return;}
     if(id==='route-comparison'){change(()=>setTab('routes'));return;}
     const owner=details.find(s=>JSON.stringify(s).includes(`"id":"${id}"`));

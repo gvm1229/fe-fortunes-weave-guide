@@ -31,7 +31,7 @@ async function measure(page,scene){
     const chipSizes=[...document.querySelectorAll('.source-markup .reference-chip,.source-markup .text-link')].filter(visible).map(e=>({name:e.textContent,height:rect(e).height,font:parseFloat(getComputedStyle(e).fontSize),padding:getComputedStyle(e).paddingInline,icons:[...e.querySelectorAll('img')].map(rect)}));
     const completed=[...document.querySelectorAll('.chapter-section[data-completed=true]')].map(e=>({title:e.dataset.chapter,open:e.open,height:rect(e).height,children:[...e.querySelector('summary').children].map(c=>c.tagName),summary:rect(e.querySelector('summary')).height}));
     const partialLines=[];
-    for(const body of document.querySelectorAll('.person-info .readable-group[data-expanded=false]>.readable-body')){
+    for(const body of document.querySelectorAll('.person-summary .readable-group[data-expanded=false]>.readable-body')){
       if(!visible(body))continue;
       const boundary=rect(body),walker=document.createTreeWalker(body,NodeFilter.SHOW_TEXT);
       while(walker.nextNode()){
@@ -40,7 +40,7 @@ async function measure(page,scene){
         for(const r of range.getClientRects())if(r.top<boundary.bottom-1&&r.bottom>boundary.bottom+1)partialLines.push({text:walker.currentNode.textContent.slice(0,70),lineBottom:r.bottom,clipBottom:boundary.bottom});
       }
     }
-    const personRows=[...document.querySelectorAll('.person-info tr')];
+    const personRows=[...document.querySelectorAll('.person-summary tr')];
     const home=document.querySelector('.sidebar-bottom>a'),homeRect=home&&rect(home);
     const homeText=home&&[...home.childNodes].find(n=>n.nodeType===3&&n.textContent.trim());
     let homeTextRect=null;
@@ -142,7 +142,7 @@ try{
     await page.getByRole('heading',{name:'인물',level:1,exact:true}).waitFor();await ready(page);
     await measure(page,{label:label.replace('-todo-','-people-'),width,height,theme,view:'people'});
     await capture(page,label.replace('-todo-','-people-'));
-    const disclosure=page.locator('.person-info .prose-toggle').first();await disclosure.scrollIntoViewIfNeeded();await disclosure.click();
+    const disclosure=page.locator('.person-summary .prose-toggle').first();await disclosure.scrollIntoViewIfNeeded();await disclosure.click();
     assert.equal(await disclosure.getAttribute('aria-expanded'),'true');await disclosure.click();
     interactions.push({width,height,theme,check:'person-disclosure-preserves-content',passed:true});
     await page.getByRole('navigation',{name:'공략 화면'}).getByRole('button',{name:'준비',exact:true}).click();

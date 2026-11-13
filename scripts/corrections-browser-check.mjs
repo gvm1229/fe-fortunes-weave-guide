@@ -22,7 +22,7 @@ try{
     const row=await page.evaluate(()=>{
      const visible=e=>e.checkVisibility()&&e.getBoundingClientRect().width>0;
      return {eraViolations:document.querySelector('.app-shell')?.getAttribute('data-route')==='part3'?[]:[...document.querySelectorAll('img[src*="/post-timeskip/"]')].map(e=>e.src),horizontalScroll:document.documentElement.scrollWidth-innerWidth,amountWrapViolations:[...document.querySelectorAll('[data-amount],.gold-table .amount')].filter(e=>getComputedStyle(e).whiteSpace!=='nowrap').length,
-      tableFontViolations:[...document.querySelectorAll('main .records,main .person-info,main [data-info-table],main [data-gold-table],main .gold-table')].filter(visible).filter(e=>parseFloat(getComputedStyle(e).fontSize)!==20).length,
+      tableFontViolations:[...document.querySelectorAll('main .records,main .person-summary,main [data-info-table],main [data-gold-table],main .gold-table')].filter(visible).filter(e=>parseFloat(getComputedStyle(e).fontSize)!==20).length,
       groupLineViolations:[...document.querySelectorAll('.readable-group[data-expanded=false]>.readable-body')].filter(visible).filter(e=>e.getBoundingClientRect().height>parseFloat(getComputedStyle(e).lineHeight)*3+1).length,
       faceSizes:[...new Set([...document.querySelectorAll('main img[src*="/portraits/"],main img[src*="/gods/"]')].filter(visible).map(e=>{const r=e.getBoundingClientRect();return `${r.width}×${r.height}`;}))]};
     });
