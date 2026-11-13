@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-14T00:00:00+09:00",
+  "title": "만자천홍 체크리스트",
+  "extensions": {
+    "breakpoints": [{"name":"mobile","value":"767px"},{"name":"single-column","value":"1000px"}],
+    "shadows": [{"name":"record-menu","value":"0 8px 24px #0002","purpose":"열린 기록 관리 메뉴만 띄운다."}],
+    "motion": [{"name":"control","value":"150ms","purpose":"버튼 전환. 동작 줄이기에서는 생략한다."}]
+  },
+  "components": [
+    {"name":"주요 버튼","kind":"button","html":"<button class=\"ds-button\">이동</button>","css":".ds-button{font:600 18px Pretendard,sans-serif;background:#665080;color:#fff;border:0;border-radius:8px;padding:12px 20px}.ds-button:hover{opacity:.9}.ds-button:focus-visible{outline:3px solid #70558b;outline-offset:4px}"},
+    {"name":"체크 항목","kind":"custom","html":"<label class=\"ds-row\"><input type=\"checkbox\">영입 조건 확인</label>","css":".ds-row{display:flex;align-items:center;gap:16px;background:#fff;color:#292820;font:20px Pretendard,sans-serif;padding:24px 28px}.ds-row input{width:26px;height:26px;accent-color:#70558b}.ds-row input:focus-visible{outline:3px solid #70558b;outline-offset:4px}"},
+    {"name":"접히는 묶음","kind":"custom","html":"<details class=\"ds-group\"><summary>영입 준비 · 0/4</summary><p>현재 조건을 확인한다.</p></details>","css":".ds-group{background:#fff;color:#292820;border-radius:24px;font:20px Pretendard,sans-serif;padding:24px 28px}.ds-group summary{cursor:pointer}.ds-group summary:focus-visible{outline:3px solid #70558b;outline-offset:4px}"},
+    {"name":"이름 검색","kind":"input","html":"<input class=\"ds-search\" aria-label=\"이름 검색\" placeholder=\"이름으로 찾기\">","css":".ds-search{font:18px Pretendard,sans-serif;border:0;border-radius:8px;background:#fff;color:#292820;padding:16px}.ds-search::placeholder{color:#676357}.ds-search:focus-visible{outline:3px solid #70558b;outline-offset:4px}"},
+    {"name":"진행 표시","kind":"custom","html":"<progress class=\"ds-progress\" value=\"75\" max=\"100\" aria-label=\"진행률\"></progress>","css":".ds-progress{appearance:none;width:100%;height:8px;border:0;border-radius:8px;overflow:clip;background:#eeebdf}.ds-progress::-webkit-progress-bar{background:#eeebdf}.ds-progress::-webkit-progress-value{background:#4b78a2}.ds-progress::-moz-progress-bar{background:#4b78a2}"}
+  ],
+  "narrative": {
+    "northStar":"그림과 큰 글자로 읽는 체크리스트",
+    "overview":"B 기반. A의 접기와 군주 배경, C의 진행률별 색 변화만 적용한다. 정본은 docs/design-spec.md다.",
+    "dos":["네 오벨리스크 첫 화면 보존","본문 20px·보조 최소 18px","원문·실제 체크·그림 유지"],
+    "donts":["학습 통계·메달·요금제 추가 금지","내용을 없애거나 글자를 줄여 공간 확보 금지"]
+  }
+}

@@ -1059,7 +1059,7 @@
     {
       "source": "notes/knowledge/interface.md",
       "target": "content/notes/knowledge/interface.md",
-      "sha256": "c6650db6de166c3b3e933241873f8fbfd84d657f601909d0438f7f9f66a801de"
+      "sha256": "67a8e2291e99b1b0eb3b9bb8686a7100b51f26c580bbf4ee46423892e9ae9b25"
     },
     {
       "source": "notes/knowledge/merge-gate-safety.md",
