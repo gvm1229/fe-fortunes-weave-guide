@@ -5,10 +5,10 @@ import manifest from '@/assets/classes/manifest.json';
 /** 인물 카드에 쓰는 병종·기능·시험 자료. 원천은 content/data(이전 공략 정본 사본)이며 카이 루트만 사이트 자료로 덮어쓴다. */
 export type SkillGoal = { skill: string; target: string; kind: string; when: string; why: string };
 export type Exam = { tier: string; level: string; renown: string; required: string; choice: string; unlock: string; weapons: string[] };
-export type CharacterData = { avoid: boolean; finalClasses: string[]; classes: string[]; next?: string; skills: SkillGoal[]; skillNote?: string; exams: Record<string, Exam>; steps: Record<string, string>; charioteer?: string; goalText?: string };
+export type CharacterData = { avoid: boolean; finalClasses: string[]; classes: string[]; next?: string; skills: SkillGoal[]; skillNote?: string; exams: Record<string, Exam>; steps: Record<string, string>; charioteer?: string; goalText?: string; caiAdvice?: { dip: string; part3: string; rule: string; weapon: string } };
 
 type Phase = { classes?: string[]; next?: string };
-type CaiPlan = { reason: string; source: string; excluded: string[]; skills: SkillGoal[]; people: Record<string, Record<string, Phase>> };
+type CaiPlan = { reason: string; source: string; part3: string; weaponNote: string; excluded: string[]; skills: SkillGoal[]; people: Record<string, Record<string, Phase> & { advice?: { dip: string; part3: string } }> };
 const classManifest = manifest.classes as Record<string, { weapons?: string[] }>;
 let cache: ReturnType<typeof load> | undefined;
 function load() {
@@ -45,5 +45,5 @@ export function characterData(route: string, name: string, part: string): Charac
   for (const c of [...classes, ...finalClasses]) { const e = examFor(c); if (e) exams[c] = e; }
   const steps: Record<string, string> = {};
   for (const s of d.reasons[route]?.[name]?.[part]?.steps || []) { const r = s.compact?.reason || s.reason; if (r) steps[s.class] = r; }
-  return { avoid, finalClasses, classes, next: phase.next, skills, skillNote: d.priorities[route]?.[name]?.[part]?.note, exams, steps, charioteer: cai && part !== '3' ? d.cai.reason : undefined, goalText: cai && part !== '3' ? charioteerGoal() : undefined };
+  return { avoid, finalClasses, classes, next: phase.next, skills, skillNote: d.priorities[route]?.[name]?.[part]?.note, exams, steps, charioteer: cai && part !== '3' ? d.cai.reason : undefined, goalText: cai && part !== '3' ? charioteerGoal() : undefined, caiAdvice: cai?.advice ? { ...cai.advice, rule: d.cai.part3, weapon: d.cai.weaponNote } : undefined };
 }
