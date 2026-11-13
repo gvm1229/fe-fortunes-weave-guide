@@ -85,7 +85,7 @@ async function measure(page,{route='home',view='home',theme,width,height,screens
     const paragraphs=[...document.querySelectorAll('main p,.sheet-scroll p')].filter(visible);
     const paragraphViolations=paragraphs.filter(e=>e.textContent.split(/(?<=[.!?。])\s+|(?<=[.!?。])(?=[가-힣])|(?<=[가-힣][.!?。])(?=\d)/u).filter(s=>s.trim()).length>2).map(e=>e.textContent.slice(0,120));
     const groupLineViolations=[...document.querySelectorAll('.readable-group[data-expanded=false]>.readable-body')].filter(visible).filter(e=>e.getBoundingClientRect().height>parseFloat(getComputedStyle(e).lineHeight)*3+1).map(e=>e.textContent.slice(0,80));
-    const personTables=[...document.querySelectorAll('.person-info')].filter(visible).map(e=>({columns:e.rows[0].cells.length,labelWidth:e.rows[0].cells[0].getBoundingClientRect().width}));
+    const personTables=[...document.querySelectorAll('.person-summary')].filter(visible).map(e=>({columns:e.rows[0].cells.length,labelWidth:e.rows[0].cells[0].getBoundingClientRect().width}));
     const order=[...document.querySelectorAll('.route-card')].map(e=>({route:e.getAttribute('data-route'),badge:e.querySelector('.route-order')?.textContent,src:e.querySelector('.lord-portrait')?.getAttribute('src'),rect:{x:e.getBoundingClientRect().x,y:e.getBoundingClientRect().y},badgeVisible:(()=>{const b=e.querySelector('.route-order')?.getBoundingClientRect(),r=e.getBoundingClientRect();return b&&b.width>0&&b.top>=r.top&&b.bottom<=r.bottom&&b.left>=r.left&&b.right<=r.right;})()}));
     const eraViolations=document.querySelector('.app-shell')?.getAttribute('data-route')!=='part3'?[...document.querySelectorAll('.app-shell img[src*="/post-timeskip/"]')].map(e=>e.getAttribute('src')):[];
     const croppedScenes=[...document.querySelectorAll('img[src*="/events/"],img[src*="/guide/"],img[src*="/recruitment/"],img[src*="/underworld/"]')].filter(visible).filter(e=>getComputedStyle(e).objectFit!=='contain').map(e=>e.getAttribute('src'));
@@ -194,8 +194,7 @@ try {
       assert.deepEqual(errors,[],`${route} 브라우저 실행·HTML 구조 오류`);
     }
     await visit(page,'/team/');await measure(page,{route:'team',view:'team',theme,width,height});
-    const stripes=await page.locator('.team-stripe').evaluateAll(es=>es.map(e=>({height:e.getBoundingClientRect().height,background:getComputedStyle(e).backgroundColor})));
-    assert.equal(stripes.length,25);assert.ok(stripes.every(s=>s.height===6));
+    assert.equal(await page.locator('.unit-card').count(),25);
     await context.close();
   }
 
@@ -231,7 +230,7 @@ try {
   await page.getByRole('navigation',{name:'공략 화면'}).getByRole('button',{name:'참고 문서',exact:true}).click();
   await page.getByRole('button',{name:'지원 루프 따라하기',exact:false}).first().click();await page.getByRole('dialog').waitFor();
   const link=page.locator('[data-doc-url="weekly-support-review.md"]').first();await link.scrollIntoViewIfNeeded();const scroll=await page.locator('.sheet-scroll').evaluate(e=>e.scrollTop);await link.click();await page.getByRole('button',{name:'뒤로',exact:true}).click();await page.waitForTimeout(100);assert.ok(Math.abs(await page.locator('.sheet-scroll').evaluate(e=>e.scrollTop)-scroll)<2);await page.keyboard.press('Escape');functionality.push('문서 뒤로·읽던 위치 복원');
-  await page.goto(base+'/team/');for(const name of ['네 진영장 포함','역할 균형 추천','현재 25인·병과 수정']){await page.getByRole('button',{name,exact:true}).click();assert.equal(await page.locator('.team-unit').count(),25);}functionality.push('팀 세 편성 각각 25명');
+  await page.goto(base+'/team/');for(const name of ['네 진영장 포함','역할 균형 추천','현재 25인·병과 수정']){await page.getByRole('radiogroup',{name:'편성안'}).getByRole('radio',{name,exact:true}).click();assert.equal(await page.locator('.unit-card').count(),25);}functionality.push('팀 세 편성 각각 25명');
   await context.close();
   assert.deepEqual(errors,[],'브라우저 실행 오류');
   if(failures.length)throw new Error(`${failures.length}건 화면 실패: ${failures.slice(0,8).join('; ')}`);

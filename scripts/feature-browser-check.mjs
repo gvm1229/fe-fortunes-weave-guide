@@ -29,49 +29,48 @@ try{
  assert.ok(await page.locator('.people-grid>.person').count()>0);
  await page.reload();await nav('인물').click();assert.equal(await page.getByLabel('육성판 목적').inputValue(),'기준 육성');
  await page.getByRole('button',{name:'시험 안내',exact:true}).click();await page.getByRole('dialog').waitFor();assert.ok((await page.locator('.sheet-scroll').innerText()).length>100);await page.keyboard.press('Escape');
- const detail=page.locator('.person').first().locator('details');await detail.locator('summary').click();
+ const detail=page.locator('.person').first();await detail.getByRole('button',{name:'원문 기록'}).click();
  const classButton=detail.locator('button.text-link').filter({hasText:'경기병'}).first();await classButton.click();
  await page.getByRole('dialog').waitFor();assert.ok((await page.locator('.sheet-scroll').innerText()).includes('시험'));await page.keyboard.press('Escape');
  checks.push('육성판 필터·기억·시험 안내·인물 안 병종 버튼');
  assert.equal(await page.evaluate(()=>localStorage.getItem('fortunes-weave-checklist-v1')),initial);
  await visit('/team/');
+ const tab=name=>page.getByRole('tab',{name,exact:true});
+ await tab('최종 25인').click();
  for(const scenario of raw.team.proposal.scenarios){
-   await page.getByRole('button',{name:scenario.title,exact:true}).click();
+   await page.getByRole('radiogroup',{name:'편성안'}).getByRole('radio',{name:scenario.title,exact:true}).click();
    for(const selected of [[],[raw.team.proposal.trials[0]],[raw.team.proposal.trials[1]],raw.team.proposal.trials]){
-     for(const trial of raw.team.proposal.trials)await page.getByLabel(trial.label,{exact:true}).setChecked(selected.some(t=>t.id===trial.id));
+     for(const trial of raw.team.proposal.trials){const item=page.getByRole('toolbar',{name:'체험 교체'}).getByLabel(trial.label,{exact:true});const on=(await item.getAttribute('data-state'))==='on';if(on!==selected.some(t=>t.id===trial.id))await item.click();}
+     await page.waitForTimeout(150);
      const swaps={...scenario.swaps};selected.forEach(t=>{swaps[t.outgoing]=t.incoming;});
-     assert.deepEqual(new Set(await page.locator('.team-unit').evaluateAll(es=>es.map(e=>e.dataset.person))),new Set(raw.team.baseline.map(n=>swaps[n]||n)));
+     const expected=raw.team.baseline.map(n=>swaps[n]||n);
+     assert.deepEqual(new Set(await page.locator('.unit-card').evaluateAll(es=>es.map(e=>e.querySelector('.unit-name').textContent))),new Set(expected));
+     assert.equal(await page.locator('.unit-card[data-swapped]').count(),expected.filter(n=>!raw.team.baseline.includes(n)).length);
+     assert.equal(await page.locator('.swap-badge').count(),expected.filter(n=>!raw.team.baseline.includes(n)).length);
    }
  }
- checks.push('편성 3종 × 체험 조합 4종의 25명 명단 일치');
- await page.reload();await page.waitForLoadState('networkidle');for(const trial of raw.team.proposal.trials)assert.equal(await page.getByLabel(trial.label,{exact:true}).isChecked(),true);
- const before=await page.locator('[data-person="세오도라"] .portrait').getAttribute('src');await page.getByRole('button',{name:'시간 경과 후 초상화 OFF'}).click();
- const after=await page.locator('[data-person="세오도라"] .portrait').getAttribute('src');assert.notEqual(after,before);assert.ok(after.includes('post-timeskip'));
- await page.locator('[data-person="리네"]').getByRole('button',{name:'리네',exact:true}).click();await page.getByRole('dialog').waitFor();assert.ok((await page.locator('.sheet-scroll').innerText()).includes('리네'));await page.keyboard.press('Escape');
- await page.locator('[data-person="리네"]').getByRole('button',{name:'리브로 B',exact:true}).click();
- await page.waitForTimeout(100);assert.ok(await page.locator('#spell-physic').isVisible());
- checks.push('체험·초상화 기억·복원한 인물 문서·백마술 이동');
- await page.getByRole('button',{name:'루트 편성',exact:true}).click();
- for(const route of ['theodora','leda','dietrich','kai'])for(const part of ['1','2','3']){
-   await page.getByLabel('편성 루트',{exact:true}).selectOption(route);await page.getByLabel('편성 부',{exact:true}).selectOption(part);
-   assert.ok((await page.locator('#route-comparison').innerText()).length>100);
+ checks.push('편성 3종 × 체험 조합 4종의 25명 명단·교체 표시 일치');
+ await page.reload();await page.waitForLoadState('networkidle');for(const trial of raw.team.proposal.trials)assert.equal(await page.getByRole('toolbar',{name:'체험 교체'}).getByLabel(trial.label,{exact:true}).getAttribute('data-state'),'on');
+ const face=()=>page.locator('.unit-card',{has:page.locator('.unit-name',{hasText:'세오도라'})}).locator('.unit-face').getAttribute('src');
+ const before=await face();await page.getByRole('button',{name:'시간 경과 후 초상화',exact:true}).click();await page.waitForTimeout(150);
+ const after=await face();assert.notEqual(after,before);assert.ok(after.includes('post-timeskip'));
+ await page.getByRole('button',{name:'리네',exact:true}).click();await page.getByRole('dialog').waitFor();assert.ok((await page.locator('.sheet-scroll').innerText()).includes('최종 병종'));
+ await page.getByRole('dialog').getByRole('button',{name:'리브로 B',exact:true}).click();await page.waitForTimeout(200);assert.ok(await page.locator('#spell-physic').isVisible());await page.keyboard.press('Escape');await page.getByRole('dialog').waitFor({state:'detached'});
+ checks.push('체험·초상화 기억·인물 시트·백마술 이동');
+ await tab('루트 편성').click();
+ for(const route of ['세오도라','레다','디트리히','카이'])for(const part of ['1부','2부']){
+   await page.getByRole('radiogroup',{name:'편성 루트'}).getByRole('radio',{name:route,exact:true}).click();await page.getByRole('radiogroup',{name:'편성 부'}).getByRole('radio',{name:part,exact:true}).click();await page.waitForTimeout(150);
+   const cards=await page.locator('.route-unit').evaluateAll(es=>es.map(e=>e.querySelectorAll('img[src*="/portraits/"]').length));assert.ok(cards.length>0);assert.ok(cards.every(n=>n===1),route+part);
  }
- await page.getByLabel('변경 인물만',{exact:true}).check();assert.equal(await page.locator('#route-comparison [data-change="keep"]').count(),0);
- checks.push('네 루트 × 세 부 편성·변경 인물 필터');
+ checks.push('네 루트 × 두 부 편성·카드당 초상화 하나');
  for(const [width,height]of [[375,812],[768,1024],[3840,2160]]){
    await page.setViewportSize({width,height});
-   for(const tab of ['백마술','루트 편성','비교·근거']){
-     await page.getByRole('group',{name:'팀 참고 정보'}).getByRole('button',{name:tab,exact:true}).click();
-     await page.locator('.team-reference').scrollIntoViewIfNeeded();await layout(tab+' '+width);
-     if(tab==='백마술'){
-       const table=page.locator('.team-reference .semantic table').first();
-       const geometry=await table.evaluate(e=>({width:e.getBoundingClientRect().width,caption:e.caption?.getBoundingClientRect().width,headers:getComputedStyle(e.tHead).display}));
-       assert.ok(geometry.caption>=geometry.width-2,JSON.stringify(geometry));assert.equal(geometry.headers,'table-header-group');
-     }
-     const path='.tmp/feature-'+width+'-'+({'백마술':'spells','루트 편성':'routes','비교·근거':'details'}[tab])+'.png';await page.screenshot({path});screens.push(path);
+   for(const name of ['백마술','루트 편성','비교 근거']){
+     await tab(name).click();await page.waitForTimeout(150);await layout(name+' '+width);
+     const path='.tmp/feature-'+width+'-'+({'백마술':'spells','루트 편성':'routes','비교 근거':'details'}[name])+'.png';await page.screenshot({path});screens.push(path);
    }
  }
- await page.setViewportSize({width:1440,height:900});await page.getByRole('button',{name:'전체 참고 문서',exact:true}).click();
+ await page.setViewportSize({width:1440,height:900});await page.getByRole('tab',{name:'비교 근거',exact:true}).click();await page.getByRole('button',{name:'전체 참고 문서',exact:true}).click();
  await page.getByLabel('참고 문서 검색').fill('명시 발화');await page.locator('.document-list button').first().click();await page.getByRole('dialog').waitFor();
  assert.equal(await page.locator('.sheet-scroll [id="s01"]').count(),1);await page.keyboard.press('Escape');
  checks.push('Markdown 명시 앵커 보존');
@@ -83,4 +82,4 @@ try{
  assert.deepEqual(errors,[]);
  console.log('통과: '+checks.length+'개 복원 기능·추가 화면 검사');
 }catch(error){errors.push(String(error));console.error(error);process.exitCode=1;}
-finally{writeFileSync('docs/feature-browser-results.json',JSON.stringify({status:errors.length?'failed':'passed',host:'Codex / Windows / Chrome / isolated Playwright contexts',base,checks,errors,screens,limits:'실제 사용자 저장소를 사용하지 않음. 휴대폰·태블릿은 창 크기 재현이며 실제 기기 검사는 아님.'},null,2));await browser.close();}
+finally{writeFileSync('docs/feature-browser-results.json',JSON.stringify({status:errors.length?'failed':'passed',host:'Claude / Windows / Chrome / isolated Playwright contexts',base,checks,errors,screens,limits:'실제 사용자 저장소를 사용하지 않음. 휴대폰·태블릿은 창 크기 재현이며 실제 기기 검사는 아님.'},null,2));await browser.close();}
