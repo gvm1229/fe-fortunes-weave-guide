@@ -15,7 +15,22 @@ import { GameText } from './game-text';
 import overrides from '@/content/display-overrides.json';
 import { GuideImage } from './image-viewer';
 export function Tasks({route,label,part,chapters,groups,onDoc,onMaterial,onPerson,context}:{route:string;label:string;part:string;chapters:Chapter[];groups:Group[];onDoc:(url:string)=>void;onMaterial?:(id:string)=>void;onPerson?:(name:string)=>void;context?:(chapter:Chapter)=>React.ReactNode}){
-  const checks=useChecks(),[selected,setSelected]=useState<string|null>(null),[importError,setImportError]=useState(''),upload=useRef<HTMLInputElement>(null);
+  const checks=useChecks(),[announce,setAnnounce]=useState(''),[selected,setSelected]=useState<string|null>(null),[importError,setImportError]=useState(''),upload=useRef<HTMLInputElement>(null);
+  /** 장의 마지막 항목을 체크해 그 장이 처음 완료되는 순간에만 색종이를 터뜨린다. 열기·가져오기·해제에서는 부르지 않는다. */
+  async function celebrate(cg:Group[],title:string,id:string,value:boolean,target:HTMLElement){
+    if(!value)return;
+    const all=cg.flatMap(g=>g.actions.map(a=>({a,g:g.id})));
+    if(all.every(({a,g})=>checked(a,g,checks.data.checks)))return;
+    const next={...checks.data.checks,[id]:true};
+    if(!all.every(({a,g})=>checked(a,g,next)))return;
+    setAnnounce(`${title} 완료`);
+    if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+    const r=target.closest('details.chapter-section')?.querySelector('summary')?.getBoundingClientRect();
+    const origin=r&&r.height&&r.bottom>0&&r.top<innerHeight?{x:(r.left+r.width/2)/innerWidth,y:(r.top+r.height/2)/innerHeight}:{x:.5,y:.6};
+    const dark=document.documentElement.classList.contains('dark'),ink=getComputedStyle(target).getPropertyValue('--route-ink').trim();
+    const confetti=(await import('canvas-confetti')).default;
+    confetti({particleCount:90,spread:70,startVelocity:38,ticks:160,scalar:.9,disableForReducedMotion:true,origin,colors:[dark?'#94C4AB':'#4E8469',ink||'#4A4658',dark?'#9DB8D4':'#D2A97F']});
+  }
   const [hideDone,setHideDone]=usePreference<boolean>('tasks-hide-done',false);
   const toolbar=useRef<HTMLDivElement>(null),scrolled=useRef(false);
   useEffect(()=>{const element=toolbar.current;if(!element)return;const measure=()=>element.closest('.tasks-main')?.setAttribute('style',`--task-header-height:${element.getBoundingClientRect().height}px`);const observer=new ResizeObserver(measure);observer.observe(element);measure();return ()=>observer.disconnect();},[]);
@@ -53,12 +68,12 @@ export function Tasks({route,label,part,chapters,groups,onDoc,onMaterial,onPerso
     row.classList.remove('target-highlight');void row.offsetWidth;row.classList.add('target-highlight');
     row.addEventListener('animationend',()=>row.classList.remove('target-highlight'),{once:true});
   });}}><ArrowDown size={20}/> 이동</Button></section>}
-  <label className="check-control"><input type="checkbox" checked={hideDone} onChange={e=>setHideDone(e.target.checked)}/> 완료 숨기기</label><div data-checklist-source>{chapters.map(c=>{const cg=chapterGroups(c,groups),total=cg.reduce((n,g)=>n+g.actions.length,0),done=cg.reduce((n,g)=>n+g.actions.filter(a=>checked(a,g.id,checks.data.checks)).length,0),date=chapterDates(c),complete=total>0&&done===total;return <details key={`${c.title}-${chapter.title}`} className="chapter-section" data-chapter={c.title} data-current={c.title===active.title} data-completed={complete} hidden={hideDone&&complete} open={c.title===chapter.title&&!complete}>
+  <p className="sr-only" aria-live="polite">{announce}</p><label className="check-control"><input type="checkbox" checked={hideDone} onChange={e=>setHideDone(e.target.checked)}/> 완료 숨기기</label><div data-checklist-source>{chapters.map(c=>{const cg=chapterGroups(c,groups),total=cg.reduce((n,g)=>n+g.actions.length,0),done=cg.reduce((n,g)=>n+g.actions.filter(a=>checked(a,g.id,checks.data.checks)).length,0),date=chapterDates(c),complete=total>0&&done===total;return <details key={`${c.title}-${chapter.title}`} className="chapter-section" data-chapter={c.title} data-current={c.title===active.title} data-completed={complete} hidden={hideDone&&complete} open={c.title===chapter.title&&!complete}>
     <summary><ChevronDown size={24}/><span className="chapter-title">{c.title}</span>{!complete&&c.title===active.title&&<span className="progress-chip current-chip">현재</span>}<span className="progress-chip">{done}/{total}</span>{!complete&&date&&<span className="chapter-date">{date}</span>}</summary>
     {c.event&&<GuideImage className="chapter-event" source src={'/'+c.event.src} alt={c.event.alt}/>}
     {c.blocks.map(b=>{const g=groups.find(g=>g.id===b.id),Container=g?'details':'section',Header=g?'summary':'header';return <Container open={g?true:undefined} className={g?'action-group':'chapter-supplement'} key={b.id} data-source-block={b.id} id={b.id}>
       {(g||b.portraits.length>0)&&<Header>{g&&<ChevronDown size={22}/ >}{g&&<span className="group-title">{b.heading.length&&!Object.hasOwn(overrides.groups,g.id)?<SourceMarkup nodes={b.heading} {...markupProps} skip={new Set(b.portraits.map(p=>p.name.replace(/ 초상화.*$/,'')))}/>:<GameText text={g.title} skip={new Set(b.portraits.map(p=>p.name.replace(/ 초상화.*$/,'')))}/>}</span>}<div className="group-portraits">{b.portraits.map(p=><img key={p.src} data-source-image src={'/'+personPortrait(p.src,part,p.name)} alt={p.name} title={p.name} loading="lazy"/>)}</div>{g&&<span className="group-count">{g.actions.filter(a=>checked(a,g.id,checks.data.checks)).length}/{g.actions.length}</span>}</Header>}
-      {g&&<ol className="checklist">{g.actions.map(a=><li key={a.id} tabIndex={-1} hidden={hideDone&&checked(a,g.id,checks.data.checks)} data-complete={checked(a,g.id,checks.data.checks)}><input id={a.id} type="checkbox" checked={checked(a,g.id,checks.data.checks)} disabled={!checks.ready} aria-label={a.text} onChange={e=>checks.toggle(a.id,e.target.checked)}/><div><span className="action-category">{a.category}</span><div className="action-text"><SourceMarkup nodes={actionNodes(c,g,a)} {...markupProps}/></div></div></li>)}</ol>}
+      {g&&<ol className="checklist">{g.actions.map(a=><li key={a.id} tabIndex={-1} hidden={hideDone&&checked(a,g.id,checks.data.checks)} data-complete={checked(a,g.id,checks.data.checks)}><input id={a.id} type="checkbox" checked={checked(a,g.id,checks.data.checks)} disabled={!checks.ready} aria-label={a.text} onChange={e=>{const value=e.target.checked;void celebrate(cg,c.title,a.id,value,e.currentTarget);checks.toggle(a.id,value);}}/><div><span className="action-category">{a.category}</span><div className="action-text"><SourceMarkup nodes={actionNodes(c,g,a)} {...markupProps}/></div></div></li>)}</ol>}
       <div className="action-notes">{Object.hasOwn(overrides.notes,b.id)?(overrides.notes as Record<string,Group['notes']>)[b.id].map((n,i)=><p key={i}>{n.text}</p>):<SourceMarkup nodes={b.notes} {...markupProps}/>}</div>
     </Container>;})}
   </details>;})}</div></div>{context&&context(chapter)}</div></>;
