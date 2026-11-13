@@ -52,10 +52,10 @@ progress{appearance:none;border:0;border-radius:8px;overflow:hidden;height:8px;b
 .class-path li{flex-wrap:wrap}
 .class-path .role-chip{font-size:18px}
 .readable-body{line-height:1.6}
-.readable-group[data-expanded=false]>.readable-body{max-height:var(--preview-height,3lh);overflow:hidden}
-.readable-group[data-expanded=false]>.readable-body .image-open{display:none}
+
+
 .readable-body p:last-child,.readable-body ul:last-child{margin-bottom:0}
-.prose-toggle{min-height:32px;padding:4px 8px;margin-top:8px}
+
 .image-open{display:block;width:100%;padding:0;border:0;background:transparent;text-align:left;cursor:zoom-in}
 .image-open>img,.chapter-event,.source-markup .media-guide,.semantic .image-open>img,.map-thumbnail img{display:block;width:auto;height:auto;max-width:100%;max-height:480px;aspect-ratio:auto;object-fit:contain;margin:16px auto;border-radius:8px}
 .map-thumbnail img{max-width:120px;max-height:80px;margin:0;flex-shrink:0}
@@ -92,9 +92,9 @@ progress{appearance:none;border:0;border-radius:8px;overflow:hidden;height:8px;b
 /* 사라짐 시간은 기존 버튼의 .15s 전환값을 재사용한다. */
 .checklist>li.target-highlight::after{content:'';position:absolute;inset:0;border:2px solid var(--accent);border-radius:8px;pointer-events:none;animation:target-highlight .15s linear 2s forwards}
 @keyframes target-highlight{from{opacity:1}to{opacity:0}}
-.person-info .readable-group[data-expanded=false]>.readable-body{display:block}
+
 .person-info .readable-body>:first-child{margin-top:0}
-.person-info .prose-toggle{margin-left:0;margin-right:0}
+
 .check-control{display:inline-flex;align-items:center;gap:8px;min-height:48px;margin-right:16px}
 .check-control input{width:24px;height:24px;flex-shrink:0;accent-color:var(--accent)}
 .team-reference{margin:32px 0}

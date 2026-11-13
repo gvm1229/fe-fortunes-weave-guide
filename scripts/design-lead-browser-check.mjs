@@ -105,7 +105,7 @@ try{
     interactions.push({width,height,theme,check:'load-current-chapter',...autoScroll});
     const label=`theodora-todo-${width}x${height}-${theme}`;
     await measure(page,{label,width,height,theme,view:'todo'});await capture(page,label);
-    const jump=page.locator('.next-action').getByRole('button',{name:'이동',exact:true});
+    const jump=page.locator('.check-toolbar').getByRole('button',{name:'다음 할 일로 이동',exact:true});
     await jump.scrollIntoViewIfNeeded();await jump.click();
     const target=page.locator('.checklist>li.target-highlight');
     await target.waitFor();
@@ -142,8 +142,7 @@ try{
     await page.getByRole('heading',{name:'인물',level:1,exact:true}).waitFor();await ready(page);
     await measure(page,{label:label.replace('-todo-','-people-'),width,height,theme,view:'people'});
     await capture(page,label.replace('-todo-','-people-'));
-    const disclosure=page.locator('.person-summary .prose-toggle').first();await disclosure.scrollIntoViewIfNeeded();await disclosure.click();
-    assert.equal(await disclosure.getAttribute('aria-expanded'),'true');await disclosure.click();
+    assert.equal(await page.locator('.prose-toggle').count(),0,'자세히 접기 없음');
     interactions.push({width,height,theme,check:'person-disclosure-preserves-content',passed:true});
     await page.getByRole('navigation',{name:'공략 화면'}).getByRole('button',{name:'준비',exact:true}).click();
     assert.equal(await page.locator('main').getByText(/증서 수량은 준비 슬롯/).count(),0);
