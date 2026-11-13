@@ -251,7 +251,7 @@ summary::-webkit-details-marker{display:none}
 .document-profile table{table-layout:fixed}.document-profile th{width:112px;word-break:keep-all;overflow-wrap:normal}.document-profile :is(th,td){padding:12px}
 @media(max-width:767px){.document-profile th{width:96px}.document-profile .named-class{flex-wrap:wrap;gap:6px}.document-profile .role-chip{margin:8px 0 0}}
 /* 개별 마법 패널은 짧은 효과와 수치를 모두 보여 준다. */
-.spell-panel .readable-group[data-expanded=false]>.readable-body{max-height:none;overflow:visible;display:block}.spell-panel .prose-toggle{display:none}
+
 
 /* 2026-11-14 v3: 투명 초상화에 통일 배경 */
 :is(.app-shell,.team-page,.sheet) :is(img[src*="/portraits/"],img[src*="/gods/"]):not(.banner-lord){background:var(--portrait-bg)}.dark :is(.app-shell,.team-page,.sheet) :is(img[src*="/portraits/"],img[src*="/gods/"]):not(.banner-lord){outline:1px solid #3A4A50;outline-offset:-1px}
@@ -341,3 +341,7 @@ summary::-webkit-details-marker{display:none}
 }
 .sr-only{position:absolute;inline-size:1px;block-size:1px;margin:-1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
 @media (prefers-reduced-motion:reduce){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}}
+/* 2026-11-14: 다음 할 일 이동 버튼은 고정 도구 줄에 둔다. */
+.check-toolbar .jump-next{min-block-size:48px;padding:10px 16px}
+.next-action{grid-template-columns:minmax(0,1fr)}
+@media(max-width:767px){.check-toolbar .jump-next{padding:10px 12px}.check-toolbar .jump-label{display:none}}

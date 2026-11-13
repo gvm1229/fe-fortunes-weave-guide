@@ -8,7 +8,7 @@ export type Exam = { tier: string; level: string; renown: string; required: stri
 export type CharacterData = { avoid: boolean; finalClasses: string[]; classes: string[]; next?: string; skills: SkillGoal[]; skillNote?: string; exams: Record<string, Exam>; steps: Record<string, string>; charioteer?: string; goalText?: string };
 
 type Phase = { classes?: string[]; next?: string };
-type Kai = { reason: string; source: string; excluded: string[]; skills: SkillGoal[]; people: Record<string, Record<string, Phase>> };
+type CaiPlan = { reason: string; source: string; excluded: string[]; skills: SkillGoal[]; people: Record<string, Record<string, Phase>> };
 const classManifest = manifest.classes as Record<string, { weapons?: string[] }>;
 let cache: ReturnType<typeof load> | undefined;
 function load() {
@@ -18,7 +18,7 @@ function load() {
     details: json<{ classes: Record<string, { tier: string; recommendedLevel: string; renown: string; required: string; choice: string; unlock: string }> }>('data/class-details').classes,
     reasons: json<{ routes: Record<string, Record<string, Record<string, { steps?: { class: string; reason?: string; compact?: { reason?: string } }[] }>>> }>('data/class-path-reasons').routes,
     avoid: json<{ avoidDefault: string[] }>('data/final-roster').avoidDefault,
-    kai: json<Kai>('kai-charioteer'),
+    kai: json<CaiPlan>('kai-charioteer'),
   };
 }
 const empty = (v?: string) => !v || v === '–' || v === '-';
