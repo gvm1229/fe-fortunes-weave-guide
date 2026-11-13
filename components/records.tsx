@@ -9,25 +9,6 @@ import { personPortrait } from '@/lib/portraits';
 const itemNames=Object.fromEntries(Object.entries(weaponData.weapons).map(([id,item])=>[id,item.name]));
 const labels:Record<string,string>={text:'내용',aliases:'다른 이름',people:'사용 인물',mapKey:'지도 표기',classes:'병종',next:'다음 목표',entryClass:'가입 병종',entryTier:'가입 단계',entryBasis:'가입 기준',pathNotes:'경로 안내',qualificationsOnly:'자격만 준비',optionalClasses:'선택 병종',role:'역할',reason:'이유',kind:'육성 구분',merge:'기준판',schedule:'운용 일정',floorLabel:'최소 준비',middleClass:'중급 병종',middleExam:'시험 기능',middleBy:'준비 기한',skillsBy:'기능 기한',part1Skills:'1부 기능',joinPlan:'합류 계획',joinTargetChapter:'영입 권장 장',supportStartChapter:'지원 준비 장',starts:'시작 시점',stops:'중단 시점',end:'종료 목표',queue:'봉사 순서',start:'시작 확인',carry:'이월 확인',boons:'축복',god:'신',level:'레벨',effect:'효과',name:'이름',place:'장소',method:'획득 방법',quantity:'수량',steps:'순서',warning:'주의',target:'목표',condition:'조건',users:'사용자',weapon:'무기',chapter:'장',items:'준비 항목',extras:'추가 비용',notes:'안내',afterScheduledSpend:'지출 뒤 여유',label:'항목',amount:'금액',gold:'골드',cost:'비용',renown:'명성',fame:'명성',sup:'지원',init:'가입 병종',localCondition:'추가 조건',prerequisite:'선행 조건',deadline:'기한',dates:'날짜',roleReason:'역할 이유',preparation:'준비',aim:'목표',recruitment:'영입',pathMeaning:'경로의 뜻',usage:'운용',investmentByPhase:'투자 시기',usageByPhase:'부별 운용',fusion:'융합 역할',requirements:'필요 기능',skill:'기능',rank:'등급',priority:'우선순위',current:'현재',total:'합계',reserve:'여유금',support:'지원',renownGate:'명성 조건',routeDetails:'루트별 안내',search:'지도 검색어'};
 const hidden=new Set(['source','sources','url','sourceType','reviewed','version','anchor','baseRoute','route','portrait','classIcon','icon','file','images','lowerMasteryRequired','joinIsPlanningTarget','floorRequired','sourceBasis']);
-export function RecordRows({value,label}:{value:unknown;label:string}){
-  const rows:{label:string;value:unknown}[]=[];
-  function collect(v:unknown,title:string){
-    if(v===null||v===undefined||v==='')return;
-    if(Array.isArray(v)){
-      if(!v.length)return;
-      if(v.some(item=>item&&typeof item==='object'&&!('$prose' in item)))v.forEach((item,i)=>collect(item,`${title} ${i+1}`));
-      else rows.push({label:title,value:v});
-    }else if(typeof v==='object'&&!('$prose' in v)){
-      for(const [key,child]of Object.entries(v))if(!hidden.has(key)){
-        if(['sup','support','fame','renown'].includes(key)&&String(child).trim()==='0')continue;
-        const displayValue=key==='entryTier'?({0:'초급 전',1:'초급',2:'중급',3:'상급'} as Record<string,string>)[String(child)]:child;
-        collect(displayValue,key==='text'?title:labels[key]||(/^[123]$/.test(key)?`${title} ${key}부`:/[가-힣]/.test(key)?key:title));
-      }
-    }else rows.push({label:title,value:v});
-  }
-  collect(value,label);
-  return rows.map((row,i)=><tr key={i}><th scope="row"><GameText text={row.label}/></th><td><ReadMore><Records value={row.value} disclose={false}/></ReadMore></td></tr>);
-}
 export function Records({value,disclose=true}:{value:unknown;disclose?:boolean}){return recordNode(value,disclose,new Set(),false);}
 /** 한 칸·한 항목 안에서는 같은 얼굴 그림을 한 번만 붙인다. 모음은 그릴 때마다 새로 만든다. */
 function recordNode(value:unknown,disclose:boolean,seen:Set<string>,inCell:boolean):React.ReactNode{
