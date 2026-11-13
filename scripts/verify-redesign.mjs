@@ -35,3 +35,8 @@ assert.equal(names.root().text(),'세오도라·소피아 병사 경기병');
 assert.equal(names('.named-person img').length,2);assert.equal(names('.named-class img').length,2);
 assert.ok(names('.named-person img').map((_,e)=>names(e).attr('src')).get().every(src=>src.includes('post-timeskip')));
 console.log('통과: 인물명·병종명 그림과 3부 초상화 시기');
+
+const skipped=load(renderToStaticMarkup(createElement(GameText,{text:'시로코 학습표 · 시로코 경기병 · 경기병',skip:new Set(['시로코'])})),null,false);
+assert.equal(skipped.root().text(),'시로코 학습표 · 시로코 경기병 · 경기병');
+assert.equal(skipped('.named-person img').length,0,'skip 인물은 그림 없음');assert.equal(skipped('.named-class img').length,1,'같은 글 안 반복 병종은 그림 1개');
+console.log('통과: 같은 묶음의 인물·병종 그림 중복 제거');
