@@ -74,7 +74,7 @@ try{
  await page.getByLabel('참고 문서 검색').fill('명시 발화');await page.locator('.document-list button').first().click();await page.getByRole('dialog').waitFor();
  assert.equal(await page.locator('.sheet-scroll [id="s01"]').count(),1);await page.keyboard.press('Escape');
  checks.push('Markdown 명시 앵커 보존');
- for(const route of ['theodora','leda','dietrich','kai']){
+ for(const route of ['theodora','leda','dietrich','cai']){
    await visit('/'+route+'/2/');for(const view of ['인물','준비','재료와 구매','참고 문서']){await nav(view).click();await layout(route+' 2부 '+view);}
  }
  await visit('/part3/3/');await nav('인물').click();assert.ok(await page.locator('.person-heading img[src*="post-timeskip"]').count()>0);

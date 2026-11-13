@@ -81,7 +81,7 @@
 
 ### 위치와 지도
 
-[지도 열기 · 카이 선택 후 Glirmosa 검색](https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624208 "recruit-map:glirmosa:kai")
+[지도 열기 · 카이 선택 후 Glirmosa 검색](https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624208 "recruit-map:glirmosa:cai")
 
 ![글루마오사 위치 참고](../../assets/guide/dispatch-ui.png)
 

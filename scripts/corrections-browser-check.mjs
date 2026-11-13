@@ -10,7 +10,7 @@ try{
  for(const [width,height]of [[1440,900],[375,812]])for(const theme of ['light','dark']){
   const page=await browser.newPage({viewport:{width,height},colorScheme:theme});
   page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error'&&!m.text().startsWith('Failed to load resource:'))errors.push(m.text());});
-  const scopes=[...['kai','dietrich','theodora','leda'].flatMap(route=>['1','2'].map(part=>({route,part}))),{route:'part3',part:'3'}];
+  const scopes=[...['cai','dietrich','theodora','leda'].flatMap(route=>['1','2'].map(part=>({route,part}))),{route:'part3',part:'3'}];
   for(const {route,part} of scopes){
    await page.goto(`http://localhost:3000/${route}/${part}/`);await page.waitForLoadState('networkidle');
    await page.waitForFunction(()=>!!document.querySelector('.app-shell')&&!document.querySelector('.checklist input[disabled]'));

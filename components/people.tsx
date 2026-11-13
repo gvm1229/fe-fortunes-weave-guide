@@ -11,7 +11,7 @@ import { Badge } from './ui/badge';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './ui/accordion';
 export type ClassInfo={file:string;tier:string;slug?:string;weapons?:string[];traits?:string[]};
 const skillIcons:Record<string,string>={'검술':'sword','창술':'lance','도끼술':'axe','궁술':'bow','격투술':'brawl','지휘술':'authority','기마술':'riding','비행술':'flying','중갑술':'armor','중장술':'armor','보병술':'infantry','흑마술':'black-magic','백마술':'white-magic'};
-const routeNames:Record<string,string>={theodora:'세오도라',leda:'레다',dietrich:'디트리히',kai:'카이',part3:'3부'};
+const routeNames:Record<string,string>={theodora:'세오도라',leda:'레다',dietrich:'디트리히',cai:'카이',part3:'3부'};
 export function ClassPath({classes,manifest,onDoc}:{classes:string[];manifest:Record<string,ClassInfo>;onDoc?:(url:string)=>void}){return <ol className="class-path">{classes.map(c=><li key={c}>{manifest[c]&&<img src={`/${manifest[c].file}`} alt="" loading="lazy"/>}{onDoc&&manifest[c]?.slug?<button className="text-link" onClick={()=>onDoc(`notes/classes/${manifest[c].slug}.md`)}>{c}</button>:<strong>{c}</strong>}<span className="role-chip">{manifest[c]?.tier||'단계 미확인'}</span></li>)}</ol>;}
 function Skill({name}:{name:string}){return <span className="skill-name">{skillIcons[name]&&<img className="game-skill" src={`/assets/skills/${skillIcons[name]}.webp`} alt="" loading="lazy"/>}{name}</span>;}
 function words(value:unknown):string{if(value===null||value===undefined)return '';if(typeof value==='string'||typeof value==='number')return String(value);if(Array.isArray(value))return value.map(words).filter(Boolean).join(' · ');if(typeof value==='object'&&'$prose' in value)return (value as {$prose:string[]}).$prose.join(' ');return '';}

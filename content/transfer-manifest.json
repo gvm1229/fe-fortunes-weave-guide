@@ -4,7 +4,7 @@
     {
       "source": "data/action-migration.json",
       "target": "content/data/action-migration.json",
-      "sha256": "ee61d14f357c8325784ee46e5e78e2c81c411da3263b48d70f6a7041c8fd5b5b"
+      "sha256": "a1c4fc468ddcc4082729e1dae28f013db537ceb5682ae37151ae829609202882"
     },
     {
       "source": "data/affordable-gifts.json",
@@ -14,7 +14,7 @@
     {
       "source": "data/army-actions.json",
       "target": "content/data/army-actions.json",
-      "sha256": "3f72fb28c5a69a0eac32ff991c6a01741e4bfb68c503d40cba276f5f7e8ada13"
+      "sha256": "3028d3627e252323b14b030974a2df921f0cad6172737605bdcc6bf7de2bfeb9"
     },
     {
       "source": "data/boon-price-sources.json",
@@ -34,12 +34,12 @@
     {
       "source": "data/chapter-gold.json",
       "target": "content/data/chapter-gold.json",
-      "sha256": "08042dc1b8f47e71f62eccd313811a994aad88330fde35d24b1d1f47599f3aba"
+      "sha256": "76c304101e73ee9e428a7a094b714e3639b15c52f2684e48b3ac3356d63a9b50"
     },
     {
       "source": "data/chapter-progression.json",
       "target": "content/data/chapter-progression.json",
-      "sha256": "03d47cf8b3bdf814db784c78b990144ff2134f6ff368f4ebde17c20991b773d4"
+      "sha256": "9414afcfae5b6e85fd3e3801e7c6d6efa36ffb6df2962312e9da8490e0d65b21"
     },
     {
       "source": "data/checklist-display-names.json",
@@ -59,22 +59,22 @@
     {
       "source": "data/class-path-reasons.json",
       "target": "content/data/class-path-reasons.json",
-      "sha256": "f51214976bec299f994999e6a4b2a3bd0660c634fadb048456e417986912b64b"
+      "sha256": "0796a17fbc56b2e21ca1b6978edcf0868030e13e7cbf5328f7dab308a76363e9"
     },
     {
       "source": "data/final-roster.json",
       "target": "content/data/final-roster.json",
-      "sha256": "194525d0e32cdc757059cfa318d2b834237f62b212a66ed48c0740002b9e14ad"
+      "sha256": "3bc0d144cbf30a3105d35bd99dbc33de82b5eb6fa4e7f667d46d8d140e871029"
     },
     {
       "source": "data/god-service-plan.json",
       "target": "content/data/god-service-plan.json",
-      "sha256": "6d465b6a4f8f343bf35da0d9f7ab2e7a14eccc0f58c809e09d757b1c49f116eb"
+      "sha256": "273c62f1edfe4854e442c86ce0c670ee1b638967de907d122350ce9aad8c3ad9"
     },
     {
       "source": "data/missable-events.json",
       "target": "content/data/missable-events.json",
-      "sha256": "1e2078ecaac713a55e6fa5457eb838137f2cbc1f2ebd47b694eba29c6f7b7227"
+      "sha256": "fda872f9dce28cfb922d6852a2be47f84eb748143c95649b7b92d7adfa7e5966"
     },
     {
       "source": "data/modal-scope-plan.json",
@@ -84,17 +84,17 @@
     {
       "source": "data/multi-route-audit.json",
       "target": "content/data/multi-route-audit.json",
-      "sha256": "1534d90f1a9c1e50a74360a38fbf5f3b36639525bd9b8cbb28b55ce1e74a3cfa"
+      "sha256": "9116e36fb350ed58c059ae204022254af71bffb8a64cc45fffc883ffd038ee03"
     },
     {
       "source": "data/optional-growth-review.json",
       "target": "content/data/optional-growth-review.json",
-      "sha256": "3992f345a0cfeb0a4ca3843b38c91c944dcaeb06ff488f4c9f0fc9e282997b67"
+      "sha256": "69e5858ca0224dceae4eabdb1d63635149ad94f7b7c35b099af278ce7adc592d"
     },
     {
       "source": "data/optional-schedules.json",
       "target": "content/data/optional-schedules.json",
-      "sha256": "869b67ba5f2a7c2546f07c97551fc48db322c4c6f1239c64104496e2bba585f4"
+      "sha256": "52725c6ab293ef4447b39d11ef18e89d3782245423f1fa26defc42b509ced1b9"
     },
     {
       "source": "data/people-display.json",
@@ -104,17 +104,17 @@
     {
       "source": "data/phase-goals.json",
       "target": "content/data/phase-goals.json",
-      "sha256": "487d22e9d7a97d18d23bd97175e4d6b8746d25f533e874eb262a2dfc872d5efe"
+      "sha256": "2119da94bf6c62b65f6847f35d2e872620d5ef586a1d4173f4c0551643eac7d0"
     },
     {
       "source": "data/playbook.json",
       "target": "content/data/playbook.json",
-      "sha256": "7496b4620652caa1a701fff3437c50bed144ddd6defb236b91ede061d9bfee2f"
+      "sha256": "c8f06cd1117c1e6fa4ea4c62e71dd3e669770ab982fd31b729e56221eda85860"
     },
     {
       "source": "data/purchase-plan.json",
       "target": "content/data/purchase-plan.json",
-      "sha256": "6cf9033aafdc933a0e4d476438c1869d994eb354ee5c58256c63d659db6e472b"
+      "sha256": "7097154d1f88b0bb2ff645513422cbaa6f46b5e509ea40b10ac57688753e23ea"
     },
     {
       "source": "data/readiness-profile-sources.json",
@@ -124,47 +124,47 @@
     {
       "source": "data/recruit-all-plan.json",
       "target": "content/data/recruit-all-plan.json",
-      "sha256": "5af1f61a1300152085960087f4acd139e9c62d06c08bc2d6f26f20b6170f29d8"
+      "sha256": "5db8a2c9bbff8b1c294fdefa8791f0f1165063800454d3b29c250772edc5b522"
     },
     {
       "source": "data/recruit-materials.json",
       "target": "content/data/recruit-materials.json",
-      "sha256": "84335464d093c215bb2698bca86a642d59844ec973be1206dc4d51a7f9e1a19f"
+      "sha256": "7d0f180042fe7a7257e5e5cc5b28e438e1ea0e9c76cfe0ea36da985559b9a462"
     },
     {
       "source": "data/recruitment-build-audit.json",
       "target": "content/data/recruitment-build-audit.json",
-      "sha256": "cfb7b0338c4f863676c3205718807891a7225021f4504f99d1ac1bc3a391da84"
+      "sha256": "021b8b05dcfc0d16c55b26606727eafacd336fc8823026336968ddce76caac01"
     },
     {
       "source": "data/recruitment-gates.json",
       "target": "content/data/recruitment-gates.json",
-      "sha256": "f977a8f77aaafeb5de1286b8f252123e165849270f564ee14c9316fbb0e284f4"
+      "sha256": "c1156b2c53f9671b2b530661c6f4da6d53afee1786dd79deac488a056bff44b2"
     },
     {
       "source": "data/roster-plan.json",
       "target": "content/data/roster-plan.json",
-      "sha256": "6ee03cb1cec09793bd95d04a2a0d08d89b0ec4eb2617ce62ae4461111717f71b"
+      "sha256": "f447caf0c57b7c0859795aa5832aae70f5810b595852cf8906f08fa0b7bdf222"
     },
     {
       "source": "data/roster-selection-sources.json",
       "target": "content/data/roster-selection-sources.json",
-      "sha256": "39b1189c1c9a93b2634e81af025a91baddc1ad79c9cb96a486579a610125a339"
+      "sha256": "987a688577b52f5f6006df1a1b60ac1e815519180d0cd6698a8d5446fe662175"
     },
     {
       "source": "data/roster-selection.json",
       "target": "content/data/roster-selection.json",
-      "sha256": "6f11e8c8368f0df1a965b79738eba1898a0ab34dc37e2b16fcb15278a8faddce"
+      "sha256": "7300db9d5fdc9524be152e3fd3c14a58d97ccd3c2232890bc21fb45b12d495e6"
     },
     {
       "source": "data/sequential-training-plan.json",
       "target": "content/data/sequential-training-plan.json",
-      "sha256": "2c072128de0c6a6956611e152911c14c0e70f0ff0066cd10633664906e9ae009"
+      "sha256": "b5934cb6e66a79153e376833d586956593082c1d3674200566317773e57fcf27"
     },
     {
       "source": "data/starter-handoffs.json",
       "target": "content/data/starter-handoffs.json",
-      "sha256": "cdf46ff03a1436d1a5726854bdc212a1e32a573e7f40023ccf7ac8373edd6a67"
+      "sha256": "444c25fce05a94b269024c42d7a387130fafccf5084ea7e6f31e09e89776800e"
     },
     {
       "source": "data/team-korean-name-sources.json",
@@ -174,7 +174,7 @@
     {
       "source": "data/team-reference-sections.json",
       "target": "content/data/team-reference-sections.json",
-      "sha256": "6efa5d9803ea0e08d395e19777dcc24e06e695a542a3ed356641711b4555f4f9"
+      "sha256": "68991001d4409534c1ef13a6b216a40309b0801d34a8e029f901eb8835fbd3a5"
     },
     {
       "source": "data/team-signature-learning.json",
@@ -214,12 +214,12 @@
     {
       "source": "data/timed-acquisitions.json",
       "target": "content/data/timed-acquisitions.json",
-      "sha256": "5f01df6431c68da7bff7b772b4587ee8da57657b8eb17fd62a6c2bdaf3554397"
+      "sha256": "42e7e4ce695a4ca8ce9823f6a0595b89ac8384cc3148c05d26afeb6bfe579c64"
     },
     {
       "source": "data/training-priorities.json",
       "target": "content/data/training-priorities.json",
-      "sha256": "2c4f75fb1087cc6f4450e02aeb3c20fca6c6289540a23f39243d51102cf533e8"
+      "sha256": "0305c27a5ab540f4eaa1177e84b9bb63b0e0ebeae412fcfe6c792736d4dd345c"
     },
     {
       "source": "data/training-sources.json",
@@ -229,7 +229,7 @@
     {
       "source": "data/unit-readiness.json",
       "target": "content/data/unit-readiness.json",
-      "sha256": "9cb7cf407d1f23aaccf5bf16fb8f47621682fb42e2ec7ccf9fffee4a472d4db7"
+      "sha256": "d6eba8ea10660ebc63d6e0aeb5aa0c493b9f0511214ded69a0336be17ceb89ed"
     },
     {
       "source": "data/weapon-buy-sources.json",
@@ -239,12 +239,12 @@
     {
       "source": "data/weekly-support.json",
       "target": "content/data/weekly-support.json",
-      "sha256": "b4cfac827823a2fd769b3d6d933be9baf9cc4931958f52868d8d833ebe3c310e"
+      "sha256": "6d292ec044a3ad84c6b4d677b83997c2211b68eec2fb445f298251cac778c1a1"
     },
     {
       "source": "data/weekly-training.json",
       "target": "content/data/weekly-training.json",
-      "sha256": "778f2088d85f798160f83203ea5ada5053686e813949ea88dc834c5a82c9aa9c"
+      "sha256": "3be78011c276bb8000be3c4d59e310030abf11755dca0518287ffca0904d0fa0"
     },
     {
       "source": "notes/arena-training-review.md",
@@ -294,7 +294,7 @@
     {
       "source": "notes/backups/final25-apply-20261104/progress.md",
       "target": "content/notes/backups/final25-apply-20261104/progress.md",
-      "sha256": "054be79fffde6c9ab9a7cb949719b92f5aaeb09741bd96639ee03410a2b1545f"
+      "sha256": "87ad437b893da03e8ea1b4f7eda82b18add4c86f77f730d7fd47ecfc7e7e55c4"
     },
     {
       "source": "notes/backups/final25-apply-20261104/routes/dietrich/progress.md",
@@ -302,9 +302,9 @@
       "sha256": "9ec9ef63fa564fd0b4764d4fce13b896d1fa69edf7d0914663d5accbd1ad19a7"
     },
     {
-      "source": "notes/backups/final25-apply-20261104/routes/kai/progress.md",
-      "target": "content/notes/backups/final25-apply-20261104/routes/kai/progress.md",
-      "sha256": "e269e3514b33468576ab5f0ec528e52b73134df97e688a752b83817b68e84599"
+      "source": "notes/backups/final25-apply-20261104/routes/cai/progress.md",
+      "target": "content/notes/backups/final25-apply-20261104/routes/cai/progress.md",
+      "sha256": "8baecdb65b65e62c407ab6c84c04d2b465a071096547029df1fc75dbe2a2dc35"
     },
     {
       "source": "notes/backups/final25-apply-20261104/routes/leda/progress.md",
@@ -787,19 +787,19 @@
       "sha256": "75a5e0be8567a948f0dfe5487bfc457838c58ac3b1cc99947c79928903566f8d"
     },
     {
-      "source": "notes/events/miss-kai02-stairs.md",
-      "target": "content/notes/events/miss-kai02-stairs.md",
-      "sha256": "abae1a71b8ca6152b98ef28d10307bcf60493be78fdfd40a3b4ad8466d50cfe1"
+      "source": "notes/events/miss-cai02-stairs.md",
+      "target": "content/notes/events/miss-cai02-stairs.md",
+      "sha256": "c9896595d673404f13c859579ba2ef303ab9f5e3f1d78ab6e728cede937671d7"
     },
     {
-      "source": "notes/events/miss-kai04-bertrand.md",
-      "target": "content/notes/events/miss-kai04-bertrand.md",
-      "sha256": "b0ea765b831e98fd9d11f9bb24837c576b700ad8d7c6f143253bd75db2289dc1"
+      "source": "notes/events/miss-cai04-bertrand.md",
+      "target": "content/notes/events/miss-cai04-bertrand.md",
+      "sha256": "84fb690b1c145398da6cf479ec23adba027f149ac7538e128f0ec6895c7d2cb4"
     },
     {
-      "source": "notes/events/miss-kai06-mural.md",
-      "target": "content/notes/events/miss-kai06-mural.md",
-      "sha256": "6567ce09e5b9a62e9ef6eabe8667223fc16576df267b2a48bf20bf2927241efd"
+      "source": "notes/events/miss-cai06-mural.md",
+      "target": "content/notes/events/miss-cai06-mural.md",
+      "sha256": "7ddd7a9c171abdb59a0c3361b5da1d8d2519a1958c23ef7236fd8632ed5ca83b"
     },
     {
       "source": "notes/events/miss-leda04-itemshop.md",
@@ -1159,7 +1159,7 @@
     {
       "source": "notes/missables-shopping-review.md",
       "target": "content/notes/missables-shopping-review.md",
-      "sha256": "a718eb7f643d2a7e2a9ef71542a673d2d03d11fe03399234d6a9d608e8813ae0"
+      "sha256": "3fccecfa99406954df5eb7bb19685e6e77988b3ccb11064363203aaed99549d1"
     },
     {
       "source": "notes/modal-reading-review.md",
@@ -1304,22 +1304,22 @@
     {
       "source": "notes/recruitment/aurum-rose.md",
       "target": "content/notes/recruitment/aurum-rose.md",
-      "sha256": "5e9999975aeef731af76112f7326ec2822ffd278a3fde75d0ef3c46175ff7a69"
+      "sha256": "ad4a92f00ea7650f4883053430a50d057157b9a53c1627f728f938a26612e3ea"
     },
     {
       "source": "notes/recruitment/azure-heart.md",
       "target": "content/notes/recruitment/azure-heart.md",
-      "sha256": "4dcf98d120f6b8888fc327efb5c9402e69c8b6c6036e2f0048eaefa340c0c579"
+      "sha256": "4829158fa514383e7b0a87b3c5ce87ecb475b53567976d56b0fbb7ef89f85c97"
     },
     {
       "source": "notes/recruitment/bronze-axe.md",
       "target": "content/notes/recruitment/bronze-axe.md",
-      "sha256": "9ba0a60bcb4339a545ed40d4bffe243f15be7a47e8741f23675edc3d75fd4705"
+      "sha256": "9f578fafdba59a6eefadedfe34f00e39d1ea8cd25636585b606104b695b60887"
     },
     {
       "source": "notes/recruitment/dates.md",
       "target": "content/notes/recruitment/dates.md",
-      "sha256": "85055caa4f5e650932280b6a9b92d899c55f1e07f382bb3c5e6186c7e2043009"
+      "sha256": "57ea41de309fe808d4de7bfb553bc7380472a28d82bbbe998989d23543f93269"
     },
     {
       "source": "notes/recruitment/fabio-proof.md",
@@ -1334,7 +1334,7 @@
     {
       "source": "notes/recruitment/giant-meat.md",
       "target": "content/notes/recruitment/giant-meat.md",
-      "sha256": "603d378a98d6c594a606bd96b7b8f3b1f45072ee8f1334ac1ee137e804f927f3"
+      "sha256": "95987e28171d3b8a42644d2ebfaa0a23e8ce758438469c090de82e03961d0e69"
     },
     {
       "source": "notes/recruitment/gift-box.md",
@@ -1344,12 +1344,12 @@
     {
       "source": "notes/recruitment/glirmosa.md",
       "target": "content/notes/recruitment/glirmosa.md",
-      "sha256": "64e8129419dc0cf5252781cd6f3f1500eb47853e4db83303f61a22b1a99341fe"
+      "sha256": "963180e06e9da90db2f24c0a0ba8c6c33b3cfab5619853cdda5ae18f527d99b8"
     },
     {
       "source": "notes/recruitment/holy-water.md",
       "target": "content/notes/recruitment/holy-water.md",
-      "sha256": "4f0140c3381fab001e20185529124f2979f754f069636b95d6ec154cb4e1a5b5"
+      "sha256": "39d80cf0f5bcf3d5644b0ab76d19de2bd2fd9d22ea554bc5607c0844a1bb8c09"
     },
     {
       "source": "notes/recruitment/iron-axe.md",
@@ -1359,42 +1359,42 @@
     {
       "source": "notes/recruitment/iron-bow.md",
       "target": "content/notes/recruitment/iron-bow.md",
-      "sha256": "128f1c84369fc92ce05ea6168129743807de364371782f0178920d71ce6a7576"
+      "sha256": "cf3b3736a12ca2d50a01cbff744479d05dc6be560bb5e7481b0c9df16cb557ed"
     },
     {
       "source": "notes/recruitment/iron-lance.md",
       "target": "content/notes/recruitment/iron-lance.md",
-      "sha256": "d3137c9d8b12abe3cb47cad3dfa6e28c2ae6eb67c8c056af1c38615952d4bec3"
+      "sha256": "9274bcd05c277dfea85e4336b797e42ce36ffc2a0741fdc9466eb1de74efcf3e"
     },
     {
       "source": "notes/recruitment/iron-sword.md",
       "target": "content/notes/recruitment/iron-sword.md",
-      "sha256": "5ea3ee6411e5bdfc87aabe1075a207dc71f24c360538036594ead33a2bf1bcde"
+      "sha256": "0b5ea23fc2e7333f49e6165e685b575a63089cc8cd40e12ad478a9e2b439f3e6"
     },
     {
       "source": "notes/recruitment/kosharuga.md",
       "target": "content/notes/recruitment/kosharuga.md",
-      "sha256": "f24a092187b592343d234bbfbf2ef9e2f60cdd351512d3b3bfc5e315c495d527"
+      "sha256": "62d74205313cc61e4827ea15a50779457cb925b22c46f734581eea2e57fa11d9"
     },
     {
       "source": "notes/recruitment/paradise-fish.md",
       "target": "content/notes/recruitment/paradise-fish.md",
-      "sha256": "6aa11bb702b888b2f706cf8e47470b6b158de59233bb3a3dc58f93d5ab620bb2"
+      "sha256": "dc36cbe49f80eefbde5ec1a72bc23979fcaacf44f7985a13476bb271ae7d3a7c"
     },
     {
       "source": "notes/recruitment/poet-copy.md",
       "target": "content/notes/recruitment/poet-copy.md",
-      "sha256": "1245598ba25fcef5ce87d2de6fa5cae02eb8472f4d69ab0078894e8172504005"
+      "sha256": "69218ba9bf3f189782beb5eb222522fac2ca064802f6bd63a38f505749e18788"
     },
     {
       "source": "notes/recruitment/sandworm-meat.md",
       "target": "content/notes/recruitment/sandworm-meat.md",
-      "sha256": "345f701b97d91cbe549b6ee792c0202ce51844d58d1d0ab374d691592e729a56"
+      "sha256": "f6fcfbb7552ff3393fe7d601abad3f82b579803f1b6e51945aaa023157bdefaa"
     },
     {
       "source": "notes/recruitment/scarlet-drops.md",
       "target": "content/notes/recruitment/scarlet-drops.md",
-      "sha256": "c748b0fdd98ced2777d5caf8617091595f02dcd54c19a72862cea4127ef6f3f3"
+      "sha256": "20cc120fdfdafa6f37681f201c7ce6923b454916890dc886d8239853fe2593ce"
     },
     {
       "source": "notes/recruitment-gates-review.md",
@@ -1649,7 +1649,7 @@
     {
       "source": "notes/weapons/assal.md",
       "target": "content/notes/weapons/assal.md",
-      "sha256": "42484db906641fb3643e0e61a7bffc379d1a5289e6cc15bf56b838f5bb4c3c24"
+      "sha256": "72a2b80d764c35789e2d1e357a3497455bf0a3a4171ac9496295fed9282d7883"
     },
     {
       "source": "notes/weapons/bardiche.md",
@@ -1659,7 +1659,7 @@
     {
       "source": "notes/weapons/cleansing-blade.md",
       "target": "content/notes/weapons/cleansing-blade.md",
-      "sha256": "873d798d737fdbf49e60b419f0ae8301a0a78365b7e4c5f8922069133e1f1022"
+      "sha256": "a66400cd479d788285bd184adaf71e5cbf53856314b3c4906a62300169f5d88f"
     },
     {
       "source": "notes/weapons/credna-s-mallet.md",
@@ -1729,12 +1729,12 @@
     {
       "source": "notes/weapons/levin-sword.md",
       "target": "content/notes/weapons/levin-sword.md",
-      "sha256": "93cf6ae0b2cde9ddb917fdf1ccd7a054899485b569c6a3bc3a1bf6f99d5c6485"
+      "sha256": "e72a54b00b994d3168f735aacac28862bdcf966a08eb025e12a318badc940e00"
     },
     {
       "source": "notes/weapons/longbow.md",
       "target": "content/notes/weapons/longbow.md",
-      "sha256": "56dd80582cdf8bc3ab1a28abe16ee4a57d622a8d704349ec0f816fca59df4eed"
+      "sha256": "0332bbd074990c0391f40bdc1b723a44b2aa2d1ada57a64eaec2189ff9de685f"
     },
     {
       "source": "notes/weapons/mace.md",
@@ -1779,7 +1779,7 @@
     {
       "source": "notes/weapons/star-spear.md",
       "target": "content/notes/weapons/star-spear.md",
-      "sha256": "1cc5d2b70b008e33d61c8fb74d18d1b737139c745685046114cbd0c73eacf695"
+      "sha256": "f353bff082d3ae3db375926366a2b3795f975c1dd782c7350b99cdfad2f9e120"
     },
     {
       "source": "notes/weapons/vendetta.md",
@@ -1839,7 +1839,7 @@
     {
       "source": "progress.md",
       "target": "content/progress.md",
-      "sha256": "21dd72707b24e1dba4679719b3571785e194d652a0ee510899556a0f666542b4"
+      "sha256": "e016096e2e40485df8ac545c41f1cccf7008244c4fd3230300f7f8e1c28d0e07"
     },
     {
       "source": "theodora-progress-import.md",
@@ -1867,9 +1867,9 @@
       "sha256": "b29301a099475e78d2bfeaeaac88d475364cd84edc486e354dd659dc1b20aad2"
     },
     {
-      "source": "routes/kai/progress.md",
-      "target": "content/routes/kai/progress.md",
-      "sha256": "1989b972cace10558483c6eba930d41b632463b9444d9159872c064dc7c4a713"
+      "source": "routes/cai/progress.md",
+      "target": "content/routes/cai/progress.md",
+      "sha256": "65115f288b67449f8f94eed37bd033c0b9a9117525e6eb97628a0502902db422"
     },
     {
       "source": "routes/leda/progress.md",
@@ -1919,7 +1919,7 @@
     {
       "source": "notes/sequential-routes-apply-validation.json",
       "target": "content/attachments/notes/sequential-routes-apply-validation.json",
-      "sha256": "009b339ef32de32ff55c3aa8cf4b2ddec202e1ef90591fcfd567e124d219546f"
+      "sha256": "f0a6d73b634722d71bd97f74cb410b46cbb3b75bb1965265df36ee94e04f973e"
     },
     {
       "source": "notes/final-builds-apply-validation.json",
@@ -1929,7 +1929,7 @@
     {
       "source": "notes/readiness-rework-validation.json",
       "target": "content/attachments/notes/readiness-rework-validation.json",
-      "sha256": "4b97586453740df95f8fd09c00d8781dd66a4a0d9878a3bafe65d4806c50cfce"
+      "sha256": "2dea77f334ec53f7bd32b7978707d805551b4c2f924255a31a5cea0d9b1d8397"
     },
     {
       "source": "notes/game8-final25-review-validation.json",
@@ -2059,7 +2059,7 @@
     {
       "source": "personalized-app/src/content.json",
       "target": "content/source/react-content.json",
-      "sha256": "06493121960bcb717b626a51204c1b620c8bfd5e0042db7d95dd869ebc1f7871"
+      "sha256": "b119069ee7658bce24aa54945e283471deb42dcd63e75f6c831af7bc7e704cc2"
     },
     {
       "source": "personalized-app/src/timeskip-portraits.json",
@@ -2232,24 +2232,24 @@
       "sha256": "b6601f69a8318359991d5fadc11c27348b0df451ecddba9df142e5f979e508ca"
     }
   ],
-  "generatedSourceSha256": "06493121960bcb717b626a51204c1b620c8bfd5e0042db7d95dd869ebc1f7871",
+  "generatedSourceSha256": "b119069ee7658bce24aa54945e283471deb42dcd63e75f6c831af7bc7e704cc2",
   "activeActions": 1858,
   "checkIds": 2817,
   "peopleByRoute": {
     "theodora": 16,
     "leda": 16,
     "dietrich": 16,
-    "kai": 13
+    "cai": 13
   },
   "peopleByStage": {
     "theodora-plan": 16,
     "leda-plan": 16,
     "dietrich-plan": 16,
-    "kai-plan": 13,
+    "cai-plan": 13,
     "theodora-war-plan": 16,
     "leda-war-plan": 16,
     "dietrich-war-plan": 16,
-    "kai-war-plan": 13,
+    "cai-war-plan": 13,
     "part3-plan": 61
   },
   "recruitAssignments": 63,
@@ -2258,11 +2258,11 @@
     "theodora-plan": 181,
     "leda-plan": 177,
     "dietrich-plan": 198,
-    "kai-plan": 170,
+    "cai-plan": 170,
     "theodora-war-plan": 17,
     "leda-war-plan": 24,
     "dietrich-war-plan": 16,
-    "kai-war-plan": 17,
+    "cai-war-plan": 17,
     "part3-plan": 71
   }
 }

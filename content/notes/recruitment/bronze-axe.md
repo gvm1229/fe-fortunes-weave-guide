@@ -56,7 +56,7 @@
 
 ### 위치와 지도
 
-[지도 열기 · 카이 선택 후 Dagsion 검색](https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624208 "recruit-map:bronze-axe:kai")
+[지도 열기 · 카이 선택 후 Dagsion 검색](https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624208 "recruit-map:bronze-axe:cai")
 
 ![청동 도끼 위치 참고](../../assets/guide/recruit-ui.png)
 

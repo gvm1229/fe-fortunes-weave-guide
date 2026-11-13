@@ -14,7 +14,7 @@
       "디트리히1부"
     ],
     [
-      "kai-plan",
+      "cai-plan",
       "카이1부"
     ],
     [
@@ -30,7 +30,7 @@
       "디트리히2부"
     ],
     [
-      "kai-war-plan",
+      "cai-war-plan",
       "카이2부"
     ],
     [
@@ -18369,7 +18369,7 @@
           "inheritLegacy": true
         },
         {
-          "id": "di-27--start-kai-part1",
+          "id": "di-27--start-cai-part1",
           "category": "다음 루트",
           "text": "새 디트리히 1부 완료 자료를 저장하고 방첨탑에서 카이 1부를 1장부터 시작한다.",
           "inheritLegacy": false
@@ -18391,31 +18391,31 @@
       "curated": true
     },
     {
-      "id": "entry-kai-boons",
-      "stage": "kai-plan",
+      "id": "entry-cai-boons",
+      "stage": "cai-plan",
       "title": "시작 전 · 가호 인계와 추가 축복 구매",
       "people": [],
       "actions": [
         {
-          "id": "entry-kai--gods",
+          "id": "entry-cai--gods",
           "category": "인계 확인",
           "text": "방첨탑의 실제 가호 레벨·구매한 축복·파편 잔액을 확인한다. 앞 루트가1부 완료됐는지와 미달 봉사 목표를 확인하고, 이 목록의 목표치를 실제 완료로 옮겨 적지 않는다.",
           "inheritLegacy": false
         },
         {
-          "id": "entry-kai--smyrnos20",
+          "id": "entry-cai--smyrnos20",
           "category": "축복 구매",
           "text": "실제 스미르노스1 이상이고 카이 마법 전열에 쓸 때20% 감소300파편을 구입한다.",
           "inheritLegacy": false
         },
         {
-          "id": "entry-kai--smyrnos50",
+          "id": "entry-cai--smyrnos50",
           "category": "축복 구매",
           "text": "실제 스미르노스2 이상을 자주 쓴다면50% 단계가 열렸을 때 추가300파편에 올린다.20+50=70%가 아니다.",
           "inheritLegacy": false
         },
         {
-          "id": "entry-kai--reserve",
+          "id": "entry-cai--reserve",
           "category": "잔액 확인",
           "text": "미수령 보상은 잔액에 더하지 않는다. 3부 융합용 5,100파편을 우선 남기고, 그보다 부족하면 이 루트의 선택 구매는 보류한다.",
           "inheritLegacy": false
@@ -18436,31 +18436,31 @@
       "boonGuide": true
     },
     {
-      "id": "start-kai-route",
-      "stage": "kai-plan",
+      "id": "start-cai-route",
+      "stage": "cai-plan",
       "title": "축복 준비 뒤 · 카이1장 시작",
       "people": [],
       "actions": [
         {
-          "id": "kai-01--2a897d7d84",
+          "id": "cai-01--2a897d7d84",
           "category": "이동 순서",
           "text": "카이를 1장부터 새로 시작하고 가호를 설정한다.",
           "inheritLegacy": true,
-          "legacyParent": "kai-01"
+          "legacyParent": "cai-01"
         },
         {
-          "id": "kai-01--be92bb840e",
+          "id": "cai-01--be92bb840e",
           "category": "행동",
           "text": "세오도라·레다·디트리히의 지도·공통 의뢰 이월을 사용합니다.",
           "inheritLegacy": true,
-          "legacyParent": "kai-01"
+          "legacyParent": "cai-01"
         },
         {
-          "id": "kai-01--7ac4c149eb",
+          "id": "cai-01--7ac4c149eb",
           "category": "미리 준비",
           "text": "카이는 원하는 성장 탈것 친밀도5·성장 병종이 준비될 때까지 추가 경험치 보너스를0%로 둘 수 있다. 강제 전투는 계속 진행하고, 레벨이 이미 높다는 이유로 재시작하지 않는다.",
           "inheritLegacy": true,
-          "legacyParent": "kai-01"
+          "legacyParent": "cai-01"
         }
       ],
       "notes": [],
@@ -18469,8 +18469,8 @@
       "curated": true
     },
     {
-      "id": "kai-01",
-      "stage": "kai-plan",
+      "id": "cai-01",
+      "stage": "cai-plan",
       "title": "1장 · 출격 준비와 첫 전투",
       "people": [
         "레다",
@@ -18478,13 +18478,13 @@
       ],
       "actions": [
         {
-          "id": "kai-01--deployment-budget",
+          "id": "cai-01--deployment-budget",
           "category": "편성·투자",
           "text": "실제 출격 칸을 현재 합류 동료로 편성 · 교대 인물의 추가 성장 중단 · 단 최종25명은Lv20·중급·필수 기능 준비까지 유지",
           "inheritLegacy": false
         },
         {
-          "id": "kai-01--story-battle",
+          "id": "cai-01--story-battle",
           "category": "이야기 진행",
           "text": "실제 출격 인원·무기·회복 도구를 확인하고1장의 지정 목표와 전투를 진행한다. 원하는 탈것을 아직 준비하지 못했어도 강제 이야기를 계속한다.",
           "inheritLegacy": false
@@ -18518,13 +18518,13 @@
       "curated": true
     },
     {
-      "id": "xp-review-kai-01",
-      "stage": "kai-plan",
+      "id": "xp-review-cai-01",
+      "stage": "cai-plan",
       "title": "1장 · 권장Lv5 전후 경험치 설정",
       "people": [],
       "actions": [
         {
-          "id": "xp-review-kai-01--setting",
+          "id": "xp-review-cai-01--setting",
           "category": "레벨 도달 시",
           "text": "주력이 권장Lv5을 넘기기 전, 명성1·기능·해금이 모자라 이 시점의 목표 성장 병과로 전직하지 못했다면 보유한 인물 경험치 축복을 끈다(OFF). 전직 후에는 원래 쓰던 보너스(ON)를 복구하며, 이미 목표 병과인 주력은 ON 상태만 확인한다.",
           "inheritLegacy": false
@@ -18540,22 +18540,22 @@
       "showMap": false,
       "curated": true,
       "xpReview": {
-        "route": "kai",
+        "route": "cai",
         "chapter": 1,
         "recommendedLevel": 5,
         "renown": 1
       }
     },
     {
-      "id": "ready-kai-peter",
-      "stage": "kai-plan",
+      "id": "ready-cai-peter",
+      "stage": "cai-plan",
       "title": "1장 실제 합류 뒤 · 피터르 육성 준비",
       "people": [
         "피터르"
       ],
       "actions": [
         {
-          "id": "ready-kai-peter--readiness-start",
+          "id": "ready-cai-peter--readiness-start",
           "category": "육성 시작",
           "text": "이야기 주력 · 실제 합류 뒤 역할 수행 가능 여부 확인 · 이야기 전투 주력 강제 교체 없음 · 시험 레벨에 가까운데 필수 기능만 부족하면 던전 별도 편성 · 실제 시험 전 현재 자격·합격률 확인",
           "inheritLegacy": false
@@ -18573,18 +18573,18 @@
       ],
       "figures": [],
       "curated": true,
-      "route": "kai"
+      "route": "cai"
     },
     {
-      "id": "ready-kai-tialla",
-      "stage": "kai-plan",
+      "id": "ready-cai-tialla",
+      "stage": "cai-plan",
       "title": "1장 실제 합류 뒤 · 티아라 육성 준비",
       "people": [
         "티아라"
       ],
       "actions": [
         {
-          "id": "ready-kai-tialla--readiness-start",
+          "id": "ready-cai-tialla--readiness-start",
           "category": "육성 시작",
           "text": "이야기 주력 · 실제 합류 뒤 역할 수행 가능 여부 확인 · 이야기 전투 주력 강제 교체 없음 · 시험 레벨에 가까운데 필수 기능만 부족하면 던전 별도 편성 · 실제 시험 전 현재 자격·합격률 확인",
           "inheritLegacy": false
@@ -18602,18 +18602,18 @@
       ],
       "figures": [],
       "curated": true,
-      "route": "kai"
+      "route": "cai"
     },
     {
-      "id": "ready-kai-cai",
-      "stage": "kai-plan",
+      "id": "ready-cai-cai",
+      "stage": "cai-plan",
       "title": "1장 실제 합류 뒤 · 카이 육성 준비",
       "people": [
         "카이"
       ],
       "actions": [
         {
-          "id": "ready-kai-cai--readiness-start",
+          "id": "ready-cai-cai--readiness-start",
           "category": "육성 시작",
           "text": "이야기 주력 · 실제 합류 뒤 역할 수행 가능 여부 확인 · 이야기 전투 주력 강제 교체 없음 · 시험 레벨에 가까운데 필수 기능만 부족하면 던전 별도 편성 · 실제 시험 전 현재 자격·합격률 확인",
           "inheritLegacy": false
@@ -18631,24 +18631,24 @@
       ],
       "figures": [],
       "curated": true,
-      "route": "kai"
+      "route": "cai"
     },
     {
-      "id": "miss-kai02-stairs",
-      "stage": "kai-plan",
+      "id": "miss-cai02-stairs",
+      "stage": "cai-plan",
       "title": "2장 다그시온 도착 직후 · 북동쪽 계단의 선택 장면",
       "people": [
         "카이"
       ],
       "actions": [
         {
-          "id": "miss-kai02-stairs--deployment-budget",
+          "id": "miss-cai02-stairs--deployment-budget",
           "category": "편성·투자",
           "text": "실제 출격 칸을 현재 합류 동료로 편성 · 교대 인물의 추가 성장 중단 · 단 최종25명은Lv20·중급·필수 기능 준비까지 유지",
           "inheritLegacy": false
         },
         {
-          "id": "miss-kai02-stairs--view",
+          "id": "miss-cai02-stairs--view",
           "category": "선택 장면",
           "text": "다그시온 도착 뒤 피터르에게 다음 이야기를 진행하기 전에 시가지 북동쪽 계단 아래로 가서 카스토르·센트리온의 대화 장면을 본다. 갈렌 요새 안의 계단으로 찾지 않는다.",
           "inheritLegacy": false
@@ -18665,21 +18665,21 @@
         }
       ],
       "figures": [
-        "<figure class=\"step-visual\"><a aria-label=\"위치 그림 크게 보기\" href=\"assets/events/kai02-stairs.png\" rel=\"noopener\" target=\"_blank\"><img alt=\"2장 · 여관으로 돌아가기 전 · 위치 화면\" decoding=\"async\" height=\"604\" loading=\"lazy\" src=\"assets/events/kai02-stairs.png\" width=\"502\"/></a><figcaption>2장 · 여관으로 돌아가기 전 · 위치 화면 <a href=\"https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932\" rel=\"noopener\" target=\"_blank\">그림 출처</a></figcaption></figure>"
+        "<figure class=\"step-visual\"><a aria-label=\"위치 그림 크게 보기\" href=\"assets/events/cai02-stairs.png\" rel=\"noopener\" target=\"_blank\"><img alt=\"2장 · 여관으로 돌아가기 전 · 위치 화면\" decoding=\"async\" height=\"604\" loading=\"lazy\" src=\"assets/events/cai02-stairs.png\" width=\"502\"/></a><figcaption>2장 · 여관으로 돌아가기 전 · 위치 화면 <a href=\"https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932\" rel=\"noopener\" target=\"_blank\">그림 출처</a></figcaption></figure>"
       ],
       "purchaseItems": [],
       "eventGuides": [
-        "miss-kai02-stairs"
+        "miss-cai02-stairs"
       ]
     },
     {
-      "id": "xp-review-kai-02",
-      "stage": "kai-plan",
+      "id": "xp-review-cai-02",
+      "stage": "cai-plan",
       "title": "2장 · 권장Lv5 전후 경험치 설정",
       "people": [],
       "actions": [
         {
-          "id": "xp-review-kai-02--setting",
+          "id": "xp-review-cai-02--setting",
           "category": "레벨 도달 시",
           "text": "주력이 권장Lv5을 넘기기 전, 명성1·기능·해금이 모자라 이 시점의 목표 성장 병과로 전직하지 못했다면 보유한 인물 경험치 축복을 끈다(OFF). 전직 후에는 원래 쓰던 보너스(ON)를 복구하며, 이미 목표 병과인 주력은 ON 상태만 확인한다.",
           "inheritLegacy": false
@@ -18695,26 +18695,26 @@
       "showMap": false,
       "curated": true,
       "xpReview": {
-        "route": "kai",
+        "route": "cai",
         "chapter": 2,
         "recommendedLevel": 5,
         "renown": 1
       }
     },
     {
-      "id": "scene-kai02-chase",
-      "stage": "kai-plan",
+      "id": "scene-cai02-chase",
+      "stage": "cai-plan",
       "title": "2장 · 도적 추격 선택과 요새 이야기 확인",
       "people": [],
       "actions": [
         {
-          "id": "scene-kai02-chase--choose",
+          "id": "scene-cai02-chase--choose",
           "category": "갈림길 선택",
           "text": "2장 첫 이벤트 전투 뒤 갈림길에서 도적을 쫓아가는 선택을 골라 갈렌 요새 옛터에 들른다. 다그시온으로 바로 향하기 전에 이 선택 경로를 확인한다.",
           "inheritLegacy": false
         },
         {
-          "id": "scene-kai02-chase--scene",
+          "id": "scene-cai02-chase--scene",
           "category": "선택 경로 장면",
           "text": "요새 안의 선택 경로 이야기와 상자 회수를 확인한 뒤 다음 이동을 선택한다. 기존 갈렌 상자·계단 장면 체크도 함께 확인한다.",
           "inheritLegacy": false
@@ -18727,44 +18727,44 @@
       "curated": true
     },
     {
-      "id": "kai-route-02",
-      "stage": "kai-plan",
+      "id": "cai-route-02",
+      "stage": "cai-plan",
       "title": "2장 · 이동과 육성",
       "people": [],
       "actions": [
         {
-          "id": "kai-01--964f9c12cb",
+          "id": "cai-01--964f9c12cb",
           "category": "행동",
           "text": "2장 갈렌 요새 옛터의 상자·선택 경로 이야기를 확인한 뒤 다그시온으로 향한다. 도착 뒤의 북동쪽 계단 장면은 별도로 확인한다.",
           "inheritLegacy": true,
-          "legacyParent": "kai-01"
+          "legacyParent": "cai-01"
         },
         {
-          "id": "kai-route-02--70a9e87011",
+          "id": "cai-route-02--70a9e87011",
           "category": "행동",
           "text": "이야기의 강제 이동 구간에서는 지정된 목표를 먼저 처리한다.",
           "inheritLegacy": true
         },
         {
-          "id": "kai-route-02--2bcef86059",
+          "id": "cai-route-02--2bcef86059",
           "category": "이동 순서",
           "text": "갈렌 요새 옛터 상자부터 확인하고 나서 다음 이동 선택을 한다.",
           "inheritLegacy": true
         },
         {
-          "id": "kai-route-02--9beaa0cde4",
+          "id": "cai-route-02--9beaa0cde4",
           "category": "미리 준비",
           "text": "회수한 상자 물품과 수송대 반입을 확인한다.",
           "inheritLegacy": true
         },
         {
-          "id": "kai-route-02--0531a6c020",
+          "id": "cai-route-02--0531a6c020",
           "category": "끝내기 전",
           "text": "갈렌 상자를 챙기기 전에 바로 다그시온으로 향하는 선택을 하지 않는다.",
           "inheritLegacy": true
         },
         {
-          "id": "kai-route-02--98c57a6127",
+          "id": "cai-route-02--98c57a6127",
           "category": "끝내기 전",
           "text": "마차·게스트가 패배 조건인지 먼저 확인한다.",
           "inheritLegacy": true
@@ -18782,49 +18782,49 @@
       "curated": true
     },
     {
-      "id": "kai-route-03",
-      "stage": "kai-plan",
+      "id": "cai-route-03",
+      "stage": "cai-plan",
       "title": "3장 · 이동과 육성",
       "people": [],
       "actions": [
         {
-          "id": "kai-route-03--deployment-budget",
+          "id": "cai-route-03--deployment-budget",
           "category": "편성·투자",
           "text": "실제 출격 칸을 현재 합류 동료로 편성 · 교대 인물의 추가 성장 중단 · 단 최종25명은Lv20·중급·필수 기능 준비까지 유지",
           "inheritLegacy": false
         },
         {
-          "id": "kai-route-03--support-queue",
+          "id": "cai-route-03--support-queue",
           "category": "지원 준비",
           "text": "인물 탭의 지원2 이상 영입 대기열을 확인한다. 현재 로드와의 지원이 모자라고 지금 활동 명단에 있는 상위 두 명부터 식사한다. 이미 충족했거나 선택 영입을 하지 않을 사람은 넘긴다.",
           "inheritLegacy": false
         },
         {
-          "id": "kai-route-03--70a9e87011",
+          "id": "cai-route-03--70a9e87011",
           "category": "행동",
           "text": "자유행동이 열리기 전의 강제 이동·대화 목표를 먼저 처리한다. 자유행동이 열리면 날짜별 관전·행사·외전·선택 장면을 확인한 뒤 이 장의 메인 전투로 넘어간다.",
           "inheritLegacy": true
         },
         {
-          "id": "kai-route-03--4860180597",
+          "id": "cai-route-03--4860180597",
           "category": "이동 순서",
           "text": "그자람의 교섭과 울턴드의 기일 대화를 실제 인물 목록에서 확인한다.",
           "inheritLegacy": true
         },
         {
-          "id": "kai-route-03--team-tialla-physic",
+          "id": "cai-route-03--team-tialla-physic",
           "category": "회복 준비",
           "text": "티아라 백마술 C의 리브로를 준비하고 미카엘라 지원3·영입금3,000G를 남긴다. 이미 배웠거나 준비한 것은 반복하지 않는다.",
           "inheritLegacy": false
         },
         {
-          "id": "kai-route-03--461a2dde30",
+          "id": "cai-route-03--461a2dde30",
           "category": "미리 준비",
           "text": "이후 미카엘라용 3,000G와 포획 먹이를 남긴다.",
           "inheritLegacy": true
         },
         {
-          "id": "kai-route-03--378b9a0548",
+          "id": "cai-route-03--378b9a0548",
           "category": "끝내기 전",
           "text": "이월 지도에 역이 보여도 카이의 마차 기능이 아직 안 열렸다면 장거리 마차 이동을 전제로 잡지 않는다.",
           "inheritLegacy": true
@@ -18860,13 +18860,13 @@
       "curated": true
     },
     {
-      "id": "xp-review-kai-03",
-      "stage": "kai-plan",
+      "id": "xp-review-cai-03",
+      "stage": "cai-plan",
       "title": "3장 · 권장Lv5 전후 경험치 설정",
       "people": [],
       "actions": [
         {
-          "id": "xp-review-kai-03--setting",
+          "id": "xp-review-cai-03--setting",
           "category": "레벨 도달 시",
           "text": "주력이 권장Lv5을 넘기기 전, 명성1·기능·해금이 모자라 이 시점의 목표 성장 병과로 전직하지 못했다면 보유한 인물 경험치 축복을 끈다(OFF). 전직 후에는 원래 쓰던 보너스(ON)를 복구하며, 이미 목표 병과인 주력은 ON 상태만 확인한다.",
           "inheritLegacy": false
@@ -18882,20 +18882,20 @@
       "showMap": false,
       "curated": true,
       "xpReview": {
-        "route": "kai",
+        "route": "cai",
         "chapter": 3,
         "recommendedLevel": 5,
         "renown": 1
       }
     },
     {
-      "id": "calendar-kai-ch03",
-      "stage": "kai-plan",
+      "id": "calendar-cai-ch03",
+      "stage": "cai-plan",
       "title": "3장 시작 · 관전·행사·선택 장면 달력 확인",
       "people": [],
       "actions": [
         {
-          "id": "calendar-kai-ch03--review",
+          "id": "calendar-cai-ch03--review",
           "category": "자유행동 시작 확인",
           "text": "자유행동이 열리면 이 루트 달력의 관전·공휴일·행사·생일·아직 안 본 선택 장면을 확인한다. 날짜별 귀환·참가 체크를 먼저 보고 원정 시간을 잡는다. 실제 달력과 자료의 날짜·시간이 다르면 현재 표시를 우선한다.",
           "inheritLegacy": false
@@ -18906,15 +18906,15 @@
       "curated": true
     },
     {
-      "id": "ready-kai-guzran",
-      "stage": "kai-plan",
+      "id": "ready-cai-guzran",
+      "stage": "cai-plan",
       "title": "3장 실제 합류 뒤 · 그자람 육성 준비",
       "people": [
         "그자람"
       ],
       "actions": [
         {
-          "id": "ready-kai-guzran--readiness-start",
+          "id": "ready-cai-guzran--readiness-start",
           "category": "육성 시작",
           "text": "이야기 주력 · 실제 합류 뒤 역할 수행 가능 여부 확인 · 이야기 전투 주력 강제 교체 없음 · 시험 레벨에 가까운데 필수 기능만 부족하면 던전 별도 편성 · 실제 시험 전 현재 자격·합격률 확인",
           "inheritLegacy": false
@@ -18932,11 +18932,11 @@
       ],
       "figures": [],
       "curated": true,
-      "route": "kai"
+      "route": "cai"
     },
     {
-      "id": "sequential-dungeon-kai-4-20261108",
-      "stage": "kai-plan",
+      "id": "sequential-dungeon-cai-4-20261108",
+      "stage": "cai-plan",
       "title": "4장 · 시험 직전 부족한 기능만 던전에서 보충",
       "people": [],
       "notes": [
@@ -18952,23 +18952,23 @@
       "figures": [],
       "actions": [
         {
-          "id": "sequential-dungeon-kai-4-20261108--exam-check-20261112",
+          "id": "sequential-dungeon-cai-4-20261108--exam-check-20261112",
           "category": "시험 조건",
           "text": "목표 병과의 시험 화면을 확인한다. 해당 인물이 시험 권장 레벨에 가까우면서 필수 기능 등급이 부족할 때만 던전 반복을 준비한다.",
           "inheritLegacy": false
         },
         {
-          "id": "sequential-dungeon-kai-4-20261108--exam-dungeon-20261112",
+          "id": "sequential-dungeon-cai-4-20261108--exam-dungeon-20261112",
           "category": "조건부 던전",
           "text": "조건을 충족한 인물만 던전에서 쓸 수 있는 부족한 기능을 올린다. 필요한 등급에 닿으면 귀환해 시험을 확인한다.",
           "inheritLegacy": false
         }
       ],
-      "route": "kai"
+      "route": "cai"
     },
     {
-      "id": "miss-kai04-bertrand",
-      "stage": "kai-plan",
+      "id": "miss-cai04-bertrand",
+      "stage": "cai-plan",
       "title": "4장 · 자유행동 시작 직후 지하 투기장",
       "people": [
         "베르트랑",
@@ -18976,13 +18976,13 @@
       ],
       "actions": [
         {
-          "id": "miss-kai04-bertrand--deployment-budget",
+          "id": "miss-cai04-bertrand--deployment-budget",
           "category": "편성·투자",
           "text": "실제 출격 칸을 현재 합류 동료로 편성 · 교대 인물의 추가 성장 중단 · 단 최종25명은Lv20·중급·필수 기능 준비까지 유지",
           "inheritLegacy": false
         },
         {
-          "id": "miss-kai04-bertrand--view",
+          "id": "miss-cai04-bertrand--view",
           "category": "선택 장면",
           "text": "자유행동이 열리면 투기장 지하의 베르트랑과 대화한다. 긴 원정 전에 검술 보너스가 있는 장면을 본다.",
           "inheritLegacy": false
@@ -19003,21 +19003,21 @@
         }
       ],
       "figures": [
-        "<figure class=\"step-visual\"><a aria-label=\"위치 그림 크게 보기\" href=\"assets/events/kai04-bertrand.png\" rel=\"noopener\" target=\"_blank\"><img alt=\"4장 · 자유행동 시작 직후 지하 투기장 · 위치 화면\" decoding=\"async\" height=\"400\" loading=\"lazy\" src=\"assets/events/kai04-bertrand.png\" width=\"400\"/></a><figcaption>4장 · 자유행동 시작 직후 지하 투기장 · 위치 화면 <a href=\"https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932\" rel=\"noopener\" target=\"_blank\">그림 출처</a></figcaption></figure>"
+        "<figure class=\"step-visual\"><a aria-label=\"위치 그림 크게 보기\" href=\"assets/events/cai04-bertrand.png\" rel=\"noopener\" target=\"_blank\"><img alt=\"4장 · 자유행동 시작 직후 지하 투기장 · 위치 화면\" decoding=\"async\" height=\"400\" loading=\"lazy\" src=\"assets/events/cai04-bertrand.png\" width=\"400\"/></a><figcaption>4장 · 자유행동 시작 직후 지하 투기장 · 위치 화면 <a href=\"https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932\" rel=\"noopener\" target=\"_blank\">그림 출처</a></figcaption></figure>"
       ],
       "purchaseItems": [],
       "eventGuides": [
-        "miss-kai04-bertrand"
+        "miss-cai04-bertrand"
       ]
     },
     {
-      "id": "xp-review-kai-04",
-      "stage": "kai-plan",
+      "id": "xp-review-cai-04",
+      "stage": "cai-plan",
       "title": "4장 · 권장Lv20 전후 경험치 설정",
       "people": [],
       "actions": [
         {
-          "id": "xp-review-kai-04--setting",
+          "id": "xp-review-cai-04--setting",
           "category": "레벨 도달 시",
           "text": "주력이 권장Lv20을 넘기기 전, 명성4·기능·해금이 모자라 이 시점의 목표 성장 병과로 전직하지 못했다면 보유한 인물 경험치 축복을 끈다(OFF). 전직 후에는 원래 쓰던 보너스(ON)를 복구하며, 이미 목표 병과인 주력은 ON 상태만 확인한다.",
           "inheritLegacy": false
@@ -19033,17 +19033,17 @@
       "showMap": false,
       "curated": true,
       "xpReview": {
-        "route": "kai",
+        "route": "cai",
         "chapter": 4,
         "recommendedLevel": 20,
         "renown": 4
       }
     },
     {
-      "id": "ready-kai-noctula",
+      "id": "ready-cai-noctula",
       "title": "4장 실제 합류 뒤 · 녹투라 육성 시작",
-      "stage": "kai-plan",
-      "route": "kai",
+      "stage": "cai-plan",
+      "route": "cai",
       "people": [
         "녹투라"
       ],
@@ -19052,7 +19052,7 @@
       "curated": true,
       "actions": [
         {
-          "id": "ready-kai-noctula--readiness-start",
+          "id": "ready-cai-noctula--readiness-start",
           "category": "육성 시작",
           "text": "초반 대체·실전 예비 · 실제 합류 뒤 역할 수행 가능 여부 확인 · 이야기 전투 주력 강제 교체 없음 · 시험 레벨에 가까운데 필수 기능만 부족하면 던전 별도 편성 · 실제 시험 전 현재 자격·합격률 확인",
           "inheritLegacy": false
@@ -19060,13 +19060,13 @@
       ]
     },
     {
-      "id": "calendar-kai-ch04",
-      "stage": "kai-plan",
+      "id": "calendar-cai-ch04",
+      "stage": "cai-plan",
       "title": "4장 시작 · 관전·행사·선택 장면 달력 확인",
       "people": [],
       "actions": [
         {
-          "id": "calendar-kai-ch04--review",
+          "id": "calendar-cai-ch04--review",
           "category": "자유행동 시작 확인",
           "text": "자유행동이 열리면 이 루트 달력의 관전·공휴일·행사·생일·아직 안 본 선택 장면을 확인한다. 날짜별 귀환·참가 체크를 먼저 보고 원정 시간을 잡는다. 실제 달력과 자료의 날짜·시간이 다르면 현재 표시를 우선한다.",
           "inheritLegacy": false
@@ -19077,45 +19077,45 @@
       "curated": true
     },
     {
-      "id": "kai-02",
-      "stage": "kai-plan",
+      "id": "cai-02",
+      "stage": "cai-plan",
       "title": "4~5장",
       "people": [
         "카이"
       ],
       "actions": [
         {
-          "id": "kai-02--2697b86d82",
+          "id": "cai-02--2697b86d82",
           "category": "행동",
           "text": "DLC의 시작품 7호 창 수령 의뢰를 확인합니다.",
           "inheritLegacy": true
         },
         {
-          "id": "kai-02--e592aa2731",
+          "id": "cai-02--e592aa2731",
           "category": "행동",
           "text": "먹이를 주기 시작한 뒤에는 지원 때문에 ‘장 다시 하기’를 반복하지 않습니다.",
           "inheritLegacy": true
         },
         {
-          "id": "kai-02--049e7974a8",
+          "id": "cai-02--049e7974a8",
           "category": "행동",
           "text": "탈것 먹이·숙박을 유지 · 성장 대상의 친밀도5부터 준비, 실제 탑승 전투에서 성장 적용",
           "inheritLegacy": true
         },
         {
-          "id": "kai-02--e124ccdc95",
+          "id": "cai-02--e124ccdc95",
           "category": "행동",
           "text": "미카엘라 영입용3,000G·지원3을 먼저 준비한다.",
           "inheritLegacy": true
         },
         {
-          "id": "kai-02--d301d95002",
+          "id": "cai-02--d301d95002",
           "category": "미리 준비",
           "text": "미카엘라 3,000G와 먹이를 남긴다.",
           "inheritLegacy": true
         },
         {
-          "id": "kai-02--587db543dd",
+          "id": "cai-02--587db543dd",
           "category": "끝내기 전",
           "text": "모든 지역 탐색보다 다음 장 포획·영입 준비를 우선한다.",
           "inheritLegacy": true
@@ -19160,25 +19160,25 @@
       "curated": true
     },
     {
-      "id": "buy-kai-first",
-      "stage": "kai-plan",
+      "id": "buy-cai-first",
+      "stage": "cai-plan",
       "title": "자유행동 상점 방문 · 무기 재고와 입수처",
       "people": [],
       "actions": [
         {
-          "id": "buy-kai--levin-stock",
+          "id": "buy-cai--levin-stock",
           "category": "상점 재고",
           "text": "선더 소드가 이미 있는지 확인한다. 반다르 상회 교환은6장 이후 태양 열매10·유나메이1로 확인하고, 다른 확정 경로는 늦은 누조·제스터 지참품이다. 당장 쓸2자루가 먼저다.",
           "inheritLegacy": false
         },
         {
-          "id": "buy-kai--longbow",
+          "id": "buy-cai--longbow",
           "category": "보이면 우선",
           "text": "제도 반다르 상회(다그시온 반달 상인) 또는 아귀노 무기점(아기뇨 마을 무기점)에 들르면 롱 보우를 확인한다. 궁술C 담당에게 없을 때만1자루 확보하고 영입비·시험비를 남긴다.",
           "inheritLegacy": false
         },
         {
-          "id": "buy-kai--cleansing",
+          "id": "buy-cai--cleansing",
           "category": "보이면 우선",
           "text": "오시리스 무기점(오시리스 마을 무기점)에 들르면 미보유 재계의 검1자루를 확인한다. 검E부터 쓸 수 있다. 무작위 고급 상자와 확정 판매를 구분한다.",
           "inheritLegacy": false
@@ -19210,8 +19210,8 @@
       "weaponVisuals": false
     },
     {
-      "id": "sequential-dungeon-kai-5-20261108",
-      "stage": "kai-plan",
+      "id": "sequential-dungeon-cai-5-20261108",
+      "stage": "cai-plan",
       "title": "5장 · 시험 직전 부족한 기능만 던전에서 보충",
       "people": [],
       "notes": [
@@ -19227,58 +19227,58 @@
       "figures": [],
       "actions": [
         {
-          "id": "sequential-dungeon-kai-5-20261108--exam-check-20261112",
+          "id": "sequential-dungeon-cai-5-20261108--exam-check-20261112",
           "category": "시험 조건",
           "text": "목표 병과의 시험 화면을 확인한다. 해당 인물이 시험 권장 레벨에 가까우면서 필수 기능 등급이 부족할 때만 던전 반복을 준비한다.",
           "inheritLegacy": false
         },
         {
-          "id": "sequential-dungeon-kai-5-20261108--exam-dungeon-20261112",
+          "id": "sequential-dungeon-cai-5-20261108--exam-dungeon-20261112",
           "category": "조건부 던전",
           "text": "조건을 충족한 인물만 던전에서 쓸 수 있는 부족한 기능을 올린다. 필요한 등급에 닿으면 귀환해 시험을 확인한다.",
           "inheritLegacy": false
         }
       ],
-      "route": "kai"
+      "route": "cai"
     },
     {
-      "id": "kai-03",
-      "stage": "kai-plan",
+      "id": "cai-03",
+      "stage": "cai-plan",
       "title": "5장부터 탈것 친밀도와 시험을 함께 준비",
       "people": [],
       "actions": [
         {
-          "id": "kai-03--deployment-budget",
+          "id": "cai-03--deployment-budget",
           "category": "편성·투자",
           "text": "실제 출격 칸을 현재 합류 동료로 편성 · 교대 인물의 추가 성장 중단 · 단 최종25명은Lv20·중급·필수 기능 준비까지 유지",
           "inheritLegacy": false
         },
         {
-          "id": "kai-03--c717cb0982",
+          "id": "cai-03--c717cb0982",
           "category": "행동",
           "text": "먹이·숙박으로 친밀도를 올리고, 필요한 기능을 채운 뒤 전직합니다.",
           "inheritLegacy": true
         },
         {
-          "id": "kai-03--d5a3f39b9b",
+          "id": "cai-03--d5a3f39b9b",
           "category": "행동",
           "text": "이 구간에서는 높은 경험치 축복 때문에 전직 준비보다 레벨이 먼저 지나가면 축복을 잠시 끄거나 낮춥니다. ‘최고 개체’ 포획 반복은 기본 계획에서 제외합니다.",
           "inheritLegacy": true
         },
         {
-          "id": "kai-03--3ee2c106eb",
+          "id": "cai-03--3ee2c106eb",
           "category": "이동 순서",
           "text": "미카엘라는 명성·지원·영입금 요구를 채우는 날 영입한다.",
           "inheritLegacy": true
         },
         {
-          "id": "kai-03--551c9a938e",
+          "id": "cai-03--551c9a938e",
           "category": "미리 준비",
           "text": "노리는 탈것의 선호 먹이를 확인한다.",
           "inheritLegacy": true
         },
         {
-          "id": "kai-03--0b0f22f7f5",
+          "id": "cai-03--0b0f22f7f5",
           "category": "미리 준비",
           "text": "한혈마를 여러 마리 쓸 계획이면 실제 포획 성공·친밀도를 기록하고, 아직 없는 탈것을 전차병에게 배정한 것으로 생각하지 않는다.",
           "inheritLegacy": true
@@ -19320,13 +19320,13 @@
       "curated": true
     },
     {
-      "id": "xp-review-kai-05",
-      "stage": "kai-plan",
+      "id": "xp-review-cai-05",
+      "stage": "cai-plan",
       "title": "5장 · 권장Lv20 전후 경험치 설정",
       "people": [],
       "actions": [
         {
-          "id": "xp-review-kai-05--setting",
+          "id": "xp-review-cai-05--setting",
           "category": "레벨 도달 시",
           "text": "주력이 권장Lv20을 넘기기 전, 명성4·기능·해금이 모자라 이 시점의 목표 성장 병과로 전직하지 못했다면 보유한 인물 경험치 축복을 끈다(OFF). 전직 후에는 원래 쓰던 보너스(ON)를 복구하며, 이미 목표 병과인 주력은 ON 상태만 확인한다.",
           "inheritLegacy": false
@@ -19342,20 +19342,20 @@
       "showMap": false,
       "curated": true,
       "xpReview": {
-        "route": "kai",
+        "route": "cai",
         "chapter": 5,
         "recommendedLevel": 20,
         "renown": 4
       }
     },
     {
-      "id": "calendar-kai-ch05",
-      "stage": "kai-plan",
+      "id": "calendar-cai-ch05",
+      "stage": "cai-plan",
       "title": "5장 시작 · 관전·행사·선택 장면 달력 확인",
       "people": [],
       "actions": [
         {
-          "id": "calendar-kai-ch05--review",
+          "id": "calendar-cai-ch05--review",
           "category": "자유행동 시작 확인",
           "text": "자유행동이 열리면 이 루트 달력의 관전·공휴일·행사·생일·아직 안 본 선택 장면을 확인한다. 날짜별 귀환·참가 체크를 먼저 보고 원정 시간을 잡는다. 실제 달력과 자료의 날짜·시간이 다르면 현재 표시를 우선한다.",
           "inheritLegacy": false
@@ -19366,15 +19366,15 @@
       "curated": true
     },
     {
-      "id": "ready-kai-mikaela",
-      "stage": "kai-plan",
+      "id": "ready-cai-mikaela",
+      "stage": "cai-plan",
       "title": "5장 실제 합류 뒤 · 미카엘라 육성 준비",
       "people": [
         "미카엘라"
       ],
       "actions": [
         {
-          "id": "ready-kai-mikaela--readiness-start",
+          "id": "ready-cai-mikaela--readiness-start",
           "category": "육성 시작",
           "text": "이야기 주력 · 실제 합류 뒤 역할 수행 가능 여부 확인 · 이야기 전투 주력 강제 교체 없음 · 시험 레벨에 가까운데 필수 기능만 부족하면 던전 별도 편성 · 실제 시험 전 현재 자격·합격률 확인",
           "inheritLegacy": false
@@ -19392,16 +19392,16 @@
       ],
       "figures": [],
       "curated": true,
-      "route": "kai"
+      "route": "cai"
     },
     {
-      "id": "service-kai-ch05",
-      "stage": "kai-plan",
+      "id": "service-cai-ch05",
+      "stage": "cai-plan",
       "title": "5장 · 3/15~3/15 주간 봉사",
       "people": [],
       "actions": [
         {
-          "id": "service-kai-ch05-w00",
+          "id": "service-cai-ch05-w00",
           "category": "주간 봉사",
           "text": "자료상 3/15 주차: 첫 주의 미사용분에 이번 주1회만 봉사한다. 크레르1 → 칼라3 → 크레르3 → 주라3 → 마스3 → 스미르노스3 중 첫 미달 목표를 고른다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -19413,7 +19413,7 @@
           }
         },
         {
-          "id": "service-kai-ch05--readiness-arena-service-kai-ch05-w00",
+          "id": "service-cai-ch05--readiness-arena-service-cai-ch05-w00",
           "category": "주간 훈련",
           "text": "3/15 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
@@ -19427,22 +19427,22 @@
       ],
       "figures": [],
       "curated": true,
-      "trainingChapter": "kai:5"
+      "trainingChapter": "cai:5"
     },
     {
-      "id": "holiday-kai-0317",
-      "stage": "kai-plan",
+      "id": "holiday-cai-0317",
+      "stage": "cai-plan",
       "title": "5장 · 3/17 공휴일 확인",
       "people": [],
       "actions": [
         {
-          "id": "holiday-kai-0317--return",
+          "id": "holiday-cai-0317--return",
           "category": "행사일 귀환·위치 확인",
           "text": "3/17 달력에서 실제 참가할 수 있는 행사·알현·대화 표시와 장소를 먼저 확인한다. 제도 방문이 필요한 참가 표시가 있으면 정해진 시각 전에 귀환하고, 이미 제도에 있으면 추가 왕복하지 않는다. 공휴일 표시만 있고 참가할 내용이 없으면 귀환 불필요로 확인한다.",
           "inheritLegacy": false
         },
         {
-          "id": "holiday-kai-0317--check",
+          "id": "holiday-cai-0317--check",
           "category": "당일 행사 표시 확인",
           "text": "3/17에 실제 열린 행사·알현·대화가 있으면 참가 후 체크한다. 전용 행사가 없으면 달력의 공휴일 확인으로 마치며 존재하지 않는 퀘스트·보상·참가비를 만들어 기록하지 않는다.",
           "inheritLegacy": false
@@ -19459,7 +19459,7 @@
       ],
       "curated": true,
       "schedule": {
-        "route": "kai",
+        "route": "cai",
         "chapter": 5,
         "month": 3,
         "day": 17,
@@ -19469,13 +19469,13 @@
       }
     },
     {
-      "id": "service-kai-ch05-from-0318-2",
-      "stage": "kai-plan",
+      "id": "service-cai-ch05-from-0318-2",
+      "stage": "cai-plan",
       "title": "5장 · 3/18~3/18 주간 봉사",
       "people": [],
       "actions": [
         {
-          "id": "service-kai-ch05-w01",
+          "id": "service-cai-ch05-w01",
           "category": "주간 봉사",
           "text": "자료상 3/18 주차: 1번째 일요일 리셋 뒤에 이번 주1회만 봉사한다. 남은 마스3 → 스미르노스3이 기본 목표이며 앞 목표가 미달이면 그 신부터다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -19487,7 +19487,7 @@
           }
         },
         {
-          "id": "service-kai-ch05-from-0318-2--readiness-arena-service-kai-ch05-w01",
+          "id": "service-cai-ch05-from-0318-2--readiness-arena-service-cai-ch05-w01",
           "category": "주간 훈련",
           "text": "3/18 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
@@ -19501,22 +19501,22 @@
         }
       ],
       "curated": true,
-      "trainingChapter": "kai:5"
+      "trainingChapter": "cai:5"
     },
     {
-      "id": "watch-kai-0321",
-      "stage": "kai-plan",
+      "id": "watch-cai-0321",
+      "stage": "cai-plan",
       "title": "5장 · 3/21 12:00 관전",
       "people": [],
       "actions": [
         {
-          "id": "watch-kai-0321--return",
+          "id": "watch-cai-0321--return",
           "category": "관전 전 귀환",
           "text": "3/21 12:00 전에 다그시온으로 돌아온다. 가능하면 전날 귀환하고 이미 제도에 있으면 관전까지 머문다. 다른 루트의 날짜를 그대로 쓰지 않는다.",
           "inheritLegacy": false
         },
         {
-          "id": "watch-kai-0321--watch",
+          "id": "watch-cai-0321--watch",
           "category": "관전 참가",
           "text": "3/21 당일 달력과 투기장 관전 접수의 시각·장소를 확인해 관전한다. 관련 기능은 창·활. 시청 뒤 체크하고 직접 출전하는 메인 시합과 구분한다.",
           "inheritLegacy": false
@@ -19533,7 +19533,7 @@
       ],
       "curated": true,
       "schedule": {
-        "route": "kai",
+        "route": "cai",
         "chapter": 5,
         "month": 3,
         "day": 21,
@@ -19544,13 +19544,13 @@
       }
     },
     {
-      "id": "service-kai-ch05-from-0325-3",
-      "stage": "kai-plan",
+      "id": "service-cai-ch05-from-0325-3",
+      "stage": "cai-plan",
       "title": "5장 · 3/25~4/8 주간 봉사",
       "people": [],
       "actions": [
         {
-          "id": "service-kai-ch05-w02",
+          "id": "service-cai-ch05-w02",
           "category": "주간 봉사",
           "text": "자료상 3/25 주차: 2번째 일요일 리셋 뒤에 이번 주1회만 봉사한다. 남은 마스3 → 스미르노스3이 기본 목표이며 앞 목표가 미달이면 그 신부터다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -19562,7 +19562,7 @@
           }
         },
         {
-          "id": "service-kai-ch05-w03",
+          "id": "service-cai-ch05-w03",
           "category": "주간 봉사",
           "text": "자료상 4/1 주차: 3번째 일요일 리셋 뒤에 이번 주1회만 봉사한다. 남은 마스3 → 스미르노스3이 기본 목표이며 앞 목표가 미달이면 그 신부터다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -19574,7 +19574,7 @@
           }
         },
         {
-          "id": "service-kai-ch05-w04",
+          "id": "service-cai-ch05-w04",
           "category": "주간 봉사",
           "text": "자료상 4/8 주차: 4번째 일요일 리셋 뒤에 이번 주1회만 봉사한다. 남은 마스3 → 스미르노스3이 기본 목표이며 앞 목표가 미달이면 그 신부터다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -19586,19 +19586,19 @@
           }
         },
         {
-          "id": "service-kai-ch05-from-0325-3--readiness-arena-service-kai-ch05-w02",
+          "id": "service-cai-ch05-from-0325-3--readiness-arena-service-cai-ch05-w02",
           "category": "주간 훈련",
           "text": "3/25 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
         },
         {
-          "id": "service-kai-ch05-from-0325-3--readiness-arena-service-kai-ch05-w03",
+          "id": "service-cai-ch05-from-0325-3--readiness-arena-service-cai-ch05-w03",
           "category": "주간 훈련",
           "text": "4/1 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
         },
         {
-          "id": "service-kai-ch05-from-0325-3--readiness-arena-service-kai-ch05-w04",
+          "id": "service-cai-ch05-from-0325-3--readiness-arena-service-cai-ch05-w04",
           "category": "주간 훈련",
           "text": "4/8 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
@@ -19612,11 +19612,11 @@
         }
       ],
       "curated": true,
-      "trainingChapter": "kai:5"
+      "trainingChapter": "cai:5"
     },
     {
-      "id": "kai-04",
-      "stage": "kai-plan",
+      "id": "cai-04",
+      "stage": "cai-plan",
       "title": "명성 6",
       "people": [
         "세오도라",
@@ -19624,61 +19624,61 @@
       ],
       "actions": [
         {
-          "id": "kai-04--c2d42e98d1",
+          "id": "cai-04--c2d42e98d1",
           "category": "행동",
           "text": "세테스 등 이 루트에서 챙길 동료는 도감의 수집 조건을 확인하며, 기존 일반 공략의 ‘전투 주력이 아니니 영입하지 않음’을 수집 금지로 읽지 않습니다.",
           "inheritLegacy": true
         },
         {
-          "id": "kai-04--2c0d229bc3",
+          "id": "cai-04--2c0d229bc3",
           "category": "행동",
           "text": "세테스는 명성 6·지원 3 외에 황혼의 흉적 의뢰도 확인합니다.",
           "inheritLegacy": true
         },
         {
-          "id": "kai-04--4bbc1373e0",
+          "id": "cai-04--4bbc1373e0",
           "category": "행동",
           "text": "권장 Lv35이므로 수락창 기한과 전력을 확인한 뒤 출발합니다.",
           "inheritLegacy": true
         },
         {
-          "id": "kai-04--c02797f5d4",
+          "id": "cai-04--c02797f5d4",
           "category": "이동 순서",
           "text": "먹이·숙박 거점을 유지하면서 센트리온 훈련과 제도 교섭을 한 번에 처리한다.",
           "inheritLegacy": true
         },
         {
-          "id": "kai-04--09364d72c0",
+          "id": "cai-04--09364d72c0",
           "category": "미리 준비",
           "text": "기마D·활C, 친밀도 4 이상을 확인한다.",
           "inheritLegacy": true
         },
         {
-          "id": "kai-04--e6abf58bfa",
+          "id": "cai-04--e6abf58bfa",
           "category": "미리 준비",
           "text": "선더 소드 강화용 뇌석 별도 보관 · 불필요한 먹이·강화에 전용하지 않음",
           "inheritLegacy": true
         },
         {
-          "id": "kai-04--e62e537dfd",
+          "id": "cai-04--e62e537dfd",
           "category": "끝내기 전",
           "text": "명성 6 훈련의 선더 소드를 받는다.",
           "inheritLegacy": true
         },
         {
-          "id": "kai-04--assal",
+          "id": "cai-04--assal",
           "category": "무기 확보",
           "text": "황혼의 흉적 의뢰·교섭으로 세테스가 합류하면 지참창 아살을 소지품에서 확인한다.",
           "inheritLegacy": false
         },
         {
-          "id": "kai-04--levin-plus1-inline",
+          "id": "cai-04--levin-plus1-inline",
           "category": "검 확보 뒤",
           "text": "선더 소드를 확보하면 실제 사용할 두 자루부터 대장간에서+1로 강화한다. 자루당 뇌석2·기본500G, 두 자루면 뇌석4·1,000G다. 실제 할인 가격과 재료를 먼저 확인한다.",
           "inheritLegacy": false
         },
         {
-          "id": "kai-04--readiness-rine-return",
+          "id": "cai-04--readiness-rine-return",
           "category": "회복 영입",
           "text": "명성6·지원3·반짝반짝어1로 리네 스카우트 합류 확인 · 물고기는 탈것 먹이에 쓰지 않고 보관 · 백마술 C 중급 프리스트,B 리브로·비숍 준비",
           "inheritLegacy": false
@@ -19715,27 +19715,27 @@
       ]
     },
     {
-      "id": "recruit-kai-seteth-battle",
-      "stage": "kai-plan",
+      "id": "recruit-cai-seteth-battle",
+      "stage": "cai-plan",
       "title": "세테스 · 수주 뒤 전투와 귀환 보고",
       "people": [
         "세테스"
       ],
       "actions": [
         {
-          "id": "recruit-kai-seteth-battle--accept",
+          "id": "recruit-cai-seteth-battle--accept",
           "category": "선택 영입",
           "text": "세테스의 지원3·명성6을 채우고 본인의 스카우트에서 전투 의뢰를 받는다. 이미 현재 판에서 합류했다면 반복하지 않는다.",
           "inheritLegacy": false
         },
         {
-          "id": "recruit-kai-seteth-battle--fight",
+          "id": "recruit-cai-seteth-battle--fight",
           "category": "선택 영입",
           "text": "의뢰가 진행 중인 상태로 우라노스 산의 황혼의 흉적에게 가서 목표 표시의 적을 토벌한다. 단순 일반 적 처치를 의뢰 완료로 대신 세지 않는다.",
           "inheritLegacy": false
         },
         {
-          "id": "recruit-kai-seteth-battle--report",
+          "id": "recruit-cai-seteth-battle--report",
           "category": "선택 영입",
           "text": "제도로 돌아와 세테스에게 보고하고 실제 합류·지참품을 확인한다.",
           "inheritLegacy": false
@@ -19746,19 +19746,19 @@
       "curated": true
     },
     {
-      "id": "eshmel-bird-kai-20261112",
-      "stage": "kai-plan",
+      "id": "eshmel-bird-cai-20261112",
+      "stage": "cai-plan",
       "title": "1부 · 흰 까마귀 먹이로 이스마르 지원",
       "people": [],
       "actions": [
         {
-          "id": "eshmel-bird-kai-20261112--feed",
+          "id": "eshmel-bird-cai-20261112--feed",
           "category": "이스마르 지원",
           "text": "흰 까마귀 먹이 주기가 열리면 주1회 먹이를 준다. 이스마르와의 지원은 1부에서만 이 방법으로 오른다.",
           "inheritLegacy": false
         },
         {
-          "id": "eshmel-bird-kai-20261112--check",
+          "id": "eshmel-bird-cai-20261112--check",
           "category": "확인",
           "text": "3부 이스마르 A·S 대화 준비용이다. 2·3부 합류 인물과 트로이아·세테스·키로이카·누조는 이스마르 A가 없다.",
           "inheritLegacy": false
@@ -19782,11 +19782,11 @@
           "label": "전원 영입 검토"
         }
       ],
-      "route": "kai"
+      "route": "cai"
     },
     {
-      "id": "sequential-dungeon-kai-6-20261108",
-      "stage": "kai-plan",
+      "id": "sequential-dungeon-cai-6-20261108",
+      "stage": "cai-plan",
       "title": "6장 · 시험 직전 부족한 기능만 던전에서 보충",
       "people": [],
       "notes": [
@@ -19802,36 +19802,36 @@
       "figures": [],
       "actions": [
         {
-          "id": "sequential-dungeon-kai-6-20261108--exam-check-20261112",
+          "id": "sequential-dungeon-cai-6-20261108--exam-check-20261112",
           "category": "시험 조건",
           "text": "목표 병과의 시험 화면을 확인한다. 해당 인물이 시험 권장 레벨에 가까우면서 필수 기능 등급이 부족할 때만 던전 반복을 준비한다.",
           "inheritLegacy": false
         },
         {
-          "id": "sequential-dungeon-kai-6-20261108--exam-dungeon-20261112",
+          "id": "sequential-dungeon-cai-6-20261108--exam-dungeon-20261112",
           "category": "조건부 던전",
           "text": "조건을 충족한 인물만 던전에서 쓸 수 있는 부족한 기능을 올린다. 필요한 등급에 닿으면 귀환해 시험을 확인한다.",
           "inheritLegacy": false
         }
       ],
-      "route": "kai"
+      "route": "cai"
     },
     {
-      "id": "miss-kai06-mural",
-      "stage": "kai-plan",
+      "id": "miss-cai06-mural",
+      "stage": "cai-plan",
       "title": "6장 메인 진행 중 · 아므루의 벽화 확인",
       "people": [
         "티아라"
       ],
       "actions": [
         {
-          "id": "miss-kai06-mural--deployment-budget",
+          "id": "miss-cai06-mural--deployment-budget",
           "category": "편성·투자",
           "text": "실제 출격 칸을 현재 합류 동료로 편성 · 교대 인물의 추가 성장 중단 · 단 최종25명은Lv20·중급·필수 기능 준비까지 유지",
           "inheritLegacy": false
         },
         {
-          "id": "miss-kai06-mural--view",
+          "id": "miss-cai06-mural--view",
           "category": "선택 장면",
           "text": "6장 메인 진행으로 죽은 도시 아므루에 들어갔을 때 티아라가 가리키는 벽화를 조사해 선택 장면을 본다. 다음 주 목표로 진행하기 전에 확인한다.",
           "inheritLegacy": false
@@ -19848,21 +19848,21 @@
         }
       ],
       "figures": [
-        "<figure class=\"step-visual\"><a aria-label=\"위치 그림 크게 보기\" href=\"assets/events/kai06-mural.png\" rel=\"noopener\" target=\"_blank\"><img alt=\"6장 · 아므루의 주 목표를 누르기 전 · 위치 화면\" decoding=\"async\" height=\"502\" loading=\"lazy\" src=\"assets/events/kai06-mural.png\" width=\"502\"/></a><figcaption>6장 · 아므루의 주 목표를 누르기 전 · 위치 화면 <a href=\"https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932\" rel=\"noopener\" target=\"_blank\">그림 출처</a></figcaption></figure>"
+        "<figure class=\"step-visual\"><a aria-label=\"위치 그림 크게 보기\" href=\"assets/events/cai06-mural.png\" rel=\"noopener\" target=\"_blank\"><img alt=\"6장 · 아므루의 주 목표를 누르기 전 · 위치 화면\" decoding=\"async\" height=\"502\" loading=\"lazy\" src=\"assets/events/cai06-mural.png\" width=\"502\"/></a><figcaption>6장 · 아므루의 주 목표를 누르기 전 · 위치 화면 <a href=\"https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932\" rel=\"noopener\" target=\"_blank\">그림 출처</a></figcaption></figure>"
       ],
       "purchaseItems": [],
       "eventGuides": [
-        "miss-kai06-mural"
+        "miss-cai06-mural"
       ]
     },
     {
-      "id": "xp-review-kai-06",
-      "stage": "kai-plan",
+      "id": "xp-review-cai-06",
+      "stage": "cai-plan",
       "title": "6장 · 권장Lv20 전후 경험치 설정",
       "people": [],
       "actions": [
         {
-          "id": "xp-review-kai-06--setting",
+          "id": "xp-review-cai-06--setting",
           "category": "레벨 도달 시",
           "text": "주력이 권장Lv20을 넘기기 전, 명성4·기능·해금이 모자라 이 시점의 목표 성장 병과로 전직하지 못했다면 보유한 인물 경험치 축복을 끈다(OFF). 전직 후에는 원래 쓰던 보너스(ON)를 복구하며, 이미 목표 병과인 주력은 ON 상태만 확인한다.",
           "inheritLegacy": false
@@ -19878,20 +19878,20 @@
       "showMap": false,
       "curated": true,
       "xpReview": {
-        "route": "kai",
+        "route": "cai",
         "chapter": 6,
         "recommendedLevel": 20,
         "renown": 4
       }
     },
     {
-      "id": "calendar-kai-ch06",
-      "stage": "kai-plan",
+      "id": "calendar-cai-ch06",
+      "stage": "cai-plan",
       "title": "6장 시작 · 관전·행사·선택 장면 달력 확인",
       "people": [],
       "actions": [
         {
-          "id": "calendar-kai-ch06--review",
+          "id": "calendar-cai-ch06--review",
           "category": "자유행동 시작 확인",
           "text": "자유행동이 열리면 이 루트 달력의 관전·공휴일·행사·생일·아직 안 본 선택 장면을 확인한다. 날짜별 귀환·참가 체크를 먼저 보고 원정 시간을 잡는다. 실제 달력과 자료의 날짜·시간이 다르면 현재 표시를 우선한다.",
           "inheritLegacy": false
@@ -19902,16 +19902,16 @@
       "curated": true
     },
     {
-      "id": "ready-kai-ninae",
-      "stage": "kai-plan",
-      "route": "kai",
+      "id": "ready-cai-ninae",
+      "stage": "cai-plan",
+      "route": "cai",
       "title": "6장 실제 합류 뒤 · 리네 회복 육성 시작",
       "people": [
         "리네"
       ],
       "actions": [
         {
-          "id": "ready-kai-ninae--readiness-start",
+          "id": "ready-cai-ninae--readiness-start",
           "category": "회복 준비",
           "text": "기능 준비·2부 교대 · 실제 합류 뒤 역할 수행 가능 여부 확인 · 이야기 전투 주력 강제 교체 없음 · 시험 레벨에 가까운데 필수 기능만 부족하면 던전 별도 편성 · 실제 시험 전 현재 자격·합격률 확인",
           "inheritLegacy": false
@@ -19922,13 +19922,13 @@
       "curated": true
     },
     {
-      "id": "service-kai-ch06",
-      "stage": "kai-plan",
+      "id": "service-cai-ch06",
+      "stage": "cai-plan",
       "title": "6장 · 4/20~4/22 주간 봉사",
       "people": [],
       "actions": [
         {
-          "id": "service-kai-ch06-w00",
+          "id": "service-cai-ch06-w00",
           "category": "주간 봉사",
           "text": "자료상 4/20 주차: 첫 주의 미사용분에 이번 주1회만 봉사한다. 크레르1 → 칼라3 → 크레르3 → 주라3 → 마스3 → 스미르노스3 중 첫 미달 목표를 고른다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -19940,7 +19940,7 @@
           }
         },
         {
-          "id": "service-kai-ch06-w01",
+          "id": "service-cai-ch06-w01",
           "category": "주간 봉사",
           "text": "자료상 4/22 주차: 1번째 일요일 리셋 뒤에 이번 주1회만 봉사한다. 남은 마스3 → 스미르노스3이 기본 목표이며 앞 목표가 미달이면 그 신부터다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -19952,13 +19952,13 @@
           }
         },
         {
-          "id": "service-kai-ch06--readiness-arena-service-kai-ch06-w00",
+          "id": "service-cai-ch06--readiness-arena-service-cai-ch06-w00",
           "category": "주간 훈련",
           "text": "4/20 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
         },
         {
-          "id": "service-kai-ch06--readiness-arena-service-kai-ch06-w01",
+          "id": "service-cai-ch06--readiness-arena-service-cai-ch06-w01",
           "category": "주간 훈련",
           "text": "4/22 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
@@ -19972,22 +19972,22 @@
       ],
       "figures": [],
       "curated": true,
-      "trainingChapter": "kai:6"
+      "trainingChapter": "cai:6"
     },
     {
-      "id": "holiday-kai-0424",
-      "stage": "kai-plan",
+      "id": "holiday-cai-0424",
+      "stage": "cai-plan",
       "title": "6장 · 4/24 스미르노스 행사일 확인",
       "people": [],
       "actions": [
         {
-          "id": "holiday-kai-0424--return",
+          "id": "holiday-cai-0424--return",
           "category": "행사일 귀환·위치 확인",
           "text": "4/24 달력에서 실제 참가할 수 있는 행사·알현·대화 표시와 장소를 먼저 확인한다. 제도 방문이 필요한 참가 표시가 있으면 정해진 시각 전에 귀환하고, 이미 제도에 있으면 추가 왕복하지 않는다. 공휴일 표시만 있고 참가할 내용이 없으면 귀환 불필요로 확인한다.",
           "inheritLegacy": false
         },
         {
-          "id": "holiday-kai-0424--check",
+          "id": "holiday-cai-0424--check",
           "category": "당일 행사 표시 확인",
           "text": "4/24에 실제 열린 행사·알현·대화가 있으면 참가 후 체크한다. 전용 행사가 없으면 달력의 공휴일 확인으로 마치며 존재하지 않는 퀘스트·보상·참가비를 만들어 기록하지 않는다.",
           "inheritLegacy": false
@@ -20004,7 +20004,7 @@
       ],
       "curated": true,
       "schedule": {
-        "route": "kai",
+        "route": "cai",
         "chapter": 6,
         "month": 4,
         "day": 24,
@@ -20014,13 +20014,13 @@
       }
     },
     {
-      "id": "service-kai-ch06-from-0429-2",
-      "stage": "kai-plan",
+      "id": "service-cai-ch06-from-0429-2",
+      "stage": "cai-plan",
       "title": "6장 · 4/29~5/6 주간 봉사",
       "people": [],
       "actions": [
         {
-          "id": "service-kai-ch06-w02",
+          "id": "service-cai-ch06-w02",
           "category": "주간 봉사",
           "text": "자료상 4/29 주차: 2번째 일요일 리셋 뒤에 이번 주1회만 봉사한다. 남은 마스3 → 스미르노스3이 기본 목표이며 앞 목표가 미달이면 그 신부터다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -20032,7 +20032,7 @@
           }
         },
         {
-          "id": "service-kai-ch06-w03",
+          "id": "service-cai-ch06-w03",
           "category": "주간 봉사",
           "text": "자료상 5/6 주차: 3번째 일요일 리셋 뒤에 이번 주1회만 봉사한다. 남은 마스3 → 스미르노스3이 기본 목표이며 앞 목표가 미달이면 그 신부터다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -20044,13 +20044,13 @@
           }
         },
         {
-          "id": "service-kai-ch06-from-0429-2--readiness-arena-service-kai-ch06-w02",
+          "id": "service-cai-ch06-from-0429-2--readiness-arena-service-cai-ch06-w02",
           "category": "주간 훈련",
           "text": "4/29 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
         },
         {
-          "id": "service-kai-ch06-from-0429-2--readiness-arena-service-kai-ch06-w03",
+          "id": "service-cai-ch06-from-0429-2--readiness-arena-service-cai-ch06-w03",
           "category": "주간 훈련",
           "text": "5/6 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
@@ -20064,22 +20064,22 @@
         }
       ],
       "curated": true,
-      "trainingChapter": "kai:6"
+      "trainingChapter": "cai:6"
     },
     {
-      "id": "watch-kai-0507",
-      "stage": "kai-plan",
+      "id": "watch-cai-0507",
+      "stage": "cai-plan",
       "title": "6장 · 5/7 12:00 관전",
       "people": [],
       "actions": [
         {
-          "id": "watch-kai-0507--return",
+          "id": "watch-cai-0507--return",
           "category": "관전 전 귀환",
           "text": "5/7 12:00 전에 다그시온으로 돌아온다. 가능하면 전날 귀환하고 이미 제도에 있으면 관전까지 머문다. 다른 루트의 날짜를 그대로 쓰지 않는다.",
           "inheritLegacy": false
         },
         {
-          "id": "watch-kai-0507--watch",
+          "id": "watch-cai-0507--watch",
           "category": "관전 참가",
           "text": "5/7 당일 달력과 투기장 관전 접수의 시각·장소를 확인해 관전한다. 관련 기능은 활·중갑. 시청 뒤 체크하고 직접 출전하는 메인 시합과 구분한다.",
           "inheritLegacy": false
@@ -20096,7 +20096,7 @@
       ],
       "curated": true,
       "schedule": {
-        "route": "kai",
+        "route": "cai",
         "chapter": 6,
         "month": 5,
         "day": 7,
@@ -20107,19 +20107,19 @@
       }
     },
     {
-      "id": "holiday-kai-0511",
-      "stage": "kai-plan",
+      "id": "holiday-cai-0511",
+      "stage": "cai-plan",
       "title": "6장 · 5/11 칼라 행사일 확인",
       "people": [],
       "actions": [
         {
-          "id": "holiday-kai-0511--return",
+          "id": "holiday-cai-0511--return",
           "category": "행사일 귀환·위치 확인",
           "text": "5/11 달력에서 실제 참가할 수 있는 행사·알현·대화 표시와 장소를 먼저 확인한다. 제도 방문이 필요한 참가 표시가 있으면 정해진 시각 전에 귀환하고, 이미 제도에 있으면 추가 왕복하지 않는다. 공휴일 표시만 있고 참가할 내용이 없으면 귀환 불필요로 확인한다.",
           "inheritLegacy": false
         },
         {
-          "id": "holiday-kai-0511--check",
+          "id": "holiday-cai-0511--check",
           "category": "당일 행사 표시 확인",
           "text": "5/11에 실제 열린 행사·알현·대화가 있으면 참가 후 체크한다. 전용 행사가 없으면 달력의 공휴일 확인으로 마치며 존재하지 않는 퀘스트·보상·참가비를 만들어 기록하지 않는다.",
           "inheritLegacy": false
@@ -20136,7 +20136,7 @@
       ],
       "curated": true,
       "schedule": {
-        "route": "kai",
+        "route": "cai",
         "chapter": 6,
         "month": 5,
         "day": 11,
@@ -20146,13 +20146,13 @@
       }
     },
     {
-      "id": "service-kai-ch06-from-0513-3",
-      "stage": "kai-plan",
+      "id": "service-cai-ch06-from-0513-3",
+      "stage": "cai-plan",
       "title": "6장 · 5/13~5/13 주간 봉사",
       "people": [],
       "actions": [
         {
-          "id": "service-kai-ch06-w04",
+          "id": "service-cai-ch06-w04",
           "category": "주간 봉사",
           "text": "자료상 5/13 주차: 4번째 일요일 리셋 뒤에 이번 주1회만 봉사한다. 남은 마스3 → 스미르노스3이 기본 목표이며 앞 목표가 미달이면 그 신부터다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -20164,7 +20164,7 @@
           }
         },
         {
-          "id": "service-kai-ch06-from-0513-3--readiness-arena-service-kai-ch06-w04",
+          "id": "service-cai-ch06-from-0513-3--readiness-arena-service-cai-ch06-w04",
           "category": "주간 훈련",
           "text": "5/13 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
@@ -20178,22 +20178,22 @@
         }
       ],
       "curated": true,
-      "trainingChapter": "kai:6"
+      "trainingChapter": "cai:6"
     },
     {
-      "id": "holiday-kai-0517",
-      "stage": "kai-plan",
+      "id": "holiday-cai-0517",
+      "stage": "cai-plan",
       "title": "6장 · 5/17 공휴일 확인",
       "people": [],
       "actions": [
         {
-          "id": "holiday-kai-0517--return",
+          "id": "holiday-cai-0517--return",
           "category": "행사일 귀환·위치 확인",
           "text": "5/17 달력에서 실제 참가할 수 있는 행사·알현·대화 표시와 장소를 먼저 확인한다. 제도 방문이 필요한 참가 표시가 있으면 정해진 시각 전에 귀환하고, 이미 제도에 있으면 추가 왕복하지 않는다. 공휴일 표시만 있고 참가할 내용이 없으면 귀환 불필요로 확인한다.",
           "inheritLegacy": false
         },
         {
-          "id": "holiday-kai-0517--check",
+          "id": "holiday-cai-0517--check",
           "category": "당일 행사 표시 확인",
           "text": "5/17에 실제 열린 행사·알현·대화가 있으면 참가 후 체크한다. 전용 행사가 없으면 달력의 공휴일 확인으로 마치며 존재하지 않는 퀘스트·보상·참가비를 만들어 기록하지 않는다.",
           "inheritLegacy": false
@@ -20210,7 +20210,7 @@
       ],
       "curated": true,
       "schedule": {
-        "route": "kai",
+        "route": "cai",
         "chapter": 6,
         "month": 5,
         "day": 17,
@@ -20220,13 +20220,13 @@
       }
     },
     {
-      "id": "service-kai-ch06-from-0520-4",
-      "stage": "kai-plan",
+      "id": "service-cai-ch06-from-0520-4",
+      "stage": "cai-plan",
       "title": "6장 · 5/20~5/20 주간 봉사",
       "people": [],
       "actions": [
         {
-          "id": "service-kai-ch06-w05",
+          "id": "service-cai-ch06-w05",
           "category": "주간 봉사",
           "text": "자료상 5/20 주차: 5번째 일요일 리셋 뒤에 이번 주1회만 봉사한다. 남은 마스3 → 스미르노스3이 기본 목표이며 앞 목표가 미달이면 그 신부터다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -20238,7 +20238,7 @@
           }
         },
         {
-          "id": "service-kai-ch06-from-0520-4--readiness-arena-service-kai-ch06-w05",
+          "id": "service-cai-ch06-from-0520-4--readiness-arena-service-cai-ch06-w05",
           "category": "주간 훈련",
           "text": "5/20 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
@@ -20252,13 +20252,13 @@
         }
       ],
       "curated": true,
-      "trainingChapter": "kai:6"
+      "trainingChapter": "cai:6"
     },
     {
-      "id": "ready-kai-nuzzuo",
+      "id": "ready-cai-nuzzuo",
       "title": "6장 실제 합류 뒤 · 누조 육성 시작",
-      "stage": "kai-plan",
-      "route": "kai",
+      "stage": "cai-plan",
+      "route": "cai",
       "people": [
         "누조"
       ],
@@ -20267,7 +20267,7 @@
       "curated": true,
       "actions": [
         {
-          "id": "ready-kai-nuzzuo--readiness-start",
+          "id": "ready-cai-nuzzuo--readiness-start",
           "category": "육성 시작",
           "text": "추가 칸·역할 교대 · 실제 합류 뒤 역할 수행 가능 여부 확인 · 이야기 전투 주력 강제 교체 없음 · 시험 레벨에 가까운데 필수 기능만 부족하면 던전 별도 편성 · 실제 시험 전 현재 자격·합격률 확인",
           "inheritLegacy": false
@@ -20275,10 +20275,10 @@
       ]
     },
     {
-      "id": "ready-kai-seteth",
+      "id": "ready-cai-seteth",
       "title": "6장 실제 합류 뒤 · 세테스 육성 시작",
-      "stage": "kai-plan",
-      "route": "kai",
+      "stage": "cai-plan",
+      "route": "cai",
       "people": [
         "세테스"
       ],
@@ -20287,7 +20287,7 @@
       "curated": true,
       "actions": [
         {
-          "id": "ready-kai-seteth--readiness-start",
+          "id": "ready-cai-seteth--readiness-start",
           "category": "육성 시작",
           "text": "추가 칸·역할 교대 · 실제 합류 뒤 역할 수행 가능 여부 확인 · 이야기 전투 주력 강제 교체 없음 · 시험 레벨에 가까운데 필수 기능만 부족하면 던전 별도 편성 · 실제 시험 전 현재 자격·합격률 확인",
           "inheritLegacy": false
@@ -20295,15 +20295,15 @@
       ]
     },
     {
-      "id": "ready-kai-ultand",
-      "stage": "kai-plan",
+      "id": "ready-cai-ultand",
+      "stage": "cai-plan",
       "title": "6장 실제 합류 뒤 · 울턴드 육성 준비",
       "people": [
         "울턴드"
       ],
       "actions": [
         {
-          "id": "ready-kai-ultand--readiness-start",
+          "id": "ready-cai-ultand--readiness-start",
           "category": "육성 시작",
           "text": "이야기 주력 · 실제 합류 뒤 역할 수행 가능 여부 확인 · 이야기 전투 주력 강제 교체 없음 · 시험 레벨에 가까운데 필수 기능만 부족하면 던전 별도 편성 · 실제 시험 전 현재 자격·합격률 확인",
           "inheritLegacy": false
@@ -20321,36 +20321,36 @@
       ],
       "figures": [],
       "curated": true,
-      "route": "kai"
+      "route": "cai"
     },
     {
-      "id": "recruit-all-kai-yangjie-20261112",
-      "stage": "kai-plan",
+      "id": "recruit-all-cai-yangjie-20261112",
+      "stage": "cai-plan",
       "title": "6장 무렵 · 명성3·지원2 뒤 양계 영입(지원 대화)",
       "people": [
         "양계"
       ],
       "actions": [
         {
-          "id": "recruit-all-kai-yangjie-20261112--cond",
+          "id": "recruit-all-cai-yangjie-20261112--cond",
           "category": "조건 확인",
           "text": "카이와 지원2·명성3을 확인한다. 지원은 공유 수치라 앞 루트에서 올린 만큼 이어진다.",
           "inheritLegacy": false
         },
         {
-          "id": "recruit-all-kai-yangjie-20261112--need1",
+          "id": "recruit-all-cai-yangjie-20261112--need1",
           "category": "영입 준비",
           "text": "영입 전에 준비한다: 질문 3개: 「치즈」 → 「보름달이 뜬 밤」 → 세 번째는 화면 확인(과일/감자 자료 상충).",
           "inheritLegacy": false
         },
         {
-          "id": "recruit-all-kai-yangjie-20261112--scout",
+          "id": "recruit-all-cai-yangjie-20261112--scout",
           "category": "스카우트",
           "text": "양계에게 말을 걸어 스카우트를 고르고 요구를 전달한다.",
           "inheritLegacy": false
         },
         {
-          "id": "recruit-all-kai-yangjie-20261112--join",
+          "id": "recruit-all-cai-yangjie-20261112--join",
           "category": "합류 확인",
           "text": "동료 목록에서 합류를 확인한다. 이미 영입했으면 반복하지 않는다.",
           "inheritLegacy": false
@@ -20378,13 +20378,13 @@
           "label": "전원 영입 검토"
         }
       ],
-      "route": "kai",
+      "route": "cai",
       "earliestChapter": 6,
       "requiredRenown": 3
     },
     {
-      "id": "sequential-dungeon-kai-7-20261108",
-      "stage": "kai-plan",
+      "id": "sequential-dungeon-cai-7-20261108",
+      "stage": "cai-plan",
       "title": "7장 · 시험 직전 부족한 기능만 던전에서 보충",
       "people": [],
       "notes": [
@@ -20400,23 +20400,23 @@
       "figures": [],
       "actions": [
         {
-          "id": "sequential-dungeon-kai-7-20261108--exam-check-20261112",
+          "id": "sequential-dungeon-cai-7-20261108--exam-check-20261112",
           "category": "시험 조건",
           "text": "목표 병과의 시험 화면을 확인한다. 해당 인물이 시험 권장 레벨에 가까우면서 필수 기능 등급이 부족할 때만 던전 반복을 준비한다.",
           "inheritLegacy": false
         },
         {
-          "id": "sequential-dungeon-kai-7-20261108--exam-dungeon-20261112",
+          "id": "sequential-dungeon-cai-7-20261108--exam-dungeon-20261112",
           "category": "조건부 던전",
           "text": "조건을 충족한 인물만 던전에서 쓸 수 있는 부족한 기능을 올린다. 필요한 등급에 닿으면 귀환해 시험을 확인한다.",
           "inheritLegacy": false
         }
       ],
-      "route": "kai"
+      "route": "cai"
     },
     {
-      "id": "kai-05",
-      "stage": "kai-plan",
+      "id": "cai-05",
+      "stage": "cai-plan",
       "title": "명성 7·8·10",
       "people": [
         "알렉산드라",
@@ -20424,43 +20424,43 @@
       ],
       "actions": [
         {
-          "id": "kai-05--deployment-budget",
+          "id": "cai-05--deployment-budget",
           "category": "편성·투자",
           "text": "실제 출격 칸을 현재 합류 동료로 편성 · 교대 인물의 추가 성장 중단 · 단 최종25명은Lv20·중급·필수 기능 준비까지 유지",
           "inheritLegacy": false
         },
         {
-          "id": "recruit-kai-alexandra--join",
+          "id": "recruit-cai-alexandra--join",
           "category": "영입",
           "text": "명성7·카이와의 지원2를 채웠으면 알렉산드라에게 스카우트를 제안하고 동료 목록의 합류를 확인한다.",
           "inheritLegacy": false
         },
         {
-          "id": "recruit-kai-alexandra--hold-advanced",
+          "id": "recruit-cai-alexandra--hold-advanced",
           "category": "합류 직후",
           "text": "합류한 알렉산드라는 천익병을 유지한다. 첫 전용 페가수스 보관 반입 전 상급 시험은 보류하며, 비탑승 중급 자격은12장 종료 전에 확인한다.",
           "inheritLegacy": false
         },
         {
-          "id": "kai-05--626ce7d3c5",
+          "id": "cai-05--626ce7d3c5",
           "category": "행동",
           "text": "센트리온·아우로라·베르트랑의 특별 훈련 목록을 확인합니다.",
           "inheritLegacy": true
         },
         {
-          "id": "kai-05--54249486c6",
+          "id": "cai-05--54249486c6",
           "category": "행동",
           "text": "카이 전용 칼라드리오스 등 해금과 이야기·대화를 챙깁니다.",
           "inheritLegacy": true
         },
         {
-          "id": "kai-05--d563205380",
+          "id": "cai-05--d563205380",
           "category": "행동",
           "text": "드래군·트루바두르를 이미 열었다면 같은 해금만을 위해 반복 준비하지 않습니다.",
           "inheritLegacy": true
         },
         {
-          "id": "kai-05--0e9e751ca5",
+          "id": "cai-05--0e9e751ca5",
           "category": "미리 준비",
           "text": "친밀도 5·기마D·활C를 채운 전차병 후보를 전직하고 부여 칸을 확인한다.",
           "inheritLegacy": true
@@ -20510,13 +20510,13 @@
       "curated": true
     },
     {
-      "id": "xp-review-kai-07",
-      "stage": "kai-plan",
+      "id": "xp-review-cai-07",
+      "stage": "cai-plan",
       "title": "7장 · 권장Lv35 전후 경험치 설정",
       "people": [],
       "actions": [
         {
-          "id": "xp-review-kai-07--setting",
+          "id": "xp-review-cai-07--setting",
           "category": "레벨 도달 시",
           "text": "주력이 권장Lv35을 넘기기 전, 명성8·기능·해금이 모자라 이 시점의 목표 성장 병과로 전직하지 못했다면 보유한 인물 경험치 축복을 끈다(OFF). 전직 후에는 원래 쓰던 보너스(ON)를 복구하며, 이미 목표 병과인 주력은 ON 상태만 확인한다.",
           "inheritLegacy": false
@@ -20532,20 +20532,20 @@
       "showMap": false,
       "curated": true,
       "xpReview": {
-        "route": "kai",
+        "route": "cai",
         "chapter": 7,
         "recommendedLevel": 35,
         "renown": 8
       }
     },
     {
-      "id": "kai07-carriage-unlock",
-      "stage": "kai-plan",
+      "id": "cai07-carriage-unlock",
+      "stage": "cai-plan",
       "title": "7장 · 마차 열기 · 11/27까지",
       "people": [],
       "actions": [
         {
-          "id": "kai-05--ae664e73ca",
+          "id": "cai-05--ae664e73ca",
           "category": "수주 확인",
           "text": "7장에 마차를 눌러 목적지 목록을 확인한다. 아직 사용할 수 없을 때만 다그시온 투기장 근처 마부에게 메가이라의 장인들을 수락한다(11/27까지).",
           "inheritLegacy": true,
@@ -20554,13 +20554,13 @@
           }
         },
         {
-          "id": "kai07-carriage--buy-axle",
+          "id": "cai07-carriage--buy-axle",
           "category": "부품 구매",
           "text": "의뢰가 미완료일 때만 메가이라 시장에서 차축 부품(차축 부품) 1개를500G에 산다. 이미 소지했으면 구매하지 않는다.",
           "inheritLegacy": false
         },
         {
-          "id": "kai-05--46ec4e1e1f",
+          "id": "cai-05--46ec4e1e1f",
           "category": "귀환 보고",
           "text": "미완료일 때만 다그시온의 같은 마부에게 차축을 건네 보고한다. 마차 이용이 열리면 이미 연결된 다른 지역의 역으로 이동한다.",
           "inheritLegacy": true
@@ -20579,13 +20579,13 @@
       "curated": true
     },
     {
-      "id": "calendar-kai-ch07",
-      "stage": "kai-plan",
+      "id": "calendar-cai-ch07",
+      "stage": "cai-plan",
       "title": "7장 시작 · 관전·행사·선택 장면 달력 확인",
       "people": [],
       "actions": [
         {
-          "id": "calendar-kai-ch07--review",
+          "id": "calendar-cai-ch07--review",
           "category": "자유행동 시작 확인",
           "text": "자유행동이 열리면 이 루트 달력의 관전·공휴일·행사·생일·아직 안 본 선택 장면을 확인한다. 날짜별 귀환·참가 체크를 먼저 보고 원정 시간을 잡는다. 실제 달력과 자료의 날짜·시간이 다르면 현재 표시를 우선한다.",
           "inheritLegacy": false
@@ -20596,15 +20596,15 @@
       "curated": true
     },
     {
-      "id": "ready-kai-loretta",
-      "stage": "kai-plan",
+      "id": "ready-cai-loretta",
+      "stage": "cai-plan",
       "title": "7장 실제 합류 뒤 · 로레타 육성 준비",
       "people": [
         "로레타"
       ],
       "actions": [
         {
-          "id": "ready-kai-loretta--readiness-start",
+          "id": "ready-cai-loretta--readiness-start",
           "category": "육성 시작",
           "text": "이야기 주력 · 실제 합류 뒤 역할 수행 가능 여부 확인 · 이야기 전투 주력 강제 교체 없음 · 시험 레벨에 가까운데 필수 기능만 부족하면 던전 별도 편성 · 실제 시험 전 현재 자격·합격률 확인",
           "inheritLegacy": false
@@ -20622,48 +20622,48 @@
       ],
       "figures": [],
       "curated": true,
-      "route": "kai"
+      "route": "cai"
     },
     {
-      "id": "team-kai-loretta",
-      "stage": "kai-plan",
+      "id": "team-cai-loretta",
+      "stage": "cai-plan",
       "title": "명성7·지원3 뒤 · 로레타 전차병·궁술 준비",
       "people": [
         "로레타"
       ],
       "actions": [
         {
-          "id": "team-kai-loretta--20261106-join",
+          "id": "team-cai-loretta--20261106-join",
           "category": "육성",
           "text": "명성7·지원3 충족 뒤 철의 검3개로 로레타 영입 · 기존 주력의 성장을 유지하며 궁수 성장판으로 단계적 배치",
           "inheritLegacy": false
         },
         {
-          "id": "team-kai-loretta--20261106-entry",
+          "id": "team-cai-loretta--20261106-entry",
           "category": "육성",
           "text": "현재 힘·기술·수비·궁술과 보유 자격 확인 · 세오도라 검판과 비교할 물리 성장판 선택",
           "inheritLegacy": false
         },
         {
-          "id": "team-kai-loretta--20261106-chariot",
+          "id": "team-cai-loretta--20261106-chariot",
           "category": "육성",
           "text": "궁술 C·기마술 D와 전차병 해금·미보유 중급 증서 확인 · 실제 시험 합격률100%일 때만 응시",
           "inheritLegacy": false
         },
         {
-          "id": "team-kai-loretta--20261106-mount",
+          "id": "team-cai-loretta--20261106-mount",
           "category": "육성",
           "text": "성장용 탈것을 탑승시키고 먹이·숙박으로 친밀도5 목표 · 이미 진행한 포획·먹이 뒤 장 재시작 금지",
           "inheritLegacy": false
         },
         {
-          "id": "team-kai-loretta--20261106-bow",
+          "id": "team-cai-loretta--20261106-bow",
           "category": "육성",
           "text": "실제 출격에서 안전한 활 막타를 로레타에게 배분 · 전차병으로 힘·기술·수비 보완, 궁술 A 난사 준비",
           "inheritLegacy": false
         },
         {
-          "id": "team-kai-loretta--20261106-stop",
+          "id": "team-cai-loretta--20261106-stop",
           "category": "육성",
           "text": "실제 물리 역할이 대체된 뒤 녹투라 추가 유료 훈련·시험 중단 · 전차병 회피 불가, 위험한 전투는 보유 전투 자격으로 교체",
           "inheritLegacy": false
@@ -20690,13 +20690,13 @@
       ]
     },
     {
-      "id": "service-kai-ch07",
-      "stage": "kai-plan",
+      "id": "service-cai-ch07",
+      "stage": "cai-plan",
       "title": "7장 · 6/9~6/10 주간 봉사",
       "people": [],
       "actions": [
         {
-          "id": "service-kai-ch07-w00",
+          "id": "service-cai-ch07-w00",
           "category": "주간 봉사",
           "text": "자료상 6/9 주차: 첫 주의 미사용분에 이번 주1회만 봉사한다. 크레르1 → 칼라3 → 크레르3 → 주라3 → 마스3 → 스미르노스3 중 첫 미달 목표를 고른다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -20708,7 +20708,7 @@
           }
         },
         {
-          "id": "service-kai-ch07-w01",
+          "id": "service-cai-ch07-w01",
           "category": "주간 봉사",
           "text": "자료상 6/10 주차: 1번째 일요일 리셋 뒤에 이번 주1회만 봉사한다. 남은 마스3 → 스미르노스3이 기본 목표이며 앞 목표가 미달이면 그 신부터다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -20720,13 +20720,13 @@
           }
         },
         {
-          "id": "service-kai-ch07--readiness-arena-service-kai-ch07-w00",
+          "id": "service-cai-ch07--readiness-arena-service-cai-ch07-w00",
           "category": "주간 훈련",
           "text": "6/9 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
         },
         {
-          "id": "service-kai-ch07--readiness-arena-service-kai-ch07-w01",
+          "id": "service-cai-ch07--readiness-arena-service-cai-ch07-w01",
           "category": "주간 훈련",
           "text": "6/10 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
@@ -20740,22 +20740,22 @@
       ],
       "figures": [],
       "curated": true,
-      "trainingChapter": "kai:7"
+      "trainingChapter": "cai:7"
     },
     {
-      "id": "holiday-kai-0614",
-      "stage": "kai-plan",
+      "id": "holiday-cai-0614",
+      "stage": "cai-plan",
       "title": "7장 · 6/14 포트나 행사일 확인",
       "people": [],
       "actions": [
         {
-          "id": "holiday-kai-0614--return",
+          "id": "holiday-cai-0614--return",
           "category": "행사일 귀환·위치 확인",
           "text": "6/14 달력에서 실제 참가할 수 있는 행사·알현·대화 표시와 장소를 먼저 확인한다. 제도 방문이 필요한 참가 표시가 있으면 정해진 시각 전에 귀환하고, 이미 제도에 있으면 추가 왕복하지 않는다. 공휴일 표시만 있고 참가할 내용이 없으면 귀환 불필요로 확인한다.",
           "inheritLegacy": false
         },
         {
-          "id": "holiday-kai-0614--check",
+          "id": "holiday-cai-0614--check",
           "category": "당일 행사 표시 확인",
           "text": "6/14에 실제 열린 행사·알현·대화가 있으면 참가 후 체크한다. 전용 행사가 없으면 달력의 공휴일 확인으로 마치며 존재하지 않는 퀘스트·보상·참가비를 만들어 기록하지 않는다.",
           "inheritLegacy": false
@@ -20772,7 +20772,7 @@
       ],
       "curated": true,
       "schedule": {
-        "route": "kai",
+        "route": "cai",
         "chapter": 7,
         "month": 6,
         "day": 14,
@@ -20782,19 +20782,19 @@
       }
     },
     {
-      "id": "watch-kai-0615",
-      "stage": "kai-plan",
+      "id": "watch-cai-0615",
+      "stage": "cai-plan",
       "title": "7장 · 6/15 12:00 관전",
       "people": [],
       "actions": [
         {
-          "id": "watch-kai-0615--return",
+          "id": "watch-cai-0615--return",
           "category": "관전 전 귀환",
           "text": "6/15 12:00 전에 다그시온으로 돌아온다. 가능하면 전날 귀환하고 이미 제도에 있으면 관전까지 머문다. 다른 루트의 날짜를 그대로 쓰지 않는다.",
           "inheritLegacy": false
         },
         {
-          "id": "watch-kai-0615--watch",
+          "id": "watch-cai-0615--watch",
           "category": "관전 참가",
           "text": "6/15 당일 달력과 투기장 관전 접수의 시각·장소를 확인해 관전한다. 관련 기능은 도끼·기마. 시청 뒤 체크하고 직접 출전하는 메인 시합과 구분한다.",
           "inheritLegacy": false
@@ -20811,7 +20811,7 @@
       ],
       "curated": true,
       "schedule": {
-        "route": "kai",
+        "route": "cai",
         "chapter": 7,
         "month": 6,
         "day": 15,
@@ -20822,13 +20822,13 @@
       }
     },
     {
-      "id": "service-kai-ch07-from-0617-2",
-      "stage": "kai-plan",
+      "id": "service-cai-ch07-from-0617-2",
+      "stage": "cai-plan",
       "title": "7장 · 6/17~6/17 주간 봉사",
       "people": [],
       "actions": [
         {
-          "id": "service-kai-ch07-w02",
+          "id": "service-cai-ch07-w02",
           "category": "주간 봉사",
           "text": "자료상 6/17 주차: 2번째 일요일 리셋 뒤에 이번 주1회만 봉사한다. 남은 마스3 → 스미르노스3이 기본 목표이며 앞 목표가 미달이면 그 신부터다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -20840,7 +20840,7 @@
           }
         },
         {
-          "id": "service-kai-ch07-from-0617-2--readiness-arena-service-kai-ch07-w02",
+          "id": "service-cai-ch07-from-0617-2--readiness-arena-service-cai-ch07-w02",
           "category": "주간 훈련",
           "text": "6/17 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
@@ -20854,22 +20854,22 @@
         }
       ],
       "curated": true,
-      "trainingChapter": "kai:7"
+      "trainingChapter": "cai:7"
     },
     {
-      "id": "holiday-kai-0617",
-      "stage": "kai-plan",
+      "id": "holiday-cai-0617",
+      "stage": "cai-plan",
       "title": "7장 · 6/17 공휴일 확인",
       "people": [],
       "actions": [
         {
-          "id": "holiday-kai-0617--return",
+          "id": "holiday-cai-0617--return",
           "category": "행사일 귀환·위치 확인",
           "text": "6/17 달력에서 실제 참가할 수 있는 행사·알현·대화 표시와 장소를 먼저 확인한다. 제도 방문이 필요한 참가 표시가 있으면 정해진 시각 전에 귀환하고, 이미 제도에 있으면 추가 왕복하지 않는다. 공휴일 표시만 있고 참가할 내용이 없으면 귀환 불필요로 확인한다.",
           "inheritLegacy": false
         },
         {
-          "id": "holiday-kai-0617--check",
+          "id": "holiday-cai-0617--check",
           "category": "당일 행사 표시 확인",
           "text": "6/17에 실제 열린 행사·알현·대화가 있으면 참가 후 체크한다. 전용 행사가 없으면 달력의 공휴일 확인으로 마치며 존재하지 않는 퀘스트·보상·참가비를 만들어 기록하지 않는다.",
           "inheritLegacy": false
@@ -20886,7 +20886,7 @@
       ],
       "curated": true,
       "schedule": {
-        "route": "kai",
+        "route": "cai",
         "chapter": 7,
         "month": 6,
         "day": 17,
@@ -20896,13 +20896,13 @@
       }
     },
     {
-      "id": "service-kai-ch07-from-0624-3",
-      "stage": "kai-plan",
+      "id": "service-cai-ch07-from-0624-3",
+      "stage": "cai-plan",
       "title": "7장 · 6/24~7/8 주간 봉사",
       "people": [],
       "actions": [
         {
-          "id": "service-kai-ch07-w03",
+          "id": "service-cai-ch07-w03",
           "category": "주간 봉사",
           "text": "자료상 6/24 주차: 3번째 일요일 리셋 뒤에 이번 주1회만 봉사한다. 남은 마스3 → 스미르노스3이 기본 목표이며 앞 목표가 미달이면 그 신부터다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -20914,7 +20914,7 @@
           }
         },
         {
-          "id": "service-kai-ch07-w04",
+          "id": "service-cai-ch07-w04",
           "category": "주간 봉사",
           "text": "자료상 7/1 주차: 4번째 일요일 리셋 뒤에 이번 주1회만 봉사한다. 남은 마스3 → 스미르노스3이 기본 목표이며 앞 목표가 미달이면 그 신부터다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -20926,7 +20926,7 @@
           }
         },
         {
-          "id": "service-kai-ch07-w05",
+          "id": "service-cai-ch07-w05",
           "category": "주간 봉사",
           "text": "자료상 7/8 주차: 5번째 일요일 리셋 뒤에 이번 주1회만 봉사한다. 남은 마스3 → 스미르노스3이 기본 목표이며 앞 목표가 미달이면 그 신부터다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -20938,19 +20938,19 @@
           }
         },
         {
-          "id": "service-kai-ch07-from-0624-3--readiness-arena-service-kai-ch07-w03",
+          "id": "service-cai-ch07-from-0624-3--readiness-arena-service-cai-ch07-w03",
           "category": "주간 훈련",
           "text": "6/24 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
         },
         {
-          "id": "service-kai-ch07-from-0624-3--readiness-arena-service-kai-ch07-w04",
+          "id": "service-cai-ch07-from-0624-3--readiness-arena-service-cai-ch07-w04",
           "category": "주간 훈련",
           "text": "7/1 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
         },
         {
-          "id": "service-kai-ch07-from-0624-3--readiness-arena-service-kai-ch07-w05",
+          "id": "service-cai-ch07-from-0624-3--readiness-arena-service-cai-ch07-w05",
           "category": "주간 훈련",
           "text": "7/8 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
@@ -20964,16 +20964,16 @@
         }
       ],
       "curated": true,
-      "trainingChapter": "kai:7"
+      "trainingChapter": "cai:7"
     },
     {
-      "id": "calendar-kai-0710-availability",
-      "stage": "kai-plan",
+      "id": "calendar-cai-0710-availability",
+      "stage": "cai-plan",
       "title": "7장 마무리 전 · 7/10 관전 가능 여부 확인",
       "people": [],
       "actions": [
         {
-          "id": "calendar-kai-0710-availability--review",
+          "id": "calendar-cai-0710-availability--review",
           "category": "이야기 점프·달력 확인",
           "text": "카이7장 메인 전투로 넘어가기 전에7/10 관전 표시와 실제 이야기 진행 날짜를 확인한다. 자료에는7/10 관전이 있으나 카이의 자유행동 표시가 없다. 실제로7/10을 조작할 수 있을 때만 관전하고, 이야기로 건너뛰면 참가 불가 확인으로 구분한다. 확인 체크를 관전 실행 기록으로 취급하지 않는다.",
           "inheritLegacy": false
@@ -20983,7 +20983,7 @@
       "notes": [],
       "curated": true,
       "schedule": {
-        "route": "kai",
+        "route": "cai",
         "chapter": 7,
         "month": 7,
         "day": 9,
@@ -20993,33 +20993,33 @@
       }
     },
     {
-      "id": "recruit-all-kai-majide-20261112",
-      "stage": "kai-plan",
+      "id": "recruit-all-cai-majide-20261112",
+      "stage": "cai-plan",
       "title": "7장 무렵 · 명성5·지원2 뒤 마지데 영입(지원 대화)",
       "people": [
         "마지데"
       ],
       "actions": [
         {
-          "id": "recruit-all-kai-majide-20261112--cond",
+          "id": "recruit-all-cai-majide-20261112--cond",
           "category": "조건 확인",
           "text": "카이와 지원2·명성5을 확인한다. 지원은 공유 수치라 앞 루트에서 올린 만큼 이어진다.",
           "inheritLegacy": false
         },
         {
-          "id": "recruit-all-kai-majide-20261112--need1",
+          "id": "recruit-all-cai-majide-20261112--need1",
           "category": "영입 준비",
           "text": "영입 전에 준비한다: 스카우트 3번: 「필요하다」 → 「필요하다」 → 「진심으로 필요하다」.",
           "inheritLegacy": false
         },
         {
-          "id": "recruit-all-kai-majide-20261112--scout",
+          "id": "recruit-all-cai-majide-20261112--scout",
           "category": "스카우트",
           "text": "마지데에게 말을 걸어 스카우트를 고르고 요구를 전달한다.",
           "inheritLegacy": false
         },
         {
-          "id": "recruit-all-kai-majide-20261112--join",
+          "id": "recruit-all-cai-majide-20261112--join",
           "category": "합류 확인",
           "text": "동료 목록에서 합류를 확인한다. 이미 영입했으면 반복하지 않는다.",
           "inheritLegacy": false
@@ -21047,13 +21047,13 @@
           "label": "전원 영입 검토"
         }
       ],
-      "route": "kai",
+      "route": "cai",
       "earliestChapter": 7,
       "requiredRenown": 5
     },
     {
-      "id": "sequential-dungeon-kai-8-20261108",
-      "stage": "kai-plan",
+      "id": "sequential-dungeon-cai-8-20261108",
+      "stage": "cai-plan",
       "title": "8장 · 시험 직전 부족한 기능만 던전에서 보충",
       "people": [],
       "notes": [
@@ -21069,58 +21069,58 @@
       "figures": [],
       "actions": [
         {
-          "id": "sequential-dungeon-kai-8-20261108--exam-check-20261112",
+          "id": "sequential-dungeon-cai-8-20261108--exam-check-20261112",
           "category": "시험 조건",
           "text": "목표 병과의 시험 화면을 확인한다. 해당 인물이 시험 권장 레벨에 가까우면서 필수 기능 등급이 부족할 때만 던전 반복을 준비한다.",
           "inheritLegacy": false
         },
         {
-          "id": "sequential-dungeon-kai-8-20261108--exam-dungeon-20261112",
+          "id": "sequential-dungeon-cai-8-20261108--exam-dungeon-20261112",
           "category": "조건부 던전",
           "text": "조건을 충족한 인물만 던전에서 쓸 수 있는 부족한 기능을 올린다. 필요한 등급에 닿으면 귀환해 시험을 확인한다.",
           "inheritLegacy": false
         }
       ],
-      "route": "kai"
+      "route": "cai"
     },
     {
-      "id": "kai-route-08",
-      "stage": "kai-plan",
+      "id": "cai-route-08",
+      "stage": "cai-plan",
       "title": "8장 · 이동과 육성",
       "people": [],
       "actions": [
         {
-          "id": "kai-route-08--deployment-budget",
+          "id": "cai-route-08--deployment-budget",
           "category": "편성·투자",
           "text": "실제 출격 칸을 현재 합류 동료로 편성 · 교대 인물의 추가 성장 중단 · 단 최종25명은Lv20·중급·필수 기능 준비까지 유지",
           "inheritLegacy": false
         },
         {
-          "id": "kai-route-08--70a9e87011",
+          "id": "cai-route-08--70a9e87011",
           "category": "행동",
           "text": "자유행동이 열리기 전의 강제 이동·대화 목표를 먼저 처리한다. 자유행동이 열리면 날짜별 관전·행사·외전·선택 장면을 확인한 뒤 이 장의 메인 전투로 넘어간다.",
           "inheritLegacy": true
         },
         {
-          "id": "kai-route-08--aef9711bb8",
+          "id": "cai-route-08--aef9711bb8",
           "category": "이동 순서",
           "text": "열린 마차역을 이용해 다음 의뢰 장소로 이동 · 새 영입은 현재 본대 누조·로레타 조건 충족부터",
           "inheritLegacy": true
         },
         {
-          "id": "kai-route-08--426ac5a06c",
+          "id": "cai-route-08--426ac5a06c",
           "category": "미리 준비",
           "text": "회복 둘, 전열, 활·마법 역할을 점검한다.",
           "inheritLegacy": true
         },
         {
-          "id": "kai-route-08--9f4d213302",
+          "id": "cai-route-08--9f4d213302",
           "category": "미리 준비",
           "text": "다음 9장의 32턴에 새 장거리 채집이 남지 않게 한다.",
           "inheritLegacy": true
         },
         {
-          "id": "kai-route-08--32c3fcf01f",
+          "id": "cai-route-08--32c3fcf01f",
           "category": "끝내기 전",
           "text": "필요한 상급 증서는 실사용 인원만 준비한다.",
           "inheritLegacy": true
@@ -21154,13 +21154,13 @@
       "curated": true
     },
     {
-      "id": "xp-review-kai-08",
-      "stage": "kai-plan",
+      "id": "xp-review-cai-08",
+      "stage": "cai-plan",
       "title": "8장 · 권장Lv35 전후 경험치 설정",
       "people": [],
       "actions": [
         {
-          "id": "xp-review-kai-08--setting",
+          "id": "xp-review-cai-08--setting",
           "category": "레벨 도달 시",
           "text": "주력이 권장Lv35을 넘기기 전, 명성8·기능·해금이 모자라 이 시점의 목표 성장 병과로 전직하지 못했다면 보유한 인물 경험치 축복을 끈다(OFF). 전직 후에는 원래 쓰던 보너스(ON)를 복구하며, 이미 목표 병과인 주력은 ON 상태만 확인한다.",
           "inheritLegacy": false
@@ -21176,20 +21176,20 @@
       "showMap": false,
       "curated": true,
       "xpReview": {
-        "route": "kai",
+        "route": "cai",
         "chapter": 8,
         "recommendedLevel": 35,
         "renown": 8
       }
     },
     {
-      "id": "calendar-kai-ch08",
-      "stage": "kai-plan",
+      "id": "calendar-cai-ch08",
+      "stage": "cai-plan",
       "title": "8장 시작 · 관전·행사·선택 장면 달력 확인",
       "people": [],
       "actions": [
         {
-          "id": "calendar-kai-ch08--review",
+          "id": "calendar-cai-ch08--review",
           "category": "자유행동 시작 확인",
           "text": "자유행동이 열리면 이 루트 달력의 관전·공휴일·행사·생일·아직 안 본 선택 장면을 확인한다. 날짜별 귀환·참가 체크를 먼저 보고 원정 시간을 잡는다. 실제 달력과 자료의 날짜·시간이 다르면 현재 표시를 우선한다.",
           "inheritLegacy": false
@@ -21200,16 +21200,16 @@
       "curated": true
     },
     {
-      "id": "ready-kai-peter-middle",
-      "stage": "kai-plan",
-      "route": "kai",
+      "id": "ready-cai-peter-middle",
+      "stage": "cai-plan",
+      "route": "cai",
       "title": "8장 종료 전 · 피터르 중급 자격",
       "people": [
         "피터르"
       ],
       "actions": [
         {
-          "id": "ready-kai-peter--readiness-middle",
+          "id": "ready-cai-peter--readiness-middle",
           "category": "준비",
           "text": "8장 종료 전까지 피터르의 Lv20·전차병 확인 · 이미 중급 이상·Lv20이면 이 단계 추가 육성 생략 · 늦은 합류의 이미 지난 레벨은 되돌리지 않음",
           "inheritLegacy": false
@@ -21220,16 +21220,16 @@
       "curated": true
     },
     {
-      "id": "ready-kai-tialla-middle",
-      "stage": "kai-plan",
-      "route": "kai",
+      "id": "ready-cai-tialla-middle",
+      "stage": "cai-plan",
+      "route": "cai",
       "title": "8장 종료 전 · 티아라 중급 자격",
       "people": [
         "티아라"
       ],
       "actions": [
         {
-          "id": "ready-kai-tialla--readiness-middle",
+          "id": "ready-cai-tialla--readiness-middle",
           "category": "준비",
           "text": "8장 종료 전까지 티아라의 Lv20·프리스트 확인 · 이미 중급 이상·Lv20이면 이 단계 추가 육성 생략 · 늦은 합류의 이미 지난 레벨은 되돌리지 않음",
           "inheritLegacy": false
@@ -21240,16 +21240,16 @@
       "curated": true
     },
     {
-      "id": "ready-kai-cai-middle",
-      "stage": "kai-plan",
-      "route": "kai",
+      "id": "ready-cai-cai-middle",
+      "stage": "cai-plan",
+      "route": "cai",
       "title": "8장 종료 전 · 카이 중급 자격",
       "people": [
         "카이"
       ],
       "actions": [
         {
-          "id": "ready-kai-cai--readiness-middle",
+          "id": "ready-cai-cai--readiness-middle",
           "category": "준비",
           "text": "8장 종료 전까지 카이의 Lv20·경기병 확인 · 이미 중급 이상·Lv20이면 이 단계 추가 육성 생략 · 늦은 합류의 이미 지난 레벨은 되돌리지 않음",
           "inheritLegacy": false
@@ -21260,16 +21260,16 @@
       "curated": true
     },
     {
-      "id": "ready-kai-guzran-middle",
-      "stage": "kai-plan",
-      "route": "kai",
+      "id": "ready-cai-guzran-middle",
+      "stage": "cai-plan",
+      "route": "cai",
       "title": "8장 종료 전 · 그자람 중급 자격",
       "people": [
         "그자람"
       ],
       "actions": [
         {
-          "id": "ready-kai-guzran--readiness-middle",
+          "id": "ready-cai-guzran--readiness-middle",
           "category": "준비",
           "text": "8장 종료 전까지 그자람의 Lv20·전차병 확인 · 이미 중급 이상·Lv20이면 이 단계 추가 육성 생략 · 늦은 합류의 이미 지난 레벨은 되돌리지 않음",
           "inheritLegacy": false
@@ -21280,16 +21280,16 @@
       "curated": true
     },
     {
-      "id": "ready-kai-mikaela-middle",
-      "stage": "kai-plan",
-      "route": "kai",
+      "id": "ready-cai-mikaela-middle",
+      "stage": "cai-plan",
+      "route": "cai",
       "title": "8장 종료 전 · 미카엘라 중급 자격",
       "people": [
         "미카엘라"
       ],
       "actions": [
         {
-          "id": "ready-kai-mikaela--readiness-middle",
+          "id": "ready-cai-mikaela--readiness-middle",
           "category": "준비",
           "text": "8장 종료 전까지 미카엘라의 Lv20·전차병 확인 · 이미 중급 이상·Lv20이면 이 단계 추가 육성 생략 · 늦은 합류의 이미 지난 레벨은 되돌리지 않음",
           "inheritLegacy": false
@@ -21300,16 +21300,16 @@
       "curated": true
     },
     {
-      "id": "ready-kai-ultand-middle",
-      "stage": "kai-plan",
-      "route": "kai",
+      "id": "ready-cai-ultand-middle",
+      "stage": "cai-plan",
+      "route": "cai",
       "title": "8장 종료 전 · 울턴드 중급 자격",
       "people": [
         "울턴드"
       ],
       "actions": [
         {
-          "id": "ready-kai-ultand--readiness-middle",
+          "id": "ready-cai-ultand--readiness-middle",
           "category": "준비",
           "text": "8장 종료 전까지 울턴드의 Lv20·프리스트 확인 · 이미 중급 이상·Lv20이면 이 단계 추가 육성 생략 · 늦은 합류의 이미 지난 레벨은 되돌리지 않음",
           "inheritLegacy": false
@@ -21320,16 +21320,16 @@
       "curated": true
     },
     {
-      "id": "ready-kai-loretta-middle",
-      "stage": "kai-plan",
-      "route": "kai",
+      "id": "ready-cai-loretta-middle",
+      "stage": "cai-plan",
+      "route": "cai",
       "title": "8장 종료 전 · 로레타 중급 자격",
       "people": [
         "로레타"
       ],
       "actions": [
         {
-          "id": "ready-kai-loretta--readiness-middle",
+          "id": "ready-cai-loretta--readiness-middle",
           "category": "준비",
           "text": "8장 종료 전까지 로레타의 Lv20·전차병 확인 · 이미 중급 이상·Lv20이면 이 단계 추가 육성 생략 · 늦은 합류의 이미 지난 레벨은 되돌리지 않음",
           "inheritLegacy": false
@@ -21340,10 +21340,10 @@
       "curated": true
     },
     {
-      "id": "ready-kai-noctula-middle",
+      "id": "ready-cai-noctula-middle",
       "title": "8장 주 전투 전 · 녹투라 준비",
-      "stage": "kai-plan",
-      "route": "kai",
+      "stage": "cai-plan",
+      "route": "cai",
       "people": [
         "녹투라"
       ],
@@ -21352,7 +21352,7 @@
       "curated": true,
       "actions": [
         {
-          "id": "ready-kai-noctula--readiness-middle",
+          "id": "ready-cai-noctula--readiness-middle",
           "category": "준비 확인",
           "text": "Lv20·브리건드 확인 · Lv20 도달 시 중급 시험,이미 상급이면 이전 시험 생략",
           "inheritLegacy": false
@@ -21360,10 +21360,10 @@
       ]
     },
     {
-      "id": "ready-kai-seteth-middle",
+      "id": "ready-cai-seteth-middle",
       "title": "8장 주 전투 전 · 세테스 준비",
-      "stage": "kai-plan",
-      "route": "kai",
+      "stage": "cai-plan",
+      "route": "cai",
       "people": [
         "세테스"
       ],
@@ -21372,7 +21372,7 @@
       "curated": true,
       "actions": [
         {
-          "id": "ready-kai-seteth--readiness-middle",
+          "id": "ready-cai-seteth--readiness-middle",
           "category": "준비 확인",
           "text": "Lv20·경기병 확인 · Lv20 도달 시 중급 시험,이미 상급이면 이전 시험 생략",
           "inheritLegacy": false
@@ -21380,10 +21380,10 @@
       ]
     },
     {
-      "id": "ready-kai-nuzzuo-middle",
+      "id": "ready-cai-nuzzuo-middle",
       "title": "8장 주 전투 전 · 누조 준비",
-      "stage": "kai-plan",
-      "route": "kai",
+      "stage": "cai-plan",
+      "route": "cai",
       "people": [
         "누조"
       ],
@@ -21392,7 +21392,7 @@
       "curated": true,
       "actions": [
         {
-          "id": "ready-kai-nuzzuo--readiness-middle",
+          "id": "ready-cai-nuzzuo--readiness-middle",
           "category": "준비 확인",
           "text": "Lv20·아처 확인 · Lv20 도달 시 중급 시험,이미 상급이면 이전 시험 생략",
           "inheritLegacy": false
@@ -21400,16 +21400,16 @@
       ]
     },
     {
-      "id": "ready-kai-ninae-middle",
-      "stage": "kai-plan",
-      "route": "kai",
+      "id": "ready-cai-ninae-middle",
+      "stage": "cai-plan",
+      "route": "cai",
       "title": "8장 · 리네 중급 회복 자격",
       "people": [
         "리네"
       ],
       "actions": [
         {
-          "id": "ready-kai-ninae-middle--readiness-middle",
+          "id": "ready-cai-ninae-middle--readiness-middle",
           "category": "회복 준비",
           "text": "Lv20·백마술 C·프리스트 확인 · 이미 중급 이상이면 소급 시험 없음",
           "inheritLegacy": false
@@ -21420,13 +21420,13 @@
       "curated": true
     },
     {
-      "id": "service-kai-ch08",
-      "stage": "kai-plan",
+      "id": "service-cai-ch08",
+      "stage": "cai-plan",
       "title": "8장 · 7/20~8/12 주간 봉사",
       "people": [],
       "actions": [
         {
-          "id": "service-kai-ch08-w00",
+          "id": "service-cai-ch08-w00",
           "category": "주간 봉사",
           "text": "자료상 7/20 주차: 첫 주의 미사용분에 이번 주1회만 봉사한다. 크레르1 → 칼라3 → 크레르3 → 주라3 → 마스3 → 스미르노스3 중 첫 미달 목표를 고른다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -21438,7 +21438,7 @@
           }
         },
         {
-          "id": "service-kai-ch08-w01",
+          "id": "service-cai-ch08-w01",
           "category": "주간 봉사",
           "text": "자료상 7/22 주차: 1번째 일요일 리셋 뒤에 이번 주1회만 봉사한다. 남은 마스3 → 스미르노스3이 기본 목표이며 앞 목표가 미달이면 그 신부터다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -21450,7 +21450,7 @@
           }
         },
         {
-          "id": "service-kai-ch08-w02",
+          "id": "service-cai-ch08-w02",
           "category": "주간 봉사",
           "text": "자료상 7/29 주차: 2번째 일요일 리셋 뒤에 이번 주1회만 봉사한다. 남은 마스3 → 스미르노스3이 기본 목표이며 앞 목표가 미달이면 그 신부터다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -21462,7 +21462,7 @@
           }
         },
         {
-          "id": "service-kai-ch08-w03",
+          "id": "service-cai-ch08-w03",
           "category": "주간 봉사",
           "text": "자료상 8/5 주차: 3번째 일요일 리셋 뒤에 이번 주1회만 봉사한다. 남은 마스3 → 스미르노스3이 기본 목표이며 앞 목표가 미달이면 그 신부터다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -21474,7 +21474,7 @@
           }
         },
         {
-          "id": "service-kai-ch08-w04",
+          "id": "service-cai-ch08-w04",
           "category": "주간 봉사",
           "text": "자료상 8/12 주차: 4번째 일요일 리셋 뒤에 이번 주1회만 봉사한다. 남은 마스3 → 스미르노스3이 기본 목표이며 앞 목표가 미달이면 그 신부터다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -21486,31 +21486,31 @@
           }
         },
         {
-          "id": "service-kai-ch08--readiness-arena-service-kai-ch08-w00",
+          "id": "service-cai-ch08--readiness-arena-service-cai-ch08-w00",
           "category": "주간 훈련",
           "text": "7/20 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
         },
         {
-          "id": "service-kai-ch08--readiness-arena-service-kai-ch08-w01",
+          "id": "service-cai-ch08--readiness-arena-service-cai-ch08-w01",
           "category": "주간 훈련",
           "text": "7/22 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
         },
         {
-          "id": "service-kai-ch08--readiness-arena-service-kai-ch08-w02",
+          "id": "service-cai-ch08--readiness-arena-service-cai-ch08-w02",
           "category": "주간 훈련",
           "text": "7/29 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
         },
         {
-          "id": "service-kai-ch08--readiness-arena-service-kai-ch08-w03",
+          "id": "service-cai-ch08--readiness-arena-service-cai-ch08-w03",
           "category": "주간 훈련",
           "text": "8/5 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
         },
         {
-          "id": "service-kai-ch08--readiness-arena-service-kai-ch08-w04",
+          "id": "service-cai-ch08--readiness-arena-service-cai-ch08-w04",
           "category": "주간 훈련",
           "text": "8/12 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
@@ -21524,22 +21524,22 @@
       ],
       "figures": [],
       "curated": true,
-      "trainingChapter": "kai:8"
+      "trainingChapter": "cai:8"
     },
     {
-      "id": "holiday-kai-0817",
-      "stage": "kai-plan",
+      "id": "holiday-cai-0817",
+      "stage": "cai-plan",
       "title": "8장 · 8/17 공휴일 확인",
       "people": [],
       "actions": [
         {
-          "id": "holiday-kai-0817--return",
+          "id": "holiday-cai-0817--return",
           "category": "행사일 귀환·위치 확인",
           "text": "8/17 달력에서 실제 참가할 수 있는 행사·알현·대화 표시와 장소를 먼저 확인한다. 제도 방문이 필요한 참가 표시가 있으면 정해진 시각 전에 귀환하고, 이미 제도에 있으면 추가 왕복하지 않는다. 공휴일 표시만 있고 참가할 내용이 없으면 귀환 불필요로 확인한다.",
           "inheritLegacy": false
         },
         {
-          "id": "holiday-kai-0817--check",
+          "id": "holiday-cai-0817--check",
           "category": "당일 행사 표시 확인",
           "text": "8/17에 실제 열린 행사·알현·대화가 있으면 참가 후 체크한다. 전용 행사가 없으면 달력의 공휴일 확인으로 마치며 존재하지 않는 퀘스트·보상·참가비를 만들어 기록하지 않는다.",
           "inheritLegacy": false
@@ -21556,7 +21556,7 @@
       ],
       "curated": true,
       "schedule": {
-        "route": "kai",
+        "route": "cai",
         "chapter": 8,
         "month": 8,
         "day": 17,
@@ -21566,13 +21566,13 @@
       }
     },
     {
-      "id": "service-kai-ch08-from-0819-2",
-      "stage": "kai-plan",
+      "id": "service-cai-ch08-from-0819-2",
+      "stage": "cai-plan",
       "title": "8장 · 8/19~8/26 주간 봉사",
       "people": [],
       "actions": [
         {
-          "id": "service-kai-ch08-w05",
+          "id": "service-cai-ch08-w05",
           "category": "주간 봉사",
           "text": "자료상 8/19 주차: 5번째 일요일 리셋 뒤에 이번 주1회만 봉사한다. 남은 마스3 → 스미르노스3이 기본 목표이며 앞 목표가 미달이면 그 신부터다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -21584,7 +21584,7 @@
           }
         },
         {
-          "id": "service-kai-ch08-w06",
+          "id": "service-cai-ch08-w06",
           "category": "주간 봉사",
           "text": "자료상 8/26 주차: 6번째 일요일 리셋 뒤에 이번 주1회만 봉사한다. 남은 마스3 → 스미르노스3이 기본 목표이며 앞 목표가 미달이면 그 신부터다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -21596,13 +21596,13 @@
           }
         },
         {
-          "id": "service-kai-ch08-from-0819-2--readiness-arena-service-kai-ch08-w05",
+          "id": "service-cai-ch08-from-0819-2--readiness-arena-service-cai-ch08-w05",
           "category": "주간 훈련",
           "text": "8/19 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
         },
         {
-          "id": "service-kai-ch08-from-0819-2--readiness-arena-service-kai-ch08-w06",
+          "id": "service-cai-ch08-from-0819-2--readiness-arena-service-cai-ch08-w06",
           "category": "주간 훈련",
           "text": "8/26 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
@@ -21616,16 +21616,16 @@
         }
       ],
       "curated": true,
-      "trainingChapter": "kai:8"
+      "trainingChapter": "cai:8"
     },
     {
-      "id": "service-kai-ch08-calendar-extra",
-      "stage": "kai-plan",
+      "id": "service-cai-ch08-calendar-extra",
+      "stage": "cai-plan",
       "title": "8장 · 실제 추가 주차가 있을 때만 봉사",
       "people": [],
       "actions": [
         {
-          "id": "service-kai-ch08-w07",
+          "id": "service-cai-ch08-w07",
           "category": "주간 봉사",
           "text": "실제 달력의 추가 주차가 있을 때만: 7번째 일요일 리셋 뒤에 이번 주1회만 봉사한다. 남은 마스3 → 스미르노스3이 기본 목표이며 앞 목표가 미달이면 그 신부터다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 해당 주차가 없으면 넘김으로 확인하고 실제 봉사 횟수에 더하지 않는다.",
           "inheritLegacy": false
@@ -21639,11 +21639,11 @@
         }
       ],
       "curated": true,
-      "trainingChapter": "kai:8"
+      "trainingChapter": "cai:8"
     },
     {
-      "id": "sequential-dungeon-kai-9-20261108",
-      "stage": "kai-plan",
+      "id": "sequential-dungeon-cai-9-20261108",
+      "stage": "cai-plan",
       "title": "9장 · 시험 직전 부족한 기능만 던전에서 보충",
       "people": [],
       "notes": [
@@ -21659,58 +21659,58 @@
       "figures": [],
       "actions": [
         {
-          "id": "sequential-dungeon-kai-9-20261108--exam-check-20261112",
+          "id": "sequential-dungeon-cai-9-20261108--exam-check-20261112",
           "category": "시험 조건",
           "text": "목표 병과의 시험 화면을 확인한다. 해당 인물이 시험 권장 레벨에 가까우면서 필수 기능 등급이 부족할 때만 던전 반복을 준비한다.",
           "inheritLegacy": false
         },
         {
-          "id": "sequential-dungeon-kai-9-20261108--exam-dungeon-20261112",
+          "id": "sequential-dungeon-cai-9-20261108--exam-dungeon-20261112",
           "category": "조건부 던전",
           "text": "조건을 충족한 인물만 던전에서 쓸 수 있는 부족한 기능을 올린다. 필요한 등급에 닿으면 귀환해 시험을 확인한다.",
           "inheritLegacy": false
         }
       ],
-      "route": "kai"
+      "route": "cai"
     },
     {
-      "id": "kai-route-09",
-      "stage": "kai-plan",
+      "id": "cai-route-09",
+      "stage": "cai-plan",
       "title": "9장 · 이동과 육성",
       "people": [],
       "actions": [
         {
-          "id": "kai-route-09--deployment-budget",
+          "id": "cai-route-09--deployment-budget",
           "category": "편성·투자",
           "text": "실제 출격 칸을 현재 합류 동료로 편성 · 교대 인물의 추가 성장 중단 · 단 최종25명은Lv20·중급·필수 기능 준비까지 유지",
           "inheritLegacy": false
         },
         {
-          "id": "kai-route-09--70a9e87011",
+          "id": "cai-route-09--70a9e87011",
           "category": "행동",
           "text": "자유행동이 열리기 전의 강제 이동·대화 목표를 먼저 처리한다. 자유행동이 열리면 날짜별 관전·행사·외전·선택 장면을 확인한 뒤 이 장의 메인 전투로 넘어간다.",
           "inheritLegacy": true
         },
         {
-          "id": "kai-route-09--9b4c56902e",
+          "id": "cai-route-09--9b4c56902e",
           "category": "이동 순서",
           "text": "먼 외출을 멈추고 제도·가까운 거점에서 전투 준비만 한다.",
           "inheritLegacy": true
         },
         {
-          "id": "kai-route-09--28d4200917",
+          "id": "cai-route-09--28d4200917",
           "category": "미리 준비",
           "text": "새 희귀 재료 원정을 시작하지 않는다.",
           "inheritLegacy": true
         },
         {
-          "id": "kai-route-09--8d9640df59",
+          "id": "cai-route-09--8d9640df59",
           "category": "끝내기 전",
           "text": "앞 루트에서 크레르1을 확보해 넘기는 계획이다. 실제로 미달이면 이번 주 봉사를 크레르1에 먼저 쓰고 그 전투는 현재 시야·적 범위를 확인한다.",
           "inheritLegacy": true
         },
         {
-          "id": "kai-route-09--star-spear",
+          "id": "cai-route-09--star-spear",
           "category": "무기 확보",
           "text": "카이9장 주 전투 직전에 지급되는 창(아우로라의 성창)을 확인하고 보관한다.",
           "inheritLegacy": false
@@ -21743,13 +21743,13 @@
       ]
     },
     {
-      "id": "xp-review-kai-09",
-      "stage": "kai-plan",
+      "id": "xp-review-cai-09",
+      "stage": "cai-plan",
       "title": "9장 · 권장Lv35 전후 경험치 설정",
       "people": [],
       "actions": [
         {
-          "id": "xp-review-kai-09--setting",
+          "id": "xp-review-cai-09--setting",
           "category": "레벨 도달 시",
           "text": "주력이 권장Lv35을 넘기기 전, 명성8·기능·해금이 모자라 이 시점의 목표 성장 병과로 전직하지 못했다면 보유한 인물 경험치 축복을 끈다(OFF). 전직 후에는 원래 쓰던 보너스(ON)를 복구하며, 이미 목표 병과인 주력은 ON 상태만 확인한다.",
           "inheritLegacy": false
@@ -21765,20 +21765,20 @@
       "showMap": false,
       "curated": true,
       "xpReview": {
-        "route": "kai",
+        "route": "cai",
         "chapter": 9,
         "recommendedLevel": 35,
         "renown": 8
       }
     },
     {
-      "id": "calendar-kai-ch09",
-      "stage": "kai-plan",
+      "id": "calendar-cai-ch09",
+      "stage": "cai-plan",
       "title": "9장 시작 · 관전·행사·선택 장면 달력 확인",
       "people": [],
       "actions": [
         {
-          "id": "calendar-kai-ch09--review",
+          "id": "calendar-cai-ch09--review",
           "category": "자유행동 시작 확인",
           "text": "자유행동이 열리면 이 루트 달력의 관전·공휴일·행사·생일·아직 안 본 선택 장면을 확인한다. 날짜별 귀환·참가 체크를 먼저 보고 원정 시간을 잡는다. 실제 달력과 자료의 날짜·시간이 다르면 현재 표시를 우선한다.",
           "inheritLegacy": false
@@ -21789,13 +21789,13 @@
       "curated": true
     },
     {
-      "id": "service-kai-ch09",
-      "stage": "kai-plan",
+      "id": "service-cai-ch09",
+      "stage": "cai-plan",
       "title": "9장 · 9/3~9/9 주간 봉사",
       "people": [],
       "actions": [
         {
-          "id": "service-kai-ch09-w00",
+          "id": "service-cai-ch09-w00",
           "category": "주간 봉사",
           "text": "자료상 9/3 주차: 첫 주의 미사용분에 이번 주1회만 봉사한다. 크레르1 → 칼라3 → 크레르3 → 주라3 → 마스3 → 스미르노스3 중 첫 미달 목표를 고른다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -21807,7 +21807,7 @@
           }
         },
         {
-          "id": "service-kai-ch09-w01",
+          "id": "service-cai-ch09-w01",
           "category": "주간 봉사",
           "text": "자료상 9/9 주차: 1번째 일요일 리셋 뒤에 이번 주1회만 봉사한다. 남은 마스3 → 스미르노스3이 기본 목표이며 앞 목표가 미달이면 그 신부터다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -21819,13 +21819,13 @@
           }
         },
         {
-          "id": "service-kai-ch09--readiness-arena-service-kai-ch09-w00",
+          "id": "service-cai-ch09--readiness-arena-service-cai-ch09-w00",
           "category": "주간 훈련",
           "text": "9/3 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
         },
         {
-          "id": "service-kai-ch09--readiness-arena-service-kai-ch09-w01",
+          "id": "service-cai-ch09--readiness-arena-service-cai-ch09-w01",
           "category": "주간 훈련",
           "text": "9/9 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
@@ -21839,16 +21839,16 @@
       ],
       "figures": [],
       "curated": true,
-      "trainingChapter": "kai:9"
+      "trainingChapter": "cai:9"
     },
     {
-      "id": "service-kai-ch09-calendar-extra",
-      "stage": "kai-plan",
+      "id": "service-cai-ch09-calendar-extra",
+      "stage": "cai-plan",
       "title": "9장 · 실제 추가 주차가 있을 때만 봉사",
       "people": [],
       "actions": [
         {
-          "id": "service-kai-ch09-w02",
+          "id": "service-cai-ch09-w02",
           "category": "주간 봉사",
           "text": "실제 달력의 추가 주차가 있을 때만: 2번째 일요일 리셋 뒤에 이번 주1회만 봉사한다. 남은 마스3 → 스미르노스3이 기본 목표이며 앞 목표가 미달이면 그 신부터다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 해당 주차가 없으면 넘김으로 확인하고 실제 봉사 횟수에 더하지 않는다.",
           "inheritLegacy": false
@@ -21862,36 +21862,36 @@
         }
       ],
       "curated": true,
-      "trainingChapter": "kai:9"
+      "trainingChapter": "cai:9"
     },
     {
-      "id": "recruit-all-kai-esmeralda-20261112",
-      "stage": "kai-plan",
+      "id": "recruit-all-cai-esmeralda-20261112",
+      "stage": "cai-plan",
       "title": "9장 무렵 · 명성7·지원2 뒤 에스메랄다 영입(지원 대화)",
       "people": [
         "에스메랄다"
       ],
       "actions": [
         {
-          "id": "recruit-all-kai-esmeralda-20261112--cond",
+          "id": "recruit-all-cai-esmeralda-20261112--cond",
           "category": "조건 확인",
           "text": "카이와 지원2·명성7을 확인한다. 지원은 공유 수치라 앞 루트에서 올린 만큼 이어진다.",
           "inheritLegacy": false
         },
         {
-          "id": "recruit-all-kai-esmeralda-20261112--need1",
+          "id": "recruit-all-cai-esmeralda-20261112--need1",
           "category": "영입 준비",
           "text": "영입 전에 준비한다: 수주 뒤 다마센 곶 해수 무리 토벌(Lv28).",
           "inheritLegacy": false
         },
         {
-          "id": "recruit-all-kai-esmeralda-20261112--scout",
+          "id": "recruit-all-cai-esmeralda-20261112--scout",
           "category": "스카우트",
           "text": "에스메랄다에게 말을 걸어 스카우트를 고르고 요구를 전달한다.",
           "inheritLegacy": false
         },
         {
-          "id": "recruit-all-kai-esmeralda-20261112--join",
+          "id": "recruit-all-cai-esmeralda-20261112--join",
           "category": "합류 확인",
           "text": "동료 목록에서 합류를 확인한다. 이미 영입했으면 반복하지 않는다.",
           "inheritLegacy": false
@@ -21915,38 +21915,38 @@
           "label": "전원 영입 검토"
         }
       ],
-      "route": "kai",
+      "route": "cai",
       "earliestChapter": 9,
       "requiredRenown": 7
     },
     {
-      "id": "recruit-all-kai-goliath-20261112",
-      "stage": "kai-plan",
+      "id": "recruit-all-cai-goliath-20261112",
+      "stage": "cai-plan",
       "title": "9장 무렵 · 명성7·지원3 뒤 골라이어스 영입(지원 대화)",
       "people": [
         "골라이어스"
       ],
       "actions": [
         {
-          "id": "recruit-all-kai-goliath-20261112--cond",
+          "id": "recruit-all-cai-goliath-20261112--cond",
           "category": "조건 확인",
           "text": "카이와 지원3·명성7을 확인한다. 지원은 공유 수치라 앞 루트에서 올린 만큼 이어진다.",
           "inheritLegacy": false
         },
         {
-          "id": "recruit-all-kai-goliath-20261112--need1",
+          "id": "recruit-all-cai-goliath-20261112--need1",
           "category": "영입 준비",
           "text": "영입 전에 준비한다: 거대 고기 3개.",
           "inheritLegacy": false
         },
         {
-          "id": "recruit-all-kai-goliath-20261112--scout",
+          "id": "recruit-all-cai-goliath-20261112--scout",
           "category": "스카우트",
           "text": "골라이어스에게 말을 걸어 스카우트를 고르고 요구를 전달한다.",
           "inheritLegacy": false
         },
         {
-          "id": "recruit-all-kai-goliath-20261112--join",
+          "id": "recruit-all-cai-goliath-20261112--join",
           "category": "합류 확인",
           "text": "동료 목록에서 합류를 확인한다. 이미 영입했으면 반복하지 않는다.",
           "inheritLegacy": false
@@ -21978,13 +21978,13 @@
           "label": "전원 영입 검토"
         }
       ],
-      "route": "kai",
+      "route": "cai",
       "earliestChapter": 9,
       "requiredRenown": 7
     },
     {
-      "id": "sequential-dungeon-kai-10-20261108",
-      "stage": "kai-plan",
+      "id": "sequential-dungeon-cai-10-20261108",
+      "stage": "cai-plan",
       "title": "10장 · 시험 직전 부족한 기능만 던전에서 보충",
       "people": [],
       "notes": [
@@ -22000,65 +22000,65 @@
       "figures": [],
       "actions": [
         {
-          "id": "sequential-dungeon-kai-10-20261108--exam-check-20261112",
+          "id": "sequential-dungeon-cai-10-20261108--exam-check-20261112",
           "category": "시험 조건",
           "text": "목표 병과의 시험 화면을 확인한다. 해당 인물이 시험 권장 레벨에 가까우면서 필수 기능 등급이 부족할 때만 던전 반복을 준비한다.",
           "inheritLegacy": false
         },
         {
-          "id": "sequential-dungeon-kai-10-20261108--exam-dungeon-20261112",
+          "id": "sequential-dungeon-cai-10-20261108--exam-dungeon-20261112",
           "category": "조건부 던전",
           "text": "조건을 충족한 인물만 던전에서 쓸 수 있는 부족한 기능을 올린다. 필요한 등급에 닿으면 귀환해 시험을 확인한다.",
           "inheritLegacy": false
         }
       ],
-      "route": "kai"
+      "route": "cai"
     },
     {
-      "id": "kai-route-10",
-      "stage": "kai-plan",
+      "id": "cai-route-10",
+      "stage": "cai-plan",
       "title": "10장 · 이동과 육성",
       "people": [],
       "actions": [
         {
-          "id": "kai-route-10--deployment-budget",
+          "id": "cai-route-10--deployment-budget",
           "category": "편성·투자",
           "text": "실제 출격 칸을 현재 합류 동료로 편성 · 교대 인물의 추가 성장 중단 · 단 최종25명은Lv20·중급·필수 기능 준비까지 유지",
           "inheritLegacy": false
         },
         {
-          "id": "kai-route-10--70a9e87011",
+          "id": "cai-route-10--70a9e87011",
           "category": "행동",
           "text": "자유행동이 열리기 전의 강제 이동·대화 목표를 먼저 처리한다. 자유행동이 열리면 날짜별 관전·행사·외전·선택 장면을 확인한 뒤 이 장의 메인 전투로 넘어간다.",
           "inheritLegacy": true
         },
         {
-          "id": "recruit-kai-io--reserve-gold",
+          "id": "recruit-cai-io--reserve-gold",
           "category": "영입금",
           "text": "명성10·카이와의 지원3을 확인하고 이오 교섭 직전800G를 남긴다. 이미 영입했다면 이 비용은 제외한다.",
           "inheritLegacy": false
         },
         {
-          "id": "kai-05--63b74e0bac",
+          "id": "cai-05--63b74e0bac",
           "category": "행동",
           "text": "명성10·카이와의 지원3을 채웠으면 이오에게 교섭한다. 늦어도12장 완료 전에는 영입을 끝낸다.",
           "inheritLegacy": true,
-          "legacyParent": "kai-05"
+          "legacyParent": "cai-05"
         },
         {
-          "id": "kai-route-10--7e6ce53b58",
+          "id": "cai-route-10--7e6ce53b58",
           "category": "미리 준비",
           "text": "조건을 충족한 이오에게800G를 지급해 영입하고 동료 목록의 합류를 확인한다.",
           "inheritLegacy": true
         },
         {
-          "id": "kai-route-10--a9934a8572",
+          "id": "cai-route-10--a9934a8572",
           "category": "미리 준비",
           "text": "이오의 보유 상급 자격과 첫 반입용 비기병 자격도 확인한다.",
           "inheritLegacy": true
         },
         {
-          "id": "kai-route-10--04a83c44d7",
+          "id": "cai-route-10--04a83c44d7",
           "category": "끝내기 전",
           "text": "앞 루트 외전 완료가 3부 조건에 인정되더라도 이 루트의 첫 대화를 보고 싶으면 기간 안에 선택한다.",
           "inheritLegacy": true
@@ -22091,13 +22091,13 @@
       "curated": true
     },
     {
-      "id": "xp-review-kai-10",
-      "stage": "kai-plan",
+      "id": "xp-review-cai-10",
+      "stage": "cai-plan",
       "title": "10장 · 권장Lv35 전후 경험치 설정",
       "people": [],
       "actions": [
         {
-          "id": "xp-review-kai-10--setting",
+          "id": "xp-review-cai-10--setting",
           "category": "레벨 도달 시",
           "text": "주력이 권장Lv35을 넘기기 전, 명성8·기능·해금이 모자라 이 시점의 목표 성장 병과로 전직하지 못했다면 보유한 인물 경험치 축복을 끈다(OFF). 전직 후에는 원래 쓰던 보너스(ON)를 복구하며, 이미 목표 병과인 주력은 ON 상태만 확인한다.",
           "inheritLegacy": false
@@ -22113,20 +22113,20 @@
       "showMap": false,
       "curated": true,
       "xpReview": {
-        "route": "kai",
+        "route": "cai",
         "chapter": 10,
         "recommendedLevel": 35,
         "renown": 8
       }
     },
     {
-      "id": "calendar-kai-ch10",
-      "stage": "kai-plan",
+      "id": "calendar-cai-ch10",
+      "stage": "cai-plan",
       "title": "10장 시작 · 관전·행사·선택 장면 달력 확인",
       "people": [],
       "actions": [
         {
-          "id": "calendar-kai-ch10--review",
+          "id": "calendar-cai-ch10--review",
           "category": "자유행동 시작 확인",
           "text": "자유행동이 열리면 이 루트 달력의 관전·공휴일·행사·생일·아직 안 본 선택 장면을 확인한다. 날짜별 귀환·참가 체크를 먼저 보고 원정 시간을 잡는다. 실제 달력과 자료의 날짜·시간이 다르면 현재 표시를 우선한다.",
           "inheritLegacy": false
@@ -22137,13 +22137,13 @@
       "curated": true
     },
     {
-      "id": "service-kai-ch10",
-      "stage": "kai-plan",
+      "id": "service-cai-ch10",
+      "stage": "cai-plan",
       "title": "10장 · 9/15~9/16 주간 봉사",
       "people": [],
       "actions": [
         {
-          "id": "service-kai-ch10-w00",
+          "id": "service-cai-ch10-w00",
           "category": "주간 봉사",
           "text": "자료상 9/15 주차: 첫 주의 미사용분에 이번 주1회만 봉사한다. 크레르1 → 칼라3 → 크레르3 → 주라3 → 마스3 → 스미르노스3 중 첫 미달 목표를 고른다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -22155,7 +22155,7 @@
           }
         },
         {
-          "id": "service-kai-ch10-w01",
+          "id": "service-cai-ch10-w01",
           "category": "주간 봉사",
           "text": "자료상 9/16 주차: 1번째 일요일 리셋 뒤에 이번 주1회만 봉사한다. 남은 마스3 → 스미르노스3이 기본 목표이며 앞 목표가 미달이면 그 신부터다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -22167,13 +22167,13 @@
           }
         },
         {
-          "id": "service-kai-ch10--readiness-arena-service-kai-ch10-w00",
+          "id": "service-cai-ch10--readiness-arena-service-cai-ch10-w00",
           "category": "주간 훈련",
           "text": "9/15 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
         },
         {
-          "id": "service-kai-ch10--readiness-arena-service-kai-ch10-w01",
+          "id": "service-cai-ch10--readiness-arena-service-cai-ch10-w01",
           "category": "주간 훈련",
           "text": "9/16 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
@@ -22187,22 +22187,22 @@
       ],
       "figures": [],
       "curated": true,
-      "trainingChapter": "kai:10"
+      "trainingChapter": "cai:10"
     },
     {
-      "id": "watch-kai-0916",
-      "stage": "kai-plan",
+      "id": "watch-cai-0916",
+      "stage": "cai-plan",
       "title": "10장 · 9/16 12:00 관전",
       "people": [],
       "actions": [
         {
-          "id": "watch-kai-0916--return",
+          "id": "watch-cai-0916--return",
           "category": "관전 전 귀환",
           "text": "9/16 12:00 전에 다그시온으로 돌아온다. 가능하면 전날 귀환하고 이미 제도에 있으면 관전까지 머문다. 다른 루트의 날짜를 그대로 쓰지 않는다.",
           "inheritLegacy": false
         },
         {
-          "id": "watch-kai-0916--watch",
+          "id": "watch-cai-0916--watch",
           "category": "관전 참가",
           "text": "9/16 당일 달력과 투기장 관전 접수의 시각·장소를 확인해 관전한다. 관련 기능은 흑마술·중갑. 시청 뒤 체크하고 직접 출전하는 메인 시합과 구분한다.",
           "inheritLegacy": false
@@ -22219,7 +22219,7 @@
       ],
       "curated": true,
       "schedule": {
-        "route": "kai",
+        "route": "cai",
         "chapter": 10,
         "month": 9,
         "day": 16,
@@ -22230,20 +22230,20 @@
       }
     },
     {
-      "id": "dated-kai-paralogues0917",
-      "stage": "kai-plan",
+      "id": "dated-cai-paralogues0917",
+      "stage": "cai-plan",
       "title": "10장 · 9/17 베르트랑·타리문 외전 접수",
       "people": [],
       "actions": [
         {
-          "id": "kai-route-10--cc08f56331",
+          "id": "cai-route-10--cc08f56331",
           "category": "이동 순서",
           "text": "필요한 외전을 9/17~9/25 등 수락창에 먼저 확인하고, 남은 명성·영입을 보고한다.",
           "inheritLegacy": true,
-          "legacyParent": "kai-route-10"
+          "legacyParent": "cai-route-10"
         },
         {
-          "id": "dated-kai-paralogues0917--accept",
+          "id": "dated-cai-paralogues0917--accept",
           "category": "외전 접수",
           "text": "9/17에 베르트랑·타리문 외전의 실제 수주 표시를 확인한다. 아직 필요한 외전은 접수하고 베르트랑9/25·타리문10/12의 완료 기한과 수락 기한을 따로 확인한다.",
           "inheritLegacy": false
@@ -22253,7 +22253,7 @@
       "notes": [],
       "curated": true,
       "schedule": {
-        "route": "kai",
+        "route": "cai",
         "chapter": 10,
         "month": 9,
         "day": 17,
@@ -22263,19 +22263,19 @@
       }
     },
     {
-      "id": "holiday-kai-0917",
-      "stage": "kai-plan",
+      "id": "holiday-cai-0917",
+      "stage": "cai-plan",
       "title": "10장 · 9/17 공휴일 확인",
       "people": [],
       "actions": [
         {
-          "id": "holiday-kai-0917--return",
+          "id": "holiday-cai-0917--return",
           "category": "행사일 귀환·위치 확인",
           "text": "9/17 달력에서 실제 참가할 수 있는 행사·알현·대화 표시와 장소를 먼저 확인한다. 제도 방문이 필요한 참가 표시가 있으면 정해진 시각 전에 귀환하고, 이미 제도에 있으면 추가 왕복하지 않는다. 공휴일 표시만 있고 참가할 내용이 없으면 귀환 불필요로 확인한다.",
           "inheritLegacy": false
         },
         {
-          "id": "holiday-kai-0917--check",
+          "id": "holiday-cai-0917--check",
           "category": "당일 행사 표시 확인",
           "text": "9/17에 실제 열린 행사·알현·대화가 있으면 참가 후 체크한다. 전용 행사가 없으면 달력의 공휴일 확인으로 마치며 존재하지 않는 퀘스트·보상·참가비를 만들어 기록하지 않는다.",
           "inheritLegacy": false
@@ -22292,7 +22292,7 @@
       ],
       "curated": true,
       "schedule": {
-        "route": "kai",
+        "route": "cai",
         "chapter": 10,
         "month": 9,
         "day": 17,
@@ -22302,13 +22302,13 @@
       }
     },
     {
-      "id": "service-kai-ch10-from-0923-2",
-      "stage": "kai-plan",
+      "id": "service-cai-ch10-from-0923-2",
+      "stage": "cai-plan",
       "title": "10장 · 9/23~9/23 주간 봉사",
       "people": [],
       "actions": [
         {
-          "id": "service-kai-ch10-w02",
+          "id": "service-cai-ch10-w02",
           "category": "주간 봉사",
           "text": "자료상 9/23 주차: 2번째 일요일 리셋 뒤에 이번 주1회만 봉사한다. 남은 마스3 → 스미르노스3이 기본 목표이며 앞 목표가 미달이면 그 신부터다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -22320,7 +22320,7 @@
           }
         },
         {
-          "id": "service-kai-ch10-from-0923-2--readiness-arena-service-kai-ch10-w02",
+          "id": "service-cai-ch10-from-0923-2--readiness-arena-service-cai-ch10-w02",
           "category": "주간 훈련",
           "text": "9/23 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
@@ -22334,16 +22334,16 @@
         }
       ],
       "curated": true,
-      "trainingChapter": "kai:10"
+      "trainingChapter": "cai:10"
     },
     {
-      "id": "dated-kai-anna0924",
-      "stage": "kai-plan",
+      "id": "dated-cai-anna0924",
+      "stage": "cai-plan",
       "title": "10장 · 9/24 안나 외전 접수·기한 확인",
       "people": [],
       "actions": [
         {
-          "id": "dated-kai-anna0924--accept",
+          "id": "dated-cai-anna0924--accept",
           "category": "외전 접수",
           "text": "9/24에 안나 외전 수주 표시와 현재 기록의 완료 인정을 확인한다. 미완료면 접수하고10/5 기한 전에 완료·귀환할 시간을 남긴다.",
           "inheritLegacy": false
@@ -22353,7 +22353,7 @@
       "notes": [],
       "curated": true,
       "schedule": {
-        "route": "kai",
+        "route": "cai",
         "chapter": 10,
         "month": 9,
         "day": 24,
@@ -22363,19 +22363,19 @@
       }
     },
     {
-      "id": "watch-kai-0927",
-      "stage": "kai-plan",
+      "id": "watch-cai-0927",
+      "stage": "cai-plan",
       "title": "10장 · 9/27 12:00 관전",
       "people": [],
       "actions": [
         {
-          "id": "watch-kai-0927--return",
+          "id": "watch-cai-0927--return",
           "category": "관전 전 귀환",
           "text": "9/27 12:00 전에 다그시온으로 돌아온다. 가능하면 전날 귀환하고 이미 제도에 있으면 관전까지 머문다. 다른 루트의 날짜를 그대로 쓰지 않는다.",
           "inheritLegacy": false
         },
         {
-          "id": "watch-kai-0927--watch",
+          "id": "watch-cai-0927--watch",
           "category": "관전 참가",
           "text": "9/27 당일 달력과 투기장 관전 접수의 시각·장소를 확인해 관전한다. 관련 기능은 도끼·백마술. 시청 뒤 체크하고 직접 출전하는 메인 시합과 구분한다.",
           "inheritLegacy": false
@@ -22392,7 +22392,7 @@
       ],
       "curated": true,
       "schedule": {
-        "route": "kai",
+        "route": "cai",
         "chapter": 10,
         "month": 9,
         "day": 27,
@@ -22403,13 +22403,13 @@
       }
     },
     {
-      "id": "service-kai-ch10-from-0930-3",
-      "stage": "kai-plan",
+      "id": "service-cai-ch10-from-0930-3",
+      "stage": "cai-plan",
       "title": "10장 · 9/30~9/30 주간 봉사",
       "people": [],
       "actions": [
         {
-          "id": "service-kai-ch10-w03",
+          "id": "service-cai-ch10-w03",
           "category": "주간 봉사",
           "text": "자료상 9/30 주차: 3번째 일요일 리셋 뒤에 이번 주1회만 봉사한다. 남은 마스3 → 스미르노스3이 기본 목표이며 앞 목표가 미달이면 그 신부터다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -22421,7 +22421,7 @@
           }
         },
         {
-          "id": "service-kai-ch10-from-0930-3--readiness-arena-service-kai-ch10-w03",
+          "id": "service-cai-ch10-from-0930-3--readiness-arena-service-cai-ch10-w03",
           "category": "주간 훈련",
           "text": "9/30 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
@@ -22435,22 +22435,22 @@
         }
       ],
       "curated": true,
-      "trainingChapter": "kai:10"
+      "trainingChapter": "cai:10"
     },
     {
-      "id": "watch-kai-1004",
-      "stage": "kai-plan",
+      "id": "watch-cai-1004",
+      "stage": "cai-plan",
       "title": "10장 · 10/4 접수 시각 확인 관전",
       "people": [],
       "actions": [
         {
-          "id": "watch-kai-1004--return",
+          "id": "watch-cai-1004--return",
           "category": "관전 전 귀환",
           "text": "10/4 관전 접수 시각 전에 다그시온으로 돌아온다. 가능하면 전날 귀환하고 이미 제도에 있으면 관전까지 머문다. 다른 루트의 날짜를 그대로 쓰지 않는다.",
           "inheritLegacy": false
         },
         {
-          "id": "watch-kai-1004--watch",
+          "id": "watch-cai-1004--watch",
           "category": "관전 참가",
           "text": "10/4 당일 달력과 투기장 관전 접수의 시각·장소를 확인해 관전한다. 관련 기능은 검·격투. 시청 뒤 체크하고 직접 출전하는 메인 시합과 구분한다.",
           "inheritLegacy": false
@@ -22467,7 +22467,7 @@
       ],
       "curated": true,
       "schedule": {
-        "route": "kai",
+        "route": "cai",
         "chapter": 10,
         "month": 10,
         "day": 4,
@@ -22478,13 +22478,13 @@
       }
     },
     {
-      "id": "service-kai-ch10-from-1007-4",
-      "stage": "kai-plan",
+      "id": "service-cai-ch10-from-1007-4",
+      "stage": "cai-plan",
       "title": "10장 · 10/7~10/14 주간 봉사",
       "people": [],
       "actions": [
         {
-          "id": "service-kai-ch10-w04",
+          "id": "service-cai-ch10-w04",
           "category": "주간 봉사",
           "text": "자료상 10/7 주차: 4번째 일요일 리셋 뒤에 이번 주1회만 봉사한다. 남은 마스3 → 스미르노스3이 기본 목표이며 앞 목표가 미달이면 그 신부터다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -22496,7 +22496,7 @@
           }
         },
         {
-          "id": "service-kai-ch10-w05",
+          "id": "service-cai-ch10-w05",
           "category": "주간 봉사",
           "text": "자료상 10/14 주차: 5번째 일요일 리셋 뒤에 이번 주1회만 봉사한다. 남은 마스3 → 스미르노스3이 기본 목표이며 앞 목표가 미달이면 그 신부터다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -22508,13 +22508,13 @@
           }
         },
         {
-          "id": "service-kai-ch10-from-1007-4--readiness-arena-service-kai-ch10-w04",
+          "id": "service-cai-ch10-from-1007-4--readiness-arena-service-cai-ch10-w04",
           "category": "주간 훈련",
           "text": "10/7 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
         },
         {
-          "id": "service-kai-ch10-from-1007-4--readiness-arena-service-kai-ch10-w05",
+          "id": "service-cai-ch10-from-1007-4--readiness-arena-service-cai-ch10-w05",
           "category": "주간 훈련",
           "text": "10/14 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
@@ -22528,36 +22528,36 @@
         }
       ],
       "curated": true,
-      "trainingChapter": "kai:10"
+      "trainingChapter": "cai:10"
     },
     {
-      "id": "recruit-all-kai-mu-20261112",
-      "stage": "kai-plan",
+      "id": "recruit-all-cai-mu-20261112",
+      "stage": "cai-plan",
       "title": "10장 무렵 · 명성9·지원3 뒤 무우 영입(지원 대화)",
       "people": [
         "무우"
       ],
       "actions": [
         {
-          "id": "recruit-all-kai-mu-20261112--cond",
+          "id": "recruit-all-cai-mu-20261112--cond",
           "category": "조건 확인",
           "text": "카이와 지원3·명성9을 확인한다. 지원은 공유 수치라 앞 루트에서 올린 만큼 이어진다.",
           "inheritLegacy": false
         },
         {
-          "id": "recruit-all-kai-mu-20261112--need1",
+          "id": "recruit-all-cai-mu-20261112--need1",
           "category": "영입 준비",
           "text": "영입 전에 준비한다: 글루마오사 3개.",
           "inheritLegacy": false
         },
         {
-          "id": "recruit-all-kai-mu-20261112--scout",
+          "id": "recruit-all-cai-mu-20261112--scout",
           "category": "스카우트",
           "text": "무우에게 말을 걸어 스카우트를 고르고 요구를 전달한다.",
           "inheritLegacy": false
         },
         {
-          "id": "recruit-all-kai-mu-20261112--join",
+          "id": "recruit-all-cai-mu-20261112--join",
           "category": "합류 확인",
           "text": "동료 목록에서 합류를 확인한다. 이미 영입했으면 반복하지 않는다.",
           "inheritLegacy": false
@@ -22589,13 +22589,13 @@
           "label": "전원 영입 검토"
         }
       ],
-      "route": "kai",
+      "route": "cai",
       "earliestChapter": 10,
       "requiredRenown": 9
     },
     {
-      "id": "sequential-dungeon-kai-11-20261108",
-      "stage": "kai-plan",
+      "id": "sequential-dungeon-cai-11-20261108",
+      "stage": "cai-plan",
       "title": "11장 · 시험 직전 부족한 기능만 던전에서 보충",
       "people": [],
       "notes": [
@@ -22611,46 +22611,46 @@
       "figures": [],
       "actions": [
         {
-          "id": "sequential-dungeon-kai-11-20261108--exam-check-20261112",
+          "id": "sequential-dungeon-cai-11-20261108--exam-check-20261112",
           "category": "시험 조건",
           "text": "목표 병과의 시험 화면을 확인한다. 해당 인물이 시험 권장 레벨에 가까우면서 필수 기능 등급이 부족할 때만 던전 반복을 준비한다.",
           "inheritLegacy": false
         },
         {
-          "id": "sequential-dungeon-kai-11-20261108--exam-dungeon-20261112",
+          "id": "sequential-dungeon-cai-11-20261108--exam-dungeon-20261112",
           "category": "조건부 던전",
           "text": "조건을 충족한 인물만 던전에서 쓸 수 있는 부족한 기능을 올린다. 필요한 등급에 닿으면 귀환해 시험을 확인한다.",
           "inheritLegacy": false
         }
       ],
-      "route": "kai"
+      "route": "cai"
     },
     {
-      "id": "kai-route-11",
-      "stage": "kai-plan",
+      "id": "cai-route-11",
+      "stage": "cai-plan",
       "title": "11장 · 이동과 육성",
       "people": [],
       "actions": [
         {
-          "id": "kai-route-11--deployment-budget",
+          "id": "cai-route-11--deployment-budget",
           "category": "편성·투자",
           "text": "실제 출격 칸을 현재 합류 동료로 편성 · 교대 인물의 추가 성장 중단 · 단 최종25명은Lv20·중급·필수 기능 준비까지 유지",
           "inheritLegacy": false
         },
         {
-          "id": "kai-route-11--70a9e87011",
+          "id": "cai-route-11--70a9e87011",
           "category": "행동",
           "text": "자유행동이 열리기 전의 강제 이동·대화 목표를 먼저 처리한다. 자유행동이 열리면 날짜별 관전·행사·외전·선택 장면을 확인한 뒤 이 장의 메인 전투로 넘어간다.",
           "inheritLegacy": true
         },
         {
-          "id": "kai-route-11--5db2e08b15",
+          "id": "cai-route-11--5db2e08b15",
           "category": "미리 준비",
           "text": "아직 없는 물품은 12장에 구할 수 있는지 상점 목록을 먼저 확인한다.",
           "inheritLegacy": true
         },
         {
-          "id": "kai-route-11--dccbf00e4f",
+          "id": "cai-route-11--dccbf00e4f",
           "category": "끝내기 전",
           "text": "긴 새 탐색·포획 원정 때문에 외전이나 다음 준비를 놓치지 않는다.",
           "inheritLegacy": true
@@ -22680,13 +22680,13 @@
       "curated": true
     },
     {
-      "id": "xp-review-kai-11",
-      "stage": "kai-plan",
+      "id": "xp-review-cai-11",
+      "stage": "cai-plan",
       "title": "11장 · 권장Lv35 전후 경험치 설정",
       "people": [],
       "actions": [
         {
-          "id": "xp-review-kai-11--setting",
+          "id": "xp-review-cai-11--setting",
           "category": "레벨 도달 시",
           "text": "주력이 권장Lv35을 넘기기 전, 명성8·기능·해금이 모자라 이 시점의 목표 성장 병과로 전직하지 못했다면 보유한 인물 경험치 축복을 끈다(OFF). 전직 후에는 원래 쓰던 보너스(ON)를 복구하며, 이미 목표 병과인 주력은 ON 상태만 확인한다.",
           "inheritLegacy": false
@@ -22702,20 +22702,20 @@
       "showMap": false,
       "curated": true,
       "xpReview": {
-        "route": "kai",
+        "route": "cai",
         "chapter": 11,
         "recommendedLevel": 35,
         "renown": 8
       }
     },
     {
-      "id": "calendar-kai-ch11",
-      "stage": "kai-plan",
+      "id": "calendar-cai-ch11",
+      "stage": "cai-plan",
       "title": "11장 시작 · 관전·행사·선택 장면 달력 확인",
       "people": [],
       "actions": [
         {
-          "id": "calendar-kai-ch11--review",
+          "id": "calendar-cai-ch11--review",
           "category": "자유행동 시작 확인",
           "text": "자유행동이 열리면 이 루트 달력의 관전·공휴일·행사·생일·아직 안 본 선택 장면을 확인한다. 날짜별 귀환·참가 체크를 먼저 보고 원정 시간을 잡는다. 실제 달력과 자료의 날짜·시간이 다르면 현재 표시를 우선한다.",
           "inheritLegacy": false
@@ -22726,21 +22726,21 @@
       "curated": true
     },
     {
-      "id": "team-kai-noctula-claw",
-      "stage": "kai-plan",
+      "id": "team-cai-noctula-claw",
+      "stage": "cai-plan",
       "title": "11~12장 · 녹투라의 지참품을 먼저 확인",
       "people": [
         "녹투라"
       ],
       "actions": [
         {
-          "id": "team-kai-noctula-claw--inspect",
+          "id": "team-cai-noctula-claw--inspect",
           "category": "지참품",
           "text": "녹투라를 영입하기 전에 실제 지참품에서 큰 곰의 오른 발톱을 확인한다. 고레벨 영입 시 지참한다는 공략이며 미확인 최소 레벨을 임의로 정하지 않는다. 이미 영입했으면 소지품·수송대부터 확인한다.",
           "inheritLegacy": false
         },
         {
-          "id": "team-kai-noctula-claw--store",
+          "id": "team-cai-noctula-claw--store",
           "category": "영입·보관",
           "text": "녹투라를1부 종료 전에 영입하고, 지참한 큰 곰의 오른 발톱이 있다면 수송대에 보관해 첫2부 물품 반입에 포함한다.2부 본대에는 넣되 네 번째 한혈마 포획은 기본 과제로 늘리지 않는다.",
           "inheritLegacy": false
@@ -22756,13 +22756,13 @@
       "curated": true
     },
     {
-      "id": "service-kai-ch11",
-      "stage": "kai-plan",
+      "id": "service-cai-ch11",
+      "stage": "cai-plan",
       "title": "11장 · 10/16~10/16 주간 봉사",
       "people": [],
       "actions": [
         {
-          "id": "service-kai-ch11-w00",
+          "id": "service-cai-ch11-w00",
           "category": "주간 봉사",
           "text": "자료상 10/16 주차: 첫 주의 미사용분에 이번 주1회만 봉사한다. 크레르1 → 칼라3 → 크레르3 → 주라3 → 마스3 → 스미르노스3 중 첫 미달 목표를 고른다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -22774,7 +22774,7 @@
           }
         },
         {
-          "id": "service-kai-ch11--readiness-arena-service-kai-ch11-w00",
+          "id": "service-cai-ch11--readiness-arena-service-cai-ch11-w00",
           "category": "주간 훈련",
           "text": "10/16 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
@@ -22788,22 +22788,22 @@
       ],
       "figures": [],
       "curated": true,
-      "trainingChapter": "kai:11"
+      "trainingChapter": "cai:11"
     },
     {
-      "id": "holiday-kai-1017",
-      "stage": "kai-plan",
+      "id": "holiday-cai-1017",
+      "stage": "cai-plan",
       "title": "11장 · 10/17 공휴일 확인",
       "people": [],
       "actions": [
         {
-          "id": "holiday-kai-1017--return",
+          "id": "holiday-cai-1017--return",
           "category": "행사일 귀환·위치 확인",
           "text": "10/17 달력에서 실제 참가할 수 있는 행사·알현·대화 표시와 장소를 먼저 확인한다. 제도 방문이 필요한 참가 표시가 있으면 정해진 시각 전에 귀환하고, 이미 제도에 있으면 추가 왕복하지 않는다. 공휴일 표시만 있고 참가할 내용이 없으면 귀환 불필요로 확인한다.",
           "inheritLegacy": false
         },
         {
-          "id": "holiday-kai-1017--check",
+          "id": "holiday-cai-1017--check",
           "category": "당일 행사 표시 확인",
           "text": "10/17에 실제 열린 행사·알현·대화가 있으면 참가 후 체크한다. 전용 행사가 없으면 달력의 공휴일 확인으로 마치며 존재하지 않는 퀘스트·보상·참가비를 만들어 기록하지 않는다.",
           "inheritLegacy": false
@@ -22820,7 +22820,7 @@
       ],
       "curated": true,
       "schedule": {
-        "route": "kai",
+        "route": "cai",
         "chapter": 11,
         "month": 10,
         "day": 17,
@@ -22830,30 +22830,30 @@
       }
     },
     {
-      "id": "dated-kai-orhell1018",
-      "stage": "kai-plan",
+      "id": "dated-cai-orhell1018",
+      "stage": "cai-plan",
       "title": "11장 · 10/18 오르헬 접수 →10/21까지 완료",
       "people": [],
       "actions": [
         {
-          "id": "dated-kai-orhell1018--return",
+          "id": "dated-cai-orhell1018--return",
           "category": "외전 전 귀환",
           "text": "10/18 오르헬 외전을 받을 수 있게 제도 귀환 시간을 남긴다. 실제 접수 위치·수락 시각을 확인하고10/21 완료 기한을 넘기는 원정을 하지 않는다.",
           "inheritLegacy": false
         },
         {
-          "id": "kai-route-11--2a2240f701",
+          "id": "cai-route-11--2a2240f701",
           "category": "이동 순서",
           "text": "10/18에 오르헬 외전을 수락하고10/21까지 끝낸다. 실제 수락창10/18~10/19과 완료 마감을 구분하고 마지막 날까지 미루지 않는다.",
           "inheritLegacy": true,
-          "legacyParent": "kai-route-11"
+          "legacyParent": "cai-route-11"
         }
       ],
       "figures": [],
       "notes": [],
       "curated": true,
       "schedule": {
-        "route": "kai",
+        "route": "cai",
         "chapter": 11,
         "month": 10,
         "day": 18,
@@ -22863,13 +22863,13 @@
       }
     },
     {
-      "id": "service-kai-ch11-from-1021-2",
-      "stage": "kai-plan",
+      "id": "service-cai-ch11-from-1021-2",
+      "stage": "cai-plan",
       "title": "11장 · 10/21~10/21 주간 봉사",
       "people": [],
       "actions": [
         {
-          "id": "service-kai-ch11-w01",
+          "id": "service-cai-ch11-w01",
           "category": "주간 봉사",
           "text": "자료상 10/21 주차: 1번째 일요일 리셋 뒤에 이번 주1회만 봉사한다. 남은 마스3 → 스미르노스3이 기본 목표이며 앞 목표가 미달이면 그 신부터다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -22881,7 +22881,7 @@
           }
         },
         {
-          "id": "service-kai-ch11-from-1021-2--readiness-arena-service-kai-ch11-w01",
+          "id": "service-cai-ch11-from-1021-2--readiness-arena-service-cai-ch11-w01",
           "category": "주간 훈련",
           "text": "10/21 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
@@ -22895,34 +22895,34 @@
         }
       ],
       "curated": true,
-      "trainingChapter": "kai:11"
+      "trainingChapter": "cai:11"
     },
     {
-      "id": "support-talks-kai-part1-20261112",
-      "stage": "kai-plan",
+      "id": "support-talks-cai-part1-20261112",
+      "stage": "cai-plan",
       "title": "1부 완료 전 · 같은 루트 1부 한정 지원 대화",
       "people": [],
       "actions": [
         {
-          "id": "support-talks-kai-part1-20261112--feast",
+          "id": "support-talks-cai-part1-20261112--feast",
           "category": "지원 올리기",
           "text": "아무 동료가 마법을1회 쓴 뒤, 마법이 회복되지 않는 고기로 식당 식사를 반복한다. 사용자 보고로는 출격 인원이 아니라 영입한 동료 전원의 지원이 오른다. 고기가 떨어지면 장을 다시 시작해 반복한다. 사용자 방법이며 우리가 확인하지 않았다.",
           "inheritLegacy": false
         },
         {
-          "id": "support-talks-kai-part1-20261112--inn",
+          "id": "support-talks-cai-part1-20261112--inn",
           "category": "여관 대화",
           "text": "여관에서 카이 루트의 1부 한정 대화를 모두 본다. 목록은 「루트별 지원 대화」 문서.",
           "inheritLegacy": false
         },
         {
-          "id": "support-talks-kai-part1-20261112--order",
+          "id": "support-talks-cai-part1-20261112--order",
           "category": "순서 잠금",
           "text": "티아라·피터르 B → 피터르·울턴드 B → 티아라·피터르 A 순서로 본다. 티아라·울턴드 B는 둘이 다투는 동안 막힌다.",
           "inheritLegacy": false
         },
         {
-          "id": "support-talks-kai-part1-20261112--mount",
+          "id": "support-talks-cai-part1-20261112--mount",
           "category": "주의",
           "text": "탈것 포획·먹이를 마친 뒤에는 장을 다시 시작하지 않는다. 식사 반복의 장 재시작은 그 전에만 한다.",
           "inheritLegacy": false
@@ -22941,11 +22941,11 @@
           "label": "전원 영입 검토"
         }
       ],
-      "route": "kai"
+      "route": "cai"
     },
     {
-      "id": "team-kai-recruit-audit",
-      "stage": "kai-plan",
+      "id": "team-cai-recruit-audit",
+      "stage": "cai-plan",
       "title": "1부 종료 전 · 2부 육성·3부 확보 명단",
       "people": [
         "카이",
@@ -22964,13 +22964,13 @@
       ],
       "actions": [
         {
-          "id": "team-kai-recruit-audit--1",
+          "id": "team-cai-recruit-audit--1",
           "text": "리네를 포함한2부 계획12명 실제 합류 확인 · 최종25명·2부 예약의Lv20·중급·필수 기능 확인",
           "category": "준비",
           "inheritLegacy": false
         },
         {
-          "id": "team-kai-recruit-audit--2",
+          "id": "team-cai-recruit-audit--2",
           "text": "2부에서 실제 출격할 인물만 지급 증서·기능 훈련 · 수집판은 전용 탈것·자료 보존만, 추가 성장 투자 생략",
           "category": "준비",
           "inheritLegacy": false
@@ -22981,8 +22981,8 @@
       "curated": true
     },
     {
-      "id": "kai-06",
-      "stage": "kai-plan",
+      "id": "cai-06",
+      "stage": "cai-plan",
       "title": "12장 · 동료·탈것·장비를 확인한 뒤1부 완료",
       "people": [
         "알렉산드라",
@@ -22990,23 +22990,23 @@
       ],
       "actions": [
         {
-          "id": "kai-06--deployment-budget",
+          "id": "cai-06--deployment-budget",
           "category": "편성·투자",
           "text": "실제 출격 칸을 현재 합류 동료로 편성 · 교대 인물의 추가 성장 중단 · 단 최종25명은Lv20·중급·필수 기능 준비까지 유지",
           "inheritLegacy": false
         },
         {
-          "id": "kai-06--92dfa7dfbd",
+          "id": "cai-06--92dfa7dfbd",
           "category": "끝내기 전",
           "text": "알렉산드라 상급 미합격과 이오의 같은 등급 비기병 조건을 확인한다.",
           "inheritLegacy": true
         },
         {
-          "id": "kai-06--6ee3dc6009",
+          "id": "cai-06--6ee3dc6009",
           "category": "행동",
           "text": "이오·알렉산드라 영입과 전용 탈것 보관, 모든 원하는 탈것·장비·검을 확인하고 12장을 마칩니다.",
           "inheritLegacy": true,
-          "legacyParent": "kai-06"
+          "legacyParent": "cai-06"
         }
       ],
       "figures": [
@@ -23037,13 +23037,13 @@
       "curated": true
     },
     {
-      "id": "calendar-kai-ch12",
-      "stage": "kai-plan",
+      "id": "calendar-cai-ch12",
+      "stage": "cai-plan",
       "title": "12장 시작 · 관전·행사·선택 장면 달력 확인",
       "people": [],
       "actions": [
         {
-          "id": "calendar-kai-ch12--review",
+          "id": "calendar-cai-ch12--review",
           "category": "자유행동 시작 확인",
           "text": "자유행동이 열리면 이 루트 달력의 관전·공휴일·행사·생일·아직 안 본 선택 장면을 확인한다. 날짜별 귀환·참가 체크를 먼저 보고 원정 시간을 잡는다. 실제 달력과 자료의 날짜·시간이 다르면 현재 표시를 우선한다.",
           "inheritLegacy": false
@@ -23054,33 +23054,33 @@
       "curated": true
     },
     {
-      "id": "recruit-all-kai-peppe-20261112",
-      "stage": "kai-plan",
+      "id": "recruit-all-cai-peppe-20261112",
+      "stage": "cai-plan",
       "title": "11장 무렵 · 명성9·지원1 뒤 페페 영입(지원 대화)",
       "people": [
         "페페"
       ],
       "actions": [
         {
-          "id": "recruit-all-kai-peppe-20261112--cond",
+          "id": "recruit-all-cai-peppe-20261112--cond",
           "category": "조건 확인",
           "text": "카이와 지원1·명성9을 확인한다. 지원은 공유 수치라 앞 루트에서 올린 만큼 이어진다.",
           "inheritLegacy": false
         },
         {
-          "id": "recruit-all-kai-peppe-20261112--need1",
+          "id": "recruit-all-cai-peppe-20261112--need1",
           "category": "영입 준비",
           "text": "영입 전에 준비한다: 베르트랑 외전(10장 9/17~9/25) 클리어.",
           "inheritLegacy": false
         },
         {
-          "id": "recruit-all-kai-peppe-20261112--scout",
+          "id": "recruit-all-cai-peppe-20261112--scout",
           "category": "스카우트",
           "text": "페페에게 말을 걸어 스카우트를 고르고 요구를 전달한다.",
           "inheritLegacy": false
         },
         {
-          "id": "recruit-all-kai-peppe-20261112--join",
+          "id": "recruit-all-cai-peppe-20261112--join",
           "category": "합류 확인",
           "text": "동료 목록에서 합류를 확인한다. 이미 영입했으면 반복하지 않는다.",
           "inheritLegacy": false
@@ -23104,13 +23104,13 @@
           "label": "전원 영입 검토"
         }
       ],
-      "route": "kai",
+      "route": "cai",
       "earliestChapter": 11,
       "requiredRenown": 9
     },
     {
-      "id": "sequential-dungeon-kai-12-20261108",
-      "stage": "kai-plan",
+      "id": "sequential-dungeon-cai-12-20261108",
+      "stage": "cai-plan",
       "title": "12장 · 시험 직전 부족한 기능만 던전에서 보충",
       "people": [],
       "notes": [
@@ -23126,28 +23126,28 @@
       "figures": [],
       "actions": [
         {
-          "id": "sequential-dungeon-kai-12-20261108--exam-check-20261112",
+          "id": "sequential-dungeon-cai-12-20261108--exam-check-20261112",
           "category": "시험 조건",
           "text": "목표 병과의 시험 화면을 확인한다. 해당 인물이 시험 권장 레벨에 가까우면서 필수 기능 등급이 부족할 때만 던전 반복을 준비한다.",
           "inheritLegacy": false
         },
         {
-          "id": "sequential-dungeon-kai-12-20261108--exam-dungeon-20261112",
+          "id": "sequential-dungeon-cai-12-20261108--exam-dungeon-20261112",
           "category": "조건부 던전",
           "text": "조건을 충족한 인물만 던전에서 쓸 수 있는 부족한 기능을 올린다. 필요한 등급에 닿으면 귀환해 시험을 확인한다.",
           "inheritLegacy": false
         }
       ],
-      "route": "kai"
+      "route": "cai"
     },
     {
-      "id": "xp-review-kai-12",
-      "stage": "kai-plan",
+      "id": "xp-review-cai-12",
+      "stage": "cai-plan",
       "title": "12장 · 권장Lv35 전후 경험치 설정",
       "people": [],
       "actions": [
         {
-          "id": "xp-review-kai-12--setting",
+          "id": "xp-review-cai-12--setting",
           "category": "레벨 도달 시",
           "text": "주력이 권장Lv35을 넘기기 전, 명성8·기능·해금이 모자라 이 시점의 목표 성장 병과로 전직하지 못했다면 보유한 인물 경험치 축복을 끈다(OFF). 전직 후에는 원래 쓰던 보너스(ON)를 복구하며, 이미 목표 병과인 주력은 ON 상태만 확인한다.",
           "inheritLegacy": false
@@ -23163,26 +23163,26 @@
       "showMap": false,
       "curated": true,
       "xpReview": {
-        "route": "kai",
+        "route": "cai",
         "chapter": 12,
         "recommendedLevel": 35,
         "renown": 8
       }
     },
     {
-      "id": "watch-kai-1104",
-      "stage": "kai-plan",
+      "id": "watch-cai-1104",
+      "stage": "cai-plan",
       "title": "12장 · 11/4 접수 시각 확인 관전",
       "people": [],
       "actions": [
         {
-          "id": "watch-kai-1104--return",
+          "id": "watch-cai-1104--return",
           "category": "관전 전 귀환",
           "text": "11/4 관전 접수 시각 전에 다그시온으로 돌아온다. 가능하면 전날 귀환하고 이미 제도에 있으면 관전까지 머문다. 다른 루트의 날짜를 그대로 쓰지 않는다.",
           "inheritLegacy": false
         },
         {
-          "id": "watch-kai-1104--watch",
+          "id": "watch-cai-1104--watch",
           "category": "관전 참가",
           "text": "11/4 당일 달력과 투기장 관전 접수의 시각·장소를 확인해 관전한다. 관련 기능은 당일 관전창 확인. 시청 뒤 체크하고 직접 출전하는 메인 시합과 구분한다.",
           "inheritLegacy": false
@@ -23199,7 +23199,7 @@
       ],
       "curated": true,
       "schedule": {
-        "route": "kai",
+        "route": "cai",
         "chapter": 12,
         "month": 11,
         "day": 4,
@@ -23210,13 +23210,13 @@
       }
     },
     {
-      "id": "service-kai-ch12",
-      "stage": "kai-plan",
+      "id": "service-cai-ch12",
+      "stage": "cai-plan",
       "title": "12장 · 11/4~11/11 주간 봉사",
       "people": [],
       "actions": [
         {
-          "id": "service-kai-ch12-w00",
+          "id": "service-cai-ch12-w00",
           "category": "주간 봉사",
           "text": "자료상 11/4 주차: 첫 주의 미사용분에 이번 주1회만 봉사한다. 크레르1 → 칼라3 → 크레르3 → 주라3 → 마스3 → 스미르노스3 중 첫 미달 목표를 고른다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -23228,7 +23228,7 @@
           }
         },
         {
-          "id": "service-kai-ch12-w01",
+          "id": "service-cai-ch12-w01",
           "category": "주간 봉사",
           "text": "자료상 11/11 주차: 1번째 일요일 리셋 뒤에 이번 주1회만 봉사한다. 남은 마스3 → 스미르노스3이 기본 목표이며 앞 목표가 미달이면 그 신부터다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -23240,13 +23240,13 @@
           }
         },
         {
-          "id": "service-kai-ch12--readiness-arena-service-kai-ch12-w00",
+          "id": "service-cai-ch12--readiness-arena-service-cai-ch12-w00",
           "category": "주간 훈련",
           "text": "11/4 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
         },
         {
-          "id": "service-kai-ch12--readiness-arena-service-kai-ch12-w01",
+          "id": "service-cai-ch12--readiness-arena-service-cai-ch12-w01",
           "category": "주간 훈련",
           "text": "11/11 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
@@ -23260,22 +23260,22 @@
       ],
       "figures": [],
       "curated": true,
-      "trainingChapter": "kai:12"
+      "trainingChapter": "cai:12"
     },
     {
-      "id": "holiday-kai-1117",
-      "stage": "kai-plan",
+      "id": "holiday-cai-1117",
+      "stage": "cai-plan",
       "title": "12장 · 11/17 공휴일 확인",
       "people": [],
       "actions": [
         {
-          "id": "holiday-kai-1117--return",
+          "id": "holiday-cai-1117--return",
           "category": "행사일 귀환·위치 확인",
           "text": "11/17 달력에서 실제 참가할 수 있는 행사·알현·대화 표시와 장소를 먼저 확인한다. 제도 방문이 필요한 참가 표시가 있으면 정해진 시각 전에 귀환하고, 이미 제도에 있으면 추가 왕복하지 않는다. 공휴일 표시만 있고 참가할 내용이 없으면 귀환 불필요로 확인한다.",
           "inheritLegacy": false
         },
         {
-          "id": "holiday-kai-1117--check",
+          "id": "holiday-cai-1117--check",
           "category": "당일 행사 표시 확인",
           "text": "11/17에 실제 열린 행사·알현·대화가 있으면 참가 후 체크한다. 전용 행사가 없으면 달력의 공휴일 확인으로 마치며 존재하지 않는 퀘스트·보상·참가비를 만들어 기록하지 않는다.",
           "inheritLegacy": false
@@ -23292,7 +23292,7 @@
       ],
       "curated": true,
       "schedule": {
-        "route": "kai",
+        "route": "cai",
         "chapter": 12,
         "month": 11,
         "day": 17,
@@ -23302,13 +23302,13 @@
       }
     },
     {
-      "id": "service-kai-ch12-from-1118-2",
-      "stage": "kai-plan",
+      "id": "service-cai-ch12-from-1118-2",
+      "stage": "cai-plan",
       "title": "12장 · 11/18~11/25 주간 봉사",
       "people": [],
       "actions": [
         {
-          "id": "service-kai-ch12-w02",
+          "id": "service-cai-ch12-w02",
           "category": "주간 봉사",
           "text": "자료상 11/18 주차: 2번째 일요일 리셋 뒤에 이번 주1회만 봉사한다. 남은 마스3 → 스미르노스3이 기본 목표이며 앞 목표가 미달이면 그 신부터다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -23320,7 +23320,7 @@
           }
         },
         {
-          "id": "service-kai-ch12-w03",
+          "id": "service-cai-ch12-w03",
           "category": "주간 봉사",
           "text": "자료상 11/25 주차: 3번째 일요일 리셋 뒤에 이번 주1회만 봉사한다. 남은 마스3 → 스미르노스3이 기본 목표이며 앞 목표가 미달이면 그 신부터다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 현재 게임의 해당 주차·미사용 여부를 우선한다.",
           "inheritLegacy": false,
@@ -23332,13 +23332,13 @@
           }
         },
         {
-          "id": "service-kai-ch12-from-1118-2--readiness-arena-service-kai-ch12-w02",
+          "id": "service-cai-ch12-from-1118-2--readiness-arena-service-cai-ch12-w02",
           "category": "주간 훈련",
           "text": "11/18 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
         },
         {
-          "id": "service-kai-ch12-from-1118-2--readiness-arena-service-kai-ch12-w03",
+          "id": "service-cai-ch12-from-1118-2--readiness-arena-service-cai-ch12-w03",
           "category": "주간 훈련",
           "text": "11/25 주간 갱신 뒤 · 아래5종 중 이번 주 메뉴에 열린 훈련에서 목표 미달인 종류만 선택 · 현재 영입·의욕·기능 등급 확인 후 실행 · 이미 목표 이상인 종류는 생략",
           "inheritLegacy": false
@@ -23352,16 +23352,16 @@
         }
       ],
       "curated": true,
-      "trainingChapter": "kai:12"
+      "trainingChapter": "cai:12"
     },
     {
-      "id": "service-kai-ch12-calendar-extra",
-      "stage": "kai-plan",
+      "id": "service-cai-ch12-calendar-extra",
+      "stage": "cai-plan",
       "title": "12장 · 실제 추가 주차가 있을 때만 봉사",
       "people": [],
       "actions": [
         {
-          "id": "service-kai-ch12-w04",
+          "id": "service-cai-ch12-w04",
           "category": "주간 봉사",
           "text": "실제 달력의 추가 주차가 있을 때만: 4번째 일요일 리셋 뒤에 이번 주1회만 봉사한다. 남은 마스3 → 스미르노스3이 기본 목표이며 앞 목표가 미달이면 그 신부터다. 이미 이번 주 봉사했거나 이야기 진행으로 해당 리셋까지 가지 않았으면 이 줄은 생략한다. 모두3이면 추가 봉사를 하지 않는다. 해당 주차가 없으면 넘김으로 확인하고 실제 봉사 횟수에 더하지 않는다.",
           "inheritLegacy": false
@@ -23375,11 +23375,11 @@
         }
       ],
       "curated": true,
-      "trainingChapter": "kai:12"
+      "trainingChapter": "cai:12"
     },
     {
-      "id": "mount-prep-kai",
-      "stage": "kai-plan",
+      "id": "mount-prep-cai",
+      "stage": "cai-plan",
       "title": "12장 · 영입 완료 뒤 첫 반입 병종 준비",
       "people": [
         "이오",
@@ -23387,19 +23387,19 @@
       ],
       "actions": [
         {
-          "id": "mount-prep-kai--joined",
+          "id": "mount-prep-cai--joined",
           "category": "동료 확인",
           "text": "동료 목록에서 이오·알렉산드라의 실제 합류를 확인한다. 미영입이면 이번 루트의 조건·기한 안에 먼저 영입한다.",
           "inheritLegacy": false
         },
         {
-          "id": "mount-prep-kai--io-class",
+          "id": "mount-prep-cai--io-class",
           "category": "이오 자격",
           "text": "이오의 최고 합격 등급을 확인한다. 상급 자격이 있으면 같은 상급의 비기병 자격을100% 시험으로 준비한다. 중급까지만 있으면 비탑승 중급 자격을 사용한다. 이미 가진 자격은 다시 시험 보지 않는다.",
           "inheritLegacy": false
         },
         {
-          "id": "mount-prep-kai--alex-class",
+          "id": "mount-prep-cai--alex-class",
           "category": "알렉산드라 자격",
           "text": "알렉산드라는 상급 미합격을 유지한다. 보관용 비탑승 중급 자격이 없을 때만 중급 증서1장(기본500G)으로100% 시험을 본다. 마스터는 필요 없다.",
           "inheritLegacy": false
@@ -23411,16 +23411,16 @@
       "curated": true
     },
     {
-      "id": "ready-kai-peter-skills",
-      "stage": "kai-plan",
-      "route": "kai",
+      "id": "ready-cai-peter-skills",
+      "stage": "cai-plan",
+      "route": "cai",
       "title": "12장 주 전투 전 · 피터르 상급 기능 준비",
       "people": [
         "피터르"
       ],
       "actions": [
         {
-          "id": "ready-kai-peter--readiness-skills",
+          "id": "ready-cai-peter--readiness-skills",
           "category": "준비",
           "text": "피터르의 궁술 C → B · 기마술 D를1부12장 주 전투 전까지 준비 · 출격하지 않는 예약 인물도 투기장·여관 훈련 유지",
           "inheritLegacy": false
@@ -23431,16 +23431,16 @@
       "curated": true
     },
     {
-      "id": "ready-kai-tialla-skills",
-      "stage": "kai-plan",
-      "route": "kai",
+      "id": "ready-cai-tialla-skills",
+      "stage": "cai-plan",
+      "route": "cai",
       "title": "12장 주 전투 전 · 티아라 상급 기능 준비",
       "people": [
         "티아라"
       ],
       "actions": [
         {
-          "id": "ready-kai-tialla--readiness-skills",
+          "id": "ready-cai-tialla--readiness-skills",
           "category": "준비",
           "text": "티아라의 백마술 B를1부12장 주 전투 전까지 준비 · 출격하지 않는 예약 인물도 투기장·여관 훈련 유지",
           "inheritLegacy": false
@@ -23451,16 +23451,16 @@
       "curated": true
     },
     {
-      "id": "ready-kai-cai-skills",
-      "stage": "kai-plan",
-      "route": "kai",
+      "id": "ready-cai-cai-skills",
+      "stage": "cai-plan",
+      "route": "cai",
       "title": "12장 주 전투 전 · 카이 상급 기능 준비",
       "people": [
         "카이"
       ],
       "actions": [
         {
-          "id": "ready-kai-cai--readiness-skills",
+          "id": "ready-cai-cai--readiness-skills",
           "category": "준비",
           "text": "카이의 창술 B · 기마술 C를1부12장 주 전투 전까지 준비 · 출격하지 않는 예약 인물도 투기장·여관 훈련 유지",
           "inheritLegacy": false
@@ -23471,16 +23471,16 @@
       "curated": true
     },
     {
-      "id": "ready-kai-guzran-skills",
-      "stage": "kai-plan",
-      "route": "kai",
+      "id": "ready-cai-guzran-skills",
+      "stage": "cai-plan",
+      "route": "cai",
       "title": "12장 주 전투 전 · 그자람 상급 기능 준비",
       "people": [
         "그자람"
       ],
       "actions": [
         {
-          "id": "ready-kai-guzran--readiness-skills",
+          "id": "ready-cai-guzran--readiness-skills",
           "category": "준비",
           "text": "그자람의 궁술 C → B · 기마술 D를1부12장 주 전투 전까지 준비 · 출격하지 않는 예약 인물도 투기장·여관 훈련 유지",
           "inheritLegacy": false
@@ -23491,16 +23491,16 @@
       "curated": true
     },
     {
-      "id": "ready-kai-mikaela-skills",
-      "stage": "kai-plan",
-      "route": "kai",
+      "id": "ready-cai-mikaela-skills",
+      "stage": "cai-plan",
+      "route": "cai",
       "title": "12장 주 전투 전 · 미카엘라 상급 기능 준비",
       "people": [
         "미카엘라"
       ],
       "actions": [
         {
-          "id": "ready-kai-mikaela--readiness-skills",
+          "id": "ready-cai-mikaela--readiness-skills",
           "category": "준비",
           "text": "미카엘라 궁술 C→B·기마술 D를1부12장 주 전투 전 준비 · 상급 자격을 취득해도 물리 성장은 전차병·친밀도5 탈것을 유지 가능",
           "inheritLegacy": false
@@ -23511,16 +23511,16 @@
       "curated": true
     },
     {
-      "id": "ready-kai-ultand-skills",
-      "stage": "kai-plan",
-      "route": "kai",
+      "id": "ready-cai-ultand-skills",
+      "stage": "cai-plan",
+      "route": "cai",
       "title": "12장 주 전투 전 · 울턴드 상급 기능 준비",
       "people": [
         "울턴드"
       ],
       "actions": [
         {
-          "id": "ready-kai-ultand--readiness-skills",
+          "id": "ready-cai-ultand--readiness-skills",
           "category": "준비",
           "text": "울턴드의 백마술 B를1부12장 주 전투 전까지 준비 · 출격하지 않는 예약 인물도 투기장·여관 훈련 유지",
           "inheritLegacy": false
@@ -23531,16 +23531,16 @@
       "curated": true
     },
     {
-      "id": "ready-kai-loretta-skills",
-      "stage": "kai-plan",
-      "route": "kai",
+      "id": "ready-cai-loretta-skills",
+      "stage": "cai-plan",
+      "route": "cai",
       "title": "12장 주 전투 전 · 로레타 상급 기능 준비",
       "people": [
         "로레타"
       ],
       "actions": [
         {
-          "id": "ready-kai-loretta--readiness-skills",
+          "id": "ready-cai-loretta--readiness-skills",
           "category": "준비",
           "text": "로레타의 궁술 A · 기마술 D를1부12장 주 전투 전까지 준비 · 출격하지 않는 예약 인물도 투기장·여관 훈련 유지",
           "inheritLegacy": false
@@ -23551,10 +23551,10 @@
       "curated": true
     },
     {
-      "id": "ready-kai-noctula-skills",
+      "id": "ready-cai-noctula-skills",
       "title": "12장 주 전투 전 · 녹투라 준비",
-      "stage": "kai-plan",
-      "route": "kai",
+      "stage": "cai-plan",
+      "route": "cai",
       "people": [
         "녹투라"
       ],
@@ -23563,7 +23563,7 @@
       "curated": true,
       "actions": [
         {
-          "id": "ready-kai-noctula--readiness-skills",
+          "id": "ready-cai-noctula--readiness-skills",
           "category": "준비 확인",
           "text": "녹투라의 도끼술 B를1부12장 주 전투 전까지 준비 · 출격하지 않는 예약 인물도 투기장·여관 훈련 유지",
           "inheritLegacy": false
@@ -23571,10 +23571,10 @@
       ]
     },
     {
-      "id": "ready-kai-seteth-skills",
+      "id": "ready-cai-seteth-skills",
       "title": "12장 주 전투 전 · 세테스 준비",
-      "stage": "kai-plan",
-      "route": "kai",
+      "stage": "cai-plan",
+      "route": "cai",
       "people": [
         "세테스"
       ],
@@ -23583,7 +23583,7 @@
       "curated": true,
       "actions": [
         {
-          "id": "ready-kai-seteth--readiness-skills",
+          "id": "ready-cai-seteth--readiness-skills",
           "category": "준비 확인",
           "text": "세테스의 창술 B · 기마술 C를1부12장 주 전투 전까지 준비 · 출격하지 않는 예약 인물도 투기장·여관 훈련 유지",
           "inheritLegacy": false
@@ -23591,10 +23591,10 @@
       ]
     },
     {
-      "id": "ready-kai-nuzzuo-skills",
+      "id": "ready-cai-nuzzuo-skills",
       "title": "12장 주 전투 전 · 누조 준비",
-      "stage": "kai-plan",
-      "route": "kai",
+      "stage": "cai-plan",
+      "route": "cai",
       "people": [
         "누조"
       ],
@@ -23603,7 +23603,7 @@
       "curated": true,
       "actions": [
         {
-          "id": "ready-kai-nuzzuo--readiness-skills",
+          "id": "ready-cai-nuzzuo--readiness-skills",
           "category": "준비 확인",
           "text": "누조의 궁술 B를1부12장 주 전투 전까지 준비 · 출격하지 않는 예약 인물도 투기장·여관 훈련 유지",
           "inheritLegacy": false
@@ -23611,16 +23611,16 @@
       ]
     },
     {
-      "id": "ready-kai-ninae-skills",
-      "stage": "kai-plan",
-      "route": "kai",
+      "id": "ready-cai-ninae-skills",
+      "stage": "cai-plan",
+      "route": "cai",
       "title": "12장 · 리네 리브로 준비",
       "people": [
         "리네"
       ],
       "actions": [
         {
-          "id": "ready-kai-ninae-skills--readiness-skills",
+          "id": "ready-cai-ninae-skills--readiness-skills",
           "category": "회복 준비",
           "text": "백마술 B·리브로와 백마법 사용 자격 확인 · 2부1장부터 두 번째 원격 힐러로 편성",
           "inheritLegacy": false
@@ -23631,27 +23631,27 @@
       "curated": true
     },
     {
-      "id": "reward-kai-part1",
-      "stage": "kai-plan",
+      "id": "reward-cai-part1",
+      "stage": "cai-plan",
       "title": "1부 완료 뒤 · 첫 보상과3부 예비",
       "people": [],
       "actions": [
         {
-          "id": "kai-06--c978ced42e",
+          "id": "cai-06--c978ced42e",
           "category": "행동",
           "text": "카이1부를 완료한 뒤 위업록의 첫 완료5,000파편을 미수령일 때만 받는다. 실제 잔액이 늘어난 것을 확인한다.",
           "inheritLegacy": true,
-          "legacyParent": "kai-06"
+          "legacyParent": "cai-06"
         },
         {
-          "id": "kai-06--821398e71d",
+          "id": "cai-06--821398e71d",
           "category": "미리 준비",
           "text": "카이 첫 보상을 실제 받은 뒤 3부 융합용 5,100파편을 따로 남긴다. 미수령 보상은 잔액에 더하지 않는다.",
           "inheritLegacy": true,
-          "legacyParent": "kai-06"
+          "legacyParent": "cai-06"
         },
         {
-          "id": "reward-kai-part1--start-theodora-war",
+          "id": "reward-cai-part1--start-theodora-war",
           "category": "다음 단계",
           "text": "세오도라·레다·새 디트리히·카이의 1부 완료 자료를 확인한 뒤 세오도라 2부 1장으로 간다.",
           "inheritLegacy": false
@@ -25221,7 +25221,7 @@
           "inheritLegacy": false
         },
         {
-          "id": "sequential-dietrich-war-reward-20261108--start-kai-war",
+          "id": "sequential-dietrich-war-reward-20261108--start-cai-war",
           "category": "다음 단계",
           "text": "새 디트리히 2부 직접 완료와 장착 자료를 확인하고 카이 2부 1장으로 간다.",
           "inheritLegacy": false
@@ -25230,8 +25230,8 @@
       "route": "dietrich"
     },
     {
-      "id": "kai-part2-first-transfer",
-      "stage": "kai-war-plan",
+      "id": "cai-part2-first-transfer",
+      "stage": "cai-war-plan",
       "title": "카이2부 시작 · 첫 보관 반입",
       "people": [
         "이오",
@@ -25239,72 +25239,72 @@
       ],
       "actions": [
         {
-          "id": "kai-06--c3b17b4c1a",
+          "id": "cai-06--c3b17b4c1a",
           "category": "행동",
           "text": "카이 2부 1장 준비 화면으로 들어간다.",
           "inheritLegacy": false
         },
         {
-          "id": "kai-06--c3b17b4c1a-s2",
+          "id": "cai-06--c3b17b4c1a-s2",
           "category": "행동",
           "text": "전원의 탈것을 해제한다.",
           "inheritLegacy": false
         },
         {
-          "id": "kai-06--c3b17b4c1a-s3",
+          "id": "cai-06--c3b17b4c1a-s3",
           "category": "행동",
           "text": "마구간에 보관된 탈것을 확인한다.",
           "inheritLegacy": false
         },
         {
-          "id": "kai-part2-first-transfer--inventory",
+          "id": "cai-part2-first-transfer--inventory",
           "category": "첫 반입 직전",
           "text": "카이 전용 무기·선더 소드·회복 도구와 수송대를 확인한다. 이 첫 스킵이 일반 물품 반입 묶음을 정하는 시점이다.",
           "inheritLegacy": false
         },
         {
-          "id": "kai-06--c3b17b4c1a-s4",
+          "id": "cai-06--c3b17b4c1a-s4",
           "category": "행동",
           "text": "카이 2부를 처음 스킵해 보관 물품을 반입한다.",
           "inheritLegacy": false
         },
         {
-          "id": "kai-06--6d3dd9bd44",
+          "id": "cai-06--6d3dd9bd44",
           "category": "끝내기 전",
           "text": "첫 물품 묶음과 나중 탑승 자료는 다른 기록이다.",
           "inheritLegacy": true,
-          "legacyParent": "kai-06"
+          "legacyParent": "cai-06"
         }
       ],
       "notes": [],
       "figures": [],
       "showMap": false,
       "curated": true,
-      "route": "kai"
+      "route": "cai"
     },
     {
-      "id": "kai-part2-restart",
-      "stage": "kai-war-plan",
+      "id": "cai-part2-restart",
+      "stage": "cai-war-plan",
       "title": "첫 반입 뒤 · 카이2부를 다시 시작",
       "people": [],
       "actions": [
         {
-          "id": "kai-06--faa3ba2f05",
+          "id": "cai-06--faa3ba2f05",
           "category": "행동",
           "text": "다시2부1장부터 시작해 원래 기병·천익병·탈것을 장착한다. 다음 카이2부 실제 주력·준비된 예약자 육성 절차로 이어 간다.",
           "inheritLegacy": true,
-          "legacyParent": "kai-06"
+          "legacyParent": "cai-06"
         }
       ],
       "notes": [],
       "figures": [],
       "showMap": false,
       "curated": true,
-      "route": "kai"
+      "route": "cai"
     },
     {
-      "id": "team-kai-war",
-      "stage": "kai-war-plan",
+      "id": "team-cai-war",
+      "stage": "cai-war-plan",
       "title": "카이2부 · 물리 성장과 티아라 춤 준비",
       "people": [
         "카이",
@@ -25322,25 +25322,25 @@
       ],
       "actions": [
         {
-          "id": "team-kai-war--1",
+          "id": "team-cai-war--1",
           "text": "1부 실전 주력이 승리 담당 · 준비된 예약자1~2명씩 안전한 역할로 추가 · 빈칸을 채우려고 전원 같은 레벨/상급을 강제하지 않음 · 2부1~4장 실제 미달에 맞춰 군행동·시험",
           "category": "준비",
           "inheritLegacy": false
         },
         {
-          "id": "team-kai-war--2",
+          "id": "team-cai-war--2",
           "text": "티아라는 비숍으로 회복하면서 궁술 B를 준비한다. 무희 전환은3부 자격 이전 뒤이며 현재 리브로를 먼저 잃지 않는다.",
           "category": "준비",
           "inheritLegacy": false
         },
         {
-          "id": "team-kai-war--3",
+          "id": "team-cai-war--3",
           "text": "카이판 미카엘라는 한혈마·전차병 성장 자료를 유지한다. 전차병은 활만 사용하므로 도끼 기능은 디트리히 워리어판에서 준비해3부에서 비교·융합한다.",
           "category": "준비",
           "inheritLegacy": false
         },
         {
-          "id": "team-kai-war--20261106-healing",
+          "id": "team-cai-war--20261106-healing",
           "category": "육성",
           "text": "티아라·리네 비숍의 리브로를 원격 회복으로 유지 · 울턴드는 인접 회복·엔젤 · 리네는 두 번째 힐러 실전용이며 세 번째 스탯 작업은 없음",
           "inheritLegacy": false
@@ -25349,36 +25349,36 @@
       "figures": [],
       "notes": [],
       "curated": true,
-      "route": "kai"
+      "route": "cai"
     },
     {
-      "id": "loretta-war-kai",
-      "stage": "kai-war-plan",
+      "id": "loretta-war-cai",
+      "stage": "cai-war-plan",
       "title": "카이2부 출격 전 · 전차병 성장과 활 명중 분리",
       "people": [
         "로레타"
       ],
       "actions": [
         {
-          "id": "loretta-war-kai--20261106-growth",
+          "id": "loretta-war-cai--20261106-growth",
           "category": "육성",
           "text": "출격 전 로레타의 전차병·친밀도5 탈것 확인 · 성장판 수치가 세오도라판보다 충분하면 추가 성장 반복 중단",
           "inheritLegacy": false
         },
         {
-          "id": "loretta-war-kai--20261106-sniper",
+          "id": "loretta-war-cai--20261106-sniper",
           "category": "육성",
           "text": "궁술 B·미보유 상급 자격과2부 지급 증서 확인 · 실전 명중이 부족하면 스나이퍼 선택, 전차병 자격을 버리지 않음",
           "inheritLegacy": false
         },
         {
-          "id": "loretta-war-kai--20261106-marksman",
+          "id": "loretta-war-cai--20261106-marksman",
           "category": "육성",
           "text": "실제 출격 스나이퍼에서 마스터를 채웠으면 사격의 달인 장착 · 활 명중+15, 자격 합격만으로 습득된 것으로 세지 않음",
           "inheritLegacy": false
         },
         {
-          "id": "loretta-war-kai--20261106-rash",
+          "id": "loretta-war-cai--20261106-rash",
           "category": "육성",
           "text": "궁술 A 난사 습득 확인 · 적별 전투 예측의 명중·반격 확인 후 사용, 난사라는 이유만으로 안전한 공격으로 취급하지 않음",
           "inheritLegacy": false
@@ -25398,28 +25398,28 @@
           "label": "명중·회피 따라하기"
         }
       ],
-      "route": "kai"
+      "route": "cai"
     },
     {
-      "id": "army-kai-1",
-      "stage": "kai-war-plan",
+      "id": "army-cai-1",
+      "stage": "cai-war-plan",
       "title": "카이2부1장 · 실제 미달에 맞춘 군행동",
       "people": [],
       "actions": [
         {
-          "id": "army-kai-1--readiness-growth",
+          "id": "army-cai-1--readiness-growth",
           "category": "준비",
           "text": "레벨을 올리기 전 현재 자격 확인 · Lv20~34는 목표 중급,이미Lv35 이상·필수 기능 완료면 상급 시험부터 · 전차병 성장판은 친밀도5 탈것 탑승",
           "inheritLegacy": false
         },
         {
-          "id": "army-kai-1--readiness-action",
+          "id": "army-cai-1--readiness-action",
           "category": "준비",
           "text": "기본 선택: 레벨 평준화 · 상승 예정 레벨을 확인하고 실행 · 상승 대상이 없으면 전군 기술 훈련 · 결과가35 미만이어도 상급 합격으로 기록하지 않음",
           "inheritLegacy": false
         },
         {
-          "id": "army-kai-1--readiness-exams",
+          "id": "army-cai-1--readiness-exams",
           "category": "준비",
           "text": "Lv35 이상·필수 기능·시험100%인 실제 투입 후보의 미합격 자격에 상급 증서 최대5장 배분 · 티아라→리네→울턴드→누조→로레타→세테스→카이→녹투라→피터르→그자람→미카엘라 · 이미 합격/조건 미달이면 다음 후보 · 인원 채우기용 시험 없음",
           "inheritLegacy": false
@@ -25428,7 +25428,7 @@
       "notes": [],
       "figures": [],
       "curated": true,
-      "route": "kai",
+      "route": "cai",
       "referenceLinks": [
         {
           "label": "평준화·증서 근거",
@@ -25437,19 +25437,19 @@
       ]
     },
     {
-      "id": "army-kai-2",
-      "stage": "kai-war-plan",
+      "id": "army-cai-2",
+      "stage": "cai-war-plan",
       "title": "카이2부2장 · 실제 미달에 맞춘 군행동",
       "people": [],
       "actions": [
         {
-          "id": "army-kai-2--readiness-action",
+          "id": "army-cai-2--readiness-action",
           "category": "준비",
           "text": "실제 예약 본대가Lv35 미만이고 상승 이득이 있으면 평준화 · 그렇지 않고 필요한 가호 미달이면 봉사 · 나머지는 전군 기술 훈련 · 목표 달성자는 반복 제외 · 무작위 기능 강화로 목표 등급 달성 보장 없음",
           "inheritLegacy": false
         },
         {
-          "id": "army-kai-2--readiness-exams",
+          "id": "army-cai-2--readiness-exams",
           "category": "준비",
           "text": "Lv35 이상·필수 기능·시험100%인 실제 투입 후보의 미합격 자격에 상급 증서 최대5장 배분 · 티아라→리네→울턴드→누조→로레타→세테스→카이→녹투라→피터르→그자람→미카엘라 · 이미 합격/조건 미달이면 다음 후보 · 인원 채우기용 시험 없음",
           "inheritLegacy": false
@@ -25458,7 +25458,7 @@
       "notes": [],
       "figures": [],
       "curated": true,
-      "route": "kai",
+      "route": "cai",
       "referenceLinks": [
         {
           "label": "평준화·증서 근거",
@@ -25467,25 +25467,25 @@
       ]
     },
     {
-      "id": "army-kai-3",
-      "stage": "kai-war-plan",
+      "id": "army-cai-3",
+      "stage": "cai-war-plan",
       "title": "카이2부3장 · 실제 미달에 맞춘 군행동",
       "people": [],
       "actions": [
         {
-          "id": "army-kai-3--readiness-action",
+          "id": "army-cai-3--readiness-action",
           "category": "준비",
           "text": "실제 예약 본대가Lv35 미만이고 상승 이득이 있으면 평준화 · 그렇지 않고 필요한 가호 미달이면 봉사 · 나머지는 전군 기술 훈련 · 목표 달성자는 반복 제외 · 무작위 기능 강화로 목표 등급 달성 보장 없음",
           "inheritLegacy": false
         },
         {
-          "id": "army-kai-3--readiness-exams",
+          "id": "army-cai-3--readiness-exams",
           "category": "준비",
           "text": "Lv35 이상·필수 기능·시험100%인 실제 투입 후보의 미합격 자격에 상급 증서 최대5장 배분 · 티아라→리네→울턴드→누조→로레타→세테스→카이→녹투라→피터르→그자람→미카엘라 · 이미 합격/조건 미달이면 다음 후보 · 인원 채우기용 시험 없음",
           "inheritLegacy": false
         },
         {
-          "id": "army-kai-3--readiness-guests",
+          "id": "army-cai-3--readiness-guests",
           "category": "객원 생존",
           "text": "아스완·타호니아는 불길 구간에서 본대 뒤에 배치 · 캐주얼이어도 수집 합류 조건의 게스트 생존을 유지 · 지양 인물의 별도 전투 육성을 뜻하지 않음",
           "inheritLegacy": false
@@ -25494,7 +25494,7 @@
       "notes": [],
       "figures": [],
       "curated": true,
-      "route": "kai",
+      "route": "cai",
       "referenceLinks": [
         {
           "label": "평준화·증서 근거",
@@ -25503,25 +25503,25 @@
       ]
     },
     {
-      "id": "army-kai-4",
-      "stage": "kai-war-plan",
+      "id": "army-cai-4",
+      "stage": "cai-war-plan",
       "title": "카이2부4장 · 실제 미달에 맞춘 군행동",
       "people": [],
       "actions": [
         {
-          "id": "army-kai-4--readiness-growth",
+          "id": "army-cai-4--readiness-growth",
           "category": "준비",
           "text": "레벨을 올리기 전 현재 자격 확인 · Lv20~34는 목표 중급,이미Lv35 이상·필수 기능 완료면 상급 시험부터 · 전차병 성장판은 친밀도5 탈것 탑승",
           "inheritLegacy": false
         },
         {
-          "id": "army-kai-4--readiness-action",
+          "id": "army-cai-4--readiness-action",
           "category": "준비",
           "text": "실제 예약 본대가Lv35 미만이고 상승 이득이 있으면 평준화 · 그렇지 않고 필요한 가호 미달이면 봉사 · 나머지는 전군 기술 훈련 · 목표 달성자는 반복 제외 · 무작위 기능 강화로 목표 등급 달성 보장 없음",
           "inheritLegacy": false
         },
         {
-          "id": "army-kai-4--readiness-exams",
+          "id": "army-cai-4--readiness-exams",
           "category": "준비",
           "text": "Lv35 이상·필수 기능·시험100%인 실제 투입 후보의 미합격 자격에 상급 증서 최대5장 배분 · 티아라→리네→울턴드→누조→로레타→세테스→카이→녹투라→피터르→그자람→미카엘라 · 이미 합격/조건 미달이면 다음 후보 · 인원 채우기용 시험 없음",
           "inheritLegacy": false
@@ -25530,7 +25530,7 @@
       "notes": [],
       "figures": [],
       "curated": true,
-      "route": "kai",
+      "route": "cai",
       "referenceLinks": [
         {
           "label": "평준화·증서 근거",
@@ -25539,8 +25539,8 @@
       ]
     },
     {
-      "id": "army-kai-5",
-      "stage": "kai-war-plan",
+      "id": "army-cai-5",
+      "stage": "cai-war-plan",
       "title": "카이2부5장 · 준비한 전력으로 전투",
       "people": [],
       "actions": [],
@@ -25552,7 +25552,7 @@
       ],
       "figures": [],
       "curated": true,
-      "route": "kai",
+      "route": "cai",
       "referenceLinks": [
         {
           "label": "평준화·증서 근거",
@@ -25561,8 +25561,8 @@
       ]
     },
     {
-      "id": "sequential-kai-war06-preserve-20261108",
-      "stage": "kai-war-plan",
+      "id": "sequential-cai-war06-preserve-20261108",
+      "stage": "cai-war-plan",
       "title": "카이2부6장 · 첫 보관 뒤 장착 자료 확인",
       "people": [
         "이오",
@@ -25572,25 +25572,25 @@
       "figures": [],
       "actions": [
         {
-          "id": "sequential-kai-war06-preserve-20261108--1",
+          "id": "sequential-cai-war06-preserve-20261108--1",
           "category": "확인",
           "text": "첫 보관 스킵의 일반 물품/특별 탈것 보관 확인을 끝낸 상태인지 확인 · 아직 첫 완료 전이면 직접 완료로 넘어가지 않고1장 보관 절차부터 확인",
           "inheritLegacy": false
         },
         {
-          "id": "sequential-kai-war06-preserve-20261108--2",
+          "id": "sequential-cai-war06-preserve-20261108--2",
           "category": "확인",
           "text": "이번 직접 완료는 장착 자료 등록 · 이오/알렉산드라와 실제 채택할 인물의 의도한 탈것 장착 확인 · 이미 공용 반입한 것을 또 해제해 중복 보관하려고 하지 않음",
           "inheritLegacy": false
         },
         {
-          "id": "sequential-kai-war06-preserve-20261108--3",
+          "id": "sequential-cai-war06-preserve-20261108--3",
           "category": "확인",
           "text": "성장 병과/실전 병과·공격 속도·회복·가호를 확인해6장 직접 완료 · 첫 물품 묶음이 추가 갱신되는 것으로 생각하지 않음",
           "inheritLegacy": false
         }
       ],
-      "route": "kai",
+      "route": "cai",
       "referenceLinks": [
         {
           "label": "첫 완료 보존·재등록 근거",
@@ -25599,8 +25599,8 @@
       ]
     },
     {
-      "id": "army-kai-6",
-      "stage": "kai-war-plan",
+      "id": "army-cai-6",
+      "stage": "cai-war-plan",
       "title": "카이2부6장 · 준비한 전력으로 전투",
       "people": [],
       "actions": [],
@@ -25612,7 +25612,7 @@
       ],
       "figures": [],
       "curated": true,
-      "route": "kai",
+      "route": "cai",
       "referenceLinks": [
         {
           "label": "평준화·증서 근거",
@@ -25621,25 +25621,25 @@
       ]
     },
     {
-      "id": "support-talks-kai-part2-20261112",
-      "stage": "kai-war-plan",
+      "id": "support-talks-cai-part2-20261112",
+      "stage": "cai-war-plan",
       "title": "2부 완료 전 · 같은 루트 1·2부 한정 지원 대화",
       "people": [],
       "actions": [
         {
-          "id": "support-talks-kai-part2-20261112--feast",
+          "id": "support-talks-cai-part2-20261112--feast",
           "category": "지원 올리기",
           "text": "아무 동료가 마법을1회 쓴 뒤, 마법이 회복되지 않는 고기로 식당 식사를 반복한다. 사용자 보고로는 출격 인원이 아니라 영입한 동료 전원의 지원이 오른다. 고기가 떨어지면 장을 다시 시작해 반복한다. 사용자 방법이며 우리가 확인하지 않았다.",
           "inheritLegacy": false
         },
         {
-          "id": "support-talks-kai-part2-20261112--inn",
+          "id": "support-talks-cai-part2-20261112--inn",
           "category": "여관 대화",
           "text": "2부를 끝내기 전에 여관에서 카이 루트의 1·2부 한정 대화를 모두 본다. 앞 루트에서 본 대화는 이 루트 2부 완료(또는 스킵) 뒤 3부에 반영된다.",
           "inheritLegacy": false
         },
         {
-          "id": "support-talks-kai-part2-20261112--order",
+          "id": "support-talks-cai-part2-20261112--order",
           "category": "순서 잠금",
           "text": "티아라·피터르 B → 피터르·울턴드 B → 티아라·피터르 A 순서로 본다. 티아라·울턴드 B는 둘이 다투는 동안 막힌다.",
           "inheritLegacy": false
@@ -25658,53 +25658,53 @@
           "label": "전원 영입 검토"
         }
       ],
-      "route": "kai"
+      "route": "cai"
     },
     {
-      "id": "finish-kai-war-20261108",
-      "stage": "kai-war-plan",
+      "id": "finish-cai-war-20261108",
+      "stage": "cai-war-plan",
       "title": "카이2부6장 · 직접 완료",
       "people": [],
       "notes": [],
       "figures": [],
       "actions": [
         {
-          "id": "team-kai-war--direct-clear",
+          "id": "team-cai-war--direct-clear",
           "category": "직접 완료",
           "text": "편성·성장 병종·기능 준비를 확인한 카이2부를6장까지 직접 완료하고, 각 인물의 완료 자료를 등록한다.",
           "inheritLegacy": false
         }
       ],
-      "route": "kai"
+      "route": "cai"
     },
     {
-      "id": "sequential-kai-war-reward-20261108",
-      "stage": "kai-war-plan",
+      "id": "sequential-cai-war-reward-20261108",
+      "stage": "cai-war-plan",
       "title": "카이2부 직접 완료 뒤 · 보상·다음 단계 준비",
       "people": [],
       "notes": [],
       "figures": [],
       "actions": [
         {
-          "id": "sequential-kai-war-reward-20261108--1",
+          "id": "sequential-cai-war-reward-20261108--1",
           "category": "확인",
           "text": "해당 루트2부6장 직접 완료 직후 요창 벤데타 등 실제 완료 보상을 확인하고 보관 · 스킵으로 같은 보상을 무조건 받는다고 가정하지 않음 · 현재 파편·가호는 실제 결과만 기록",
           "inheritLegacy": false
         },
         {
-          "id": "sequential-kai-war-reward-20261108--2",
+          "id": "sequential-cai-war-reward-20261108--2",
           "category": "확인",
           "text": "3부에 들어가기 전 실제 가호·구매 축복과 잔액을 확인한다.",
           "inheritLegacy": false
         },
         {
-          "id": "sequential-kai-war-reward-20261108--check-part3-entry",
+          "id": "sequential-cai-war-reward-20261108--check-part3-entry",
           "category": "다음 단계",
           "text": "카이 2부 직접 완료와 장착 자료를 확인하고 3부 진입 준비를 점검한다.",
           "inheritLegacy": false
         }
       ],
-      "route": "kai"
+      "route": "cai"
     },
     {
       "id": "collect-war06-vendetta",
@@ -28072,11 +28072,11 @@
       "retiredReason": "노멀 전환·하드 복귀 계획 폐기. 하드·캐주얼 저장은 새ID로 확인."
     },
     {
-      "id": "kai-route-03--e46933a91c",
+      "id": "cai-route-03--e46933a91c",
       "category": "미리 준비",
       "text": "양계 명성 3·지원 2를 준비한다.",
       "inheritLegacy": true,
-      "parentTask": "kai-route-03",
+      "parentTask": "cai-route-03",
       "retiredReason": "비선호 양계의 영입 준비는 현재 기본안에서 제외. 티아라 회복 준비는 새ID로 분리."
     },
     {
@@ -28113,11 +28113,11 @@
       "retiredReason": "실행이 아닌 이유 설명이므로12장 보관용 병종 메모에 표시."
     },
     {
-      "id": "kai-04--2bc15de626",
+      "id": "cai-04--2bc15de626",
       "category": "행동",
       "text": "리네 영입을 확인합니다.",
       "inheritLegacy": true,
-      "parentTask": "kai-04",
+      "parentTask": "cai-04",
       "retiredReason": "2026-11-06 승인된 병과·중복 영입 정리로 실행 목록에서 제외 · 과거 체크 이력 유지"
     },
     {
@@ -28145,19 +28145,19 @@
       "retiredReason": "2026-11-06 승인된 병과·중복 영입 정리로 실행 목록에서 제외 · 과거 체크 이력 유지"
     },
     {
-      "id": "team-kai-loretta--1",
+      "id": "team-cai-loretta--1",
       "text": "명성7·지원3을 채우고 철의 검3개를 준비해 로레타를 영입한다.1부 종료 전 합류가 필요하다.",
       "category": "준비",
       "inheritLegacy": false,
-      "parentTask": "team-kai-loretta",
+      "parentTask": "team-cai-loretta",
       "retiredReason": "2026-11-06 승인된 병과·중복 영입 정리로 실행 목록에서 제외 · 과거 체크 이력 유지"
     },
     {
-      "id": "team-kai-loretta--2",
+      "id": "team-cai-loretta--2",
       "text": "1부 막타는 기존9명에 집중하고 로레타는2부 확대 명단에서 비행·검/창을 키운다. 최종 성천익병 비행 공격수로 유지하며 무희 자격은 주지 않는다.",
       "category": "준비",
       "inheritLegacy": false,
-      "parentTask": "team-kai-loretta",
+      "parentTask": "team-cai-loretta",
       "retiredReason": "2026-11-06 승인된 병과·중복 영입 정리로 실행 목록에서 제외 · 과거 체크 이력 유지"
     },
     {
@@ -28241,11 +28241,11 @@
       "retiredReason": "2026-11-06 승인된 병과·중복 영입 정리로 실행 목록에서 제외 · 과거 체크 이력 유지"
     },
     {
-      "id": "team-kai-war--rine-heal",
+      "id": "team-cai-war--rine-heal",
       "category": "회복 분담",
       "text": "티아라 외에 원거리 회복이 필요한 전투는 리네를 가디언으로 바꾸고 백마술 B의 리브로를 확인한다. 가디언 미합격이면2부 지급 상급 증서를 먼저 쓰며, 바딩거에서는 마법을 쓸 수 없다. 회복이 충분한 전투는 물리 성장용 바딩거를 사용한다.",
       "inheritLegacy": false,
-      "parentTask": "team-kai-war",
+      "parentTask": "team-cai-war",
       "retiredReason": "2026-11-06 승인된 병과·중복 영입 정리로 실행 목록에서 제외 · 과거 체크 이력 유지"
     },
     {
@@ -28297,19 +28297,19 @@
       "retiredReason": "시설 없음은 참고 정보 · 별도 실행 행동이 아니므로 완료 과제에서 제외,ID 이력 보존"
     },
     {
-      "id": "army-kai-5--readiness-none",
+      "id": "army-cai-5--readiness-none",
       "category": "준비",
       "text": "군행동·훈련·시험 시설을 찾으며 이동하지 않음 · 4장까지 준비한 병과·가호·전투 기술로 전투 진행",
       "inheritLegacy": false,
-      "parentTask": "army-kai-5",
+      "parentTask": "army-cai-5",
       "retiredReason": "시설 없음은 참고 정보 · 별도 실행 행동이 아니므로 완료 과제에서 제외,ID 이력 보존"
     },
     {
-      "id": "army-kai-6--readiness-none",
+      "id": "army-cai-6--readiness-none",
       "category": "준비",
       "text": "군행동·훈련·시험 시설을 찾으며 이동하지 않음 · 4장까지 준비한 병과·가호·전투 기술로 전투 진행",
       "inheritLegacy": false,
-      "parentTask": "army-kai-6",
+      "parentTask": "army-cai-6",
       "retiredReason": "시설 없음은 참고 정보 · 별도 실행 행동이 아니므로 완료 과제에서 제외,ID 이력 보존"
     },
     {
@@ -28810,147 +28810,147 @@
       "retiredReason": "레벨 보충용 던전 반복에서 시험 직전 필수 기능 보충으로 변경"
     },
     {
-      "id": "sequential-dungeon-kai-4-20261108--1",
+      "id": "sequential-dungeon-cai-4-20261108--1",
       "category": "확인",
       "text": "현재 미달인 실제 육성 대상만 확인 · 목표를 이미 채웠으면 추가 파밍 생략 · 새 장에 재생성된 적/이번 장 미소탕 던전 중 의뢰·재료 동선과 겹치는 안전한 곳 선택",
       "inheritLegacy": false,
-      "parentTask": "sequential-dungeon-kai-4-20261108",
+      "parentTask": "sequential-dungeon-cai-4-20261108",
       "retiredReason": "레벨 보충용 던전 반복에서 시험 직전 필수 기능 보충으로 변경"
     },
     {
-      "id": "sequential-dungeon-kai-4-20261108--2",
+      "id": "sequential-dungeon-cai-4-20261108--2",
       "category": "확인",
       "text": "주력2명+회복1명+육성1~2명으로 안전하게 약화→육성자 막타/MVP · 가능한 연계는 LP 확인 · 중급 준비/현재 목표에 닿으면 귀환,관전·외전·주간 기한 우선",
       "inheritLegacy": false,
-      "parentTask": "sequential-dungeon-kai-4-20261108",
+      "parentTask": "sequential-dungeon-cai-4-20261108",
       "retiredReason": "레벨 보충용 던전 반복에서 시험 직전 필수 기능 보충으로 변경"
     },
     {
-      "id": "sequential-dungeon-kai-5-20261108--1",
+      "id": "sequential-dungeon-cai-5-20261108--1",
       "category": "확인",
       "text": "현재 미달인 실제 육성 대상만 확인 · 목표를 이미 채웠으면 추가 파밍 생략 · 새 장에 재생성된 적/이번 장 미소탕 던전 중 의뢰·재료 동선과 겹치는 안전한 곳 선택",
       "inheritLegacy": false,
-      "parentTask": "sequential-dungeon-kai-5-20261108",
+      "parentTask": "sequential-dungeon-cai-5-20261108",
       "retiredReason": "레벨 보충용 던전 반복에서 시험 직전 필수 기능 보충으로 변경"
     },
     {
-      "id": "sequential-dungeon-kai-5-20261108--2",
+      "id": "sequential-dungeon-cai-5-20261108--2",
       "category": "확인",
       "text": "주력2명+회복1명+육성1~2명으로 안전하게 약화→육성자 막타/MVP · 가능한 연계는 LP 확인 · 중급 준비/현재 목표에 닿으면 귀환,관전·외전·주간 기한 우선",
       "inheritLegacy": false,
-      "parentTask": "sequential-dungeon-kai-5-20261108",
+      "parentTask": "sequential-dungeon-cai-5-20261108",
       "retiredReason": "레벨 보충용 던전 반복에서 시험 직전 필수 기능 보충으로 변경"
     },
     {
-      "id": "sequential-dungeon-kai-6-20261108--1",
+      "id": "sequential-dungeon-cai-6-20261108--1",
       "category": "확인",
       "text": "현재 미달인 실제 육성 대상만 확인 · 목표를 이미 채웠으면 추가 파밍 생략 · 새 장에 재생성된 적/이번 장 미소탕 던전 중 의뢰·재료 동선과 겹치는 안전한 곳 선택",
       "inheritLegacy": false,
-      "parentTask": "sequential-dungeon-kai-6-20261108",
+      "parentTask": "sequential-dungeon-cai-6-20261108",
       "retiredReason": "레벨 보충용 던전 반복에서 시험 직전 필수 기능 보충으로 변경"
     },
     {
-      "id": "sequential-dungeon-kai-6-20261108--2",
+      "id": "sequential-dungeon-cai-6-20261108--2",
       "category": "확인",
       "text": "주력2명+회복1명+육성1~2명으로 안전하게 약화→육성자 막타/MVP · 가능한 연계는 LP 확인 · 중급 준비/현재 목표에 닿으면 귀환,관전·외전·주간 기한 우선",
       "inheritLegacy": false,
-      "parentTask": "sequential-dungeon-kai-6-20261108",
+      "parentTask": "sequential-dungeon-cai-6-20261108",
       "retiredReason": "레벨 보충용 던전 반복에서 시험 직전 필수 기능 보충으로 변경"
     },
     {
-      "id": "sequential-dungeon-kai-7-20261108--1",
+      "id": "sequential-dungeon-cai-7-20261108--1",
       "category": "확인",
       "text": "현재 미달인 실제 육성 대상만 확인 · 목표를 이미 채웠으면 추가 파밍 생략 · 새 장에 재생성된 적/이번 장 미소탕 던전 중 의뢰·재료 동선과 겹치는 안전한 곳 선택",
       "inheritLegacy": false,
-      "parentTask": "sequential-dungeon-kai-7-20261108",
+      "parentTask": "sequential-dungeon-cai-7-20261108",
       "retiredReason": "레벨 보충용 던전 반복에서 시험 직전 필수 기능 보충으로 변경"
     },
     {
-      "id": "sequential-dungeon-kai-7-20261108--2",
+      "id": "sequential-dungeon-cai-7-20261108--2",
       "category": "확인",
       "text": "주력2명+회복1명+육성1~2명으로 안전하게 약화→육성자 막타/MVP · 가능한 연계는 LP 확인 · 중급 준비/현재 목표에 닿으면 귀환,관전·외전·주간 기한 우선",
       "inheritLegacy": false,
-      "parentTask": "sequential-dungeon-kai-7-20261108",
+      "parentTask": "sequential-dungeon-cai-7-20261108",
       "retiredReason": "레벨 보충용 던전 반복에서 시험 직전 필수 기능 보충으로 변경"
     },
     {
-      "id": "sequential-dungeon-kai-8-20261108--1",
+      "id": "sequential-dungeon-cai-8-20261108--1",
       "category": "확인",
       "text": "현재 미달인 실제 육성 대상만 확인 · 목표를 이미 채웠으면 추가 파밍 생략 · 새 장에 재생성된 적/이번 장 미소탕 던전 중 의뢰·재료 동선과 겹치는 안전한 곳 선택",
       "inheritLegacy": false,
-      "parentTask": "sequential-dungeon-kai-8-20261108",
+      "parentTask": "sequential-dungeon-cai-8-20261108",
       "retiredReason": "레벨 보충용 던전 반복에서 시험 직전 필수 기능 보충으로 변경"
     },
     {
-      "id": "sequential-dungeon-kai-8-20261108--2",
+      "id": "sequential-dungeon-cai-8-20261108--2",
       "category": "확인",
       "text": "주력2명+회복1명+육성1~2명으로 안전하게 약화→육성자 막타/MVP · 가능한 연계는 LP 확인 · 중급 준비/현재 목표에 닿으면 귀환,관전·외전·주간 기한 우선",
       "inheritLegacy": false,
-      "parentTask": "sequential-dungeon-kai-8-20261108",
+      "parentTask": "sequential-dungeon-cai-8-20261108",
       "retiredReason": "레벨 보충용 던전 반복에서 시험 직전 필수 기능 보충으로 변경"
     },
     {
-      "id": "sequential-dungeon-kai-9-20261108--1",
+      "id": "sequential-dungeon-cai-9-20261108--1",
       "category": "확인",
       "text": "현재 미달인 실제 육성 대상만 확인 · 목표를 이미 채웠으면 추가 파밍 생략 · 새 장에 재생성된 적/이번 장 미소탕 던전 중 의뢰·재료 동선과 겹치는 안전한 곳 선택",
       "inheritLegacy": false,
-      "parentTask": "sequential-dungeon-kai-9-20261108",
+      "parentTask": "sequential-dungeon-cai-9-20261108",
       "retiredReason": "레벨 보충용 던전 반복에서 시험 직전 필수 기능 보충으로 변경"
     },
     {
-      "id": "sequential-dungeon-kai-9-20261108--2",
+      "id": "sequential-dungeon-cai-9-20261108--2",
       "category": "확인",
       "text": "주력2명+회복1명+육성1~2명으로 안전하게 약화→육성자 막타/MVP · 가능한 연계는 LP 확인 · 중급 준비/현재 목표에 닿으면 귀환,관전·외전·주간 기한 우선",
       "inheritLegacy": false,
-      "parentTask": "sequential-dungeon-kai-9-20261108",
+      "parentTask": "sequential-dungeon-cai-9-20261108",
       "retiredReason": "레벨 보충용 던전 반복에서 시험 직전 필수 기능 보충으로 변경"
     },
     {
-      "id": "sequential-dungeon-kai-10-20261108--1",
+      "id": "sequential-dungeon-cai-10-20261108--1",
       "category": "확인",
       "text": "현재 미달인 실제 육성 대상만 확인 · 목표를 이미 채웠으면 추가 파밍 생략 · 새 장에 재생성된 적/이번 장 미소탕 던전 중 의뢰·재료 동선과 겹치는 안전한 곳 선택",
       "inheritLegacy": false,
-      "parentTask": "sequential-dungeon-kai-10-20261108",
+      "parentTask": "sequential-dungeon-cai-10-20261108",
       "retiredReason": "레벨 보충용 던전 반복에서 시험 직전 필수 기능 보충으로 변경"
     },
     {
-      "id": "sequential-dungeon-kai-10-20261108--2",
+      "id": "sequential-dungeon-cai-10-20261108--2",
       "category": "확인",
       "text": "주력2명+회복1명+육성1~2명으로 안전하게 약화→육성자 막타/MVP · 가능한 연계는 LP 확인 · 중급 준비/현재 목표에 닿으면 귀환,관전·외전·주간 기한 우선",
       "inheritLegacy": false,
-      "parentTask": "sequential-dungeon-kai-10-20261108",
+      "parentTask": "sequential-dungeon-cai-10-20261108",
       "retiredReason": "레벨 보충용 던전 반복에서 시험 직전 필수 기능 보충으로 변경"
     },
     {
-      "id": "sequential-dungeon-kai-11-20261108--1",
+      "id": "sequential-dungeon-cai-11-20261108--1",
       "category": "확인",
       "text": "현재 미달인 실제 육성 대상만 확인 · 목표를 이미 채웠으면 추가 파밍 생략 · 새 장에 재생성된 적/이번 장 미소탕 던전 중 의뢰·재료 동선과 겹치는 안전한 곳 선택",
       "inheritLegacy": false,
-      "parentTask": "sequential-dungeon-kai-11-20261108",
+      "parentTask": "sequential-dungeon-cai-11-20261108",
       "retiredReason": "레벨 보충용 던전 반복에서 시험 직전 필수 기능 보충으로 변경"
     },
     {
-      "id": "sequential-dungeon-kai-11-20261108--2",
+      "id": "sequential-dungeon-cai-11-20261108--2",
       "category": "확인",
       "text": "주력2명+회복1명+육성1~2명으로 안전하게 약화→육성자 막타/MVP · 가능한 연계는 LP 확인 · 중급 준비/현재 목표에 닿으면 귀환,관전·외전·주간 기한 우선",
       "inheritLegacy": false,
-      "parentTask": "sequential-dungeon-kai-11-20261108",
+      "parentTask": "sequential-dungeon-cai-11-20261108",
       "retiredReason": "레벨 보충용 던전 반복에서 시험 직전 필수 기능 보충으로 변경"
     },
     {
-      "id": "sequential-dungeon-kai-12-20261108--1",
+      "id": "sequential-dungeon-cai-12-20261108--1",
       "category": "확인",
       "text": "현재 미달인 실제 육성 대상만 확인 · 목표를 이미 채웠으면 추가 파밍 생략 · 새 장에 재생성된 적/이번 장 미소탕 던전 중 의뢰·재료 동선과 겹치는 안전한 곳 선택",
       "inheritLegacy": false,
-      "parentTask": "sequential-dungeon-kai-12-20261108",
+      "parentTask": "sequential-dungeon-cai-12-20261108",
       "retiredReason": "레벨 보충용 던전 반복에서 시험 직전 필수 기능 보충으로 변경"
     },
     {
-      "id": "sequential-dungeon-kai-12-20261108--2",
+      "id": "sequential-dungeon-cai-12-20261108--2",
       "category": "확인",
       "text": "주력2명+회복1명+육성1~2명으로 안전하게 약화→육성자 막타/MVP · 가능한 연계는 LP 확인 · 중급 준비/현재 목표에 닿으면 귀환,관전·외전·주간 기한 우선",
       "inheritLegacy": false,
-      "parentTask": "sequential-dungeon-kai-12-20261108",
+      "parentTask": "sequential-dungeon-cai-12-20261108",
       "retiredReason": "레벨 보충용 던전 반복에서 시험 직전 필수 기능 보충으로 변경"
     }
   ],
@@ -29163,69 +29163,69 @@
       "retiredReason": "최신 사용자 선택: 올림피아는 레다 자동 합류만 사용."
     },
     {
-      "id": "recruit-kai-olympia",
-      "stage": "kai-plan",
+      "id": "recruit-cai-olympia",
+      "stage": "cai-plan",
       "title": "올림피아 · 선택 수집 의뢰1→2→3",
       "people": [
         "올림피아"
       ],
       "actions": [
         {
-          "id": "recruit-kai-olympia--conditions",
+          "id": "recruit-cai-olympia--conditions",
           "category": "선택 영입",
           "text": "이 판도 수집할 때만 올림피아 지원3·명성8과 첫 선물을 준비한다. 레다의 자동 합류와 구분한다.",
           "inheritLegacy": false
         },
         {
-          "id": "recruit-kai-olympia--accept1",
+          "id": "recruit-cai-olympia--accept1",
           "category": "선택 영입",
           "text": "올림피아에게 말을 걸어 스카우트에서 ‘올림피아의 의뢰1’를 수락하고 의뢰 목록의 진행 중 표시·기한을 확인한다.",
           "inheritLegacy": false
         },
         {
-          "id": "recruit-kai-olympia--collect1",
+          "id": "recruit-cai-olympia--collect1",
           "category": "선택 영입",
           "text": "동아말테아역→페로니아역→새벽 평원(새벽녘 평원)에서 의뢰1 진행 중 비작의 물방울1개를 탐색한다.",
           "inheritLegacy": false
         },
         {
-          "id": "recruit-kai-olympia--report1",
+          "id": "recruit-cai-olympia--report1",
           "category": "선택 영입",
           "text": "제도로 돌아와 올림피아에게 납품·보고한다. 다음 의뢰가 열리면 새로 수락한다.",
           "inheritLegacy": false
         },
         {
-          "id": "recruit-kai-olympia--accept2",
+          "id": "recruit-cai-olympia--accept2",
           "category": "선택 영입",
           "text": "앞 의뢰1을 보고하고 올림피아에게 말을 걸어 스카우트에서 ‘올림피아의 의뢰2’를 수락하고 의뢰 목록의 진행 중 표시·기한을 확인한다.",
           "inheritLegacy": false
         },
         {
-          "id": "recruit-kai-olympia--collect2",
+          "id": "recruit-cai-olympia--collect2",
           "category": "선택 영입",
           "text": "올림피아의 의뢰2를 수락한 뒤 클리티오스 평원에서 아우람 로즈1개를 탐색한다. 수주 전 탐색 불가.",
           "inheritLegacy": false
         },
         {
-          "id": "recruit-kai-olympia--report2",
+          "id": "recruit-cai-olympia--report2",
           "category": "선택 영입",
           "text": "제도로 돌아와 올림피아에게 납품·보고한다. 다음 의뢰가 열리면 새로 수락한다.",
           "inheritLegacy": false
         },
         {
-          "id": "recruit-kai-olympia--accept3",
+          "id": "recruit-cai-olympia--accept3",
           "category": "선택 영입",
           "text": "앞 의뢰2를 보고하고 올림피아에게 말을 걸어 스카우트에서 ‘올림피아의 의뢰3’를 수락하고 의뢰 목록의 진행 중 표시·기한을 확인한다.",
           "inheritLegacy": false
         },
         {
-          "id": "recruit-kai-olympia--collect3",
+          "id": "recruit-cai-olympia--collect3",
           "category": "선택 영입",
           "text": "의뢰3 진행 중 발할라 광산(발할라 광산) 내부의 지정 빛나는 바닥 물품에서 푸른 심장1개를 줍는다. 일반 나무 상자·보물 상자 뽑기로 대신하지 않는다.",
           "inheritLegacy": false
         },
         {
-          "id": "recruit-kai-olympia--report3",
+          "id": "recruit-cai-olympia--report3",
           "category": "선택 영입",
           "text": "제도로 돌아와 올림피아에게 납품·보고한다. 실제 합류를 확인한다.",
           "inheritLegacy": false
@@ -29500,33 +29500,33 @@
       "retiredReason": "이 루트 인물 육성·영입 명단에 없는 별도 영입 안내. 최신 요청에 따라 활성 체크에서 제외."
     },
     {
-      "id": "recruit-kai-poet-copy",
-      "stage": "kai-plan",
+      "id": "recruit-cai-poet-copy",
+      "stage": "cai-plan",
       "title": "시로코 · 추가 영입을 고르면 수주부터",
       "people": [
         "시로코"
       ],
       "actions": [
         {
-          "id": "recruit-kai-poet-copy--conditions",
+          "id": "recruit-cai-poet-copy--conditions",
           "category": "선택 영입",
           "text": "이 루트에서도 시로코를 추가 영입할 때만 지원3·명성9과 첫 선물을 준비한다. 본대 경험치를 추가로 나눠야 한다는 뜻은 아니다.",
           "inheritLegacy": false
         },
         {
-          "id": "recruit-kai-poet-copy--accept",
+          "id": "recruit-cai-poet-copy--accept",
           "category": "선택 영입",
           "text": "시로코에게 말을 걸어 스카우트에서 ‘시로코의 의뢰’를 수락하고 의뢰 목록의 진행 중 표시·기한을 확인한다.",
           "inheritLegacy": false
         },
         {
-          "id": "recruit-kai-poet-copy--travel",
+          "id": "recruit-cai-poet-copy--travel",
           "category": "선택 영입",
           "text": "의뢰 진행 중 금단의 숲(금단의 숲)의 다른 출구→비오의 제단(비오의 제단)으로 이동해 시인의 비문 사본1개를 탐색한다. 아트라 산맥으로 가지 않는다.",
           "inheritLegacy": false
         },
         {
-          "id": "recruit-kai-poet-copy--report",
+          "id": "recruit-cai-poet-copy--report",
           "category": "선택 영입",
           "text": "제도로 돌아와 시로코에게 납품·보고한다. 실제 합류를 확인한다.",
           "inheritLegacy": false
@@ -29569,27 +29569,27 @@
       "retiredReason": "시험 행동은 세오도라8장 알렉산드라 영입 직후로 이동. 옛 묶음ID와 설명을 이력으로 보존."
     },
     {
-      "id": "recruit-kai-esmeralda-battle",
-      "stage": "kai-plan",
+      "id": "recruit-cai-esmeralda-battle",
+      "stage": "cai-plan",
       "title": "에스메랄다 · 수주 뒤 전투와 귀환 보고",
       "people": [
         "에스메랄다"
       ],
       "actions": [
         {
-          "id": "recruit-kai-esmeralda-battle--accept",
+          "id": "recruit-cai-esmeralda-battle--accept",
           "category": "선택 영입",
           "text": "에스메랄다의 지원2·명성7을 채우고 본인의 스카우트에서 전투 의뢰를 받는다. 이미 현재 판에서 합류했다면 반복하지 않는다.",
           "inheritLegacy": false
         },
         {
-          "id": "recruit-kai-esmeralda-battle--fight",
+          "id": "recruit-cai-esmeralda-battle--fight",
           "category": "선택 영입",
           "text": "의뢰가 진행 중인 상태로 다마센 곶의 해수 무리에게 가서 목표 표시의 적을 토벌한다. 단순 일반 적 처치를 의뢰 완료로 대신 세지 않는다.",
           "inheritLegacy": false
         },
         {
-          "id": "recruit-kai-esmeralda-battle--report",
+          "id": "recruit-cai-esmeralda-battle--report",
           "category": "선택 영입",
           "text": "제도로 돌아와 에스메랄다에게 보고하고 실제 합류·지참품을 확인한다.",
           "inheritLegacy": false

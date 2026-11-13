@@ -106,7 +106,7 @@
 
 ### 위치와 지도
 
-[지도 열기 · 카이 선택 후 Baina Oasis 검색](https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624208 "recruit-map:dates:kai")
+[지도 열기 · 카이 선택 후 Baina Oasis 검색](https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624208 "recruit-map:dates:cai")
 
 ![대추야자 위치 참고](../../assets/recruitment/baina-map.jpg)
 

@@ -18,7 +18,7 @@
   --swap:#F2A65A; --swap-fg:#1F1408;
   --route-ink-fg:#191918;
 }
-:is(.app-shell,.sheet)[data-route=kai]{--route-tint:#DCE5F2;--route-ink:#3F64A8}.dark :is(.app-shell,.sheet)[data-route=kai]{--route-tint:#1D2A40;--route-ink:#8FAEE6}
+:is(.app-shell,.sheet)[data-route=cai]{--route-tint:#DCE5F2;--route-ink:#3F64A8}.dark :is(.app-shell,.sheet)[data-route=cai]{--route-tint:#1D2A40;--route-ink:#8FAEE6}
 :is(.app-shell,.sheet)[data-route=dietrich]{--route-tint:#E4E2DE;--route-ink:#3A3A3E}.dark :is(.app-shell,.sheet)[data-route=dietrich]{--route-tint:#262628;--route-ink:#C9C9C4}
 :is(.app-shell,.sheet)[data-route=theodora]{--route-tint:#F1E6C4;--route-ink:#8F6F1E}.dark :is(.app-shell,.sheet)[data-route=theodora]{--route-tint:#3A3118;--route-ink:#E0C36A}
 :is(.app-shell,.sheet)[data-route=leda]{--route-tint:#F2DCE3;--route-ink:#B0486E}.dark :is(.app-shell,.sheet)[data-route=leda]{--route-tint:#3D2029;--route-ink:#E596B2}

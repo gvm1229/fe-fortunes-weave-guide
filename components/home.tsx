@@ -8,11 +8,11 @@ import type { Group, Route } from '@/lib/content';
 import { useChecks } from './checks';
 import { checked } from '@/lib/check-state';
 import { lordFiles, lordPortrait } from '@/lib/portraits';
-const playOrder:Record<string,string>={theodora:'1st',leda:'2nd',dietrich:'3rd',kai:'4th'};
+const playOrder:Record<string,string>={theodora:'1st',leda:'2nd',dietrich:'3rd',cai:'4th'};
 export function Home({routes}:{routes:{id:Route;label:string;parts:{part:string;groups:Group[]}[]}[]}){
   const checks=useChecks();
   function progress(groups:Group[]){return {total:groups.reduce((n,g)=>n+g.actions.length,0),done:groups.reduce((n,g)=>n+g.actions.filter(a=>checked(a,g.id,checks.data.checks)).length,0)};}
-  const lords=['kai','dietrich','theodora','leda'].map(id=>routes.find(r=>r.id===id)!);
+  const lords=['cai','dietrich','theodora','leda'].map(id=>routes.find(r=>r.id===id)!);
   const third=routes.find(r=>r.id==='part3')!,thirdProgress=progress(third.parts[0].groups);
   return <ViewTransition default="page-fade"><main className="home">
     <header className="home-top"><h1 className="brand">만자천홍 개인화 공략</h1><div className="home-actions"><Link className="button" href="/team/">최종 25명</Link><ThemeSwitch/></div></header>

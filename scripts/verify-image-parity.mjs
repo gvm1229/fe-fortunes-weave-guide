@@ -3,7 +3,7 @@ import {resolve} from 'node:path';
 import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {chapterTitle,oldCounts,emptyCounts,imageKind,safeTree} from './checklist-source.mjs';
-const source=readFileSync(resolve(process.argv[2]||'../fe-fortunes-weave-guide-main','personalized-app/src/content.json'));
+const source=readFileSync(resolve(process.argv[2]||'content/source/react-content.json'));
 const old=JSON.parse(source),derived=JSON.parse(readFileSync('content/derived/checklist.json','utf8'));
 assert.equal(derived.sourceSha256,createHash('sha256').update(source).digest('hex'));
 assert.deepEqual(safeTree('<script>alert(1)</script><img src="javascript:x" onerror="x"><button onclick="x">위치</button>'),[{tag:'img',attrs:{},children:[]},{tag:'button',attrs:{},children:['위치']}]);

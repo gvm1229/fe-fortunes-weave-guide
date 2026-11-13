@@ -80,7 +80,7 @@
         "Cha": 25
       },
       "recruitableRoutes": [
-        "kai",
+        "cai",
         "dietrich",
         "theodora",
         "leda"
@@ -89,7 +89,7 @@
         "theodora",
         "leda",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "routeAgreement": true
     },
@@ -107,7 +107,7 @@
         "Cha": 40
       },
       "recruitableRoutes": [
-        "kai",
+        "cai",
         "dietrich",
         "theodora",
         "leda"
@@ -116,7 +116,7 @@
         "theodora",
         "leda",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "routeAgreement": true
     },
@@ -134,7 +134,7 @@
         "Cha": 30
       },
       "recruitableRoutes": [
-        "kai",
+        "cai",
         "dietrich",
         "theodora",
         "leda"
@@ -143,7 +143,7 @@
         "theodora",
         "leda",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "routeAgreement": true
     },
@@ -161,7 +161,7 @@
         "Cha": 40
       },
       "recruitableRoutes": [
-        "kai",
+        "cai",
         "dietrich",
         "theodora",
         "leda"
@@ -170,7 +170,7 @@
         "theodora",
         "leda",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "routeAgreement": true
     },
@@ -188,7 +188,7 @@
         "Cha": 30
       },
       "recruitableRoutes": [
-        "kai",
+        "cai",
         "dietrich",
         "theodora",
         "leda"
@@ -197,7 +197,7 @@
         "theodora",
         "leda",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "routeAgreement": true
     },
@@ -215,7 +215,7 @@
         "Cha": 50
       },
       "recruitableRoutes": [
-        "kai",
+        "cai",
         "dietrich",
         "theodora",
         "leda"
@@ -224,7 +224,7 @@
         "theodora",
         "leda",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "routeAgreement": true
     },
@@ -242,7 +242,7 @@
         "Cha": 45
       },
       "recruitableRoutes": [
-        "kai",
+        "cai",
         "dietrich",
         "theodora",
         "leda"
@@ -251,7 +251,7 @@
         "theodora",
         "leda",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "routeAgreement": true
     },
@@ -269,14 +269,14 @@
         "Cha": 45
       },
       "recruitableRoutes": [
-        "kai",
+        "cai",
         "dietrich",
         "theodora"
       ],
       "localRoutes": [
         "theodora",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "routeAgreement": true
     },
@@ -294,7 +294,7 @@
         "Cha": 30
       },
       "recruitableRoutes": [
-        "kai",
+        "cai",
         "dietrich",
         "theodora",
         "leda"
@@ -303,7 +303,7 @@
         "theodora",
         "leda",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "routeAgreement": true
     },
@@ -321,7 +321,7 @@
         "Cha": 35
       },
       "recruitableRoutes": [
-        "kai",
+        "cai",
         "dietrich",
         "theodora",
         "leda"
@@ -330,7 +330,7 @@
         "theodora",
         "leda",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "routeAgreement": true
     },
@@ -348,7 +348,7 @@
         "Cha": 35
       },
       "recruitableRoutes": [
-        "kai",
+        "cai",
         "dietrich",
         "theodora",
         "leda"
@@ -357,7 +357,7 @@
         "theodora",
         "leda",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "routeAgreement": true
     },
@@ -397,7 +397,7 @@
         "Cha": 40
       },
       "recruitableRoutes": [
-        "kai",
+        "cai",
         "dietrich",
         "theodora",
         "leda"
@@ -406,7 +406,7 @@
         "theodora",
         "leda",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "routeAgreement": true
     },
@@ -424,7 +424,7 @@
         "Cha": 40
       },
       "recruitableRoutes": [
-        "kai",
+        "cai",
         "dietrich",
         "theodora",
         "leda"
@@ -433,7 +433,7 @@
         "theodora",
         "leda",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "routeAgreement": true
     },
@@ -451,7 +451,7 @@
         "Cha": 30
       },
       "recruitableRoutes": [
-        "kai",
+        "cai",
         "dietrich",
         "theodora",
         "leda"
@@ -460,7 +460,7 @@
         "theodora",
         "leda",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "routeAgreement": true
     },
@@ -478,7 +478,7 @@
         "Cha": 30
       },
       "recruitableRoutes": [
-        "kai",
+        "cai",
         "dietrich",
         "theodora",
         "leda"
@@ -487,7 +487,7 @@
         "theodora",
         "leda",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "routeAgreement": true
     },
@@ -505,7 +505,7 @@
         "Cha": 45
       },
       "recruitableRoutes": [
-        "kai",
+        "cai",
         "dietrich",
         "theodora",
         "leda"
@@ -514,7 +514,7 @@
         "theodora",
         "leda",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "routeAgreement": true
     },
@@ -532,7 +532,7 @@
         "Cha": 25
       },
       "recruitableRoutes": [
-        "kai",
+        "cai",
         "dietrich",
         "theodora",
         "leda"
@@ -541,7 +541,7 @@
         "theodora",
         "leda",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "routeAgreement": true
     },
@@ -559,7 +559,7 @@
         "Cha": 40
       },
       "recruitableRoutes": [
-        "kai",
+        "cai",
         "dietrich",
         "theodora",
         "leda"
@@ -568,7 +568,7 @@
         "theodora",
         "leda",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "routeAgreement": true
     },
@@ -586,7 +586,7 @@
         "Cha": 40
       },
       "recruitableRoutes": [
-        "kai",
+        "cai",
         "dietrich",
         "theodora",
         "leda"
@@ -595,7 +595,7 @@
         "theodora",
         "leda",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "routeAgreement": true
     },
@@ -683,7 +683,7 @@
         "Cha": 25
       },
       "recruitableRoutes": [
-        "kai",
+        "cai",
         "dietrich",
         "theodora",
         "leda"
@@ -692,7 +692,7 @@
         "theodora",
         "leda",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "routeAgreement": true
     },
@@ -731,7 +731,7 @@
         "Cha": 40
       },
       "recruitableRoutes": [
-        "kai",
+        "cai",
         "dietrich",
         "theodora",
         "leda"
@@ -740,7 +740,7 @@
         "theodora",
         "leda",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "routeAgreement": true
     },
@@ -758,10 +758,10 @@
         "Cha": 40
       },
       "recruitableRoutes": [
-        "kai"
+        "cai"
       ],
       "localRoutes": [
-        "kai"
+        "cai"
       ],
       "routeAgreement": true,
       "routeBasis": "Game8 루트별 추천의 교체 불가 로드 + 로컬 시작 인물"
@@ -780,7 +780,7 @@
         "Cha": 45
       },
       "recruitableRoutes": [
-        "kai",
+        "cai",
         "dietrich",
         "theodora",
         "leda"
@@ -789,7 +789,7 @@
         "theodora",
         "leda",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "routeAgreement": true
     },
@@ -807,7 +807,7 @@
         "Cha": 30
       },
       "recruitableRoutes": [
-        "kai",
+        "cai",
         "dietrich",
         "theodora",
         "leda"
@@ -816,7 +816,7 @@
         "theodora",
         "leda",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "routeAgreement": true
     },
@@ -834,7 +834,7 @@
         "Cha": 50
       },
       "recruitableRoutes": [
-        "kai",
+        "cai",
         "dietrich",
         "theodora",
         "leda"
@@ -843,7 +843,7 @@
         "theodora",
         "leda",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "routeAgreement": true
     },
@@ -861,14 +861,14 @@
         "Cha": 50
       },
       "recruitableRoutes": [
-        "kai",
+        "cai",
         "theodora",
         "leda"
       ],
       "localRoutes": [
         "theodora",
         "leda",
-        "kai"
+        "cai"
       ],
       "routeAgreement": true
     },
@@ -886,7 +886,7 @@
         "Cha": 5
       },
       "recruitableRoutes": [
-        "kai",
+        "cai",
         "dietrich",
         "theodora",
         "leda"
@@ -895,7 +895,7 @@
         "theodora",
         "leda",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "routeAgreement": true
     }
@@ -907,7 +907,7 @@
     "레다": "leda",
     "디트리히": "dietrich",
     "게이츠": "dietrich",
-    "카이": "kai"
+    "카이": "cai"
   },
   "references": {
     "index": "https://game8.co/games/Fire-Emblem-Fortunes-Weave",

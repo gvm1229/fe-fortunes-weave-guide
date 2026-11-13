@@ -6,7 +6,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { json, type Part, type Route, type Tree } from './content';
 export type ReferenceDoc={path:string;title:string;body:string;tree?:Tree[];profile?:{name:string;portrait:string;className:string;tier:string;reason:string;selected:boolean}};
-const names:Record<string,string>={theodora:'세오도라',leda:'레다',dietrich:'디트리히',kai:'카이'};
+const names:Record<string,string>={theodora:'세오도라',leda:'레다',dietrich:'디트리히',cai:'카이'};
 export function documentsFor(route:Route|'all',part:Part):ReferenceDoc[]{
   const result:ReferenceDoc[]=[];
   const derived=JSON.parse(fs.readFileSync(path.join(process.cwd(),'content/derived/documents.json'),'utf8')) as Record<string,{body:string}>;

@@ -84,7 +84,7 @@
 
 ### 위치와 지도
 
-[지도 열기 · 카이 선택 후 Valhalla Mine 검색](https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624208 "recruit-map:azure-heart:kai")
+[지도 열기 · 카이 선택 후 Valhalla Mine 검색](https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624208 "recruit-map:azure-heart:cai")
 
 ![푸른 심장 위치 참고](../../assets/recruitment/valhalla-map.png)
 

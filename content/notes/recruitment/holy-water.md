@@ -110,7 +110,7 @@ Game8 지도에서 확인한 제도 다그시온의 위치. 도구점은 도시�
 
 ### 위치와 지도
 
-[카이 지도 열기](https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624208 "recruit-map:holy-water:kai")
+[카이 지도 열기](https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624208 "recruit-map:holy-water:cai")
 
 ![성수 위치 참고](../../assets/recruitment/dagsion-location.jpg)
 

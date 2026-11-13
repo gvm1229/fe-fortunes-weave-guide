@@ -10,14 +10,14 @@
         "buy-leda-first",
         "buy-leda08-cleansing-ground",
         "buy-dietrich-first",
-        "buy-kai-first",
+        "buy-cai-first",
         "shop-p3-osiris"
       ],
       "byStage": {
         "theodora-plan": "buy-theodora-first",
         "leda-plan": "buy-leda-first",
         "dietrich-plan": "buy-dietrich-first",
-        "kai-plan": "buy-kai-first",
+        "cai-plan": "buy-cai-first",
         "part3-plan": "shop-p3-osiris"
       },
       "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624713"
@@ -30,7 +30,7 @@
         "buy-theodora-first",
         "buy-leda-first",
         "buy-dietrich-first",
-        "buy-kai-first",
+        "buy-cai-first",
         "buy-part3-swords",
         "shop-p3-callianeira",
         "theo-levin-plan",
@@ -42,7 +42,7 @@
         "theodora-plan": "theo-levin-plan",
         "leda-plan": "buy-leda-first",
         "dietrich-plan": "buy-dietrich-first",
-        "kai-plan": "buy-kai-first",
+        "cai-plan": "buy-cai-first",
         "part3-plan": "buy-part3-swords"
       },
       "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628011"
@@ -146,12 +146,12 @@
     "star-spear": {
       "name": "카이 9장 지급창",
       "kind": "fixed",
-      "primaryGroup": "kai-route-09",
+      "primaryGroup": "cai-route-09",
       "groups": [
-        "kai-route-09"
+        "cai-route-09"
       ],
       "byStage": {
-        "kai-plan": "kai-route-09"
+        "cai-plan": "cai-route-09"
       },
       "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628488"
     },
@@ -321,14 +321,14 @@
         "buy-theodora-first",
         "buy-leda-first",
         "buy-dietrich-first",
-        "buy-kai-first",
+        "buy-cai-first",
         "shop-p3-vandahl"
       ],
       "byStage": {
         "theodora-plan": "buy-theodora-first",
         "leda-plan": "buy-leda-first",
         "dietrich-plan": "buy-dietrich-first",
-        "kai-plan": "buy-kai-first",
+        "cai-plan": "buy-cai-first",
         "part3-plan": "shop-p3-vandahl"
       },
       "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628043"
@@ -423,12 +423,12 @@
     "assal": {
       "name": "아살",
       "kind": "fixed",
-      "primaryGroup": "kai-04",
+      "primaryGroup": "cai-04",
       "groups": [
-        "kai-04"
+        "cai-04"
       ],
       "byStage": {
-        "kai-plan": "kai-04"
+        "cai-plan": "cai-04"
       },
       "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/628079"
     },

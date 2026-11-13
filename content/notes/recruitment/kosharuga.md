@@ -106,7 +106,7 @@
 
 ### 위치와 지도
 
-[지도 열기 · 카이 선택 후 Kosharu Lake 검색](https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624208 "recruit-map:kosharuga:kai")
+[지도 열기 · 카이 선택 후 Kosharu Lake 검색](https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624208 "recruit-map:kosharuga:cai")
 
 ![코샬루 가아 위치 참고](../../assets/guide/dispatch-ui.png)
 

@@ -8,7 +8,7 @@
 
 ## 위치 화면
 
-![2장 다그시온 도착 후 · 북동쪽 계단 장면](../../assets/events/kai02-stairs.png)
+![2장 다그시온 도착 후 · 북동쪽 계단 장면](../../assets/events/cai02-stairs.png)
 
 ## 근거
 

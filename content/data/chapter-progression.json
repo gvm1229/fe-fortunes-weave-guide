@@ -465,8 +465,8 @@
       "instruction": "상급 목표를 먼저 갖추고 계속 성장. 명성9~12에 대응하는 별도 레벨 제한은 없다.",
       "notArmyLevelTarget": true
     },
-    "kai:1": {
-      "anchor": "kai-01",
+    "cai:1": {
+      "anchor": "cai-01",
       "chapter": 1,
       "reviewLevel": 5,
       "examRecommendedLevel": 5,
@@ -474,8 +474,8 @@
       "instruction": "시설이 열리면 초급 시험 확인. 강제 이야기 중에는 레벨을 맞추려고 멈추지 않는다.",
       "notArmyLevelTarget": true
     },
-    "kai:2": {
-      "anchor": "miss-kai02-stairs",
+    "cai:2": {
+      "anchor": "miss-cai02-stairs",
       "chapter": 2,
       "reviewLevel": 5,
       "examRecommendedLevel": 5,
@@ -483,8 +483,8 @@
       "instruction": "시설이 열리면 초급 시험 확인. 강제 이야기 중에는 레벨을 맞추려고 멈추지 않는다.",
       "notArmyLevelTarget": true
     },
-    "kai:3": {
-      "anchor": "kai-route-03",
+    "cai:3": {
+      "anchor": "cai-route-03",
       "chapter": 3,
       "reviewLevel": 5,
       "examRecommendedLevel": 5,
@@ -492,8 +492,8 @@
       "instruction": "시설이 열리면 초급 시험 확인. 강제 이야기 중에는 레벨을 맞추려고 멈추지 않는다.",
       "notArmyLevelTarget": true
     },
-    "kai:4": {
-      "anchor": "miss-kai04-bertrand",
+    "cai:4": {
+      "anchor": "miss-cai04-bertrand",
       "chapter": 4,
       "reviewLevel": 19,
       "examRecommendedLevel": 20,
@@ -501,8 +501,8 @@
       "instruction": "Lv19에 닿은 본대만 중급 준비 확인. 명성4·기능·합격률이 갖춰지면 전직한다.",
       "notArmyLevelTarget": true
     },
-    "kai:5": {
-      "anchor": "kai-03",
+    "cai:5": {
+      "anchor": "cai-03",
       "chapter": 5,
       "reviewLevel": 19,
       "examRecommendedLevel": 20,
@@ -510,8 +510,8 @@
       "instruction": "Lv19에 닿은 본대만 중급 준비 확인. 명성4·기능·합격률이 갖춰지면 전직한다.",
       "notArmyLevelTarget": true
     },
-    "kai:6": {
-      "anchor": "miss-kai06-mural",
+    "cai:6": {
+      "anchor": "miss-cai06-mural",
       "chapter": 6,
       "reviewLevel": 19,
       "examRecommendedLevel": 20,
@@ -519,8 +519,8 @@
       "instruction": "Lv19에 닿은 본대만 중급 준비 확인. 명성4·기능·합격률이 갖춰지면 전직한다.",
       "notArmyLevelTarget": true
     },
-    "kai:7": {
-      "anchor": "kai-05",
+    "cai:7": {
+      "anchor": "cai-05",
       "chapter": 7,
       "reviewLevel": 34,
       "examRecommendedLevel": 35,
@@ -528,8 +528,8 @@
       "instruction": "Lv34에 닿은 본대만 상급 준비 확인. 명성8·기능·합격률을 갖추면 상급으로 바꿔 이후 레벨업한다.",
       "notArmyLevelTarget": true
     },
-    "kai:8": {
-      "anchor": "kai-route-08",
+    "cai:8": {
+      "anchor": "cai-route-08",
       "chapter": 8,
       "reviewLevel": 34,
       "examRecommendedLevel": 35,
@@ -537,8 +537,8 @@
       "instruction": "Lv34에 닿은 본대만 상급 준비 확인. 명성8·기능·합격률을 갖추면 상급으로 바꿔 이후 레벨업한다.",
       "notArmyLevelTarget": true
     },
-    "kai:9": {
-      "anchor": "kai-route-09",
+    "cai:9": {
+      "anchor": "cai-route-09",
       "chapter": 9,
       "reviewLevel": 35,
       "examRecommendedLevel": 35,
@@ -546,8 +546,8 @@
       "instruction": "상급 목표를 먼저 갖추고 계속 성장. 명성9~12에 대응하는 별도 레벨 제한은 없다.",
       "notArmyLevelTarget": true
     },
-    "kai:10": {
-      "anchor": "kai-route-10",
+    "cai:10": {
+      "anchor": "cai-route-10",
       "chapter": 10,
       "reviewLevel": 35,
       "examRecommendedLevel": 35,
@@ -555,8 +555,8 @@
       "instruction": "상급 목표를 먼저 갖추고 계속 성장. 명성9~12에 대응하는 별도 레벨 제한은 없다.",
       "notArmyLevelTarget": true
     },
-    "kai:11": {
-      "anchor": "kai-route-11",
+    "cai:11": {
+      "anchor": "cai-route-11",
       "chapter": 11,
       "reviewLevel": 35,
       "examRecommendedLevel": 35,
@@ -564,8 +564,8 @@
       "instruction": "상급 목표를 먼저 갖추고 계속 성장. 명성9~12에 대응하는 별도 레벨 제한은 없다.",
       "notArmyLevelTarget": true
     },
-    "kai:12": {
-      "anchor": "xp-review-kai-12",
+    "cai:12": {
+      "anchor": "xp-review-cai-12",
       "chapter": 12,
       "reviewLevel": 35,
       "examRecommendedLevel": 35,

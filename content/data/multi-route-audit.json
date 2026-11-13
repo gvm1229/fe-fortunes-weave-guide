@@ -33,7 +33,7 @@
           "currentPurpose": "희망 인물·비행 마법검.1부 상급 합격은 보류하고, 전용 탈것 보존을 우선."
         },
         {
-          "route": "kai",
+          "route": "cai",
           "role": "수집",
           "recruitment": "명성 7 · 지원 2",
           "phase2": [
@@ -81,7 +81,7 @@
           "currentPurpose": "1부는 영입·기능 준비를 우선. 별도 막타·시험 집중은 요구하지 않음."
         },
         {
-          "route": "kai",
+          "route": "cai",
           "role": "수집",
           "recruitment": "명성 10 · 지원 3 · 800G",
           "phase2": [
@@ -116,7 +116,7 @@
           "currentPurpose": "전투 성장판이 아닌 부족한 지참 무기 확보용 조건부 영입"
         },
         {
-          "route": "kai",
+          "route": "cai",
           "role": "본대",
           "recruitment": "명성 6 · 지원 2 · 철의 활 3",
           "phase2": [
@@ -195,7 +195,7 @@
           "currentPurpose": "마력·마방 또는 수비 성장"
         },
         {
-          "route": "kai",
+          "route": "cai",
           "role": "보완",
           "recruitment": "해당 루트 교섭 조건",
           "phase2": [
@@ -245,7 +245,7 @@
           "currentPurpose": "HP·힘·수비·창"
         },
         {
-          "route": "kai",
+          "route": "cai",
           "role": "본대",
           "recruitment": "명성 6 · 지원 3 · 반짝반짝어 1",
           "phase2": [
@@ -286,7 +286,7 @@
           "currentPurpose": "수비 기준판"
         },
         {
-          "route": "kai",
+          "route": "cai",
           "role": "본대",
           "recruitment": "명성 7 · 지원 2 · 다마센 곶 해수 무리 토벌(권장 Lv28)",
           "phase2": [
@@ -326,7 +326,7 @@
           "currentPurpose": "속도·마방"
         },
         {
-          "route": "kai",
+          "route": "cai",
           "role": "본대",
           "recruitment": "3장 · 명성 2 · 지원 1 · 도감 기준, 본문과 달라 교섭창 확인",
           "phase2": [
@@ -366,7 +366,7 @@
           "currentPurpose": "카이 전차병·한혈마의 물리 능력 + 디트리히 워리어의 도끼·격투 기능. 궁술은 최종 주력이 아님."
         },
         {
-          "route": "kai",
+          "route": "cai",
           "role": "본대",
           "recruitment": "5장 · 명성 5 · 지원 3 · 3,000G",
           "phase2": [
@@ -455,7 +455,7 @@
           "currentPurpose": "희망 인물·비행 마법검.1부 상급 합격은 보류하고, 전용 탈것 보존을 우선."
         },
         {
-          "route": "kai",
+          "route": "cai",
           "role": "수집",
           "recruitment": "명성 7 · 지원 2",
           "phase2": [
@@ -503,7 +503,7 @@
           "currentPurpose": "1부는 영입·기능 준비를 우선. 별도 막타·시험 집중은 요구하지 않음."
         },
         {
-          "route": "kai",
+          "route": "cai",
           "role": "수집",
           "recruitment": "명성 10 · 지원 3 · 800G",
           "phase2": [
@@ -538,7 +538,7 @@
           "currentPurpose": "전투 성장판이 아닌 부족한 지참 무기 확보용 조건부 영입"
         },
         {
-          "route": "kai",
+          "route": "cai",
           "role": "본대",
           "recruitment": "명성 6 · 지원 2 · 철의 활 3",
           "phase2": [
@@ -595,14 +595,14 @@
       "newDecision": "디트리히 영입 복원 · 같은 성장판이 아니라 리브로 실전 역할"
     },
     {
-      "route": "kai",
+      "route": "cai",
       "routeName": "카이",
       "name": "리네",
       "reason": "계획12명으로 정원13 안에 여유가 있고 티아라 원격 회복의 범위·횟수를 보완 · 세 번째 스탯 작업과 구별",
       "newDecision": "카이 리네 실전 회복 복원 · 두 번째 리브로"
     },
     {
-      "route": "kai",
+      "route": "cai",
       "routeName": "카이",
       "name": "에스메랄다",
       "reason": "카이·에스메랄다 A가 1·2부 한정이라 같은 루트 영입이 필요(2026-11-12 사용자 결정)",
@@ -615,7 +615,7 @@
       "routes": [
         "theodora",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "purpose": "지원 대화",
       "pairs": {
@@ -693,7 +693,7 @@
       "routes": [
         "theodora",
         "leda",
-        "kai"
+        "cai"
       ],
       "purpose": "지원 대화",
       "pairs": {
@@ -783,7 +783,7 @@
       "name": "세테스",
       "routes": [
         "theodora",
-        "kai"
+        "cai"
       ],
       "purpose": "지원 대화",
       "pairs": {
@@ -806,7 +806,7 @@
       "routes": [
         "theodora",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "purpose": "지원 대화",
       "pairs": {
@@ -847,7 +847,7 @@
       "name": "티아라",
       "routes": [
         "theodora",
-        "kai"
+        "cai"
       ],
       "purpose": "지원 대화",
       "pairs": {
@@ -931,7 +931,7 @@
       "routes": [
         "leda",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "purpose": "지원 대화",
       "pairs": {
@@ -959,7 +959,7 @@
       "routes": [
         "leda",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "purpose": "지원 대화",
       "pairs": {
@@ -988,7 +988,7 @@
       "routes": [
         "leda",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "purpose": "지원 대화",
       "pairs": {
@@ -1036,7 +1036,7 @@
       "name": "양계",
       "routes": [
         "dietrich",
-        "kai"
+        "cai"
       ],
       "purpose": "지원 대화",
       "pairs": {
@@ -1050,7 +1050,7 @@
       "name": "피터르",
       "routes": [
         "dietrich",
-        "kai"
+        "cai"
       ],
       "purpose": "지원 대화",
       "pairs": {

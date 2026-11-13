@@ -8,7 +8,7 @@ import { Card } from './ui/card';
 import { ToggleGroup, ToggleGroupItem } from './ui/toggle-group';
 import { usePreference } from './preferences';
 import { withViewTransition } from '@/lib/view-transition';
-const routeNames:Record<string,string>={theodora:'세오도라',leda:'레다',dietrich:'디트리히',kai:'카이'};
+const routeNames:Record<string,string>={theodora:'세오도라',leda:'레다',dietrich:'디트리히',cai:'카이'};
 type Data=ReturnType<typeof teamData>;
 /** 루트 편성 탭: 원본 조각을 카드 하나에 얼굴 하나로 다시 배치한다. 글 속 인물·병종 그림은 넣지 않는다. */
 export function TeamRoutes({data,classes,onDoc,onSpell}:{data:Data;classes:Record<string,ClassInfo>;onDoc:(url:string)=>void;onSpell:(id:string)=>void}){

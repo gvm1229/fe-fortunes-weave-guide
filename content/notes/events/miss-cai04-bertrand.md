@@ -8,7 +8,7 @@
 
 ## 위치 화면
 
-![4장 · 자유행동 시작 직후 지하 투기장](../../assets/events/kai04-bertrand.png)
+![4장 · 자유행동 시작 직후 지하 투기장](../../assets/events/cai04-bertrand.png)
 
 ## 근거
 

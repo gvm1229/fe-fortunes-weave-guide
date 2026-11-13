@@ -76,7 +76,7 @@ export function DocumentSheet({docs,current,onOpen,onClose,route,part='3'}:{docs
     if(/(?:^|\/)data\//.test(href))return <a href={'/reference-data/'+href.slice(href.lastIndexOf('/')+1)} target="_blank" rel="noreferrer">{children}</a>;
     if(/\.(?:json|png|jpe?g|webp)(?:#.*)?$/.test(href))return <a href={'/reference-files/'+resolveDoc(href,path)} target="_blank" rel="noreferrer">{children}</a>;
     const resolved=resolveDoc(href,path).split('#')[0];
-    if(!docs.some(d=>d.path===resolved)&&/^(?:index|tips|units|part[23]|theodora|leda|dietrich|kai|classes|characters|paralogues|sources)\.md$/.test(resolved))return <span title="참고 보관의 원본 공략">{children}</span>;
+    if(!docs.some(d=>d.path===resolved)&&/^(?:index|tips|units|part[23]|theodora|leda|dietrich|cai|classes|characters|paralogues|sources)\.md$/.test(resolved))return <span title="참고 보관의 원본 공략">{children}</span>;
     return <button data-doc-url={href} className="text-link" onClick={()=>follow(href)}>{children}</button>;
   }
   return <Sheet open={current!==null} onOpenChange={open=>{if(!open)close();}}><SheetContent themeRoute={route}><div className="sheet-heading"><Button variant="ghost" onClick={back} disabled={!history.length}><ArrowLeft size={20}/> 뒤로</Button><SheetTitle>{doc?.title||'문서 확인'}</SheetTitle></div><div className="sheet-scroll" ref={scroll} onScroll={e=>{if(url)positions.current.set(url,e.currentTarget.scrollTop);}}>

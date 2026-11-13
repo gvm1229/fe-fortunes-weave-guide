@@ -110,7 +110,7 @@ Game8 지도에서 확인한 제도 다그시온. 핀의 무기점 목록에 Iro
 
 ### 위치와 지도
 
-[카이 지도 열기](https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624208 "recruit-map:iron-bow:kai")
+[카이 지도 열기](https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624208 "recruit-map:iron-bow:cai")
 
 ![철의 활 위치 참고](../../assets/recruitment/dagsion-location.jpg)
 

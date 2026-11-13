@@ -1765,10 +1765,10 @@
         "afterScheduledSpend": 5000
       }
     ],
-    "kai": [
+    "cai": [
       {
         "chapter": 1,
-        "anchor": "kai-01",
+        "anchor": "cai-01",
         "items": [],
         "extras": [],
         "notes": [
@@ -1780,7 +1780,7 @@
       },
       {
         "chapter": 2,
-        "anchor": "miss-kai02-stairs",
+        "anchor": "miss-cai02-stairs",
         "items": [],
         "extras": [],
         "notes": [
@@ -1792,7 +1792,7 @@
       },
       {
         "chapter": 3,
-        "anchor": "kai-route-03",
+        "anchor": "cai-route-03",
         "items": [],
         "extras": [],
         "notes": [
@@ -1804,7 +1804,7 @@
       },
       {
         "chapter": 4,
-        "anchor": "miss-kai04-bertrand",
+        "anchor": "miss-cai04-bertrand",
         "items": [
           {
             "label": "미카엘라 영입용",
@@ -1847,7 +1847,7 @@
       },
       {
         "chapter": 5,
-        "anchor": "kai-03",
+        "anchor": "cai-03",
         "items": [
           {
             "label": "미카엘라 영입용",
@@ -1903,7 +1903,7 @@
       },
       {
         "chapter": 6,
-        "anchor": "miss-kai06-mural",
+        "anchor": "miss-cai06-mural",
         "items": [
           {
             "label": "누조 영입용 철의 활3개 적립",
@@ -1966,7 +1966,7 @@
       },
       {
         "chapter": 7,
-        "anchor": "kai07-carriage-unlock",
+        "anchor": "cai07-carriage-unlock",
         "items": [
           {
             "label": "마차 해금용 차축 부품1개",
@@ -2043,7 +2043,7 @@
       },
       {
         "chapter": 8,
-        "anchor": "kai-route-08",
+        "anchor": "cai-route-08",
         "items": [
           {
             "label": "누조 영입용 철의 활3개 적립",
@@ -2117,7 +2117,7 @@
       },
       {
         "chapter": 9,
-        "anchor": "kai-route-09",
+        "anchor": "cai-route-09",
         "items": [
           {
             "label": "누조 영입용 철의 활3개 구입",
@@ -2191,7 +2191,7 @@
       },
       {
         "chapter": 10,
-        "anchor": "kai-route-10",
+        "anchor": "cai-route-10",
         "items": [
           {
             "label": "상급 시험 증서 2장용",
@@ -2268,7 +2268,7 @@
       },
       {
         "chapter": 11,
-        "anchor": "kai-route-11",
+        "anchor": "cai-route-11",
         "items": [
           {
             "label": "상급 시험 증서 1장용",
@@ -2344,7 +2344,7 @@
       },
       {
         "chapter": 12,
-        "anchor": "kai-06",
+        "anchor": "cai-06",
         "items": [
           {
             "label": "알렉산드라·이오 비탑승 중급 자격용",
@@ -2799,27 +2799,27 @@
     "di-12": "dietrich:9",
     "miss-di10-fabio-chain": "dietrich:10",
     "di-20": "dietrich:11",
-    "kai-01": "kai:1",
-    "miss-kai02-stairs": "kai:2",
-    "kai-route-03": "kai:3",
-    "miss-kai04-bertrand": "kai:4",
-    "kai-03": "kai:5",
-    "miss-kai06-mural": "kai:6",
-    "kai-route-08": "kai:8",
-    "kai-route-09": "kai:9",
-    "kai-route-10": "kai:10",
-    "kai-route-11": "kai:11",
+    "cai-01": "cai:1",
+    "miss-cai02-stairs": "cai:2",
+    "cai-route-03": "cai:3",
+    "miss-cai04-bertrand": "cai:4",
+    "cai-03": "cai:5",
+    "miss-cai06-mural": "cai:6",
+    "cai-route-08": "cai:8",
+    "cai-route-09": "cai:9",
+    "cai-route-10": "cai:10",
+    "cai-route-11": "cai:11",
     "p3-roster": "part3:1",
     "miss-p3-02-cai": "part3:2",
     "miss-p3-03-fortuna": "part3:3",
     "miss-p3-04-fortuna": "part3:4",
     "collect-p3-aswan-bow": "part3:5",
     "miss-post-prologue": "part3:6",
-    "kai07-carriage-unlock": "kai:7",
+    "cai07-carriage-unlock": "cai:7",
     "xp-review-theodora-12": "theodora:12",
     "xp-review-leda-12": "leda:12",
     "xp-review-dietrich-12": "dietrich:12",
-    "xp-review-kai-12": "kai:12"
+    "xp-review-cai-12": "cai:12"
   },
   "groupBudget": {
     "theo-01": "theodora:1",
@@ -2908,22 +2908,22 @@
     "di-25": "dietrich:12",
     "di-26": "dietrich:12",
     "di-27": "dietrich:12",
-    "kai-01": "kai:1",
-    "miss-kai02-stairs": "kai:2",
-    "kai-route-02": "kai:2",
-    "kai-route-03": "kai:3",
-    "miss-kai04-bertrand": "kai:4",
-    "kai-02": "kai:4",
-    "buy-kai-first": "kai:4",
-    "kai-03": "kai:5",
-    "miss-kai06-mural": "kai:6",
-    "kai-04": "kai:6",
-    "kai-05": "kai:7",
-    "kai-route-08": "kai:8",
-    "kai-route-09": "kai:9",
-    "kai-route-10": "kai:10",
-    "kai-route-11": "kai:11",
-    "kai-06": "kai:12",
+    "cai-01": "cai:1",
+    "miss-cai02-stairs": "cai:2",
+    "cai-route-02": "cai:2",
+    "cai-route-03": "cai:3",
+    "miss-cai04-bertrand": "cai:4",
+    "cai-02": "cai:4",
+    "buy-cai-first": "cai:4",
+    "cai-03": "cai:5",
+    "miss-cai06-mural": "cai:6",
+    "cai-04": "cai:6",
+    "cai-05": "cai:7",
+    "cai-route-08": "cai:8",
+    "cai-route-09": "cai:9",
+    "cai-route-10": "cai:10",
+    "cai-route-11": "cai:11",
+    "cai-06": "cai:12",
     "p3-roster": "part3:1",
     "p3-stables": "part3:1",
     "p3-alex-pick": "part3:1",
@@ -2966,7 +2966,7 @@
     "prep-mount-recruits": "theodora:12",
     "mount-prep-leda": "leda:12",
     "mount-prep-dietrich": "dietrich:12",
-    "mount-prep-kai": "kai:12"
+    "mount-prep-cai": "cai:12"
   },
   "warAnchor": "war-leda-first",
   "sources": {

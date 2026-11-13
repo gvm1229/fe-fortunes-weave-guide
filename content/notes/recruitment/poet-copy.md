@@ -84,7 +84,7 @@ Game8 일문 공략의 실제 이동 그림. 오른쪽 카르토도역에서 이
 
 ### 위치와 지도
 
-[지도 열기 · 카이 선택 후 Secret Altar 검색](https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624208 "recruit-map:poet-copy:kai")
+[지도 열기 · 카이 선택 후 Secret Altar 검색](https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624208 "recruit-map:poet-copy:cai")
 
 ![시인의 비문 사본 위치 참고](../../assets/recruitment/secret-altar-map.png)
 

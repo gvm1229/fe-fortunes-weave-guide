@@ -106,7 +106,7 @@
 
 ### 위치와 지도
 
-[지도 열기 · 카이 선택 후 Secret Altar 검색](https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624208 "recruit-map:sandworm-meat:kai")
+[지도 열기 · 카이 선택 후 Secret Altar 검색](https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624208 "recruit-map:sandworm-meat:cai")
 
 ![모래벌레 고기 위치 참고](../../assets/recruitment/secret-altar-map.png)
 
