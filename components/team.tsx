@@ -116,8 +116,8 @@ function UnitSheet({name,u,out,data,classes,part,onDoc,semanticProps}:{name:stri
     <dl className="detail-pairs">
       <div><dt>최종 병종</dt><dd className="route-unit-class">{classes[u.class]&&<img src={'/'+classes[u.class].file} alt=""/>}<button className="text-link" onClick={()=>onDoc(`notes/classes/${u.classSlug}.md`)}>{u.class}</button><Badge>{u.classTier}</Badge></dd></div>
       {e&&<div><dt>시험 조건</dt><dd><p>{[e.tier,/^\d/.test(e.level)?`권장 Lv${e.level}`:'',/^\d/.test(e.renown)?`명성 ${e.renown}`:'',e.required&&`필수 ${e.required}`,e.choice&&`선택 ${e.choice}`].filter(Boolean).join(' · ')}</p>{e.unlock&&<p>해금 {e.unlock.replace(/^[\s·]+/,'')}</p>}</dd></div>}
-      <div><dt>병과의 사용 가능 무기</dt><dd className="route-weapons">{(u.usableWeapons||u.weapons).map(w=><span key={w.label}><img src={'/'+w.icon} alt=""/>{w.label.replace('백마법','백마술')}</span>)}</dd></div>
-      <div><dt>특기</dt><dd className="route-weapons">{u.specialtyIcons.map(s=><span key={s.skill}><img src={'/'+s.icon} alt=""/>{s.skill}</span>)}</dd></div>
+      <div><dt>병과의 사용 가능 무기</dt><dd className="route-weapons">{(u.usableWeapons||u.weapons).map(w=><span className="game-badge" data-kind="skill" key={w.label}><img src={'/'+w.icon} alt=""/>{w.label.replace('백마법','백마술')}</span>)}</dd></div>
+      <div><dt>특기</dt><dd className="route-weapons">{u.specialtyIcons.map(s=><span className="game-badge" data-kind="skill" key={s.skill}><img src={'/'+s.icon} alt=""/>{s.skill}</span>)}</dd></div>
       <div><dt>주요 무기·마법</dt><dd>{u.signatureWeapons.map(w=><div key={w.name} className="signature"><p><img className="game-skill" src={'/'+w.icon} alt=""/><strong>{w.name}</strong> · {w.rank}</p><Records value={{$prose:w.note.split(/(?<=[.!?。])\s+|(?<=[.!?。])(?=[가-힣])/u)}} disclose={false}/></div>)}</dd></div>
       {data.white[name]?.tree.length>0&&<div><dt>핵심 백마술</dt><dd><Semantic nodes={data.white[name].tree} {...semanticProps}/></dd></div>}
       {u.growthGoal&&<div><dt>경유</dt><dd>{u.growthGoal.via} → {u.growthGoal.skill} {u.growthGoal.rank} · {u.growthGoal.unlock}</dd></div>}
