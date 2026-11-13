@@ -4,6 +4,7 @@ import path from 'node:path';
 import overrides from '@/content/display-overrides.json';
 import { scopeTree } from './scope';
 import { displayText } from './display';
+import { personPortrait } from './portraits';
 import type { Chapter } from './checklist';
 export type Route = 'theodora' | 'leda' | 'dietrich' | 'kai' | 'part3';
 export type Part = '1' | '2' | '3';
@@ -28,7 +29,7 @@ export function groupsFor(route: Route, part: Part) {
 export function chaptersForRoute(route:Route,part:Part):Chapter[]{return json<{stages:{id:string;chapters:Chapter[]}[]}>('derived/checklist').stages.find(s=>s.id===stageId(route,part))!.chapters;}
 export function routeParams() { return routes.flatMap(r => (r.id === 'part3' ? ['3'] : ['1','2']).map(part => ({ route: r.id, part }))); }
 export function validScope(route: string, part: string): route is Route { return routeParams().some(p => p.route === route && p.part === part); }
-export type Person = { name: string; route: Route; role: string; portrait: string; gifts:string[]; classes: string[]; goal: unknown; readiness: unknown; recruitment: unknown; gates: unknown; joinLabel?:string; details?: Tree[] };
+export type Person = { id:string; name: string; route: Route; role: string; kind:string; order:string; portrait: string; gifts:string[]; classes: string[]; goal: unknown; readiness: unknown; recruitment: unknown; gates: unknown; joinLabel?:string; details?: Tree[] };
 type Goals = Record<string, Record<string, Record<string, unknown>>>;
 export function peopleFor(route: Route, part: Part): Person[] {
   const goals = json<{ routes: Goals }>('data/phase-goals').routes;
@@ -36,7 +37,7 @@ export function peopleFor(route: Route, part: Part): Person[] {
   const portraits = json<Record<string,{portrait:string;gifts?:string[]}>>('data/people-display');
   const ready = json<{routes: Record<string,Record<string,unknown>>}>('data/unit-readiness').routes;
   const gates = json<{characters: Record<string,{routes:Record<string,unknown>;gates: {route:string}[]}>}>('data/recruitment-gates').characters;
-  const display = json<{parity:{people: {name:string;route:Route;tree:Tree[]}[]}}>('derived/presentation').parity.people;
+  const display = json<{parity:{people: {id:string;name:string;route:Route;kind:string;order:string;tree:Tree[]}[]}}>('derived/presentation').parity.people;
   const readableGoals=presentation<{routes:Goals}>('phase-goals').routes;
   const readableReady=presentation<{routes:Record<string,Record<string,unknown>>}>('unit-readiness').routes;
   const readableGates=presentation<{characters:Record<string,{routes:Record<string,unknown>;gates:{route:string}[]}>}>('recruitment-gates').characters;
@@ -45,6 +46,6 @@ export function peopleFor(route: Route, part: Part): Person[] {
     const goal = goals[p.route]?.[p.name]?.[part] as {classes?:string[]} | undefined;
     const assignment=assignments.find(a=>a.name===p.name&&a.route===p.route),automatic=assignment&&(/자동/.test(assignment.prerequisite)||assignment.prerequisite==='진영장');
     const joinLabel=automatic?(assignment.deadline.chapter==='1장'?'시작 동료':`자동 합류 ${assignment.deadline.chapter}`):undefined;
-    return { name:p.name,route:p.route,role:selections[p.route]?.people[p.name]?.roles[part] || '미확인',portrait:portraits[p.name]?.portrait || '',gifts:portraits[p.name]?.gifts||[],classes:goal?.classes || [],goal:readableGoals[p.route]?.[p.name]?.[part] || '미확인',readiness:readableReady[p.route]?.[p.name] || ready[p.route]?.[p.name] || '미확인',recruitment:readableGates[p.name]?.routes[p.route] || gates[p.name]?.routes[p.route] || '미확인',gates:readableGates[p.name]?.gates.filter(g=>g.route===p.route) || [],joinLabel,details:scopeTree(p.tree,p.route,part) };
+    return { id:p.id,name:p.name,route:p.route,role:selections[p.route]?.people[p.name]?.roles[part] || '미확인',kind:p.kind,order:p.order,portrait:personPortrait(portraits[p.name]?.portrait || '',part,p.name),gifts:portraits[p.name]?.gifts||[],classes:goal?.classes || [],goal:readableGoals[p.route]?.[p.name]?.[part] || '미확인',readiness:readableReady[p.route]?.[p.name] || ready[p.route]?.[p.name] || '미확인',recruitment:readableGates[p.name]?.routes[p.route] || gates[p.name]?.routes[p.route] || '미확인',gates:readableGates[p.name]?.gates.filter(g=>g.route===p.route) || [],joinLabel,details:scopeTree(p.tree,p.route,part) };
   });
 }

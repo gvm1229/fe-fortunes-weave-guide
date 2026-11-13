@@ -7,9 +7,11 @@ import { checked } from '@/lib/check-state';
 import { useChecks } from './checks';
 import { chapterDates } from './tasks';
 import { MapThumbnail } from './detail-sheets';
+import { personPortrait } from '@/lib/portraits';
 export function ContextRail({chapter,groups,people,data,onPerson,onMaterial}:{chapter:Chapter;groups:Group[];people:Person[];data:Secondary;onPerson:(name:string)=>void;onMaterial:(id:string)=>void}){
   const checks=useChecks(),cg=chapterGroups(chapter,groups),total=cg.reduce((n,g)=>n+g.actions.length,0),done=cg.reduce((n,g)=>n+g.actions.filter(a=>checked(a,g.id,checks.data.checks)).length,0);
-  const portraits=new Set(chapter.blocks.flatMap(b=>b.portraits.map(p=>p.src))),members=people.filter(p=>portraits.has(p.portrait)),materialIds=new Set<string>();
+  const part=groups[0]?.stage==='part3-plan'?'3':'1';
+  const portraits=new Set(chapter.blocks.flatMap(b=>b.portraits.map(p=>personPortrait(p.src,part,p.name)))),members=[...new Map(people.filter(p=>portraits.has(p.portrait)).map(p=>[p.name,p])).values()],materialIds=new Set<string>();
   for(const b of chapter.blocks)for(const nodes of [b.heading,b.notes,...Object.values(b.actions)])walkTree(nodes,n=>{if(n.attrs['data-recruit-material'])materialIds.add(n.attrs['data-recruit-material']);});
   const materials=data.materials.filter(m=>materialIds.has(m.id));
   const gold=Array.isArray(data.gold)?data.gold.find(g=>String(g.chapter)===chapter.title.replace(/\D/g,'')):undefined;
