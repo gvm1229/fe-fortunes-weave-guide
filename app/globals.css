@@ -103,6 +103,7 @@ progress{appearance:none;border:0;border-radius:8px;overflow:hidden;height:8px;b
 .team-reference [data-face-row]{display:inline-flex;align-items:center;gap:8px}
 .team-reference .semantic nav{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
 @media(min-width:768px) and (max-width:1199px){.context-rail{position:static;height:auto;overflow:visible}}
+@media(min-width:768px) and (max-width:1199px){.home [data-route="dietrich"] .lord-portrait{object-position:25% top}}
 @media(max-width:767px){
   .people-filters .search{flex-basis:100%}
   .lord-portrait{padding-top:64px}
