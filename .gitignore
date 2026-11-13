@@ -4,6 +4,7 @@ out/
 .tmp/
 public/assets/
 public/reference-data/
+public/reference-files/
 *.tsbuildinfo
 test-results/
 playwright-report/

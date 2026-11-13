@@ -6,5 +6,7 @@ mkdirSync(temp, { recursive: true });
 process.env.TEMP = process.env.TMP = temp;
 cpSync('assets', 'public/assets', { recursive: true });
 cpSync('content/data', 'public/reference-data', { recursive: true });
+cpSync('content/attachments', 'public/reference-files', { recursive: true });
+cpSync('content/theodora-progress-import.json', 'public/reference-files/theodora-progress-import.json');
 const result = spawnSync(process.execPath, ['node_modules/next/dist/bin/next', process.argv[2], '--webpack'], { stdio: 'inherit', env: process.env });
 process.exit(result.status ?? 1);

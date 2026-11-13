@@ -1,0 +1,2507 @@
+[
+  {
+    "source": "assets/carry/blessings-menu.png",
+    "target": "assets/carry/blessings-menu.png",
+    "sha256": "c6fb728ee96afc003209b292aab8a1519efcb0069a598389979520692972416f"
+  },
+  {
+    "source": "assets/carry/boons-list.png",
+    "target": "assets/carry/boons-list.png",
+    "sha256": "95d4b1dfdf13677223cc7d03df4f2913ecc7079f4172d51593690e640fdb31e9"
+  },
+  {
+    "source": "assets/carry/boons-menu.png",
+    "target": "assets/carry/boons-menu.png",
+    "sha256": "9b232d62d5425cdd94644fc8966c9f07f2fc5bdb1951aeba7d226de41e66d7be"
+  },
+  {
+    "source": "assets/carry/boons-selection.png",
+    "target": "assets/carry/boons-selection.png",
+    "sha256": "c65afc98e2da74702238451129379896056192fbd81f30ea398daaad2f609052"
+  },
+  {
+    "source": "assets/carry/boons-unlock.png",
+    "target": "assets/carry/boons-unlock.png",
+    "sha256": "bc768b035b14c8b70dfcca1ea6c9f664041b6d0ca50badef6a62052eb7784d14"
+  },
+  {
+    "source": "assets/carry/global-map.png",
+    "target": "assets/carry/global-map.png",
+    "sha256": "766386258d01be644e22ec2e0675e1b6081f08f652b4c3594bec6dcf17f36702"
+  },
+  {
+    "source": "assets/carry/manifest.json",
+    "target": "assets/carry/manifest.json",
+    "sha256": "a83ffe85fe6a68bfbbe4fdeb4d477ba94a1b9af95e8a1adb8faac0e66363e8a5"
+  },
+  {
+    "source": "assets/carry/SOURCES.md",
+    "target": "assets/carry/SOURCES.md",
+    "sha256": "07ea800885ad32beb0d9aab2ba4c3f0ee2e51cc94f094c8d37285f9fecf4a5b5"
+  },
+  {
+    "source": "assets/classes/archer.webp",
+    "target": "assets/classes/archer.webp",
+    "sha256": "66ff78a0453c200e0a459af799f2c4af1311a6dc8eace8ff473acf7a3296207b"
+  },
+  {
+    "source": "assets/classes/armored-knight.webp",
+    "target": "assets/classes/armored-knight.webp",
+    "sha256": "9737440ce19246e2de4bcbd684158c83f2c3696c228bc01f655d68c888abe768"
+  },
+  {
+    "source": "assets/classes/armored-ornius-rider.webp",
+    "target": "assets/classes/armored-ornius-rider.webp",
+    "sha256": "7871d0ceabf0c9c1ea8a652f6b3a25f9d3cd954f1a44fb7ad663998b1ec8297e"
+  },
+  {
+    "source": "assets/classes/bardinger.webp",
+    "target": "assets/classes/bardinger.webp",
+    "sha256": "52943c3284ebdf476948a709213e03e0480417276ac2c5f09dba4af1015c1b09"
+  },
+  {
+    "source": "assets/classes/battlemaster.webp",
+    "target": "assets/classes/battlemaster.webp",
+    "sha256": "f8543b51f4b5dc5d218482999ca9684c38d1d06c03b66508a76602a4f0250638"
+  },
+  {
+    "source": "assets/classes/bau-lord.webp",
+    "target": "assets/classes/bau-lord.webp",
+    "sha256": "dfcb4fe9f9c7176dfc04d9c82363eeedb7e740f147186530c03732469355baae"
+  },
+  {
+    "source": "assets/classes/bishop.webp",
+    "target": "assets/classes/bishop.webp",
+    "sha256": "42950961f31a474f9c89c2ce97159c4ac45d26fe91b6cda907428115be011fa5"
+  },
+  {
+    "source": "assets/classes/blacksmith.webp",
+    "target": "assets/classes/blacksmith.webp",
+    "sha256": "98788d5a50e433f19d03ed07f118bfdf0286bdce856f0f08ebb9c13d43611d71"
+  },
+  {
+    "source": "assets/classes/bow-adept.webp",
+    "target": "assets/classes/bow-adept.webp",
+    "sha256": "5bde84563ea387e3792b6359f2439d1f666d6bda1fe3bce005ec2c9da36b674c"
+  },
+  {
+    "source": "assets/classes/bow-knight.webp",
+    "target": "assets/classes/bow-knight.webp",
+    "sha256": "d18e293711c364f63486927fb6b85fb41918d92b9f37715efafd3de75a384938"
+  },
+  {
+    "source": "assets/classes/brigand.webp",
+    "target": "assets/classes/brigand.webp",
+    "sha256": "fe3c26b40230db8b4f135c497e44618227c9992f054c4d4a136fb1dc489d7111"
+  },
+  {
+    "source": "assets/classes/caladrius.webp",
+    "target": "assets/classes/caladrius.webp",
+    "sha256": "fee47257bce6056981125187e225bc085f6dff630bfc049fe1c54b7c61d14eee"
+  },
+  {
+    "source": "assets/classes/castle-knight.webp",
+    "target": "assets/classes/castle-knight.webp",
+    "sha256": "08735dbf0860927b3f020cf326887cb9c43dd505665a69cf7a323330b55e5b25"
+  },
+  {
+    "source": "assets/classes/cataphract.webp",
+    "target": "assets/classes/cataphract.webp",
+    "sha256": "8d248a0c5952aa0dd841e9149106e0316a12ee27a2c2ac8ebd4b2256b26391a2"
+  },
+  {
+    "source": "assets/classes/celestial-trooper.webp",
+    "target": "assets/classes/celestial-trooper.webp",
+    "sha256": "9f5b9f465d2aae7220738d80631306c82ee880c00931a56e9d05b4bbb91bdb11"
+  },
+  {
+    "source": "assets/classes/charioteer.webp",
+    "target": "assets/classes/charioteer.webp",
+    "sha256": "85587c22629b8a9b780f9c32fd8460cad03e28cbc5681e3a634f843f6eec3be5"
+  },
+  {
+    "source": "assets/classes/dancer.webp",
+    "target": "assets/classes/dancer.webp",
+    "sha256": "88d02f1ee21e350a59d701ef829efdb6f72574d690c93e1948dc4226c8bfb9b8"
+  },
+  {
+    "source": "assets/classes/diviner.webp",
+    "target": "assets/classes/diviner.webp",
+    "sha256": "06463c857f3dbc0f996a87c232653620e8fc43331e487797b276f4aef6d66360"
+  },
+  {
+    "source": "assets/classes/dragoon.webp",
+    "target": "assets/classes/dragoon.webp",
+    "sha256": "b557a2278d018638f660cc5d5062bcbfc9addbd0f980dcb86af97d174e402821"
+  },
+  {
+    "source": "assets/classes/dreadnought.webp",
+    "target": "assets/classes/dreadnought.webp",
+    "sha256": "4e73f90b93e2da23bd3bb7af2ff5dc4378d201d87f676d92dd473ab6ce5996a7"
+  },
+  {
+    "source": "assets/classes/druid.webp",
+    "target": "assets/classes/druid.webp",
+    "sha256": "7e4dd7f73aee42da2cb6fee2705a84d4024f7c26d5eab9612b654baabb5f56df"
+  },
+  {
+    "source": "assets/classes/elephant-rider.webp",
+    "target": "assets/classes/elephant-rider.webp",
+    "sha256": "8ec9b2f89f87eec7c0c0e362553449142bd554ca51fb653e39975b7a1d233f6f"
+  },
+  {
+    "source": "assets/classes/forest-knight.webp",
+    "target": "assets/classes/forest-knight.webp",
+    "sha256": "94a9d5c9572fcae09f1458a8cac9652a26f3513eff12899b81c74fef518dcf48"
+  },
+  {
+    "source": "assets/classes/gladiator.webp",
+    "target": "assets/classes/gladiator.webp",
+    "sha256": "958531d29d5bf4f010be5ff9a0f5ef277cfb397fb67ae8d9803936006d728455"
+  },
+  {
+    "source": "assets/classes/great-knight.webp",
+    "target": "assets/classes/great-knight.webp",
+    "sha256": "a89ea3ca425c305b13c893425335618e51e4e826a13569ebe7b23e40018e4c41"
+  },
+  {
+    "source": "assets/classes/guardian.webp",
+    "target": "assets/classes/guardian.webp",
+    "sha256": "65e29a40258ff6998f37195c2e38138db659323161e143889cf4bd2fa9eae898"
+  },
+  {
+    "source": "assets/classes/high-savant.webp",
+    "target": "assets/classes/high-savant.webp",
+    "sha256": "aba41fb20e6f3777722052acd6b4daa6bd22efb1c0a73af7007fee87c3148e48"
+  },
+  {
+    "source": "assets/classes/hunter.webp",
+    "target": "assets/classes/hunter.webp",
+    "sha256": "9ab0fe519f5a269a7a547d46944e6dc28ba78d428e7cc3d82145f1a19ebf25e1"
+  },
+  {
+    "source": "assets/classes/light-cavalry.webp",
+    "target": "assets/classes/light-cavalry.webp",
+    "sha256": "0a264c7c0a1b97a81bc079c45ebca51e5181f909a95dee524fda500aa9f66f22"
+  },
+  {
+    "source": "assets/classes/manifest.json",
+    "target": "assets/classes/manifest.json",
+    "sha256": "1ae325097a15e48b49a75393284e32211c22f2c401beecf44d7c9cb3789fcc6e"
+  },
+  {
+    "source": "assets/classes/myrmidon.webp",
+    "target": "assets/classes/myrmidon.webp",
+    "sha256": "ae2ec9f4b8d58d455ca0b6146650a977021d4a6f6c7443cf181df07c2a35e981"
+  },
+  {
+    "source": "assets/classes/orichalda.webp",
+    "target": "assets/classes/orichalda.webp",
+    "sha256": "65c780bac458cc07929e130ce0c46f8941367f3e33d8ef9e023dc28367f38872"
+  },
+  {
+    "source": "assets/classes/ornius-rider.webp",
+    "target": "assets/classes/ornius-rider.webp",
+    "sha256": "29f225e3b0340b6c1fd4ad7887a638f0377522821be244e1497b37ef6b3e60b4"
+  },
+  {
+    "source": "assets/classes/ovate.webp",
+    "target": "assets/classes/ovate.webp",
+    "sha256": "70bb496021d650b45a95678415a86514474a603983fedb0fba2baa24ef6355bd"
+  },
+  {
+    "source": "assets/classes/priest.webp",
+    "target": "assets/classes/priest.webp",
+    "sha256": "e6ae97421e6850a61cf8f3b43d6d6e7f430721e8a6082dd30330a3ae42f9f999"
+  },
+  {
+    "source": "assets/classes/pugilist.webp",
+    "target": "assets/classes/pugilist.webp",
+    "sha256": "90b86f0da2e1dd48426b072f6dee80969fe447863fa3f58b4c2bc11f2a0382da"
+  },
+  {
+    "source": "assets/classes/ranger.webp",
+    "target": "assets/classes/ranger.webp",
+    "sha256": "9031ce369f40954cc3ea96ea0fb4266f13f6c7faa8c48b1fcb64dfb34e0d0c43"
+  },
+  {
+    "source": "assets/classes/rogue.webp",
+    "target": "assets/classes/rogue.webp",
+    "sha256": "d9f675c79dd873305265622d9cfcddba0c49bd578b6af103adcfa74b8f324671"
+  },
+  {
+    "source": "assets/classes/sentinel.webp",
+    "target": "assets/classes/sentinel.webp",
+    "sha256": "f681cd4625be296f9ec2bb9851bb6f14bf329239f7ee42422bd656a7dbb655d8"
+  },
+  {
+    "source": "assets/classes/shadow-seeker.webp",
+    "target": "assets/classes/shadow-seeker.webp",
+    "sha256": "9acd9f9629617a6c939abd718096391ed082a5ce2dcaba023b3b8ac0fa831ec9"
+  },
+  {
+    "source": "assets/classes/shaman.webp",
+    "target": "assets/classes/shaman.webp",
+    "sha256": "28c077b7b5b59a9c483687a15bd00e42053fdfeea74c322f1a057f4296f72528"
+  },
+  {
+    "source": "assets/classes/shido.webp",
+    "target": "assets/classes/shido.webp",
+    "sha256": "10418b593f5bc433cf7fbd7515f9eeba0aa76d6e7d1193725dfbdc588d9c47a4"
+  },
+  {
+    "source": "assets/classes/sniper.webp",
+    "target": "assets/classes/sniper.webp",
+    "sha256": "a5f43e774e64673b7abd1687203ba82ffa848213fe6b60a0174940f572b16759"
+  },
+  {
+    "source": "assets/classes/soldier.webp",
+    "target": "assets/classes/soldier.webp",
+    "sha256": "e728539b0659b4eae6a397ed01134a8daec47dcea11ede28f49167abb60db18b"
+  },
+  {
+    "source": "assets/classes/SOURCES.md",
+    "target": "assets/classes/SOURCES.md",
+    "sha256": "ad79398bf23b565322ae9c2d4b6515fe14b1a44b85dc13a88d948d6beb14ff64"
+  },
+  {
+    "source": "assets/classes/swordmaster.webp",
+    "target": "assets/classes/swordmaster.webp",
+    "sha256": "38c43c378d6d684742e3ee65c0d646d62d8321865611428c0021846e03b91ae3"
+  },
+  {
+    "source": "assets/classes/the-apsara.webp",
+    "target": "assets/classes/the-apsara.webp",
+    "sha256": "95bc6e3381730d8694b40bd16f706fb7d15ce054876d7b3b5adacc60a3d27fa4"
+  },
+  {
+    "source": "assets/classes/the-avatar.webp",
+    "target": "assets/classes/the-avatar.webp",
+    "sha256": "b7472319cdaffa1af5073a6f5501411a7978366127511af5c9c6e56769b12bd5"
+  },
+  {
+    "source": "assets/classes/the-blade.webp",
+    "target": "assets/classes/the-blade.webp",
+    "sha256": "2eeb3eff59cc5438e79eca0e486d00877e2761e530fe82ef0e6139d2a3138b9b"
+  },
+  {
+    "source": "assets/classes/the-calamity.webp",
+    "target": "assets/classes/the-calamity.webp",
+    "sha256": "a27b31578f475c2c0db016b8bbb83e9a16dfc03f28bf2a244ec15f325db78f13"
+  },
+  {
+    "source": "assets/classes/the-cavalier.webp",
+    "target": "assets/classes/the-cavalier.webp",
+    "sha256": "212869ed40c3b4c94a107fb74109d339cbb41be500614f357fc4c3caf6c9af25"
+  },
+  {
+    "source": "assets/classes/the-eternal.webp",
+    "target": "assets/classes/the-eternal.webp",
+    "sha256": "76a73ca853da24e048a984f00fee24567581afe90ca2aa691dee3458465c08c9"
+  },
+  {
+    "source": "assets/classes/the-godhand.webp",
+    "target": "assets/classes/the-godhand.webp",
+    "sha256": "c17a51fef5c197dec64b7888065d852d26dc3ded8dcdea877afd380703beb536"
+  },
+  {
+    "source": "assets/classes/the-trident.webp",
+    "target": "assets/classes/the-trident.webp",
+    "sha256": "be9bb9bedeb7467fd6902b156d6de2dc19769992ca6e3eb1e95349cddc49651e"
+  },
+  {
+    "source": "assets/classes/troubadour.webp",
+    "target": "assets/classes/troubadour.webp",
+    "sha256": "d403476abc5950fda8aff6d4f568bf2924be2fe4b342c2236e9289b62b367c7e"
+  },
+  {
+    "source": "assets/classes/valkyrium.webp",
+    "target": "assets/classes/valkyrium.webp",
+    "sha256": "2c7258cc7508769792cec4f32854b04fa74b6227a4b35bc56b4e82c63be1d0dd"
+  },
+  {
+    "source": "assets/classes/war-monk.webp",
+    "target": "assets/classes/war-monk.webp",
+    "sha256": "ac7c4dfae67d0f68d4c40cd78d809627766b3ed5cdf857063da399a4cdde4438"
+  },
+  {
+    "source": "assets/classes/warrior.webp",
+    "target": "assets/classes/warrior.webp",
+    "sha256": "6998185e08bdf79c0dfbc435beff2540784c4fefc22b4667014d5b7283f85e5f"
+  },
+  {
+    "source": "assets/classes/wing-soldier.webp",
+    "target": "assets/classes/wing-soldier.webp",
+    "sha256": "611249d1889955745e86e0efb132b9ef803cc952fc283ac41e4bac5985282f2f"
+  },
+  {
+    "source": "assets/classes/wiseman.webp",
+    "target": "assets/classes/wiseman.webp",
+    "sha256": "efda09134982233332e067b10e91e6927bdd85319320290c978b51a71a7ae015"
+  },
+  {
+    "source": "assets/dagda.webp",
+    "target": "assets/dagda.webp",
+    "sha256": "ed7a2b5d8a280d7c3b6639a9ce6369507c543830ff90209a67b6661be5c52b32"
+  },
+  {
+    "source": "assets/design/official-banner.webp",
+    "target": "assets/design/official-banner.webp",
+    "sha256": "472b7f1f263d8688154bb2a6843c800a671db46e69ebdfc5b2fcf54001b1fa76"
+  },
+  {
+    "source": "assets/design/SOURCES.md",
+    "target": "content/source-assets/assets/design/SOURCES.md",
+    "sha256": "0fcc8c14b706cfe2cf12a982667ea9288fb7ac04bf97f957a0e6ea461276722e"
+  },
+  {
+    "source": "assets/events/descend-again-menu.png",
+    "target": "assets/events/descend-again-menu.png",
+    "sha256": "38ae154ca9994260c73b668d9f4d3d1d96e6a1c1cd78fe6ef80e42df97c59ded"
+  },
+  {
+    "source": "assets/events/di04-inn.png",
+    "target": "assets/events/di04-inn.png",
+    "sha256": "f072ebf8f8ae2c62d20cd8ce191a9b45048af36c336da8ffcde7f5f47cd3515f"
+  },
+  {
+    "source": "assets/events/di04-mikaela.png",
+    "target": "assets/events/di04-mikaela.png",
+    "sha256": "f012e48e7f7248f7f1a15810dffa3afa635561766fd3dd74f239dc68ea626cd9"
+  },
+  {
+    "source": "assets/events/di04-south.png",
+    "target": "assets/events/di04-south.png",
+    "sha256": "3a00681483f1fad94e0f28d5560357abf112ce34d436bf6cc92e9e04a4c809f4"
+  },
+  {
+    "source": "assets/events/di05-fabio-chain.png",
+    "target": "assets/events/di05-fabio-chain.png",
+    "sha256": "b325c7f034e8c2a85aa05f91e7eb0f38b3cfd718f7871ee8d36025e104228a3c"
+  },
+  {
+    "source": "assets/events/di06-alexandra.png",
+    "target": "assets/events/di06-alexandra.png",
+    "sha256": "0e37f61906a0cf97515bdf1d7ecfa4238508d720ac19fc88f9af995832ce8d92"
+  },
+  {
+    "source": "assets/events/di08-night.png",
+    "target": "assets/events/di08-night.png",
+    "sha256": "bd9c0eb62d55afd977f45cb9c041bf039845ad4689adaac361b40d7358d28bd0"
+  },
+  {
+    "source": "assets/events/di10-fabio-chain.png",
+    "target": "assets/events/di10-fabio-chain.png",
+    "sha256": "5aadb80809a259f52517e1b124317a61a49057d23b7b6f232dce2d36d7e3af70"
+  },
+  {
+    "source": "assets/events/di10-ribeira.png",
+    "target": "assets/events/di10-ribeira.png",
+    "sha256": "c880638420beb13d1f8dd57a053f1fe6b07372c265e8b712b56e87051cd5d491"
+  },
+  {
+    "source": "assets/events/di12-answerer.png",
+    "target": "assets/events/di12-answerer.png",
+    "sha256": "04a71bea31c24279b1e60d1bf44af9a88798c5392c0e3d12790c771676a15c3d"
+  },
+  {
+    "source": "assets/events/di12-fina.png",
+    "target": "assets/events/di12-fina.png",
+    "sha256": "69ca879eb3a25b556b59ca0a8a5770d36b37196337d374d1073f99a19d3c9d37"
+  },
+  {
+    "source": "assets/events/kai02-stairs.png",
+    "target": "assets/events/kai02-stairs.png",
+    "sha256": "330d91b34cb631f06f944d133aec99f17ec86f70ee7f33b432fe58c09e2a1447"
+  },
+  {
+    "source": "assets/events/kai04-bertrand.png",
+    "target": "assets/events/kai04-bertrand.png",
+    "sha256": "ed69c147c16be88f1c38df5e35edfffa2960d0c64734fa11d06083d332eb6035"
+  },
+  {
+    "source": "assets/events/kai06-mural.png",
+    "target": "assets/events/kai06-mural.png",
+    "sha256": "f7db41fedde7060b4a2dc6c138d64da351094ac8ab320f633f0bc732438cc2f2"
+  },
+  {
+    "source": "assets/events/leda04-itemshop.png",
+    "target": "assets/events/leda04-itemshop.png",
+    "sha256": "8a9198450620675d4e50602b7732580c33b3d833bcf8d4702c1bb1404981d2c7"
+  },
+  {
+    "source": "assets/events/leda04-mikaela.png",
+    "target": "assets/events/leda04-mikaela.png",
+    "sha256": "9622c8f16d5e8917c1bc17b9fb73d51a49a6ac716b76fb7afe094bac874242f5"
+  },
+  {
+    "source": "assets/events/leda05-kalla.png",
+    "target": "assets/events/leda05-kalla.png",
+    "sha256": "d9866a56a8f44626b400a69b7f674ce12f854ca39479c74c6dd5e4b5e4827886"
+  },
+  {
+    "source": "assets/events/leda06-alexandra.png",
+    "target": "assets/events/leda06-alexandra.png",
+    "sha256": "0e37f61906a0cf97515bdf1d7ecfa4238508d720ac19fc88f9af995832ce8d92"
+  },
+  {
+    "source": "assets/events/leda06-olympia.png",
+    "target": "assets/events/leda06-olympia.png",
+    "sha256": "c2cb3ca9d3f72c7c22fb749acc1c31b79d3ab6cfd5e7c3cd022d3b5e09c87344"
+  },
+  {
+    "source": "assets/events/leda09-sirocco.png",
+    "target": "assets/events/leda09-sirocco.png",
+    "sha256": "601396b06f192b874972f0b6743347d47db683869ddb6b513f811be2dd4f1e8c"
+  },
+  {
+    "source": "assets/events/leda10-kalla-bow.png",
+    "target": "assets/events/leda10-kalla-bow.png",
+    "sha256": "4fc6267dcf060b4a8513bf40387f124f69ecdf3e23dd6176df88510fae91f24f"
+  },
+  {
+    "source": "assets/events/p3-02-cai.png",
+    "target": "assets/events/p3-02-cai.png",
+    "sha256": "bfd2af84d42b733a39c1696bbd73e383ffc552c9fc37f76adddbed6ec53b580f"
+  },
+  {
+    "source": "assets/events/p3-02-centurio.png",
+    "target": "assets/events/p3-02-centurio.png",
+    "sha256": "53a47debe44e02dde38d13eb88201931b23d4a59399d457dff879a6d34a97b2f"
+  },
+  {
+    "source": "assets/events/p3-02-dietrich.png",
+    "target": "assets/events/p3-02-dietrich.png",
+    "sha256": "f0a77642f89602fd548b0cfd53ed8e84a2bd859abee86e6c7d8ed7ad244c11cf"
+  },
+  {
+    "source": "assets/events/p3-02-fortuna.png",
+    "target": "assets/events/p3-02-fortuna.png",
+    "sha256": "f3097c194ca573fafe26a54a7ea4e4b1c8ff910486e0fc2bb934bbe3ecda2bda"
+  },
+  {
+    "source": "assets/events/p3-02-leda.png",
+    "target": "assets/events/p3-02-leda.png",
+    "sha256": "573fc09a93d15b3e574c256a565ab084521ba1ae213a84ffc1289738e3208cae"
+  },
+  {
+    "source": "assets/events/p3-02-theodora.png",
+    "target": "assets/events/p3-02-theodora.png",
+    "sha256": "612894d1a2d189d321d16d86873f83c4c2c8be7c677cb34ea90fb1b0d8c70a92"
+  },
+  {
+    "source": "assets/events/p3-03-fortuna.png",
+    "target": "assets/events/p3-03-fortuna.png",
+    "sha256": "f3097c194ca573fafe26a54a7ea4e4b1c8ff910486e0fc2bb934bbe3ecda2bda"
+  },
+  {
+    "source": "assets/events/p3-04-fortuna.png",
+    "target": "assets/events/p3-04-fortuna.png",
+    "sha256": "f3097c194ca573fafe26a54a7ea4e4b1c8ff910486e0fc2bb934bbe3ecda2bda"
+  },
+  {
+    "source": "assets/events/p3-05-fortuna.png",
+    "target": "assets/events/p3-05-fortuna.png",
+    "sha256": "f3097c194ca573fafe26a54a7ea4e4b1c8ff910486e0fc2bb934bbe3ecda2bda"
+  },
+  {
+    "source": "assets/events/SOURCES.md",
+    "target": "assets/events/SOURCES.md",
+    "sha256": "d845385510e72813a4b5b3c6c294b3662a5a253da39c3526ad40e94f84b199e7"
+  },
+  {
+    "source": "assets/events/theo03-outfit.png",
+    "target": "assets/events/theo03-outfit.png",
+    "sha256": "4a3d8c27b5dd37c2885c66726a238d44ef276a866ba56d2bb449e98f68e0d29f"
+  },
+  {
+    "source": "assets/events/theo05-anatolia.png",
+    "target": "assets/events/theo05-anatolia.png",
+    "sha256": "b663bb3e7cb2ad0aa71633348288a6b865d7f796be6cc88de24664048508b618"
+  },
+  {
+    "source": "assets/events/theo06-crystal.png",
+    "target": "assets/events/theo06-crystal.png",
+    "sha256": "edacf101af0bf3bd67ea38c0733044e73b374657f5521b168678dce1d3f3c90e"
+  },
+  {
+    "source": "assets/events/theo07-alexandra.png",
+    "target": "assets/events/theo07-alexandra.png",
+    "sha256": "0e37f61906a0cf97515bdf1d7ecfa4238508d720ac19fc88f9af995832ce8d92"
+  },
+  {
+    "source": "assets/events/theo10-back-entrance.png",
+    "target": "assets/events/theo10-back-entrance.png",
+    "sha256": "32246de5974b77b647693503f6f831100797a57cacfe930a6941f74b06cbfa02"
+  },
+  {
+    "source": "assets/events/theo10-ship.png",
+    "target": "assets/events/theo10-ship.png",
+    "sha256": "44b6a76e9b8d03607efe94d7374d845695199f442f759077c59155c5585a5260"
+  },
+  {
+    "source": "assets/events/theo11-return.png",
+    "target": "assets/events/theo11-return.png",
+    "sha256": "7be0336ef8658105642b30591e24ef8a697f18ed3277b3b654490cdb0b40bf93"
+  },
+  {
+    "source": "assets/events/war02-creek.png",
+    "target": "assets/events/war02-creek.png",
+    "sha256": "5e16bb078933ce45a3331b128ad3fc1522731f8941475260297f46c957c19f65"
+  },
+  {
+    "source": "assets/events/war03-nathan.png",
+    "target": "assets/events/war03-nathan.png",
+    "sha256": "366718f22bb87d0345567f96afe6d5a4a50496ae7c8ea33d2099bb648361bf58"
+  },
+  {
+    "source": "assets/fonts/Pretendard-Black.otf",
+    "target": "assets/fonts/Pretendard-Black.otf",
+    "sha256": "94628b0bcea8936b6e5c30d98d685eb9bbaffb0fe2ed255542ecc656c248e021"
+  },
+  {
+    "source": "assets/fonts/Pretendard-Bold.otf",
+    "target": "assets/fonts/Pretendard-Bold.otf",
+    "sha256": "2e91915fab54df71cc9598ebf608b2bdb54c6fe3c066ac61dff0bc44fca71cc7"
+  },
+  {
+    "source": "assets/fonts/Pretendard-ExtraBold.otf",
+    "target": "assets/fonts/Pretendard-ExtraBold.otf",
+    "sha256": "c35fe941b7568d52a96010561540e47f9d3948dfde66ba25bc1908233e0a40cd"
+  },
+  {
+    "source": "assets/fonts/Pretendard-ExtraLight.otf",
+    "target": "assets/fonts/Pretendard-ExtraLight.otf",
+    "sha256": "e2837078f57079de2742e83c394a70b8a80b9662bc8ff4e96e7b791d6bd7cdbb"
+  },
+  {
+    "source": "assets/fonts/Pretendard-Light.otf",
+    "target": "assets/fonts/Pretendard-Light.otf",
+    "sha256": "51418ee96ef96e9059db88d7da82f24fada1f4aca70d5157c878ea6b460dd343"
+  },
+  {
+    "source": "assets/fonts/Pretendard-Medium.otf",
+    "target": "assets/fonts/Pretendard-Medium.otf",
+    "sha256": "d39e50e4bb52b4993b6a4eeb821a171254745bd824446af01e1f616b89fface0"
+  },
+  {
+    "source": "assets/fonts/Pretendard-Regular.otf",
+    "target": "assets/fonts/Pretendard-Regular.otf",
+    "sha256": "3ffbacde6ab8411f1d2db54bb9b1f0b3ee2a738932033722cf0388c06aed1c93"
+  },
+  {
+    "source": "assets/fonts/Pretendard-SemiBold.otf",
+    "target": "assets/fonts/Pretendard-SemiBold.otf",
+    "sha256": "c89bc43027dc7cde5726e96223376f8eec09302b2fc1f8147fd5b57cfc376118"
+  },
+  {
+    "source": "assets/fonts/Pretendard-Thin.otf",
+    "target": "assets/fonts/Pretendard-Thin.otf",
+    "sha256": "635354dcdcc133318be74f9a83cb59d29652c56d463bcd34e20a8cd6e01f3af9"
+  },
+  {
+    "source": "assets/gifts/ahm-lu-cloth.webp",
+    "target": "assets/gifts/ahm-lu-cloth.webp",
+    "sha256": "6f0dcdca832220e3a8eaa57d31eed5ec97de8491380cb218c49721531113a40e"
+  },
+  {
+    "source": "assets/gifts/antique-medal.webp",
+    "target": "assets/gifts/antique-medal.webp",
+    "sha256": "edcaac281f31d48ea01dc42c2ce6f1f4744b8f340b64ff24f698abb4c5a7a3e4"
+  },
+  {
+    "source": "assets/gifts/arrowhead-gem.webp",
+    "target": "assets/gifts/arrowhead-gem.webp",
+    "sha256": "5d84e2b6a4e074fd68681bb351742b2f6437cff207d64297a1bc78dcb03f976f"
+  },
+  {
+    "source": "assets/gifts/board-game-tactics.webp",
+    "target": "assets/gifts/board-game-tactics.webp",
+    "sha256": "87555698a9dd5e068eba3abc89e4c864888bea99555cc2671d188320d7406444"
+  },
+  {
+    "source": "assets/gifts/bow-repair-kit.webp",
+    "target": "assets/gifts/bow-repair-kit.webp",
+    "sha256": "edcaac281f31d48ea01dc42c2ce6f1f4744b8f340b64ff24f698abb4c5a7a3e4"
+  },
+  {
+    "source": "assets/gifts/brined-fish-guts.webp",
+    "target": "assets/gifts/brined-fish-guts.webp",
+    "sha256": "2ffc25f35140f0f0b757ff5cc8cbf4835f228a1f950529d6a7bcc9dbcf1b6868"
+  },
+  {
+    "source": "assets/gifts/candy-crystals.webp",
+    "target": "assets/gifts/candy-crystals.webp",
+    "sha256": "ce98cf0b210d29bcf0e18900582dffbb9f7b7b741fa86ea044d28472066adffd"
+  },
+  {
+    "source": "assets/gifts/ceremonial-spear.webp",
+    "target": "assets/gifts/ceremonial-spear.webp",
+    "sha256": "fc1e44163216b903cd65f4154b892fb2c0d1ebcbf9d2ddeabcb1a6250847f4db"
+  },
+  {
+    "source": "assets/gifts/coffee-pastries.webp",
+    "target": "assets/gifts/coffee-pastries.webp",
+    "sha256": "4ee2abe8f3132606b4e43fddf10c75f2c8ef28d958d5d80ef109f31e14481ae0"
+  },
+  {
+    "source": "assets/gifts/common-coffee.webp",
+    "target": "assets/gifts/common-coffee.webp",
+    "sha256": "e8d259b0bec1533d99cdfee04f6658a0f5e5ac797e8aabbc9e89377c32b2cecf"
+  },
+  {
+    "source": "assets/gifts/concentrated-garum.webp",
+    "target": "assets/gifts/concentrated-garum.webp",
+    "sha256": "aee58f020e7bb7defa70f11606b209d35ed4f1b270847924eb3b4364861dfbe5"
+  },
+  {
+    "source": "assets/gifts/crimson-ghosh.webp",
+    "target": "assets/gifts/crimson-ghosh.webp",
+    "sha256": "f6066313d5e575385de173e16b79b025c35573b69be2f20cff017b2a8d390533"
+  },
+  {
+    "source": "assets/gifts/dagda-beard-grass.webp",
+    "target": "assets/gifts/dagda-beard-grass.webp",
+    "sha256": "323b0697a6d0769e3f1eede84894463c0ee295e086a2c4fcea5a915555747a99"
+  },
+  {
+    "source": "assets/gifts/eastern-black-silk.webp",
+    "target": "assets/gifts/eastern-black-silk.webp",
+    "sha256": "97e7c04b1885367de5e0c908dc7e8f9973d79c0f9d84e9af55049845080d3a9c"
+  },
+  {
+    "source": "assets/gifts/eastern-love-story.webp",
+    "target": "assets/gifts/eastern-love-story.webp",
+    "sha256": "bb7077d127f6510cee449e5da4fedab6f68853d456ce57fa28a794036f862968"
+  },
+  {
+    "source": "assets/gifts/eastern-tea-leaves.webp",
+    "target": "assets/gifts/eastern-tea-leaves.webp",
+    "sha256": "e22dda4174add9ebaf923cf97174ed9c282f6013710df8b7fa28cdb1bf684db2"
+  },
+  {
+    "source": "assets/gifts/energizing-ghosh.webp",
+    "target": "assets/gifts/energizing-ghosh.webp",
+    "sha256": "2f109598db75d3d241670b7622bd922da925275b82988024e1231a486fee006b"
+  },
+  {
+    "source": "assets/gifts/flower-painting.webp",
+    "target": "assets/gifts/flower-painting.webp",
+    "sha256": "f793fbfcef30f66e56ba6a0c27cb1f66ee1369be998384a3a9d9bd0ef558c06c"
+  },
+  {
+    "source": "assets/gifts/fragrant-pastries.webp",
+    "target": "assets/gifts/fragrant-pastries.webp",
+    "sha256": "46c1d361427b5f2469f907e85dd91e7d2607e6305b8021b3476283ee0d9828b7"
+  },
+  {
+    "source": "assets/gifts/garum.webp",
+    "target": "assets/gifts/garum.webp",
+    "sha256": "bb7077d127f6510cee449e5da4fedab6f68853d456ce57fa28a794036f862968"
+  },
+  {
+    "source": "assets/gifts/gift-1.png",
+    "target": "assets/gifts/gift-1.png",
+    "sha256": "0279e43212d93304c0a4b44219b133da693a70c972a29588ed7bf78467ceeebd"
+  },
+  {
+    "source": "assets/gifts/gift-2.png",
+    "target": "assets/gifts/gift-2.png",
+    "sha256": "b929005206ce60d4a4635ab912755504e14484491242f077cdc95d0c41800e25"
+  },
+  {
+    "source": "assets/gifts/history-of-a-master.webp",
+    "target": "assets/gifts/history-of-a-master.webp",
+    "sha256": "7603ce53047bbcfe4bd6ecb495ac349b4f0f7b7eef4af67705ce04be31b5805f"
+  },
+  {
+    "source": "assets/gifts/honey-milk.webp",
+    "target": "assets/gifts/honey-milk.webp",
+    "sha256": "2fbc7784b68f05e5d97bfb80ad917d3cb0b48671e1782aa443dda51d6b3fbe02"
+  },
+  {
+    "source": "assets/gifts/honey-pastries.webp",
+    "target": "assets/gifts/honey-pastries.webp",
+    "sha256": "07525e5244b42f19c3b77ea2eaccdb5a8ac9d60de763888e0d4597d231e9cf0f"
+  },
+  {
+    "source": "assets/gifts/horse-grooming-kit.webp",
+    "target": "assets/gifts/horse-grooming-kit.webp",
+    "sha256": "0830cce9f86af194e33a4d9f067afb573b2edc950063f3072a1ff9d6e313331e"
+  },
+  {
+    "source": "assets/gifts/jamel-milk.webp",
+    "target": "assets/gifts/jamel-milk.webp",
+    "sha256": "cc341ea858f2d294dfc7994d112dbe40ba511f24a89b55c8b3fe5a05a6ece279"
+  },
+  {
+    "source": "assets/gifts/joint-relief-gloves.webp",
+    "target": "assets/gifts/joint-relief-gloves.webp",
+    "sha256": "e2489524baa8c803899b5ef47a980ebe7070414a0c001f02f5feca9e8a01a1df"
+  },
+  {
+    "source": "assets/gifts/kitten-figurine.webp",
+    "target": "assets/gifts/kitten-figurine.webp",
+    "sha256": "dea00c014d2d89eb0903f5d5df1eba1a94b31f837f6ecb64ee5a4b1813b38990"
+  },
+  {
+    "source": "assets/gifts/legendary-garum.webp",
+    "target": "assets/gifts/legendary-garum.webp",
+    "sha256": "85b2dc796a9ee600bad44df7827b9cb3c13907d40d46120c05ee1844761725e5"
+  },
+  {
+    "source": "assets/gifts/light-shosh.webp",
+    "target": "assets/gifts/light-shosh.webp",
+    "sha256": "ca022b52ce6fa225ac679b91269d23280caa32048b3504d4f5f01bc764faf98d"
+  },
+  {
+    "source": "assets/gifts/mane-ornament.webp",
+    "target": "assets/gifts/mane-ornament.webp",
+    "sha256": "a02ec4c779973cba72783f8ec6b47b3559ced1c7f66071007ec270358071b143"
+  },
+  {
+    "source": "assets/gifts/manifest.json",
+    "target": "assets/gifts/manifest.json",
+    "sha256": "3caff3824bed6fb2d01ee295af25cead05f739aa0c59d3ab499f37269a7343d2"
+  },
+  {
+    "source": "assets/gifts/mature-ghosh.webp",
+    "target": "assets/gifts/mature-ghosh.webp",
+    "sha256": "eada601ac4f3904a0960a5ad5d50f1b58963054f83123ae22ccbd7ffe4ae0d7a"
+  },
+  {
+    "source": "assets/gifts/mellow-pastries.webp",
+    "target": "assets/gifts/mellow-pastries.webp",
+    "sha256": "323b0697a6d0769e3f1eede84894463c0ee295e086a2c4fcea5a915555747a99"
+  },
+  {
+    "source": "assets/gifts/morfis-almanac.webp",
+    "target": "assets/gifts/morfis-almanac.webp",
+    "sha256": "4dcd6408b4706e6d54dd7c5c1fcc10aacdbbb2b824d6e4f323b9ff98a92b8061"
+  },
+  {
+    "source": "assets/gifts/odd-vegetable-seeds.webp",
+    "target": "assets/gifts/odd-vegetable-seeds.webp",
+    "sha256": "edcaac281f31d48ea01dc42c2ce6f1f4744b8f340b64ff24f698abb4c5a7a3e4"
+  },
+  {
+    "source": "assets/gifts/orgus-coffee.webp",
+    "target": "assets/gifts/orgus-coffee.webp",
+    "sha256": "e9fc78d77ae51d54736e60013f8d04920f823375baa188c4c8bf4c5050b45613"
+  },
+  {
+    "source": "assets/gifts/pack-of-pastels.webp",
+    "target": "assets/gifts/pack-of-pastels.webp",
+    "sha256": "2fbc7784b68f05e5d97bfb80ad917d3cb0b48671e1782aa443dda51d6b3fbe02"
+  },
+  {
+    "source": "assets/gifts/pastry-cookbook.webp",
+    "target": "assets/gifts/pastry-cookbook.webp",
+    "sha256": "2fbc7784b68f05e5d97bfb80ad917d3cb0b48671e1782aa443dda51d6b3fbe02"
+  },
+  {
+    "source": "assets/gifts/pickled-bulbs.webp",
+    "target": "assets/gifts/pickled-bulbs.webp",
+    "sha256": "fa2e0c84ad5b8c2030d82d3570905a58830e5369767875f67dc34c6566707fb8"
+  },
+  {
+    "source": "assets/gifts/poems-of-the-greats.webp",
+    "target": "assets/gifts/poems-of-the-greats.webp",
+    "sha256": "d4b2956f581a49be10f6b5750d58388d4778be5feddaca2357b08f6510cabe05"
+  },
+  {
+    "source": "assets/gifts/portrait-of-yu-phas.webp",
+    "target": "assets/gifts/portrait-of-yu-phas.webp",
+    "sha256": "85b2dc796a9ee600bad44df7827b9cb3c13907d40d46120c05ee1844761725e5"
+  },
+  {
+    "source": "assets/gifts/protection-figurine.webp",
+    "target": "assets/gifts/protection-figurine.webp",
+    "sha256": "d784995940d25af6193e2b27aa5d87dbf1cefb4a0727e6a723c38f81e0f69dc1"
+  },
+  {
+    "source": "assets/gifts/rancid-garum.webp",
+    "target": "assets/gifts/rancid-garum.webp",
+    "sha256": "da99530cff48c59faf7d932fe73ead0d521fa14bc43a10a7b330ec02399a5569"
+  },
+  {
+    "source": "assets/gifts/rare-southern-seeds.webp",
+    "target": "assets/gifts/rare-southern-seeds.webp",
+    "sha256": "2ffc25f35140f0f0b757ff5cc8cbf4835f228a1f950529d6a7bcc9dbcf1b6868"
+  },
+  {
+    "source": "assets/gifts/rare-spices.webp",
+    "target": "assets/gifts/rare-spices.webp",
+    "sha256": "ce2cce3c12f3f2adaa2aebdb23e28656ca316a2e18ffb840044fab45fca4eb87"
+  },
+  {
+    "source": "assets/gifts/rugged-blade.webp",
+    "target": "assets/gifts/rugged-blade.webp",
+    "sha256": "765e82cf2ed0e34138e4c461ef5458b1cd0528d51b4d42d5df76026915044d8e"
+  },
+  {
+    "source": "assets/gifts/rustic-ghosh.webp",
+    "target": "assets/gifts/rustic-ghosh.webp",
+    "sha256": "e268397a002b6b341bf3c316c0fb5321d9c22d5c66903477d331e1442d8eefd0"
+  },
+  {
+    "source": "assets/gifts/school-scandal.webp",
+    "target": "assets/gifts/school-scandal.webp",
+    "sha256": "67d0f0e6348c9245ee375be6eb610dcb4b22b48080dafdf01689c56b91d9a9af"
+  },
+  {
+    "source": "assets/gifts/select-coffee.webp",
+    "target": "assets/gifts/select-coffee.webp",
+    "sha256": "43fb7df12a4a9ab38b2920fb06734734b40720396eb271da1d3e5ce051eb4585"
+  },
+  {
+    "source": "assets/gifts/sharp-fishhook.webp",
+    "target": "assets/gifts/sharp-fishhook.webp",
+    "sha256": "637ec1e0b5c6b9b1dcdab9b35aec636ff2806b17a437d33703632cdc58d3295e"
+  },
+  {
+    "source": "assets/gifts/simple-pastries.webp",
+    "target": "assets/gifts/simple-pastries.webp",
+    "sha256": "0db75524d655b225ed2224c3443b7ccad7cfb84a79d3028fb7dc66aea853ec8e"
+  },
+  {
+    "source": "assets/gifts/smooth-garum.webp",
+    "target": "assets/gifts/smooth-garum.webp",
+    "sha256": "d4b2956f581a49be10f6b5750d58388d4778be5feddaca2357b08f6510cabe05"
+  },
+  {
+    "source": "assets/gifts/solomon-coffee.webp",
+    "target": "assets/gifts/solomon-coffee.webp",
+    "sha256": "9e81bdb48d94640f2eb72b6c01891565a31f8ef658a6a8f251a8aa9e48638337"
+  },
+  {
+    "source": "assets/gifts/SOURCES.md",
+    "target": "assets/gifts/SOURCES.md",
+    "sha256": "d63047cd45fea17b66b13931d63d8cd86ad87260f7a34ea2f26b38e3bcc56037"
+  },
+  {
+    "source": "assets/gifts/southern-coffee.webp",
+    "target": "assets/gifts/southern-coffee.webp",
+    "sha256": "4ee2abe8f3132606b4e43fddf10c75f2c8ef28d958d5d80ef109f31e14481ae0"
+  },
+  {
+    "source": "assets/gifts/tales-of-adventure.webp",
+    "target": "assets/gifts/tales-of-adventure.webp",
+    "sha256": "ace1a2b0c91b9f1d8430aa5428a28bc069dc2a67dda177a199280e8da5e89e18"
+  },
+  {
+    "source": "assets/gifts/tome-from-away.webp",
+    "target": "assets/gifts/tome-from-away.webp",
+    "sha256": "395dad01eb21c232f85440766186de6b106e03b6c73259923cac9a9413dd872e"
+  },
+  {
+    "source": "assets/gifts/volcano-ghosh.webp",
+    "target": "assets/gifts/volcano-ghosh.webp",
+    "sha256": "0ad31f774dc58a8db346f3a3e7bc65d8e9bce62dd7fa35c11f4e9a6e05b99b28"
+  },
+  {
+    "source": "assets/gifts/weak-cervi.webp",
+    "target": "assets/gifts/weak-cervi.webp",
+    "sha256": "788f01b165200785590c66930304ddd020f1ba80437e1d4abb2b8fce8cb2950a"
+  },
+  {
+    "source": "assets/gifts/wing-fletching.webp",
+    "target": "assets/gifts/wing-fletching.webp",
+    "sha256": "d4f6681db6fb9efef44db5cb0c9de019472a2f135ff574b00c8d0f066246668e"
+  },
+  {
+    "source": "assets/gifts/yarc-milk.webp",
+    "target": "assets/gifts/yarc-milk.webp",
+    "sha256": "06aff448e86a325bc7ded540c7ca064fd19f9e941dbbf450f971ced53b9690ed"
+  },
+  {
+    "source": "assets/gifts/young-ghosh.webp",
+    "target": "assets/gifts/young-ghosh.webp",
+    "sha256": "b575a34f6aae6f7ffd12a4df8aa8857361f0468575e55d1f54dd3e5e1a2ad261"
+  },
+  {
+    "source": "assets/gods/aurora.png",
+    "target": "assets/gods/aurora.png",
+    "sha256": "f5758fb62fddff4c4e961fd94e1cdbeeec7c9a78bcdf551cf10767a1739926ef"
+  },
+  {
+    "source": "assets/gods/credna.png",
+    "target": "assets/gods/credna.png",
+    "sha256": "a89910823fbbb02ea654f24f10243bc52dddf5db26ef5cac887e5f772a3c6a75"
+  },
+  {
+    "source": "assets/gods/fortuna.png",
+    "target": "assets/gods/fortuna.png",
+    "sha256": "c72868ed8cb7224f29c20b1cb596d0c7edf687adb88153750ed350e8cf6ba469"
+  },
+  {
+    "source": "assets/gods/jurah.png",
+    "target": "assets/gods/jurah.png",
+    "sha256": "192ccee13eb7faaa94a69c02bff708b40a4c8fd3e72a2892537fbe2fcf9a363f"
+  },
+  {
+    "source": "assets/gods/kalla.png",
+    "target": "assets/gods/kalla.png",
+    "sha256": "d856de5eae2a48a9b196e2fb615c2944feeaeb65440cfe3e48156b9aa951a975"
+  },
+  {
+    "source": "assets/gods/manifest.json",
+    "target": "assets/gods/manifest.json",
+    "sha256": "f3ec89a4f2813f6c65013f0e1ede1e92f236432420e7af0178bb7f724dacb88a"
+  },
+  {
+    "source": "assets/gods/mars.png",
+    "target": "assets/gods/mars.png",
+    "sha256": "6ebbc8690f96e04cab763b4c029230b7826dc41e4748c21ede0ce84d1db0fd6e"
+  },
+  {
+    "source": "assets/gods/smyrnos.png",
+    "target": "assets/gods/smyrnos.png",
+    "sha256": "029e61ca43f933844c7eaf587c907d15b5e29d8051efb2672bacf3c8bb044fec"
+  },
+  {
+    "source": "assets/gods/SOURCES.md",
+    "target": "assets/gods/SOURCES.md",
+    "sha256": "e754474962a713d70c112735cf146b64ec5c2b11dc95edcb4519707436df194a"
+  },
+  {
+    "source": "assets/guide/amalthea-posthouses.png",
+    "target": "assets/guide/amalthea-posthouses.png",
+    "sha256": "d4559a4c95a97cfb89113b0413031ca35cda3417f38bc67e53c9682737271086"
+  },
+  {
+    "source": "assets/guide/arena-training-menu.webp",
+    "target": "assets/guide/arena-training-menu.webp",
+    "sha256": "fa0db6f4b8955192564b51a3225fde05469a8b1efac5cc3a7f6b8f11b290a1f0"
+  },
+  {
+    "source": "assets/guide/atla-route.webp",
+    "target": "assets/guide/atla-route.webp",
+    "sha256": "055fc7f5c0fb2a06c21e5f2eba8e068db2597c15dc43ded9dc555eb42349a98d"
+  },
+  {
+    "source": "assets/guide/baina-route-01.jpg",
+    "target": "assets/guide/baina-route-01.jpg",
+    "sha256": "fc693bd47de986c4df32286b97776263614c349a1f2684034193154668254a8b"
+  },
+  {
+    "source": "assets/guide/baina-route-02.jpg",
+    "target": "assets/guide/baina-route-02.jpg",
+    "sha256": "c10d5e8dda748f2158cfb48862396e3b3b6f4369e53d0f81544e94f534a1ffd3"
+  },
+  {
+    "source": "assets/guide/baina-route-03.jpg",
+    "target": "assets/guide/baina-route-03.jpg",
+    "sha256": "8d76acacb80d0cda5589eb86ee3ab08861fa1c6f4dfc222a6903d4bf88e4b2a6"
+  },
+  {
+    "source": "assets/guide/baina-route-04.jpg",
+    "target": "assets/guide/baina-route-04.jpg",
+    "sha256": "78e2235cddf6fd916bd3a8dc5b19cd88ac2872f92692a45e9b590e88c42768b1"
+  },
+  {
+    "source": "assets/guide/baina-route-source.mp4",
+    "target": "assets/guide/baina-route-source.mp4",
+    "sha256": "6baa1929c07de85db50bc8574da24c89fed2ebfe52c9e5ca212dbaf4cac5e9ff"
+  },
+  {
+    "source": "assets/guide/benetnasch-map.jpg",
+    "target": "assets/guide/benetnasch-map.jpg",
+    "sha256": "706d2ba39140c4aa073277aaca7749c42e9036d145408360a19ef0af43b2cadd"
+  },
+  {
+    "source": "assets/guide/brontes-map.jpg",
+    "target": "assets/guide/brontes-map.jpg",
+    "sha256": "6a8a8c0e4554a07cb8084c3fb61a9a9f5c22567aa2f5ec08abc254dbd713bb77"
+  },
+  {
+    "source": "assets/guide/cai-carriage-driver.png",
+    "target": "assets/guide/cai-carriage-driver.png",
+    "sha256": "958f24dceaea3ab567eea0e9c5649232046403a259d112f7db0cfb9521521703"
+  },
+  {
+    "source": "assets/guide/cai-custom-axle.png",
+    "target": "assets/guide/cai-custom-axle.png",
+    "sha256": "e7a2d0bbeb67a307569cf8a667c199bc3d8de30e0cf45a3c2072a982b8b91e61"
+  },
+  {
+    "source": "assets/guide/capture-ui.png",
+    "target": "assets/guide/capture-ui.png",
+    "sha256": "516ee12030256d1d526bfa6e2669cd2ddf4db4b14da61f08a1ddaa766bb111a3"
+  },
+  {
+    "source": "assets/guide/carriage-ui.png",
+    "target": "assets/guide/carriage-ui.png",
+    "sha256": "8d83acc27299fa4644901f9c9543699ba5d2ed83b75e5e18fad4f0cf81aa2656"
+  },
+  {
+    "source": "assets/guide/certification-ui.webp",
+    "target": "assets/guide/certification-ui.webp",
+    "sha256": "9fa59c99b6448eeca14449410da797867f98ae9a0f6e6c51dab69c8ce03fdf08"
+  },
+  {
+    "source": "assets/guide/checkpoint-ui.png",
+    "target": "assets/guide/checkpoint-ui.png",
+    "sha256": "61e976f558cf33f1d79dd765ed1448ec295449063c84ca080ac3c0a7dd6a0f39"
+  },
+  {
+    "source": "assets/guide/damasen-map.jpg",
+    "target": "assets/guide/damasen-map.jpg",
+    "sha256": "54cfc0611729d2953d949ca6208072fc04fbb78029fee5294e7d9251b03d3258"
+  },
+  {
+    "source": "assets/guide/dispatch-ui.png",
+    "target": "assets/guide/dispatch-ui.png",
+    "sha256": "15cc28b92a9f8f2e244dcbe95685344dadf8ce42677a9eb66651146bdfed495a"
+  },
+  {
+    "source": "assets/guide/exam-license.webp",
+    "target": "assets/guide/exam-license.webp",
+    "sha256": "e3e66bdeffdb3e9868e7d85687b8cc0517384c240357011208e2435e584d9d3b"
+  },
+  {
+    "source": "assets/guide/fezzan-kunlun-map.png",
+    "target": "assets/guide/fezzan-kunlun-map.png",
+    "sha256": "bd69b1a463ff75353b827c02c55101a3c9b59e1dbef19e786cfb5cb8f43228c0"
+  },
+  {
+    "source": "assets/guide/manifest.json",
+    "target": "assets/guide/manifest.json",
+    "sha256": "b192a05e5b58342cf411d1f5363cc3e9a4e962450e71a21a048da860dcf9ad4c"
+  },
+  {
+    "source": "assets/guide/meal-support-screen.png",
+    "target": "assets/guide/meal-support-screen.png",
+    "sha256": "2d8cb4b2719c0a9cd272532c98cd4804d6b428322d1b53eca6b0e2f31b5fd56e"
+  },
+  {
+    "source": "assets/guide/recruit-ui.png",
+    "target": "assets/guide/recruit-ui.png",
+    "sha256": "2276308ea99d2c9ebcba52d8a1f9aacdbdf9fa9aaff44d6f12ea61a35d99d4dc"
+  },
+  {
+    "source": "assets/guide/sailing-map.png",
+    "target": "assets/guide/sailing-map.png",
+    "sha256": "6e27b13b36e56c906d78262e29b495564f83f4c2e8189e547d7908b768fd68bf"
+  },
+  {
+    "source": "assets/guide/search-ui.png",
+    "target": "assets/guide/search-ui.png",
+    "sha256": "bb5c708af31b20a1c5a1f18509f65a6f40deab2bb3db594fa248bd9523ffcec3"
+  },
+  {
+    "source": "assets/guide/sirocco-scout.webp",
+    "target": "assets/guide/sirocco-scout.webp",
+    "sha256": "197a8aaf6a3db2de424a3a74b0e527cdf6531466eec55425b71a1dd640b835c9"
+  },
+  {
+    "source": "assets/guide/SOURCES.md",
+    "target": "assets/guide/SOURCES.md",
+    "sha256": "2046862ded3fe8d60cb09d6cc89ac9c3bf6d0077e86aa4d414cfae33619ac7d5"
+  },
+  {
+    "source": "assets/guide/theater-ui.png",
+    "target": "assets/guide/theater-ui.png",
+    "sha256": "3fbc42690b4e0e8cf38638192158777d6b81d3642b12eef882f12de4836518d6"
+  },
+  {
+    "source": "assets/guide/trade-ui.png",
+    "target": "assets/guide/trade-ui.png",
+    "sha256": "56417bad7ae4695aa3f7e46e146756cd28012e8c334f4bc007d589e2d8f87080"
+  },
+  {
+    "source": "assets/guide/training-ui.png",
+    "target": "assets/guide/training-ui.png",
+    "sha256": "a8aae75e69f88a4b619252fcfdc3457a2d2343d4e0d98fc662b5adf5bee706d4"
+  },
+  {
+    "source": "assets/guide/valeri-map.jpg",
+    "target": "assets/guide/valeri-map.jpg",
+    "sha256": "18edba7c524389b88a428dc8ae61bdca2867228ab6d1f0325c8672ceed22fb8e"
+  },
+  {
+    "source": "assets/guide/world-menu.png",
+    "target": "assets/guide/world-menu.png",
+    "sha256": "7c106cb6ea2d9ab0b1d4fe9cc090a1c257444a8a0a3f3e408b9b764e8acf4c80"
+  },
+  {
+    "source": "assets/portraits/c01.webp",
+    "target": "assets/portraits/c01.webp",
+    "sha256": "8edbb493f7fe5031c2a9e358743d3186fc5a2e212836e8a28727faf8617479e5"
+  },
+  {
+    "source": "assets/portraits/c02.webp",
+    "target": "assets/portraits/c02.webp",
+    "sha256": "44b44f18e1b9f71839619797fa46fdc69ef8c3ea58a08080713fcc700b32e596"
+  },
+  {
+    "source": "assets/portraits/c03.webp",
+    "target": "assets/portraits/c03.webp",
+    "sha256": "a607c5418eae54001fcf1c4bc25c93ef92d52ef57b6be53a8aea95638bde35f8"
+  },
+  {
+    "source": "assets/portraits/c04.webp",
+    "target": "assets/portraits/c04.webp",
+    "sha256": "6632c9c11e194ed06c773e3c7db9c44f6171622bf8c4b7218f081d8e6a383fe5"
+  },
+  {
+    "source": "assets/portraits/c05.webp",
+    "target": "assets/portraits/c05.webp",
+    "sha256": "e00498b5104c533f6ffafd32091baa78176742fd4d3ec327767ea64357ffdfcf"
+  },
+  {
+    "source": "assets/portraits/c06.webp",
+    "target": "assets/portraits/c06.webp",
+    "sha256": "1e5d19e106aa2afb1efd6696b561485d917f6006015cff423fda8e80cb84cb1d"
+  },
+  {
+    "source": "assets/portraits/c07.webp",
+    "target": "assets/portraits/c07.webp",
+    "sha256": "8548ca5928758ed2e53db7da90102f4d316b11cda888c45457f95b3363c3714c"
+  },
+  {
+    "source": "assets/portraits/c08.webp",
+    "target": "assets/portraits/c08.webp",
+    "sha256": "24d4c2aaa99fe3c9ed019ea7740f31748f072452d9ca5360d640693c17c7ccad"
+  },
+  {
+    "source": "assets/portraits/c09.webp",
+    "target": "assets/portraits/c09.webp",
+    "sha256": "891d850f369cca8a44eb4f505fb12b76d2766c8f3b0310535af964cea5866fd9"
+  },
+  {
+    "source": "assets/portraits/c10.webp",
+    "target": "assets/portraits/c10.webp",
+    "sha256": "656a466f509f892ee71c5f4389dc8a6a155d6fdc0917ca45a49c56651c721588"
+  },
+  {
+    "source": "assets/portraits/c11.webp",
+    "target": "assets/portraits/c11.webp",
+    "sha256": "d8e709a081b103f0483fa03e4911f614dd385463c9e9963af2c87658682bbcff"
+  },
+  {
+    "source": "assets/portraits/c12.webp",
+    "target": "assets/portraits/c12.webp",
+    "sha256": "813ccdbb763a23f51f0e60632b3bf723905f83a6312c51798fdaf5b0a57a21e2"
+  },
+  {
+    "source": "assets/portraits/c13.webp",
+    "target": "assets/portraits/c13.webp",
+    "sha256": "e602881284c982a1c4d5045dd4e316071566cbb316b22331790ca6a198760781"
+  },
+  {
+    "source": "assets/portraits/c14.webp",
+    "target": "assets/portraits/c14.webp",
+    "sha256": "f844cf38c4f4bb4295ca9731ee1613d5202e47ac18a7d44e0da66153525d2d99"
+  },
+  {
+    "source": "assets/portraits/c15.webp",
+    "target": "assets/portraits/c15.webp",
+    "sha256": "270ce996a7cc4f7d547dc00e9e76dec077e745aa84dad1a0f7641646ae2a2e1f"
+  },
+  {
+    "source": "assets/portraits/c16.webp",
+    "target": "assets/portraits/c16.webp",
+    "sha256": "cd79f6d5a0f6df49e77a0a04e6dde83f628c952999714126a66fc1ae4780e68f"
+  },
+  {
+    "source": "assets/portraits/c17.webp",
+    "target": "assets/portraits/c17.webp",
+    "sha256": "474b93432a06cfa2693eb7dea43f617ffec1901e2b2b7e9f72af0c43eed8a490"
+  },
+  {
+    "source": "assets/portraits/c18.webp",
+    "target": "assets/portraits/c18.webp",
+    "sha256": "e8ae643f160153fc49642a3d73617d627ee2556758bf40168663ab373d8a3ee9"
+  },
+  {
+    "source": "assets/portraits/c19.webp",
+    "target": "assets/portraits/c19.webp",
+    "sha256": "d88ed868618b518ae4c131ba9e73f1a739f311cb04fe65e43d1e7edee8d21766"
+  },
+  {
+    "source": "assets/portraits/c20.webp",
+    "target": "assets/portraits/c20.webp",
+    "sha256": "1d20f63424d8371a11692681b1263cf01551f8bd3672aa90c42d6952a0d213c0"
+  },
+  {
+    "source": "assets/portraits/c21.webp",
+    "target": "assets/portraits/c21.webp",
+    "sha256": "e1a098e6dc35683f1fe2528ba02fb5b25f8042fa1b01e5cd2164d4e759b70d64"
+  },
+  {
+    "source": "assets/portraits/c22.webp",
+    "target": "assets/portraits/c22.webp",
+    "sha256": "c687621681db9b79667bf7cb364d7915c6b73fea5e512ec5fc5712c41d3ad301"
+  },
+  {
+    "source": "assets/portraits/c23.webp",
+    "target": "assets/portraits/c23.webp",
+    "sha256": "d0ee0c7163527e4e80e4205c05d1d4d330d37f075ff4096db708213f2f4e5b47"
+  },
+  {
+    "source": "assets/portraits/c24.webp",
+    "target": "assets/portraits/c24.webp",
+    "sha256": "fee28cf03a37df49758a73af587bedd4ae7d7f262c8097bc436b08105f6205df"
+  },
+  {
+    "source": "assets/portraits/c25.webp",
+    "target": "assets/portraits/c25.webp",
+    "sha256": "ca35a9a44ebbd1ae2afca9666a87acaff17e8f3cb52e165ced8bad6f7ba8ba6b"
+  },
+  {
+    "source": "assets/portraits/c26.webp",
+    "target": "assets/portraits/c26.webp",
+    "sha256": "20f1a60899a7e7637662b00dc8d0251cd73fdd0af615aa042430f987e483adad"
+  },
+  {
+    "source": "assets/portraits/c27.webp",
+    "target": "assets/portraits/c27.webp",
+    "sha256": "a47e075a0382ca14f4cb701e88f9602ee940cfc147255f78e3d418e26f84c9d9"
+  },
+  {
+    "source": "assets/portraits/c28.webp",
+    "target": "assets/portraits/c28.webp",
+    "sha256": "59afb9fa10eda6c846d68885035743d56cae87d5462500e6ababaf9858b186f8"
+  },
+  {
+    "source": "assets/portraits/c29.webp",
+    "target": "assets/portraits/c29.webp",
+    "sha256": "edcf09a4ab723c1a2c8c4e5b5d8bc00a04a06265b1179613cf2b769f1b70245c"
+  },
+  {
+    "source": "assets/portraits/c30.webp",
+    "target": "assets/portraits/c30.webp",
+    "sha256": "54a55fde7f950dff98cb5c662b0d3a975748f8f1fbe6e7a876e0fdc2bd1e9840"
+  },
+  {
+    "source": "assets/portraits/c31.webp",
+    "target": "assets/portraits/c31.webp",
+    "sha256": "e4d0a0e9599acee676c805d55281ea33ef6a15b6700a73f41ceb5e6ba3be23f6"
+  },
+  {
+    "source": "assets/portraits/c32.webp",
+    "target": "assets/portraits/c32.webp",
+    "sha256": "b436bdb755707f36f8dc6eaf8c32f989777735e2c715ed95698c08d9e89d05f2"
+  },
+  {
+    "source": "assets/portraits/c33.webp",
+    "target": "assets/portraits/c33.webp",
+    "sha256": "861831293b2fa135c68c34034ac36f6143fa59c5583a366ce6dd25a8470af598"
+  },
+  {
+    "source": "assets/portraits/c34.webp",
+    "target": "assets/portraits/c34.webp",
+    "sha256": "098a69c7b2ce18a2aaa2365b8cd6d7db48a904055522cec4a2e54dafc278df8b"
+  },
+  {
+    "source": "assets/portraits/c35.webp",
+    "target": "assets/portraits/c35.webp",
+    "sha256": "6a5c78a1461b3014de909aefc89bcc401ad4c4cece706924890aa5ee8af4d39b"
+  },
+  {
+    "source": "assets/portraits/c36.webp",
+    "target": "assets/portraits/c36.webp",
+    "sha256": "cbf7eca20cbdfe867a4b0647eaf367ed69db4944e8167cc8c323b8a33d654715"
+  },
+  {
+    "source": "assets/portraits/c37.webp",
+    "target": "assets/portraits/c37.webp",
+    "sha256": "44e8326097f43cb1afdaafa89ccba117fc622c2ff1b867608f746f7c6a586cba"
+  },
+  {
+    "source": "assets/portraits/c38.webp",
+    "target": "assets/portraits/c38.webp",
+    "sha256": "2a8e4b5d20153f8eb9e5ac651acb8768ec63afc7ab39628c25aec5e5fc8f1c64"
+  },
+  {
+    "source": "assets/portraits/c39.webp",
+    "target": "assets/portraits/c39.webp",
+    "sha256": "9a2c9f99360d580a63529c470a0a21eed1b4e994790a47a6d0ee6912eafd9441"
+  },
+  {
+    "source": "assets/portraits/c40.webp",
+    "target": "assets/portraits/c40.webp",
+    "sha256": "99f0016799350871f13d71707e83a6e637e6642ed3c332cc0561544f909c3630"
+  },
+  {
+    "source": "assets/portraits/c41.webp",
+    "target": "assets/portraits/c41.webp",
+    "sha256": "35693c589d28c77c1c0b63835864bd0af073e785b7f2d63275befce6bd6f7fb6"
+  },
+  {
+    "source": "assets/portraits/c42.webp",
+    "target": "assets/portraits/c42.webp",
+    "sha256": "1501267d1569666a3f4b984ad411d75765221a9fb42a1d8040834ab8314eb79b"
+  },
+  {
+    "source": "assets/portraits/c43.webp",
+    "target": "assets/portraits/c43.webp",
+    "sha256": "7de76eeae538ec9945601c61594010e3b25853fb3fdedbb7814baad669398412"
+  },
+  {
+    "source": "assets/portraits/c44.webp",
+    "target": "assets/portraits/c44.webp",
+    "sha256": "9ce5011a7d6aab361a9f3843c311947c03f9646dc5bfc852fbedc82bddfa2934"
+  },
+  {
+    "source": "assets/portraits/c45.webp",
+    "target": "assets/portraits/c45.webp",
+    "sha256": "a23087d9bcfb2610885549f510df03574b141e9be75e9e9fe0ad6cfbd8c3d359"
+  },
+  {
+    "source": "assets/portraits/c46.webp",
+    "target": "assets/portraits/c46.webp",
+    "sha256": "3f8778ce0561a6cd8c092232780040394c725d976f4c05153bbf14757ccf0110"
+  },
+  {
+    "source": "assets/portraits/c47.webp",
+    "target": "assets/portraits/c47.webp",
+    "sha256": "d232b1bf8c530045ec53d2d5559a0432caa0da6165c7773d02ce6a649abcc382"
+  },
+  {
+    "source": "assets/portraits/c48.webp",
+    "target": "assets/portraits/c48.webp",
+    "sha256": "70cf8dffc433e9cde86eb35de7d57709b7962f8beadd8fbccf5ca51edece0dba"
+  },
+  {
+    "source": "assets/portraits/c49.webp",
+    "target": "assets/portraits/c49.webp",
+    "sha256": "bfd5a034c01a4ed61a01e9c51615e5822bfee006992eb2d2f535b12178404f4b"
+  },
+  {
+    "source": "assets/portraits/c50.webp",
+    "target": "assets/portraits/c50.webp",
+    "sha256": "705fc050a14c856f94703644f691bdfc83057ec5bb01c24d77230e553243e84f"
+  },
+  {
+    "source": "assets/portraits/c51.webp",
+    "target": "assets/portraits/c51.webp",
+    "sha256": "9cb5e4142dcb19b3a0093816271db62215e9df9f1c87e87de0bd28b61cd3c5a9"
+  },
+  {
+    "source": "assets/portraits/c52.webp",
+    "target": "assets/portraits/c52.webp",
+    "sha256": "a8fa00c68ff4a236b0caf2375b495c783f639fa432123152bd1911b04a849c1c"
+  },
+  {
+    "source": "assets/portraits/c53.webp",
+    "target": "assets/portraits/c53.webp",
+    "sha256": "bd68b210bcad43f7678dc65819e535ff4dd5044b9122a13530c2770bc2597437"
+  },
+  {
+    "source": "assets/portraits/c54.webp",
+    "target": "assets/portraits/c54.webp",
+    "sha256": "86d97cb4ca63d1d18dfb26af5e1cd12490980686b75239d9edb0229825bc9da4"
+  },
+  {
+    "source": "assets/portraits/c55.webp",
+    "target": "assets/portraits/c55.webp",
+    "sha256": "3e2e4ec7457661862cb47c77643d77d3ea8b3050e2d1050ff2b5ce33a12b8370"
+  },
+  {
+    "source": "assets/portraits/c56.webp",
+    "target": "assets/portraits/c56.webp",
+    "sha256": "eb67fb9e734e1ba79c212b938ebe3a2900101917b6e81c4558eeeecb64907c7b"
+  },
+  {
+    "source": "assets/portraits/c57.webp",
+    "target": "assets/portraits/c57.webp",
+    "sha256": "2d685e40fb4d41c402ed0f1015047c6843e52ccaabf63bc053e19df183fbea88"
+  },
+  {
+    "source": "assets/portraits/c58.webp",
+    "target": "assets/portraits/c58.webp",
+    "sha256": "86222aa404b63487699608e52143651ef07e506003676a256eefcab0b80cf974"
+  },
+  {
+    "source": "assets/portraits/c59.webp",
+    "target": "assets/portraits/c59.webp",
+    "sha256": "55b5119fb99d9ab1421db35534fd70a246c4ec245d0402692ecb2adce4d486b4"
+  },
+  {
+    "source": "assets/portraits/c60.webp",
+    "target": "assets/portraits/c60.webp",
+    "sha256": "b9969b933d48d318a66aa44cdfb8a4ed3be85b8c1e7eaf303c8f3fd1268f64f0"
+  },
+  {
+    "source": "assets/portraits/c61.webp",
+    "target": "assets/portraits/c61.webp",
+    "sha256": "c835bafbb95ee3bd26466f1da3322eca5dd96ff6155bc212295837a4957a5210"
+  },
+  {
+    "source": "assets/portraits/c62.webp",
+    "target": "assets/portraits/c62.webp",
+    "sha256": "536744309ccc425078dd01a9cf2a22fab9eac2aae281096af89d435c8f3864d2"
+  },
+  {
+    "source": "assets/portraits/eshmel-female.png",
+    "target": "assets/portraits/eshmel-female.png",
+    "sha256": "01df5512d925bed9121dffadddbeeeadd95aa1c338dd82626e7adb39da1446b6"
+  },
+  {
+    "source": "assets/portraits/large/alexandra.png",
+    "target": "assets/portraits/large/alexandra.png",
+    "sha256": "2b10031875777fb620c47bdc825aee8bd8e26a4d8786bf41996f14f5483e68e2"
+  },
+  {
+    "source": "assets/portraits/large/anatolia.png",
+    "target": "assets/portraits/large/anatolia.png",
+    "sha256": "c962076f3ce2e6caff212750ae790dc4206fa3de72990d07b1c9e3dd77ac5cc8"
+  },
+  {
+    "source": "assets/portraits/large/aswan.png",
+    "target": "assets/portraits/large/aswan.png",
+    "sha256": "30d857977c19d053ffb42d5ba74535e4cd0092f8f97cb41cd0c2080f58789844"
+  },
+  {
+    "source": "assets/portraits/large/benditz.png",
+    "target": "assets/portraits/large/benditz.png",
+    "sha256": "670c915c385ebdf02b5b3744bbf71871a7aed5f57c92375a8ba7e67c923ba3b3"
+  },
+  {
+    "source": "assets/portraits/large/bertrand.png",
+    "target": "assets/portraits/large/bertrand.png",
+    "sha256": "2fe40f16714a145a4b12a79f3aa91e7247ed67fd2b07a99af5ad92a6366d0b67"
+  },
+  {
+    "source": "assets/portraits/large/bonaventure.png",
+    "target": "assets/portraits/large/bonaventure.png",
+    "sha256": "18ae024d91a3fc5320de34aeb10e4667f319545e4be5d0a455c6de750e5326ac"
+  },
+  {
+    "source": "assets/portraits/large/buccar.png",
+    "target": "assets/portraits/large/buccar.png",
+    "sha256": "e671dc8196e41f83478d5a6283c2144fa373e036b98acd52e3a054f27dd3b992"
+  },
+  {
+    "source": "assets/portraits/large/cai.png",
+    "target": "assets/portraits/large/cai.png",
+    "sha256": "9ca5574d667636f7114cc2f6d2f86d64d87fe2d6c60bf7ffbb59d224f45b8dd2"
+  },
+  {
+    "source": "assets/portraits/large/catania.png",
+    "target": "assets/portraits/large/catania.png",
+    "sha256": "e5719876dd52dabbd263186d526dd50f0a76cced82ad909499630273775b69be"
+  },
+  {
+    "source": "assets/portraits/large/centurio.png",
+    "target": "assets/portraits/large/centurio.png",
+    "sha256": "f8070ef4996ae855d1270f0efb7cc46553ff63535eef3e4bff44b311aeb46b67"
+  },
+  {
+    "source": "assets/portraits/large/creek.png",
+    "target": "assets/portraits/large/creek.png",
+    "sha256": "bd386ec6979e1764406f637f4c77eb6c67f6ddbf569b77c0cd2860d16e0a3627"
+  },
+  {
+    "source": "assets/portraits/large/dadao.png",
+    "target": "assets/portraits/large/dadao.png",
+    "sha256": "e0a4445d89075c3981775b53e4d7da655a5309e81fdfea41d263b9f59139d115"
+  },
+  {
+    "source": "assets/portraits/large/dante.png",
+    "target": "assets/portraits/large/dante.png",
+    "sha256": "7d71e20723f0049448dd94f6fa4381ffe3e3e7875ba674478da92123aa85ddb2"
+  },
+  {
+    "source": "assets/portraits/large/diego.png",
+    "target": "assets/portraits/large/diego.png",
+    "sha256": "542dfc86666e0c157c4d5d69592f99a44c0a490ff9be1ffd636211f650c672db"
+  },
+  {
+    "source": "assets/portraits/large/dietrich.png",
+    "target": "assets/portraits/large/dietrich.png",
+    "sha256": "a34d8d28b776070b0ee96403f609aeab9a1a455623a2b558547c755767655b95"
+  },
+  {
+    "source": "assets/portraits/large/eshmel.png",
+    "target": "assets/portraits/large/eshmel.png",
+    "sha256": "cdfe91f7ec2ddea5677296fa520b9c8f6bb8887f9529a35125213f8d616669c0"
+  },
+  {
+    "source": "assets/portraits/large/esmeralda.png",
+    "target": "assets/portraits/large/esmeralda.png",
+    "sha256": "43960e473aa58e559626f7586619cbea010f679c7d41124c5534c22eaaae4b68"
+  },
+  {
+    "source": "assets/portraits/large/fabio.png",
+    "target": "assets/portraits/large/fabio.png",
+    "sha256": "44c1e62a7f3e72305be06d810282eedd9350b514ca0f511fda8e07793cb995dc"
+  },
+  {
+    "source": "assets/portraits/large/gaitz.png",
+    "target": "assets/portraits/large/gaitz.png",
+    "sha256": "6e5c4bec12c59cb9be6d0a4957addd721c708db64c0a8a588ae8fef6e8bc3f83"
+  },
+  {
+    "source": "assets/portraits/large/guzran.png",
+    "target": "assets/portraits/large/guzran.png",
+    "sha256": "4b3261feab58f7a58d6f995f3d4f8cfe1376164cc371a6b24588d49092e4c990"
+  },
+  {
+    "source": "assets/portraits/large/hong-hua.png",
+    "target": "assets/portraits/large/hong-hua.png",
+    "sha256": "80f96c1fd04f73f967f558ed02f48e1cfe2a21101c998ed0d11881286fc15b59"
+  },
+  {
+    "source": "assets/portraits/large/leda.png",
+    "target": "assets/portraits/large/leda.png",
+    "sha256": "8c92cd7374304faa5fb22a591020e031492f8012c0b9627bf45ae6bff58c0c85"
+  },
+  {
+    "source": "assets/portraits/large/lilian.png",
+    "target": "assets/portraits/large/lilian.png",
+    "sha256": "dcb71f356517299c6b8e0f5b8386cfa1f6c2e6d7fa80e006b06cfdd3a32b9632"
+  },
+  {
+    "source": "assets/portraits/large/loretta.png",
+    "target": "assets/portraits/large/loretta.png",
+    "sha256": "0947c59c1ed6c554949c392dc6bd0be01a332f619ac00a5dc2194d2e5a9570e5"
+  },
+  {
+    "source": "assets/portraits/large/lysander.png",
+    "target": "assets/portraits/large/lysander.png",
+    "sha256": "21da7e7703a45b364875e8633cb5f4f48f328b4a5c9bc22f6092c5bf7cf33786"
+  },
+  {
+    "source": "assets/portraits/large/mikaela.png",
+    "target": "assets/portraits/large/mikaela.png",
+    "sha256": "102ab49136c8abdb2698d60cce858e6b5729df4597c02e6ad2ea6fbda900f2b0"
+  },
+  {
+    "source": "assets/portraits/large/mu.png",
+    "target": "assets/portraits/large/mu.png",
+    "sha256": "acf355374bac435cacada21bdf8e8cda712fcdac45d2aaf3cd079bcae6b6cab0"
+  },
+  {
+    "source": "assets/portraits/large/nathan.png",
+    "target": "assets/portraits/large/nathan.png",
+    "sha256": "7206ea5de8ea55081232510b6e061ee6477556375f697e7698a749c2a802dde7"
+  },
+  {
+    "source": "assets/portraits/large/ninae.png",
+    "target": "assets/portraits/large/ninae.png",
+    "sha256": "3a13c91e27de36d84c6c7367680a0856d6b554449e7b29e58a6bca462b97c50f"
+  },
+  {
+    "source": "assets/portraits/large/noctula.png",
+    "target": "assets/portraits/large/noctula.png",
+    "sha256": "7d978a262b55c245159a4b5db409191ed889143242a5349ab5a465cf7319670b"
+  },
+  {
+    "source": "assets/portraits/large/nuzzuo.png",
+    "target": "assets/portraits/large/nuzzuo.png",
+    "sha256": "813fe46b6efde21a88d69c08ee1b249c73448911b953183b5bb8ab71a84f81f7"
+  },
+  {
+    "source": "assets/portraits/large/nydine.png",
+    "target": "assets/portraits/large/nydine.png",
+    "sha256": "9cd500f1d05307bc820c03a4c3c5f3feb1b41e02a8ba787b7e6cbf44eadec1da"
+  },
+  {
+    "source": "assets/portraits/large/olympia.png",
+    "target": "assets/portraits/large/olympia.png",
+    "sha256": "a2f843ec9d44a362ac733898408af84e0c91d64e120980799467b76c35e603fb"
+  },
+  {
+    "source": "assets/portraits/large/orchel.png",
+    "target": "assets/portraits/large/orchel.png",
+    "sha256": "0cfd0e4066ba6dced30388af5936d7744796735894dd7eafc6fec172755ac429"
+  },
+  {
+    "source": "assets/portraits/large/peter.png",
+    "target": "assets/portraits/large/peter.png",
+    "sha256": "33e105795b0d62946808d7bca2e87efe532e1a83e9c28fd91021b9664f9b981a"
+  },
+  {
+    "source": "assets/portraits/large/seteth.png",
+    "target": "assets/portraits/large/seteth.png",
+    "sha256": "01142c681e6241e6c35544a9c51419645f646634a751dff0113dfd8585976e88"
+  },
+  {
+    "source": "assets/portraits/large/sha-lan.png",
+    "target": "assets/portraits/large/sha-lan.png",
+    "sha256": "70e54b6f00e68e24a1706b602cb6e52644209eee472c41844a78034dc2c8e9a7"
+  },
+  {
+    "source": "assets/portraits/large/sirocco.png",
+    "target": "assets/portraits/large/sirocco.png",
+    "sha256": "09aa362f1195ddf0d23239ac8de3322ff97340d66431fff0a96d339464719729"
+  },
+  {
+    "source": "assets/portraits/large/sofia.png",
+    "target": "assets/portraits/large/sofia.png",
+    "sha256": "b7d5ed28e5442430dadf416d83c93c31e3e66c03756bb941af1b50d8f9347c15"
+  },
+  {
+    "source": "assets/portraits/large/talimun.png",
+    "target": "assets/portraits/large/talimun.png",
+    "sha256": "eee834197003ff1a6813d088826bbaba72b447eb09e07d542351d88c77c58ee0"
+  },
+  {
+    "source": "assets/portraits/large/theodora.png",
+    "target": "assets/portraits/large/theodora.png",
+    "sha256": "025bf0b38ac43f51e499ccb013c26aab44fb093f20c7f625d2f040ac276687f0"
+  },
+  {
+    "source": "assets/portraits/large/tialla.png",
+    "target": "assets/portraits/large/tialla.png",
+    "sha256": "14c2260150809260c71b54af507639f018de973ee86fbd60631cdb2270437e84"
+  },
+  {
+    "source": "assets/portraits/large/tobias.png",
+    "target": "assets/portraits/large/tobias.png",
+    "sha256": "baf8f3e4684a3a848239edcdeb41fe5afb04c87027e88869e83c96e21e5cc9b1"
+  },
+  {
+    "source": "assets/portraits/large/troy.png",
+    "target": "assets/portraits/large/troy.png",
+    "sha256": "9004b290efa37b58af5666558c64829a9117c80fc6b436bf99020ae79c80f392"
+  },
+  {
+    "source": "assets/portraits/large/ultand.png",
+    "target": "assets/portraits/large/ultand.png",
+    "sha256": "da0c73cfdb40ae4feee5895f4132078fae8b4aa3eb432107e890ebd9718536f7"
+  },
+  {
+    "source": "assets/portraits/large/ursula.png",
+    "target": "assets/portraits/large/ursula.png",
+    "sha256": "30ed4a8d91045ac03003f15e6af842e62d9a7f7c880e217898754dd39879afed"
+  },
+  {
+    "source": "assets/portraits/large/yang-jie.png",
+    "target": "assets/portraits/large/yang-jie.png",
+    "sha256": "69a1f12c6d145e75a4afa5a7d9d0db9e6ff302240de703192b803a6bbe7a9f47"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/alexandra.png",
+    "target": "assets/portraits/post-timeskip/alexandra.png",
+    "sha256": "0bafc31a9d3cbe9a64c587e8f11e9e3ee0aa0a30301fd315a9a93159d1fc689c"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/anatolia.png",
+    "target": "assets/portraits/post-timeskip/anatolia.png",
+    "sha256": "7402a6d4a7525e72b43401ecb3b51eb0e87f46287a658c3c3cdd908081781289"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/bertrand.png",
+    "target": "assets/portraits/post-timeskip/bertrand.png",
+    "sha256": "8000f0c1e30bd8a1ee90939184c4cc7f6874c28fa3a57919068d18535f6e8433"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/bonaventure.png",
+    "target": "assets/portraits/post-timeskip/bonaventure.png",
+    "sha256": "e9cee9b21c813d5b6e5fc061bdca7be8adc04e1d91ac68778333966f82935c25"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/buccar.png",
+    "target": "assets/portraits/post-timeskip/buccar.png",
+    "sha256": "47bdbda37b697ae3852e7e7174be06a48f484b0460a7d119127aecc39957581c"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/cai.png",
+    "target": "assets/portraits/post-timeskip/cai.png",
+    "sha256": "97002b0d6e837206b17a27bdc33b543e71e014b3184e01c95bbd1e8457b19fc4"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/catania.png",
+    "target": "assets/portraits/post-timeskip/catania.png",
+    "sha256": "a8934e7b28e55c13df02a1ee56790308210ad351b81be091f54c9e30505cc592"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/dadao.png",
+    "target": "assets/portraits/post-timeskip/dadao.png",
+    "sha256": "8ef59a64446827c0cfa821ae52591e10e088b6e2c89731e56a1eff34486e9dcd"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/dante.png",
+    "target": "assets/portraits/post-timeskip/dante.png",
+    "sha256": "4e870391cd47bc8368e1423ade832fc403d9bc6af92b2cc6f2ed70b24a01fc3e"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/diego.png",
+    "target": "assets/portraits/post-timeskip/diego.png",
+    "sha256": "db6fe0bb3ac48ad5d90db37f41cd4e82fa778403339b4e855b4a868009a766db"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/dietrich.png",
+    "target": "assets/portraits/post-timeskip/dietrich.png",
+    "sha256": "af05104db5072e4371f218de8969198351a8134f58db08162a3f290e9f44a86b"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/esmeralda.png",
+    "target": "assets/portraits/post-timeskip/esmeralda.png",
+    "sha256": "e7f1c497eaab274dbb4611453b635fddc73de4d3d8d7d82609b89a8573858328"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/fianna.png",
+    "target": "assets/portraits/post-timeskip/fianna.png",
+    "sha256": "3d41e062a6c5e97af44641863e7646f1682a443f37ac0813e9d264ed6e9d2eb9"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/gaitz.png",
+    "target": "assets/portraits/post-timeskip/gaitz.png",
+    "sha256": "06b1e8a6ebd9becc0a4c082c3cfa733508ffa7db1cdc42d2377b5992d8318113"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/goliath.png",
+    "target": "assets/portraits/post-timeskip/goliath.png",
+    "sha256": "183e44143f9e18fc579718ac2fc289ce1a5560d98bb3895dbdd6fdec5d0ea445"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/halvin.png",
+    "target": "assets/portraits/post-timeskip/halvin.png",
+    "sha256": "b69feed43e9b99906c698de05850200d41dea5c87cffcb1e98167811f3bb3ae8"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/inyoni.png",
+    "target": "assets/portraits/post-timeskip/inyoni.png",
+    "sha256": "cd4e502b76cb17be340c623e7157ff992531f4c4a355d091238b5d2f23631667"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/io.png",
+    "target": "assets/portraits/post-timeskip/io.png",
+    "sha256": "2e37ed658920413565ab54e2b35b7935f7307143652414d52d9a1e59400923c3"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/alexandra.png",
+    "target": "assets/portraits/post-timeskip/large/alexandra.png",
+    "sha256": "3add1ba51e9cec90279ca83f07dd72d1b33f37a74cf998cb506172e96142d6f0"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/anatolia.png",
+    "target": "assets/portraits/post-timeskip/large/anatolia.png",
+    "sha256": "9d265fbb89061fb8063e44d30d92ea872b644e505277209e0376b51065395e58"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/bertrand.png",
+    "target": "assets/portraits/post-timeskip/large/bertrand.png",
+    "sha256": "1deab3231f9b135b7446a51493f2bab7c1d2178fa4e6a0d3b9e13477eff067b0"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/bonaventure.png",
+    "target": "assets/portraits/post-timeskip/large/bonaventure.png",
+    "sha256": "62f534a68f559dd9b57557520e6ff01b7e8cee2382d454297dd096ffe0092192"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/buccar.png",
+    "target": "assets/portraits/post-timeskip/large/buccar.png",
+    "sha256": "f594a3bcf1ad3efd7ca483d6c055f659612e192e359f90f057599fcad6d0a7f4"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/cai.png",
+    "target": "assets/portraits/post-timeskip/large/cai.png",
+    "sha256": "619366f295ff43525ad1f08aa1d284667b94505ca34af3c37b2abc4668ba0704"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/catania.png",
+    "target": "assets/portraits/post-timeskip/large/catania.png",
+    "sha256": "8ba58c9e7f08f1dc82e8fb30fe23ae50568a69694e13c478c52554b8e1140bff"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/dadao.png",
+    "target": "assets/portraits/post-timeskip/large/dadao.png",
+    "sha256": "672f27800703a05304fb077550c9fa5e783e7bf6187edd5ed38f82497e818073"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/dante.png",
+    "target": "assets/portraits/post-timeskip/large/dante.png",
+    "sha256": "feba6ec36da6f79e5a6b1db2521e2e12bc996d039e67d77478f7d5d40752fe75"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/diego.png",
+    "target": "assets/portraits/post-timeskip/large/diego.png",
+    "sha256": "ffb231cb9ad78b34bb57502ad9b8119c50b65119aa7fd945ade15f21f133efbe"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/dietrich.png",
+    "target": "assets/portraits/post-timeskip/large/dietrich.png",
+    "sha256": "55fe1e0d446184549702c9636e218d178d090c19088e72ff10443ec064f79753"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/esmeralda.png",
+    "target": "assets/portraits/post-timeskip/large/esmeralda.png",
+    "sha256": "630f98311dbbe0ac398057a4f04dee7e51795baa4e260b27cfd50c0e6b0d024e"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/fianna.png",
+    "target": "assets/portraits/post-timeskip/large/fianna.png",
+    "sha256": "9eddf6c9efebf470e696cf0caf50be76930b023bb80b7152afec60de03f6f17a"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/gaitz.png",
+    "target": "assets/portraits/post-timeskip/large/gaitz.png",
+    "sha256": "38d02e30edd884a8be188befc9b1b45dc4a29fa82a28d3d4cd60bf87b3d94c08"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/goliath.png",
+    "target": "assets/portraits/post-timeskip/large/goliath.png",
+    "sha256": "d33b97e40667a34863b15c51f1a3e1260c4d5e681b49b540fe96e88cca6ce097"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/halvin.png",
+    "target": "assets/portraits/post-timeskip/large/halvin.png",
+    "sha256": "2efe1717916debfe3755ee780e330fb59046b4ba36f1d6650c8a4bcbd59d1b05"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/inyoni.png",
+    "target": "assets/portraits/post-timeskip/large/inyoni.png",
+    "sha256": "8cb6aaaa474491a59b8d58f149bb9860e3219ac505f95535097e3a355dbc232c"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/io.png",
+    "target": "assets/portraits/post-timeskip/large/io.png",
+    "sha256": "dfca09b23466262c7df76c695fded5bf00d781a6742c3d8849742a423d5d20fb"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/leda.png",
+    "target": "assets/portraits/post-timeskip/large/leda.png",
+    "sha256": "eadd252141a3fc80d1570c1874e79315f147743f41a310fa50abd24851ebe6d2"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/lilian.png",
+    "target": "assets/portraits/post-timeskip/large/lilian.png",
+    "sha256": "28eb69d265a87ceddabeda5a197c4cb65e83e9f1561e81fa70f37159ac2fb169"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/loretta.png",
+    "target": "assets/portraits/post-timeskip/large/loretta.png",
+    "sha256": "1cc1c68e2b77ebadd8cf60090694207f7e302e6ee6c168b2ea1a7d8d3f9cf92f"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/ludia.png",
+    "target": "assets/portraits/post-timeskip/large/ludia.png",
+    "sha256": "ae4d06ab1c397e38e14b25800a065c3ff3dcb1cacad136e8f775516ea21f99b6"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/lysander.png",
+    "target": "assets/portraits/post-timeskip/large/lysander.png",
+    "sha256": "0aadac4e0105bdfa13bd23bdaa7d4f0bd57340584cc9a5a1efe748fadcc6c06f"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/manifest.json",
+    "target": "assets/portraits/post-timeskip/large/manifest.json",
+    "sha256": "55c7af63875069b861d20906a30ccf0d19ea3a68d896960c17f226a43428350c"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/mikaela.png",
+    "target": "assets/portraits/post-timeskip/large/mikaela.png",
+    "sha256": "40b0578c8c7d2d2294e6e91369a0fa66f78d63512b13a41899c56c317474e81c"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/mu.png",
+    "target": "assets/portraits/post-timeskip/large/mu.png",
+    "sha256": "86aa2200ecd4286cb527be41f5bca70f5ec4524f0ce5f3fd09a4d30bd84e188b"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/nezha.png",
+    "target": "assets/portraits/post-timeskip/large/nezha.png",
+    "sha256": "dd339fdc640c8b4dda2d14a6ffca2b576411d4110d7f191110fd2b80263be760"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/noctula.png",
+    "target": "assets/portraits/post-timeskip/large/noctula.png",
+    "sha256": "52d32cbda49d3c89a2849bd6bbfb65162ab8409cd62cebb09b84ea4f9947ec0c"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/nydine.png",
+    "target": "assets/portraits/post-timeskip/large/nydine.png",
+    "sha256": "fd6de9bfb8c85bf3854ad90900514387cc229281548f48938fd3b39d1bb4be86"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/olympia.png",
+    "target": "assets/portraits/post-timeskip/large/olympia.png",
+    "sha256": "24587b20daf8357978e15ebc7b5d72ab136161c4a82573f6603f28c74328bce8"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/orchel.png",
+    "target": "assets/portraits/post-timeskip/large/orchel.png",
+    "sha256": "1859f8b45402af72934aa475ea4786070438cf0dc5e072e9d4d3259f248fea34"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/peppe.png",
+    "target": "assets/portraits/post-timeskip/large/peppe.png",
+    "sha256": "3c3f976a034a46ccc6c26319d7ac9796f3ec72120fd022592d4250c07e0ef0a2"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/peter.png",
+    "target": "assets/portraits/post-timeskip/large/peter.png",
+    "sha256": "b9f05c6dfd6a04bfdd72aab3f216d2f8fcfffb140cfaa99df67238af06d4fd1f"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/seteth.png",
+    "target": "assets/portraits/post-timeskip/large/seteth.png",
+    "sha256": "e906adfcc98b3b62b5da4a880b297a75f733afe20de06e245b7e91f73fada58d"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/sha-lan.png",
+    "target": "assets/portraits/post-timeskip/large/sha-lan.png",
+    "sha256": "b7b6db1beca850ab42f77e3e4ed0e2e7d995daf016849c49bbf2da1553dcdd88"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/simon.png",
+    "target": "assets/portraits/post-timeskip/large/simon.png",
+    "sha256": "ec42a0d1f1c89f5e9799a97e91c57f6d4e77e2e4a43eb50d0d800bc52f1d4fcc"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/sirocco.png",
+    "target": "assets/portraits/post-timeskip/large/sirocco.png",
+    "sha256": "b6e437e871e098a557a37b4883d22aa964d011ed088b2fb028889c942cb6399a"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/sofia.png",
+    "target": "assets/portraits/post-timeskip/large/sofia.png",
+    "sha256": "da7b696ed9036c3912b0f9ae5945bfac596822e41a768a29fc2544164e7ef3ae"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/SOURCES.md",
+    "target": "assets/portraits/post-timeskip/large/SOURCES.md",
+    "sha256": "62d91edcbed4f9141ed4c91d07415d81945ab85d5b475ea15482880dd03be740"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/talimun.png",
+    "target": "assets/portraits/post-timeskip/large/talimun.png",
+    "sha256": "edde0b0047309d99df8a0ef585a10a8a90b5354132762d2ce4570354a2043425"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/theodora.png",
+    "target": "assets/portraits/post-timeskip/large/theodora.png",
+    "sha256": "1f92c44d645caaf84816255ee7157b1f76ca2a5e0e559cfdc4c1092244f17311"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/tialla.png",
+    "target": "assets/portraits/post-timeskip/large/tialla.png",
+    "sha256": "e43d67420951a501ddad4f065fd19ddb16a7e5bfd554ca3b750325f2ba2e329f"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/tobias.png",
+    "target": "assets/portraits/post-timeskip/large/tobias.png",
+    "sha256": "c4772a0b71e0b48975c9736ecfa9bc52e5301cbba7d9ce1eac1f8c0f48ac319c"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/ultand.png",
+    "target": "assets/portraits/post-timeskip/large/ultand.png",
+    "sha256": "04292ac3044918b16c4b2ed8b9f5151c74dbf48321bbabe998c6d8f2c257bb6e"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/large/ursula.png",
+    "target": "assets/portraits/post-timeskip/large/ursula.png",
+    "sha256": "bd7d570c8ea09188df49873cb105944b4e515ce8abdcefdd0560091867ee84e5"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/leda.png",
+    "target": "assets/portraits/post-timeskip/leda.png",
+    "sha256": "4bd635d7c68b817eb93e2a9472e1d481870ce4672325b6c0fae468a4ba7200ff"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/lilian.png",
+    "target": "assets/portraits/post-timeskip/lilian.png",
+    "sha256": "d4f91b56422f17e9c95d3e0526df748d9e48085da1d98b167da4be562a6f9103"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/loretta.png",
+    "target": "assets/portraits/post-timeskip/loretta.png",
+    "sha256": "dd39c3b4cd198554fc1e3abf1bc59f5614ccdbae5af91914e3ce28cb783584ea"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/ludia.png",
+    "target": "assets/portraits/post-timeskip/ludia.png",
+    "sha256": "4f110a43eb617ff79e2b633b3b93540f29fe0bdaf98e3bf6683f7d3873eb380a"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/lysander.png",
+    "target": "assets/portraits/post-timeskip/lysander.png",
+    "sha256": "a19d967f6dfb88940e5dea39070627dc95ec7b3479f5295049ea9b4de47b2f63"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/manifest.json",
+    "target": "assets/portraits/post-timeskip/manifest.json",
+    "sha256": "1aa0fb183c4d75bf2f3f61899868d5044b8c885012effcae545209b2c4a7e628"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/mikaela.png",
+    "target": "assets/portraits/post-timeskip/mikaela.png",
+    "sha256": "3247e5a877b647b72193c8651b13b162f525a1a8c3d3b9f7727913acaa4831f2"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/mu.png",
+    "target": "assets/portraits/post-timeskip/mu.png",
+    "sha256": "31b3882ed32019415dceadfee115be22e6ff6fc73981b3791f32fe15c1ab027d"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/nezha.png",
+    "target": "assets/portraits/post-timeskip/nezha.png",
+    "sha256": "061d4c3c57f1a5683519c4714fd7ff73e776a332e05ea42d8291c73677b8ed05"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/noctula.png",
+    "target": "assets/portraits/post-timeskip/noctula.png",
+    "sha256": "25f9aed400bb7123254c262eee7d9247990dda83a26b8e66eae910318cadc58b"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/nydine.png",
+    "target": "assets/portraits/post-timeskip/nydine.png",
+    "sha256": "d85b7f49643d055c081803fdacab73c64dea6726b6572ec70a0208d1bab1c79e"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/olympia.png",
+    "target": "assets/portraits/post-timeskip/olympia.png",
+    "sha256": "caae782972cfbe8bf061473c67b6ea19539357e563ddda19346a5cc8821eb7b3"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/orchel.png",
+    "target": "assets/portraits/post-timeskip/orchel.png",
+    "sha256": "0b8bf29e7903af61b9c5a9c0f6bccb32360050e08ae0550c31efb7da83657488"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/peppe.png",
+    "target": "assets/portraits/post-timeskip/peppe.png",
+    "sha256": "3b84682a7d8596368d5467a7db99d685c4f3a42ac8e23a1786d71783343aecbe"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/peter.png",
+    "target": "assets/portraits/post-timeskip/peter.png",
+    "sha256": "8affbaea9a137308375f79069d49da3f7b80f536af52315877280160128fa3ff"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/seteth.png",
+    "target": "assets/portraits/post-timeskip/seteth.png",
+    "sha256": "85cff676e67b0420a716afad58a5e78728656a13878f803e25286a6f1f1a47ac"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/sha-lan.png",
+    "target": "assets/portraits/post-timeskip/sha-lan.png",
+    "sha256": "a4cc8ab619c8a9c89489f52b4dfc343fc163cf2f48778e6c599933b42ff562e2"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/simon.png",
+    "target": "assets/portraits/post-timeskip/simon.png",
+    "sha256": "a2daea5dc33fb7ca52dd04871cadaa9d122258a703b04e3faeef58a95822f136"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/sirocco.png",
+    "target": "assets/portraits/post-timeskip/sirocco.png",
+    "sha256": "4ec2e4280165a275ad6fb8028dabdf9cf2bfa0af6a2da2cd16e69f92cb902dba"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/sofia.png",
+    "target": "assets/portraits/post-timeskip/sofia.png",
+    "sha256": "810a883193eabb24c9254696da44a64c5d8373e2407d9a7f4591ff9b140bdab2"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/SOURCES.md",
+    "target": "assets/portraits/post-timeskip/SOURCES.md",
+    "sha256": "265bb4c4667e45ba8b6d2e08fd8f6ee7b99d6a595d3e88b0b616b163459ef1d2"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/talimun.png",
+    "target": "assets/portraits/post-timeskip/talimun.png",
+    "sha256": "95efca10d73133352525695a562c76d9c3aeb28c391bdeb3d53ae59c21f8acdb"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/theodora.png",
+    "target": "assets/portraits/post-timeskip/theodora.png",
+    "sha256": "eb45bf725e7437890da08bdc29faf9189354c072565470c285554a8fe99cb0a1"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/tialla.png",
+    "target": "assets/portraits/post-timeskip/tialla.png",
+    "sha256": "ebc18140ac8b24e0f80d46ae6d85fa511da71d3bbede8456073ed367eb069500"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/tobias.png",
+    "target": "assets/portraits/post-timeskip/tobias.png",
+    "sha256": "db1fb3a43932ae19e696fa5cc5c1830f0f033e9550fcdbb0aeb7489427acb172"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/ultand.png",
+    "target": "assets/portraits/post-timeskip/ultand.png",
+    "sha256": "ee60bb12baa666ebca92f92633d57278efc040c72ebce20d4b1946f4b502df70"
+  },
+  {
+    "source": "assets/portraits/post-timeskip/ursula.png",
+    "target": "assets/portraits/post-timeskip/ursula.png",
+    "sha256": "f5f495f5785cf676150bf8bac6169c3906a3e84f46234943835932b6f36bbbc1"
+  },
+  {
+    "source": "assets/portraits/SOURCES.md",
+    "target": "assets/portraits/SOURCES.md",
+    "sha256": "9bfe9bbb1e1997a89230c48e25ff33bbd9f14a6dbfc282e7a52768d207df2532"
+  },
+  {
+    "source": "assets/recruitment/aegina-map.png",
+    "target": "assets/recruitment/aegina-map.png",
+    "sha256": "d604f9b00db838f4cde1c915dd5b6cde9d36100f9f5e59ddaa5069fc4b10491d"
+  },
+  {
+    "source": "assets/recruitment/azure-crystal-map.jpg",
+    "target": "assets/recruitment/azure-crystal-map.jpg",
+    "sha256": "adcd5445f8594a8c1d37d120ef928d6ab8994053cf660064bbb4fdfc281ed57b"
+  },
+  {
+    "source": "assets/recruitment/baina-map.jpg",
+    "target": "assets/recruitment/baina-map.jpg",
+    "sha256": "39e51b9646509c60d64bb53550e81c9386ea43a319c7c03e14e77be358efedcd"
+  },
+  {
+    "source": "assets/recruitment/brontes-items.jpg",
+    "target": "assets/recruitment/brontes-items.jpg",
+    "sha256": "d445a548cda5e675c7fa8060770a36b1495a833a1a51fe16c254c65a54c8c7be"
+  },
+  {
+    "source": "assets/recruitment/brontes-location.jpg",
+    "target": "assets/recruitment/brontes-location.jpg",
+    "sha256": "9dd9d95dd72124784508e3c789e3d30d0ca0c80ff574289520178b0b4efb7192"
+  },
+  {
+    "source": "assets/recruitment/dagsion-location.jpg",
+    "target": "assets/recruitment/dagsion-location.jpg",
+    "sha256": "3ab227575a31321d0e7c2bf201b9c7e7b9d5048be42d47616a60503053813fa6"
+  },
+  {
+    "source": "assets/recruitment/daybreak-map.png",
+    "target": "assets/recruitment/daybreak-map.png",
+    "sha256": "c63dee9398e9dfe5f923c17a01f30aca68adf3060eb7e23fe346379d8cc72743"
+  },
+  {
+    "source": "assets/recruitment/gift-box-floor.png",
+    "target": "assets/recruitment/gift-box-floor.png",
+    "sha256": "0b1b0dd981178e2f6001d5b7999335b0a301705434751c536c43f05bc48d2b94"
+  },
+  {
+    "source": "assets/recruitment/klytius-map.jpg",
+    "target": "assets/recruitment/klytius-map.jpg",
+    "sha256": "ee603392c8a32af6f4ee5d36209e618bd96ffe9d1d37f4ec88f1e64ddbc0d482"
+  },
+  {
+    "source": "assets/recruitment/kroios-map.png",
+    "target": "assets/recruitment/kroios-map.png",
+    "sha256": "1e3cfc9485b92527564f873b10ffa2df26d5134d795a77b90759c65cdbd621af"
+  },
+  {
+    "source": "assets/recruitment/map-links.json",
+    "target": "assets/recruitment/map-links.json",
+    "sha256": "7836b440290143e7facdb1e7cdc51c9d4a0efe159a34186312c8c55b9d7ddedf"
+  },
+  {
+    "source": "assets/recruitment/reviewed-images-20261104.json",
+    "target": "assets/recruitment/reviewed-images-20261104.json",
+    "sha256": "f4cd082d5e5acb77c67dbc08351b432580cccb53fed4454dadaab3a40d05b8a3"
+  },
+  {
+    "source": "assets/recruitment/secret-altar-map.png",
+    "target": "assets/recruitment/secret-altar-map.png",
+    "sha256": "24225fd0804362f55d79906d59001ef017f62fbd8e3a1ef1f217405d1ba93dc5"
+  },
+  {
+    "source": "assets/recruitment/SOURCES.md",
+    "target": "assets/recruitment/SOURCES.md",
+    "sha256": "1754eacf3ce03440e340ee4bef8a78ef62859d7a2b0350f8ba19cc8e0e209527"
+  },
+  {
+    "source": "assets/recruitment/temple-service.png",
+    "target": "assets/recruitment/temple-service.png",
+    "sha256": "b8f18d653f3d36a9d8f1656fbc8595f2ba69b57692c83af2ef805e97243c7f56"
+  },
+  {
+    "source": "assets/recruitment/valhalla-map.png",
+    "target": "assets/recruitment/valhalla-map.png",
+    "sha256": "ca9093ca43dfdb6a9bea9fa0567110b05e849d2a13588c86a529b18448fdd46b"
+  },
+  {
+    "source": "assets/shopping/cleansing-blade-1.png",
+    "target": "assets/shopping/cleansing-blade-1.png",
+    "sha256": "51e005aede00aa95488a6ef0ded00e9cadb99dda9914865d55bc5cfbc2986b5f"
+  },
+  {
+    "source": "assets/shopping/cleansing-blade-2.png",
+    "target": "assets/shopping/cleansing-blade-2.png",
+    "sha256": "40d7ba8080a7dc9cfc14d4c9e6b5bbff485ed63d44ff6b8970db5b22b20c858b"
+  },
+  {
+    "source": "assets/shopping/cleansing-blade-leda8.png",
+    "target": "assets/shopping/cleansing-blade-leda8.png",
+    "sha256": "e48cf53e8983bfaefb01555a17bebdb5f29d609a2489e0cffaeb7bf1e6a70b03"
+  },
+  {
+    "source": "assets/shopping/credna-s-mallet-reward.png",
+    "target": "assets/shopping/credna-s-mallet-reward.png",
+    "sha256": "d4d56a5d3c8e04f025126b13e46bef884a5ace628c5ae2d8129bbd6730666481"
+  },
+  {
+    "source": "assets/shopping/flyssa-1.png",
+    "target": "assets/shopping/flyssa-1.png",
+    "sha256": "48b0c401d97712aa96b6a02a7230dd9c181135e95f5132bd71018d2f73b1bcd6"
+  },
+  {
+    "source": "assets/shopping/flyssa-2.png",
+    "target": "assets/shopping/flyssa-2.png",
+    "sha256": "c4e7a840ac17d878c1f3f3be50d8a826cb76f8624594e92dfc7a0352d0cd5193"
+  },
+  {
+    "source": "assets/shopping/hammer-1.png",
+    "target": "assets/shopping/hammer-1.png",
+    "sha256": "d749adad63d8d5d30fe4213faee6801c53f2bd3d13eadf981b8d6c3d4aea3c85"
+  },
+  {
+    "source": "assets/shopping/hammer-2.png",
+    "target": "assets/shopping/hammer-2.png",
+    "sha256": "5cd6b020e411d0d5b3adf90104436043351ff9e8f40763d8b5a13a1c5a90979b"
+  },
+  {
+    "source": "assets/shopping/horsekiller-bow-1.png",
+    "target": "assets/shopping/horsekiller-bow-1.png",
+    "sha256": "78d3b5bd4d7a228d46f2e28d26084d8821b114cfd86b7735ba40e93201cb7a0f"
+  },
+  {
+    "source": "assets/shopping/horsekiller-bow-2.png",
+    "target": "assets/shopping/horsekiller-bow-2.png",
+    "sha256": "14d7012cbe3fe027943197ce3ba0ad37bd0c26bb5bf8617293972be811178665"
+  },
+  {
+    "source": "assets/shopping/hunter-s-bow-1.png",
+    "target": "assets/shopping/hunter-s-bow-1.png",
+    "sha256": "ce056cf1b57587c839b4ec392d6ef304c3b43f80307fc75593d3315dad499cf6"
+  },
+  {
+    "source": "assets/shopping/hunter-s-bow-2.png",
+    "target": "assets/shopping/hunter-s-bow-2.png",
+    "sha256": "19040fbf27b486f6d7b63892e7eb98c3aa17ea72d6dbbdae7dfce8e32389469c"
+  },
+  {
+    "source": "assets/shopping/levin-sword-1.png",
+    "target": "assets/shopping/levin-sword-1.png",
+    "sha256": "48b0c401d97712aa96b6a02a7230dd9c181135e95f5132bd71018d2f73b1bcd6"
+  },
+  {
+    "source": "assets/shopping/levin-sword-2.png",
+    "target": "assets/shopping/levin-sword-2.png",
+    "sha256": "40d7ba8080a7dc9cfc14d4c9e6b5bbff485ed63d44ff6b8970db5b22b20c858b"
+  },
+  {
+    "source": "assets/shopping/longbow-1.png",
+    "target": "assets/shopping/longbow-1.png",
+    "sha256": "07e4d9f5b0ff22d9efd145a6a7bb96e8b91e79db87d71dab017718ca55f2c055"
+  },
+  {
+    "source": "assets/shopping/longbow-2.png",
+    "target": "assets/shopping/longbow-2.png",
+    "sha256": "1a65d1f5a1821be7c3ebb78899c47b2886ad6d9524745a61c49868cd4a0d5389"
+  },
+  {
+    "source": "assets/shopping/mini-bow-leda2.png",
+    "target": "assets/shopping/mini-bow-leda2.png",
+    "sha256": "eb50ec548f94cf2cfde9dc8e650376a0f924eb5dc9628e549535755241c0b1f5"
+  },
+  {
+    "source": "assets/shopping/qiankun-circles-1.png",
+    "target": "assets/shopping/qiankun-circles-1.png",
+    "sha256": "2b7424548ccfca7b316f13ab604978d258e0e917ebd499f660b16b655f35821e"
+  },
+  {
+    "source": "assets/shopping/qiankun-circles-2.png",
+    "target": "assets/shopping/qiankun-circles-2.png",
+    "sha256": "40d7ba8080a7dc9cfc14d4c9e6b5bbff485ed63d44ff6b8970db5b22b20c858b"
+  },
+  {
+    "source": "assets/shopping/ridersbane-1.png",
+    "target": "assets/shopping/ridersbane-1.png",
+    "sha256": "95f0cf90ef4d9962ca36cd6e3105186d978bffe1f0111b0029d0cbb820609105"
+  },
+  {
+    "source": "assets/shopping/ridersbane-2.png",
+    "target": "assets/shopping/ridersbane-2.png",
+    "sha256": "c4e7a840ac17d878c1f3f3be50d8a826cb76f8624594e92dfc7a0352d0cd5193"
+  },
+  {
+    "source": "assets/shopping/shining-spear-reward.png",
+    "target": "assets/shopping/shining-spear-reward.png",
+    "sha256": "cb1a6c44bf8bca928f5765eb318dd26ecb7ef072de3c135d47d696c8edf6c703"
+  },
+  {
+    "source": "assets/shopping/smyrnos-s-channels-reward.png",
+    "target": "assets/shopping/smyrnos-s-channels-reward.png",
+    "sha256": "023aec54310dc0a7c9f18771f5927fb0ff8c16fc7ec4c9fe372bbbad86e8b9fa"
+  },
+  {
+    "source": "assets/shopping/SOURCES.md",
+    "target": "assets/shopping/SOURCES.md",
+    "sha256": "0d10dbafd4d223fd52fe82bf6fa17866c758ed833201ec43637ed289d0f747b1"
+  },
+  {
+    "source": "assets/shopping/southern-passage.png",
+    "target": "assets/shopping/southern-passage.png",
+    "sha256": "5bd71429b508734af7d49b7080d20114a91df5781b4f9f25f8c1d62b1c38a050"
+  },
+  {
+    "source": "assets/shopping/venin-bow-1.png",
+    "target": "assets/shopping/venin-bow-1.png",
+    "sha256": "78d3b5bd4d7a228d46f2e28d26084d8821b114cfd86b7735ba40e93201cb7a0f"
+  },
+  {
+    "source": "assets/shopping/venin-bow-2.png",
+    "target": "assets/shopping/venin-bow-2.png",
+    "sha256": "3961b129b8ef7ac12c99145cc9f368f8fa7cef9cb8095bffc40c6453d7d93321"
+  },
+  {
+    "source": "assets/shopping/windfire-rings-dione.png",
+    "target": "assets/shopping/windfire-rings-dione.png",
+    "sha256": "29151309142d79cf8c368799f7b28f52e1ca5bade21dad34a7db9ba83ea5c9d0"
+  },
+  {
+    "source": "assets/shopping/zalmoxis-reward.png",
+    "target": "assets/shopping/zalmoxis-reward.png",
+    "sha256": "c9162b3f506d6ae40ad707cf2f982a3005a085728a868acf62f5c050e4db4437"
+  },
+  {
+    "source": "assets/skills/armor.webp",
+    "target": "assets/skills/armor.webp",
+    "sha256": "fe64169f57edbf4ac49dada86cd0b084af7d888c2c7e20398d39eaae8350f693"
+  },
+  {
+    "source": "assets/skills/authority.webp",
+    "target": "assets/skills/authority.webp",
+    "sha256": "d8393264d4b834efd0ad043ccbbe08877d13f9553bad601f633844851f2529e2"
+  },
+  {
+    "source": "assets/skills/axe.webp",
+    "target": "assets/skills/axe.webp",
+    "sha256": "953e8f9b94b7c93afbd69cccdd04f9a977186596452bcd0091f11e52274cd630"
+  },
+  {
+    "source": "assets/skills/black-magic.webp",
+    "target": "assets/skills/black-magic.webp",
+    "sha256": "8fb1950ac0e456dc123ad8938361306fdbef93450e8d91bcc0e467a074b0bb2e"
+  },
+  {
+    "source": "assets/skills/bow.webp",
+    "target": "assets/skills/bow.webp",
+    "sha256": "1b1cfc0a0919852e16b6612238d3ec2b665c75a101997cea0778e43433c3d783"
+  },
+  {
+    "source": "assets/skills/brawl.webp",
+    "target": "assets/skills/brawl.webp",
+    "sha256": "869244e295c449d08af9a18f67b7cba9ccc8b3430f71088c8191b545cf46aee0"
+  },
+  {
+    "source": "assets/skills/flying.webp",
+    "target": "assets/skills/flying.webp",
+    "sha256": "ea76802b49ee3c46b4d90384f9d9248e9b3bdeba2fb371a82333139eb9ce3256"
+  },
+  {
+    "source": "assets/skills/infantry.webp",
+    "target": "assets/skills/infantry.webp",
+    "sha256": "29de8fa556354026d086c2482915c19f9afa3d450facc9fb2bf941e72fb19ddb"
+  },
+  {
+    "source": "assets/skills/lance.webp",
+    "target": "assets/skills/lance.webp",
+    "sha256": "fe91c5ad2637602e79270abe1b04dba00cbf7d10602d7d964135a8f1b6ea4e79"
+  },
+  {
+    "source": "assets/skills/riding.webp",
+    "target": "assets/skills/riding.webp",
+    "sha256": "7848a3a0f224604ff0edd8baefb4e7de807914b46491222fb682fe12ae5d3a6d"
+  },
+  {
+    "source": "assets/skills/SOURCES.md",
+    "target": "assets/skills/SOURCES.md",
+    "sha256": "fcc6cfbd2aa2b1b3d1f42d0708cd5da514bc8edfc71387b1a55c6aa549c62c2b"
+  },
+  {
+    "source": "assets/skills/sword.webp",
+    "target": "assets/skills/sword.webp",
+    "sha256": "9a1a520b793f542dce345ec7e723350c27d2588097094ca89f903f53dbaad0c7"
+  },
+  {
+    "source": "assets/skills/white-magic.webp",
+    "target": "assets/skills/white-magic.webp",
+    "sha256": "61d2e6391f7e06ccca300244bc903a8ddb617ab91d1ad36d992779b8bcaa95ce"
+  },
+  {
+    "source": "assets/traits/manifest.json",
+    "target": "assets/traits/manifest.json",
+    "sha256": "de7cba9353bc415ebbf6474ac733577e9983091f07d8aef50f80f36b3d7aa4d1"
+  },
+  {
+    "source": "assets/traits/SOURCES.md",
+    "target": "assets/traits/SOURCES.md",
+    "sha256": "af06646325508cab1fd25b0fd3501b75136666a4efb06cec80922b26fee1415a"
+  },
+  {
+    "source": "assets/traits/undead.png",
+    "target": "assets/traits/undead.png",
+    "sha256": "1dd60a782ed025ec430842bd7d9b9714f756297f1e932c7125ab32bd0293b90d"
+  },
+  {
+    "source": "assets/underworld/gate-miasma.jpg",
+    "target": "assets/underworld/gate-miasma.jpg",
+    "sha256": "f47d5d15196f25ee7b2eb331880e3929ae6c4d821d0351e1fd39add721bbdbd5"
+  },
+  {
+    "source": "assets/underworld/SOURCES.md",
+    "target": "assets/underworld/SOURCES.md",
+    "sha256": "9fe56d1ff5b7d48ab8b8d07c66891375d8f4a072193dd816d515d220cf6a15e5"
+  },
+  {
+    "source": "assets/underworld/squad-selection.jpg",
+    "target": "assets/underworld/squad-selection.jpg",
+    "sha256": "5be0c50b67c68a4406918eb6630e2caf3fdd6f01a506417f02b7bc085068f1ad"
+  },
+  {
+    "source": "assets/weapons/item-08c97b353f3f.webp",
+    "target": "assets/weapons/item-08c97b353f3f.webp",
+    "sha256": "8fb1950ac0e456dc123ad8938361306fdbef93450e8d91bcc0e467a074b0bb2e"
+  },
+  {
+    "source": "assets/weapons/item-10bcdf2e5f08.webp",
+    "target": "assets/weapons/item-10bcdf2e5f08.webp",
+    "sha256": "e189a846a30007f80e1151da6b99032799911c65cf4ba7a99daea32006c2f499"
+  },
+  {
+    "source": "assets/weapons/item-1474739a52a9.webp",
+    "target": "assets/weapons/item-1474739a52a9.webp",
+    "sha256": "e5149a4461f527126090ba3665edc3b675c8e542ba90558d3d5cf961b0bdf9f3"
+  },
+  {
+    "source": "assets/weapons/item-3e8974379abc.webp",
+    "target": "assets/weapons/item-3e8974379abc.webp",
+    "sha256": "06f0d85d953e217fe36873fedaf670dfa02bd6024b10a22e1b1d31bcb4c4a1b5"
+  },
+  {
+    "source": "assets/weapons/item-cae5fd8b4ffa.webp",
+    "target": "assets/weapons/item-cae5fd8b4ffa.webp",
+    "sha256": "61d2e6391f7e06ccca300244bc903a8ddb617ab91d1ad36d992779b8bcaa95ce"
+  },
+  {
+    "source": "assets/weapons/item-d36f4cad9901.webp",
+    "target": "assets/weapons/item-d36f4cad9901.webp",
+    "sha256": "1e71d779b806742611352fcf0122ea4a90bf836e8554f817ed37a466882d75e3"
+  },
+  {
+    "source": "assets/weapons/item-d377c1b7902a.webp",
+    "target": "assets/weapons/item-d377c1b7902a.webp",
+    "sha256": "11fbad60e29877c2f8e00cad13dfb7b9236bc790d1b891d942783128100f8b68"
+  },
+  {
+    "source": "assets/weapons/item-ea9379ad0d17.webp",
+    "target": "assets/weapons/item-ea9379ad0d17.webp",
+    "sha256": "851a4507e7131c06f1280d2a62531660078462ed3360a102baf4c7719fb16663"
+  },
+  {
+    "source": "assets/weapons/item-fffc003ab338.webp",
+    "target": "assets/weapons/item-fffc003ab338.webp",
+    "sha256": "2fc468086e5a55716e44421dd7c23404f7cc755ef4191ff5847e35ee4320e1f4"
+  },
+  {
+    "source": "assets/weapons/manifest.json",
+    "target": "assets/weapons/manifest.json",
+    "sha256": "af23b0eee91f496b9222d0f2dc5919bdcb4e57ad94abd50a6e0959be97798708"
+  },
+  {
+    "source": "assets/weapons/SOURCES.md",
+    "target": "assets/weapons/SOURCES.md",
+    "sha256": "1447b33d8f2a245927575fd8c89a4c09636b9387863564e70e8757144fad0fd6"
+  }
+]
