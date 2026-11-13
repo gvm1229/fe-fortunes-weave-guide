@@ -1,0 +1,80 @@
+{
+  "checked_at": "2026-11-04",
+  "scope": "current-project",
+  "host": "local Codex",
+  "os": "Windows",
+  "sessions": [
+    {
+      "title": "재시작",
+      "threadId": "01a19fe6-b3c9-7633-b76e-a5a79f1eacf3",
+      "pages": 4,
+      "turns": 38,
+      "userMessages": 62,
+      "complete": true
+    },
+    {
+      "title": "최종 팀 구성",
+      "threadId": "01a1a50f-669b-74b1-8508-a420e0be7d7a",
+      "pages": 12,
+      "turns": 39,
+      "userMessages": 72,
+      "complete": true
+    },
+    {
+      "title": "각 루트 1부 처음부터 재시작하기",
+      "threadId": "01a1a659-e862-7932-b74e-81014300ddb5",
+      "pages": 1,
+      "turns": 1,
+      "userMessages": 1,
+      "complete": true
+    },
+    {
+      "title": "전역 지식 없이 공략 조사",
+      "threadId": "01a19f6d-252c-7b92-ac25-50ecc155fbd9",
+      "pages": 1,
+      "turns": 7,
+      "userMessages": 12,
+      "complete": true
+    }
+  ],
+  "total_user_message_occurrences": 147,
+  "unique_user_messages": 91,
+  "previously_sourced_messages": 51,
+  "additional_messages_reviewed": 40,
+  "decisions": {
+    "existing": 26,
+    "new_rule": 3,
+    "superseded": 3,
+    "factual_only": 4,
+    "question_only": 4
+  },
+  "new_rule_ids": [
+    "P17",
+    "W17",
+    "W18"
+  ],
+  "corrected_stale_references": [
+    "preferences.md: former seven-person list now links to current canonical list",
+    "README.md: former seven-person list and equal-width team layout"
+  ],
+  "automatic_capture": "shared AGENTS.md instruction applied by each responding agent; no background watcher",
+  "global_hive_commands": "not-run",
+  "external_uploads": "none",
+  "game_execution": "not-run",
+  "attachment_pixels": "not-reinspected; user-supplied descriptions only",
+  "limits": [
+    "Coverage ends at each returned final history page; later messages are outside this snapshot.",
+    "Game observations and temporary progression were excluded from preference capture.",
+    "Ordinary local Markdown, not Hive canonical ingestion or shared-index registration."
+  ],
+  "validation": {
+    "status": "passed",
+    "knowledge_markdown_files": 10,
+    "review_unique_message_ids": 40,
+    "new_claims_unique": true,
+    "all_four_histories_complete": true,
+    "checklist_sha256": "0992A77A3531DC493117793C9282E2A99C7745E129A5C4969F1380FB4154D11E",
+    "checklist_matches_before": true,
+    "errors": []
+  }
+}

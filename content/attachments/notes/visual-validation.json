@@ -1,0 +1,15 @@
+{
+  "format_idempotent": true,
+  "unique_tasks": 93,
+  "duplicate_ids": [],
+  "duplicate_tasks": [],
+  "missing_assets": [],
+  "broken_links": [],
+  "mismatched_tags": [],
+  "open_tags": [],
+  "figures": 75,
+  "tables": 13,
+  "accordions": 0,
+  "json_revision": 4,
+  "completed_check_count": 0
+}

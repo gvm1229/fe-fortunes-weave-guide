@@ -1,0 +1,69 @@
+{
+  "host": "Windows / Python / Chrome",
+  "userReportDate": "2026-11-04",
+  "scope": "축복13개 구매 완료·현재 잔액·뒤 루트 구매·원래 체크 보존",
+  "purchasedEffects": 13,
+  "spent": 4800,
+  "currentShards": 2605,
+  "expPurchasedPercent": 10,
+  "expCurrentCapPercent": 30,
+  "purchasedChecksTrue": 13,
+  "checklistRevision": 54,
+  "apiReadBack": true,
+  "previousIdsPreserved": 1313,
+  "totalIds": 1319,
+  "activeActions": 961,
+  "newIds": [
+    "entry-leda--black-exp-ii",
+    "entry-leda--exp-ii",
+    "entry-leda--white-exp-ii",
+    "prep-boons--class-exp-i",
+    "prep-boons--fist-exp-i",
+    "prep-boons--sword-exp-i"
+  ],
+  "retiredDuplicateActions": [
+    "entry-leda--swordfist",
+    "entry-leda-boons--sword-exp",
+    "prep-boons--jurah-discount-optional"
+  ],
+  "changedOrAddedChecks": [
+    "prep-boons--sword-exp-i",
+    "prep-boons--fist-exp-i",
+    "prep-boons--class-exp-i"
+  ],
+  "allOtherChecksPreserved": true,
+  "protectedFilesUnchanged": [
+    "data/roster-plan.json",
+    "data/final-roster.json",
+    "data/phase-goals.json"
+  ],
+  "externalUpdatesPreserved": [],
+  "futureRoutePurchasesNotMarkedDone": true,
+  "browser": {
+    "viewport": [
+      2518,
+      1277
+    ],
+    "reloadPersistence": true,
+    "theodoraPurchasedChecklist": true,
+    "ledaBudgetAndScopedModal": true,
+    "dietrichAndKaiFutureBudget": true,
+    "rawMarkdownTableFixed": true,
+    "modalCentered": true,
+    "localConsoleErrorsObserved": 0,
+    "screenshot": "notes/screenshots/boons-purchased-20261104.png"
+  },
+  "checks": [
+    "python tools/check_fonts.py:223HTML·9글꼴 오류0",
+    "python tools/check_reference_reading.py:194문서·문구/그림/출처 보존·1319ID 일치(최종 공통 구매표 갱신 후 재검사)",
+    "python tools/check_journey_progression.py:48장·97일요일·13개4800·현재2605 일치"
+  ],
+  "limitations": [
+    "게임 구매·전투는 에이전트가 실행하지 않음. 실제 구매 완료와 잔액은 사용자 보고.",
+    "하드1.1.0의20%/30% 동일 조건 EXP·완료 시간 비교는 미실측.",
+    "이 작업의 브라우저 확인은 Windows Chrome 현재 큰 화면. 휴대폰 재검증은 수행하지 않음.",
+    "현재 세오도라 장·새 가호 성장·미래 위업 보상 수령은 추정하지 않음."
+  ],
+  "globalKnowledgeOrHiveWrites": false,
+  "commonBuyingReferenceUpdated": true
+}

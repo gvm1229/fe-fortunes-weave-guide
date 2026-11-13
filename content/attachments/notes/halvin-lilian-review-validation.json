@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-06",
+  "host": "local",
+  "os": "Windows",
+  "scope": "research/proposal only",
+  "proposal": "하르빈 대신 릴리안 우선; 기존 기마 궁수 역할은 보우 나이트로 계승 제안",
+  "notApprovedAsRosterChange": true,
+  "protectedFiles": {
+    "data/final-roster.json": true,
+    "data/team-specialty-review.json": true,
+    "data/phase-goals.json": true,
+    "data/roster-plan.json": true,
+    "data/checklist.json": true,
+    "data/carry-state.json": true,
+    "progress.md": true
+  },
+  "sourcesRead": [
+    "Game8 Halvin/Lilian full text via public reader",
+    "Yuphas Temple character and unique abilities",
+    "Reddit archer discussion",
+    "Korean hard/classic clear and all-route reports",
+    "Japanese Part III report and all-character report"
+  ],
+  "checked": [
+    "both Strength growth35%",
+    "Halvin Spd45/Dex60 vs Lilian40/55",
+    "Lilian level35 Upper Hand+ Attack+5 on initiating at100% hit",
+    "Halvin combat stack2 max30; speed debuff after combat",
+    "current Theodora Lilian1/2 main vs Leda Halvin2 main",
+    "Bow Knight BowA RidingD; Sniper mastery Hit15",
+    "no white magic in final archer classes"
+  ],
+  "limits": [
+    "no live v1.1.0 combat test",
+    "actual current Lilian level/class/stats unknown",
+    "anecdotes are not popularity statistics",
+    "Bow Knight is proposed for existing team role, not an unconditional best class",
+    "Halvin1/2 recruitment/training cost not fully eliminated by PartIII bench decision"
+  ]
+}

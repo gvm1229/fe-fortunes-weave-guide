@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-05",
+  "host": "Codex / Windows",
+  "passed": {
+    "existingIdsPreserved": 1369,
+    "totalIds": 1373,
+    "movedActions": [
+      "theo-02--support-pairs",
+      "theo-02--support-queue",
+      "theo-02--58843314e4",
+      "theo-02--f6929065fd",
+      "theo-02--d96ca9f7af",
+      "theo-02--13969a5202"
+    ],
+    "legacyParentsPreserved": true,
+    "openingActionsCompleted": [
+      "theo-05-scout-opening--dispatch",
+      "theo-05-scout-opening--reward",
+      "theo-05-scout-opening--unlock"
+    ],
+    "existingChecksPreserved": 78,
+    "revisionBefore": 105,
+    "revisionAfter": 108,
+    "weeklyQueueAgreement": true,
+    "progressFilesUpdated": [
+      "progress.md",
+      "routes/theodora/progress.md"
+    ],
+    "fonts": {
+      "html": 225,
+      "files": 9,
+      "errors": 0
+    },
+    "referenceReading": {
+      "documents": 196,
+      "textAndTableValues": 10728,
+      "missingAssetsOrSources": 0
+    },
+    "checklistStateCases": 6,
+    "pythonCompile": true,
+    "browser": {
+      "host": "Windows / Codex 내장 브라우저",
+      "url": "http://127.0.0.1:8766/personalized.html#theo-05-scout-opening",
+      "openingChecked": 3,
+      "sofiaChecked": true,
+      "saveStatus": "JSON 저장 완료",
+      "viewportScreenshot": [
+        660,
+        660
+      ]
+    },
+    "localKnowledgeLinksAndDuplicateCheck": true
+  },
+  "notExecuted": {
+    "actualGame": "게임을 실행하지 않음. 사용자 보고와 공개 문서로 시점·완료를 구분함.",
+    "supportTargetsCompletion": "진행 중 보고이므로 정확한 수치·목표 달성·추가 영입을 완료 처리하지 않음.",
+    "allViewports": "내용·순서 수정이며 대표 내장 브라우저 화면만 확인. 모든 화면 크기의 모양을 보장하지 않음."
+  },
+  "hiveCommandsExecuted": false,
+  "unrelatedExistingChecksChanged": false
+}

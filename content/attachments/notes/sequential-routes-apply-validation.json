@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-12",
+  "host": "Windows / Python",
+  "scope": "네 1부 선행·레다 축복·던전 조건·61루트판·놓침 링크·체크 이력",
+  "oldIds": 2318,
+  "allIds": 2817,
+  "newIds": 499,
+  "legacyInheritancePreserved": true,
+  "protectedUnchanged": {
+    "data/checklist.json": false,
+    "data/carry-state.json": true,
+    "progress.md": false,
+    "routes/theodora/progress.md": true,
+    "routes/leda/progress.md": true,
+    "routes/dietrich/progress.md": true,
+    "routes/kai/progress.md": true,
+    "routes/part3/progress.md": true,
+    "theodora.html": true,
+    "leda.html": true,
+    "dietrich.html": true,
+    "kai.html": true,
+    "part2.html": true,
+    "part3.html": true
+  },
+  "timedLinksActive": {
+    "missable-events.json": 134,
+    "timed-acquisitions.json": 43,
+    "optional-schedules.json": 359,
+    "recruit-materials.json": 0
+  },
+  "routeVersions": 61,
+  "conditionalDungeonGroups": 36,
+  "checklistWrittenByAgent": false,
+  "gameMeasured": false,
+  "limits": [
+    "실제 게임v1.1.0 저장의 마지막 정비 메뉴/성공 보존을 재현한 결과 아님",
+    "브라우저 검증은 별도 증거 참조"
+  ]
+}

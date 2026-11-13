@@ -1,0 +1,270 @@
+[
+  {
+    "changed": [],
+    "count": 25,
+    "h": 883,
+    "mode": "현재25인·병과 수정",
+    "scroll": 883,
+    "scrollTop": 0,
+    "size": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "changed": [
+      {
+        "headingOverlap": 0,
+        "label": "미카엘라 대신",
+        "name": "베르트랑",
+        "outline": "4px",
+        "replaces": "미카엘라"
+      },
+      {
+        "headingOverlap": 0,
+        "label": "파비오 대신",
+        "name": "타리문",
+        "outline": "4px",
+        "replaces": "파비오"
+      },
+      {
+        "headingOverlap": 0,
+        "label": "올림피아 대신",
+        "name": "아나톨리아",
+        "outline": "4px",
+        "replaces": "올림피아"
+      },
+      {
+        "headingOverlap": 0,
+        "label": "피아나 대신",
+        "name": "오르헬",
+        "outline": "4px",
+        "replaces": "피아나"
+      }
+    ],
+    "count": 25,
+    "h": 883,
+    "mode": "네 진영장 포함",
+    "scroll": 883,
+    "scrollTop": 0,
+    "size": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "changed": [
+      {
+        "headingOverlap": 0,
+        "label": "피터르 대신",
+        "name": "트로이아",
+        "outline": "4px",
+        "replaces": "피터르"
+      },
+      {
+        "headingOverlap": 0,
+        "label": "파비오 대신",
+        "name": "아나톨리아",
+        "outline": "4px",
+        "replaces": "파비오"
+      },
+      {
+        "headingOverlap": 0,
+        "label": "로레타 대신",
+        "name": "오르헬",
+        "outline": "4px",
+        "replaces": "로레타"
+      },
+      {
+        "headingOverlap": 0,
+        "label": "올림피아 대신",
+        "name": "홍화",
+        "outline": "4px",
+        "replaces": "올림피아"
+      }
+    ],
+    "count": 25,
+    "h": 883,
+    "mode": "역할 균형 추천",
+    "scroll": 883,
+    "scrollTop": 0,
+    "size": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "changed": [
+      {
+        "badgeColor": "rgb(255, 253, 248)",
+        "badgeFill": "rgb(49, 47, 86)",
+        "name": "베르트랑",
+        "outline": "4px",
+        "replaces": "미카엘라"
+      },
+      {
+        "badgeColor": "rgb(255, 253, 248)",
+        "badgeFill": "rgb(49, 47, 86)",
+        "name": "타리문",
+        "outline": "4px",
+        "replaces": "파비오"
+      },
+      {
+        "badgeColor": "rgb(255, 253, 248)",
+        "badgeFill": "rgb(49, 47, 86)",
+        "name": "아나톨리아",
+        "outline": "4px",
+        "replaces": "올림피아"
+      },
+      {
+        "badgeColor": "rgb(255, 253, 248)",
+        "badgeFill": "rgb(49, 47, 86)",
+        "name": "오르헬",
+        "outline": "4px",
+        "replaces": "피아나"
+      }
+    ],
+    "detail": true,
+    "mode": "네 진영장 포함",
+    "theme": "light"
+  },
+  {
+    "changed": [
+      {
+        "badgeColor": "rgb(255, 253, 248)",
+        "badgeFill": "rgb(49, 47, 86)",
+        "name": "트로이아",
+        "outline": "4px",
+        "replaces": "피터르"
+      },
+      {
+        "badgeColor": "rgb(255, 253, 248)",
+        "badgeFill": "rgb(49, 47, 86)",
+        "name": "아나톨리아",
+        "outline": "4px",
+        "replaces": "파비오"
+      },
+      {
+        "badgeColor": "rgb(255, 253, 248)",
+        "badgeFill": "rgb(49, 47, 86)",
+        "name": "오르헬",
+        "outline": "4px",
+        "replaces": "로레타"
+      },
+      {
+        "badgeColor": "rgb(255, 253, 248)",
+        "badgeFill": "rgb(49, 47, 86)",
+        "name": "홍화",
+        "outline": "4px",
+        "replaces": "올림피아"
+      }
+    ],
+    "detail": true,
+    "mode": "역할 균형 추천",
+    "theme": "light"
+  },
+  {
+    "badge": {
+      "height": 20,
+      "width": 65.35417175292969,
+      "x": 361.9791870117187,
+      "y": -193.6875
+    },
+    "card": {
+      "height": 490.7083435058594,
+      "width": 413.3333435058594,
+      "x": 23.33333396911621,
+      "y": -195.02084350585935
+    },
+    "label": "피아나 대신",
+    "mobileOverview": true,
+    "pageOverflow": false,
+    "size": [
+      480,
+      844
+    ]
+  },
+  {
+    "changed": [],
+    "count": 25,
+    "h": 1873,
+    "mode": "현재25인·병과 수정",
+    "scroll": 1873,
+    "size": [
+      3840,
+      2160
+    ]
+  },
+  {
+    "changed": [
+      {
+        "label": "미카엘라 대신",
+        "name": "베르트랑",
+        "outline": "4px",
+        "replaces": "미카엘라"
+      },
+      {
+        "label": "파비오 대신",
+        "name": "타리문",
+        "outline": "4px",
+        "replaces": "파비오"
+      },
+      {
+        "label": "올림피아 대신",
+        "name": "아나톨리아",
+        "outline": "4px",
+        "replaces": "올림피아"
+      },
+      {
+        "label": "피아나 대신",
+        "name": "오르헬",
+        "outline": "4px",
+        "replaces": "피아나"
+      }
+    ],
+    "count": 25,
+    "h": 1873,
+    "mode": "네 진영장 포함",
+    "scroll": 1873,
+    "size": [
+      3840,
+      2160
+    ]
+  },
+  {
+    "changed": [
+      {
+        "label": "피터르 대신",
+        "name": "트로이아",
+        "outline": "4px",
+        "replaces": "피터르"
+      },
+      {
+        "label": "파비오 대신",
+        "name": "아나톨리아",
+        "outline": "4px",
+        "replaces": "파비오"
+      },
+      {
+        "label": "로레타 대신",
+        "name": "오르헬",
+        "outline": "4px",
+        "replaces": "로레타"
+      },
+      {
+        "label": "올림피아 대신",
+        "name": "홍화",
+        "outline": "4px",
+        "replaces": "올림피아"
+      }
+    ],
+    "count": 25,
+    "h": 1873,
+    "mode": "역할 균형 추천",
+    "scroll": 1873,
+    "size": [
+      3840,
+      2160
+    ]
+  }
+]

@@ -1,0 +1,69 @@
+{
+  "reviewed": "2026-11-06",
+  "host": "local",
+  "os": "Windows",
+  "scope": "research-only; no game simulation",
+  "game8DirectBodyRead": true,
+  "sourceUrl": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624024",
+  "allCurrent25Covered": true,
+  "tierCounts": {
+    "Lord": 5,
+    "S": 3,
+    "A+": 6,
+    "A": 4,
+    "B": 6,
+    "C": 1
+  },
+  "femaleCount": 19,
+  "physicLearners": [
+    "세오도라",
+    "카타냐",
+    "리네",
+    "티아라",
+    "피터르",
+    "소피아",
+    "올림피아"
+  ],
+  "physicInCurrentFinalClasses": [
+    "세오도라",
+    "리네",
+    "소피아",
+    "올림피아"
+  ],
+  "rescueLearners": [
+    "로레타",
+    "피아나"
+  ],
+  "rescueInCurrentFinalClasses": [
+    "피아나"
+  ],
+  "divineClasses": [
+    "더 트라이던트",
+    "더 블레이드",
+    "더 캐벌리어",
+    "디 압사라스",
+    "디 이터널",
+    "더 갓 핸드",
+    "디 아바타르",
+    "더 캘러미티"
+  ],
+  "sourceFilesUnchanged": {
+    "personalized.html": true,
+    "personalized-team.html": true,
+    "data/final-roster.json": true,
+    "data/team-specialty-review.json": true,
+    "data/roster-plan.json": true,
+    "data/phase-goals.json": true,
+    "data/playbook.json": true,
+    "data/checklist.json": true,
+    "data/carry-state.json": true,
+    "progress.md": true
+  },
+  "allSourceFilesUnchanged": true,
+  "notProven": [
+    "v1.1.0 live combat or healing values",
+    "statistical character popularity",
+    "optimality of every merged build"
+  ],
+  "noRosterOrGameProgressMutation": true
+}

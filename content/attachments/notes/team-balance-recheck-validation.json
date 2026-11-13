@@ -1,0 +1,78 @@
+{
+  "date": "2026-11-06",
+  "host": "local",
+  "os": "Windows",
+  "scope": "recommend scenario only; no gameplay simulation",
+  "swaps": {
+    "파비오": "아나톨리아",
+    "울턴드": "홍화",
+    "피아나": "오르헬"
+  },
+  "count": 25,
+  "femaleCount": 20,
+  "physicAfterTraining": [
+    "세오도라",
+    "리네",
+    "소피아",
+    "올림피아",
+    "오르헬"
+  ],
+  "rescueAfterTraining": [
+    "홍화"
+  ],
+  "holyLancers": [
+    "세오도라",
+    "리네"
+  ],
+  "masterArchers": [
+    "피터르",
+    "이니오니",
+    "로레타"
+  ],
+  "divineClasses": [
+    "더 트라이던트",
+    "더 블레이드",
+    "더 캐벌리어",
+    "디 압사라스",
+    "디 이터널",
+    "더 갓 핸드",
+    "디 아바타르",
+    "더 캘러미티"
+  ],
+  "currentAndLeadersUnchanged": true,
+  "generatedAndReactEqual": true,
+  "fileHashComparison": {
+    "data/final-roster.json": true,
+    "data/phase-goals.json": true,
+    "data/roster-plan.json": true,
+    "data/playbook.json": false,
+    "data/checklist.json": true,
+    "data/carry-state.json": true,
+    "progress.md": true,
+    "personalized.html": false,
+    "personalized-app/src/App.tsx": true,
+    "personalized-app/src/team-cards.css": true
+  },
+  "sharedSourceChanges": {
+    "paths": [
+      "data/playbook.json",
+      "personalized.html"
+    ],
+    "handling": "별도 공략 읽기 크기·장 순서 계획이 같은 시간에 추가되고 두 파일 변경 감지; 이 작업에서는 쓰기·원복하지 않고 최신 파일 보존; 전체 파일 동일성 통과로 집계하지 않음"
+  },
+  "viewports": [
+    [
+      1920,
+      1080
+    ],
+    [
+      3840,
+      2160
+    ]
+  ],
+  "overviewFits": true,
+  "changeMarkers": "4px, three replacements",
+  "fonts": "283 HTML, 9 fonts, 0 errors",
+  "condition": "Hong Hua White Magic B and white-capable class before replacing Fianna",
+  "notTested": "game save, combat simulation, actual current ranks"
+}

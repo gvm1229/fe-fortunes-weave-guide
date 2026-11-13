@@ -1054,7 +1054,7 @@
     {
       "source": "notes/knowledge/guide-workflow.md",
       "target": "content/notes/knowledge/guide-workflow.md",
-      "sha256": "72c547215738a1c3f8578d792f88b3c552924e0291a9035f1caf7a487926376a"
+      "sha256": "b534f812a288357c92acb519957cabafdf70297cae208f0af4ad157fa631c6f9"
     },
     {
       "source": "notes/knowledge/interface.md",
@@ -1835,6 +1835,401 @@
       "source": "notes/xp-checklist-review.md",
       "target": "content/notes/xp-checklist-review.md",
       "sha256": "3f285e23493d03e5ecd633834e44057629928f8f44601e9570d166f6de4218ef"
+    },
+    {
+      "source": "progress.md",
+      "target": "content/progress.md",
+      "sha256": "21dd72707b24e1dba4679719b3571785e194d652a0ee510899556a0f666542b4"
+    },
+    {
+      "source": "theodora-progress-import.md",
+      "target": "content/theodora-progress-import.md",
+      "sha256": "f2d7ce21de509558401c0150f5cd768c3437076bc8ebcf91bfaea7832367f0db"
+    },
+    {
+      "source": "theodora-progress-import.json",
+      "target": "content/theodora-progress-import.json",
+      "sha256": "167377201425c5ae4fda6f30e20b125e3a22fe8e0a3d647c337c11b71cf5bdef"
+    },
+    {
+      "source": "개인화 사용법.md",
+      "target": "content/개인화 사용법.md",
+      "sha256": "052ba6c26aba7b651a05e59eae6c5576c11218aea1473222420c719744bdddc2"
+    },
+    {
+      "source": "routes/dietrich/progress.md",
+      "target": "content/routes/dietrich/progress.md",
+      "sha256": "9f06c7616e8c7108a7ba71b766e7af81249ad1a74cb357d480fe00dd653d69bf"
+    },
+    {
+      "source": "routes/dietrich/roster.md",
+      "target": "content/routes/dietrich/roster.md",
+      "sha256": "b29301a099475e78d2bfeaeaac88d475364cd84edc486e354dd659dc1b20aad2"
+    },
+    {
+      "source": "routes/kai/progress.md",
+      "target": "content/routes/kai/progress.md",
+      "sha256": "1989b972cace10558483c6eba930d41b632463b9444d9159872c064dc7c4a713"
+    },
+    {
+      "source": "routes/leda/progress.md",
+      "target": "content/routes/leda/progress.md",
+      "sha256": "a6aac856278395e22ca3fb0454a4058a52d1038348bf8fbbf3a4edcc705940d9"
+    },
+    {
+      "source": "routes/part3/progress.md",
+      "target": "content/routes/part3/progress.md",
+      "sha256": "ac8af7137a400c8b6120417bd76b5f5d0acaeb50869109520f449efa8286329c"
+    },
+    {
+      "source": "routes/theodora/progress.md",
+      "target": "content/routes/theodora/progress.md",
+      "sha256": "f711662ad949cf4541dd679dd6408e8ad244801d14c8174c0e59cfad57fa5cfe"
+    },
+    {
+      "source": "personalized-app/README.md",
+      "target": "content/personalized-app/README.md",
+      "sha256": "81113747e9cf2a1fa4d76f9bebd2f0cef9ebfd8e53011ce88a0ef921ed63b1e9"
+    },
+    {
+      "source": "notes/hive-local-validation.json",
+      "target": "content/attachments/notes/hive-local-validation.json",
+      "sha256": "1482cd39fb45e80e60972c960e040ec5de0590d3e9681d55cdcaecb509628467"
+    },
+    {
+      "source": "notes/knowledge-rescan-validation.json",
+      "target": "content/attachments/notes/knowledge-rescan-validation.json",
+      "sha256": "2aa9060d2d57f404c8b74eadf1bac40d30ede89cd29a391bdaf7028b5ef347a9"
+    },
+    {
+      "source": "notes/lilian-final25-apply-validation.json",
+      "target": "content/attachments/notes/lilian-final25-apply-validation.json",
+      "sha256": "dd1310cdb9760c6bff7333dcdeb37b504f93af68a7ac4a919264aeb76e324fc0"
+    },
+    {
+      "source": "notes/validation/lilian-final25-4k.png",
+      "target": "content/attachments/notes/validation/lilian-final25-4k.png",
+      "sha256": "4369eb8b81389f0fadcc1920a7074c7d71c9bffcc62b16d9a9a2e36522531214"
+    },
+    {
+      "source": "notes/react-canonical-validation.json",
+      "target": "content/attachments/notes/react-canonical-validation.json",
+      "sha256": "a8cea96a6e1f6dd16661ad0ed7489fc424bf051c358b63e5a1118621f57c2c83"
+    },
+    {
+      "source": "notes/sequential-routes-apply-validation.json",
+      "target": "content/attachments/notes/sequential-routes-apply-validation.json",
+      "sha256": "009b339ef32de32ff55c3aa8cf4b2ddec202e1ef90591fcfd567e124d219546f"
+    },
+    {
+      "source": "notes/final-builds-apply-validation.json",
+      "target": "content/attachments/notes/final-builds-apply-validation.json",
+      "sha256": "6d7739d11e65ac1b44102bc50b16d5308eb5d8e5741ff03706ab42bb2f768253"
+    },
+    {
+      "source": "notes/readiness-rework-validation.json",
+      "target": "content/attachments/notes/readiness-rework-validation.json",
+      "sha256": "4b97586453740df95f8fd09c00d8781dd66a4a0d9878a3bafe65d4806c50cfce"
+    },
+    {
+      "source": "notes/game8-final25-review-validation.json",
+      "target": "content/attachments/notes/game8-final25-review-validation.json",
+      "sha256": "ec02eb607a7363a4c50b4d06726602a6936d78870fd7d064f6a0264d993ab6f7"
+    },
+    {
+      "source": "notes/team-scenario-differences-validation.json",
+      "target": "content/attachments/notes/team-scenario-differences-validation.json",
+      "sha256": "5335e2d1084fb0addb235782aab4c950cb35345598d8e7a106bae10e960c7c90"
+    },
+    {
+      "source": "notes/team-balance-recheck-validation.json",
+      "target": "content/attachments/notes/team-balance-recheck-validation.json",
+      "sha256": "c2d4e2c95fc981f54daffaacea87ccd7552d5e67426ab3e7cb1b8493739f6a13"
+    },
+    {
+      "source": "notes/halvin-lilian-review-validation.json",
+      "target": "content/attachments/notes/halvin-lilian-review-validation.json",
+      "sha256": "7b80908a06f29d2dbd8719999572112d8053eda3d9cf8cee418705ca1609f631"
+    },
+    {
+      "source": "notes/playbook-validation.json",
+      "target": "content/attachments/notes/playbook-validation.json",
+      "sha256": "1f96eb944ddc1de41661798a8e3c892bf3a7f5a59923d8d014c1b4aa013151e3"
+    },
+    {
+      "source": "notes/screenshots/personalized-playbook-desktop.jpg",
+      "target": "content/attachments/notes/screenshots/personalized-playbook-desktop.jpg",
+      "sha256": "c040349fd0d3cb52ec4b65b31ab8d5fd0456c6aa42c3fb0cc10afce9b1c0b42c"
+    },
+    {
+      "source": "notes/screenshots/personalized-playbook-compact.jpg",
+      "target": "content/attachments/notes/screenshots/personalized-playbook-compact.jpg",
+      "sha256": "379f7d78154f5c1b32e3a3f8508e90afc963132bcb46f24bdbcf40ee55ecc89a"
+    },
+    {
+      "source": "notes/screenshots/personalized-playbook-mobile.jpg",
+      "target": "content/attachments/notes/screenshots/personalized-playbook-mobile.jpg",
+      "sha256": "573f7c4d976dc89e1a45eb38cf43baa0c1322bcbb95c3878f6524cdff932cd95"
+    },
+    {
+      "source": "notes/evidence/team-balance-recheck/recommend-1920.png",
+      "target": "content/attachments/notes/evidence/team-balance-recheck/recommend-1920.png",
+      "sha256": "56154aa817cb9510e21c0ca57197f59ab95bb1ceb1c5fb26ed0774a68da6b2dc"
+    },
+    {
+      "source": "notes/evidence/team-balance-recheck/recommend-4k.png",
+      "target": "content/attachments/notes/evidence/team-balance-recheck/recommend-4k.png",
+      "sha256": "c5ea3163bb73a40e005ab7175a17c42959c4a2d9287a7de189627f7b0e9291bc"
+    },
+    {
+      "source": "notes/evidence/team-scenario-differences/browser-checks.json",
+      "target": "content/attachments/notes/evidence/team-scenario-differences/browser-checks.json",
+      "sha256": "64e4ca47a7f6b57094f4bcfa1f0ff3e83dcaa357d1b726a2ac1cc5954d58f7a7"
+    },
+    {
+      "source": "notes/evidence/team-scenario-differences/leaders-1920-dark.png",
+      "target": "content/attachments/notes/evidence/team-scenario-differences/leaders-1920-dark.png",
+      "sha256": "26aac73192dec0dfa89f7e839f2c675241a385d88b63183fb19713c31f72c2fd"
+    },
+    {
+      "source": "notes/evidence/team-scenario-differences/leaders-4k-dark.png",
+      "target": "content/attachments/notes/evidence/team-scenario-differences/leaders-4k-dark.png",
+      "sha256": "f9cad7bc57e0c3a088aaa6fc90adeb5acec6c927ba6294009ecdb5e1caf2f6b4"
+    },
+    {
+      "source": "notes/theodora-ch5-validation.json",
+      "target": "content/attachments/notes/theodora-ch5-validation.json",
+      "sha256": "89af2cbea81c16897cf227730766426629c9a7ff2f4f6c5e7812edb9794a618f"
+    },
+    {
+      "source": "notes/underworld-merge-safety-validation.json",
+      "target": "content/attachments/notes/underworld-merge-safety-validation.json",
+      "sha256": "2b52e5b933bf137b8d29e355ced3daae1dd9fc8e2de2ab8bce585510a141c186"
+    },
+    {
+      "source": "notes/evidence/underworld-merge-safety/merge-before-spend-1920.png",
+      "target": "content/attachments/notes/evidence/underworld-merge-safety/merge-before-spend-1920.png",
+      "sha256": "9d4c2aae448c9569f26d1906b872a2c81cb1191da50f5a11b98a0683f0e5c824"
+    },
+    {
+      "source": "notes/evidence/underworld-merge-safety/gate-map-1920.png",
+      "target": "content/attachments/notes/evidence/underworld-merge-safety/gate-map-1920.png",
+      "sha256": "1cb931ecbb26763d7aff0883b8ec5493e4dea20e7b7da7b6ccc8f68ce5f6fc3b"
+    },
+    {
+      "source": "notes/screenshots/personalized-desktop.jpg",
+      "target": "content/attachments/notes/screenshots/personalized-desktop.jpg",
+      "sha256": "78c5cc036ac178295a6e12775fdc909a4d00691ccc6a11dd26ddeec395f528b6"
+    },
+    {
+      "source": "notes/screenshots/personalized-mobile.jpg",
+      "target": "content/attachments/notes/screenshots/personalized-mobile.jpg",
+      "sha256": "85a7cfdbb27e10a0cb37733dc268c8b1fb5b5363da4292675086ff4e645798fb"
+    },
+    {
+      "source": "notes/visual-validation.json",
+      "target": "content/attachments/notes/visual-validation.json",
+      "sha256": "15e46240539b4f7a9589bfd6842efd214efd452d4525dd2a319ee25b499099a7"
+    },
+    {
+      "source": "notes/workspace-validation.json",
+      "target": "content/attachments/notes/workspace-validation.json",
+      "sha256": "b58af6f6409046e3bb50343d1847c2f0c0781c8c5102f3d5671ff8f7d50f0eb6"
+    },
+    {
+      "source": "notes/screenshots/workspace-fixed-desktop.jpg",
+      "target": "content/attachments/notes/screenshots/workspace-fixed-desktop.jpg",
+      "sha256": "1f767cce226969086965682d78e1cfe340affe96faa3fb13f06fca087faa989f"
+    },
+    {
+      "source": "notes/screenshots/workspace-exam-modal.jpg",
+      "target": "content/attachments/notes/screenshots/workspace-exam-modal.jpg",
+      "sha256": "a41b4395c1a27d697d251bdf213989a419abab2a834b166a76d1d683bbaaf26e"
+    },
+    {
+      "source": "notes/screenshots/workspace-fixed-mobile.jpg",
+      "target": "content/attachments/notes/screenshots/workspace-fixed-mobile.jpg",
+      "sha256": "4d5bbea50280b31f43d56ced35ec1f14b34f1ca4e62087b9dabe11cc6952c6ff"
+    },
+    {
+      "source": "notes/boon-purchase-application-validation.json",
+      "target": "content/attachments/notes/boon-purchase-application-validation.json",
+      "sha256": "60d3a8c0f6a2b339d93780d0d313785f12e813a546cdf85218dc0251c807f35a"
+    },
+    {
+      "source": "personalized-app/src/content.json",
+      "target": "content/source/react-content.json",
+      "sha256": "06493121960bcb717b626a51204c1b620c8bfd5e0042db7d95dd869ebc1f7871"
+    },
+    {
+      "source": "personalized-app/src/timeskip-portraits.json",
+      "target": "content/source/timeskip-portraits.json",
+      "sha256": "8935448677a9f5365a67ae8da37db4a2ee76b6f5a86ca340c90bbabe8c230912"
+    },
+    {
+      "source": "notes/team-specialty/alexandra.html",
+      "target": "content/reference-source/notes/team-specialty/alexandra.html",
+      "sha256": "4f95cda13dd9eb803ebb2873a1319dae207c4fb2f341d3ba081cba870ea5becb"
+    },
+    {
+      "source": "notes/team-specialty/anatolia.html",
+      "target": "content/reference-source/notes/team-specialty/anatolia.html",
+      "sha256": "659ae74cecadad8667662ef10d239b5a4d1ae830edec720984ca5ef60dc9cc2a"
+    },
+    {
+      "source": "notes/team-specialty/aswan.html",
+      "target": "content/reference-source/notes/team-specialty/aswan.html",
+      "sha256": "679acfa89b005e7abf4c0addeff2be502975cb2c44c417767b1dcc21d6f96d2c"
+    },
+    {
+      "source": "notes/team-specialty/bertrand.html",
+      "target": "content/reference-source/notes/team-specialty/bertrand.html",
+      "sha256": "0b0502b10dc397df69d7e5d25633f7de0552e3adba8c4110cfd09194e07d0aff"
+    },
+    {
+      "source": "notes/team-specialty/cai.html",
+      "target": "content/reference-source/notes/team-specialty/cai.html",
+      "sha256": "904c8dd8bf52a770a771d23a97a9bbd5ec862bbf00a9b1725d259806f1222be2"
+    },
+    {
+      "source": "notes/team-specialty/catania.html",
+      "target": "content/reference-source/notes/team-specialty/catania.html",
+      "sha256": "46e8eef5ba7182cab046712c874ea8fd61885792d4933249c7fde52f742b6a2a"
+    },
+    {
+      "source": "notes/team-specialty/dante.html",
+      "target": "content/reference-source/notes/team-specialty/dante.html",
+      "sha256": "6836690144667d232e3b615de3ad2434fca834f506af9e334ab73ade6dc5647d"
+    },
+    {
+      "source": "notes/team-specialty/dietrich.html",
+      "target": "content/reference-source/notes/team-specialty/dietrich.html",
+      "sha256": "529ce3c34e73ffb98adcfd4532e45285dbdf0deadb4a17642fdae117d428dcc4"
+    },
+    {
+      "source": "notes/team-specialty/eshmel.html",
+      "target": "content/reference-source/notes/team-specialty/eshmel.html",
+      "sha256": "2b61481707a4afef04eb21b78576b83b262f17a5ce156487f67dbf863d190f9b"
+    },
+    {
+      "source": "notes/team-specialty/esmeralda.html",
+      "target": "content/reference-source/notes/team-specialty/esmeralda.html",
+      "sha256": "2e3ca0484db62c524f085d8eebdd8f402e973db64976d566cf1db05d9b525de4"
+    },
+    {
+      "source": "notes/team-specialty/fabio.html",
+      "target": "content/reference-source/notes/team-specialty/fabio.html",
+      "sha256": "7feea3bb936022eaf0f6863cdd46e51ec41ad2f7f654730b29eda2ee69b3d6bd"
+    },
+    {
+      "source": "notes/team-specialty/fianna.html",
+      "target": "content/reference-source/notes/team-specialty/fianna.html",
+      "sha256": "7eea6247bee14d5f1ff24a1f7d0a77d047ac40a9c6ba5d807c55edce4e0e0d53"
+    },
+    {
+      "source": "notes/team-specialty/guzran.html",
+      "target": "content/reference-source/notes/team-specialty/guzran.html",
+      "sha256": "1b80324e217b4d577a19f31f76b33794fe89720e84c9af521858565b24bf7539"
+    },
+    {
+      "source": "notes/team-specialty/halvin.html",
+      "target": "content/reference-source/notes/team-specialty/halvin.html",
+      "sha256": "a99ca4c2738f856b6c0b8c165ded81e092ba8f3ed798cef2691274f5b334c87d"
+    },
+    {
+      "source": "notes/team-specialty/hong-hua.html",
+      "target": "content/reference-source/notes/team-specialty/hong-hua.html",
+      "sha256": "8517153ab4f49866fbc959badab08b6ae70ac6d5520671f906c1c0640510df30"
+    },
+    {
+      "source": "notes/team-specialty/inyoni.html",
+      "target": "content/reference-source/notes/team-specialty/inyoni.html",
+      "sha256": "97b3a24699293edc049a4fd9c5351d2bf3ca7adf94b36d922426dba289431fc3"
+    },
+    {
+      "source": "notes/team-specialty/leda.html",
+      "target": "content/reference-source/notes/team-specialty/leda.html",
+      "sha256": "6c0c99bf419c05f549de34aedbf0a8419541feb4b544135acd4e7f1af766fbda"
+    },
+    {
+      "source": "notes/team-specialty/lilian.html",
+      "target": "content/reference-source/notes/team-specialty/lilian.html",
+      "sha256": "5de8ff14f886338aefae18ff6d54de7eab6f29849c6035e126e53b4770c826a9"
+    },
+    {
+      "source": "notes/team-specialty/loretta.html",
+      "target": "content/reference-source/notes/team-specialty/loretta.html",
+      "sha256": "3c9e06a0783ffe7d3e9b5bafd1d678c65bebcd0c2524aa249ab5d8b40dfbb60b"
+    },
+    {
+      "source": "notes/team-specialty/mikaela.html",
+      "target": "content/reference-source/notes/team-specialty/mikaela.html",
+      "sha256": "5fada05642c27a20d3ab7a2e0cd8a15b900c627ffabced3d3c7149eb738f344d"
+    },
+    {
+      "source": "notes/team-specialty/mu.html",
+      "target": "content/reference-source/notes/team-specialty/mu.html",
+      "sha256": "34a9cd5b491f6747433c958574799563d67be61d5ff0df7ac1ec253a84698080"
+    },
+    {
+      "source": "notes/team-specialty/ninae.html",
+      "target": "content/reference-source/notes/team-specialty/ninae.html",
+      "sha256": "621418037436a3757f908a23cf08948e2ed5ce4cb3bc71f7cb98ec8412765b17"
+    },
+    {
+      "source": "notes/team-specialty/olympia.html",
+      "target": "content/reference-source/notes/team-specialty/olympia.html",
+      "sha256": "d53ccc2598d03b3f58f3a22db4030174f6870bf7e79dbb4de9e76e792b0ff03e"
+    },
+    {
+      "source": "notes/team-specialty/orchel.html",
+      "target": "content/reference-source/notes/team-specialty/orchel.html",
+      "sha256": "e2b2940570107c3444dab40bb4c6241fb485d3d072b6c8c6d84b5856fba60833"
+    },
+    {
+      "source": "notes/team-specialty/peter.html",
+      "target": "content/reference-source/notes/team-specialty/peter.html",
+      "sha256": "07718f6b3428b7e7bc9bbabf597d6595d5b0d29d4bef3a576c54174087a7446a"
+    },
+    {
+      "source": "notes/team-specialty/sirocco.html",
+      "target": "content/reference-source/notes/team-specialty/sirocco.html",
+      "sha256": "55f68a27112f59889fb3afd1811a94e8b979ef9aed6ec42f6c418a071663bdba"
+    },
+    {
+      "source": "notes/team-specialty/sofia.html",
+      "target": "content/reference-source/notes/team-specialty/sofia.html",
+      "sha256": "7badc152555609a09bd1368f3824cc0edbe5e9cf43ff71c21031305454558c81"
+    },
+    {
+      "source": "notes/team-specialty/talimun.html",
+      "target": "content/reference-source/notes/team-specialty/talimun.html",
+      "sha256": "36da61151f3f523af4837c96010c4e2245cf976550c53e657e3229859a650d7a"
+    },
+    {
+      "source": "notes/team-specialty/theodora.html",
+      "target": "content/reference-source/notes/team-specialty/theodora.html",
+      "sha256": "0ab37e6434041c9e261e50da18d38e4f43f9085489dce645adaebd9cc46bb14f"
+    },
+    {
+      "source": "notes/team-specialty/tialla.html",
+      "target": "content/reference-source/notes/team-specialty/tialla.html",
+      "sha256": "9f830248f3d09cf7a34a207fdd52d17349fd9494529c7551b120f93150eec1df"
+    },
+    {
+      "source": "notes/team-specialty/troy.html",
+      "target": "content/reference-source/notes/team-specialty/troy.html",
+      "sha256": "afb6602abf923d5fb88bafbc632478e89ecee2c4ca5d5c6ffe7b3ac9d7de9ad7"
+    },
+    {
+      "source": "notes/team-specialty/ultand.html",
+      "target": "content/reference-source/notes/team-specialty/ultand.html",
+      "sha256": "8be7eebe64074275f23c2f16a6862ef72d81de6ef78e5ee7d0ed112bd8f7536e"
+    },
+    {
+      "source": "notes/team-specialty/ursula.html",
+      "target": "content/reference-source/notes/team-specialty/ursula.html",
+      "sha256": "b6601f69a8318359991d5fadc11c27348b0df451ecddba9df142e5f979e508ca"
     }
   ],
   "generatedSourceSha256": "06493121960bcb717b626a51204c1b620c8bfd5e0042db7d95dd869ebc1f7871",

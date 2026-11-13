@@ -1,0 +1,143 @@
+{
+  "date": "2026-11-07",
+  "host": "Windows / 로컬 Python",
+  "scope": "승인 궁수 교체·12개 팀 조합·61루트판 목표·레다 정원·주간 조·원본 체크 이력",
+  "combinations": [
+    {
+      "scenario": "current",
+      "trials": [
+        false,
+        false
+      ],
+      "count": 25,
+      "women": 19
+    },
+    {
+      "scenario": "current",
+      "trials": [
+        false,
+        true
+      ],
+      "count": 25,
+      "women": 19
+    },
+    {
+      "scenario": "current",
+      "trials": [
+        true,
+        false
+      ],
+      "count": 25,
+      "women": 20
+    },
+    {
+      "scenario": "current",
+      "trials": [
+        true,
+        true
+      ],
+      "count": 25,
+      "women": 20
+    },
+    {
+      "scenario": "leaders",
+      "trials": [
+        false,
+        false
+      ],
+      "count": 25,
+      "women": 18
+    },
+    {
+      "scenario": "leaders",
+      "trials": [
+        false,
+        true
+      ],
+      "count": 25,
+      "women": 18
+    },
+    {
+      "scenario": "leaders",
+      "trials": [
+        true,
+        false
+      ],
+      "count": 25,
+      "women": 19
+    },
+    {
+      "scenario": "leaders",
+      "trials": [
+        true,
+        true
+      ],
+      "count": 25,
+      "women": 19
+    },
+    {
+      "scenario": "recommend",
+      "trials": [
+        false,
+        false
+      ],
+      "count": 25,
+      "women": 20
+    },
+    {
+      "scenario": "recommend",
+      "trials": [
+        false,
+        true
+      ],
+      "count": 25,
+      "women": 20
+    },
+    {
+      "scenario": "recommend",
+      "trials": [
+        true,
+        false
+      ],
+      "count": 25,
+      "women": 21
+    },
+    {
+      "scenario": "recommend",
+      "trials": [
+        true,
+        true
+      ],
+      "count": 25,
+      "women": 21
+    }
+  ],
+  "routeVersions": 61,
+  "oldIdsPreserved": 2305,
+  "allIds": 2318,
+  "newIds": [
+    "halvin-leda-real-use-20261107",
+    "halvin-leda-real-use-20261107--1",
+    "halvin-leda-real-use-20261107--2",
+    "halvin-leda-real-use-20261107--3",
+    "halvin-leda-stop-20261107",
+    "halvin-leda-stop-20261107--1",
+    "ready-theodora-lilian--20261107-marksmanship",
+    "ready-theodora-lilian--20261107-riding-d",
+    "ready-theodora-lilian-cavalry-20261107",
+    "team-p3-final25--20261107-lilian-bow-knight",
+    "team-p3-lilian--20261107-exam",
+    "team-p3-lilian--20261107-unlock",
+    "team-p3-lilian-bow-knight-20261107"
+  ],
+  "safetyGroupsPreserved": 9,
+  "ledaPart1Core": 9,
+  "ledaPart2Core": 11,
+  "ledaPart2Reserved": 2,
+  "actualChecklistWritesByThisTask": false,
+  "gameMeasured": false,
+  "limits": [
+    "게임 저장 파일·실제 능력·피해량·명성 도달 장 실측 아님",
+    "브라우저 배치 검증은 별도 화면 증거 참조"
+  ]
+}

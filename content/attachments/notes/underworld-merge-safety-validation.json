@@ -1,0 +1,113 @@
+{
+  "date": "2026-11-07",
+  "host": "local",
+  "os": "Windows",
+  "newGroups": 9,
+  "newActions": 39,
+  "oldTaskIds": 2257,
+  "taskIdsNow": 2305,
+  "oldIdsPreserved": true,
+  "newChecksDoNotInherit": true,
+  "guardBeforePaidActions": true,
+  "actualProgressAndRosterHashes": {
+    "data/carry-state.json": true,
+    "progress.md": true,
+    "data/final-roster.json": true,
+    "data/phase-goals.json": true,
+    "data/roster-plan.json": true,
+    "data/team-specialty-review.json": true
+  },
+  "allInitialHashComparisons": {
+    "data/checklist.json": false,
+    "data/carry-state.json": true,
+    "progress.md": true,
+    "data/final-roster.json": true,
+    "data/phase-goals.json": true,
+    "data/roster-plan.json": true,
+    "data/team-specialty-review.json": true,
+    "personalized-app/src/App.tsx": false,
+    "personalized-app/src/team-cards.css": false,
+    "personalized-app/src/App.css": false
+  },
+  "testCheckboxAbsentFromProduction": true,
+  "originalChecklistAgentWrites": false,
+  "sharedWorkspaceNote": "작업 중 실제 체크 JSON·App.tsx·팀 카드/CSS의 별도 변경 감지; 쓰기 주체/의도는 이 검증에서 확정하지 않음; 검사에 쓴 새 체크 ID는 실제 JSON에 없음; 최신 파일/체크를 덮어쓰거나 원복하지 않음; 해당 파일 전체 해시 동일성 통과로 집계하지 않음",
+  "modalCodeMatchesLatestPreEditBackup": true,
+  "temporaryModalCodeEditsRemoved": true,
+  "firstGateEight": [
+    "디트리히",
+    "에스메랄다",
+    "미카엘라",
+    "시로코",
+    "우술라",
+    "피터르",
+    "소피아",
+    "리네"
+  ],
+  "secondGateEight": [
+    "세오도라",
+    "올림피아",
+    "이니오니",
+    "로레타",
+    "알렉산드라",
+    "무우",
+    "그자람",
+    "단테"
+  ],
+  "seventeenUniqueCurrentMembers": true,
+  "browser": {
+    "viewport": [
+      1920,
+      1080
+    ],
+    "newGuardChecksStartFalse": true,
+    "newGuardInheritanceFalse": true,
+    "textClickDoesNotToggle": true,
+    "fixtureCheckboxPersistedAcrossReload": true,
+    "fixtureCheckboxReturnedFalse": true,
+    "modal": {
+      "centerError": [
+        0,
+        0
+      ],
+      "positions": [
+        5533.33349609375,
+        0,
+        0
+      ]
+    },
+    "closedModal": {
+      "focusRestored": true,
+      "positions": [
+        5533.33349609375,
+        0,
+        0
+      ],
+      "preserved": true
+    },
+    "source": {
+      "focus": "notes/underworld-merge-safety.html",
+      "positions": [
+        5533.33349609375,
+        0,
+        0
+      ]
+    },
+    "modalUsesExistingCode": true,
+    "sourceImagesLoaded": true,
+    "directMarkdownLinks": 0,
+    "noBossSpoilers": true,
+    "notes": "실제 키 입력으로 확인; locator 입력의 자동 스크롤64px 차이는 모달 이동으로 집계하지 않음"
+  },
+  "referenceDocumentsChecked": 218,
+  "referenceValuesPreserved": 13068,
+  "fonts": "HTML284·글꼴9·오류0",
+  "build": "TypeScript·묶음 생성 성공; 기존 Parcel/PostCSS 경고 유지",
+  "fixtureStopped": true,
+  "notTested": [
+    "게임v1.1.0 직접 재현",
+    "사용자 실제 파편 지출/융합",
+    "실제 문 전투 승리/저장 복구"
+  ],
+  "globalKnowledgeWrites": false
+}

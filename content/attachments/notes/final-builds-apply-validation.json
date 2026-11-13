@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-06",
+  "host": "Windows / Python",
+  "scope": "팀·과정 병과·59루트판·48장·지원·투자중단·ID 보존",
+  "routeVersions": 59,
+  "phases": 177,
+  "reasonSteps": 280,
+  "supportTargets": 28,
+  "newIds": 36,
+  "oldIdsPreserved": 1712,
+  "defaultRecruitmentsRemoved": 6,
+  "remaining3PlusRecruitments": 3,
+  "divineClassesAssigned": 8,
+  "checklistByteIdentical": true,
+  "protectedUnchanged": [
+    "data/checklist.json",
+    "data/carry-state.json",
+    "theodora.html",
+    "leda.html",
+    "dietrich.html",
+    "kai.html"
+  ],
+  "gameMeasured": false,
+  "limits": [
+    "게임 실행·성장·피해·최종 회피·클리어 시간은 미측정",
+    "체크 동작은 기존 상태 검사로 한정, 실제 진행 JSON에 테스트 값 쓰기 없음"
+  ]
+}

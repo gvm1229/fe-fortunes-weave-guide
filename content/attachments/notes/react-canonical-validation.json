@@ -1,0 +1,100 @@
+{
+  "date": "2026-11-12",
+  "host": "Codex / Windows / Python 3.12 / Node 24 / Chrome headless",
+  "scope": "React 화면 정본 통합·네 1부 뒤 네 2부·축복과 던전 조건·완료 이력 보존",
+  "canonicalUI": "personalized-app/src",
+  "canonicalContent": "data/*.json",
+  "generatedExecutable": "personalized-app/bundle.html",
+  "removedDuplicateFiles": [
+    "personalized.html",
+    "personalized-team.html",
+    "personalized.js",
+    "personalized-team.js",
+    "checklist-state.js",
+    "tools/build_personalized_team.py",
+    "tools/render_roster.py",
+    "tools/illustrate_guide.py"
+  ],
+  "protected": {
+    "data/checklist.json": {
+      "unchanged": true,
+      "sha256": "8028d9b4ffc4a4209ba0fa98a36e0d2cf237bdb4e5b4ab98d8a8fbaa4583ea08"
+    },
+    "data/carry-state.json": {
+      "unchanged": true,
+      "sha256": "826e3032d1afe9079757e91e974bf039ce5277d5a90d1205eb16dd2ede4a273b"
+    },
+    "data/final-roster.json": {
+      "unchanged": true,
+      "sha256": "e04d68e0e26066024a9fb92c1bb147210d3168e33baee3177eb9cefb6355b4fb"
+    },
+    "data/boon-prices-user-reported.json": {
+      "unchanged": true,
+      "sha256": "9d0187adb9ec6fe22b813240a2fc1b0b06f481b8a5e29d20b58e28802e6fdb94"
+    }
+  },
+  "playbookChange": "신장직 힘·마력·속도 +10 선택 메모 한 개 추가; 나머지 정본 동일",
+  "checks": {
+    "activeActions": 1673,
+    "allIds": 2579,
+    "routeVersions": 61,
+    "conditionalPart1DungeonGroups": 36,
+    "retiredCheckedDungeonActions": 6,
+    "serverTests": 12,
+    "inheritanceTests": 6,
+    "referenceDocuments": 261,
+    "preservedReferenceValues": 15639,
+    "fontHtmlFiles": 326,
+    "fontFiles": 9
+  },
+  "browser": {
+    "host": "Windows / Chrome headless",
+    "routes": [
+      "/guide",
+      "/team",
+      "/personalized.html",
+      "/personalized-team.html"
+    ],
+    "tests": [
+      "fixture checkbox save/reload/explicit false",
+      "Leda class EXP +2; no Part 2 dungeon tasks; Part 3 mastery and qualification transfer; anchor preserves header",
+      "support follow-along modal",
+      "team 25; white spells 21; reference modal"
+    ],
+    "stageLabels": [
+      "세오도라1부",
+      "레다1부",
+      "디트리히1부",
+      "카이1부",
+      "세오도라2부",
+      "레다2부",
+      "디트리히2부",
+      "카이2부",
+      "3부"
+    ],
+    "runtimeErrors": 0
+  },
+  "build": {
+    "complete": true,
+    "contentSeconds": 32.5,
+    "typeCheckSeconds": 0.2,
+    "reactSeconds": 3.0,
+    "inlineSeconds": 0.1,
+    "timeoutTestSeconds": 60.4,
+    "childTreeStopped": true,
+    "oldBundleAndSourcePreservedOnTimeout": true,
+    "packageInstallDuringBuild": false
+  },
+  "liveServer": {
+    "port": 8766,
+    "guideCurrentBundle": true,
+    "teamCurrentBundle": true
+  },
+  "actualProgressWritten": false,
+  "gameMeasured": false,
+  "limits": [
+    "Windows 브라우저·정본 파일·임시 저장소 검사이며 실제 게임의 경험치나 자격 반납을 실측한 결과는 아님",
+    "옛 독립 HTML·과거 편성 수치용 검사 도구는 현행 통과 근거에서 제외",
+    "파일 조회의 일시적 멈춤 원인은 미확인; 시간 제한은 운영체제 자체의 중단을 예방하지 못함"
+  ]
+}

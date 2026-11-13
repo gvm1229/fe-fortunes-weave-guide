@@ -1,0 +1,16 @@
+{
+  "generation_idempotent": true,
+  "action_checkboxes": 440,
+  "legacy_ids": 93,
+  "duplicate_ids": [],
+  "duplicate_tasks": [],
+  "broken_links": [],
+  "missing_assets": [],
+  "person_tables": 60,
+  "phase_goal_versions": 540,
+  "small_kill_portraits": 146,
+  "scroll_regions": 5,
+  "floating_top_button": false,
+  "saved_revision": 7,
+  "saved_completed": 0
+}

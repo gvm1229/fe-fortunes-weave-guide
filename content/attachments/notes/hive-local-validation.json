@@ -1,0 +1,81 @@
+{
+  "checked_at": "2026-11-04",
+  "host": "local Codex",
+  "os": "Windows",
+  "scope": "current-project",
+  "sessions": [
+    {
+      "title": "최종 팀 구성",
+      "threadId": "01a1a50f-669b-74b1-8508-a420e0be7d7a",
+      "pages": 12,
+      "turns": 30,
+      "userMessages": 48,
+      "complete": true
+    },
+    {
+      "title": "재시작",
+      "threadId": "01a19fe6-b3c9-7633-b76e-a5a79f1eacf3",
+      "pages": 12,
+      "turns": 30,
+      "userMessages": 47,
+      "complete": true
+    },
+    {
+      "title": "전역 지식 없이 공략 조사",
+      "threadId": "01a19f6d-252c-7b92-ac25-50ecc155fbd9",
+      "pages": 1,
+      "turns": 7,
+      "userMessages": 12,
+      "complete": true
+    }
+  ],
+  "unique_user_messages": 51,
+  "normalized_rules": {
+    "preferences": 16,
+    "guide_workflow": 16,
+    "interface": 24,
+    "total": 56
+  },
+  "storage": {
+    "kind": "ordinary-project-markdown",
+    "root": "notes/knowledge",
+    "hive_canonical_ingest": false,
+    "hive_shared_index_ingest": false,
+    "reason": "Hive 0.14 requires a user-root shared index; project-local SQLite is restricted to authenticated 0.7-or-earlier projects."
+  },
+  "global_boundary": {
+    "policy": "read-only after setup and empty-collection detachment",
+    "collection_state": "detached",
+    "documents": 0,
+    "claims": 0,
+    "chunks": 0,
+    "canonical_baseline_files": 642,
+    "index_baseline_files": 2,
+    "os_write_deny_enforced": false,
+    "canonical_changed_files": 0,
+    "index_changed_files": 2,
+    "canonical_current_files": 643,
+    "concurrent_new_global_files": 1,
+    "new_files_related_project_markers": 0,
+    "concurrent_new_files_attribution": "not-established; not modified by this task",
+    "reattachment_observed_during_additional_commands_and_concurrent_work": true,
+    "reattachment_cause": "unverified"
+  },
+  "checks": {
+    "status": "passed",
+    "local_files_checked": 6,
+    "rule_counts": {
+      "preferences.md": 16,
+      "guide-workflow.md": 16,
+      "interface.md": 24
+    },
+    "source_anchors": 52,
+    "errors": [],
+    "hive_knowledge_lint": "not-run: global-store writes prohibited",
+    "game_and_browser_tests": "not-run: setup and local documents only",
+    "other_active_chat_edits": "not-asserted",
+    "global_store_entirely_unchanged": "not-asserted: metadata/index updated and concurrent unrelated new file observed",
+    "final_session_reservation": "closed",
+    "after_final_detach_hive_commands": "none"
+  }
+}

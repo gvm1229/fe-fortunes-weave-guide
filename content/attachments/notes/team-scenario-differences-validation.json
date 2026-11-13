@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-06",
+  "host": "local",
+  "os": "Windows",
+  "generatedAndReactTeamEqual": true,
+  "baselineExcludesFourLeaders": true,
+  "scenarios": {
+    "current": {
+      "count": 25,
+      "swaps": {},
+      "divineClasses": [
+        "더 트라이던트",
+        "더 블레이드",
+        "더 캐벌리어",
+        "디 압사라스",
+        "디 이터널",
+        "더 갓 핸드",
+        "디 아바타르",
+        "더 캘러미티"
+      ]
+    },
+    "leaders": {
+      "count": 25,
+      "swaps": {
+        "미카엘라": "베르트랑",
+        "파비오": "타리문",
+        "올림피아": "아나톨리아",
+        "피아나": "오르헬"
+      },
+      "divineClasses": [
+        "더 트라이던트",
+        "더 블레이드",
+        "더 캐벌리어",
+        "디 압사라스",
+        "디 이터널",
+        "더 갓 핸드",
+        "디 아바타르",
+        "더 캘러미티"
+      ]
+    },
+    "recommend": {
+      "count": 25,
+      "swaps": {
+        "파비오": "아나톨리아",
+        "올림피아": "홍화",
+        "피터르": "트로이아",
+        "로레타": "오르헬"
+      },
+      "divineClasses": [
+        "더 트라이던트",
+        "더 블레이드",
+        "더 캐벌리어",
+        "디 압사라스",
+        "디 이터널",
+        "더 갓 핸드",
+        "디 아바타르",
+        "더 캘러미티"
+      ]
+    }
+  },
+  "preservedFiles": {
+    "data/final-roster.json": true,
+    "data/phase-goals.json": true,
+    "data/roster-plan.json": true,
+    "data/playbook.json": true,
+    "data/checklist.json": true,
+    "data/carry-state.json": true,
+    "progress.md": true,
+    "personalized.html": true
+  },
+  "browserChecks": "evidence/team-scenario-differences/browser-checks.json",
+  "desktopOverviewAllThreeScenariosFit": true,
+  "testedDesktopViewports": [
+    [
+      1920,
+      1080
+    ],
+    [
+      3840,
+      2160
+    ]
+  ],
+  "mobileViewport": [
+    480,
+    844
+  ],
+  "changedOutline": "4px",
+  "fonts": "283 HTML, 9 fonts, 0 errors",
+  "uiDetectorFindings": [],
+  "scope": "local UI and roster comparison; no game simulation or progress writes"
+}
