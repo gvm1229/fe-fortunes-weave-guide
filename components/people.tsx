@@ -27,6 +27,7 @@ function pairs(person:Person,part:string,summaryText:string[],classes:Record<str
     for(const s of d.skills)add(`${s.skill} ${s.target} · ${s.kind}`,[s.when,s.why].filter(Boolean).join('. '));
     add('기능 메모',d.skillNote);
     add('전차병으로 키우는 이유',d.charioteer);
+    if(d.caiAdvice){if(part!=='3')add('마스터 기술용으로 잠깐 바꿀 병종',d.caiAdvice.dip);add('3부 병종 바꾸는 때',d.caiAdvice.rule,d.caiAdvice.part3);add('무기 등급',d.caiAdvice.weapon);}
     if(part==='1')add('준비 마감',[d.charioteer?'전차병':ready.middleClass,d.charioteer?'기마술 D · 궁술 C':ready.middleExam,ready.middleBy].map(words).filter(Boolean).join(' · '),[ready.part1Skills,ready.skillsBy].map(words).filter(Boolean).join(' · '));
     add('육성 시작',words((ready.starts as Record<string,unknown>|undefined)?.[part]));
     if(!d.charioteer)add('레벨업·실전 병종',[words(ready.growthClass)+(ready.battleClass&&ready.battleClass!==ready.growthClass?` / ${words(ready.battleClass)}`:''),words(ready.swapReason)].filter(Boolean).join(' · '));
