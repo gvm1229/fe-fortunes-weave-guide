@@ -255,3 +255,32 @@ summary::-webkit-details-marker{display:none}
 
 /* 2026-11-14 v3: 투명 초상화에 통일 배경 */
 :is(.app-shell,.team-page,.sheet) :is(img[src*="/portraits/"],img[src*="/gods/"]):not(.banner-lord){background:var(--portrait-bg)}.dark :is(.app-shell,.team-page,.sheet) :is(img[src*="/portraits/"],img[src*="/gods/"]):not(.banner-lord){outline:1px solid #3A4A50;outline-offset:-1px}
+/* 2026-11-14 v3: 인물 카드 — 요약 표 하나 + 접는 제목–설명 쌍 */
+.people-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:start}
+@media(max-width:1000px){.people-grid{grid-template-columns:minmax(0,1fr)}}
+.person.ui-card{border-radius:16px;overflow:clip;padding:0}
+.person .person-heading{display:flex;gap:16px;align-items:center;padding:24px 24px 8px;background:transparent}
+.person .person-heading h2{font-size:22px;font-weight:700;margin:0 0 8px}
+.person .person-heading .tags{display:flex;flex-wrap:wrap;gap:6px}
+.person .portrait{inline-size:96px;block-size:96px;border-radius:12px;object-fit:contain}
+.person>.person-summary{margin:16px 24px;inline-size:calc(100% - 48px)}
+.person-summary .class-path{display:flex;flex-wrap:wrap;gap:8px 16px;list-style:none;padding:0;margin:0}
+.person-summary .class-path li{display:flex;align-items:center;flex-wrap:wrap;gap:6px}
+.person-summary .class-path img{inline-size:32px;block-size:32px;object-fit:contain}
+.person-summary .class-path .role-chip{padding:2px 8px;min-height:28px;line-height:24px}
+.next-class{margin:8px 0 0;color:var(--muted)}
+.skill-chips{display:flex;flex-wrap:wrap;gap:8px 16px;list-style:none;margin:0;padding:0}
+.skill-chips li{display:inline-flex;align-items:center;gap:4px}
+.skill-name{display:inline-flex;align-items:center;gap:2px;white-space:nowrap}
+.skill-name .game-skill{margin-inline:0 2px}
+.person-more{margin:0 24px 16px}
+.person-more .ui-accordion-item:last-child{border-bottom:0}
+.detail-pairs{margin:0}
+.detail-pairs>div{border-block-start:1px solid var(--line);padding:12px 0}
+.detail-pairs>div:first-child{border-block-start:0;padding-block-start:0}
+.detail-pairs dt{font-size:18px;font-weight:600;color:var(--muted);margin:0 0 4px}
+.detail-pairs dd{margin:0;font-size:20px;line-height:1.6}
+.detail-pairs dd p{margin:0}
+.detail-pairs dd p+p{margin-block-start:6px}
+.ui-accordion-content .semantic{font-size:18px}
+@media(max-width:767px){.person .person-heading{padding:16px 16px 4px;align-items:flex-start}.person .portrait{inline-size:72px;block-size:72px}.person>.person-summary{margin:12px 16px;inline-size:calc(100% - 32px)}.person-more{margin:0 16px 12px}}
