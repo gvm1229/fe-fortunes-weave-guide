@@ -52,3 +52,11 @@ assert.deepEqual(badges('.game-badge').map((_,e)=>badges(e).text()).get(),['지�
 assert.deepEqual(badges('.game-badge').map((_,e)=>badges(e).attr('data-kind')).get(),['bond','renown','gold','skill','material','person','class']);
 assert.equal(badges('.named-person.game-badge').length,1);assert.equal(badges('.named-class.game-badge').length,1);
 console.log('통과: 그림이 붙는 말은 값과 함께 배지 하나');
+
+const prose=load(renderToStaticMarkup(createElement(GameText,{text:'창을 쓰는 초반 전열 · 활 사거리 밖에서 행동 · 성수를 쓴다',withSkills:true})),null,false);
+assert.equal(prose('.game-badge').length,0,'값 모양이 아닌 문장은 배지가 아니다');
+const qty=load(renderToStaticMarkup(createElement(GameText,{text:'태양 열매 10 · 롱 보우 1자루 · 초급 시험 증서 3장 · 뇌석 3 · 6장 준비'})),null,false);
+assert.deepEqual(qty('.game-badge').map((_,e)=>qty(e).text()).get(),['태양 열매 10','롱 보우 1자루','초급 시험 증서 3장','뇌석 3'],'수량은 배지 안');
+const spell=load(renderToStaticMarkup(createElement(GameText,{text:'리브로 · 루나'})),null,false);
+assert.deepEqual(spell('.game-badge').map((_,e)=>spell(e).attr('data-kind')).get(),['skill','skill'],'마법은 기능 색');
+console.log('통과: 문장 오탐 없음 · 수량 포함 · 마법은 기능 배지');
