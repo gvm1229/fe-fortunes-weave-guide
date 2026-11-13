@@ -46,7 +46,7 @@
   "method": {
     "overlap": "보이는 형제 요소의 사각형 교차: 화면 구역·탐색·도구 줄·장 제목·묶음 제목·인물·표·목록·시트. 부모/자식 포함과 스크롤 내용/고정 탭은 제외한다.",
     "images": "접힌 장도 포함한 할 일 DOM만 원본과 비교. 다음 행동·보조 칸의 추가 그림은 제외. 같은 묶음의 같은 얼굴만 중복 제거.",
-    "limits": "실제 Windows Chrome 개발 서버 화면. 다른 운영체제·브라우저·배포 빌드·게임 사실은 증명하지 않는다."
+    "limits": "Windows Chrome에서 정적 배포 빌드를 로컬 HTTP 서버로 검사. 다른 운영체제·브라우저·실제 기기·게임 사실은 증명하지 않는다."
   },
   "results": [
     {
@@ -137,7 +137,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 7.556150901096952
         },
         {
@@ -147,17 +147,17 @@
         },
         {
           "route": "theodora",
-          "foreground": "#FFFFFF",
-          "ratio": 5.641351124961378
+          "foreground": "#fff",
+          "ratio": null
         },
         {
           "route": "leda",
-          "foreground": "#2A0B17",
+          "foreground": "#2a0b17",
           "ratio": 5.617900119406448
         },
         {
           "route": "part3",
-          "foreground": "#1C1030",
+          "foreground": "#1c1030",
           "ratio": 5.581854427216237
         }
       ],
@@ -234,8 +234,8 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#FFFFFF",
-          "ratio": 5.641351124961378
+          "foreground": "#fff",
+          "ratio": null
         }
       ],
       "disclosureImageClips": [],
@@ -363,8 +363,8 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#FFFFFF",
-          "ratio": 5.641351124961378
+          "foreground": "#fff",
+          "ratio": null
         }
       ],
       "disclosureImageClips": [],
@@ -652,8 +652,8 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#FFFFFF",
-          "ratio": 5.641351124961378
+          "foreground": "#fff",
+          "ratio": null
         }
       ],
       "disclosureImageClips": [],
@@ -763,8 +763,8 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#FFFFFF",
-          "ratio": 5.641351124961378
+          "foreground": "#fff",
+          "ratio": null
         }
       ],
       "disclosureImageClips": [],
@@ -825,8 +825,8 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#FFFFFF",
-          "ratio": 5.641351124961378
+          "foreground": "#fff",
+          "ratio": null
         }
       ],
       "disclosureImageClips": [],
@@ -891,7 +891,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0B17",
+          "foreground": "#2a0b17",
           "ratio": 5.617900119406448
         }
       ],
@@ -1020,7 +1020,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0B17",
+          "foreground": "#2a0b17",
           "ratio": 5.617900119406448
         }
       ],
@@ -1181,7 +1181,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0B17",
+          "foreground": "#2a0b17",
           "ratio": 5.617900119406448
         }
       ],
@@ -1292,7 +1292,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0B17",
+          "foreground": "#2a0b17",
           "ratio": 5.617900119406448
         }
       ],
@@ -1354,7 +1354,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0B17",
+          "foreground": "#2a0b17",
           "ratio": 5.617900119406448
         }
       ],
@@ -1945,7 +1945,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
@@ -2062,7 +2062,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
@@ -2327,7 +2327,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
@@ -2438,7 +2438,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
@@ -2500,7 +2500,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
@@ -2575,7 +2575,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#1C1030",
+          "foreground": "#1c1030",
           "ratio": 5.581854427216237
         }
       ],
@@ -2884,7 +2884,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#1C1030",
+          "foreground": "#1c1030",
           "ratio": 5.581854427216237
         }
       ],
@@ -3001,7 +3001,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#1C1030",
+          "foreground": "#1c1030",
           "ratio": 5.581854427216237
         }
       ],
@@ -3088,7 +3088,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#1C1030",
+          "foreground": "#1c1030",
           "ratio": 5.581854427216237
         }
       ],
@@ -3150,7 +3150,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#1C1030",
+          "foreground": "#1c1030",
           "ratio": 5.581854427216237
         }
       ],
@@ -3176,7 +3176,7 @@
       "transparentButtons": [],
       "background": "#EFEBE3",
       "bgToken": "#EFEBE3",
-      "imageCount": 155,
+      "imageCount": 252,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -3207,7 +3207,10 @@
       "order": [],
       "eraViolations": [],
       "croppedScenes": [],
-      "sceneHeights": [],
+      "sceneHeights": [
+        32,
+        32
+      ],
       "goldTables": [],
       "accentContrast": [],
       "disclosureImageClips": [],
@@ -3309,27 +3312,27 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 10.55878975195392
         },
         {
           "route": "dietrich",
-          "foreground": "#0E0E10",
+          "foreground": "#0e0e10",
           "ratio": 9.170655180470497
         },
         {
           "route": "theodora",
-          "foreground": "#231A06",
+          "foreground": "#231a06",
           "ratio": 8.420924998188106
         },
         {
           "route": "leda",
-          "foreground": "#2A0A17",
+          "foreground": "#2a0a17",
           "ratio": 10.177086407191815
         },
         {
           "route": "part3",
-          "foreground": "#170C2B",
+          "foreground": "#170c2b",
           "ratio": 10.451754773520047
         }
       ],
@@ -3406,7 +3409,7 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#231A06",
+          "foreground": "#231a06",
           "ratio": 8.420924998188106
         }
       ],
@@ -3535,7 +3538,7 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#231A06",
+          "foreground": "#231a06",
           "ratio": 8.420924998188106
         }
       ],
@@ -3824,7 +3827,7 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#231A06",
+          "foreground": "#231a06",
           "ratio": 8.420924998188106
         }
       ],
@@ -3935,7 +3938,7 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#231A06",
+          "foreground": "#231a06",
           "ratio": 8.420924998188106
         }
       ],
@@ -3997,7 +4000,7 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#231A06",
+          "foreground": "#231a06",
           "ratio": 8.420924998188106
         }
       ],
@@ -4063,7 +4066,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0A17",
+          "foreground": "#2a0a17",
           "ratio": 10.177086407191815
         }
       ],
@@ -4192,7 +4195,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0A17",
+          "foreground": "#2a0a17",
           "ratio": 10.177086407191815
         }
       ],
@@ -4353,7 +4356,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0A17",
+          "foreground": "#2a0a17",
           "ratio": 10.177086407191815
         }
       ],
@@ -4464,7 +4467,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0A17",
+          "foreground": "#2a0a17",
           "ratio": 10.177086407191815
         }
       ],
@@ -4526,7 +4529,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0A17",
+          "foreground": "#2a0a17",
           "ratio": 10.177086407191815
         }
       ],
@@ -4592,7 +4595,7 @@
       "accentContrast": [
         {
           "route": "dietrich",
-          "foreground": "#0E0E10",
+          "foreground": "#0e0e10",
           "ratio": 9.170655180470497
         }
       ],
@@ -4721,7 +4724,7 @@
       "accentContrast": [
         {
           "route": "dietrich",
-          "foreground": "#0E0E10",
+          "foreground": "#0e0e10",
           "ratio": 9.170655180470497
         }
       ],
@@ -4878,7 +4881,7 @@
       "accentContrast": [
         {
           "route": "dietrich",
-          "foreground": "#0E0E10",
+          "foreground": "#0e0e10",
           "ratio": 9.170655180470497
         }
       ],
@@ -4989,7 +4992,7 @@
       "accentContrast": [
         {
           "route": "dietrich",
-          "foreground": "#0E0E10",
+          "foreground": "#0e0e10",
           "ratio": 9.170655180470497
         }
       ],
@@ -5051,7 +5054,7 @@
       "accentContrast": [
         {
           "route": "dietrich",
-          "foreground": "#0E0E10",
+          "foreground": "#0e0e10",
           "ratio": 9.170655180470497
         }
       ],
@@ -5117,7 +5120,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
@@ -5234,7 +5237,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
@@ -5499,7 +5502,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
@@ -5610,7 +5613,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
@@ -5672,7 +5675,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
@@ -5747,7 +5750,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#170C2B",
+          "foreground": "#170c2b",
           "ratio": 10.451754773520047
         }
       ],
@@ -6056,7 +6059,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#170C2B",
+          "foreground": "#170c2b",
           "ratio": 10.451754773520047
         }
       ],
@@ -6173,7 +6176,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#170C2B",
+          "foreground": "#170c2b",
           "ratio": 10.451754773520047
         }
       ],
@@ -6260,7 +6263,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#170C2B",
+          "foreground": "#170c2b",
           "ratio": 10.451754773520047
         }
       ],
@@ -6322,7 +6325,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#170C2B",
+          "foreground": "#170c2b",
           "ratio": 10.451754773520047
         }
       ],
@@ -6348,7 +6351,7 @@
       "transparentButtons": [],
       "background": "#121116",
       "bgToken": "#121116",
-      "imageCount": 155,
+      "imageCount": 252,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -6379,7 +6382,10 @@
       "order": [],
       "eraViolations": [],
       "croppedScenes": [],
-      "sceneHeights": [],
+      "sceneHeights": [
+        32,
+        32
+      ],
       "goldTables": [],
       "accentContrast": [],
       "disclosureImageClips": [],
@@ -6481,7 +6487,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 7.556150901096952
         },
         {
@@ -6491,17 +6497,17 @@
         },
         {
           "route": "theodora",
-          "foreground": "#FFFFFF",
-          "ratio": 5.641351124961378
+          "foreground": "#fff",
+          "ratio": null
         },
         {
           "route": "leda",
-          "foreground": "#2A0B17",
+          "foreground": "#2a0b17",
           "ratio": 5.617900119406448
         },
         {
           "route": "part3",
-          "foreground": "#1C1030",
+          "foreground": "#1c1030",
           "ratio": 5.581854427216237
         }
       ],
@@ -6578,8 +6584,8 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#FFFFFF",
-          "ratio": 5.641351124961378
+          "foreground": "#fff",
+          "ratio": null
         }
       ],
       "disclosureImageClips": [],
@@ -6707,8 +6713,8 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#FFFFFF",
-          "ratio": 5.641351124961378
+          "foreground": "#fff",
+          "ratio": null
         }
       ],
       "disclosureImageClips": [],
@@ -6996,8 +7002,8 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#FFFFFF",
-          "ratio": 5.641351124961378
+          "foreground": "#fff",
+          "ratio": null
         }
       ],
       "disclosureImageClips": [],
@@ -7107,8 +7113,8 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#FFFFFF",
-          "ratio": 5.641351124961378
+          "foreground": "#fff",
+          "ratio": null
         }
       ],
       "disclosureImageClips": [],
@@ -7169,8 +7175,8 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#FFFFFF",
-          "ratio": 5.641351124961378
+          "foreground": "#fff",
+          "ratio": null
         }
       ],
       "disclosureImageClips": [],
@@ -7235,7 +7241,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0B17",
+          "foreground": "#2a0b17",
           "ratio": 5.617900119406448
         }
       ],
@@ -7364,7 +7370,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0B17",
+          "foreground": "#2a0b17",
           "ratio": 5.617900119406448
         }
       ],
@@ -7525,7 +7531,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0B17",
+          "foreground": "#2a0b17",
           "ratio": 5.617900119406448
         }
       ],
@@ -7636,7 +7642,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0B17",
+          "foreground": "#2a0b17",
           "ratio": 5.617900119406448
         }
       ],
@@ -7698,7 +7704,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0B17",
+          "foreground": "#2a0b17",
           "ratio": 5.617900119406448
         }
       ],
@@ -8289,7 +8295,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
@@ -8406,7 +8412,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
@@ -8671,7 +8677,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
@@ -8782,7 +8788,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
@@ -8844,7 +8850,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
@@ -8919,7 +8925,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#1C1030",
+          "foreground": "#1c1030",
           "ratio": 5.581854427216237
         }
       ],
@@ -9228,7 +9234,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#1C1030",
+          "foreground": "#1c1030",
           "ratio": 5.581854427216237
         }
       ],
@@ -9345,7 +9351,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#1C1030",
+          "foreground": "#1c1030",
           "ratio": 5.581854427216237
         }
       ],
@@ -9432,7 +9438,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#1C1030",
+          "foreground": "#1c1030",
           "ratio": 5.581854427216237
         }
       ],
@@ -9494,7 +9500,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#1C1030",
+          "foreground": "#1c1030",
           "ratio": 5.581854427216237
         }
       ],
@@ -9520,7 +9526,7 @@
       "transparentButtons": [],
       "background": "#EFEBE3",
       "bgToken": "#EFEBE3",
-      "imageCount": 155,
+      "imageCount": 252,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -9551,7 +9557,10 @@
       "order": [],
       "eraViolations": [],
       "croppedScenes": [],
-      "sceneHeights": [],
+      "sceneHeights": [
+        32,
+        32
+      ],
       "goldTables": [],
       "accentContrast": [],
       "disclosureImageClips": [],
@@ -9653,27 +9662,27 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 10.55878975195392
         },
         {
           "route": "dietrich",
-          "foreground": "#0E0E10",
+          "foreground": "#0e0e10",
           "ratio": 9.170655180470497
         },
         {
           "route": "theodora",
-          "foreground": "#231A06",
+          "foreground": "#231a06",
           "ratio": 8.420924998188106
         },
         {
           "route": "leda",
-          "foreground": "#2A0A17",
+          "foreground": "#2a0a17",
           "ratio": 10.177086407191815
         },
         {
           "route": "part3",
-          "foreground": "#170C2B",
+          "foreground": "#170c2b",
           "ratio": 10.451754773520047
         }
       ],
@@ -9750,7 +9759,7 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#231A06",
+          "foreground": "#231a06",
           "ratio": 8.420924998188106
         }
       ],
@@ -9879,7 +9888,7 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#231A06",
+          "foreground": "#231a06",
           "ratio": 8.420924998188106
         }
       ],
@@ -10168,7 +10177,7 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#231A06",
+          "foreground": "#231a06",
           "ratio": 8.420924998188106
         }
       ],
@@ -10279,7 +10288,7 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#231A06",
+          "foreground": "#231a06",
           "ratio": 8.420924998188106
         }
       ],
@@ -10341,7 +10350,7 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#231A06",
+          "foreground": "#231a06",
           "ratio": 8.420924998188106
         }
       ],
@@ -10407,7 +10416,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0A17",
+          "foreground": "#2a0a17",
           "ratio": 10.177086407191815
         }
       ],
@@ -10536,7 +10545,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0A17",
+          "foreground": "#2a0a17",
           "ratio": 10.177086407191815
         }
       ],
@@ -10697,7 +10706,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0A17",
+          "foreground": "#2a0a17",
           "ratio": 10.177086407191815
         }
       ],
@@ -10808,7 +10817,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0A17",
+          "foreground": "#2a0a17",
           "ratio": 10.177086407191815
         }
       ],
@@ -10870,7 +10879,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0A17",
+          "foreground": "#2a0a17",
           "ratio": 10.177086407191815
         }
       ],
@@ -10936,7 +10945,7 @@
       "accentContrast": [
         {
           "route": "dietrich",
-          "foreground": "#0E0E10",
+          "foreground": "#0e0e10",
           "ratio": 9.170655180470497
         }
       ],
@@ -11065,7 +11074,7 @@
       "accentContrast": [
         {
           "route": "dietrich",
-          "foreground": "#0E0E10",
+          "foreground": "#0e0e10",
           "ratio": 9.170655180470497
         }
       ],
@@ -11222,7 +11231,7 @@
       "accentContrast": [
         {
           "route": "dietrich",
-          "foreground": "#0E0E10",
+          "foreground": "#0e0e10",
           "ratio": 9.170655180470497
         }
       ],
@@ -11333,7 +11342,7 @@
       "accentContrast": [
         {
           "route": "dietrich",
-          "foreground": "#0E0E10",
+          "foreground": "#0e0e10",
           "ratio": 9.170655180470497
         }
       ],
@@ -11395,7 +11404,7 @@
       "accentContrast": [
         {
           "route": "dietrich",
-          "foreground": "#0E0E10",
+          "foreground": "#0e0e10",
           "ratio": 9.170655180470497
         }
       ],
@@ -11461,7 +11470,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
@@ -11578,7 +11587,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
@@ -11843,7 +11852,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
@@ -11954,7 +11963,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
@@ -12016,7 +12025,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
@@ -12091,7 +12100,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#170C2B",
+          "foreground": "#170c2b",
           "ratio": 10.451754773520047
         }
       ],
@@ -12400,7 +12409,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#170C2B",
+          "foreground": "#170c2b",
           "ratio": 10.451754773520047
         }
       ],
@@ -12517,7 +12526,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#170C2B",
+          "foreground": "#170c2b",
           "ratio": 10.451754773520047
         }
       ],
@@ -12604,7 +12613,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#170C2B",
+          "foreground": "#170c2b",
           "ratio": 10.451754773520047
         }
       ],
@@ -12666,7 +12675,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#170C2B",
+          "foreground": "#170c2b",
           "ratio": 10.451754773520047
         }
       ],
@@ -12692,7 +12701,7 @@
       "transparentButtons": [],
       "background": "#121116",
       "bgToken": "#121116",
-      "imageCount": 155,
+      "imageCount": 252,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -12723,7 +12732,10 @@
       "order": [],
       "eraViolations": [],
       "croppedScenes": [],
-      "sceneHeights": [],
+      "sceneHeights": [
+        32,
+        32
+      ],
       "goldTables": [],
       "accentContrast": [],
       "disclosureImageClips": [],
@@ -12825,7 +12837,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 7.556150901096952
         },
         {
@@ -12835,17 +12847,17 @@
         },
         {
           "route": "theodora",
-          "foreground": "#FFFFFF",
-          "ratio": 5.641351124961378
+          "foreground": "#fff",
+          "ratio": null
         },
         {
           "route": "leda",
-          "foreground": "#2A0B17",
+          "foreground": "#2a0b17",
           "ratio": 5.617900119406448
         },
         {
           "route": "part3",
-          "foreground": "#1C1030",
+          "foreground": "#1c1030",
           "ratio": 5.581854427216237
         }
       ],
@@ -12920,8 +12932,8 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#FFFFFF",
-          "ratio": 5.641351124961378
+          "foreground": "#fff",
+          "ratio": null
         }
       ],
       "disclosureImageClips": [],
@@ -13049,8 +13061,8 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#FFFFFF",
-          "ratio": 5.641351124961378
+          "foreground": "#fff",
+          "ratio": null
         }
       ],
       "disclosureImageClips": [],
@@ -13338,8 +13350,8 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#FFFFFF",
-          "ratio": 5.641351124961378
+          "foreground": "#fff",
+          "ratio": null
         }
       ],
       "disclosureImageClips": [],
@@ -13449,8 +13461,8 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#FFFFFF",
-          "ratio": 5.641351124961378
+          "foreground": "#fff",
+          "ratio": null
         }
       ],
       "disclosureImageClips": [],
@@ -13514,8 +13526,8 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#FFFFFF",
-          "ratio": 5.641351124961378
+          "foreground": "#fff",
+          "ratio": null
         }
       ],
       "disclosureImageClips": [],
@@ -13576,8 +13588,8 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#FFFFFF",
-          "ratio": 5.641351124961378
+          "foreground": "#fff",
+          "ratio": null
         }
       ],
       "disclosureImageClips": [],
@@ -13638,8 +13650,8 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#FFFFFF",
-          "ratio": 5.641351124961378
+          "foreground": "#fff",
+          "ratio": null
         }
       ],
       "disclosureImageClips": [],
@@ -13702,7 +13714,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0B17",
+          "foreground": "#2a0b17",
           "ratio": 5.617900119406448
         }
       ],
@@ -13831,7 +13843,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0B17",
+          "foreground": "#2a0b17",
           "ratio": 5.617900119406448
         }
       ],
@@ -13992,7 +14004,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0B17",
+          "foreground": "#2a0b17",
           "ratio": 5.617900119406448
         }
       ],
@@ -14103,7 +14115,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0B17",
+          "foreground": "#2a0b17",
           "ratio": 5.617900119406448
         }
       ],
@@ -14168,7 +14180,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0B17",
+          "foreground": "#2a0b17",
           "ratio": 5.617900119406448
         }
       ],
@@ -14230,7 +14242,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0B17",
+          "foreground": "#2a0b17",
           "ratio": 5.617900119406448
         }
       ],
@@ -14292,7 +14304,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0B17",
+          "foreground": "#2a0b17",
           "ratio": 5.617900119406448
         }
       ],
@@ -15006,7 +15018,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
@@ -15123,7 +15135,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
@@ -15388,7 +15400,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
@@ -15499,7 +15511,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
@@ -15564,7 +15576,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
@@ -15626,7 +15638,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
@@ -15688,7 +15700,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
@@ -15761,7 +15773,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#1C1030",
+          "foreground": "#1c1030",
           "ratio": 5.581854427216237
         }
       ],
@@ -16070,7 +16082,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#1C1030",
+          "foreground": "#1c1030",
           "ratio": 5.581854427216237
         }
       ],
@@ -16187,7 +16199,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#1C1030",
+          "foreground": "#1c1030",
           "ratio": 5.581854427216237
         }
       ],
@@ -16274,7 +16286,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#1C1030",
+          "foreground": "#1c1030",
           "ratio": 5.581854427216237
         }
       ],
@@ -16336,7 +16348,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#1C1030",
+          "foreground": "#1c1030",
           "ratio": 5.581854427216237
         }
       ],
@@ -16398,7 +16410,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#1C1030",
+          "foreground": "#1c1030",
           "ratio": 5.581854427216237
         }
       ],
@@ -16424,7 +16436,7 @@
       "transparentButtons": [],
       "background": "#EFEBE3",
       "bgToken": "#EFEBE3",
-      "imageCount": 155,
+      "imageCount": 252,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -16455,7 +16467,10 @@
       "order": [],
       "eraViolations": [],
       "croppedScenes": [],
-      "sceneHeights": [],
+      "sceneHeights": [
+        32,
+        32
+      ],
       "goldTables": [],
       "accentContrast": [],
       "disclosureImageClips": [],
@@ -16557,27 +16572,27 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 10.55878975195392
         },
         {
           "route": "dietrich",
-          "foreground": "#0E0E10",
+          "foreground": "#0e0e10",
           "ratio": 9.170655180470497
         },
         {
           "route": "theodora",
-          "foreground": "#231A06",
+          "foreground": "#231a06",
           "ratio": 8.420924998188106
         },
         {
           "route": "leda",
-          "foreground": "#2A0A17",
+          "foreground": "#2a0a17",
           "ratio": 10.177086407191815
         },
         {
           "route": "part3",
-          "foreground": "#170C2B",
+          "foreground": "#170c2b",
           "ratio": 10.451754773520047
         }
       ],
@@ -16652,7 +16667,7 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#231A06",
+          "foreground": "#231a06",
           "ratio": 8.420924998188106
         }
       ],
@@ -16781,7 +16796,7 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#231A06",
+          "foreground": "#231a06",
           "ratio": 8.420924998188106
         }
       ],
@@ -17070,7 +17085,7 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#231A06",
+          "foreground": "#231a06",
           "ratio": 8.420924998188106
         }
       ],
@@ -17181,7 +17196,7 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#231A06",
+          "foreground": "#231a06",
           "ratio": 8.420924998188106
         }
       ],
@@ -17246,7 +17261,7 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#231A06",
+          "foreground": "#231a06",
           "ratio": 8.420924998188106
         }
       ],
@@ -17308,7 +17323,7 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#231A06",
+          "foreground": "#231a06",
           "ratio": 8.420924998188106
         }
       ],
@@ -17370,7 +17385,7 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#231A06",
+          "foreground": "#231a06",
           "ratio": 8.420924998188106
         }
       ],
@@ -17434,7 +17449,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0A17",
+          "foreground": "#2a0a17",
           "ratio": 10.177086407191815
         }
       ],
@@ -17563,7 +17578,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0A17",
+          "foreground": "#2a0a17",
           "ratio": 10.177086407191815
         }
       ],
@@ -17724,7 +17739,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0A17",
+          "foreground": "#2a0a17",
           "ratio": 10.177086407191815
         }
       ],
@@ -17835,7 +17850,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0A17",
+          "foreground": "#2a0a17",
           "ratio": 10.177086407191815
         }
       ],
@@ -17900,7 +17915,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0A17",
+          "foreground": "#2a0a17",
           "ratio": 10.177086407191815
         }
       ],
@@ -17962,7 +17977,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0A17",
+          "foreground": "#2a0a17",
           "ratio": 10.177086407191815
         }
       ],
@@ -18024,7 +18039,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0A17",
+          "foreground": "#2a0a17",
           "ratio": 10.177086407191815
         }
       ],
@@ -18088,7 +18103,7 @@
       "accentContrast": [
         {
           "route": "dietrich",
-          "foreground": "#0E0E10",
+          "foreground": "#0e0e10",
           "ratio": 9.170655180470497
         }
       ],
@@ -18217,7 +18232,7 @@
       "accentContrast": [
         {
           "route": "dietrich",
-          "foreground": "#0E0E10",
+          "foreground": "#0e0e10",
           "ratio": 9.170655180470497
         }
       ],
@@ -18374,7 +18389,7 @@
       "accentContrast": [
         {
           "route": "dietrich",
-          "foreground": "#0E0E10",
+          "foreground": "#0e0e10",
           "ratio": 9.170655180470497
         }
       ],
@@ -18485,7 +18500,7 @@
       "accentContrast": [
         {
           "route": "dietrich",
-          "foreground": "#0E0E10",
+          "foreground": "#0e0e10",
           "ratio": 9.170655180470497
         }
       ],
@@ -18550,7 +18565,7 @@
       "accentContrast": [
         {
           "route": "dietrich",
-          "foreground": "#0E0E10",
+          "foreground": "#0e0e10",
           "ratio": 9.170655180470497
         }
       ],
@@ -18612,7 +18627,7 @@
       "accentContrast": [
         {
           "route": "dietrich",
-          "foreground": "#0E0E10",
+          "foreground": "#0e0e10",
           "ratio": 9.170655180470497
         }
       ],
@@ -18674,7 +18689,7 @@
       "accentContrast": [
         {
           "route": "dietrich",
-          "foreground": "#0E0E10",
+          "foreground": "#0e0e10",
           "ratio": 9.170655180470497
         }
       ],
@@ -18738,7 +18753,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
@@ -18855,7 +18870,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
@@ -19120,7 +19135,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
@@ -19231,7 +19246,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
@@ -19296,7 +19311,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
@@ -19358,7 +19373,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
@@ -19420,7 +19435,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
@@ -19493,7 +19508,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#170C2B",
+          "foreground": "#170c2b",
           "ratio": 10.451754773520047
         }
       ],
@@ -19802,7 +19817,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#170C2B",
+          "foreground": "#170c2b",
           "ratio": 10.451754773520047
         }
       ],
@@ -19919,7 +19934,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#170C2B",
+          "foreground": "#170c2b",
           "ratio": 10.451754773520047
         }
       ],
@@ -20006,7 +20021,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#170C2B",
+          "foreground": "#170c2b",
           "ratio": 10.451754773520047
         }
       ],
@@ -20068,7 +20083,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#170C2B",
+          "foreground": "#170c2b",
           "ratio": 10.451754773520047
         }
       ],
@@ -20130,7 +20145,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#170C2B",
+          "foreground": "#170c2b",
           "ratio": 10.451754773520047
         }
       ],
@@ -20156,7 +20171,7 @@
       "transparentButtons": [],
       "background": "#121116",
       "bgToken": "#121116",
-      "imageCount": 155,
+      "imageCount": 252,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -20187,7 +20202,10 @@
       "order": [],
       "eraViolations": [],
       "croppedScenes": [],
-      "sceneHeights": [],
+      "sceneHeights": [
+        32,
+        32
+      ],
       "goldTables": [],
       "accentContrast": [],
       "disclosureImageClips": [],
@@ -20289,7 +20307,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 7.556150901096952
         },
         {
@@ -20299,17 +20317,17 @@
         },
         {
           "route": "theodora",
-          "foreground": "#FFFFFF",
-          "ratio": 5.641351124961378
+          "foreground": "#fff",
+          "ratio": null
         },
         {
           "route": "leda",
-          "foreground": "#2A0B17",
+          "foreground": "#2a0b17",
           "ratio": 5.617900119406448
         },
         {
           "route": "part3",
-          "foreground": "#1C1030",
+          "foreground": "#1c1030",
           "ratio": 5.581854427216237
         }
       ],
@@ -20386,8 +20404,8 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#FFFFFF",
-          "ratio": 5.641351124961378
+          "foreground": "#fff",
+          "ratio": null
         }
       ],
       "disclosureImageClips": [],
@@ -20515,8 +20533,8 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#FFFFFF",
-          "ratio": 5.641351124961378
+          "foreground": "#fff",
+          "ratio": null
         }
       ],
       "disclosureImageClips": [],
@@ -20804,8 +20822,8 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#FFFFFF",
-          "ratio": 5.641351124961378
+          "foreground": "#fff",
+          "ratio": null
         }
       ],
       "disclosureImageClips": [],
@@ -20915,8 +20933,8 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#FFFFFF",
-          "ratio": 5.641351124961378
+          "foreground": "#fff",
+          "ratio": null
         }
       ],
       "disclosureImageClips": [],
@@ -20977,8 +20995,8 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#FFFFFF",
-          "ratio": 5.641351124961378
+          "foreground": "#fff",
+          "ratio": null
         }
       ],
       "disclosureImageClips": [],
@@ -21043,7 +21061,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0B17",
+          "foreground": "#2a0b17",
           "ratio": 5.617900119406448
         }
       ],
@@ -21172,7 +21190,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0B17",
+          "foreground": "#2a0b17",
           "ratio": 5.617900119406448
         }
       ],
@@ -21333,7 +21351,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0B17",
+          "foreground": "#2a0b17",
           "ratio": 5.617900119406448
         }
       ],
@@ -21444,7 +21462,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0B17",
+          "foreground": "#2a0b17",
           "ratio": 5.617900119406448
         }
       ],
@@ -21506,7 +21524,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0B17",
+          "foreground": "#2a0b17",
           "ratio": 5.617900119406448
         }
       ],
@@ -22097,7 +22115,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
@@ -22214,7 +22232,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
@@ -22479,7 +22497,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
@@ -22590,7 +22608,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
@@ -22652,7 +22670,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
@@ -22727,7 +22745,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#1C1030",
+          "foreground": "#1c1030",
           "ratio": 5.581854427216237
         }
       ],
@@ -23036,7 +23054,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#1C1030",
+          "foreground": "#1c1030",
           "ratio": 5.581854427216237
         }
       ],
@@ -23153,7 +23171,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#1C1030",
+          "foreground": "#1c1030",
           "ratio": 5.581854427216237
         }
       ],
@@ -23240,7 +23258,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#1C1030",
+          "foreground": "#1c1030",
           "ratio": 5.581854427216237
         }
       ],
@@ -23302,7 +23320,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#1C1030",
+          "foreground": "#1c1030",
           "ratio": 5.581854427216237
         }
       ],
@@ -23328,7 +23346,7 @@
       "transparentButtons": [],
       "background": "#EFEBE3",
       "bgToken": "#EFEBE3",
-      "imageCount": 155,
+      "imageCount": 252,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -23359,7 +23377,10 @@
       "order": [],
       "eraViolations": [],
       "croppedScenes": [],
-      "sceneHeights": [],
+      "sceneHeights": [
+        32,
+        32
+      ],
       "goldTables": [],
       "accentContrast": [],
       "disclosureImageClips": [],
@@ -23461,27 +23482,27 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 10.55878975195392
         },
         {
           "route": "dietrich",
-          "foreground": "#0E0E10",
+          "foreground": "#0e0e10",
           "ratio": 9.170655180470497
         },
         {
           "route": "theodora",
-          "foreground": "#231A06",
+          "foreground": "#231a06",
           "ratio": 8.420924998188106
         },
         {
           "route": "leda",
-          "foreground": "#2A0A17",
+          "foreground": "#2a0a17",
           "ratio": 10.177086407191815
         },
         {
           "route": "part3",
-          "foreground": "#170C2B",
+          "foreground": "#170c2b",
           "ratio": 10.451754773520047
         }
       ],
@@ -23558,7 +23579,7 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#231A06",
+          "foreground": "#231a06",
           "ratio": 8.420924998188106
         }
       ],
@@ -23687,7 +23708,7 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#231A06",
+          "foreground": "#231a06",
           "ratio": 8.420924998188106
         }
       ],
@@ -23976,7 +23997,7 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#231A06",
+          "foreground": "#231a06",
           "ratio": 8.420924998188106
         }
       ],
@@ -24087,7 +24108,7 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#231A06",
+          "foreground": "#231a06",
           "ratio": 8.420924998188106
         }
       ],
@@ -24149,7 +24170,7 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#231A06",
+          "foreground": "#231a06",
           "ratio": 8.420924998188106
         }
       ],
@@ -24215,7 +24236,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0A17",
+          "foreground": "#2a0a17",
           "ratio": 10.177086407191815
         }
       ],
@@ -24344,7 +24365,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0A17",
+          "foreground": "#2a0a17",
           "ratio": 10.177086407191815
         }
       ],
@@ -24505,7 +24526,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0A17",
+          "foreground": "#2a0a17",
           "ratio": 10.177086407191815
         }
       ],
@@ -24616,7 +24637,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0A17",
+          "foreground": "#2a0a17",
           "ratio": 10.177086407191815
         }
       ],
@@ -24678,7 +24699,7 @@
       "accentContrast": [
         {
           "route": "leda",
-          "foreground": "#2A0A17",
+          "foreground": "#2a0a17",
           "ratio": 10.177086407191815
         }
       ],
@@ -24744,7 +24765,7 @@
       "accentContrast": [
         {
           "route": "dietrich",
-          "foreground": "#0E0E10",
+          "foreground": "#0e0e10",
           "ratio": 9.170655180470497
         }
       ],
@@ -24873,7 +24894,7 @@
       "accentContrast": [
         {
           "route": "dietrich",
-          "foreground": "#0E0E10",
+          "foreground": "#0e0e10",
           "ratio": 9.170655180470497
         }
       ],
@@ -25030,7 +25051,7 @@
       "accentContrast": [
         {
           "route": "dietrich",
-          "foreground": "#0E0E10",
+          "foreground": "#0e0e10",
           "ratio": 9.170655180470497
         }
       ],
@@ -25141,7 +25162,7 @@
       "accentContrast": [
         {
           "route": "dietrich",
-          "foreground": "#0E0E10",
+          "foreground": "#0e0e10",
           "ratio": 9.170655180470497
         }
       ],
@@ -25203,7 +25224,7 @@
       "accentContrast": [
         {
           "route": "dietrich",
-          "foreground": "#0E0E10",
+          "foreground": "#0e0e10",
           "ratio": 9.170655180470497
         }
       ],
@@ -25269,7 +25290,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
@@ -25386,7 +25407,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
@@ -25651,7 +25672,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
@@ -25762,7 +25783,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
@@ -25824,7 +25845,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
@@ -25899,7 +25920,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#170C2B",
+          "foreground": "#170c2b",
           "ratio": 10.451754773520047
         }
       ],
@@ -26208,7 +26229,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#170C2B",
+          "foreground": "#170c2b",
           "ratio": 10.451754773520047
         }
       ],
@@ -26325,7 +26346,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#170C2B",
+          "foreground": "#170c2b",
           "ratio": 10.451754773520047
         }
       ],
@@ -26412,7 +26433,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#170C2B",
+          "foreground": "#170c2b",
           "ratio": 10.451754773520047
         }
       ],
@@ -26474,7 +26495,7 @@
       "accentContrast": [
         {
           "route": "part3",
-          "foreground": "#170C2B",
+          "foreground": "#170c2b",
           "ratio": 10.451754773520047
         }
       ],
@@ -26500,7 +26521,7 @@
       "transparentButtons": [],
       "background": "#121116",
       "bgToken": "#121116",
-      "imageCount": 155,
+      "imageCount": 252,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -26531,7 +26552,10 @@
       "order": [],
       "eraViolations": [],
       "croppedScenes": [],
-      "sceneHeights": [],
+      "sceneHeights": [
+        32,
+        32
+      ],
       "goldTables": [],
       "accentContrast": [],
       "disclosureImageClips": [],
@@ -26633,7 +26657,7 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 7.556150901096952
         },
         {
@@ -26643,17 +26667,17 @@
         },
         {
           "route": "theodora",
-          "foreground": "#FFFFFF",
-          "ratio": 5.641351124961378
+          "foreground": "#fff",
+          "ratio": null
         },
         {
           "route": "leda",
-          "foreground": "#2A0B17",
+          "foreground": "#2a0b17",
           "ratio": 5.617900119406448
         },
         {
           "route": "part3",
-          "foreground": "#1C1030",
+          "foreground": "#1c1030",
           "ratio": 5.581854427216237
         }
       ],
@@ -26756,27 +26780,27 @@
       "accentContrast": [
         {
           "route": "kai",
-          "foreground": "#1B1405",
+          "foreground": "#1b1405",
           "ratio": 10.55878975195392
         },
         {
           "route": "dietrich",
-          "foreground": "#0E0E10",
+          "foreground": "#0e0e10",
           "ratio": 9.170655180470497
         },
         {
           "route": "theodora",
-          "foreground": "#231A06",
+          "foreground": "#231a06",
           "ratio": 8.420924998188106
         },
         {
           "route": "leda",
-          "foreground": "#2A0A17",
+          "foreground": "#2a0a17",
           "ratio": 10.177086407191815
         },
         {
           "route": "part3",
-          "foreground": "#170C2B",
+          "foreground": "#170c2b",
           "ratio": 10.451754773520047
         }
       ],
@@ -26838,8 +26862,8 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#FFFFFF",
-          "ratio": 5.641351124961378
+          "foreground": "#fff",
+          "ratio": null
         }
       ],
       "disclosureImageClips": [],
@@ -26900,7 +26924,7 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#231A06",
+          "foreground": "#231a06",
           "ratio": 8.420924998188106
         }
       ],
@@ -26962,8 +26986,8 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#FFFFFF",
-          "ratio": 5.641351124961378
+          "foreground": "#fff",
+          "ratio": null
         }
       ],
       "disclosureImageClips": [],
@@ -27024,7 +27048,7 @@
       "accentContrast": [
         {
           "route": "theodora",
-          "foreground": "#231A06",
+          "foreground": "#231a06",
           "ratio": 8.420924998188106
         }
       ],
@@ -27308,7 +27332,7 @@
       "railOverflow": "auto",
       "headerTop": 0,
       "navBottom": 487.984375,
-      "chapterClearance": 8.1875,
+      "chapterClearance": 7.59375,
       "passed": true
     },
     {
@@ -27324,7 +27348,7 @@
       "railOverflow": "auto",
       "headerTop": 0,
       "navBottom": 487.984375,
-      "chapterClearance": 8.1875,
+      "chapterClearance": 7.59375,
       "passed": true
     },
     {
@@ -27340,7 +27364,7 @@
       "railOverflow": "auto",
       "headerTop": 0,
       "navBottom": 487.984375,
-      "chapterClearance": 8.1875,
+      "chapterClearance": 7.59375,
       "passed": true
     },
     {
@@ -27356,7 +27380,7 @@
       "railOverflow": "auto",
       "headerTop": 0,
       "navBottom": 487.984375,
-      "chapterClearance": 8.1875,
+      "chapterClearance": 7.59375,
       "passed": true
     },
     {
@@ -27372,7 +27396,7 @@
       "railOverflow": "auto",
       "headerTop": 0,
       "navBottom": 415.984375,
-      "chapterClearance": 8.1875,
+      "chapterClearance": 7.59375,
       "passed": true
     },
     {
@@ -27388,7 +27412,7 @@
       "railOverflow": "auto",
       "headerTop": 0,
       "navBottom": 487.984375,
-      "chapterClearance": 8.1875,
+      "chapterClearance": 7.59375,
       "passed": true
     },
     {
@@ -27404,7 +27428,7 @@
       "railOverflow": "auto",
       "headerTop": 0,
       "navBottom": 487.984375,
-      "chapterClearance": 8.1875,
+      "chapterClearance": 7.59375,
       "passed": true
     },
     {
@@ -27420,7 +27444,7 @@
       "railOverflow": "auto",
       "headerTop": 0,
       "navBottom": 487.984375,
-      "chapterClearance": 8.1875,
+      "chapterClearance": 7.59375,
       "passed": true
     },
     {
@@ -27436,7 +27460,7 @@
       "railOverflow": "auto",
       "headerTop": 0,
       "navBottom": 487.984375,
-      "chapterClearance": 8.1875,
+      "chapterClearance": 7.59375,
       "passed": true
     },
     {
@@ -27452,7 +27476,7 @@
       "railOverflow": "auto",
       "headerTop": 0,
       "navBottom": 415.984375,
-      "chapterClearance": 8.1875,
+      "chapterClearance": 7.59375,
       "passed": true
     },
     {
@@ -27468,7 +27492,7 @@
       "railOverflow": "auto",
       "headerTop": 0,
       "navBottom": 487.984375,
-      "chapterClearance": 8.1875,
+      "chapterClearance": 7.59375,
       "passed": true
     },
     {
@@ -27484,7 +27508,7 @@
       "railOverflow": "auto",
       "headerTop": 0,
       "navBottom": 487.984375,
-      "chapterClearance": 8.1875,
+      "chapterClearance": 7.59375,
       "passed": true
     },
     {
@@ -27500,7 +27524,7 @@
       "railOverflow": "auto",
       "headerTop": 0,
       "navBottom": 487.984375,
-      "chapterClearance": 8.1875,
+      "chapterClearance": 7.59375,
       "passed": true
     },
     {
@@ -27516,7 +27540,7 @@
       "railOverflow": "auto",
       "headerTop": 0,
       "navBottom": 487.984375,
-      "chapterClearance": 8.1875,
+      "chapterClearance": 7.59375,
       "passed": true
     },
     {
@@ -27532,7 +27556,7 @@
       "railOverflow": "auto",
       "headerTop": 0,
       "navBottom": 415.984375,
-      "chapterClearance": 8.1875,
+      "chapterClearance": 7.59375,
       "passed": true
     },
     {
@@ -27548,7 +27572,7 @@
       "railOverflow": "auto",
       "headerTop": 0,
       "navBottom": 487.984375,
-      "chapterClearance": 8.1875,
+      "chapterClearance": 7.59375,
       "passed": true
     },
     {
@@ -27564,7 +27588,7 @@
       "railOverflow": "auto",
       "headerTop": 0,
       "navBottom": 487.984375,
-      "chapterClearance": 8.1875,
+      "chapterClearance": 7.59375,
       "passed": true
     },
     {
@@ -27580,7 +27604,7 @@
       "railOverflow": "auto",
       "headerTop": 0,
       "navBottom": 487.984375,
-      "chapterClearance": 8.1875,
+      "chapterClearance": 7.59375,
       "passed": true
     },
     {
@@ -27596,7 +27620,7 @@
       "railOverflow": "auto",
       "headerTop": 0,
       "navBottom": 487.984375,
-      "chapterClearance": 8.1875,
+      "chapterClearance": 7.59375,
       "passed": true
     },
     {
@@ -27612,7 +27636,7 @@
       "railOverflow": "auto",
       "headerTop": 0,
       "navBottom": 415.984375,
-      "chapterClearance": 8.1875,
+      "chapterClearance": 7.59375,
       "passed": true
     },
     {
@@ -27628,7 +27652,7 @@
       "railOverflow": "auto",
       "headerTop": 0,
       "navBottom": 812,
-      "chapterClearance": 7.578125,
+      "chapterClearance": 8.390625,
       "passed": true
     },
     {
@@ -27644,7 +27668,7 @@
       "railOverflow": "auto",
       "headerTop": 0,
       "navBottom": 812,
-      "chapterClearance": 7.78125,
+      "chapterClearance": 8.390625,
       "passed": true
     },
     {
@@ -27660,7 +27684,7 @@
       "railOverflow": "auto",
       "headerTop": 0,
       "navBottom": 812,
-      "chapterClearance": 7.78125,
+      "chapterClearance": 8.390625,
       "passed": true
     },
     {
@@ -27676,7 +27700,7 @@
       "railOverflow": "auto",
       "headerTop": 0,
       "navBottom": 812,
-      "chapterClearance": 7.78125,
+      "chapterClearance": 8.390625,
       "passed": true
     },
     {
@@ -27692,7 +27716,7 @@
       "railOverflow": "auto",
       "headerTop": 0,
       "navBottom": 812,
-      "chapterClearance": 7.78125,
+      "chapterClearance": 8.390625,
       "passed": true
     },
     {
@@ -27708,7 +27732,7 @@
       "railOverflow": "auto",
       "headerTop": 0,
       "navBottom": 812,
-      "chapterClearance": 7.578125,
+      "chapterClearance": 8.390625,
       "passed": true
     },
     {
@@ -27724,7 +27748,7 @@
       "railOverflow": "auto",
       "headerTop": 0,
       "navBottom": 812,
-      "chapterClearance": 7.78125,
+      "chapterClearance": 8.390625,
       "passed": true
     },
     {
@@ -27740,7 +27764,7 @@
       "railOverflow": "auto",
       "headerTop": 0,
       "navBottom": 812,
-      "chapterClearance": 7.78125,
+      "chapterClearance": 8.390625,
       "passed": true
     },
     {
@@ -27756,7 +27780,7 @@
       "railOverflow": "auto",
       "headerTop": 0,
       "navBottom": 812,
-      "chapterClearance": 7.78125,
+      "chapterClearance": 8.390625,
       "passed": true
     },
     {
@@ -27772,7 +27796,7 @@
       "railOverflow": "auto",
       "headerTop": 0,
       "navBottom": 812,
-      "chapterClearance": 7.78125,
+      "chapterClearance": 8.390625,
       "passed": true
     },
     {

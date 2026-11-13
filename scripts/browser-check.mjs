@@ -26,7 +26,7 @@ const browser = await chromium.launch({ executablePath:process.env.CHROME_PATH |
 const report = (final=false) => writeFileSync(final?'docs/browser-results.json':'.tmp/browser-progress.json',JSON.stringify({
   status:failures.length?'failed':'passed',host:'Codex / Windows / installed Chrome / Playwright',base,
   coverage:{sizes,themes:['light','dark'],routes:['/',...Object.keys(routeNames).map(r=>`/${r}/${r==='part3'?'3':'1'}/`),'/team/'],views:['할 일','인물','준비','재료와 구매','참고 문서'],screenshots},
-  method:{overlap:'보이는 형제 요소의 사각형 교차: 화면 구역·탐색·도구 줄·장 제목·묶음 제목·인물·표·목록·시트. 부모/자식 포함과 스크롤 내용/고정 탭은 제외한다.',images:'접힌 장도 포함한 할 일 DOM만 원본과 비교. 다음 행동·보조 칸의 추가 그림은 제외. 같은 묶음의 같은 얼굴만 중복 제거.',limits:'실제 Windows Chrome 개발 서버 화면. 다른 운영체제·브라우저·배포 빌드·게임 사실은 증명하지 않는다.'},
+  method:{overlap:'보이는 형제 요소의 사각형 교차: 화면 구역·탐색·도구 줄·장 제목·묶음 제목·인물·표·목록·시트. 부모/자식 포함과 스크롤 내용/고정 탭은 제외한다.',images:'접힌 장도 포함한 할 일 DOM만 원본과 비교. 다음 행동·보조 칸의 추가 그림은 제외. 같은 묶음의 같은 얼굴만 중복 제거.',limits:'Windows Chrome에서 정적 배포 빌드를 로컬 HTTP 서버로 검사. 다른 운영체제·브라우저·실제 기기·게임 사실은 증명하지 않는다.'},
   results,parity,functionality,errors,failures,recoveries
 },null,2));
 
@@ -231,7 +231,7 @@ try {
   await page.getByRole('navigation',{name:'공략 화면'}).getByRole('button',{name:'참고 문서',exact:true}).click();
   await page.getByRole('button',{name:'지원 루프 따라하기',exact:false}).first().click();await page.getByRole('dialog').waitFor();
   const link=page.locator('[data-doc-url="weekly-support-review.md"]').first();await link.scrollIntoViewIfNeeded();const scroll=await page.locator('.sheet-scroll').evaluate(e=>e.scrollTop);await link.click();await page.getByRole('button',{name:'뒤로',exact:true}).click();await page.waitForTimeout(100);assert.ok(Math.abs(await page.locator('.sheet-scroll').evaluate(e=>e.scrollTop)-scroll)<2);await page.keyboard.press('Escape');functionality.push('문서 뒤로·읽던 위치 복원');
-  await page.goto(base+'/team/');for(const name of ['네 진영장 포함','역할 균형 추천','현재25인·병과 수정']){await page.getByRole('button',{name,exact:true}).click();assert.equal(await page.locator('.team-unit').count(),25);}functionality.push('팀 세 편성 각각 25명');
+  await page.goto(base+'/team/');for(const name of ['네 진영장 포함','역할 균형 추천','현재 25인·병과 수정']){await page.getByRole('button',{name,exact:true}).click();assert.equal(await page.locator('.team-unit').count(),25);}functionality.push('팀 세 편성 각각 25명');
   await context.close();
   assert.deepEqual(errors,[],'브라우저 실행 오류');
   if(failures.length)throw new Error(`${failures.length}건 화면 실패: ${failures.slice(0,8).join('; ')}`);

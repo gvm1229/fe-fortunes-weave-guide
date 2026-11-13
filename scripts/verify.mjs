@@ -7,6 +7,7 @@ import { scopeTree, scopeMarkdown } from '../lib/scope.ts';
 import './verify-image-parity.mjs';
 import './verify-readability.mjs';
 import './verify-design-assets.mjs';
+import './verify-feature-parity.mjs';
 const read=p=>JSON.parse(readFileSync(p,'utf8'));
 const manifest=read('content/transfer-manifest.json');
 const playbook=read('content/data/playbook.json');
@@ -34,7 +35,7 @@ const files=[];
 function walk(dir){for(const e of readdirSync(dir,{withFileTypes:true})){const p=`${dir}/${e.name}`;if(e.isDirectory())walk(p);else if(/\.(json|md)$/.test(p))files.push(p);}}
 walk('content');
 const media=new Set();const missing=new Set();
-for(const f of files){const text=readFileSync(f,'utf8').replaceAll('\\"','"');for(const m of text.matchAll(/assets\/[\w./%+ -]+\.(?:png|webp|jpg|jpeg|svg|otf|woff2?)/g)){const p=decodeURIComponent(m[0]);media.add(p);if(!existsSync(p))missing.add(p);}}
+for(const f of files){const text=(f.endsWith('/timeskip-portraits.json')?JSON.stringify(Object.values(read(f))):readFileSync(f,'utf8')).replaceAll('\\"','"').replace(/https?:\/\/[^\s"'<>]+/g,'');for(const m of text.matchAll(/assets\/[\w./%+ -]+\.(?:png|webp|jpg|jpeg|svg|otf|woff2?)/g)){const p=decodeURIComponent(m[0]);media.add(p);if(!existsSync(p))missing.add(p);}}
 assert.deepEqual([...missing],[],`없는 미디어: ${[...missing].join(', ')}`);
 const policy=read('content/data/modal-scope-plan.json');for(const name of [...policy.contextual,...policy.common])assert.ok(existsSync(`content/notes/${name}.md`),name);
 assert.equal(checked({id:'child',inheritLegacy:true},'parent',{parent:true}),true);

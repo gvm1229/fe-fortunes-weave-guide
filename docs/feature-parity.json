@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "host": "Codex / Windows / Node.js",
+  "sourceFiles": 446,
+  "mediaFiles": 501,
+  "personalDocuments": 328,
+  "generatedDocuments": 33,
+  "fragments": 138,
+  "buttons": 1906,
+  "images": 7098,
+  "teamCandidates": 34,
+  "scenarioTrialCombinations": 12,
+  "excluded": "참고 보관·archive: 2026-11-13 사용자 확인",
+  "limits": "원본과 복사본의 일치 및 개인화 표시 자료의 보존 검사. 실제 게임 정보의 정확성·사용자 브라우저 기록 자동 동기화는 증명하지 않음."
+}
