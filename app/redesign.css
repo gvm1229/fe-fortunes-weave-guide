@@ -359,3 +359,9 @@ td .readable-body p{margin-block-end:8px}
 .check-toolbar{padding:12px 0}
 .next-action{padding:16px 0}
 .game-badge .text-link{min-height:0;padding:0;background:none;color:inherit;font-weight:600}
+/* 검토 3 H2: 767px 이하 표 칸 안 배지는 글처럼 줄을 넘겨 표가 화면보다 넓어지지 않게 한다. */
+@media(max-width:767px){
+  :is(.source-markup,.semantic,.records,.gold-tables) table{inline-size:100%;table-layout:fixed}
+  :is(td,th) .game-badge{display:inline;white-space:normal;padding-block:3px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+  :is(td,th) .game-badge>:is(svg,img){display:inline-block!important;vertical-align:-4px;margin-inline-end:4px!important}
+}

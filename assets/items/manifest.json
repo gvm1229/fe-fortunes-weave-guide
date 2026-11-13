@@ -842,7 +842,7 @@
       "file": "assets/weapons/item-08c97b353f3f.webp",
       "source": "https://game8.jp/fe-banshisenko/818772",
       "image": "https://img.game8.jp/13007556/b9ebbf92f619ab66992d27ee53752a83.webp/show",
-      "kind": "weapon",
+      "kind": "spell",
       "aliases": [],
       "japanese": "トロン"
     },
@@ -850,7 +850,7 @@
       "file": "assets/weapons/item-08c97b353f3f.webp",
       "source": "https://game8.jp/fe-banshisenko/818778",
       "image": "https://img.game8.jp/13007556/b9ebbf92f619ab66992d27ee53752a83.webp/show",
-      "kind": "weapon",
+      "kind": "spell",
       "aliases": [],
       "japanese": "シェイバー"
     },
@@ -858,7 +858,7 @@
       "file": "assets/weapons/item-08c97b353f3f.webp",
       "source": "https://game8.jp/fe-banshisenko/818774",
       "image": "https://img.game8.jp/13007556/b9ebbf92f619ab66992d27ee53752a83.webp/show",
-      "kind": "weapon",
+      "kind": "spell",
       "aliases": [],
       "japanese": "デスΓ"
     },
@@ -866,7 +866,7 @@
       "file": "assets/weapons/item-08c97b353f3f.webp",
       "source": "https://game8.jp/fe-banshisenko/818768",
       "image": "https://img.game8.jp/13007556/b9ebbf92f619ab66992d27ee53752a83.webp/show",
-      "kind": "weapon",
+      "kind": "spell",
       "aliases": [],
       "japanese": "ルナΛ"
     },
@@ -874,7 +874,7 @@
       "file": "assets/weapons/item-08c97b353f3f.webp",
       "source": "https://game8.jp/fe-banshisenko/826987",
       "image": "https://img.game8.jp/13007556/b9ebbf92f619ab66992d27ee53752a83.webp/show",
-      "kind": "weapon",
+      "kind": "spell",
       "aliases": [],
       "japanese": "エクスカリバー"
     },
@@ -882,7 +882,7 @@
       "file": "assets/weapons/item-cae5fd8b4ffa.webp",
       "source": "https://game8.jp/fe-banshisenko/818754",
       "image": "https://img.game8.jp/13007575/9cfcd74aa7a79f2d2e0dbdfa3e5b5258.webp/show",
-      "kind": "weapon",
+      "kind": "spell",
       "aliases": [],
       "japanese": "リブロー"
     },
@@ -890,7 +890,7 @@
       "file": "assets/weapons/item-cae5fd8b4ffa.webp",
       "source": "https://game8.jp/fe-banshisenko/818755",
       "image": "https://img.game8.jp/13007575/9cfcd74aa7a79f2d2e0dbdfa3e5b5258.webp/show",
-      "kind": "weapon",
+      "kind": "spell",
       "aliases": [],
       "japanese": "リザイア"
     },
@@ -898,7 +898,7 @@
       "file": "assets/weapons/item-cae5fd8b4ffa.webp",
       "source": "https://game8.jp/fe-banshisenko/818766",
       "image": "https://img.game8.jp/13007575/9cfcd74aa7a79f2d2e0dbdfa3e5b5258.webp/show",
-      "kind": "weapon",
+      "kind": "spell",
       "aliases": [],
       "japanese": "エンジェル"
     },
@@ -906,7 +906,7 @@
       "file": "assets/weapons/item-cae5fd8b4ffa.webp",
       "source": "https://yuphastemple.com/?item=rescue",
       "image": "https://img.game8.jp/13007575/9cfcd74aa7a79f2d2e0dbdfa3e5b5258.webp/show",
-      "kind": "weapon",
+      "kind": "spell",
       "aliases": [],
       "japanese": "レスキュー"
     },
@@ -914,7 +914,7 @@
       "file": "assets/weapons/item-cae5fd8b4ffa.webp",
       "source": "https://game8.jp/fe-banshisenko/818752",
       "image": "https://img.game8.jp/13007575/9cfcd74aa7a79f2d2e0dbdfa3e5b5258.webp/show",
-      "kind": "weapon",
+      "kind": "spell",
       "aliases": [],
       "japanese": "ワープ"
     },
@@ -922,7 +922,7 @@
       "file": "assets/weapons/item-cae5fd8b4ffa.webp",
       "source": "https://game8.jp/fe-banshisenko/818764",
       "image": "https://img.game8.jp/13007575/9cfcd74aa7a79f2d2e0dbdfa3e5b5258.webp/show",
-      "kind": "weapon",
+      "kind": "spell",
       "aliases": [],
       "japanese": "サイレス"
     },

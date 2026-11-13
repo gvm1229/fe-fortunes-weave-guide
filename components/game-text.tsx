@@ -13,7 +13,10 @@ const skills:Record<string,string>={'검술':'sword','창술':'lance','도끼술
 const skillNames='검술|창술|도끼술|궁술|격투술|지휘술|기마술|비행술|중갑술|중장술|보병술|흑마술|백마술';
 const rank=String.raw`\s*[SABCDE]\+?(?:\s*→\s*[SABCDE]\+?)?`;
 const materials='라돈 잉어|라돈 꼬치고기|반짝반짝어|물고기|생선|꼬치고기|고기|자철광석|철광석|은광석|금광석|광석|옥강|뇌석|선물';
-const count=String.raw`(?:\s*[×x]\s*\d+|\s*\d+(?:개|마리))?`;
+/** 수량: ×3, 3개, 3마리, 1자루, 단위 없는 10. 금액·장 번호·비율·날짜(6장, 2부, 50%, 3/4)와는 섞지 않는다. */
+const count=String.raw`(?:\s*[×x]\s*\d+|\s*\d+(?:개|마리|자루)|\s*\d+(?![\d,.]*(?:G|%|장|부|구간|일|/)))?`;
+/** 시험 증서류만 3장처럼 '장'을 수량으로 받는다. */
+const sealCount=String.raw`(?:\s*\d+장|\s*[×x]\s*\d+|\s*\d+(?:개|매)|\s*\d+(?![\d,.]*(?:G|%|장|부|구간|일|/)))?`;
 /** 그림이 붙는 말과 그 뒤의 값(지원 3, 명성 6, 1,000G, 검술 C, 라돈 꼬치고기 ×3)을 한 조각으로 잡는다. */
 const basePattern=new RegExp(String.raw`(?:지원|유대)(?:\s*(?:Lv\.?\s*)?\d+|\s*[SABC](?![가-힣A-Za-z]))?|명성(?:\s*(?:Lv\.?\s*)?\d+)?|[\d,]+G|골드|(?:${materials})${count}|(?:${skillNames})(?:${rank})?|(?:흑마술|백마술|격투|지휘|기마|비행|중갑|보병|도끼|검|창|활)${rank}`,'g');
 const portraits=people as Record<string,{portrait:string}>;
@@ -25,9 +28,9 @@ const itemByName=new Map<string,ItemEntry>();
 for(const [name,entry] of Object.entries((items as {items:Record<string,ItemEntry>}).items))for(const n of [name,...(entry.aliases||[])])if(n.length>=2&&!portraits[n]&&!classImages[n]&&!skills[n]&&!itemByName.has(n))itemByName.set(n,entry);
 const escape=(n:string)=>n.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
 /** 두 글자 물품 이름(로카·성수·루나 등)은 다른 낱말 속에서 잡히지 않게 한글 경계를 둔다. */
-const itemPattern=Array.from(itemByName.keys()).sort((a,b)=>b.length-a.length).map(n=>(n.length<=2?`(?<![가-힣])${escape(n)}(?![가-힣])`:escape(n))+count).join('|');
+const itemPattern=Array.from(itemByName.keys()).sort((a,b)=>b.length-a.length).map(n=>(n.length<=2?`(?<![가-힣])${escape(n)}(?![가-힣])`:escape(n))+(itemByName.get(n)!.kind==='seal'?sealCount:count)).join('|');
 const pattern=new RegExp('('+names.map(escape).join('|')+'|'+itemPattern+'|'+basePattern.source+')','g');
-const itemNameRe=new RegExp('^('+Array.from(itemByName.keys()).sort((a,b)=>b.length-a.length).map(escape).join('|')+')([\\s\\S]*)$');
+const itemNameRe=new RegExp('^('+Array.from(itemByName.keys()).sort((a,b)=>b.length-a.length).map(escape).join('|')+')(\\s*(?:[×x]\\s*)?\\d+(?:개|마리|자루|장|매)?)?$');
 const fileName=(src:string)=>src.replace(/^\/+/,'').replace(/^assets\/portraits\/post-timeskip\//,'assets/portraits/');
 export const portraitNames=new Map<string,string>(Object.entries(portraits).map(([name,v])=>[fileName(v.portrait),name]));
 export const classNamesByFile=new Map<string,string>(Object.entries(classImages).map(([name,v])=>[fileName(v.file),name]));
@@ -42,12 +45,13 @@ function Badge({kind,icon,label,rest,className}:{kind:BadgeKind;icon:React.React
   return <span className={'game-badge'+(className?' '+className:'')} data-kind={kind}>{icon}<span className="badge-label">{label}</span>{space}{value&&<b className="badge-value">{value}</b>}</span>;
 }
 function classify(word:string):{kind:BadgeKind;icon:keyof typeof symbols|'skill';label:string;rest:string}|null{
-  let m=word.match(/^(지원|유대)(.*)$/s);if(m)return {kind:'bond',icon:'bond',label:m[1],rest:m[2]};
-  m=word.match(/^(명성)(.*)$/s);if(m)return {kind:'renown',icon:'renown',label:m[1],rest:m[2]};
+  // 값 모양까지 맞을 때만 배지로 한다(검토 3 H1: "창을 쓰는…" 같은 문장이 통째로 배지가 되던 문제).
+  let m=word.match(/^(지원|유대)(\s*(?:Lv\.?\s*)?\d+|\s*[SABC])?$/);if(m)return {kind:'bond',icon:'bond',label:m[1],rest:m[2]||''};
+  m=word.match(/^(명성)(\s*(?:Lv\.?\s*)?\d+)?$/);if(m)return {kind:'renown',icon:'renown',label:m[1],rest:m[2]||''};
   if(word==='골드'||/^[\d,]+G$/.test(word))return {kind:'gold',icon:'gold',label:word,rest:''};
-  m=word.match(new RegExp(`^(${materials})(.*)$`,'s'));
+  m=word.match(new RegExp(`^(${materials})(${count})$`));
   if(m){const label=m[1],icon:keyof typeof symbols=/^(라돈 잉어|라돈 꼬치고기|반짝반짝어|물고기|생선|꼬치고기)$/.test(label)?'fish':/광석$|^(옥강|뇌석)$/.test(label)?'ore':label==='고기'?'meat':'gift';return {kind:icon==='gift'?'gift':'material',icon,label,rest:m[2]};}
-  m=word.match(/^(검술|창술|도끼술|궁술|격투술|지휘술|기마술|비행술|중갑술|중장술|보병술|흑마술|백마술|격투|지휘|기마|비행|중갑|보병|도끼|검|창|활)(.*)$/s);
+  m=word.match(new RegExp(`^(${skillNames})(${rank})?$`))||word.match(new RegExp(`^(격투|지휘|기마|비행|중갑|보병|도끼|검|창|활)(${rank})$`));
   if(m&&skills[m[1]])return {kind:'skill',icon:'skill',label:m[1],rest:m[2]};
   return null;
 }
@@ -60,7 +64,7 @@ export function GameText({text,withSkills=false,part='1',skip}:{text:string;with
     if(portraits[word])return <Badge key={i} kind="person" className="named-person" icon={<img src={'/'+personPortrait(portraits[word].portrait,part,word)} alt="" loading="lazy"/>} label={word}/>;
     if(classImages[word])return <Badge key={i} kind="class" className="named-class" icon={<img src={'/'+classImages[word].file} alt="" loading="lazy"/>} label={word}/>;
     const it=word.match(itemNameRe);
-    if(it){const entry=itemByName.get(it[1])!,kind=/^(fish|ore|meat|material)$/.test(entry.kind)?'material':entry.kind==='gift'?'gift':'item';
+    if(it){const entry=itemByName.get(it[1])!,kind=/^(fish|ore|meat|material)$/.test(entry.kind)?'material':entry.kind==='gift'?'gift':entry.kind==='spell'?'skill':'item';
       const Fallback={gem:Gem,box:Package,sword:Sword,fish:Fish,ore:Gem,meat:Beef,gift:Gift,coin:Coins}[entry.fallback||'']||Package;
       return <Badge key={i} kind={kind} icon={entry.file?<img src={'/'+entry.file} alt="" loading="lazy" width={22} height={22}/>:<Fallback className="game-icon game-icon-item" size={22} aria-hidden="true"/>} label={it[1]} rest={it[2]}/>;}
     const c=classify(word);
