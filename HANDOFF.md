@@ -52,6 +52,7 @@
 ## 3. 사용자 선호 — 작업 방식
 
 - **역할 분담:**
+  - **2026-11-14 최신:** Codex는 더 이상 쓰지 않는다. Claude(Opus 5.5)가 코드 작성자이고, Fable 5.2가 자문(계획·코드 검토·시각 검토)이다. 자문의 값 단위 계획은 `docs/fable-plan.md`다. 아래 Codex 관련 규칙은 기록으로만 남긴다.
   - **2026-11-13 이번 작업의 명시 예외:** 사용자가 원본 기능 이전의 남은 시각 검토·수정·커밋·푸시를 Codex가 끝내도록 역할 제한을 해제했다. 필요한 변경은 검증 뒤 Netlify 재배포까지 승인했다. 아래 기본 분담은 다른 작업에 대한 규칙으로 유지한다.
   - Claude는 **계획·디자인 결정·검토·커밋**을 맡는다. 토큰이 많이 드는 구현은 **Codex**에 맡긴다.
   - Codex 설정: 모델 `gpt-6.1-sol`, `service_tier="priority"`, `model_reasoning_effort="xhigh"`.
@@ -133,6 +134,18 @@
   - 즉시 가져올 파일: 이전 프로젝트 `theodora-progress-import.json`(설명은 `theodora-progress-import.md`). 새로 확정된 완료가 없어 현재 체크와 같다.
 
 ## 6. 사이트 상태와 남은 일
+
+### 2026-11-14 재설계 v3 (Claude 구현, Fable 자문)
+
+- 계획·값 정본: [docs/fable-plan.md](docs/fable-plan.md) §A~§F. 사양 요약은 `docs/design-spec.md` 맨 위 "재설계 v3" 절.
+- 색 완화(중립 바탕, 루트 색은 머리 면과 "현재" 칩만), 투명 초상화에 `#16272D` 배경, shadcn(tabs·toggle·toggle-group·card·badge·accordion·tooltip·popover). `:root` 글자 18px라 shadcn 크기는 px로 적었다.
+- 같은 묶음 중복 초상화 제거(`GameText`의 `skip`, 묶음별 이름 모음). 화면 표기 백마법 → 백마술.
+- 인물 카드: 요약 표 하나(최종 병종·병종 경로·필요 기능 추가) + 접는 제목–설명 쌍(시험 조건·시기별 계획) + 원문 기록. 자료는 `lib/character-data.ts`가 `content/data`에서 읽는다. 지양 10명은 육성 정보를 내지 않는다.
+- **카이 루트 전차병:** 마법·회복(티아라·울턴드·리네) 외 전원 전차병. `content/kai-charioteer.json`이 표시를 덮어쓴다(원천 data는 그대로). 근거 영상 요약은 계획 §F. 할 일 체크 원문은 바꾸지 않았다.
+- 팀 화면: 4탭(최종 25인·백마술·루트 편성·비교 근거). 최종 25인은 스크롤 없는 격자, 교체 카드는 6px `--swap` 테두리 + 같은 색 "누구 대신" 배지. 휴대폰은 칸 안 글자 14px 허용. 루트 편성은 카드당 얼굴 하나로 재작성, 3부 선택·변경 인물만 필터 삭제.
+- 화면 전환(React `<ViewTransition>`, 첫 화면 ↔ 루트 군주 그림 이어지기), 탭·편성안 전환, 버튼·체크·카드 작은 움직임, 1000px 이하 장 정보 가로 스냅 띠, 열린 장 제목 고정, 장 완료 순간 색종이(canvas-confetti). 모두 동작 줄이기에서 꺼진다.
+- 검사: `npm run verify`(인물 자료 검사 추가), `scripts/team-fit-check.mjs`(72조합 통과), `scripts/feature-browser-check.mjs`(32검사 통과). 정적 빌드는 `.tmp/complete-preview/out`, 미리보기 http://localhost:18763/ .
+- 남은 질문: 알렉산드라(천익병·부케팔라스)를 카이 루트에서 전차병으로 바꿀지, 로시난을 누구에게 줄지.
 
 ### 2026-11-14 전체 설명·화면 검수 완료
 

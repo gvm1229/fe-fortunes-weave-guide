@@ -1059,7 +1059,7 @@
     {
       "source": "notes/knowledge/interface.md",
       "target": "content/notes/knowledge/interface.md",
-      "sha256": "67a8e2291e99b1b0eb3b9bb8686a7100b51f26c580bbf4ee46423892e9ae9b25"
+      "sha256": "cc935342b18163f6ca933499d8335a0b7e504e0e1e9defa946d7029408ded15b"
     },
     {
       "source": "notes/knowledge/merge-gate-safety.md",
@@ -1069,7 +1069,7 @@
     {
       "source": "notes/knowledge/preferences.md",
       "target": "content/notes/knowledge/preferences.md",
-      "sha256": "5ade3a1a4cadb066a6ce1e12fdeef79a701e36e6995efee83aa2bec89026534a"
+      "sha256": "3a98c2c58ee5393e6c3d53ae47dcd322c46a34aaea9982eb80249b38ab368813"
     },
     {
       "source": "notes/knowledge/README.md",
@@ -1094,7 +1094,7 @@
     {
       "source": "notes/knowledge/team-results-page.md",
       "target": "content/notes/knowledge/team-results-page.md",
-      "sha256": "214e90cd3d2bae56586a73a1f13cb4b92b9cc93244a1a83b866199bcf468870c"
+      "sha256": "3b280f9084f55c8582c8e53caf24b0d16dc13d5e6646c4bcf074dfbe095e04bc"
     },
     {
       "source": "notes/knowledge/training-advice-guardrails.md",
