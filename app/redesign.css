@@ -284,3 +284,15 @@ summary::-webkit-details-marker{display:none}
 .detail-pairs dd p+p{margin-block-start:6px}
 .ui-accordion-content .semantic{font-size:18px}
 @media(max-width:767px){.person .person-heading{padding:16px 16px 4px;align-items:flex-start}.person .portrait{inline-size:72px;block-size:72px}.person>.person-summary{margin:12px 16px;inline-size:calc(100% - 32px)}.person-more{margin:0 16px 12px}}
+/* 2026-11-14 v3 T10: 루트 화면 면·간격·고정 */
+.action-group,.route-banner,.context-rail>section,.material-entry{border-radius:16px}
+.guide-navigation button[aria-current]{background:var(--primary);color:var(--primary-fg)}
+.guide-navigation button[aria-current]:hover{background:var(--primary);color:var(--primary-fg);opacity:.92}
+.prep-content>h2,.workspace main>h2{font-size:24px;font-weight:700;margin:32px 0 16px}
+.prep-content>h2:first-child,.workspace main>h2:first-child{margin-block-start:0}
+.chapter-section[open]>summary{position:sticky;top:var(--task-header-height,80px);z-index:10;background:var(--bg)}
+@media(max-width:1000px){
+  .tasks-layout{display:grid;grid-template-columns:minmax(0,1fr)}
+  .context-rail{order:-1;display:flex!important;position:static;max-block-size:none;overflow-x:auto;overflow-y:visible;gap:12px;scroll-snap-type:x mandatory;scroll-padding-inline:16px;overscroll-behavior-x:contain;padding-block-end:8px;margin-block-end:16px}
+  .context-rail>section{flex:0 0 min(300px,82%);scroll-snap-align:start}
+}
