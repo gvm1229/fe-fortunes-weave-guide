@@ -1,8 +1,9 @@
 import people from '@/content/data/people-display.json';
 import classes from '@/assets/classes/manifest.json';
 import { personPortrait } from '@/lib/portraits';
+import items from '@/assets/items/manifest.json';
 import { Fragment } from 'react';
-import { Heart, Sparkles, Coins, Fish, Gem, Beef, Gift } from 'lucide-react';
+import { Heart, Sparkles, Coins, Fish, Gem, Beef, Gift, Sword, Package } from 'lucide-react';
 const symbols={bond:Heart,renown:Sparkles,gold:Coins,fish:Fish,ore:Gem,meat:Beef,gift:Gift};
 export function GameIcon({kind}:{kind:keyof typeof symbols}) {
   const Icon=symbols[kind];
@@ -18,7 +19,15 @@ const basePattern=new RegExp(String.raw`(?:지원|유대)(?:\s*(?:Lv\.?\s*)?\d+|
 const portraits=people as Record<string,{portrait:string}>;
 const classImages=classes.classes as Record<string,{file:string}>;
 const names=[...Object.keys(portraits),...Object.keys(classImages)].sort((a,b)=>b.length-a.length);
-const pattern=new RegExp('('+names.map(n=>n.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|')+'|'+basePattern.source+')','g');
+type ItemEntry={file:string|null;kind:string;fallback?:string;aliases?:string[]};
+/** 공식 물품 그림(assets/items/manifest.json). 게임은 종류·등급별 공용 그림을 쓴다. 별칭도 같은 그림으로 잡는다. */
+const itemByName=new Map<string,ItemEntry>();
+for(const [name,entry] of Object.entries((items as {items:Record<string,ItemEntry>}).items))for(const n of [name,...(entry.aliases||[])])if(n.length>=2&&!portraits[n]&&!classImages[n]&&!skills[n]&&!itemByName.has(n))itemByName.set(n,entry);
+const escape=(n:string)=>n.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+/** 두 글자 물품 이름(로카·성수·루나 등)은 다른 낱말 속에서 잡히지 않게 한글 경계를 둔다. */
+const itemPattern=Array.from(itemByName.keys()).sort((a,b)=>b.length-a.length).map(n=>(n.length<=2?`(?<![가-힣])${escape(n)}(?![가-힣])`:escape(n))+count).join('|');
+const pattern=new RegExp('('+names.map(escape).join('|')+'|'+itemPattern+'|'+basePattern.source+')','g');
+const itemNameRe=new RegExp('^('+Array.from(itemByName.keys()).sort((a,b)=>b.length-a.length).map(escape).join('|')+')([\\s\\S]*)$');
 const fileName=(src:string)=>src.replace(/^\/+/,'').replace(/^assets\/portraits\/post-timeskip\//,'assets/portraits/');
 export const portraitNames=new Map<string,string>(Object.entries(portraits).map(([name,v])=>[fileName(v.portrait),name]));
 export const classNamesByFile=new Map<string,string>(Object.entries(classImages).map(([name,v])=>[fileName(v.file),name]));
@@ -50,6 +59,10 @@ export function GameText({text,withSkills=false,part='1',skip}:{text:string;with
     if(portraits[word]||classImages[word])shown.add(word);
     if(portraits[word])return <Badge key={i} kind="person" className="named-person" icon={<img src={'/'+personPortrait(portraits[word].portrait,part,word)} alt="" loading="lazy"/>} label={word}/>;
     if(classImages[word])return <Badge key={i} kind="class" className="named-class" icon={<img src={'/'+classImages[word].file} alt="" loading="lazy"/>} label={word}/>;
+    const it=word.match(itemNameRe);
+    if(it){const entry=itemByName.get(it[1])!,kind=/^(fish|ore|meat|material)$/.test(entry.kind)?'material':entry.kind==='gift'?'gift':'item';
+      const Fallback={gem:Gem,box:Package,sword:Sword,fish:Fish,ore:Gem,meat:Beef,gift:Gift,coin:Coins}[entry.fallback||'']||Package;
+      return <Badge key={i} kind={kind} icon={entry.file?<img src={'/'+entry.file} alt="" loading="lazy" width={22} height={22}/>:<Fallback className="game-icon game-icon-item" size={22} aria-hidden="true"/>} label={it[1]} rest={it[2]}/>;}
     const c=classify(word);
     if(!c)return word;
     if(c.kind==='skill')return withSkills?<Badge key={i} kind="skill" icon={<img className="game-skill" src={`/assets/skills/${skills[c.label]}.webp`} alt="" loading="lazy"/>} label={c.label} rest={c.rest}/>:<Fragment key={i}>{word}</Fragment>;
