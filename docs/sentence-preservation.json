@@ -5,7 +5,7 @@
   "sentenceCount": 10374,
   "recordSentences": 8375,
   "documentCount": 328,
-  "documentSentences": 18654,
+  "documentSentences": 18689,
   "paragraphs": 3521,
   "paragraphViolations": 0,
   "method": "원문과 파생 자료의 공백 제외 문자·숫자·문장 수를 각각 대조. 표의 새 머리글과 파생 금액 행 복사본은 대조에서 제외. 원문 파일은 수정하지 않음."

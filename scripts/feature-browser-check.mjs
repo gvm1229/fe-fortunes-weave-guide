@@ -54,7 +54,7 @@ try{
  const face=()=>page.locator('.unit-card',{has:page.locator('.unit-name',{hasText:'세오도라'})}).locator('.unit-face').getAttribute('src');
  const before=await face();await page.getByRole('button',{name:'시간 경과 후 초상화',exact:true}).click();await page.waitForTimeout(150);
  const after=await face();assert.notEqual(after,before);assert.ok(after.includes('post-timeskip'));
- await page.getByRole('button',{name:'리네',exact:true}).click();await page.getByRole('dialog').waitFor();assert.ok((await page.locator('.sheet-scroll').innerText()).includes('최종 병종'));
+ await page.getByRole('button',{name:/^리네,/}).click();await page.getByRole('dialog').waitFor();assert.ok((await page.locator('.sheet-scroll').innerText()).includes('최종 병종'));
  await page.getByRole('dialog').getByRole('button',{name:'리브로 B',exact:true}).click();await page.waitForTimeout(200);assert.ok(await page.locator('#spell-physic').isVisible());await page.keyboard.press('Escape');await page.getByRole('dialog').waitFor({state:'detached'});
  checks.push('체험·초상화 기억·인물 시트·백마술 이동');
  await tab('루트 편성').click();
