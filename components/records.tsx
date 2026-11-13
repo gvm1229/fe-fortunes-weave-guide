@@ -1,4 +1,4 @@
-import { GameText } from './game-text';
+import { GameText, imageName, classNamesByFile, namesInText } from './game-text';
 import { createElement } from 'react';
 import type { Tree } from '@/lib/content';
 import { displayText } from '@/lib/display';
@@ -28,27 +28,38 @@ export function RecordRows({value,label}:{value:unknown;label:string}){
   collect(value,label);
   return rows.map((row,i)=><tr key={i}><th scope="row"><GameText text={row.label}/></th><td><ReadMore><Records value={row.value} disclose={false}/></ReadMore></td></tr>);
 }
-export function Records({value,disclose=true}:{value:unknown;disclose?:boolean}){
+export function Records({value,disclose=true}:{value:unknown;disclose?:boolean}){return recordNode(value,disclose,new Set(),false);}
+/** 한 칸·한 항목 안에서는 같은 얼굴 그림을 한 번만 붙인다. 모음은 그릴 때마다 새로 만든다. */
+function recordNode(value:unknown,disclose:boolean,seen:Set<string>,inCell:boolean):React.ReactNode{
   if(value===null||value===undefined||value==='')return null;
   if(typeof value==='boolean')return <span>{value?'예':'아니요'}</span>;
-  if(typeof value!=='object')return <span><GameText text={displayText(itemNames[String(value)]||String(value))} withSkills/></span>;
-  if('$prose' in value){const parts=(value as {$prose:string[]}).$prose,content=parts.length>2?<ul>{parts.map((s,i)=><li key={i}><GameText text={displayText(s)} withSkills/></li>)}</ul>:<p><GameText text={parts.map(displayText).join(' ')} withSkills/></p>;return disclose?<ReadMore>{content}</ReadMore>:content;}
-  if(Array.isArray(value))return <ul className="record-list">{value.map((v,i)=><li key={i}><Records value={v} disclose={disclose}/></li>)}</ul>;
-  return <table className="records"><tbody>{Object.entries(value).filter(([k,v])=>!hidden.has(k)&&v!==null&&v!==undefined&&(!Array.isArray(v)||v.length>0)).map(([k,v])=><tr key={k}><th scope="row">{labels[k]||(/^[123]$/.test(k)?`${k}부`:/[가-힣]/.test(k)?k:'추가 안내')}</th><td><ReadMore><Records value={v} disclose={false}/></ReadMore></td></tr>)}</tbody></table>;
+  if(typeof value!=='object'){const t=displayText(itemNames[String(value)]||String(value));return <span><GameText text={t} withSkills skip={textSkip(t,seen)}/></span>;}
+  if('$prose' in value){const parts=(value as {$prose:string[]}).$prose,joined=parts.map(displayText).join(' '),content=parts.length>2?<ul>{parts.map((s,i)=>{const t=displayText(s);return <li key={i}><GameText text={t} withSkills skip={textSkip(t,seen)}/></li>;})}</ul>:<p><GameText text={joined} withSkills skip={textSkip(joined,seen)}/></p>;return disclose?<ReadMore>{content}</ReadMore>:content;}
+  if(Array.isArray(value))return <ul className="record-list">{value.map((v,i)=><li key={i}>{recordNode(v,disclose,inCell?seen:new Set(),true)}</li>)}</ul>;
+  return <table className="records"><tbody>{Object.entries(value).filter(([k,v])=>!hidden.has(k)&&v!==null&&v!==undefined&&(!Array.isArray(v)||v.length>0)).map(([k,v])=><tr key={k}><th scope="row">{labels[k]||(/^[123]$/.test(k)?`${k}부`:/[가-힣]/.test(k)?k:'추가 안내')}</th><td><ReadMore>{recordNode(v,false,inCell?seen:new Set(),true)}</ReadMore></td></tr>)}</tbody></table>;
 }
+const blockTags=new Set(['h2','h3','h4','h5','li','p','td','th','summary','figcaption']);
+function namesIn(n:Tree,acc:Set<string>):Set<string>{if(typeof n!=='string'){if(n.tag==='img'&&n.attrs.src&&/\/(portraits|classes)\//.test(n.attrs.src)){const name=imageName(n.attrs.src,n.attrs.alt);if(name)acc.add(name);}if(n.tag==='button'){const t=flat(n.children);if(classNamesByFile.size&&[...classNamesByFile.values()].includes(t))acc.add(t);}n.children.forEach(c=>namesIn(c,acc));}return acc;}
+function flat(nodes:Tree[]):string{return nodes.map(n=>typeof n==='string'?n:flat(n.children)).join('');}
+/** 블록 안에 이미 있는 얼굴·병종 그림의 이름을 모아 글 속 그림을 다시 붙이지 않는다. */
+/** 가장 바깥 묶음(표 칸·목록 항목·문단·제목)마다 이름 모음을 새로 만들고, 그 안의 묶음은 같은 모음을 함께 쓴다. */
+function blockSkip(n:Exclude<Tree,string>,skip:Set<string>,inBlock:boolean):Set<string>{if(!blockTags.has(n.tag)&&!n.attrs['data-face-row'])return skip;return namesIn(n,inBlock?skip:new Set(skip));}
+const isBlock=(n:Exclude<Tree,string>)=>blockTags.has(n.tag)||!!n.attrs['data-face-row'];
+/** 글 조각을 그릴 때 이미 그림이 붙은 이름을 같은 묶음에서 다시 붙이지 않는다. */
+function textSkip(text:string,skip:Set<string>):ReadonlySet<string>{const before=new Set(skip);namesInText(text).forEach(name=>skip.add(name));return before;}
 const allowed=new Set(['nav','section','article','div','p','span','strong','b','em','small','h2','h3','h4','h5','ul','ol','li','dl','dt','dd','table','caption','colgroup','col','thead','tbody','tfoot','tr','th','td','figure','figcaption','br','details','summary','a','img']);
 export function Semantic({nodes,route,part,onDoc,onSpell,hidePortraits=false,hideGodPortraits=false,changesOnly=false}:{nodes:Tree[];route:string;part:string;onDoc?:(url:string)=>void;onSpell?:(id:string)=>void;hidePortraits?:boolean;hideGodPortraits?:boolean;changesOnly?:boolean}){
   const seen=new Set<string>();
   const enrichSkills=!JSON.stringify(nodes).includes("/skills/");
-  function render(n:Tree,i:number):React.ReactNode {
-    if(typeof n==='string')return <GameText key={i} text={displayText(n)} part={part} withSkills={enrichSkills}/>;
-    const a=n.attrs;
+  function render(n:Tree,i:number,parentSkip:Set<string>=new Set(),inBlock=false):React.ReactNode {
+    if(typeof n==='string')return <GameText key={i} text={displayText(n)} part={part} withSkills={enrichSkills} skip={textSkip(displayText(n),parentSkip)}/>;
+    const a=n.attrs,skip=blockSkip(n,parentSkip,inBlock),sub=(c:Tree,j:number)=>render(c,j,skip,inBlock||isBlock(n));
     if(changesOnly&&a['data-change']==='keep')return null;
     if(a['data-shared-notice'])return null;
-    const children=()=>n.children.filter(child=>!['table','thead','tbody','tfoot','tr','colgroup'].includes(n.tag)||typeof child!=='string'||child.trim()).map(render);
+    const children=()=>n.children.filter(child=>!['table','thead','tbody','tfoot','tr','colgroup'].includes(n.tag)||typeof child!=='string'||child.trim()).map(sub);
     if(a['data-face-list'])return <ReadMore key={i}><ul data-face-list>{children()}</ul></ReadMore>;
     if(a['data-readable-group'])return <ReadMore key={i}>{a['data-readable-group']==='prose'?createElement(n.tag,{},children()):children()}</ReadMore>;
-    if(n.tag==='tr'||n.tag==='li')seen.clear();
+    if(!inBlock&&(n.tag==='tr'||isBlock(n)))seen.clear();
     if(n.tag==='br')return <br key={i}/>;
     if(n.tag==='col')return <col key={i}/>;
     for(const key of ['data-weekly-route','data-buying-route','data-material-route'])if(a[key]&&route!=='all'&&a[key]!==(part==='2'?'war':part==='3'?'part3':route))return null;
@@ -57,18 +68,18 @@ export function Semantic({nodes,route,part,onDoc,onSpell,hidePortraits=false,hid
     if(a['data-modal-all-only']&&route!=='all')return null;
     if(n.tag==='img'){
       if(!a.src||hidePortraits&&a.src.includes('/portraits/')||hideGodPortraits&&a.src.includes('/gods/'))return null;
-      if(a.src.includes('/gods/')){if(seen.has(a.src))return null;seen.add(a.src);}
+      if(a.src.includes('/gods/')||a.src.includes('/portraits/')){if(seen.has(a.src))return null;seen.add(a.src);}
       if(!/\/(portraits|gods|classes|skills|weapons|traits)\//.test(a.src))return <GuideImage key={i} src={`/${a.src.replace(/^\/+/, '')}`} alt={a.alt}/>;
       return <img key={i} src={`/${personPortrait(a.src,part,a.alt?.replace(/ 초상화.*$/,''))}`} alt={a.alt||''} title={a.title} loading="lazy" className={a.src.includes('/classes/')||a.src.includes('/skills/')||a.src.includes('/traits/')?'inline-icon':a.src.includes('/gods/')?'god-portrait':'media-portrait'}/>;
     }
-    if(n.tag==='a'&&n.children.some(child=>typeof child!=='string'&&child.tag==='img'&&!/\/(portraits|gods|classes|skills|weapons|traits)\//.test(child.attrs.src||'')))return <span key={i}>{n.children.map(render)}</span>;
+    if(n.tag==='a'&&n.children.some(child=>typeof child!=='string'&&child.tag==='img'&&!/\/(portraits|gods|classes|skills|weapons|traits)\//.test(child.attrs.src||'')))return <span key={i}>{n.children.map(sub)}</span>;
     if(n.tag==='button'){
       const url=a['data-reference-url']||a['data-unit-review']||(a['data-class-slug']?`notes/classes/${a['data-class-slug']}.md`:undefined);
       if(url||a['data-spell-jump'])return <button key={i} className="text-link" title={a.title} onClick={()=>a['data-spell-jump']?onSpell?.(a['data-spell-jump']):onDoc?.(url!)}>{children()}</button>;
       return <span key={i}>{children()}</span>;
     }
-    if(n.tag==='a'&&a.href){if(/^https?:/.test(a.href))return <a key={i} href={a.href} target="_blank" rel="noreferrer">{n.children.map(render)}</a>;return <button key={i} className="text-link" onClick={()=>onDoc?.(a.href!)}>{n.children.map(render)}</button>;}
+    if(n.tag==='a'&&a.href){if(/^https?:/.test(a.href))return <a key={i} href={a.href} target="_blank" rel="noreferrer">{n.children.map(sub)}</a>;return <button key={i} className="text-link" onClick={()=>onDoc?.(a.href!)}>{n.children.map(sub)}</button>;}
     return createElement(allowed.has(n.tag)?n.tag:'div',{key:i,...Object.fromEntries(Object.entries(a).filter(([key])=>key.startsWith('data-')||['id','title','aria-label'].includes(key))),...(a.colspan?{colSpan:Number(a.colspan)}:{}),...(a.rowspan?{rowSpan:Number(a.rowspan)}:{})},children());
   }
-  return <div className="semantic">{nodes.map(render)}</div>;
+  return <div className="semantic">{nodes.map((n,i)=>render(n,i))}</div>;
 }
