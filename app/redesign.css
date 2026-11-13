@@ -97,7 +97,7 @@ html body:has(.app-shell),html body:has(.team-page){background:#F4F3F0}html.dark
 .map-thumbnail>button:first-child{background:transparent;padding:0;flex-wrap:wrap;font-weight:600}
 .map-thumbnail .button{background:var(--secondary-soft);color:var(--text)}
 .people-grid,.material-grid{gap:24px}
-.person,.material-entry,.team-unit{border-radius:24px;background:var(--surface)}
+.person,.material-entry{border-radius:24px;background:var(--surface)}
 .person>.person-heading{background:var(--surface);padding-block:28px}
 .person-info th,.records th{background:var(--surface-2)}
 .person-info tr:nth-child(even){background:transparent}
@@ -226,7 +226,7 @@ summary::-webkit-details-marker{display:none}
 .class-path .text-link,.class-path .role-chip{padding:8px 12px;min-height:44px;line-height:28px}
 .class-document-heading{display:flex;align-items:center;gap:16px;margin-block-end:24px}
 .class-document-heading>img{width:80px;height:80px;object-fit:contain}
-.team-unit .semantic button,.team-unit .semantic a{margin:4px 8px 4px 0}
+
 .team-reference .semantic article,.spell-panel .semantic article{padding:24px;margin-block:16px;border:1px solid var(--line);background:var(--surface);border-radius:16px}
 .spell-panel .semantic img{width:28px;height:28px;object-fit:contain;display:inline-block;vertical-align:middle;margin:0 8px 0 0}
 .spell-panel .semantic h3{font-weight:700;text-decoration:underline;text-underline-offset:5px}

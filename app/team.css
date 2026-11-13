@@ -1,0 +1,140 @@
+/* 2026-11-14 재설계 v3: 팀 화면 — 4탭, 최종 25인은 스크롤 없는 격자. 값은 docs/fable-plan.md T7~T9. */
+.team-page{max-width:none;margin:0;padding:0;background:var(--bg);color:var(--text)}
+.team-page[data-tab=final]{block-size:100dvh;overflow:hidden;display:grid;grid-template-rows:auto minmax(0,1fr)}
+.team-head{display:grid;gap:8px;padding:12px 12px 0}
+.team-row{display:flex;align-items:center;gap:12px;min-block-size:48px;min-inline-size:0}
+.team-title{font-size:20px;margin:0;white-space:nowrap}
+.team-head .back-link{display:inline-flex;align-items:center;gap:6px;min-block-size:44px;text-decoration:none;font-size:18px;white-space:nowrap}
+.team-head .ui-tabs-list{flex:0 1 auto;min-inline-size:0}
+.team-count{margin-inline-start:auto;font-size:18px;color:var(--muted);white-space:nowrap}
+.team-row>.icon-button{margin-inline-start:auto}
+.team-count+.icon-button{margin-inline-start:0}
+.team-options{min-block-size:44px;gap:16px}
+.team-options .scenario-toggles{flex-wrap:nowrap}
+.wide-options{display:flex;align-items:center;gap:16px;margin-inline-start:auto}
+.wide-options .ui-tabs-list{display:none}
+.scenario-select,.narrow-options{display:none}
+.team-popover{display:grid;gap:12px;inline-size:min(92vw,360px)}
+.team-popover .muted{margin:0}
+@media(max-width:1199px){.team-options .scenario-toggles,.wide-options,.team-count{display:none}.scenario-select,.narrow-options{display:inline-flex}.scenario-select{flex:1;min-inline-size:0;max-inline-size:360px;background:var(--surface);color:var(--text)}.narrow-options{margin-inline-start:auto}}
+.team-head .team-title{display:none}
+/* 최종 25인 격자: 남은 높이를 행 수로 나눈다. 격자 위 여백은 첫 줄 배지 자리다. */
+.final-panel{min-block-size:0;margin:0}
+.final-grid{list-style:none;margin:0;block-size:100%;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));grid-template-rows:repeat(5,minmax(0,1fr));gap:8px;padding:12px 12px 12px;overflow:visible}
+.unit-cell{position:relative;container:unit/size;min-inline-size:0;min-block-size:0}
+.unit-card{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;padding:0;border:6px solid transparent;border-radius:10px;background:var(--surface);color:var(--text);overflow:hidden;text-align:center;font:inherit}
+.unit-card[data-swapped]{border-color:var(--swap)}
+.unit-face{display:block;inline-size:clamp(28px,calc(100cqh - 36px),96px);aspect-ratio:1;block-size:auto;object-fit:contain;border-radius:8px;flex-shrink:0}
+.unit-text{display:flex;flex-direction:column;align-items:center;min-inline-size:0;max-inline-size:100%}
+.unit-name{font-size:18px;font-weight:600;line-height:20px;letter-spacing:-.04em;white-space:nowrap}
+.unit-class,.unit-role,.unit-weapons{display:none}
+.unit-class{align-items:center;gap:2px;font-size:18px;line-height:24px;white-space:nowrap}
+.unit-class img{inline-size:20px;block-size:20px;object-fit:contain}
+.unit-role{font-size:18px;line-height:21px;color:var(--muted);word-break:keep-all}
+.unit-weapons{gap:4px;align-items:center}
+.unit-weapons img{inline-size:24px;block-size:24px;object-fit:contain}
+@container unit (min-width:130px) and (min-height:150px) and (max-aspect-ratio:5/4){
+  .unit-card{padding:4px;border-radius:14px}
+  .unit-face{inline-size:min(calc(100cqw - 20px),calc(100cqh - 66px))}
+  .unit-name{font-size:20px;font-weight:700;line-height:22px;letter-spacing:0}
+  .unit-class{display:flex}
+}
+@container unit (min-width:190px) and (min-height:300px) and (max-aspect-ratio:5/4){
+  .unit-face{inline-size:min(calc(100cqw - 20px),calc(100cqh - 152px))}
+  .unit-name{font-size:22px;line-height:28px}
+  .unit-class{line-height:28px}.unit-class img{inline-size:28px;block-size:28px}
+  .unit-role{display:block;line-height:24px}
+  .unit-weapons{display:flex}
+}
+@container unit (min-aspect-ratio:5/4) and (min-width:236px) and (min-height:104px){
+  .unit-card{flex-direction:row;justify-content:flex-start;gap:8px;padding:4px;border-radius:14px;text-align:start}
+  .unit-face{inline-size:min(calc(100cqh - 20px),calc(100cqw - 168px))}
+  .unit-text{align-items:flex-start}
+  .unit-name{font-size:20px;font-weight:700;line-height:22px;letter-spacing:0}
+  .unit-class{display:flex}
+  .unit-role{display:block}
+}
+@container unit (min-aspect-ratio:5/4) and (min-width:300px) and (min-height:150px){
+  .unit-card{padding:8px;gap:12px}
+  .unit-face{inline-size:min(calc(100cqh - 28px),144px)}
+  .unit-name{font-size:22px;line-height:28px}
+  .unit-class{line-height:28px}.unit-class img{inline-size:28px;block-size:28px}
+  .unit-role{line-height:24px}
+  .unit-weapons{display:flex}
+}
+.swap-badge{position:absolute;inset-block-start:-12px;inset-inline-end:6px;z-index:2;display:inline-flex;align-items:center;gap:4px;block-size:24px;padding:0 6px 0 2px;border-radius:6px;background:var(--swap);color:var(--swap-fg);font-size:18px;font-weight:600;line-height:24px;white-space:nowrap;pointer-events:none}
+.swap-badge img{inline-size:20px;block-size:20px;border-radius:4px;object-fit:contain}
+.swap-badge span+span{margin-inline-start:-0px}
+@media(min-width:600px) and (max-aspect-ratio:1/1){.final-grid{gap:8px}}
+@media(min-width:1000px) and (max-aspect-ratio:1/1){.final-grid{gap:12px}}
+@media(min-width:600px) and (min-aspect-ratio:1/1) and (max-height:759px){.final-grid{gap:6px;padding:12px 8px 8px}.team-head{gap:6px}}
+@media(min-width:1600px) and (min-aspect-ratio:1/1){.final-grid{gap:12px}}
+@media(min-width:2560px) and (min-aspect-ratio:1/1){.final-grid{gap:16px}}
+@media(min-width:600px) and (max-height:559px){.final-grid{grid-template-columns:repeat(7,minmax(0,1fr));grid-template-rows:repeat(4,minmax(0,1fr));gap:4px;padding:14px 8px 8px}.team-options{display:none}}
+/* 휴대폰(599px 이하): 4열 7행. 2026-11-14 사용자 답에 따라 칸 안 글자는 14px까지 허용한다. */
+@media(max-width:599px){
+  .team-head{padding:8px 8px 0;gap:4px}
+  .team-row{gap:8px}
+  .team-back-label{display:none}
+  .team-head .team-title{display:block;font-size:18px}
+  .team-row:first-child{flex-wrap:wrap}
+  .team-head .ui-tabs-list{order:3;flex:1 0 100%;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+  .team-head .ui-tabs-list button{padding:0 4px}
+  .team-row:first-child>.icon-button{margin-inline-start:auto}
+  .final-grid{grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:repeat(7,minmax(0,1fr));gap:4px;padding:14px 8px 8px}
+  .unit-card{border-radius:10px}
+  .unit-face{inline-size:clamp(24px,calc(100cqh - 32px),96px)}
+  .unit-name{font-size:14px;line-height:16px;letter-spacing:-.02em}
+  .swap-badge{flex-direction:column;align-items:flex-end;block-size:auto;gap:0;padding:1px 4px;inset-block-start:-10px;inset-inline-end:2px;font-size:14px;line-height:15px;border-radius:5px}
+  .swap-badge img{display:none}
+}
+/* 백마술·루트 편성·비교 근거 탭: 하나의 왼쪽 선, 본문 최대 폭 */
+.team-panel{max-inline-size:1184px;margin:0 auto;padding:24px 24px 64px}
+@media(max-width:767px){.team-panel{padding:16px 16px 48px}}
+.team-panel h2{font-size:24px;font-weight:700;margin:0 0 16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.team-panel h3{font-size:22px;font-weight:700;margin:24px 0 12px}
+.team-panel .semantic :is(section,article){margin:0;padding:0;border:0;background:none}
+.team-panel .semantic table{inline-size:100%}
+.team-panel .semantic [data-face-list]{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:8px 0}
+.team-panel .semantic [data-face-list]>li{margin:0}
+.team-panel .semantic [data-face-row]{display:inline-flex;align-items:center;gap:6px;background:var(--secondary-soft);border-radius:8px;padding:4px 10px 4px 4px}
+.team-panel .semantic .media-portrait,.team-panel .semantic .god-portrait{inline-size:40px;block-size:40px;object-fit:contain;border-radius:8px;margin:0}
+.team-controls{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-block-end:24px}
+.team-controls .button{margin-inline-start:auto}
+.route-intro,.chosen-plan,.detail-section{padding:24px;margin-block-end:24px}
+.route-intro .muted{font-size:18px}
+.priority-chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:12px 0}
+.priority-chips li{display:inline-flex;align-items:center;gap:6px;background:var(--secondary-soft);border-radius:8px;padding:4px 10px 4px 4px;font-weight:600}
+.priority-chips img{inline-size:28px;block-size:28px;border-radius:6px;object-fit:contain}
+.route-notes{margin:0;padding-inline-start:24px}.route-notes li{margin-block:4px}
+.route-unit-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px;align-items:start}
+@media(max-width:767px){.route-unit-grid{grid-template-columns:minmax(0,1fr)}}
+.route-unit{padding:20px}
+.route-unit-head{display:flex;gap:16px;align-items:flex-start;margin-block-end:16px}
+.route-unit-head h3{font-size:22px;margin:0 0 4px}
+.route-unit-head p{margin:0}
+.route-unit-face{inline-size:72px;block-size:72px;border-radius:12px;object-fit:contain;flex-shrink:0}
+.route-unit-class{display:flex;align-items:center;flex-wrap:wrap;gap:8px}
+.route-unit-class img{inline-size:28px;block-size:28px;object-fit:contain}
+.route-weapons{display:flex;flex-wrap:wrap;gap:6px 16px}
+.route-weapons span{display:inline-flex;align-items:center;gap:4px}
+.route-weapons img{inline-size:24px;block-size:24px;object-fit:contain}
+.spell-chips{display:flex;flex-wrap:wrap;gap:8px}
+.spell-chips .button{min-block-size:40px;padding:4px 6px 4px 12px;background:var(--secondary-soft);color:var(--text)}
+.route-unit .detail-pairs dd p{margin:0}
+.swap-list{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:12px}
+.swap-list li{border-block-start:1px solid var(--line);padding-block-start:12px}
+.swap-list p{margin:4px 0 0}
+.detail-accordion{background:var(--surface);border-radius:16px;padding:0 24px;margin-block-end:24px}
+.detail-accordion .ui-accordion-item:last-child{border-bottom:0}
+.detail-accordion .semantic{max-inline-size:880px}
+.reference-docs{display:grid;gap:16px;justify-items:start}
+.spell-book .semantic{max-inline-size:none}
+.spell-book .semantic>section>div:has(> [id^="spell-"]),.spell-book .semantic [data-spell-grid]{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.team-panel [id^="spell-"]{padding:20px;margin:0;border:0;border-radius:16px;background:var(--surface)}
+.team-panel [id^="spell-"] h4{font-size:22px;font-weight:700;text-decoration:none;margin:0 0 8px}
+.unit-sheet .person-heading{display:flex;gap:16px;align-items:center;margin-block-end:16px}
+.unit-sheet .portrait{inline-size:96px;block-size:96px;border-radius:12px;object-fit:contain}
+.unit-sheet-role{margin:0 0 8px;font-weight:600}
+.unit-sheet .signature p{margin:0}
+.unit-sheet .signature+.signature{margin-block-start:12px}
