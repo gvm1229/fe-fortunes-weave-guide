@@ -8,7 +8,7 @@
 
 ## 위치 화면
 
-![6장 메인 진행 중 · 아므루 벽화](../../assets/events/kai06-mural.png)
+![6장 메인 진행 중 · 아므루 벽화](../../assets/events/cai06-mural.png)
 
 ## 근거
 

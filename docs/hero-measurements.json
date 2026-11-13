@@ -8,7 +8,7 @@
       "theme": "light",
       "tiles": [
         {
-          "route": "kai",
+          "route": "cai",
           "tile": [
             330,
             700
@@ -63,7 +63,7 @@
       "theme": "dark",
       "tiles": [
         {
-          "route": "kai",
+          "route": "cai",
           "tile": [
             330,
             700
@@ -118,7 +118,7 @@
       "theme": "light",
       "tiles": [
         {
-          "route": "kai",
+          "route": "cai",
           "tile": [
             165.5,
             304
@@ -173,7 +173,7 @@
       "theme": "dark",
       "tiles": [
         {
-          "route": "kai",
+          "route": "cai",
           "tile": [
             165.5,
             304

@@ -83,7 +83,7 @@
 [지도 열기 · 카이 선택 후 Dagsion Vandahl Merchant 검색](https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624208 "weapon-map")
 
 
-[이 루트 본문 체크 보기](../../personalized.html#buy-kai-first)
+[이 루트 본문 체크 보기](../../personalized.html#buy-cai-first)
 
 ## 2부 입수
 

@@ -1,5 +1,5 @@
 import type { Tree } from './content';
-const routeNames:Record<string,string>={theodora:'세오도라',leda:'레다',dietrich:'디트리히',kai:'카이'};
+const routeNames:Record<string,string>={theodora:'세오도라',leda:'레다',dietrich:'디트리히',cai:'카이'};
 export function scopeTree(nodes:Tree[],route:string,part:string):Tree[]{
   function text(n:Tree):string{return typeof n==='string'?n:n.children.map(text).join('');}
   function visit(n:Tree):Tree|null{

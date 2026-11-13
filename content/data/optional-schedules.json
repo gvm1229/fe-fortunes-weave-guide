@@ -1365,219 +1365,219 @@
         "newScenes": 0
       }
     },
-    "kai": {
+    "cai": {
       "source": "https://note.com/yaoya_neko/n/n63ee6cde8095",
       "watchEvents": [
         {
-          "id": "watch-kai-0321",
+          "id": "watch-cai-0321",
           "chapter": 5,
           "date": "3/21",
           "time": "12:00",
           "checkActions": [
-            "watch-kai-0321--return",
-            "watch-kai-0321--watch"
+            "watch-cai-0321--return",
+            "watch-cai-0321--watch"
           ],
           "source": "https://note.com/yaoya_neko/n/n63ee6cde8095"
         },
         {
-          "id": "watch-kai-0507",
+          "id": "watch-cai-0507",
           "chapter": 6,
           "date": "5/7",
           "time": "12:00",
           "checkActions": [
-            "watch-kai-0507--return",
-            "watch-kai-0507--watch"
+            "watch-cai-0507--return",
+            "watch-cai-0507--watch"
           ],
           "source": "https://note.com/yaoya_neko/n/n63ee6cde8095"
         },
         {
-          "id": "watch-kai-0615",
+          "id": "watch-cai-0615",
           "chapter": 7,
           "date": "6/15",
           "time": "12:00",
           "checkActions": [
-            "watch-kai-0615--return",
-            "watch-kai-0615--watch"
+            "watch-cai-0615--return",
+            "watch-cai-0615--watch"
           ],
           "source": "https://note.com/yaoya_neko/n/n63ee6cde8095"
         },
         {
-          "id": "watch-kai-0916",
+          "id": "watch-cai-0916",
           "chapter": 10,
           "date": "9/16",
           "time": "12:00",
           "checkActions": [
-            "watch-kai-0916--return",
-            "watch-kai-0916--watch"
+            "watch-cai-0916--return",
+            "watch-cai-0916--watch"
           ],
           "source": "https://note.com/yaoya_neko/n/n63ee6cde8095"
         },
         {
-          "id": "watch-kai-0927",
+          "id": "watch-cai-0927",
           "chapter": 10,
           "date": "9/27",
           "time": "12:00",
           "checkActions": [
-            "watch-kai-0927--return",
-            "watch-kai-0927--watch"
+            "watch-cai-0927--return",
+            "watch-cai-0927--watch"
           ],
           "source": "https://note.com/yaoya_neko/n/n63ee6cde8095"
         },
         {
-          "id": "watch-kai-1004",
+          "id": "watch-cai-1004",
           "chapter": 10,
           "date": "10/4",
           "time": null,
           "checkActions": [
-            "watch-kai-1004--return",
-            "watch-kai-1004--watch"
+            "watch-cai-1004--return",
+            "watch-cai-1004--watch"
           ],
           "source": "https://marigoldfe.com/fortunes-weave/calendar"
         },
         {
-          "id": "watch-kai-1104",
+          "id": "watch-cai-1104",
           "chapter": 12,
           "date": "11/4",
           "time": null,
           "checkActions": [
-            "watch-kai-1104--return",
-            "watch-kai-1104--watch"
+            "watch-cai-1104--return",
+            "watch-cai-1104--watch"
           ],
           "source": "https://marigoldfe.com/fortunes-weave/calendar"
         }
       ],
       "holidayEvents": [
         {
-          "id": "holiday-kai-0317",
+          "id": "holiday-cai-0317",
           "chapter": 5,
           "date": "3/17",
           "sourceName": "Golden Crow's Rest Day",
           "checkActions": [
-            "holiday-kai-0317--return",
-            "holiday-kai-0317--check"
+            "holiday-cai-0317--return",
+            "holiday-cai-0317--check"
           ],
           "source": "https://marigoldfe.com/fortunes-weave/calendar"
         },
         {
-          "id": "holiday-kai-0517",
+          "id": "holiday-cai-0517",
           "chapter": 6,
           "date": "5/17",
           "sourceName": "Golden Crow's Rest Day",
           "checkActions": [
-            "holiday-kai-0517--return",
-            "holiday-kai-0517--check"
+            "holiday-cai-0517--return",
+            "holiday-cai-0517--check"
           ],
           "source": "https://marigoldfe.com/fortunes-weave/calendar"
         },
         {
-          "id": "holiday-kai-0617",
+          "id": "holiday-cai-0617",
           "chapter": 7,
           "date": "6/17",
           "sourceName": "Golden Crow's Rest Day",
           "checkActions": [
-            "holiday-kai-0617--return",
-            "holiday-kai-0617--check"
+            "holiday-cai-0617--return",
+            "holiday-cai-0617--check"
           ],
           "source": "https://marigoldfe.com/fortunes-weave/calendar"
         },
         {
-          "id": "holiday-kai-0817",
+          "id": "holiday-cai-0817",
           "chapter": 8,
           "date": "8/17",
           "sourceName": "Golden Crow's Rest Day",
           "checkActions": [
-            "holiday-kai-0817--return",
-            "holiday-kai-0817--check"
+            "holiday-cai-0817--return",
+            "holiday-cai-0817--check"
           ],
           "source": "https://marigoldfe.com/fortunes-weave/calendar"
         },
         {
-          "id": "holiday-kai-0917",
+          "id": "holiday-cai-0917",
           "chapter": 10,
           "date": "9/17",
           "sourceName": "Golden Crow's Rest Day",
           "checkActions": [
-            "holiday-kai-0917--return",
-            "holiday-kai-0917--check"
+            "holiday-cai-0917--return",
+            "holiday-cai-0917--check"
           ],
           "source": "https://marigoldfe.com/fortunes-weave/calendar"
         },
         {
-          "id": "holiday-kai-1017",
+          "id": "holiday-cai-1017",
           "chapter": 11,
           "date": "10/17",
           "sourceName": "Golden Crow's Rest Day",
           "checkActions": [
-            "holiday-kai-1017--return",
-            "holiday-kai-1017--check"
+            "holiday-cai-1017--return",
+            "holiday-cai-1017--check"
           ],
           "source": "https://marigoldfe.com/fortunes-weave/calendar"
         },
         {
-          "id": "holiday-kai-1117",
+          "id": "holiday-cai-1117",
           "chapter": 12,
           "date": "11/17",
           "sourceName": "Golden Crow's Rest Day",
           "checkActions": [
-            "holiday-kai-1117--return",
-            "holiday-kai-1117--check"
+            "holiday-cai-1117--return",
+            "holiday-cai-1117--check"
           ],
           "source": "https://marigoldfe.com/fortunes-weave/calendar"
         },
         {
-          "id": "holiday-kai-0424",
+          "id": "holiday-cai-0424",
           "chapter": 6,
           "date": "4/24",
           "sourceName": "Smyrnos's Magic Gala",
           "checkActions": [
-            "holiday-kai-0424--return",
-            "holiday-kai-0424--check"
+            "holiday-cai-0424--return",
+            "holiday-cai-0424--check"
           ],
           "source": "https://marigoldfe.com/fortunes-weave/calendar"
         },
         {
-          "id": "holiday-kai-0511",
+          "id": "holiday-cai-0511",
           "chapter": 6,
           "date": "5/11",
           "sourceName": "Kalla's Arts Festival",
           "checkActions": [
-            "holiday-kai-0511--return",
-            "holiday-kai-0511--check"
+            "holiday-cai-0511--return",
+            "holiday-cai-0511--check"
           ],
           "source": "https://marigoldfe.com/fortunes-weave/calendar"
         },
         {
-          "id": "holiday-kai-0614",
+          "id": "holiday-cai-0614",
           "chapter": 7,
           "date": "6/14",
           "sourceName": "Fortuna's Fate Ritual",
           "checkActions": [
-            "holiday-kai-0614--return",
-            "holiday-kai-0614--check"
+            "holiday-cai-0614--return",
+            "holiday-cai-0614--check"
           ],
           "source": "https://marigoldfe.com/fortunes-weave/calendar"
         }
       ],
       "newScenes": [
-        "scene-kai02-chase"
+        "scene-cai02-chase"
       ],
       "calendarChecks": [
-        "calendar-kai-ch03",
-        "calendar-kai-ch04",
-        "calendar-kai-ch05",
-        "calendar-kai-ch06",
-        "calendar-kai-ch07",
-        "calendar-kai-ch08",
-        "calendar-kai-ch09",
-        "calendar-kai-ch10",
-        "calendar-kai-ch11",
-        "calendar-kai-ch12"
+        "calendar-cai-ch03",
+        "calendar-cai-ch04",
+        "calendar-cai-ch05",
+        "calendar-cai-ch06",
+        "calendar-cai-ch07",
+        "calendar-cai-ch08",
+        "calendar-cai-ch09",
+        "calendar-cai-ch10",
+        "calendar-cai-ch11",
+        "calendar-cai-ch12"
       ],
       "datedGroups": [
         {
-          "id": "watch-kai-0321",
+          "id": "watch-cai-0321",
           "schedule": {
-            "route": "kai",
+            "route": "cai",
             "chapter": 5,
             "month": 3,
             "day": 21,
@@ -1588,9 +1588,9 @@
           }
         },
         {
-          "id": "holiday-kai-0317",
+          "id": "holiday-cai-0317",
           "schedule": {
-            "route": "kai",
+            "route": "cai",
             "chapter": 5,
             "month": 3,
             "day": 17,
@@ -1600,9 +1600,9 @@
           }
         },
         {
-          "id": "watch-kai-0507",
+          "id": "watch-cai-0507",
           "schedule": {
-            "route": "kai",
+            "route": "cai",
             "chapter": 6,
             "month": 5,
             "day": 7,
@@ -1613,9 +1613,9 @@
           }
         },
         {
-          "id": "holiday-kai-0517",
+          "id": "holiday-cai-0517",
           "schedule": {
-            "route": "kai",
+            "route": "cai",
             "chapter": 6,
             "month": 5,
             "day": 17,
@@ -1625,9 +1625,9 @@
           }
         },
         {
-          "id": "holiday-kai-0424",
+          "id": "holiday-cai-0424",
           "schedule": {
-            "route": "kai",
+            "route": "cai",
             "chapter": 6,
             "month": 4,
             "day": 24,
@@ -1637,9 +1637,9 @@
           }
         },
         {
-          "id": "holiday-kai-0511",
+          "id": "holiday-cai-0511",
           "schedule": {
-            "route": "kai",
+            "route": "cai",
             "chapter": 6,
             "month": 5,
             "day": 11,
@@ -1649,9 +1649,9 @@
           }
         },
         {
-          "id": "watch-kai-0615",
+          "id": "watch-cai-0615",
           "schedule": {
-            "route": "kai",
+            "route": "cai",
             "chapter": 7,
             "month": 6,
             "day": 15,
@@ -1662,9 +1662,9 @@
           }
         },
         {
-          "id": "holiday-kai-0617",
+          "id": "holiday-cai-0617",
           "schedule": {
-            "route": "kai",
+            "route": "cai",
             "chapter": 7,
             "month": 6,
             "day": 17,
@@ -1674,9 +1674,9 @@
           }
         },
         {
-          "id": "holiday-kai-0614",
+          "id": "holiday-cai-0614",
           "schedule": {
-            "route": "kai",
+            "route": "cai",
             "chapter": 7,
             "month": 6,
             "day": 14,
@@ -1686,9 +1686,9 @@
           }
         },
         {
-          "id": "holiday-kai-0817",
+          "id": "holiday-cai-0817",
           "schedule": {
-            "route": "kai",
+            "route": "cai",
             "chapter": 8,
             "month": 8,
             "day": 17,
@@ -1698,9 +1698,9 @@
           }
         },
         {
-          "id": "watch-kai-0916",
+          "id": "watch-cai-0916",
           "schedule": {
-            "route": "kai",
+            "route": "cai",
             "chapter": 10,
             "month": 9,
             "day": 16,
@@ -1711,9 +1711,9 @@
           }
         },
         {
-          "id": "watch-kai-0927",
+          "id": "watch-cai-0927",
           "schedule": {
-            "route": "kai",
+            "route": "cai",
             "chapter": 10,
             "month": 9,
             "day": 27,
@@ -1724,9 +1724,9 @@
           }
         },
         {
-          "id": "watch-kai-1004",
+          "id": "watch-cai-1004",
           "schedule": {
-            "route": "kai",
+            "route": "cai",
             "chapter": 10,
             "month": 10,
             "day": 4,
@@ -1737,9 +1737,9 @@
           }
         },
         {
-          "id": "holiday-kai-0917",
+          "id": "holiday-cai-0917",
           "schedule": {
-            "route": "kai",
+            "route": "cai",
             "chapter": 10,
             "month": 9,
             "day": 17,
@@ -1749,9 +1749,9 @@
           }
         },
         {
-          "id": "dated-kai-paralogues0917",
+          "id": "dated-cai-paralogues0917",
           "schedule": {
-            "route": "kai",
+            "route": "cai",
             "chapter": 10,
             "month": 9,
             "day": 17,
@@ -1761,9 +1761,9 @@
           }
         },
         {
-          "id": "dated-kai-anna0924",
+          "id": "dated-cai-anna0924",
           "schedule": {
-            "route": "kai",
+            "route": "cai",
             "chapter": 10,
             "month": 9,
             "day": 24,
@@ -1773,9 +1773,9 @@
           }
         },
         {
-          "id": "holiday-kai-1017",
+          "id": "holiday-cai-1017",
           "schedule": {
-            "route": "kai",
+            "route": "cai",
             "chapter": 11,
             "month": 10,
             "day": 17,
@@ -1785,9 +1785,9 @@
           }
         },
         {
-          "id": "dated-kai-orhell1018",
+          "id": "dated-cai-orhell1018",
           "schedule": {
-            "route": "kai",
+            "route": "cai",
             "chapter": 11,
             "month": 10,
             "day": 18,
@@ -1797,9 +1797,9 @@
           }
         },
         {
-          "id": "watch-kai-1104",
+          "id": "watch-cai-1104",
           "schedule": {
-            "route": "kai",
+            "route": "cai",
             "chapter": 12,
             "month": 11,
             "day": 4,
@@ -1810,9 +1810,9 @@
           }
         },
         {
-          "id": "holiday-kai-1117",
+          "id": "holiday-cai-1117",
           "schedule": {
-            "route": "kai",
+            "route": "cai",
             "chapter": 12,
             "month": 11,
             "day": 17,
@@ -1824,21 +1824,21 @@
       ],
       "sceneCorrections": [
         {
-          "id": "miss-kai02-stairs",
+          "id": "miss-cai02-stairs",
           "source": "https://game8.jp/fe-banshisenko/816309",
           "reason": "요새 내부가 아니라 다그시온 도착 뒤의 계단 장면"
         },
         {
-          "id": "miss-kai06-mural",
+          "id": "miss-cai06-mural",
           "source": "https://game8.jp/fe-banshisenko/821553",
           "reason": "자유행동 종료 뒤 아므루 도착·메인 진행 중"
         }
       ],
       "conditionalChecks": [
         {
-          "id": "calendar-kai-0710-availability",
+          "id": "calendar-cai-0710-availability",
           "checkActions": [
-            "calendar-kai-0710-availability--review"
+            "calendar-cai-0710-availability--review"
           ],
           "source": "https://marigoldfe.com/fortunes-weave/calendar",
           "date": "7/10",
@@ -1847,26 +1847,26 @@
       ],
       "sceneAudit": [
         {
-          "id": "miss-kai02-stairs",
-          "group": "miss-kai02-stairs",
+          "id": "miss-cai02-stairs",
+          "group": "miss-cai02-stairs",
           "checkActions": [
-            "miss-kai02-stairs--view"
+            "miss-cai02-stairs--view"
           ],
           "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932"
         },
         {
-          "id": "miss-kai04-bertrand",
-          "group": "miss-kai04-bertrand",
+          "id": "miss-cai04-bertrand",
+          "group": "miss-cai04-bertrand",
           "checkActions": [
-            "miss-kai04-bertrand--view"
+            "miss-cai04-bertrand--view"
           ],
           "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932"
         },
         {
-          "id": "miss-kai06-mural",
-          "group": "miss-kai06-mural",
+          "id": "miss-cai06-mural",
+          "group": "miss-cai06-mural",
           "checkActions": [
-            "miss-kai06-mural--view"
+            "miss-cai06-mural--view"
           ],
           "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932"
         }
@@ -2010,67 +2010,67 @@
         "service-dietrich-ch12-from-1118-2"
       ]
     },
-    "kai": {
+    "cai": {
       "5": [
-        "service-kai-ch05",
-        "holiday-kai-0317",
-        "service-kai-ch05-from-0318-2",
-        "watch-kai-0321",
-        "service-kai-ch05-from-0325-3"
+        "service-cai-ch05",
+        "holiday-cai-0317",
+        "service-cai-ch05-from-0318-2",
+        "watch-cai-0321",
+        "service-cai-ch05-from-0325-3"
       ],
       "6": [
-        "service-kai-ch06",
-        "holiday-kai-0424",
-        "service-kai-ch06-from-0429-2",
-        "watch-kai-0507",
-        "holiday-kai-0511",
-        "service-kai-ch06-from-0513-3",
-        "holiday-kai-0517",
-        "service-kai-ch06-from-0520-4"
+        "service-cai-ch06",
+        "holiday-cai-0424",
+        "service-cai-ch06-from-0429-2",
+        "watch-cai-0507",
+        "holiday-cai-0511",
+        "service-cai-ch06-from-0513-3",
+        "holiday-cai-0517",
+        "service-cai-ch06-from-0520-4"
       ],
       "7": [
-        "service-kai-ch07",
-        "holiday-kai-0614",
-        "watch-kai-0615",
-        "service-kai-ch07-from-0617-2",
-        "holiday-kai-0617",
-        "service-kai-ch07-from-0624-3",
-        "calendar-kai-0710-availability"
+        "service-cai-ch07",
+        "holiday-cai-0614",
+        "watch-cai-0615",
+        "service-cai-ch07-from-0617-2",
+        "holiday-cai-0617",
+        "service-cai-ch07-from-0624-3",
+        "calendar-cai-0710-availability"
       ],
       "8": [
-        "service-kai-ch08",
-        "holiday-kai-0817",
-        "service-kai-ch08-from-0819-2",
-        "service-kai-ch08-calendar-extra"
+        "service-cai-ch08",
+        "holiday-cai-0817",
+        "service-cai-ch08-from-0819-2",
+        "service-cai-ch08-calendar-extra"
       ],
       "9": [
-        "service-kai-ch09",
-        "service-kai-ch09-calendar-extra"
+        "service-cai-ch09",
+        "service-cai-ch09-calendar-extra"
       ],
       "10": [
-        "service-kai-ch10",
-        "watch-kai-0916",
-        "dated-kai-paralogues0917",
-        "holiday-kai-0917",
-        "service-kai-ch10-from-0923-2",
-        "dated-kai-anna0924",
-        "watch-kai-0927",
-        "service-kai-ch10-from-0930-3",
-        "watch-kai-1004",
-        "service-kai-ch10-from-1007-4"
+        "service-cai-ch10",
+        "watch-cai-0916",
+        "dated-cai-paralogues0917",
+        "holiday-cai-0917",
+        "service-cai-ch10-from-0923-2",
+        "dated-cai-anna0924",
+        "watch-cai-0927",
+        "service-cai-ch10-from-0930-3",
+        "watch-cai-1004",
+        "service-cai-ch10-from-1007-4"
       ],
       "11": [
-        "service-kai-ch11",
-        "holiday-kai-1017",
-        "dated-kai-orhell1018",
-        "service-kai-ch11-from-1021-2"
+        "service-cai-ch11",
+        "holiday-cai-1017",
+        "dated-cai-orhell1018",
+        "service-cai-ch11-from-1021-2"
       ],
       "12": [
-        "watch-kai-1104",
-        "service-kai-ch12",
-        "holiday-kai-1117",
-        "service-kai-ch12-from-1118-2",
-        "service-kai-ch12-calendar-extra"
+        "watch-cai-1104",
+        "service-cai-ch12",
+        "holiday-cai-1117",
+        "service-cai-ch12-from-1118-2",
+        "service-cai-ch12-calendar-extra"
       ]
     }
   },
@@ -2100,24 +2100,24 @@
     "service-dietrich-ch09-from-0916-5",
     "service-dietrich-ch11-from-1021-2",
     "service-dietrich-ch12-from-1118-2",
-    "service-kai-ch05-from-0318-2",
-    "service-kai-ch05-from-0325-3",
-    "service-kai-ch06-from-0429-2",
-    "service-kai-ch06-from-0513-3",
-    "service-kai-ch06-from-0520-4",
-    "service-kai-ch07-from-0617-2",
-    "service-kai-ch07-from-0624-3",
-    "service-kai-ch08-from-0819-2",
-    "service-kai-ch08-calendar-extra",
-    "service-kai-ch09-calendar-extra",
-    "service-kai-ch10-from-0923-2",
-    "service-kai-ch10-from-0930-3",
-    "service-kai-ch10-from-1007-4",
-    "service-kai-ch11-from-1021-2",
-    "service-kai-ch12-from-1118-2",
-    "service-kai-ch12-calendar-extra"
+    "service-cai-ch05-from-0318-2",
+    "service-cai-ch05-from-0325-3",
+    "service-cai-ch06-from-0429-2",
+    "service-cai-ch06-from-0513-3",
+    "service-cai-ch06-from-0520-4",
+    "service-cai-ch07-from-0617-2",
+    "service-cai-ch07-from-0624-3",
+    "service-cai-ch08-from-0819-2",
+    "service-cai-ch08-calendar-extra",
+    "service-cai-ch09-calendar-extra",
+    "service-cai-ch10-from-0923-2",
+    "service-cai-ch10-from-0930-3",
+    "service-cai-ch10-from-1007-4",
+    "service-cai-ch11-from-1021-2",
+    "service-cai-ch12-from-1118-2",
+    "service-cai-ch12-calendar-extra"
   ],
-  "kaiServiceWindows": {
+  "caiServiceWindows": {
     "5": {
       "start": [
         3,
@@ -2216,24 +2216,24 @@
     }
   },
   "conditionalExtraWeeks": [
-    "service-kai-ch08-calendar-extra",
-    "service-kai-ch09-calendar-extra",
-    "service-kai-ch12-calendar-extra"
+    "service-cai-ch08-calendar-extra",
+    "service-cai-ch09-calendar-extra",
+    "service-cai-ch12-calendar-extra"
   ],
   "excludedUnavailable": [
     {
-      "route": "kai",
+      "route": "cai",
       "date": "7/10",
       "reason": "영문 달력에 관전은 있으나 카이 자유행동 표시가 없다. 실제 가능 여부를7장 마무리 전의 조건부 확인 체크로 표시했다.",
-      "checkGroup": "calendar-kai-0710-availability"
+      "checkGroup": "calendar-cai-0710-availability"
     }
   ],
   "routeSources": {
     "leda": "https://note.com/yaoya_neko/n/n90112f0c8bf6",
     "dietrich": "https://note.com/yaoya_neko/n/n1b8e5e9711d2",
-    "kai": "https://note.com/yaoya_neko/n/n63ee6cde8095",
+    "cai": "https://note.com/yaoya_neko/n/n63ee6cde8095",
     "hiddenScenes": "https://game8.jp/fe-banshisenko/821553",
-    "kaiChapter2": "https://game8.jp/fe-banshisenko/816309",
+    "caiChapter2": "https://game8.jp/fe-banshisenko/816309",
     "calendar": "https://marigoldfe.com/fortunes-weave/calendar",
     "spectating": "https://annasnotebook.net/en/mechanics/heroic-games/"
   }

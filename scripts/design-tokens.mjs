@@ -1,6 +1,6 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import assert from 'node:assert/strict';
-const routes = {카이:'kai',세오도라:'theodora',디트리히:'dietrich',레다:'leda','3부':'part3'};
+const routes = {카이:'cai',세오도라:'theodora',디트리히:'dietrich',레다:'leda','3부':'part3'};
 const tokens = ['bg','rail','surface','surface-2','primary','secondary','secondary-soft','accent','text','muted','line'];
 let css = '/* docs/design-spec.md §1에서 생성. npm run design:tokens */\n', count = 0;
 for (const line of readFileSync('docs/design-spec.md','utf8').split('\n')) {

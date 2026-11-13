@@ -410,18 +410,18 @@
     "sha256": "69ca879eb3a25b556b59ca0a8a5770d36b37196337d374d1073f99a19d3c9d37"
   },
   {
-    "source": "assets/events/kai02-stairs.png",
-    "target": "assets/events/kai02-stairs.png",
+    "source": "assets/events/cai02-stairs.png",
+    "target": "assets/events/cai02-stairs.png",
     "sha256": "330d91b34cb631f06f944d133aec99f17ec86f70ee7f33b432fe58c09e2a1447"
   },
   {
-    "source": "assets/events/kai04-bertrand.png",
-    "target": "assets/events/kai04-bertrand.png",
+    "source": "assets/events/cai04-bertrand.png",
+    "target": "assets/events/cai04-bertrand.png",
     "sha256": "ed69c147c16be88f1c38df5e35edfffa2960d0c64734fa11d06083d332eb6035"
   },
   {
-    "source": "assets/events/kai06-mural.png",
-    "target": "assets/events/kai06-mural.png",
+    "source": "assets/events/cai06-mural.png",
+    "target": "assets/events/cai06-mural.png",
     "sha256": "f7db41fedde7060b4a2dc6c138d64da351094ac8ab320f633f0bc732438cc2f2"
   },
   {
@@ -507,7 +507,7 @@
   {
     "source": "assets/events/SOURCES.md",
     "target": "assets/events/SOURCES.md",
-    "sha256": "d845385510e72813a4b5b3c6c294b3662a5a253da39c3526ad40e94f84b199e7"
+    "sha256": "5807bc827677051639d9ce8cf3ed996c9c8a3bd00f7a3e79a4d431ef4ea275e4"
   },
   {
     "source": "assets/events/theo03-outfit.png",

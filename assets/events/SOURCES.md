@@ -2,9 +2,9 @@
 
 출처: [Game8 숨은 장면](https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/629932). 위치 참고용이며 스토리 결과 그림은 사용하지 않는다.
 
-- assets/events/kai02-stairs.png — https://img.game8.co/4645105/66eba330bf4823f81407270d94c2f997.png/show
-- assets/events/kai04-bertrand.png — https://img.game8.co/4645201/cbfe241edf3cdce41135b3f74aed8a7d.png/show
-- assets/events/kai06-mural.png — https://img.game8.co/4645205/b3a5dbe0018d061e064ca2525c8cd754.png/show
+- assets/events/cai02-stairs.png — https://img.game8.co/4645105/66eba330bf4823f81407270d94c2f997.png/show
+- assets/events/cai04-bertrand.png — https://img.game8.co/4645201/cbfe241edf3cdce41135b3f74aed8a7d.png/show
+- assets/events/cai06-mural.png — https://img.game8.co/4645205/b3a5dbe0018d061e064ca2525c8cd754.png/show
 - assets/events/di04-south.png — https://img.game8.co/4645106/e63ea7b6dc0eb8c76e952db9a62019fd.png/show
 - assets/events/di04-inn.png — https://img.game8.co/4645107/994af67e8a8232a191eff5336f873cd8.png/show
 - assets/events/di04-mikaela.png — https://img.game8.co/4645129/7f89c6dac1b9a06d767b2e2d0d4a7a77.png/show

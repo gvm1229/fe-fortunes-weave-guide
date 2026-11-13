@@ -18,7 +18,7 @@ function load() {
     details: json<{ classes: Record<string, { tier: string; recommendedLevel: string; renown: string; required: string; choice: string; unlock: string }> }>('data/class-details').classes,
     reasons: json<{ routes: Record<string, Record<string, Record<string, { steps?: { class: string; reason?: string; compact?: { reason?: string } }[] }>>> }>('data/class-path-reasons').routes,
     avoid: json<{ avoidDefault: string[] }>('data/final-roster').avoidDefault,
-    kai: json<CaiPlan>('kai-charioteer'),
+    cai: json<CaiPlan>('cai-charioteer'),
   };
 }
 const empty = (v?: string) => !v || v === '–' || v === '-';
@@ -33,17 +33,17 @@ export function characterData(route: string, name: string, part: string): Charac
   const d = (cache ??= load());
   const avoid = d.avoid.includes(name);
   const goal = d.goals[route]?.[name] || {};
-  const kai = route === 'kai' ? d.kai.people[name] : undefined;
-  const phase = { ...goal[part], ...kai?.[part] };
+  const cai = route === 'cai' ? d.cai.people[name] : undefined;
+  const phase = { ...goal[part], ...cai?.[part] };
   const finalClasses = goal['3']?.classes || [];
   const classes = phase.classes || [];
   let skills: SkillGoal[] = [...(d.priorities[route]?.[name]?.[part]?.goals || [])].sort((a, b) => (a.priority ?? 9) - (b.priority ?? 9)).map(({ skill, target, kind, when, why }) => ({ skill, target, kind, when, why }));
   const ranks = ['E', 'D', 'C', 'B', 'A', 'S'], rank = (t: string) => ranks.indexOf(t.replace(/.*→\s*/, '').trim()[0]);
   // 카이 루트 전차병: 같은 기능이 이미 있으면 등급을 시험 조건 이상으로 맞추고 종류를 전차병 시험으로 바꾼다.
-  if (kai && part !== '3') skills = [...skills.map(s => { const k = d.kai.skills.find(k => k.skill === s.skill); return k && (s.kind === '선택' || rank(s.target) < rank(k.target)) ? { ...s, target: rank(s.target) < rank(k.target) ? k.target : s.target, kind: k.kind, when: k.when, why: k.why } : s; }), ...d.kai.skills.filter(k => !skills.some(s => s.skill === k.skill))];
+  if (cai && part !== '3') skills = [...skills.map(s => { const k = d.cai.skills.find(k => k.skill === s.skill); return k && (s.kind === '선택' || rank(s.target) < rank(k.target)) ? { ...s, target: rank(s.target) < rank(k.target) ? k.target : s.target, kind: k.kind, when: k.when, why: k.why } : s; }), ...d.cai.skills.filter(k => !skills.some(s => s.skill === k.skill))];
   const exams: Record<string, Exam> = {};
   for (const c of [...classes, ...finalClasses]) { const e = examFor(c); if (e) exams[c] = e; }
   const steps: Record<string, string> = {};
   for (const s of d.reasons[route]?.[name]?.[part]?.steps || []) { const r = s.compact?.reason || s.reason; if (r) steps[s.class] = r; }
-  return { avoid, finalClasses, classes, next: phase.next, skills, skillNote: d.priorities[route]?.[name]?.[part]?.note, exams, steps, charioteer: kai && part !== '3' ? d.kai.reason : undefined, goalText: kai && part !== '3' ? charioteerGoal() : undefined };
+  return { avoid, finalClasses, classes, next: phase.next, skills, skillNote: d.priorities[route]?.[name]?.[part]?.note, exams, steps, charioteer: cai && part !== '3' ? d.cai.reason : undefined, goalText: cai && part !== '3' ? charioteerGoal() : undefined };
 }

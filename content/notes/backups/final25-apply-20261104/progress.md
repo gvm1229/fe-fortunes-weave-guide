@@ -47,7 +47,7 @@
 | 디트리히 | 1부12장 완료·2부1장 첫 전투 전 그대로로 재확인. 군행동·상급증서5장 사용 완료 | [진행](routes/dietrich/progress.md), [부대 상세](routes/dietrich/roster.md) |
 | 세오도라 | 미플레이 | [진행](routes/theodora/progress.md) |
 | 레다 | 미플레이 | [진행](routes/leda/progress.md) |
-| 카이 | 미플레이 | [진행](routes/kai/progress.md) |
+| 카이 | 미플레이 | [진행](routes/cai/progress.md) |
 | 공통 3부 | 미플레이 | [진행](routes/part3/progress.md) |
 
 ## 현재 확인된 저장

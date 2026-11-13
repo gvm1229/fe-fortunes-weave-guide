@@ -1,3 +1,5 @@
+// 2026-11-14 사용자 결정: 이전 프로젝트(fe-fortunes-weave-guide-main)는 읽기 전용이며 더 이상 가져오지 않는다. 이 저장소의 content/가 정본이다(루트 ID cai).
+if(!process.argv.includes('--force-legacy-import')){console.error('transfer는 중단됐습니다: 이전 프로젝트는 읽기 전용 참고입니다. content/를 직접 고치고 npm run derive:checklist로 파생 파일을 갱신하세요.');process.exit(1);}
 import { readFileSync, writeFileSync, mkdirSync, readdirSync, cpSync, existsSync } from 'node:fs';
 import { resolve, relative, posix } from 'node:path';
 import { createHash } from 'node:crypto';
@@ -61,7 +63,7 @@ const supplements = {
   team: old.team,
   teamSections: Object.fromEntries(Object.entries(old.teamSections).map(([key,html]) => [key, {tree:semantic(html)}])),
   teamWhite: Object.fromEntries(Object.entries(old.team.units).map(([name,unit]) => [name, {tree:semantic(unit.whiteHighlightHtml || '')}])),
-  routeTeams: Object.fromEntries(['theodora','leda','dietrich','kai'].map(route => {
+  routeTeams: Object.fromEntries(['theodora','leda','dietrich','cai'].map(route => {
     const $=load(old.teamSections.routes,null,false),panel=$(`#panel-${route}`);
     return [route,{intro:{tree:semantic(panel.find('.route-intro').html()||'')},parts:Object.fromEntries(['1','2','3'].map(part=>[part,{tree:semantic(panel.find(`[data-content-phase="${part}"]`).html()||'')}]))}];
   })),
@@ -93,7 +95,7 @@ const evidence = {
   generatedSourceSha256: hash(resolve(source, 'personalized-app/src/content.json')),
   activeActions: playbook.groups.reduce((n,g) => n + g.actions.length, 0),
   checkIds: old.allTaskIds.length,
-  peopleByRoute: Object.fromEntries(['theodora','leda','dietrich','kai'].map(r => [r, old.people.filter(p => p.route === r).length])),
+  peopleByRoute: Object.fromEntries(['theodora','leda','dietrich','cai'].map(r => [r, old.people.filter(p => p.route === r).length])),
   peopleByStage: Object.fromEntries(old.stages.map(s => [s.id, old.people.filter(p => s.id === 'part3-plan' ? p.roles['3'] : p.route === s.id.split('-')[0] && p.roles[s.id.includes('-war-') ? '2' : '1']).length])),
   recruitAssignments: read('data/recruit-all-plan.json').assignments.length,
   referenceDocs: files.filter(x => x.source.startsWith('notes/')&&x.source.endsWith('.md')).length,

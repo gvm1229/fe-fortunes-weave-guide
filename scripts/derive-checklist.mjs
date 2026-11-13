@@ -4,7 +4,7 @@ import { resolve } from 'node:path';
 import { deriveChecklist } from './checklist-source.mjs';
 import { readableTree, readableRecord, treeText } from './readability.mjs';
 import { deriveMarkdown } from './markdown-presentation.mjs';
-const source=readFileSync(resolve(process.argv[2]||'../fe-fortunes-weave-guide-main','personalized-app/src/content.json'));
+const source=readFileSync(resolve(process.argv[2]||'content/source/react-content.json'));
 const old=JSON.parse(source),playbook=JSON.parse(readFileSync('content/data/playbook.json','utf8'));
 mkdirSync('content/derived',{recursive:true});
 const stages=deriveChecklist(old,playbook);

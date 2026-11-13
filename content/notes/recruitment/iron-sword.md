@@ -106,7 +106,7 @@
 
 ### 위치와 지도
 
-[지도 열기 · 카이 선택 후 Dagsion 검색](https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624208 "recruit-map:iron-sword:kai")
+[지도 열기 · 카이 선택 후 Dagsion 검색](https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624208 "recruit-map:iron-sword:cai")
 
 ![철의 검 위치 참고](../../assets/guide/recruit-ui.png)
 

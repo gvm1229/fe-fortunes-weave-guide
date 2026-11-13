@@ -250,7 +250,7 @@
     },
     {
       "name": "카이",
-      "route": "kai",
+      "route": "cai",
       "fame": 0,
       "sup": 0,
       "items": [],
@@ -410,7 +410,7 @@
     },
     {
       "name": "티아라",
-      "route": "kai",
+      "route": "cai",
       "fame": 0,
       "sup": 0,
       "items": [],
@@ -430,7 +430,7 @@
     },
     {
       "name": "피터르",
-      "route": "kai",
+      "route": "cai",
       "fame": 0,
       "sup": 0,
       "items": [],
@@ -450,7 +450,7 @@
     },
     {
       "name": "울턴드",
-      "route": "kai",
+      "route": "cai",
       "fame": 0,
       "sup": 0,
       "items": [],
@@ -613,7 +613,7 @@
     },
     {
       "name": "누조",
-      "route": "kai",
+      "route": "cai",
       "fame": 6,
       "sup": 2,
       "items": [
@@ -860,7 +860,7 @@
     },
     {
       "name": "세테스",
-      "route": "kai",
+      "route": "cai",
       "fame": 6,
       "sup": 3,
       "items": [],
@@ -992,7 +992,7 @@
     },
     {
       "name": "페페",
-      "route": "kai",
+      "route": "cai",
       "fame": 9,
       "sup": 1,
       "items": [],
@@ -1123,7 +1123,7 @@
     },
     {
       "name": "마지데",
-      "route": "kai",
+      "route": "cai",
       "fame": 5,
       "sup": 2,
       "items": [],
@@ -1411,7 +1411,7 @@
         "theodora",
         "leda",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "purpose": "특별 탈것 보존(네 루트) + 세오도라·디트리히 실전. 카이판은 카이–알렉산드라 A(1부 한정)도 해결",
       "ok": true
@@ -1422,7 +1422,7 @@
         "theodora",
         "leda",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "purpose": "특별 탈것 보존 + 디트리히 실전",
       "ok": true
@@ -1432,7 +1432,7 @@
       "routes": [
         "theodora",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "purpose": "카이 실전 + 세오도라·디트리히 선더 소드 지참품(부족할 때만)",
       "ok": true
@@ -1452,7 +1452,7 @@
       "routes": [
         "theodora",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "purpose": "세오도라·디트리히 능력 융합 + 카이 실전 회복",
       "ok": true
@@ -1490,7 +1490,7 @@
       "routes": [
         "theodora",
         "leda",
-        "kai"
+        "cai"
       ],
       "purpose": "능력 융합(검·속도 + 전차병 힘·기술) + 카이 로레타–세테스 A",
       "ok": true,
@@ -1501,7 +1501,7 @@
       "routes": [
         "leda",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "purpose": "능력 융합(수비/마방)",
       "ok": true,
@@ -1511,7 +1511,7 @@
       "name": "그자람",
       "routes": [
         "leda",
-        "kai"
+        "cai"
       ],
       "purpose": "능력 융합 + 카이 실전",
       "ok": true
@@ -1540,7 +1540,7 @@
       "name": "미카엘라",
       "routes": [
         "dietrich",
-        "kai"
+        "cai"
       ],
       "purpose": "능력 융합(카이 전차병) + 실전",
       "ok": true
@@ -1550,7 +1550,7 @@
       "routes": [
         "theodora",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "purpose": "능력 보완(HP·힘·수비, 빈칸일 때만)",
       "ok": true,
@@ -1562,7 +1562,7 @@
       "routes": [
         "theodora",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "purpose": "카이 실전·기능 보완",
       "ok": true,
@@ -1626,7 +1626,7 @@
       "name": "세테스",
       "routes": [
         "theodora",
-        "kai"
+        "cai"
       ],
       "purpose": "지원 대화 · 세오도라: 티아라–세테스, 단테–세테스, 디에고–세테스, 로레타–세테스, 세테스–루루디아; 카이: 티아라–세테스, 로레타–세테스",
       "ok": true
@@ -1644,7 +1644,7 @@
       "name": "티아라",
       "routes": [
         "theodora",
-        "kai"
+        "cai"
       ],
       "purpose": "지원 대화 · 세오도라: 티아라–울턴드, 티아라–세테스, 티아라–보나파르트, 티아라–타리문, 티아라–루루디아, 티아라–이오; 카이: 카이–티아라, 티아라–피터르, 티아라–울턴드, 티아라–세테스, 티아라–이오",
       "ok": true
@@ -1664,7 +1664,7 @@
       "routes": [
         "leda",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "purpose": "지원 대화 · 레다: 제스터–골라이어스, 골라이어스–로레타, 골라이어스–올림피아; 디트리히: 게이츠–골라이어스, 제스터–골라이어스, 골라이어스–단테, 골라이어스–녹투라; 카이: 카이–골라이어스, 골라이어스–로레타, 골라이어스–녹투라",
       "ok": true
@@ -1674,7 +1674,7 @@
       "routes": [
         "leda",
         "dietrich",
-        "kai"
+        "cai"
       ],
       "purpose": "지원 대화 · 레다: 레다–무우, 버커니어–무우, 시로코–무우, 올림피아–무우; 디트리히: 피터르–무우, 미카엘라–무우, 릴리안–무우; 카이: 카이–무우, 피터르–무우, 무우–그자람, 무우–페페",
       "ok": true
@@ -1692,7 +1692,7 @@
       "name": "양계",
       "routes": [
         "dietrich",
-        "kai"
+        "cai"
       ],
       "purpose": "지원 대화 · 카이: 로레타–양계",
       "ok": true
@@ -1701,7 +1701,7 @@
       "name": "피터르",
       "routes": [
         "dietrich",
-        "kai"
+        "cai"
       ],
       "purpose": "지원 대화 · 디트리히: 피터르–울턴드, 피터르–제스터, 피터르–리네, 피터르–우술라, 피터르–무우, 피터르–대도, 피터르–소피아; 카이: 카이–피터르, 티아라–피터르, 피터르–울턴드, 피터르–리네, 피터르–무우",
       "ok": true
@@ -1858,7 +1858,7 @@
     },
     {
       "file": "data/recruitment-gates.json",
-      "path": "characters.키로이카.gates[route=kai].localCondition",
+      "path": "characters.키로이카.gates[route=cai].localCondition",
       "current": "성수 3개",
       "correct": "성수 8개",
       "sources": [
@@ -1902,7 +1902,7 @@
     },
     {
       "file": "data/recruitment-gates.json",
-      "path": "characters.이오.gates[route=kai].localCondition",
+      "path": "characters.이오.gates[route=cai].localCondition",
       "current": "800G",
       "correct": "4,000G",
       "sources": [
@@ -2305,7 +2305,7 @@
           ]
         }
       ],
-      "kai": [
+      "cai": [
         {
           "name": "골라이어스",
           "for": [
@@ -2346,7 +2346,7 @@
         "타리문",
         "아나톨리아"
       ],
-      "kai": [
+      "cai": [
         "베르트랑"
       ]
     },
@@ -2449,7 +2449,7 @@
         "피터르",
         "하르빈"
       ],
-      "kai": [
+      "cai": [
         "골라이어스",
         "그자람",
         "녹투라",
@@ -2481,7 +2481,7 @@
         "window": "1·2부 한정 단계 있음",
         "status": "해결",
         "routes": [
-          "kai"
+          "cai"
         ]
       },
       {
@@ -2492,7 +2492,7 @@
         "window": "1·2부 한정 단계 있음",
         "status": "해결",
         "routes": [
-          "kai"
+          "cai"
         ]
       },
       {
@@ -2503,7 +2503,7 @@
         "window": "1·2부 한정 단계 있음",
         "status": "해결",
         "routes": [
-          "kai"
+          "cai"
         ],
         "note": "C는 영웅 대회 개막 뒤"
       },
@@ -2523,7 +2523,7 @@
         "window": "1·2부 한정 단계 있음",
         "status": "해결",
         "routes": [
-          "kai"
+          "cai"
         ],
         "note": "C는 적성 시험 뒤",
         "addedFor": [
@@ -2546,7 +2546,7 @@
         "window": "1·2부 한정 단계 있음",
         "status": "해결",
         "routes": [
-          "kai"
+          "cai"
         ],
         "note": "C는 밴디츠 전투 뒤"
       },
@@ -2583,7 +2583,7 @@
         "window": "1·2부 한정 단계 있음",
         "status": "위험",
         "routes": [
-          "kai"
+          "cai"
         ],
         "risk": "카이·무우 대회 시합 시작 전에 카이 루트 무우(명성9·지원3·글루마오사3) 영입 필요 · 시점 미확인",
         "note": "C는 카이·무우 대회 시합 전 · B는 센트리온 동석",
@@ -2607,7 +2607,7 @@
         "window": "1·2부 한정 단계 있음",
         "status": "해결",
         "routes": [
-          "kai"
+          "cai"
         ]
       },
       {
@@ -2626,7 +2626,7 @@
         "window": "1·2부 한정 단계 있음",
         "status": "해결",
         "routes": [
-          "kai"
+          "cai"
         ],
         "note": "A는 피터르·울턴드 B 뒤"
       },
@@ -2639,7 +2639,7 @@
         "status": "해결",
         "routes": [
           "theodora",
-          "kai"
+          "cai"
         ],
         "note": "B는 다툼 중 막힘",
         "addedFor": [
@@ -2655,7 +2655,7 @@
         "status": "해결",
         "routes": [
           "theodora",
-          "kai"
+          "cai"
         ],
         "addedFor": [
           "세테스"
@@ -2714,7 +2714,7 @@
         "status": "해결",
         "routes": [
           "theodora",
-          "kai"
+          "cai"
         ]
       },
       {
@@ -2734,7 +2734,7 @@
         "status": "해결",
         "routes": [
           "dietrich",
-          "kai"
+          "cai"
         ],
         "note": "B는 티아라·피터르 B 뒤",
         "addedFor": [
@@ -2764,7 +2764,7 @@
         "status": "해결",
         "routes": [
           "dietrich",
-          "kai"
+          "cai"
         ],
         "addedFor": [
           "피터르"
@@ -2793,7 +2793,7 @@
         "status": "해결",
         "routes": [
           "dietrich",
-          "kai"
+          "cai"
         ],
         "note": "C·B는 다그시온 도착 뒤",
         "addedFor": [
@@ -2862,7 +2862,7 @@
         "status": "해결",
         "routes": [
           "theodora",
-          "kai"
+          "cai"
         ],
         "addedFor": [
           "울턴드"
@@ -2898,7 +2898,7 @@
         "window": "1·2부 한정 단계 있음",
         "status": "해결",
         "routes": [
-          "kai"
+          "cai"
         ],
         "note": "베르트랑 외전 뒤"
       },
@@ -3121,7 +3121,7 @@
         "status": "해결",
         "routes": [
           "leda",
-          "kai"
+          "cai"
         ],
         "addedFor": [
           "골라이어스",
@@ -3151,7 +3151,7 @@
         "status": "해결",
         "routes": [
           "dietrich",
-          "kai"
+          "cai"
         ],
         "addedFor": [
           "골라이어스",
@@ -3456,7 +3456,7 @@
         "window": "1·2부 한정 단계 있음",
         "status": "해결",
         "routes": [
-          "kai"
+          "cai"
         ]
       },
       {
@@ -3650,7 +3650,7 @@
         "status": "해결",
         "routes": [
           "theodora",
-          "kai"
+          "cai"
         ],
         "addedFor": [
           "세테스"
@@ -3689,7 +3689,7 @@
         "window": "1·2부 한정 단계 있음",
         "status": "해결",
         "routes": [
-          "kai"
+          "cai"
         ],
         "addedFor": [
           "양계"
@@ -3749,7 +3749,7 @@
         "window": "1·2부 한정 단계 있음",
         "status": "해결",
         "routes": [
-          "kai"
+          "cai"
         ],
         "note": "베르트랑 외전 뒤"
       },
@@ -4411,7 +4411,7 @@
         "window": "1·2부 한정 단계 있음",
         "status": "해결",
         "routes": [
-          "kai"
+          "cai"
         ],
         "note": "미카엘라 동석",
         "addedFor": [
@@ -4426,7 +4426,7 @@
         "window": "1·2부 한정 단계 있음",
         "status": "해결",
         "routes": [
-          "kai"
+          "cai"
         ],
         "note": "베르트랑 외전 뒤",
         "addedFor": [

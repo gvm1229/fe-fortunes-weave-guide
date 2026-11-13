@@ -30,7 +30,7 @@
       "/theodora/1/",
       "/leda/1/",
       "/dietrich/1/",
-      "/kai/1/",
+      "/cai/1/",
       "/part3/3/",
       "/team/"
     ],
@@ -90,7 +90,7 @@
       "personTables": [],
       "order": [
         {
-          "route": "kai",
+          "route": "cai",
           "badge": "루트 진행 순서: 4th",
           "src": "/assets/portraits/pre-timeskip/large/cai.webp",
           "rect": {
@@ -136,7 +136,7 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 7.556150901096952
         },
@@ -1944,21 +1944,21 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-tasks-1440x900-light",
-      "route": "kai",
+      "label": "cai-tasks-1440x900-light",
+      "route": "cai",
       "view": "tasks",
       "width": 1440,
       "height": 900,
       "theme": "light",
       "expectedBackground": "#DCE7F8",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-tasks-1440x900-light.png"
+      "png": "docs/screens/cai-tasks-1440x900-light.png"
     },
     {
       "horizontalScroll": 0,
@@ -2061,21 +2061,21 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-people-1440x900-light",
-      "route": "kai",
+      "label": "cai-people-1440x900-light",
+      "route": "cai",
       "view": "people",
       "width": 1440,
       "height": 900,
       "theme": "light",
       "expectedBackground": "#DCE7F8",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-people-1440x900-light.png"
+      "png": "docs/screens/cai-people-1440x900-light.png"
     },
     {
       "horizontalScroll": 0,
@@ -2326,21 +2326,21 @@
       ],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-prep-1440x900-light",
-      "route": "kai",
+      "label": "cai-prep-1440x900-light",
+      "route": "cai",
       "view": "prep",
       "width": 1440,
       "height": 900,
       "theme": "light",
       "expectedBackground": "#DCE7F8",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-prep-1440x900-light.png"
+      "png": "docs/screens/cai-prep-1440x900-light.png"
     },
     {
       "horizontalScroll": 0,
@@ -2437,21 +2437,21 @@
       ],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-materials-1440x900-light",
-      "route": "kai",
+      "label": "cai-materials-1440x900-light",
+      "route": "cai",
       "view": "materials",
       "width": 1440,
       "height": 900,
       "theme": "light",
       "expectedBackground": "#DCE7F8",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-materials-1440x900-light.png"
+      "png": "docs/screens/cai-materials-1440x900-light.png"
     },
     {
       "horizontalScroll": 0,
@@ -2499,21 +2499,21 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-docs-1440x900-light",
-      "route": "kai",
+      "label": "cai-docs-1440x900-light",
+      "route": "cai",
       "view": "docs",
       "width": 1440,
       "height": 900,
       "theme": "light",
       "expectedBackground": "#DCE7F8",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-docs-1440x900-light.png"
+      "png": "docs/screens/cai-docs-1440x900-light.png"
     },
     {
       "horizontalScroll": 0,
@@ -3265,7 +3265,7 @@
       "personTables": [],
       "order": [
         {
-          "route": "kai",
+          "route": "cai",
           "badge": "루트 진행 순서: 4th",
           "src": "/assets/portraits/pre-timeskip/large/cai.webp",
           "rect": {
@@ -3311,7 +3311,7 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 10.55878975195392
         },
@@ -5119,21 +5119,21 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-tasks-1440x900-dark",
-      "route": "kai",
+      "label": "cai-tasks-1440x900-dark",
+      "route": "cai",
       "view": "tasks",
       "width": 1440,
       "height": 900,
       "theme": "dark",
       "expectedBackground": "#0B1A33",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-tasks-1440x900-dark.png"
+      "png": "docs/screens/cai-tasks-1440x900-dark.png"
     },
     {
       "horizontalScroll": 0,
@@ -5236,21 +5236,21 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-people-1440x900-dark",
-      "route": "kai",
+      "label": "cai-people-1440x900-dark",
+      "route": "cai",
       "view": "people",
       "width": 1440,
       "height": 900,
       "theme": "dark",
       "expectedBackground": "#0B1A33",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-people-1440x900-dark.png"
+      "png": "docs/screens/cai-people-1440x900-dark.png"
     },
     {
       "horizontalScroll": 0,
@@ -5501,21 +5501,21 @@
       ],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-prep-1440x900-dark",
-      "route": "kai",
+      "label": "cai-prep-1440x900-dark",
+      "route": "cai",
       "view": "prep",
       "width": 1440,
       "height": 900,
       "theme": "dark",
       "expectedBackground": "#0B1A33",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-prep-1440x900-dark.png"
+      "png": "docs/screens/cai-prep-1440x900-dark.png"
     },
     {
       "horizontalScroll": 0,
@@ -5612,21 +5612,21 @@
       ],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-materials-1440x900-dark",
-      "route": "kai",
+      "label": "cai-materials-1440x900-dark",
+      "route": "cai",
       "view": "materials",
       "width": 1440,
       "height": 900,
       "theme": "dark",
       "expectedBackground": "#0B1A33",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-materials-1440x900-dark.png"
+      "png": "docs/screens/cai-materials-1440x900-dark.png"
     },
     {
       "horizontalScroll": 0,
@@ -5674,21 +5674,21 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-docs-1440x900-dark",
-      "route": "kai",
+      "label": "cai-docs-1440x900-dark",
+      "route": "cai",
       "view": "docs",
       "width": 1440,
       "height": 900,
       "theme": "dark",
       "expectedBackground": "#0B1A33",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-docs-1440x900-dark.png"
+      "png": "docs/screens/cai-docs-1440x900-dark.png"
     },
     {
       "horizontalScroll": 0,
@@ -6440,7 +6440,7 @@
       "personTables": [],
       "order": [
         {
-          "route": "kai",
+          "route": "cai",
           "badge": "루트 진행 순서: 4th",
           "src": "/assets/portraits/pre-timeskip/large/cai.webp",
           "rect": {
@@ -6486,7 +6486,7 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 7.556150901096952
         },
@@ -8294,21 +8294,21 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-tasks-1920x1080-light",
-      "route": "kai",
+      "label": "cai-tasks-1920x1080-light",
+      "route": "cai",
       "view": "tasks",
       "width": 1920,
       "height": 1080,
       "theme": "light",
       "expectedBackground": "#DCE7F8",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-tasks-1920x1080-light.png"
+      "png": "docs/screens/cai-tasks-1920x1080-light.png"
     },
     {
       "horizontalScroll": 0,
@@ -8411,21 +8411,21 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-people-1920x1080-light",
-      "route": "kai",
+      "label": "cai-people-1920x1080-light",
+      "route": "cai",
       "view": "people",
       "width": 1920,
       "height": 1080,
       "theme": "light",
       "expectedBackground": "#DCE7F8",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-people-1920x1080-light.png"
+      "png": "docs/screens/cai-people-1920x1080-light.png"
     },
     {
       "horizontalScroll": 0,
@@ -8676,21 +8676,21 @@
       ],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-prep-1920x1080-light",
-      "route": "kai",
+      "label": "cai-prep-1920x1080-light",
+      "route": "cai",
       "view": "prep",
       "width": 1920,
       "height": 1080,
       "theme": "light",
       "expectedBackground": "#DCE7F8",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-prep-1920x1080-light.png"
+      "png": "docs/screens/cai-prep-1920x1080-light.png"
     },
     {
       "horizontalScroll": 0,
@@ -8787,21 +8787,21 @@
       ],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-materials-1920x1080-light",
-      "route": "kai",
+      "label": "cai-materials-1920x1080-light",
+      "route": "cai",
       "view": "materials",
       "width": 1920,
       "height": 1080,
       "theme": "light",
       "expectedBackground": "#DCE7F8",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-materials-1920x1080-light.png"
+      "png": "docs/screens/cai-materials-1920x1080-light.png"
     },
     {
       "horizontalScroll": 0,
@@ -8849,21 +8849,21 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-docs-1920x1080-light",
-      "route": "kai",
+      "label": "cai-docs-1920x1080-light",
+      "route": "cai",
       "view": "docs",
       "width": 1920,
       "height": 1080,
       "theme": "light",
       "expectedBackground": "#DCE7F8",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-docs-1920x1080-light.png"
+      "png": "docs/screens/cai-docs-1920x1080-light.png"
     },
     {
       "horizontalScroll": 0,
@@ -9615,7 +9615,7 @@
       "personTables": [],
       "order": [
         {
-          "route": "kai",
+          "route": "cai",
           "badge": "루트 진행 순서: 4th",
           "src": "/assets/portraits/pre-timeskip/large/cai.webp",
           "rect": {
@@ -9661,7 +9661,7 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 10.55878975195392
         },
@@ -11469,21 +11469,21 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-tasks-1920x1080-dark",
-      "route": "kai",
+      "label": "cai-tasks-1920x1080-dark",
+      "route": "cai",
       "view": "tasks",
       "width": 1920,
       "height": 1080,
       "theme": "dark",
       "expectedBackground": "#0B1A33",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-tasks-1920x1080-dark.png"
+      "png": "docs/screens/cai-tasks-1920x1080-dark.png"
     },
     {
       "horizontalScroll": 0,
@@ -11586,21 +11586,21 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-people-1920x1080-dark",
-      "route": "kai",
+      "label": "cai-people-1920x1080-dark",
+      "route": "cai",
       "view": "people",
       "width": 1920,
       "height": 1080,
       "theme": "dark",
       "expectedBackground": "#0B1A33",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-people-1920x1080-dark.png"
+      "png": "docs/screens/cai-people-1920x1080-dark.png"
     },
     {
       "horizontalScroll": 0,
@@ -11851,21 +11851,21 @@
       ],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-prep-1920x1080-dark",
-      "route": "kai",
+      "label": "cai-prep-1920x1080-dark",
+      "route": "cai",
       "view": "prep",
       "width": 1920,
       "height": 1080,
       "theme": "dark",
       "expectedBackground": "#0B1A33",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-prep-1920x1080-dark.png"
+      "png": "docs/screens/cai-prep-1920x1080-dark.png"
     },
     {
       "horizontalScroll": 0,
@@ -11962,21 +11962,21 @@
       ],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-materials-1920x1080-dark",
-      "route": "kai",
+      "label": "cai-materials-1920x1080-dark",
+      "route": "cai",
       "view": "materials",
       "width": 1920,
       "height": 1080,
       "theme": "dark",
       "expectedBackground": "#0B1A33",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-materials-1920x1080-dark.png"
+      "png": "docs/screens/cai-materials-1920x1080-dark.png"
     },
     {
       "horizontalScroll": 0,
@@ -12024,21 +12024,21 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-docs-1920x1080-dark",
-      "route": "kai",
+      "label": "cai-docs-1920x1080-dark",
+      "route": "cai",
       "view": "docs",
       "width": 1920,
       "height": 1080,
       "theme": "dark",
       "expectedBackground": "#0B1A33",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-docs-1920x1080-dark.png"
+      "png": "docs/screens/cai-docs-1920x1080-dark.png"
     },
     {
       "horizontalScroll": 0,
@@ -12790,7 +12790,7 @@
       "personTables": [],
       "order": [
         {
-          "route": "kai",
+          "route": "cai",
           "badge": "루트 진행 순서: 4th",
           "src": "/assets/portraits/pre-timeskip/large/cai.webp",
           "rect": {
@@ -12836,7 +12836,7 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 7.556150901096952
         },
@@ -15017,21 +15017,21 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-tasks-375x812-light",
-      "route": "kai",
+      "label": "cai-tasks-375x812-light",
+      "route": "cai",
       "view": "tasks",
       "width": 375,
       "height": 812,
       "theme": "light",
       "expectedBackground": "#DCE7F8",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-tasks-375x812-light.png"
+      "png": "docs/screens/cai-tasks-375x812-light.png"
     },
     {
       "horizontalScroll": 0,
@@ -15134,21 +15134,21 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-people-375x812-light",
-      "route": "kai",
+      "label": "cai-people-375x812-light",
+      "route": "cai",
       "view": "people",
       "width": 375,
       "height": 812,
       "theme": "light",
       "expectedBackground": "#DCE7F8",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-people-375x812-light.png"
+      "png": "docs/screens/cai-people-375x812-light.png"
     },
     {
       "horizontalScroll": 0,
@@ -15399,21 +15399,21 @@
       ],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-prep-375x812-light",
-      "route": "kai",
+      "label": "cai-prep-375x812-light",
+      "route": "cai",
       "view": "prep",
       "width": 375,
       "height": 812,
       "theme": "light",
       "expectedBackground": "#DCE7F8",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-prep-375x812-light.png"
+      "png": "docs/screens/cai-prep-375x812-light.png"
     },
     {
       "horizontalScroll": 0,
@@ -15510,21 +15510,21 @@
       ],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-materials-375x812-light",
-      "route": "kai",
+      "label": "cai-materials-375x812-light",
+      "route": "cai",
       "view": "materials",
       "width": 375,
       "height": 812,
       "theme": "light",
       "expectedBackground": "#DCE7F8",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-materials-375x812-light.png"
+      "png": "docs/screens/cai-materials-375x812-light.png"
     },
     {
       "horizontalScroll": 0,
@@ -15575,21 +15575,21 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-map-sheet-375x812-light",
-      "route": "kai",
+      "label": "cai-map-sheet-375x812-light",
+      "route": "cai",
       "view": "map-sheet",
       "width": 375,
       "height": 812,
       "theme": "light",
       "expectedBackground": "#DCE7F8",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-map-sheet-375x812-light.png"
+      "png": "docs/screens/cai-map-sheet-375x812-light.png"
     },
     {
       "horizontalScroll": 0,
@@ -15637,21 +15637,21 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-docs-375x812-light",
-      "route": "kai",
+      "label": "cai-docs-375x812-light",
+      "route": "cai",
       "view": "docs",
       "width": 375,
       "height": 812,
       "theme": "light",
       "expectedBackground": "#DCE7F8",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-docs-375x812-light.png"
+      "png": "docs/screens/cai-docs-375x812-light.png"
     },
     {
       "horizontalScroll": 0,
@@ -15699,21 +15699,21 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-document-sheet-375x812-light",
-      "route": "kai",
+      "label": "cai-document-sheet-375x812-light",
+      "route": "cai",
       "view": "document-sheet",
       "width": 375,
       "height": 812,
       "theme": "light",
       "expectedBackground": "#DCE7F8",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-document-sheet-375x812-light.png"
+      "png": "docs/screens/cai-document-sheet-375x812-light.png"
     },
     {
       "horizontalScroll": 0,
@@ -16525,7 +16525,7 @@
       "personTables": [],
       "order": [
         {
-          "route": "kai",
+          "route": "cai",
           "badge": "루트 진행 순서: 4th",
           "src": "/assets/portraits/pre-timeskip/large/cai.webp",
           "rect": {
@@ -16571,7 +16571,7 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 10.55878975195392
         },
@@ -18752,21 +18752,21 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-tasks-375x812-dark",
-      "route": "kai",
+      "label": "cai-tasks-375x812-dark",
+      "route": "cai",
       "view": "tasks",
       "width": 375,
       "height": 812,
       "theme": "dark",
       "expectedBackground": "#0B1A33",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-tasks-375x812-dark.png"
+      "png": "docs/screens/cai-tasks-375x812-dark.png"
     },
     {
       "horizontalScroll": 0,
@@ -18869,21 +18869,21 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-people-375x812-dark",
-      "route": "kai",
+      "label": "cai-people-375x812-dark",
+      "route": "cai",
       "view": "people",
       "width": 375,
       "height": 812,
       "theme": "dark",
       "expectedBackground": "#0B1A33",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-people-375x812-dark.png"
+      "png": "docs/screens/cai-people-375x812-dark.png"
     },
     {
       "horizontalScroll": 0,
@@ -19134,21 +19134,21 @@
       ],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-prep-375x812-dark",
-      "route": "kai",
+      "label": "cai-prep-375x812-dark",
+      "route": "cai",
       "view": "prep",
       "width": 375,
       "height": 812,
       "theme": "dark",
       "expectedBackground": "#0B1A33",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-prep-375x812-dark.png"
+      "png": "docs/screens/cai-prep-375x812-dark.png"
     },
     {
       "horizontalScroll": 0,
@@ -19245,21 +19245,21 @@
       ],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-materials-375x812-dark",
-      "route": "kai",
+      "label": "cai-materials-375x812-dark",
+      "route": "cai",
       "view": "materials",
       "width": 375,
       "height": 812,
       "theme": "dark",
       "expectedBackground": "#0B1A33",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-materials-375x812-dark.png"
+      "png": "docs/screens/cai-materials-375x812-dark.png"
     },
     {
       "horizontalScroll": 0,
@@ -19310,21 +19310,21 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-map-sheet-375x812-dark",
-      "route": "kai",
+      "label": "cai-map-sheet-375x812-dark",
+      "route": "cai",
       "view": "map-sheet",
       "width": 375,
       "height": 812,
       "theme": "dark",
       "expectedBackground": "#0B1A33",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-map-sheet-375x812-dark.png"
+      "png": "docs/screens/cai-map-sheet-375x812-dark.png"
     },
     {
       "horizontalScroll": 0,
@@ -19372,21 +19372,21 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-docs-375x812-dark",
-      "route": "kai",
+      "label": "cai-docs-375x812-dark",
+      "route": "cai",
       "view": "docs",
       "width": 375,
       "height": 812,
       "theme": "dark",
       "expectedBackground": "#0B1A33",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-docs-375x812-dark.png"
+      "png": "docs/screens/cai-docs-375x812-dark.png"
     },
     {
       "horizontalScroll": 0,
@@ -19434,21 +19434,21 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-document-sheet-375x812-dark",
-      "route": "kai",
+      "label": "cai-document-sheet-375x812-dark",
+      "route": "cai",
       "view": "document-sheet",
       "width": 375,
       "height": 812,
       "theme": "dark",
       "expectedBackground": "#0B1A33",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-document-sheet-375x812-dark.png"
+      "png": "docs/screens/cai-document-sheet-375x812-dark.png"
     },
     {
       "horizontalScroll": 0,
@@ -20260,7 +20260,7 @@
       "personTables": [],
       "order": [
         {
-          "route": "kai",
+          "route": "cai",
           "badge": "루트 진행 순서: 4th",
           "src": "/assets/portraits/pre-timeskip/large/cai.webp",
           "rect": {
@@ -20306,7 +20306,7 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 7.556150901096952
         },
@@ -22114,21 +22114,21 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-tasks-768x1024-light",
-      "route": "kai",
+      "label": "cai-tasks-768x1024-light",
+      "route": "cai",
       "view": "tasks",
       "width": 768,
       "height": 1024,
       "theme": "light",
       "expectedBackground": "#DCE7F8",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-tasks-768x1024-light.png"
+      "png": "docs/screens/cai-tasks-768x1024-light.png"
     },
     {
       "horizontalScroll": 0,
@@ -22231,21 +22231,21 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-people-768x1024-light",
-      "route": "kai",
+      "label": "cai-people-768x1024-light",
+      "route": "cai",
       "view": "people",
       "width": 768,
       "height": 1024,
       "theme": "light",
       "expectedBackground": "#DCE7F8",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-people-768x1024-light.png"
+      "png": "docs/screens/cai-people-768x1024-light.png"
     },
     {
       "horizontalScroll": 0,
@@ -22496,21 +22496,21 @@
       ],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-prep-768x1024-light",
-      "route": "kai",
+      "label": "cai-prep-768x1024-light",
+      "route": "cai",
       "view": "prep",
       "width": 768,
       "height": 1024,
       "theme": "light",
       "expectedBackground": "#DCE7F8",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-prep-768x1024-light.png"
+      "png": "docs/screens/cai-prep-768x1024-light.png"
     },
     {
       "horizontalScroll": 0,
@@ -22607,21 +22607,21 @@
       ],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-materials-768x1024-light",
-      "route": "kai",
+      "label": "cai-materials-768x1024-light",
+      "route": "cai",
       "view": "materials",
       "width": 768,
       "height": 1024,
       "theme": "light",
       "expectedBackground": "#DCE7F8",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-materials-768x1024-light.png"
+      "png": "docs/screens/cai-materials-768x1024-light.png"
     },
     {
       "horizontalScroll": 0,
@@ -22669,21 +22669,21 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 7.556150901096952
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-docs-768x1024-light",
-      "route": "kai",
+      "label": "cai-docs-768x1024-light",
+      "route": "cai",
       "view": "docs",
       "width": 768,
       "height": 1024,
       "theme": "light",
       "expectedBackground": "#DCE7F8",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-docs-768x1024-light.png"
+      "png": "docs/screens/cai-docs-768x1024-light.png"
     },
     {
       "horizontalScroll": 0,
@@ -23435,7 +23435,7 @@
       "personTables": [],
       "order": [
         {
-          "route": "kai",
+          "route": "cai",
           "badge": "루트 진행 순서: 4th",
           "src": "/assets/portraits/pre-timeskip/large/cai.webp",
           "rect": {
@@ -23481,7 +23481,7 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 10.55878975195392
         },
@@ -25289,21 +25289,21 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-tasks-768x1024-dark",
-      "route": "kai",
+      "label": "cai-tasks-768x1024-dark",
+      "route": "cai",
       "view": "tasks",
       "width": 768,
       "height": 1024,
       "theme": "dark",
       "expectedBackground": "#0B1A33",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-tasks-768x1024-dark.png"
+      "png": "docs/screens/cai-tasks-768x1024-dark.png"
     },
     {
       "horizontalScroll": 0,
@@ -25406,21 +25406,21 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-people-768x1024-dark",
-      "route": "kai",
+      "label": "cai-people-768x1024-dark",
+      "route": "cai",
       "view": "people",
       "width": 768,
       "height": 1024,
       "theme": "dark",
       "expectedBackground": "#0B1A33",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-people-768x1024-dark.png"
+      "png": "docs/screens/cai-people-768x1024-dark.png"
     },
     {
       "horizontalScroll": 0,
@@ -25671,21 +25671,21 @@
       ],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-prep-768x1024-dark",
-      "route": "kai",
+      "label": "cai-prep-768x1024-dark",
+      "route": "cai",
       "view": "prep",
       "width": 768,
       "height": 1024,
       "theme": "dark",
       "expectedBackground": "#0B1A33",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-prep-768x1024-dark.png"
+      "png": "docs/screens/cai-prep-768x1024-dark.png"
     },
     {
       "horizontalScroll": 0,
@@ -25782,21 +25782,21 @@
       ],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-materials-768x1024-dark",
-      "route": "kai",
+      "label": "cai-materials-768x1024-dark",
+      "route": "cai",
       "view": "materials",
       "width": 768,
       "height": 1024,
       "theme": "dark",
       "expectedBackground": "#0B1A33",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-materials-768x1024-dark.png"
+      "png": "docs/screens/cai-materials-768x1024-dark.png"
     },
     {
       "horizontalScroll": 0,
@@ -25844,21 +25844,21 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 10.55878975195392
         }
       ],
       "disclosureImageClips": [],
-      "label": "kai-docs-768x1024-dark",
-      "route": "kai",
+      "label": "cai-docs-768x1024-dark",
+      "route": "cai",
       "view": "docs",
       "width": 768,
       "height": 1024,
       "theme": "dark",
       "expectedBackground": "#0B1A33",
       "backgroundMatches": true,
-      "png": "docs/screens/kai-docs-768x1024-dark.png"
+      "png": "docs/screens/cai-docs-768x1024-dark.png"
     },
     {
       "horizontalScroll": 0,
@@ -26610,7 +26610,7 @@
       "personTables": [],
       "order": [
         {
-          "route": "kai",
+          "route": "cai",
           "badge": "루트 진행 순서: 4th",
           "src": "/assets/portraits/pre-timeskip/large/cai.webp",
           "rect": {
@@ -26656,7 +26656,7 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 7.556150901096952
         },
@@ -26733,7 +26733,7 @@
       "personTables": [],
       "order": [
         {
-          "route": "kai",
+          "route": "cai",
           "badge": "루트 진행 순서: 4th",
           "src": "/assets/portraits/pre-timeskip/large/cai.webp",
           "rect": {
@@ -26779,7 +26779,7 @@
       "goldTables": [],
       "accentContrast": [
         {
-          "route": "kai",
+          "route": "cai",
           "foreground": "#1b1405",
           "ratio": 10.55878975195392
         },
@@ -27150,7 +27150,7 @@
       "passed": true
     },
     {
-      "stage": "kai-plan",
+      "stage": "cai-plan",
       "old": {
         "portraits": 521,
         "skills": 481,
@@ -27290,7 +27290,7 @@
       "passed": true
     },
     {
-      "stage": "kai-war-plan",
+      "stage": "cai-war-plan",
       "old": {
         "portraits": 28,
         "skills": 3,
@@ -27369,7 +27369,7 @@
     },
     {
       "check": "sticky",
-      "route": "kai",
+      "route": "cai",
       "width": 1440,
       "theme": "light",
       "scrollY": 800,
@@ -27449,7 +27449,7 @@
     },
     {
       "check": "sticky",
-      "route": "kai",
+      "route": "cai",
       "width": 1440,
       "theme": "dark",
       "scrollY": 800,
@@ -27529,7 +27529,7 @@
     },
     {
       "check": "sticky",
-      "route": "kai",
+      "route": "cai",
       "width": 1920,
       "theme": "light",
       "scrollY": 800,
@@ -27609,7 +27609,7 @@
     },
     {
       "check": "sticky",
-      "route": "kai",
+      "route": "cai",
       "width": 1920,
       "theme": "dark",
       "scrollY": 800,
@@ -27689,7 +27689,7 @@
     },
     {
       "check": "sticky",
-      "route": "kai",
+      "route": "cai",
       "width": 375,
       "theme": "light",
       "scrollY": 800,
@@ -27769,7 +27769,7 @@
     },
     {
       "check": "sticky",
-      "route": "kai",
+      "route": "cai",
       "width": 375,
       "theme": "dark",
       "scrollY": 800,

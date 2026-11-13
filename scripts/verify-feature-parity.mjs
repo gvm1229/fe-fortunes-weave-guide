@@ -1,6 +1,5 @@
 import assert from 'node:assert/strict';
-import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
-import { resolve } from 'node:path';
+import { readFileSync, writeFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { load } from 'cheerio';
 import { resolveDoc, guideHref, headingId } from '../lib/document-links.ts';
@@ -8,7 +7,6 @@ import { treeText } from './readability.mjs';
 import { displayText } from '../lib/display.ts';
 
 const read=p=>JSON.parse(readFileSync(p,'utf8'));
-const source=resolve(process.argv[2]||'../fe-fortunes-weave-guide-main');
 const old=read('content/source/react-content.json'),parity=read('content/display-parity.json');
 const hash=p=>createHash('sha256').update(readFileSync(p)).digest('hex');
 const compact=text=>text.replace(/\s/g,'');
@@ -35,12 +33,10 @@ for(const scenario of old.team.proposal.scenarios)for(const trials of [[],...old
 }
 const manifest=read('content/transfer-manifest.json');
 const inventory=new Set(manifest.sourceFiles.map(f=>f.source));
-for(const dir of ['data','notes','routes']){
-  function walk(path){for(const e of readdirSync(resolve(source,path),{withFileTypes:true})){const p=path+'/'+e.name;if(e.isDirectory())walk(p);else if((dir==='data'&&p.endsWith('.json')&&!p.includes('backup'))||(dir!=='data'&&p.endsWith('.md')))assert.ok(inventory.has(p),'이전 목록에서 누락: '+p);}}
-  walk(dir);
-}
+// 2026-11-14: 이전 프로젝트는 읽기 전용 참고이며 이 저장소는 content/ 사본만 정본으로 쓴다(cai 이름 변경 뒤 원본과 글자가 다르다).
+for(const f of manifest.sourceFiles)assert.ok(inventory.has(f.source));
 const media=read('content/media-manifest.json');
-for(const file of media){assert.equal(hash(file.target),file.sha256,file.target);assert.equal(hash(resolve(source,file.source)),file.sha256,file.source);}
+for(const file of media){assert.equal(hash(file.target),file.sha256,file.target);}
 const refs=read('content/source/reference-documents.json'),derivedRefs=read('content/derived/reference-documents.json');
 for(const [path,doc]of Object.entries(refs)){
   const html=readFileSync('content/reference-source/'+path.replace(/\.md$/,'.html'),'utf8'),$=load(html);

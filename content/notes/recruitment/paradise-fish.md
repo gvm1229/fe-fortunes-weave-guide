@@ -119,7 +119,7 @@ Game8 세오도라 지도에서 반짝반짝어 검색 후 브론테스호로 �
 
 ### 위치와 지도
 
-[카이 지도 열기](https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624208 "recruit-map:paradise-fish:kai")
+[카이 지도 열기](https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624208 "recruit-map:paradise-fish:cai")
 
 ![반짝반짝어 위치 참고](../../assets/recruitment/brontes-location.jpg)
 

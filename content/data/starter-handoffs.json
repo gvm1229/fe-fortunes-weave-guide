@@ -123,7 +123,7 @@
         "카타냐"
       ]
     },
-    "kai": {
+    "cai": {
       "name": "카이",
       "starter": [
         "카이",
@@ -231,8 +231,8 @@
         "울턴드"
       ]
     },
-    "kai": {
-      "anchor": "kai-route-03",
+    "cai": {
+      "anchor": "cai-route-03",
       "targets": [
         "미카엘라",
         "세테스",
@@ -606,125 +606,125 @@
       "handoff": "디트리히·에스메랄다·파비오·미카엘라·우술라·리네·소피아 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
       "checkId": "miss-di12-answerer--deployment-budget"
     },
-    "kai:1": {
-      "route": "kai",
+    "cai:1": {
+      "route": "cai",
       "chapter": 1,
-      "anchor": "kai-01",
+      "anchor": "cai-01",
       "planningSlots": 9,
       "actualWindowFirst": true,
       "finish": "피터르·그자람→미카엘라→로레타의 실제 합류 순서로 성장 확대 · 네 명 같은 레벨 강제 없음 · 티아라·울턴드는 회복 · 새 보완판보다 현재 전차병 대상 우선",
       "handoff": "카이·티아라·피터르·그자람·미카엘라·울턴드·로레타 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
-      "checkId": "kai-01--deployment-budget"
+      "checkId": "cai-01--deployment-budget"
     },
-    "kai:2": {
-      "route": "kai",
+    "cai:2": {
+      "route": "cai",
       "chapter": 2,
-      "anchor": "miss-kai02-stairs",
+      "anchor": "miss-cai02-stairs",
       "planningSlots": 9,
       "actualWindowFirst": true,
       "finish": "피터르·그자람→미카엘라→로레타의 실제 합류 순서로 성장 확대 · 네 명 같은 레벨 강제 없음 · 티아라·울턴드는 회복 · 새 보완판보다 현재 전차병 대상 우선",
       "handoff": "카이·티아라·피터르·그자람·미카엘라·울턴드·로레타 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
-      "checkId": "miss-kai02-stairs--deployment-budget"
+      "checkId": "miss-cai02-stairs--deployment-budget"
     },
-    "kai:3": {
-      "route": "kai",
+    "cai:3": {
+      "route": "cai",
       "chapter": 3,
-      "anchor": "kai-route-03",
+      "anchor": "cai-route-03",
       "planningSlots": 9,
       "actualWindowFirst": true,
       "finish": "피터르·그자람→미카엘라→로레타의 실제 합류 순서로 성장 확대 · 네 명 같은 레벨 강제 없음 · 티아라·울턴드는 회복 · 새 보완판보다 현재 전차병 대상 우선",
       "handoff": "카이·티아라·피터르·그자람·미카엘라·울턴드·로레타 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
-      "checkId": "kai-route-03--deployment-budget"
+      "checkId": "cai-route-03--deployment-budget"
     },
-    "kai:4": {
-      "route": "kai",
+    "cai:4": {
+      "route": "cai",
       "chapter": 4,
-      "anchor": "miss-kai04-bertrand",
+      "anchor": "miss-cai04-bertrand",
       "planningSlots": 9,
       "actualWindowFirst": true,
       "finish": "피터르·그자람→미카엘라→로레타의 실제 합류 순서로 성장 확대 · 네 명 같은 레벨 강제 없음 · 티아라·울턴드는 회복 · 새 보완판보다 현재 전차병 대상 우선",
       "handoff": "카이·티아라·피터르·그자람·미카엘라·울턴드·로레타 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
-      "checkId": "miss-kai04-bertrand--deployment-budget"
+      "checkId": "miss-cai04-bertrand--deployment-budget"
     },
-    "kai:5": {
-      "route": "kai",
+    "cai:5": {
+      "route": "cai",
       "chapter": 5,
-      "anchor": "kai-03",
+      "anchor": "cai-03",
       "planningSlots": 9,
       "actualWindowFirst": true,
       "finish": "피터르·그자람→미카엘라→로레타의 실제 합류 순서로 성장 확대 · 네 명 같은 레벨 강제 없음 · 티아라·울턴드는 회복 · 새 보완판보다 현재 전차병 대상 우선",
       "handoff": "카이·티아라·피터르·그자람·미카엘라·울턴드·로레타 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
-      "checkId": "kai-03--deployment-budget"
+      "checkId": "cai-03--deployment-budget"
     },
-    "kai:6": {
-      "route": "kai",
+    "cai:6": {
+      "route": "cai",
       "chapter": 6,
-      "anchor": "miss-kai06-mural",
+      "anchor": "miss-cai06-mural",
       "planningSlots": 9,
       "actualWindowFirst": true,
       "finish": "피터르·그자람→미카엘라→로레타의 실제 합류 순서로 성장 확대 · 네 명 같은 레벨 강제 없음 · 티아라·울턴드는 회복 · 새 보완판보다 현재 전차병 대상 우선",
       "handoff": "카이·티아라·피터르·그자람·미카엘라·울턴드·로레타 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
-      "checkId": "miss-kai06-mural--deployment-budget"
+      "checkId": "miss-cai06-mural--deployment-budget"
     },
-    "kai:7": {
-      "route": "kai",
+    "cai:7": {
+      "route": "cai",
       "chapter": 7,
-      "anchor": "kai-05",
+      "anchor": "cai-05",
       "planningSlots": 9,
       "actualWindowFirst": true,
       "finish": "피터르·그자람→미카엘라→로레타의 실제 합류 순서로 성장 확대 · 네 명 같은 레벨 강제 없음 · 티아라·울턴드는 회복 · 새 보완판보다 현재 전차병 대상 우선",
       "handoff": "카이·티아라·피터르·그자람·미카엘라·울턴드·로레타 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
-      "checkId": "kai-05--deployment-budget"
+      "checkId": "cai-05--deployment-budget"
     },
-    "kai:8": {
-      "route": "kai",
+    "cai:8": {
+      "route": "cai",
       "chapter": 8,
-      "anchor": "kai-route-08",
+      "anchor": "cai-route-08",
       "planningSlots": 9,
       "actualWindowFirst": true,
       "finish": "피터르·그자람→미카엘라→로레타의 실제 합류 순서로 성장 확대 · 네 명 같은 레벨 강제 없음 · 티아라·울턴드는 회복 · 새 보완판보다 현재 전차병 대상 우선",
       "handoff": "카이·티아라·피터르·그자람·미카엘라·울턴드·로레타 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
-      "checkId": "kai-route-08--deployment-budget"
+      "checkId": "cai-route-08--deployment-budget"
     },
-    "kai:9": {
-      "route": "kai",
+    "cai:9": {
+      "route": "cai",
       "chapter": 9,
-      "anchor": "kai-route-09",
+      "anchor": "cai-route-09",
       "planningSlots": 9,
       "actualWindowFirst": true,
       "finish": "피터르·그자람→미카엘라→로레타의 실제 합류 순서로 성장 확대 · 네 명 같은 레벨 강제 없음 · 티아라·울턴드는 회복 · 새 보완판보다 현재 전차병 대상 우선",
       "handoff": "카이·티아라·피터르·그자람·미카엘라·울턴드·로레타 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
-      "checkId": "kai-route-09--deployment-budget"
+      "checkId": "cai-route-09--deployment-budget"
     },
-    "kai:10": {
-      "route": "kai",
+    "cai:10": {
+      "route": "cai",
       "chapter": 10,
-      "anchor": "kai-route-10",
+      "anchor": "cai-route-10",
       "planningSlots": 9,
       "actualWindowFirst": true,
       "finish": "피터르·그자람→미카엘라→로레타의 실제 합류 순서로 성장 확대 · 네 명 같은 레벨 강제 없음 · 티아라·울턴드는 회복 · 새 보완판보다 현재 전차병 대상 우선",
       "handoff": "카이·티아라·피터르·그자람·미카엘라·울턴드·로레타 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
-      "checkId": "kai-route-10--deployment-budget"
+      "checkId": "cai-route-10--deployment-budget"
     },
-    "kai:11": {
-      "route": "kai",
+    "cai:11": {
+      "route": "cai",
       "chapter": 11,
-      "anchor": "kai-route-11",
+      "anchor": "cai-route-11",
       "planningSlots": 9,
       "actualWindowFirst": true,
       "finish": "피터르·그자람→미카엘라→로레타의 실제 합류 순서로 성장 확대 · 네 명 같은 레벨 강제 없음 · 티아라·울턴드는 회복 · 새 보완판보다 현재 전차병 대상 우선",
       "handoff": "카이·티아라·피터르·그자람·미카엘라·울턴드·로레타 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
-      "checkId": "kai-route-11--deployment-budget"
+      "checkId": "cai-route-11--deployment-budget"
     },
-    "kai:12": {
-      "route": "kai",
+    "cai:12": {
+      "route": "cai",
       "chapter": 12,
-      "anchor": "kai-06",
+      "anchor": "cai-06",
       "planningSlots": 9,
       "actualWindowFirst": true,
       "finish": "피터르·그자람→미카엘라→로레타의 실제 합류 순서로 성장 확대 · 네 명 같은 레벨 강제 없음 · 티아라·울턴드는 회복 · 새 보완판보다 현재 전차병 대상 우선",
       "handoff": "카이·티아라·피터르·그자람·미카엘라·울턴드·로레타 우선 · 명단 크기는 출격 수와 별개 · 보통 진영장 외6~7명,최종전 무렵8명 범위와 실제 준비창 우선 · 신규 대상은 실제 출격과 기능을 확인해 교대",
-      "checkId": "kai-06--deployment-budget"
+      "checkId": "cai-06--deployment-budget"
     }
   }
 }

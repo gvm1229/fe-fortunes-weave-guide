@@ -6,7 +6,7 @@ import {treeText,preservedText,sentences,spaceAmounts} from './readability.mjs';
 import {markdownTree,markdownText} from './markdown-presentation.mjs';
 import {createHash} from 'node:crypto';
 const read=p=>JSON.parse(readFileSync(p,'utf8'));
-const raw=deriveChecklist(read(resolve(process.argv[2]||'../fe-fortunes-weave-guide-main','personalized-app/src/content.json')),read('content/data/playbook.json'));
+const raw=deriveChecklist(read(resolve(process.argv[2]||'content/source/react-content.json')),read('content/data/playbook.json'));
 const actual=read('content/derived/checklist.json').stages;
 let trees=0,sentenceCount=0,paragraphs=0;
 const failures=[];

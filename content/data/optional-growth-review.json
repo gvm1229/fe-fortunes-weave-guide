@@ -847,7 +847,7 @@
       "source": "data/recruitment-build-audit.json"
     },
     {
-      "route": "kai",
+      "route": "cai",
       "name": "이스마르",
       "requirement": null,
       "decision": "추가 안 함",
@@ -855,7 +855,7 @@
       "source": "data/recruitment-build-audit.json"
     },
     {
-      "route": "kai",
+      "route": "cai",
       "name": "디트리히",
       "requirement": null,
       "decision": "추가 안 함",
@@ -863,7 +863,7 @@
       "source": "data/recruitment-build-audit.json"
     },
     {
-      "route": "kai",
+      "route": "cai",
       "name": "카이",
       "requirement": {
         "sup": "0",
@@ -875,7 +875,7 @@
       "source": "data/recruitment-build-audit.json"
     },
     {
-      "route": "kai",
+      "route": "cai",
       "name": "세오도라",
       "requirement": null,
       "decision": "추가 안 함",
@@ -883,7 +883,7 @@
       "source": "data/recruitment-build-audit.json"
     },
     {
-      "route": "kai",
+      "route": "cai",
       "name": "레다",
       "requirement": null,
       "decision": "추가 안 함",
@@ -891,7 +891,7 @@
       "source": "data/recruitment-build-audit.json"
     },
     {
-      "route": "kai",
+      "route": "cai",
       "name": "미카엘라",
       "requirement": {
         "sup": "3",
@@ -903,7 +903,7 @@
       "source": "data/recruitment-build-audit.json"
     },
     {
-      "route": "kai",
+      "route": "cai",
       "name": "무우",
       "requirement": {
         "sup": "3",
@@ -915,7 +915,7 @@
       "source": "data/recruitment-build-audit.json"
     },
     {
-      "route": "kai",
+      "route": "cai",
       "name": "그자람",
       "requirement": {
         "sup": "1",
@@ -927,7 +927,7 @@
       "source": "data/recruitment-build-audit.json"
     },
     {
-      "route": "kai",
+      "route": "cai",
       "name": "에스메랄다",
       "requirement": {
         "sup": "2",
@@ -939,7 +939,7 @@
       "source": "data/recruitment-build-audit.json"
     },
     {
-      "route": "kai",
+      "route": "cai",
       "name": "카타냐",
       "requirement": {
         "sup": "3",
@@ -951,7 +951,7 @@
       "source": "data/recruitment-build-audit.json"
     },
     {
-      "route": "kai",
+      "route": "cai",
       "name": "리네",
       "requirement": {
         "sup": "3",
@@ -963,7 +963,7 @@
       "source": "data/recruitment-build-audit.json"
     },
     {
-      "route": "kai",
+      "route": "cai",
       "name": "시로코",
       "requirement": {
         "sup": "3",
@@ -975,7 +975,7 @@
       "source": "data/recruitment-build-audit.json"
     },
     {
-      "route": "kai",
+      "route": "cai",
       "name": "파비오",
       "requirement": null,
       "decision": "추가 안 함",
@@ -983,7 +983,7 @@
       "source": "data/recruitment-build-audit.json"
     },
     {
-      "route": "kai",
+      "route": "cai",
       "name": "단테",
       "requirement": {
         "sup": "3",
@@ -995,7 +995,7 @@
       "source": "data/recruitment-build-audit.json"
     },
     {
-      "route": "kai",
+      "route": "cai",
       "name": "티아라",
       "requirement": {
         "sup": "0",
@@ -1007,7 +1007,7 @@
       "source": "data/recruitment-build-audit.json"
     },
     {
-      "route": "kai",
+      "route": "cai",
       "name": "울턴드",
       "requirement": {
         "sup": "0",
@@ -1019,7 +1019,7 @@
       "source": "data/recruitment-build-audit.json"
     },
     {
-      "route": "kai",
+      "route": "cai",
       "name": "하르빈",
       "requirement": {
         "sup": "3",
@@ -1031,7 +1031,7 @@
       "source": "data/recruitment-build-audit.json"
     },
     {
-      "route": "kai",
+      "route": "cai",
       "name": "피터르",
       "requirement": {
         "sup": "0",
@@ -1043,7 +1043,7 @@
       "source": "data/recruitment-build-audit.json"
     },
     {
-      "route": "kai",
+      "route": "cai",
       "name": "이니오니",
       "requirement": {
         "sup": "3",
@@ -1055,7 +1055,7 @@
       "source": "data/recruitment-build-audit.json"
     },
     {
-      "route": "kai",
+      "route": "cai",
       "name": "우술라",
       "requirement": {
         "sup": "3",
@@ -1067,7 +1067,7 @@
       "source": "data/recruitment-build-audit.json"
     },
     {
-      "route": "kai",
+      "route": "cai",
       "name": "알렉산드라",
       "requirement": {
         "sup": "2",
@@ -1079,7 +1079,7 @@
       "source": "data/recruitment-build-audit.json"
     },
     {
-      "route": "kai",
+      "route": "cai",
       "name": "로레타",
       "requirement": {
         "sup": "3",
@@ -1091,7 +1091,7 @@
       "source": "data/recruitment-build-audit.json"
     },
     {
-      "route": "kai",
+      "route": "cai",
       "name": "소피아",
       "requirement": {
         "sup": "3",
@@ -1103,7 +1103,7 @@
       "source": "data/recruitment-build-audit.json"
     },
     {
-      "route": "kai",
+      "route": "cai",
       "name": "올림피아",
       "requirement": {
         "sup": "3",
@@ -1115,7 +1115,7 @@
       "source": "data/recruitment-build-audit.json"
     },
     {
-      "route": "kai",
+      "route": "cai",
       "name": "피아나",
       "requirement": {
         "sup": "3",

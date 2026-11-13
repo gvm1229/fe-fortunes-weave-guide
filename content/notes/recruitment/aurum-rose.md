@@ -88,7 +88,7 @@
 
 ### 위치와 지도
 
-[지도 열기 · 카이 선택 후 Klytius Plains 검색](https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624208 "recruit-map:aurum-rose:kai")
+[지도 열기 · 카이 선택 후 Klytius Plains 검색](https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624208 "recruit-map:aurum-rose:cai")
 
 ![아우람 로즈 위치 참고](../../assets/recruitment/klytius-map.jpg)
 

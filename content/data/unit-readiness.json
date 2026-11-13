@@ -658,7 +658,7 @@
       },
       "누조": {
         "kind": "보존·수집",
-        "baseRoute": "kai",
+        "baseRoute": "cai",
         "merge": "최종 성장 자료 아님 · 탈것·지참품 보존",
         "reason": "카이의 실제 활 전력 · 다른 판은 부족한 선더 소드 지참품만 확보",
         "supportStartChapter": 5,
@@ -707,7 +707,7 @@
       },
       "로레타": {
         "kind": "능력·기능 보완",
-        "baseRoute": "kai",
+        "baseRoute": "cai",
         "merge": "기준 카이판 · 검·속도 · 아지랑이·모면",
         "reason": "기준 카이판 · 검·속도 · 아지랑이·모면 · 해당 성장·기능을 확보할 추가 판",
         "supportStartChapter": 5,
@@ -1006,7 +1006,7 @@
       },
       "그자람": {
         "kind": "능력·기능 보완",
-        "baseRoute": "kai",
+        "baseRoute": "cai",
         "merge": "기준 카이판 · 검·속도",
         "reason": "기준 카이판 · 검·속도 · 해당 성장·기능을 확보할 추가 판",
         "supportStartChapter": 4,
@@ -1739,7 +1739,7 @@
       },
       "미카엘라": {
         "kind": "능력·기능 보완",
-        "baseRoute": "kai",
+        "baseRoute": "cai",
         "merge": "기준 카이판 · 도끼·격투 기능",
         "reason": "기준 카이판 · 도끼·격투 기능 · 해당 성장·기능을 확보할 추가 판",
         "supportStartChapter": 4,
@@ -2179,7 +2179,7 @@
       },
       "누조": {
         "kind": "보존·수집",
-        "baseRoute": "kai",
+        "baseRoute": "cai",
         "merge": "최종 성장 자료 아님 · 탈것·지참품 보존",
         "reason": "카이의 실제 활 전력 · 다른 판은 부족한 선더 소드 지참품만 확보",
         "supportStartChapter": 4,
@@ -2277,7 +2277,7 @@
       },
       "울턴드": {
         "kind": "능력·기능 보완",
-        "baseRoute": "kai",
+        "baseRoute": "cai",
         "merge": "기준 카이판 · HP·힘·수비 · 빈칸일 때만",
         "reason": "기준 카이판 · HP·힘·수비 · 빈칸일 때만 · 해당 성장·기능을 확보할 추가 판",
         "supportStartChapter": 4,
@@ -2374,10 +2374,10 @@
         }
       }
     },
-    "kai": {
+    "cai": {
       "카이": {
         "kind": "기준 육성",
-        "baseRoute": "kai",
+        "baseRoute": "cai",
         "merge": "현재 루트 기준판",
         "reason": "기마 이동과 창 범위 공격으로 약한 전선을 돌파",
         "supportStartChapter": 1,
@@ -2425,7 +2425,7 @@
       },
       "티아라": {
         "kind": "기준 육성",
-        "baseRoute": "kai",
+        "baseRoute": "cai",
         "merge": "현재 루트 기준판",
         "reason": "개인 스킬의1~2칸 춤으로 주력 공격수의 재행동 담당",
         "supportStartChapter": 1,
@@ -2473,7 +2473,7 @@
       },
       "피터르": {
         "kind": "기준 육성",
-        "baseRoute": "kai",
+        "baseRoute": "cai",
         "merge": "현재 루트 기준판",
         "reason": "활 기술 사거리+1로 반격 밖에서 적을 줄이는 저격 담당",
         "supportStartChapter": 1,
@@ -2521,7 +2521,7 @@
       },
       "그자람": {
         "kind": "기준 육성",
-        "baseRoute": "kai",
+        "baseRoute": "cai",
         "merge": "현재 루트 기준판",
         "reason": "검·보병 특기와 검 필살 보정으로 빠른 물리 마무리",
         "supportStartChapter": 3,
@@ -2570,7 +2570,7 @@
       },
       "미카엘라": {
         "kind": "기준 육성",
-        "baseRoute": "kai",
+        "baseRoute": "cai",
         "merge": "현재 루트 기준판",
         "reason": "도끼·격투로 전열 적을 처치하고 블레이즈로 근접 화력 보강",
         "supportStartChapter": 3,
@@ -2619,7 +2619,7 @@
       },
       "울턴드": {
         "kind": "기준 육성",
-        "baseRoute": "kai",
+        "baseRoute": "cai",
         "merge": "현재 루트 기준판",
         "reason": "창으로 전열을 보조하고 인접 회복·엔젤로 아군 유지·명마 적 처리",
         "supportStartChapter": 6,
@@ -2716,7 +2716,7 @@
       },
       "세테스": {
         "kind": "루트 전력",
-        "baseRoute": "kai",
+        "baseRoute": "cai",
         "merge": "3부 실전 예비 · 최종25명보다 후순위",
         "reason": "카이1·2부의 창·기마 전열 · 아살 확보와 늦은 동료의 성장 시간 확보",
         "supportStartChapter": 3,
@@ -2765,7 +2765,7 @@
       },
       "누조": {
         "kind": "루트 전력",
-        "baseRoute": "kai",
+        "baseRoute": "cai",
         "merge": "3부 실전 예비 · 최종25명보다 후순위",
         "reason": "카이의 실제 활 전력 · 다른 판은 부족한 선더 소드 지참품만 확보",
         "supportStartChapter": 3,
@@ -2814,7 +2814,7 @@
       },
       "이오": {
         "kind": "보존·수집",
-        "baseRoute": "kai",
+        "baseRoute": "cai",
         "merge": "최종 성장 자료 아님 · 탈것·지참품 보존",
         "reason": "전용 말 보존 · 디트리히 초반 레버·기동 담당 · 보존판의 반복 육성 불필요",
         "supportStartChapter": 3,
@@ -2912,7 +2912,7 @@
       },
       "로레타": {
         "kind": "기준 육성",
-        "baseRoute": "kai",
+        "baseRoute": "cai",
         "merge": "현재 루트 기준판",
         "reason": "병과·마스터의 활 명중 보정을 모아 난사로 적을 줄이는 궁수 · 검판의 속도와 전차병의 힘·기술을 결합",
         "supportStartChapter": 3,

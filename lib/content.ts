@@ -7,7 +7,7 @@ import { displayText } from './display';
 import { personPortrait } from './portraits';
 import type { Chapter } from './checklist';
 import { characterData, type CharacterData } from './character-data';
-export type Route = 'theodora' | 'leda' | 'dietrich' | 'kai' | 'part3';
+export type Route = 'theodora' | 'leda' | 'dietrich' | 'cai' | 'part3';
 export type Part = '1' | '2' | '3';
 export type Action = { id: string; category: string; text: string; inheritLegacy: boolean };
 export type Group = { id: string; stage: string; title: string; people: string[]; actions: Action[]; notes: { category: string; text: string }[]; figures: string[]; referenceLinks?: { url: string; label: string }[]; spoiler?: boolean };
@@ -18,7 +18,7 @@ export const routes: { id: Route; label: string; description: string }[] = [
   { id: 'theodora', label: '세오도라', description: '현재 전력을 지키며 다음 준비' },
   { id: 'leda', label: '레다', description: '영입과 육성을 한 걸음씩' },
   { id: 'dietrich', label: '디트리히', description: '새 여정의 기준을 다시 확인' },
-  { id: 'kai', label: '카이', description: '마지막 루트까지 빠짐없이' },
+  { id: 'cai', label: '카이', description: '마지막 루트까지 빠짐없이' },
   { id: 'part3', label: '3부', description: '모인 동료들과 마지막 준비' },
 ];
 export function stageId(route: Route, part: Part) { return route === 'part3' ? 'part3-plan' : `${route}${part === '2' ? '-war' : ''}-plan`; }

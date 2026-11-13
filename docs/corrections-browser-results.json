@@ -13,7 +13,7 @@
         "28×28",
         "48×48"
       ],
-      "route": "kai",
+      "route": "cai",
       "part": "1",
       "view": "tasks",
       "width": 1440,
@@ -29,7 +29,7 @@
       "faceSizes": [
         "96×96"
       ],
-      "route": "kai",
+      "route": "cai",
       "part": "1",
       "view": "people",
       "width": 1440,
@@ -45,7 +45,7 @@
       "faceSizes": [
         "48×48"
       ],
-      "route": "kai",
+      "route": "cai",
       "part": "1",
       "view": "prep",
       "width": 1440,
@@ -59,7 +59,7 @@
       "tableFontViolations": 0,
       "groupLineViolations": 0,
       "faceSizes": [],
-      "route": "kai",
+      "route": "cai",
       "part": "1",
       "view": "materials",
       "width": 1440,
@@ -76,7 +76,7 @@
         "28×28",
         "48×48"
       ],
-      "route": "kai",
+      "route": "cai",
       "part": "2",
       "view": "tasks",
       "width": 1440,
@@ -92,7 +92,7 @@
       "faceSizes": [
         "96×96"
       ],
-      "route": "kai",
+      "route": "cai",
       "part": "2",
       "view": "people",
       "width": 1440,
@@ -108,7 +108,7 @@
       "faceSizes": [
         "48×48"
       ],
-      "route": "kai",
+      "route": "cai",
       "part": "2",
       "view": "prep",
       "width": 1440,
@@ -122,7 +122,7 @@
       "tableFontViolations": 0,
       "groupLineViolations": 0,
       "faceSizes": [],
-      "route": "kai",
+      "route": "cai",
       "part": "2",
       "view": "materials",
       "width": 1440,
@@ -1178,7 +1178,7 @@
         "28×28",
         "48×48"
       ],
-      "route": "kai",
+      "route": "cai",
       "part": "1",
       "view": "tasks",
       "width": 1440,
@@ -1194,7 +1194,7 @@
       "faceSizes": [
         "96×96"
       ],
-      "route": "kai",
+      "route": "cai",
       "part": "1",
       "view": "people",
       "width": 1440,
@@ -1210,7 +1210,7 @@
       "faceSizes": [
         "48×48"
       ],
-      "route": "kai",
+      "route": "cai",
       "part": "1",
       "view": "prep",
       "width": 1440,
@@ -1224,7 +1224,7 @@
       "tableFontViolations": 0,
       "groupLineViolations": 0,
       "faceSizes": [],
-      "route": "kai",
+      "route": "cai",
       "part": "1",
       "view": "materials",
       "width": 1440,
@@ -1241,7 +1241,7 @@
         "28×28",
         "48×48"
       ],
-      "route": "kai",
+      "route": "cai",
       "part": "2",
       "view": "tasks",
       "width": 1440,
@@ -1257,7 +1257,7 @@
       "faceSizes": [
         "96×96"
       ],
-      "route": "kai",
+      "route": "cai",
       "part": "2",
       "view": "people",
       "width": 1440,
@@ -1273,7 +1273,7 @@
       "faceSizes": [
         "48×48"
       ],
-      "route": "kai",
+      "route": "cai",
       "part": "2",
       "view": "prep",
       "width": 1440,
@@ -1287,7 +1287,7 @@
       "tableFontViolations": 0,
       "groupLineViolations": 0,
       "faceSizes": [],
-      "route": "kai",
+      "route": "cai",
       "part": "2",
       "view": "materials",
       "width": 1440,
@@ -2342,7 +2342,7 @@
       "faceSizes": [
         "28×28"
       ],
-      "route": "kai",
+      "route": "cai",
       "part": "1",
       "view": "tasks",
       "width": 375,
@@ -2358,7 +2358,7 @@
       "faceSizes": [
         "96×96"
       ],
-      "route": "kai",
+      "route": "cai",
       "part": "1",
       "view": "people",
       "width": 375,
@@ -2374,7 +2374,7 @@
       "faceSizes": [
         "48×48"
       ],
-      "route": "kai",
+      "route": "cai",
       "part": "1",
       "view": "prep",
       "width": 375,
@@ -2388,7 +2388,7 @@
       "tableFontViolations": 0,
       "groupLineViolations": 0,
       "faceSizes": [],
-      "route": "kai",
+      "route": "cai",
       "part": "1",
       "view": "materials",
       "width": 375,
@@ -2404,7 +2404,7 @@
       "faceSizes": [
         "28×28"
       ],
-      "route": "kai",
+      "route": "cai",
       "part": "2",
       "view": "tasks",
       "width": 375,
@@ -2420,7 +2420,7 @@
       "faceSizes": [
         "96×96"
       ],
-      "route": "kai",
+      "route": "cai",
       "part": "2",
       "view": "people",
       "width": 375,
@@ -2436,7 +2436,7 @@
       "faceSizes": [
         "48×48"
       ],
-      "route": "kai",
+      "route": "cai",
       "part": "2",
       "view": "prep",
       "width": 375,
@@ -2450,7 +2450,7 @@
       "tableFontViolations": 0,
       "groupLineViolations": 0,
       "faceSizes": [],
-      "route": "kai",
+      "route": "cai",
       "part": "2",
       "view": "materials",
       "width": 375,
@@ -3498,7 +3498,7 @@
       "faceSizes": [
         "28×28"
       ],
-      "route": "kai",
+      "route": "cai",
       "part": "1",
       "view": "tasks",
       "width": 375,
@@ -3514,7 +3514,7 @@
       "faceSizes": [
         "96×96"
       ],
-      "route": "kai",
+      "route": "cai",
       "part": "1",
       "view": "people",
       "width": 375,
@@ -3530,7 +3530,7 @@
       "faceSizes": [
         "48×48"
       ],
-      "route": "kai",
+      "route": "cai",
       "part": "1",
       "view": "prep",
       "width": 375,
@@ -3544,7 +3544,7 @@
       "tableFontViolations": 0,
       "groupLineViolations": 0,
       "faceSizes": [],
-      "route": "kai",
+      "route": "cai",
       "part": "1",
       "view": "materials",
       "width": 375,
@@ -3560,7 +3560,7 @@
       "faceSizes": [
         "28×28"
       ],
-      "route": "kai",
+      "route": "cai",
       "part": "2",
       "view": "tasks",
       "width": 375,
@@ -3576,7 +3576,7 @@
       "faceSizes": [
         "96×96"
       ],
-      "route": "kai",
+      "route": "cai",
       "part": "2",
       "view": "people",
       "width": 375,
@@ -3592,7 +3592,7 @@
       "faceSizes": [
         "48×48"
       ],
-      "route": "kai",
+      "route": "cai",
       "part": "2",
       "view": "prep",
       "width": 375,
@@ -3606,7 +3606,7 @@
       "tableFontViolations": 0,
       "groupLineViolations": 0,
       "faceSizes": [],
-      "route": "kai",
+      "route": "cai",
       "part": "2",
       "view": "materials",
       "width": 375,
@@ -4648,10 +4648,10 @@
   ],
   "errors": [],
   "screens": [
-    "docs/screens/kai-tasks-1440x900-light.png",
-    "docs/screens/kai-people-1440x900-light.png",
-    "docs/screens/kai-prep-1440x900-light.png",
-    "docs/screens/kai-materials-1440x900-light.png",
+    "docs/screens/cai-tasks-1440x900-light.png",
+    "docs/screens/cai-people-1440x900-light.png",
+    "docs/screens/cai-prep-1440x900-light.png",
+    "docs/screens/cai-materials-1440x900-light.png",
     "docs/screens/dietrich-tasks-1440x900-light.png",
     "docs/screens/dietrich-people-1440x900-light.png",
     "docs/screens/dietrich-prep-1440x900-light.png",
@@ -4669,10 +4669,10 @@
     "docs/screens/part3-prep-1440x900-light.png",
     "docs/screens/part3-materials-1440x900-light.png",
     "docs/screens/prep-training-1440x900-light.png",
-    "docs/screens/kai-tasks-1440x900-dark.png",
-    "docs/screens/kai-people-1440x900-dark.png",
-    "docs/screens/kai-prep-1440x900-dark.png",
-    "docs/screens/kai-materials-1440x900-dark.png",
+    "docs/screens/cai-tasks-1440x900-dark.png",
+    "docs/screens/cai-people-1440x900-dark.png",
+    "docs/screens/cai-prep-1440x900-dark.png",
+    "docs/screens/cai-materials-1440x900-dark.png",
     "docs/screens/dietrich-tasks-1440x900-dark.png",
     "docs/screens/dietrich-people-1440x900-dark.png",
     "docs/screens/dietrich-prep-1440x900-dark.png",
@@ -4690,10 +4690,10 @@
     "docs/screens/part3-prep-1440x900-dark.png",
     "docs/screens/part3-materials-1440x900-dark.png",
     "docs/screens/prep-training-1440x900-dark.png",
-    "docs/screens/kai-tasks-375x812-light.png",
-    "docs/screens/kai-people-375x812-light.png",
-    "docs/screens/kai-prep-375x812-light.png",
-    "docs/screens/kai-materials-375x812-light.png",
+    "docs/screens/cai-tasks-375x812-light.png",
+    "docs/screens/cai-people-375x812-light.png",
+    "docs/screens/cai-prep-375x812-light.png",
+    "docs/screens/cai-materials-375x812-light.png",
     "docs/screens/dietrich-tasks-375x812-light.png",
     "docs/screens/dietrich-people-375x812-light.png",
     "docs/screens/dietrich-prep-375x812-light.png",
@@ -4711,10 +4711,10 @@
     "docs/screens/part3-prep-375x812-light.png",
     "docs/screens/part3-materials-375x812-light.png",
     "docs/screens/prep-training-375x812-light.png",
-    "docs/screens/kai-tasks-375x812-dark.png",
-    "docs/screens/kai-people-375x812-dark.png",
-    "docs/screens/kai-prep-375x812-dark.png",
-    "docs/screens/kai-materials-375x812-dark.png",
+    "docs/screens/cai-tasks-375x812-dark.png",
+    "docs/screens/cai-people-375x812-dark.png",
+    "docs/screens/cai-prep-375x812-dark.png",
+    "docs/screens/cai-materials-375x812-dark.png",
     "docs/screens/dietrich-tasks-375x812-dark.png",
     "docs/screens/dietrich-people-375x812-dark.png",
     "docs/screens/dietrich-prep-375x812-dark.png",

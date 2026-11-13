@@ -12,7 +12,7 @@ mkdirSync(screenshots, { recursive:true });
 mkdirSync(staging, { recursive:true });
 const derived = JSON.parse(readFileSync('content/derived/checklist.json'));
 const spec = readFileSync('docs/design-spec.md','utf8');
-const routeNames = {theodora:'세오도라',leda:'레다',dietrich:'디트리히',kai:'카이',part3:'3부'};
+const routeNames = {theodora:'세오도라',leda:'레다',dietrich:'디트리히',cai:'카이',part3:'3부'};
 const expectedBackground = {};
 for (const line of spec.split('\n')) {
   const cells = line.split('|').slice(1,-1).map(s=>s.trim());
@@ -38,7 +38,7 @@ async function visit(page,path){
 
 async function ready(page) {
   await page.locator('main').first().waitFor();
-  if(/\/(theodora|leda|dietrich|kai|part3)\//.test(new URL(page.url()).pathname))await page.locator('.app-shell').waitFor();
+  if(/\/(theodora|leda|dietrich|cai|part3)\//.test(new URL(page.url()).pathname))await page.locator('.app-shell').waitFor();
   await page.evaluate(()=>document.fonts.ready);
   try{await page.waitForFunction(()=>!document.querySelector('.checklist input[disabled]'),{},{timeout:10000});}
   catch(e){
@@ -116,7 +116,7 @@ async function measure(page,{route='home',view='home',theme,width,height,screens
   if(row.disclosureImageClips.length)failures.push(`${label}: 접힌 설명의 그림 잘림`);
   if(row.accentContrast.some(c=>c.ratio<4.5))failures.push(`${label}: accent 글자 대비`);
   if(route==='home'){
-    if(JSON.stringify(row.order.map(r=>r.route))!==JSON.stringify(['kai','dietrich','theodora','leda']))failures.push(`${label}: 오벨리스크 순서`);
+    if(JSON.stringify(row.order.map(r=>r.route))!==JSON.stringify(['cai','dietrich','theodora','leda']))failures.push(`${label}: 오벨리스크 순서`);
     const badges=['4th','3rd','1st','2nd'];
     if(row.order.some((r,i)=>r.badge!==`루트 진행 순서: ${badges[i]}`||!r.badgeVisible||!r.src.includes('/pre-timeskip/large/')))failures.push(`${label}: 배지·타임스킵 전 큰 그림`);
     if(width===375&&(row.order[0].rect.y!==row.order[1].rect.y||row.order[2].rect.y!==row.order[3].rect.y||row.order[2].rect.y<=row.order[0].rect.y))failures.push(`${label}: 휴대폰 2×2`);
@@ -200,7 +200,7 @@ try {
 
   const context=await browser.newContext({viewport:{width:1280,height:720}}),page=await context.newPage();
   for(const theme of ['light','dark']){await page.emulateMedia({colorScheme:theme});await page.goto(base+'/');await measure(page,{theme,width:1280,height:720});}
-  for(const route of ['theodora','leda','dietrich','kai']){await page.goto(`${base}/${route}/2/`);await ready(page);await compareImages(page,route,'2');}
+  for(const route of ['theodora','leda','dietrich','cai']){await page.goto(`${base}/${route}/2/`);await ready(page);await compareImages(page,route,'2');}
   for(const [width,height]of [[1440,900],[375,812]])for(const theme of ['light','dark']){
     await page.setViewportSize({width,height});await page.emulateMedia({colorScheme:theme});
     await page.goto(base+'/theodora/1/');await ready(page);await page.getByLabel('장 선택',{exact:true}).selectOption({label:'6장'});await ready(page);

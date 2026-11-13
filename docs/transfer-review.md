@@ -31,10 +31,10 @@
 | war-creek-nathan--194939803d | 레다 화면의 키릭 영입 조건에서 다른 루트 병기 제거 |
 | sequential-leda-war-reward-20261108--2 | 현재 완료 뒤 자원 확인 |
 | sequential-leda-war-reward-20261108--start-dietrich-war | 자료 확인 뒤 첫 화면 선택 |
-| di-27--start-kai-part1 | 같은 루트 2부로 수정 |
+| di-27--start-cai-part1 | 같은 루트 2부로 수정 |
 | sequential-dietrich-war-reward-20261108--2 | 현재 완료 뒤 자원 확인 |
-| sequential-dietrich-war-reward-20261108--start-kai-war | 자료 확인 뒤 첫 화면 선택 |
-| reward-kai-part1--start-theodora-war | 모든 1부 선행 후 세오도라 2부 지시를 카이 2부로 수정 |
+| sequential-dietrich-war-reward-20261108--start-cai-war | 자료 확인 뒤 첫 화면 선택 |
+| reward-cai-part1--start-theodora-war | 모든 1부 선행 후 세오도라 2부 지시를 카이 2부로 수정 |
 
 레다의 카이·디트리히 외전은 레다 루트 안의 실제 인물 일정이므로 다른 루트 자료로 오인해 삭제하지 않는다. 날짜·물품·보상 등 새 게임 사실을 추가하지 않았다. 자료가 없는 값은 미확인으로 표시한다.
 

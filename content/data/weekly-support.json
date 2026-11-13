@@ -132,7 +132,7 @@
       ]
     }
   },
-  "kai": {
+  "cai": {
     "lord": "카이",
     "rows": [
       [
@@ -164,7 +164,7 @@
     "nextTarget": null,
     "nextText": "다음 로드 선행 식사는 추가하지 않음. 첫 탈것 포획·먹이 뒤에는 지원 루프용 장 다시 하기 금지.",
     "recruitmentQueue": {
-      "anchor": "kai-route-03",
+      "anchor": "cai-route-03",
       "targets": [
         "미카엘라",
         "세테스",
