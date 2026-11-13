@@ -10,14 +10,14 @@
 |---|---|
 | `C:\Users\hojin\Documents\fe-fortunes-weave-guide-megi` (이 저장소) | **현재 사이트.** Next.js 정적 사이트. 원본 공략 저장소(bubae/fe-fortunes-weave-guide)의 포크 `gvm1229/fe-fortunes-weave-guide`, 브랜치 `main` |
 | `archive/` | 원본 공략. 참고용이며 수정하지 않고 앱에서 가져오지 않는다 |
-| `C:\Users\hojin\Documents\fe-fortunes-weave-guide-main` | **이전 개인화 프로젝트**(Python 생성기 + React). 정본 데이터 `data/*.json`, 진행 기록 `progress.md`·`routes/*/progress.md`, 선호 정본 `notes/knowledge/`가 있다. 새 사이트의 `content/`는 여기서 옮겨 온 사본이다 |
+| `C:\Users\hojin\Documents\fe-fortunes-weave-guide-main` | **이전 개인화 프로젝트. 2026-11-14부터 읽기 전용 참고.** 고치지 않고 가져오지도 않는다(`scripts/transfer.mjs`는 막아 두었다). 이 저장소의 `content/`가 데이터·문서·선호 기록의 정본이다. 루트 ID는 여기서 `cai`로 바꿨으므로 이전 프로젝트의 `kai`와 다르다 |
 
 - 배포: Netlify 사이트 `fe-fortunes-weave-guide-megi` → https://fe-fortunes-weave-guide-megi.netlify.app (사이트 ID `ca844312-b942-4708-a9a2-7bcf0c812fe5`, 사용자 Netlify 계정에 로그인되어 있음)
 - 로컬 개발: `npm run dev` → http://localhost:3000. 빌드: `npm run build`(정적 `out/`). 검사: `npm run lint`, 타입 검사, `npm run verify`.
 
 ## 2. 사용자 선호 — 게임
 
-정본: `content/notes/knowledge/preferences.md`, `final25-targets.md`, `training-advice-guardrails.md` (이전 프로젝트 `notes/knowledge/`와 같음).
+정본: 이 저장소의 `content/notes/knowledge/preferences.md`, `interface.md`, `final25-targets.md`, `training-advice-guardrails.md`. 새 선호는 여기에 날짜·출처와 함께 적고 `node scripts/refresh-manifest.mjs`로 해시를 갱신한다.
 
 - **목표(2026-11-12 최신):**
   - 3부를 완성된 동료로 즐기고 **3부에서 모든 지원 대화를 본다.** 이를 위해 1·2부의 반복 육성을 받아들인다.
@@ -134,6 +134,14 @@
   - 즉시 가져올 파일: 이전 프로젝트 `theodora-progress-import.json`(설명은 `theodora-progress-import.md`). 새로 확정된 완료가 없어 현재 체크와 같다.
 
 ## 6. 사이트 상태와 남은 일
+
+### 2026-11-14 후속 (배지·자세히 제거·cai)
+
+- 카이의 영어 표기는 **Cai**. 루트 ID·URL·파일명을 `kai`→`cai`로 바꿨다(`/cai/1/`). 예전 저장·내보내기의 `kai…` 체크 ID는 `lib/check-state.ts`의 `migrateRouteIds`가 읽을 때 `cai…`로 옮긴다. 원본 공략 파일명 `kai.html`(archive) 참조는 그대로 둔다.
+- "자세히" 접기를 없앴다(`components/read-more.tsx`는 묶음만 남김). 다음 할 일 "이동" 버튼은 고정 도구 줄에 있다.
+- 그림이 붙는 말은 배지(`.game-badge[data-kind]`, 사양 `docs/fable-badge-spec.md`). 공식 물품 그림은 `assets/items/manifest.json`.
+- 카이 루트: 알렉산드라는 천익병 유지. 전차병 5명의 3부 시점은 `docs/cai-charioteer-research.md`와 `content/cai-charioteer.json`.
+- 설치한 기술: `~/.claude/skills/impeccable`, `web-artifacts-builder`, `modern-web-guidance`.
 
 ### 2026-11-14 재설계 v3 (Claude 구현, Fable 자문)
 
