@@ -1,6 +1,7 @@
 import { mkdirSync, cpSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { spawnSync } from 'node:child_process';
+import { flattenPrefetch } from './flatten-prefetch.mjs';
 const temp = resolve('.tmp');
 mkdirSync(temp, { recursive: true });
 process.env.TEMP = process.env.TMP = temp;
@@ -9,4 +10,5 @@ cpSync('content/data', 'public/reference-data', { recursive: true });
 cpSync('content/attachments', 'public/reference-files', { recursive: true });
 cpSync('content/theodora-progress-import.json', 'public/reference-files/theodora-progress-import.json');
 const result = spawnSync(process.execPath, ['node_modules/next/dist/bin/next', process.argv[2], '--webpack'], { stdio: 'inherit', env: process.env });
+if (process.argv[2] === 'build' && result.status === 0) console.log(`미리 읽기 조각 ${flattenPrefetch()}개를 점 이름으로 복사`);
 process.exit(result.status ?? 1);
