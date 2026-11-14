@@ -95,10 +95,13 @@ async function measure(page,scene){
   return row;
 }
 
+const fixture=(()=>{const st=JSON.parse(readFileSync('content/derived/checklist.json')).stages.find(s=>s.id==='theodora-plan'),pb=JSON.parse(readFileSync('content/data/playbook.json')),checks={};for(const c of st.chapters.slice(0,st.chapters.findIndex(c=>c.title==='7장')))for(const b of c.blocks)for(const a of pb.groups.find(g=>g.id===b.id)?.actions||[])checks[a.id]=true;return JSON.stringify({schemaVersion:1,revision:1,checks});})();
 try{
   for(const [width,height]of [[1440,900],[375,812]])for(const theme of ['light','dark']){
     const context=await browser.newContext({viewport:{width,height},colorScheme:theme});
     await context.addInitScript(value=>localStorage.setItem('theme',value),theme);
+    // 사이트에는 체크 기록이 없다(2026-11-14). 검사용 기록: 세오도라 1부 7장 앞까지 모두 체크(현재 장 7장, 완료 장 접힘을 잰다).
+    await context.addInitScript(state=>{if(!localStorage.getItem('fortunes-weave-checklist-v1'))localStorage.setItem('fortunes-weave-checklist-v1',state);},fixture);
     const page=await context.newPage();
     page.on('pageerror',e=>errors.push(e.message));
     await page.goto(`${base}/theodora/1/`);await ready(page);
