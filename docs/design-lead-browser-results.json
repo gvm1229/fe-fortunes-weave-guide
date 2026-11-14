@@ -151,12 +151,12 @@
       ],
       "partialLines": [],
       "sourceCounts": {
-        "portraits": 513,
+        "portraits": 522,
         "skills": 358,
         "gods": 187,
         "classes": 57,
         "guides": 45,
-        "locations": 73
+        "locations": 70
       },
       "duplicateChipIcons": [],
       "orphanStatusLines": 0,
@@ -524,12 +524,12 @@
       ],
       "partialLines": [],
       "sourceCounts": {
-        "portraits": 513,
+        "portraits": 522,
         "skills": 358,
         "gods": 187,
         "classes": 57,
         "guides": 45,
-        "locations": 73
+        "locations": 70
       },
       "duplicateChipIcons": [],
       "orphanStatusLines": 0,
@@ -897,12 +897,12 @@
       ],
       "partialLines": [],
       "sourceCounts": {
-        "portraits": 513,
+        "portraits": 522,
         "skills": 358,
         "gods": 187,
         "classes": 57,
         "guides": 45,
-        "locations": 73
+        "locations": 70
       },
       "duplicateChipIcons": [],
       "orphanStatusLines": 0,
@@ -1270,12 +1270,12 @@
       ],
       "partialLines": [],
       "sourceCounts": {
-        "portraits": 513,
+        "portraits": 522,
         "skills": 358,
         "gods": 187,
         "classes": 57,
         "guides": 45,
-        "locations": 73
+        "locations": 70
       },
       "duplicateChipIcons": [],
       "orphanStatusLines": 0,
@@ -1525,7 +1525,7 @@
         "toolbarBottom": 72.796875,
         "visibleBottom": 900
       },
-      "fading": 0.9082,
+      "fading": 0.93576,
       "removed": true
     },
     {
@@ -1577,7 +1577,7 @@
         "toolbarBottom": 72.796875,
         "visibleBottom": 900
       },
-      "fading": 0.916653,
+      "fading": 0.93576,
       "removed": true
     },
     {
@@ -1629,7 +1629,7 @@
         "toolbarBottom": 109.59375,
         "visibleBottom": 812
       },
-      "fading": 0.93576,
+      "fading": 0.91732,
       "removed": true
     },
     {

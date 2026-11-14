@@ -38,7 +38,7 @@ try{
       tableFontViolations:[...document.querySelectorAll('main .records,main .person-summary,main [data-info-table],main [data-gold-table],main .gold-table')].filter(visible).filter(e=>parseFloat(getComputedStyle(e).fontSize)!==(innerWidth<768&&e.matches('.person-summary,.gold-table,[data-gold-table]')?18:20)).length,
       groupLineViolations:[...document.querySelectorAll('.readable-group[data-expanded=false]>.readable-body')].filter(visible).filter(e=>e.getBoundingClientRect().height>parseFloat(getComputedStyle(e).lineHeight)*3+1).length,
       // 배지를 감싼 칩·버튼·표 머리에 배경이 있으면 배경이 겹친다(2026-11-14 사용자 지적). 카드·칸 같은 큰 면은 제외.
-      doubledBadges:[...document.querySelectorAll('.game-badge')].filter(b=>{for(let e=b.parentElement;e&&!e.matches('p,li,td,dd,div,section,main,table,article');e=e.parentElement){const bg=getComputedStyle(e).backgroundColor;if(bg!=='rgba(0, 0, 0, 0)'&&bg!=='transparent')return true;}return false;}).map(b=>b.textContent).slice(0,5),
+      doubledBadges:[...document.querySelectorAll('.game-badge')].filter(b=>{for(let e=b.parentElement;e&&!e.matches('p,li,td,dd,div,section,main,table,article,details');e=e.parentElement){const bg=getComputedStyle(e).backgroundColor;if(bg!=='rgba(0, 0, 0, 0)'&&bg!=='transparent')return true;}return false;}).map(b=>b.textContent).slice(0,5),
       faceSizes:[...new Set([...document.querySelectorAll('main img[src*="/portraits/"],main img[src*="/gods/"]')].filter(e=>!e.closest('.game-badge')).filter(visible).map(e=>{const r=e.getBoundingClientRect();return `${r.width}×${r.height}`;}))]};
     });
     Object.assign(row,{route,part,view,width,height,theme});rows.push(row);

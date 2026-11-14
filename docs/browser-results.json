@@ -188,7 +188,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F6E7A8",
-      "imageCount": 2497,
+      "imageCount": 2533,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -232,12 +232,12 @@
       "croppedScenes": [],
       "sceneHeights": [
         480,
-        394.21875,
-        394.515625,
-        394.515625,
+        410,
         480,
         480,
-        394.21875,
+        480,
+        480,
+        410,
         480,
         480
       ],
@@ -895,7 +895,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F7D9E3",
-      "imageCount": 2635,
+      "imageCount": 2664,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -1459,7 +1459,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E9E7E2",
-      "imageCount": 2571,
+      "imageCount": 2622,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -1837,7 +1837,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E9E7E2",
-      "imageCount": 345,
+      "imageCount": 336,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -2020,7 +2020,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#DCE7F8",
-      "imageCount": 2377,
+      "imageCount": 2414,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -3528,7 +3528,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#231A06",
-      "imageCount": 2497,
+      "imageCount": 2533,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -3572,12 +3572,12 @@
       "croppedScenes": [],
       "sceneHeights": [
         480,
-        394.21875,
-        394.515625,
-        394.515625,
+        410,
         480,
         480,
-        394.21875,
+        480,
+        480,
+        410,
         480,
         480
       ],
@@ -4235,7 +4235,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#2A0A17",
-      "imageCount": 2635,
+      "imageCount": 2664,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -4799,7 +4799,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0E0E10",
-      "imageCount": 2571,
+      "imageCount": 2622,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -5177,7 +5177,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0E0E10",
-      "imageCount": 345,
+      "imageCount": 336,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -5360,7 +5360,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0B1A33",
-      "imageCount": 2377,
+      "imageCount": 2414,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -6868,7 +6868,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F6E7A8",
-      "imageCount": 2497,
+      "imageCount": 2533,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -6912,12 +6912,12 @@
       "croppedScenes": [],
       "sceneHeights": [
         480,
-        394.21875,
-        394.515625,
-        394.515625,
+        410,
         480,
         480,
-        394.21875,
+        480,
+        480,
+        410,
         480,
         480
       ],
@@ -7575,7 +7575,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F7D9E3",
-      "imageCount": 2635,
+      "imageCount": 2664,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -8139,7 +8139,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E9E7E2",
-      "imageCount": 2571,
+      "imageCount": 2622,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -8517,7 +8517,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E9E7E2",
-      "imageCount": 345,
+      "imageCount": 336,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -8700,7 +8700,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#DCE7F8",
-      "imageCount": 2377,
+      "imageCount": 2414,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -10208,7 +10208,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#231A06",
-      "imageCount": 2497,
+      "imageCount": 2533,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -10252,12 +10252,12 @@
       "croppedScenes": [],
       "sceneHeights": [
         480,
-        394.21875,
-        394.515625,
-        394.515625,
+        410,
         480,
         480,
-        394.21875,
+        480,
+        480,
+        410,
         480,
         480
       ],
@@ -10915,7 +10915,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#2A0A17",
-      "imageCount": 2635,
+      "imageCount": 2664,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -11479,7 +11479,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0E0E10",
-      "imageCount": 2571,
+      "imageCount": 2622,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -11857,7 +11857,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0E0E10",
-      "imageCount": 345,
+      "imageCount": 336,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -12040,7 +12040,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0B1A33",
-      "imageCount": 2377,
+      "imageCount": 2414,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -13548,7 +13548,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F6E7A8",
-      "imageCount": 2497,
+      "imageCount": 2533,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -14394,7 +14394,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F7D9E3",
-      "imageCount": 2635,
+      "imageCount": 2664,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -15097,7 +15097,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E9E7E2",
-      "imageCount": 2571,
+      "imageCount": 2622,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -15475,7 +15475,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E9E7E2",
-      "imageCount": 345,
+      "imageCount": 336,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -15591,7 +15591,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E9E7E2",
-      "imageCount": 353,
+      "imageCount": 344,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -15797,7 +15797,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#DCE7F8",
-      "imageCount": 2377,
+      "imageCount": 2414,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -17614,7 +17614,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#231A06",
-      "imageCount": 2497,
+      "imageCount": 2533,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -18460,7 +18460,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#2A0A17",
-      "imageCount": 2635,
+      "imageCount": 2664,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -19163,7 +19163,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0E0E10",
-      "imageCount": 2571,
+      "imageCount": 2622,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -19541,7 +19541,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0E0E10",
-      "imageCount": 345,
+      "imageCount": 336,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -19657,7 +19657,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0E0E10",
-      "imageCount": 353,
+      "imageCount": 344,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -19863,7 +19863,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0B1A33",
-      "imageCount": 2377,
+      "imageCount": 2414,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -21680,7 +21680,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F6E7A8",
-      "imageCount": 2497,
+      "imageCount": 2533,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -22387,7 +22387,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F7D9E3",
-      "imageCount": 2635,
+      "imageCount": 2664,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -22951,7 +22951,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E9E7E2",
-      "imageCount": 2571,
+      "imageCount": 2622,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -23329,7 +23329,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E9E7E2",
-      "imageCount": 345,
+      "imageCount": 336,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -23512,7 +23512,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#DCE7F8",
-      "imageCount": 2377,
+      "imageCount": 2414,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -25020,7 +25020,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#231A06",
-      "imageCount": 2497,
+      "imageCount": 2533,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -25727,7 +25727,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#2A0A17",
-      "imageCount": 2635,
+      "imageCount": 2664,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -26291,7 +26291,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0E0E10",
-      "imageCount": 2571,
+      "imageCount": 2622,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -26669,7 +26669,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0E0E10",
-      "imageCount": 345,
+      "imageCount": 336,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -26852,7 +26852,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0B1A33",
-      "imageCount": 2377,
+      "imageCount": 2414,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -28488,7 +28488,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F6E7A8",
-      "imageCount": 2498,
+      "imageCount": 2534,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -28555,7 +28555,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#231A06",
-      "imageCount": 2498,
+      "imageCount": 2534,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -28622,7 +28622,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F6E7A8",
-      "imageCount": 2498,
+      "imageCount": 2534,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -28689,7 +28689,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#231A06",
-      "imageCount": 2498,
+      "imageCount": 2534,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -28750,35 +28750,35 @@
     {
       "stage": "theodora-plan",
       "old": {
-        "portraits": 515,
+        "portraits": 524,
         "skills": 358,
         "gods": 187,
         "classes": 57,
         "guides": 45,
-        "locations": 73
+        "locations": 70
       },
       "expected": {
-        "portraits": 513,
+        "portraits": 522,
         "skills": 358,
         "gods": 187,
         "classes": 57,
         "guides": 45,
-        "locations": 73
+        "locations": 70
       },
       "actual": {
-        "portraits": 513,
+        "portraits": 522,
         "skills": 358,
         "gods": 187,
         "classes": 57,
         "guides": 45,
-        "locations": 73
+        "locations": 70
       },
       "passed": true
     },
     {
       "stage": "leda-plan",
       "old": {
-        "portraits": 580,
+        "portraits": 585,
         "skills": 467,
         "gods": 237,
         "classes": 25,
@@ -28786,7 +28786,7 @@
         "locations": 54
       },
       "expected": {
-        "portraits": 577,
+        "portraits": 582,
         "skills": 467,
         "gods": 237,
         "classes": 25,
@@ -28794,7 +28794,7 @@
         "locations": 54
       },
       "actual": {
-        "portraits": 577,
+        "portraits": 582,
         "skills": 467,
         "gods": 237,
         "classes": 25,
@@ -28806,35 +28806,35 @@
     {
       "stage": "dietrich-plan",
       "old": {
-        "portraits": 554,
+        "portraits": 566,
         "skills": 403,
         "gods": 186,
         "classes": 46,
         "guides": 57,
-        "locations": 85
+        "locations": 82
       },
       "expected": {
-        "portraits": 549,
+        "portraits": 561,
         "skills": 403,
         "gods": 186,
         "classes": 46,
         "guides": 57,
-        "locations": 85
+        "locations": 82
       },
       "actual": {
-        "portraits": 549,
+        "portraits": 561,
         "skills": 403,
         "gods": 186,
         "classes": 46,
         "guides": 57,
-        "locations": 85
+        "locations": 82
       },
       "passed": true
     },
     {
       "stage": "cai-plan",
       "old": {
-        "portraits": 521,
+        "portraits": 527,
         "skills": 481,
         "gods": 109,
         "classes": 70,
@@ -28842,7 +28842,7 @@
         "locations": 57
       },
       "expected": {
-        "portraits": 518,
+        "portraits": 524,
         "skills": 481,
         "gods": 109,
         "classes": 70,
@@ -28850,7 +28850,7 @@
         "locations": 57
       },
       "actual": {
-        "portraits": 518,
+        "portraits": 524,
         "skills": 481,
         "gods": 109,
         "classes": 70,
