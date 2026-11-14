@@ -128,8 +128,8 @@
 - 자원: 1,018G, 인과의 파편 2,725개다. 축복은 세오도라 시작 전 13개를 구매했고 그 뒤 추가 구매는 없다.
 - 소지품: 라돈 꼬치고기 ×3, 고유 무기 사검 벨로키네·사창 무엔이다. 선더 소드 교환은 아직 열리지 않았다.
 - 다른 루트: 레다·카이는 미시작이다. 디트리히는 예전에 1부 12장까지 했지만 1장부터 다시 육성할 계획이다.
-- 체크 기록: 이전 프로젝트 `data/checklist.json`이 사용자 실제 체크다(세오도라 1부 185/439). 새 사이트는 이것을 첫 값으로 쓴다(`content/checklist-seed.json`). 브라우저 저장소를 쓰며 JSON 내보내기·가져오기를 지원한다.
-  - 즉시 가져올 파일: 이전 프로젝트 `theodora-progress-import.json`(설명은 `theodora-progress-import.md`). 새로 확정된 완료가 없어 현재 체크와 같다.
+- 체크 기록: 사이트·저장소에 넣지 않는다(2026-11-14 사용자 지시). 새 브라우저는 빈 기록에서 시작하고, 기록은 각 브라우저 저장소와 `기록 관리 → 내보내기` JSON에만 있다.
+  - 개인 사본: git 무시 폴더 `progress/checklist.json`(이전 `content/checklist-seed.json`·`content/data/checklist.json`·`content/theodora-progress-import.json`을 옮김, revision 237). 최신 기록은 브라우저에서 내보내 이 파일을 덮어쓴다. `verify.mjs`는 이 파일이 있을 때만 읽는다.
 
 ## 6. 사이트 상태와 남은 일
 

@@ -9,3 +9,6 @@ public/reference-files/
 test-results/
 playwright-report/
 docs/screens/
+
+# 개인 체크 기록(사이트·저장소에 넣지 않는다, 2026-11-14 사용자 지시)
+progress/
