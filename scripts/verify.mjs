@@ -27,7 +27,9 @@ assert.equal(read('content/data/final-roster.json').final25Example.length,25);
 assert.equal(manifest.referenceDocs,318);
 for(const f of manifest.sourceFiles){assert.ok(existsSync(f.target),f.target);assert.equal(hash(f.target),f.sha256,`이전 파일 변경: ${f.target}`);}
 assert.equal(hash('content/source/react-content.json'),manifest.generatedSourceSha256,'생성 화면 대조 사본 변경');
-assert.deepEqual(read('content/checklist-seed.json'),read('content/data/checklist.json'));
+// 개인 체크 기록은 저장소 밖(git 무시) progress/checklist.json에만 있다. 있으면 검사하고, 없으면(다른 컴퓨터) 건너뛴다.
+const progressFile='progress/checklist.json',progress=existsSync(progressFile)?read(progressFile):null;
+assert.ok(!existsSync('content/checklist-seed.json')&&!existsSync('content/data/checklist.json')&&!existsSync('content/theodora-progress-import.json'),'체크 기록이 content/에 있음');
 for(const [route,count]of Object.entries(manifest.peopleByRoute))assert.equal(parity.people.filter(p=>p.route===route).length,count,route);
 for(const [stage,count]of Object.entries(manifest.peopleByStage)){const part=stage.includes('-war-')?'2':stage==='part3-plan'?'3':'1';assert.equal(parity.people.filter(p=>(part==='3'||p.route===stage.split('-')[0])&&p.roles[part]).length,count,stage);}
 for(const [stage,count]of Object.entries(manifest.oldBlockCounts))assert.equal(parity.stages.find(s=>s.id===stage).blocks.length+playbook.groups.filter(g=>g.stage===stage).length,count,`표시 블록 ${stage}`);
@@ -47,7 +49,7 @@ assert.deepEqual(scopeTree([{tag:'section',attrs:{'data-weekly-route':'war'},chi
 assert.equal(scopeMarkdown('## 세오도라 1부\n현재\n## 레다 1부\n다른 자료','theodora','1').trim(),'## 세오도라 1부\n현재');
 assert.throws(()=>validateChecks({schemaVersion:1,revision:0,checks:{a:'true'}}));
 assert.throws(()=>validateChecks({schemaVersion:1,revision:-1,checks:{}}));
-const seed=read('content/checklist-seed.json');assert.deepEqual(validateChecks(JSON.parse(JSON.stringify(seed))),seed);
+if(progress)assert.deepEqual(validateChecks(JSON.parse(JSON.stringify(progress))),progress);
 // 사이트에는 체크 기록을 넣지 않는다(2026-11-14 사용자 지시). 앱 코드는 체크 원본·진행 가져오기 파일을 읽지 않고, 공개 폴더로도 복사하지 않는다.
 {const {readdirSync}=await import('node:fs');const walkSrc=d=>readdirSync(d,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walkSrc(`${d}/${e.name}`):/\.(tsx?|mjs|js)$/.test(e.name)?[`${d}/${e.name}`]:[]);
  for(const f of ['app','components','lib'].flatMap(walkSrc)){const t=readFileSync(f,'utf8');assert.ok(!/checklist-seed|data\/checklist\.json|theodora-progress-import\.json/.test(t),f+' 체크 기록을 읽음');}
@@ -93,7 +95,7 @@ const seed=read('content/checklist-seed.json');assert.deepEqual(validateChecks(J
   for(const [r,chs] of Object.entries(read('content/data/chapter-gold.json').routes))for(const ch of chs){assert.equal(ch.items.reduce((s,i)=>s+i.amount,0),ch.target,`${r} ${ch.chapter}장 골드 합`);assert.equal(ch.target-ch.items.filter(i=>i.kind==='due').reduce((s,i)=>s+i.amount,0),ch.afterScheduledSpend,`${r} ${ch.chapter}장 지출 뒤`);}
   // 은퇴한 행동 ID도 체크 ID 목록에 남는다(체크 기록 보존).
   for(const a of [...playbook.retiredActions,...playbook.retiredGroups.flatMap(g=>g.actions)])assert.ok(ids.includes(a.id),'은퇴 ID 보존 '+a.id);
-  const seed=read('content/checklist-seed.json'),checkedIds=Object.entries(seed.checks||{}).filter(([,v])=>v).map(([k])=>k);
+  const checkedIds=Object.entries(progress?.checks||{}).filter(([,v])=>v).map(([k])=>k);
   for(const id of checkedIds)assert.ok(ids.includes(id),'체크 보존 '+id);
 }
 // 장 묶음에는 그 장의 할 일만(2026-11-14 사용자 지시). 제목이 "현재 7장", "레다 2부 3장", "3부 2구간"처럼 장으로 시작하면 그 장에 있어야 한다.

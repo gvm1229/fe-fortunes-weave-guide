@@ -47,11 +47,6 @@
       "sha256": "b01dae7d7382a65b78bcfaeaf52bea273a13d708ce20c333284ffae5132a557b"
     },
     {
-      "source": "data/checklist.json",
-      "target": "content/data/checklist.json",
-      "sha256": "167377201425c5ae4fda6f30e20b125e3a22fe8e0a3d647c337c11b71cf5bdef"
-    },
-    {
       "source": "data/class-details.json",
       "target": "content/data/class-details.json",
       "sha256": "252169ca229fb4e9987e838bed54c5cf5c10eeb74f57cf75f5733d3f2087e575"
@@ -1845,11 +1840,6 @@
       "source": "theodora-progress-import.md",
       "target": "content/theodora-progress-import.md",
       "sha256": "f2d7ce21de509558401c0150f5cd768c3437076bc8ebcf91bfaea7832367f0db"
-    },
-    {
-      "source": "theodora-progress-import.json",
-      "target": "content/theodora-progress-import.json",
-      "sha256": "167377201425c5ae4fda6f30e20b125e3a22fe8e0a3d647c337c11b71cf5bdef"
     },
     {
       "source": "개인화 사용법.md",

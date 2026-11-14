@@ -18,7 +18,7 @@ function copyTree(dir, destination) {
   for (const entry of readdirSync(resolve(source, dir), { withFileTypes: true })) {
     const path = `${dir}/${entry.name}`;
     if (entry.isDirectory()) copyTree(path, `${destination}/${entry.name}`);
-    else if ((dir.startsWith('data') && entry.name.endsWith('.json') && !entry.name.includes('backup')) || ((dir.startsWith('notes') || dir.startsWith('routes')) && entry.name.endsWith('.md'))) {
+    else if ((dir.startsWith('data') && entry.name.endsWith('.json') && !entry.name.includes('backup') && entry.name !== 'checklist.json') || ((dir.startsWith('notes') || dir.startsWith('routes')) && entry.name.endsWith('.md'))) {
       const target = `${destination}/${entry.name}`;
       cpSync(resolve(source, path), target);
       files.push({ source: path, target, sha256: hash(target) });
@@ -26,7 +26,7 @@ function copyTree(dir, destination) {
   }
 }
 copyTree('data', 'content/data'); copyTree('notes', 'content/notes');
-for (const file of ['progress.md', 'theodora-progress-import.md', 'theodora-progress-import.json', '개인화 사용법.md']) if (existsSync(resolve(source,file))) copyFile(file);
+for (const file of ['progress.md', 'theodora-progress-import.md', '개인화 사용법.md']) if (existsSync(resolve(source,file))) copyFile(file);
 copyTree('routes','content/routes');
 copyFile('personalized-app/README.md');
 // Preserve the local evidence linked by personal documents, without importing archive pages.
@@ -40,7 +40,8 @@ for(const doc of files.filter(f=>f.source.endsWith('.md'))){
 }
 copyFile('personalized-app/src/content.json', 'content/source/react-content.json');
 copyFile('personalized-app/src/timeskip-portraits.json', 'content/source/timeskip-portraits.json');
-cpSync(resolve(source, 'data/checklist.json'), 'content/checklist-seed.json');
+// 개인 체크 기록은 git 무시 폴더에만 둔다(2026-11-14). 사이트 코드는 읽지 않는다.
+mkdirSync('progress', { recursive: true }); cpSync(resolve(source, 'data/checklist.json'), 'progress/checklist.json');
 const old = read('personalized-app/src/content.json');
 const playbook = read('data/playbook.json');
 // Generated markup is only decoded to semantic data for display-parity evidence.
