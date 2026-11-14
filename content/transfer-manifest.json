@@ -109,7 +109,7 @@
     {
       "source": "data/playbook.json",
       "target": "content/data/playbook.json",
-      "sha256": "65a38bc3f34063c1b7e9046e2ae6635b745e900c3a6da46f39ebb4a7e14eeaf9"
+      "sha256": "acd1cbbb7f9f415040c2ff21a80f6d2b319ef8731077dd1f73cdf91d66dbca0c"
     },
     {
       "source": "data/purchase-plan.json",
