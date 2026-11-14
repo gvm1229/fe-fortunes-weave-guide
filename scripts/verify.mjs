@@ -3,9 +3,15 @@ import { createHash } from 'node:crypto';
 import assert from 'node:assert/strict';
 import { checked, validateChecks } from '../lib/check-state.ts';
 import { scopeTree, scopeMarkdown } from '../lib/scope.ts';
+import { pairNames, filterPairs } from '../lib/pair-filter.ts';
 import './verify-image-parity.mjs';
 import './verify-readability.mjs';
 import './verify-design-assets.mjs';
+// 「루트별 지원 대화」(2026-11-15): 루트 표의 줄은 첫 칸(루트)으로만 고른다. 주의 칸에 다른 주인공 이름이 있어도 줄이 빠지지 않는다. 인물 거르기는 고른 인물이 든 줄만 남긴다.
+{const md=readFileSync('content/notes/support-pairs-by-route.md','utf8'),names={theodora:'세오도라',leda:'레다',dietrich:'디트리히',cai:'카이'};
+ for(const [r,n] of Object.entries(names)){const out=scopeMarkdown(md,r,'1').split('\n');for(const l of md.split('\n').filter(l=>l.startsWith('| '+n+' |')))assert.ok(out.includes(l),`${r} 지원 대화 줄 빠짐: ${l.slice(0,40)}`);}
+ const t=scopeMarkdown(md,'theodora','1'),ns=pairNames(t);assert.ok(ns.includes('디에고')&&ns.includes('티아라'),'거르기 인물 목록');
+ const f=filterPairs(t,['디에고']).split('\n').filter(l=>l.startsWith('| 세오도라 |'));assert.ok(f.length>0&&f.every(l=>l.includes('디에고')),'디에고 거르기');}
 import './verify-feature-parity.mjs';
 import './verify-redesign.mjs';
 import './verify-character-copy.mjs';
