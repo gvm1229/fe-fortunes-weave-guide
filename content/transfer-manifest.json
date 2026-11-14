@@ -99,7 +99,7 @@
     {
       "source": "data/purchase-plan.json",
       "target": "content/data/purchase-plan.json",
-      "sha256": "c8d645a18315f1830893febc0d81116dbe46d1e8dcd13c60f630602f08fd79e5"
+      "sha256": "538228b53e91407382fe08c46e7dfed4906edb225e541d6019c8beaa577d3b7e"
     },
     {
       "source": "data/readiness-profile-sources.json",
@@ -1789,7 +1789,7 @@
     {
       "source": "개인화 사용법.md",
       "target": "content/개인화 사용법.md",
-      "sha256": "052ba6c26aba7b651a05e59eae6c5576c11218aea1473222420c719744bdddc2"
+      "sha256": "8bf400525936ae2c12f2c924918f7c64a036aef4bd31864057c7fb6f6e9f3c5f"
     },
     {
       "source": "routes/dietrich/roster.md",

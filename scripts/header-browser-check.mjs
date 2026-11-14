@@ -19,12 +19,14 @@ try {
     await p.evaluate(() => scrollTo(0, 2500)); await p.waitForTimeout(400);
     const head = await p.evaluate(() => {
       const bar = document.querySelector('.route-head-bar').getBoundingClientRect(), inner = { l: bar.left + parseFloat(getComputedStyle(document.querySelector('.route-head-bar')).paddingLeft) - 1, r: bar.right - parseFloat(getComputedStyle(document.querySelector('.route-head-bar')).paddingRight) + 1 };
-      const parts = ['.route-head .check-control', '.route-theme .icon-button', '.route-head .jump-next', '.route-head .backup-menu', '.route-head .chapter-picker'].map(s => { const r = document.querySelector(s).getBoundingClientRect(); return { s, l: r.left, r: r.right, t: r.top, b: r.bottom, w: r.width }; });
+      const parts = ['.route-head .check-control', '.route-theme .icon-button', '.route-head .jump-next', '.route-head .backup-menu', '.route-head .status-button', '.route-head .chapter-picker'].map(s => { const r = document.querySelector(s).getBoundingClientRect(); return { s, l: r.left, r: r.right, t: r.top, b: r.bottom, w: r.width }; }).filter(q => !(q.s.endsWith('status-button') && innerWidth < 600 && q.w === 0));
+      // 내 상태(2026-11-15): 600px 미만은 머리 막대 대신 기록 관리 메뉴 안에 있다.
+      const statusEntry = innerWidth < 600 ? !!document.querySelector('.route-head .backup-menu .status-menu-item') : document.querySelector('.route-head .status-button').getBoundingClientRect().width >= 44;
       const font = parseFloat(getComputedStyle(document.querySelector('.route-head .check-control')).fontSize);
-      return { top: bar.top, bottom: bar.bottom, inner, parts, font, overflowX: document.documentElement.scrollWidth - innerWidth, outline: getComputedStyle(document.querySelector('img.final25-portrait')).outlineColor };
+      return { statusEntry, top: bar.top, bottom: bar.bottom, inner, parts, font, overflowX: document.documentElement.scrollWidth - innerWidth, outline: getComputedStyle(document.querySelector('img.final25-portrait')).outlineColor };
     });
     assert.ok(Math.abs(head.top) < 1, '머리 고정'); assert.ok(head.overflowX <= 0, '가로 넘침');
-    assert.ok(head.font >= 18, '완료 숨기기 글자 18px 이상');
+    assert.ok(head.font >= 18, '완료 숨기기 글자 18px 이상'); assert.ok(head.statusEntry, `${w} 내 상태 입구`);
     for (const q of head.parts) { assert.ok(q.l >= head.inner.l && q.r <= head.inner.r && q.t >= head.top - 1 && q.b <= head.bottom + 1, `${w} ${q.s} 머리 밖`); if (q.s !== '.route-head .chapter-picker' && q.s !== '.route-head .check-control') assert.ok(q.w >= 44, `${q.s} 누를 폭`); }
     for (let i = 0; i < head.parts.length; i++) for (let j = i + 1; j < head.parts.length; j++) { const a = head.parts[i], b = head.parts[j]; assert.ok(a.r <= b.l + 0.5 || b.r <= a.l + 0.5 || a.b <= b.t + 0.5 || b.b <= a.t + 0.5, `${w} ${a.s}·${b.s} 겹침`); }
     const toolTops = head.parts.filter(q => q.s !== '.route-theme .icon-button').map(q => Math.round(q.t)); assert.ok(Math.max(...toolTops) - Math.min(...toolTops) <= 2, `${w} 도구가 한 줄이 아님`);

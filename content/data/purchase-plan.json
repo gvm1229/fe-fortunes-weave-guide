@@ -345,91 +345,78 @@
         "name": "획득 경험치 증가10%",
         "price": 500,
         "taskId": "prep-boons--5d107be39e",
-        "purchased": true,
         "reason": "획득 경험치 증가10%를500파편에 산다. 목표 성장 병과 준비 전에는 OFF, 전직 후에는 ON으로 사용한다."
       },
       {
         "name": "병과 경험치 증가+1",
         "price": 1000,
         "taskId": "prep-boons--class-exp-i",
-        "purchased": true,
         "reason": "병과 경험치 증가+1을1,000파편에 산다. 병과 마스터를 돕는다. 인물 레벨·기술 능력 경험치와는 다른 효과다."
       },
       {
         "name": "검술 경험치 증가+1",
         "price": 300,
         "taskId": "prep-boons--sword-exp-i",
-        "purchased": true,
         "reason": "검술 경험치 증가+1을300파편에 산다. 레다의 시로코·카타냐 등도 같은 구매 효과를 이어 쓴다."
       },
       {
         "name": "창술 경험치 증가+1",
         "price": 300,
         "taskId": "prep-boons--spear-exp-i",
-        "purchased": true,
         "reason": "창술 경험치 증가+1을300파편에 산다. 세오도라·리네·알렉산드라의 실제 창 전투에 사용한다."
       },
       {
         "name": "도끼술 경험치 증가+1",
         "price": 300,
         "taskId": "prep-boons--axe-exp-i",
-        "purchased": true,
         "reason": "도끼술 경험치 증가+1을300파편에 산다. 토비아스·녹투라와 이후 미카엘라의 실제 도끼 전투에 사용한다."
       },
       {
         "name": "궁술 경험치 증가+1",
         "price": 300,
         "taskId": "prep-boons--bow-exp-i",
-        "purchased": true,
         "reason": "궁술 경험치 증가+1을300파편에 산다. 릴리안·우술라 등 실제 출격하는 궁수에게 사용한다."
       },
       {
         "name": "격투술 경험치 증가+1",
         "price": 300,
         "taskId": "prep-boons--fist-exp-i",
-        "purchased": true,
         "reason": "격투술 경험치 증가+1을300파편에 산다. 이후 레다·디트리히의 격투 담당도 같은 효과를 이어 쓴다."
       },
       {
         "name": "흑마술 경험치 증가+1",
         "price": 300,
         "taskId": "prep-boons--black-exp-i",
-        "purchased": true,
         "reason": "흑마술 경험치 증가+1을300파편에 산다. 단테·보나파르트 등 실제 마법 전투에 사용하며 투기장 훈련 획득량을 늘리는 효과는 아니다."
       },
       {
         "name": "백마술 경험치 증가+1",
         "price": 300,
         "taskId": "prep-boons--white-exp-i",
-        "purchased": true,
         "reason": "백마술 경험치 증가+1을300파편에 산다. 소피아·리네 등 실제 백마술 사용에 적용하며 투기장 훈련 획득량을 늘리는 효과는 아니다."
       },
       {
         "name": "무기 가격 할인10%",
         "price": 300,
         "taskId": "prep-boons--weapon-discount-i",
-        "purchased": true,
         "reason": "무기 가격 할인10%를300파편에 산다. 무기 구입 전에 적용하며 영입금·시험비·교환 소재 할인으로 계산하지 않는다."
       },
       {
         "name": "아우로라의 가호 백사 소비20% 감소",
         "price": 300,
         "taskId": "prep-boons--0c34c5be60",
-        "purchased": true,
         "reason": "아우로라의 가호 백사 소비20% 감소를300파편에 산다. 하드 비용20→16이며 아우로라 3이 있으면 활용한다."
       },
       {
         "name": "칼라의 가호 백사 소비20% 감소",
         "price": 300,
         "taskId": "prep-boons--kalla20",
-        "purchased": true,
         "reason": "칼라의 가호 백사 소비20% 감소를300파편에 산다. 실제 칼라1을 해금한 뒤 사용하며 구매만으로 가호 레벨이 오르지는 않는다."
       },
       {
         "name": "크레르의 가호 백사 소비20% 감소",
         "price": 300,
         "taskId": "prep-boons--credna20",
-        "purchased": true,
         "reason": "크레르의 가호 백사 소비20% 감소를300파편에 산다. 실제 크레르1을 해금한 뒤 사용하며 구매만으로 가호 레벨이 오르지는 않는다."
       }
     ],
@@ -457,19 +444,10 @@
       "jurah20": 300,
       "unverifiedPrice": false,
       "source": "https://hyperwiki.jp/fefw/achivement/",
-      "confirmedFromWebDate": "2026-11-04",
-      "purchasedDiscountsUserConfirmed": [
-        "아우로라20%",
-        "칼라20%",
-        "크레르20%"
-      ],
-      "jurahPurchased": false,
-      "purchasedPackageCount": 13,
-      "purchasedPackageTotal": 4800
+      "confirmedFromWebDate": "2026-11-04"
     },
     "reservePolicy": "레다 1부 완료 뒤 승인된 축복은 미구매 단계만 구입. 이후 선택 구매보다 3부 융합용 5,100파편 확보를 우선한다.",
     "expPurchasePolicy": {
-      "currentPercent": 10,
       "currentCapPercent": 30,
       "canSelectLowerRate": false,
       "twentyAdditionalCost": 500,

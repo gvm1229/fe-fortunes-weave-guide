@@ -113,6 +113,7 @@
 개인 게임 진행(장·레벨·자원·영입 현황)은 공개 저장소에 두지 않는다(2026-11-15 사용자 결정). git 무시 폴더 `progress/docs/`(`handoff-game-state.md`, `progress.md`, `routes/*/progress.md`)에만 있다. 사이트·저장소의 어떤 글에도 옮겨 적지 않는다.
 
 - 체크 기록: 사이트·저장소에 넣지 않는다(2026-11-14 사용자 지시). 새 브라우저는 빈 기록에서 시작하고, 기록은 각 브라우저 저장소와 `기록 관리 → 내보내기` JSON에만 있다.
+- 내 상태(2026-11-15 사용자 요청): 머리 막대 `내 상태`(600px 미만은 기록 관리 메뉴 안) 서랍에서 축복 단계·가호 레벨·인과의 파편·골드를 고친다. 같은 저장 키의 `status` 필드로 체크와 함께 내보내기·가져오기한다(`lib/check-state.ts` `validateStatus`). 축복 목록은 `content/data/boon-catalog.json`(hyperwiki 31종·신 6명, `steps`가 시작 전 13개와 레다·디트리히·카이 축복 구매 체크까지 35개와 연결). 저장소 값은 느슨하게 읽고(모르는 축복은 버림) 가져오기 파일만 엄격하게 검사한다. 내 상태가 없는 예전 파일을 가져오면 지금의 내 상태를 유지한다. 브라우저 검사: `npm run test:status`. 가진 단계의 구매 체크는 자동 완료로 보이고 체크 기록에는 쓰지 않는다. 공개 자료에 개인 구매 여부·잔액을 넣지 않는다(verify가 검사).
   - 개인 사본: git 무시 폴더 `progress/checklist.json`(이전 `content/checklist-seed.json`·`content/data/checklist.json`·`content/theodora-progress-import.json`을 옮김, revision 237). 최신 기록은 브라우저에서 내보내 이 파일을 덮어쓴다. `verify.mjs`는 이 파일이 있을 때만 읽는다.
 
 ## 6. 사이트 상태와 남은 일

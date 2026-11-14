@@ -1,7 +1,7 @@
 import { readFileSync, existsSync, readdirSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import assert from 'node:assert/strict';
-import { checked, validateChecks } from '../lib/check-state.ts';
+import { checked, validateChecks, sanitizeStatus } from '../lib/check-state.ts';
 import { scopeTree, scopeMarkdown } from '../lib/scope.ts';
 import { pairNames, filterPairs } from '../lib/pair-filter.ts';
 import { currentGameDate } from '../lib/game-date.ts';
@@ -57,6 +57,22 @@ assert.equal(scopeMarkdown('## 세오도라 1부\n현재\n## 레다 1부\n다른
 assert.throws(()=>validateChecks({schemaVersion:1,revision:0,checks:{a:'true'}}));
 assert.throws(()=>validateChecks({schemaVersion:1,revision:-1,checks:{}}));
 if(progress)assert.deepEqual(validateChecks(JSON.parse(JSON.stringify(progress))),progress);
+// 내 상태(2026-11-15): 축복 목록·추천 구매 연결·status 검사. 공개 자료에는 구매 여부·잔액을 두지 않는다.
+{const cat=read('content/data/boon-catalog.json'),lim={boons:Object.fromEntries(cat.boons.map(b=>[b.id,b.tiers.length])),gods:Object.fromEntries(cat.gods.map(g=>[g.name,g.max]))};
+ assert.ok(cat.boons.length>=13&&new Set(cat.boons.map(b=>b.id)).size===cat.boons.length,'축복 ID 중복');
+ for(const b of cat.boons){assert.ok(b.name&&b.original&&b.tiers.length>0,b.id);for(const t of b.tiers)assert.ok(t.effect&&Number.isInteger(t.price)&&t.price>0,b.id+' 단계');}
+ for(const g of cat.gods)assert.ok(g.name&&Number.isInteger(g.max)&&g.max>0,g.name);
+ const allActs=new Map(read('content/data/playbook.json').groups.flatMap(g=>g.actions.map(a=>[a.id,a.text]))),boonGroup=read('content/data/playbook.json').groups.find(g=>g.id==='prep-boons');
+ for(const a of boonGroup.actions.filter(a=>/파편에 산다/.test(a.text)))assert.ok(Object.hasOwn(cat.steps,a.id),a.id+' 축복 연결 없음');
+ for(const [id,[b,t]] of Object.entries(cat.steps)){const boon=cat.boons.find(x=>x.id===b);assert.ok(allActs.has(id),id+' 체크 없음');assert.ok(boon&&boon.tiers[t-1],id);assert.ok(new RegExp('(?<![0-9])'+boon.tiers[t-1].price+'파편').test(allActs.get(id).replace(/[,\s]/g,'')),id+' 가격');}
+ assert.ok(Object.keys(cat.steps).length>=35,'후속 루트 축복 구매 연결');for(const id of cat.conditionalSteps)assert.ok(Object.hasOwn(cat.steps,id),id+' 조건부 연결');
+ const st={boons:{'class-exp':1},gods:{'아우로라':3},shards:10,gold:0};
+ assert.deepEqual(validateChecks({schemaVersion:1,revision:1,checks:{},status:st},lim).status,st);
+ assert.deepEqual(validateChecks({schemaVersion:1,revision:1,checks:{}},lim),{schemaVersion:1,revision:1,checks:{}});
+ for(const bad of [{boons:{'class-exp':9},gods:{}},{boons:{nope:1},gods:{}},{boons:{},gods:{'아우로라':-1}},{boons:{},gods:{},shards:1.5},[]])assert.throws(()=>validateChecks({schemaVersion:1,revision:1,checks:{},status:bad},lim),JSON.stringify(bad));
+ assert.deepEqual(sanitizeStatus({boons:{gone:2,'class-exp':9},gods:{'없는신':1,'주라':5},gold:3},lim),{boons:{'class-exp':lim.boons['class-exp']},gods:{'주라':lim.gods['주라']},gold:3},'저장소 내 상태는 버리고 줄여 읽음');
+ const pp=readFileSync('content/data/purchase-plan.json','utf8');for(const k of ['"purchased"','purchasedPackageCount','purchasedDiscountsUserConfirmed','currentPercent'])assert.ok(!pp.includes(k),'구매 계획에 개인 구매 기록 '+k);
+ const mine='progress/my-progress.json';if(existsSync(mine)){const m=JSON.parse(readFileSync(mine,'utf8'));assert.deepEqual(validateChecks(m,lim),m);}}
 // 원래 이름을 한국어로 바꾸며 생긴 "X(X)"·"X가 X다" 같은 말 되풀이 금지(2026-11-15 사용자 지적: "반짝반짝어가 반짝반짝어 위치입니다").
 {const rcT=read('content/source/react-content.json'),strip=h=>h.replace(/<svg.*?<\/svg>/gs,'').replace(/<small class="recruit-material-hint">위치<\/small>/g,'').replace(/<[^>]+>/g,'');
  const texts=[...rcT.stages.flatMap(s=>s.blocks.map(b=>[s.id+':'+b.id,strip(b.html)+' '+[...b.html.matchAll(/(?:alt|aria-label)="([^"]*)"/g)].map(m=>m[1]).join(' ')])),['prep',strip(rcT.prep)],['materials',strip(rcT.materials)]];

@@ -1,0 +1,732 @@
+{
+  "reviewed": "2026-11-15",
+  "source": {
+    "url": "https://hyperwiki.jp/fefw/achivement/",
+    "title": "【FE万紫千紅】偉業録と救世の祝福 | hyperWiki (2026-11-03 갱신, 표 제목 救済の祝福一覧, 가격 단위 因果の欠片)",
+    "readMethod": "WebFetch로 페이지 전체를 읽어 위업록 뒤의 축복 표 31행을 추출. 가호 최대 레벨은 GameWith https://gamewith.jp/fefw/573601 의 6신 Lv1~3 표로 확인(hyperwiki 가호 페이지는 검색으로 찾지 못함)."
+  },
+  "boons": [
+    {
+      "id": "exp-gain",
+      "name": "획득 경험치 증가",
+      "original": "獲得経験値の増加",
+      "tiers": [
+        {
+          "effect": "10%",
+          "price": 500
+        },
+        {
+          "effect": "20%",
+          "price": 500
+        },
+        {
+          "effect": "30%",
+          "price": 1000
+        },
+        {
+          "effect": "40%",
+          "price": 1000
+        },
+        {
+          "effect": "50%",
+          "price": 1000
+        }
+      ]
+    },
+    {
+      "id": "class-exp",
+      "name": "병과 경험치 증가",
+      "original": "兵種経験値の増加",
+      "tiers": [
+        {
+          "effect": "+1",
+          "price": 1000
+        },
+        {
+          "effect": "+2",
+          "price": 2000
+        }
+      ]
+    },
+    {
+      "id": "sword-exp",
+      "name": "검술 경험치 증가",
+      "original": "剣術の経験値増加",
+      "tiers": [
+        {
+          "effect": "+1",
+          "price": 300
+        },
+        {
+          "effect": "+2",
+          "price": 300
+        },
+        {
+          "effect": "+3",
+          "price": 300
+        }
+      ]
+    },
+    {
+      "id": "spear-exp",
+      "name": "창술 경험치 증가",
+      "original": "槍術の経験値増加",
+      "tiers": [
+        {
+          "effect": "+1",
+          "price": 300
+        },
+        {
+          "effect": "+2",
+          "price": 300
+        },
+        {
+          "effect": "+3",
+          "price": 300
+        }
+      ]
+    },
+    {
+      "id": "axe-exp",
+      "name": "도끼술 경험치 증가",
+      "original": "斧術の経験値増加",
+      "tiers": [
+        {
+          "effect": "+1",
+          "price": 300
+        },
+        {
+          "effect": "+2",
+          "price": 300
+        },
+        {
+          "effect": "+3",
+          "price": 300
+        }
+      ]
+    },
+    {
+      "id": "bow-exp",
+      "name": "궁술 경험치 증가",
+      "original": "弓術の経験値増加",
+      "tiers": [
+        {
+          "effect": "+1",
+          "price": 300
+        },
+        {
+          "effect": "+2",
+          "price": 300
+        },
+        {
+          "effect": "+3",
+          "price": 300
+        }
+      ]
+    },
+    {
+      "id": "fist-exp",
+      "name": "격투술 경험치 증가",
+      "original": "格闘術の経験値増加",
+      "tiers": [
+        {
+          "effect": "+1",
+          "price": 300
+        },
+        {
+          "effect": "+2",
+          "price": 300
+        },
+        {
+          "effect": "+3",
+          "price": 300
+        }
+      ]
+    },
+    {
+      "id": "black-exp",
+      "name": "흑마술 경험치 증가",
+      "original": "黒魔術の経験値増加",
+      "tiers": [
+        {
+          "effect": "+1",
+          "price": 300
+        },
+        {
+          "effect": "+2",
+          "price": 300
+        },
+        {
+          "effect": "+3",
+          "price": 300
+        }
+      ]
+    },
+    {
+      "id": "white-exp",
+      "name": "백마술 경험치 증가",
+      "original": "白魔術の経験値増加",
+      "tiers": [
+        {
+          "effect": "+1",
+          "price": 300
+        },
+        {
+          "effect": "+2",
+          "price": 300
+        },
+        {
+          "effect": "+3",
+          "price": 300
+        }
+      ]
+    },
+    {
+      "id": "infantry-exp",
+      "name": "보병술 경험치 증가",
+      "original": "歩兵術の経験値増加",
+      "tiers": [
+        {
+          "effect": "+1",
+          "price": 300
+        },
+        {
+          "effect": "+2",
+          "price": 300
+        },
+        {
+          "effect": "+3",
+          "price": 300
+        }
+      ]
+    },
+    {
+      "id": "riding-exp",
+      "name": "기마술 경험치 증가",
+      "original": "馬術の経験値増加",
+      "tiers": [
+        {
+          "effect": "+1",
+          "price": 300
+        },
+        {
+          "effect": "+2",
+          "price": 300
+        },
+        {
+          "effect": "+3",
+          "price": 300
+        }
+      ]
+    },
+    {
+      "id": "armor-exp",
+      "name": "중갑술 경험치 증가",
+      "original": "重装術の経験値増加",
+      "tiers": [
+        {
+          "effect": "+1",
+          "price": 300
+        },
+        {
+          "effect": "+2",
+          "price": 300
+        },
+        {
+          "effect": "+3",
+          "price": 300
+        }
+      ]
+    },
+    {
+      "id": "flying-exp",
+      "name": "비행술 경험치 증가",
+      "original": "飛行術の経験値増加",
+      "tiers": [
+        {
+          "effect": "+1",
+          "price": 300
+        },
+        {
+          "effect": "+2",
+          "price": 300
+        },
+        {
+          "effect": "+3",
+          "price": 300
+        }
+      ]
+    },
+    {
+      "id": "command-exp",
+      "name": "지휘술 경험치 증가",
+      "original": "指揮術の経験値増加",
+      "tiers": [
+        {
+          "effect": "+1",
+          "price": 300
+        },
+        {
+          "effect": "+2",
+          "price": 300
+        },
+        {
+          "effect": "+3",
+          "price": 300
+        }
+      ]
+    },
+    {
+      "id": "weapon-discount",
+      "name": "무기 가격 할인",
+      "original": "武器の購入金額割引",
+      "tiers": [
+        {
+          "effect": "10%",
+          "price": 300
+        },
+        {
+          "effect": "20%",
+          "price": 300
+        },
+        {
+          "effect": "30%",
+          "price": 300
+        }
+      ]
+    },
+    {
+      "id": "item-discount",
+      "name": "도구 가격 할인",
+      "original": "道具の購入金額割引",
+      "tiers": [
+        {
+          "effect": "10%",
+          "price": 300
+        },
+        {
+          "effect": "20%",
+          "price": 300
+        },
+        {
+          "effect": "30%",
+          "price": 300
+        }
+      ]
+    },
+    {
+      "id": "gift-discount",
+      "name": "선물 가격 할인",
+      "original": "贈り物の購入金額割引",
+      "tiers": [
+        {
+          "effect": "10%",
+          "price": 300
+        },
+        {
+          "effect": "20%",
+          "price": 300
+        },
+        {
+          "effect": "30%",
+          "price": 300
+        }
+      ]
+    },
+    {
+      "id": "inn-discount",
+      "name": "여관 숙박비 할인",
+      "original": "宿屋の宿泊料金割引",
+      "tiers": [
+        {
+          "effect": "20%",
+          "price": 300
+        },
+        {
+          "effect": "40%",
+          "price": 300
+        }
+      ]
+    },
+    {
+      "id": "meal-discount",
+      "name": "식사 가격 할인",
+      "original": "食事の料理値段割引",
+      "tiers": [
+        {
+          "effect": "20%",
+          "price": 300
+        },
+        {
+          "effect": "40%",
+          "price": 300
+        }
+      ]
+    },
+    {
+      "id": "theater-discount",
+      "name": "극장 관람료 할인",
+      "original": "劇場の観劇料金割引",
+      "tiers": [
+        {
+          "effect": "20%",
+          "price": 300
+        },
+        {
+          "effect": "40%",
+          "price": 300
+        }
+      ]
+    },
+    {
+      "id": "thermae-discount",
+      "name": "테르마에 목욕료 할인",
+      "original": "テルマエの入浴料金割引",
+      "tiers": [
+        {
+          "effect": "20%",
+          "price": 300
+        },
+        {
+          "effect": "40%",
+          "price": 300
+        }
+      ]
+    },
+    {
+      "id": "forge-discount",
+      "name": "대장간 이용료 할인",
+      "original": "鍛冶屋の利用料金割引",
+      "tiers": [
+        {
+          "effect": "10%",
+          "price": 300
+        },
+        {
+          "effect": "20%",
+          "price": 300
+        },
+        {
+          "effect": "30%",
+          "price": 300
+        }
+      ]
+    },
+    {
+      "id": "coach-discount",
+      "name": "마차 이용료 할인",
+      "original": "乗合馬車の利用料金割引",
+      "tiers": [
+        {
+          "effect": "20%",
+          "price": 300
+        },
+        {
+          "effect": "40%",
+          "price": 300
+        }
+      ]
+    },
+    {
+      "id": "dungeon-chase",
+      "name": "던전 적 추적 시간 감소",
+      "original": "ダンジョン敵の追跡時間減少",
+      "tiers": [
+        {
+          "effect": "감소",
+          "price": 300
+        }
+      ]
+    },
+    {
+      "id": "material-find",
+      "name": "물건 파괴 시 소재 발견률 증가",
+      "original": "物品破壊時の素材発見率増加",
+      "tiers": [
+        {
+          "effect": "10%",
+          "price": 300
+        },
+        {
+          "effect": "20%",
+          "price": 300
+        },
+        {
+          "effect": "30%",
+          "price": 300
+        }
+      ]
+    },
+    {
+      "id": "aurora-sand-discount",
+      "name": "아우로라 가호 소비 감소",
+      "original": "アウロラの加護の消費減少",
+      "tiers": [
+        {
+          "effect": "20%",
+          "price": 300
+        },
+        {
+          "effect": "50%",
+          "price": 300
+        }
+      ]
+    },
+    {
+      "id": "mars-sand-discount",
+      "name": "마스 가호 소비 감소",
+      "original": "マーズの加護の消費減少",
+      "tiers": [
+        {
+          "effect": "20%",
+          "price": 300
+        },
+        {
+          "effect": "50%",
+          "price": 300
+        }
+      ]
+    },
+    {
+      "id": "smirnos-sand-discount",
+      "name": "스미르노스 가호 소비 감소",
+      "original": "スミルノスの加護の消費減少",
+      "tiers": [
+        {
+          "effect": "20%",
+          "price": 300
+        },
+        {
+          "effect": "50%",
+          "price": 300
+        }
+      ]
+    },
+    {
+      "id": "jurah-sand-discount",
+      "name": "주라 가호 소비 감소",
+      "original": "ジュラの加護の消費減少",
+      "tiers": [
+        {
+          "effect": "20%",
+          "price": 300
+        },
+        {
+          "effect": "50%",
+          "price": 300
+        }
+      ]
+    },
+    {
+      "id": "kalla-sand-discount",
+      "name": "칼라 가호 소비 감소",
+      "original": "カーラの加護の消費減少",
+      "tiers": [
+        {
+          "effect": "20%",
+          "price": 300
+        },
+        {
+          "effect": "50%",
+          "price": 300
+        }
+      ]
+    },
+    {
+      "id": "credna-sand-discount",
+      "name": "크레르 가호 소비 감소",
+      "original": "クレールの加護の消費減少",
+      "tiers": [
+        {
+          "effect": "20%",
+          "price": 300
+        },
+        {
+          "effect": "50%",
+          "price": 300
+        }
+      ]
+    }
+  ],
+  "gods": [
+    {
+      "name": "아우로라",
+      "original": "アウロラ",
+      "max": 3
+    },
+    {
+      "name": "마스",
+      "original": "マーズ",
+      "max": 3
+    },
+    {
+      "name": "스미르노스",
+      "original": "スミルノス",
+      "max": 3
+    },
+    {
+      "name": "주라",
+      "original": "ジュラ",
+      "max": 3
+    },
+    {
+      "name": "칼라",
+      "original": "カーラ",
+      "max": 3
+    },
+    {
+      "name": "크레르",
+      "original": "クレール",
+      "max": 3
+    }
+  ],
+  "steps": {
+    "prep-boons--5d107be39e": [
+      "exp-gain",
+      1
+    ],
+    "prep-boons--class-exp-i": [
+      "class-exp",
+      1
+    ],
+    "prep-boons--sword-exp-i": [
+      "sword-exp",
+      1
+    ],
+    "prep-boons--spear-exp-i": [
+      "spear-exp",
+      1
+    ],
+    "prep-boons--axe-exp-i": [
+      "axe-exp",
+      1
+    ],
+    "prep-boons--bow-exp-i": [
+      "bow-exp",
+      1
+    ],
+    "prep-boons--fist-exp-i": [
+      "fist-exp",
+      1
+    ],
+    "prep-boons--black-exp-i": [
+      "black-exp",
+      1
+    ],
+    "prep-boons--white-exp-i": [
+      "white-exp",
+      1
+    ],
+    "prep-boons--weapon-discount-i": [
+      "weapon-discount",
+      1
+    ],
+    "prep-boons--0c34c5be60": [
+      "aurora-sand-discount",
+      1
+    ],
+    "prep-boons--kalla20": [
+      "kalla-sand-discount",
+      1
+    ],
+    "prep-boons--credna20": [
+      "credna-sand-discount",
+      1
+    ],
+    "leda-post-clear-boons-20261110--class-exp-ii": [
+      "class-exp",
+      2
+    ],
+    "entry-leda--exp-ii": [
+      "exp-gain",
+      2
+    ],
+    "entry-leda--black-exp-ii": [
+      "black-exp",
+      2
+    ],
+    "leda-post-clear-boons-20261110--black-iii": [
+      "black-exp",
+      3
+    ],
+    "entry-leda--white-exp-ii": [
+      "white-exp",
+      2
+    ],
+    "leda-post-clear-boons-20261110--white-iii": [
+      "white-exp",
+      3
+    ],
+    "entry-leda--credna50": [
+      "credna-sand-discount",
+      2
+    ],
+    "entry-leda--kalla50": [
+      "kalla-sand-discount",
+      2
+    ],
+    "entry-dietrich--jurah20": [
+      "jurah-sand-discount",
+      1
+    ],
+    "entry-dietrich--mars20": [
+      "mars-sand-discount",
+      1
+    ],
+    "entry-cai--smyrnos20": [
+      "smirnos-sand-discount",
+      1
+    ],
+    "entry-cai--smyrnos50": [
+      "smirnos-sand-discount",
+      2
+    ],
+    "leda-post-clear-boons-20261110--sword-ii": [
+      "sword-exp",
+      2
+    ],
+    "leda-post-clear-boons-20261110--sword-iii": [
+      "sword-exp",
+      3
+    ],
+    "leda-post-clear-boons-20261110--spear-ii": [
+      "spear-exp",
+      2
+    ],
+    "leda-post-clear-boons-20261110--spear-iii": [
+      "spear-exp",
+      3
+    ],
+    "leda-post-clear-boons-20261110--axe-ii": [
+      "axe-exp",
+      2
+    ],
+    "leda-post-clear-boons-20261110--axe-iii": [
+      "axe-exp",
+      3
+    ],
+    "leda-post-clear-boons-20261110--bow-ii": [
+      "bow-exp",
+      2
+    ],
+    "leda-post-clear-boons-20261110--bow-iii": [
+      "bow-exp",
+      3
+    ],
+    "leda-post-clear-boons-20261110--fist-ii": [
+      "fist-exp",
+      2
+    ],
+    "leda-post-clear-boons-20261110--fist-iii": [
+      "fist-exp",
+      3
+    ]
+  },
+  "conditionalSteps": [
+    "entry-leda--kalla50",
+    "entry-dietrich--jurah20",
+    "entry-dietrich--mars20",
+    "entry-cai--smyrnos20",
+    "entry-cai--smyrnos50"
+  ]
+}

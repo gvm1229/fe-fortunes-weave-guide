@@ -11,7 +11,7 @@ import { lordFiles, lordPortrait } from '@/lib/portraits';
 const playOrder:Record<string,string>={theodora:'1st',leda:'2nd',dietrich:'3rd',cai:'4th'};
 export function Home({routes}:{routes:{id:Route;label:string;parts:{part:string;groups:Group[]}[]}[]}){
   const checks=useChecks();
-  function progress(groups:Group[]){return {total:groups.reduce((n,g)=>n+g.actions.length,0),done:groups.reduce((n,g)=>n+g.actions.filter(a=>checked(a,g.id,checks.data.checks)).length,0)};}
+  function progress(groups:Group[]){return {total:groups.reduce((n,g)=>n+g.actions.length,0),done:groups.reduce((n,g)=>n+g.actions.filter(a=>checked(a,g.id,checks.effective)).length,0)};}
   const lords=['cai','dietrich','theodora','leda'].map(id=>routes.find(r=>r.id===id)!);
   const third=routes.find(r=>r.id==='part3')!,thirdProgress=progress(third.parts[0].groups);
   return <ViewTransition default="page-fade"><main className="home">
