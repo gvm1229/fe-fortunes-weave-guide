@@ -49,8 +49,8 @@ for(const unit of Object.values(old.team.units)){
   assert.ok(docs['notes/classes/'+unit.classSlug+'.md'],unit.classSlug);
 }
 assert.equal(resolveDoc('/notes/classes/soldier.html#시험'),'notes/classes/soldier.md#시험');
-assert.equal(resolveDoc('../progress.md','routes/theodora/progress.md'),'routes/progress.md');
-assert.equal(resolveDoc('#현재','progress.md'),'progress.md#현재');
+assert.equal(resolveDoc('../plan.md','routes/theodora/roster.md'),'routes/plan.md');
+assert.equal(resolveDoc('#현재','개인화 사용법.md'),'개인화 사용법.md#현재');
 assert.equal(headingId('3부 · 지원 C'),'3부--지원-c');
 assert.equal(guideHref('personalized.html#theodora-plan'),'/theodora/1/');
 assert.equal(guideHref('../personalized-team.html','notes/example.md'),'/team/');

@@ -6,13 +6,6 @@ import ts from 'typescript';
 import { createElement } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { load } from 'cheerio';
-import { progressStage } from '../lib/progress.ts';
-
-assert.equal(progressStage(0,0),'started');
-assert.equal(progressStage(49,100),'started');
-assert.equal(progressStage(50,100),'advancing');
-assert.equal(progressStage(99,100),'advancing');
-assert.equal(progressStage(100,100),'complete');
 mkdirSync('.tmp',{recursive:true});
 const source=readFileSync('components/game-text.tsx','utf8')
  .replace("import people from '@/content/data/people-display.json';",'const people='+readFileSync('content/data/people-display.json','utf8')+';')

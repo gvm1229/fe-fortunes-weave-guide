@@ -4,6 +4,7 @@ import assert from 'node:assert/strict';
 import { checked, validateChecks } from '../lib/check-state.ts';
 import { scopeTree, scopeMarkdown } from '../lib/scope.ts';
 import { pairNames, filterPairs } from '../lib/pair-filter.ts';
+import { currentGameDate } from '../lib/game-date.ts';
 import './verify-image-parity.mjs';
 import './verify-readability.mjs';
 import './verify-design-assets.mjs';
@@ -128,6 +129,14 @@ for(const st of read('content/derived/checklist.json').stages)for(const ch of st
 {const documents=read('content/derived/documents.json');assert.ok(!Object.keys(documents).some(d=>/(^|\/)progress\.md$/.test(d)),'진행 문서가 사이트에 있음');
  const text=t=>Array.isArray(t)?t.map(text).join(''):typeof t==='string'?t:t&&typeof t==='object'?('tag' in t?text(t.children):Object.values(t).map(text).join(' ¦ ')):String(t??'');
  const places={할일:read('content/derived/checklist.json'),표시:read('content/derived/presentation.json'),덮어쓰기:read('content/display-overrides.json'),참고문서:read('content/derived/reference-documents.json'),문서:Object.fromEntries(Object.entries(documents).map(([k,v])=>[k,v.body]))};
- const bad=[/2,605|7,405/,/Lv ?17(?!\d)/,/현재\s*\d+장/,/현재\s*Lv\s*\d/,/구매 완료다/,/13개(?: 축복)? 구매(?:는)? 완료/,/이미 수령했다/,/마지막 (?:실제 )?(?:보고|가호)/,/마력(?:은|이)? ?42/,/사용자의 마지막/,/옛 디트리히판/,/사용자 확인값|사용자 직접 보고/];
+ const bad=[/2,605|7,405/,/Lv ?17(?!\d)/,/현재\s*\d+장/,/현재\s*Lv\s*\d/,/구매 완료다/,/13개(?: 축복)? 구매(?:는)? 완료/,/이미 수령했다/,/마지막 (?:실제 )?(?:보고|가호)/,/마력(?:은|이)? ?42/,/사용자의 마지막/,/옛 디트리히판/,/사용자 확인값|사용자 직접 보고/,/옛 디트리히|옛 ?2부/,/현재 부대/,/아우로라 ?3 ?·주라 ?2/,/1부 ?12장 완료·2부 첫 전투 전/,/사용자 (?:상태|잔액)가? 아[니닌]/,/progress\.md|진행 기록/,/46\(마스터\)/,/첫 전투 전이다/,/17 ?→ ?20/,/7장 ?후반/,/50시간/,/이전 디트리히판|기존 디트리히/,/이번 재육성|새 재육성/];
  for(const [k,v] of Object.entries(places)){const t=text(v);for(const re of bad){const m=t.match(new RegExp(`.{0,40}(?:${re.source}).{0,40}`));assert.ok(!m,`개인 진행 글 남음(${k}): ${m?.[0]}`);}}}
+// 2026-11-15: 바닥 게임 날짜는 순서가 날짜와 어긋나도 뒤로 가지 않고, 체크가 남은 첫 묶음까지의 가장 늦은 날짜를 보인다.
+{const g=(id,title,done)=>({id,title,actions:[{id:id+'-a',done}]});const isDone=(a)=>a.done;
+ assert.deepEqual(currentGameDate([g('a','5/1 출발',true),g('b','5/10 결투',true),g('c','5/3 의뢰',false),g('d','5/12 전투',false)],isDone),{m:5,d:10},'어긋난 순서에서 날짜가 뒤로 감');
+ assert.deepEqual(currentGameDate([g('a','5/1 출발',true),g('b','~5/9 기한',false)],isDone),{m:5,d:1},'기한 날짜를 지금 날짜로 씀');
+ assert.equal(currentGameDate([g('a','날짜 없음',false)],isDone),null,'날짜 없으면 숨김');}
+// 2026-11-15: 문서의 Markdown 표는 머리줄이 있고, 줄마다 칸 수가 같다(진행 글을 지우다 표가 깨지지 않게).
+{const walkMd=d=>readdirSync(d,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walkMd(d+'/'+e.name):e.name.endsWith('.md')?[d+'/'+e.name]:[]);
+ for(const f of [...walkMd('content/notes'),...walkMd('content/routes')]){const L=readFileSync(f,'utf8').split(/\r?\n/);L.forEach((l,i)=>{const t=l.trim();if(/^\|?\s*:?-{3,}/.test(t)&&t.includes('|'))assert.ok((L[i-1]||'').trim().startsWith('|'),f+':'+(i+1)+' 표 머리줄 없음');if(t.startsWith('|')&&(L[i-1]||'').trim().startsWith('|'))assert.equal(l.split('|').length,L[i-1].split('|').length,f+':'+(i+1)+' 표 칸 수');});}}
 console.log(JSON.stringify({status:'passed',host:'Windows / Node.js',activeActions:1899,checkIds:2881,recruitAssignments:63,referenceDocs:318,peopleByStage:manifest.peopleByStage,sourceFiles:manifest.sourceFiles.length,referencedMedia:media.size,sourceCompared:'content/source 사본',checks:'개별 false 우선·상속 거부·형식 검사·JSON 왕복 통과'},null,2));

@@ -1750,7 +1750,7 @@
     "images": [
       {
         "file": "assets/recruitment/kroios-map.png",
-        "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 사용자 상태가 아닌 위치 참고다."
+        "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 위치 참고용 예시다."
       }
     ],
     "steps": [],
@@ -1777,7 +1777,7 @@
         "images": [
           {
             "file": "assets/recruitment/kroios-map.png",
-            "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 사용자 상태가 아닌 위치 참고다."
+            "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 위치 참고용 예시다."
           }
         ],
         "method": "전용 의뢰 진행 중에만 · 탐색",
@@ -1801,7 +1801,7 @@
         "images": [
           {
             "file": "assets/recruitment/kroios-map.png",
-            "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 사용자 상태가 아닌 위치 참고다."
+            "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 위치 참고용 예시다."
           }
         ],
         "method": "전용 의뢰 진행 중에만 · 탐색",
@@ -1825,7 +1825,7 @@
         "images": [
           {
             "file": "assets/recruitment/kroios-map.png",
-            "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 사용자 상태가 아닌 위치 참고다."
+            "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 위치 참고용 예시다."
           }
         ],
         "method": "전용 의뢰 진행 중에만 · 탐색",
@@ -1849,7 +1849,7 @@
         "images": [
           {
             "file": "assets/recruitment/kroios-map.png",
-            "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 사용자 상태가 아닌 위치 참고다."
+            "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 위치 참고용 예시다."
           }
         ],
         "method": "전용 의뢰 진행 중에만 · 탐색",
@@ -1875,7 +1875,7 @@
     "images": [
       {
         "file": "assets/recruitment/aegina-map.png",
-        "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 사용자 상태가 아닌 위치 참고다."
+        "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 위치 참고용 예시다."
       }
     ],
     "steps": [],
@@ -1902,7 +1902,7 @@
         "images": [
           {
             "file": "assets/recruitment/aegina-map.png",
-            "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 사용자 상태가 아닌 위치 참고다."
+            "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 위치 참고용 예시다."
           }
         ],
         "method": "전용 의뢰 진행 중에만 · 탐색",
@@ -1926,7 +1926,7 @@
         "images": [
           {
             "file": "assets/recruitment/aegina-map.png",
-            "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 사용자 상태가 아닌 위치 참고다."
+            "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 위치 참고용 예시다."
           }
         ],
         "method": "전용 의뢰 진행 중에만 · 탐색",
@@ -1950,7 +1950,7 @@
         "images": [
           {
             "file": "assets/recruitment/aegina-map.png",
-            "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 사용자 상태가 아닌 위치 참고다."
+            "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 위치 참고용 예시다."
           }
         ],
         "method": "전용 의뢰 진행 중에만 · 탐색",
@@ -1974,7 +1974,7 @@
         "images": [
           {
             "file": "assets/recruitment/aegina-map.png",
-            "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 사용자 상태가 아닌 위치 참고다."
+            "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 위치 참고용 예시다."
           }
         ],
         "method": "전용 의뢰 진행 중에만 · 탐색",
@@ -2002,7 +2002,7 @@
     "images": [
       {
         "file": "assets/recruitment/daybreak-map.png",
-        "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 사용자 상태가 아닌 위치 참고다."
+        "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 위치 참고용 예시다."
       }
     ],
     "steps": [],
@@ -2029,7 +2029,7 @@
         "images": [
           {
             "file": "assets/recruitment/daybreak-map.png",
-            "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 사용자 상태가 아닌 위치 참고다."
+            "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 위치 참고용 예시다."
           }
         ],
         "method": "전용 의뢰 진행 중에만 · 탐색",
@@ -2053,7 +2053,7 @@
         "images": [
           {
             "file": "assets/recruitment/daybreak-map.png",
-            "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 사용자 상태가 아닌 위치 참고다."
+            "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 위치 참고용 예시다."
           }
         ],
         "method": "전용 의뢰 진행 중에만 · 탐색",
@@ -2072,7 +2072,7 @@
         "images": [
           {
             "file": "assets/recruitment/daybreak-map.png",
-            "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 사용자 상태가 아닌 위치 참고다."
+            "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 위치 참고용 예시다."
           }
         ],
         "method": "전용 의뢰 진행 중에만 · 탐색",
@@ -2096,7 +2096,7 @@
         "images": [
           {
             "file": "assets/recruitment/daybreak-map.png",
-            "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 사용자 상태가 아닌 위치 참고다."
+            "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 위치 참고용 예시다."
           }
         ],
         "method": "전용 의뢰 진행 중에만 · 탐색",
@@ -2129,7 +2129,7 @@
     "images": [
       {
         "file": "assets/recruitment/baina-map.jpg",
-        "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 사용자 상태가 아닌 위치 참고다."
+        "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 위치 참고용 예시다."
       }
     ],
     "steps": [],
@@ -2156,7 +2156,7 @@
         "images": [
           {
             "file": "assets/recruitment/baina-map.jpg",
-            "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 사용자 상태가 아닌 위치 참고다."
+            "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 위치 참고용 예시다."
           }
         ],
         "method": "의뢰2 수락 뒤 구매 · 사전 판매 해금은 미확인",
@@ -2180,7 +2180,7 @@
         "images": [
           {
             "file": "assets/recruitment/baina-map.jpg",
-            "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 사용자 상태가 아닌 위치 참고다."
+            "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 위치 참고용 예시다."
           }
         ],
         "method": "전용 의뢰 진행 중에만 · 2번 의뢰 뒤 구매/탐색",
@@ -2199,7 +2199,7 @@
         "images": [
           {
             "file": "assets/recruitment/baina-map.jpg",
-            "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 사용자 상태가 아닌 위치 참고다."
+            "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 위치 참고용 예시다."
           }
         ],
         "method": "의뢰2 수락 뒤 구매 · 사전 판매 해금은 미확인",
@@ -2257,7 +2257,7 @@
     "images": [
       {
         "file": "assets/recruitment/azure-crystal-map.jpg",
-        "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 사용자 상태가 아닌 위치 참고다."
+        "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 위치 참고용 예시다."
       }
     ],
     "steps": [],
@@ -2284,7 +2284,7 @@
         "images": [
           {
             "file": "assets/recruitment/azure-crystal-map.jpg",
-            "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 사용자 상태가 아닌 위치 참고다."
+            "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 위치 참고용 예시다."
           }
         ],
         "method": "전용 의뢰 진행 중에만 · 탐색",
@@ -2308,7 +2308,7 @@
         "images": [
           {
             "file": "assets/recruitment/azure-crystal-map.jpg",
-            "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 사용자 상태가 아닌 위치 참고다."
+            "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 위치 참고용 예시다."
           }
         ],
         "method": "전용 의뢰 진행 중에만 · 탐색",
@@ -2327,7 +2327,7 @@
         "images": [
           {
             "file": "assets/recruitment/azure-crystal-map.jpg",
-            "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 사용자 상태가 아닌 위치 참고다."
+            "caption": "해당 목적지의 실제 게임 지도. 그림의 날짜·레벨은 위치 참고용 예시다."
           }
         ],
         "method": "전용 의뢰 진행 중에만 · 탐색",

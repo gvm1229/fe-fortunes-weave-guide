@@ -29,17 +29,17 @@
     {
       "source": "data/carry-state.json",
       "target": "content/data/carry-state.json",
-      "sha256": "826e3032d1afe9079757e91e974bf039ce5277d5a90d1205eb16dd2ede4a273b"
+      "sha256": "42242ee9c2b6da4be9d25ab42b16023f3c83b90945531da71a0c1f331676a848"
     },
     {
       "source": "data/chapter-gold.json",
       "target": "content/data/chapter-gold.json",
-      "sha256": "5a24c5f3673df7d13658f3d928ab17847d40e81e0f8d4b2ab21424e283191da1"
+      "sha256": "a398fc8bc3c3de79ad398e6b07b022a7c1df77f3b826efeeea9a486ff11088e8"
     },
     {
       "source": "data/chapter-progression.json",
       "target": "content/data/chapter-progression.json",
-      "sha256": "4df01e9bef24822b086bd8be907250f80697b5f041837223a93b0bfa9f977637"
+      "sha256": "7b5da366b66a1f6cfa1cf8c2649b74791492ccbae235985d6960f2673de6f608"
     },
     {
       "source": "data/checklist-display-names.json",
@@ -64,12 +64,12 @@
     {
       "source": "data/god-service-plan.json",
       "target": "content/data/god-service-plan.json",
-      "sha256": "84e4cc29c5b1f13759c255bebff68fe1c804592df5f9376436efe18596812137"
+      "sha256": "51d165faa957751faf1515518787d2ae23070a10e9f1ad28721199b8f08f8d46"
     },
     {
       "source": "data/missable-events.json",
       "target": "content/data/missable-events.json",
-      "sha256": "fda872f9dce28cfb922d6852a2be47f84eb748143c95649b7b92d7adfa7e5966"
+      "sha256": "8f84ca7de7d36d61e9607bb16423d496f0082fd9b0c3a6a7705124823b3ea90f"
     },
     {
       "source": "data/modal-scope-plan.json",
@@ -79,7 +79,7 @@
     {
       "source": "data/multi-route-audit.json",
       "target": "content/data/multi-route-audit.json",
-      "sha256": "9116e36fb350ed58c059ae204022254af71bffb8a64cc45fffc883ffd038ee03"
+      "sha256": "3a97616fd72be140224298a4c7dbdf38a87d9baaf02e7049f1e3864140d33810"
     },
     {
       "source": "data/optional-growth-review.json",
@@ -99,17 +99,17 @@
     {
       "source": "data/phase-goals.json",
       "target": "content/data/phase-goals.json",
-      "sha256": "9d0b857673d55b5b218c5c04ef8bca8c211432e6a490d10334ee8f48b19b7343"
+      "sha256": "60293c688ebeef71f7b35093057f61babc095f7dc412c2bc66ca93f44939ca8c"
     },
     {
       "source": "data/playbook.json",
       "target": "content/data/playbook.json",
-      "sha256": "20a5accd95da1330d8f67715c0bf5b0723b3d9d15910fa9a3dddef841cf59892"
+      "sha256": "e36b9e669299b2f250043344abfd0dd0a0b76d649b09d11f7f5f0afb11e68ed2"
     },
     {
       "source": "data/purchase-plan.json",
       "target": "content/data/purchase-plan.json",
-      "sha256": "ce258d2d4865bbc953d963ed9ae17a66443d30d6c55d49286137017fe7dfefd0"
+      "sha256": "c8d645a18315f1830893febc0d81116dbe46d1e8dcd13c60f630602f08fd79e5"
     },
     {
       "source": "data/readiness-profile-sources.json",
@@ -124,7 +124,7 @@
     {
       "source": "data/recruit-materials.json",
       "target": "content/data/recruit-materials.json",
-      "sha256": "7d0f180042fe7a7257e5e5cc5b28e438e1ea0e9c76cfe0ea36da985559b9a462"
+      "sha256": "96751b9353913dd8d93e5eb82c2e5b4a5d04a8c74db8ee0a7272cfa1d1e6e9d2"
     },
     {
       "source": "data/recruitment-build-audit.json",
@@ -224,7 +224,7 @@
     {
       "source": "data/unit-readiness.json",
       "target": "content/data/unit-readiness.json",
-      "sha256": "22a9ed8e5f6c651c501a15f7471bba3b0b903947646083f8f73cd307fdb8f2f5"
+      "sha256": "aa5f9cb34ee604fbc68c68beaa3e441ca0cb9100b63b4f56e18c820591991217"
     },
     {
       "source": "data/weapon-buy-sources.json",
@@ -249,12 +249,12 @@
     {
       "source": "notes/army-readiness-review.md",
       "target": "content/notes/army-readiness-review.md",
-      "sha256": "bf91d4e44310b7760255d8ebcbe4ef559dd26fba83577915479d1a38c5e004ce"
+      "sha256": "31cb0a9df536c69bc411c4316fc65f53e70607add566a0905551b5a919218e5f"
     },
     {
       "source": "notes/aurora-price-review.md",
       "target": "content/notes/aurora-price-review.md",
-      "sha256": "9f291d78b848c9ff3b4f542d222f8e4f0472a9b8533f54abcde969806487da93"
+      "sha256": "4a38c880419eedb8869f95b53bc2f5cf2a317afb372c133392dd0dedf4fcaafc"
     },
     {
       "source": "notes/backups/final25-apply-20261104/notes/chapter-gold-review.md",
@@ -264,7 +264,7 @@
     {
       "source": "notes/backups/final25-apply-20261104/notes/chapter-route-plan.md",
       "target": "content/notes/backups/final25-apply-20261104/notes/chapter-route-plan.md",
-      "sha256": "b88037c32ba623401eaf13ac9c0572c36331243c50a6b18ca548aa8b090d5cf1"
+      "sha256": "fd3e28d15941e02663037cfdf8c52bca23c66b37aea676be1ab9e04e9ebece15"
     },
     {
       "source": "notes/backups/final25-apply-20261104/notes/roster-build-review.md",
@@ -289,7 +289,7 @@
     {
       "source": "notes/boon-buy-review.md",
       "target": "content/notes/boon-buy-review.md",
-      "sha256": "b6151113f245be49c9e60958d807ef9e43aa885fd71cb08f34f78267ab7e7888"
+      "sha256": "335e60716b2a6322e0e4fdc8fbd9d7b216d66fc1f61c6f1e0af436a4070d9d2c"
     },
     {
       "source": "notes/cai-carriage-guide.md",
@@ -299,7 +299,7 @@
     {
       "source": "notes/carry-hard-review.md",
       "target": "content/notes/carry-hard-review.md",
-      "sha256": "36e7359cbbc97e5ffb37de0f77ded7a9b462fb421bbb2d150f044749464e922d"
+      "sha256": "7a88efa77ad1d72fd6f6575d03c6730a30a2c2202f6ae35ba89993e16deafed5"
     },
     {
       "source": "notes/chapter-gold-review.md",
@@ -309,12 +309,12 @@
     {
       "source": "notes/chapter-route-plan.md",
       "target": "content/notes/chapter-route-plan.md",
-      "sha256": "f48dd64a713f5973db13149c917f35681a452369b341ca492ae53762456c911b"
+      "sha256": "ba92bd3bffb443e543c9b47dc7ad9258bef2fc5cf79066d21e54f37674cea3e3"
     },
     {
       "source": "notes/checklist-full-review.md",
       "target": "content/notes/checklist-full-review.md",
-      "sha256": "fe9a6774075a03636e3431cb38451cfc1146727f39ee1c74a7bf011e68f3798c"
+      "sha256": "613695965eff0b3c46fb319efcc6ce95747d059c3f5d3dc1f227fb282345fb08"
     },
     {
       "source": "notes/checklist-order-plan.md",
@@ -324,7 +324,7 @@
     {
       "source": "notes/checklist-order-review.md",
       "target": "content/notes/checklist-order-review.md",
-      "sha256": "57c292d1379e54dfa738d2f6a841b6177944fd11e9ba533ba36256493c1ec257"
+      "sha256": "e61abd3f4279db497230d41756e32ca180f4f4f09795c850be2eac800507139c"
     },
     {
       "source": "notes/class-capabilities-review.md",
@@ -344,7 +344,7 @@
     {
       "source": "notes/class-modal-review.md",
       "target": "content/notes/class-modal-review.md",
-      "sha256": "3d8b8938799f0176714f45d84e73797a9b8a930e30bae44ead3da910d6d8061d"
+      "sha256": "a59cbc280d8fc6dc317dc3483523543847d9f10d0b19cc29645724b577325541"
     },
     {
       "source": "notes/class-path-reasons-plan.md",
@@ -649,7 +649,7 @@
     {
       "source": "notes/combat-review.md",
       "target": "content/notes/combat-review.md",
-      "sha256": "8d065a9689acb4419d5d33d241da5cbbad85cf7266f97e77ffd545ccc244555a"
+      "sha256": "9d038496eecb45a4b48544e3a6062cb0fa16c17a8558ccfecf396f730a638c34"
     },
     {
       "source": "notes/community-classes-research-plan.md",
@@ -684,7 +684,7 @@
     {
       "source": "notes/dark-mode-audit-review.md",
       "target": "content/notes/dark-mode-audit-review.md",
-      "sha256": "0603799a32948f0666dc592c9b3f834e5c197ca511961e83e4077b99f80e6b92"
+      "sha256": "0dd46354c8258323676f70d540b27491dc6d7f03bd1e51dcb9304563c743305f"
     },
     {
       "source": "notes/dark-mode-review.md",
@@ -719,7 +719,7 @@
     {
       "source": "notes/events/miss-di05-fabio-chain.md",
       "target": "content/notes/events/miss-di05-fabio-chain.md",
-      "sha256": "b7122f189d7464e20395f0b60b11ac6729ac85e99d92d182e3e5921541e9c1a5"
+      "sha256": "2fe3ec7086b1e241ebd534c9188fd0da6dcca63d72abadc2680e5e6984270d4b"
     },
     {
       "source": "notes/events/miss-di06-alexandra.md",
@@ -889,7 +889,7 @@
     {
       "source": "notes/events/miss-theo10-ship.md",
       "target": "content/notes/events/miss-theo10-ship.md",
-      "sha256": "d26fddc168e9fec9f4a7d5c1ab7fd1f6e0602cd4f7982320d611d435b484731b"
+      "sha256": "21cdf944be52066ee850e2a5e009aea266033b455743f98d582f8700c4b50caf"
     },
     {
       "source": "notes/events/miss-theo11-return.md",
@@ -914,7 +914,7 @@
     {
       "source": "notes/exp-boon-decision-review.md",
       "target": "content/notes/exp-boon-decision-review.md",
-      "sha256": "2b875f19c9d0b194bf8590f2d0df0bbf74f28ed8a7b83947968abb1b3a30c968"
+      "sha256": "2ddc0263f44fdedea27c6a1f7dc3ba3d7f4458e2a2974e10f8d26bd5cf0fea15"
     },
     {
       "source": "notes/final-builds-apply-plan.md",
@@ -924,7 +924,7 @@
     {
       "source": "notes/final-builds-apply-review.md",
       "target": "content/notes/final-builds-apply-review.md",
-      "sha256": "ea1366979b460b42ad87df8a317101ee780838f9783a4043d06f2b1aa989983a"
+      "sha256": "ce4817e852183bd2377dbe4bcc5bf34d704102a8551d2df4d51e18ccc510ad09"
     },
     {
       "source": "notes/final25-apply-evidence.md",
@@ -959,12 +959,12 @@
     {
       "source": "notes/gift-item-travel-review.md",
       "target": "content/notes/gift-item-travel-review.md",
-      "sha256": "b2eeab291b4e07742bfc8ec72139abf227f5cef7bc88de851a6cd19e64d16d7a"
+      "sha256": "878b7d7ef6818ee877e5aff2b37af7badfd9620877b5b68d525eb1f2906ede6e"
     },
     {
       "source": "notes/god-service-review.md",
       "target": "content/notes/god-service-review.md",
-      "sha256": "bb4ae8811f61ddaddf3a06b2ac6cb37b705364c9c14f722fca4ac94d8098afbe"
+      "sha256": "868e4cf440cd598dda4a4968f9ab1a299f6cefc6c0e659a4d352a9d234e31509"
     },
     {
       "source": "notes/growth-timing-review.md",
@@ -999,17 +999,17 @@
     {
       "source": "notes/hive-local-setup-review.md",
       "target": "content/notes/hive-local-setup-review.md",
-      "sha256": "eda1446043892a65523dc3a69e0febd5423d29ee9dec009d38cfeea0d25c0231"
+      "sha256": "7c46c7fca54b049538af8cd71bf26c88116c26d3e89e001f1d9f5e653ffd7945"
     },
     {
       "source": "notes/inventory-mount-review.md",
       "target": "content/notes/inventory-mount-review.md",
-      "sha256": "a9c3c0d80f788d9deeabe334e491a1541dd011203afa5140cb18c2d5efd0627e"
+      "sha256": "4e53a2163cb3678e28c5dc5512df0a5518101931dd19b74958ec4ade56116e9b"
     },
     {
       "source": "notes/knowledge/auto-capture.md",
       "target": "content/notes/knowledge/auto-capture.md",
-      "sha256": "1c2ec82936dd06f4c861e6ce452c526dd3a261a9139e68e35c50453fa77f884f"
+      "sha256": "fbe47c3b8cc4029b54e3acb5af1835082c16888490408439ee104d39f40ad707"
     },
     {
       "source": "notes/knowledge/final25-targets.md",
@@ -1019,7 +1019,7 @@
     {
       "source": "notes/knowledge/guide-workflow.md",
       "target": "content/notes/knowledge/guide-workflow.md",
-      "sha256": "c0e8a2a149c2a8e2376b412949190f7dee2da7febfc176e80489bea15de98007"
+      "sha256": "aa4139a95b0e388386914c9b77f57febd386b0f98730f4a9a6ccd015903bad01"
     },
     {
       "source": "notes/knowledge/interface.md",
@@ -1034,12 +1034,12 @@
     {
       "source": "notes/knowledge/preferences.md",
       "target": "content/notes/knowledge/preferences.md",
-      "sha256": "7ea2fad862e047293639dc952ba33ec060830ef4f4c0a72014dba47740f25ddb"
+      "sha256": "7ebfa02d3f222f0c3bb3ba0907ff83b33af6c76d8abf7174faaec53d9c0c7d46"
     },
     {
       "source": "notes/knowledge/README.md",
       "target": "content/notes/knowledge/README.md",
-      "sha256": "a5ba18873d36dc640e2ad7ff24c43787c2bd617c1fbcb4ab4bdb49abcd956b75"
+      "sha256": "3c6496a4ecefedba7a09db5ae969c1badf0a2f5d9f073ca547ff45c9c875b72d"
     },
     {
       "source": "notes/knowledge/session-review-20261104.md",
@@ -1049,7 +1049,7 @@
     {
       "source": "notes/knowledge/sources.md",
       "target": "content/notes/knowledge/sources.md",
-      "sha256": "d09562e0199ef821acc9c071b9bb61855b7016b18d1597c200f8445909b39e2b"
+      "sha256": "02f7cd6cc81b05a6bff12f3d5f56c257fdeb9869f2a33ba8df46e5ec4458c729"
     },
     {
       "source": "notes/knowledge/support-word-meaning.md",
@@ -1064,12 +1064,12 @@
     {
       "source": "notes/knowledge/training-advice-guardrails.md",
       "target": "content/notes/knowledge/training-advice-guardrails.md",
-      "sha256": "2dc0c16818bcd6b84ff077e62dca5ea7f5a0d5c45dd00a2bf16ccbdaa0cc5aba"
+      "sha256": "945a5257e6e34937c0f52f5cc747ffe6bea72670483c58d26c8bf0a56e0d3776"
     },
     {
       "source": "notes/late-recruit-review.md",
       "target": "content/notes/late-recruit-review.md",
-      "sha256": "9e4d48aa9022b27d3cfaa9c76ad5e9b5256f521695a1530559ad52993f44b32e"
+      "sha256": "a889825dab9674a9b6462b46914377dba3d11b2dfa2363acb813db4768464dca"
     },
     {
       "source": "notes/leda-equipment-spoiler.md",
@@ -1084,7 +1084,7 @@
     {
       "source": "notes/levin-materials-review.md",
       "target": "content/notes/levin-materials-review.md",
-      "sha256": "44c4e086d868d4f7f40153c950d423e51025348e0404b9e3421cf8c8cb56cd94"
+      "sha256": "a80f252b337dd2475b7a2ab8d0443c5415d94d13e7587592f16afd94382372ea"
     },
     {
       "source": "notes/lilian-dietrich-armor-video-review.md",
@@ -1094,12 +1094,12 @@
     {
       "source": "notes/lilian-final25-apply-plan.md",
       "target": "content/notes/lilian-final25-apply-plan.md",
-      "sha256": "25caf72c4f1ee97c51d6bc5c90cb62e60db77c48323bbc59eb4820b407e17e1d"
+      "sha256": "7c5335448b31457d2e8da4f4f9bc4489318b308df26abdd3198d6e67f361f4c6"
     },
     {
       "source": "notes/lilian-final25-apply-review.md",
       "target": "content/notes/lilian-final25-apply-review.md",
-      "sha256": "30a58927ccc2cfbba451bd8911eeefacd2b890cad15a0eeb4e6940c0cdc49b3b"
+      "sha256": "97425991388eecdacbcebebe2719cd0dbfe6ed9cdfd51c9698aa8072966644ad"
     },
     {
       "source": "notes/loretta-archer-build.md",
@@ -1124,7 +1124,7 @@
     {
       "source": "notes/missables-shopping-review.md",
       "target": "content/notes/missables-shopping-review.md",
-      "sha256": "8a68ccf3c6a40336dfb62ef387b816958286e96726b31bc87337853bc6d7e7d8"
+      "sha256": "2738f85ebdff5ef6955caa12cbc3e6f6583fc61774d34e60e81292c2a340f4fc"
     },
     {
       "source": "notes/modal-reading-review.md",
@@ -1134,7 +1134,7 @@
     {
       "source": "notes/modal-route-scope-review.md",
       "target": "content/notes/modal-route-scope-review.md",
-      "sha256": "a7b8f4660c2a4f954d45b5698c20049a9f72598b501523b3505cf3141b69d6b9"
+      "sha256": "3b65583faf798c4ecf0c8823123629a48ffdb9c55e2d4bc65059c87f30e11a75"
     },
     {
       "source": "notes/next-action-scroll-plan.md",
@@ -1149,12 +1149,12 @@
     {
       "source": "notes/normal-part1-level-comparison.md",
       "target": "content/notes/normal-part1-level-comparison.md",
-      "sha256": "7bc18aa68b088c22942003860129720c91ec8eda0862245fa325e820a86dea0f"
+      "sha256": "7ee20eaaf8239ef8a11b346443f3e98ba92a759986afc0b766087d42d36c065d"
     },
     {
       "source": "notes/optional-schedules-review.md",
       "target": "content/notes/optional-schedules-review.md",
-      "sha256": "766783a64af6c8c7b07ad48f292395428bc152a78fe4bfb59319b1663c55a13e"
+      "sha256": "01fe45c94dc6e4ebe2fe4aa9731cf5a28dd2e3e7a526ea7575e3cba7a64a8ba3"
     },
     {
       "source": "notes/other-routes-schedules-review.md",
@@ -1169,17 +1169,17 @@
     {
       "source": "notes/part1-paths-review.md",
       "target": "content/notes/part1-paths-review.md",
-      "sha256": "df726c473c131b66c16bfc922f772f79947a91130920ee21d93fe201ae89ac52"
+      "sha256": "890a3c4cc24183b6d715287dc534af8a8841b28c305c2451baba85e4f3aec3c8"
     },
     {
       "source": "notes/personalized-evidence.md",
       "target": "content/notes/personalized-evidence.md",
-      "sha256": "988368e07f6dd2fc19f28fc07c107f439f24a40a772c0a8a61ccb2425dababc0"
+      "sha256": "a11177eff7d865864324ccdc6c6f5e2e45e69015d2f410ebca82cdeeaa13e72b"
     },
     {
       "source": "notes/personalized-fact-check.md",
       "target": "content/notes/personalized-fact-check.md",
-      "sha256": "310a24a5f780b1542419f8996da711297f27e26bfc46417f563e4b2acd6768ac"
+      "sha256": "f56006a3f094f8213b4783458afdb15bba7171e17a3fa5b3f66b4afcb9826287"
     },
     {
       "source": "notes/personalized-readability-review.md",
@@ -1194,7 +1194,7 @@
     {
       "source": "notes/plan.md",
       "target": "content/notes/plan.md",
-      "sha256": "9e609a7eefd1ae6301b23fe87fa3119f1f05265c0add98ebf63173557ae3eb82"
+      "sha256": "0331740be94a3028f1678b5e28bbc410d4650e6aaeb3d5fb42b0aa760f61a440"
     },
     {
       "source": "notes/playbook-review.md",
@@ -1219,7 +1219,7 @@
     {
       "source": "notes/proposals/part3-candidates-review.md",
       "target": "content/notes/proposals/part3-candidates-review.md",
-      "sha256": "8db6b272ec23d541bb262de13d0f344e7740de6342b122c3a23f01cf41ab5fd1"
+      "sha256": "1151019f5de9baf781f65fe978d33fc8516dd57a69ceb8dfcec71abbf088abe7"
     },
     {
       "source": "notes/proposals/team-review-20261104-plan.md",
@@ -1234,7 +1234,7 @@
     {
       "source": "notes/questions.md",
       "target": "content/notes/questions.md",
-      "sha256": "a2889a7e151105881039a40eb42d66dc48463c7c13b201c5f6e0bff1f263fc0b"
+      "sha256": "d85d4daad558a0ec88479bd2a578fbb6815ffdea3c89042a08761bebc9991449"
     },
     {
       "source": "notes/react-canonical-review.md",
@@ -1249,7 +1249,7 @@
     {
       "source": "notes/react-personalized-review.md",
       "target": "content/notes/react-personalized-review.md",
-      "sha256": "87abf112a225cff07685244decf68440eec28f94e47aca570477f39640f37b80"
+      "sha256": "f6cc595dcc677ee9418bcd92e8bb1b25af2366c344b52da8b7747d18ea914fc4"
     },
     {
       "source": "notes/readiness-rework-plan.md",
@@ -1264,17 +1264,17 @@
     {
       "source": "notes/recruit-material-review.md",
       "target": "content/notes/recruit-material-review.md",
-      "sha256": "ee7c603324da9d397effa87f49c8dfed678c9283f04bc328f65b5db97ccc3473"
+      "sha256": "af882c908b0529ae832602cca87ff8b1ac636b587ba894403a232dff7acda370"
     },
     {
       "source": "notes/recruitment/aurum-rose.md",
       "target": "content/notes/recruitment/aurum-rose.md",
-      "sha256": "ad4a92f00ea7650f4883053430a50d057157b9a53c1627f728f938a26612e3ea"
+      "sha256": "e4932a053bd61a9ccd99cb6e1fe07151132668cd23f4aeb1bd04948cd59fae67"
     },
     {
       "source": "notes/recruitment/azure-heart.md",
       "target": "content/notes/recruitment/azure-heart.md",
-      "sha256": "4829158fa514383e7b0a87b3c5ce87ecb475b53567976d56b0fbb7ef89f85c97"
+      "sha256": "5652ea4db7f1f7241a40732d8ea59b9483e8cc0d5279fd5e11d1767731775233"
     },
     {
       "source": "notes/recruitment/bronze-axe.md",
@@ -1294,7 +1294,7 @@
     {
       "source": "notes/recruitment/fabled-ginji.md",
       "target": "content/notes/recruitment/fabled-ginji.md",
-      "sha256": "22f99b3dfcefa7d537bc8c74f13ba22f753afc1285bdf322bf5dc0cc2be44728"
+      "sha256": "68d4d4e134400d06e296b9fc7e69735b2bb652f33d347d48240a326d8aea0663"
     },
     {
       "source": "notes/recruitment/giant-meat.md",
@@ -1304,7 +1304,7 @@
     {
       "source": "notes/recruitment/gift-box.md",
       "target": "content/notes/recruitment/gift-box.md",
-      "sha256": "6ac525824533e8fedc434126b5e01d630e414a321d3fbd60c45cbaac86b8b71b"
+      "sha256": "d1f702d03b8f089d6e44d0bc3ecd0446a6908db83a61ff691c8f9e0a18791a5d"
     },
     {
       "source": "notes/recruitment/glirmosa.md",
@@ -1359,12 +1359,12 @@
     {
       "source": "notes/recruitment/scarlet-drops.md",
       "target": "content/notes/recruitment/scarlet-drops.md",
-      "sha256": "20cc120fdfdafa6f37681f201c7ce6923b454916890dc886d8239853fe2593ce"
+      "sha256": "b00c47213fa8a9ae79427199bcf29e1a77d1b4630d34c2f7d6984013eba7ae95"
     },
     {
       "source": "notes/recruitment-gates-review.md",
       "target": "content/notes/recruitment-gates-review.md",
-      "sha256": "d518e6319683b78cf8c5a010971a9681a70a7fef4d154759bb960738453cc694"
+      "sha256": "3b03e9877199b753566daa80ae05e2d524214af714039f607070d5fa02cb46ed"
     },
     {
       "source": "notes/reference-modal-review.md",
@@ -1379,12 +1379,12 @@
     {
       "source": "notes/restart-review.md",
       "target": "content/notes/restart-review.md",
-      "sha256": "0f4e7d37def9d7c80e9c309b8c43a1c3dd1eb6303a828272b538b40b6dfdc9d9"
+      "sha256": "45680cc5c4a411e1973b77f7a1f6ff977abb014ef915cb2cbdd93b7d0f798312"
     },
     {
       "source": "notes/roster-build-review.md",
       "target": "content/notes/roster-build-review.md",
-      "sha256": "a6d676cf9c0b7a4d940abd15b9551a137faaf64eb0c0fdb8e74c6a97601da595"
+      "sha256": "fb915f3bbbed87d16fcce6eac9c2a50eab8b415f3c56fd785e4487188c2db03c"
     },
     {
       "source": "notes/roster-selection-review.md",
@@ -1399,12 +1399,12 @@
     {
       "source": "notes/sequential-routes-apply-review.md",
       "target": "content/notes/sequential-routes-apply-review.md",
-      "sha256": "36afd4731c5de875fe0dd03867e2d55870cd7d2db5275255f95137c6e58cbf84"
+      "sha256": "9467ef5a415ac8d86bfaeb8afd2225e1263169b9cc953a9d1f85b3f74293c378"
     },
     {
       "source": "notes/sequential-routes-training-review.md",
       "target": "content/notes/sequential-routes-training-review.md",
-      "sha256": "a956cd0955c2b9514ac990ea01e350e3bef5102c6cc3591fc204a9fa4c46fcc8"
+      "sha256": "06a1bd3930771803866b21ad7e6bb8c0c538000abaa0cd7c22430bfaaab84530"
     },
     {
       "source": "notes/shadow-calamity-plan.md",
@@ -1439,7 +1439,7 @@
     {
       "source": "notes/sword-xp-review.md",
       "target": "content/notes/sword-xp-review.md",
-      "sha256": "643deac394fb30513d34f35a310af51149b5bd750a76aa791cc8087f19b9f9be"
+      "sha256": "f22d3c11132a8b56f96fe2d3de3ca5066b7159377e84cfe349c820bf6cb4e96a"
     },
     {
       "source": "notes/team-4k-polish-plan.md",
@@ -1449,7 +1449,7 @@
     {
       "source": "notes/team-4k-polish-review.md",
       "target": "content/notes/team-4k-polish-review.md",
-      "sha256": "7eee13e8b344485d76a6776146f3466b335e24feadebaf9ce9eb48a313b47de6"
+      "sha256": "12d9117a6504e80a38af715e104aabd0014a0126e049e9c7e4a875529e6cb01d"
     },
     {
       "source": "notes/team-balance-recheck-plan.md",
@@ -1459,7 +1459,7 @@
     {
       "source": "notes/team-balance-recheck-review.md",
       "target": "content/notes/team-balance-recheck-review.md",
-      "sha256": "ed3d82b2078ef3e9a69a736ffefbe7a32eff2f5863fbb81be2ab7140690e794b"
+      "sha256": "2278bec88b0bbf47c9a7c2b69211149242b39dde0e7cd3528ab7800cece62ab7"
     },
     {
       "source": "notes/team-page-followup-layout.md",
@@ -1484,7 +1484,7 @@
     {
       "source": "notes/team-scenario-differences-review.md",
       "target": "content/notes/team-scenario-differences-review.md",
-      "sha256": "ccafb0d912ad522c8ad582bc1c6f2b64bf2244e71cc301e14bd50a2b452598bb"
+      "sha256": "65e8aa654ed23d4f5798278aeaba2b50288f4e47e937873ef9075b8b5181f8ac"
     },
     {
       "source": "notes/team-signature-weapons-plan.md",
@@ -1529,7 +1529,7 @@
     {
       "source": "notes/theodora-ch5-review.md",
       "target": "content/notes/theodora-ch5-review.md",
-      "sha256": "d2cdb7c26a8c4ca4ceb1904a8d5a144b49c8a5ca8b3853a9c0a5edba35ccc4f5"
+      "sha256": "929d43e0e9e62a2dbbbec78c1b4d9286f29848cbdfd4d2b02684c6f3226b9778"
     },
     {
       "source": "notes/theodora-first-war-preservation.md",
@@ -1539,22 +1539,22 @@
     {
       "source": "notes/theodora-inn-versus-field-exp-review.md",
       "target": "content/notes/theodora-inn-versus-field-exp-review.md",
-      "sha256": "952d6e063fe50c7669f81d09fe5e6bf5d80e0f740f679ea9d0eeab6551aa31fe"
+      "sha256": "73a171a89a3eda9e5f1929ec7b48a47c7db22502d323ebec2dc1395351e4ee8e"
     },
     {
       "source": "notes/theodora-lv20-class-review.md",
       "target": "content/notes/theodora-lv20-class-review.md",
-      "sha256": "2fd2d6edbb61a481465921d4cc9d1efe39fd26496767157dda0cf67f367572ef"
+      "sha256": "73dcc86428dd2155d37d7c390e473e20e83852e4263b1bb3416734d9a94942ce"
     },
     {
       "source": "notes/theodora-renown-review.md",
       "target": "content/notes/theodora-renown-review.md",
-      "sha256": "6472d5878a5e642de6cfb833f07b04d63ce89331242582e54e66b14ed969653c"
+      "sha256": "b1b8340b49716ab19f7edf20679dddab6e6109ccd26bbdd052903a59a8830968"
     },
     {
       "source": "notes/theodora-timing-review.md",
       "target": "content/notes/theodora-timing-review.md",
-      "sha256": "5dd3118d912c6f2cde4f281bbdba7f712df8277d2d7afd34923de952cc11b6a4"
+      "sha256": "673cef36ab6d0595b0968ab2863ca6208370f2baf104456f0150973f629f4ebc"
     },
     {
       "source": "notes/three-houses-xp-reference.md",
@@ -1564,7 +1564,7 @@
     {
       "source": "notes/thry-fruit-name-review.md",
       "target": "content/notes/thry-fruit-name-review.md",
-      "sha256": "506410a2256344b2f62e774eef2ef66b83cdc81281cbf08782cd78e23ab5dce2"
+      "sha256": "650c373133d680e7950d129614b554c27262c3fb98dd78e60987147598c13ff9"
     },
     {
       "source": "notes/timed-checklist-review.md",
@@ -1579,7 +1579,7 @@
     {
       "source": "notes/ui-alignment-review.md",
       "target": "content/notes/ui-alignment-review.md",
-      "sha256": "dd830acbd87c350f112d9395c5fe9ae90f88bfc8145885af56344de3b884af7c"
+      "sha256": "c4b5566bc99c57c4a2a1298c0113033128197787c85e09baa958866f53f25790"
     },
     {
       "source": "notes/underworld-merge-safety-plan.md",
@@ -1589,7 +1589,7 @@
     {
       "source": "notes/underworld-merge-safety-review.md",
       "target": "content/notes/underworld-merge-safety-review.md",
-      "sha256": "073d6ec76d9fad2d431d142e9fb81e8e0e4e06d28ff770ad6fc9acf07eb4fb3b"
+      "sha256": "c8bdd97c93faf0c820057a55e7c1331058a7164dd2ff125473707739d94e13d1"
     },
     {
       "source": "notes/underworld-merge-safety.md",
@@ -1809,7 +1809,7 @@
     {
       "source": "routes/dietrich/roster.md",
       "target": "content/routes/dietrich/roster.md",
-      "sha256": "b36761c123bc2a7769ee379e04597fb6a113da1c3f78d56a84b006e94bec3989"
+      "sha256": "97e165f184f598f036e56031eba4666e205c58c0de2c0c86da1a2fc99bc33b6a"
     },
     {
       "source": "personalized-app/README.md",
@@ -1984,7 +1984,7 @@
     {
       "source": "personalized-app/src/content.json",
       "target": "content/source/react-content.json",
-      "sha256": "ea3d8749ea3988d8ec68b6c1e254842109e9dbeaad7ee3f6b6aa62dbe9e9cf7d"
+      "sha256": "abeb77743f156e9bad96ad98155c11b2c8cdd686c88b770307907c50b1281981"
     },
     {
       "source": "personalized-app/src/timeskip-portraits.json",
@@ -2157,7 +2157,7 @@
       "sha256": "b6601f69a8318359991d5fadc11c27348b0df451ecddba9df142e5f979e508ca"
     }
   ],
-  "generatedSourceSha256": "ea3d8749ea3988d8ec68b6c1e254842109e9dbeaad7ee3f6b6aa62dbe9e9cf7d",
+  "generatedSourceSha256": "abeb77743f156e9bad96ad98155c11b2c8cdd686c88b770307907c50b1281981",
   "activeActions": 1899,
   "checkIds": 2881,
   "peopleByRoute": {

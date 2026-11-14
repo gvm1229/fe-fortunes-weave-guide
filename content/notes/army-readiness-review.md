@@ -65,7 +65,7 @@
 
 - 로컬 [2부 원문](../part2.html)·[육성 팁](../tips.html): 성장 병과·전직·기능 준비
 - [군행동 실제 플레이 토론](https://www.reddit.com/r/FE_Fortunes_Weave/comments/1xan57y/part_2_army_drills/):Lv33·38 등 결과 · 정확한 공식에 대한 답변은 서로 불일치
-- [같은 고민과 현재 부대 적용 보고](https://www.reddit.com/r/FE_Fortunes_Weave/comments/1x8bmry/followup_question_regarding_act_2_levels/): 다른 루트판과 적용 구별
+- [같은 고민 사례](https://www.reddit.com/r/FE_Fortunes_Weave/comments/1x8bmry/followup_question_regarding_act_2_levels/): 다른 루트판과 적용 구별
 - [2부1~4장 시설·증서 관찰](https://note.com/unoji_games/n/nfa75dd0f0ec1):5~6장 시설 없음
 - [Game8 군행동 표](https://game8.jp/fe-banshisenko/817090):평균 설명·기능 무작위2종 · 평균의 모집단 공식은 미기재
 - [RPG Site 직접 공략](https://www.rpgsite.net/guide/21325-fire-emblem-fortunes-weave-part-2-war-walkthrough):증서5장 보충·후반 시설 제한

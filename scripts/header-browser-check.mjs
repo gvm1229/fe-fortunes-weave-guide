@@ -12,7 +12,7 @@ let n = 0;
 try {
   for (const [w, h] of [[360, 740], [390, 844], [768, 1024], [1440, 900]]) for (const scheme of ['light', 'dark']) {
     const ctx = await browser.newContext({ viewport: { width: w, height: h }, colorScheme: scheme }); const p = await ctx.newPage();
-    for (const f of ['/reference-data/checklist.json', '/reference-files/theodora-progress-import.json']) assert.equal((await p.goto(base + f)).status(), 404, f + ' 공개됨');
+    for (const f of ['/reference-data/checklist.json', '/reference-files/theodora-progress-import.json', '/reference-data/carry-state.json', '/reference-data/unit-readiness.json', '/reference-files/notes/screenshots/personalized-desktop.jpg', '/reference-files/notes/theodora-ch5-validation.json']) assert.equal((await p.goto(base + f)).status(), 404, f + ' 공개됨');
     await p.goto(base + '/theodora/1/'); await p.locator('.route-head').waitFor(); await p.waitForTimeout(600);
     assert.equal(await p.evaluate(() => document.querySelector('.banner-progress strong')?.textContent), '0', `${w} 새 브라우저 완료 수 0`);
     assert.equal(await p.evaluate(() => localStorage.getItem('fortunes-weave-checklist-v1')), JSON.stringify({ schemaVersion: 1, revision: 0, checks: {} }), '새 브라우저 저장소는 빈 기록');
@@ -47,7 +47,7 @@ try {
     await p.evaluate(s=>localStorage.setItem('fortunes-weave-checklist-v1',s),JSON.stringify({schemaVersion:1,revision:1,checks}));await p.reload();await p.locator('.date-odometer').waitFor();
     const f=await p.evaluate(()=>{const e=document.querySelector('.date-odometer'),r=e.getBoundingClientRect(),t=document.querySelector('.to-top').getBoundingClientRect();return {label:e.querySelector('[role=status]')?.textContent,digits:[...e.querySelectorAll('.odometer-digit')].length,bottom:r.bottom,top:r.top,toTopBottom:t.bottom,face:e.querySelector('.odometer-face').getBoundingClientRect(),W:innerWidth,H:innerHeight,overflowX:document.documentElement.scrollWidth-innerWidth};});
     assert.match(f.label,/^게임 날짜 1449년 \d{1,2}월 \d{1,2}일$/,'바닥 날짜 이름');assert.equal(f.digits,8,'숫자 칸 8개(1449/MM/DD)');
-    assert.ok(Math.abs(f.bottom-f.H)<1&&Math.abs((f.face.left+f.face.right)/2-f.W/2)<2,'바닥 가운데');assert.ok(f.toTopBottom<=f.top+1,'맨 위로 버튼이 바닥 위');assert.ok(f.overflowX<=0);
+    assert.ok(Math.abs(f.bottom-f.H)<1&&Math.abs((f.face.left+f.face.right)/2-f.W/2)<2,'바닥 가운데');assert.ok(f.toTopBottom<=f.top+1,'맨 위로 버튼이 바닥 위');assert.ok(Math.abs((f.bottom-f.top)-(w<600?40:56))<=1,`${w} 바닥 날짜 높이 ${f.bottom-f.top}`);assert.ok(f.overflowX<=0);
     const before=f.label;await p.locator('.chapter-section[data-current=true] .checklist input:not(:checked)').first().check().catch(()=>{});
     await p.goto(base+'/theodora/2/');await p.locator('.route-head').waitFor();await p.waitForTimeout(400);assert.equal(await p.locator('.date-odometer').count(),0,'2부는 바닥 날짜 없음');
     n++;await ctx.close();}}

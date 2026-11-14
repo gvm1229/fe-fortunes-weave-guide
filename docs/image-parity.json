@@ -9,7 +9,7 @@
       "old": {
         "portraits": 14,
         "skills": 7,
-        "gods": 10,
+        "gods": 6,
         "classes": 0,
         "guides": 2,
         "locations": 0
@@ -17,7 +17,7 @@
       "expected": {
         "portraits": 14,
         "skills": 7,
-        "gods": 10,
+        "gods": 6,
         "classes": 0,
         "guides": 2,
         "locations": 0
@@ -25,7 +25,7 @@
       "rendered": {
         "portraits": 14,
         "skills": 7,
-        "gods": 10,
+        "gods": 6,
         "classes": 0,
         "guides": 2,
         "locations": 0
@@ -38,7 +38,7 @@
       "old": {
         "portraits": 9,
         "skills": 2,
-        "gods": 2,
+        "gods": 0,
         "classes": 0,
         "guides": 1,
         "locations": 2
@@ -46,7 +46,7 @@
       "expected": {
         "portraits": 9,
         "skills": 2,
-        "gods": 2,
+        "gods": 0,
         "classes": 0,
         "guides": 1,
         "locations": 2
@@ -54,7 +54,7 @@
       "rendered": {
         "portraits": 9,
         "skills": 2,
-        "gods": 2,
+        "gods": 0,
         "classes": 0,
         "guides": 1,
         "locations": 2
@@ -385,24 +385,24 @@
       "chapter": "시작 전",
       "old": {
         "portraits": 11,
-        "skills": 2,
-        "gods": 3,
+        "skills": 1,
+        "gods": 1,
         "classes": 0,
         "guides": 0,
         "locations": 0
       },
       "expected": {
         "portraits": 11,
-        "skills": 2,
-        "gods": 3,
+        "skills": 1,
+        "gods": 1,
         "classes": 0,
         "guides": 0,
         "locations": 0
       },
       "rendered": {
         "portraits": 11,
-        "skills": 2,
-        "gods": 3,
+        "skills": 1,
+        "gods": 1,
         "classes": 0,
         "guides": 0,
         "locations": 0
@@ -763,7 +763,7 @@
       "old": {
         "portraits": 11,
         "skills": 0,
-        "gods": 4,
+        "gods": 2,
         "classes": 0,
         "guides": 0,
         "locations": 0
@@ -771,7 +771,7 @@
       "expected": {
         "portraits": 11,
         "skills": 0,
-        "gods": 4,
+        "gods": 2,
         "classes": 0,
         "guides": 0,
         "locations": 0
@@ -779,7 +779,7 @@
       "rendered": {
         "portraits": 11,
         "skills": 0,
-        "gods": 4,
+        "gods": 2,
         "classes": 0,
         "guides": 0,
         "locations": 0
@@ -2387,7 +2387,7 @@
       "old": {
         "portraits": 28,
         "skills": 63,
-        "gods": 1,
+        "gods": 0,
         "classes": 6,
         "guides": 20,
         "locations": 31
@@ -2395,7 +2395,7 @@
       "expected": {
         "portraits": 28,
         "skills": 63,
-        "gods": 1,
+        "gods": 0,
         "classes": 6,
         "guides": 20,
         "locations": 31
@@ -2403,7 +2403,7 @@
       "rendered": {
         "portraits": 28,
         "skills": 63,
-        "gods": 1,
+        "gods": 0,
         "classes": 6,
         "guides": 20,
         "locations": 31

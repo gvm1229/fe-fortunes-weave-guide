@@ -83,8 +83,8 @@ export function DocumentSheet({docs,current,onOpen,onClose,route,part='3'}:{docs
     if(destination)return <Link href={destination} onClick={()=>{close();window.dispatchEvent(new Event('guide-jump'));}}>{children}</Link>;
     if(/^https?:/.test(href))return <a href={href} target="_blank" rel="noreferrer">{children}</a>;
     if(href.includes('assets/'))return <a href={'/'+href.slice(href.indexOf('assets/'))} target="_blank" rel="noreferrer">{children}</a>;
-    if(/(?:^|\/)data\//.test(href))return <a href={'/reference-data/'+href.slice(href.lastIndexOf('/')+1)} target="_blank" rel="noreferrer">{children}</a>;
-    if(/\.(?:json|png|jpe?g|webp)(?:#.*)?$/.test(href))return <a href={'/reference-files/'+resolveDoc(href,path)} target="_blank" rel="noreferrer">{children}</a>;
+    // 원본 자료 JSON·검증 기록·작업 화면 사진은 공개하지 않는다(개인 진행이 섞여 있음, 2026-11-15 Fable 검토 12 H1). 링크 글자만 남긴다.
+    if(/(?:^|\/)data\//.test(href)||/\.(?:json|png|jpe?g|webp)(?:#.*)?$/.test(href))return <span title="공개하지 않는 작업 자료">{children}</span>;
     const resolved=resolveDoc(href,path).split('#')[0];
     if(!docs.some(d=>d.path===resolved)&&/^(?:index|tips|units|part[23]|theodora|leda|dietrich|cai|classes|characters|paralogues|sources)\.md$/.test(resolved))return <span title="참고 보관의 원본 공략">{children}</span>;
     return <button data-doc-url={href} className="text-link" onClick={()=>follow(href)}>{children}</button>;

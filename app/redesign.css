@@ -119,14 +119,6 @@ html body:has(.app-shell),html body:has(.team-page){background:#F4F3F0}html.dark
 .sheet-scroll{line-height:1.75}
 .game-icon{display:inline-block;vertical-align:-.18em;margin-inline:3px 5px;stroke-width:1.8}
 .game-skill{display:inline-block!important;inline-size:24px!important;block-size:24px!important;object-fit:contain;vertical-align:middle;margin-inline:4px}
-progress[data-progress-stage]{--progress-fill:#9A6B43;height:8px;background:var(--secondary)}
-progress[data-progress-stage=advancing]{--progress-fill:#5B7A99}
-progress[data-progress-stage=complete]{--progress-fill:#4E8469}
-.dark progress[data-progress-stage=started]{--progress-fill:#D2A97F}
-.dark progress[data-progress-stage=advancing]{--progress-fill:#9DB8D4}
-.dark progress[data-progress-stage=complete]{--progress-fill:#94C4AB}
-progress[data-progress-stage]::-webkit-progress-bar{background:var(--secondary)}progress[data-progress-stage]::-webkit-progress-value{background:var(--progress-fill)}
-progress[data-progress-stage]::-moz-progress-bar{background:var(--progress-fill)}
 .home{grid-template-rows:56px minmax(0,1fr) 144px}
 .third-band{text-decoration:none;padding:20px 32px;transition:background-color .15s}
 .third-band:hover{background:var(--primary)}
@@ -530,10 +522,11 @@ html:has(.date-odometer){scroll-padding-bottom:72px}
 /* 이 장의 인물 아래 「루트별 지원 대화」 단추(2026-11-15). */
 .context-rail .support-doc-button{display:inline-flex;align-items:center;gap:8px;margin-block-start:16px;min-block-size:44px}
 /* 2026-11-15 사용자 지시: 모든 진행 막대는 밝게·어둡게 모두 흰 바탕 + 초록 채움. 흰 화면 위에서도 막대 칸이 보이게 얇은 테두리. */
-progress,progress[data-progress-stage]{--progress-fill:#1E8E3E;background:#FFFFFF;color:#1E8E3E;accent-color:#1E8E3E;border:1px solid #767676;box-sizing:border-box}
-.dark progress[data-progress-stage]{--progress-fill:#1E8E3E}
-progress::-webkit-progress-bar,progress[data-progress-stage]::-webkit-progress-bar{background:#FFFFFF}
-progress::-webkit-progress-value,progress[data-progress-stage]::-webkit-progress-value{background:#1E8E3E}
-progress::-moz-progress-bar,progress[data-progress-stage]::-moz-progress-bar{background:#1E8E3E}
+progress{background:#FFFFFF;color:#1E8E3E;accent-color:#1E8E3E;border:1px solid #767676;box-sizing:border-box}
+progress::-webkit-progress-bar{background:#FFFFFF}
+progress::-webkit-progress-value{background:#1E8E3E}
+progress::-moz-progress-bar{background:#1E8E3E}
 /* 초상화 단추가 44px(36+4+4)이 되도록 간격 8px(검토 11 L6). 단추가 있는 묶음만. */
 .group-portraits:has(.portrait-button){gap:8px}
+/* 그림이 없는 선물 물품의 일반 아이콘(2026-11-15): 다른 물품 그림과 같은 22px 자리. */
+.game-badge>.gift-fallback{inline-size:22px;block-size:22px;flex-shrink:0;color:var(--badge-ink,currentColor)}

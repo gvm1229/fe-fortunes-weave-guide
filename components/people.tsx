@@ -2,7 +2,7 @@
 import { usePreference } from './preferences';
 import { characterSummary, plainCharacterText } from '@/lib/character-summary';
 import { GameText, GameIcon } from './game-text';
-import { Search } from 'lucide-react';
+import { Gift, Search } from 'lucide-react';
 import type { Person } from '@/lib/content';
 import { Semantic } from './records';
 import { Button } from './ui/button';
@@ -63,7 +63,7 @@ export function PersonInfo({person,classes,part="1",onDoc,openKey}:{person:Perso
     <tr><th scope="row">목표</th><td><ul className="summary-points">{goals.map((line,i)=><li key={i}><strong><GameText text={line} withSkills part={part} skip={self}/></strong></li>)}</ul></td></tr>
     <tr><th scope="row">멈출 때</th><td><ul className="summary-points">{summary.stop.map((line,i)=><li key={i}><GameText text={line} part={part} skip={self}/></li>)}</ul></td></tr>
     {/* 선물: 싸게 살 수 있는 선호 선물과 비싼 선물. 지원 대화를 모두 보려고 지원 1 영입 동료도 보여 준다(2026-11-14 사용자 지시). */}
-    {(person.cheapGifts.length>0||person.gifts.length>0)&&<tr><th scope="row">선물</th><td>{person.cheapGifts.length>0&&<><p className="gift-label">싸게 살 수 있는 선물</p><ul className="gift-chips">{person.cheapGifts.map(g=><li key={g.name}><span className="game-badge" data-kind="gift">{g.icon&&<img src={'/'+g.icon} alt="" loading="lazy"/>}<span className="badge-label">{g.name}</span>{g.cost!=null&&<b className="badge-value">{g.cost.toLocaleString('en-US')}G</b>}</span>{g.reaction==='매우 좋아함'&&<Badge>매우 좋아함</Badge>}</li>)}</ul></>}{person.gifts.length>0&&<><p className="gift-label">비싼 선물</p><p>{person.gifts.join(' · ')}</p></>}</td></tr>}
+    {(person.cheapGifts.length>0||person.gifts.length>0)&&<tr><th scope="row">선물</th><td>{person.cheapGifts.length>0&&<><p className="gift-label">싸게 살 수 있는 선물</p><ul className="gift-chips">{person.cheapGifts.map(g=><li key={g.name}><span className="game-badge" data-kind="gift">{g.icon?<img src={'/'+g.icon} alt="" loading="lazy"/>:<Gift className="gift-fallback" size={20} aria-hidden="true"/>/* 공식 그림을 못 구한 물품은 일반 선물 아이콘(interface.md 규칙) */}<span className="badge-label">{g.name}</span>{g.cost!=null&&<b className="badge-value">{g.cost.toLocaleString('en-US')}G</b>}</span>{g.reaction==='매우 좋아함'&&<Badge>매우 좋아함</Badge>}</li>)}</ul></>}{person.gifts.length>0&&<><p className="gift-label">비싼 선물</p><p>{person.gifts.join(' · ')}</p></>}</td></tr>}
     {!!summary.caution.length&&<tr><th scope="row">보존 주의</th><td>{summary.caution.map(line=><strong key={line}>{line}</strong>)}</td></tr>}
     </tbody></table>
     <Accordion type="multiple" className="person-more" value={mine.map(k=>k.slice(person.name.length+1))} onValueChange={v=>setOpen(prev=>[...prev.filter(k=>!k.startsWith(person.name+':')),...v.map(k=>person.name+':'+k)])}>

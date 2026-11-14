@@ -30,4 +30,4 @@
 4. 현재 주력에게서 가져가는 경험치·돈·시간까지 계산
 5. 목표 달성 뒤 중단 · 새로운 조사는 이 규칙을 자동 폐기하지 않고 근거와 적용 조건을 명시
 
-현재 수치·실제 진행은 progress.md와 루트 기록, 외부 게임 규칙은 [여관/야외 경험치 조사](../theodora-inn-versus-field-exp-review.md)와 [던전 재생성 재확인](../dungeon-respawn-review.md)에 보관 · 이 문서를 사용자 게임 실측의 근거로 사용하지 않음
+외부 게임 규칙은 [여관/야외 경험치 조사](../theodora-inn-versus-field-exp-review.md)와 [던전 재생성 재확인](../dungeon-respawn-review.md)에 보관 · 이 문서를 사용자 게임 실측의 근거로 사용하지 않음

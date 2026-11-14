@@ -372,7 +372,7 @@
       "sourceCounts": {
         "portraits": 511,
         "skills": 358,
-        "gods": 184,
+        "gods": 178,
         "classes": 55,
         "guides": 45,
         "locations": 71
@@ -1061,7 +1061,7 @@
       "sourceCounts": {
         "portraits": 511,
         "skills": 358,
-        "gods": 184,
+        "gods": 178,
         "classes": 55,
         "guides": 45,
         "locations": 71
@@ -1750,7 +1750,7 @@
       "sourceCounts": {
         "portraits": 511,
         "skills": 358,
-        "gods": 184,
+        "gods": 178,
         "classes": 55,
         "guides": 45,
         "locations": 71
@@ -2439,7 +2439,7 @@
       "sourceCounts": {
         "portraits": 511,
         "skills": 358,
-        "gods": 184,
+        "gods": 178,
         "classes": 55,
         "guides": 45,
         "locations": 71
@@ -2789,7 +2789,7 @@
         "toolbarBottom": 72.796875,
         "visibleBottom": 900
       },
-      "fading": 0.907987,
+      "fading": 0.4913,
       "removed": true
     },
     {
@@ -2841,7 +2841,7 @@
         "toolbarBottom": 72.796875,
         "visibleBottom": 900
       },
-      "fading": 0.907707,
+      "fading": 0.908413,
       "removed": true
     },
     {
@@ -2893,7 +2893,7 @@
         "toolbarBottom": 104,
         "visibleBottom": 812
       },
-      "fading": 0.907833,
+      "fading": 0.908147,
       "removed": true
     },
     {
@@ -2945,7 +2945,7 @@
         "toolbarBottom": 104,
         "visibleBottom": 812
       },
-      "fading": 0.90818,
+      "fading": 0.90878,
       "removed": true
     },
     {

@@ -15,15 +15,17 @@ export function titleDate(title: string): { m: number; d: number } | null {
 }
 
 /**
- * 지금 날짜: 루트 순서에서 처음으로 체크가 남은 묶음의 날짜. 그 묶음 제목에 날짜가 없으면 위로 올라가 가장 가까운 날짜를 쓴다.
- * 모두 체크했으면 마지막 묶음 기준. 위에 날짜가 하나도 없으면 null(바닥 날짜를 숨긴다).
+ * 지금 날짜: 루트 순서에서 처음으로 체크가 남은 묶음까지 나온 날짜 중 가장 늦은 날짜.
+ * 게임 달력은 뒤로 가지 않으므로, 순서가 날짜와 어긋난 곳(디트리히 11·12장 등)에서도 바닥 날짜가 되돌아가지 않는다(2026-11-15).
+ * 모두 체크했으면 마지막 묶음까지. 날짜가 하나도 없으면 null(바닥 날짜를 숨긴다).
  */
 export function currentGameDate(ordered: Group[], done: (action: Group['actions'][number], group: Group) => boolean): { m: number; d: number } | null {
   if (!ordered.length) return null;
   let at = ordered.findIndex(g => g.actions.some(a => !done(a, g)));
   if (at < 0) at = ordered.length - 1;
-  for (let i = at; i >= 0; i--) { const date = titleDate(ordered[i].title); if (date) return date; }
-  return null;
+  let latest: { m: number; d: number } | null = null;
+  for (let i = 0; i <= at; i++) { const date = titleDate(ordered[i].title); if (date && (!latest || date.m * 100 + date.d > latest.m * 100 + latest.d)) latest = date; }
+  return latest;
 }
 
 export const formatGameDate = (year: number, date: { m: number; d: number }) => `${year}/${String(date.m).padStart(2, '0')}/${String(date.d).padStart(2, '0')}`;

@@ -32,7 +32,7 @@
 ## 근거와 확인 한계
 
 - [Game8 유나메이](https://game8.jp/fe-banshisenko/817018): 다마센 곶 등의 채집, 선더 소드1자루의 태양 열매10·유나메이1 교환을 본문에서 확인했다.
-- [GameWith サンノミ](https://gamewith.jp/fefw/578035): 탐색 입수와 교환 용도를 확인했다. 프로젝트의 `assets/guide/valeri-map.jpg`는 영어 목록이며 Thry Fruit를 표시한다. 영어 목록만으로 한국어 이름을 정하던 이전 판단을 폐기하고, 사용자 게임 화면 보고와 한국어 도감을 대조해 태양 열매로 정정했다. `damasen-map.jpg`의 Yuna Mei는 별도 재료인 유나메이다.
+- [GameWith サンノミ](https://gamewith.jp/fefw/578035): 탐색 입수와 교환 용도를 확인했다. 프로젝트의 `assets/guide/valeri-map.jpg`는 영어 목록이며 Thry Fruit를 표시한다. 영어 목록만으로 한국어 이름을 정하던 이전 판단을 폐기하고, 게임 화면의 한국어 표기와 한국어 도감을 대조해 태양 열매로 정정했다. `damasen-map.jpg`의 Yuna Mei는 별도 재료인 유나메이다.
 - [Anna’s Notebook 유나메이 표](https://annasnotebook.net/ja/items/it-315/): 같은 교환 비율과8장 이후라는 입수 조건이 있어6장 재고를 단정하지 않았다. 다른 표의 세부 월 표시와 게임 내 실제 재고를 새로 재현한 것은 아니다.
 - 지도 그림은 기존 [Game8 지도](https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624208)에서 준비된 자료다. 그림의 선택 루트를 현재 사용자 기록으로 보지 않으며 실제 세오도라의 길을 확인한다. 새 핀 좌표·주소를 임의로 만들지 않았다.
 - Exa 검색은 무료 이용 한도로 실패해 원문 읽기와 다른 검색 경로로 확인했다. 계정·API 키 발급이나 설치를 요청하지 않았다.
