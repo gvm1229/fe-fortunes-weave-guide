@@ -248,6 +248,6 @@
 
 ## 2026-11-14 지원 올리기 영상
 
-- 만찬 반복: Jay Dunna, "FASTEST MAX SUPPORT FARM in Fire Emblem: Fortune's Weave" https://youtu.be/8iqNiN00y-Q
+- 연회 반복: Jay Dunna, "FASTEST MAX SUPPORT FARM in Fire Emblem: Fortune's Weave" https://youtu.be/8iqNiN00y-Q
 - 영입·선물: choops, "I Made Fortune's Weave Recruitment WAY Less Annoying" https://youtu.be/lzG_wX8Al8I
 - 인과 융합: https://www.siliconera.com/how-does-the-fire-emblem-fortunes-weave-part-3-character-merge-work/ · https://allthings.how/how-to-merge-unit-versions-in-fire-emblem-fortune-s-weave/ · https://www.keengamer.com/articles/guides/fire-emblem-fortunes-weave-how-to-merge-character-stats/

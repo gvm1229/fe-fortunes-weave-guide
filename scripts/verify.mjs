@@ -48,7 +48,7 @@ assert.equal(scopeMarkdown('## 세오도라 1부\n현재\n## 레다 1부\n다른
 assert.throws(()=>validateChecks({schemaVersion:1,revision:0,checks:{a:'true'}}));
 assert.throws(()=>validateChecks({schemaVersion:1,revision:-1,checks:{}}));
 const seed=read('content/checklist-seed.json');assert.deepEqual(validateChecks(JSON.parse(JSON.stringify(seed))),seed);
-// 2026-11-14 전원 영입 필수 · 1부 만찬 반복 필수(docs/fable-plan-recruit-feast.md 3판 C.2).
+// 2026-11-14 전원 영입 필수 · 1부 연회 반복 필수(docs/fable-plan-recruit-feast.md 3판 C.2).
 {
   const ov=read('content/display-overrides.json'),plan=read('content/data/recruit-all-plan.json'),checklist=read('content/derived/checklist.json');
   const shown=(g,a)=>Object.hasOwn(ov.actions,a.id)?ov.actions[a.id]:a.text, title=g=>Object.hasOwn(ov.groups,g.id)?ov.groups[g.id]:g.title;
@@ -56,15 +56,25 @@ const seed=read('content/checklist-seed.json');assert.deepEqual(validateChecks(J
   for(const g of playbook.groups){for(const w of banned){assert.ok(!title(g).includes(w),g.id+' 제목 '+w);for(const a of g.actions){assert.ok(!shown(g,a).includes(w),a.id+' '+w);assert.ok(!a.category.includes(w),a.id+' 칩 '+w);}}}
   const chapterOf=(stage,id)=>checklist.stages.find(s=>s.id===stage).chapters.find(c=>c.blocks.some(b=>b.id===id))?.title;
   for(const r of ['theodora','leda','dietrich','cai']){
-    const fg=playbook.groups.find(g=>g.id===`feast-loop-${r}-part1-20261114`);assert.ok(fg&&fg.actions.length===7,r+' 만찬 묶음');
-    assert.equal(chapterOf(r+'-plan',fg.id),'12장',r+' 만찬 묶음 12장');assert.equal(chapterOf(r+'-plan',`support-talks-${r}-part1-20261112`),'12장',r+' 지원 대화 묶음 12장');
-    for(const g of playbook.groups.filter(g=>g.stage===r+'-war-plan'))for(const a of g.actions)assert.ok(!/만찬을 반복|식사를 반복/.test(shown(g,a)),a.id+' 2부 만찬');
+    const fg=playbook.groups.find(g=>g.id===`feast-loop-${r}-part1-20261114`);assert.ok(fg&&fg.actions.length===7,r+' 연회 묶음');
+    assert.equal(chapterOf(r+'-plan',fg.id),'12장',r+' 연회 묶음 12장');assert.equal(chapterOf(r+'-plan',`support-talks-${r}-part1-20261112`),'12장',r+' 지원 대화 묶음 12장');
+    for(const g of playbook.groups.filter(g=>g.stage===r+'-war-plan'))for(const a of g.actions)assert.ok(!/연회를 반복|식사를 반복/.test(shown(g,a)),a.id+' 2부 연회');
     const audit=playbook.groups.flatMap(g=>g.actions).find(a=>a.id===`team-${r}-recruit-audit--1`);const text=ov.actions[audit.id]||audit.text;
     for(const name of plan.pairCoverage.routeRoster[r])assert.ok(text.includes(name),`${r} 합류 확인에 ${name}`);
     assert.ok(plan.pairCoverage.routeRoster[r].includes('울턴드'),r+' 울턴드');
   }
   const order=checklist.stages.find(s=>s.id==='part3-plan').chapters.flatMap(c=>c.blocks.map(b=>b.id));
-  assert.ok(order.indexOf('p3-feast-loop-20261114')>=0&&order.indexOf('p3-feast-loop-20261114')<order.indexOf('p3-merge'),'3부 만찬 반복이 융합보다 먼저');
+  assert.ok(order.indexOf('p3-feast-loop-20261114')>=0&&order.indexOf('p3-feast-loop-20261114')<order.indexOf('p3-merge'),'3부 연회 반복이 융합보다 먼저');
+  // 주의 글·골드 블록도 본다(검토 6 M2: 묶음 글만 보면 놓친다).
+  const flat=t=>Array.isArray(t)?t.map(flat).join(''):typeof t==='string'?t:t?flat(t.children):'';
+  for(const st of checklist.stages)for(const c of st.chapters)for(const b of c.blocks){const t=flat(b.notes)+(Object.hasOwn(ov.groups,b.id)?ov.groups[b.id]:flat(b.heading));for(const w of [...banned,'추가 영입을 고른','선택 편성할 때만','이번 영입을 생략','만찬'])assert.ok(!t.includes(w),`${st.id} ${b.id} 글에 ${w}`);}
+  // 덮개: 1·2부 한정 쌍(해결·위험)은 routes 중 한 루트의 명단(+외전 동석)에 두 인물이 모두 있다.
+  const pc=plan.pairCoverage,inRoute=(r,n)=>pc.routeRoster[r].includes(n)||(pc.paralogues[r]||[]).includes(n);
+  for(const p of pc.pairs.filter(p=>['해결','위험'].includes(p.status))){const [a,b]=p.pair.split('–');assert.ok(p.routes.some(r=>inRoute(r,a)&&inRoute(r,b)),'덮개 '+p.pair);}
+  // 명단 두 곳이 같다. 합류 확인 묶음은 12장에 있다.
+  const fr=read('content/data/final-roster.json');for(const r of ['theodora','leda','dietrich','cai']){assert.deepEqual(fr.recruitByRoute[r],pc.routeRoster[r],r+' recruitByRoute=routeRoster');assert.equal(chapterOf(r+'-plan',`team-${r}-recruit-audit`),'12장',r+' 합류 확인 12장');}
+  // 은퇴한 행동 ID도 체크 ID 목록에 남는다(체크 기록 보존).
+  for(const a of [...playbook.retiredActions,...playbook.retiredGroups.flatMap(g=>g.actions)])assert.ok(ids.includes(a.id),'은퇴 ID 보존 '+a.id);
   const seed=read('content/checklist-seed.json'),checkedIds=Object.entries(seed.checks||{}).filter(([,v])=>v).map(([k])=>k);
   for(const id of checkedIds)assert.ok(ids.includes(id),'체크 보존 '+id);
 }
