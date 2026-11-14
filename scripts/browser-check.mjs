@@ -103,7 +103,7 @@ async function measure(page,{route='home',view='home',theme,width,height,screens
   const label=`${route}-${view}-${width}x${height}-${theme}`;
   Object.assign(row,{label,route,view,width,height,theme,expectedBackground:expected,backgroundMatches:row.background===expected&&(route!=='home'||row.bgToken===expected)});
   results.push(row);
-  for(const [ok,message] of [[row.horizontalScroll===0,'가로 스크롤'],[row.minimumFont>=(width<768?14:18),'최소 글자'],[row.dashboardVerticalScroll===null||row.dashboardVerticalScroll===0||width<768,'첫 화면 세로 스크롤'],[row.overlapCount===0,'요소 겹침'],[row.brokenImages.length===0,'그림 로딩'],[row.transparentButtons.length===0,'채운 버튼'],[row.backgroundMatches,'body 배경']])if(!ok)failures.push(`${label}: ${message}`);
+  for(const [ok,message] of [[row.horizontalScroll===0,'가로 스크롤'],[row.minimumFont>=(width<768&&route==='team'?14:18),'최소 글자'],[row.dashboardVerticalScroll===null||row.dashboardVerticalScroll===0||width<768,'첫 화면 세로 스크롤'],[row.overlapCount===0,'요소 겹침'],[row.brokenImages.length===0,'그림 로딩'],[row.transparentButtons.length===0,'채운 버튼'],[row.backgroundMatches,'body 배경']])if(!ok)failures.push(`${label}: ${message}`);
   for(const [items,message]of [[row.aspectRatioViolations,'원본 그림 비율'],[row.faceSizeViolations,'얼굴 크기'],[row.paragraphViolations,'2문장 문단'],[row.groupLineViolations,'3줄 묶음'],[row.eraViolations,'타임스킵 시대'],[row.croppedScenes,'그림 전체 표시']])if(items.length)failures.push(`${label}: ${message}`);
   if(row.personTables.some(t=>t.columns!==2||Math.abs(t.labelWidth-(width<768?100:120))>1))failures.push(`${label}: 인물 2열 표 너비`);
   if(row.goldTables.some(t=>t.columns!==3||!t.amountRight))failures.push(`${label}: 골드 3열 표·금액 정렬`);
