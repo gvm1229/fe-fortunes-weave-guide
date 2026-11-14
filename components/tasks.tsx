@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useRef, useState, ViewTransition } from 'react';
-import { Check, Download, Upload, ArrowDown, ChevronDown } from 'lucide-react';
+import { Check, Download, Upload, ArrowDown, ChevronDown, Archive } from 'lucide-react';
 import type { Group } from '@/lib/content';
 import type { Chapter } from '@/lib/checklist';
 import { chapterGroups } from '@/lib/checklist';
@@ -80,7 +80,7 @@ export function Tasks({route,label,part,chapters,groups,onDoc,onMaterial,onPerso
     {/* 완료 숨기기는 고정 머리 막대에 둔다(2026-11-14 사용자 지시: 맨 위까지 올라가지 않아도 되게). */}<label className="check-control"><input type="checkbox" checked={hideDone} onChange={e=>setHideDone(e.target.checked)}/> <span className="check-control-label">완료 숨기기</span></label>
     <Button className="jump-next" onClick={goNext} disabled={!next} aria-label="다음 할 일로 이동"><ArrowDown size={20}/><span className="jump-label">이동</span></Button>
     {!checks.error&&<span role="status" className="save-status"><Check size={20} aria-label="저장됨"/></span>}
-    <details className="backup-menu"><summary>기록 관리</summary><div className="toolbar-actions"><Button variant="secondary" onClick={exportFile}><Download size={20}/> 내보내기</Button><Button variant="secondary" onClick={()=>upload.current?.click()}><Upload size={20}/> 가져오기</Button><input ref={upload} type="file" accept="application/json,.json" className="sr-only" aria-label="체크 JSON 가져오기" onChange={async e=>{const file=e.target.files?.[0];if(!file)return;try{checks.importData(JSON.parse(await file.text()));setImportError('');}catch(error){setImportError(error instanceof Error?error.message:'파일을 읽지 못했습니다.');}e.target.value='';}}/></div></details>
+    <details className="backup-menu"><summary title="기록 관리"><Archive size={20} aria-hidden="true" className="backup-icon"/><span className="backup-label">기록 관리</span></summary><div className="toolbar-actions"><Button variant="secondary" onClick={exportFile}><Download size={20}/> 내보내기</Button><Button variant="secondary" onClick={()=>upload.current?.click()}><Upload size={20}/> 가져오기</Button><input ref={upload} type="file" accept="application/json,.json" className="sr-only" aria-label="체크 JSON 가져오기" onChange={async e=>{const file=e.target.files?.[0];if(!file)return;try{checks.importData(JSON.parse(await file.text()));setImportError('');}catch(error){setImportError(error instanceof Error?error.message:'파일을 읽지 못했습니다.');}e.target.value='';}}/></div></details>
   </div></div></div>
   <div className="tasks-layout"><div className="tasks-main">{checks.error&&<div role="status" className="save-status error">{checks.status}<Button variant="secondary" onClick={checks.retry}>저장소 다시 읽기</Button></div>}{importError&&<p role="alert" className="error">{importError}</p>}
   {next&&<section className="next-action"><h2>다음 할 일</h2><p><GameText text={next.a.text} withSkills/></p></section>}
