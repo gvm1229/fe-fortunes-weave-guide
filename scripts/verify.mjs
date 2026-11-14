@@ -48,6 +48,10 @@ assert.equal(scopeMarkdown('## 세오도라 1부\n현재\n## 레다 1부\n다른
 assert.throws(()=>validateChecks({schemaVersion:1,revision:0,checks:{a:'true'}}));
 assert.throws(()=>validateChecks({schemaVersion:1,revision:-1,checks:{}}));
 const seed=read('content/checklist-seed.json');assert.deepEqual(validateChecks(JSON.parse(JSON.stringify(seed))),seed);
+// 사이트에는 체크 기록을 넣지 않는다(2026-11-14 사용자 지시). 앱 코드는 체크 원본·진행 가져오기 파일을 읽지 않고, 공개 폴더로도 복사하지 않는다.
+{const {readdirSync}=await import('node:fs');const walkSrc=d=>readdirSync(d,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walkSrc(`${d}/${e.name}`):/\.(tsx?|mjs|js)$/.test(e.name)?[`${d}/${e.name}`]:[]);
+ for(const f of ['app','components','lib'].flatMap(walkSrc)){const t=readFileSync(f,'utf8');assert.ok(!/checklist-seed|data\/checklist\.json|theodora-progress-import\.json/.test(t),f+' 체크 기록을 읽음');}
+ const run=readFileSync('scripts/run.mjs','utf8');assert.ok(!run.includes("cpSync('content/theodora-progress-import.json'")&&run.includes("rmSync('public/reference-data/checklist.json'"),'run.mjs가 체크 기록을 공개함');}
 // 2026-11-14 전원 영입 필수 · 1부 연회 반복 필수(docs/fable-plan-recruit-feast.md 3판 C.2).
 {
   const ov=read('content/display-overrides.json'),plan=read('content/data/recruit-all-plan.json'),checklist=read('content/derived/checklist.json');
