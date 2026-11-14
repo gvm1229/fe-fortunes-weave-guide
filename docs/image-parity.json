@@ -181,26 +181,26 @@
       "part": "1",
       "chapter": "6장",
       "old": {
-        "portraits": 51,
-        "skills": 63,
+        "portraits": 47,
+        "skills": 56,
         "gods": 26,
-        "classes": 8,
+        "classes": 4,
         "guides": 9,
         "locations": 14
       },
       "expected": {
-        "portraits": 51,
-        "skills": 63,
+        "portraits": 47,
+        "skills": 56,
         "gods": 26,
-        "classes": 8,
+        "classes": 4,
         "guides": 9,
         "locations": 14
       },
       "rendered": {
-        "portraits": 51,
-        "skills": 63,
+        "portraits": 47,
+        "skills": 56,
         "gods": 26,
-        "classes": 8,
+        "classes": 4,
         "guides": 9,
         "locations": 14
       }
@@ -210,26 +210,26 @@
       "part": "1",
       "chapter": "7장",
       "old": {
-        "portraits": 58,
-        "skills": 43,
+        "portraits": 63,
+        "skills": 51,
         "gods": 24,
-        "classes": 12,
+        "classes": 17,
         "guides": 4,
         "locations": 12
       },
       "expected": {
-        "portraits": 58,
-        "skills": 43,
+        "portraits": 63,
+        "skills": 51,
         "gods": 24,
-        "classes": 12,
+        "classes": 17,
         "guides": 4,
         "locations": 12
       },
       "rendered": {
-        "portraits": 58,
-        "skills": 43,
+        "portraits": 63,
+        "skills": 51,
         "gods": 24,
-        "classes": 12,
+        "classes": 17,
         "guides": 4,
         "locations": 12
       }
@@ -239,26 +239,26 @@
       "part": "1",
       "chapter": "8장",
       "old": {
-        "portraits": 59,
-        "skills": 39,
+        "portraits": 58,
+        "skills": 38,
         "gods": 20,
-        "classes": 17,
+        "classes": 16,
         "guides": 2,
         "locations": 4
       },
       "expected": {
-        "portraits": 59,
-        "skills": 39,
+        "portraits": 58,
+        "skills": 38,
         "gods": 20,
-        "classes": 17,
+        "classes": 16,
         "guides": 2,
         "locations": 4
       },
       "rendered": {
-        "portraits": 59,
-        "skills": 39,
+        "portraits": 58,
+        "skills": 38,
         "gods": 20,
-        "classes": 17,
+        "classes": 16,
         "guides": 2,
         "locations": 4
       }
@@ -326,7 +326,7 @@
       "part": "1",
       "chapter": "11장",
       "old": {
-        "portraits": 71,
+        "portraits": 72,
         "skills": 57,
         "gods": 26,
         "classes": 8,
@@ -334,7 +334,7 @@
         "locations": 7
       },
       "expected": {
-        "portraits": 71,
+        "portraits": 72,
         "skills": 57,
         "gods": 26,
         "classes": 8,
@@ -342,7 +342,7 @@
         "locations": 7
       },
       "rendered": {
-        "portraits": 71,
+        "portraits": 72,
         "skills": 57,
         "gods": 26,
         "classes": 8,
@@ -355,7 +355,7 @@
       "part": "1",
       "chapter": "12장",
       "old": {
-        "portraits": 76,
+        "portraits": 75,
         "skills": 37,
         "gods": 8,
         "classes": 6,
@@ -363,7 +363,7 @@
         "locations": 4
       },
       "expected": {
-        "portraits": 74,
+        "portraits": 73,
         "skills": 37,
         "gods": 8,
         "classes": 6,
@@ -371,7 +371,7 @@
         "locations": 4
       },
       "rendered": {
-        "portraits": 74,
+        "portraits": 73,
         "skills": 37,
         "gods": 8,
         "classes": 6,
@@ -1051,26 +1051,26 @@
       "part": "1",
       "chapter": "10장",
       "old": {
-        "portraits": 46,
-        "skills": 22,
+        "portraits": 49,
+        "skills": 23,
         "gods": 8,
-        "classes": 5,
+        "classes": 9,
         "guides": 3,
         "locations": 5
       },
       "expected": {
-        "portraits": 46,
-        "skills": 22,
+        "portraits": 49,
+        "skills": 23,
         "gods": 8,
-        "classes": 5,
+        "classes": 9,
         "guides": 3,
         "locations": 5
       },
       "rendered": {
-        "portraits": 46,
-        "skills": 22,
+        "portraits": 49,
+        "skills": 23,
         "gods": 8,
-        "classes": 5,
+        "classes": 9,
         "guides": 3,
         "locations": 5
       }
@@ -1080,26 +1080,26 @@
       "part": "1",
       "chapter": "11장",
       "old": {
-        "portraits": 61,
-        "skills": 43,
+        "portraits": 58,
+        "skills": 42,
         "gods": 20,
-        "classes": 11,
+        "classes": 7,
         "guides": 5,
         "locations": 8
       },
       "expected": {
-        "portraits": 61,
-        "skills": 43,
+        "portraits": 58,
+        "skills": 42,
         "gods": 20,
-        "classes": 11,
+        "classes": 7,
         "guides": 5,
         "locations": 8
       },
       "rendered": {
-        "portraits": 61,
-        "skills": 43,
+        "portraits": 58,
+        "skills": 42,
         "gods": 20,
-        "classes": 11,
+        "classes": 7,
         "guides": 5,
         "locations": 8
       }
@@ -1515,26 +1515,200 @@
       "part": "2",
       "chapter": "시작 전",
       "old": {
-        "portraits": 37,
-        "skills": 1,
+        "portraits": 12,
+        "skills": 0,
         "gods": 0,
-        "classes": 3,
+        "classes": 0,
         "guides": 0,
         "locations": 0
       },
       "expected": {
-        "portraits": 37,
-        "skills": 1,
+        "portraits": 12,
+        "skills": 0,
         "gods": 0,
-        "classes": 3,
+        "classes": 0,
         "guides": 0,
         "locations": 0
       },
       "rendered": {
-        "portraits": 37,
+        "portraits": 12,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      }
+    },
+    {
+      "route": "theodora",
+      "part": "2",
+      "chapter": "1장",
+      "old": {
+        "portraits": 21,
         "skills": 1,
         "gods": 0,
-        "classes": 3,
+        "classes": 2,
+        "guides": 0,
+        "locations": 0
+      },
+      "expected": {
+        "portraits": 21,
+        "skills": 1,
+        "gods": 0,
+        "classes": 2,
+        "guides": 0,
+        "locations": 0
+      },
+      "rendered": {
+        "portraits": 21,
+        "skills": 1,
+        "gods": 0,
+        "classes": 2,
+        "guides": 0,
+        "locations": 0
+      }
+    },
+    {
+      "route": "theodora",
+      "part": "2",
+      "chapter": "2장",
+      "old": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      },
+      "expected": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      },
+      "rendered": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      }
+    },
+    {
+      "route": "theodora",
+      "part": "2",
+      "chapter": "3장",
+      "old": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      },
+      "expected": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      },
+      "rendered": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      }
+    },
+    {
+      "route": "theodora",
+      "part": "2",
+      "chapter": "4장",
+      "old": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 1,
+        "guides": 0,
+        "locations": 0
+      },
+      "expected": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 1,
+        "guides": 0,
+        "locations": 0
+      },
+      "rendered": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 1,
+        "guides": 0,
+        "locations": 0
+      }
+    },
+    {
+      "route": "theodora",
+      "part": "2",
+      "chapter": "5장",
+      "old": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      },
+      "expected": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      },
+      "rendered": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      }
+    },
+    {
+      "route": "theodora",
+      "part": "2",
+      "chapter": "6장",
+      "old": {
+        "portraits": 4,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      },
+      "expected": {
+        "portraits": 4,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      },
+      "rendered": {
+        "portraits": 4,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
         "guides": 0,
         "locations": 0
       }
@@ -1544,28 +1718,202 @@
       "part": "2",
       "chapter": "시작 전",
       "old": {
-        "portraits": 37,
+        "portraits": 11,
         "skills": 0,
         "gods": 0,
-        "classes": 3,
-        "guides": 4,
-        "locations": 3
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
       },
       "expected": {
-        "portraits": 37,
+        "portraits": 11,
         "skills": 0,
         "gods": 0,
-        "classes": 3,
-        "guides": 4,
-        "locations": 3
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
       },
       "rendered": {
-        "portraits": 37,
+        "portraits": 11,
         "skills": 0,
         "gods": 0,
-        "classes": 3,
-        "guides": 4,
-        "locations": 3
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      }
+    },
+    {
+      "route": "leda",
+      "part": "2",
+      "chapter": "1장",
+      "old": {
+        "portraits": 15,
+        "skills": 0,
+        "gods": 0,
+        "classes": 2,
+        "guides": 0,
+        "locations": 0
+      },
+      "expected": {
+        "portraits": 15,
+        "skills": 0,
+        "gods": 0,
+        "classes": 2,
+        "guides": 0,
+        "locations": 0
+      },
+      "rendered": {
+        "portraits": 15,
+        "skills": 0,
+        "gods": 0,
+        "classes": 2,
+        "guides": 0,
+        "locations": 0
+      }
+    },
+    {
+      "route": "leda",
+      "part": "2",
+      "chapter": "2장",
+      "old": {
+        "portraits": 3,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 3,
+        "locations": 2
+      },
+      "expected": {
+        "portraits": 3,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 3,
+        "locations": 2
+      },
+      "rendered": {
+        "portraits": 3,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 3,
+        "locations": 2
+      }
+    },
+    {
+      "route": "leda",
+      "part": "2",
+      "chapter": "3장",
+      "old": {
+        "portraits": 2,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 1,
+        "locations": 1
+      },
+      "expected": {
+        "portraits": 2,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 1,
+        "locations": 1
+      },
+      "rendered": {
+        "portraits": 2,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 1,
+        "locations": 1
+      }
+    },
+    {
+      "route": "leda",
+      "part": "2",
+      "chapter": "4장",
+      "old": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 1,
+        "guides": 0,
+        "locations": 0
+      },
+      "expected": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 1,
+        "guides": 0,
+        "locations": 0
+      },
+      "rendered": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 1,
+        "guides": 0,
+        "locations": 0
+      }
+    },
+    {
+      "route": "leda",
+      "part": "2",
+      "chapter": "5장",
+      "old": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      },
+      "expected": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      },
+      "rendered": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      }
+    },
+    {
+      "route": "leda",
+      "part": "2",
+      "chapter": "6장",
+      "old": {
+        "portraits": 6,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      },
+      "expected": {
+        "portraits": 6,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      },
+      "rendered": {
+        "portraits": 6,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
       }
     },
     {
@@ -1573,28 +1921,202 @@
       "part": "2",
       "chapter": "시작 전",
       "old": {
-        "portraits": 31,
+        "portraits": 26,
         "skills": 0,
         "gods": 0,
-        "classes": 3,
-        "guides": 2,
-        "locations": 2
+        "classes": 1,
+        "guides": 0,
+        "locations": 0
       },
       "expected": {
-        "portraits": 31,
+        "portraits": 26,
         "skills": 0,
         "gods": 0,
-        "classes": 3,
-        "guides": 2,
-        "locations": 2
+        "classes": 1,
+        "guides": 0,
+        "locations": 0
       },
       "rendered": {
-        "portraits": 31,
+        "portraits": 26,
         "skills": 0,
         "gods": 0,
-        "classes": 3,
-        "guides": 2,
-        "locations": 2
+        "classes": 1,
+        "guides": 0,
+        "locations": 0
+      }
+    },
+    {
+      "route": "dietrich",
+      "part": "2",
+      "chapter": "1장",
+      "old": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 1,
+        "guides": 0,
+        "locations": 0
+      },
+      "expected": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 1,
+        "guides": 0,
+        "locations": 0
+      },
+      "rendered": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 1,
+        "guides": 0,
+        "locations": 0
+      }
+    },
+    {
+      "route": "dietrich",
+      "part": "2",
+      "chapter": "2장",
+      "old": {
+        "portraits": 1,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 1,
+        "locations": 1
+      },
+      "expected": {
+        "portraits": 1,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 1,
+        "locations": 1
+      },
+      "rendered": {
+        "portraits": 1,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 1,
+        "locations": 1
+      }
+    },
+    {
+      "route": "dietrich",
+      "part": "2",
+      "chapter": "3장",
+      "old": {
+        "portraits": 2,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 1,
+        "locations": 1
+      },
+      "expected": {
+        "portraits": 2,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 1,
+        "locations": 1
+      },
+      "rendered": {
+        "portraits": 2,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 1,
+        "locations": 1
+      }
+    },
+    {
+      "route": "dietrich",
+      "part": "2",
+      "chapter": "4장",
+      "old": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 1,
+        "guides": 0,
+        "locations": 0
+      },
+      "expected": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 1,
+        "guides": 0,
+        "locations": 0
+      },
+      "rendered": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 1,
+        "guides": 0,
+        "locations": 0
+      }
+    },
+    {
+      "route": "dietrich",
+      "part": "2",
+      "chapter": "5장",
+      "old": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      },
+      "expected": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      },
+      "rendered": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      }
+    },
+    {
+      "route": "dietrich",
+      "part": "2",
+      "chapter": "6장",
+      "old": {
+        "portraits": 2,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      },
+      "expected": {
+        "portraits": 2,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      },
+      "rendered": {
+        "portraits": 2,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
       }
     },
     {
@@ -1602,26 +2124,200 @@
       "part": "2",
       "chapter": "시작 전",
       "old": {
-        "portraits": 28,
+        "portraits": 26,
         "skills": 3,
         "gods": 0,
-        "classes": 12,
+        "classes": 10,
         "guides": 0,
         "locations": 0
       },
       "expected": {
-        "portraits": 28,
+        "portraits": 26,
         "skills": 3,
         "gods": 0,
-        "classes": 12,
+        "classes": 10,
         "guides": 0,
         "locations": 0
       },
       "rendered": {
-        "portraits": 28,
+        "portraits": 26,
         "skills": 3,
         "gods": 0,
-        "classes": 12,
+        "classes": 10,
+        "guides": 0,
+        "locations": 0
+      }
+    },
+    {
+      "route": "cai",
+      "part": "2",
+      "chapter": "1장",
+      "old": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 1,
+        "guides": 0,
+        "locations": 0
+      },
+      "expected": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 1,
+        "guides": 0,
+        "locations": 0
+      },
+      "rendered": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 1,
+        "guides": 0,
+        "locations": 0
+      }
+    },
+    {
+      "route": "cai",
+      "part": "2",
+      "chapter": "2장",
+      "old": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      },
+      "expected": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      },
+      "rendered": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      }
+    },
+    {
+      "route": "cai",
+      "part": "2",
+      "chapter": "3장",
+      "old": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      },
+      "expected": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      },
+      "rendered": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      }
+    },
+    {
+      "route": "cai",
+      "part": "2",
+      "chapter": "4장",
+      "old": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 1,
+        "guides": 0,
+        "locations": 0
+      },
+      "expected": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 1,
+        "guides": 0,
+        "locations": 0
+      },
+      "rendered": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 1,
+        "guides": 0,
+        "locations": 0
+      }
+    },
+    {
+      "route": "cai",
+      "part": "2",
+      "chapter": "5장",
+      "old": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      },
+      "expected": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      },
+      "rendered": {
+        "portraits": 0,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      }
+    },
+    {
+      "route": "cai",
+      "part": "2",
+      "chapter": "6장",
+      "old": {
+        "portraits": 2,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      },
+      "expected": {
+        "portraits": 2,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
+        "guides": 0,
+        "locations": 0
+      },
+      "rendered": {
+        "portraits": 2,
+        "skills": 0,
+        "gods": 0,
+        "classes": 0,
         "guides": 0,
         "locations": 0
       }
@@ -1631,26 +2327,26 @@
       "part": "3",
       "chapter": "시작 전",
       "old": {
-        "portraits": 2,
+        "portraits": 0,
         "skills": 2,
         "gods": 0,
-        "classes": 1,
+        "classes": 0,
         "guides": 0,
         "locations": 1
       },
       "expected": {
-        "portraits": 2,
+        "portraits": 0,
         "skills": 2,
         "gods": 0,
-        "classes": 1,
+        "classes": 0,
         "guides": 0,
         "locations": 1
       },
       "rendered": {
-        "portraits": 2,
+        "portraits": 0,
         "skills": 2,
         "gods": 0,
-        "classes": 1,
+        "classes": 0,
         "guides": 0,
         "locations": 1
       }
@@ -1660,7 +2356,7 @@
       "part": "3",
       "chapter": "1구간",
       "old": {
-        "portraits": 5,
+        "portraits": 7,
         "skills": 8,
         "gods": 0,
         "classes": 9,
@@ -1668,7 +2364,7 @@
         "locations": 4
       },
       "expected": {
-        "portraits": 5,
+        "portraits": 7,
         "skills": 8,
         "gods": 0,
         "classes": 9,
@@ -1676,7 +2372,7 @@
         "locations": 4
       },
       "rendered": {
-        "portraits": 5,
+        "portraits": 7,
         "skills": 8,
         "gods": 0,
         "classes": 9,
@@ -1692,7 +2388,7 @@
         "portraits": 28,
         "skills": 63,
         "gods": 1,
-        "classes": 7,
+        "classes": 6,
         "guides": 20,
         "locations": 31
       },
@@ -1700,7 +2396,7 @@
         "portraits": 28,
         "skills": 63,
         "gods": 1,
-        "classes": 7,
+        "classes": 6,
         "guides": 20,
         "locations": 31
       },
@@ -1708,7 +2404,7 @@
         "portraits": 28,
         "skills": 63,
         "gods": 1,
-        "classes": 7,
+        "classes": 6,
         "guides": 20,
         "locations": 31
       }
@@ -1721,7 +2417,7 @@
         "portraits": 5,
         "skills": 7,
         "gods": 0,
-        "classes": 6,
+        "classes": 7,
         "guides": 3,
         "locations": 5
       },
@@ -1729,7 +2425,7 @@
         "portraits": 5,
         "skills": 7,
         "gods": 0,
-        "classes": 6,
+        "classes": 7,
         "guides": 3,
         "locations": 5
       },
@@ -1737,7 +2433,7 @@
         "portraits": 5,
         "skills": 7,
         "gods": 0,
-        "classes": 6,
+        "classes": 7,
         "guides": 3,
         "locations": 5
       }
@@ -1750,7 +2446,7 @@
         "portraits": 8,
         "skills": 4,
         "gods": 0,
-        "classes": 13,
+        "classes": 14,
         "guides": 1,
         "locations": 1
       },
@@ -1758,7 +2454,7 @@
         "portraits": 8,
         "skills": 4,
         "gods": 0,
-        "classes": 13,
+        "classes": 14,
         "guides": 1,
         "locations": 1
       },
@@ -1766,7 +2462,7 @@
         "portraits": 8,
         "skills": 4,
         "gods": 0,
-        "classes": 13,
+        "classes": 14,
         "guides": 1,
         "locations": 1
       }
@@ -1776,28 +2472,57 @@
       "part": "3",
       "chapter": "5구간",
       "old": {
-        "portraits": 38,
+        "portraits": 37,
         "skills": 3,
         "gods": 0,
-        "classes": 28,
-        "guides": 2,
-        "locations": 3
+        "classes": 27,
+        "guides": 1,
+        "locations": 2
       },
       "expected": {
-        "portraits": 38,
+        "portraits": 37,
         "skills": 3,
         "gods": 0,
-        "classes": 28,
-        "guides": 2,
-        "locations": 3
+        "classes": 27,
+        "guides": 1,
+        "locations": 2
       },
       "rendered": {
-        "portraits": 38,
+        "portraits": 37,
         "skills": 3,
         "gods": 0,
-        "classes": 28,
-        "guides": 2,
-        "locations": 3
+        "classes": 27,
+        "guides": 1,
+        "locations": 2
+      }
+    },
+    {
+      "route": "part3",
+      "part": "3",
+      "chapter": "6구간",
+      "old": {
+        "portraits": 1,
+        "skills": 0,
+        "gods": 0,
+        "classes": 1,
+        "guides": 1,
+        "locations": 1
+      },
+      "expected": {
+        "portraits": 1,
+        "skills": 0,
+        "gods": 0,
+        "classes": 1,
+        "guides": 1,
+        "locations": 1
+      },
+      "rendered": {
+        "portraits": 1,
+        "skills": 0,
+        "gods": 0,
+        "classes": 1,
+        "guides": 1,
+        "locations": 1
       }
     }
   ]
