@@ -8,6 +8,10 @@ const browser=await chromium.launch({executablePath:process.env.CHROME_PATH||'C:
 const rows=[],errors=[],screens=[];
 mkdirSync('.tmp/corrections-screens',{recursive:true});mkdirSync('docs/screens',{recursive:true});
 try{
+ // 1001~1199px: 할 일 칸이 정보 칸보다 넓어야 한다(옛 태블릿 규칙으로 할 일이 300px로 눌리던 문제, 2026-11-14).
+ for(const width of [1024,1100,1199]){const page=await browser.newPage({viewport:{width,height:800}});await page.goto(`${base}/theodora/1/`);await page.locator('.check-toolbar').waitFor();
+  const w=await page.evaluate(()=>({main:document.querySelector('.tasks-main').getBoundingClientRect().width,rail:document.querySelector('.context-rail').getBoundingClientRect().width,overflow:document.documentElement.scrollWidth-innerWidth}));
+  assert.ok(w.main>w.rail*1.5&&w.overflow===0,width+' '+JSON.stringify(w));await page.close();}
  for(const [width,height]of [[1440,900],[375,812]])for(const theme of ['light','dark']){
   const page=await browser.newPage({viewport:{width,height},colorScheme:theme});
   page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error'&&!m.text().startsWith('Failed to load resource:'))errors.push(m.text());});

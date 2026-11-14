@@ -376,3 +376,5 @@ td .readable-body p{margin-block-end:8px}
 .person-inline:has(.game-badge){background:none;padding:0}
 .person-inline:has(.game-badge):hover{background:none}
 .person-inline:has(.game-badge):hover .badge-label{text-decoration:underline}
+/* 1001~1199px: 두 칸 배치는 그대로 두고 정보 칸을 오른쪽 좁은 칸에 둔다. 옛 태블릿 규칙(globals.css의 order:-1·두 열)이 정보 칸을 넓은 왼쪽 칸에 보내 할 일이 300px로 눌리던 문제(2026-11-14 운영 확인). */
+@media(min-width:1001px) and (max-width:1199px){.context-rail{order:0;width:auto;grid-template-columns:minmax(0,1fr);gap:20px}.tasks-main{width:auto}}
