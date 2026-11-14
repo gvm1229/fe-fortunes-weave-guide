@@ -18,6 +18,7 @@ const source=readFileSync('components/game-text.tsx','utf8')
  .replace("import people from '@/content/data/people-display.json';",'const people='+readFileSync('content/data/people-display.json','utf8')+';')
  .replace("import classes from '@/assets/classes/manifest.json';",'const classes='+readFileSync('assets/classes/manifest.json','utf8')+';')
  .replace("import items from '@/assets/items/manifest.json';",'const items='+readFileSync('assets/items/manifest.json','utf8')+';')
+ .replace("import { final25Class } from '@/lib/final25';",'const final25Names=new Set('+JSON.stringify(JSON.parse(readFileSync('content/derived/final25.json','utf8')).names)+');const final25Class=n=>final25Names.has(n)?"final25-portrait":undefined;')
  .replace("import { personPortrait } from '@/lib/portraits';",'const timeskip='+readFileSync('content/source/timeskip-portraits.json','utf8')+';'+readFileSync('lib/portraits.ts','utf8').split('export function personPortrait')[1].split('export const lordFiles')[0].replace(/^/, 'function personPortrait'));
 const compiled=ts.transpileModule(source,{compilerOptions:{module:ts.ModuleKind.ESNext,jsx:ts.JsxEmit.ReactJSX}}).outputText;
 const file=resolve('.tmp/game-text-check.mjs');writeFileSync(file,compiled);
@@ -60,3 +61,7 @@ assert.deepEqual(qty('.game-badge').map((_,e)=>qty(e).text()).get(),['태양 열
 const spell=load(renderToStaticMarkup(createElement(GameText,{text:'리브로 · 루나'})),null,false);
 assert.deepEqual(spell('.game-badge').map((_,e)=>spell(e).attr('data-kind')).get(),['skill','skill'],'마법은 기능 색');
 console.log('통과: 문장 오탐 없음 · 수량 포함 · 마법은 기능 배지');
+
+const f25=load(renderToStaticMarkup(createElement(GameText,{text:'세오도라 · 토비아스'})),null,false);
+assert.deepEqual(f25('.named-person img').map((_,e)=>f25(e).attr('class')||'').get(),['final25-portrait',''],'최종 25인 범위만 금색 테두리');
+console.log('통과: 최종 25인 초상화 금색 테두리');

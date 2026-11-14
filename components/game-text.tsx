@@ -3,6 +3,7 @@ import classes from '@/assets/classes/manifest.json';
 import { personPortrait } from '@/lib/portraits';
 import items from '@/assets/items/manifest.json';
 import { Fragment } from 'react';
+import { final25Class } from '@/lib/final25';
 import { Heart, Sparkles, Coins, Fish, Gem, Beef, Gift, Sword, Package } from 'lucide-react';
 const symbols={bond:Heart,renown:Sparkles,gold:Coins,fish:Fish,ore:Gem,meat:Beef,gift:Gift};
 export function GameIcon({kind}:{kind:keyof typeof symbols}) {
@@ -61,7 +62,7 @@ export function GameText({text,withSkills=false,part='1',skip}:{text:string;with
     if(!word)return null;
     if((portraits[word]||classImages[word])&&(skip?.has(word)||shown.has(word)))return classImages[word]&&!portraits[word]?<strong key={i}>{word}</strong>:word;
     if(portraits[word]||classImages[word])shown.add(word);
-    if(portraits[word])return <Badge key={i} kind="person" className="named-person" icon={<img src={'/'+personPortrait(portraits[word].portrait,part,word)} alt="" loading="lazy"/>} label={word}/>;
+    if(portraits[word])return <Badge key={i} kind="person" className="named-person" icon={<img className={final25Class(word)} src={'/'+personPortrait(portraits[word].portrait,part,word)} alt="" loading="lazy"/>} label={word}/>;
     if(classImages[word])return <Badge key={i} kind="class" className="named-class" icon={<img src={'/'+classImages[word].file} alt="" loading="lazy"/>} label={word}/>;
     const it=word.match(itemNameRe);
     if(it){const entry=itemByName.get(it[1])!,kind=/^(fish|ore|meat|material)$/.test(entry.kind)?'material':entry.kind==='gift'?'gift':entry.kind==='spell'?'skill':'item';

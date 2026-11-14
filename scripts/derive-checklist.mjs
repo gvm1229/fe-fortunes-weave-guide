@@ -32,6 +32,8 @@ const readableParity=transform(parity),notices=new Map();
 function gather(value){if(Array.isArray(value)){if(value.some(n=>n&&typeof n==='object'&&'tag' in n))collectNotices(value,notices);else value.forEach(gather);}else if(value&&typeof value==='object')Object.values(value).forEach(gather);}
 gather(readableParity);readableParity.notices=[...notices.values()];
 writeFileSync('content/derived/presentation.json',JSON.stringify({parity:readableParity,records}));
+// 최종 25인 범위(최종 25명 + 팀 화면 교체 후보). 할 일 초상화의 금색 테두리와 인물 시트의 배지가 쓴다.
+writeFileSync('content/derived/final25.json',JSON.stringify({names:Object.keys(readableParity.team.units)}));
 const documents={};
 function walkDocuments(dir){for(const entry of readdirSync(dir,{withFileTypes:true})){const path=`${dir}/${entry.name}`;if(entry.isDirectory())walkDocuments(path);else if(entry.name.endsWith('.md')){const source=readFileSync(path,'utf8');documents[path.slice('content/'.length)]={sourceSha256:createHash('sha256').update(source).digest('hex'),body:deriveMarkdown(source)};}}}
 walkDocuments('content/notes');walkDocuments('content/routes');walkDocuments('content/personalized-app');
