@@ -871,7 +871,7 @@
       "notes": [
         {
           "category": "골드",
-          "text": "미지급 단테8,000G·이오800G와 다음 시험비부터 확보."
+          "text": "미지급 단테8,000G와 다음 시험비부터 확보."
         },
         {
           "category": "반복 확인",
@@ -1172,7 +1172,7 @@
         },
         {
           "category": "지원 집중",
-          "text": "우술라·루루디아·이오 중 아직 미영입·지원 미달인 대상만 준비 · 이미 영입한 단테·리네·시로코·로레타는 제외",
+          "text": "우술라·루루디아·이미 영입한 단테·리네·시로코·로레타는 제외",
           "focusTargets": [
             "우술라",
             "루루디아",
@@ -3549,7 +3549,7 @@
       "notes": [
         {
           "category": "지원 집중",
-          "text": "이오 중 아직 미영입·지원 미달인 대상만 준비 · 이미 영입한 단테·리네·시로코·로레타는 제외",
+          "text": "이미 영입한 단테·리네·시로코·로레타는 제외",
           "focusTargets": [
             "이오"
           ]
@@ -4550,7 +4550,7 @@
         },
         {
           "category": "지원 집중",
-          "text": "이오 중 아직 미영입·지원 미달인 대상만 준비 · 이미 영입한 단테·리네·시로코·로레타는 제외",
+          "text": "이미 영입한 단테·리네·시로코·로레타는 제외",
           "focusTargets": [
             "이오"
           ]
@@ -4879,35 +4879,6 @@
       "prerequisites": [
         "타리문 외전 완료"
       ]
-    },
-    {
-      "id": "recruit-theodora-io",
-      "stage": "theodora-plan",
-      "title": "실제 명성10·지원3 뒤 · 이오 교섭",
-      "people": [
-        "이오"
-      ],
-      "actions": [
-        {
-          "id": "prep-mount-recruits--9f6f8e979b",
-          "category": "영입금",
-          "text": "실제 명성10·세오도라와 지원3을 채워 이오와 교섭하기 직전에 화면 요구금을 확인한다. 기본4,000G까지 준비하고,800G는 교섭으로 그 금액이 실제 확정됐을 때만 적용한다. 이미 영입했다면 다시 지급하지 않는다.",
-          "inheritLegacy": true,
-          "legacyParent": "prep-mount-recruits"
-        },
-        {
-          "id": "recruit-theodora-io--join",
-          "category": "영입",
-          "text": "실제 명성10·지원3과 교섭 화면 요구금을 갖췄을 때 이오를 영입하고 동료 목록을 확인한다. 기본4,000G와 교섭 성공800G를 구분한다.11장 진입만으로 조건 충족을 가정하지 않고1부 종료 전 합류를 확인한다.",
-          "inheritLegacy": false
-        }
-      ],
-      "notes": [],
-      "figures": [],
-      "showMap": false,
-      "curated": true,
-      "earliestChapter": 5,
-      "requiredRenown": 10
     },
     {
       "id": "theo-11",
@@ -5852,7 +5823,7 @@
       "notes": [
         {
           "category": "지원 대화",
-          "text": "같은 루트에서 볼 대화: 티아라–울턴드, 티아라–세테스, 티아라–보나파르트, 티아라–타리문, 티아라–루루디아, 티아라–이오. 티아라·보나파르트 A는 세오도라에서만 볼 수 있다."
+          "text": "같은 루트에서 볼 대화: 티아라–울턴드, 티아라–세테스, 티아라–보나파르트, 티아라–타리문, 티아라–루루디아. 티아라·보나파르트 A는 세오도라에서만 볼 수 있다."
         },
         {
           "category": "기한 위험",
@@ -5976,6 +5947,32 @@
       "earliestChapter": 12
     },
     {
+      "id": "theo-recruit-nujo",
+      "stage": "theodora-plan",
+      "title": "12장 · 명성6·지원1 · 누조 영입(선더 소드 지참)",
+      "people": [
+        "누조"
+      ],
+      "actions": [
+        {
+          "id": "theo-recruit-nujo--join",
+          "category": "등장·조건 뒤 영입",
+          "text": "선더 소드가 부족할 때만: 9장 이후 누조가 실제 활동 명단에 있는지 확인한다. 명성6·세오도라와 지원1·철의 활3개를 갖춘 뒤 스카우트하고 합류를 확인한다. 다른 루트의 철의 활 수량을 가져오지 않는다.",
+          "inheritLegacy": false
+        }
+      ],
+      "notes": [
+        {
+          "category": "지참품",
+          "text": "12장 무렵 영입하면 선더 소드를 들고 온다. 일찍 영입하면 없다. 영입 전에 지참품을 확인한다. 영입만 한다. 출격·시험·훈련에 쓰지 않는다."
+        }
+      ],
+      "figures": [],
+      "curated": true,
+      "earliestChapter": 9,
+      "requiredRenown": 6
+    },
+    {
       "id": "team-theodora-recruit-audit",
       "stage": "theodora-plan",
       "title": "1부 종료 전 · 2부 육성·3부 확보 명단",
@@ -5994,7 +5991,7 @@
         "우술라",
         "로레타",
         "루루디아",
-        "이오",
+        "누조",
         "자코네",
         "누디누",
         "대도",
@@ -6031,20 +6028,13 @@
       "stage": "theodora-plan",
       "title": "12장 · 이오·알렉산드라 보관용 병종 준비",
       "people": [
-        "알렉산드라",
-        "이오"
+        "알렉산드라"
       ],
       "actions": [
         {
           "id": "prep-mount-recruits--c549be29a5",
           "category": "행동",
           "text": "현재 세오도라 동료 목록에 이오·알렉산드라가 모두 있는지 확인한다. 미영입이면 조건을 채워 영입한 뒤 아래 병종을 준비한다.",
-          "inheritLegacy": true
-        },
-        {
-          "id": "prep-mount-recruits--9612b4af26",
-          "category": "행동",
-          "text": "이오가 이미 상급 자격을 가졌다면 낮은 병사로만 바꾸지 말고, 같은 상급의 비기병(헤비 아머 등)을 100% 시험으로 준비해 그 병종으로 완료합니다.",
           "inheritLegacy": true
         },
         {
@@ -7057,7 +7047,7 @@
       "notes": [
         {
           "category": "골드",
-          "text": "피아나 영입용3,000G·이오800G와 실제 출격 인물의 다음 시험비부터 확보"
+          "text": "피아나 영입용3,000G와 실제 출격 인물의 다음 시험비부터 확보"
         },
         {
           "category": "반복 확인",
@@ -7246,7 +7236,7 @@
         },
         {
           "category": "지원 집중",
-          "text": "이오 지원 1을 끝내고, 필요한 전열·회복 인물의 요구 지원부터 만든다.",
+          "text": "필요한 전열·회복 인물의 요구 지원부터 만든다.",
           "focusTargets": [
             "이오"
           ]
@@ -8198,13 +8188,6 @@
           "category": "행동",
           "text": "신상품 2를 수락해 스파이스 리프 1개로 보고한다.",
           "inheritLegacy": false
-        },
-        {
-          "id": "leda-02--d613a9a411",
-          "category": "영입금",
-          "text": "이오의 명성6·레다와의 지원1 조건을 확인하고, 스카우트를 제안하기 직전 영입금800G를 남긴다. 피아나 비용은 이미 지급했다면 다시 남기지 않는다.",
-          "inheritLegacy": true,
-          "legacyParent": "leda-02"
         },
         {
           "id": "leda-05--d73d94905a",
@@ -10265,6 +10248,12 @@
       ],
       "actions": [
         {
+          "id": "recruit-all-leda-jester-20261112--renown10-20261114",
+          "category": "명성 10",
+          "text": "9장이 끝날 때 명성을 본다. 10장에 들어가면 자동 완료되는 공통 의뢰의 명성을 받고, 모자라면 공연 의뢰(하나에 약 200)와 신 알현, 남은 의뢰를 10장 초에 끝내 명성 10을 만든다.",
+          "inheritLegacy": false
+        },
+        {
           "id": "recruit-all-leda-jester-20261112--cond",
           "category": "조건 확인",
           "text": "레다와 지원3·명성10을 확인한다. 지원은 공유 수치라 앞 루트에서 올린 만큼 이어진다.",
@@ -10297,7 +10286,7 @@
         },
         {
           "category": "기한 위험",
-          "text": "10장 안에 명성10이 안 되면 레다·제스터 대화는 놓친다."
+          "text": "10장 안에 명성10을 채운다. 앞 루트에서 끝낸 공통 의뢰는 그 장에 들어가면 자동 완료돼 명성이 들어온다. 모자라면 공연 의뢰와 신 알현으로 채운다."
         }
       ],
       "curated": true,
@@ -10313,6 +10302,69 @@
       ],
       "route": "leda",
       "earliestChapter": 10,
+      "requiredRenown": 10
+    },
+    {
+      "id": "recruit-all-leda-goliath-20261112",
+      "stage": "leda-plan",
+      "title": "10장 무렵 · 명성10·지원3 뒤 골라이어스 영입(지원 대화)",
+      "people": [
+        "골라이어스"
+      ],
+      "actions": [
+        {
+          "id": "recruit-all-leda-goliath-20261112--cond",
+          "category": "조건 확인",
+          "text": "레다와 지원3·명성10을 확인한다. 지원은 공유 수치라 앞 루트에서 올린 만큼 이어진다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "recruit-all-leda-goliath-20261112--need1",
+          "category": "영입 준비",
+          "text": "영입 전에 준비한다: 거대 고기 3개(비오의 제단 고급 고기 상자 랜덤 · 알렉토 반달 상회 연옥초10개 교환).",
+          "inheritLegacy": false
+        },
+        {
+          "id": "recruit-all-leda-goliath-20261112--scout",
+          "category": "스카우트",
+          "text": "골라이어스에게 말을 걸어 스카우트를 고르고 요구를 전달한다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "recruit-all-leda-goliath-20261112--join",
+          "category": "합류 확인",
+          "text": "동료 목록에서 합류를 확인한다. 이미 영입했으면 반복하지 않는다.",
+          "inheritLegacy": false
+        }
+      ],
+      "figures": [],
+      "notes": [
+        {
+          "category": "지원 대화",
+          "text": "같은 루트에서 볼 대화: 제스터–골라이어스, 골라이어스–로레타, 골라이어스–올림피아."
+        },
+        {
+          "category": "지양 인물",
+          "text": "영입만 한다. 출격·막타·시험·훈련에 쓰지 않는다."
+        }
+      ],
+      "curated": true,
+      "referenceLinks": [
+        {
+          "url": "notes/recruitment/giant-meat.md",
+          "label": "거대 고기 위치"
+        },
+        {
+          "url": "notes/support-pairs-by-route.md",
+          "label": "루트별 지원 대화"
+        },
+        {
+          "url": "notes/recruit-all-review.md",
+          "label": "전원 영입 검토"
+        }
+      ],
+      "route": "leda",
+      "earliestChapter": 12,
       "requiredRenown": 10
     },
     {
@@ -11285,69 +11337,6 @@
       "trainingChapter": "leda:12"
     },
     {
-      "id": "recruit-all-leda-goliath-20261112",
-      "stage": "leda-plan",
-      "title": "12장 무렵 · 명성10·지원3 뒤 골라이어스 영입(지원 대화)",
-      "people": [
-        "골라이어스"
-      ],
-      "actions": [
-        {
-          "id": "recruit-all-leda-goliath-20261112--cond",
-          "category": "조건 확인",
-          "text": "레다와 지원3·명성10을 확인한다. 지원은 공유 수치라 앞 루트에서 올린 만큼 이어진다.",
-          "inheritLegacy": false
-        },
-        {
-          "id": "recruit-all-leda-goliath-20261112--need1",
-          "category": "영입 준비",
-          "text": "영입 전에 준비한다: 거대 고기 3개(비오의 제단 고급 고기 상자 랜덤 · 알렉토 반달 상회 연옥초10개 교환).",
-          "inheritLegacy": false
-        },
-        {
-          "id": "recruit-all-leda-goliath-20261112--scout",
-          "category": "스카우트",
-          "text": "골라이어스에게 말을 걸어 스카우트를 고르고 요구를 전달한다.",
-          "inheritLegacy": false
-        },
-        {
-          "id": "recruit-all-leda-goliath-20261112--join",
-          "category": "합류 확인",
-          "text": "동료 목록에서 합류를 확인한다. 이미 영입했으면 반복하지 않는다.",
-          "inheritLegacy": false
-        }
-      ],
-      "figures": [],
-      "notes": [
-        {
-          "category": "지원 대화",
-          "text": "같은 루트에서 볼 대화: 제스터–골라이어스, 골라이어스–로레타, 골라이어스–올림피아."
-        },
-        {
-          "category": "지양 인물",
-          "text": "영입만 한다. 출격·막타·시험·훈련에 쓰지 않는다."
-        }
-      ],
-      "curated": true,
-      "referenceLinks": [
-        {
-          "url": "notes/recruitment/giant-meat.md",
-          "label": "거대 고기 위치"
-        },
-        {
-          "url": "notes/support-pairs-by-route.md",
-          "label": "루트별 지원 대화"
-        },
-        {
-          "url": "notes/recruit-all-review.md",
-          "label": "전원 영입 검토"
-        }
-      ],
-      "route": "leda",
-      "earliestChapter": 12,
-      "requiredRenown": 10
-    },
-    {
       "id": "recruit-all-leda-diego-20261112",
       "stage": "leda-plan",
       "title": "12장 무렵 · 명성8·지원3 뒤 디에고 영입(지원 대화)",
@@ -11403,11 +11392,54 @@
       "requiredRenown": 8
     },
     {
+      "id": "recruit-all-leda-nujo-20261114",
+      "stage": "leda-plan",
+      "title": "12장 · 명성9·지원3 · 누조 영입(선더 소드 지참)",
+      "people": [
+        "누조"
+      ],
+      "actions": [
+        {
+          "id": "recruit-all-leda-nujo-20261114--cond",
+          "category": "조건 확인",
+          "text": "레다와 지원3·명성9를 확인한다. 지원은 공유 수치라 앞 루트에서 올린 만큼 이어진다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "recruit-all-leda-nujo-20261114--need1",
+          "category": "영입 준비",
+          "text": "영입 전에 준비한다: 철의 활 3개(다그시온 무기점·행상인).",
+          "inheritLegacy": false
+        },
+        {
+          "id": "recruit-all-leda-nujo-20261114--scout",
+          "category": "스카우트",
+          "text": "지참품에 선더 소드가 있는지 본 뒤 누조에게 말을 걸어 스카우트를 고르고 요구를 전달한다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "recruit-all-leda-nujo-20261114--join",
+          "category": "합류 확인",
+          "text": "동료 목록에서 합류를 확인하고 선더 소드를 수송대에 보관한다.",
+          "inheritLegacy": false
+        }
+      ],
+      "figures": [],
+      "notes": [
+        {
+          "category": "지참품",
+          "text": "12장 무렵 영입하면 선더 소드를 들고 온다. 일찍 영입하면 없다. 영입 전에 지참품을 확인한다. 영입만 한다. 출격·시험·훈련에 쓰지 않는다."
+        }
+      ],
+      "curated": true,
+      "referenceLinks": [],
+      "route": "leda"
+    },
+    {
       "id": "mount-prep-leda",
       "stage": "leda-plan",
       "title": "12장 · 영입 완료 뒤 첫 반입 병종 준비",
       "people": [
-        "이오",
         "알렉산드라"
       ],
       "actions": [
@@ -11415,12 +11447,6 @@
           "id": "mount-prep-leda--joined",
           "category": "동료 확인",
           "text": "동료 목록에서 이오·알렉산드라의 실제 합류를 확인한다. 미영입이면 이번 루트의 조건·기한 안에 먼저 영입한다.",
-          "inheritLegacy": false
-        },
-        {
-          "id": "mount-prep-leda--io-class",
-          "category": "이오 자격",
-          "text": "이오의 최고 합격 등급을 확인한다. 상급 자격이 있으면 같은 상급의 비기병 자격을100% 시험으로 준비한다. 중급까지만 있으면 비탑승 중급 자격을 사용한다. 이미 가진 자격은 다시 시험 보지 않는다.",
           "inheritLegacy": false
         },
         {
@@ -11672,7 +11698,7 @@
         "소피아",
         "이니오니",
         "하르빈",
-        "이오",
+        "누조",
         "알렉산드라",
         "키로이카",
         "사란",
@@ -14317,6 +14343,122 @@
       "manualSplit": true
     },
     {
+      "id": "ready-dietrich-catania",
+      "stage": "dietrich-plan",
+      "title": "7장 실제 합류 뒤 · 카타냐 육성 준비",
+      "people": [
+        "카타냐"
+      ],
+      "actions": [
+        {
+          "id": "ready-dietrich-catania--readiness-start",
+          "category": "육성 시작",
+          "text": "기능 준비·2부 교대 · 실제 합류 뒤 역할 수행 가능 여부 확인 · 이야기 전투 주력 강제 교체 없음 · 시험 레벨에 가까운데 필수 기능만 부족하면 던전 별도 편성 · 실제 시험 전 현재 자격·합격률 확인",
+          "inheritLegacy": false
+        }
+      ],
+      "notes": [
+        {
+          "category": "육성 목적",
+          "text": "기능 준비·2부 교대"
+        },
+        {
+          "category": "레벨업 전",
+          "text": "Lv20에서 실전을 멈추고 중급 시험 · 기능 부족이면 레벨 대신 기술 훈련 · 평준화 직전에도 성장 병과 확인"
+        }
+      ],
+      "figures": [],
+      "curated": true,
+      "route": "dietrich"
+    },
+    {
+      "id": "ready-dietrich-ninae",
+      "stage": "dietrich-plan",
+      "title": "7장 실제 합류 뒤 · 리네 육성 준비",
+      "people": [
+        "리네"
+      ],
+      "actions": [
+        {
+          "id": "ready-dietrich-ninae--readiness-start",
+          "category": "육성 시작",
+          "text": "이야기 주력 · 실제 합류 뒤 역할 수행 가능 여부 확인 · 이야기 전투 주력 강제 교체 없음 · 시험 레벨에 가까운데 필수 기능만 부족하면 던전 별도 편성 · 실제 시험 전 현재 자격·합격률 확인",
+          "inheritLegacy": false
+        }
+      ],
+      "notes": [
+        {
+          "category": "육성 목적",
+          "text": "이야기 주력"
+        },
+        {
+          "category": "레벨업 전",
+          "text": "Lv20에서 실전을 멈추고 중급 시험 · 기능 부족이면 레벨 대신 기술 훈련 · 평준화 직전에도 성장 병과 확인"
+        }
+      ],
+      "figures": [],
+      "curated": true,
+      "route": "dietrich"
+    },
+    {
+      "id": "ready-dietrich-dante",
+      "stage": "dietrich-plan",
+      "title": "7장 실제 합류 뒤 · 단테 육성 준비",
+      "people": [
+        "단테"
+      ],
+      "actions": [
+        {
+          "id": "ready-dietrich-dante--readiness-start",
+          "category": "육성 시작",
+          "text": "초반 대체·실전 예비 · 실제 합류 뒤 역할 수행 가능 여부 확인 · 이야기 전투 주력 강제 교체 없음 · 시험 레벨에 가까운데 필수 기능만 부족하면 던전 별도 편성 · 실제 시험 전 현재 자격·합격률 확인",
+          "inheritLegacy": false
+        }
+      ],
+      "notes": [
+        {
+          "category": "육성 목적",
+          "text": "초반 대체·실전 예비"
+        },
+        {
+          "category": "레벨업 전",
+          "text": "Lv20에서 실전을 멈추고 중급 시험 · 기능 부족이면 레벨 대신 기술 훈련 · 평준화 직전에도 성장 병과 확인"
+        }
+      ],
+      "figures": [],
+      "curated": true,
+      "route": "dietrich"
+    },
+    {
+      "id": "ready-dietrich-alexandra",
+      "stage": "dietrich-plan",
+      "title": "7장 실제 합류 뒤 · 알렉산드라 육성 준비",
+      "people": [
+        "알렉산드라"
+      ],
+      "actions": [
+        {
+          "id": "ready-dietrich-alexandra--readiness-start",
+          "category": "육성 시작",
+          "text": "추가 칸·역할 교대 · 실제 합류 뒤 역할 수행 가능 여부 확인 · 이야기 전투 주력 강제 교체 없음 · 시험 레벨에 가까운데 필수 기능만 부족하면 던전 별도 편성 · 실제 시험 전 현재 자격·합격률 확인",
+          "inheritLegacy": false
+        }
+      ],
+      "notes": [
+        {
+          "category": "육성 목적",
+          "text": "추가 칸·역할 교대"
+        },
+        {
+          "category": "레벨업 전",
+          "text": "Lv20에서 실전을 멈추고 중급 시험 · 기능 부족이면 레벨 대신 기술 훈련 · 평준화 직전에도 성장 병과 확인"
+        }
+      ],
+      "figures": [],
+      "curated": true,
+      "route": "dietrich"
+    },
+    {
       "id": "sequential-dungeon-dietrich-8-20261108",
       "stage": "dietrich-plan",
       "title": "8장 · 시험 직전 부족한 기능만 던전에서 보충",
@@ -14635,6 +14777,12 @@
           "id": "di-11--1f11f1187f",
           "category": "미리 준비",
           "text": "같은 교환을 무한히 할 수 있다고 보고 두 자루 재료를 사지 않는다.",
+          "inheritLegacy": true
+        },
+        {
+          "id": "di-11--117e3abb0f",
+          "category": "미리 준비",
+          "text": "선더 소드가 부족할 때만: 두 번째는 후반 누조 등의 영입 소지품을 계획한다.",
           "inheritLegacy": true
         },
         {
@@ -15131,122 +15279,6 @@
       "notes": [],
       "figures": [],
       "curated": true
-    },
-    {
-      "id": "ready-dietrich-dante",
-      "stage": "dietrich-plan",
-      "title": "9장 실제 합류 뒤 · 단테 육성 준비",
-      "people": [
-        "단테"
-      ],
-      "actions": [
-        {
-          "id": "ready-dietrich-dante--readiness-start",
-          "category": "육성 시작",
-          "text": "초반 대체·실전 예비 · 실제 합류 뒤 역할 수행 가능 여부 확인 · 이야기 전투 주력 강제 교체 없음 · 시험 레벨에 가까운데 필수 기능만 부족하면 던전 별도 편성 · 실제 시험 전 현재 자격·합격률 확인",
-          "inheritLegacy": false
-        }
-      ],
-      "notes": [
-        {
-          "category": "육성 목적",
-          "text": "초반 대체·실전 예비"
-        },
-        {
-          "category": "레벨업 전",
-          "text": "Lv20에서 실전을 멈추고 중급 시험 · 기능 부족이면 레벨 대신 기술 훈련 · 평준화 직전에도 성장 병과 확인"
-        }
-      ],
-      "figures": [],
-      "curated": true,
-      "route": "dietrich"
-    },
-    {
-      "id": "ready-dietrich-catania",
-      "stage": "dietrich-plan",
-      "title": "9장 실제 합류 뒤 · 카타냐 육성 준비",
-      "people": [
-        "카타냐"
-      ],
-      "actions": [
-        {
-          "id": "ready-dietrich-catania--readiness-start",
-          "category": "육성 시작",
-          "text": "기능 준비·2부 교대 · 실제 합류 뒤 역할 수행 가능 여부 확인 · 이야기 전투 주력 강제 교체 없음 · 시험 레벨에 가까운데 필수 기능만 부족하면 던전 별도 편성 · 실제 시험 전 현재 자격·합격률 확인",
-          "inheritLegacy": false
-        }
-      ],
-      "notes": [
-        {
-          "category": "육성 목적",
-          "text": "기능 준비·2부 교대"
-        },
-        {
-          "category": "레벨업 전",
-          "text": "Lv20에서 실전을 멈추고 중급 시험 · 기능 부족이면 레벨 대신 기술 훈련 · 평준화 직전에도 성장 병과 확인"
-        }
-      ],
-      "figures": [],
-      "curated": true,
-      "route": "dietrich"
-    },
-    {
-      "id": "ready-dietrich-alexandra",
-      "stage": "dietrich-plan",
-      "title": "9장 실제 합류 뒤 · 알렉산드라 육성 준비",
-      "people": [
-        "알렉산드라"
-      ],
-      "actions": [
-        {
-          "id": "ready-dietrich-alexandra--readiness-start",
-          "category": "육성 시작",
-          "text": "추가 칸·역할 교대 · 실제 합류 뒤 역할 수행 가능 여부 확인 · 이야기 전투 주력 강제 교체 없음 · 시험 레벨에 가까운데 필수 기능만 부족하면 던전 별도 편성 · 실제 시험 전 현재 자격·합격률 확인",
-          "inheritLegacy": false
-        }
-      ],
-      "notes": [
-        {
-          "category": "육성 목적",
-          "text": "추가 칸·역할 교대"
-        },
-        {
-          "category": "레벨업 전",
-          "text": "Lv20에서 실전을 멈추고 중급 시험 · 기능 부족이면 레벨 대신 기술 훈련 · 평준화 직전에도 성장 병과 확인"
-        }
-      ],
-      "figures": [],
-      "curated": true,
-      "route": "dietrich"
-    },
-    {
-      "id": "ready-dietrich-ninae",
-      "stage": "dietrich-plan",
-      "title": "9장 실제 합류 뒤 · 리네 육성 준비",
-      "people": [
-        "리네"
-      ],
-      "actions": [
-        {
-          "id": "ready-dietrich-ninae--readiness-start",
-          "category": "육성 시작",
-          "text": "이야기 주력 · 실제 합류 뒤 역할 수행 가능 여부 확인 · 이야기 전투 주력 강제 교체 없음 · 시험 레벨에 가까운데 필수 기능만 부족하면 던전 별도 편성 · 실제 시험 전 현재 자격·합격률 확인",
-          "inheritLegacy": false
-        }
-      ],
-      "notes": [
-        {
-          "category": "육성 목적",
-          "text": "이야기 주력"
-        },
-        {
-          "category": "레벨업 전",
-          "text": "Lv20에서 실전을 멈추고 중급 시험 · 기능 부족이면 레벨 대신 기술 훈련 · 평준화 직전에도 성장 병과 확인"
-        }
-      ],
-      "figures": [],
-      "curated": true,
-      "route": "dietrich"
     },
     {
       "id": "di-13",
@@ -17962,6 +17994,12 @@
           "inheritLegacy": true
         },
         {
+          "id": "di-23--d20bb24be0",
+          "category": "미리 준비",
+          "text": "선더 소드가 부족할 때만: 디트리히 누조용 철의 활 2개를 준비한다.",
+          "inheritLegacy": true
+        },
+        {
           "id": "di-23--31e3d7caed",
           "category": "미리 준비",
           "text": "선더 소드 두 자루와 각 +1, 뇌석·회복 도구를 확인한다.",
@@ -18002,7 +18040,7 @@
         },
         {
           "category": "조건부 영입",
-          "text": "누조는 카이 루트에서만 영입한다."
+          "text": "누조는 12장 무렵 영입하면 선더 소드를 들고 온다. 반드시 영입한다. 영입만 한다. 출격·시험·훈련에 쓰지 않는다."
         }
       ],
       "curated": true
@@ -18174,6 +18212,12 @@
           "id": "di-24--c6621de22e",
           "category": "행동",
           "text": "선더 소드가 부족할 때만: 누조·제스터를 아직 안 데려왔으면 조건을 맞추고 늦은 영입 소지품의 선더 소드를 확인합니다.",
+          "inheritLegacy": true
+        },
+        {
+          "id": "di-24--584da4ce13",
+          "category": "행동",
+          "text": "선더 소드가 부족할 때만: 누조는 디트리히 기준 명성 9·지원 1·철의 활 2개를 준비합니다.",
           "inheritLegacy": true
         },
         {
@@ -18379,7 +18423,8 @@
         "하르빈",
         "라이선더",
         "시몬",
-        "무우"
+        "무우",
+        "누조"
       ],
       "actions": [
         {
@@ -19877,12 +19922,6 @@
           "category": "회복 영입",
           "text": "명성6·지원3·반짝반짝어1로 리네 스카우트 합류 확인 · 물고기는 탈것 먹이에 쓰지 않고 보관 · 백마술 C 중급 프리스트,B 리브로·비숍 준비",
           "inheritLegacy": false
-        },
-        {
-          "id": "cai-04--nujo-20261114",
-          "category": "영입",
-          "text": "명성 6·지원 2·철의 활 3개로 누조를 영입하고 동료 목록을 확인한다.",
-          "inheritLegacy": false
         }
       ],
       "figures": [
@@ -20454,26 +20493,6 @@
       ],
       "curated": true,
       "trainingChapter": "cai:6"
-    },
-    {
-      "id": "ready-cai-nuzzuo",
-      "title": "6장 실제 합류 뒤 · 누조 육성 시작",
-      "stage": "cai-plan",
-      "route": "cai",
-      "people": [
-        "누조"
-      ],
-      "notes": [],
-      "figures": [],
-      "curated": true,
-      "actions": [
-        {
-          "id": "ready-cai-nuzzuo--readiness-start",
-          "category": "육성 시작",
-          "text": "추가 칸·역할 교대 · 실제 합류 뒤 역할 수행 가능 여부 확인 · 이야기 전투 주력 강제 교체 없음 · 시험 레벨에 가까운데 필수 기능만 부족하면 던전 별도 편성 · 실제 시험 전 현재 자격·합격률 확인",
-          "inheritLegacy": false
-        }
-      ]
     },
     {
       "id": "ready-cai-seteth",
@@ -21576,26 +21595,6 @@
           "id": "ready-cai-seteth--readiness-middle",
           "category": "준비 확인",
           "text": "Lv20·경기병 확인 · Lv20 도달 시 중급 시험,이미 상급이면 이전 시험 생략",
-          "inheritLegacy": false
-        }
-      ]
-    },
-    {
-      "id": "ready-cai-nuzzuo-middle",
-      "title": "8장 주 전투 전 · 누조 준비",
-      "stage": "cai-plan",
-      "route": "cai",
-      "people": [
-        "누조"
-      ],
-      "notes": [],
-      "figures": [],
-      "curated": true,
-      "actions": [
-        {
-          "id": "ready-cai-nuzzuo--readiness-middle",
-          "category": "준비 확인",
-          "text": "Lv20·아처 확인 · Lv20 도달 시 중급 시험,이미 상급이면 이전 시험 생략",
           "inheritLegacy": false
         }
       ]
@@ -23782,26 +23781,6 @@
       ]
     },
     {
-      "id": "ready-cai-nuzzuo-skills",
-      "title": "12장 주 전투 전 · 누조 준비",
-      "stage": "cai-plan",
-      "route": "cai",
-      "people": [
-        "누조"
-      ],
-      "notes": [],
-      "figures": [],
-      "curated": true,
-      "actions": [
-        {
-          "id": "ready-cai-nuzzuo--readiness-skills",
-          "category": "준비 확인",
-          "text": "누조의 궁술 B를1부12장 주 전투 전까지 준비 · 출격하지 않는 예약 인물도 투기장·여관 훈련 유지",
-          "inheritLegacy": false
-        }
-      ]
-    },
-    {
       "id": "ready-cai-ninae-skills",
       "stage": "cai-plan",
       "route": "cai",
@@ -23820,6 +23799,50 @@
       "notes": [],
       "figures": [],
       "curated": true
+    },
+    {
+      "id": "recruit-all-cai-nujo-20261114",
+      "stage": "cai-plan",
+      "title": "12장 · 명성6·지원2 · 누조 영입(선더 소드 지참)",
+      "people": [
+        "누조"
+      ],
+      "actions": [
+        {
+          "id": "recruit-all-cai-nujo-20261114--cond",
+          "category": "조건 확인",
+          "text": "카이와 지원2·명성6를 확인한다. 12장 전에는 영입하지 않는다. 지원은 공유 수치라 앞 루트에서 올린 만큼 이어진다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "recruit-all-cai-nujo-20261114--need1",
+          "category": "영입 준비",
+          "text": "영입 전에 준비한다: 철의 활 3개(다그시온 무기점·행상인).",
+          "inheritLegacy": false
+        },
+        {
+          "id": "recruit-all-cai-nujo-20261114--scout",
+          "category": "스카우트",
+          "text": "지참품에 선더 소드가 있는지 본 뒤 누조에게 말을 걸어 스카우트를 고르고 요구를 전달한다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "recruit-all-cai-nujo-20261114--join",
+          "category": "합류 확인",
+          "text": "동료 목록에서 합류를 확인하고 선더 소드를 수송대에 보관한다.",
+          "inheritLegacy": false
+        }
+      ],
+      "figures": [],
+      "notes": [
+        {
+          "category": "지참품",
+          "text": "12장 무렵 영입하면 선더 소드를 들고 온다. 일찍 영입하면 없다. 영입 전에 지참품을 확인한다. 영입만 한다. 출격·시험·훈련에 쓰지 않는다."
+        }
+      ],
+      "curated": true,
+      "referenceLinks": [],
+      "route": "cai"
     },
     {
       "id": "team-cai-recruit-audit",
@@ -25595,7 +25618,6 @@
         "울턴드",
         "세테스",
         "녹투라",
-        "누조",
         "알렉산드라",
         "로레타",
         "리네"
@@ -29283,28 +29305,37 @@
       "retiredReason": "레벨 보충용 던전 반복에서 시험 직전 필수 기능 보충으로 변경"
     },
     {
-      "id": "di-11--117e3abb0f",
-      "category": "미리 준비",
-      "text": "선더 소드가 부족할 때만: 두 번째는 후반 누조 등의 영입 소지품을 계획한다.",
-      "inheritLegacy": true,
-      "parentTask": "di-11",
-      "retiredReason": "2026-11-14 영입 루트 재배정으로 제외. 체크 이력은 보존."
-    },
-    {
-      "id": "di-23--d20bb24be0",
-      "category": "미리 준비",
-      "text": "선더 소드가 부족할 때만: 디트리히 누조용 철의 활 2개를 준비한다.",
-      "inheritLegacy": true,
-      "parentTask": "di-23",
-      "retiredReason": "2026-11-14 영입 루트 재배정으로 제외. 체크 이력은 보존."
-    },
-    {
-      "id": "di-24--584da4ce13",
+      "id": "prep-mount-recruits--9612b4af26",
       "category": "행동",
-      "text": "선더 소드가 부족할 때만: 누조는 디트리히 기준 명성 9·지원 1·철의 활 2개를 준비합니다.",
+      "text": "이오가 이미 상급 자격을 가졌다면 낮은 병사로만 바꾸지 말고, 같은 상급의 비기병(헤비 아머 등)을 100% 시험으로 준비해 그 병종으로 완료합니다.",
       "inheritLegacy": true,
-      "parentTask": "di-24",
-      "retiredReason": "2026-11-14 영입 루트 재배정으로 제외. 체크 이력은 보존."
+      "parentTask": "prep-mount-recruits",
+      "retiredReason": "2026-11-14 영입 루트 재배정(누조 네 루트·이오 축소)으로 제외. 체크 이력은 보존."
+    },
+    {
+      "id": "leda-02--d613a9a411",
+      "category": "영입금",
+      "text": "이오의 명성6·레다와의 지원1 조건을 확인하고, 스카우트를 제안하기 직전 영입금800G를 남긴다. 피아나 비용은 이미 지급했다면 다시 남기지 않는다.",
+      "inheritLegacy": true,
+      "legacyParent": "leda-02",
+      "parentTask": "leda-05",
+      "retiredReason": "2026-11-14 영입 루트 재배정(누조 네 루트·이오 축소)으로 제외. 체크 이력은 보존."
+    },
+    {
+      "id": "mount-prep-leda--io-class",
+      "category": "이오 자격",
+      "text": "이오의 최고 합격 등급을 확인한다. 상급 자격이 있으면 같은 상급의 비기병 자격을100% 시험으로 준비한다. 중급까지만 있으면 비탑승 중급 자격을 사용한다. 이미 가진 자격은 다시 시험 보지 않는다.",
+      "inheritLegacy": false,
+      "parentTask": "mount-prep-leda",
+      "retiredReason": "2026-11-14 영입 루트 재배정(누조 네 루트·이오 축소)으로 제외. 체크 이력은 보존."
+    },
+    {
+      "id": "cai-04--nujo-20261114",
+      "category": "영입",
+      "text": "명성 6·지원 2·철의 활 3개로 누조를 영입하고 동료 목록을 확인한다.",
+      "inheritLegacy": false,
+      "parentTask": "cai-04",
+      "retiredReason": "2026-11-14 영입 루트 재배정(누조 네 루트·이오 축소)으로 제외. 체크 이력은 보존."
     }
   ],
   "retiredGroups": [
@@ -30164,33 +30195,6 @@
       "retiredReason": "네 1부를 먼저 완료하는 순서로 변경"
     },
     {
-      "id": "theo-recruit-nujo",
-      "stage": "theodora-plan",
-      "title": "9장 이후 · 명성6·지원1 뒤 누조 영입",
-      "people": [
-        "누조"
-      ],
-      "actions": [
-        {
-          "id": "theo-recruit-nujo--join",
-          "category": "등장·조건 뒤 영입",
-          "text": "선더 소드가 부족할 때만: 9장 이후 누조가 실제 활동 명단에 있는지 확인한다. 명성6·세오도라와 지원1·철의 활3개를 갖춘 뒤 스카우트하고 합류를 확인한다. 다른 루트의 철의 활 수량을 가져오지 않는다.",
-          "inheritLegacy": false
-        }
-      ],
-      "notes": [
-        {
-          "category": "조건부 영입",
-          "text": "누조는 카이 루트에서만 영입한다."
-        }
-      ],
-      "figures": [],
-      "curated": true,
-      "earliestChapter": 9,
-      "requiredRenown": 6,
-      "retiredReason": "2026-11-14 영입 루트 재배정으로 제외. 체크 이력은 보존."
-    },
-    {
       "id": "recruit-all-theodora-benditz-20261112",
       "stage": "theodora-plan",
       "title": "10장 무렵 · 명성8·지원1 뒤 밴디츠 영입(지원 대화)",
@@ -30269,6 +30273,99 @@
       "notes": [],
       "curated": true,
       "retiredReason": "2026-11-14 영입 루트 재배정으로 제외. 체크 이력은 보존."
+    },
+    {
+      "id": "recruit-theodora-io",
+      "stage": "theodora-plan",
+      "title": "실제 명성10·지원3 뒤 · 이오 교섭",
+      "people": [
+        "이오"
+      ],
+      "actions": [
+        {
+          "id": "prep-mount-recruits--9f6f8e979b",
+          "category": "영입금",
+          "text": "실제 명성10·세오도라와 지원3을 채워 이오와 교섭하기 직전에 화면 요구금을 확인한다. 기본4,000G까지 준비하고,800G는 교섭으로 그 금액이 실제 확정됐을 때만 적용한다. 이미 영입했다면 다시 지급하지 않는다.",
+          "inheritLegacy": true,
+          "legacyParent": "prep-mount-recruits"
+        },
+        {
+          "id": "recruit-theodora-io--join",
+          "category": "영입",
+          "text": "실제 명성10·지원3과 교섭 화면 요구금을 갖췄을 때 이오를 영입하고 동료 목록을 확인한다. 기본4,000G와 교섭 성공800G를 구분한다.11장 진입만으로 조건 충족을 가정하지 않고1부 종료 전 합류를 확인한다.",
+          "inheritLegacy": false
+        }
+      ],
+      "notes": [],
+      "figures": [],
+      "showMap": false,
+      "curated": true,
+      "earliestChapter": 5,
+      "requiredRenown": 10,
+      "retiredReason": "2026-11-14 영입 루트 재배정(누조 네 루트·이오 축소)으로 제외. 체크 이력은 보존."
+    },
+    {
+      "id": "ready-cai-nuzzuo",
+      "title": "6장 실제 합류 뒤 · 누조 육성 시작",
+      "stage": "cai-plan",
+      "route": "cai",
+      "people": [
+        "누조"
+      ],
+      "notes": [],
+      "figures": [],
+      "curated": true,
+      "actions": [
+        {
+          "id": "ready-cai-nuzzuo--readiness-start",
+          "category": "육성 시작",
+          "text": "추가 칸·역할 교대 · 실제 합류 뒤 역할 수행 가능 여부 확인 · 이야기 전투 주력 강제 교체 없음 · 시험 레벨에 가까운데 필수 기능만 부족하면 던전 별도 편성 · 실제 시험 전 현재 자격·합격률 확인",
+          "inheritLegacy": false
+        }
+      ],
+      "retiredReason": "2026-11-14 영입 루트 재배정(누조 네 루트·이오 축소)으로 제외. 체크 이력은 보존."
+    },
+    {
+      "id": "ready-cai-nuzzuo-middle",
+      "title": "8장 주 전투 전 · 누조 준비",
+      "stage": "cai-plan",
+      "route": "cai",
+      "people": [
+        "누조"
+      ],
+      "notes": [],
+      "figures": [],
+      "curated": true,
+      "actions": [
+        {
+          "id": "ready-cai-nuzzuo--readiness-middle",
+          "category": "준비 확인",
+          "text": "Lv20·아처 확인 · Lv20 도달 시 중급 시험,이미 상급이면 이전 시험 생략",
+          "inheritLegacy": false
+        }
+      ],
+      "retiredReason": "2026-11-14 영입 루트 재배정(누조 네 루트·이오 축소)으로 제외. 체크 이력은 보존."
+    },
+    {
+      "id": "ready-cai-nuzzuo-skills",
+      "title": "12장 주 전투 전 · 누조 준비",
+      "stage": "cai-plan",
+      "route": "cai",
+      "people": [
+        "누조"
+      ],
+      "notes": [],
+      "figures": [],
+      "curated": true,
+      "actions": [
+        {
+          "id": "ready-cai-nuzzuo--readiness-skills",
+          "category": "준비 확인",
+          "text": "누조의 궁술 B를1부12장 주 전투 전까지 준비 · 출격하지 않는 예약 인물도 투기장·여관 훈련 유지",
+          "inheritLegacy": false
+        }
+      ],
+      "retiredReason": "2026-11-14 영입 루트 재배정(누조 네 루트·이오 축소)으로 제외. 체크 이력은 보존."
     }
   ]
 }

@@ -18,8 +18,8 @@ for(const id of Object.keys(overrides.actions))assert.ok(playbook.groups.some(g=
 const parity=read('content/display-parity.json');
 const ids=read('content/check-ids.json');
 const hash=p=>createHash('sha256').update(readFileSync(p)).digest('hex');
-assert.equal(playbook.groups.flatMap(g=>g.actions).length,1892);
-assert.equal(new Set(ids).size,2867);
+assert.equal(playbook.groups.flatMap(g=>g.actions).length,1896);
+assert.equal(new Set(ids).size,2878);
 assert.equal(read('content/data/recruit-all-plan.json').assignments.length,63);
 assert.equal(playbook.stages.length,9);
 {const old=read('content/source/react-content.json');assert.deepEqual(new Set(ids),new Set(old.allTaskIds));const actionIds=[...old.stages.flatMap(s=>s.blocks.flatMap(b=>[...b.html.matchAll(/data-task-id="([^"]+)"/g)].map(m=>m[1])))];assert.deepEqual(new Set(actionIds),new Set(playbook.groups.flatMap(g=>g.actions.map(a=>a.id))));}
@@ -73,6 +73,12 @@ const seed=read('content/checklist-seed.json');assert.deepEqual(validateChecks(J
   for(const p of pc.pairs.filter(p=>['해결','위험'].includes(p.status))){const [a,b]=p.pair.split('–');assert.ok(p.routes.some(r=>inRoute(r,a)&&inRoute(r,b)),'덮개 '+p.pair);}
   // 명단 두 곳이 같다. 합류 확인 묶음은 12장에 있다.
   const fr=read('content/data/final-roster.json');for(const r of ['theodora','leda','dietrich','cai']){assert.deepEqual(fr.recruitByRoute[r],pc.routeRoster[r],r+' recruitByRoute=routeRoster');assert.equal(chapterOf(r+'-plan',`team-${r}-recruit-audit`),'12장',r+' 합류 확인 12장');}
+  // 4·5판: 누조는 네 루트 12장(선더 소드), 이오는 디트리히·카이만, 레다 제스터·골라이어스는 10장, 디트리히 7장 합류 육성 묶음은 7장.
+  for(const r of ['theodora','leda','dietrich','cai'])assert.ok(pc.routeRoster[r].includes('누조'),r+' 누조');
+  for(const r of ['theodora','leda'])assert.ok(!pc.routeRoster[r].includes('이오'),r+' 이오 없음');
+  assert.ok(!Object.hasOwn(read('content/cai-charioteer.json').people,'누조'),'누조는 전차병 아님');
+  for(const [st,id,ch] of [['theodora-plan','theo-recruit-nujo','12장'],['leda-plan','recruit-all-leda-nujo-20261114','12장'],['cai-plan','recruit-all-cai-nujo-20261114','12장'],['leda-plan','recruit-all-leda-jester-20261112','10장'],['leda-plan','recruit-all-leda-goliath-20261112','10장'],['dietrich-plan','ready-dietrich-catania','7장'],['dietrich-plan','di-13','9장']])assert.equal(chapterOf(st,id),ch,`${id} ${ch}`);
+  for(const g of playbook.groups)for(const a of g.actions)assert.ok(!shown(g,a).includes('누조는 카이 루트에서만'),a.id+' 누조 카이 전용 문구');
   // 은퇴한 행동 ID도 체크 ID 목록에 남는다(체크 기록 보존).
   for(const a of [...playbook.retiredActions,...playbook.retiredGroups.flatMap(g=>g.actions)])assert.ok(ids.includes(a.id),'은퇴 ID 보존 '+a.id);
   const seed=read('content/checklist-seed.json'),checkedIds=Object.entries(seed.checks||{}).filter(([,v])=>v).map(([k])=>k);
@@ -81,4 +87,4 @@ const seed=read('content/checklist-seed.json');assert.deepEqual(validateChecks(J
 // 장 묶음에는 그 장의 할 일만(2026-11-14 사용자 지시). 제목이 "현재 7장", "레다 2부 3장", "3부 2구간"처럼 장으로 시작하면 그 장에 있어야 한다.
 {const {chapterTitle}=await import('./checklist-source.mjs');for(const [t,c] of [['현재 7장 · Lv17 신규 4명 따라잡기','7장'],['레다 2부 3장 · 실제 미달에 맞춘 군행동','3장'],['3부 2구간 · 골드','2구간'],['11~12장 · 티아라 영입 일정 점검','11장'],['축복 준비 뒤 · 레다 1장 시작','시작 전'],['6장 이후 선택 · 8장 군비증강 미리 대비','6장']])assert.equal(chapterTitle(t,c==='시작 전'?'시작 전':c==='11장'?'10장':c==='6장'?'6장':'0장'),c,t);}
 for(const st of read('content/derived/checklist.json').stages)for(const ch of st.chapters)for(const b of ch.blocks){const m=b.title.match(/^(?:현재\s*)?(?:(?:세오도라|레다|디트리히|카이)\s*)?(?:\d+부\s*)?(\d+)(?:~\d+)?\s*(장|구간)/);if(m)assert.equal(ch.title,m[1]+m[2],`${st.id} ${b.title}이 ${ch.title}에 있음`);}
-console.log(JSON.stringify({status:'passed',host:'Windows / Node.js',activeActions:1892,checkIds:2867,recruitAssignments:63,referenceDocs:318,peopleByStage:manifest.peopleByStage,sourceFiles:manifest.sourceFiles.length,referencedMedia:media.size,sourceCompared:'content/source 사본',checks:'개별 false 우선·상속 거부·형식 검사·JSON 왕복 통과'},null,2));
+console.log(JSON.stringify({status:'passed',host:'Windows / Node.js',activeActions:1896,checkIds:2878,recruitAssignments:63,referenceDocs:318,peopleByStage:manifest.peopleByStage,sourceFiles:manifest.sourceFiles.length,referencedMedia:media.size,sourceCompared:'content/source 사본',checks:'개별 false 우선·상속 거부·형식 검사·JSON 왕복 통과'},null,2));

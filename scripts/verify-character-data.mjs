@@ -12,7 +12,7 @@ for(const [route,people]of Object.entries(goals))for(const [name,phases]of Objec
 for(const [route,name,part,classes]of paths)for(const c of classes){assert.ok(manifest[c],`${route}/${name} ${part}부 병종 그림 없음: ${c}`);assert.ok(details[c],`${route}/${name} ${part}부 시험 자료 없음: ${c}`);}
 for(const [name,phases]of Object.entries(cai.people)){assert.ok(goals.cai[name],`카이 루트 인물 아님: ${name}`);assert.ok(!cai.excluded.includes(name));assert.ok(phases['1'].classes.includes('전차병')&&phases['2'].classes.includes('전차병'),`${name} 전차병 경로`);assert.equal(phases['2'].next,goals.cai[name]['3'].classes.at(-1),`${name} 3부 최종 병종 유지`);}
 for(const name of cai.excluded)assert.ok(goals.cai[name]['1'].classes.some(c=>/프리스트|비숍/.test(c)),`${name} 마법·회복 담당`);
-for(const [name,phases]of Object.entries(goals.cai))if(!cai.excluded.includes(name)&&!['알렉산드라'].includes(name)){const c=[...(cai.people[name]?.['1']?.classes||phases['1'].classes),...(cai.people[name]?.['2']?.classes||phases['2'].classes)];assert.ok(c.includes('전차병'),`카이 루트 ${name}은 전차병 경로가 있어야 함`);}
+for(const [name,phases]of Object.entries(goals.cai))if(!cai.excluded.includes(name)&&!['알렉산드라','누조'].includes(name)){const c=[...(cai.people[name]?.['1']?.classes||phases['1'].classes),...(cai.people[name]?.['2']?.classes||phases['2'].classes)];assert.ok(c.includes('전차병'),`카이 루트 ${name}은 전차병 경로가 있어야 함`);}
 // 빈 값은 알려진 목록과 같아야 한다: 신장직은 레벨·명성 없음, 최상급직은 명성 없음, 상급직은 아래 5개만 명성 없음.
 const blank=v=>!v||v==='–'||v==='-';
 const noRenown=Object.entries(details).filter(([,d])=>blank(d.renown)).map(([c])=>c),noLevel=Object.entries(details).filter(([,d])=>blank(d.recommendedLevel)).map(([c])=>c);

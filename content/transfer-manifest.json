@@ -34,7 +34,7 @@
     {
       "source": "data/chapter-gold.json",
       "target": "content/data/chapter-gold.json",
-      "sha256": "6e0356cfbba956cbc45be15fae29f7405aa061b15adbd80cdec9ba79a4762e74"
+      "sha256": "cf0e4c47bd1b1fc24e2ee73b997d64b93f42bd44aaddd5ee802b9ccc26962d47"
     },
     {
       "source": "data/chapter-progression.json",
@@ -64,7 +64,7 @@
     {
       "source": "data/final-roster.json",
       "target": "content/data/final-roster.json",
-      "sha256": "b43ac8aba91bc02be4ac7d6d26741bf588f13a2fa94c6d9dc43f39c04234095f"
+      "sha256": "cca4140cd6b11accdae5125c7a371c0564793dfe02fd66b72858f54b3b7dfdb3"
     },
     {
       "source": "data/god-service-plan.json",
@@ -104,12 +104,12 @@
     {
       "source": "data/phase-goals.json",
       "target": "content/data/phase-goals.json",
-      "sha256": "2119da94bf6c62b65f6847f35d2e872620d5ef586a1d4173f4c0551643eac7d0"
+      "sha256": "6818624c1dbd96d08fc7e6ce69b6b9390d3b77353572ae07a860a8013d479918"
     },
     {
       "source": "data/playbook.json",
       "target": "content/data/playbook.json",
-      "sha256": "246a85c8860fb03104e2824198450c162c99dc95bdd03b5cba4552501219c80c"
+      "sha256": "d672e0580a5e4215edd620847f3a42b95c5bdfee811735aba15566b9dd60b705"
     },
     {
       "source": "data/purchase-plan.json",
@@ -124,7 +124,7 @@
     {
       "source": "data/recruit-all-plan.json",
       "target": "content/data/recruit-all-plan.json",
-      "sha256": "b833977ff1a5bec01d797ff7bb9530a44392bf78a26929bb02a6c0237b304b2e"
+      "sha256": "706a526d179b5b6ecead2c922e57b1cadcc8889b0d7ef46ae28523571d7fe805"
     },
     {
       "source": "data/recruit-materials.json",
@@ -154,7 +154,7 @@
     {
       "source": "data/roster-selection.json",
       "target": "content/data/roster-selection.json",
-      "sha256": "7300db9d5fdc9524be152e3fd3c14a58d97ccd3c2232890bc21fb45b12d495e6"
+      "sha256": "03c76af6dbecdaf5c6608081fb3105261bfaed8da592f7c2ce7f4ebe648d82b4"
     },
     {
       "source": "data/sequential-training-plan.json",
@@ -1069,7 +1069,7 @@
     {
       "source": "notes/knowledge/preferences.md",
       "target": "content/notes/knowledge/preferences.md",
-      "sha256": "6499af5129b39005fcbdad351345099614f9fda67e61445d14ddb77390f9e19f"
+      "sha256": "f0d46bbd5d6779159c0ea7fd8b7c230e685063175b8ab635b169e6be1401f79b"
     },
     {
       "source": "notes/knowledge/README.md",
@@ -2059,7 +2059,7 @@
     {
       "source": "personalized-app/src/content.json",
       "target": "content/source/react-content.json",
-      "sha256": "d83cfc89ea6d5c70eec255ce23c43087df57f08e0a7904a47707d97186e7b42a"
+      "sha256": "64be0242efbe598c71781c62cec9c4f58d8b1bac5dcc397c29fe720a592d6fa5"
     },
     {
       "source": "personalized-app/src/timeskip-portraits.json",
@@ -2232,9 +2232,9 @@
       "sha256": "b6601f69a8318359991d5fadc11c27348b0df451ecddba9df142e5f979e508ca"
     }
   ],
-  "generatedSourceSha256": "d83cfc89ea6d5c70eec255ce23c43087df57f08e0a7904a47707d97186e7b42a",
-  "activeActions": 1892,
-  "checkIds": 2867,
+  "generatedSourceSha256": "64be0242efbe598c71781c62cec9c4f58d8b1bac5dcc397c29fe720a592d6fa5",
+  "activeActions": 1896,
+  "checkIds": 2878,
   "peopleByRoute": {
     "theodora": 16,
     "leda": 16,
@@ -2256,9 +2256,9 @@
   "referenceDocs": 318,
   "oldBlockCounts": {
     "theodora-plan": 180,
-    "leda-plan": 178,
+    "leda-plan": 179,
     "dietrich-plan": 200,
-    "cai-plan": 171,
+    "cai-plan": 169,
     "theodora-war-plan": 17,
     "leda-war-plan": 24,
     "dietrich-war-plan": 16,
