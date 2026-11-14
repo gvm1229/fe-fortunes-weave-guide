@@ -482,3 +482,5 @@ img.final25-portrait,:is(.app-shell,.team-page,.sheet) img.final25-portrait,.dar
 @media(max-width:767px){.route-head .jump-next{min-inline-size:48px}}
 /* 768~1099px: 테마 버튼까지 한 줄에 안 들어가므로 휴대폰처럼 두 줄(위: 진행·테마, 아래: 도구). */
 @media(min-width:768px) and (max-width:1099px){.route-head-bar{flex-wrap:wrap;gap:8px 16px}.route-head .banner-progress{flex:1 1 0;order:0}.route-theme{order:1}.route-head .check-toolbar{flex:1 1 100%;order:2;justify-content:flex-end}}
+/* 360px에서도 도구 한 줄(검토 9 재검토 R1: 1px 모자라 셋째 줄로 떨어짐). */
+@media(max-width:399px){.route-head .check-toolbar{gap:4px}}

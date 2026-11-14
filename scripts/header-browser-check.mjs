@@ -26,6 +26,7 @@ try {
     assert.ok(head.font >= 18, '완료 숨기기 글자 18px 이상');
     for (const q of head.parts) { assert.ok(q.l >= head.inner.l && q.r <= head.inner.r && q.t >= head.top - 1 && q.b <= head.bottom + 1, `${w} ${q.s} 머리 밖`); if (q.s !== '.route-head .chapter-picker' && q.s !== '.route-head .check-control') assert.ok(q.w >= 44, `${q.s} 누를 폭`); }
     for (let i = 0; i < head.parts.length; i++) for (let j = i + 1; j < head.parts.length; j++) { const a = head.parts[i], b = head.parts[j]; assert.ok(a.r <= b.l + 0.5 || b.r <= a.l + 0.5 || a.b <= b.t + 0.5 || b.b <= a.t + 0.5, `${w} ${a.s}·${b.s} 겹침`); }
+    const toolTops = head.parts.filter(q => q.s !== '.route-theme .icon-button').map(q => Math.round(q.t)); assert.ok(Math.max(...toolTops) - Math.min(...toolTops) <= 2, `${w} 도구가 한 줄이 아님`);
     assert.equal(head.outline, red, '최종 25인 테두리 빨강');
     const tt = p.locator('.to-top'); assert.equal(await tt.getAttribute('data-shown'), 'true', '맨 위로 보임');
     const box = await tt.boundingBox(); assert.ok(box.x + box.width <= w && box.y + box.height <= h && Math.abs(box.width - box.height) < 1, '맨 위로 위치');

@@ -60,7 +60,8 @@ async function measure(page,scene){
       brokenImages:images.filter(e=>!e.naturalWidth).map(e=>e.src),chipSizes,completed,partialLines,sourceCounts,duplicateChipIcons,
       orphanStatusLines:document.querySelectorAll('.tasks-main>.save-status:not(.error)').length,
       certificateNoticeInTasks:[...document.querySelectorAll('.tasks-main .info-notice')].some(e=>e.textContent.includes('증서 수량은 준비 슬롯')),
-      saveInToolbar:!!save,saveRightOfProgress:save&&bar?rect(save).left>=rect(bar).right:null,
+      saveInToolbar:!!save,saveRightOfProgress:save&&bar?(rect(save).left>=rect(bar).right||rect(save).top>=rect(bar).bottom):null,// 768~1099px는 머리가 두 줄이라 저장 표시가 진행 줄 아래(2026-11-14)
+
       zeroChips:[...document.querySelectorAll('.person .tags>span')].map(e=>e.textContent).filter(s=>/^(지원|명성)\s*0$/.test(s.trim())),
       rawTierRows:personRows.filter(e=>e.querySelector('th')?.textContent==='가입 단계'&&/^\d+$/.test(e.querySelector('td')?.textContent.trim()||'')).map(e=>e.textContent),
       tierLabels:[...new Set(personRows.filter(e=>e.querySelector('th')?.textContent==='가입 단계').map(e=>e.querySelector('td').textContent))],
