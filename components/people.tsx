@@ -44,7 +44,6 @@ function pairs(person:Person,part:string,summaryText:string[],classes:Record<str
   // 영입 조건·가입 병종·합류 순서는 쌍 하나로(쌍 수 줄이기).
   add('영입·합류',...((Array.isArray(person.gates)?person.gates:[]) as Record<string,unknown>[]).map(g=>lab('영입 조건',words(g.localCondition))),lab('가입 병종',words((person.recruitment as Record<string,unknown>|undefined)?.init)),lab('합류 순서',words(ready.joinSteps)));
   if(part==='1'&&!d.avoid&&!d.charioteer)add('경로 안내',words(goal.pathNotes));
-  if(person.gifts.length)add('선물',person.gifts.join(' · '));
   const seen=new Set(summaryText.map(norm));
   return list.map(p=>({...p,lines:p.lines.filter(l=>{const k=norm(l.replace(/^[^:]{1,12}: /,''));if(seen.has(k)&&!p.keep)return false;seen.add(k);return true;})})).filter(p=>p.lines.length);
 }
@@ -63,6 +62,8 @@ export function PersonInfo({person,classes,part="1",onDoc,openKey}:{person:Perso
     {!d.avoid&&<tr><th scope="row">필요 기능</th><td>{d.skills.length?<ul className="skill-chips">{d.skills.map(s=><li key={s.skill+s.target}><Skill name={s.skill}/> <strong>{s.target}</strong> <Badge variant={s.kind==='주력'?'strong':'default'}>{s.kind}</Badge></li>)}</ul>:'없음'}</td></tr>}
     <tr><th scope="row">목표</th><td><ul className="summary-points">{goals.map((line,i)=><li key={i}><strong><GameText text={line} withSkills part={part} skip={self}/></strong></li>)}</ul></td></tr>
     <tr><th scope="row">멈출 때</th><td><ul className="summary-points">{summary.stop.map((line,i)=><li key={i}><GameText text={line} part={part} skip={self}/></li>)}</ul></td></tr>
+    {/* 선물: 싸게 살 수 있는 선호 선물과 비싼 선물. 지원 대화를 모두 보려고 지원 1 영입 동료도 보여 준다(2026-11-14 사용자 지시). */}
+    {(person.cheapGifts.length>0||person.gifts.length>0)&&<tr><th scope="row">선물</th><td>{person.cheapGifts.length>0&&<><p className="gift-label">싸게 살 수 있는 선물</p><ul className="gift-chips">{person.cheapGifts.map(g=><li key={g.name}><span className="game-badge" data-kind="gift">{g.icon&&<img src={'/'+g.icon} alt="" loading="lazy"/>}<span className="badge-label">{g.name}</span>{g.cost!=null&&<b className="badge-value">{g.cost.toLocaleString('en-US')}G</b>}</span>{g.reaction==='매우 좋아함'&&<Badge>매우 좋아함</Badge>}</li>)}</ul></>}{person.gifts.length>0&&<><p className="gift-label">비싼 선물</p><p>{person.gifts.join(' · ')}</p></>}</td></tr>}
     {!!summary.caution.length&&<tr><th scope="row">보존 주의</th><td>{summary.caution.map(line=><strong key={line}>{line}</strong>)}</td></tr>}
     </tbody></table>
     <Accordion type="multiple" className="person-more" value={mine.map(k=>k.slice(person.name.length+1))} onValueChange={v=>setOpen(prev=>[...prev.filter(k=>!k.startsWith(person.name+':')),...v.map(k=>person.name+':'+k)])}>

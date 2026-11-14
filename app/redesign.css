@@ -346,6 +346,8 @@ summary::-webkit-details-marker{display:none}
 .game-badge>svg{inline-size:20px;block-size:20px;flex-shrink:0;color:var(--badge-ink);fill:none;stroke-width:1.8;margin:0}
 .game-badge>img{display:inline-block!important;inline-size:22px!important;block-size:22px!important;object-fit:contain;flex-shrink:0;margin:0!important}
 .game-badge[data-kind=person]>img{inline-size:24px!important;block-size:24px!important;border-radius:6px}
+/* 인물 카드·시트의 선물 칸 */
+.gift-label{margin:0 0 6px;font-weight:600}.gift-label:not(:first-child){margin-block-start:12px}.gift-chips{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}.gift-chips>li{display:inline-flex;flex-wrap:wrap;align-items:center;gap:6px;max-inline-size:100%}.game-badge[data-kind=gift]{--badge-bg:var(--badge-item);--badge-ink:var(--badge-item-ink);white-space:normal}.game-badge[data-kind=gift]>img{inline-size:24px;block-size:24px;object-fit:contain}
 .game-badge .badge-value{font-weight:700;font-variant-numeric:tabular-nums}
 @supports (text-box:trim-both cap alphabetic){.game-badge>.badge-label,.game-badge>.badge-value{text-box:trim-both cap alphabetic}}
 [data-complete=true] .game-badge{opacity:.75}
@@ -453,3 +455,13 @@ html{scroll-padding-top:var(--task-header-height,0px)}
 /* 최종 25인 범위(최종 25명 + 교체 후보): 할 일·인물 시트 초상화에 4px 금색 테두리, 인물 시트에 금색 배지(2026-11-14 사용자 지시). 테두리는 그림 안쪽에 그려 옆 요소를 밀지 않는다. */
 img.final25-portrait,:is(.app-shell,.team-page,.sheet) img.final25-portrait,.dark :is(.app-shell,.team-page,.sheet) img.final25-portrait[src]{outline:4px solid var(--badge-gold-ink);outline-offset:-4px}
 .final25-badge{display:inline-flex;align-items:center;min-block-size:28px;padding:2px 10px;border-radius:8px;background:var(--badge-gold);color:var(--badge-gold-ink);font-size:18px;font-weight:700}
+/* 고정 머리의 완료 숨기기(2026-11-14) */
+.route-head .check-control{display:inline-flex;align-items:center;gap:8px;min-block-size:48px;margin:0;white-space:nowrap;color:var(--text);cursor:pointer}
+.route-head .check-control input{inline-size:24px;block-size:24px;margin:0}
+@media(max-width:767px){.route-head .check-control{gap:6px}.route-head .check-control-label{font-size:16px}}
+/* 맨 위로 버튼: 오른쪽 아래 둥근 아이콘 버튼 */
+.to-top{position:fixed;inset-block-end:24px;inset-inline-end:24px;z-index:40;display:grid;place-items:center;inline-size:56px;block-size:56px;border:0;border-radius:50%;background:var(--primary);color:var(--primary-fg);box-shadow:0 4px 16px rgb(0 0 0/.25);cursor:pointer;opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .2s,transform .2s,visibility .2s}
+.to-top[data-shown=true]{opacity:1;visibility:visible;transform:none}
+.to-top:focus-visible{outline:3px solid var(--text);outline-offset:3px}
+@media(max-width:767px){.to-top{inset-block-end:16px;inset-inline-end:16px;inline-size:52px;block-size:52px}}
+@media(prefers-reduced-motion:reduce){.to-top{transition:none}}
