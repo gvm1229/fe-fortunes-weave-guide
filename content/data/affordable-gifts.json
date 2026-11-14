@@ -646,6 +646,258 @@
       ],
       "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
       "source": "https://yuphastemple.com/bonaventure/"
+    },
+    "자코네": {
+      "cheap": [
+        "odd-vegetable-seeds",
+        "history-of-a-master",
+        "pickled-bulbs",
+        "pickled-vegetables",
+        "potted-vegetables",
+        "protection-figurine"
+      ],
+      "reactions": {
+        "odd-vegetable-seeds": "매우 좋아함",
+        "history-of-a-master": "매우 좋아함",
+        "pickled-bulbs": "좋아함",
+        "pickled-vegetables": "좋아함",
+        "potted-vegetables": "좋아함",
+        "protection-figurine": "좋아함"
+      },
+      "owned": [],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/zarcone/"
+    },
+    "누디누": {
+      "cheap": [
+        "history-of-a-master",
+        "kitten-figurine",
+        "saraminian-sweets",
+        "sharp-fishhook",
+        "pastry-cookbook",
+        "protection-figurine"
+      ],
+      "reactions": {
+        "history-of-a-master": "매우 좋아함",
+        "kitten-figurine": "좋아함",
+        "saraminian-sweets": "좋아함",
+        "sharp-fishhook": "좋아함",
+        "pastry-cookbook": "좋아함",
+        "protection-figurine": "좋아함"
+      },
+      "owned": [],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/nydine/"
+    },
+    "대도": {
+      "cheap": [
+        "coffee-pastries",
+        "fragrant-pastries",
+        "honey-pastries",
+        "mellow-pastries",
+        "simple-pastries",
+        "jamel-milk"
+      ],
+      "reactions": {
+        "coffee-pastries": "좋아함",
+        "fragrant-pastries": "좋아함",
+        "honey-pastries": "좋아함",
+        "mellow-pastries": "좋아함",
+        "simple-pastries": "좋아함",
+        "jamel-milk": "좋아함"
+      },
+      "owned": [],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/dadao/"
+    },
+    "나타": {
+      "cheap": [
+        "odd-vegetable-seeds",
+        "history-of-a-master",
+        "pickled-bulbs",
+        "pickled-vegetables",
+        "potted-vegetables",
+        "protection-figurine"
+      ],
+      "reactions": {
+        "odd-vegetable-seeds": "매우 좋아함",
+        "history-of-a-master": "매우 좋아함",
+        "pickled-bulbs": "좋아함",
+        "pickled-vegetables": "좋아함",
+        "potted-vegetables": "좋아함",
+        "protection-figurine": "좋아함"
+      },
+      "owned": [],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/nezha/"
+    },
+    "디에고": {
+      "cheap": [
+        "history-of-a-master",
+        "crimson-ghosh",
+        "protection-figurine",
+        "school-scandal",
+        "antique-medal",
+        "bow-repair-kit"
+      ],
+      "reactions": {
+        "history-of-a-master": "매우 좋아함",
+        "crimson-ghosh": "좋아함",
+        "protection-figurine": "좋아함",
+        "school-scandal": "좋아함",
+        "antique-medal": "좋아함",
+        "bow-repair-kit": "좋아함"
+      },
+      "owned": [],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/diego/"
+    },
+    "키로이카": {
+      "cheap": [
+        "coffee-pastries",
+        "rare-southern-seeds",
+        "young-ghosh",
+        "brined-fish-guts",
+        "common-coffee",
+        "history-of-a-master"
+      ],
+      "reactions": {
+        "coffee-pastries": "좋아함",
+        "rare-southern-seeds": "좋아함",
+        "young-ghosh": "좋아함",
+        "brined-fish-guts": "좋아함",
+        "common-coffee": "좋아함",
+        "history-of-a-master": "매우 좋아함"
+      },
+      "owned": [],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/kiroc/"
+    },
+    "골라이어스": {
+      "cheap": [
+        "young-ghosh",
+        "brined-fish-guts",
+        "history-of-a-master",
+        "light-shosh",
+        "mature-ghosh",
+        "meaty-delicacy"
+      ],
+      "reactions": {
+        "young-ghosh": "좋아함",
+        "brined-fish-guts": "좋아함",
+        "history-of-a-master": "매우 좋아함",
+        "light-shosh": "좋아함",
+        "mature-ghosh": "좋아함",
+        "meaty-delicacy": "좋아함"
+      },
+      "owned": [],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/goliath/"
+    },
+    "양계": {
+      "cheap": [
+        "coffee-pastries",
+        "young-ghosh",
+        "brined-fish-guts",
+        "common-coffee",
+        "history-of-a-master",
+        "kitten-figurine"
+      ],
+      "reactions": {
+        "coffee-pastries": "좋아함",
+        "young-ghosh": "좋아함",
+        "brined-fish-guts": "좋아함",
+        "common-coffee": "좋아함",
+        "history-of-a-master": "매우 좋아함",
+        "kitten-figurine": "좋아함"
+      },
+      "owned": [],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/yang-jie/"
+    },
+    "밴디츠": {
+      "cheap": [
+        "coffee-pastries",
+        "common-coffee",
+        "history-of-a-master",
+        "select-coffee",
+        "orgus-coffee",
+        "southern-coffee"
+      ],
+      "reactions": {
+        "coffee-pastries": "좋아함",
+        "common-coffee": "좋아함",
+        "history-of-a-master": "매우 좋아함",
+        "select-coffee": "좋아함",
+        "orgus-coffee": "좋아함",
+        "southern-coffee": "좋아함"
+      },
+      "owned": [],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/benditz/"
+    },
+    "시몬": {
+      "cheap": [
+        "odd-vegetable-seeds",
+        "history-of-a-master",
+        "pickled-bulbs",
+        "pickled-vegetables",
+        "sharp-fishhook",
+        "crimson-ghosh"
+      ],
+      "reactions": {
+        "odd-vegetable-seeds": "좋아함",
+        "history-of-a-master": "매우 좋아함",
+        "pickled-bulbs": "좋아함",
+        "pickled-vegetables": "좋아함",
+        "sharp-fishhook": "좋아함",
+        "crimson-ghosh": "좋아함"
+      },
+      "owned": [],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/simon/"
+    },
+    "마지데": {
+      "cheap": [
+        "young-ghosh",
+        "brined-fish-guts",
+        "history-of-a-master",
+        "light-shosh",
+        "mature-ghosh",
+        "meaty-delicacy"
+      ],
+      "reactions": {
+        "young-ghosh": "좋아함",
+        "brined-fish-guts": "좋아함",
+        "history-of-a-master": "매우 좋아함",
+        "light-shosh": "좋아함",
+        "mature-ghosh": "좋아함",
+        "meaty-delicacy": "좋아함"
+      },
+      "owned": [],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/majide/"
+    },
+    "페페": {
+      "cheap": [
+        "coffee-pastries",
+        "odd-vegetable-seeds",
+        "rare-southern-seeds",
+        "brined-fish-guts",
+        "common-coffee",
+        "history-of-a-master"
+      ],
+      "reactions": {
+        "coffee-pastries": "좋아함",
+        "odd-vegetable-seeds": "매우 좋아함",
+        "rare-southern-seeds": "매우 좋아함",
+        "brined-fish-guts": "좋아함",
+        "common-coffee": "좋아함",
+        "history-of-a-master": "매우 좋아함"
+      },
+      "owned": [],
+      "categoryNote": "아래는 실제 선호가 확인된 물품 · 영입 요구품과 별개",
+      "source": "https://yuphastemple.com/peppe/"
     }
   },
   "items": {
@@ -1597,6 +1849,46 @@
       "locations": [
         "Aguiño"
       ],
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "pickled-vegetables": {
+      "id": "pickled-vegetables",
+      "english": "Pickled Vegetables",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=pickled-vegetables",
+      "korean": "채소 병절임",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/sofia/",
+      "cost": 100,
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "potted-vegetables": {
+      "id": "potted-vegetables",
+      "english": "Potted Vegetables",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=potted-vegetables",
+      "korean": "화분 채소",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/halvin/",
+      "cost": 200,
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "saraminian-sweets": {
+      "id": "saraminian-sweets",
+      "english": "Saraminian Sweets",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=saraminian-sweets",
+      "korean": "살라미스 과자",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/halvin/",
+      "cost": 100,
+      "priceSource": "https://yuphastemple.com/data/locations.json"
+    },
+    "meaty-delicacy": {
+      "id": "meaty-delicacy",
+      "english": "Meaty Delicacy",
+      "reaction": "좋아함",
+      "url": "https://yuphastemple.com/?item=meaty-delicacy",
+      "korean": "짐승고기와 모래벌레 진미",
+      "koreanSource": "https://fire-emblem-fortunes-weave.turam.dev/ko/entry/goliath/",
+      "cost": 100,
       "priceSource": "https://yuphastemple.com/data/locations.json"
     }
   },

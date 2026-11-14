@@ -23,7 +23,8 @@ export function characterSummary(person:Person,part:string){
   const starts=ready.starts as Record<string,string>|undefined;
   const stops=ready.stops as Record<string,string>|undefined;
   const preserve=lane==='보존·수집';
-  const blocked=excluded.has(person.name);
+  // 카드가 없던 지원 대화용 영입 동료(2026-11-15)는 data.avoid로 같은 취급.
+  const blocked=excluded.has(person.name)||!!person.data?.avoid;
   const chapter=ready.joinTargetChapter;
   let battle:string;
   if(blocked)battle='영입만 합니다. 전투·훈련·시험에는 투입하지 않습니다.';
@@ -33,7 +34,7 @@ export function characterSummary(person:Person,part:string){
   const target=person.name==='누조'?'선더 소드 지참품 확보가 목표입니다. 전투 육성 목표는 없습니다.':blocked?'영입과 지원 대화가 목표입니다. 전투 육성 목표는 없습니다.':person.data?.goalText?person.data.goalText:part==='1'&&preserve?String(ready.floorLabel||'보존 상태를 확인합니다.'):words(goal.text)||words(ready.floorLabel)||'정해진 목표가 없습니다.';
   return {
     reason:person.data?.reasonText||characterReason(person.name,person.route),
-    join:part!=='1'?'앞선 부에서 영입·준비한 기록입니다. 이번 부의 실제 합류를 확인합니다.':person.joinLabel?person.joinLabel:chapter?`${chapter}장 영입을 권장하는 계획입니다. 실제 합류 여부는 게임에서 확인합니다.`:'실제 영입 조건과 합류 여부를 게임에서 확인합니다.',
+    join:part!=='1'?'앞선 부에서 영입·준비한 기록입니다. 이번 부의 실제 합류를 확인합니다.':person.joinLabel?person.joinLabel:person.joinPlan?person.joinPlan:chapter?`${chapter}장 영입을 권장하는 계획입니다. 실제 합류 여부는 게임에서 확인합니다.`:'실제 영입 조건과 합류 여부를 게임에서 확인합니다.',
     battle,
     timing:starts?.[part]?plainCharacterText(words(starts[part])).split(' · ').filter(Boolean):[],
     goals:plainCharacterText(target.replace('필요한 B 준비',typeof ready.part1Skills==='string'?ready.part1Skills+' 준비':'필요한 기능 B등급 준비')).split(' · ').filter(Boolean),

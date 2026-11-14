@@ -188,7 +188,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F6E7A8",
-      "imageCount": 2533,
+      "imageCount": 2505,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -231,26 +231,10 @@
       "eraViolations": [],
       "croppedScenes": [],
       "sceneHeights": [
-        480,
         410,
-        480,
-        480,
-        480,
-        480,
-        410,
-        480,
-        480
+        410
       ],
-      "goldTables": [
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        }
-      ],
+      "goldTables": [],
       "accentContrast": [
         {
           "route": "theodora",
@@ -280,7 +264,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F6E7A8",
-      "imageCount": 190,
+      "imageCount": 318,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -315,6 +299,26 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
         {
           "columns": 2,
           "labelWidth": 120
@@ -414,7 +418,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F6E7A8",
-      "imageCount": 179,
+      "imageCount": 171,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -454,30 +458,9 @@
       "croppedScenes": [],
       "sceneHeights": [
         300,
-        300,
         300
       ],
       "goldTables": [
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
         {
           "columns": 3,
           "amountRight": true
@@ -712,7 +695,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F6E7A8",
-      "imageCount": 354,
+      "imageCount": 347,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -895,7 +878,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F7D9E3",
-      "imageCount": 2664,
+      "imageCount": 2637,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -968,7 +951,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F7D9E3",
-      "imageCount": 175,
+      "imageCount": 284,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -1003,6 +986,14 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
         {
           "columns": 2,
           "labelWidth": 120
@@ -1102,7 +1093,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F7D9E3",
-      "imageCount": 164,
+      "imageCount": 147,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -1141,7 +1132,6 @@
       "eraViolations": [],
       "croppedScenes": [],
       "sceneHeights": [
-        300,
         300,
         300,
         300,
@@ -1276,7 +1266,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F7D9E3",
-      "imageCount": 299,
+      "imageCount": 288,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -1459,7 +1449,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E9E7E2",
-      "imageCount": 2622,
+      "imageCount": 2623,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -1532,7 +1522,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E9E7E2",
-      "imageCount": 194,
+      "imageCount": 331,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -1567,6 +1557,26 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
         {
           "columns": 2,
           "labelWidth": 120
@@ -1666,7 +1676,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E9E7E2",
-      "imageCount": 188,
+      "imageCount": 196,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -1837,7 +1847,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E9E7E2",
-      "imageCount": 336,
+      "imageCount": 334,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -2020,7 +2030,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#DCE7F8",
-      "imageCount": 2414,
+      "imageCount": 2347,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -2093,7 +2103,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#DCE7F8",
-      "imageCount": 187,
+      "imageCount": 288,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -2128,6 +2138,22 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
         {
           "columns": 2,
           "labelWidth": 120
@@ -2215,7 +2241,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#DCE7F8",
-      "imageCount": 208,
+      "imageCount": 207,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -2677,7 +2703,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E5DBF6",
-      "imageCount": 555,
+      "imageCount": 554,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -2744,7 +2770,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E5DBF6",
-      "imageCount": 582,
+      "imageCount": 1048,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -2779,6 +2805,70 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
         {
           "columns": 2,
           "labelWidth": 120
@@ -3528,7 +3618,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#231A06",
-      "imageCount": 2533,
+      "imageCount": 2505,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -3571,26 +3661,10 @@
       "eraViolations": [],
       "croppedScenes": [],
       "sceneHeights": [
-        480,
         410,
-        480,
-        480,
-        480,
-        480,
-        410,
-        480,
-        480
+        410
       ],
-      "goldTables": [
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        }
-      ],
+      "goldTables": [],
       "accentContrast": [
         {
           "route": "theodora",
@@ -3620,7 +3694,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#231A06",
-      "imageCount": 190,
+      "imageCount": 318,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -3655,6 +3729,26 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
         {
           "columns": 2,
           "labelWidth": 120
@@ -3754,7 +3848,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#231A06",
-      "imageCount": 179,
+      "imageCount": 171,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -3794,30 +3888,9 @@
       "croppedScenes": [],
       "sceneHeights": [
         300,
-        300,
         300
       ],
       "goldTables": [
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
         {
           "columns": 3,
           "amountRight": true
@@ -4052,7 +4125,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#231A06",
-      "imageCount": 354,
+      "imageCount": 347,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -4235,7 +4308,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#2A0A17",
-      "imageCount": 2664,
+      "imageCount": 2637,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -4308,7 +4381,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#2A0A17",
-      "imageCount": 175,
+      "imageCount": 284,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -4343,6 +4416,14 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
         {
           "columns": 2,
           "labelWidth": 120
@@ -4442,7 +4523,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#2A0A17",
-      "imageCount": 164,
+      "imageCount": 147,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -4481,7 +4562,6 @@
       "eraViolations": [],
       "croppedScenes": [],
       "sceneHeights": [
-        300,
         300,
         300,
         300,
@@ -4616,7 +4696,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#2A0A17",
-      "imageCount": 299,
+      "imageCount": 288,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -4799,7 +4879,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0E0E10",
-      "imageCount": 2622,
+      "imageCount": 2623,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -4872,7 +4952,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0E0E10",
-      "imageCount": 194,
+      "imageCount": 331,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -4907,6 +4987,26 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
         {
           "columns": 2,
           "labelWidth": 120
@@ -5006,7 +5106,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0E0E10",
-      "imageCount": 188,
+      "imageCount": 196,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -5177,7 +5277,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0E0E10",
-      "imageCount": 336,
+      "imageCount": 334,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -5360,7 +5460,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0B1A33",
-      "imageCount": 2414,
+      "imageCount": 2347,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -5433,7 +5533,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0B1A33",
-      "imageCount": 187,
+      "imageCount": 288,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -5468,6 +5568,22 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
         {
           "columns": 2,
           "labelWidth": 120
@@ -5555,7 +5671,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0B1A33",
-      "imageCount": 208,
+      "imageCount": 207,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -6017,7 +6133,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#170C2B",
-      "imageCount": 555,
+      "imageCount": 554,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -6084,7 +6200,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#170C2B",
-      "imageCount": 582,
+      "imageCount": 1048,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -6119,6 +6235,70 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
         {
           "columns": 2,
           "labelWidth": 120
@@ -6868,7 +7048,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F6E7A8",
-      "imageCount": 2533,
+      "imageCount": 2505,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -6911,26 +7091,10 @@
       "eraViolations": [],
       "croppedScenes": [],
       "sceneHeights": [
-        480,
         410,
-        480,
-        480,
-        480,
-        480,
-        410,
-        480,
-        480
+        410
       ],
-      "goldTables": [
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        }
-      ],
+      "goldTables": [],
       "accentContrast": [
         {
           "route": "theodora",
@@ -6960,7 +7124,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F6E7A8",
-      "imageCount": 190,
+      "imageCount": 318,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -6995,6 +7159,26 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
         {
           "columns": 2,
           "labelWidth": 120
@@ -7094,7 +7278,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F6E7A8",
-      "imageCount": 179,
+      "imageCount": 171,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -7134,30 +7318,9 @@
       "croppedScenes": [],
       "sceneHeights": [
         300,
-        300,
         300
       ],
       "goldTables": [
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
         {
           "columns": 3,
           "amountRight": true
@@ -7392,7 +7555,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F6E7A8",
-      "imageCount": 354,
+      "imageCount": 347,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -7575,7 +7738,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F7D9E3",
-      "imageCount": 2664,
+      "imageCount": 2637,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -7648,7 +7811,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F7D9E3",
-      "imageCount": 175,
+      "imageCount": 284,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -7683,6 +7846,14 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
         {
           "columns": 2,
           "labelWidth": 120
@@ -7782,7 +7953,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F7D9E3",
-      "imageCount": 164,
+      "imageCount": 147,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -7821,7 +7992,6 @@
       "eraViolations": [],
       "croppedScenes": [],
       "sceneHeights": [
-        300,
         300,
         300,
         300,
@@ -7956,7 +8126,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F7D9E3",
-      "imageCount": 299,
+      "imageCount": 288,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -8139,7 +8309,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E9E7E2",
-      "imageCount": 2622,
+      "imageCount": 2623,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -8212,7 +8382,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E9E7E2",
-      "imageCount": 194,
+      "imageCount": 331,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -8247,6 +8417,26 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
         {
           "columns": 2,
           "labelWidth": 120
@@ -8346,7 +8536,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E9E7E2",
-      "imageCount": 188,
+      "imageCount": 196,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -8517,7 +8707,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E9E7E2",
-      "imageCount": 336,
+      "imageCount": 334,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -8700,7 +8890,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#DCE7F8",
-      "imageCount": 2414,
+      "imageCount": 2347,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -8773,7 +8963,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#DCE7F8",
-      "imageCount": 187,
+      "imageCount": 288,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -8808,6 +8998,22 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
         {
           "columns": 2,
           "labelWidth": 120
@@ -8895,7 +9101,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#DCE7F8",
-      "imageCount": 208,
+      "imageCount": 207,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -9357,7 +9563,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E5DBF6",
-      "imageCount": 555,
+      "imageCount": 554,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -9424,7 +9630,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E5DBF6",
-      "imageCount": 582,
+      "imageCount": 1048,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -9459,6 +9665,70 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
         {
           "columns": 2,
           "labelWidth": 120
@@ -10208,7 +10478,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#231A06",
-      "imageCount": 2533,
+      "imageCount": 2505,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -10251,26 +10521,10 @@
       "eraViolations": [],
       "croppedScenes": [],
       "sceneHeights": [
-        480,
         410,
-        480,
-        480,
-        480,
-        480,
-        410,
-        480,
-        480
+        410
       ],
-      "goldTables": [
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        }
-      ],
+      "goldTables": [],
       "accentContrast": [
         {
           "route": "theodora",
@@ -10300,7 +10554,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#231A06",
-      "imageCount": 190,
+      "imageCount": 318,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -10335,6 +10589,26 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
         {
           "columns": 2,
           "labelWidth": 120
@@ -10434,7 +10708,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#231A06",
-      "imageCount": 179,
+      "imageCount": 171,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -10474,30 +10748,9 @@
       "croppedScenes": [],
       "sceneHeights": [
         300,
-        300,
         300
       ],
       "goldTables": [
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
         {
           "columns": 3,
           "amountRight": true
@@ -10732,7 +10985,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#231A06",
-      "imageCount": 354,
+      "imageCount": 347,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -10915,7 +11168,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#2A0A17",
-      "imageCount": 2664,
+      "imageCount": 2637,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -10988,7 +11241,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#2A0A17",
-      "imageCount": 175,
+      "imageCount": 284,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -11023,6 +11276,14 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
         {
           "columns": 2,
           "labelWidth": 120
@@ -11122,7 +11383,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#2A0A17",
-      "imageCount": 164,
+      "imageCount": 147,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -11161,7 +11422,6 @@
       "eraViolations": [],
       "croppedScenes": [],
       "sceneHeights": [
-        300,
         300,
         300,
         300,
@@ -11296,7 +11556,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#2A0A17",
-      "imageCount": 299,
+      "imageCount": 288,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -11479,7 +11739,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0E0E10",
-      "imageCount": 2622,
+      "imageCount": 2623,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -11552,7 +11812,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0E0E10",
-      "imageCount": 194,
+      "imageCount": 331,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -11587,6 +11847,26 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
         {
           "columns": 2,
           "labelWidth": 120
@@ -11686,7 +11966,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0E0E10",
-      "imageCount": 188,
+      "imageCount": 196,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -11857,7 +12137,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0E0E10",
-      "imageCount": 336,
+      "imageCount": 334,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -12040,7 +12320,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0B1A33",
-      "imageCount": 2414,
+      "imageCount": 2347,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -12113,7 +12393,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0B1A33",
-      "imageCount": 187,
+      "imageCount": 288,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -12148,6 +12428,22 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
         {
           "columns": 2,
           "labelWidth": 120
@@ -12235,7 +12531,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0B1A33",
-      "imageCount": 208,
+      "imageCount": 207,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -12697,7 +12993,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#170C2B",
-      "imageCount": 555,
+      "imageCount": 554,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -12764,7 +13060,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#170C2B",
-      "imageCount": 582,
+      "imageCount": 1048,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -12799,6 +13095,70 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
         {
           "columns": 2,
           "labelWidth": 120
@@ -13548,7 +13908,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F6E7A8",
-      "imageCount": 2533,
+      "imageCount": 2505,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -13591,26 +13951,10 @@
       "eraViolations": [],
       "croppedScenes": [],
       "sceneHeights": [
-        412.6875,
         170.640625,
-        170.765625,
-        170.765625,
-        210.375,
-        210.375,
-        170.640625,
-        210.375,
-        210.375
+        170.640625
       ],
-      "goldTables": [
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        }
-      ],
+      "goldTables": [],
       "accentContrast": [
         {
           "route": "theodora",
@@ -13640,7 +13984,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F6E7A8",
-      "imageCount": 190,
+      "imageCount": 318,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -13675,6 +14019,26 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
         {
           "columns": 2,
           "labelWidth": 100
@@ -13774,7 +14138,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F6E7A8",
-      "imageCount": 179,
+      "imageCount": 171,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -13814,30 +14178,9 @@
       "croppedScenes": [],
       "sceneHeights": [
         109.125,
-        109.125,
-        193.296875
+        109.125
       ],
       "goldTables": [
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
         {
           "columns": 3,
           "amountRight": true
@@ -14072,7 +14415,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F6E7A8",
-      "imageCount": 354,
+      "imageCount": 347,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -14188,7 +14531,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F6E7A8",
-      "imageCount": 362,
+      "imageCount": 355,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -14394,7 +14737,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F7D9E3",
-      "imageCount": 2664,
+      "imageCount": 2637,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -14467,7 +14810,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F7D9E3",
-      "imageCount": 175,
+      "imageCount": 284,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -14502,6 +14845,14 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
         {
           "columns": 2,
           "labelWidth": 100
@@ -14601,7 +14952,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F7D9E3",
-      "imageCount": 164,
+      "imageCount": 147,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -14644,8 +14995,7 @@
         109.125,
         109.125,
         109.125,
-        109.125,
-        109.125,
+        193.296875,
         193.296875
       ],
       "goldTables": [
@@ -14775,7 +15125,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F7D9E3",
-      "imageCount": 299,
+      "imageCount": 288,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -14891,7 +15241,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F7D9E3",
-      "imageCount": 307,
+      "imageCount": 296,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -15097,7 +15447,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E9E7E2",
-      "imageCount": 2622,
+      "imageCount": 2623,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -15170,7 +15520,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E9E7E2",
-      "imageCount": 194,
+      "imageCount": 331,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -15205,6 +15555,26 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
         {
           "columns": 2,
           "labelWidth": 100
@@ -15304,7 +15674,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E9E7E2",
-      "imageCount": 188,
+      "imageCount": 196,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -15475,7 +15845,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E9E7E2",
-      "imageCount": 336,
+      "imageCount": 334,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -15591,7 +15961,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E9E7E2",
-      "imageCount": 344,
+      "imageCount": 342,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -15797,7 +16167,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#DCE7F8",
-      "imageCount": 2414,
+      "imageCount": 2347,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -15870,7 +16240,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#DCE7F8",
-      "imageCount": 187,
+      "imageCount": 288,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -15905,6 +16275,22 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
         {
           "columns": 2,
           "labelWidth": 100
@@ -15992,7 +16378,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#DCE7F8",
-      "imageCount": 208,
+      "imageCount": 207,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -16593,7 +16979,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E5DBF6",
-      "imageCount": 555,
+      "imageCount": 554,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -16660,7 +17046,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E5DBF6",
-      "imageCount": 582,
+      "imageCount": 1048,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -16695,6 +17081,70 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
         {
           "columns": 2,
           "labelWidth": 100
@@ -17614,7 +18064,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#231A06",
-      "imageCount": 2533,
+      "imageCount": 2505,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -17657,26 +18107,10 @@
       "eraViolations": [],
       "croppedScenes": [],
       "sceneHeights": [
-        412.6875,
         170.640625,
-        170.765625,
-        170.765625,
-        210.375,
-        210.375,
-        170.640625,
-        210.375,
-        210.375
+        170.640625
       ],
-      "goldTables": [
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        }
-      ],
+      "goldTables": [],
       "accentContrast": [
         {
           "route": "theodora",
@@ -17706,7 +18140,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#231A06",
-      "imageCount": 190,
+      "imageCount": 318,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -17741,6 +18175,26 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
         {
           "columns": 2,
           "labelWidth": 100
@@ -17840,7 +18294,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#231A06",
-      "imageCount": 179,
+      "imageCount": 171,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -17878,237 +18332,8 @@
       "order": [],
       "eraViolations": [],
       "croppedScenes": [],
-      "sceneHeights": [
-        109.125,
-        109.125,
-        193.296875
-      ],
-      "goldTables": [
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        }
-      ],
+      "sceneHeights": [],
+      "goldTables": [],
       "accentContrast": [
         {
           "route": "theodora",
@@ -18138,7 +18363,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#231A06",
-      "imageCount": 354,
+      "imageCount": 347,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -18254,7 +18479,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#231A06",
-      "imageCount": 362,
+      "imageCount": 355,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -18460,7 +18685,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#2A0A17",
-      "imageCount": 2664,
+      "imageCount": 2637,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -18533,7 +18758,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#2A0A17",
-      "imageCount": 175,
+      "imageCount": 284,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -18568,6 +18793,14 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
         {
           "columns": 2,
           "labelWidth": 100
@@ -18667,7 +18900,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#2A0A17",
-      "imageCount": 164,
+      "imageCount": 147,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -18710,8 +18943,7 @@
         109.125,
         109.125,
         109.125,
-        109.125,
-        109.125,
+        193.296875,
         193.296875
       ],
       "goldTables": [
@@ -18841,7 +19073,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#2A0A17",
-      "imageCount": 299,
+      "imageCount": 288,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -18957,7 +19189,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#2A0A17",
-      "imageCount": 307,
+      "imageCount": 296,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -19163,7 +19395,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0E0E10",
-      "imageCount": 2622,
+      "imageCount": 2623,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -19236,7 +19468,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0E0E10",
-      "imageCount": 194,
+      "imageCount": 331,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -19271,6 +19503,26 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
         {
           "columns": 2,
           "labelWidth": 100
@@ -19370,7 +19622,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0E0E10",
-      "imageCount": 188,
+      "imageCount": 196,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -19541,7 +19793,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0E0E10",
-      "imageCount": 336,
+      "imageCount": 334,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -19657,7 +19909,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0E0E10",
-      "imageCount": 344,
+      "imageCount": 342,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -19863,7 +20115,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0B1A33",
-      "imageCount": 2414,
+      "imageCount": 2347,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -19936,7 +20188,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0B1A33",
-      "imageCount": 187,
+      "imageCount": 288,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -19971,6 +20223,22 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
         {
           "columns": 2,
           "labelWidth": 100
@@ -20058,7 +20326,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0B1A33",
-      "imageCount": 208,
+      "imageCount": 207,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -20659,7 +20927,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#170C2B",
-      "imageCount": 555,
+      "imageCount": 554,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -20726,7 +20994,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#170C2B",
-      "imageCount": 582,
+      "imageCount": 1048,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -20761,6 +21029,70 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
+        {
+          "columns": 2,
+          "labelWidth": 100
+        },
         {
           "columns": 2,
           "labelWidth": 100
@@ -21680,7 +22012,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F6E7A8",
-      "imageCount": 2533,
+      "imageCount": 2505,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -21723,26 +22055,10 @@
       "eraViolations": [],
       "croppedScenes": [],
       "sceneHeights": [
-        480,
         373.953125,
-        374.234375,
-        374.234375,
-        461.03125,
-        461.03125,
-        373.953125,
-        461.03125,
-        461.03125
+        373.953125
       ],
-      "goldTables": [
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        }
-      ],
+      "goldTables": [],
       "accentContrast": [
         {
           "route": "theodora",
@@ -21772,7 +22088,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F6E7A8",
-      "imageCount": 190,
+      "imageCount": 318,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -21807,6 +22123,26 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
         {
           "columns": 2,
           "labelWidth": 120
@@ -21906,7 +22242,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F6E7A8",
-      "imageCount": 179,
+      "imageCount": 171,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -21946,30 +22282,9 @@
       "croppedScenes": [],
       "sceneHeights": [
         279.625,
-        279.625,
-        300
+        279.625
       ],
       "goldTables": [
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
         {
           "columns": 3,
           "amountRight": true
@@ -22204,7 +22519,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F6E7A8",
-      "imageCount": 354,
+      "imageCount": 347,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -22387,7 +22702,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F7D9E3",
-      "imageCount": 2664,
+      "imageCount": 2637,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -22460,7 +22775,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F7D9E3",
-      "imageCount": 175,
+      "imageCount": 284,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -22495,6 +22810,14 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
         {
           "columns": 2,
           "labelWidth": 120
@@ -22594,7 +22917,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F7D9E3",
-      "imageCount": 164,
+      "imageCount": 147,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -22637,8 +22960,7 @@
         279.625,
         279.625,
         279.625,
-        279.625,
-        279.625,
+        300,
         300
       ],
       "goldTables": [
@@ -22768,7 +23090,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F7D9E3",
-      "imageCount": 299,
+      "imageCount": 288,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -22951,7 +23273,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E9E7E2",
-      "imageCount": 2622,
+      "imageCount": 2623,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -23024,7 +23346,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E9E7E2",
-      "imageCount": 194,
+      "imageCount": 331,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -23059,6 +23381,26 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
         {
           "columns": 2,
           "labelWidth": 120
@@ -23158,7 +23500,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E9E7E2",
-      "imageCount": 188,
+      "imageCount": 196,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -23329,7 +23671,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E9E7E2",
-      "imageCount": 336,
+      "imageCount": 334,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -23512,7 +23854,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#DCE7F8",
-      "imageCount": 2414,
+      "imageCount": 2347,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -23585,7 +23927,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#DCE7F8",
-      "imageCount": 187,
+      "imageCount": 288,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -23620,6 +23962,22 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
         {
           "columns": 2,
           "labelWidth": 120
@@ -23707,7 +24065,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#DCE7F8",
-      "imageCount": 208,
+      "imageCount": 207,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -24169,7 +24527,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E5DBF6",
-      "imageCount": 555,
+      "imageCount": 554,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -24236,7 +24594,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E5DBF6",
-      "imageCount": 582,
+      "imageCount": 1048,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -24271,6 +24629,70 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
         {
           "columns": 2,
           "labelWidth": 120
@@ -25020,7 +25442,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#231A06",
-      "imageCount": 2533,
+      "imageCount": 2505,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -25063,26 +25485,10 @@
       "eraViolations": [],
       "croppedScenes": [],
       "sceneHeights": [
-        480,
         373.953125,
-        374.234375,
-        374.234375,
-        461.03125,
-        461.03125,
-        373.953125,
-        461.03125,
-        461.03125
+        373.953125
       ],
-      "goldTables": [
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        }
-      ],
+      "goldTables": [],
       "accentContrast": [
         {
           "route": "theodora",
@@ -25112,7 +25518,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#231A06",
-      "imageCount": 190,
+      "imageCount": 318,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -25147,6 +25553,26 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
         {
           "columns": 2,
           "labelWidth": 120
@@ -25246,7 +25672,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#231A06",
-      "imageCount": 179,
+      "imageCount": 171,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -25286,30 +25712,9 @@
       "croppedScenes": [],
       "sceneHeights": [
         279.625,
-        279.625,
-        300
+        279.625
       ],
       "goldTables": [
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
         {
           "columns": 3,
           "amountRight": true
@@ -25544,7 +25949,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#231A06",
-      "imageCount": 354,
+      "imageCount": 347,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -25727,7 +26132,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#2A0A17",
-      "imageCount": 2664,
+      "imageCount": 2637,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -25800,7 +26205,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#2A0A17",
-      "imageCount": 175,
+      "imageCount": 284,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -25835,6 +26240,14 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
         {
           "columns": 2,
           "labelWidth": 120
@@ -25934,7 +26347,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#2A0A17",
-      "imageCount": 164,
+      "imageCount": 147,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -25977,8 +26390,7 @@
         279.625,
         279.625,
         279.625,
-        279.625,
-        279.625,
+        300,
         300
       ],
       "goldTables": [
@@ -26108,7 +26520,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#2A0A17",
-      "imageCount": 299,
+      "imageCount": 288,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -26291,7 +26703,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0E0E10",
-      "imageCount": 2622,
+      "imageCount": 2623,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -26364,7 +26776,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0E0E10",
-      "imageCount": 194,
+      "imageCount": 331,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -26399,6 +26811,26 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
         {
           "columns": 2,
           "labelWidth": 120
@@ -26498,7 +26930,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0E0E10",
-      "imageCount": 188,
+      "imageCount": 196,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -26669,7 +27101,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0E0E10",
-      "imageCount": 336,
+      "imageCount": 334,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -26852,7 +27284,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0B1A33",
-      "imageCount": 2414,
+      "imageCount": 2347,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -26925,7 +27357,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0B1A33",
-      "imageCount": 187,
+      "imageCount": 288,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -26960,6 +27392,22 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
         {
           "columns": 2,
           "labelWidth": 120
@@ -27047,7 +27495,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#0B1A33",
-      "imageCount": 208,
+      "imageCount": 207,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -27509,7 +27957,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#170C2B",
-      "imageCount": 555,
+      "imageCount": 554,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -27576,7 +28024,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#170C2B",
-      "imageCount": 582,
+      "imageCount": 1048,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -27611,6 +28059,70 @@
       "paragraphViolations": [],
       "groupLineViolations": [],
       "personTables": [
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
+        {
+          "columns": 2,
+          "labelWidth": 120
+        },
         {
           "columns": 2,
           "labelWidth": 120
@@ -28488,7 +29000,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F6E7A8",
-      "imageCount": 2534,
+      "imageCount": 2513,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -28555,7 +29067,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#231A06",
-      "imageCount": 2534,
+      "imageCount": 2513,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -28622,7 +29134,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#F6E7A8",
-      "imageCount": 2534,
+      "imageCount": 2513,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -28689,7 +29201,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#231A06",
-      "imageCount": 2534,
+      "imageCount": 2513,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -28750,56 +29262,56 @@
     {
       "stage": "theodora-plan",
       "old": {
-        "portraits": 524,
+        "portraits": 511,
         "skills": 358,
         "gods": 187,
-        "classes": 57,
+        "classes": 55,
         "guides": 45,
-        "locations": 70
+        "locations": 71
       },
       "expected": {
-        "portraits": 522,
+        "portraits": 511,
         "skills": 358,
         "gods": 187,
-        "classes": 57,
+        "classes": 55,
         "guides": 45,
-        "locations": 70
+        "locations": 71
       },
       "actual": {
-        "portraits": 522,
+        "portraits": 511,
         "skills": 358,
         "gods": 187,
-        "classes": 57,
+        "classes": 55,
         "guides": 45,
-        "locations": 70
+        "locations": 71
       },
       "passed": true
     },
     {
       "stage": "leda-plan",
       "old": {
-        "portraits": 585,
+        "portraits": 568,
         "skills": 467,
         "gods": 237,
         "classes": 25,
         "guides": 42,
-        "locations": 54
+        "locations": 55
       },
       "expected": {
-        "portraits": 582,
+        "portraits": 567,
         "skills": 467,
         "gods": 237,
         "classes": 25,
         "guides": 42,
-        "locations": 54
+        "locations": 55
       },
       "actual": {
-        "portraits": 582,
+        "portraits": 567,
         "skills": 467,
         "gods": 237,
         "classes": 25,
         "guides": 42,
-        "locations": 54
+        "locations": 55
       },
       "passed": true
     },
@@ -28811,7 +29323,7 @@
         "gods": 186,
         "classes": 46,
         "guides": 57,
-        "locations": 82
+        "locations": 83
       },
       "expected": {
         "portraits": 561,
@@ -28819,7 +29331,7 @@
         "gods": 186,
         "classes": 46,
         "guides": 57,
-        "locations": 82
+        "locations": 83
       },
       "actual": {
         "portraits": 561,
@@ -28827,35 +29339,35 @@
         "gods": 186,
         "classes": 46,
         "guides": 57,
-        "locations": 82
+        "locations": 83
       },
       "passed": true
     },
     {
       "stage": "cai-plan",
       "old": {
-        "portraits": 527,
-        "skills": 481,
+        "portraits": 503,
+        "skills": 480,
         "gods": 109,
-        "classes": 70,
+        "classes": 69,
         "guides": 36,
-        "locations": 57
+        "locations": 58
       },
       "expected": {
-        "portraits": 524,
-        "skills": 481,
+        "portraits": 500,
+        "skills": 480,
         "gods": 109,
-        "classes": 70,
+        "classes": 69,
         "guides": 36,
-        "locations": 57
+        "locations": 58
       },
       "actual": {
-        "portraits": 524,
-        "skills": 481,
+        "portraits": 500,
+        "skills": 480,
         "gods": 109,
-        "classes": 70,
+        "classes": 69,
         "guides": 36,
-        "locations": 57
+        "locations": 58
       },
       "passed": true
     },
@@ -28890,7 +29402,7 @@
     {
       "stage": "theodora-war-plan",
       "old": {
-        "portraits": 37,
+        "portraits": 35,
         "skills": 1,
         "gods": 0,
         "classes": 3,
@@ -28898,7 +29410,7 @@
         "locations": 0
       },
       "expected": {
-        "portraits": 37,
+        "portraits": 35,
         "skills": 1,
         "gods": 0,
         "classes": 3,
@@ -28906,7 +29418,7 @@
         "locations": 0
       },
       "actual": {
-        "portraits": 37,
+        "portraits": 35,
         "skills": 1,
         "gods": 0,
         "classes": 3,
@@ -28918,7 +29430,7 @@
     {
       "stage": "leda-war-plan",
       "old": {
-        "portraits": 37,
+        "portraits": 34,
         "skills": 0,
         "gods": 0,
         "classes": 3,
@@ -28926,7 +29438,7 @@
         "locations": 3
       },
       "expected": {
-        "portraits": 37,
+        "portraits": 34,
         "skills": 0,
         "gods": 0,
         "classes": 3,
@@ -28934,7 +29446,7 @@
         "locations": 3
       },
       "actual": {
-        "portraits": 37,
+        "portraits": 34,
         "skills": 0,
         "gods": 0,
         "classes": 3,
@@ -28974,7 +29486,7 @@
     {
       "stage": "cai-war-plan",
       "old": {
-        "portraits": 28,
+        "portraits": 26,
         "skills": 3,
         "gods": 0,
         "classes": 12,
@@ -28982,7 +29494,7 @@
         "locations": 0
       },
       "expected": {
-        "portraits": 28,
+        "portraits": 26,
         "skills": 3,
         "gods": 0,
         "classes": 12,
@@ -28990,7 +29502,7 @@
         "locations": 0
       },
       "actual": {
-        "portraits": 28,
+        "portraits": 26,
         "skills": 3,
         "gods": 0,
         "classes": 12,
@@ -29010,10 +29522,10 @@
       "toolbarTop": 0,
       "toolbarHeight": 72.796875,
       "railTop": 88.796875,
-      "railHeight": 795.203125,
+      "railHeight": 715.203125,
       "railOverflow": "auto",
       "railPosition": "sticky",
-      "chapterClearance": 15.765625,
+      "chapterClearance": 15.984375,
       "passed": true
     },
     {
@@ -29025,7 +29537,7 @@
       "toolbarTop": 0,
       "toolbarHeight": 72.796875,
       "railTop": 88.796875,
-      "railHeight": 706.390625,
+      "railHeight": 715.203125,
       "railOverflow": "auto",
       "railPosition": "sticky",
       "chapterClearance": 15.984375,
@@ -29040,7 +29552,7 @@
       "toolbarTop": 0,
       "toolbarHeight": 72.796875,
       "railTop": 88.796875,
-      "railHeight": 706.390625,
+      "railHeight": 715.203125,
       "railOverflow": "auto",
       "railPosition": "sticky",
       "chapterClearance": 15.984375,
@@ -29055,7 +29567,7 @@
       "toolbarTop": 0,
       "toolbarHeight": 72.796875,
       "railTop": 88.796875,
-      "railHeight": 706.390625,
+      "railHeight": 715.203125,
       "railOverflow": "auto",
       "railPosition": "sticky",
       "chapterClearance": 15.984375,
@@ -29070,7 +29582,7 @@
       "toolbarTop": 0,
       "toolbarHeight": 72.796875,
       "railTop": 88.796875,
-      "railHeight": 575.1875,
+      "railHeight": 635.984375,
       "railOverflow": "auto",
       "railPosition": "sticky",
       "chapterClearance": 15.984375,
@@ -29085,10 +29597,10 @@
       "toolbarTop": 0,
       "toolbarHeight": 72.796875,
       "railTop": 88.796875,
-      "railHeight": 795.203125,
+      "railHeight": 715.203125,
       "railOverflow": "auto",
       "railPosition": "sticky",
-      "chapterClearance": 15.765625,
+      "chapterClearance": 15.984375,
       "passed": true
     },
     {
@@ -29100,7 +29612,7 @@
       "toolbarTop": 0,
       "toolbarHeight": 72.796875,
       "railTop": 88.796875,
-      "railHeight": 706.390625,
+      "railHeight": 715.203125,
       "railOverflow": "auto",
       "railPosition": "sticky",
       "chapterClearance": 15.984375,
@@ -29115,7 +29627,7 @@
       "toolbarTop": 0,
       "toolbarHeight": 72.796875,
       "railTop": 88.796875,
-      "railHeight": 706.390625,
+      "railHeight": 715.203125,
       "railOverflow": "auto",
       "railPosition": "sticky",
       "chapterClearance": 15.984375,
@@ -29130,7 +29642,7 @@
       "toolbarTop": 0,
       "toolbarHeight": 72.796875,
       "railTop": 88.796875,
-      "railHeight": 706.390625,
+      "railHeight": 715.203125,
       "railOverflow": "auto",
       "railPosition": "sticky",
       "chapterClearance": 15.984375,
@@ -29145,7 +29657,7 @@
       "toolbarTop": 0,
       "toolbarHeight": 72.796875,
       "railTop": 88.796875,
-      "railHeight": 575.1875,
+      "railHeight": 635.984375,
       "railOverflow": "auto",
       "railPosition": "sticky",
       "chapterClearance": 15.984375,
@@ -29160,10 +29672,10 @@
       "toolbarTop": 0,
       "toolbarHeight": 72.796875,
       "railTop": 88.796875,
-      "railHeight": 975.203125,
+      "railHeight": 767.1875,
       "railOverflow": "auto",
       "railPosition": "sticky",
-      "chapterClearance": 15.765625,
+      "chapterClearance": 15.984375,
       "passed": true
     },
     {
@@ -29175,7 +29687,7 @@
       "toolbarTop": 0,
       "toolbarHeight": 72.796875,
       "railTop": 88.796875,
-      "railHeight": 706.390625,
+      "railHeight": 767.1875,
       "railOverflow": "auto",
       "railPosition": "sticky",
       "chapterClearance": 15.984375,
@@ -29190,7 +29702,7 @@
       "toolbarTop": 0,
       "toolbarHeight": 72.796875,
       "railTop": 88.796875,
-      "railHeight": 706.390625,
+      "railHeight": 767.1875,
       "railOverflow": "auto",
       "railPosition": "sticky",
       "chapterClearance": 15.984375,
@@ -29205,7 +29717,7 @@
       "toolbarTop": 0,
       "toolbarHeight": 72.796875,
       "railTop": 88.796875,
-      "railHeight": 706.390625,
+      "railHeight": 767.1875,
       "railOverflow": "auto",
       "railPosition": "sticky",
       "chapterClearance": 15.984375,
@@ -29220,7 +29732,7 @@
       "toolbarTop": 0,
       "toolbarHeight": 72.796875,
       "railTop": 88.796875,
-      "railHeight": 575.1875,
+      "railHeight": 635.984375,
       "railOverflow": "auto",
       "railPosition": "sticky",
       "chapterClearance": 15.984375,
@@ -29235,10 +29747,10 @@
       "toolbarTop": 0,
       "toolbarHeight": 72.796875,
       "railTop": 88.796875,
-      "railHeight": 975.203125,
+      "railHeight": 767.1875,
       "railOverflow": "auto",
       "railPosition": "sticky",
-      "chapterClearance": 15.765625,
+      "chapterClearance": 15.984375,
       "passed": true
     },
     {
@@ -29250,7 +29762,7 @@
       "toolbarTop": 0,
       "toolbarHeight": 72.796875,
       "railTop": 88.796875,
-      "railHeight": 706.390625,
+      "railHeight": 767.1875,
       "railOverflow": "auto",
       "railPosition": "sticky",
       "chapterClearance": 15.984375,
@@ -29265,7 +29777,7 @@
       "toolbarTop": 0,
       "toolbarHeight": 72.796875,
       "railTop": 88.796875,
-      "railHeight": 706.390625,
+      "railHeight": 767.1875,
       "railOverflow": "auto",
       "railPosition": "sticky",
       "chapterClearance": 15.984375,
@@ -29280,7 +29792,7 @@
       "toolbarTop": 0,
       "toolbarHeight": 72.796875,
       "railTop": 88.796875,
-      "railHeight": 706.390625,
+      "railHeight": 767.1875,
       "railOverflow": "auto",
       "railPosition": "sticky",
       "chapterClearance": 15.984375,
@@ -29295,7 +29807,7 @@
       "toolbarTop": 0,
       "toolbarHeight": 72.796875,
       "railTop": 88.796875,
-      "railHeight": 575.1875,
+      "railHeight": 635.984375,
       "railOverflow": "auto",
       "railPosition": "sticky",
       "chapterClearance": 15.984375,
@@ -29308,12 +29820,12 @@
       "theme": "light",
       "scrollY": 800,
       "toolbarTop": 0,
-      "toolbarHeight": 109.59375,
-      "railTop": -355.21875,
+      "toolbarHeight": 104,
+      "railTop": -360.8125,
       "railHeight": 248,
       "railOverflow": "auto",
       "railPosition": "static",
-      "chapterClearance": 15.71875,
+      "chapterClearance": 15.5625,
       "passed": true
     },
     {
@@ -29323,8 +29835,8 @@
       "theme": "light",
       "scrollY": 800,
       "toolbarTop": 0,
-      "toolbarHeight": 109.59375,
-      "railTop": -355.21875,
+      "toolbarHeight": 104,
+      "railTop": -360.8125,
       "railHeight": 248,
       "railOverflow": "auto",
       "railPosition": "static",
@@ -29338,8 +29850,8 @@
       "theme": "light",
       "scrollY": 800,
       "toolbarTop": 0,
-      "toolbarHeight": 109.59375,
-      "railTop": -355.21875,
+      "toolbarHeight": 104,
+      "railTop": -360.8125,
       "railHeight": 248,
       "railOverflow": "auto",
       "railPosition": "static",
@@ -29353,8 +29865,8 @@
       "theme": "light",
       "scrollY": 800,
       "toolbarTop": 0,
-      "toolbarHeight": 109.59375,
-      "railTop": -355.21875,
+      "toolbarHeight": 104,
+      "railTop": -360.8125,
       "railHeight": 248,
       "railOverflow": "auto",
       "railPosition": "static",
@@ -29368,12 +29880,12 @@
       "theme": "light",
       "scrollY": 800,
       "toolbarTop": 0,
-      "toolbarHeight": 109.59375,
-      "railTop": -355.21875,
-      "railHeight": 128.796875,
+      "toolbarHeight": 104,
+      "railTop": -360.8125,
+      "railHeight": 189.59375,
       "railOverflow": "auto",
       "railPosition": "static",
-      "chapterClearance": 15.546875,
+      "chapterClearance": 16.34375,
       "passed": true
     },
     {
@@ -29383,12 +29895,12 @@
       "theme": "dark",
       "scrollY": 800,
       "toolbarTop": 0,
-      "toolbarHeight": 109.59375,
-      "railTop": -355.21875,
+      "toolbarHeight": 104,
+      "railTop": -360.8125,
       "railHeight": 248,
       "railOverflow": "auto",
       "railPosition": "static",
-      "chapterClearance": 15.71875,
+      "chapterClearance": 15.5625,
       "passed": true
     },
     {
@@ -29398,8 +29910,8 @@
       "theme": "dark",
       "scrollY": 800,
       "toolbarTop": 0,
-      "toolbarHeight": 109.59375,
-      "railTop": -355.21875,
+      "toolbarHeight": 104,
+      "railTop": -360.8125,
       "railHeight": 248,
       "railOverflow": "auto",
       "railPosition": "static",
@@ -29413,8 +29925,8 @@
       "theme": "dark",
       "scrollY": 800,
       "toolbarTop": 0,
-      "toolbarHeight": 109.59375,
-      "railTop": -355.21875,
+      "toolbarHeight": 104,
+      "railTop": -360.8125,
       "railHeight": 248,
       "railOverflow": "auto",
       "railPosition": "static",
@@ -29428,8 +29940,8 @@
       "theme": "dark",
       "scrollY": 800,
       "toolbarTop": 0,
-      "toolbarHeight": 109.59375,
-      "railTop": -355.21875,
+      "toolbarHeight": 104,
+      "railTop": -360.8125,
       "railHeight": 248,
       "railOverflow": "auto",
       "railPosition": "static",
@@ -29443,12 +29955,12 @@
       "theme": "dark",
       "scrollY": 800,
       "toolbarTop": 0,
-      "toolbarHeight": 109.59375,
-      "railTop": -355.21875,
-      "railHeight": 128.796875,
+      "toolbarHeight": 104,
+      "railTop": -360.8125,
+      "railHeight": 189.59375,
       "railOverflow": "auto",
       "railPosition": "static",
-      "chapterClearance": 15.546875,
+      "chapterClearance": 16.34375,
       "passed": true
     },
     {

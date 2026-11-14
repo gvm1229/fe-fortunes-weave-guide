@@ -1,7 +1,7 @@
 {
   "status": "passed",
   "host": "Claude / Windows / Chrome / isolated Playwright contexts",
-  "base": "http://localhost:18763",
+  "base": "http://localhost:3000",
   "checked": [
     "light 1920x1080 current 체험0",
     "light 1920x1080 current 체험2",

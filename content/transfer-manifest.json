@@ -9,7 +9,7 @@
     {
       "source": "data/affordable-gifts.json",
       "target": "content/data/affordable-gifts.json",
-      "sha256": "be0c1dedb8de51796385c55f0fc63f1a9e18a663b23b8df765b92c4eefa26c5c"
+      "sha256": "8b1e52ca4293aed4985d6eb8e3e4eba84fe6cf695186074d04b350bbd1cf32bd"
     },
     {
       "source": "data/army-actions.json",
@@ -99,17 +99,17 @@
     {
       "source": "data/phase-goals.json",
       "target": "content/data/phase-goals.json",
-      "sha256": "32080d63869efa58bce881464d9a2490cbef009c144a77434d967fe04448e8ee"
+      "sha256": "57dbe13b63edb0e0fbf811451637f85ae2ef3b2ad27409646adfbe52b2a84719"
     },
     {
       "source": "data/playbook.json",
       "target": "content/data/playbook.json",
-      "sha256": "3dc866dc0a50f674e9442e460f62b9ffbed949729a1a8cd4f69961538b5178c0"
+      "sha256": "0fe0df9920ddf9926dfcc251497c71457eb31e83031eef3a9cd524344577c4f1"
     },
     {
       "source": "data/purchase-plan.json",
       "target": "content/data/purchase-plan.json",
-      "sha256": "7097154d1f88b0bb2ff645513422cbaa6f46b5e509ea40b10ac57688753e23ea"
+      "sha256": "5429bf14c94a6556d7b7ae5590cf9189ab340414e56b153720ad5e3b6f6b22b8"
     },
     {
       "source": "data/readiness-profile-sources.json",
@@ -139,7 +139,7 @@
     {
       "source": "data/roster-plan.json",
       "target": "content/data/roster-plan.json",
-      "sha256": "f447caf0c57b7c0859795aa5832aae70f5810b595852cf8906f08fa0b7bdf222"
+      "sha256": "e95aa7d524ba5208f1dd696afb4c9cbd172086094453c00aaea8914eb30038d8"
     },
     {
       "source": "data/roster-selection-sources.json",
@@ -149,7 +149,7 @@
     {
       "source": "data/roster-selection.json",
       "target": "content/data/roster-selection.json",
-      "sha256": "bcc1f3348129ca8004e31ad42220dd3daac75278cd91e3a5797f855718f48b87"
+      "sha256": "3329e826840466c1596658b09d58035d204e1093807bc90300e75187a2528601"
     },
     {
       "source": "data/sequential-training-plan.json",
@@ -214,7 +214,7 @@
     {
       "source": "data/training-priorities.json",
       "target": "content/data/training-priorities.json",
-      "sha256": "bd90df2d18dba7a1f1913f8f8ab581f3180c049cc33213b4d24a4fbbb6658e89"
+      "sha256": "b7598b15177bde4964bc0847caabdd7e7857ee33bcb2b11c4bd3adeb2da44afe"
     },
     {
       "source": "data/training-sources.json",
@@ -224,7 +224,7 @@
     {
       "source": "data/unit-readiness.json",
       "target": "content/data/unit-readiness.json",
-      "sha256": "a1613f6a29a6e1d55fa657ed014e12ddf202dac46570ba102c4d504b10c966a1"
+      "sha256": "954172a4804f6cc9cbd83c53fb56420185e277cff1a67713d80588fe373925b8"
     },
     {
       "source": "data/weapon-buy-sources.json",
@@ -234,7 +234,7 @@
     {
       "source": "data/weekly-support.json",
       "target": "content/data/weekly-support.json",
-      "sha256": "9834a7fdce4d1d0c6194d6b23d05203b01c0a0141e3960bbe90234e4f5f5611d"
+      "sha256": "8f7c123b36b2259013d61cbbacb6d0afb5549ae5bd927fd6fc2f7d27b8f3e6c1"
     },
     {
       "source": "data/weekly-training.json",
@@ -287,36 +287,6 @@
       "sha256": "d040e7b26ada69047d4015e6927c8fed277e73dda80786e057167aa007e4da18"
     },
     {
-      "source": "notes/backups/final25-apply-20261104/progress.md",
-      "target": "content/notes/backups/final25-apply-20261104/progress.md",
-      "sha256": "87ad437b893da03e8ea1b4f7eda82b18add4c86f77f730d7fd47ecfc7e7e55c4"
-    },
-    {
-      "source": "notes/backups/final25-apply-20261104/routes/dietrich/progress.md",
-      "target": "content/notes/backups/final25-apply-20261104/routes/dietrich/progress.md",
-      "sha256": "9ec9ef63fa564fd0b4764d4fce13b896d1fa69edf7d0914663d5accbd1ad19a7"
-    },
-    {
-      "source": "notes/backups/final25-apply-20261104/routes/cai/progress.md",
-      "target": "content/notes/backups/final25-apply-20261104/routes/cai/progress.md",
-      "sha256": "8baecdb65b65e62c407ab6c84c04d2b465a071096547029df1fc75dbe2a2dc35"
-    },
-    {
-      "source": "notes/backups/final25-apply-20261104/routes/leda/progress.md",
-      "target": "content/notes/backups/final25-apply-20261104/routes/leda/progress.md",
-      "sha256": "60228c21f1c72c901026521d90f10b779cbcce2be09fb8ac5af01760db141b14"
-    },
-    {
-      "source": "notes/backups/final25-apply-20261104/routes/part3/progress.md",
-      "target": "content/notes/backups/final25-apply-20261104/routes/part3/progress.md",
-      "sha256": "2c7f227f5c1fad66474dc6d371b8368e9deeafa2fc617e53e33a5ea641e51fc6"
-    },
-    {
-      "source": "notes/backups/final25-apply-20261104/routes/theodora/progress.md",
-      "target": "content/notes/backups/final25-apply-20261104/routes/theodora/progress.md",
-      "sha256": "ac2de1ea701a2ce03c47451e4bc7b16caa5f556534ffb9711191ea981afc24a0"
-    },
-    {
       "source": "notes/boon-buy-review.md",
       "target": "content/notes/boon-buy-review.md",
       "sha256": "bfac3d1dfc25d745b23c20d6ef645b08f0bb9786f68862b0512b001d2e41cfc3"
@@ -339,7 +309,7 @@
     {
       "source": "notes/chapter-route-plan.md",
       "target": "content/notes/chapter-route-plan.md",
-      "sha256": "c8e973cab2edeb84c051cc8c3eebac098e1339a6c0d0cbf2046864c4711de074"
+      "sha256": "345ba08d4adf31d9d5d15701f5b8805506a2a97f005d6cc634eeaaa5a95dd392"
     },
     {
       "source": "notes/checklist-full-review.md",
@@ -1219,7 +1189,7 @@
     {
       "source": "notes/phase-goals-review.md",
       "target": "content/notes/phase-goals-review.md",
-      "sha256": "58c4f2521cc0ea610fe0deda8ffff34dd689ec5b4a613cbf41b6454987feec31"
+      "sha256": "fff9095ba7c70ad5057e1a0805a80d74ed8276485565cf4276238b539ad3c805"
     },
     {
       "source": "notes/plan.md",
@@ -1409,17 +1379,17 @@
     {
       "source": "notes/restart-review.md",
       "target": "content/notes/restart-review.md",
-      "sha256": "72e4ff7c301ddf7fc7aae4bd869a870f338bea7a96dffc8be5dc6e89b2949f70"
+      "sha256": "49967f6bb6cdd6b3e32aef36ad167721e77feb10a52914df09ebf5cd642e299e"
     },
     {
       "source": "notes/roster-build-review.md",
       "target": "content/notes/roster-build-review.md",
-      "sha256": "dc3982c04856e0564d6dd45b1db884a7e00b0414057a384a9e52d183737d9b73"
+      "sha256": "9bc3a2988764d0b4d31d4579e6957b26a92b70fd6596de645a21b19e781472d5"
     },
     {
       "source": "notes/roster-selection-review.md",
       "target": "content/notes/roster-selection-review.md",
-      "sha256": "7765c139e0a618e016dbd346219e0e55b162c067220ae62a43e3eaf265893b67"
+      "sha256": "5ebc69dbc94849e0d1abe0d950d8bf2547929bc15c5141f4c9785ab32ec40d45"
     },
     {
       "source": "notes/sequential-routes-apply-plan.md",
@@ -1459,7 +1429,7 @@
     {
       "source": "notes/support-follow-along.md",
       "target": "content/notes/support-follow-along.md",
-      "sha256": "78d84e41d5dd8ff61dd3597fe91fd6c153b5f931353aa50c12535f62972cd016"
+      "sha256": "b39e4ee6bb4a9ccfbff01512e9bef36b7af4ab89cde5c049000b3572f3964d43"
     },
     {
       "source": "notes/support-pairs-by-route.md",
@@ -1579,7 +1549,7 @@
     {
       "source": "notes/theodora-renown-review.md",
       "target": "content/notes/theodora-renown-review.md",
-      "sha256": "1ce559741799899753f21f08b3604bf1845df25ba42ae9d10b854451e7f38481"
+      "sha256": "1fa374e01f6cc42914de64ea816259541cffff6a07c445b66096cc5dab5ab48e"
     },
     {
       "source": "notes/theodora-timing-review.md",
@@ -1604,7 +1574,7 @@
     {
       "source": "notes/training-priorities-review.md",
       "target": "content/notes/training-priorities-review.md",
-      "sha256": "ddba6de337d9d5da465bf064a09506846cecc8c32506092e9529d22e91bdf40f"
+      "sha256": "124d1d92faaa76704761494f8400a10f1f528d532fd9318292b3e5c6936abeb3"
     },
     {
       "source": "notes/ui-alignment-review.md",
@@ -1819,7 +1789,7 @@
     {
       "source": "notes/weekly-support-review.md",
       "target": "content/notes/weekly-support-review.md",
-      "sha256": "512684154b8fb5035cd974c4a8f53959e7292840baac74968355466b5f836e37"
+      "sha256": "46a011eed0114e575595c23669803358ce0a9288e1fc7d89558a105f6ca64379"
     },
     {
       "source": "notes/workspace-fixed-review.md",
@@ -1832,44 +1802,14 @@
       "sha256": "3f285e23493d03e5ecd633834e44057629928f8f44601e9570d166f6de4218ef"
     },
     {
-      "source": "progress.md",
-      "target": "content/progress.md",
-      "sha256": "d1b4017608ecec8918a3c28836c0dad115a82d88f252574b4029098a607da0a1"
-    },
-    {
       "source": "개인화 사용법.md",
       "target": "content/개인화 사용법.md",
       "sha256": "052ba6c26aba7b651a05e59eae6c5576c11218aea1473222420c719744bdddc2"
     },
     {
-      "source": "routes/dietrich/progress.md",
-      "target": "content/routes/dietrich/progress.md",
-      "sha256": "9f06c7616e8c7108a7ba71b766e7af81249ad1a74cb357d480fe00dd653d69bf"
-    },
-    {
       "source": "routes/dietrich/roster.md",
       "target": "content/routes/dietrich/roster.md",
       "sha256": "b29301a099475e78d2bfeaeaac88d475364cd84edc486e354dd659dc1b20aad2"
-    },
-    {
-      "source": "routes/cai/progress.md",
-      "target": "content/routes/cai/progress.md",
-      "sha256": "65115f288b67449f8f94eed37bd033c0b9a9117525e6eb97628a0502902db422"
-    },
-    {
-      "source": "routes/leda/progress.md",
-      "target": "content/routes/leda/progress.md",
-      "sha256": "a6aac856278395e22ca3fb0454a4058a52d1038348bf8fbbf3a4edcc705940d9"
-    },
-    {
-      "source": "routes/part3/progress.md",
-      "target": "content/routes/part3/progress.md",
-      "sha256": "ac8af7137a400c8b6120417bd76b5f5d0acaeb50869109520f449efa8286329c"
-    },
-    {
-      "source": "routes/theodora/progress.md",
-      "target": "content/routes/theodora/progress.md",
-      "sha256": "f711662ad949cf4541dd679dd6408e8ad244801d14c8174c0e59cfad57fa5cfe"
     },
     {
       "source": "personalized-app/README.md",
@@ -2044,7 +1984,7 @@
     {
       "source": "personalized-app/src/content.json",
       "target": "content/source/react-content.json",
-      "sha256": "0159eb543ba06bdb2caec586b4c1012ec2ba1d24586f30cc8e1309c25bb2700f"
+      "sha256": "01ec5ad825c497a509b3c75b9fc560c2e77099ba809a1ce37d9dc2f68e894ed5"
     },
     {
       "source": "personalized-app/src/timeskip-portraits.json",
@@ -2217,7 +2157,7 @@
       "sha256": "b6601f69a8318359991d5fadc11c27348b0df451ecddba9df142e5f979e508ca"
     }
   ],
-  "generatedSourceSha256": "0159eb543ba06bdb2caec586b4c1012ec2ba1d24586f30cc8e1309c25bb2700f",
+  "generatedSourceSha256": "01ec5ad825c497a509b3c75b9fc560c2e77099ba809a1ce37d9dc2f68e894ed5",
   "activeActions": 1899,
   "checkIds": 2881,
   "peopleByRoute": {

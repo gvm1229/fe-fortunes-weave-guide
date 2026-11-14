@@ -35,9 +35,10 @@ writeFileSync('content/derived/presentation.json',JSON.stringify({parity:readabl
 // 최종 25인 범위(최종 25명 + 팀 화면 교체 후보). 할 일 초상화의 금색 테두리와 인물 시트의 배지가 쓴다.
 writeFileSync('content/derived/final25.json',JSON.stringify({names:Object.keys(readableParity.team.units)}));
 const documents={};
-function walkDocuments(dir){for(const entry of readdirSync(dir,{withFileTypes:true})){const path=`${dir}/${entry.name}`;if(entry.isDirectory())walkDocuments(path);else if(entry.name.endsWith('.md')){const source=readFileSync(path,'utf8');documents[path.slice('content/'.length)]={sourceSha256:createHash('sha256').update(source).digest('hex'),body:deriveMarkdown(source)};}}}
+function walkDocuments(dir){for(const entry of readdirSync(dir,{withFileTypes:true})){const path=`${dir}/${entry.name}`;if(entry.isDirectory())walkDocuments(path);else if(entry.name.endsWith('.md')&&entry.name!=='progress.md'){const source=readFileSync(path,'utf8');documents[path.slice('content/'.length)]={sourceSha256:createHash('sha256').update(source).digest('hex'),body:deriveMarkdown(source)};}}}
 walkDocuments('content/notes');walkDocuments('content/routes');walkDocuments('content/personalized-app');
-for(const name of ['progress.md','개인화 사용법.md']){const source=readFileSync(`content/${name}`,'utf8');documents[name]={sourceSha256:createHash('sha256').update(source).digest('hex'),body:deriveMarkdown(source)};}
+// 개인 진행 문서(progress.md)는 2026-11-15부터 git 무시 폴더 progress/docs/에만 있다(사이트에 넣지 않음).
+for(const name of ['개인화 사용법.md']){const source=readFileSync(`content/${name}`,'utf8');documents[name]={sourceSha256:createHash('sha256').update(source).digest('hex'),body:deriveMarkdown(source)};}
 writeFileSync('content/derived/documents.json',JSON.stringify(documents));
 const referenceDocuments=JSON.parse(readFileSync('content/source/reference-documents.json','utf8'));
 writeFileSync('content/derived/reference-documents.json',JSON.stringify(Object.fromEntries(Object.entries(referenceDocuments).map(([path,doc])=>[path,{...doc,tree:readableTree(doc.tree)}]))));

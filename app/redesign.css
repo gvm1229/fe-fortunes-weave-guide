@@ -511,3 +511,27 @@ html:has(.date-odometer){scroll-padding-bottom:72px}
 .pair-chip[aria-pressed=true]{background:var(--primary);color:var(--primary-fg);border-color:var(--primary)}
 .pair-chip:focus-visible{outline:3px solid var(--text);outline-offset:2px}
 .pair-table td,.pair-table th{white-space:nowrap}.pair-table td:last-child,.pair-table th:last-child{white-space:normal;min-inline-size:14em}
+/* 2026-11-15 사용자 결정: 휴대폰(600px 미만)에서 고정 머리와 바닥 날짜를 얇게. 누를 곳은 44px 이상 유지. */
+@media(max-width:599px){
+  .route-head-bar{padding:6px 12px;gap:4px 8px}
+  .route-head .check-control{min-block-size:44px}
+  .route-theme .icon-button,.route-head .jump-next{min-inline-size:44px;min-block-size:44px;padding:6px 10px}
+  .route-head .backup-menu>summary{min-block-size:44px;padding:6px 10px}
+  .route-head .chapter-picker select{min-block-size:44px;padding-block:6px}
+  .date-odometer{block-size:40px}
+  .odometer-face{font-size:20px}
+  body:has(.date-odometer) .to-top{inset-block-end:calc(40px + 12px + env(safe-area-inset-bottom))}
+  body:has(.date-odometer) .app-shell{padding-block-end:128px}
+  html:has(.date-odometer){scroll-padding-bottom:56px}
+}
+/* 제목 초상화 단추(2026-11-15): 그림 크기는 그대로, 누를 곳만 넓힌다. */
+.portrait-button{display:inline-flex;padding:3px;margin:-3px;border:0;border-radius:10px;background:none;cursor:pointer}
+.portrait-button:focus-visible{outline:3px solid var(--text);outline-offset:0}
+/* 이 장의 인물 아래 「루트별 지원 대화」 단추(2026-11-15). */
+.context-rail .support-doc-button{display:inline-flex;align-items:center;gap:8px;margin-block-start:16px;min-block-size:44px}
+/* 2026-11-15 사용자 지시: 모든 진행 막대는 밝게·어둡게 모두 흰 바탕 + 초록 채움. 흰 화면 위에서도 막대 칸이 보이게 얇은 테두리. */
+progress,progress[data-progress-stage]{--progress-fill:#1E8E3E;background:#FFFFFF;color:#1E8E3E;accent-color:#1E8E3E;border:1px solid #0000004D;box-sizing:border-box}
+.dark progress[data-progress-stage]{--progress-fill:#1E8E3E}
+progress::-webkit-progress-bar,progress[data-progress-stage]::-webkit-progress-bar{background:#FFFFFF}
+progress::-webkit-progress-value,progress[data-progress-stage]::-webkit-progress-value{background:#1E8E3E}
+progress::-moz-progress-bar,progress[data-progress-stage]::-moz-progress-bar{background:#1E8E3E}
