@@ -34,7 +34,7 @@
     {
       "source": "data/chapter-gold.json",
       "target": "content/data/chapter-gold.json",
-      "sha256": "cf0e4c47bd1b1fc24e2ee73b997d64b93f42bd44aaddd5ee802b9ccc26962d47"
+      "sha256": "cd225736cc4cff04f01ac0d102ec5451c75fe4b627a0d30009525fd60f6cd877"
     },
     {
       "source": "data/chapter-progression.json",
@@ -109,7 +109,7 @@
     {
       "source": "data/playbook.json",
       "target": "content/data/playbook.json",
-      "sha256": "b372f52788416e3f8a1e9bb96e5a62c5963cbe66beae329e941a53b8d59a8461"
+      "sha256": "65a38bc3f34063c1b7e9046e2ae6635b745e900c3a6da46f39ebb4a7e14eeaf9"
     },
     {
       "source": "data/purchase-plan.json",
@@ -154,7 +154,7 @@
     {
       "source": "data/roster-selection.json",
       "target": "content/data/roster-selection.json",
-      "sha256": "03c76af6dbecdaf5c6608081fb3105261bfaed8da592f7c2ce7f4ebe648d82b4"
+      "sha256": "516d255562fb3c702cfe4c7af70977a8ecf90b92551c245a71f719f2ddd22726"
     },
     {
       "source": "data/sequential-training-plan.json",
@@ -219,7 +219,7 @@
     {
       "source": "data/training-priorities.json",
       "target": "content/data/training-priorities.json",
-      "sha256": "0305c27a5ab540f4eaa1177e84b9bb63b0e0ebeae412fcfe6c792736d4dd345c"
+      "sha256": "47f409201466e11e52561754ecd263a86caa9fc038219967f0a22ddc29f7106e"
     },
     {
       "source": "data/training-sources.json",
@@ -229,7 +229,7 @@
     {
       "source": "data/unit-readiness.json",
       "target": "content/data/unit-readiness.json",
-      "sha256": "d6eba8ea10660ebc63d6e0aeb5aa0c493b9f0511214ded69a0336be17ceb89ed"
+      "sha256": "44ee2932b4de9137963f4856f9b58c39ce0a0437689c730bbee1eeb9f76ae365"
     },
     {
       "source": "data/weapon-buy-sources.json",
@@ -2059,7 +2059,7 @@
     {
       "source": "personalized-app/src/content.json",
       "target": "content/source/react-content.json",
-      "sha256": "02123ccb9d068d7faae10b1a4e3b4b84984807b121d446d26e22d5c892b387ea"
+      "sha256": "7b9dadfc3d0c8a82e2c7809f9d3e2fc5ee9eefc49c2bfdc5bb6526caf448cd4a"
     },
     {
       "source": "personalized-app/src/timeskip-portraits.json",
@@ -2232,7 +2232,7 @@
       "sha256": "b6601f69a8318359991d5fadc11c27348b0df451ecddba9df142e5f979e508ca"
     }
   ],
-  "generatedSourceSha256": "02123ccb9d068d7faae10b1a4e3b4b84984807b121d446d26e22d5c892b387ea",
+  "generatedSourceSha256": "7b9dadfc3d0c8a82e2c7809f9d3e2fc5ee9eefc49c2bfdc5bb6526caf448cd4a",
   "activeActions": 1896,
   "checkIds": 2878,
   "peopleByRoute": {
