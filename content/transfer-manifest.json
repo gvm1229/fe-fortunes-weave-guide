@@ -34,7 +34,7 @@
     {
       "source": "data/chapter-gold.json",
       "target": "content/data/chapter-gold.json",
-      "sha256": "76c304101e73ee9e428a7a094b714e3639b15c52f2684e48b3ac3356d63a9b50"
+      "sha256": "4b7391620e0062b6e3b2c1a258b30cb67974bab1c839d99c6c533bed5e020227"
     },
     {
       "source": "data/chapter-progression.json",
@@ -64,7 +64,7 @@
     {
       "source": "data/final-roster.json",
       "target": "content/data/final-roster.json",
-      "sha256": "3bc0d144cbf30a3105d35bd99dbc33de82b5eb6fa4e7f667d46d8d140e871029"
+      "sha256": "b43ac8aba91bc02be4ac7d6d26741bf588f13a2fa94c6d9dc43f39c04234095f"
     },
     {
       "source": "data/god-service-plan.json",
@@ -109,7 +109,7 @@
     {
       "source": "data/playbook.json",
       "target": "content/data/playbook.json",
-      "sha256": "c8f06cd1117c1e6fa4ea4c62e71dd3e669770ab982fd31b729e56221eda85860"
+      "sha256": "404d799c57b0c1702da17f41a899e05ad244dd8f04f3dcae626842ebc33de220"
     },
     {
       "source": "data/purchase-plan.json",
@@ -124,7 +124,7 @@
     {
       "source": "data/recruit-all-plan.json",
       "target": "content/data/recruit-all-plan.json",
-      "sha256": "5db8a2c9bbff8b1c294fdefa8791f0f1165063800454d3b29c250772edc5b522"
+      "sha256": "414a7c3b70789cbee0bf1988a7017badb83b1e881a0d32aac8c5a572311ccc03"
     },
     {
       "source": "data/recruit-materials.json",
@@ -239,7 +239,7 @@
     {
       "source": "data/weekly-support.json",
       "target": "content/data/weekly-support.json",
-      "sha256": "6d292ec044a3ad84c6b4d677b83997c2211b68eec2fb445f298251cac778c1a1"
+      "sha256": "9834a7fdce4d1d0c6194d6b23d05203b01c0a0141e3960bbe90234e4f5f5611d"
     },
     {
       "source": "data/weekly-training.json",
@@ -1069,7 +1069,7 @@
     {
       "source": "notes/knowledge/preferences.md",
       "target": "content/notes/knowledge/preferences.md",
-      "sha256": "268866a34abfb2b9cf40b43faf88d0eaeac7d78237809449df90e051ba239be2"
+      "sha256": "7a50409bd86a7fb893bedad560c75c0c3dd3a3e759230613f4c3eb0f0f70dd03"
     },
     {
       "source": "notes/knowledge/README.md",
@@ -1084,7 +1084,7 @@
     {
       "source": "notes/knowledge/sources.md",
       "target": "content/notes/knowledge/sources.md",
-      "sha256": "44eb042a525468a8232076b2cc926bb3d76e405e28f1ddb5590a0072fa5d10a6"
+      "sha256": "327cedc17ca1590cf5f13640283f552f31b53a33309d37c6a18744904b9d3e63"
     },
     {
       "source": "notes/knowledge/support-word-meaning.md",
@@ -1294,7 +1294,7 @@
     {
       "source": "notes/recruit-all-review.md",
       "target": "content/notes/recruit-all-review.md",
-      "sha256": "1c6dabd4a215704561cddf89d196523ca75732efd3fa25215e6e4f2e08677498"
+      "sha256": "6644b434b3d039d08dd13fd9424872cb49f378b4f532e0b9ef772cbaa49cdb6c"
     },
     {
       "source": "notes/recruit-material-review.md",
@@ -1464,12 +1464,12 @@
     {
       "source": "notes/support-follow-along.md",
       "target": "content/notes/support-follow-along.md",
-      "sha256": "fcc23e4e19e51eef2062d4b60cbb3ba22e796e3ef8d61bff9d3da885bf54f109"
+      "sha256": "bf6614201b3a08cb91b3fba228435e65896585c548e2d1cac1794d5710363acf"
     },
     {
       "source": "notes/support-pairs-by-route.md",
       "target": "content/notes/support-pairs-by-route.md",
-      "sha256": "dbdbfc53f26496d17dbe564f1d279bc1f2d6850dea6b23aa007a6f7493d14247"
+      "sha256": "b67256251340a021d64ab0ee279661e1d1400f4c947373a14e9121ff4756c63e"
     },
     {
       "source": "notes/sword-xp-review.md",
@@ -1824,7 +1824,7 @@
     {
       "source": "notes/weekly-support-review.md",
       "target": "content/notes/weekly-support-review.md",
-      "sha256": "9783b7362910fdb994756677e927953f56f7529254fb7f25ed88ba07d371e3b2"
+      "sha256": "512684154b8fb5035cd974c4a8f53959e7292840baac74968355466b5f836e37"
     },
     {
       "source": "notes/workspace-fixed-review.md",
@@ -2059,7 +2059,7 @@
     {
       "source": "personalized-app/src/content.json",
       "target": "content/source/react-content.json",
-      "sha256": "b119069ee7658bce24aa54945e283471deb42dcd63e75f6c831af7bc7e704cc2"
+      "sha256": "e29d99ff13aeab4566e9c7ac663282f97cd91f33e18e9793ebaedcfd07dafaa2"
     },
     {
       "source": "personalized-app/src/timeskip-portraits.json",
@@ -2232,9 +2232,9 @@
       "sha256": "b6601f69a8318359991d5fadc11c27348b0df451ecddba9df142e5f979e508ca"
     }
   ],
-  "generatedSourceSha256": "b119069ee7658bce24aa54945e283471deb42dcd63e75f6c831af7bc7e704cc2",
-  "activeActions": 1858,
-  "checkIds": 2817,
+  "generatedSourceSha256": "e29d99ff13aeab4566e9c7ac663282f97cd91f33e18e9793ebaedcfd07dafaa2",
+  "activeActions": 1892,
+  "checkIds": 2867,
   "peopleByRoute": {
     "theodora": 16,
     "leda": 16,
@@ -2255,14 +2255,14 @@
   "recruitAssignments": 63,
   "referenceDocs": 318,
   "oldBlockCounts": {
-    "theodora-plan": 181,
-    "leda-plan": 177,
-    "dietrich-plan": 198,
-    "cai-plan": 170,
+    "theodora-plan": 180,
+    "leda-plan": 178,
+    "dietrich-plan": 200,
+    "cai-plan": 171,
     "theodora-war-plan": 17,
     "leda-war-plan": 24,
     "dietrich-war-plan": 16,
     "cai-war-plan": 17,
-    "part3-plan": 71
+    "part3-plan": 72
   }
 }

@@ -268,28 +268,28 @@
       "part": "1",
       "chapter": "9장",
       "old": {
-        "portraits": 52,
+        "portraits": 51,
         "skills": 40,
         "gods": 28,
         "classes": 4,
         "guides": 4,
-        "locations": 11
+        "locations": 8
       },
       "expected": {
-        "portraits": 52,
+        "portraits": 51,
         "skills": 40,
         "gods": 28,
         "classes": 4,
         "guides": 4,
-        "locations": 11
+        "locations": 8
       },
       "rendered": {
-        "portraits": 52,
+        "portraits": 51,
         "skills": 40,
         "gods": 28,
         "classes": 4,
         "guides": 4,
-        "locations": 11
+        "locations": 8
       }
     },
     {
@@ -297,7 +297,7 @@
       "part": "1",
       "chapter": "10장",
       "old": {
-        "portraits": 55,
+        "portraits": 54,
         "skills": 37,
         "gods": 20,
         "classes": 1,
@@ -305,7 +305,7 @@
         "locations": 6
       },
       "expected": {
-        "portraits": 55,
+        "portraits": 54,
         "skills": 37,
         "gods": 20,
         "classes": 1,
@@ -313,7 +313,7 @@
         "locations": 6
       },
       "rendered": {
-        "portraits": 55,
+        "portraits": 54,
         "skills": 37,
         "gods": 20,
         "classes": 1,
@@ -355,7 +355,7 @@
       "part": "1",
       "chapter": "12장",
       "old": {
-        "portraits": 75,
+        "portraits": 86,
         "skills": 37,
         "gods": 8,
         "classes": 6,
@@ -363,7 +363,7 @@
         "locations": 4
       },
       "expected": {
-        "portraits": 73,
+        "portraits": 84,
         "skills": 37,
         "gods": 8,
         "classes": 6,
@@ -371,7 +371,7 @@
         "locations": 4
       },
       "rendered": {
-        "portraits": 73,
+        "portraits": 84,
         "skills": 37,
         "gods": 8,
         "classes": 6,
@@ -529,7 +529,7 @@
       "part": "1",
       "chapter": "5장",
       "old": {
-        "portraits": 61,
+        "portraits": 60,
         "skills": 71,
         "gods": 39,
         "classes": 0,
@@ -537,7 +537,7 @@
         "locations": 5
       },
       "expected": {
-        "portraits": 60,
+        "portraits": 59,
         "skills": 71,
         "gods": 39,
         "classes": 0,
@@ -545,7 +545,7 @@
         "locations": 5
       },
       "rendered": {
-        "portraits": 60,
+        "portraits": 59,
         "skills": 71,
         "gods": 39,
         "classes": 0,
@@ -674,7 +674,7 @@
       "part": "1",
       "chapter": "10장",
       "old": {
-        "portraits": 49,
+        "portraits": 50,
         "skills": 41,
         "gods": 21,
         "classes": 5,
@@ -682,7 +682,7 @@
         "locations": 3
       },
       "expected": {
-        "portraits": 49,
+        "portraits": 50,
         "skills": 41,
         "gods": 21,
         "classes": 5,
@@ -690,7 +690,7 @@
         "locations": 3
       },
       "rendered": {
-        "portraits": 49,
+        "portraits": 50,
         "skills": 41,
         "gods": 21,
         "classes": 5,
@@ -703,7 +703,7 @@
       "part": "1",
       "chapter": "11장",
       "old": {
-        "portraits": 89,
+        "portraits": 94,
         "skills": 71,
         "gods": 33,
         "classes": 3,
@@ -711,7 +711,7 @@
         "locations": 4
       },
       "expected": {
-        "portraits": 89,
+        "portraits": 94,
         "skills": 71,
         "gods": 33,
         "classes": 3,
@@ -719,7 +719,7 @@
         "locations": 4
       },
       "rendered": {
-        "portraits": 89,
+        "portraits": 94,
         "skills": 71,
         "gods": 33,
         "classes": 3,
@@ -1022,7 +1022,7 @@
       "part": "1",
       "chapter": "9장",
       "old": {
-        "portraits": 92,
+        "portraits": 93,
         "skills": 91,
         "gods": 42,
         "classes": 3,
@@ -1030,7 +1030,7 @@
         "locations": 14
       },
       "expected": {
-        "portraits": 91,
+        "portraits": 92,
         "skills": 91,
         "gods": 42,
         "classes": 3,
@@ -1038,7 +1038,7 @@
         "locations": 14
       },
       "rendered": {
-        "portraits": 91,
+        "portraits": 92,
         "skills": 91,
         "gods": 42,
         "classes": 3,
@@ -1109,28 +1109,28 @@
       "part": "1",
       "chapter": "12장",
       "old": {
-        "portraits": 96,
+        "portraits": 107,
         "skills": 57,
         "gods": 20,
         "classes": 2,
         "guides": 8,
-        "locations": 14
+        "locations": 11
       },
       "expected": {
-        "portraits": 94,
+        "portraits": 105,
         "skills": 57,
         "gods": 20,
         "classes": 2,
         "guides": 8,
-        "locations": 14
+        "locations": 11
       },
       "rendered": {
-        "portraits": 94,
+        "portraits": 105,
         "skills": 57,
         "gods": 20,
         "classes": 2,
         "guides": 8,
-        "locations": 14
+        "locations": 11
       }
     },
     {
@@ -1457,7 +1457,7 @@
       "part": "1",
       "chapter": "11장",
       "old": {
-        "portraits": 54,
+        "portraits": 60,
         "skills": 37,
         "gods": 7,
         "classes": 5,
@@ -1465,7 +1465,7 @@
         "locations": 4
       },
       "expected": {
-        "portraits": 54,
+        "portraits": 60,
         "skills": 37,
         "gods": 7,
         "classes": 5,
@@ -1473,7 +1473,7 @@
         "locations": 4
       },
       "rendered": {
-        "portraits": 54,
+        "portraits": 60,
         "skills": 37,
         "gods": 7,
         "classes": 5,
