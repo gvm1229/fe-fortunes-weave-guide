@@ -2447,7 +2447,7 @@
         {
           "id": "theo-03--sirocco-yashiro-open",
           "category": "길 열기",
-          "text": "야시로 요새(야시로 요새)를 탐색해 이아페토스 대동굴로 가는 길을 연다. 이미 발견·개방됐다면 다시 탐색하지 않는다.",
+          "text": "야시로 요새를 탐색해 이아페토스 대동굴로 가는 길을 연다. 이미 발견·개방됐다면 다시 탐색하지 않는다.",
           "inheritLegacy": false
         },
         {
@@ -5023,7 +5023,7 @@
         {
           "id": "feast-loop-theodora-part1-20261114--inn-pair",
           "category": "여관 짝 식사",
-          "text": "여관에서 티아라·디에고를 지원을 올릴 상대 두 명과 함께 식사한다(예: 디에고·세테스·하르빈, 티아라·보나파르트·울턴드, 티아라·세테스·루루디아). 세오도라와의 영입 지원(티아라 지원 3·디에고 지원 2)도 선물·식사로 채운다.",
+          "text": "여관에서 티아라·디에고를 지원을 올릴 상대 두 명과 함께 식사한다(예: 디에고·세테스·하르빈, 티아라·보나파르트·울턴드, 티아라·세테스·루루디아). 세오도라와의 영입 지원(티아라 지원 3·디에고 지원 2)도 선물·식사로 채운다. 첫 회차에 식사 뒤 지원 목록에서 실제로 올랐는지 확인하고, 오르지 않으면 이 식사는 그만두고 마지막 회차의 연회로 올린다.",
           "inheritLegacy": false
         },
         {
@@ -5059,13 +5059,13 @@
         {
           "id": "feast-loop-theodora-part1-20261114--target",
           "category": "목표",
-          "text": "「루트별 지원 대화」 문서의 세오도라 표에 있는 모든 쌍이, 그 줄에 1부·1·2부·2부로 적힌 가장 높은 단계까지 열릴 때까지 반복한다. 2부에는 연회가 없다.",
+          "text": "「루트별 지원 대화」 문서의 세오도라 표에 있는 모든 쌍이, 그 줄에 1부·1·2부·2부로 적힌 가장 높은 단계까지 열릴 때까지 반복한다. 오르헬(외전으로만 합류 준비)·티아라·디에고의 쌍은 마지막 회차에서 채운다. 2부에는 연회가 없다.",
           "inheritLegacy": false
         },
         {
           "id": "feast-loop-theodora-part1-20261114--final-pass",
           "category": "마지막 회차",
-          "text": "모든 쌍이 목표 단계에 닿으면 마지막 회차에서만 카이 외전 → 오르헬 외전 → 티아라·디에고 영입 순서로 끝내고, 그 뒤 여관에서 대화를 본다.",
+          "text": "나머지 쌍이 목표 단계에 닿으면 마지막 회차에서만 카이 외전 → 오르헬 외전 → 티아라·디에고 영입 순서로 끝낸다. 그 뒤 다시 하기 없이 연회를 한 번 더 해 오르헬·티아라·디에고의 쌍을 올리고, 여관에서 대화를 본다.",
           "inheritLegacy": false
         }
       ],
@@ -12642,7 +12642,7 @@
         {
           "id": "miss-di04-inn--view",
           "category": "선택 장면",
-          "text": "자유행동 시작 뒤 도시 여관(도시 여관) 입구 안쪽에 들어가 선택 장면을 본다.",
+          "text": "자유행동 시작 뒤 도시 여관 입구 안쪽에 들어가 선택 장면을 본다.",
           "inheritLegacy": false
         }
       ],
@@ -15141,7 +15141,7 @@
         {
           "id": "di-12--34b54fea7d",
           "category": "행동",
-          "text": "8월 여유 시간에 페잔 관문(페잔 관문)을 지도에서 찾아 방문하고 첫 대화를 끝낸다.",
+          "text": "8월 여유 시간에 페잔 관문을 지도에서 찾아 방문하고 첫 대화를 끝낸다.",
           "inheritLegacy": true
         },
         {
@@ -15188,12 +15188,12 @@
         }
       ],
       "figures": [
-        "<figure class=\"step-visual\"><a aria-label=\"그림 크게 보기\" href=\"assets/guide/fezzan-kunlun-map.png\" rel=\"noopener\" target=\"_blank\"><img alt=\"페잔 관문 페잔 관문. 주요 의뢰는 자유행동 종료, 사전 답사에서는 계속 전진을 고릅니다.\" decoding=\"async\" height=\"409\" loading=\"lazy\" src=\"assets/guide/fezzan-kunlun-map.png\" width=\"728\"/></a><figcaption>페잔 관문 페잔 관문. 주요 의뢰는 자유행동 종료, 사전 답사에서는 계속 전진을 고릅니다. <a href=\"https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624350\" rel=\"noopener\" target=\"_blank\">그림 출처</a></figcaption></figure>"
+        "<figure class=\"step-visual\"><a aria-label=\"그림 크게 보기\" href=\"assets/guide/fezzan-kunlun-map.png\" rel=\"noopener\" target=\"_blank\"><img alt=\"페잔 관문. 주요 의뢰는 자유행동 종료, 사전 답사에서는 계속 전진을 고릅니다.\" decoding=\"async\" height=\"409\" loading=\"lazy\" src=\"assets/guide/fezzan-kunlun-map.png\" width=\"728\"/></a><figcaption>페잔 관문. 주요 의뢰는 자유행동 종료, 사전 답사에서는 계속 전진을 고릅니다. <a href=\"https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624350\" rel=\"noopener\" target=\"_blank\">그림 출처</a></figcaption></figure>"
       ],
       "notes": [
         {
           "category": "이동 순서",
-          "text": "8월에 페잔 관문(페잔 관문)에 먼저 한번 다녀와 첫 대화를 끝낸다. 9/2 레다 외전→9/3~9/15 세오도라 외전 목적지 재계의 제단(재계의 제단)→9/16 제도 귀환→9/17 투기장 광장 가브리엘의 베르트랑 외전→즉시 곤륜 메인 목적지로 간다."
+          "text": "8월에 페잔 관문에 먼저 한번 다녀와 첫 대화를 끝낸다. 9/2 레다 외전→9/3~9/15 세오도라 외전 목적지 재계의 제단→9/16 제도 귀환→9/17 투기장 광장 가브리엘의 베르트랑 외전→즉시 곤륜 메인 목적지로 간다."
         },
         {
           "category": "주의",
@@ -17245,7 +17245,7 @@
         {
           "id": "feast-loop-dietrich-part1-20261114--recruit",
           "category": "12장 영입",
-          "text": "12장에 영입할 수 있는 동료(게이츠·대도 등)를 먼저 영입한다. 장 다시 하기를 하면 풀리므로 회차마다 다시 한다.",
+          "text": "12장에 영입할 수 있는 동료(게이츠·대도·누조 등)를 먼저 영입한다. 장 다시 하기를 하면 풀리므로 회차마다 다시 한다. 제스터는 전투 의뢰 3개가 조건이라 반복 회차에는 하지 않고, 마지막 회차에서 영입한 뒤 다시 하기 없이 연회를 한 번 더 해 제스터의 쌍을 올린다.",
           "inheritLegacy": false
         },
         {
@@ -20792,7 +20792,7 @@
         {
           "id": "cai07-carriage--buy-axle",
           "category": "부품 구매",
-          "text": "의뢰가 미완료일 때만 메가이라 시장에서 차축 부품(차축 부품) 1개를500G에 산다. 이미 소지했으면 구매하지 않는다.",
+          "text": "의뢰가 미완료일 때만 메가이라 시장에서 차축 부품 1개를500G에 산다. 이미 소지했으면 구매하지 않는다.",
           "inheritLegacy": false
         },
         {
@@ -20804,7 +20804,7 @@
       ],
       "figures": [
         "<figure class=\"step-visual\"><a aria-label=\"그림 크게 보기\" href=\"assets/guide/cai-carriage-driver.png\" rel=\"noopener\" target=\"_blank\"><img alt=\"다그시온 투기장 근처의 의뢰 마부. 마차를 이미 쓸 수 있으면 다시 수주하지 않습니다.\" decoding=\"async\" height=\"360\" loading=\"lazy\" src=\"assets/guide/cai-carriage-driver.png\" width=\"640\"/></a><figcaption>다그시온 투기장 근처의 의뢰 마부. 마차를 이미 쓸 수 있으면 다시 수주하지 않습니다. <a href=\"https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625377\" rel=\"noopener\" target=\"_blank\">그림 출처</a></figcaption></figure>",
-        "<figure class=\"step-visual\"><a aria-label=\"그림 크게 보기\" href=\"assets/guide/cai-custom-axle.png\" rel=\"noopener\" target=\"_blank\"><img alt=\"메가이라 시장의 차축 부품(차축 부품). 기본500G이며 이미 소지했으면 더 사지 않습니다.\" decoding=\"async\" height=\"360\" loading=\"lazy\" src=\"assets/guide/cai-custom-axle.png\" width=\"640\"/></a><figcaption>메가이라 시장의 차축 부품(차축 부품). 기본500G이며 이미 소지했으면 더 사지 않습니다. <a href=\"https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625377\" rel=\"noopener\" target=\"_blank\">그림 출처</a></figcaption></figure>"
+        "<figure class=\"step-visual\"><a aria-label=\"그림 크게 보기\" href=\"assets/guide/cai-custom-axle.png\" rel=\"noopener\" target=\"_blank\"><img alt=\"메가이라 시장의 차축 부품. 기본500G이며 이미 소지했으면 더 사지 않습니다.\" decoding=\"async\" height=\"360\" loading=\"lazy\" src=\"assets/guide/cai-custom-axle.png\" width=\"640\"/></a><figcaption>메가이라 시장의 차축 부품. 기본500G이며 이미 소지했으면 더 사지 않습니다. <a href=\"https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/625377\" rel=\"noopener\" target=\"_blank\">그림 출처</a></figcaption></figure>"
       ],
       "notes": [
         {
@@ -26342,7 +26342,7 @@
         {
           "id": "p3-gate-squad-first--forecast",
           "category": "전투 예고",
-          "text": "전투 예고(전투 예고)에서 다음 문의 적 병종·승리/패배 조건·출격 상한 확인",
+          "text": "전투 예고에서 다음 문의 적 병종·승리/패배 조건·출격 상한 확인",
           "inheritLegacy": false
         },
         {
@@ -26566,7 +26566,7 @@
         {
           "id": "buy-part3--southern",
           "category": "던전 상자",
-          "text": "니시아데스 사막의 남쪽 통로(남쪽 통로) 던전에 갈 수 있을 때 로컬 공략의3부 선더 소드+3 상자를 확인한다.1부 상자 내용과 구분한다.",
+          "text": "니시아데스 사막의 남쪽 통로 던전에 갈 수 있을 때 로컬 공략의3부 선더 소드+3 상자를 확인한다.1부 상자 내용과 구분한다.",
           "inheritLegacy": false
         },
         {
@@ -26772,7 +26772,7 @@
         {
           "id": "collect-p3-windfire--fort",
           "category": "이동",
-          "text": "역에서 왼쪽 길로 디오네 요새(디오네 요새)에 간다. 던전을 떠나기 전에 상자를 조사한다.",
+          "text": "역에서 왼쪽 길로 디오네 요새에 간다. 던전을 떠나기 전에 상자를 조사한다.",
           "inheritLegacy": false
         },
         {
@@ -27927,7 +27927,7 @@
         {
           "id": "collect-p3-aswan-bow--bow",
           "category": "합류 지참품",
-          "text": "5구간에서 아스완이 합류하면 이데아의 활(이데아의 활)을 소지품에서 확인하고 보관한다.",
+          "text": "5구간에서 아스완이 합류하면 이데아의 활을 소지품에서 확인하고 보관한다.",
           "inheritLegacy": false
         }
       ],
