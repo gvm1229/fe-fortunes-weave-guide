@@ -2,6 +2,7 @@
 // 맨 위로 버튼, 인물 카드 선물 칸, 최종 25인 빨간 테두리(밝게·어둡게 같은 색).
 import { chromium } from '@playwright/test';
 import { resolve } from 'node:path';
+import { readFileSync } from 'node:fs';
 import assert from 'node:assert/strict';
 process.env.TEMP = process.env.TMP = resolve('.tmp');
 const base = process.env.BROWSER_BASE_URL || 'http://localhost:3000';
@@ -38,5 +39,17 @@ try {
     assert.ok(gifts.length && gifts.every(g => g.c > 0), '모든 인물 카드에 싼 선물');
     n++; await ctx.close();
   }
+  // 바닥 게임 날짜(2026-11-14): 새 브라우저(시작 전, 날짜 없음)는 숨김. 7장 앞까지 체크한 기록이면 7장 첫 날짜, 2부는 숨김. 맨 위로 버튼은 바닥 위.
+  {const st=JSON.parse(readFileSync('content/derived/checklist.json','utf8')).stages.find(s=>s.id==='theodora-plan'),pb=JSON.parse(readFileSync('content/data/playbook.json','utf8')),checks={};
+   for(const c of st.chapters.slice(0,st.chapters.findIndex(c=>c.title==='7장')))for(const b of c.blocks)for(const a of pb.groups.find(g=>g.id===b.id)?.actions||[])checks[a.id]=true;
+   for(const [w,h] of [[390,844],[1440,900]]){const ctx=await browser.newContext({viewport:{width:w,height:h}});const p=await ctx.newPage();
+    await p.goto(base+'/theodora/1/');await p.locator('.route-head').waitFor();await p.waitForTimeout(500);assert.equal(await p.locator('.date-odometer').count(),0,'새 브라우저는 바닥 날짜 없음');
+    await p.evaluate(s=>localStorage.setItem('fortunes-weave-checklist-v1',s),JSON.stringify({schemaVersion:1,revision:1,checks}));await p.reload();await p.locator('.date-odometer').waitFor();
+    const f=await p.evaluate(()=>{const e=document.querySelector('.date-odometer'),r=e.getBoundingClientRect(),t=document.querySelector('.to-top').getBoundingClientRect();return {label:e.getAttribute('aria-label'),digits:[...e.querySelectorAll('.odometer-digit')].length,bottom:r.bottom,top:r.top,toTopBottom:t.bottom,face:e.querySelector('.odometer-face').getBoundingClientRect(),W:innerWidth,H:innerHeight,overflowX:document.documentElement.scrollWidth-innerWidth};});
+    assert.match(f.label,/^게임 날짜 1449년 \d{1,2}월 \d{1,2}일$/,'바닥 날짜 이름');assert.equal(f.digits,8,'숫자 칸 8개(1449/MM/DD)');
+    assert.ok(Math.abs(f.bottom-f.H)<1&&Math.abs((f.face.left+f.face.right)/2-f.W/2)<2,'바닥 가운데');assert.ok(f.toTopBottom<=f.top+1,'맨 위로 버튼이 바닥 위');assert.ok(f.overflowX<=0);
+    const before=f.label;await p.locator('.chapter-section[data-current=true] .checklist input:not(:checked)').first().check().catch(()=>{});
+    await p.goto(base+'/theodora/2/');await p.locator('.route-head').waitFor();await p.waitForTimeout(400);assert.equal(await p.locator('.date-odometer').count(),0,'2부는 바닥 날짜 없음');
+    n++;await ctx.close();}}
   console.log(`통과: 고정 머리·맨 위로·선물·빈 체크 기록 ${n}개 화면`);
 } finally { await browser.close(); }
