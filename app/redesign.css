@@ -497,3 +497,17 @@ body:has(.date-odometer) .to-top{inset-block-end:calc(56px + 16px + env(safe-are
 body:has(.date-odometer) .app-shell{padding-block-end:152px}
 @media(min-width:768px){body:has(.date-odometer) .context-rail{max-block-size:calc(100dvh - var(--task-header-height,0px) - 168px)}}
 html:has(.date-odometer){scroll-padding-bottom:72px}
+/* 문서 표: 한글 낱말이 글자마다 세로로 쪼개지지 않게(2026-11-15 "루트별 지원 대화" 세로 줄바꿈). 넓으면 표만 가로로 민다. */
+.document-table-scroll{max-inline-size:100%;overflow-x:auto;overscroll-behavior-x:contain}
+.document-table{word-break:keep-all;overflow-wrap:break-word}
+.document-table th,.document-table td{min-inline-size:3.5em}
+.document-table .game-badge{white-space:nowrap}
+/* 지원 대화 인물 거르기 */
+.pair-filter{margin-block-end:16px}.pair-filter-label{margin:0 0 8px;font-weight:600}
+.pair-filter-chips{display:flex;flex-wrap:wrap;gap:6px}
+.pair-chip{display:inline-flex;align-items:center;gap:6px;min-block-size:40px;padding:4px 12px 4px 6px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--text);font:inherit;font-size:16px;cursor:pointer}
+.pair-chip:first-child{padding-inline-start:12px}
+.pair-chip img{inline-size:28px;block-size:28px;border-radius:50%;object-fit:cover;object-position:top}
+.pair-chip[aria-pressed=true]{background:var(--primary);color:var(--primary-fg);border-color:var(--primary)}
+.pair-chip:focus-visible{outline:3px solid var(--text);outline-offset:2px}
+.pair-table td,.pair-table th{white-space:nowrap}.pair-table td:last-child,.pair-table th:last-child{white-space:normal;min-inline-size:14em}
