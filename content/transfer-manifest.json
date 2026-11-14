@@ -104,7 +104,7 @@
     {
       "source": "data/playbook.json",
       "target": "content/data/playbook.json",
-      "sha256": "3e9a8e50c9c17063826e89a52122438648e0fc10c930203b2f5515142a6d06a6"
+      "sha256": "3dc866dc0a50f674e9442e460f62b9ffbed949729a1a8cd4f69961538b5178c0"
     },
     {
       "source": "data/purchase-plan.json",
@@ -339,7 +339,7 @@
     {
       "source": "notes/chapter-route-plan.md",
       "target": "content/notes/chapter-route-plan.md",
-      "sha256": "b17b15ee599b4174ac3fe48fb38f1a087908149edd332d2aca566444039f5a9b"
+      "sha256": "c8e973cab2edeb84c051cc8c3eebac098e1339a6c0d0cbf2046864c4711de074"
     },
     {
       "source": "notes/checklist-full-review.md",
@@ -1154,7 +1154,7 @@
     {
       "source": "notes/missables-shopping-review.md",
       "target": "content/notes/missables-shopping-review.md",
-      "sha256": "3fccecfa99406954df5eb7bb19685e6e77988b3ccb11064363203aaed99549d1"
+      "sha256": "0fe058f0919930e994b57b75377c19f502fecd3e150a7c0cf025957148c97228"
     },
     {
       "source": "notes/modal-reading-review.md",
@@ -1459,7 +1459,7 @@
     {
       "source": "notes/support-follow-along.md",
       "target": "content/notes/support-follow-along.md",
-      "sha256": "cb0632f75e7327cef290dde0a52bc6d7eed420284b9ccb4f36bae889cb7531f9"
+      "sha256": "78d84e41d5dd8ff61dd3597fe91fd6c153b5f931353aa50c12535f62972cd016"
     },
     {
       "source": "notes/support-pairs-by-route.md",
@@ -2044,7 +2044,7 @@
     {
       "source": "personalized-app/src/content.json",
       "target": "content/source/react-content.json",
-      "sha256": "0c38f4652e55b196fa9c62bd9ec74cadeb48d96624040b45f932b0e8907f984c"
+      "sha256": "0159eb543ba06bdb2caec586b4c1012ec2ba1d24586f30cc8e1309c25bb2700f"
     },
     {
       "source": "personalized-app/src/timeskip-portraits.json",
@@ -2217,7 +2217,7 @@
       "sha256": "b6601f69a8318359991d5fadc11c27348b0df451ecddba9df142e5f979e508ca"
     }
   ],
-  "generatedSourceSha256": "0c38f4652e55b196fa9c62bd9ec74cadeb48d96624040b45f932b0e8907f984c",
+  "generatedSourceSha256": "0159eb543ba06bdb2caec586b4c1012ec2ba1d24586f30cc8e1309c25bb2700f",
   "activeActions": 1899,
   "checkIds": 2881,
   "peopleByRoute": {

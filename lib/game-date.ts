@@ -5,10 +5,10 @@ export const PART1_YEAR = 1449;
 
 /**
  * 묶음 제목의 게임 날짜. 범위("3/1~3/7")는 시작일을 쓴다.
- * 기한을 말하는 날짜("~4/10", "4/1까지", "11/6 전", "마감 10/22")는 지금 날짜가 아니므로 쓰지 않는다.
+ * 기한을 말하는 날짜("~4/10", "4/1까지", "11/6 전", "11/3 전에", "마감 10/22")는 지금 날짜가 아니므로 쓰지 않는다.
  */
 export function titleDate(title: string): { m: number; d: number } | null {
-  const m = title.match(/(~\s*|마감\s*)?(\d{1,2})\/(\d{1,2})(?!\d)(\s*(?:까지|마감|전(?![가-힣])))?/);
+  const m = title.match(/(~\s*|마감\s*)?(\d{1,2})\/(\d{1,2})(?!\d)(\s*(?:까지|마감|전에?(?![가-힣])))?/);
   if (!m || m[1] || m[4]) return null;
   const month = Number(m[2]), day = Number(m[3]);
   return month >= 1 && month <= 12 && day >= 1 && day <= 31 ? { m: month, d: day } : null;

@@ -496,3 +496,4 @@ img.final25-portrait,:is(.app-shell,.team-page,.sheet) img.final25-portrait,.dar
 body:has(.date-odometer) .to-top{inset-block-end:calc(56px + 16px + env(safe-area-inset-bottom))}
 body:has(.date-odometer) .app-shell{padding-block-end:152px}
 @media(min-width:768px){body:has(.date-odometer) .context-rail{max-block-size:calc(100dvh - var(--task-header-height,0px) - 168px)}}
+html:has(.date-odometer){scroll-padding-bottom:72px}

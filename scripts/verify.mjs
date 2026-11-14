@@ -50,6 +50,10 @@ assert.equal(scopeMarkdown('## 세오도라 1부\n현재\n## 레다 1부\n다른
 assert.throws(()=>validateChecks({schemaVersion:1,revision:0,checks:{a:'true'}}));
 assert.throws(()=>validateChecks({schemaVersion:1,revision:-1,checks:{}}));
 if(progress)assert.deepEqual(validateChecks(JSON.parse(JSON.stringify(progress))),progress);
+// 원래 이름을 한국어로 바꾸며 생긴 "X(X)"·"X가 X다" 같은 말 되풀이 금지(2026-11-15 사용자 지적: "반짝반짝어가 반짝반짝어 위치입니다").
+{const rcT=read('content/source/react-content.json'),strip=h=>h.replace(/<svg.*?<\/svg>/gs,'').replace(/<small class="recruit-material-hint">위치<\/small>/g,'').replace(/<[^>]+>/g,'');
+ const texts=[...rcT.stages.flatMap(s=>s.blocks.map(b=>[s.id+':'+b.id,strip(b.html)+' '+[...b.html.matchAll(/(?:alt|aria-label)="([^"]*)"/g)].map(m=>m[1]).join(' ')])),['prep',strip(rcT.prep)],['materials',strip(rcT.materials)]];
+ for(const [w,t] of texts){const a=t.match(/([가-힣][가-힣 ]{0,15}[가-힣])\(\1\)/),b=t.match(/([가-힣][가-힣 ]{1,12}?)(?:가|이|는|은) \1(?:이?다|입니다)/);assert.ok(!a,`${w} 같은 말 괄호: ${a?.[0]}`);assert.ok(!b,`${w} 같은 말 되풀이: ${b?.[0]}`);}}
 // 사이트에는 체크 기록을 넣지 않는다(2026-11-14 사용자 지시). 앱 코드는 체크 원본·진행 가져오기 파일을 읽지 않고, 공개 폴더로도 복사하지 않는다.
 {const {readdirSync}=await import('node:fs');const walkSrc=d=>readdirSync(d,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walkSrc(`${d}/${e.name}`):/\.(tsx?|mjs|js)$/.test(e.name)?[`${d}/${e.name}`]:[]);
  for(const f of ['app','components','lib'].flatMap(walkSrc)){const t=readFileSync(f,'utf8');assert.ok(!/checklist-seed|data\/checklist\.json|theodora-progress-import\.json/.test(t),f+' 체크 기록을 읽음');}
