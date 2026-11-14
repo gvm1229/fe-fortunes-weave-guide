@@ -242,3 +242,4 @@ try {
   report(true);
 }
 if(!process.exitCode)await import('./corrections-browser-check.mjs');
+if(!process.exitCode)await import('./header-browser-check.mjs');

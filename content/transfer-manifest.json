@@ -1834,12 +1834,7 @@
     {
       "source": "progress.md",
       "target": "content/progress.md",
-      "sha256": "e016096e2e40485df8ac545c41f1cccf7008244c4fd3230300f7f8e1c28d0e07"
-    },
-    {
-      "source": "theodora-progress-import.md",
-      "target": "content/theodora-progress-import.md",
-      "sha256": "f2d7ce21de509558401c0150f5cd768c3437076bc8ebcf91bfaea7832367f0db"
+      "sha256": "d1b4017608ecec8918a3c28836c0dad115a82d88f252574b4029098a607da0a1"
     },
     {
       "source": "개인화 사용법.md",
@@ -2049,7 +2044,7 @@
     {
       "source": "personalized-app/src/content.json",
       "target": "content/source/react-content.json",
-      "sha256": "e46ca21538246a27d2cbf1cb11e0a3b6dd4d9399745dad74ee0f7e0334e49417"
+      "sha256": "5077b7941900b8c2be1d0c85f688f32b66dcc79e4f767df910e3986c07ae729e"
     },
     {
       "source": "personalized-app/src/timeskip-portraits.json",
@@ -2222,7 +2217,7 @@
       "sha256": "b6601f69a8318359991d5fadc11c27348b0df451ecddba9df142e5f979e508ca"
     }
   ],
-  "generatedSourceSha256": "e46ca21538246a27d2cbf1cb11e0a3b6dd4d9399745dad74ee0f7e0334e49417",
+  "generatedSourceSha256": "5077b7941900b8c2be1d0c85f688f32b66dcc79e4f767df910e3986c07ae729e",
   "activeActions": 1896,
   "checkIds": 2878,
   "peopleByRoute": {

@@ -23,5 +23,5 @@ function save(data:CheckState){
 export function useChecks(){
   const state=useSyncExternalStore(subscribe,()=>snapshot,()=>initial);
   useEffect(()=>{load();const sync=(e:StorageEvent)=>{if(e.key===key){snapshot=initial;load();}};window.addEventListener('storage',sync);return()=>window.removeEventListener('storage',sync);},[]);
-  return {...state,toggle:(id:string,value:boolean)=>{if(snapshot.ready)save({...snapshot.data,checks:{...snapshot.data.checks,[id]:value},revision:snapshot.data.revision+1,updatedAt:new Date().toISOString()});},importData:(value:unknown)=>{const data=validateChecks(value);save({...data,revision:Math.max(data.revision,snapshot.data.revision)+1,updatedAt:new Date().toISOString()});},retry:()=>{snapshot=initial;load();}};
+  return {...state,toggle:(id:string,value:boolean)=>{if(snapshot.ready)save({...snapshot.data,checks:{...snapshot.data.checks,[id]:value},revision:snapshot.data.revision+1,updatedAt:new Date().toISOString()});},importData:(value:unknown)=>{const data=validateChecks(value);save({...data,revision:Math.max(data.revision,snapshot.data.revision)+1,updatedAt:new Date().toISOString()});},retry:()=>{snapshot=initial;load();},clear:()=>{if(snapshot.ready)save({...empty,revision:snapshot.data.revision+1,updatedAt:new Date().toISOString()});}};
 }

@@ -37,7 +37,7 @@ writeFileSync('content/derived/final25.json',JSON.stringify({names:Object.keys(r
 const documents={};
 function walkDocuments(dir){for(const entry of readdirSync(dir,{withFileTypes:true})){const path=`${dir}/${entry.name}`;if(entry.isDirectory())walkDocuments(path);else if(entry.name.endsWith('.md')){const source=readFileSync(path,'utf8');documents[path.slice('content/'.length)]={sourceSha256:createHash('sha256').update(source).digest('hex'),body:deriveMarkdown(source)};}}}
 walkDocuments('content/notes');walkDocuments('content/routes');walkDocuments('content/personalized-app');
-for(const name of ['progress.md','theodora-progress-import.md','개인화 사용법.md']){const source=readFileSync(`content/${name}`,'utf8');documents[name]={sourceSha256:createHash('sha256').update(source).digest('hex'),body:deriveMarkdown(source)};}
+for(const name of ['progress.md','개인화 사용법.md']){const source=readFileSync(`content/${name}`,'utf8');documents[name]={sourceSha256:createHash('sha256').update(source).digest('hex'),body:deriveMarkdown(source)};}
 writeFileSync('content/derived/documents.json',JSON.stringify(documents));
 const referenceDocuments=JSON.parse(readFileSync('content/source/reference-documents.json','utf8'));
 writeFileSync('content/derived/reference-documents.json',JSON.stringify(Object.fromEntries(Object.entries(referenceDocuments).map(([path,doc])=>[path,{...doc,tree:readableTree(doc.tree)}]))));
