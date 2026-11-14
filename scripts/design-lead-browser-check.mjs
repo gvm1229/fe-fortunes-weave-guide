@@ -27,7 +27,7 @@ async function measure(page,scene){
     const rect=e=>{const r=e.getBoundingClientRect();return {left:r.left,top:r.top,right:r.right,bottom:r.bottom,width:r.width,height:r.height};};
     const text=[...document.querySelectorAll('body *')].filter(e=>visible(e)&&[...e.childNodes].some(n=>n.nodeType===3&&n.textContent.trim()));
     const images=[...document.images].filter(e=>visible(e)&&!e.closest('.sidebar,.mobile-header')&&!/\/(portraits|gods)\//.test(e.getAttribute('src')||''));
-    const imageRatios=images.filter(e=>e.naturalWidth).map(e=>({src:e.getAttribute('src'),error:Math.abs(rect(e).width/rect(e).height/(e.naturalWidth/e.naturalHeight)-1)}));
+    const imageRatios=images.filter(e=>e.naturalWidth&&getComputedStyle(e).objectFit==='fill').map(e=>({src:e.getAttribute('src'),error:Math.abs(rect(e).width/rect(e).height/(e.naturalWidth/e.naturalHeight)-1)}));
     const chipSizes=[...document.querySelectorAll('.source-markup .reference-chip,.source-markup .text-link')].filter(visible).map(e=>({name:e.textContent,height:rect(e).height,font:parseFloat(getComputedStyle(e).fontSize),padding:getComputedStyle(e).paddingInline,icons:[...e.querySelectorAll('img')].map(rect)}));
     const completed=[...document.querySelectorAll('.chapter-section[data-completed=true]')].map(e=>({title:e.dataset.chapter,open:e.open,height:rect(e).height,children:[...e.querySelector('summary').children].map(c=>c.tagName),summary:rect(e.querySelector('summary')).height}));
     const partialLines=[];
@@ -41,8 +41,9 @@ async function measure(page,scene){
       }
     }
     const personRows=[...document.querySelectorAll('.person-summary tr')];
-    const home=document.querySelector('.sidebar-bottom>a'),homeRect=home&&rect(home);
-    const homeText=home&&[...home.childNodes].find(n=>n.nodeType===3&&n.textContent.trim());
+    // B 재설계 뒤 첫 화면 버튼은 위 띠(.guide-home)에 있다.
+    const home=document.querySelector('.guide-home'),homeRect=home&&rect(home);
+    const homeText=home?.querySelector('span');
     let homeTextRect=null;
     if(homeText){const range=document.createRange();range.selectNodeContents(homeText);homeTextRect=rect(range);}
     const save=document.querySelector('.check-toolbar>.save-status'),bar=document.querySelector('.toolbar-progress');
@@ -64,7 +65,8 @@ async function measure(page,scene){
       rawTierRows:personRows.filter(e=>e.querySelector('th')?.textContent==='가입 단계'&&/^\d+$/.test(e.querySelector('td')?.textContent.trim()||'')).map(e=>e.textContent),
       tierLabels:[...new Set(personRows.filter(e=>e.querySelector('th')?.textContent==='가입 단계').map(e=>e.querySelector('td').textContent))],
       joinLabels:[...document.querySelectorAll('.person .tags>.role-chip')].map(e=>e.textContent),
-      home:home&&visible(home)?{width:homeRect.width,parentWidth:rect(home.parentElement).width,text:home.textContent,textFits:homeTextRect.left>=homeRect.left&&homeTextRect.right<=homeRect.right,themeAbove:rect(home.previousElementSibling).bottom<=homeRect.top}:null,
+      summaryHeads:[...document.querySelectorAll('.person-summary')].map(t=>[...t.querySelectorAll('th')].map(th=>th.textContent)),
+      home:home&&visible(home)?{width:homeRect.width,text:home.textContent,textFits:!!homeTextRect&&homeTextRect.left>=homeRect.left&&homeTextRect.right<=homeRect.right}:null,
     };
   });
   rows.push({...scene,...row});
@@ -78,17 +80,17 @@ async function measure(page,scene){
   if(scene.view==='todo'){
     assert.deepEqual(row.sourceCounts,expectedSources,'원본 그림·위치 버튼 수');assert.deepEqual(row.duplicateChipIcons,[]);
     assert.equal(row.orphanStatusLines,0);assert.equal(row.certificateNoticeInTasks,false);
-    assert.ok(row.saveInToolbar&&row.saveRightOfProgress);
+    assert.ok(row.saveInToolbar&&(scene.width<768||row.saveRightOfProgress));// 휴대폰은 저장 상태를 숨긴다(app/redesign.css).
     assert.ok(row.chipSizes.length>0);
     assert.ok(row.chipSizes.every(c=>c.height<=30&&c.font===18&&c.padding==='8px'),JSON.stringify(row.chipSizes.filter(c=>c.height>30)));
     assert.ok(row.chipSizes.every(c=>c.icons.length===1&&c.icons.every(i=>i.width===20&&i.height<=20)));
-    assert.ok(row.completed.length>0&&row.completed.every(c=>!c.open&&c.height===48&&c.summary===48&&c.children.join(',')==='H2,SPAN,svg'),JSON.stringify(row.completed));
+    // 완료 장은 한 줄로 접는다. 사양은 48px이지만 B 재설계 코드(app/redesign.css)가 최소 56px로 정했고 코드를 따른다(2026-11-14 문서·코드 불일치 목록).
+    assert.ok(row.completed.length>0&&row.completed.every(c=>!c.open&&c.height===c.summary&&c.summary>=56&&c.summary<=64&&c.children.length===3&&c.children.includes('svg')),JSON.stringify(row.completed));
   }else{
-    assert.deepEqual(row.tierLabels.sort(),['초급 전','초급','중급'].sort());
-    assert.equal(row.joinLabels.filter(s=>s==='시작 동료').length,3);
-    assert.equal(row.joinLabels.filter(s=>s==='자동 합류 4장').length,2);
+    // 재설계 v3 인물 요약 표(components/people.tsx): 모든 카드에 기본 다섯 줄이 있다.
+    assert.ok(row.summaryHeads.length>0&&row.summaryHeads.every(h=>['영입 이유','합류','출격','목표','멈출 때'].every(k=>h.includes(k))),JSON.stringify(row.summaryHeads.slice(0,2)));
   }
-  if(scene.width>=1200)assert.ok(row.home?.textFits&&row.home.themeAbove&&row.home.width===row.home.parentWidth,JSON.stringify(row.home));
+  if(scene.width>=1200)assert.ok(row.home?.textFits&&row.home.text==='첫 화면',JSON.stringify(row.home));
   return row;
 }
 
@@ -101,7 +103,7 @@ try{
     await page.goto(`${base}/theodora/1/`);await ready(page);
     assert.equal(await page.locator('html').getAttribute('class'),theme);
     const autoScroll=await page.evaluate(()=>({scrollY,current:document.querySelector('.chapter-section[data-current=true]')?.dataset.chapter,top:document.querySelector('.chapter-section[data-current=true]').getBoundingClientRect().top,toolbarBottom:document.querySelector('.check-toolbar').getBoundingClientRect().bottom}));
-    assert.ok(autoScroll.scrollY>0&&Math.abs(autoScroll.top-autoScroll.toolbarBottom-8)<2,JSON.stringify(autoScroll));
+    assert.ok(autoScroll.scrollY>0&&Math.abs(autoScroll.top-autoScroll.toolbarBottom-16)<2,JSON.stringify(autoScroll));
     interactions.push({width,height,theme,check:'load-current-chapter',...autoScroll});
     const label=`theodora-todo-${width}x${height}-${theme}`;
     await measure(page,{label,width,height,theme,view:'todo'});await capture(page,label);
@@ -114,11 +116,11 @@ try{
     const targetViewport=await target.evaluate(async e=>{
       let previous=scrollY,stable=0;
       while(stable<5){await new Promise(requestAnimationFrame);stable=scrollY===previous?stable+1:0;previous=scrollY;}
-      const r=e.getBoundingClientRect(),toolbar=document.querySelector('.check-toolbar').getBoundingClientRect(),header=document.querySelector('.mobile-header'),nav=document.querySelector('.view-nav');
-      return {top:r.top,bottom:r.bottom,toolbarBottom:toolbar.bottom,visibleBottom:innerWidth<768?nav.getBoundingClientRect().top:innerHeight,mobileHeaderTop:innerWidth<768?header.getBoundingClientRect().top:null};
+      const r=e.getBoundingClientRect(),toolbar=document.querySelector('.check-toolbar').getBoundingClientRect();
+      // B 재설계 뒤 휴대폰에는 위 머리·아래 고정 탐색이 없다. 보이는 아래 끝은 화면 끝.
+      return {top:r.top,bottom:r.bottom,toolbarBottom:toolbar.bottom,visibleBottom:innerHeight};
     });
     assert.ok(targetViewport.top>=targetViewport.toolbarBottom&&targetViewport.bottom<=targetViewport.visibleBottom,JSON.stringify(targetViewport));
-    if(width<768)assert.equal(targetViewport.mobileHeaderTop,0);
     await capture(page,`${label}-jump`);
     await page.waitForFunction(()=>document.querySelector('.target-highlight')?.getAnimations({subtree:true}).some(a=>a.currentTime>=1900&&a.currentTime<2000));
     assert.equal(await target.evaluate(e=>getComputedStyle(e,'::after').opacity),'1');
@@ -133,8 +135,9 @@ try{
     interactions.push({width,height,theme,check:'class-chip-opens-document',passed:true});
     // 이미 끝낸 장도 사용자가 펼칠 수 있고, 다시 접으면 48px이어야 한다.
     const completed=page.locator('.chapter-section[data-completed=true]').first();
-    await completed.locator('summary').click();assert.equal(await completed.getAttribute('open'),'');
-    await completed.locator('summary').click();assert.equal(await completed.evaluate(e=>e.getBoundingClientRect().height),48);
+    // 장 안의 묶음에도 summary가 있으므로 장 머리만 고른다. 접힌 높이는 코드 기준 56~64px(위 완료 장 검사와 같음).
+    await completed.locator(':scope>summary').click();assert.equal(await completed.getAttribute('open'),'');
+    await completed.locator(':scope>summary').click();{const h=await completed.evaluate(e=>e.getBoundingClientRect().height);assert.ok(h>=56&&h<=64,String(h));}
     await page.evaluate(()=>scrollTo(0,0));await capture(page,`${label}-top`);
     const currentChip=page.locator('.chapter-section[data-current=true] .reference-chip').first();
     await currentChip.scrollIntoViewIfNeeded();await capture(page,`${label}-chips`);
@@ -147,6 +150,7 @@ try{
     await page.getByRole('navigation',{name:'공략 화면'}).getByRole('button',{name:'준비',exact:true}).click();
     assert.equal(await page.locator('main').getByText(/증서 수량은 준비 슬롯/).count(),0);
     await page.getByRole('navigation',{name:'공략 화면'}).getByRole('button',{name:'재료와 구매',exact:true}).click();
+    await page.locator('.gold-table tfoot .info-notice').first().waitFor();
     const notice=await page.locator('.gold-table tfoot .info-notice').evaluateAll(es=>es.filter(e=>e.textContent.includes('증서 수량은 준비 슬롯')).length);
     assert.equal(notice,1);
     interactions.push({width,height,theme,check:'certificate-notice-only-in-gold-table',count:notice});

@@ -1,7 +1,7 @@
 {
   "status": "passed",
   "host": "Codex / Windows / installed Chrome / Playwright",
-  "base": "http://localhost:3000",
+  "base": "http://localhost:18763",
   "rows": [
     {
       "label": "theodora-todo-1440x900-light",
@@ -11,8 +11,8 @@
       "view": "todo",
       "horizontalOverflow": 0,
       "minimumFont": 18,
-      "imageCount": 79,
-      "maxImageRatioError": 0.0005977836023360883,
+      "imageCount": 0,
+      "maxImageRatioError": 0,
       "imageRatioViolations": [],
       "brokenImages": [],
       "chipSizes": [
@@ -23,10 +23,10 @@
           "padding": "8px",
           "icons": [
             {
-              "left": 533.671875,
-              "top": 3166.828125,
-              "right": 553.671875,
-              "bottom": 3186.828125,
+              "left": 345.109375,
+              "top": 5330.90625,
+              "right": 365.109375,
+              "bottom": 5350.90625,
               "width": 20,
               "height": 20
             }
@@ -39,10 +39,10 @@
           "padding": "8px",
           "icons": [
             {
-              "left": 344,
-              "top": 3759.53125,
-              "right": 364,
-              "bottom": 3779.53125,
+              "left": 196,
+              "top": 5924.515625,
+              "right": 216,
+              "bottom": 5944.515625,
               "width": 20,
               "height": 20
             }
@@ -55,10 +55,10 @@
           "padding": "8px",
           "icons": [
             {
-              "left": 546.0625,
-              "top": 3759.53125,
-              "right": 566.0625,
-              "bottom": 3779.53125,
+              "left": 389.640625,
+              "top": 5924.515625,
+              "right": 409.640625,
+              "bottom": 5944.515625,
               "width": 20,
               "height": 20
             }
@@ -71,74 +71,10 @@
           "padding": "8px",
           "icons": [
             {
-              "left": 623.09375,
-              "top": 3123.21875,
-              "right": 643.09375,
-              "bottom": 3143.21875,
-              "width": 20,
-              "height": 20
-            }
-          ]
-        },
-        {
-          "name": "샤먼",
-          "height": 30,
-          "font": 18,
-          "padding": "8px",
-          "icons": [
-            {
-              "left": 395.59375,
-              "top": 12266.84375,
-              "right": 415.59375,
-              "bottom": 12286.84375,
-              "width": 20,
-              "height": 20
-            }
-          ]
-        },
-        {
-          "name": "프리스트",
-          "height": 30,
-          "font": 18,
-          "padding": "8px",
-          "icons": [
-            {
-              "left": 558.0625,
-              "top": 12266.84375,
-              "right": 578.0625,
-              "bottom": 12286.84375,
-              "width": 20,
-              "height": 20
-            }
-          ]
-        },
-        {
-          "name": "브리건드",
-          "height": 30,
-          "font": 18,
-          "padding": "8px",
-          "icons": [
-            {
-              "left": 768.921875,
-              "top": 12266.84375,
-              "right": 788.921875,
-              "bottom": 12286.84375,
-              "width": 20,
-              "height": 20
-            }
-          ]
-        },
-        {
-          "name": "검사",
-          "height": 30,
-          "font": 18,
-          "padding": "8px",
-          "icons": [
-            {
-              "left": 356,
-              "top": 12299.546875,
-              "right": 376,
-              "bottom": 12319.546875,
+              "left": 505.09375,
+              "top": 6999.09375,
+              "right": 525.09375,
+              "bottom": 7019.09375,
               "width": 20,
               "height": 20
             }
@@ -149,68 +85,68 @@
         {
           "title": "시작 전",
           "open": false,
-          "height": 48,
+          "height": 60.796875,
           "children": [
-            "H2",
+            "svg",
             "SPAN",
-            "svg"
+            "SPAN"
           ],
-          "summary": 48
+          "summary": 60.796875
         },
         {
           "title": "1장",
           "open": false,
-          "height": 48,
+          "height": 60.796875,
           "children": [
-            "H2",
+            "svg",
             "SPAN",
-            "svg"
+            "SPAN"
           ],
-          "summary": 48
+          "summary": 60.796875
         },
         {
           "title": "2장",
           "open": false,
-          "height": 48,
+          "height": 60.796875,
           "children": [
-            "H2",
+            "svg",
             "SPAN",
-            "svg"
+            "SPAN"
           ],
-          "summary": 48
+          "summary": 60.796875
         },
         {
           "title": "3장",
           "open": false,
-          "height": 48,
+          "height": 60.796875,
           "children": [
-            "H2",
+            "svg",
             "SPAN",
-            "svg"
+            "SPAN"
           ],
-          "summary": 48
+          "summary": 60.796875
         },
         {
           "title": "4장",
           "open": false,
-          "height": 48,
+          "height": 60.796875,
           "children": [
-            "H2",
+            "svg",
             "SPAN",
-            "svg"
+            "SPAN"
           ],
-          "summary": 48
+          "summary": 60.796875
         },
         {
           "title": "5장",
           "open": false,
-          "height": 48,
+          "height": 60.796875,
           "children": [
-            "H2",
+            "svg",
             "SPAN",
-            "svg"
+            "SPAN"
           ],
-          "summary": 48
+          "summary": 60.796875
         }
       ],
       "partialLines": [],
@@ -231,12 +167,11 @@
       "rawTierRows": [],
       "tierLabels": [],
       "joinLabels": [],
+      "summaryHeads": [],
       "home": {
-        "width": 216,
-        "parentWidth": 216,
+        "width": 81.1875,
         "text": "첫 화면",
-        "textFits": true,
-        "themeAbove": true
+        "textFits": true
       }
     },
     {
@@ -247,7 +182,7 @@
       "view": "people",
       "horizontalOverflow": 0,
       "minimumFont": 18,
-      "imageCount": 44,
+      "imageCount": 0,
       "maxImageRatioError": 0,
       "imageRatioViolations": [],
       "brokenImages": [],
@@ -269,24 +204,176 @@
       "saveRightOfProgress": null,
       "zeroChips": [],
       "rawTierRows": [],
-      "tierLabels": [
-        "중급",
-        "초급",
-        "초급 전"
-      ],
-      "joinLabels": [
-        "시작 동료",
-        "시작 동료",
-        "시작 동료",
-        "자동 합류 4장",
-        "자동 합류 4장"
+      "tierLabels": [],
+      "joinLabels": [],
+      "summaryHeads": [
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때",
+          "보존 주의"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때",
+          "보존 주의"
+        ]
       ],
       "home": {
-        "width": 216,
-        "parentWidth": 216,
+        "width": 81.1875,
         "text": "첫 화면",
-        "textFits": true,
-        "themeAbove": true
+        "textFits": true
       }
     },
     {
@@ -297,8 +384,8 @@
       "view": "todo",
       "horizontalOverflow": 0,
       "minimumFont": 18,
-      "imageCount": 79,
-      "maxImageRatioError": 0.0005977836023360883,
+      "imageCount": 0,
+      "maxImageRatioError": 0,
       "imageRatioViolations": [],
       "brokenImages": [],
       "chipSizes": [
@@ -309,10 +396,10 @@
           "padding": "8px",
           "icons": [
             {
-              "left": 533.671875,
-              "top": 3166.828125,
-              "right": 553.671875,
-              "bottom": 3186.828125,
+              "left": 345.109375,
+              "top": 5330.90625,
+              "right": 365.109375,
+              "bottom": 5350.90625,
               "width": 20,
               "height": 20
             }
@@ -325,10 +412,10 @@
           "padding": "8px",
           "icons": [
             {
-              "left": 344,
-              "top": 3759.53125,
-              "right": 364,
-              "bottom": 3779.53125,
+              "left": 196,
+              "top": 5924.515625,
+              "right": 216,
+              "bottom": 5944.515625,
               "width": 20,
               "height": 20
             }
@@ -341,10 +428,10 @@
           "padding": "8px",
           "icons": [
             {
-              "left": 546.0625,
-              "top": 3759.53125,
-              "right": 566.0625,
-              "bottom": 3779.53125,
+              "left": 389.640625,
+              "top": 5924.515625,
+              "right": 409.640625,
+              "bottom": 5944.515625,
               "width": 20,
               "height": 20
             }
@@ -357,74 +444,10 @@
           "padding": "8px",
           "icons": [
             {
-              "left": 623.09375,
-              "top": 3123.21875,
-              "right": 643.09375,
-              "bottom": 3143.21875,
-              "width": 20,
-              "height": 20
-            }
-          ]
-        },
-        {
-          "name": "샤먼",
-          "height": 30,
-          "font": 18,
-          "padding": "8px",
-          "icons": [
-            {
-              "left": 395.59375,
-              "top": 12266.84375,
-              "right": 415.59375,
-              "bottom": 12286.84375,
-              "width": 20,
-              "height": 20
-            }
-          ]
-        },
-        {
-          "name": "프리스트",
-          "height": 30,
-          "font": 18,
-          "padding": "8px",
-          "icons": [
-            {
-              "left": 558.0625,
-              "top": 12266.84375,
-              "right": 578.0625,
-              "bottom": 12286.84375,
-              "width": 20,
-              "height": 20
-            }
-          ]
-        },
-        {
-          "name": "브리건드",
-          "height": 30,
-          "font": 18,
-          "padding": "8px",
-          "icons": [
-            {
-              "left": 768.921875,
-              "top": 12266.84375,
-              "right": 788.921875,
-              "bottom": 12286.84375,
-              "width": 20,
-              "height": 20
-            }
-          ]
-        },
-        {
-          "name": "검사",
-          "height": 30,
-          "font": 18,
-          "padding": "8px",
-          "icons": [
-            {
-              "left": 356,
-              "top": 12299.546875,
-              "right": 376,
-              "bottom": 12319.546875,
+              "left": 505.09375,
+              "top": 6999.09375,
+              "right": 525.09375,
+              "bottom": 7019.09375,
               "width": 20,
               "height": 20
             }
@@ -435,68 +458,68 @@
         {
           "title": "시작 전",
           "open": false,
-          "height": 48,
+          "height": 60.796875,
           "children": [
-            "H2",
+            "svg",
             "SPAN",
-            "svg"
+            "SPAN"
           ],
-          "summary": 48
+          "summary": 60.796875
         },
         {
           "title": "1장",
           "open": false,
-          "height": 48,
+          "height": 60.796875,
           "children": [
-            "H2",
+            "svg",
             "SPAN",
-            "svg"
+            "SPAN"
           ],
-          "summary": 48
+          "summary": 60.796875
         },
         {
           "title": "2장",
           "open": false,
-          "height": 48,
+          "height": 60.796875,
           "children": [
-            "H2",
+            "svg",
             "SPAN",
-            "svg"
+            "SPAN"
           ],
-          "summary": 48
+          "summary": 60.796875
         },
         {
           "title": "3장",
           "open": false,
-          "height": 48,
+          "height": 60.796875,
           "children": [
-            "H2",
+            "svg",
             "SPAN",
-            "svg"
+            "SPAN"
           ],
-          "summary": 48
+          "summary": 60.796875
         },
         {
           "title": "4장",
           "open": false,
-          "height": 48,
+          "height": 60.796875,
           "children": [
-            "H2",
+            "svg",
             "SPAN",
-            "svg"
+            "SPAN"
           ],
-          "summary": 48
+          "summary": 60.796875
         },
         {
           "title": "5장",
           "open": false,
-          "height": 48,
+          "height": 60.796875,
           "children": [
-            "H2",
+            "svg",
             "SPAN",
-            "svg"
+            "SPAN"
           ],
-          "summary": 48
+          "summary": 60.796875
         }
       ],
       "partialLines": [],
@@ -517,12 +540,11 @@
       "rawTierRows": [],
       "tierLabels": [],
       "joinLabels": [],
+      "summaryHeads": [],
       "home": {
-        "width": 216,
-        "parentWidth": 216,
+        "width": 81.1875,
         "text": "첫 화면",
-        "textFits": true,
-        "themeAbove": true
+        "textFits": true
       }
     },
     {
@@ -533,7 +555,7 @@
       "view": "people",
       "horizontalOverflow": 0,
       "minimumFont": 18,
-      "imageCount": 44,
+      "imageCount": 0,
       "maxImageRatioError": 0,
       "imageRatioViolations": [],
       "brokenImages": [],
@@ -555,24 +577,176 @@
       "saveRightOfProgress": null,
       "zeroChips": [],
       "rawTierRows": [],
-      "tierLabels": [
-        "중급",
-        "초급",
-        "초급 전"
-      ],
-      "joinLabels": [
-        "시작 동료",
-        "시작 동료",
-        "시작 동료",
-        "자동 합류 4장",
-        "자동 합류 4장"
+      "tierLabels": [],
+      "joinLabels": [],
+      "summaryHeads": [
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때",
+          "보존 주의"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때",
+          "보존 주의"
+        ]
       ],
       "home": {
-        "width": 216,
-        "parentWidth": 216,
+        "width": 81.1875,
         "text": "첫 화면",
-        "textFits": true,
-        "themeAbove": true
+        "textFits": true
       }
     },
     {
@@ -583,8 +757,8 @@
       "view": "todo",
       "horizontalOverflow": 0,
       "minimumFont": 18,
-      "imageCount": 76,
-      "maxImageRatioError": 0.0005977836023360883,
+      "imageCount": 0,
+      "maxImageRatioError": 0,
       "imageRatioViolations": [],
       "brokenImages": [],
       "chipSizes": [
@@ -595,10 +769,10 @@
           "padding": "8px",
           "icons": [
             {
-              "left": 253.671875,
-              "top": 4036.859375,
-              "right": 273.671875,
-              "bottom": 4056.859375,
+              "left": 193.109375,
+              "top": 9429.109375,
+              "right": 213.109375,
+              "bottom": 9449.109375,
               "width": 20,
               "height": 20
             }
@@ -611,10 +785,10 @@
           "padding": "8px",
           "icons": [
             {
-              "left": 165.484375,
-              "top": 5013.5625,
-              "right": 185.484375,
-              "bottom": 5033.5625,
+              "left": 166.453125,
+              "top": 10255.71875,
+              "right": 186.453125,
+              "bottom": 10275.71875,
               "width": 20,
               "height": 20
             }
@@ -627,10 +801,10 @@
           "padding": "8px",
           "icons": [
             {
-              "left": 86.3125,
-              "top": 5046.265625,
-              "right": 106.3125,
-              "bottom": 5066.265625,
+              "left": 64.078125,
+              "top": 10285.953125,
+              "right": 84.078125,
+              "bottom": 10305.953125,
               "width": 20,
               "height": 20
             }
@@ -643,74 +817,10 @@
           "padding": "8px",
           "icons": [
             {
-              "left": 76,
-              "top": 3966.046875,
-              "right": 96,
-              "bottom": 3986.046875,
-              "width": 20,
-              "height": 20
-            }
-          ]
-        },
-        {
-          "name": "샤먼",
-          "height": 30,
-          "font": 18,
-          "padding": "8px",
-          "icons": [
-            {
-              "left": 115.59375,
-              "top": 14487.78125,
-              "right": 135.59375,
-              "bottom": 14507.78125,
-              "width": 20,
-              "height": 20
-            }
-          ]
-        },
-        {
-          "name": "프리스트",
-          "height": 30,
-          "font": 18,
-          "padding": "8px",
-          "icons": [
-            {
-              "left": 76,
-              "top": 14520.484375,
-              "right": 96,
-              "bottom": 14540.484375,
-              "width": 20,
-              "height": 20
-            }
-          ]
-        },
-        {
-          "name": "브리건드",
-          "height": 30,
-          "font": 18,
-          "padding": "8px",
-          "icons": [
-            {
-              "left": 76,
-              "top": 14553.1875,
-              "right": 96,
-              "bottom": 14573.1875,
-              "width": 20,
-              "height": 20
-            }
-          ]
-        },
-        {
-          "name": "검사",
-          "height": 30,
-          "font": 18,
-          "padding": "8px",
-          "icons": [
-            {
-              "left": 76,
-              "top": 14585.890625,
-              "right": 96,
-              "bottom": 14605.890625,
+              "left": 82,
+              "top": 11451.234375,
+              "right": 102,
+              "bottom": 11471.234375,
               "width": 20,
               "height": 20
             }
@@ -721,68 +831,68 @@
         {
           "title": "시작 전",
           "open": false,
-          "height": 48,
+          "height": 57.59375,
           "children": [
-            "H2",
+            "svg",
             "SPAN",
-            "svg"
+            "SPAN"
           ],
-          "summary": 48
+          "summary": 57.59375
         },
         {
           "title": "1장",
           "open": false,
-          "height": 48,
+          "height": 57.59375,
           "children": [
-            "H2",
+            "svg",
             "SPAN",
-            "svg"
+            "SPAN"
           ],
-          "summary": 48
+          "summary": 57.59375
         },
         {
           "title": "2장",
           "open": false,
-          "height": 48,
+          "height": 57.59375,
           "children": [
-            "H2",
+            "svg",
             "SPAN",
-            "svg"
+            "SPAN"
           ],
-          "summary": 48
+          "summary": 57.59375
         },
         {
           "title": "3장",
           "open": false,
-          "height": 48,
+          "height": 57.59375,
           "children": [
-            "H2",
+            "svg",
             "SPAN",
-            "svg"
+            "SPAN"
           ],
-          "summary": 48
+          "summary": 57.59375
         },
         {
           "title": "4장",
           "open": false,
-          "height": 48,
+          "height": 57.59375,
           "children": [
-            "H2",
+            "svg",
             "SPAN",
-            "svg"
+            "SPAN"
           ],
-          "summary": 48
+          "summary": 57.59375
         },
         {
           "title": "5장",
           "open": false,
-          "height": 48,
+          "height": 57.59375,
           "children": [
-            "H2",
+            "svg",
             "SPAN",
-            "svg"
+            "SPAN"
           ],
-          "summary": 48
+          "summary": 57.59375
         }
       ],
       "partialLines": [],
@@ -798,12 +908,17 @@
       "orphanStatusLines": 0,
       "certificateNoticeInTasks": false,
       "saveInToolbar": true,
-      "saveRightOfProgress": true,
+      "saveRightOfProgress": false,
       "zeroChips": [],
       "rawTierRows": [],
       "tierLabels": [],
       "joinLabels": [],
-      "home": null
+      "summaryHeads": [],
+      "home": {
+        "width": 44,
+        "text": "첫 화면",
+        "textFits": false
+      }
     },
     {
       "label": "theodora-people-375x812-light",
@@ -813,7 +928,7 @@
       "view": "people",
       "horizontalOverflow": 0,
       "minimumFont": 18,
-      "imageCount": 44,
+      "imageCount": 0,
       "maxImageRatioError": 0,
       "imageRatioViolations": [],
       "brokenImages": [],
@@ -835,19 +950,177 @@
       "saveRightOfProgress": null,
       "zeroChips": [],
       "rawTierRows": [],
-      "tierLabels": [
-        "중급",
-        "초급",
-        "초급 전"
+      "tierLabels": [],
+      "joinLabels": [],
+      "summaryHeads": [
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때",
+          "보존 주의"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때",
+          "보존 주의"
+        ]
       ],
-      "joinLabels": [
-        "시작 동료",
-        "시작 동료",
-        "시작 동료",
-        "자동 합류 4장",
-        "자동 합류 4장"
-      ],
-      "home": null
+      "home": {
+        "width": 44,
+        "text": "첫 화면",
+        "textFits": false
+      }
     },
     {
       "label": "theodora-todo-375x812-dark",
@@ -857,8 +1130,8 @@
       "view": "todo",
       "horizontalOverflow": 0,
       "minimumFont": 18,
-      "imageCount": 76,
-      "maxImageRatioError": 0.0005977836023360883,
+      "imageCount": 0,
+      "maxImageRatioError": 0,
       "imageRatioViolations": [],
       "brokenImages": [],
       "chipSizes": [
@@ -869,10 +1142,10 @@
           "padding": "8px",
           "icons": [
             {
-              "left": 253.671875,
-              "top": 4036.859375,
-              "right": 273.671875,
-              "bottom": 4056.859375,
+              "left": 193.109375,
+              "top": 9429.109375,
+              "right": 213.109375,
+              "bottom": 9449.109375,
               "width": 20,
               "height": 20
             }
@@ -885,10 +1158,10 @@
           "padding": "8px",
           "icons": [
             {
-              "left": 165.484375,
-              "top": 5013.5625,
-              "right": 185.484375,
-              "bottom": 5033.5625,
+              "left": 166.453125,
+              "top": 10255.71875,
+              "right": 186.453125,
+              "bottom": 10275.71875,
               "width": 20,
               "height": 20
             }
@@ -901,10 +1174,10 @@
           "padding": "8px",
           "icons": [
             {
-              "left": 86.3125,
-              "top": 5046.265625,
-              "right": 106.3125,
-              "bottom": 5066.265625,
+              "left": 64.078125,
+              "top": 10285.953125,
+              "right": 84.078125,
+              "bottom": 10305.953125,
               "width": 20,
               "height": 20
             }
@@ -917,74 +1190,10 @@
           "padding": "8px",
           "icons": [
             {
-              "left": 76,
-              "top": 3966.046875,
-              "right": 96,
-              "bottom": 3986.046875,
-              "width": 20,
-              "height": 20
-            }
-          ]
-        },
-        {
-          "name": "샤먼",
-          "height": 30,
-          "font": 18,
-          "padding": "8px",
-          "icons": [
-            {
-              "left": 115.59375,
-              "top": 14487.78125,
-              "right": 135.59375,
-              "bottom": 14507.78125,
-              "width": 20,
-              "height": 20
-            }
-          ]
-        },
-        {
-          "name": "프리스트",
-          "height": 30,
-          "font": 18,
-          "padding": "8px",
-          "icons": [
-            {
-              "left": 76,
-              "top": 14520.484375,
-              "right": 96,
-              "bottom": 14540.484375,
-              "width": 20,
-              "height": 20
-            }
-          ]
-        },
-        {
-          "name": "브리건드",
-          "height": 30,
-          "font": 18,
-          "padding": "8px",
-          "icons": [
-            {
-              "left": 76,
-              "top": 14553.1875,
-              "right": 96,
-              "bottom": 14573.1875,
-              "width": 20,
-              "height": 20
-            }
-          ]
-        },
-        {
-          "name": "검사",
-          "height": 30,
-          "font": 18,
-          "padding": "8px",
-          "icons": [
-            {
-              "left": 76,
-              "top": 14585.890625,
-              "right": 96,
-              "bottom": 14605.890625,
+              "left": 82,
+              "top": 11451.234375,
+              "right": 102,
+              "bottom": 11471.234375,
               "width": 20,
               "height": 20
             }
@@ -995,68 +1204,68 @@
         {
           "title": "시작 전",
           "open": false,
-          "height": 48,
+          "height": 57.59375,
           "children": [
-            "H2",
+            "svg",
             "SPAN",
-            "svg"
+            "SPAN"
           ],
-          "summary": 48
+          "summary": 57.59375
         },
         {
           "title": "1장",
           "open": false,
-          "height": 48,
+          "height": 57.59375,
           "children": [
-            "H2",
+            "svg",
             "SPAN",
-            "svg"
+            "SPAN"
           ],
-          "summary": 48
+          "summary": 57.59375
         },
         {
           "title": "2장",
           "open": false,
-          "height": 48,
+          "height": 57.59375,
           "children": [
-            "H2",
+            "svg",
             "SPAN",
-            "svg"
+            "SPAN"
           ],
-          "summary": 48
+          "summary": 57.59375
         },
         {
           "title": "3장",
           "open": false,
-          "height": 48,
+          "height": 57.59375,
           "children": [
-            "H2",
+            "svg",
             "SPAN",
-            "svg"
+            "SPAN"
           ],
-          "summary": 48
+          "summary": 57.59375
         },
         {
           "title": "4장",
           "open": false,
-          "height": 48,
+          "height": 57.59375,
           "children": [
-            "H2",
+            "svg",
             "SPAN",
-            "svg"
+            "SPAN"
           ],
-          "summary": 48
+          "summary": 57.59375
         },
         {
           "title": "5장",
           "open": false,
-          "height": 48,
+          "height": 57.59375,
           "children": [
-            "H2",
+            "svg",
             "SPAN",
-            "svg"
+            "SPAN"
           ],
-          "summary": 48
+          "summary": 57.59375
         }
       ],
       "partialLines": [],
@@ -1072,12 +1281,17 @@
       "orphanStatusLines": 0,
       "certificateNoticeInTasks": false,
       "saveInToolbar": true,
-      "saveRightOfProgress": true,
+      "saveRightOfProgress": false,
       "zeroChips": [],
       "rawTierRows": [],
       "tierLabels": [],
       "joinLabels": [],
-      "home": null
+      "summaryHeads": [],
+      "home": {
+        "width": 44,
+        "text": "첫 화면",
+        "textFits": false
+      }
     },
     {
       "label": "theodora-people-375x812-dark",
@@ -1087,7 +1301,7 @@
       "view": "people",
       "horizontalOverflow": 0,
       "minimumFont": 18,
-      "imageCount": 44,
+      "imageCount": 0,
       "maxImageRatioError": 0,
       "imageRatioViolations": [],
       "brokenImages": [],
@@ -1109,19 +1323,177 @@
       "saveRightOfProgress": null,
       "zeroChips": [],
       "rawTierRows": [],
-      "tierLabels": [
-        "중급",
-        "초급",
-        "초급 전"
+      "tierLabels": [],
+      "joinLabels": [],
+      "summaryHeads": [
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때",
+          "보존 주의"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때"
+        ],
+        [
+          "영입 이유",
+          "합류",
+          "출격",
+          "최종 병종",
+          "병종 경로",
+          "필요 기능",
+          "목표",
+          "멈출 때",
+          "보존 주의"
+        ]
       ],
-      "joinLabels": [
-        "시작 동료",
-        "시작 동료",
-        "시작 동료",
-        "자동 합류 4장",
-        "자동 합류 4장"
-      ],
-      "home": null
+      "home": {
+        "width": 44,
+        "text": "첫 화면",
+        "textFits": false
+      }
     }
   ],
   "interactions": [
@@ -1130,10 +1502,10 @@
       "height": 900,
       "theme": "light",
       "check": "load-current-chapter",
-      "scrollY": 889,
+      "scrollY": 1156,
       "current": "6장",
-      "top": 93.390625,
-      "toolbarBottom": 85.796875
+      "top": 86.359375,
+      "toolbarBottom": 70.796875
     },
     {
       "width": 1440,
@@ -1142,19 +1514,18 @@
       "check": "jump-focus-highlight",
       "focused": true,
       "border": "2px",
-      "color": "rgb(140, 94, 14)",
-      "accent": "rgb(140, 94, 14)",
+      "color": "rgb(74, 70, 88)",
+      "accent": "rgb(74, 70, 88)",
       "duration": "0.15s",
       "delay": "2s",
       "opacity": "1",
       "targetViewport": {
-        "top": 384.75,
-        "bottom": 514.546875,
-        "toolbarBottom": 85.796875,
-        "visibleBottom": 900,
-        "mobileHeaderTop": null
+        "top": 374.484375,
+        "bottom": 524.984375,
+        "toolbarBottom": 70.796875,
+        "visibleBottom": 900
       },
-      "fading": 0.945547,
+      "fading": 0.92664,
       "removed": true
     },
     {
@@ -1183,10 +1554,10 @@
       "height": 900,
       "theme": "dark",
       "check": "load-current-chapter",
-      "scrollY": 889,
+      "scrollY": 1156,
       "current": "6장",
-      "top": 93.390625,
-      "toolbarBottom": 85.796875
+      "top": 86.359375,
+      "toolbarBottom": 70.796875
     },
     {
       "width": 1440,
@@ -1195,19 +1566,18 @@
       "check": "jump-focus-highlight",
       "focused": true,
       "border": "2px",
-      "color": "rgb(224, 174, 60)",
-      "accent": "rgb(224, 174, 60)",
+      "color": "rgb(201, 195, 218)",
+      "accent": "rgb(201, 195, 218)",
       "duration": "0.15s",
       "delay": "2s",
       "opacity": "1",
       "targetViewport": {
-        "top": 384.75,
-        "bottom": 514.546875,
-        "toolbarBottom": 85.796875,
-        "visibleBottom": 900,
-        "mobileHeaderTop": null
+        "top": 374.484375,
+        "bottom": 524.984375,
+        "toolbarBottom": 70.796875,
+        "visibleBottom": 900
       },
-      "fading": 0.925773,
+      "fading": 0.92664,
       "removed": true
     },
     {
@@ -1236,10 +1606,10 @@
       "height": 812,
       "theme": "light",
       "check": "load-current-chapter",
-      "scrollY": 942,
+      "scrollY": 1419,
       "current": "6장",
-      "top": 197.1875,
-      "toolbarBottom": 189.796875
+      "top": 100.3125,
+      "toolbarBottom": 84.796875
     },
     {
       "width": 375,
@@ -1248,19 +1618,18 @@
       "check": "jump-focus-highlight",
       "focused": true,
       "border": "2px",
-      "color": "rgb(140, 94, 14)",
-      "accent": "rgb(140, 94, 14)",
+      "color": "rgb(74, 70, 88)",
+      "accent": "rgb(74, 70, 88)",
       "duration": "0.15s",
       "delay": "2s",
       "opacity": "1",
       "targetViewport": {
-        "top": 303.09375,
-        "bottom": 509.6875,
-        "toolbarBottom": 189.796875,
-        "visibleBottom": 728.609375,
-        "mobileHeaderTop": 0
+        "top": 302.765625,
+        "bottom": 509.265625,
+        "toolbarBottom": 84.796875,
+        "visibleBottom": 812
       },
-      "fading": 0.97244,
+      "fading": 0.93576,
       "removed": true
     },
     {
@@ -1289,10 +1658,10 @@
       "height": 812,
       "theme": "dark",
       "check": "load-current-chapter",
-      "scrollY": 942,
+      "scrollY": 1419,
       "current": "6장",
-      "top": 197.1875,
-      "toolbarBottom": 189.796875
+      "top": 100.3125,
+      "toolbarBottom": 84.796875
     },
     {
       "width": 375,
@@ -1301,19 +1670,18 @@
       "check": "jump-focus-highlight",
       "focused": true,
       "border": "2px",
-      "color": "rgb(224, 174, 60)",
-      "accent": "rgb(224, 174, 60)",
+      "color": "rgb(201, 195, 218)",
+      "accent": "rgb(201, 195, 218)",
       "duration": "0.15s",
       "delay": "2s",
       "opacity": "1",
       "targetViewport": {
-        "top": 303.09375,
-        "bottom": 509.6875,
-        "toolbarBottom": 189.796875,
-        "visibleBottom": 728.609375,
-        "mobileHeaderTop": 0
+        "top": 302.765625,
+        "bottom": 509.265625,
+        "toolbarBottom": 84.796875,
+        "visibleBottom": 812
       },
-      "fading": 0.97244,
+      "fading": 0.936427,
       "removed": true
     },
     {

@@ -3,6 +3,7 @@ import {mkdirSync,writeFileSync,copyFileSync} from 'node:fs';
 import {resolve} from 'node:path';
 import assert from 'node:assert/strict';
 process.env.TEMP=process.env.TMP=resolve('.tmp');
+const base=process.env.BROWSER_BASE_URL||'http://localhost:3000';
 const browser=await chromium.launch({executablePath:process.env.CHROME_PATH||'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
 const rows=[],errors=[],screens=[];
 mkdirSync('.tmp/corrections-screens',{recursive:true});mkdirSync('docs/screens',{recursive:true});
@@ -12,25 +13,29 @@ try{
   page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error'&&!m.text().startsWith('Failed to load resource:'))errors.push(m.text());});
   const scopes=[...['cai','dietrich','theodora','leda'].flatMap(route=>['1','2'].map(part=>({route,part}))),{route:'part3',part:'3'}];
   for(const {route,part} of scopes){
-   await page.goto(`http://localhost:3000/${route}/${part}/`);await page.waitForLoadState('networkidle');
+   await page.goto(`${base}/${route}/${part}/`);await page.waitForLoadState('networkidle');
    await page.waitForFunction(()=>!!document.querySelector('.app-shell')&&!document.querySelector('.checklist input[disabled]'));
    for(const [name,view]of [['할 일','tasks'],['인물','people'],['준비','prep'],['재료와 구매','materials']]){
     if(view!=='tasks')await page.getByRole('navigation',{name:'공략 화면'}).getByRole('button',{name,exact:true}).click();
-    await page.getByRole('heading',{name,exact:true,level:1}).waitFor();
+    // 재설계 뒤 할 일 화면의 h1은 루트 띠(예: 세오도라 1부)다. 할 일은 도구 줄로 확인한다.
+    if(view==='tasks')await page.locator('.check-toolbar').waitFor();else await page.getByRole('heading',{name,exact:true,level:1}).waitFor();
     if(view==='people')await page.locator('.person>details').evaluateAll(es=>es.forEach(e=>e.open=true));
     if(view==='prep')await page.locator('.reference-disclosure').evaluateAll(es=>es.forEach(e=>e.open=true));
     const row=await page.evaluate(()=>{
      const visible=e=>e.checkVisibility()&&e.getBoundingClientRect().width>0;
      return {eraViolations:document.querySelector('.app-shell')?.getAttribute('data-route')==='part3'?[]:[...document.querySelectorAll('img[src*="/post-timeskip/"]')].map(e=>e.src),horizontalScroll:document.documentElement.scrollWidth-innerWidth,amountWrapViolations:[...document.querySelectorAll('[data-amount],.gold-table .amount')].filter(e=>getComputedStyle(e).whiteSpace!=='nowrap').length,
-      tableFontViolations:[...document.querySelectorAll('main .records,main .person-summary,main [data-info-table],main [data-gold-table],main .gold-table')].filter(visible).filter(e=>parseFloat(getComputedStyle(e).fontSize)!==20).length,
+      tableFontViolations:[...document.querySelectorAll('main .records,main .person-summary,main [data-info-table],main [data-gold-table],main .gold-table')].filter(visible).filter(e=>parseFloat(getComputedStyle(e).fontSize)!==(innerWidth<768&&e.matches('.person-summary,.gold-table,[data-gold-table]')?18:20)).length,
       groupLineViolations:[...document.querySelectorAll('.readable-group[data-expanded=false]>.readable-body')].filter(visible).filter(e=>e.getBoundingClientRect().height>parseFloat(getComputedStyle(e).lineHeight)*3+1).length,
-      faceSizes:[...new Set([...document.querySelectorAll('main img[src*="/portraits/"],main img[src*="/gods/"]')].filter(visible).map(e=>{const r=e.getBoundingClientRect();return `${r.width}×${r.height}`;}))]};
+      // 배지를 감싼 칩·버튼·표 머리에 배경이 있으면 배경이 겹친다(2026-11-14 사용자 지적). 카드·칸 같은 큰 면은 제외.
+      doubledBadges:[...document.querySelectorAll('.game-badge')].filter(b=>{for(let e=b.parentElement;e&&!e.matches('p,li,td,dd,div,section,main,table,article');e=e.parentElement){const bg=getComputedStyle(e).backgroundColor;if(bg!=='rgba(0, 0, 0, 0)'&&bg!=='transparent')return true;}return false;}).map(b=>b.textContent).slice(0,5),
+      faceSizes:[...new Set([...document.querySelectorAll('main img[src*="/portraits/"],main img[src*="/gods/"]')].filter(e=>!e.closest('.game-badge')).filter(visible).map(e=>{const r=e.getBoundingClientRect();return `${r.width}×${r.height}`;}))]};
     });
     Object.assign(row,{route,part,view,width,height,theme});rows.push(row);
     assert.equal(row.horizontalScroll,0,JSON.stringify(row));assert.equal(row.eraViolations.length,0,JSON.stringify(row));
-    assert.equal(row.amountWrapViolations,0,JSON.stringify(row));
+    assert.equal(row.amountWrapViolations,0,JSON.stringify(row));assert.deepEqual(row.doubledBadges,[],JSON.stringify(row));
     assert.equal(row.tableFontViolations,0,JSON.stringify(row));assert.equal(row.groupLineViolations,0,JSON.stringify(row));
-    if(view==='people')assert.deepEqual(row.faceSizes,['96×96']);
+    // 재설계 뒤 휴대폰은 표 글자 18px, 인물 얼굴 72px(app/redesign.css).
+    if(view==='people')assert.deepEqual(row.faceSizes,[width<768?'72×72':'96×96']);
     if(view==='prep')assert.ok(row.faceSizes.every(size=>size==='48×48'));
     if(part!=='2'){
       await page.evaluate(()=>scrollTo(0,0));
@@ -38,7 +43,7 @@ try{
     }
    }
   }
-  await page.goto('http://localhost:3000/theodora/1/');await page.waitForLoadState('networkidle');
+  await page.goto(base+'/theodora/1/');await page.waitForLoadState('networkidle');
   await page.waitForFunction(()=>!document.querySelector('.checklist input[disabled]'));
   await page.getByRole('navigation',{name:'공략 화면'}).getByRole('button',{name:'준비',exact:true}).click();
   await page.getByRole('heading',{name:'준비',exact:true,level:1}).waitFor();
@@ -57,5 +62,5 @@ try{
 }catch(error){errors.push(String(error));console.error(error);process.exitCode=1;}
 finally{
  await browser.close();for(const file of screens)copyFileSync(`.tmp/corrections-screens/${file}`,`docs/screens/${file}`);
- writeFileSync('docs/corrections-browser-results.json',JSON.stringify({status:errors.length?'failed':'passed',host:'Codex / Windows / installed Chrome / Playwright',base:'http://localhost:3000',rows,errors,screens:screens.map(f=>`docs/screens/${f}`),limits:'1·2부 네 루트와 3부의 할 일·인물·준비·재료, 1부 실전·보충 육성 줄 목록. 다른 브라우저·운영체제·배포 빌드는 증명하지 않는다.'},null,2));
+ writeFileSync('docs/corrections-browser-results.json',JSON.stringify({status:errors.length?'failed':'passed',host:'Codex / Windows / installed Chrome / Playwright',base,rows,errors,screens:screens.map(f=>`docs/screens/${f}`),limits:'1·2부 네 루트와 3부의 할 일·인물·준비·재료, 1부 실전·보충 육성 줄 목록. 다른 브라우저·운영체제·배포 빌드는 증명하지 않는다.'},null,2));
 }
