@@ -1,11 +1,11 @@
 {
   "status": "passed",
   "host": "Codex / Windows / Node.js",
-  "trees": 3896,
-  "sentenceCount": 10331,
+  "trees": 3899,
+  "sentenceCount": 10339,
   "recordSentences": 8166,
   "documentCount": 327,
-  "documentSentences": 18687,
+  "documentSentences": 18692,
   "paragraphs": 3456,
   "paragraphViolations": 0,
   "method": "원문과 파생 자료의 공백 제외 문자·숫자·문장 수를 각각 대조. 표의 새 머리글과 파생 금액 행 복사본은 대조에서 제외. 원문 파일은 수정하지 않음."

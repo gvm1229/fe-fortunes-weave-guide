@@ -18,8 +18,8 @@ for(const id of Object.keys(overrides.actions))assert.ok(playbook.groups.some(g=
 const parity=read('content/display-parity.json');
 const ids=read('content/check-ids.json');
 const hash=p=>createHash('sha256').update(readFileSync(p)).digest('hex');
-assert.equal(playbook.groups.flatMap(g=>g.actions).length,1896);
-assert.equal(new Set(ids).size,2878);
+assert.equal(playbook.groups.flatMap(g=>g.actions).length,1899);
+assert.equal(new Set(ids).size,2881);
 assert.equal(read('content/data/recruit-all-plan.json').assignments.length,63);
 assert.equal(playbook.stages.length,9);
 {const old=read('content/source/react-content.json');assert.deepEqual(new Set(ids),new Set(old.allTaskIds));const actionIds=[...old.stages.flatMap(s=>s.blocks.flatMap(b=>[...b.html.matchAll(/data-task-id="([^"]+)"/g)].map(m=>m[1])))];assert.deepEqual(new Set(actionIds),new Set(playbook.groups.flatMap(g=>g.actions.map(a=>a.id))));}
@@ -62,7 +62,7 @@ if(progress)assert.deepEqual(validateChecks(JSON.parse(JSON.stringify(progress))
   for(const g of playbook.groups){for(const w of banned){assert.ok(!title(g).includes(w),g.id+' 제목 '+w);for(const a of g.actions){assert.ok(!shown(g,a).includes(w),a.id+' '+w);assert.ok(!a.category.includes(w),a.id+' 칩 '+w);}}}
   const chapterOf=(stage,id)=>checklist.stages.find(s=>s.id===stage).chapters.find(c=>c.blocks.some(b=>b.id===id))?.title;
   for(const r of ['theodora','leda','dietrich','cai']){
-    const fg=playbook.groups.find(g=>g.id===`feast-loop-${r}-part1-20261114`);assert.ok(fg&&fg.actions.length===7,r+' 연회 묶음');
+    const fg=playbook.groups.find(g=>g.id===`feast-loop-${r}-part1-20261114`);assert.ok(fg&&fg.actions.length===(r==='theodora'?10:7),r+' 연회 묶음');// 세오도라는 여관 짝 식사·주 넘기기·마지막 회차 3개 더(2026-11-14)
     assert.equal(chapterOf(r+'-plan',fg.id),'12장',r+' 연회 묶음 12장');assert.equal(chapterOf(r+'-plan',`support-talks-${r}-part1-20261112`),'12장',r+' 지원 대화 묶음 12장');
     for(const g of playbook.groups.filter(g=>g.stage===r+'-war-plan'))for(const a of g.actions)assert.ok(!/연회를 반복|식사를 반복/.test(shown(g,a)),a.id+' 2부 연회');
     const audit=playbook.groups.flatMap(g=>g.actions).find(a=>a.id===`team-${r}-recruit-audit--1`);const text=ov.actions[audit.id]||audit.text;
@@ -85,6 +85,15 @@ if(progress)assert.deepEqual(validateChecks(JSON.parse(JSON.stringify(progress))
   assert.ok(!Object.hasOwn(read('content/cai-charioteer.json').people,'누조'),'누조는 전차병 아님');
   for(const [st,id,ch] of [['theodora-plan','theo-recruit-nujo','12장'],['leda-plan','recruit-all-leda-nujo-20261114','12장'],['cai-plan','recruit-all-cai-nujo-20261114','12장'],['leda-plan','recruit-all-leda-jester-20261112','10장'],['leda-plan','recruit-all-leda-goliath-20261112','10장'],['dietrich-plan','ready-dietrich-catania','7장'],['dietrich-plan','di-13','9장']])assert.equal(chapterOf(st,id),ch,`${id} ${ch}`);
   for(const g of playbook.groups)for(const a of g.actions)assert.ok(!shown(g,a).includes('누조는 카이 루트에서만'),a.id+' 누조 카이 전용 문구');
+  // 12장 연회 반복(2026-11-14 사용자 지시): 장 안에 있는 외전은 반복 회차마다 다시 하지 않는다. 세오도라 티아라(카이 외전)·디에고(오르헬 외전)는 여관 짝 식사로 지원을 올리고 마지막 회차에서만 외전 → 영입.
+  {const act=id=>playbook.groups.flatMap(g=>g.actions).find(a=>a.id===id),txt=id=>{const g=playbook.groups.find(g=>g.actions.some(a=>a.id===id));return shown(g,act(id));};
+   const T='feast-loop-theodora-part1-20261114',order=playbook.groups.find(g=>g.id===T).actions.map(a=>a.id.split('--')[1]);
+   assert.deepEqual(order,['save','recruit','inn-pair','gift','spell','feast','skip-week','reset','target','final-pass'],'세오도라 연회 반복 순서');
+   assert.ok(!/티아라·디에고·오르헬 외전/.test(txt(T+'--recruit'))&&/반복 회차에는 외전도 영입도 하지 않는다/.test(txt(T+'--recruit')),'세오도라 반복 회차 외전 제외');
+   assert.ok(/여관/.test(txt(T+'--inn-pair'))&&/자동 활동/.test(txt(T+'--skip-week'))&&/마지막 회차에서만 카이 외전 → 오르헬 외전/.test(txt(T+'--final-pass')),'여관 짝 식사·자동 활동·마지막 회차');
+   assert.ok(/마지막 회차/.test(txt('recruit-all-theodora-orchel-side-20261112--order'))&&/마지막 회차/.test(txt('recruit-all-theodora-tialla-plan-20261112--side')),'세오도라 외전 일정은 마지막 회차');
+   assert.ok(/디에고/.test(txt('feast-loop-leda-part1-20261114--recruit')),'레다 재영입 목록에 디에고');
+   assert.equal(chapterOf('leda-plan','dated-leda-orhell-reserve'),'11장','레다 오르헬 외전은 11장(다시 하기 뒤에도 남음)');}
   // 검토 7 L8: 세오도라·레다 1·2부 화면 글(행동·제목·주의 글·골드)에 이오가 없다. 콜로이오스·이오니안 같은 낱말은 제외.
   const io=/(?<!콜로)이오(?!니|스)/;
   for(const g of playbook.groups.filter(g=>/^(theodora|leda)(-war)?-plan$/.test(g.stage))){assert.ok(!io.test(title(g)),g.id+' 제목 이오');for(const a of g.actions)assert.ok(!io.test(shown(g,a)),a.id+' 이오');}
@@ -101,4 +110,4 @@ if(progress)assert.deepEqual(validateChecks(JSON.parse(JSON.stringify(progress))
 // 장 묶음에는 그 장의 할 일만(2026-11-14 사용자 지시). 제목이 "현재 7장", "레다 2부 3장", "3부 2구간"처럼 장으로 시작하면 그 장에 있어야 한다.
 {const {chapterTitle}=await import('./checklist-source.mjs');for(const [t,c] of [['현재 7장 · Lv17 신규 4명 따라잡기','7장'],['레다 2부 3장 · 실제 미달에 맞춘 군행동','3장'],['3부 2구간 · 골드','2구간'],['11~12장 · 티아라 영입 일정 점검','11장'],['축복 준비 뒤 · 레다 1장 시작','시작 전'],['6장 이후 선택 · 8장 군비증강 미리 대비','6장']])assert.equal(chapterTitle(t,c==='시작 전'?'시작 전':c==='11장'?'10장':c==='6장'?'6장':'0장'),c,t);}
 for(const st of read('content/derived/checklist.json').stages)for(const ch of st.chapters)for(const b of ch.blocks){const m=b.title.match(/^(?:현재\s*)?(?:(?:세오도라|레다|디트리히|카이)\s*)?(?:\d+부\s*)?(\d+)(?:~\d+)?\s*(장|구간)/);if(m)assert.equal(ch.title,m[1]+m[2],`${st.id} ${b.title}이 ${ch.title}에 있음`);}
-console.log(JSON.stringify({status:'passed',host:'Windows / Node.js',activeActions:1896,checkIds:2878,recruitAssignments:63,referenceDocs:318,peopleByStage:manifest.peopleByStage,sourceFiles:manifest.sourceFiles.length,referencedMedia:media.size,sourceCompared:'content/source 사본',checks:'개별 false 우선·상속 거부·형식 검사·JSON 왕복 통과'},null,2));
+console.log(JSON.stringify({status:'passed',host:'Windows / Node.js',activeActions:1899,checkIds:2881,recruitAssignments:63,referenceDocs:318,peopleByStage:manifest.peopleByStage,sourceFiles:manifest.sourceFiles.length,referencedMedia:media.size,sourceCompared:'content/source 사본',checks:'개별 false 우선·상속 거부·형식 검사·JSON 왕복 통과'},null,2));

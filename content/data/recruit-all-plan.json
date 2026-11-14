@@ -769,7 +769,7 @@
       },
       "role": "수집",
       "avoid": true,
-      "reason": "가장 쉬운 조건(500G). 지양 인물",
+      "reason": "우술라–자스민(1부 한정)을 보려면 우술라가 있는 세오도라·디트리히여야 한다. 그중 세오도라가 조건이 가장 낮다(명성8·지원3·5,000G). 레다(지원2·500G)는 우술라가 없다.",
       "sources": [
         "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
         "https://www.rpgsite.net/guide/21391-fire-emblem-fortunes-weave-recruitment-guide-all-characters-in-game-how-to-recruit-them",
@@ -812,7 +812,7 @@
       },
       "role": "보완",
       "avoid": false,
-      "reason": "레다 실전 체험 결정(2026-11-07)",
+      "reason": "레다 1부 한정 대화(사란–하르빈, 제스터–하르빈, 디에고–하르빈)와 레다 실전. 세오도라·디트리히에서도 영입해 그 루트 한정 대화를 본다.",
       "sources": [
         "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
         "data/recruitment-gates.json"
@@ -960,7 +960,7 @@
       },
       "role": "수집·육성 안 함",
       "avoid": true,
-      "reason": "지원1로 가장 쉬움. 루루디아 대화는 어느 부든 가능.",
+      "reason": "디트리히 명성7·지원2. 세오도라는 지원1이지만 명성8이라 늦다. 한정 대화(루루디아–밴디츠)는 3부에서도 볼 수 있다.",
       "sources": [
         "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
         "https://www.keengamer.com/articles/guides/fire-emblem-fortunes-weave-all-characters-recruitment-guide/",
@@ -1025,7 +1025,7 @@
       },
       "role": "수집·육성 안 함",
       "avoid": false,
-      "reason": "세오도라(8/2)는 외전 마감 10/24가 1부 자유행동 끝과 같아 위험하다. 레다는 12장이 남고, 1부 한정 대화 상대(사란·하르빈)와 이오(오르헬 동석)가 모두 레다에 있다.",
+      "reason": "레다: 1부 한정 디에고–사란 C는 사란이 레다·디트리히에만 있어 레다에서 본다. 오르헬 외전을 11장에 끝내 12장 장 다시 하기 뒤에도 남는다. 세오도라(지원2)에서도 영입해 디에고–세테스 C를 본다.",
       "sources": [
         "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/620957",
         "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624240",
