@@ -126,5 +126,5 @@ for(const st of read('content/derived/checklist.json').stages)for(const ch of st
 // 2026-11-15: 사이트에 개인 진행 문서·문장이 없다(progress.md는 git 무시 progress/docs/).
 {const docs=Object.keys(read('content/derived/documents.json'));assert.ok(!docs.some(d=>/(^|\/)progress\.md$/.test(d)),'진행 문서가 사이트에 있음');
  const shown=JSON.stringify([read('content/derived/checklist.json'),read('content/derived/presentation.json'),read('content/display-overrides.json')]);
- for(const re of [/2,605/,/7,405/,/현재\s*7장/,/현재\s*Lv17/,/구매 완료다/,/축복\s*13개 구매 완료/,/이미 수령했다/])assert.ok(!re.test(shown),'개인 진행 글 남음: '+re);}
+ for(const re of [/2,605/,/7,405/,/현재\s*\d+장/,/현재\s*Lv17/,/구매 완료다/,/축복\s*13개 구매 완료/,/이미 수령했다/])assert.ok(!re.test(shown),'개인 진행 글 남음: '+re);}
 console.log(JSON.stringify({status:'passed',host:'Windows / Node.js',activeActions:1899,checkIds:2881,recruitAssignments:63,referenceDocs:318,peopleByStage:manifest.peopleByStage,sourceFiles:manifest.sourceFiles.length,referencedMedia:media.size,sourceCompared:'content/source 사본',checks:'개별 false 우선·상속 거부·형식 검사·JSON 왕복 통과'},null,2));

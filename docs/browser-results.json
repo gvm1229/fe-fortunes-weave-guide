@@ -18332,8 +18332,216 @@
       "order": [],
       "eraViolations": [],
       "croppedScenes": [],
-      "sceneHeights": [],
-      "goldTables": [],
+      "sceneHeights": [
+        109.125,
+        109.125
+      ],
+      "goldTables": [
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        }
+      ],
       "accentContrast": [
         {
           "route": "theodora",

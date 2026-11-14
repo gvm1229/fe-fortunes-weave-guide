@@ -165,7 +165,7 @@
       "examRenown": 4,
       "instruction": "Lv19 전후인 인물만 중급 조건을 미리 확인한다. 아직 명성4가 아니면 초급을 유지하고 추가 경험치10%만OFF로 조절한다. 이 장에서Lv20 달성·중급 전직을 필수로 삼지 않는다.",
       "notArmyLevelTarget": true,
-      "renownStatus": "현재5장 명성2. 지금 시험은 초급이며 중급은 명성4까지 기다린다."
+      "renownStatus": "5장 명성2. 지금 시험은 초급이며 중급은 명성4까지 기다린다."
     },
     "theodora:6": {
       "anchor": "theo-04",
