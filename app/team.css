@@ -89,7 +89,7 @@
   .swap-badge img{display:none}
 }
 /* 백마술·루트 편성·비교 근거 탭: 하나의 왼쪽 선, 본문 최대 폭 */
-.team-panel{max-inline-size:1184px;margin:0 auto;padding:24px 24px 64px}
+.team-panel{max-inline-size:1600px;margin:0 auto;padding:24px 24px 64px}
 @media(max-width:767px){.team-panel{padding:16px 16px 48px}}
 .team-panel h2{font-size:24px;font-weight:700;margin:0 0 16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
 .team-panel h3{font-size:22px;font-weight:700;margin:24px 0 12px}
