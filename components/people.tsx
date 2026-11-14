@@ -30,7 +30,7 @@ function pairs(person:Person,part:string,summaryText:string[],classes:Record<str
     for(const s of d.skills){const line=plainCharacterText([s.when,s.why].filter(Boolean).join('. ')).trim();if(line)list.push({title:`${s.skill} ${s.target} · ${s.kind}`,lines:[line],keep:true});}
     add('기능 메모',d.skillNote);
     // 전차병 안내는 쌍 하나로 묶는다(검토 3 M3: 쌍이 너무 많다).
-    if(d.caiAdvice)add('전차병 육성',d.charioteer,part!=='3'?`마스터 기술용으로 잠깐 바꿀 병종: ${d.caiAdvice.dip}${d.caiAdvice.dipExam?` (시험: ${d.caiAdvice.dipExam})`:''}`:undefined,`3부 병종 바꾸는 때: ${d.caiAdvice.rule} ${d.caiAdvice.part3}`,`무기 등급: ${d.caiAdvice.weapon}`);
+    if(d.caiAdvice)add('전차병 육성',d.charioteer,part!=='3'?`마스터 기술용으로 잠깐 바꿀 병종: ${d.caiAdvice.dip}`:undefined,`3부 병종 바꾸는 때: ${d.caiAdvice.rule} ${d.caiAdvice.part3}`,`무기 등급: ${d.caiAdvice.weapon}`);
     else add('전차병으로 키우는 이유',d.charioteer);
     // 전차병은 목표 줄이 시험 조건을 이미 보여 준다. 옛 중급·상급 준비 마감은 쓰지 않는다.
     if(part==='1'&&!d.charioteer)add('준비 마감',[ready.middleClass,ready.middleExam,ready.middleBy].map(words).filter(Boolean).join(' · '),[ready.part1Skills,ready.skillsBy].map(words).filter(Boolean).join(' · '));
