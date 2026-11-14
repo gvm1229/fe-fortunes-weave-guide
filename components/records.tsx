@@ -1,5 +1,5 @@
 import { GameText, imageName, classNamesByFile, namesInText } from './game-text';
-import { createElement } from 'react';
+import { createElement, Fragment } from 'react';
 import type { Tree } from '@/lib/content';
 import { displayText } from '@/lib/display';
 import weaponData from '@/content/data/weapon-buy-sources.json';
@@ -32,9 +32,11 @@ const allowed=new Set(['nav','section','article','div','p','span','strong','b','
 export function Semantic({nodes,route,part,onDoc,onSpell,hidePortraits=false,hideGodPortraits=false,changesOnly=false}:{nodes:Tree[];route:string;part:string;onDoc?:(url:string)=>void;onSpell?:(id:string)=>void;hidePortraits?:boolean;hideGodPortraits?:boolean;changesOnly?:boolean}){
   const seen=new Set<string>();
   const enrichSkills=!JSON.stringify(nodes).includes("/skills/");
-  function render(n:Tree,i:number,parentSkip:Set<string>=new Set(),inBlock=false):React.ReactNode {
+  /** plain: 표 머리 칸 안의 글은 배지 없이 그린다(칸 배경과 배지 배경 겹침 방지). */
+  function render(n:Tree,i:number,parentSkip:Set<string>=new Set(),inBlock=false,plain=false):React.ReactNode {
+    if(typeof n==='string'&&plain)return displayText(n);
     if(typeof n==='string')return <GameText key={i} text={displayText(n)} part={part} withSkills={enrichSkills} skip={textSkip(displayText(n),parentSkip)}/>;
-    const a=n.attrs,skip=blockSkip(n,parentSkip,inBlock),sub=(c:Tree,j:number)=>render(c,j,skip,inBlock||isBlock(n));
+    const a=n.attrs,skip=blockSkip(n,parentSkip,inBlock),sub=(c:Tree,j:number)=>render(c,j,skip,inBlock||isBlock(n),plain||n.tag==='th'||n.tag==='button'||(n.tag==='a'&&!!a.href));
     if(changesOnly&&a['data-change']==='keep')return null;
     if(a['data-shared-notice'])return null;
     const children=()=>n.children.filter(child=>!['table','thead','tbody','tfoot','tr','colgroup'].includes(n.tag)||typeof child!=='string'||child.trim()).map(sub);
@@ -60,6 +62,8 @@ export function Semantic({nodes,route,part,onDoc,onSpell,hidePortraits=false,hid
       return <span key={i}>{children()}</span>;
     }
     if(n.tag==='a'&&a.href){if(/^https?:/.test(a.href))return <a key={i} href={a.href} target="_blank" rel="noreferrer">{n.children.map(sub)}</a>;return <button key={i} className="text-link" onClick={()=>onDoc?.(a.href!)}>{n.children.map(sub)}</button>;}
+    // 명성·지원 조건 칩은 안의 배지가 이미 배경을 가진다. 칩 껍데기를 뺀다.
+    if(a['data-condition-chip']&&/^(명성|지원)/.test(flat(n.children).trim()))return <Fragment key={i}>{children()}</Fragment>;
     return createElement(allowed.has(n.tag)?n.tag:'div',{key:i,...Object.fromEntries(Object.entries(a).filter(([key])=>key.startsWith('data-')||['id','title','aria-label'].includes(key))),...(a.colspan?{colSpan:Number(a.colspan)}:{}),...(a.rowspan?{rowSpan:Number(a.rowspan)}:{})},children());
   }
   return <div className="semantic">{nodes.map((n,i)=>render(n,i))}</div>;

@@ -31,6 +31,8 @@ const tabs=[['final','최종 25인'],['spells','백마술'],['routes','루트 �
 const sectionNames:Record<string,string>={comparison:'교체 비교','recruitment-pool':'확보·예비'};
 /** 구역의 직접 자식 h2(또는 머리 div 안 h2)만 제목으로 쓴다. 안쪽 소제목을 집지 않는다. */
 function sectionTitle(n:Tree):string{if(typeof n==='string')return '';const direct=n.children.find((c):c is Exclude<Tree,string>=>typeof c!=='string'&&(c.tag==='h2'||(c.tag==='div'&&c.children.some(h=>typeof h!=='string'&&h.tag==='h2'))));if(!direct)return '';return direct.tag==='h2'?flat(direct.children):flat((direct.children.find(h=>typeof h!=='string'&&h.tag==='h2') as Exclude<Tree,string>).children);}
+/** 백마술 조각의 첫 strong(핵심 백마술, 백마술 · 병종 변경 시)을 제목으로 쓰고 본문에서는 뺀다(검토 L2). */
+function whiteParts(tree:Tree[]):{title:string;body:Tree[]}{const root=tree.length===1&&typeof tree[0]!=='string'?tree[0]:null,head=root?.children.find((c):c is Exclude<Tree,string>=>typeof c!=='string'&&c.tag==='strong');if(!root||!head)return {title:'백마술',body:tree};return {title:flat(head.children),body:[{...root,children:root.children.filter(c=>c!==head)}]};}
 function flat(nodes:Tree[]):string{return nodes.map(n=>typeof n==='string'?n:flat(n.children)).join('').trim();}
 function withoutNav(n:Tree):Tree|null{if(typeof n==='string')return n;if(n.tag==='nav')return null;if(n.attrs.id==='roster'&&!n.children.some(c=>typeof c!=='string'||c.trim()))return null;return {...n,children:n.children.map(withoutNav).filter((c):c is Tree=>c!==null)};}
 
@@ -119,7 +121,7 @@ function UnitSheet({name,u,out,data,classes,part,onDoc,semanticProps}:{name:stri
       <div><dt>병과의 사용 가능 무기</dt><dd className="route-weapons">{(u.usableWeapons||u.weapons).map(w=><span className="game-badge" data-kind="skill" key={w.label}><img src={'/'+w.icon} alt=""/>{w.label.replace('백마법','백마술')}</span>)}</dd></div>
       <div><dt>특기</dt><dd className="route-weapons">{u.specialtyIcons.map(s=><span className="game-badge" data-kind="skill" key={s.skill}><img src={'/'+s.icon} alt=""/>{s.skill}</span>)}</dd></div>
       <div><dt>주요 무기·마법</dt><dd>{u.signatureWeapons.map(w=><div key={w.name} className="signature"><p><img className="game-skill" src={'/'+w.icon} alt=""/><strong>{w.name}</strong> · {w.rank}</p><Records value={{$prose:w.note.split(/(?<=[.!?。])\s+|(?<=[.!?。])(?=[가-힣])/u)}} disclose={false}/></div>)}</dd></div>
-      {data.white[name]?.tree.length>0&&<div><dt>백마술</dt><dd><Semantic nodes={data.white[name].tree} {...semanticProps}/></dd></div>}
+      {data.white[name]?.tree.length>0&&(()=>{const w=whiteParts(data.white[name].tree);return <div><dt>{w.title}</dt><dd><Semantic nodes={w.body} {...semanticProps}/></dd></div>;})()}
       {u.growthGoal&&<div><dt>경유</dt><dd>{u.growthGoal.via} → {u.growthGoal.skill} {u.growthGoal.rank} · {u.growthGoal.unlock}</dd></div>}
       <div><dt>역할 설명</dt><dd><GameText text={characterReason(name)||u.classReason} part={part} skip={skip}/></dd></div>
       {out&&<div><dt>교체 손익</dt><dd>{data.proposal.roleTradeoffs[out+'→'+name]||u.loss}</dd></div>}
