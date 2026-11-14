@@ -26,10 +26,11 @@ function pairs(person:Person,part:string,summaryText:string[],classes:Record<str
   if(!d.avoid){
     // 최종 병종 시험은 3부 카드에만 둔다(검토 L7: 쌍 수 줄이기).
     for(const c of [...new Set([...d.classes,...(part==='3'?d.finalClasses:[])])]){const e=d.exams[c];if(!e)continue;const weapons=e.weapons.length?e.weapons:classes[c]?.weapons||[],unlock=e.unlock.replace(/^[\s·]+/,'');add(`${c} 시험`,[e.tier,/^\d/.test(e.level)?`권장 Lv${e.level}`:'',/^\d/.test(e.renown)?`명성 ${e.renown}`:'',e.required&&`필수 ${e.required}`,e.choice&&`선택 ${e.choice}`].filter(Boolean).join(' · '),weapons.length?`무기 ${weapons.join(' · ')}`:undefined,unlock?`해금 ${unlock}`:undefined,d.steps[c]);}
-    for(const s of d.skills)add(`${s.skill} ${s.target} · ${s.kind}`,[s.when,s.why].filter(Boolean).join('. '));
+    // 기능 쌍은 설명이 같아도 지우지 않는다(검토 4 M3: 같은 "3부 최종 병종 시험 전"이라 둘째 기능이 사라졌다).
+    for(const s of d.skills){const line=plainCharacterText([s.when,s.why].filter(Boolean).join('. ')).trim();if(line)list.push({title:`${s.skill} ${s.target} · ${s.kind}`,lines:[line],keep:true});}
     add('기능 메모',d.skillNote);
     // 전차병 안내는 쌍 하나로 묶는다(검토 3 M3: 쌍이 너무 많다).
-    if(d.caiAdvice)add('전차병 육성',d.charioteer,part!=='3'?`마스터 기술용으로 잠깐 바꿀 병종: ${d.caiAdvice.dip}`:undefined,`3부 병종 바꾸는 때: ${d.caiAdvice.rule} ${d.caiAdvice.part3}`,`무기 등급: ${d.caiAdvice.weapon}`);
+    if(d.caiAdvice)add('전차병 육성',d.charioteer,part!=='3'?`마스터 기술용으로 잠깐 바꿀 병종: ${d.caiAdvice.dip}${d.caiAdvice.dipExam?` (시험: ${d.caiAdvice.dipExam})`:''}`:undefined,`3부 병종 바꾸는 때: ${d.caiAdvice.rule} ${d.caiAdvice.part3}`,`무기 등급: ${d.caiAdvice.weapon}`);
     else add('전차병으로 키우는 이유',d.charioteer);
     // 전차병은 목표 줄이 시험 조건을 이미 보여 준다. 옛 중급·상급 준비 마감은 쓰지 않는다.
     if(part==='1'&&!d.charioteer)add('준비 마감',[ready.middleClass,ready.middleExam,ready.middleBy].map(words).filter(Boolean).join(' · '),[ready.part1Skills,ready.skillsBy].map(words).filter(Boolean).join(' · '));

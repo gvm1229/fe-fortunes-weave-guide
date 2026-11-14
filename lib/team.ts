@@ -1,5 +1,5 @@
 import { json, type Tree } from './content';
-import { examFor, charioteerGoal, type Exam } from './character-data';
+import { examFor, charioteerGoal, charioteerPart2Goal, type Exam } from './character-data';
 import manifest from '@/assets/classes/manifest.json';
 export type Scenario={id:string;title:string;description:string;swaps:Record<string,string>};
 export type TeamUnit={name:string;role:string;class:string;classSlug:string;classTier:string;portrait:string;female:boolean;favorite?:boolean;reviewUrl:string;classReason:string;overviewReason:string;growthGoal:{via:string;skill:string;rank:string;unlock:string}|null;displayGroupRank:number;displayPriority:number;loss?:string;weapons:{label:string;icon:string}[];usableWeapons?:{label:string;icon:string}[];specialtyIcons:{skill:string;icon:string}[];signatureWeapons:{name:string;icon:string;rank:string;note:string}[];route?:string;exam?:Exam};
@@ -30,8 +30,11 @@ function routeUnit(li:Exclude<Tree,string>,route:string,part:string,cai:Record<s
   const white=whiteNode?{allowed:whiteNode.attrs['data-white-allowed']==='true',title:clean(text(find(whiteNode,e=>e.tag==='strong')||'')).replace('백마법','백마술'),spells:findAll(whiteNode,e=>e.tag==='button'&&!!e.attrs['data-spell-jump']).map(b=>({id:b.attrs['data-spell-jump'],name:clean(b.children.filter(c=>typeof c==='string').join('')),rank:clean(text(els(b).find(e=>e.tag==='b')||'')),title:b.attrs.title||''})),notes:findAll(whiteNode,e=>e.tag==='p'||e.tag==='small'||e.tag==='li').map(e=>clean(text(e)).replace('백마법','백마술')).filter(Boolean)}:undefined;
   const after=whiteNode?els(body).slice(els(body).indexOf(whiteNode)+1):els(body).slice(-1);
   let goal=after.flatMap(e=>e.tag==='ul'?els(e).map(li=>clean(text(li))):[clean(text(e))]).filter(Boolean).map(g=>g.replace('백마법','백마술'));
-  if(override)goal=[charioteerGoal()];
-  return {name,portrait:img?.attrs.src||'',reason:reason.replace('백마법','백마술'),className,classTier,classSlug,weapons,white,goal};
+  // 전차병 시험 목표는 1부만(2부는 이미 전차병, 검토 4 M2). 이유 글은 활을 쓰는 전차병에 맞춘 글로(content/cai-charioteer.json).
+  if(override&&part==='1')goal=[charioteerGoal()];
+  else if(override)goal=goal.map(g=>charioteerPart2Goal(g)||g);
+  const teamReason=override?(cai[name] as {reason?:{team:string}}).reason?.team:undefined;
+  return {name,portrait:img?.attrs.src||'',reason:(teamReason||reason).replace('백마법','백마술'),className,classTier,classSlug,weapons,white,goal};
 }
 function routePart(tree:Tree[],route:string,part:string,cai:Record<string,Record<string,{classes:string[]}>>):RoutePart|undefined{
   const section=tree.find((n):n is Exclude<Tree,string>=>typeof n!=='string'&&n.tag==='section');if(!section)return undefined;
