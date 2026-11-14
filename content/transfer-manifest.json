@@ -104,7 +104,7 @@
     {
       "source": "data/playbook.json",
       "target": "content/data/playbook.json",
-      "sha256": "acd1cbbb7f9f415040c2ff21a80f6d2b319ef8731077dd1f73cdf91d66dbca0c"
+      "sha256": "3e9a8e50c9c17063826e89a52122438648e0fc10c930203b2f5515142a6d06a6"
     },
     {
       "source": "data/purchase-plan.json",
@@ -119,7 +119,7 @@
     {
       "source": "data/recruit-all-plan.json",
       "target": "content/data/recruit-all-plan.json",
-      "sha256": "706a526d179b5b6ecead2c922e57b1cadcc8889b0d7ef46ae28523571d7fe805"
+      "sha256": "142ba59c6dadbcbc5ff3e5825cc2f309b843cac8b46fb63d108313ac62a0d70b"
     },
     {
       "source": "data/recruit-materials.json",
@@ -1459,7 +1459,7 @@
     {
       "source": "notes/support-follow-along.md",
       "target": "content/notes/support-follow-along.md",
-      "sha256": "a4f118a1caccc0ba307cdc355f779f9723a4b0755315d1d4377d2e40c3eb6561"
+      "sha256": "cb0632f75e7327cef290dde0a52bc6d7eed420284b9ccb4f36bae889cb7531f9"
     },
     {
       "source": "notes/support-pairs-by-route.md",
@@ -2044,7 +2044,7 @@
     {
       "source": "personalized-app/src/content.json",
       "target": "content/source/react-content.json",
-      "sha256": "5077b7941900b8c2be1d0c85f688f32b66dcc79e4f767df910e3986c07ae729e"
+      "sha256": "0c38f4652e55b196fa9c62bd9ec74cadeb48d96624040b45f932b0e8907f984c"
     },
     {
       "source": "personalized-app/src/timeskip-portraits.json",
@@ -2217,9 +2217,9 @@
       "sha256": "b6601f69a8318359991d5fadc11c27348b0df451ecddba9df142e5f979e508ca"
     }
   ],
-  "generatedSourceSha256": "5077b7941900b8c2be1d0c85f688f32b66dcc79e4f767df910e3986c07ae729e",
-  "activeActions": 1896,
-  "checkIds": 2878,
+  "generatedSourceSha256": "0c38f4652e55b196fa9c62bd9ec74cadeb48d96624040b45f932b0e8907f984c",
+  "activeActions": 1899,
+  "checkIds": 2881,
   "peopleByRoute": {
     "theodora": 15,
     "leda": 15,
