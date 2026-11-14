@@ -9,7 +9,7 @@
       "old": {
         "portraits": 14,
         "skills": 7,
-        "gods": 13,
+        "gods": 10,
         "classes": 0,
         "guides": 2,
         "locations": 0
@@ -17,7 +17,7 @@
       "expected": {
         "portraits": 14,
         "skills": 7,
-        "gods": 13,
+        "gods": 10,
         "classes": 0,
         "guides": 2,
         "locations": 0
@@ -25,7 +25,7 @@
       "rendered": {
         "portraits": 14,
         "skills": 7,
-        "gods": 13,
+        "gods": 10,
         "classes": 0,
         "guides": 2,
         "locations": 0

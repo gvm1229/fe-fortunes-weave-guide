@@ -120,11 +120,14 @@ if(progress)assert.deepEqual(validateChecks(JSON.parse(JSON.stringify(progress))
 // 장 묶음에는 그 장의 할 일만(2026-11-14 사용자 지시). 제목이 "현재 7장", "레다 2부 3장", "3부 2구간"처럼 장으로 시작하면 그 장에 있어야 한다.
 {const {chapterTitle}=await import('./checklist-source.mjs');for(const [t,c] of [['현재 7장 · Lv17 신규 4명 따라잡기','7장'],['레다 2부 3장 · 실제 미달에 맞춘 군행동','3장'],['3부 2구간 · 골드','2구간'],['11~12장 · 티아라 영입 일정 점검','11장'],['축복 준비 뒤 · 레다 1장 시작','시작 전'],['6장 이후 선택 · 8장 군비증강 미리 대비','6장']])assert.equal(chapterTitle(t,c==='시작 전'?'시작 전':c==='11장'?'10장':c==='6장'?'6장':'0장'),c,t);}
 for(const st of read('content/derived/checklist.json').stages)for(const ch of st.chapters)for(const b of ch.blocks){const m=b.title.match(/^(?:현재\s*)?(?:(?:세오도라|레다|디트리히|카이)\s*)?(?:\d+부\s*)?(\d+)(?:~\d+)?\s*(장|구간)/);if(m)assert.equal(ch.title,m[1]+m[2],`${st.id} ${b.title}이 ${ch.title}에 있음`);}
-// 2026-11-15: 카드가 없던 지원 대화용 영입 13명(루트 카드 18개)에 싼 선물이 있고, 할 일 목록에서 그 루트에 영입한다.
-{const cards=read('content/data/recruit-only-cards.json').cards,gifts=read('content/data/affordable-gifts.json');assert.equal(cards.length,18,'영입만 카드 18개');assert.equal(new Set(cards.map(c=>c.name)).size,13,'13명');
+// 2026-11-15: 그 루트 카드가 없던 영입 동료(처음 13명 18장 + 다른 루트 주 카드가 있는 18장 = 36장)에 싼 선물이 있고, 할 일 목록에서 그 루트에 영입한다.
+{const cards=read('content/data/recruit-only-cards.json').cards,gifts=read('content/data/affordable-gifts.json');assert.equal(cards.length,36,'영입만 카드 36장');assert.equal(new Set(cards.map(c=>c.route+':'+c.name)).size,36,'루트·이름 중복');
  const have=new Set(read('content/source/react-content.json').people.map(p=>p.route+':'+p.name));for(const c of cards){assert.ok(!have.has(c.route+':'+c.name),'카드 중복 '+c.name);const g=gifts.people[c.name];assert.ok(g?.cheap?.length===6&&g.cheap.every(id=>gifts.items[id]&&gifts.items[id].cost<=500),c.name+' 싼 선물 6개');}}
 // 2026-11-15: 사이트에 개인 진행 문서·문장이 없다(progress.md는 git 무시 progress/docs/).
-{const docs=Object.keys(read('content/derived/documents.json'));assert.ok(!docs.some(d=>/(^|\/)progress\.md$/.test(d)),'진행 문서가 사이트에 있음');
- const shown=JSON.stringify([read('content/derived/checklist.json'),read('content/derived/presentation.json'),read('content/display-overrides.json')]);
- for(const re of [/2,605/,/7,405/,/현재\s*\d+장/,/현재\s*Lv17/,/구매 완료다/,/축복\s*13개 구매 완료/,/이미 수령했다/])assert.ok(!re.test(shown),'개인 진행 글 남음: '+re);}
+// Fable 검토 11 H3: 태그로 나뉜 글도 잡도록 나무의 글자만 이어 붙여 보고, 문서 본문·참고 문서도 본다.
+{const documents=read('content/derived/documents.json');assert.ok(!Object.keys(documents).some(d=>/(^|\/)progress\.md$/.test(d)),'진행 문서가 사이트에 있음');
+ const text=t=>Array.isArray(t)?t.map(text).join(''):typeof t==='string'?t:t&&typeof t==='object'?('tag' in t?text(t.children):Object.values(t).map(text).join(' ¦ ')):String(t??'');
+ const places={할일:read('content/derived/checklist.json'),표시:read('content/derived/presentation.json'),덮어쓰기:read('content/display-overrides.json'),참고문서:read('content/derived/reference-documents.json'),문서:Object.fromEntries(Object.entries(documents).map(([k,v])=>[k,v.body]))};
+ const bad=[/2,605|7,405/,/Lv ?17(?!\d)/,/현재\s*\d+장/,/현재\s*Lv\s*\d/,/구매 완료다/,/13개(?: 축복)? 구매(?:는)? 완료/,/이미 수령했다/,/마지막 (?:실제 )?(?:보고|가호)/,/마력(?:은|이)? ?42/,/사용자의 마지막/,/옛 디트리히판/,/사용자 확인값|사용자 직접 보고/];
+ for(const [k,v] of Object.entries(places)){const t=text(v);for(const re of bad){const m=t.match(new RegExp(`.{0,40}(?:${re.source}).{0,40}`));assert.ok(!m,`개인 진행 글 남음(${k}): ${m?.[0]}`);}}}
 console.log(JSON.stringify({status:'passed',host:'Windows / Node.js',activeActions:1899,checkIds:2881,recruitAssignments:63,referenceDocs:318,peopleByStage:manifest.peopleByStage,sourceFiles:manifest.sourceFiles.length,referencedMedia:media.size,sourceCompared:'content/source 사본',checks:'개별 false 우선·상속 거부·형식 검사·JSON 왕복 통과'},null,2));

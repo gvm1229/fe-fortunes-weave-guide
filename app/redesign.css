@@ -525,13 +525,15 @@ html:has(.date-odometer){scroll-padding-bottom:72px}
   html:has(.date-odometer){scroll-padding-bottom:56px}
 }
 /* 제목 초상화 단추(2026-11-15): 그림 크기는 그대로, 누를 곳만 넓힌다. */
-.portrait-button{display:inline-flex;padding:3px;margin:-3px;border:0;border-radius:10px;background:none;cursor:pointer}
+.portrait-button{display:inline-flex;padding:4px;margin:-4px;border:0;border-radius:10px;background:none;cursor:pointer}
 .portrait-button:focus-visible{outline:3px solid var(--text);outline-offset:0}
 /* 이 장의 인물 아래 「루트별 지원 대화」 단추(2026-11-15). */
 .context-rail .support-doc-button{display:inline-flex;align-items:center;gap:8px;margin-block-start:16px;min-block-size:44px}
 /* 2026-11-15 사용자 지시: 모든 진행 막대는 밝게·어둡게 모두 흰 바탕 + 초록 채움. 흰 화면 위에서도 막대 칸이 보이게 얇은 테두리. */
-progress,progress[data-progress-stage]{--progress-fill:#1E8E3E;background:#FFFFFF;color:#1E8E3E;accent-color:#1E8E3E;border:1px solid #0000004D;box-sizing:border-box}
+progress,progress[data-progress-stage]{--progress-fill:#1E8E3E;background:#FFFFFF;color:#1E8E3E;accent-color:#1E8E3E;border:1px solid #767676;box-sizing:border-box}
 .dark progress[data-progress-stage]{--progress-fill:#1E8E3E}
 progress::-webkit-progress-bar,progress[data-progress-stage]::-webkit-progress-bar{background:#FFFFFF}
 progress::-webkit-progress-value,progress[data-progress-stage]::-webkit-progress-value{background:#1E8E3E}
 progress::-moz-progress-bar,progress[data-progress-stage]::-moz-progress-bar{background:#1E8E3E}
+/* 초상화 단추가 44px(36+4+4)이 되도록 간격 8px(검토 11 L6). 단추가 있는 묶음만. */
+.group-portraits:has(.portrait-button){gap:8px}

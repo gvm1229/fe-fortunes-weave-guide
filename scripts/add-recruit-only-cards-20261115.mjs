@@ -47,14 +47,22 @@ const groups = new Map(pb.groups.map(g => [g.id, g]));
 const rc = JSON.parse(readFileSync('content/source/react-content.json', 'utf8')), have = new Set(rc.people.map(p => p.route + ':' + p.name));
 const doc = readFileSync('content/notes/support-pairs-by-route.md', 'utf8');
 const routeKo = { theodora: '세오도라', leda: '레다', dietrich: '디트리히', cai: '카이' };
+// Fable 검토 11 M3(2026-11-15 사용자 결정): 다른 루트에 카드가 있어도 이 루트에서 영입하면 이 루트 카드를 단다.
+// 찾는 법: 처음 13명은 행동 글까지 보고(디트리히 양계 자동 합류 등), 나머지는 묶음 제목 "… 이름 영입(…)".
+const known = new Set(Object.keys(JSON.parse(readFileSync('content/data/people-display.json', 'utf8'))));
+const dups = JSON.parse(readFileSync('content/data/recruit-all-plan.json', 'utf8')).duplicates;
 const cards = [];
 for (const route of Object.keys(routeKo)) {
   const st = ck.stages.find(s => s.id === `${route}-plan`) || fail(route);
-  for (const name of names) {
-    if (have.has(route + ':' + name)) fail('이미 카드 ' + route + name);
-    const re = new RegExp(`${name}[^가-힣]{0,3}(영입|스카우트)|(영입|스카우트)[^。]{0,8}${name}`);
-    const chapters = st.chapters.filter(c => c.blocks.some(b => { const g = groups.get(b.id); return g && re.test(g.title + ' ' + g.actions.map(a => a.text).join(' ')); })).map(c => c.title);
-    if (!chapters.length) continue;
+  const found = new Map();
+  for (const c of st.chapters) for (const b of c.blocks) {
+    const g = groups.get(b.id); if (!g) continue;
+    for (const name of names) { const re = new RegExp(`${name}[^가-힣]{0,3}(영입|스카우트)|(영입|스카우트)[^。]{0,8}${name}`); if (re.test(g.title + ' ' + g.actions.map(a => a.text).join(' ')) && !found.has(name)) found.set(name, c.title); }
+    const m = g.title.match(/([가-힣]+) 영입(?:\(|$)/); if (m && known.has(m[1]) && !found.has(m[1])) found.set(m[1], c.title);
+  }
+  for (const [name, chapter] of found) {
+    if (have.has(route + ':' + name)) continue;
+    const chapters = [chapter];
     // 루트별 지원 대화 표: 첫 칸이 이 루트, 대화 칸에 이 인물.
     const pairs = doc.split('\n').map(l => l.trim()).filter(l => l.startsWith(`| ${routeKo[route]} |`)).map(l => l.split('|')[2].trim()).filter(p => p.split('–').includes(name));
     // 3부 대화: 「3부에서만 보는 대화」 표(첫 칸이 대화)와 「3부에서도 시작할 수 있는 대화」 목록.
@@ -62,11 +70,14 @@ for (const route of Object.keys(routeKo)) {
     const only3 = sec('3부에서만 보는 대화').split('\n').filter(l => l.trim().startsWith('|')).map(l => l.split('|')[1].trim());
     const any3 = sec('3부에서도 시작할 수 있는 대화').split(/[,\n.]/).map(x => x.trim());
     const pairs3 = [...new Set([...only3, ...any3].filter(p => p.split('–').includes(name)))];
-    cards.push({ route, name, chapter: chapters[0], pairs: [...new Set(pairs)], pairs3 });
+    // 지원 대화 말고 다른 목적(던전 상시 회복·능력 융합)이 있으면 한 줄로 붙인다.
+    const purpose = dups.find(d => d.name === name)?.purpose || '';
+    const note = /던전|능력 융합/.test(purpose) ? purpose : undefined;
+    cards.push({ route, name, chapter: chapters[0], pairs: [...new Set(pairs)], pairs3, ...(note ? { note } : {}) });
   }
 }
-const want = { theodora: 6, leda: 3, dietrich: 5, cai: 4 };
+const want = { theodora: 12, leda: 6, dietrich: 12, cai: 6 };
 for (const [r, n] of Object.entries(want)) if (cards.filter(c => c.route === r).length !== n) fail(`${r} 카드 ${cards.filter(c => c.route === r).length}개(기대 ${n})`);
-if (new Set(cards.map(c => c.name)).size !== 13) fail('13명 아님');
-writeFileSync('content/data/recruit-only-cards.json', JSON.stringify({ date: '2026-11-15', note: '카드가 없던 지원 대화용 영입 동료. scripts/add-recruit-only-cards-20261115.mjs가 만든다.', cards }, null, 2) + '\n');
-console.log(cards.map(c => `${c.route} ${c.name} ${c.chapter} [${c.pairs.join(', ')}]`).join('\n'));
+for (const c of cards) if (!G.j.people[c.name]?.cheap?.length) fail('선물 없음 ' + c.name);
+writeFileSync('content/data/recruit-only-cards.json', JSON.stringify({ date: '2026-11-15', note: '그 루트 카드가 없던 영입 동료(지원 대화·던전 회복·융합용 사본). scripts/add-recruit-only-cards-20261115.mjs가 만든다.', cards }, null, 2) + '\n');
+console.log(cards.map(c => `${c.route} ${c.name} ${c.chapter} [${c.pairs.join(', ')}]${c.note ? ' · ' + c.note : ''}`).join('\n'));

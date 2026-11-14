@@ -1,4 +1,4 @@
-> 현재 상태:2026-11-04 사용자 승인으로 개인화에 적용 완료. 아래는 적용 전 검토 이력을 포함한다. 현재 정본은 data/final-roster.json과 notes/final25-apply-evidence.md다.
+> 아래는 적용 전 검토 이력을 포함한다. 현재 정본은 data/final-roster.json과 notes/final25-apply-evidence.md다.
 
 # 최종25명 교체 검토 · 2026-11-04 · 미적용
 

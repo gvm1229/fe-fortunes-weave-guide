@@ -29,3 +29,15 @@ if (html) { const raw = readFileSync('content/source/react-content.json', 'utf8'
 writeFileSync('content/display-overrides.json', JSON.stringify(ov, null, 2) + (ovRaw.endsWith('\n') ? '\n' : ''));
 writeFileSync('content/data/playbook.json', JSON.stringify(pb, null, 2) + (pbRaw.endsWith('\n') ? '\n' : ''));
 console.log('확인 안 됨 안내 4곳');
+
+// Fable 검토 11 L1: 누조 메모의 단정("선더 소드를 들고 온다")도 확인 안 됨으로 맞춘다. M1: 옮긴 진행 문서 링크는 글자만 남긴다.
+{
+  const files = ['content/source/react-content.json', 'content/data/playbook.json', 'content/display-overrides.json', 'content/display-parity.json'];
+  const re = /(12장 무렵 영입하면 (?:<[^>]+>)*선더 소드(?:<[^>]+>)*를 들고 온다)\.(?!고)/g;
+  let n = 0;
+  for (const f of files) { const s = readFileSync(f, 'utf8'), t = s.replace(re, (m, a) => { n++; return `${a}고 한다(원래 공략 한 곳에서만 확인).`; }); if (t !== s) writeFileSync(f, t); }
+  const docs = ['content/notes/knowledge/sources.md', 'content/notes/restart-review.md', 'content/notes/theodora-renown-review.md'];
+  let l = 0;
+  for (const f of docs) { const s = readFileSync(f, 'utf8'), t = s.replace(/\[([^\]]*)\]\([^)]*progress\.md[^)]*\)/g, (m, a) => { l++; return a; }); if (t !== s) writeFileSync(f, t); }
+  console.log(`누조 메모 ${n} · 진행 문서 링크 ${l}`);
+}
