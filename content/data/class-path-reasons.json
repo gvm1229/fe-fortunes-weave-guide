@@ -4801,197 +4801,6 @@
           "emptyReason": null
         }
       },
-      "이오": {
-        "1": {
-          "mode": "progression",
-          "steps": [
-            {
-              "class": "경기병",
-              "label": "합류 자격 · 보존",
-              "purposes": [
-                "이동",
-                "보존"
-              ],
-              "reason": "고정 중급 합류 자격을 사용한다. 첫 보관 완료 뒤에는 기병으로 재장착해 전용 말 자료를 등록한다.",
-              "growthPoints": {},
-              "movement": 6,
-              "masterPurpose": false,
-              "masterRequired": false,
-              "masterRewards": [
-                {
-                  "name": "체력의 강화",
-                  "effect": "최대 HP +3.",
-                  "originalName": "Bolster Health",
-                  "originalEffect": "Grants max HP +3.",
-                  "kind": "마스터 보상"
-                }
-              ],
-              "skip": "같은 중급 시험을 다시 보지 않는다. 수집 목적이면 추가 전투 육성은 생략한다.",
-              "next": {
-                "phase": "1",
-                "class": "바딩거",
-                "previousClassRequired": false,
-                "previousMasterRequired": false,
-                "required": "기마술 C",
-                "choice": "검술 B / 창술 B",
-                "recommendedLevel": "35",
-                "renown": "8",
-                "license": "상급 시험 증표",
-                "unlock": "–",
-                "conditionNotes": [],
-                "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624033",
-                "optional": false,
-                "tier": "상급직"
-              },
-              "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624045",
-              "compact": {
-                "reason": "전용 말 보존·기마 이동",
-                "exceptions": [
-                  "첫 보관은 비탑승 · 보관 뒤 전용 말 재장착·재등록"
-                ]
-              }
-            },
-            {
-              "class": "바딩거",
-              "label": "선택 · 생략 가능",
-              "purposes": [
-                "이동",
-                "물리 전투"
-              ],
-              "reason": "실제로 기병 전투를 더 맡길 때만 상급 기동을 선택한다. 보존·비용 우선이면 경기병 유지가 가능하다.",
-              "growthPoints": {},
-              "movement": 6,
-              "masterPurpose": false,
-              "masterRequired": false,
-              "masterRewards": [
-                {
-                  "name": "성스러운 방패",
-                  "effect": "마법 공격을 받을 때 20% 확률로 받는 피해가 절반이 됩니다.",
-                  "originalName": "Aegis",
-                  "originalEffect": "Unit takes half damage when attacked with a magical attack. Trigger % = 20.",
-                  "kind": "마스터 보상"
-                }
-              ],
-              "skip": "보존만 할 때 생략. 상급 합격을 택하면 첫 보관용 비탑승 상급 자격 비용도 확인한다.",
-              "next": {
-                "phase": "2",
-                "class": "경기병",
-                "previousClassRequired": false,
-                "previousMasterRequired": false,
-                "required": "기마술 D",
-                "choice": "검술 C / 창술 C",
-                "recommendedLevel": "20",
-                "renown": "4",
-                "license": "중급 시험 증표",
-                "unlock": "–",
-                "conditionNotes": [],
-                "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624045",
-                "optional": false,
-                "returnToExistingClass": true,
-                "tier": "중급직"
-              },
-              "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624033",
-              "compact": {
-                "reason": "실제로 기병 전투를 더 맡길 때만 상급 기동을 선택한다",
-                "exceptions": [
-                  "보존만 하면 생략 · 상급 합격 시 비탑승 상급 자격도 필요"
-                ]
-              }
-            }
-          ],
-          "emptyReason": null
-        },
-        "2": {
-          "mode": "progression",
-          "steps": [
-            {
-              "class": "경기병",
-              "label": "합류 자격 · 보존",
-              "purposes": [
-                "이동",
-                "보존"
-              ],
-              "reason": "고정 중급 합류 자격을 사용한다. 첫 보관 완료 뒤에는 기병으로 재장착해 전용 말 자료를 등록한다.",
-              "growthPoints": {},
-              "movement": 6,
-              "masterPurpose": false,
-              "masterRequired": false,
-              "masterRewards": [
-                {
-                  "name": "체력의 강화",
-                  "effect": "최대 HP +3.",
-                  "originalName": "Bolster Health",
-                  "originalEffect": "Grants max HP +3.",
-                  "kind": "마스터 보상"
-                }
-              ],
-              "skip": "같은 중급 시험을 다시 보지 않는다. 수집 목적이면 추가 전투 육성은 생략한다.",
-              "next": {
-                "phase": "3",
-                "class": "오리할디아",
-                "previousClassRequired": false,
-                "previousMasterRequired": false,
-                "required": "기마술 B",
-                "choice": "창술 A / 검술 A",
-                "recommendedLevel": "45",
-                "renown": "–",
-                "license": "최상급 시험 증표",
-                "unlock": "· 구세편 1구간 클리어",
-                "conditionNotes": [],
-                "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624359",
-                "optional": false,
-                "tier": "최상급직"
-              },
-              "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624045",
-              "compact": {
-                "reason": "전용 말 보존·기마 이동",
-                "exceptions": [
-                  "첫 보관은 비탑승 · 보관 뒤 전용 말 재장착·재등록"
-                ]
-              }
-            }
-          ],
-          "emptyReason": null
-        },
-        "3": {
-          "mode": "progression",
-          "steps": [
-            {
-              "class": "오리할디아",
-              "label": "육성 선택",
-              "purposes": [
-                "이동",
-                "물리 전투"
-              ],
-              "reason": "높은 기마 이동으로 검·창·도끼 전투를 맡는다.",
-              "growthPoints": {
-                "힘": 15,
-                "속도": 5
-              },
-              "movement": 7,
-              "masterPurpose": false,
-              "masterRequired": false,
-              "masterRewards": [
-                {
-                  "name": "기사 열창",
-                  "effect": "전투 중 적의 추격 공격을 받지 않습니다.",
-                  "originalName": "Fierce Spear",
-                  "originalEffect": "Unit cannot suffer a follow-up during combat.",
-                  "kind": "전투 기술"
-                }
-              ],
-              "skip": "수집·대화·물품 보존만 하면 현재 병종 유지. 이 전투 육성 경로는 생략한다.",
-              "next": null,
-              "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624359",
-              "compact": {
-                "reason": "높은 기마 이동으로 검·창·도끼 전투를 맡는다",
-                "exceptions": []
-              }
-            }
-          ],
-          "emptyReason": null
-        }
-      },
       "누조": {
         "1": {
           "mode": "progression",
@@ -7971,197 +7780,6 @@
           "emptyReason": "현재 병종 유지. 추가 전투 육성·시험은 기본 계획에서 생략한다."
         }
       },
-      "이오": {
-        "1": {
-          "mode": "progression",
-          "steps": [
-            {
-              "class": "경기병",
-              "label": "합류 자격 · 보존",
-              "purposes": [
-                "이동",
-                "보존"
-              ],
-              "reason": "고정 중급 합류 자격을 사용한다. 첫 보관 완료 뒤에는 기병으로 재장착해 전용 말 자료를 등록한다.",
-              "growthPoints": {},
-              "movement": 6,
-              "masterPurpose": false,
-              "masterRequired": false,
-              "masterRewards": [
-                {
-                  "name": "체력의 강화",
-                  "effect": "최대 HP +3.",
-                  "originalName": "Bolster Health",
-                  "originalEffect": "Grants max HP +3.",
-                  "kind": "마스터 보상"
-                }
-              ],
-              "skip": "같은 중급 시험을 다시 보지 않는다. 수집 목적이면 추가 전투 육성은 생략한다.",
-              "next": {
-                "phase": "1",
-                "class": "바딩거",
-                "previousClassRequired": false,
-                "previousMasterRequired": false,
-                "required": "기마술 C",
-                "choice": "검술 B / 창술 B",
-                "recommendedLevel": "35",
-                "renown": "8",
-                "license": "상급 시험 증표",
-                "unlock": "–",
-                "conditionNotes": [],
-                "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624033",
-                "optional": false,
-                "tier": "상급직"
-              },
-              "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624045",
-              "compact": {
-                "reason": "전용 말 보존·기마 이동",
-                "exceptions": [
-                  "첫 보관은 비탑승 · 보관 뒤 전용 말 재장착·재등록"
-                ]
-              }
-            },
-            {
-              "class": "바딩거",
-              "label": "선택 · 생략 가능",
-              "purposes": [
-                "이동",
-                "물리 전투"
-              ],
-              "reason": "실제로 기병 전투를 더 맡길 때만 상급 기동을 선택한다. 보존·비용 우선이면 경기병 유지가 가능하다.",
-              "growthPoints": {},
-              "movement": 6,
-              "masterPurpose": false,
-              "masterRequired": false,
-              "masterRewards": [
-                {
-                  "name": "성스러운 방패",
-                  "effect": "마법 공격을 받을 때 20% 확률로 받는 피해가 절반이 됩니다.",
-                  "originalName": "Aegis",
-                  "originalEffect": "Unit takes half damage when attacked with a magical attack. Trigger % = 20.",
-                  "kind": "마스터 보상"
-                }
-              ],
-              "skip": "보존만 할 때 생략. 상급 합격을 택하면 첫 보관용 비탑승 상급 자격 비용도 확인한다.",
-              "next": {
-                "phase": "2",
-                "class": "경기병",
-                "previousClassRequired": false,
-                "previousMasterRequired": false,
-                "required": "기마술 D",
-                "choice": "검술 C / 창술 C",
-                "recommendedLevel": "20",
-                "renown": "4",
-                "license": "중급 시험 증표",
-                "unlock": "–",
-                "conditionNotes": [],
-                "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624045",
-                "optional": false,
-                "returnToExistingClass": true,
-                "tier": "중급직"
-              },
-              "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624033",
-              "compact": {
-                "reason": "실제로 기병 전투를 더 맡길 때만 상급 기동을 선택한다",
-                "exceptions": [
-                  "보존만 하면 생략 · 상급 합격 시 비탑승 상급 자격도 필요"
-                ]
-              }
-            }
-          ],
-          "emptyReason": null
-        },
-        "2": {
-          "mode": "progression",
-          "steps": [
-            {
-              "class": "경기병",
-              "label": "합류 자격 · 보존",
-              "purposes": [
-                "이동",
-                "보존"
-              ],
-              "reason": "고정 중급 합류 자격을 사용한다. 첫 보관 완료 뒤에는 기병으로 재장착해 전용 말 자료를 등록한다.",
-              "growthPoints": {},
-              "movement": 6,
-              "masterPurpose": false,
-              "masterRequired": false,
-              "masterRewards": [
-                {
-                  "name": "체력의 강화",
-                  "effect": "최대 HP +3.",
-                  "originalName": "Bolster Health",
-                  "originalEffect": "Grants max HP +3.",
-                  "kind": "마스터 보상"
-                }
-              ],
-              "skip": "같은 중급 시험을 다시 보지 않는다. 수집 목적이면 추가 전투 육성은 생략한다.",
-              "next": {
-                "phase": "3",
-                "class": "오리할디아",
-                "previousClassRequired": false,
-                "previousMasterRequired": false,
-                "required": "기마술 B",
-                "choice": "창술 A / 검술 A",
-                "recommendedLevel": "45",
-                "renown": "–",
-                "license": "최상급 시험 증표",
-                "unlock": "· 구세편 1구간 클리어",
-                "conditionNotes": [],
-                "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624359",
-                "optional": false,
-                "tier": "최상급직"
-              },
-              "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624045",
-              "compact": {
-                "reason": "전용 말 보존·기마 이동",
-                "exceptions": [
-                  "첫 보관은 비탑승 · 보관 뒤 전용 말 재장착·재등록"
-                ]
-              }
-            }
-          ],
-          "emptyReason": null
-        },
-        "3": {
-          "mode": "progression",
-          "steps": [
-            {
-              "class": "오리할디아",
-              "label": "육성 선택",
-              "purposes": [
-                "이동",
-                "물리 전투"
-              ],
-              "reason": "높은 기마 이동으로 검·창·도끼 전투를 맡는다.",
-              "growthPoints": {
-                "힘": 15,
-                "속도": 5
-              },
-              "movement": 7,
-              "masterPurpose": false,
-              "masterRequired": false,
-              "masterRewards": [
-                {
-                  "name": "기사 열창",
-                  "effect": "전투 중 적의 추격 공격을 받지 않습니다.",
-                  "originalName": "Fierce Spear",
-                  "originalEffect": "Unit cannot suffer a follow-up during combat.",
-                  "kind": "전투 기술"
-                }
-              ],
-              "skip": "수집·대화·물품 보존만 하면 현재 병종 유지. 이 전투 육성 경로는 생략한다.",
-              "next": null,
-              "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624359",
-              "compact": {
-                "reason": "높은 기마 이동으로 검·창·도끼 전투를 맡는다",
-                "exceptions": []
-              }
-            }
-          ],
-          "emptyReason": null
-        }
-      },
       "알렉산드라": {
         "1": {
           "mode": "progression",
@@ -9154,6 +8772,198 @@
               "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624035",
               "compact": {
                 "reason": "레다2부에서 사용한 기마 활 전력 보관 · 최종25명 밖 추가 시험·훈련 생략",
+                "exceptions": []
+              }
+            }
+          ],
+          "emptyReason": null
+        }
+      },
+      "누조": {
+        "1": {
+          "mode": "progression",
+          "steps": [
+            {
+              "class": "사냥병",
+              "label": "육성 선택",
+              "purposes": [
+                "성장",
+                "활 전투"
+              ],
+              "reason": "초반 활 사용과 궁술 준비를 맡고 속도·기술을 보완한다.",
+              "growthPoints": {
+                "속도": 10,
+                "기술": 10
+              },
+              "movement": 4,
+              "masterPurpose": false,
+              "masterRequired": false,
+              "masterRewards": [
+                {
+                  "name": "수렵의 기본",
+                  "effect": "기술·속도 +1.",
+                  "originalName": "Hunting Basics",
+                  "originalEffect": "Grants Dex/Spd +1",
+                  "kind": "마스터 보상"
+                }
+              ],
+              "skip": "수집·대화·물품 보존만 하면 현재 병종 유지. 이 전투 육성 경로는 생략한다.",
+              "next": {
+                "phase": "1",
+                "class": "아처",
+                "previousClassRequired": false,
+                "previousMasterRequired": false,
+                "required": "궁술 C",
+                "choice": "–",
+                "recommendedLevel": "20",
+                "renown": "4",
+                "license": "중급 시험 증표",
+                "unlock": "–",
+                "conditionNotes": [],
+                "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624046",
+                "optional": false,
+                "tier": "중급직"
+              },
+              "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624053",
+              "compact": {
+                "reason": "초반 활 사용과 궁술 준비를 맡고 속도·기술을 보완한다",
+                "exceptions": []
+              }
+            },
+            {
+              "class": "아처",
+              "label": "육성 선택",
+              "purposes": [
+                "성장",
+                "활 전투"
+              ],
+              "reason": "활 전투로 궁술을 준비하고 기술·속도를 보완한다.",
+              "growthPoints": {
+                "기술": 15,
+                "속도": 10
+              },
+              "movement": 5,
+              "masterPurpose": false,
+              "masterRequired": false,
+              "masterRewards": [
+                {
+                  "name": "호조",
+                  "effect": "적을 처치할 때마다 이 전투 맵이 끝날 때까지 명중 +3. 최대 +30.",
+                  "originalName": "Crescendo",
+                  "originalEffect": "After defeating a foe, grants Hit +3 until the end of the map. (Max +30)",
+                  "kind": "마스터 보상"
+                }
+              ],
+              "skip": "수집·대화·물품 보존만 하면 현재 병종 유지. 이 전투 육성 경로는 생략한다.",
+              "next": {
+                "phase": "1",
+                "class": "스나이퍼",
+                "previousClassRequired": false,
+                "previousMasterRequired": false,
+                "required": "궁술 B",
+                "choice": "–",
+                "recommendedLevel": "35",
+                "renown": "8",
+                "license": "상급 시험 증표",
+                "unlock": "–",
+                "conditionNotes": [],
+                "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624036",
+                "optional": false,
+                "tier": "상급직"
+              },
+              "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624046",
+              "compact": {
+                "reason": "활 전투로 궁술을 준비하고 기술·속도를 보완한다",
+                "exceptions": []
+              }
+            },
+            {
+              "class": "스나이퍼",
+              "label": "육성 선택",
+              "purposes": [
+                "활 전투",
+                "성장"
+              ],
+              "reason": "병과의 활 명중 보정으로 마무리를 안정시키고 기술을 보완한다.",
+              "growthPoints": {
+                "기술": 20,
+                "속도": 10
+              },
+              "movement": 5,
+              "masterPurpose": false,
+              "masterRequired": false,
+              "masterRewards": [
+                {
+                  "name": "사격의 달인",
+                  "effect": "활 장비 시 명중 +15.",
+                  "originalName": "Marksmanship",
+                  "originalEffect": "When equipped with a bow, grants Hit +15.",
+                  "kind": "마스터 보상"
+                }
+              ],
+              "skip": "수집·대화·물품 보존만 하면 현재 병종 유지. 이 전투 육성 경로는 생략한다.",
+              "next": {
+                "phase": "3",
+                "class": "마스터 아치",
+                "previousClassRequired": false,
+                "previousMasterRequired": false,
+                "required": "궁술 A",
+                "choice": "–",
+                "recommendedLevel": "45",
+                "renown": "–",
+                "license": "최상급 시험 증표",
+                "unlock": "· 구세편 1구간 클리어",
+                "conditionNotes": [],
+                "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624362",
+                "optional": false,
+                "tier": "최상급직"
+              },
+              "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624036",
+              "compact": {
+                "reason": "병과의 활 명중 보정으로 마무리를 안정시키고 기술을 보완한다",
+                "exceptions": []
+              }
+            }
+          ],
+          "emptyReason": null
+        },
+        "2": {
+          "mode": "progression",
+          "steps": [],
+          "emptyReason": "현재 병종 유지. 추가 전투 육성·시험은 기본 계획에서 생략한다."
+        },
+        "3": {
+          "mode": "progression",
+          "steps": [
+            {
+              "class": "마스터 아치",
+              "label": "최종 운용 목표",
+              "purposes": [
+                "활 전투",
+                "성장"
+              ],
+              "reason": "높은 활 명중 보정을 활용하고 기술·속도를 보완한다.",
+              "growthPoints": {
+                "속도": 20,
+                "기술": 15
+              },
+              "movement": 5,
+              "masterPurpose": false,
+              "masterRequired": false,
+              "masterRewards": [
+                {
+                  "name": "스카이 헌터",
+                  "effect": "적이 비행 병과이면 명중 +50.",
+                  "originalName": "Sky Hunter",
+                  "originalEffect": "If foe is flying, grants Hit +50.",
+                  "kind": "전투 기술"
+                }
+              ],
+              "skip": "실제 편성할 때만 준비. 다른 판과 중복 투자는 생략한다.",
+              "next": null,
+              "source": "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/624362",
+              "compact": {
+                "reason": "높은 활 명중 보정을 활용하고 기술·속도를 보완한다",
                 "exceptions": []
               }
             }

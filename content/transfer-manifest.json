@@ -59,7 +59,7 @@
     {
       "source": "data/class-path-reasons.json",
       "target": "content/data/class-path-reasons.json",
-      "sha256": "0796a17fbc56b2e21ca1b6978edcf0868030e13e7cbf5328f7dab308a76363e9"
+      "sha256": "a00e89c4147196d5306871973baa50b9b039f2246823e7f99e81bb9ad173ae7f"
     },
     {
       "source": "data/final-roster.json",
@@ -104,7 +104,7 @@
     {
       "source": "data/phase-goals.json",
       "target": "content/data/phase-goals.json",
-      "sha256": "6818624c1dbd96d08fc7e6ce69b6b9390d3b77353572ae07a860a8013d479918"
+      "sha256": "c49c29a41ef9b2795cb7dc9d1b3a26c443c4563972f07cacc4cfb20129d6391b"
     },
     {
       "source": "data/playbook.json",
@@ -154,7 +154,7 @@
     {
       "source": "data/roster-selection.json",
       "target": "content/data/roster-selection.json",
-      "sha256": "516d255562fb3c702cfe4c7af70977a8ecf90b92551c245a71f719f2ddd22726"
+      "sha256": "d6feca93e0585e050ad41391dabc8a21d31e621c984629b14472c95818c41d0f"
     },
     {
       "source": "data/sequential-training-plan.json",
@@ -219,7 +219,7 @@
     {
       "source": "data/training-priorities.json",
       "target": "content/data/training-priorities.json",
-      "sha256": "47f409201466e11e52561754ecd263a86caa9fc038219967f0a22ddc29f7106e"
+      "sha256": "ebe72bff570aa0500f71e5f8e38320f0e5e56c8bcec273b171e6e38e862694c0"
     },
     {
       "source": "data/training-sources.json",
@@ -229,7 +229,7 @@
     {
       "source": "data/unit-readiness.json",
       "target": "content/data/unit-readiness.json",
-      "sha256": "44ee2932b4de9137963f4856f9b58c39ce0a0437689c730bbee1eeb9f76ae365"
+      "sha256": "2c0225e0ef7a2078280d6bcfbe7a5afbf8cba6cde4908e160a87366b1bdbf078"
     },
     {
       "source": "data/weapon-buy-sources.json",
@@ -2059,7 +2059,7 @@
     {
       "source": "personalized-app/src/content.json",
       "target": "content/source/react-content.json",
-      "sha256": "3a60bedcf9674a55b9f9127456081544e75544f08e9ab6374a8a501cd24150df"
+      "sha256": "e397d32365cd1172f0637997faf5560dd0f251abaa3c1aa832af6aa727c9d7f5"
     },
     {
       "source": "personalized-app/src/timeskip-portraits.json",
@@ -2232,25 +2232,25 @@
       "sha256": "b6601f69a8318359991d5fadc11c27348b0df451ecddba9df142e5f979e508ca"
     }
   ],
-  "generatedSourceSha256": "3a60bedcf9674a55b9f9127456081544e75544f08e9ab6374a8a501cd24150df",
+  "generatedSourceSha256": "e397d32365cd1172f0637997faf5560dd0f251abaa3c1aa832af6aa727c9d7f5",
   "activeActions": 1896,
   "checkIds": 2878,
   "peopleByRoute": {
-    "theodora": 16,
+    "theodora": 15,
     "leda": 16,
     "dietrich": 16,
     "cai": 13
   },
   "peopleByStage": {
-    "theodora-plan": 16,
+    "theodora-plan": 15,
     "leda-plan": 16,
     "dietrich-plan": 16,
     "cai-plan": 13,
-    "theodora-war-plan": 16,
+    "theodora-war-plan": 15,
     "leda-war-plan": 16,
     "dietrich-war-plan": 16,
     "cai-war-plan": 13,
-    "part3-plan": 61
+    "part3-plan": 60
   },
   "recruitAssignments": 63,
   "referenceDocs": 318,

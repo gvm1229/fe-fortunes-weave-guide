@@ -8,6 +8,7 @@ import { Semantic } from './records';
 import { Button } from './ui/button';
 import { Card } from './ui/card';
 import { Badge } from './ui/badge';
+import { isFinal25 } from '@/lib/final25';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './ui/accordion';
 export type ClassInfo={file:string;tier:string;slug?:string;weapons?:string[];traits?:string[]};
 const skillIcons:Record<string,string>={'검술':'sword','창술':'lance','도끼술':'axe','궁술':'bow','격투술':'brawl','지휘술':'authority','기마술':'riding','비행술':'flying','중갑술':'armor','중장술':'armor','보병술':'infantry','흑마술':'black-magic','백마술':'white-magic'};
@@ -71,7 +72,7 @@ export function PersonInfo({person,classes,part="1",onDoc,openKey}:{person:Perso
 }
 export function PersonHeading({person,part}:{person:Person;part:string}){
   const gate=person.recruitment as {sup?:string|number;fame?:string|number};
-  return <div className="person-heading">{person.portrait&&<img className="portrait" src={`/${person.portrait}`} alt={person.name} loading="lazy"/>}<div><h2>{person.name}</h2><div className="tags"><Badge variant="strong">{person.role}</Badge>{part==='3'&&<Badge>{routeNames[person.route]}에서 준비 · {person.kind}</Badge>}{person.data.avoid&&<Badge>{person.name==='누조'?'선더 소드 지참품용 영입':'지원 대화용 영입'}</Badge>}{person.joinLabel&&<Badge>{part==='1'?person.joinLabel:`1부: ${person.joinLabel}`}</Badge>}{gate?.sup!=='0'&&gate?.sup!==0&&<span className="game-badge" data-kind="bond"><GameIcon kind="bond"/><span className="badge-label">지원</span> <b className="badge-value">{gate?.sup??'미확인'}</b></span>}{gate?.fame!=='0'&&gate?.fame!==0&&<span className="game-badge" data-kind="renown"><GameIcon kind="renown"/><span className="badge-label">명성</span> <b className="badge-value">{gate?.fame??'미확인'}</b></span>}</div></div></div>;
+  return <div className="person-heading">{person.portrait&&<img className={'portrait'+(isFinal25(person.name)?' final25-portrait':'')} src={`/${person.portrait}`} alt={person.name} loading="lazy"/>}<div><h2>{person.name}</h2><div className="tags"><Badge variant="strong">{person.role}</Badge>{isFinal25(person.name)&&<span className="final25-badge">최종 25인</span>}{part==='3'&&<Badge>{routeNames[person.route]}에서 준비 · {person.kind}</Badge>}{person.data.avoid&&<Badge>{person.name==='누조'?'선더 소드 지참품용 영입':'지원 대화용 영입'}</Badge>}{person.joinLabel&&<Badge>{part==='1'?person.joinLabel:`1부: ${person.joinLabel}`}</Badge>}{gate?.sup!=='0'&&gate?.sup!==0&&<span className="game-badge" data-kind="bond"><GameIcon kind="bond"/><span className="badge-label">지원</span> <b className="badge-value">{gate?.sup??'미확인'}</b></span>}{gate?.fame!=='0'&&gate?.fame!==0&&<span className="game-badge" data-kind="renown"><GameIcon kind="renown"/><span className="badge-label">명성</span> <b className="badge-value">{gate?.fame??'미확인'}</b></span>}</div></div></div>;
 }
 export function People({people,classes,part,onDoc}:{people:Person[];classes:Record<string,ClassInfo>;part:string;onDoc:(url:string)=>void}){
   const scope=`people-${people[0]?.route}-${part}`;
