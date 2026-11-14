@@ -22,9 +22,9 @@ for(const [route,people]of Object.entries(readiness))for(const [name,ready]of Ob
  if(['이오','알렉산드라'].includes(name))assert.ok(summary.caution.length);
  evidence.push({route,name,part,...summary});
 }
-// 2026-11-14: 세오도라·레다 이오 빼고 레다 누조 더함(60명).
-assert.equal(evidence.length,180);
+// 2026-11-14: 세오도라·레다 이오와 레다 자스민을 빼고 레다 누조를 더함(59명).
+assert.equal(evidence.length,177);
 const team=read('content/source/react-content.json').team;
 for(const name of Object.keys(team.units))assert.ok(characterReason(name),name+' 팀 설명');
-writeFileSync('docs/character-copy-review.json',JSON.stringify({routeCharacters:60,phaseDescriptions:180,teamCandidates:Object.keys(team.units).length,source:'unit-readiness + phase-goals + authored character-copy',descriptions:evidence},null,2));
-console.log('통과: 루트별 60명 × 3부 = 180개 설명, 팀 후보 34명, 보존·수집 예외');
+writeFileSync('docs/character-copy-review.json',JSON.stringify({routeCharacters:59,phaseDescriptions:177,teamCandidates:Object.keys(team.units).length,source:'unit-readiness + phase-goals + authored character-copy',descriptions:evidence},null,2));
+console.log('통과: 루트별 59명 × 3부 = 177개 설명, 팀 후보 34명, 보존·수집 예외');
