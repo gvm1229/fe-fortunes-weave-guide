@@ -245,3 +245,9 @@
 <a id="rebuild-megi-20261112"></a>2026-11-12 현재 대화: 공통 준비의 신 초상화 중복·띄어쓰기 부족·다음 할 일 겹침·정리 안 된 글 지적 · 원본 저장소 포크 후 megi 폴더에서 재구축, 자산 이전, 테마·커밋·배포 규칙, Claude는 지휘·검토만 하라는 지시
 
 <a id="design-lead-20261113"></a>2026-11-13 현재 대화: 새 사이트 디자인이 옛 공략보다 나쁘다는 지적 · 첫 화면 군주 초상화·스크롤 없음·AI 상투 문구 제거 · 채운 버튼 · 공략 화면 그림 복원 · 루트 primary 색이 배경을 차지 · Codex에 디자인을 맡기지 말 것, 추론 단계 xhigh
+
+## 2026-11-14 지원 올리기 영상
+
+- 만찬 반복: Jay Dunna, "FASTEST MAX SUPPORT FARM in Fire Emblem: Fortune's Weave" https://youtu.be/8iqNiN00y-Q
+- 영입·선물: choops, "I Made Fortune's Weave Recruitment WAY Less Annoying" https://youtu.be/lzG_wX8Al8I
+- 인과 융합: https://www.siliconera.com/how-does-the-fire-emblem-fortunes-weave-part-3-character-merge-work/ · https://allthings.how/how-to-merge-unit-versions-in-fire-emblem-fortune-s-weave/ · https://www.keengamer.com/articles/guides/fire-emblem-fortunes-weave-how-to-merge-character-stats/
