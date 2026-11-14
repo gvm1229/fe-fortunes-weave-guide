@@ -254,6 +254,8 @@ summary::-webkit-details-marker{display:none}
 .person .person-heading{display:flex;gap:16px;align-items:center;padding:24px 24px 8px;background:transparent}
 .person .person-heading h2{font-size:22px;font-weight:700;margin:0 0 8px}
 .person .person-heading .tags{display:flex;flex-wrap:wrap;gap:6px}
+/* 3부 카드의 긴 배지("…에서 준비 · 능력·기능 보완")가 좁은 화면에서 잘리지 않게 줄바꿈 */
+.person .person-heading>div{min-inline-size:0}.person .person-heading .tags>.ui-badge{white-space:normal;max-inline-size:100%}
 .person .portrait{inline-size:96px;block-size:96px;border-radius:12px;object-fit:contain}
 .person>.person-summary{margin:16px 24px;inline-size:calc(100% - 48px)}
 .person-summary .class-path{display:flex;flex-wrap:wrap;gap:8px 16px;list-style:none;padding:0;margin:0}
