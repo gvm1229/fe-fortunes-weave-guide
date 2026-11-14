@@ -1,7 +1,7 @@
 {
   "status": "passed",
   "host": "Codex / Windows / installed Chrome / Playwright",
-  "base": "http://localhost:3000",
+  "base": "http://localhost:18763",
   "rows": [
     {
       "eraViolations": [],
@@ -9,7 +9,10 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
+        "360×480",
+        "36×36",
         "28×28",
         "48×48"
       ],
@@ -26,6 +29,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "96×96"
       ],
@@ -42,6 +46,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "48×48"
       ],
@@ -58,6 +63,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [],
       "route": "cai",
       "part": "1",
@@ -72,8 +78,10 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "28×28",
+        "360×480",
+        "36×36",
         "48×48"
       ],
       "route": "cai",
@@ -89,6 +97,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "96×96"
       ],
@@ -105,6 +114,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "48×48"
       ],
@@ -121,6 +131,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [],
       "route": "cai",
       "part": "2",
@@ -135,7 +146,10 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
+        "360×480",
+        "36×36",
         "28×28",
         "48×48"
       ],
@@ -152,6 +166,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "96×96"
       ],
@@ -168,6 +183,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "48×48"
       ],
@@ -184,6 +200,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [],
       "route": "dietrich",
       "part": "1",
@@ -198,8 +215,10 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "28×28",
+        "360×480",
+        "36×36",
         "48×48"
       ],
       "route": "dietrich",
@@ -215,6 +234,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "96×96"
       ],
@@ -231,6 +251,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "48×48"
       ],
@@ -247,6 +268,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [],
       "route": "dietrich",
       "part": "2",
@@ -261,7 +283,10 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
+        "360×480",
+        "36×36",
         "28×28",
         "48×48"
       ],
@@ -278,6 +303,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "96×96"
       ],
@@ -294,6 +320,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "48×48"
       ],
@@ -310,6 +337,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [],
       "route": "theodora",
       "part": "1",
@@ -324,8 +352,10 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "28×28",
+        "360×480",
+        "36×36",
         "48×48"
       ],
       "route": "theodora",
@@ -341,6 +371,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "96×96"
       ],
@@ -357,6 +388,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "48×48"
       ],
@@ -373,6 +405,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [],
       "route": "theodora",
       "part": "2",
@@ -387,7 +420,10 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
+        "360×480",
+        "36×36",
         "28×28",
         "48×48"
       ],
@@ -404,6 +440,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "96×96"
       ],
@@ -420,6 +457,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "48×48"
       ],
@@ -436,6 +474,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [],
       "route": "leda",
       "part": "1",
@@ -450,8 +489,10 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "28×28",
+        "360×480",
+        "36×36",
         "48×48"
       ],
       "route": "leda",
@@ -467,6 +508,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "96×96"
       ],
@@ -483,6 +525,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "48×48"
       ],
@@ -499,6 +542,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [],
       "route": "leda",
       "part": "2",
@@ -513,9 +557,9 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "28×28",
-        "48×48"
+        "360×480"
       ],
       "route": "part3",
       "part": "3",
@@ -530,6 +574,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "96×96"
       ],
@@ -546,6 +591,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "48×48"
       ],
@@ -562,6 +608,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [],
       "route": "part3",
       "part": "3",
@@ -607,13 +654,6 @@
           "sameLine": true
         },
         {
-          "name": "세오도라",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
           "name": "단테",
           "width": 48,
           "height": 48,
@@ -636,55 +676,6 @@
         },
         {
           "name": "로레타",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "우술라",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "루루디아",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "우술라",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "루루디아",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "이오",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "누조",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "이오",
           "width": 48,
           "height": 48,
           "nameToRight": true,
@@ -1174,7 +1165,10 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
+        "360×480",
+        "36×36",
         "28×28",
         "48×48"
       ],
@@ -1191,6 +1185,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "96×96"
       ],
@@ -1207,6 +1202,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "48×48"
       ],
@@ -1223,6 +1219,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [],
       "route": "cai",
       "part": "1",
@@ -1237,8 +1234,10 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "28×28",
+        "360×480",
+        "36×36",
         "48×48"
       ],
       "route": "cai",
@@ -1254,6 +1253,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "96×96"
       ],
@@ -1270,6 +1270,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "48×48"
       ],
@@ -1286,6 +1287,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [],
       "route": "cai",
       "part": "2",
@@ -1300,7 +1302,10 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
+        "360×480",
+        "36×36",
         "28×28",
         "48×48"
       ],
@@ -1317,6 +1322,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "96×96"
       ],
@@ -1333,6 +1339,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "48×48"
       ],
@@ -1349,6 +1356,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [],
       "route": "dietrich",
       "part": "1",
@@ -1363,8 +1371,10 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "28×28",
+        "360×480",
+        "36×36",
         "48×48"
       ],
       "route": "dietrich",
@@ -1380,6 +1390,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "96×96"
       ],
@@ -1396,6 +1407,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "48×48"
       ],
@@ -1412,6 +1424,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [],
       "route": "dietrich",
       "part": "2",
@@ -1426,7 +1439,10 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
+        "360×480",
+        "36×36",
         "28×28",
         "48×48"
       ],
@@ -1443,6 +1459,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "96×96"
       ],
@@ -1459,6 +1476,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "48×48"
       ],
@@ -1475,6 +1493,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [],
       "route": "theodora",
       "part": "1",
@@ -1489,8 +1508,10 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "28×28",
+        "360×480",
+        "36×36",
         "48×48"
       ],
       "route": "theodora",
@@ -1506,6 +1527,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "96×96"
       ],
@@ -1522,6 +1544,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "48×48"
       ],
@@ -1538,6 +1561,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [],
       "route": "theodora",
       "part": "2",
@@ -1552,7 +1576,10 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
+        "360×480",
+        "36×36",
         "28×28",
         "48×48"
       ],
@@ -1569,6 +1596,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "96×96"
       ],
@@ -1585,6 +1613,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "48×48"
       ],
@@ -1601,6 +1630,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [],
       "route": "leda",
       "part": "1",
@@ -1615,8 +1645,10 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "28×28",
+        "360×480",
+        "36×36",
         "48×48"
       ],
       "route": "leda",
@@ -1632,6 +1664,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "96×96"
       ],
@@ -1648,6 +1681,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "48×48"
       ],
@@ -1664,6 +1698,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [],
       "route": "leda",
       "part": "2",
@@ -1678,9 +1713,9 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "28×28",
-        "48×48"
+        "360×480"
       ],
       "route": "part3",
       "part": "3",
@@ -1695,6 +1730,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "96×96"
       ],
@@ -1711,6 +1747,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "48×48"
       ],
@@ -1727,6 +1764,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [],
       "route": "part3",
       "part": "3",
@@ -1772,13 +1810,6 @@
           "sameLine": true
         },
         {
-          "name": "세오도라",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
           "name": "단테",
           "width": 48,
           "height": 48,
@@ -1801,55 +1832,6 @@
         },
         {
           "name": "로레타",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "우술라",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "루루디아",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "우술라",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "루루디아",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "이오",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "누조",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "이오",
           "width": 48,
           "height": 48,
           "nameToRight": true,
@@ -2339,8 +2321,12 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "28×28"
+        "200×340",
+        "36×36",
+        "28×28",
+        "48×48"
       ],
       "route": "cai",
       "part": "1",
@@ -2355,8 +2341,9 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "96×96"
+        "72×72"
       ],
       "route": "cai",
       "part": "1",
@@ -2371,6 +2358,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "48×48"
       ],
@@ -2387,6 +2375,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [],
       "route": "cai",
       "part": "1",
@@ -2401,43 +2390,48 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "28×28"
-      ],
-      "route": "cai",
-      "part": "2",
-      "view": "tasks",
-      "width": 375,
-      "height": 812,
-      "theme": "light"
-    },
-    {
-      "eraViolations": [],
-      "horizontalScroll": 0,
-      "amountWrapViolations": 0,
-      "tableFontViolations": 0,
-      "groupLineViolations": 0,
-      "faceSizes": [
-        "96×96"
-      ],
-      "route": "cai",
-      "part": "2",
-      "view": "people",
-      "width": 375,
-      "height": 812,
-      "theme": "light"
-    },
-    {
-      "eraViolations": [],
-      "horizontalScroll": 0,
-      "amountWrapViolations": 0,
-      "tableFontViolations": 0,
-      "groupLineViolations": 0,
-      "faceSizes": [
+        "200×340",
+        "36×36",
         "48×48"
       ],
       "route": "cai",
       "part": "2",
+      "view": "tasks",
+      "width": 375,
+      "height": 812,
+      "theme": "light"
+    },
+    {
+      "eraViolations": [],
+      "horizontalScroll": 0,
+      "amountWrapViolations": 0,
+      "tableFontViolations": 0,
+      "groupLineViolations": 0,
+      "doubledBadges": [],
+      "faceSizes": [
+        "72×72"
+      ],
+      "route": "cai",
+      "part": "2",
+      "view": "people",
+      "width": 375,
+      "height": 812,
+      "theme": "light"
+    },
+    {
+      "eraViolations": [],
+      "horizontalScroll": 0,
+      "amountWrapViolations": 0,
+      "tableFontViolations": 0,
+      "groupLineViolations": 0,
+      "doubledBadges": [],
+      "faceSizes": [
+        "48×48"
+      ],
+      "route": "cai",
+      "part": "2",
       "view": "prep",
       "width": 375,
       "height": 812,
@@ -2449,6 +2443,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [],
       "route": "cai",
       "part": "2",
@@ -2463,8 +2458,12 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "28×28"
+        "200×340",
+        "36×36",
+        "28×28",
+        "48×48"
       ],
       "route": "dietrich",
       "part": "1",
@@ -2479,8 +2478,9 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "96×96"
+        "72×72"
       ],
       "route": "dietrich",
       "part": "1",
@@ -2495,6 +2495,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "48×48"
       ],
@@ -2511,6 +2512,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [],
       "route": "dietrich",
       "part": "1",
@@ -2525,8 +2527,11 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "28×28"
+        "200×340",
+        "36×36",
+        "48×48"
       ],
       "route": "dietrich",
       "part": "2",
@@ -2541,8 +2546,9 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "96×96"
+        "72×72"
       ],
       "route": "dietrich",
       "part": "2",
@@ -2557,6 +2563,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "48×48"
       ],
@@ -2573,6 +2580,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [],
       "route": "dietrich",
       "part": "2",
@@ -2587,8 +2595,12 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "28×28"
+        "200×340",
+        "36×36",
+        "28×28",
+        "48×48"
       ],
       "route": "theodora",
       "part": "1",
@@ -2603,8 +2615,9 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "96×96"
+        "72×72"
       ],
       "route": "theodora",
       "part": "1",
@@ -2619,6 +2632,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "48×48"
       ],
@@ -2635,6 +2649,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [],
       "route": "theodora",
       "part": "1",
@@ -2649,8 +2664,11 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "28×28"
+        "200×340",
+        "36×36",
+        "48×48"
       ],
       "route": "theodora",
       "part": "2",
@@ -2665,8 +2683,9 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "96×96"
+        "72×72"
       ],
       "route": "theodora",
       "part": "2",
@@ -2681,6 +2700,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "48×48"
       ],
@@ -2697,6 +2717,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [],
       "route": "theodora",
       "part": "2",
@@ -2711,8 +2732,12 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "28×28"
+        "200×340",
+        "36×36",
+        "28×28",
+        "48×48"
       ],
       "route": "leda",
       "part": "1",
@@ -2727,8 +2752,9 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "96×96"
+        "72×72"
       ],
       "route": "leda",
       "part": "1",
@@ -2743,6 +2769,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "48×48"
       ],
@@ -2759,6 +2786,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [],
       "route": "leda",
       "part": "1",
@@ -2773,8 +2801,11 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "28×28"
+        "200×340",
+        "36×36",
+        "48×48"
       ],
       "route": "leda",
       "part": "2",
@@ -2789,8 +2820,9 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "96×96"
+        "72×72"
       ],
       "route": "leda",
       "part": "2",
@@ -2805,6 +2837,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "48×48"
       ],
@@ -2821,6 +2854,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [],
       "route": "leda",
       "part": "2",
@@ -2835,8 +2869,9 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "28×28"
+        "200×340"
       ],
       "route": "part3",
       "part": "3",
@@ -2851,8 +2886,9 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "96×96"
+        "72×72"
       ],
       "route": "part3",
       "part": "3",
@@ -2867,6 +2903,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "48×48"
       ],
@@ -2883,6 +2920,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [],
       "route": "part3",
       "part": "3",
@@ -2928,13 +2966,6 @@
           "sameLine": true
         },
         {
-          "name": "세오도라",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
           "name": "단테",
           "width": 48,
           "height": 48,
@@ -2957,55 +2988,6 @@
         },
         {
           "name": "로레타",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "우술라",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "루루디아",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "우술라",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "루루디아",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "이오",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "누조",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "이오",
           "width": 48,
           "height": 48,
           "nameToRight": true,
@@ -3495,8 +3477,12 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "28×28"
+        "200×340",
+        "36×36",
+        "28×28",
+        "48×48"
       ],
       "route": "cai",
       "part": "1",
@@ -3511,8 +3497,9 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "96×96"
+        "72×72"
       ],
       "route": "cai",
       "part": "1",
@@ -3527,6 +3514,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "48×48"
       ],
@@ -3543,6 +3531,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [],
       "route": "cai",
       "part": "1",
@@ -3557,43 +3546,48 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "28×28"
-      ],
-      "route": "cai",
-      "part": "2",
-      "view": "tasks",
-      "width": 375,
-      "height": 812,
-      "theme": "dark"
-    },
-    {
-      "eraViolations": [],
-      "horizontalScroll": 0,
-      "amountWrapViolations": 0,
-      "tableFontViolations": 0,
-      "groupLineViolations": 0,
-      "faceSizes": [
-        "96×96"
-      ],
-      "route": "cai",
-      "part": "2",
-      "view": "people",
-      "width": 375,
-      "height": 812,
-      "theme": "dark"
-    },
-    {
-      "eraViolations": [],
-      "horizontalScroll": 0,
-      "amountWrapViolations": 0,
-      "tableFontViolations": 0,
-      "groupLineViolations": 0,
-      "faceSizes": [
+        "200×340",
+        "36×36",
         "48×48"
       ],
       "route": "cai",
       "part": "2",
+      "view": "tasks",
+      "width": 375,
+      "height": 812,
+      "theme": "dark"
+    },
+    {
+      "eraViolations": [],
+      "horizontalScroll": 0,
+      "amountWrapViolations": 0,
+      "tableFontViolations": 0,
+      "groupLineViolations": 0,
+      "doubledBadges": [],
+      "faceSizes": [
+        "72×72"
+      ],
+      "route": "cai",
+      "part": "2",
+      "view": "people",
+      "width": 375,
+      "height": 812,
+      "theme": "dark"
+    },
+    {
+      "eraViolations": [],
+      "horizontalScroll": 0,
+      "amountWrapViolations": 0,
+      "tableFontViolations": 0,
+      "groupLineViolations": 0,
+      "doubledBadges": [],
+      "faceSizes": [
+        "48×48"
+      ],
+      "route": "cai",
+      "part": "2",
       "view": "prep",
       "width": 375,
       "height": 812,
@@ -3605,6 +3599,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [],
       "route": "cai",
       "part": "2",
@@ -3619,8 +3614,12 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "28×28"
+        "200×340",
+        "36×36",
+        "28×28",
+        "48×48"
       ],
       "route": "dietrich",
       "part": "1",
@@ -3635,8 +3634,9 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "96×96"
+        "72×72"
       ],
       "route": "dietrich",
       "part": "1",
@@ -3651,6 +3651,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "48×48"
       ],
@@ -3667,6 +3668,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [],
       "route": "dietrich",
       "part": "1",
@@ -3681,8 +3683,11 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "28×28"
+        "200×340",
+        "36×36",
+        "48×48"
       ],
       "route": "dietrich",
       "part": "2",
@@ -3697,8 +3702,9 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "96×96"
+        "72×72"
       ],
       "route": "dietrich",
       "part": "2",
@@ -3713,6 +3719,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "48×48"
       ],
@@ -3729,6 +3736,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [],
       "route": "dietrich",
       "part": "2",
@@ -3743,8 +3751,12 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "28×28"
+        "200×340",
+        "36×36",
+        "28×28",
+        "48×48"
       ],
       "route": "theodora",
       "part": "1",
@@ -3759,8 +3771,9 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "96×96"
+        "72×72"
       ],
       "route": "theodora",
       "part": "1",
@@ -3775,6 +3788,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "48×48"
       ],
@@ -3791,6 +3805,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [],
       "route": "theodora",
       "part": "1",
@@ -3805,8 +3820,11 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "28×28"
+        "200×340",
+        "36×36",
+        "48×48"
       ],
       "route": "theodora",
       "part": "2",
@@ -3821,8 +3839,9 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "96×96"
+        "72×72"
       ],
       "route": "theodora",
       "part": "2",
@@ -3837,6 +3856,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "48×48"
       ],
@@ -3853,6 +3873,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [],
       "route": "theodora",
       "part": "2",
@@ -3867,8 +3888,12 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "28×28"
+        "200×340",
+        "36×36",
+        "28×28",
+        "48×48"
       ],
       "route": "leda",
       "part": "1",
@@ -3883,8 +3908,9 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "96×96"
+        "72×72"
       ],
       "route": "leda",
       "part": "1",
@@ -3899,6 +3925,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "48×48"
       ],
@@ -3915,6 +3942,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [],
       "route": "leda",
       "part": "1",
@@ -3929,8 +3957,11 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "28×28"
+        "200×340",
+        "36×36",
+        "48×48"
       ],
       "route": "leda",
       "part": "2",
@@ -3945,8 +3976,9 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "96×96"
+        "72×72"
       ],
       "route": "leda",
       "part": "2",
@@ -3961,6 +3993,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "48×48"
       ],
@@ -3977,6 +4010,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [],
       "route": "leda",
       "part": "2",
@@ -3991,8 +4025,9 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "28×28"
+        "200×340"
       ],
       "route": "part3",
       "part": "3",
@@ -4007,8 +4042,9 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
-        "96×96"
+        "72×72"
       ],
       "route": "part3",
       "part": "3",
@@ -4023,6 +4059,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [
         "48×48"
       ],
@@ -4039,6 +4076,7 @@
       "amountWrapViolations": 0,
       "tableFontViolations": 0,
       "groupLineViolations": 0,
+      "doubledBadges": [],
       "faceSizes": [],
       "route": "part3",
       "part": "3",
@@ -4084,13 +4122,6 @@
           "sameLine": true
         },
         {
-          "name": "세오도라",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
           "name": "단테",
           "width": 48,
           "height": 48,
@@ -4113,55 +4144,6 @@
         },
         {
           "name": "로레타",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "우술라",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "루루디아",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "우술라",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "루루디아",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "이오",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "누조",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "이오",
           "width": 48,
           "height": 48,
           "nameToRight": true,

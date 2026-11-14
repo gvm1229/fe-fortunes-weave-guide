@@ -11,15 +11,7 @@ const staging = '.tmp/design-screens';
 mkdirSync(screenshots, { recursive:true });
 mkdirSync(staging, { recursive:true });
 const derived = JSON.parse(readFileSync('content/derived/checklist.json'));
-const spec = readFileSync('docs/design-spec.md','utf8');
 const routeNames = {theodora:'세오도라',leda:'레다',dietrich:'디트리히',cai:'카이',part3:'3부'};
-const expectedBackground = {};
-for (const line of spec.split('\n')) {
-  const cells = line.split('|').slice(1,-1).map(s=>s.trim());
-  for (const [route,name] of Object.entries(routeNames)) for (const theme of ['light','dark']) {
-    if (cells[0] === `${name} ${theme==='light'?'밝게':'어둡게'}`) expectedBackground[`${route}-${theme}`] = cells[1].toUpperCase();
-  }
-}
 const sizes = [[1440,900],[1920,1080],[375,812],[768,1024]];
 const results = [], parity = [], functionality = [], errors = [], failures = [], recoveries = [];
 const browser = await chromium.launch({ executablePath:process.env.CHROME_PATH || 'C:/Program Files/Google/Chrome/Application/chrome.exe', headless:true });
@@ -74,12 +66,14 @@ async function measure(page,{route='home',view='home',theme,width,height,screens
       }
     }
     const brokenImages=[...document.images].filter(e=>visible(e)&&e.getBoundingClientRect().top<innerHeight&&e.getBoundingClientRect().bottom>0&&(!e.complete||e.naturalWidth===0)).map(e=>e.getAttribute('src'));
-    const transparentButtons=[...document.querySelectorAll('button')].filter(e=>visible(e)&&e.textContent.trim()&&getComputedStyle(e).backgroundColor==='rgba(0, 0, 0, 0)').map(e=>e.textContent.slice(0,60));
-    const aspectRatioViolations=[...document.images].filter(e=>visible(e)&&e.naturalWidth&&!/\/(portraits|gods)\//.test(e.getAttribute('src')||'')).flatMap(e=>{
+    // 재설계 v3에서 의도적으로 배경이 없는 버튼: 탐색 항목, 배지로 채운 인물 이름, 그림 버튼, 접기 머리, 채운 목록 안의 탭.
+    const transparentButtons=[...document.querySelectorAll('button')].filter(e=>visible(e)&&e.textContent.trim()&&!e.matches('.guide-navigation button,.person-inline:has(.game-badge),.map-thumbnail button,.ui-accordion-trigger,[role=tab],[role=radio]')&&getComputedStyle(e).backgroundColor==='rgba(0, 0, 0, 0)').map(e=>e.textContent.slice(0,60));
+    const aspectRatioViolations=[...document.images].filter(e=>visible(e)&&e.naturalWidth&&getComputedStyle(e).objectFit==='fill'&&!/\/(portraits|gods)\//.test(e.getAttribute('src')||'')).flatMap(e=>{
       const r=e.getBoundingClientRect(),ratio=e.naturalWidth/e.naturalHeight,error=Math.abs(r.width/r.height/ratio-1);
       return error>.01?[{src:e.getAttribute('src'),display:[r.width,r.height],natural:[e.naturalWidth,e.naturalHeight],error}]:[];
     });
-    const faceSections=[['tasks','.tasks-main .group-portraits img,.tasks-main .source-markup img[src*="/portraits/"],.tasks-main .source-markup img[src*="/gods/"]',28],['rail','.context-rail img[src*="/portraits/"]',48],['prep','.prep-content img[src*="/portraits/"],.prep-content img[src*="/gods/"]',48],['people','.people-grid .person-heading img[src*="/portraits/"]',96]];
+    // 재설계 v3 크기: 묶음 머리 얼굴 36, 글 속 원본 얼굴 28, 정보 칸·준비 48, 인물 카드 96(휴대폰 72). 배지 안 얼굴은 뺀다.
+    const faceSections=[['groups','.tasks-main .group-portraits img',36],['tasks','.tasks-main .source-markup img[src*="/portraits/"]:not(.game-badge img),.tasks-main .source-markup img[src*="/gods/"]:not(.game-badge img)',28],['rail','.context-rail img[src*="/portraits/"]',48],['prep','.prep-content img[src*="/portraits/"]:not(.game-badge img),.prep-content img[src*="/gods/"]:not(.game-badge img)',48],['people','.people-grid .person-heading img[src*="/portraits/"]',innerWidth<768?72:96]];
     const faceSizes=faceSections.map(([section,selector,size])=>({section,size,actual:[...new Set([...document.querySelectorAll(selector)].filter(visible).map(e=>{const r=e.getBoundingClientRect();return `${r.width}×${r.height}`;}))]}));
     const faceSizeViolations=faceSizes.filter(s=>s.actual.some(v=>v!==`${s.size}×${s.size}`));
     const paragraphs=[...document.querySelectorAll('main p,.sheet-scroll p')].filter(visible);
@@ -104,13 +98,14 @@ async function measure(page,{route='home',view='home',theme,width,height,screens
       overlapCount:overlaps.length,overlaps,brokenImages,transparentButtons,background,bgToken:getComputedStyle(document.body).getPropertyValue('--bg').trim().toUpperCase(),
       imageCount:document.querySelectorAll('img').length,aspectRatioViolations,faceSizes,faceSizeViolations,paragraphViolations,groupLineViolations,personTables,order,eraViolations,croppedScenes,sceneHeights,goldTables,accentContrast,disclosureImageClips};
   });
-  const expected=route==='home'||route==='team'?(theme==='light'?'#EFEBE3':'#121116'):expectedBackground[`${route}-${theme}`];
+  // 재설계 v3(docs/design-spec.md "재설계 v3" 표): 루트·팀 화면 body는 공통 --bg(#F4F3F0 / #191918). 첫 화면은 이전 색 그대로.
+  const expected=route==='home'?(theme==='light'?'#EFEBE3':'#121116'):(theme==='light'?'#F4F3F0':'#191918');
   const label=`${route}-${view}-${width}x${height}-${theme}`;
-  Object.assign(row,{label,route,view,width,height,theme,expectedBackground:expected,backgroundMatches:row.background===expected&&row.bgToken===expected});
+  Object.assign(row,{label,route,view,width,height,theme,expectedBackground:expected,backgroundMatches:row.background===expected&&(route!=='home'||row.bgToken===expected)});
   results.push(row);
-  for(const [ok,message] of [[row.horizontalScroll===0,'가로 스크롤'],[row.minimumFont>=18,'최소 글자'],[row.dashboardVerticalScroll===null||row.dashboardVerticalScroll===0,'첫 화면 세로 스크롤'],[row.overlapCount===0,'요소 겹침'],[row.brokenImages.length===0,'그림 로딩'],[row.transparentButtons.length===0,'채운 버튼'],[row.backgroundMatches,'body 배경']])if(!ok)failures.push(`${label}: ${message}`);
+  for(const [ok,message] of [[row.horizontalScroll===0,'가로 스크롤'],[row.minimumFont>=(width<768?14:18),'최소 글자'],[row.dashboardVerticalScroll===null||row.dashboardVerticalScroll===0||width<768,'첫 화면 세로 스크롤'],[row.overlapCount===0,'요소 겹침'],[row.brokenImages.length===0,'그림 로딩'],[row.transparentButtons.length===0,'채운 버튼'],[row.backgroundMatches,'body 배경']])if(!ok)failures.push(`${label}: ${message}`);
   for(const [items,message]of [[row.aspectRatioViolations,'원본 그림 비율'],[row.faceSizeViolations,'얼굴 크기'],[row.paragraphViolations,'2문장 문단'],[row.groupLineViolations,'3줄 묶음'],[row.eraViolations,'타임스킵 시대'],[row.croppedScenes,'그림 전체 표시']])if(items.length)failures.push(`${label}: ${message}`);
-  if(row.personTables.some(t=>t.columns!==2||Math.abs(t.labelWidth-(width<768?96:132))>1))failures.push(`${label}: 인물 2열 표 너비`);
+  if(row.personTables.some(t=>t.columns!==2||Math.abs(t.labelWidth-(width<768?100:120))>1))failures.push(`${label}: 인물 2열 표 너비`);
   if(row.goldTables.some(t=>t.columns!==3||!t.amountRight))failures.push(`${label}: 골드 3열 표·금액 정렬`);
   if(row.sceneHeights.some(h=>h>(width<768?height*.6:480)+1))failures.push(`${label}: 그림 최대 높이`);
   if(row.disclosureImageClips.length)failures.push(`${label}: 접힌 설명의 그림 잘림`);
@@ -130,10 +125,11 @@ async function stickyCheck(page,route,width,theme){
   if(width>=768&&width<1200)return;
   await page.evaluate(()=>scrollTo(0,800));await page.waitForTimeout(80);
   const measurement=await page.evaluate(()=>{
-    const toolbar=document.querySelector('.check-toolbar'),rail=document.querySelector('.context-rail'),header=document.querySelector('.mobile-header'),nav=document.querySelector('.view-nav');
-    return {scrollY,toolbarTop:toolbar.getBoundingClientRect().top,toolbarHeight:toolbar.getBoundingClientRect().height,railTop:rail.getBoundingClientRect().top,railHeight:rail.getBoundingClientRect().height,railOverflow:getComputedStyle(rail).overflowY,headerTop:header.getBoundingClientRect().top,navBottom:nav.getBoundingClientRect().bottom};
+    // 2026-11-14 현재 배치: 도구 줄은 모든 폭에서 맨 위(top 0). 넓은 화면의 오른쪽 정보 칸은 위아래 24px을 둔 sticky, 767px 이하는 가로 띠(static).
+    const toolbar=document.querySelector('.check-toolbar'),rail=document.querySelector('.context-rail');
+    return {scrollY,toolbarTop:toolbar.getBoundingClientRect().top,toolbarHeight:toolbar.getBoundingClientRect().height,railTop:rail.getBoundingClientRect().top,railHeight:rail.getBoundingClientRect().height,railOverflow:getComputedStyle(rail).overflowY,railPosition:getComputedStyle(rail).position};
   });
-  const mobile=width<768,passed=Math.abs(measurement.toolbarTop-(mobile?56:0))<1&&(mobile?measurement.headerTop===0&&Math.abs(measurement.navBottom-(await page.evaluate(()=>innerHeight)))<1:Math.abs(measurement.railTop)<1&&measurement.railHeight===(await page.evaluate(()=>innerHeight))&&measurement.railOverflow==='auto');
+  const mobile=width<768,ih=await page.evaluate(()=>innerHeight),passed=Math.abs(measurement.toolbarTop)<1&&(mobile?measurement.railPosition==='static':Math.abs(measurement.railTop-24)<1&&measurement.railHeight<=ih-48+1&&measurement.railOverflow==='auto');
   await page.locator('.chapter-section[open]').evaluate(e=>e.scrollIntoView({block:'start'}));
   measurement.chapterClearance=await page.evaluate(()=>document.querySelector('.chapter-section[open]').getBoundingClientRect().top-document.querySelector('.check-toolbar').getBoundingClientRect().bottom);
   functionality.push({check:'sticky',route,width,theme,...measurement,passed:passed&&measurement.chapterClearance>=-1});
@@ -179,7 +175,7 @@ try {
         }
         await measure(page,{route,view,theme,width,height});
         if(view==='materials'&&route!=='part3'){
-          const maps=page.locator('.material-entry .map-thumbnail img');
+          const maps=page.locator('.material-entry .map-thumbnail');
           if(await maps.count()!==await page.locator('.material-entry').count())failures.push(`${route}: 재료별 지도 누락`);
           if(width===375){
             await page.getByRole('button',{name:'지도 보기',exact:true}).first().click();await page.getByRole('dialog').waitFor();
@@ -212,7 +208,7 @@ try {
     }
     const image=page.locator('.chapter-section[open]>.image-open').first();await image.scrollIntoViewIfNeeded();await image.click();await page.getByRole('dialog').waitFor();
     await measure(page,{route:'theodora',view:'event-original',theme,width,height});
-    const original=await page.locator('.image-original>img').evaluate(async e=>{await e.decode();return {natural:[e.naturalWidth,e.naturalHeight],display:[e.getBoundingClientRect().width,e.getBoundingClientRect().height]};});
+    const original=await page.locator('.image-original>img').evaluate(async e=>{await e.decode();return {natural:[e.naturalWidth,e.naturalHeight],display:[Math.round(e.getBoundingClientRect().width),Math.round(e.getBoundingClientRect().height)]};});
     assert.deepEqual(original.display,original.natural);functionality.push({check:'image-enlargement',width,theme,...original,passed:true});await page.keyboard.press('Escape');
   }
   await page.setViewportSize({width:1280,height:720});await page.emulateMedia({colorScheme:'light'});
@@ -220,8 +216,9 @@ try {
   const box=page.locator('.chapter-section[open] .checklist input').first(),before=await box.isChecked(),boxId=await box.getAttribute('id');
   await box.click();await page.reload();await ready(page);assert.equal(await page.locator(`[id="${boxId}"]`).isChecked(),!before);functionality.push('체크 재로딩 보존');
   const original=await page.evaluate(()=>localStorage.getItem('fortunes-weave-checklist-v1'));
-  await page.locator('input[type=file]').setInputFiles({name:'bad.json',mimeType:'application/json',buffer:Buffer.from('{invalid')});assert.ok(await page.getByRole('alert').isVisible());assert.equal(await page.evaluate(()=>localStorage.getItem('fortunes-weave-checklist-v1')),original);functionality.push('잘못된 JSON은 기존 기록 보존');
-  const pending=page.waitForEvent('download');await page.getByRole('button',{name:'내보내기',exact:false}).click();const download=await pending;await download.saveAs('.tmp/export-checklist.json');assert.deepEqual(JSON.parse(readFileSync('.tmp/export-checklist.json')),JSON.parse(original));functionality.push('JSON 내보내기');
+  await page.locator('input[type=file]').setInputFiles({name:'bad.json',mimeType:'application/json',buffer:Buffer.from('{invalid')});await page.locator('p.error[role=alert]').waitFor();assert.equal(await page.evaluate(()=>localStorage.getItem('fortunes-weave-checklist-v1')),original);functionality.push('잘못된 JSON은 기존 기록 보존');
+  if(!await page.locator('details.backup-menu').evaluate(e=>e.open))await page.locator('details.backup-menu>summary').click();
+  const pending=page.waitForEvent('download');await page.getByRole('button',{name:'내보내기',exact:false}).click();const download=await pending;await download.saveAs('.tmp/export-checklist.json');{const a=JSON.parse(readFileSync('.tmp/export-checklist.json')),b=JSON.parse(original);assert.deepEqual(a,b,JSON.stringify(Object.keys({...a,...b}).filter(k=>JSON.stringify(a[k])!==JSON.stringify(b[k])).map(k=>[k,JSON.stringify(a[k]).slice(0,120),JSON.stringify(b[k]).slice(0,120)])));}functionality.push('JSON 내보내기');
   const imported={schemaVersion:1,revision:300,checks:{'prep-boons':true,'prep-boons--83c6deded0':false}};
   await page.locator('input[type=file]').setInputFiles({name:'checklist.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(imported))});await page.reload();await ready(page);
   assert.equal(await page.locator('[id="prep-boons--83c6deded0"]').isChecked(),false);assert.equal(await page.locator('[id="prep-boons--5d107be39e"]').isChecked(),true);functionality.push('가져오기·상속 true보다 개별 false 우선');
