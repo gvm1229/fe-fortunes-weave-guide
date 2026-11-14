@@ -38,7 +38,7 @@ export function Tasks({route,label,part,chapters,groups,onDoc,onMaterial,onPerso
     const observer=new ResizeObserver(measure);observer.observe(element);measure();
     // scroll-state 쿼리를 모르는 브라우저: 붙은 상태를 IntersectionObserver로 표시한다(같은 모양을 .is-stuck에 둔다).
     let io:IntersectionObserver|undefined;
-    if(!CSS.supports('container-type: scroll-state')){io=new IntersectionObserver(([e])=>element.classList.toggle('is-stuck',e.intersectionRatio<1),{threshold:[1],rootMargin:'-1px 0px 0px 0px'});io.observe(element);}
+    if(!CSS.supports('container-type: scroll-state')){io=new IntersectionObserver(([e])=>element.classList.toggle('is-stuck',e.intersectionRatio<1&&e.boundingClientRect.top<1),{threshold:[1],rootMargin:'-1px 0px 0px 0px'});io.observe(element);}
     return ()=>{observer.disconnect();io?.disconnect();document.documentElement.style.removeProperty('--task-header-height');};},[]);
   const active=chapters.find(c=>chapterGroups(c,groups).some(g=>g.actions.some(a=>!checked(a,g.id,checks.data.checks))))||chapters.at(-1)!;
   useEffect(()=>{

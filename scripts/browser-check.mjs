@@ -59,7 +59,7 @@ async function measure(page,{route='home',view='home',theme,width,height,screens
     for(const container of document.querySelectorAll(selector)){
       if(!visible(container))continue;
       // 붙는(sticky) 머리는 아래 글 위에 겹쳐 보이는 것이 정상이다(루트 머리 막대, 2026-11-14).
-      const children=[...container.children].filter(e=>visible(e)&&!['absolute','fixed','sticky'].includes(getComputedStyle(e).position));
+      const children=[...container.children].filter(e=>visible(e)&&getComputedStyle(e).position!=='absolute'&&!e.matches('.route-head'));
       for(let i=0;i<children.length;i++)for(let j=i+1;j<children.length;j++){
         const a=children[i].getBoundingClientRect(),b=children[j].getBoundingClientRect();
         const w=Math.min(a.right,b.right)-Math.max(a.left,b.left),h=Math.min(a.bottom,b.bottom)-Math.max(a.top,b.top);
