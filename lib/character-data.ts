@@ -5,7 +5,7 @@ import manifest from '@/assets/classes/manifest.json';
 /** 인물 카드에 쓰는 병종·기능·시험 자료. 원천은 content/data(이전 공략 정본 사본)이며 카이 루트만 사이트 자료로 덮어쓴다. */
 export type SkillGoal = { skill: string; target: string; kind: string; when: string; why: string };
 export type Exam = { tier: string; level: string; renown: string; required: string; choice: string; unlock: string; weapons: string[] };
-export type CharacterData = { avoid: boolean; finalClasses: string[]; classes: string[]; next?: string; skills: SkillGoal[]; skillNote?: string; exams: Record<string, Exam>; steps: Record<string, string>; charioteer?: string; goalText?: string; reasonText?: string; caiAdvice?: { dip: string; dipExam: string; part3: string; rule: string; weapon: string } };
+export type CharacterData = { avoid: boolean; finalClasses: string[]; classes: string[]; next?: string; skills: SkillGoal[]; skillNote?: string; exams: Record<string, Exam>; steps: Record<string, string>; charioteer?: string; goalText?: string; reasonText?: string; caiAdvice?: { dip: string; part3: string; rule: string; weapon: string } };
 
 type Phase = { classes?: string[]; next?: string };
 type CaiPlan = { reason: string; source: string; part3: string; weaponNote: string; excluded: string[]; skills: SkillGoal[]; people: Record<string, Record<string, Phase> & { advice?: { dip: string; part3: string }; reason?: { card: string; team: string } }> };
@@ -29,6 +29,8 @@ export function examFor(name: string): Exam | undefined {
 }
 /** 시험 조건 한 줄(마스터 기술용으로 잠깐 바꿀 병종에 붙인다, 검토 4 L3). */
 function examLine(e?: Exam): string { return e ? [e.tier, /^\d/.test(e.level) ? `권장 Lv${e.level}` : '', /^\d/.test(e.renown) ? `명성 ${e.renown}` : '', e.required && `필수 ${e.required}`, e.choice && `선택 ${e.choice}`].filter(Boolean).join(' · ') : ''; }
+/** "아처 · 호조, 포레스트 나이트 · 활 추격 +3"처럼 병종이 여럿이면 병종마다 바로 뒤에 시험 조건을 붙인다(검토 4 재확인). */
+function dipWithExams(dip: string): string { return dip.split(', ').map(p => { const e = examLine(examFor(p.split(' · ')[0])); return e ? `${p} (시험: ${e})` : p; }).join(', '); }
 /** 전차병 시험 조건을 목표 글로 쓴다(원천 class-details). */
 export function charioteerGoal(): string { const e = examFor('전차병')!; return ['전차병', `권장 Lv${e.level}`, `명성 ${e.renown}`, e.required.replace(', ', ' · ')].join(' · '); }
 /** 2부 전차병 목표: 옛 "힘·기술·속도 기준판에 레벨업 배분"(성장 병종으로 바꾸라는 뜻)을 전차병 레벨업으로 바꾼다. 다른 말은 그대로. */
@@ -82,5 +84,5 @@ export function characterData(route: string, name: string, part: string): Charac
     // 전차병 시험 목표는 1부만(2부는 이미 전차병, 검토 4 M2).
     goalText: cai && part === '1' ? charioteerGoal() : cai && part === '2' ? charioteerPart2Goal((goal['2'] as { text?: string } | undefined)?.text) : undefined,
     reasonText: cai && part !== '3' ? cai.reason?.card : undefined,
-    caiAdvice: cai?.advice ? { ...cai.advice, dipExam: examLine(examFor(cai.advice.dip.split(' · ')[0])), rule: d.cai.part3, weapon: d.cai.weaponNote } : undefined };
+    caiAdvice: cai?.advice ? { ...cai.advice, dip: dipWithExams(cai.advice.dip), rule: d.cai.part3, weapon: d.cai.weaponNote } : undefined };
 }
