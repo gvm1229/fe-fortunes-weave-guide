@@ -79,6 +79,14 @@ const seed=read('content/checklist-seed.json');assert.deepEqual(validateChecks(J
   assert.ok(!Object.hasOwn(read('content/cai-charioteer.json').people,'누조'),'누조는 전차병 아님');
   for(const [st,id,ch] of [['theodora-plan','theo-recruit-nujo','12장'],['leda-plan','recruit-all-leda-nujo-20261114','12장'],['cai-plan','recruit-all-cai-nujo-20261114','12장'],['leda-plan','recruit-all-leda-jester-20261112','10장'],['leda-plan','recruit-all-leda-goliath-20261112','10장'],['dietrich-plan','ready-dietrich-catania','7장'],['dietrich-plan','di-13','9장']])assert.equal(chapterOf(st,id),ch,`${id} ${ch}`);
   for(const g of playbook.groups)for(const a of g.actions)assert.ok(!shown(g,a).includes('누조는 카이 루트에서만'),a.id+' 누조 카이 전용 문구');
+  // 검토 7 L8: 세오도라·레다 1·2부 화면 글(행동·제목·주의 글·골드)에 이오가 없다. 콜로이오스·이오니안 같은 낱말은 제외.
+  const io=/(?<!콜로)이오(?!니|스)/;
+  for(const g of playbook.groups.filter(g=>/^(theodora|leda)(-war)?-plan$/.test(g.stage))){assert.ok(!io.test(title(g)),g.id+' 제목 이오');for(const a of g.actions)assert.ok(!io.test(shown(g,a)),a.id+' 이오');}
+  for(const st of checklist.stages.filter(s=>/^(theodora|leda)(-war)?-plan$/.test(s.id)))for(const c of st.chapters)for(const b of c.blocks)assert.ok(!io.test(flat(b.notes)),`${st.id} ${b.id} 주의·골드 글 이오`);
+  // 누조는 카이 훈련 후보가 아니다(영입만).
+  for(const st of ['cai-plan','cai-war-plan'])for(const b of read('content/source/react-content.json').stages.find(s=>s.id===st).blocks)assert.ok(!/<span class="training-person">(?:<img[^>]*\/>)?<b>누조<\/b>/.test(b.html),`${st} ${b.id} 누조 훈련 후보`);
+  // 골드 표: 항목 합 = 목표, 목표 − 이번 장 지출 = 지출 뒤.
+  for(const [r,chs] of Object.entries(read('content/data/chapter-gold.json').routes))for(const ch of chs){assert.equal(ch.items.reduce((s,i)=>s+i.amount,0),ch.target,`${r} ${ch.chapter}장 골드 합`);assert.equal(ch.target-ch.items.filter(i=>i.kind==='due').reduce((s,i)=>s+i.amount,0),ch.afterScheduledSpend,`${r} ${ch.chapter}장 지출 뒤`);}
   // 은퇴한 행동 ID도 체크 ID 목록에 남는다(체크 기록 보존).
   for(const a of [...playbook.retiredActions,...playbook.retiredGroups.flatMap(g=>g.actions)])assert.ok(ids.includes(a.id),'은퇴 ID 보존 '+a.id);
   const seed=read('content/checklist-seed.json'),checkedIds=Object.entries(seed.checks||{}).filter(([,v])=>v).map(([k])=>k);

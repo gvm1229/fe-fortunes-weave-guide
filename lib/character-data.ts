@@ -37,7 +37,8 @@ export function charioteerGoal(): string { const e = examFor('전차병')!; retu
 export function charioteerPart2Goal(text?: string): string | undefined { return text && /기준판에 레벨업 배분/.test(text) ? text.replace(/^.*?기준판에 레벨업 배분/, '전차병으로 레벨업') : undefined; }
 export function characterData(route: string, name: string, part: string): CharacterData {
   const d = (cache ??= load());
-  const avoid = d.avoid.includes(name);
+  // 누조: 선더 소드 지참품 때문에 영입만 한다(2026-11-14). 육성 쌍을 지양 동료처럼 숨긴다.
+  const avoid = d.avoid.includes(name) || name === '누조';
   const goal = d.goals[route]?.[name] || {};
   const cai = route === 'cai' ? d.cai.people[name] : undefined;
   const phase = { ...goal[part], ...cai?.[part] };

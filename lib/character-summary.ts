@@ -3,7 +3,8 @@ import type { Person } from './content';
 
 const reasons:Record<string,string>=copy.reasons;
 const routeReasons:Record<string,string>=copy.routeReasons;
-const excluded=new Set(['양계','키로이카','밴디츠','마지데','골라이어스','자코네','대도','자스민','센트리온','타호니아']);
+// 영입만 하는 동료. 누조는 지양 명단은 아니지만 선더 소드 지참품 때문에 12장에 영입만 한다(2026-11-14 사용자 결정).
+const excluded=new Set(['양계','키로이카','밴디츠','마지데','골라이어스','자코네','대도','자스민','센트리온','타호니아','누조']);
 export function characterReason(name:string,route?:string){return routeReasons[`${route}:${name}`]||reasons[name]||'';}
 export function plainCharacterText(text:string){
   return text.replace(/현재\s*Lv(\d+)/g,'기록 당시 Lv$1').replace(/(\d)부\s*Lv(\d+)\s*강제 없음/g,'$1부에 Lv$2까지 올릴 필요는 없습니다').replaceAll('현재 주력은 실제 출격 성장 유지','현재 출격하는 주력은 전투에서 계속 키웁니다').replaceAll('교대 대상은 중급/필수 기능 준비 뒤 반복 중단','교대할 동료는 중급 병종과 필요한 기능을 갖추면 반복 육성을 멈춥니다').replaceAll('실전 예비.','예비 동료입니다.').replace(/([^·]+) 기준판에 레벨업 배분/g,'$1 능력이 자라는 병종에서 레벨을 올립니다').replace(/권장(\d+)장 실제 합류 뒤/g,'$1장 영입을 계획합니다. 실제 합류 후')
