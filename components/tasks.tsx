@@ -1,5 +1,7 @@
 'use client';
 import { ThemeSwitch } from './theme';
+import { DateOdometer } from './date-odometer';
+import { currentGameDate, formatGameDate, PART1_YEAR } from '@/lib/game-date';
 import { useEffect, useRef, useState, ViewTransition } from 'react';
 import { Check, Download, Upload, ArrowDown, ChevronDown, Archive, Trash2 } from 'lucide-react';
 import type { Group } from '@/lib/content';
@@ -71,6 +73,8 @@ export function Tasks({route,label,part,chapters,groups,onDoc,onMaterial,onPerso
   });};
   const actionNodes=(c:Chapter,g:Group,a:Group['actions'][number])=>Object.hasOwn(overrides.actions,a.id)?[a.text]:c.blocks.find(b=>b.id===g.id)?.actions[a.id]||[a.text];
   function exportFile(){const blob=new Blob([JSON.stringify(checks.data,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='checklist.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+  // 바닥 날짜: 처음으로 체크가 남은 묶음의 게임 날짜(스크롤과 무관). 1부만(2부·3부는 달력 날짜 없음). 기록을 읽은 뒤에만 보여 첫 화면에서 헛구르지 않는다.
+  const gameDate=checks.ready&&part==='1'?currentGameDate(chapters.flatMap(c=>chapterGroups(c,groups)),(a,g)=>checked(a,g.id,checks.data.checks)):null;
   return <><section className="route-banner" aria-label={`${label} ${part}부 진행`}><div className="route-banner-art" data-route={route}><img className="banner-emblem" src={`/assets/design/emblems/${lordFiles[route]}.webp`} alt=""/><h1>{label}{route==='part3'?'':<span> {part}부</span>}</h1>{route==='part3'?<img className="banner-lord" src={lordPortrait(route,part,true)} alt=""/>:<ViewTransition name={`lord-${route}`} share="morph" default="none"><img className="banner-lord" src={lordPortrait(route,part,true)} alt=""/></ViewTransition>}</div></section>
   {/* 루트 머리 막대: 스크롤해도 맨 위에 고정된다(2026-11-14 사용자 지시). 붙어 있는 동안 작은 루트 이름이 보인다. 막대 높이는 바뀌지 않아 화면이 튀지 않는다. */}
   <div ref={head} className="route-head"><div className="route-head-bar">
@@ -93,7 +97,7 @@ export function Tasks({route,label,part,chapters,groups,onDoc,onMaterial,onPerso
       {g&&<ol className="checklist">{g.actions.map(a=><li key={a.id} tabIndex={-1} hidden={hideDone&&checked(a,g.id,checks.data.checks)} data-complete={checked(a,g.id,checks.data.checks)}><input id={a.id} type="checkbox" checked={checked(a,g.id,checks.data.checks)} disabled={!checks.ready} aria-label={a.text} onChange={e=>{const value=e.target.checked;void celebrate(cg,c.title,a.id,value,e.currentTarget);checks.toggle(a.id,value);}}/><div><span className="action-category">{a.category}</span><div className="action-text"><SourceMarkup nodes={actionNodes(c,g,a)} {...markupProps}/></div></div></li>)}</ol>}
       <div className="action-notes">{Object.hasOwn(overrides.notes,b.id)?(overrides.notes as Record<string,Group['notes']>)[b.id].map((n,i)=><p key={i}>{n.text}</p>):<SourceMarkup nodes={b.notes} {...markupProps}/>}</div>
     </Container>;})}
-  </details>;})}</div></div>{context&&context(chapter)}</div></>;
+  </details>;})}</div></div>{context&&context(chapter)}</div>{gameDate&&<DateOdometer value={formatGameDate(PART1_YEAR,gameDate)} label={`게임 날짜 ${PART1_YEAR}년 ${gameDate.m}월 ${gameDate.d}일`}/>}</>;
 }
 export function chapterDates(chapter:Chapter){const dates=chapter.blocks.flatMap(b=>b.title.match(/\d{1,2}\/\d{1,2}(?:\s*~\s*\d{1,2}\/\d{1,2})?/g)||[]);return [...new Set(dates)].join(' · ');}
 

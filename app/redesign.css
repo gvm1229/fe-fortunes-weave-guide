@@ -484,3 +484,15 @@ img.final25-portrait,:is(.app-shell,.team-page,.sheet) img.final25-portrait,.dar
 @media(min-width:768px) and (max-width:1099px){.route-head-bar{flex-wrap:wrap;gap:8px 16px}.route-head .banner-progress{flex:1 1 0;order:0}.route-theme{order:1}.route-head .check-toolbar{flex:1 1 100%;order:2;justify-content:flex-end}}
 /* 360px에서도 도구 한 줄(검토 9 재검토 R1: 1px 모자라 셋째 줄로 떨어짐). */
 @media(max-width:399px){.route-head .check-toolbar{gap:4px}}
+/* 바닥 게임 날짜(주행 기록계 모양, 2026-11-14). 날짜만 가운데. */
+.date-odometer{position:fixed;inset-inline:0;inset-block-end:0;z-index:30;display:flex;justify-content:center;align-items:center;block-size:56px;padding-block-end:env(safe-area-inset-bottom);background:var(--surface);box-shadow:0 -4px 16px #0000001f;color:var(--text)}
+.odometer-face{display:inline-flex;align-items:center;font-size:26px;font-weight:700;line-height:1;font-variant-numeric:tabular-nums;letter-spacing:.02em}
+.odometer-digit{display:inline-block;block-size:1.2em;inline-size:.68em;overflow:hidden;text-align:center;border-radius:4px;background:var(--bg);margin-inline:1px}
+.odometer-strip{display:flex;flex-direction:column;transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.odometer-strip>span{display:block;block-size:1.2em;line-height:1.2em}
+.odometer-sep{display:inline-block;padding-inline:3px;opacity:.7}
+@media(prefers-reduced-motion:reduce){.odometer-strip{transition:none}}
+/* 바닥 날짜가 있으면 맨 위로 버튼·페이지 끝 여백·정보 칸 높이를 그만큼 올린다. */
+body:has(.date-odometer) .to-top{inset-block-end:calc(56px + 16px + env(safe-area-inset-bottom))}
+body:has(.date-odometer) .app-shell{padding-block-end:152px}
+@media(min-width:768px){body:has(.date-odometer) .context-rail{max-block-size:calc(100dvh - var(--task-header-height,0px) - 168px)}}
