@@ -46,7 +46,7 @@ async function measure(page,scene){
     const homeText=home?.querySelector('span');
     let homeTextRect=null;
     if(homeText){const range=document.createRange();range.selectNodeContents(homeText);homeTextRect=rect(range);}
-    const save=document.querySelector('.check-toolbar>.save-status'),bar=document.querySelector('.toolbar-progress');
+    const save=document.querySelector('.check-toolbar>.save-status'),bar=document.querySelector('.route-head .banner-progress');
     const sourceCounts={portraits:0,skills:0,gods:0,classes:0,guides:0,locations:0};
     for(const img of document.querySelectorAll('[data-checklist-source] [data-source-image]')){
       const src=img.getAttribute('src'),kind=src.includes('/portraits/')?'portraits':src.includes('/skills/')?'skills':src.includes('/gods/')?'gods':src.includes('/classes/')?'classes':'guides';sourceCounts[kind]++;
@@ -102,7 +102,7 @@ try{
     page.on('pageerror',e=>errors.push(e.message));
     await page.goto(`${base}/theodora/1/`);await ready(page);
     assert.equal(await page.locator('html').getAttribute('class'),theme);
-    const autoScroll=await page.evaluate(()=>({scrollY,current:document.querySelector('.chapter-section[data-current=true]')?.dataset.chapter,top:document.querySelector('.chapter-section[data-current=true]').getBoundingClientRect().top,toolbarBottom:document.querySelector('.check-toolbar').getBoundingClientRect().bottom}));
+    const autoScroll=await page.evaluate(()=>({scrollY,current:document.querySelector('.chapter-section[data-current=true]')?.dataset.chapter,top:document.querySelector('.chapter-section[data-current=true]').getBoundingClientRect().top,toolbarBottom:document.querySelector('.route-head').getBoundingClientRect().bottom}));
     assert.ok(autoScroll.scrollY>0&&Math.abs(autoScroll.top-autoScroll.toolbarBottom-16)<2,JSON.stringify(autoScroll));
     interactions.push({width,height,theme,check:'load-current-chapter',...autoScroll});
     const label=`theodora-todo-${width}x${height}-${theme}`;
@@ -116,7 +116,7 @@ try{
     const targetViewport=await target.evaluate(async e=>{
       let previous=scrollY,stable=0;
       while(stable<5){await new Promise(requestAnimationFrame);stable=scrollY===previous?stable+1:0;previous=scrollY;}
-      const r=e.getBoundingClientRect(),toolbar=document.querySelector('.check-toolbar').getBoundingClientRect();
+      const r=e.getBoundingClientRect(),toolbar=document.querySelector('.route-head').getBoundingClientRect();
       // B 재설계 뒤 휴대폰에는 위 머리·아래 고정 탐색이 없다. 보이는 아래 끝은 화면 끝.
       return {top:r.top,bottom:r.bottom,toolbarBottom:toolbar.bottom,visibleBottom:innerHeight};
     });

@@ -8,6 +8,13 @@ const browser=await chromium.launch({executablePath:process.env.CHROME_PATH||'C:
 const rows=[],errors=[],screens=[];
 mkdirSync('.tmp/corrections-screens',{recursive:true});mkdirSync('docs/screens',{recursive:true});
 try{
+ // 루트 머리 막대: 스크롤하면 맨 위에 붙고, 높이는 그대로, 붙은 동안만 작은 이름이 보인다(2026-11-14 사용자 지시).
+ for(const [width,height] of [[1920,1080],[1440,900],[768,1024],[390,844]]){const page=await browser.newPage({viewport:{width,height}});await page.goto(`${base}/theodora/1/`);await page.locator('.route-head').waitFor();await page.waitForTimeout(2500);
+  const at=y=>page.evaluate(async y=>{scrollTo(0,y);await new Promise(r=>setTimeout(r,250));const h=document.querySelector('.route-head');return {top:Math.round(h.getBoundingClientRect().top),height:Math.round(h.getBoundingClientRect().height),title:getComputedStyle(h.querySelector('.route-head-title')).display,progressInToolbar:!!document.querySelector('.check-toolbar .toolbar-progress,.check-toolbar progress'),overflow:document.documentElement.scrollWidth-innerWidth};},y);
+  const top=await at(0),down=await at(2000);
+  assert.ok(top.top>0&&top.title==='none'&&down.top===0&&down.title!=='none'&&top.height===down.height&&!top.progressInToolbar&&top.overflow===0&&down.overflow===0,width+' '+JSON.stringify({top,down}));
+  if(width>=1440)assert.ok(await page.evaluate(()=>document.querySelector('.tasks-main').getBoundingClientRect().width>900),width+' 넓은 화면 할 일 칸');
+  await page.close();}
  // 1001~1199px: 할 일 칸이 정보 칸보다 넓어야 한다(옛 태블릿 규칙으로 할 일이 300px로 눌리던 문제, 2026-11-14).
  for(const width of [1024,1100,1199]){const page=await browser.newPage({viewport:{width,height:800}});await page.goto(`${base}/theodora/1/`);await page.locator('.check-toolbar').waitFor();
   const w=await page.evaluate(()=>({main:document.querySelector('.tasks-main').getBoundingClientRect().width,rail:document.querySelector('.context-rail').getBoundingClientRect().width,overflow:document.documentElement.scrollWidth-innerWidth}));
