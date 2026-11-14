@@ -34,7 +34,7 @@
     {
       "source": "data/chapter-gold.json",
       "target": "content/data/chapter-gold.json",
-      "sha256": "4b7391620e0062b6e3b2c1a258b30cb67974bab1c839d99c6c533bed5e020227"
+      "sha256": "6e0356cfbba956cbc45be15fae29f7405aa061b15adbd80cdec9ba79a4762e74"
     },
     {
       "source": "data/chapter-progression.json",
@@ -109,7 +109,7 @@
     {
       "source": "data/playbook.json",
       "target": "content/data/playbook.json",
-      "sha256": "404d799c57b0c1702da17f41a899e05ad244dd8f04f3dcae626842ebc33de220"
+      "sha256": "246a85c8860fb03104e2824198450c162c99dc95bdd03b5cba4552501219c80c"
     },
     {
       "source": "data/purchase-plan.json",
@@ -124,7 +124,7 @@
     {
       "source": "data/recruit-all-plan.json",
       "target": "content/data/recruit-all-plan.json",
-      "sha256": "414a7c3b70789cbee0bf1988a7017badb83b1e881a0d32aac8c5a572311ccc03"
+      "sha256": "b833977ff1a5bec01d797ff7bb9530a44392bf78a26929bb02a6c0237b304b2e"
     },
     {
       "source": "data/recruit-materials.json",
@@ -344,7 +344,7 @@
     {
       "source": "notes/chapter-route-plan.md",
       "target": "content/notes/chapter-route-plan.md",
-      "sha256": "ef4433452c99fe8ccd876681fd802e106c6e21f0354db8a8d2e5ad8ac739b5f2"
+      "sha256": "b17b15ee599b4174ac3fe48fb38f1a087908149edd332d2aca566444039f5a9b"
     },
     {
       "source": "notes/checklist-full-review.md",
@@ -1069,7 +1069,7 @@
     {
       "source": "notes/knowledge/preferences.md",
       "target": "content/notes/knowledge/preferences.md",
-      "sha256": "7a50409bd86a7fb893bedad560c75c0c3dd3a3e759230613f4c3eb0f0f70dd03"
+      "sha256": "c20a5f0d8132fac79db2d8415305eb90bb591e032f8dc98597b86514bc25d09e"
     },
     {
       "source": "notes/knowledge/README.md",
@@ -1084,7 +1084,7 @@
     {
       "source": "notes/knowledge/sources.md",
       "target": "content/notes/knowledge/sources.md",
-      "sha256": "327cedc17ca1590cf5f13640283f552f31b53a33309d37c6a18744904b9d3e63"
+      "sha256": "d25d756462d10f474b8d2dbc6d02c75096d178303c476c8248d6a194694e6715"
     },
     {
       "source": "notes/knowledge/support-word-meaning.md",
@@ -1294,7 +1294,7 @@
     {
       "source": "notes/recruit-all-review.md",
       "target": "content/notes/recruit-all-review.md",
-      "sha256": "6644b434b3d039d08dd13fd9424872cb49f378b4f532e0b9ef772cbaa49cdb6c"
+      "sha256": "09a4220b5fd3e887aae9dfea0b82949f53ecd2167cb4d8d8c3d5fe93dcc3ebf2"
     },
     {
       "source": "notes/recruit-material-review.md",
@@ -1464,12 +1464,12 @@
     {
       "source": "notes/support-follow-along.md",
       "target": "content/notes/support-follow-along.md",
-      "sha256": "bf6614201b3a08cb91b3fba228435e65896585c548e2d1cac1794d5710363acf"
+      "sha256": "a4f118a1caccc0ba307cdc355f779f9723a4b0755315d1d4377d2e40c3eb6561"
     },
     {
       "source": "notes/support-pairs-by-route.md",
       "target": "content/notes/support-pairs-by-route.md",
-      "sha256": "b67256251340a021d64ab0ee279661e1d1400f4c947373a14e9121ff4756c63e"
+      "sha256": "7dbdd2559c87c8c56e1e3bf8b221b2c1203c0ed126253244531e90677cd5f51a"
     },
     {
       "source": "notes/sword-xp-review.md",
@@ -2059,7 +2059,7 @@
     {
       "source": "personalized-app/src/content.json",
       "target": "content/source/react-content.json",
-      "sha256": "e29d99ff13aeab4566e9c7ac663282f97cd91f33e18e9793ebaedcfd07dafaa2"
+      "sha256": "d83cfc89ea6d5c70eec255ce23c43087df57f08e0a7904a47707d97186e7b42a"
     },
     {
       "source": "personalized-app/src/timeskip-portraits.json",
@@ -2232,7 +2232,7 @@
       "sha256": "b6601f69a8318359991d5fadc11c27348b0df451ecddba9df142e5f979e508ca"
     }
   ],
-  "generatedSourceSha256": "e29d99ff13aeab4566e9c7ac663282f97cd91f33e18e9793ebaedcfd07dafaa2",
+  "generatedSourceSha256": "d83cfc89ea6d5c70eec255ce23c43087df57f08e0a7904a47707d97186e7b42a",
   "activeActions": 1892,
   "checkIds": 2867,
   "peopleByRoute": {
