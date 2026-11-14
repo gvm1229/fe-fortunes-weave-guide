@@ -58,7 +58,8 @@ async function measure(page,{route='home',view='home',theme,width,height,screens
     const selector='.home,.home-top,.home-actions,.route-deck,.route-card-content,.route-progress,.third-band,.lord-faces,.app-shell,.sidebar,.part-links,.view-nav,.view-nav button,.workspace main,.tasks-layout,.check-toolbar,.toolbar-actions,.context-rail,.context-people,.chapter-section>summary,.action-group>header,.group-portraits,.people-grid,.person-heading,.filters,.search,.records,.scenario-tabs,.team-grid,.god-list,.sheet-heading';
     for(const container of document.querySelectorAll(selector)){
       if(!visible(container))continue;
-      const children=[...container.children].filter(e=>visible(e)&&getComputedStyle(e).position!=='absolute');
+      // 붙는(sticky) 머리는 아래 글 위에 겹쳐 보이는 것이 정상이다(루트 머리 막대, 2026-11-14).
+      const children=[...container.children].filter(e=>visible(e)&&!['absolute','fixed','sticky'].includes(getComputedStyle(e).position));
       for(let i=0;i<children.length;i++)for(let j=i+1;j<children.length;j++){
         const a=children[i].getBoundingClientRect(),b=children[j].getBoundingClientRect();
         const w=Math.min(a.right,b.right)-Math.max(a.left,b.left),h=Math.min(a.bottom,b.bottom)-Math.max(a.top,b.top);
@@ -126,12 +127,13 @@ async function stickyCheck(page,route,width,theme){
   await page.evaluate(()=>scrollTo(0,800));await page.waitForTimeout(80);
   const measurement=await page.evaluate(()=>{
     // 2026-11-14 현재 배치: 도구 줄은 모든 폭에서 맨 위(top 0). 넓은 화면의 오른쪽 정보 칸은 위아래 24px을 둔 sticky, 767px 이하는 가로 띠(static).
-    const toolbar=document.querySelector('.check-toolbar'),rail=document.querySelector('.context-rail');
+    // 고정 머리는 루트 머리 막대(진행 줄 + 도구 줄). 정보 칸은 그 아래 16px에 붙는다.
+    const toolbar=document.querySelector('.route-head'),rail=document.querySelector('.context-rail');
     return {scrollY,toolbarTop:toolbar.getBoundingClientRect().top,toolbarHeight:toolbar.getBoundingClientRect().height,railTop:rail.getBoundingClientRect().top,railHeight:rail.getBoundingClientRect().height,railOverflow:getComputedStyle(rail).overflowY,railPosition:getComputedStyle(rail).position};
   });
-  const mobile=width<768,ih=await page.evaluate(()=>innerHeight),passed=Math.abs(measurement.toolbarTop)<1&&(mobile?measurement.railPosition==='static':Math.abs(measurement.railTop-24)<1&&measurement.railHeight<=ih-48+1&&measurement.railOverflow==='auto');
+  const mobile=width<768,ih=await page.evaluate(()=>innerHeight),passed=Math.abs(measurement.toolbarTop)<1&&(mobile?measurement.railPosition==='static':Math.abs(measurement.railTop-measurement.toolbarHeight-16)<1&&measurement.railHeight<=ih-measurement.toolbarHeight-32+1&&measurement.railOverflow==='auto');
   await page.locator('.chapter-section[open]').evaluate(e=>e.scrollIntoView({block:'start'}));
-  measurement.chapterClearance=await page.evaluate(()=>document.querySelector('.chapter-section[open]').getBoundingClientRect().top-document.querySelector('.check-toolbar').getBoundingClientRect().bottom);
+  measurement.chapterClearance=await page.evaluate(()=>document.querySelector('.chapter-section[open]').getBoundingClientRect().top-document.querySelector('.route-head').getBoundingClientRect().bottom);
   functionality.push({check:'sticky',route,width,theme,...measurement,passed:passed&&measurement.chapterClearance>=-1});
   if(!passed||measurement.chapterClearance< -1)failures.push(`${route}-${width}-${theme}: 고정 영역·장 제목 가림`);
   await page.evaluate(()=>scrollTo(0,0));

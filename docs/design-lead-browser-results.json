@@ -23,10 +23,10 @@
           "padding": "8px",
           "icons": [
             {
-              "left": 345.109375,
-              "top": 5330.90625,
-              "right": 365.109375,
-              "bottom": 5350.90625,
+              "left": 209.109375,
+              "top": 5067.3125,
+              "right": 229.109375,
+              "bottom": 5087.3125,
               "width": 20,
               "height": 20
             }
@@ -39,10 +39,10 @@
           "padding": "8px",
           "icons": [
             {
-              "left": 196,
-              "top": 5924.515625,
-              "right": 216,
-              "bottom": 5944.515625,
+              "left": 60,
+              "top": 5660.921875,
+              "right": 80,
+              "bottom": 5680.921875,
               "width": 20,
               "height": 20
             }
@@ -55,10 +55,10 @@
           "padding": "8px",
           "icons": [
             {
-              "left": 389.640625,
-              "top": 5924.515625,
-              "right": 409.640625,
-              "bottom": 5944.515625,
+              "left": 253.640625,
+              "top": 5660.921875,
+              "right": 273.640625,
+              "bottom": 5680.921875,
               "width": 20,
               "height": 20
             }
@@ -71,10 +71,10 @@
           "padding": "8px",
           "icons": [
             {
-              "left": 505.09375,
-              "top": 6999.09375,
-              "right": 525.09375,
-              "bottom": 7019.09375,
+              "left": 369.09375,
+              "top": 6735.5,
+              "right": 389.09375,
+              "bottom": 6755.5,
               "width": 20,
               "height": 20
             }
@@ -396,10 +396,10 @@
           "padding": "8px",
           "icons": [
             {
-              "left": 345.109375,
-              "top": 5330.90625,
-              "right": 365.109375,
-              "bottom": 5350.90625,
+              "left": 209.109375,
+              "top": 5067.3125,
+              "right": 229.109375,
+              "bottom": 5087.3125,
               "width": 20,
               "height": 20
             }
@@ -412,10 +412,10 @@
           "padding": "8px",
           "icons": [
             {
-              "left": 196,
-              "top": 5924.515625,
-              "right": 216,
-              "bottom": 5944.515625,
+              "left": 60,
+              "top": 5660.921875,
+              "right": 80,
+              "bottom": 5680.921875,
               "width": 20,
               "height": 20
             }
@@ -428,10 +428,10 @@
           "padding": "8px",
           "icons": [
             {
-              "left": 389.640625,
-              "top": 5924.515625,
-              "right": 409.640625,
-              "bottom": 5944.515625,
+              "left": 253.640625,
+              "top": 5660.921875,
+              "right": 273.640625,
+              "bottom": 5680.921875,
               "width": 20,
               "height": 20
             }
@@ -444,10 +444,10 @@
           "padding": "8px",
           "icons": [
             {
-              "left": 505.09375,
-              "top": 6999.09375,
-              "right": 525.09375,
-              "bottom": 7019.09375,
+              "left": 369.09375,
+              "top": 6735.5,
+              "right": 389.09375,
+              "bottom": 6755.5,
               "width": 20,
               "height": 20
             }
@@ -770,9 +770,9 @@
           "icons": [
             {
               "left": 193.109375,
-              "top": 9429.109375,
+              "top": 9454.109375,
               "right": 213.109375,
-              "bottom": 9449.109375,
+              "bottom": 9474.109375,
               "width": 20,
               "height": 20
             }
@@ -786,9 +786,9 @@
           "icons": [
             {
               "left": 166.453125,
-              "top": 10255.71875,
+              "top": 10280.71875,
               "right": 186.453125,
-              "bottom": 10275.71875,
+              "bottom": 10300.71875,
               "width": 20,
               "height": 20
             }
@@ -802,9 +802,9 @@
           "icons": [
             {
               "left": 64.078125,
-              "top": 10285.953125,
+              "top": 10310.953125,
               "right": 84.078125,
-              "bottom": 10305.953125,
+              "bottom": 10330.953125,
               "width": 20,
               "height": 20
             }
@@ -818,9 +818,9 @@
           "icons": [
             {
               "left": 82,
-              "top": 11451.234375,
+              "top": 11476.234375,
               "right": 102,
-              "bottom": 11471.234375,
+              "bottom": 11496.234375,
               "width": 20,
               "height": 20
             }
@@ -1143,9 +1143,9 @@
           "icons": [
             {
               "left": 193.109375,
-              "top": 9429.109375,
+              "top": 9454.109375,
               "right": 213.109375,
-              "bottom": 9449.109375,
+              "bottom": 9474.109375,
               "width": 20,
               "height": 20
             }
@@ -1159,9 +1159,9 @@
           "icons": [
             {
               "left": 166.453125,
-              "top": 10255.71875,
+              "top": 10280.71875,
               "right": 186.453125,
-              "bottom": 10275.71875,
+              "bottom": 10300.71875,
               "width": 20,
               "height": 20
             }
@@ -1175,9 +1175,9 @@
           "icons": [
             {
               "left": 64.078125,
-              "top": 10285.953125,
+              "top": 10310.953125,
               "right": 84.078125,
-              "bottom": 10305.953125,
+              "bottom": 10330.953125,
               "width": 20,
               "height": 20
             }
@@ -1191,9 +1191,9 @@
           "icons": [
             {
               "left": 82,
-              "top": 11451.234375,
+              "top": 11476.234375,
               "right": 102,
-              "bottom": 11471.234375,
+              "bottom": 11496.234375,
               "width": 20,
               "height": 20
             }
@@ -1502,10 +1502,10 @@
       "height": 900,
       "theme": "light",
       "check": "load-current-chapter",
-      "scrollY": 1156,
+      "scrollY": 1037,
       "current": "6장",
-      "top": 86.359375,
-      "toolbarBottom": 70.796875
+      "top": 88.5625,
+      "toolbarBottom": 72.796875
     },
     {
       "width": 1440,
@@ -1520,12 +1520,12 @@
       "delay": "2s",
       "opacity": "1",
       "targetViewport": {
-        "top": 374.484375,
-        "bottom": 524.984375,
-        "toolbarBottom": 70.796875,
+        "top": 410.890625,
+        "bottom": 561.390625,
+        "toolbarBottom": 72.796875,
         "visibleBottom": 900
       },
-      "fading": 0.925973,
+      "fading": 0.908867,
       "removed": true
     },
     {
@@ -1554,10 +1554,10 @@
       "height": 900,
       "theme": "dark",
       "check": "load-current-chapter",
-      "scrollY": 1156,
+      "scrollY": 1037,
       "current": "6장",
-      "top": 86.359375,
-      "toolbarBottom": 70.796875
+      "top": 88.5625,
+      "toolbarBottom": 72.796875
     },
     {
       "width": 1440,
@@ -1572,12 +1572,12 @@
       "delay": "2s",
       "opacity": "1",
       "targetViewport": {
-        "top": 374.484375,
-        "bottom": 524.984375,
-        "toolbarBottom": 70.796875,
+        "top": 410.890625,
+        "bottom": 561.390625,
+        "toolbarBottom": 72.796875,
         "visibleBottom": 900
       },
-      "fading": 0.936427,
+      "fading": 0.93576,
       "removed": true
     },
     {
@@ -1606,10 +1606,10 @@
       "height": 812,
       "theme": "light",
       "check": "load-current-chapter",
-      "scrollY": 1419,
+      "scrollY": 1330,
       "current": "6장",
-      "top": 100.3125,
-      "toolbarBottom": 84.796875
+      "top": 125.3125,
+      "toolbarBottom": 109.59375
     },
     {
       "width": 375,
@@ -1624,12 +1624,12 @@
       "delay": "2s",
       "opacity": "1",
       "targetViewport": {
-        "top": 302.765625,
-        "bottom": 509.265625,
-        "toolbarBottom": 84.796875,
+        "top": 357.765625,
+        "bottom": 564.265625,
+        "toolbarBottom": 109.59375,
         "visibleBottom": 812
       },
-      "fading": 0.936427,
+      "fading": 0.93576,
       "removed": true
     },
     {
@@ -1658,10 +1658,10 @@
       "height": 812,
       "theme": "dark",
       "check": "load-current-chapter",
-      "scrollY": 1419,
+      "scrollY": 1330,
       "current": "6장",
-      "top": 100.3125,
-      "toolbarBottom": 84.796875
+      "top": 125.3125,
+      "toolbarBottom": 109.59375
     },
     {
       "width": 375,
@@ -1676,12 +1676,12 @@
       "delay": "2s",
       "opacity": "1",
       "targetViewport": {
-        "top": 302.765625,
-        "bottom": 509.265625,
-        "toolbarBottom": 84.796875,
+        "top": 357.765625,
+        "bottom": 564.265625,
+        "toolbarBottom": 109.59375,
         "visibleBottom": 812
       },
-      "fading": 0.936427,
+      "fading": 0.935093,
       "removed": true
     },
     {
