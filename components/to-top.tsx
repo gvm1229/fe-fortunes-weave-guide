@@ -12,5 +12,5 @@ export function ToTop() {
     return () => window.removeEventListener('scroll', update);
   }, []);
   const top = () => window.scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
-  return <button type="button" className="to-top" data-shown={shown} aria-label="맨 위로" title="맨 위로" tabIndex={shown ? 0 : -1} aria-hidden={!shown} onClick={top}><ArrowUp size={24} aria-hidden="true"/></button>;
+  return <button type="button" className="to-top" data-shown={shown} aria-label="맨 위로" title="맨 위로" tabIndex={shown ? 0 : -1} aria-hidden={!shown} onClick={e=>{e.currentTarget.blur();top();}}><ArrowUp size={24} aria-hidden="true"/></button>;
 }

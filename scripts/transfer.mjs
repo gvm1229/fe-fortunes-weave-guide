@@ -26,7 +26,7 @@ function copyTree(dir, destination) {
   }
 }
 copyTree('data', 'content/data'); copyTree('notes', 'content/notes');
-for (const file of ['progress.md', 'theodora-progress-import.md', '개인화 사용법.md']) if (existsSync(resolve(source,file))) copyFile(file);
+for (const file of ['progress.md', '개인화 사용법.md']) if (existsSync(resolve(source,file))) copyFile(file);
 copyTree('routes','content/routes');
 copyFile('personalized-app/README.md');
 // Preserve the local evidence linked by personal documents, without importing archive pages.

@@ -4,7 +4,7 @@ export function resolveDoc(url: string, current = 'notes/index.md') {
   const [pathname, fragment] = decoded.split('#');
   if (!pathname) return current.split('#')[0] + (fragment ? '#' + fragment : '');
   const path = pathname.replace(/\.html$/, '.md');
-  const rooted = path.startsWith('/') || /^(notes|routes)\//.test(path) || ['progress.md','개인화 사용법.md','theodora-progress-import.md'].includes(path);
+  const rooted = path.startsWith('/') || /^(notes|routes)\//.test(path) || ['progress.md','개인화 사용법.md'].includes(path);
   const parts = (rooted ? path : current.split('#')[0].slice(0, current.split('#')[0].lastIndexOf('/') + 1) + path).split('/');
   const result: string[] = [];
   for (const part of parts) { if (part === '..') result.pop(); else if (part && part !== '.') result.push(part); }
