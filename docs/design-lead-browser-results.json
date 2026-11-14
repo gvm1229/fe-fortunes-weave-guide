@@ -24,9 +24,9 @@
           "icons": [
             {
               "left": 209.109375,
-              "top": 5067.3125,
+              "top": 4811.3125,
               "right": 229.109375,
-              "bottom": 5087.3125,
+              "bottom": 4831.3125,
               "width": 20,
               "height": 20
             }
@@ -39,10 +39,10 @@
           "padding": "8px",
           "icons": [
             {
-              "left": 60,
-              "top": 5660.921875,
-              "right": 80,
-              "bottom": 5680.921875,
+              "left": 726.453125,
+              "top": 5346.890625,
+              "right": 746.453125,
+              "bottom": 5366.890625,
               "width": 20,
               "height": 20
             }
@@ -55,10 +55,10 @@
           "padding": "8px",
           "icons": [
             {
-              "left": 253.640625,
-              "top": 5660.921875,
-              "right": 273.640625,
-              "bottom": 5680.921875,
+              "left": 60,
+              "top": 5377.125,
+              "right": 80,
+              "bottom": 5397.125,
               "width": 20,
               "height": 20
             }
@@ -72,9 +72,9 @@
           "icons": [
             {
               "left": 369.09375,
-              "top": 6735.5,
+              "top": 6467.046875,
               "right": 389.09375,
-              "bottom": 6755.5,
+              "bottom": 6487.046875,
               "width": 20,
               "height": 20
             }
@@ -397,9 +397,9 @@
           "icons": [
             {
               "left": 209.109375,
-              "top": 5067.3125,
+              "top": 4811.3125,
               "right": 229.109375,
-              "bottom": 5087.3125,
+              "bottom": 4831.3125,
               "width": 20,
               "height": 20
             }
@@ -412,10 +412,10 @@
           "padding": "8px",
           "icons": [
             {
-              "left": 60,
-              "top": 5660.921875,
-              "right": 80,
-              "bottom": 5680.921875,
+              "left": 726.453125,
+              "top": 5346.890625,
+              "right": 746.453125,
+              "bottom": 5366.890625,
               "width": 20,
               "height": 20
             }
@@ -428,10 +428,10 @@
           "padding": "8px",
           "icons": [
             {
-              "left": 253.640625,
-              "top": 5660.921875,
-              "right": 273.640625,
-              "bottom": 5680.921875,
+              "left": 60,
+              "top": 5377.125,
+              "right": 80,
+              "bottom": 5397.125,
               "width": 20,
               "height": 20
             }
@@ -445,9 +445,9 @@
           "icons": [
             {
               "left": 369.09375,
-              "top": 6735.5,
+              "top": 6467.046875,
               "right": 389.09375,
-              "bottom": 6755.5,
+              "bottom": 6487.046875,
               "width": 20,
               "height": 20
             }
@@ -1520,12 +1520,12 @@
       "delay": "2s",
       "opacity": "1",
       "targetViewport": {
-        "top": 410.890625,
-        "bottom": 561.390625,
+        "top": 426.703125,
+        "bottom": 545.203125,
         "toolbarBottom": 72.796875,
         "visibleBottom": 900
       },
-      "fading": 0.908867,
+      "fading": 0.9082,
       "removed": true
     },
     {
@@ -1572,12 +1572,12 @@
       "delay": "2s",
       "opacity": "1",
       "targetViewport": {
-        "top": 410.890625,
-        "bottom": 561.390625,
+        "top": 426.703125,
+        "bottom": 545.203125,
         "toolbarBottom": 72.796875,
         "visibleBottom": 900
       },
-      "fading": 0.93576,
+      "fading": 0.916653,
       "removed": true
     },
     {
@@ -1681,7 +1681,7 @@
         "toolbarBottom": 109.59375,
         "visibleBottom": 812
       },
-      "fading": 0.935093,
+      "fading": 0.91732,
       "removed": true
     },
     {
