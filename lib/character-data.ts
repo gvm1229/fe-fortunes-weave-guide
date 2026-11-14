@@ -39,8 +39,26 @@ export function characterData(route: string, name: string, part: string): Charac
   const classes = phase.classes || [];
   let skills: SkillGoal[] = [...(d.priorities[route]?.[name]?.[part]?.goals || [])].sort((a, b) => (a.priority ?? 9) - (b.priority ?? 9)).map(({ skill, target, kind, when, why }) => ({ skill, target, kind, when, why }));
   const ranks = ['E', 'D', 'C', 'B', 'A', 'S'], rank = (t: string) => ranks.indexOf(t.replace(/.*→\s*/, '').trim()[0]);
-  // 카이 루트 전차병: 같은 기능이 이미 있으면 등급을 시험 조건 이상으로 맞추고 종류를 전차병 시험으로 바꾼다.
-  if (cai && part !== '3') skills = [...skills.map(s => { const k = d.cai.skills.find(k => k.skill === s.skill); return k && (s.kind === '선택' || rank(s.target) < rank(k.target)) ? { ...s, target: rank(s.target) < rank(k.target) ? k.target : s.target, kind: k.kind, when: k.when, why: k.why } : s; }), ...d.cai.skills.filter(k => !skills.some(s => s.skill === k.skill))];
+  // 카이 루트 전차병(2026-11-14 사용자 결정: 옛 상급 병종 준비는 버린다).
+  // 1부: 전차병 시험 기능은 시험 조건으로 바꾸고(주력은 등급 유지), 나머지 주력·함께 준비는 3부 최종 병종용으로 쓴다.
+  // 2부: 이미 전차병이므로 시험 기능을 더하지 않고, 선택이 아닌 기능은 모두 3부 최종 병종용이다.
+  if (cai && part !== '3') {
+    // 이유는 카드의 '무기 등급' 쌍(weaponNote)이 한 번 설명한다.
+    const later = { when: '3부 최종 병종 시험 전', why: '' };
+    skills = skills.map(s => {
+      const k = part === '1' ? d.cai.skills.find(k => k.skill === s.skill) : undefined;
+      if (k) return s.kind === '주력' ? { ...s, target: rank(s.target) < rank(k.target) ? k.target : s.target, when: k.when, why: k.why } : k;
+      return s.kind === '선택' ? s : { ...s, ...later };
+    });
+    if (part === '1') skills.push(...d.cai.skills.filter(k => !skills.some(s => s.skill === k.skill)));
+  }
+  // 카이 루트 전차병: 옛 계획 경로에만 있던 병종(바딩거 등)을 말하는 문장은 기능 설명에서 뺀다. 모든 부에 적용.
+  if (cai) {
+    const allowed = new Set([...['1', '2'].flatMap(p => cai[p]?.classes || []), ...finalClasses]);
+    const stale = [...new Set(['1', '2', '3'].flatMap(p => [...(goal[p]?.classes || []), ...(d.reasons[route]?.[name]?.[p]?.steps || []).map(s => s.class)]))].filter(c => !allowed.has(c));
+    const drop = (t: string) => t.split(/(?<=\.)\s+/).filter(x => !stale.some(c => x.includes(c))).join(' ');
+    skills = skills.map(s => ({ ...s, when: drop(s.when) || `${finalClasses.at(-1) || '다음 병종'} 시험 전`, why: drop(s.why) }));
+  }
   const exams: Record<string, Exam> = {};
   for (const c of [...classes, ...finalClasses]) { const e = examFor(c); if (e) exams[c] = e; }
   const steps: Record<string, string> = {};

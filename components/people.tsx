@@ -21,25 +21,30 @@ function pairs(person:Person,part:string,summaryText:string[],classes:Record<str
   const d=person.data,ready=(person.readiness&&typeof person.readiness==='object'?person.readiness:{}) as Record<string,unknown>,goal=(person.goal&&typeof person.goal==='object'?person.goal:{}) as Record<string,unknown>;
   const list:{title:string;lines:string[];keep?:boolean}[]=[];
   const add=(title:string,...lines:(string|undefined)[])=>{const kept=lines.map(l=>l?plainCharacterText(l).trim():'').filter(Boolean);if(kept.length)list.push({title,lines:kept,keep:title.endsWith(' 시험')});};
-  const addRaw=(title:string,line:string)=>{if(line.trim())list.push({title,lines:[line.trim()]});};
+  /** 묶은 쌍 안의 줄 이름표("가입 병종: …"). 중복 비교는 이름표를 뺀 글로 한다. */
+  const lab=(label:string,text:string)=>text.trim()?`${label}: ${text.trim()}`:undefined;
   if(!d.avoid){
-    for(const c of [...new Set([...d.classes,...d.finalClasses])]){const e=d.exams[c];if(!e)continue;const weapons=e.weapons.length?e.weapons:classes[c]?.weapons||[],unlock=e.unlock.replace(/^[\s·]+/,'');add(`${c} 시험`,[e.tier,/^\d/.test(e.level)?`권장 Lv${e.level}`:'',/^\d/.test(e.renown)?`명성 ${e.renown}`:'',e.required&&`필수 ${e.required}`,e.choice&&`선택 ${e.choice}`].filter(Boolean).join(' · '),weapons.length?`무기 ${weapons.join(' · ')}`:undefined,unlock?`해금 ${unlock}`:undefined,d.steps[c]);}
+    // 최종 병종 시험은 3부 카드에만 둔다(검토 L7: 쌍 수 줄이기).
+    for(const c of [...new Set([...d.classes,...(part==='3'?d.finalClasses:[])])]){const e=d.exams[c];if(!e)continue;const weapons=e.weapons.length?e.weapons:classes[c]?.weapons||[],unlock=e.unlock.replace(/^[\s·]+/,'');add(`${c} 시험`,[e.tier,/^\d/.test(e.level)?`권장 Lv${e.level}`:'',/^\d/.test(e.renown)?`명성 ${e.renown}`:'',e.required&&`필수 ${e.required}`,e.choice&&`선택 ${e.choice}`].filter(Boolean).join(' · '),weapons.length?`무기 ${weapons.join(' · ')}`:undefined,unlock?`해금 ${unlock}`:undefined,d.steps[c]);}
     for(const s of d.skills)add(`${s.skill} ${s.target} · ${s.kind}`,[s.when,s.why].filter(Boolean).join('. '));
     add('기능 메모',d.skillNote);
-    add('전차병으로 키우는 이유',d.charioteer);
-    if(d.caiAdvice){if(part!=='3')add('마스터 기술용으로 잠깐 바꿀 병종',d.caiAdvice.dip);add('3부 병종 바꾸는 때',d.caiAdvice.rule,d.caiAdvice.part3);add('무기 등급',d.caiAdvice.weapon);}
-    if(part==='1')add('준비 마감',[d.charioteer?'전차병':ready.middleClass,d.charioteer?'기마술 D · 궁술 C':ready.middleExam,ready.middleBy].map(words).filter(Boolean).join(' · '),[ready.part1Skills,ready.skillsBy].map(words).filter(Boolean).join(' · '));
-    add('육성 시작',words((ready.starts as Record<string,unknown>|undefined)?.[part]));
-    if(!d.charioteer)add('레벨업·실전 병종',[words(ready.growthClass)+(ready.battleClass&&ready.battleClass!==ready.growthClass?` / ${words(ready.battleClass)}`:''),words(ready.swapReason)].filter(Boolean).join(' · '));
-    addRaw('육성판',[ready.kind,ready.merge,goal.fusion].map(words).filter(Boolean).join(' · '));
+    // 전차병 안내는 쌍 하나로 묶는다(검토 3 M3: 쌍이 너무 많다).
+    if(d.caiAdvice)add('전차병 육성',d.charioteer,part!=='3'?`마스터 기술용으로 잠깐 바꿀 병종: ${d.caiAdvice.dip}`:undefined,`3부 병종 바꾸는 때: ${d.caiAdvice.rule} ${d.caiAdvice.part3}`,`무기 등급: ${d.caiAdvice.weapon}`);
+    else add('전차병으로 키우는 이유',d.charioteer);
+    // 전차병은 목표 줄이 시험 조건을 이미 보여 준다. 옛 중급·상급 준비 마감은 쓰지 않는다.
+    if(part==='1'&&!d.charioteer)add('준비 마감',[ready.middleClass,ready.middleExam,ready.middleBy].map(words).filter(Boolean).join(' · '),[ready.part1Skills,ready.skillsBy].map(words).filter(Boolean).join(' · '));
+    // 카이 루트 전차병은 3부에서도 전차병으로 레벨업한다(전차병 육성 쌍). 옛 성장 병종 안내는 쓰지 않는다.
+    if(!d.charioteer&&!d.caiAdvice)add('레벨업·실전 병종',[words(ready.growthClass)+(ready.battleClass&&ready.battleClass!==ready.growthClass?` / ${words(ready.battleClass)}`:''),words(ready.swapReason)].filter(Boolean).join(' · '));
+    // 육성 시작·육성판은 쌍 하나로(쌍 수 줄이기). 육성판 글은 원문 그대로 둔다.
+    {const start=words((ready.starts as Record<string,unknown>|undefined)?.[part]),board=[ready.kind,ready.merge,goal.fusion].map(words).filter(Boolean).join(' · ');
+     const lines=[start&&lab('시작',plainCharacterText(start)),board&&lab('육성판',board)].filter((l):l is string=>!!l);if(lines.length)list.push({title:'육성',lines});}
   }
-  for(const g of (Array.isArray(person.gates)?person.gates:[]) as Record<string,unknown>[])add('영입 조건',words(g.localCondition));
-  const init=words((person.recruitment as Record<string,unknown>|undefined)?.init);if(init)add('가입 병종',init);
-  add('합류 순서',words(ready.joinSteps));
-  if(part==='1'&&!d.avoid)add('경로 안내',words(goal.pathNotes));
+  // 영입 조건·가입 병종·합류 순서는 쌍 하나로(쌍 수 줄이기).
+  add('영입·합류',...((Array.isArray(person.gates)?person.gates:[]) as Record<string,unknown>[]).map(g=>lab('영입 조건',words(g.localCondition))),lab('가입 병종',words((person.recruitment as Record<string,unknown>|undefined)?.init)),lab('합류 순서',words(ready.joinSteps)));
+  if(part==='1'&&!d.avoid&&!d.charioteer)add('경로 안내',words(goal.pathNotes));
   if(person.gifts.length)add('선물',person.gifts.join(' · '));
   const seen=new Set(summaryText.map(norm));
-  return list.map(p=>({...p,lines:p.lines.filter(l=>{const k=norm(l);if(seen.has(k)&&!p.keep)return false;seen.add(k);return true;})})).filter(p=>p.lines.length);
+  return list.map(p=>({...p,lines:p.lines.filter(l=>{const k=norm(l.replace(/^[^:]{1,12}: /,''));if(seen.has(k)&&!p.keep)return false;seen.add(k);return true;})})).filter(p=>p.lines.length);
 }
 export function PersonInfo({person,classes,part="1",onDoc,openKey}:{person:Person;classes:Record<string,ClassInfo>;part?:string;onDoc?:(url:string)=>void;openKey?:string}){
   const summary=characterSummary(person,part),d=person.data,self=new Set([person.name]);
