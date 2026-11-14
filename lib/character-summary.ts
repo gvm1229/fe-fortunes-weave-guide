@@ -30,7 +30,7 @@ export function characterSummary(person:Person,part:string){
   else if(part==='1')battle=preserve?'합류해도 바로 출격시키지 않습니다. 물품·탈것·대화 확보를 먼저 합니다.':lane==='이야기 주력'?'실제 합류한 뒤 이야기 전투에 우선 출격합니다.':lane==='기능 준비·2부 교대'?'필요한 기능을 준비하고 2부 교대를 대비합니다. 지금 주력을 억지로 빼지 않습니다.':lane==='추가 칸·역할 교대'?'출격 칸이 늘거나 같은 역할의 동료를 교대할 때 투입합니다.':'초반에 역할이 비었거나 주력이 출격할 수 없을 때 투입합니다.';
   else if(part==='2')battle=preserve?'보존 상태를 확인합니다. 실제 출격하기로 정한 경우에만 육성을 재개합니다.':'2부 진입 후 현재 병종과 기능을 확인합니다. 실제 출격 칸과 필요한 역할에 맞춰 투입합니다.';
   else battle=ready.final25?'3부에 정식 합류하고 필요한 병종이 열린 뒤 투입합니다. 최종 25명 편성을 목표로 합니다.':'3부에서는 예비로 둡니다. 주력의 역할이 비었을 때만 투입합니다.';
-  const target=blocked?'영입과 지원 대화가 목표입니다. 전투 육성 목표는 없습니다.':person.data?.goalText?person.data.goalText:part==='1'&&preserve?String(ready.floorLabel||'보존 상태를 확인합니다.'):words(goal.text)||words(ready.floorLabel)||'정해진 목표가 없습니다.';
+  const target=person.name==='누조'?'선더 소드 지참품 확보가 목표입니다. 전투 육성 목표는 없습니다.':blocked?'영입과 지원 대화가 목표입니다. 전투 육성 목표는 없습니다.':person.data?.goalText?person.data.goalText:part==='1'&&preserve?String(ready.floorLabel||'보존 상태를 확인합니다.'):words(goal.text)||words(ready.floorLabel)||'정해진 목표가 없습니다.';
   return {
     reason:person.data?.reasonText||characterReason(person.name,person.route),
     join:part!=='1'?'앞선 부에서 영입·준비한 기록입니다. 이번 부의 실제 합류를 확인합니다.':person.joinLabel?person.joinLabel:chapter?`${chapter}장 영입을 권장하는 계획입니다. 실제 합류 여부는 게임에서 확인합니다.`:'실제 영입 조건과 합류 여부를 게임에서 확인합니다.',
