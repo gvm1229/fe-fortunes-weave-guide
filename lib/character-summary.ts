@@ -31,7 +31,7 @@ export function characterSummary(person:Person,part:string){
   else battle=ready.final25?'3부에 정식 합류하고 필요한 병종이 열린 뒤 투입합니다. 최종 25명 편성을 목표로 합니다.':'3부에서는 예비로 둡니다. 주력의 역할이 비었을 때만 투입합니다.';
   const target=blocked?'영입과 지원 대화가 목표입니다. 전투 육성 목표는 없습니다.':person.data?.goalText?person.data.goalText:part==='1'&&preserve?String(ready.floorLabel||'보존 상태를 확인합니다.'):words(goal.text)||words(ready.floorLabel)||'정해진 목표가 없습니다.';
   return {
-    reason:characterReason(person.name,person.route),
+    reason:person.data?.reasonText||characterReason(person.name,person.route),
     join:part!=='1'?'앞선 부에서 영입·준비한 기록입니다. 이번 부의 실제 합류를 확인합니다.':person.joinLabel?person.joinLabel:chapter?`${chapter}장 영입을 권장하는 계획입니다. 실제 합류 여부는 게임에서 확인합니다.`:'실제 영입 조건과 합류 여부를 게임에서 확인합니다.',
     battle,
     timing:starts?.[part]?plainCharacterText(words(starts[part])).split(' · ').filter(Boolean):[],
