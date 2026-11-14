@@ -22,16 +22,6 @@
       "sha256": "d55bffd05235377fa45984c68f6bbccd365ca73afb90c7a6cb8185e4061546c7"
     },
     {
-      "source": "data/boon-prices-user-reported.json",
-      "target": "content/data/boon-prices-user-reported.json",
-      "sha256": "9d0187adb9ec6fe22b813240a2fc1b0b06f481b8a5e29d20b58e28802e6fdb94"
-    },
-    {
-      "source": "data/carry-state.json",
-      "target": "content/data/carry-state.json",
-      "sha256": "42242ee9c2b6da4be9d25ab42b16023f3c83b90945531da71a0c1f331676a848"
-    },
-    {
       "source": "data/chapter-gold.json",
       "target": "content/data/chapter-gold.json",
       "sha256": "a398fc8bc3c3de79ad398e6b07b022a7c1df77f3b826efeeea9a486ff11088e8"
@@ -74,7 +64,7 @@
     {
       "source": "data/modal-scope-plan.json",
       "target": "content/data/modal-scope-plan.json",
-      "sha256": "c32ed5e7bb323848b6d9f7da25e41d57e1178785e338b626b28e8b2a97f0a6a0"
+      "sha256": "67a8f9d66d04138b4854f0b93ce816164ae2ba251b70bed95d9dddcbb1e3d459"
     },
     {
       "source": "data/multi-route-audit.json",
@@ -129,7 +119,7 @@
     {
       "source": "data/recruitment-build-audit.json",
       "target": "content/data/recruitment-build-audit.json",
-      "sha256": "021b8b05dcfc0d16c55b26606727eafacd336fc8823026336968ddce76caac01"
+      "sha256": "d0b3a4fa7e929bfc4eda4b989f63f68ac61f151d4cb6ac1a54f21cf3530a452c"
     },
     {
       "source": "data/recruitment-gates.json",
@@ -152,14 +142,9 @@
       "sha256": "a1ab9d5e856d93b379e5a349cf32ca358756fe298868025c1d74c857c013a863"
     },
     {
-      "source": "data/sequential-training-plan.json",
-      "target": "content/data/sequential-training-plan.json",
-      "sha256": "b5934cb6e66a79153e376833d586956593082c1d3674200566317773e57fcf27"
-    },
-    {
       "source": "data/starter-handoffs.json",
       "target": "content/data/starter-handoffs.json",
-      "sha256": "444c25fce05a94b269024c42d7a387130fafccf5084ea7e6f31e09e89776800e"
+      "sha256": "5def53ac9825c12cb8efc2f3794c933d3ae7aba1484838301189c31a225c82cb"
     },
     {
       "source": "data/team-korean-name-sources.json",
@@ -234,7 +219,7 @@
     {
       "source": "data/weekly-support.json",
       "target": "content/data/weekly-support.json",
-      "sha256": "8f7c123b36b2259013d61cbbacb6d0afb5549ae5bd927fd6fc2f7d27b8f3e6c1"
+      "sha256": "3cf8eb18169184c8522e27879a01d2d751d4d36140ff5cf35dc0939e3590974e"
     },
     {
       "source": "data/weekly-training.json",
@@ -1815,171 +1800,6 @@
       "source": "personalized-app/README.md",
       "target": "content/personalized-app/README.md",
       "sha256": "81113747e9cf2a1fa4d76f9bebd2f0cef9ebfd8e53011ce88a0ef921ed63b1e9"
-    },
-    {
-      "source": "notes/hive-local-validation.json",
-      "target": "content/attachments/notes/hive-local-validation.json",
-      "sha256": "1482cd39fb45e80e60972c960e040ec5de0590d3e9681d55cdcaecb509628467"
-    },
-    {
-      "source": "notes/knowledge-rescan-validation.json",
-      "target": "content/attachments/notes/knowledge-rescan-validation.json",
-      "sha256": "2aa9060d2d57f404c8b74eadf1bac40d30ede89cd29a391bdaf7028b5ef347a9"
-    },
-    {
-      "source": "notes/lilian-final25-apply-validation.json",
-      "target": "content/attachments/notes/lilian-final25-apply-validation.json",
-      "sha256": "dd1310cdb9760c6bff7333dcdeb37b504f93af68a7ac4a919264aeb76e324fc0"
-    },
-    {
-      "source": "notes/validation/lilian-final25-4k.png",
-      "target": "content/attachments/notes/validation/lilian-final25-4k.png",
-      "sha256": "4369eb8b81389f0fadcc1920a7074c7d71c9bffcc62b16d9a9a2e36522531214"
-    },
-    {
-      "source": "notes/react-canonical-validation.json",
-      "target": "content/attachments/notes/react-canonical-validation.json",
-      "sha256": "a8cea96a6e1f6dd16661ad0ed7489fc424bf051c358b63e5a1118621f57c2c83"
-    },
-    {
-      "source": "notes/sequential-routes-apply-validation.json",
-      "target": "content/attachments/notes/sequential-routes-apply-validation.json",
-      "sha256": "f0a6d73b634722d71bd97f74cb410b46cbb3b75bb1965265df36ee94e04f973e"
-    },
-    {
-      "source": "notes/final-builds-apply-validation.json",
-      "target": "content/attachments/notes/final-builds-apply-validation.json",
-      "sha256": "6d7739d11e65ac1b44102bc50b16d5308eb5d8e5741ff03706ab42bb2f768253"
-    },
-    {
-      "source": "notes/readiness-rework-validation.json",
-      "target": "content/attachments/notes/readiness-rework-validation.json",
-      "sha256": "2dea77f334ec53f7bd32b7978707d805551b4c2f924255a31a5cea0d9b1d8397"
-    },
-    {
-      "source": "notes/game8-final25-review-validation.json",
-      "target": "content/attachments/notes/game8-final25-review-validation.json",
-      "sha256": "ec02eb607a7363a4c50b4d06726602a6936d78870fd7d064f6a0264d993ab6f7"
-    },
-    {
-      "source": "notes/team-scenario-differences-validation.json",
-      "target": "content/attachments/notes/team-scenario-differences-validation.json",
-      "sha256": "5335e2d1084fb0addb235782aab4c950cb35345598d8e7a106bae10e960c7c90"
-    },
-    {
-      "source": "notes/team-balance-recheck-validation.json",
-      "target": "content/attachments/notes/team-balance-recheck-validation.json",
-      "sha256": "c2d4e2c95fc981f54daffaacea87ccd7552d5e67426ab3e7cb1b8493739f6a13"
-    },
-    {
-      "source": "notes/halvin-lilian-review-validation.json",
-      "target": "content/attachments/notes/halvin-lilian-review-validation.json",
-      "sha256": "7b80908a06f29d2dbd8719999572112d8053eda3d9cf8cee418705ca1609f631"
-    },
-    {
-      "source": "notes/playbook-validation.json",
-      "target": "content/attachments/notes/playbook-validation.json",
-      "sha256": "1f96eb944ddc1de41661798a8e3c892bf3a7f5a59923d8d014c1b4aa013151e3"
-    },
-    {
-      "source": "notes/screenshots/personalized-playbook-desktop.jpg",
-      "target": "content/attachments/notes/screenshots/personalized-playbook-desktop.jpg",
-      "sha256": "c040349fd0d3cb52ec4b65b31ab8d5fd0456c6aa42c3fb0cc10afce9b1c0b42c"
-    },
-    {
-      "source": "notes/screenshots/personalized-playbook-compact.jpg",
-      "target": "content/attachments/notes/screenshots/personalized-playbook-compact.jpg",
-      "sha256": "379f7d78154f5c1b32e3a3f8508e90afc963132bcb46f24bdbcf40ee55ecc89a"
-    },
-    {
-      "source": "notes/screenshots/personalized-playbook-mobile.jpg",
-      "target": "content/attachments/notes/screenshots/personalized-playbook-mobile.jpg",
-      "sha256": "573f7c4d976dc89e1a45eb38cf43baa0c1322bcbb95c3878f6524cdff932cd95"
-    },
-    {
-      "source": "notes/evidence/team-balance-recheck/recommend-1920.png",
-      "target": "content/attachments/notes/evidence/team-balance-recheck/recommend-1920.png",
-      "sha256": "56154aa817cb9510e21c0ca57197f59ab95bb1ceb1c5fb26ed0774a68da6b2dc"
-    },
-    {
-      "source": "notes/evidence/team-balance-recheck/recommend-4k.png",
-      "target": "content/attachments/notes/evidence/team-balance-recheck/recommend-4k.png",
-      "sha256": "c5ea3163bb73a40e005ab7175a17c42959c4a2d9287a7de189627f7b0e9291bc"
-    },
-    {
-      "source": "notes/evidence/team-scenario-differences/browser-checks.json",
-      "target": "content/attachments/notes/evidence/team-scenario-differences/browser-checks.json",
-      "sha256": "64e4ca47a7f6b57094f4bcfa1f0ff3e83dcaa357d1b726a2ac1cc5954d58f7a7"
-    },
-    {
-      "source": "notes/evidence/team-scenario-differences/leaders-1920-dark.png",
-      "target": "content/attachments/notes/evidence/team-scenario-differences/leaders-1920-dark.png",
-      "sha256": "26aac73192dec0dfa89f7e839f2c675241a385d88b63183fb19713c31f72c2fd"
-    },
-    {
-      "source": "notes/evidence/team-scenario-differences/leaders-4k-dark.png",
-      "target": "content/attachments/notes/evidence/team-scenario-differences/leaders-4k-dark.png",
-      "sha256": "f9cad7bc57e0c3a088aaa6fc90adeb5acec6c927ba6294009ecdb5e1caf2f6b4"
-    },
-    {
-      "source": "notes/theodora-ch5-validation.json",
-      "target": "content/attachments/notes/theodora-ch5-validation.json",
-      "sha256": "89af2cbea81c16897cf227730766426629c9a7ff2f4f6c5e7812edb9794a618f"
-    },
-    {
-      "source": "notes/underworld-merge-safety-validation.json",
-      "target": "content/attachments/notes/underworld-merge-safety-validation.json",
-      "sha256": "2b52e5b933bf137b8d29e355ced3daae1dd9fc8e2de2ab8bce585510a141c186"
-    },
-    {
-      "source": "notes/evidence/underworld-merge-safety/merge-before-spend-1920.png",
-      "target": "content/attachments/notes/evidence/underworld-merge-safety/merge-before-spend-1920.png",
-      "sha256": "9d4c2aae448c9569f26d1906b872a2c81cb1191da50f5a11b98a0683f0e5c824"
-    },
-    {
-      "source": "notes/evidence/underworld-merge-safety/gate-map-1920.png",
-      "target": "content/attachments/notes/evidence/underworld-merge-safety/gate-map-1920.png",
-      "sha256": "1cb931ecbb26763d7aff0883b8ec5493e4dea20e7b7da7b6ccc8f68ce5f6fc3b"
-    },
-    {
-      "source": "notes/screenshots/personalized-desktop.jpg",
-      "target": "content/attachments/notes/screenshots/personalized-desktop.jpg",
-      "sha256": "78c5cc036ac178295a6e12775fdc909a4d00691ccc6a11dd26ddeec395f528b6"
-    },
-    {
-      "source": "notes/screenshots/personalized-mobile.jpg",
-      "target": "content/attachments/notes/screenshots/personalized-mobile.jpg",
-      "sha256": "85a7cfdbb27e10a0cb37733dc268c8b1fb5b5363da4292675086ff4e645798fb"
-    },
-    {
-      "source": "notes/visual-validation.json",
-      "target": "content/attachments/notes/visual-validation.json",
-      "sha256": "15e46240539b4f7a9589bfd6842efd214efd452d4525dd2a319ee25b499099a7"
-    },
-    {
-      "source": "notes/workspace-validation.json",
-      "target": "content/attachments/notes/workspace-validation.json",
-      "sha256": "b58af6f6409046e3bb50343d1847c2f0c0781c8c5102f3d5671ff8f7d50f0eb6"
-    },
-    {
-      "source": "notes/screenshots/workspace-fixed-desktop.jpg",
-      "target": "content/attachments/notes/screenshots/workspace-fixed-desktop.jpg",
-      "sha256": "1f767cce226969086965682d78e1cfe340affe96faa3fb13f06fca087faa989f"
-    },
-    {
-      "source": "notes/screenshots/workspace-exam-modal.jpg",
-      "target": "content/attachments/notes/screenshots/workspace-exam-modal.jpg",
-      "sha256": "a41b4395c1a27d697d251bdf213989a419abab2a834b166a76d1d683bbaaf26e"
-    },
-    {
-      "source": "notes/screenshots/workspace-fixed-mobile.jpg",
-      "target": "content/attachments/notes/screenshots/workspace-fixed-mobile.jpg",
-      "sha256": "4d5bbea50280b31f43d56ced35ec1f14b34f1ca4e62087b9dabe11cc6952c6ff"
-    },
-    {
-      "source": "notes/boon-purchase-application-validation.json",
-      "target": "content/attachments/notes/boon-purchase-application-validation.json",
-      "sha256": "60d3a8c0f6a2b339d93780d0d313785f12e813a546cdf85218dc0251c807f35a"
     },
     {
       "source": "personalized-app/src/content.json",
