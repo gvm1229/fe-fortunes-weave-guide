@@ -224,7 +224,7 @@ th[scope=row],tbody>tr>th:first-child{text-align:left;vertical-align:top}
 
 .person>.person-summary{width:calc(100% - 48px)}
 @media(max-width:767px){.person>.person-summary{width:calc(100% - 32px)}}
-.summary-points{margin:0;padding:0;list-style:none}.summary-points li+li{margin-block-start:8px}.person-summary td{line-height:1.7}.person-summary strong{font-weight:600}.document-profile .person-heading{flex-wrap:wrap}.document-profile .role-chip{margin-inline:8px}.person-full-details{max-width:100%;min-width:0}.person-full-details table{table-layout:fixed}.person-full-details :is(td,th){overflow-wrap:anywhere}
+.summary-points{margin:0;padding:0;list-style:none;display:grid;gap:8px}.person-summary td{line-height:1.7}.person-summary strong{font-weight:600}.document-profile .person-heading{flex-wrap:wrap}.document-profile .role-chip{margin-inline:8px}.person-full-details{max-width:100%;min-width:0}.person-full-details table{table-layout:fixed}.person-full-details :is(td,th){overflow-wrap:anywhere}
 .sheet-overlay{background:#171717}
 
 :is(.app-shell,.team-page) table :is(th,td){border:1px solid var(--table-line)}
@@ -339,7 +339,7 @@ th[scope=row],tbody>tr>th:first-child{text-align:left;vertical-align:top}
 .game-badge>img{display:inline-block!important;inline-size:22px!important;block-size:22px!important;object-fit:contain;flex-shrink:0;margin:0!important}
 .game-badge[data-kind=person]>img{inline-size:24px!important;block-size:24px!important;border-radius:6px}
 /* 인물 카드·시트의 선물 칸 */
-.gift-label{margin:0 0 6px;font-weight:600}.gift-label:not(:first-child){margin-block-start:12px}.gift-chips{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}.gift-chips>li{display:inline-flex;flex-wrap:wrap;align-items:center;gap:6px;max-inline-size:100%}.game-badge[data-kind=gift]{--badge-bg:var(--badge-item);--badge-ink:var(--badge-item-ink);white-space:normal}.game-badge[data-kind=gift]>img{inline-size:24px;block-size:24px;object-fit:contain}
+.gift-label{margin:0 0 8px;font-weight:600}.gift-label:not(:first-child){margin-block-start:8px}:is(.gift-chips,.expensive-gifts){display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}:is(.gift-chips,.expensive-gifts)>li{display:inline-flex;flex-wrap:wrap;align-items:center;gap:6px;max-inline-size:100%}.game-badge[data-kind=gift]{--badge-bg:var(--badge-item);--badge-ink:var(--badge-item-ink);white-space:normal}.game-badge[data-kind=gift]>img{inline-size:24px;block-size:24px;object-fit:contain}
 .game-badge .badge-value{font-weight:700;font-variant-numeric:tabular-nums}
 @supports (text-box:trim-both cap alphabetic){.game-badge>.badge-label,.game-badge>.badge-value{text-box:trim-both cap alphabetic}}
 :is(.button,.text-link,.reference-chip,.ui-badge,.ui-press,.unit-card) .game-badge{background:none;padding:0;margin:0;min-block-size:0}
