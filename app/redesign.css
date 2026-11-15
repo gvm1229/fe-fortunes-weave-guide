@@ -500,6 +500,8 @@ img.final25-portrait,:is(.app-shell,.team-page,.sheet) img.final25-portrait,.dar
 @media(max-width:399px){.route-head .check-toolbar{gap:4px}}
 /* 389px 이하는 채운 완료 숨기기·장 선택 여백이 도구 한 줄에 들어가지 않아 옛 모양을 둔다(2026-11-15 일관성 정리 보고). */
 @media(max-width:389px){.route-head .chapter-picker select{padding-inline:8px}.route-head .check-control{padding:0;background:none;color:var(--text)}}
+/* 폭 389px 이하에서 금액 표의 칸 여백은 8px(표가 칸 안에 들어가게, 2026-11-15 결정). */
+@media(max-width:389px){[data-gold-table] :is(th,td){padding:8px}}
 /* 바닥 게임 날짜(주행 기록계 모양, 2026-11-14). 날짜만 가운데. */
 .date-odometer{position:fixed;inset-inline:0;inset-block-end:0;z-index:30;display:flex;justify-content:center;align-items:center;block-size:56px;padding-block-end:env(safe-area-inset-bottom);background:var(--surface);box-shadow:0 -4px 16px #0000001f;color:var(--text)}
 .odometer-face{display:inline-flex;align-items:center;font-size:26px;font-weight:700;line-height:1;font-variant-numeric:tabular-nums;letter-spacing:.02em}

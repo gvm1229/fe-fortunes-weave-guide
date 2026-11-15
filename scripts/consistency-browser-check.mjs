@@ -7,7 +7,7 @@
 // 5) [U55] 접기 제목(details>summary)에 브라우저 기본 ▶ 표시가 없음(list-style-type: none)
 // 6) [U56] 390×844에서 4글자 이하인 배지 이름(.badge-label)은 한 줄(상자 높이 32px 이하). 배지는 이름과 값 사이에서만 줄을 넘긴다.
 // 7) [U56] 배지 이름과 값이 같은 줄에 있으면 둘 사이가 3px 이상("반짝반짝어 1마리"가 "반짝반짝어1마리"로 붙지 않게)
-// 8) [U56] 390×844에서 금액 표([data-gold-table])·본문 표(.source-markup·.semantic table)는 칸 폭 안에 들어감(가로로 넘치거나 부모보다 넓지 않음)
+// 8) [U56] 390×844(그리고 360×800의 할 일·준비·3부)에서 금액 표([data-gold-table])·본문 표(.source-markup·.semantic table)는 칸 폭 안에 들어감(가로로 넘치거나 부모보다 넓지 않음)
 import { chromium } from '@playwright/test';
 import { resolve } from 'node:path';
 process.env.TEMP = process.env.TMP = resolve('.tmp');
@@ -24,7 +24,7 @@ const EXCEPTIONS = [
   '.person-full-details>summary', // 접기 제목(단추가 아니라 제목 줄)
   '.chapter-section>summary', // 장 제목 줄: 붙어 있을 때 아래 글을 가리려고 쪽 바탕색(--bg)을 깐 제목 줄이라 모서리가 없다
 ];
-function audit({ EXCEPTIONS, phone }) {
+function audit({ EXCEPTIONS, phone, fitOnly }) {
   const visible = e => e.checkVisibility({ visibilityProperty: true, opacityProperty: true }) && (r => r.width > 0 && r.height > 0)(e.getBoundingClientRect());
   const name = e => `${e.tagName.toLowerCase()}${typeof e.className === 'string' && e.className.trim() ? '.' + e.className.trim().split(/\s+/).slice(0, 2).join('.') : ''} «${(e.getAttribute('aria-label') || e.textContent || '').trim().slice(0, 16)}»`;
   const out = { fill: [], font: [], th: [], thWidth: [], radius: [], filled: [], marker: [], wrap: [], valueGap: [], tableFit: [] };
@@ -58,15 +58,17 @@ function audit({ EXCEPTIONS, phone }) {
   // [U56]
   for (const b of document.querySelectorAll('.game-badge')) { const l = b.querySelector(':scope>.badge-label'), v = b.querySelector(':scope>.badge-value'); if (!l || !v || !visible(b)) continue; const a = l.getBoundingClientRect(), c = v.getBoundingClientRect(); if (Math.min(a.bottom, c.bottom) - Math.max(a.top, c.top) > 2 && c.left - a.right < 3) out.valueGap.push(`${name(b)} ${Math.round(c.left - a.right)}px`); }
   if (phone) for (const l of document.querySelectorAll('.game-badge .badge-label')) { if (!visible(l)) continue; const h = l.getBoundingClientRect().height; if (l.textContent.trim().length <= 4 && h > 32) out.wrap.push(`${name(l.closest('.game-badge'))} ${Math.round(h)}px`); }
-  if (phone) for (const t of document.querySelectorAll('[data-gold-table], .source-markup table, .semantic table')) { if (!visible(t)) continue; const w = t.getBoundingClientRect().width, pw = t.parentElement.clientWidth; if (t.scrollWidth > t.clientWidth + 1 || w > pw + 1) out.tableFit.push(`${name(t.rows[1]?.cells[0] || t)} 표 ${Math.round(Math.max(w, t.scrollWidth))}px > 칸 ${pw}px`); }
+  if (fitOnly) { for (const k of Object.keys(out)) if (k !== 'tableFit') out[k] = []; }
+  if (phone || fitOnly) for (const t of document.querySelectorAll('[data-gold-table], .source-markup table, .semantic table')) { if (!visible(t)) continue; const w = t.getBoundingClientRect().width, pw = t.parentElement.clientWidth; if (t.scrollWidth > t.clientWidth + 1 || w > pw + 1) out.tableFit.push(`${name(t.rows[1]?.cells[0] || t)} 표 ${Math.round(Math.max(w, t.scrollWidth))}px > 칸 ${pw}px`); }
   return out;
 }
 const LABELS = { fill: '배지 아이콘 채움', font: '글자 18px 이상', th: '표 머리 칸 왼쪽·위', thWidth: '인물 표 머리 칸 폭', radius: '단추 모서리 10px', filled: '장 선택·완료 숨기기 채움', marker: '기본 ▶ 없음', wrap: '짧은 배지 이름 한 줄', tableFit: '표가 칸 안에 들어감', valueGap: '배지 이름·값 간격 3px 이상' };
 let failed = 0, screens = 0;
-async function check(p, label, phone) {
+async function check(p, label, phone, fitOnly = false) {
   await p.evaluate(() => { document.querySelectorAll('details:not(.backup-menu)').forEach(d => { d.open = true; }); scrollTo(0, 0); });
-  await p.waitForTimeout(300);
-  const out = await p.evaluate(audit, { EXCEPTIONS, phone }); screens++;
+  // 접기 내용은 높이 0에서 펼쳐지는 전환(::details-content)이 있어 끝날 때까지 기다린 뒤 잰다.
+  await p.waitForTimeout(fitOnly ? 600 : 300);
+  const out = await p.evaluate(audit, { EXCEPTIONS, phone, fitOnly }); screens++;
   const bad = Object.entries(out).filter(([, v]) => v.length);
   if (!bad.length) { console.log(`통과  ${label}`); return; }
   failed++; console.log(`실패  ${label}`);
@@ -87,6 +89,14 @@ try {
     }
     await ctx.close();
   }
+  // [U56] 360×800: 표가 칸 안에 들어가는지만 본다(폭 389px 이하 금액 표 칸 여백 8px).
+  { const ctx = await browser.newContext({ viewport: { width: 360, height: 800 } }); const p = await ctx.newPage();
+    for (const [route, v] of [['/theodora/1/', null], ['/theodora/1/', '준비'], ['/part3/3/', null]]) {
+      await p.goto(base + route); await p.waitForLoadState('networkidle'); await p.waitForTimeout(400);
+      if (v) { await p.getByRole('navigation', { name: '공략 화면' }).getByRole('button', { name: v }).first().click(); await p.waitForTimeout(500); }
+      await check(p, `360 ${route}${v ? ' ' + v : ''} (표 폭)`, true, true);
+    }
+    await ctx.close(); }
   console.log(failed ? `실패: ${failed}/${screens}개 화면` : `통과: 일관성 검사 ${screens}개 화면`);
 } finally { await browser.close(); }
 process.exit(failed ? 1 : 0);
