@@ -52,7 +52,7 @@ html body:has(.app-shell),html body:has(.team-page){background:#F4F3F0}html.dark
 .tasks-layout{display:grid;grid-template-columns:minmax(0,780px) minmax(240px,300px);gap:40px;align-items:start}
 .tasks-main{container:checklist / inline-size}
 .check-toolbar{position:sticky;top:0;z-index:20;display:flex;flex-wrap:wrap;gap:16px;background:var(--bg);margin:0;padding:12px 0 20px;border:0}
-.chapter-picker select{background:var(--surface);color:var(--text);padding:10px 16px;min-inline-size:104px;max-inline-size:180px}
+.chapter-picker select{background:var(--secondary);color:var(--secondary-fg);padding:8px 12px;min-inline-size:104px;max-inline-size:180px}
 .toolbar-progress{max-inline-size:180px;min-inline-size:64px}
 .backup-menu{margin-inline-start:auto;position:relative;font-size:18px}
 .backup-menu>summary{background:var(--secondary);padding:10px 14px;border-radius:10px;min-block-size:48px;list-style:none}
@@ -166,7 +166,7 @@ summary::-webkit-details-marker{display:none}
   .banner-progress>strong{grid-column:2;grid-row:1}
   .check-toolbar{top:0;gap:8px;display:flex;padding:12px 0}
   .toolbar-progress{flex:1;min-inline-size:48px}
-  .chapter-picker select{min-inline-size:80px;padding:8px}
+  .chapter-picker select{min-inline-size:80px}
   .backup-menu>summary{padding:10px}
   .check-toolbar>.save-status{display:none}
   .next-action{gap:12px;padding:20px 0}
@@ -448,7 +448,8 @@ html{scroll-padding-top:var(--task-header-height,0px)}
 img.final25-portrait,:is(.app-shell,.team-page,.sheet) img.final25-portrait,.dark :is(.app-shell,.team-page,.sheet) img.final25-portrait[src]{outline:4px solid var(--highlight-red);outline-offset:-4px}
 .final25-badge{display:inline-flex;align-items:center;min-block-size:28px;padding:2px 8px;border-radius:8px;background:var(--badge-gold);color:var(--text);font-size:18px;font-weight:600;line-height:24px}
 /* 고정 머리의 완료 숨기기(2026-11-14) */
-.route-head .check-control{display:inline-flex;align-items:center;gap:8px;min-block-size:48px;margin:0;white-space:nowrap;color:var(--text);cursor:pointer}
+.route-head .check-control{display:inline-flex;align-items:center;gap:8px;min-block-size:48px;margin:0;padding:8px 12px;border-radius:10px;background:var(--secondary);color:var(--secondary-fg);white-space:nowrap;cursor:pointer}
+.route-head .save-status{inline-size:24px;justify-content:center;flex:none}
 .route-head .check-control input{inline-size:24px;block-size:24px;margin:0}
 .check-control .label-short{display:none}
 @media(max-width:767px){.route-head .check-control{gap:4px}}
@@ -476,6 +477,8 @@ img.final25-portrait,:is(.app-shell,.team-page,.sheet) img.final25-portrait,.dar
 @media(min-width:768px) and (max-width:1099px){.route-head-bar{flex-wrap:wrap;gap:8px 16px}.route-head .banner-progress{flex:1 1 0;order:0}.route-theme{order:1}.route-head .check-toolbar{flex:1 1 100%;order:2;justify-content:flex-end}}
 /* 360px에서도 도구 한 줄(검토 9 재검토 R1: 1px 모자라 셋째 줄로 떨어짐). */
 @media(max-width:399px){.route-head .check-toolbar{gap:4px}}
+/* 389px 이하는 채운 완료 숨기기·장 선택 여백이 도구 한 줄에 들어가지 않아 옛 모양을 둔다(2026-11-15 일관성 정리 보고). */
+@media(max-width:389px){.route-head .chapter-picker select{padding-inline:8px}.route-head .check-control{padding:0;background:none;color:var(--text)}}
 /* 바닥 게임 날짜(주행 기록계 모양, 2026-11-14). 날짜만 가운데. */
 .date-odometer{position:fixed;inset-inline:0;inset-block-end:0;z-index:30;display:flex;justify-content:center;align-items:center;block-size:56px;padding-block-end:env(safe-area-inset-bottom);background:var(--surface);box-shadow:0 -4px 16px #0000001f;color:var(--text)}
 .odometer-face{display:inline-flex;align-items:center;font-size:26px;font-weight:700;line-height:1;font-variant-numeric:tabular-nums;letter-spacing:.02em}
@@ -508,7 +511,7 @@ html:has(.date-odometer){scroll-padding-bottom:72px}
   .route-head .check-control{min-block-size:44px}
   .route-theme .icon-button,.route-head .jump-next{min-inline-size:44px;min-block-size:44px;padding:6px 10px}
   .route-head .backup-menu>summary{min-block-size:44px;padding:6px 10px}
-  .route-head .chapter-picker select{min-block-size:44px;padding-block:6px}
+  .route-head .chapter-picker select{min-block-size:44px}
   .date-odometer{block-size:40px}
   .odometer-face{font-size:20px}
   body:has(.date-odometer) .to-top{inset-block-end:calc(40px + 12px + env(safe-area-inset-bottom))}
