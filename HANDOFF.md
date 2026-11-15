@@ -50,7 +50,8 @@
 ## 3. 사용자 선호 — 작업 방식
 
 - **역할 분담:**
-  - **2026-11-14 최신:** Codex는 더 이상 쓰지 않는다. Claude(Opus 5.5)가 코드 작성자이고, Fable 5.2가 자문(계획·코드 검토·시각 검토)이다. 자문의 값 단위 계획은 `docs/fable-plan.md`다. 아래 Codex 관련 규칙은 기록으로만 남긴다.
+  - **2026-11-15 최신(P12):** Fable 5.2는 자문(계획·디자인 값·검토)만 하고 코드를 쓰지 않는다. 코드 작성은 Opus 5.5 중간 강도가 맡는다. 아래 줄은 기록으로만 남긴다.
+  - **2026-11-14:** Codex는 더 이상 쓰지 않는다. Claude(Opus 5.5)가 코드 작성자이고, Fable 5.2가 자문(계획·코드 검토·시각 검토)이다. 자문의 값 단위 계획은 `docs/fable-plan.md`다. 아래 Codex 관련 규칙은 기록으로만 남긴다.
   - **2026-11-13 이번 작업의 명시 예외:** 사용자가 원본 기능 이전의 남은 시각 검토·수정·커밋·푸시를 Codex가 끝내도록 역할 제한을 해제했다. 필요한 변경은 검증 뒤 Netlify 재배포까지 승인했다. 아래 기본 분담은 다른 작업에 대한 규칙으로 유지한다.
   - Claude는 **계획·디자인 결정·검토·커밋**을 맡는다. 토큰이 많이 드는 구현은 **Codex**에 맡긴다.
   - Codex 설정: 모델 `gpt-6.1-sol`, `service_tier="priority"`, `model_reasoning_effort="xhigh"`.
@@ -117,6 +118,15 @@
   - 개인 사본: git 무시 폴더 `progress/checklist.json`(이전 `content/checklist-seed.json`·`content/data/checklist.json`·`content/theodora-progress-import.json`을 옮김, revision 237). 최신 기록은 브라우저에서 내보내 이 파일을 덮어쓴다. `verify.mjs`는 이 파일이 있을 때만 읽는다.
 
 ## 6. 사이트 상태와 남은 일
+
+### 2026-11-15 화면 일관성 정리 · 아나톨리아·그자람 병종 확정
+
+- 아나톨리아 최종 병종 드루이드 유지. 서랍 `주요 무기·마법`과 비교 근거에 샐러맨더(격투술 E 건틀릿 · 마법 피해 · 사거리 1-2, 공략 자료 기준·게임 확인 전). 그자람 소드 마스터 유지(드래군 검토 뒤). 기록: `content/notes/knowledge/final25-targets.md`.
+- 일관성 정리 값은 `docs/design-spec.md`의 "일관성 정리 · 2026-11-15" 절: 배지 일반 아이콘 채움, 단추·입력 모서리 10px, 칩 한 모양(28px), 표 머리 칸 왼쪽·위(120px, 휴대폰 100px), 인물 표 기능 등급을 배지 안으로, 장 선택·완료 숨기기 채움, 접기 표시 하나, 제목 크기 30/28/22/20, 배지는 이름과 값 사이에서만 줄바꿈.
+- 검사: `scripts/consistency-browser-check.mjs`(배포 관문에 포함). 규칙 U53~U57, P12.
+- 역할: Fable 5.2는 자문만, 코드는 Opus 5.5 중간 강도(P12).
+- 배포는 `node scripts/release.mjs check` → Fable 검토 기록 → `node scripts/release.mjs deploy`.
+- 남은 미확인: 샐러맨더 개수와 무우와의 배분, Shield of Zephyrus의 한국어판 이름·효과 문구, 드래군 이동 6/7.
 
 ### 2026-11-15 사용자 규칙 강제 · 지원 대화 190쌍 대조 · 배포 관문
 
