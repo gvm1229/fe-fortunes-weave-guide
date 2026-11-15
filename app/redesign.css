@@ -32,7 +32,7 @@ html body:has(.app-shell),html body:has(.team-page){background:#F4F3F0}html.dark
 .guide-scope{display:flex;align-items:center;gap:16px;font-size:20px}
 .guide-scope>img{inline-size:40px;block-size:40px;object-fit:contain}
 .guide-scope .part-links{gap:4px;font-size:18px}
-.guide-scope .part-links a{min-inline-size:54px;padding:6px 10px}
+.guide-scope .part-links a{display:inline-flex;align-items:center;justify-content:center;min-inline-size:54px;min-block-size:44px;padding:6px 10px}
 .app-shell .workspace{max-inline-size:1184px;margin-inline:auto;padding:24px 24px 80px}
 .app-shell .workspace main{padding:0;max-inline-size:none}
 .guide-navigation{display:flex;flex-wrap:wrap;gap:4px;background:var(--secondary);padding:6px;border-radius:16px;inline-size:fit-content;max-inline-size:100%;margin-block-end:32px}
