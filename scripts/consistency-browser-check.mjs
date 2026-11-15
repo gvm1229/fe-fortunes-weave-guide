@@ -5,6 +5,7 @@
 // 3) 보이는 표 머리 칸(행 머리 th)은 왼쪽 정렬
 // 4) 폭 60px 이상인 단추·단추 링크·접기 제목·선택 상자는 모서리 10px(아래 EXCEPTIONS 제외)
 // 5) 접기 제목(details>summary)에 브라우저 기본 ▶ 표시가 없음(list-style-type: none)
+// 6) 390×844에서 이름이 4글자 이하인 배지는 줄을 넘기지 않음(높이 40px 이하)
 import { chromium } from '@playwright/test';
 import { resolve } from 'node:path';
 process.env.TEMP = process.env.TMP = resolve('.tmp');
@@ -24,7 +25,7 @@ const EXCEPTIONS = [
 function audit({ EXCEPTIONS, phone }) {
   const visible = e => e.checkVisibility({ visibilityProperty: true, opacityProperty: true }) && (r => r.width > 0 && r.height > 0)(e.getBoundingClientRect());
   const name = e => `${e.tagName.toLowerCase()}${typeof e.className === 'string' && e.className.trim() ? '.' + e.className.trim().split(/\s+/).slice(0, 2).join('.') : ''} «${(e.getAttribute('aria-label') || e.textContent || '').trim().slice(0, 16)}»`;
-  const out = { fill: [], font: [], th: [], radius: [], marker: [] };
+  const out = { fill: [], font: [], th: [], radius: [], marker: [], wrap: [] };
   for (const s of document.querySelectorAll('.game-badge>svg')) if (visible(s) && getComputedStyle(s).fill === 'none') out.fill.push(name(s.parentElement));
   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
   for (let n = walker.nextNode(); n; n = walker.nextNode()) {
@@ -45,9 +46,10 @@ function audit({ EXCEPTIONS, phone }) {
     if (c.borderTopLeftRadius !== '10px') out.radius.push(`${name(e)} ${c.borderTopLeftRadius}`);
   }
   for (const s of document.querySelectorAll('details>summary')) if (visible(s) && getComputedStyle(s).listStyleType !== 'none') out.marker.push(`${name(s)} ${getComputedStyle(s).listStyleType}`);
+  if (phone) for (const b of document.querySelectorAll('.game-badge')) { if (!visible(b)) continue; const label = (b.querySelector('.badge-label') || b).textContent.trim(); if (label.length <= 4 && b.getBoundingClientRect().height > 40) out.wrap.push(`${name(b)} ${Math.round(b.getBoundingClientRect().height)}px`); }
   return out;
 }
-const LABELS = { fill: '배지 아이콘 채움', font: '글자 18px 이상', th: '표 머리 칸 왼쪽', radius: '단추 모서리 10px', marker: '기본 ▶ 없음' };
+const LABELS = { fill: '배지 아이콘 채움', font: '글자 18px 이상', th: '표 머리 칸 왼쪽', radius: '단추 모서리 10px', marker: '기본 ▶ 없음', wrap: '짧은 배지 줄바꿈 없음' };
 let failed = 0, screens = 0;
 async function check(p, label, phone) {
   await p.evaluate(() => { document.querySelectorAll('details:not(.backup-menu)').forEach(d => { d.open = true; }); scrollTo(0, 0); });
