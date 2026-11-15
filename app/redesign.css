@@ -36,7 +36,7 @@ html body:has(.app-shell),html body:has(.team-page){background:#F4F3F0}html.dark
 .app-shell .workspace{max-inline-size:1184px;margin-inline:auto;padding:24px 24px 80px}
 .app-shell .workspace main{padding:0;max-inline-size:none}
 .guide-navigation{display:flex;flex-wrap:wrap;gap:4px;background:var(--secondary);padding:6px;border-radius:16px;inline-size:fit-content;max-inline-size:100%;margin-block-end:32px}
-.guide-navigation button{display:flex;align-items:center;justify-content:center;gap:8px;font-size:18px;padding:10px 18px;min-block-size:48px;background:transparent;color:var(--secondary-fg);border:0;border-radius:12px}
+.guide-navigation button{display:flex;align-items:center;justify-content:center;gap:8px;font-size:18px;padding:10px 18px;min-block-size:48px;background:transparent;color:var(--secondary-fg);border:0;border-radius:10px}
 .guide-navigation button[aria-current]{background:var(--surface);color:var(--text);font-weight:700}
 .guide-navigation button:hover{background:var(--surface-2);color:var(--text)}
 .guide-navigation .nav-short{display:none}
@@ -88,7 +88,7 @@ html body:has(.app-shell),html body:has(.team-page){background:#F4F3F0}html.dark
 .action-group .action-notes{padding:0 28px 24px;margin:0;color:var(--muted);font-size:18px}
 .action-group .action-notes:empty{display:none}
 .action-notes>.source-markup:empty{display:none}
-.source-markup .button{font-size:18px;min-block-size:40px;padding:6px 12px;background:var(--secondary-soft);color:var(--text)}
+.source-markup .button{font-size:18px;min-block-size:44px;padding:6px 12px;background:var(--secondary-soft);color:var(--text)}
 .source-markup .reference-chip,.source-markup .text-link{white-space:normal;height:auto;min-height:30px;line-height:1.5}
 .context-rail{inline-size:auto;background:transparent;padding:0;gap:20px;position:sticky;top:24px;block-size:auto;max-block-size:calc(100dvh - 48px);overflow:auto;scrollbar-gutter:stable}
 .context-rail>section{background:var(--surface);padding:24px;border-radius:24px}
@@ -106,7 +106,6 @@ html body:has(.app-shell),html body:has(.team-page){background:#F4F3F0}html.dark
 .person>.person-info{font-size:18px}
 .person .portrait{object-fit:contain}
 .person details{font-size:18px}
-.role-chip{background:var(--secondary-soft);color:var(--text)}
 .prep-content{max-inline-size:900px}
 .prep-content>.records,.gold-table{background:var(--surface)}
 .reference-disclosure>summary{padding:20px 0;font-weight:600}
@@ -153,10 +152,10 @@ summary::-webkit-details-marker{display:none}
   .guide-scope .part-links a{min-inline-size:44px;padding:8px}
   .app-shell .workspace{padding:12px 16px 40px}
   .guide-navigation{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));inline-size:100%;gap:2px;padding:4px;margin-block-end:24px;border-radius:12px}
-  .guide-navigation button{flex-direction:column;gap:4px;padding:8px 0;font-size:18px;line-height:1.4;border-radius:8px}
+  .guide-navigation button{flex-direction:column;gap:4px;padding:8px 0;font-size:18px;line-height:1.4;border-radius:10px}
   .guide-navigation .nav-full{display:none}
   .guide-navigation .nav-short{display:block}
-  .route-banner{border-radius:20px;margin-block-end:24px}
+  .route-banner{border-radius:16px;margin-block-end:24px}
   .route-banner-art{block-size:128px}
   .route-banner-art h1{padding:24px 20px;font-size:30px;max-inline-size:60%;line-height:1.5}
   .route-banner-art h1 span{display:block}
@@ -207,7 +206,7 @@ summary::-webkit-details-marker{display:none}
 .person-full-details>summary{padding:16px;background:var(--secondary-soft);border-radius:8px;font-weight:600}
 .class-path{gap:12px;margin:0;align-items:center}
 .class-path li{gap:8px;align-items:center}
-.class-path .text-link,.class-path .role-chip{padding:8px 12px;min-height:44px;line-height:28px}
+.class-path .text-link{padding:8px 12px;min-height:44px;line-height:28px}
 .class-document-heading{display:flex;align-items:center;gap:16px;margin-block-end:24px}
 .class-document-heading>img{width:80px;height:80px;object-fit:contain}
 
@@ -253,7 +252,6 @@ summary::-webkit-details-marker{display:none}
 .person-summary .class-path{display:flex;flex-wrap:wrap;gap:8px 16px;list-style:none;padding:0;margin:0}
 .person-summary .class-path li{display:flex;align-items:center;flex-wrap:wrap;gap:6px}
 .person-summary .class-path img{inline-size:32px;block-size:32px;object-fit:contain}
-.person-summary .class-path .role-chip{padding:2px 8px;min-height:28px;line-height:24px}
 .next-class{margin:8px 0 0;color:var(--muted)}
 .skill-chips{display:flex;flex-wrap:wrap;gap:8px 16px;list-style:none;margin:0;padding:0}
 .skill-chips li{display:inline-flex;align-items:center;gap:4px}
@@ -402,7 +400,7 @@ html{scroll-padding-top:var(--task-header-height,0px)}
 .chapter-section{scroll-margin-top:16px}
 .context-rail{top:calc(var(--task-header-height,0px) + 16px);max-block-size:calc(100dvh - var(--task-header-height,0px) - 32px)}
 @media(max-width:767px){
-  .route-banner{border-radius:20px 20px 0 0}
+  .route-banner{border-radius:16px 16px 0 0}
   .route-head{margin-block-end:24px}
   .route-head-bar{flex-wrap:wrap;gap:8px 12px;padding:12px 16px;border-radius:0 0 16px 16px}
   .route-head .banner-progress{flex:1 1 100%;gap:12px}
@@ -447,7 +445,7 @@ html{scroll-padding-top:var(--task-header-height,0px)}
 .tasks-main :is(.source-markup,.semantic,.action-notes) table{inline-size:100%}
 /* 최종 25인 범위(최종 25명 + 교체 후보): 할 일·인물 시트 초상화에 4px 금색 테두리, 인물 시트에 금색 배지(2026-11-14 사용자 지시). 테두리는 그림 안쪽에 그려 옆 요소를 밀지 않는다. */
 img.final25-portrait,:is(.app-shell,.team-page,.sheet) img.final25-portrait,.dark :is(.app-shell,.team-page,.sheet) img.final25-portrait[src]{outline:4px solid var(--highlight-red);outline-offset:-4px}
-.final25-badge{display:inline-flex;align-items:center;min-block-size:28px;padding:2px 10px;border-radius:8px;background:var(--badge-gold);color:var(--badge-gold-ink);font-size:18px;font-weight:700}
+.final25-badge{display:inline-flex;align-items:center;min-block-size:28px;padding:2px 8px;border-radius:8px;background:var(--badge-gold);color:var(--text);font-size:18px;font-weight:600;line-height:24px}
 /* 고정 머리의 완료 숨기기(2026-11-14) */
 .route-head .check-control{display:inline-flex;align-items:center;gap:8px;min-block-size:48px;margin:0;white-space:nowrap;color:var(--text);cursor:pointer}
 .route-head .check-control input{inline-size:24px;block-size:24px;margin:0}
@@ -498,10 +496,9 @@ html:has(.date-odometer){scroll-padding-bottom:72px}
 /* 지원 대화 인물 거르기 */
 .pair-filter{margin-block-end:16px}.pair-filter-label{margin:0 0 8px;font-weight:600}
 .pair-filter-chips{display:flex;flex-wrap:wrap;gap:6px}
-.pair-chip{display:inline-flex;align-items:center;gap:6px;min-block-size:40px;padding:4px 12px 4px 6px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--text);font:inherit;font-size:16px;cursor:pointer}
-.pair-chip:first-child{padding-inline-start:12px}
+.pair-chip{display:inline-flex;align-items:center;gap:6px;min-block-size:44px;padding:2px 8px;border:0;border-radius:8px;background:var(--secondary-soft);color:var(--text);font:inherit;font-size:18px;font-weight:600;line-height:24px;cursor:pointer}
 .pair-chip img{inline-size:28px;block-size:28px;border-radius:50%;object-fit:cover;object-position:top}
-.pair-chip[aria-pressed=true]{background:var(--primary);color:var(--primary-fg);border-color:var(--primary)}
+.pair-chip[aria-pressed=true]{background:var(--primary);color:var(--primary-fg)}
 .pair-chip:focus-visible{outline:3px solid var(--text);outline-offset:2px}
 .pair-table td,.pair-table th{white-space:nowrap}.pair-table td:last-child,.pair-table th:last-child{white-space:normal;min-inline-size:14em}
 /* 2026-11-15 사용자 결정: 휴대폰(600px 미만)에서 고정 머리와 바닥 날짜를 얇게. 누를 곳은 44px 이상 유지. */
@@ -542,7 +539,7 @@ progress::-moz-progress-bar{background:#1E8E3E}
 .status-name{display:flex;flex-direction:column;min-inline-size:0;overflow-wrap:anywhere}
 .status-name:has(img){flex-direction:row;align-items:center;gap:8px}
 .status-name img{inline-size:32px;block-size:32px;object-fit:cover;object-position:top;border-radius:50%;flex:none}
-.status-name small{font-size:16px;line-height:1.5}
+.status-name small{font-size:18px;line-height:1.5}
 .stepper{display:flex;align-items:center;gap:8px;flex:none}
 .stepper .button[aria-disabled=true]{opacity:.45;cursor:not-allowed}
 .stepper .button{min-inline-size:44px;min-block-size:44px;padding:0;justify-content:center}
@@ -550,8 +547,8 @@ progress::-moz-progress-bar{background:#1E8E3E}
 .status-amounts{display:grid;gap:12px}
 .status-amount{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
 .status-amount-input{display:flex;align-items:center;gap:8px}
-.status-amount input{inline-size:10ch;min-block-size:44px;padding:6px 10px;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:8px;text-align:end;font-variant-numeric:tabular-nums}
-.status-owned{display:inline-block;margin-inline-start:8px;font-size:16px;padding:0 8px;border-radius:999px;background:var(--secondary-soft);color:var(--text)}
+.status-amount input{inline-size:10ch;min-block-size:44px;padding:6px 10px;font:inherit;color:var(--text);background:var(--surface);border:1px solid var(--line);border-radius:10px;text-align:end;font-variant-numeric:tabular-nums}
+.status-owned{display:inline-flex;align-items:center;min-block-size:28px;margin-inline-start:8px;font-size:18px;font-weight:600;line-height:24px;padding:2px 8px;border:0;border-radius:8px;background:var(--secondary-soft);color:var(--text)}
 .status-summary{margin:0 0 12px;padding:12px 16px;border-radius:12px;background:var(--secondary-soft);font-weight:700}
 .status-unit{inline-size:1.25em}
 /* 가져오기 막는 창(2026-11-15): 화면 전체를 덮는 모달. 뒤 화면은 inert라 눌리지 않는다. */

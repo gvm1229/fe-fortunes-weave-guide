@@ -62,7 +62,7 @@
   .unit-role{line-height:24px}
   .unit-weapons{display:flex}
 }
-.swap-badge{position:absolute;inset-block-start:-12px;inset-inline-end:6px;z-index:2;display:inline-flex;align-items:center;gap:4px;block-size:24px;padding:0 6px 0 2px;border-radius:6px;background:var(--swap);color:var(--swap-fg);font-size:18px;font-weight:600;line-height:24px;white-space:nowrap;pointer-events:none}
+.swap-badge{position:absolute;inset-block-start:-12px;inset-inline-end:6px;z-index:2;display:inline-flex;align-items:center;gap:4px;block-size:24px;padding:0 6px 0 2px;border-radius:8px;background:var(--swap);color:var(--swap-fg);font-size:18px;font-weight:600;line-height:24px;white-space:nowrap;pointer-events:none}
 .swap-badge img{inline-size:20px;block-size:20px;border-radius:4px;object-fit:contain}
 .swap-badge span+span{margin-inline-start:-0px}
 @media(min-width:600px) and (max-aspect-ratio:1/1){.final-grid{gap:8px}}
@@ -97,14 +97,14 @@
 .team-panel .semantic table{inline-size:100%}
 .team-panel .semantic [data-face-list]{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:8px 0}
 .team-panel .semantic [data-face-list]>li{margin:0}
-.team-panel .semantic [data-face-row]{display:inline-flex;align-items:center;gap:6px;background:var(--secondary-soft);border-radius:8px;padding:4px 10px 4px 4px}
+.team-panel .semantic [data-face-row]{display:inline-flex;align-items:center;gap:6px;min-block-size:28px;background:var(--secondary-soft);color:var(--text);border:0;border-radius:8px;padding:2px 8px;font-size:18px;font-weight:600;line-height:24px}
 .team-panel .semantic .media-portrait,.team-panel .semantic .god-portrait{inline-size:40px;block-size:40px;object-fit:contain;border-radius:8px;margin:0}
 .team-controls{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-block-end:24px}
 .team-controls .button{margin-inline-start:auto}
 .route-intro,.chosen-plan,.detail-section{padding:24px;margin-block-end:24px}
 .route-intro .muted{font-size:18px}
 .priority-chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:12px 0}
-.priority-chips li{display:inline-flex;align-items:center;gap:6px;background:var(--secondary-soft);border-radius:8px;padding:4px 10px 4px 4px;font-weight:600}
+.priority-chips li{display:inline-flex;align-items:center;gap:6px;min-block-size:28px;background:var(--secondary-soft);color:var(--text);border:0;border-radius:8px;padding:2px 8px;font-size:18px;font-weight:600;line-height:24px}
 .priority-chips img{inline-size:28px;block-size:28px;border-radius:6px;object-fit:contain}
 .route-notes{margin:0;padding-inline-start:0;list-style:none}.route-notes li{margin-block:4px}
 .route-unit-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px;align-items:start}
@@ -120,7 +120,7 @@
 .route-weapons span{display:inline-flex;align-items:center;gap:4px}
 .route-weapons img{inline-size:24px;block-size:24px;object-fit:contain}
 .spell-chips{display:flex;flex-wrap:wrap;gap:8px}
-.spell-chips .button{min-block-size:40px;padding:4px 6px 4px 12px;background:var(--secondary-soft);color:var(--text)}
+.spell-chips .button{min-block-size:44px;padding:4px 6px 4px 12px;background:var(--secondary-soft);color:var(--text)}
 .route-unit .detail-pairs dd p{margin:0}
 .swap-list{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:12px}
 .swap-list li{border-block-start:1px solid var(--line);padding-block-start:12px}
