@@ -1,7 +1,7 @@
 {
   "status": "passed",
   "host": "Codex / Windows / installed Chrome / Playwright",
-  "base": "http://localhost:18763",
+  "base": "http://localhost:18764",
   "rows": [
     {
       "label": "theodora-todo-1440x900-light",
@@ -88,9 +88,9 @@
           "icons": [
             {
               "left": 104,
-              "top": 5224.453125,
+              "top": 5116.84375,
               "right": 124,
-              "bottom": 5244.453125,
+              "bottom": 5136.84375,
               "width": 20,
               "height": 20
             }
@@ -104,9 +104,9 @@
           "icons": [
             {
               "left": 104,
-              "top": 5720.78125,
+              "top": 5613.171875,
               "right": 124,
-              "bottom": 5740.78125,
+              "bottom": 5633.171875,
               "width": 20,
               "height": 20
             }
@@ -120,9 +120,9 @@
           "icons": [
             {
               "left": 674.4375,
-              "top": 7880.671875,
+              "top": 7760.265625,
               "right": 694.4375,
-              "bottom": 7900.671875,
+              "bottom": 7780.265625,
               "width": 20,
               "height": 20
             }
@@ -136,9 +136,9 @@
           "icons": [
             {
               "left": 843.78125,
-              "top": 7880.671875,
+              "top": 7760.265625,
               "right": 863.78125,
-              "bottom": 7900.671875,
+              "bottom": 7780.265625,
               "width": 20,
               "height": 20
             }
@@ -152,9 +152,9 @@
           "icons": [
             {
               "left": 82.078125,
-              "top": 7916.671875,
+              "top": 7796.265625,
               "right": 102.078125,
-              "bottom": 7936.671875,
+              "bottom": 7816.265625,
               "width": 20,
               "height": 20
             }
@@ -168,9 +168,9 @@
           "icons": [
             {
               "left": 220.3125,
-              "top": 7916.671875,
+              "top": 7796.265625,
               "right": 240.3125,
-              "bottom": 7936.671875,
+              "bottom": 7816.265625,
               "width": 20,
               "height": 20
             }
@@ -184,9 +184,9 @@
           "icons": [
             {
               "left": 285.84375,
-              "top": 17163.4375,
+              "top": 16966.25,
               "right": 305.84375,
-              "bottom": 17183.4375,
+              "bottom": 16986.25,
               "width": 20,
               "height": 20
             }
@@ -200,9 +200,9 @@
           "icons": [
             {
               "left": 443.828125,
-              "top": 17163.4375,
+              "top": 16966.25,
               "right": 463.828125,
-              "bottom": 17183.4375,
+              "bottom": 16986.25,
               "width": 20,
               "height": 20
             }
@@ -216,9 +216,9 @@
           "icons": [
             {
               "left": 487.75,
-              "top": 18815.828125,
+              "top": 18625.046875,
               "right": 507.75,
-              "bottom": 18835.828125,
+              "bottom": 18645.046875,
               "width": 20,
               "height": 20
             }
@@ -232,9 +232,9 @@
           "icons": [
             {
               "left": 614.625,
-              "top": 18815.828125,
+              "top": 18625.046875,
               "right": 634.625,
-              "bottom": 18835.828125,
+              "bottom": 18645.046875,
               "width": 20,
               "height": 20
             }
@@ -248,9 +248,9 @@
           "icons": [
             {
               "left": 348.359375,
-              "top": 19235.859375,
+              "top": 19048.28125,
               "right": 368.359375,
-              "bottom": 19255.859375,
+              "bottom": 19068.28125,
               "width": 20,
               "height": 20
             }
@@ -264,9 +264,9 @@
           "icons": [
             {
               "left": 708.078125,
-              "top": 19307.09375,
+              "top": 19119.515625,
               "right": 728.078125,
-              "bottom": 19327.09375,
+              "bottom": 19139.515625,
               "width": 20,
               "height": 20
             }
@@ -280,9 +280,9 @@
           "icons": [
             {
               "left": 104,
-              "top": 22193.84375,
+              "top": 22006.28125,
               "right": 124,
-              "bottom": 22213.84375,
+              "bottom": 22026.28125,
               "width": 20,
               "height": 20
             }
@@ -777,9 +777,9 @@
           "icons": [
             {
               "left": 104,
-              "top": 5224.453125,
+              "top": 5116.84375,
               "right": 124,
-              "bottom": 5244.453125,
+              "bottom": 5136.84375,
               "width": 20,
               "height": 20
             }
@@ -793,9 +793,9 @@
           "icons": [
             {
               "left": 104,
-              "top": 5720.78125,
+              "top": 5613.171875,
               "right": 124,
-              "bottom": 5740.78125,
+              "bottom": 5633.171875,
               "width": 20,
               "height": 20
             }
@@ -809,9 +809,9 @@
           "icons": [
             {
               "left": 674.4375,
-              "top": 7880.671875,
+              "top": 7760.265625,
               "right": 694.4375,
-              "bottom": 7900.671875,
+              "bottom": 7780.265625,
               "width": 20,
               "height": 20
             }
@@ -825,9 +825,9 @@
           "icons": [
             {
               "left": 843.78125,
-              "top": 7880.671875,
+              "top": 7760.265625,
               "right": 863.78125,
-              "bottom": 7900.671875,
+              "bottom": 7780.265625,
               "width": 20,
               "height": 20
             }
@@ -841,9 +841,9 @@
           "icons": [
             {
               "left": 82.078125,
-              "top": 7916.671875,
+              "top": 7796.265625,
               "right": 102.078125,
-              "bottom": 7936.671875,
+              "bottom": 7816.265625,
               "width": 20,
               "height": 20
             }
@@ -857,9 +857,9 @@
           "icons": [
             {
               "left": 220.3125,
-              "top": 7916.671875,
+              "top": 7796.265625,
               "right": 240.3125,
-              "bottom": 7936.671875,
+              "bottom": 7816.265625,
               "width": 20,
               "height": 20
             }
@@ -873,9 +873,9 @@
           "icons": [
             {
               "left": 285.84375,
-              "top": 17163.4375,
+              "top": 16966.25,
               "right": 305.84375,
-              "bottom": 17183.4375,
+              "bottom": 16986.25,
               "width": 20,
               "height": 20
             }
@@ -889,9 +889,9 @@
           "icons": [
             {
               "left": 443.828125,
-              "top": 17163.4375,
+              "top": 16966.25,
               "right": 463.828125,
-              "bottom": 17183.4375,
+              "bottom": 16986.25,
               "width": 20,
               "height": 20
             }
@@ -905,9 +905,9 @@
           "icons": [
             {
               "left": 487.75,
-              "top": 18815.828125,
+              "top": 18625.046875,
               "right": 507.75,
-              "bottom": 18835.828125,
+              "bottom": 18645.046875,
               "width": 20,
               "height": 20
             }
@@ -921,9 +921,9 @@
           "icons": [
             {
               "left": 614.625,
-              "top": 18815.828125,
+              "top": 18625.046875,
               "right": 634.625,
-              "bottom": 18835.828125,
+              "bottom": 18645.046875,
               "width": 20,
               "height": 20
             }
@@ -937,9 +937,9 @@
           "icons": [
             {
               "left": 348.359375,
-              "top": 19235.859375,
+              "top": 19048.28125,
               "right": 368.359375,
-              "bottom": 19255.859375,
+              "bottom": 19068.28125,
               "width": 20,
               "height": 20
             }
@@ -953,9 +953,9 @@
           "icons": [
             {
               "left": 708.078125,
-              "top": 19307.09375,
+              "top": 19119.515625,
               "right": 728.078125,
-              "bottom": 19327.09375,
+              "bottom": 19139.515625,
               "width": 20,
               "height": 20
             }
@@ -969,9 +969,9 @@
           "icons": [
             {
               "left": 104,
-              "top": 22193.84375,
+              "top": 22006.28125,
               "right": 124,
-              "bottom": 22213.84375,
+              "bottom": 22026.28125,
               "width": 20,
               "height": 20
             }
@@ -1402,9 +1402,9 @@
           "icons": [
             {
               "left": 167.609375,
-              "top": 1418.484375,
+              "top": 1421.125,
               "right": 187.609375,
-              "bottom": 1438.484375,
+              "bottom": 1441.125,
               "width": 20,
               "height": 20
             }
@@ -1418,9 +1418,9 @@
           "icons": [
             {
               "left": 167.609375,
-              "top": 1454.484375,
+              "top": 1457.125,
               "right": 187.609375,
-              "bottom": 1474.484375,
+              "bottom": 1477.125,
               "width": 20,
               "height": 20
             }
@@ -1434,9 +1434,9 @@
           "icons": [
             {
               "left": 184.890625,
-              "top": 1490.484375,
+              "top": 1493.125,
               "right": 204.890625,
-              "bottom": 1510.484375,
+              "bottom": 1513.125,
               "width": 20,
               "height": 20
             }
@@ -1450,9 +1450,9 @@
           "icons": [
             {
               "left": 184.890625,
-              "top": 1526.484375,
+              "top": 1529.125,
               "right": 204.890625,
-              "bottom": 1546.484375,
+              "bottom": 1549.125,
               "width": 20,
               "height": 20
             }
@@ -1466,9 +1466,9 @@
           "icons": [
             {
               "left": 84,
-              "top": 9497.984375,
+              "top": 8543.5,
               "right": 104,
-              "bottom": 9517.984375,
+              "bottom": 8563.5,
               "width": 20,
               "height": 20
             }
@@ -1482,9 +1482,9 @@
           "icons": [
             {
               "left": 84,
-              "top": 10169.90625,
+              "top": 9218.421875,
               "right": 104,
-              "bottom": 10189.90625,
+              "bottom": 9238.421875,
               "width": 20,
               "height": 20
             }
@@ -1498,9 +1498,9 @@
           "icons": [
             {
               "left": 66.078125,
-              "top": 13833.015625,
+              "top": 12831.734375,
               "right": 86.078125,
-              "bottom": 13853.015625,
+              "bottom": 12851.734375,
               "width": 20,
               "height": 20
             }
@@ -1514,9 +1514,9 @@
           "icons": [
             {
               "left": 235.421875,
-              "top": 13833.015625,
+              "top": 12831.734375,
               "right": 255.421875,
-              "bottom": 13853.015625,
+              "bottom": 12851.734375,
               "width": 20,
               "height": 20
             }
@@ -1530,9 +1530,9 @@
           "icons": [
             {
               "left": 121.90625,
-              "top": 13869.015625,
+              "top": 12867.734375,
               "right": 141.90625,
-              "bottom": 13889.015625,
+              "bottom": 12887.734375,
               "width": 20,
               "height": 20
             }
@@ -1546,9 +1546,9 @@
           "icons": [
             {
               "left": 46,
-              "top": 13905.015625,
+              "top": 12903.734375,
               "right": 66,
-              "bottom": 13925.015625,
+              "bottom": 12923.734375,
               "width": 20,
               "height": 20
             }
@@ -1562,9 +1562,9 @@
           "icons": [
             {
               "left": 84,
-              "top": 28232.609375,
+              "top": 27071.84375,
               "right": 104,
-              "bottom": 28252.609375,
+              "bottom": 27091.84375,
               "width": 20,
               "height": 20
             }
@@ -1578,9 +1578,9 @@
           "icons": [
             {
               "left": 241.984375,
-              "top": 28232.609375,
+              "top": 27071.84375,
               "right": 261.984375,
-              "bottom": 28252.609375,
+              "bottom": 27091.84375,
               "width": 20,
               "height": 20
             }
@@ -1594,9 +1594,9 @@
           "icons": [
             {
               "left": 197.75,
-              "top": 30129.515625,
+              "top": 28980.453125,
               "right": 217.75,
-              "bottom": 30149.515625,
+              "bottom": 29000.453125,
               "width": 20,
               "height": 20
             }
@@ -1610,9 +1610,9 @@
           "icons": [
             {
               "left": 84,
-              "top": 30165.515625,
+              "top": 29016.453125,
               "right": 104,
-              "bottom": 30185.515625,
+              "bottom": 29036.453125,
               "width": 20,
               "height": 20
             }
@@ -1626,9 +1626,9 @@
           "icons": [
             {
               "left": 46,
-              "top": 30754.78125,
+              "top": 29608.921875,
               "right": 66,
-              "bottom": 30774.78125,
+              "bottom": 29628.921875,
               "width": 20,
               "height": 20
             }
@@ -1642,9 +1642,9 @@
           "icons": [
             {
               "left": 106.28125,
-              "top": 30912.84375,
+              "top": 29766.984375,
               "right": 126.28125,
-              "bottom": 30932.84375,
+              "bottom": 29786.984375,
               "width": 20,
               "height": 20
             }
@@ -1658,9 +1658,9 @@
           "icons": [
             {
               "left": 84,
-              "top": 35299.53125,
+              "top": 34262.75,
               "right": 104,
-              "bottom": 35319.53125,
+              "bottom": 34282.75,
               "width": 20,
               "height": 20
             }
@@ -1671,79 +1671,79 @@
         {
           "title": "시작 전",
           "open": false,
-          "height": 57.59375,
+          "height": 56,
           "children": [
             "svg",
             "SPAN",
             "SPAN"
           ],
-          "summary": 57.59375
+          "summary": 56
         },
         {
           "title": "1장",
           "open": false,
-          "height": 57.59375,
+          "height": 56,
           "children": [
             "svg",
             "SPAN",
             "SPAN"
           ],
-          "summary": 57.59375
+          "summary": 56
         },
         {
           "title": "2장",
           "open": false,
-          "height": 57.59375,
+          "height": 56,
           "children": [
             "svg",
             "SPAN",
             "SPAN"
           ],
-          "summary": 57.59375
+          "summary": 56
         },
         {
           "title": "3장",
           "open": false,
-          "height": 57.59375,
+          "height": 56,
           "children": [
             "svg",
             "SPAN",
             "SPAN"
           ],
-          "summary": 57.59375
+          "summary": 56
         },
         {
           "title": "4장",
           "open": false,
-          "height": 57.59375,
+          "height": 56,
           "children": [
             "svg",
             "SPAN",
             "SPAN"
           ],
-          "summary": 57.59375
+          "summary": 56
         },
         {
           "title": "5장",
           "open": false,
-          "height": 57.59375,
+          "height": 56,
           "children": [
             "svg",
             "SPAN",
             "SPAN"
           ],
-          "summary": 57.59375
+          "summary": 56
         },
         {
           "title": "6장",
           "open": false,
-          "height": 57.59375,
+          "height": 56,
           "children": [
             "svg",
             "SPAN",
             "SPAN"
           ],
-          "summary": 57.59375
+          "summary": 56
         }
       ],
       "partialLines": [],
@@ -2091,9 +2091,9 @@
           "icons": [
             {
               "left": 167.609375,
-              "top": 1418.484375,
+              "top": 1421.125,
               "right": 187.609375,
-              "bottom": 1438.484375,
+              "bottom": 1441.125,
               "width": 20,
               "height": 20
             }
@@ -2107,9 +2107,9 @@
           "icons": [
             {
               "left": 167.609375,
-              "top": 1454.484375,
+              "top": 1457.125,
               "right": 187.609375,
-              "bottom": 1474.484375,
+              "bottom": 1477.125,
               "width": 20,
               "height": 20
             }
@@ -2123,9 +2123,9 @@
           "icons": [
             {
               "left": 184.890625,
-              "top": 1490.484375,
+              "top": 1493.125,
               "right": 204.890625,
-              "bottom": 1510.484375,
+              "bottom": 1513.125,
               "width": 20,
               "height": 20
             }
@@ -2139,9 +2139,9 @@
           "icons": [
             {
               "left": 184.890625,
-              "top": 1526.484375,
+              "top": 1529.125,
               "right": 204.890625,
-              "bottom": 1546.484375,
+              "bottom": 1549.125,
               "width": 20,
               "height": 20
             }
@@ -2155,9 +2155,9 @@
           "icons": [
             {
               "left": 84,
-              "top": 9497.984375,
+              "top": 8543.5,
               "right": 104,
-              "bottom": 9517.984375,
+              "bottom": 8563.5,
               "width": 20,
               "height": 20
             }
@@ -2171,9 +2171,9 @@
           "icons": [
             {
               "left": 84,
-              "top": 10169.90625,
+              "top": 9218.421875,
               "right": 104,
-              "bottom": 10189.90625,
+              "bottom": 9238.421875,
               "width": 20,
               "height": 20
             }
@@ -2187,9 +2187,9 @@
           "icons": [
             {
               "left": 66.078125,
-              "top": 13833.015625,
+              "top": 12831.734375,
               "right": 86.078125,
-              "bottom": 13853.015625,
+              "bottom": 12851.734375,
               "width": 20,
               "height": 20
             }
@@ -2203,9 +2203,9 @@
           "icons": [
             {
               "left": 235.421875,
-              "top": 13833.015625,
+              "top": 12831.734375,
               "right": 255.421875,
-              "bottom": 13853.015625,
+              "bottom": 12851.734375,
               "width": 20,
               "height": 20
             }
@@ -2219,9 +2219,9 @@
           "icons": [
             {
               "left": 121.90625,
-              "top": 13869.015625,
+              "top": 12867.734375,
               "right": 141.90625,
-              "bottom": 13889.015625,
+              "bottom": 12887.734375,
               "width": 20,
               "height": 20
             }
@@ -2235,9 +2235,9 @@
           "icons": [
             {
               "left": 46,
-              "top": 13905.015625,
+              "top": 12903.734375,
               "right": 66,
-              "bottom": 13925.015625,
+              "bottom": 12923.734375,
               "width": 20,
               "height": 20
             }
@@ -2251,9 +2251,9 @@
           "icons": [
             {
               "left": 84,
-              "top": 28232.609375,
+              "top": 27071.84375,
               "right": 104,
-              "bottom": 28252.609375,
+              "bottom": 27091.84375,
               "width": 20,
               "height": 20
             }
@@ -2267,9 +2267,9 @@
           "icons": [
             {
               "left": 241.984375,
-              "top": 28232.609375,
+              "top": 27071.84375,
               "right": 261.984375,
-              "bottom": 28252.609375,
+              "bottom": 27091.84375,
               "width": 20,
               "height": 20
             }
@@ -2283,9 +2283,9 @@
           "icons": [
             {
               "left": 197.75,
-              "top": 30129.515625,
+              "top": 28980.453125,
               "right": 217.75,
-              "bottom": 30149.515625,
+              "bottom": 29000.453125,
               "width": 20,
               "height": 20
             }
@@ -2299,9 +2299,9 @@
           "icons": [
             {
               "left": 84,
-              "top": 30165.515625,
+              "top": 29016.453125,
               "right": 104,
-              "bottom": 30185.515625,
+              "bottom": 29036.453125,
               "width": 20,
               "height": 20
             }
@@ -2315,9 +2315,9 @@
           "icons": [
             {
               "left": 46,
-              "top": 30754.78125,
+              "top": 29608.921875,
               "right": 66,
-              "bottom": 30774.78125,
+              "bottom": 29628.921875,
               "width": 20,
               "height": 20
             }
@@ -2331,9 +2331,9 @@
           "icons": [
             {
               "left": 106.28125,
-              "top": 30912.84375,
+              "top": 29766.984375,
               "right": 126.28125,
-              "bottom": 30932.84375,
+              "bottom": 29786.984375,
               "width": 20,
               "height": 20
             }
@@ -2347,9 +2347,9 @@
           "icons": [
             {
               "left": 84,
-              "top": 35299.53125,
+              "top": 34262.75,
               "right": 104,
-              "bottom": 35319.53125,
+              "bottom": 34282.75,
               "width": 20,
               "height": 20
             }
@@ -2360,79 +2360,79 @@
         {
           "title": "시작 전",
           "open": false,
-          "height": 57.59375,
+          "height": 56,
           "children": [
             "svg",
             "SPAN",
             "SPAN"
           ],
-          "summary": 57.59375
+          "summary": 56
         },
         {
           "title": "1장",
           "open": false,
-          "height": 57.59375,
+          "height": 56,
           "children": [
             "svg",
             "SPAN",
             "SPAN"
           ],
-          "summary": 57.59375
+          "summary": 56
         },
         {
           "title": "2장",
           "open": false,
-          "height": 57.59375,
+          "height": 56,
           "children": [
             "svg",
             "SPAN",
             "SPAN"
           ],
-          "summary": 57.59375
+          "summary": 56
         },
         {
           "title": "3장",
           "open": false,
-          "height": 57.59375,
+          "height": 56,
           "children": [
             "svg",
             "SPAN",
             "SPAN"
           ],
-          "summary": 57.59375
+          "summary": 56
         },
         {
           "title": "4장",
           "open": false,
-          "height": 57.59375,
+          "height": 56,
           "children": [
             "svg",
             "SPAN",
             "SPAN"
           ],
-          "summary": 57.59375
+          "summary": 56
         },
         {
           "title": "5장",
           "open": false,
-          "height": 57.59375,
+          "height": 56,
           "children": [
             "svg",
             "SPAN",
             "SPAN"
           ],
-          "summary": 57.59375
+          "summary": 56
         },
         {
           "title": "6장",
           "open": false,
-          "height": 57.59375,
+          "height": 56,
           "children": [
             "svg",
             "SPAN",
             "SPAN"
           ],
-          "summary": 57.59375
+          "summary": 56
         }
       ],
       "partialLines": [],
@@ -2789,7 +2789,7 @@
         "toolbarBottom": 72.796875,
         "visibleBottom": 900
       },
-      "fading": 0.908287,
+      "fading": 0.908653,
       "removed": true
     },
     {
@@ -2841,7 +2841,7 @@
         "toolbarBottom": 72.796875,
         "visibleBottom": 900
       },
-      "fading": 0.908327,
+      "fading": 0.908467,
       "removed": true
     },
     {
@@ -2870,9 +2870,9 @@
       "height": 812,
       "theme": "light",
       "check": "load-current-chapter",
-      "scrollY": 1374,
+      "scrollY": 1791,
       "current": "7장",
-      "top": 119.90625,
+      "top": 119.75,
       "toolbarBottom": 104
     },
     {
@@ -2888,12 +2888,12 @@
       "delay": "2s",
       "opacity": "1",
       "targetViewport": {
-        "top": 310.984375,
-        "bottom": 549.484375,
+        "top": 310.625,
+        "bottom": 549.125,
         "toolbarBottom": 104,
         "visibleBottom": 812
       },
-      "fading": 0.908633,
+      "fading": 0.908033,
       "removed": true
     },
     {
@@ -2922,9 +2922,9 @@
       "height": 812,
       "theme": "dark",
       "check": "load-current-chapter",
-      "scrollY": 1374,
+      "scrollY": 1791,
       "current": "7장",
-      "top": 119.90625,
+      "top": 119.75,
       "toolbarBottom": 104
     },
     {
@@ -2940,12 +2940,12 @@
       "delay": "2s",
       "opacity": "1",
       "targetViewport": {
-        "top": 310.984375,
-        "bottom": 549.484375,
+        "top": 310.625,
+        "bottom": 549.125,
         "toolbarBottom": 104,
         "visibleBottom": 812
       },
-      "fading": 0.90698,
+      "fading": 0.954847,
       "removed": true
     },
     {

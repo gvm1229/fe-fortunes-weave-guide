@@ -2,30 +2,42 @@
   "status": "passed",
   "errors": [],
   "host": "Codex / Windows / Chrome / static build",
-  "base": "http://localhost:3000",
+  "base": "http://localhost:18764",
   "rows": [
     {
       "width": 375,
       "height": 812,
       "theme": "light",
       "horizontal": 0,
-      "vertical": 0,
+      "vertical": 836,
       "cards": [
         {
           "route": "cai",
-          "clearance": 1.21875
+          "left": 16,
+          "top": 72,
+          "bottom": 413.03125,
+          "clearance": 8.609375
         },
         {
           "route": "dietrich",
-          "clearance": 1.21875
+          "left": 16,
+          "top": 429.03125,
+          "bottom": 770.0625,
+          "clearance": 8.609375
         },
         {
           "route": "theodora",
-          "clearance": 1.21875
+          "left": 16,
+          "top": 786.0625,
+          "bottom": 1127.09375,
+          "clearance": 8.609375
         },
         {
           "route": "leda",
-          "clearance": 1.21875
+          "left": 16,
+          "top": 1143.09375,
+          "bottom": 1484.125,
+          "clearance": 8.609375
         }
       ],
       "screenshot": ".tmp/final-home/375-light.png"
@@ -35,23 +47,35 @@
       "height": 812,
       "theme": "dark",
       "horizontal": 0,
-      "vertical": 0,
+      "vertical": 836,
       "cards": [
         {
           "route": "cai",
-          "clearance": 1.21875
+          "left": 16,
+          "top": 72,
+          "bottom": 413.03125,
+          "clearance": 8.609375
         },
         {
           "route": "dietrich",
-          "clearance": 1.21875
+          "left": 16,
+          "top": 429.03125,
+          "bottom": 770.0625,
+          "clearance": 8.609375
         },
         {
           "route": "theodora",
-          "clearance": 1.21875
+          "left": 16,
+          "top": 786.0625,
+          "bottom": 1127.09375,
+          "clearance": 8.609375
         },
         {
           "route": "leda",
-          "clearance": 1.21875
+          "left": 16,
+          "top": 1143.09375,
+          "bottom": 1484.125,
+          "clearance": 8.609375
         }
       ],
       "screenshot": ".tmp/final-home/375-dark.png"
@@ -61,23 +85,35 @@
       "height": 1024,
       "theme": "light",
       "horizontal": 0,
-      "vertical": 0,
+      "vertical": 988,
       "cards": [
         {
           "route": "cai",
-          "clearance": 1.21875
+          "left": 24,
+          "top": 76,
+          "bottom": 506.078125,
+          "clearance": 8.609375
         },
         {
           "route": "dietrich",
-          "clearance": 1.21875
+          "left": 24,
+          "top": 522.078125,
+          "bottom": 952.15625,
+          "clearance": 8.609375
         },
         {
           "route": "theodora",
-          "clearance": 1.21875
+          "left": 24,
+          "top": 968.15625,
+          "bottom": 1398.234375,
+          "clearance": 8.609375
         },
         {
           "route": "leda",
-          "clearance": 1.21875
+          "left": 24,
+          "top": 1414.234375,
+          "bottom": 1844.3125,
+          "clearance": 8.609375
         }
       ],
       "screenshot": ".tmp/final-home/768-light.png"
@@ -87,23 +123,35 @@
       "height": 1024,
       "theme": "dark",
       "horizontal": 0,
-      "vertical": 0,
+      "vertical": 988,
       "cards": [
         {
           "route": "cai",
-          "clearance": 1.21875
+          "left": 24,
+          "top": 76,
+          "bottom": 506.078125,
+          "clearance": 8.609375
         },
         {
           "route": "dietrich",
-          "clearance": 1.21875
+          "left": 24,
+          "top": 522.078125,
+          "bottom": 952.15625,
+          "clearance": 8.609375
         },
         {
           "route": "theodora",
-          "clearance": 1.21875
+          "left": 24,
+          "top": 968.15625,
+          "bottom": 1398.234375,
+          "clearance": 8.609375
         },
         {
           "route": "leda",
-          "clearance": 1.21875
+          "left": 24,
+          "top": 1414.234375,
+          "bottom": 1844.3125,
+          "clearance": 8.609375
         }
       ],
       "screenshot": ".tmp/final-home/768-dark.png"
@@ -117,18 +165,30 @@
       "cards": [
         {
           "route": "cai",
+          "left": 24,
+          "top": 84,
+          "bottom": 544,
           "clearance": 16.609375
         },
         {
           "route": "dietrich",
+          "left": 338,
+          "top": 84,
+          "bottom": 544,
           "clearance": 16.609375
         },
         {
           "route": "theodora",
+          "left": 652,
+          "top": 84,
+          "bottom": 544,
           "clearance": 16.609375
         },
         {
           "route": "leda",
+          "left": 966,
+          "top": 84,
+          "bottom": 544,
           "clearance": 16.609375
         }
       ],
@@ -143,18 +203,30 @@
       "cards": [
         {
           "route": "cai",
+          "left": 24,
+          "top": 84,
+          "bottom": 544,
           "clearance": 16.609375
         },
         {
           "route": "dietrich",
+          "left": 338,
+          "top": 84,
+          "bottom": 544,
           "clearance": 16.609375
         },
         {
           "route": "theodora",
+          "left": 652,
+          "top": 84,
+          "bottom": 544,
           "clearance": 16.609375
         },
         {
           "route": "leda",
+          "left": 966,
+          "top": 84,
+          "bottom": 544,
           "clearance": 16.609375
         }
       ],
@@ -169,18 +241,30 @@
       "cards": [
         {
           "route": "cai",
+          "left": 24,
+          "top": 84,
+          "bottom": 724,
           "clearance": 16.609375
         },
         {
           "route": "dietrich",
+          "left": 378,
+          "top": 84,
+          "bottom": 724,
           "clearance": 16.609375
         },
         {
           "route": "theodora",
+          "left": 732,
+          "top": 84,
+          "bottom": 724,
           "clearance": 16.609375
         },
         {
           "route": "leda",
+          "left": 1086,
+          "top": 84,
+          "bottom": 724,
           "clearance": 16.609375
         }
       ],
@@ -195,18 +279,30 @@
       "cards": [
         {
           "route": "cai",
+          "left": 24,
+          "top": 84,
+          "bottom": 724,
           "clearance": 16.609375
         },
         {
           "route": "dietrich",
+          "left": 378,
+          "top": 84,
+          "bottom": 724,
           "clearance": 16.609375
         },
         {
           "route": "theodora",
+          "left": 732,
+          "top": 84,
+          "bottom": 724,
           "clearance": 16.609375
         },
         {
           "route": "leda",
+          "left": 1086,
+          "top": 84,
+          "bottom": 724,
           "clearance": 16.609375
         }
       ],
@@ -221,18 +317,30 @@
       "cards": [
         {
           "route": "cai",
+          "left": 24,
+          "top": 84,
+          "bottom": 1984,
           "clearance": 16.609375
         },
         {
           "route": "dietrich",
+          "left": 978,
+          "top": 84,
+          "bottom": 1984,
           "clearance": 16.609375
         },
         {
           "route": "theodora",
+          "left": 1932,
+          "top": 84,
+          "bottom": 1984,
           "clearance": 16.609375
         },
         {
           "route": "leda",
+          "left": 2886,
+          "top": 84,
+          "bottom": 1984,
           "clearance": 16.609375
         }
       ],
@@ -247,18 +355,30 @@
       "cards": [
         {
           "route": "cai",
+          "left": 24,
+          "top": 84,
+          "bottom": 1984,
           "clearance": 16.609375
         },
         {
           "route": "dietrich",
+          "left": 978,
+          "top": 84,
+          "bottom": 1984,
           "clearance": 16.609375
         },
         {
           "route": "theodora",
+          "left": 1932,
+          "top": 84,
+          "bottom": 1984,
           "clearance": 16.609375
         },
         {
           "route": "leda",
+          "left": 2886,
+          "top": 84,
+          "bottom": 1984,
           "clearance": 16.609375
         }
       ],

@@ -1,7 +1,7 @@
 {
   "status": "passed",
   "host": "Claude / Windows / Chrome / isolated Playwright contexts",
-  "base": "http://localhost:18763",
+  "base": "http://localhost:18764",
   "checks": [
     "완료 숨기기·새로 고침 기억",
     "육성판 필터·기억·시험 안내·인물 안 병종 버튼",
