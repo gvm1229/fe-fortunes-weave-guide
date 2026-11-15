@@ -1,13 +1,13 @@
 // 2026-11-15 일관성 정리(docs/design-spec.md "일관성 정리 · 2026-11-15 사용자 승인")가 화면에서 지켜지는지 본다.
 // 1440×900·390×844에서 팀 화면, 세오도라 1부 다섯 화면, 3부를 열고(모든 접기를 펼친 뒤) 다음을 확인한다.
-// 1) 보이는 배지 일반 아이콘(.game-badge>svg)은 채움(fill이 none이 아님)
+// 1) [U53] 보이는 배지 일반 아이콘(.game-badge>svg)은 채움(fill이 none이 아님)
 // 2) 보이는 글은 18px 이상(예외: 휴대폰 크기의 팀 격자 칸 .unit-card·.final-grid 14px)
-// 3) 보이는 표 머리 칸(행 머리 th)은 왼쪽 정렬
-// 4) 폭 60px 이상인 단추·단추 링크·접기 제목·선택 상자는 모서리 10px(아래 EXCEPTIONS 제외)
-// 5) 접기 제목(details>summary)에 브라우저 기본 ▶ 표시가 없음(list-style-type: none)
-// 6) 390×844에서 4글자 이하인 배지 이름(.badge-label)은 한 줄(상자 높이 32px 이하). 배지는 이름과 값 사이에서만 줄을 넘긴다.
-// 8) 390×844에서 금액 표([data-gold-table])·본문 표(.source-markup table)는 칸 폭 안에 들어감(가로로 넘치거나 부모보다 넓지 않음)
-// 7) 배지 이름과 값이 같은 줄에 있으면 둘 사이가 3px 이상("반짝반짝어 1마리"가 "반짝반짝어1마리"로 붙지 않게)
+// 3) [U54] 보이는 표 머리 칸(행 머리 th)은 왼쪽·위 정렬, 인물 표 머리 칸 폭은 데스크톱 120px·휴대폰 100px
+// 4) [U55] 폭 60px 이상인 단추·단추 링크·접기 제목·선택 상자는 모서리 10px(아래 EXCEPTIONS 제외). 장 선택·완료 숨기기는 채운 조작 요소(390px 미만 예외는 사양)
+// 5) [U55] 접기 제목(details>summary)에 브라우저 기본 ▶ 표시가 없음(list-style-type: none)
+// 6) [U56] 390×844에서 4글자 이하인 배지 이름(.badge-label)은 한 줄(상자 높이 32px 이하). 배지는 이름과 값 사이에서만 줄을 넘긴다.
+// 7) [U56] 배지 이름과 값이 같은 줄에 있으면 둘 사이가 3px 이상("반짝반짝어 1마리"가 "반짝반짝어1마리"로 붙지 않게)
+// 8) [U56] 390×844에서 금액 표([data-gold-table])·본문 표(.source-markup·.semantic table)는 칸 폭 안에 들어감(가로로 넘치거나 부모보다 넓지 않음)
 import { chromium } from '@playwright/test';
 import { resolve } from 'node:path';
 process.env.TEMP = process.env.TMP = resolve('.tmp');
@@ -27,7 +27,8 @@ const EXCEPTIONS = [
 function audit({ EXCEPTIONS, phone }) {
   const visible = e => e.checkVisibility({ visibilityProperty: true, opacityProperty: true }) && (r => r.width > 0 && r.height > 0)(e.getBoundingClientRect());
   const name = e => `${e.tagName.toLowerCase()}${typeof e.className === 'string' && e.className.trim() ? '.' + e.className.trim().split(/\s+/).slice(0, 2).join('.') : ''} «${(e.getAttribute('aria-label') || e.textContent || '').trim().slice(0, 16)}»`;
-  const out = { fill: [], font: [], th: [], radius: [], marker: [], wrap: [], valueGap: [], tableFit: [] };
+  const out = { fill: [], font: [], th: [], thWidth: [], radius: [], filled: [], marker: [], wrap: [], valueGap: [], tableFit: [] };
+  // [U53]
   for (const s of document.querySelectorAll('.game-badge>svg')) if (visible(s) && getComputedStyle(s).fill === 'none') out.fill.push(name(s.parentElement));
   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
   for (let n = walker.nextNode(); n; n = walker.nextNode()) {
@@ -38,8 +39,14 @@ function audit({ EXCEPTIONS, phone }) {
   }
   for (const th of document.querySelectorAll('th')) {
     const rowHeader = th.scope === 'row' || (!th.closest('thead') && th === th.parentElement.firstElementChild);
-    if (rowHeader && visible(th) && !/^(left|start)$/.test(getComputedStyle(th).textAlign)) out.th.push(`${name(th)} ${getComputedStyle(th).textAlign}`);
+    // [U54]
+    if (rowHeader && visible(th) && (!/^(left|start)$/.test(getComputedStyle(th).textAlign) || getComputedStyle(th).verticalAlign !== 'top')) out.th.push(`${name(th)} ${getComputedStyle(th).textAlign}/${getComputedStyle(th).verticalAlign}`);
   }
+  // [U54] 인물 표 머리 칸 폭
+  for (const th of document.querySelectorAll('.person-summary th[scope=row]')) { if (!visible(th)) continue; const w = th.getBoundingClientRect().width; if (Math.abs(w - (innerWidth < 768 ? 100 : 120)) > 1) out.thWidth.push(`${name(th)} ${Math.round(w)}px`); }
+  // [U55] 장 선택·완료 숨기기는 채운 조작 요소(389px 이하 옛 모양 예외는 사양 보고)
+  if (innerWidth >= 390) for (const e of document.querySelectorAll('.route-head .chapter-picker select, .route-head .check-control')) { const bg = getComputedStyle(e).backgroundColor; if (visible(e) && (bg === 'rgba(0, 0, 0, 0)' || bg === 'transparent')) out.filled.push(name(e)); }
+  // [U55]
   for (const e of document.querySelectorAll('button, a.button, summary, select')) {
     if (!visible(e) || e.getBoundingClientRect().width < 60 || EXCEPTIONS.some(sel => e.matches(sel))) continue;
     const c = getComputedStyle(e);
@@ -48,12 +55,13 @@ function audit({ EXCEPTIONS, phone }) {
     if (c.borderTopLeftRadius !== '10px') out.radius.push(`${name(e)} ${c.borderTopLeftRadius}`);
   }
   for (const s of document.querySelectorAll('details>summary')) if (visible(s) && getComputedStyle(s).listStyleType !== 'none') out.marker.push(`${name(s)} ${getComputedStyle(s).listStyleType}`);
+  // [U56]
   for (const b of document.querySelectorAll('.game-badge')) { const l = b.querySelector(':scope>.badge-label'), v = b.querySelector(':scope>.badge-value'); if (!l || !v || !visible(b)) continue; const a = l.getBoundingClientRect(), c = v.getBoundingClientRect(); if (Math.min(a.bottom, c.bottom) - Math.max(a.top, c.top) > 2 && c.left - a.right < 3) out.valueGap.push(`${name(b)} ${Math.round(c.left - a.right)}px`); }
   if (phone) for (const l of document.querySelectorAll('.game-badge .badge-label')) { if (!visible(l)) continue; const h = l.getBoundingClientRect().height; if (l.textContent.trim().length <= 4 && h > 32) out.wrap.push(`${name(l.closest('.game-badge'))} ${Math.round(h)}px`); }
-  if (phone) for (const t of document.querySelectorAll('[data-gold-table], .source-markup table')) { if (!visible(t)) continue; const w = t.getBoundingClientRect().width, pw = t.parentElement.clientWidth; if (t.scrollWidth > t.clientWidth + 1 || w > pw + 1) out.tableFit.push(`${name(t.rows[1]?.cells[0] || t)} 표 ${Math.round(Math.max(w, t.scrollWidth))}px > 칸 ${pw}px`); }
+  if (phone) for (const t of document.querySelectorAll('[data-gold-table], .source-markup table, .semantic table')) { if (!visible(t)) continue; const w = t.getBoundingClientRect().width, pw = t.parentElement.clientWidth; if (t.scrollWidth > t.clientWidth + 1 || w > pw + 1) out.tableFit.push(`${name(t.rows[1]?.cells[0] || t)} 표 ${Math.round(Math.max(w, t.scrollWidth))}px > 칸 ${pw}px`); }
   return out;
 }
-const LABELS = { fill: '배지 아이콘 채움', font: '글자 18px 이상', th: '표 머리 칸 왼쪽', radius: '단추 모서리 10px', marker: '기본 ▶ 없음', wrap: '짧은 배지 이름 한 줄', tableFit: '표가 칸 안에 들어감', valueGap: '배지 이름·값 간격 3px 이상' };
+const LABELS = { fill: '배지 아이콘 채움', font: '글자 18px 이상', th: '표 머리 칸 왼쪽·위', thWidth: '인물 표 머리 칸 폭', radius: '단추 모서리 10px', filled: '장 선택·완료 숨기기 채움', marker: '기본 ▶ 없음', wrap: '짧은 배지 이름 한 줄', tableFit: '표가 칸 안에 들어감', valueGap: '배지 이름·값 간격 3px 이상' };
 let failed = 0, screens = 0;
 async function check(p, label, phone) {
   await p.evaluate(() => { document.querySelectorAll('details:not(.backup-menu)').forEach(d => { d.open = true; }); scrollTo(0, 0); });

@@ -135,6 +135,11 @@ for (const f of [...walk('app', ['.ts', '.tsx', '.css']), ...walk('components', 
     // 'A·B C·B'처럼 가운뎃점 쌍 뒤에 바로 단계(C·B·A)가 오는 꼴도 쌍이다(지웠던 '세오도라·피아나 C·B' 꼴).
     for (const m of s.matchAll(/([가-힣]+)·([가-힣]+) [CBA](?![a-zA-Z])/g)) if (ko[m[1]] && ko[m[2]] && m[1] !== m[2]) assert.ok(full.has(key(ko[m[1]], ko[m[2]])), `[U39] ${n}: 없는 지원 쌍 ${m[0]}`); } }
 
+// [U57] 아나톨리아 최종 병종은 드루이드이고 샐러맨더를 든다(공략 자료 기준). 그자람 최종 병종은 소드 마스터(드래군 검토 뒤 유지).
+{ for (const f of ['content/source/react-content.json', 'content/display-parity.json']) { const u = read(f).team.units;
+    assert.equal(u['아나톨리아'].class, '드루이드', `[U57] ${f} 아나톨리아 드루이드`); assert.ok(u['아나톨리아'].signatureWeapons.some(w => w.name === '샐러맨더'), `[U57] ${f} 아나톨리아 샐러맨더`);
+    assert.equal(u['그자람'].class, '소드 마스터', `[U57] ${f} 그자람 소드 마스터`); } }
+
 // 규칙 문서: 모든 규칙 줄은 '검사' 칸에 하나 이상의 파일을 적고, 그 파일에는 규칙 번호가 있다.
 { const doc = readFileSync('docs/user-rules.md', 'utf8'), rows = doc.split('\n').filter(l => /^\| [UP]\d\d \|/.test(l)), ids = new Set();
   assert.ok(rows.length >= 40, '규칙 줄 수');

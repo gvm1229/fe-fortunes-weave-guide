@@ -10,7 +10,7 @@
 
 ## 사용자 규칙(강제)
 
-[docs/user-rules.md](docs/user-rules.md)의 규칙을 모두 지킨다. 화면·자료 규칙은 검사가 막고, 아래 P04~P11은 사람이 지키는 절차다(자동 검사 아님). 배포는 `node scripts/release.mjs check` → Fable 5.2 검토 → 커밋 → `node scripts/release.mjs deploy`로만 한다.
+[docs/user-rules.md](docs/user-rules.md)의 규칙을 모두 지킨다. 화면·자료 규칙은 검사가 막고, 아래 P04~P12는 사람이 지키는 절차다(자동 검사 아님). 배포는 `node scripts/release.mjs check` → Fable 5.2 검토 → 커밋 → `node scripts/release.mjs deploy`로만 한다.
 
 - [P04] 불분명한 결정은 추천이 보이는 질문(선택지 + 추천 표시)으로 묻는다.
 - [P05] 사용자에게 보여 줄 미리보기는 실시간 개발 서버(`npm run dev`, localhost:3000)로 한다. 정적 빌드는 검사용이다. localhost:3000의 체크 칸은 누르지 않는다(사용자 실제 기록).
@@ -20,6 +20,7 @@
 - [P09] 자료가 서로 다르면 원본 공략으로 확인되는 것만 고치고, 확인 안 되면 "미확인"으로 둔다.
 - [P10] 이전 프로젝트(fe-fortunes-weave-guide-main)는 읽기 전용이다. `archive/` 수정 금지, `hive` 명령·전역 지식 기록 금지.
 - [P11] 커밋은 할 일 하나마다, 작성자는 사용자 본인, 공동 작성자(Co-Authored-By) 줄 금지, 한국어 Conventional Commit 제목. 검토 통과 뒤 배포.
+- [P12] Fable 5.2는 자문(계획·디자인 값·검토)만 하고 코드를 쓰지 않는다. 코드 작성은 Opus 5.5 중간 강도에 맡긴다(2026-11-15).
 
 <!-- BEGIN:nextjs-agent-rules -->
 
