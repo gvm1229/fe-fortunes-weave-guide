@@ -65,7 +65,7 @@
 | U52 | 레다는 세오도라 다음에 하므로 장마다 추가 명성이 붙는다. 제스터 영입 명성 10은 10장까지 서둘러 채우는 단계를 둔다(미확인 표시와 함께). 1부 진행 순서는 세오도라 → 레다 → 디트리히 → 카이 | 11-14 | `scripts/rules-check.mjs` |
 | U53 | 배지 안 일반 아이콘은 채운다(면은 배지 그림색, 속무늬는 배지 바탕색 선). 단추가 채움이므로 아이콘도 채움 | 11-15 | `scripts/consistency-browser-check.mjs` |
 | U54 | 표 머리 칸은 왼쪽·위 정렬. 폭은 데스크톱 120px, 휴대폰 100px | 11-15 | `scripts/consistency-browser-check.mjs` `scripts/browser-check.mjs` |
-| U55 | 같은 종류는 같은 모양: 단추·입력 모서리 10px, 장 선택·완료 숨기기도 채운 조작 요소, 접기 표시는 아래 화살표 하나(기본 ▶ 없음) | 11-15 | `scripts/consistency-browser-check.mjs` |
+| U55 | 같은 종류는 같은 모양: 단추·입력 모서리 10px, 장 선택·완료 숨기기도 채운 조작 요소, 접기 표시는 아래 화살표 하나(기본 ▶ 없음)(첫 화면 단추는 8px 그대로) | 11-15 | `scripts/consistency-browser-check.mjs` |
 | U56 | 배지는 이름 중간에서 줄이 바뀌지 않고 이름과 값 사이 간격이 보인다. 휴대폰에서 표는 칸 안에 들어간다 | 11-15 | `scripts/consistency-browser-check.mjs` |
 | U57 | 아나톨리아 최종 병종은 드루이드(샐러맨더를 든다 · 공략 자료 기준, 게임 확인 전). 그자람 최종 병종은 소드 마스터(드래군 검토 뒤 유지) | 11-15 | `scripts/rules-check.mjs` |
 

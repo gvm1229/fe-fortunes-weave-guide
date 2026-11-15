@@ -6,11 +6,11 @@
 //                                      Netlify에 배포하고 git push 한다.
 // 규칙 문서(docs/user-rules.md·AGENTS.md)도 해시에 들어간다. 규칙을 바꾸면 Fable 검토를 다시 받아야 배포할 수 있다.
 import { createHash } from 'node:crypto';
-import { cpSync, existsSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync, mkdirSync } from 'node:fs';
+import { cpSync, existsSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync, mkdirSync, symlinkSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import { spawn, spawnSync } from 'node:child_process';
 const SITE = 'ca844312-b942-4708-a9a2-7bcf0c812fe5', PREVIEW = '.tmp/complete-preview', OUT = join(PREVIEW, 'out'), PORT = 18764, GATE = '.tmp/release-gate.json';
-const HASHED = ['app', 'components', 'lib', 'content', 'scripts', 'public', 'package.json', 'next.config.ts', 'docs/user-rules.md', 'AGENTS.md'];
+const HASHED = ['app', 'components', 'lib', 'content', 'scripts', 'public', 'assets', 'package.json', 'next.config.ts', 'tsconfig.json', 'postcss.config.mjs', 'components.json', 'docs/user-rules.md', 'AGENTS.md'];
 const IGNORED = new Set(['public/assets', 'public/reference-data', 'public/reference-files']);
 const CONFIG = ['package.json', 'next.config.ts', 'tsconfig.json', 'postcss.config.mjs', 'components.json'];
 process.env.TEMP = process.env.TMP = resolve('.tmp');
@@ -32,6 +32,9 @@ async function check() {
   rmSync(GATE, { force: true });
   const hash = sourceHash();
   for (const f of DATA) run(process.execPath, [f]);
+  // 미리보기 폴더의 연결(assets·public·node_modules)이 없으면 만든다. 이미 있는 연결은 그대로 둔다.
+  mkdirSync(PREVIEW, { recursive: true });
+  for (const d of ['assets', 'public', 'node_modules']) if (!existsSync(join(PREVIEW, d))) symlinkSync(resolve(d), join(PREVIEW, d), 'junction');
   for (const d of ['app', 'components', 'lib', 'content']) { rmSync(join(PREVIEW, d), { recursive: true, force: true }); cpSync(d, join(PREVIEW, d), { recursive: true }); }
   for (const f of CONFIG) if (existsSync(f)) cpSync(f, join(PREVIEW, f));
   rmSync(join(PREVIEW, 'content/data/checklist.json'), { force: true });
