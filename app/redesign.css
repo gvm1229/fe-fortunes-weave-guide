@@ -40,7 +40,7 @@ html body:has(.app-shell),html body:has(.team-page){background:#F4F3F0}html.dark
 .guide-navigation button[aria-current]{background:var(--surface);color:var(--text);font-weight:700}
 .guide-navigation button:hover{background:var(--surface-2);color:var(--text)}
 .guide-navigation .nav-short{display:none}
-.page-heading h1{font-size:clamp(1.8rem,1.2rem + 2vw,2.5rem);letter-spacing:-.025em}
+.page-heading h1{font-size:30px;letter-spacing:-.025em}
 .route-banner{margin-block-end:40px;border-radius:24px;background:var(--surface);overflow:clip}
 .route-banner-art{position:relative;block-size:160px;background:var(--route-tint);color:var(--text);overflow:clip;isolation:isolate}
 .route-banner-art h1{position:relative;z-index:1;margin:0;padding:44px 40px;font-size:clamp(1.8rem,1.2rem + 2vw,2.5rem);letter-spacing:-.025em;max-inline-size:65%}
@@ -179,11 +179,10 @@ details.person-full-details>summary:not(:has(>svg)){padding-inline-end:50px}deta
   .next-action{gap:12px;padding:20px 0}
   .next-action>.button{padding:8px;min-inline-size:48px}
   .next-action p{font-size:18px}
-  .chapter-title{font-size:26px}
+  .chapter-title{font-size:24px}
   .chapter-section{scroll-margin-top:calc(var(--task-header-height,74px) + 16px)}
   .chapter-section>summary{padding:14px 0}
   .chapter-date{margin-inline-start:0;line-height:1.6}
-  .group-title{font-size:20px}
   .action-text{font-size:20px}
   .context-rail{grid-template-columns:1fr}
   .context-rail>section{padding:20px}
@@ -226,7 +225,7 @@ th[scope=row],tbody>tr>th:first-child{text-align:left;vertical-align:top}
 @media(max-width:767px){.person-summary th{width:96px;white-space:normal}:is(.person-summary,.person-info,.records,.sheet-scroll,.source-markup,.semantic) :is(td,th){padding:10px 12px}.person-summary{font-size:18px}.class-path{gap:8px}.class-path li{flex-wrap:wrap}.sheet-scroll .document-table{display:table}.sheet-scroll .document-definitions{display:none}}
 :is(.team-reference,.spell-panel) [id^="spell-"]{padding:24px;margin-block:20px;border:1px solid var(--table-line);border-radius:16px;background:var(--surface)}
 :is(.team-reference,.spell-panel) [id^="spell-"]>div:not(.readable-group){display:flex;align-items:center;flex-wrap:wrap;gap:8px;font-weight:600;margin-block:12px}
-:is(.team-reference,.spell-panel) [id^="spell-"] h4{font-size:24px;text-decoration:underline;text-underline-offset:5px}
+:is(.team-reference,.spell-panel) [id^="spell-"] h4{font-size:22px;text-decoration:underline;text-underline-offset:5px}
 :is(.team-reference,.spell-panel) .inline-icon{width:28px;height:28px;object-fit:contain}
 
 .person>.person-summary{width:calc(100% - 48px)}
@@ -280,7 +279,7 @@ th[scope=row],tbody>tr>th:first-child{text-align:left;vertical-align:top}
 .action-group,.route-banner,.context-rail>section,.material-entry{border-radius:16px}
 .guide-navigation button[aria-current]{background:var(--primary);color:var(--primary-fg)}
 .guide-navigation button[aria-current]:hover{background:var(--primary);color:var(--primary-fg);opacity:.92}
-.prep-content>h2,.workspace main>h2{font-size:24px;font-weight:700;margin:32px 0 16px}
+.prep-content>h2,.workspace main>h2{font-size:22px;font-weight:700;margin:32px 0 16px}
 .prep-content>h2:first-child,.workspace main>h2:first-child{margin-block-start:0}
 .chapter-section[open]>summary{position:sticky;top:var(--task-header-height,80px);z-index:10;background:var(--bg)}
 .chapter-section[open]>summary{padding:8px 0}.chapter-section[open]>summary .chapter-date{flex-basis:auto;margin-inline-start:0}
@@ -289,8 +288,7 @@ th[scope=row],tbody>tr>th:first-child{text-align:left;vertical-align:top}
   .tasks-layout{display:grid;grid-template-columns:minmax(0,1fr)}
   .context-rail{order:-1;display:flex!important;position:static;max-block-size:none;overflow-x:auto;overflow-y:visible;gap:12px;scroll-snap-type:x mandatory;scroll-padding-inline:16px;overscroll-behavior-x:contain;padding-block-end:8px;margin-block-end:16px}
   .context-rail>section{flex:0 0 min(300px,82%);scroll-snap-align:start}
-  .context-rail{align-items:flex-start}
-  .context-rail>section{max-block-size:240px;overflow-y:auto}
+  .context-rail{align-items:stretch;scrollbar-width:thin}
 }
 /* 2026-11-14 v3 T11: 화면 전환과 작은 움직임. 움직임은 모두 동작 줄이기를 끈 경우에만 켠다. */
 .ui-accordion-trigger[data-state=open]>.ui-accordion-chevron{rotate:180deg}
@@ -345,6 +343,8 @@ th[scope=row],tbody>tr>th:first-child{text-align:left;vertical-align:top}
 .game-badge>svg:is(.lucide-heart,.lucide-sparkles){stroke:var(--badge-ink)}
 .game-badge>img{display:inline-block!important;inline-size:22px!important;block-size:22px!important;object-fit:contain;flex-shrink:0;margin:0!important}
 .game-badge[data-kind=person]>img{inline-size:24px!important;block-size:24px!important;border-radius:6px}
+/* 배지 안 그림이 뜨기 전 자리(인물 초상화는 따로 --portrait-bg 규칙). */
+.game-badge:not([data-kind=person])>img:not([data-loaded]){background:var(--surface-2);border-radius:4px}
 /* 인물 카드·시트의 선물 칸 */
 .gift-label{margin:0 0 8px;font-weight:600}.gift-label:not(:first-child){margin-block-start:8px}:is(.gift-chips,.expensive-gifts){display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}:is(.gift-chips,.expensive-gifts)>li{display:inline-flex;flex-wrap:wrap;align-items:center;gap:6px;max-inline-size:100%}.game-badge[data-kind=gift]{--badge-bg:var(--badge-item);--badge-ink:var(--badge-item-ink);white-space:normal}.game-badge[data-kind=gift]>img{inline-size:24px;block-size:24px;object-fit:contain}
 .game-badge .badge-value{font-weight:700;font-variant-numeric:tabular-nums}
@@ -358,6 +358,8 @@ td .readable-body,th .readable-body{max-inline-size:none}
 .readable-body :is(ul,ol){margin:0 0 12px;padding-inline-start:0;list-style:none;display:grid;gap:6px}
 .readable-group+.readable-group{margin-block-start:16px}
 td .readable-body p{margin-block-end:8px}
+/* 표 칸 안 겹친 목록(준비 표 "축복" 칸 등)은 여백 없이 줄 간격 4px(2026-11-15 일관성 정리). */
+td .readable-body :is(ul,ol){gap:4px}td .readable-body li{margin:0}
 .action-group .action-notes:not(:empty){border-block-start:1px solid var(--line);padding-block-start:12px}
 .check-toolbar{padding:12px 0}
 /* 검토 3 L1: 넓은 화면은 진행 숫자와 막대를 한 줄에 두어 도구 줄을 72px 안으로. */
@@ -544,7 +546,7 @@ progress::-moz-progress-bar{background:#1E8E3E}
 @media(max-width:767px){.route-head .status-button{min-inline-size:48px;padding:10px;justify-content:center}.route-head .status-label{position:absolute;inline-size:1px;block-size:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}}
 .status-menu-item{display:none}
 @media(max-width:599px){.route-head .status-button{display:none}.status-menu-item{display:inline-flex}}
-.status-sheet section{margin-block-start:32px}.status-sheet h3{margin:0 0 12px}
+.status-sheet section{margin-block-start:32px}.status-sheet h3{margin:0 0 12px;font-size:20px}
 .status-list{list-style:none;padding:0;margin:0;display:grid}
 .status-list li{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0;border-block-end:1px solid var(--line)}
 .status-name{display:flex;flex-direction:column;min-inline-size:0;overflow-wrap:anywhere}
