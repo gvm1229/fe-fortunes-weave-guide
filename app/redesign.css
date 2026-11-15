@@ -191,8 +191,6 @@ summary::-webkit-details-marker{display:none}
   .material-entry{padding:20px}
   .person>.person-heading{padding:20px;align-items:flex-start}
   .person .portrait{width:72px;height:96px}
-  .person-info th,.records th{width:88px}
-  .person-info td,.person-info th,.records td,.records th{padding:12px 10px}
 }
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}
@@ -200,7 +198,10 @@ summary::-webkit-details-marker{display:none}
 /* 2026-11-14: 인물·병종·마법 설명의 공통 규칙 */
 .person-summary{width:100%;border-collapse:collapse;margin-block:24px;font-size:20px}
 .person-summary th{width:120px;white-space:nowrap;background:var(--surface-2)}
-.person-summary td,.person-summary th,.person-info td,.person-info th,.records td,.records th,.sheet-scroll td,.sheet-scroll th,.source-markup td,.source-markup th,.semantic td,.semantic th{border:1px solid var(--table-line);padding:16px;vertical-align:top}
+/* 표 머리 칸 한 규칙(2026-11-15 일관성 정리): 왼쪽·위 정렬, 폭 120px(휴대폰 96px), 칸 여백 12px 16px(휴대폰 10px 12px). */
+th[scope=row],tbody>tr>th:first-child{text-align:left;vertical-align:top}
+@media(min-width:768px){:is(.sheet-scroll,.source-markup,.semantic) th[scope=row]{width:120px}}
+.person-summary td,.person-summary th,.person-info td,.person-info th,.records td,.records th,.sheet-scroll td,.sheet-scroll th,.source-markup td,.source-markup th,.semantic td,.semantic th{border:1px solid var(--table-line);padding:12px 16px;vertical-align:top}
 .person-summary td{background:var(--surface)}
 .person-full-details{margin-block:24px}
 .person-full-details>summary{padding:16px;background:var(--secondary-soft);border-radius:8px;font-weight:600}
@@ -215,7 +216,7 @@ summary::-webkit-details-marker{display:none}
 .spell-panel .semantic h3{font-weight:700;text-decoration:underline;text-underline-offset:5px}
 .spell-panel .semantic p{margin-block:12px}
 .sheet-scroll strong,.source-markup strong{font-weight:700}
-@media(max-width:767px){.person-summary th{width:88px;white-space:normal}.person-summary td,.person-summary th{padding:12px}.person-summary{font-size:18px}.class-path{gap:8px}.class-path li{flex-wrap:wrap}.sheet-scroll .document-table{display:table}.sheet-scroll .document-definitions{display:none}}
+@media(max-width:767px){.person-summary th{width:96px;white-space:normal}:is(.person-summary,.person-info,.records,.sheet-scroll,.source-markup,.semantic) :is(td,th){padding:10px 12px}.person-summary{font-size:18px}.class-path{gap:8px}.class-path li{flex-wrap:wrap}.sheet-scroll .document-table{display:table}.sheet-scroll .document-definitions{display:none}}
 :is(.team-reference,.spell-panel) [id^="spell-"]{padding:24px;margin-block:20px;border:1px solid var(--table-line);border-radius:16px;background:var(--surface)}
 :is(.team-reference,.spell-panel) [id^="spell-"]>div:not(.readable-group){display:flex;align-items:center;flex-wrap:wrap;gap:8px;font-weight:600;margin-block:12px}
 :is(.team-reference,.spell-panel) [id^="spell-"] h4{font-size:24px;text-decoration:underline;text-underline-offset:5px}
@@ -227,11 +228,11 @@ summary::-webkit-details-marker{display:none}
 .sheet-overlay{background:#171717}
 
 :is(.app-shell,.team-page) table :is(th,td){border:1px solid var(--table-line)}
-@media(max-width:767px){.gold-table,[data-gold-table]{table-layout:fixed;font-size:18px}.gold-table :is(th,td),[data-gold-table] :is(th,td){padding:10px;overflow-wrap:anywhere}.gold-table th:nth-child(2){width:24%}.gold-table .amount,[data-gold-table] [data-amount]{white-space:normal}}
+@media(max-width:767px){.gold-table,[data-gold-table]{table-layout:fixed;font-size:18px}.gold-table :is(th,td),[data-gold-table] :is(th,td){padding:10px 12px;overflow-wrap:anywhere}.gold-table th:nth-child(2){width:24%}.gold-table .amount,[data-gold-table] [data-amount]{white-space:normal}}
 
 :is(.person-summary,.person-info,.records) th,.group-title{word-break:keep-all;overflow-wrap:normal}
-@media(max-width:767px){.app-shell .person-summary th{width:100px;padding:12px 10px}.gold-table th:nth-child(2){width:104px}.gold-table .amount{white-space:nowrap}}
-.document-profile table{table-layout:fixed}.document-profile th{width:112px;word-break:keep-all;overflow-wrap:normal}.document-profile :is(th,td){padding:12px}
+@media(max-width:767px){.gold-table th:nth-child(2){width:104px}.gold-table .amount{white-space:nowrap}}
+.document-profile table{table-layout:fixed}.document-profile th{width:120px;word-break:keep-all;overflow-wrap:normal}
 @media(max-width:767px){.document-profile th{width:96px}.document-profile .named-class{flex-wrap:wrap;gap:6px}.document-profile .role-chip{margin:8px 0 0}}
 /* 개별 마법 패널은 짧은 효과와 수치를 모두 보여 준다. */
 
