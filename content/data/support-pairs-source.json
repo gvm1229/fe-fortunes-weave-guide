@@ -1,0 +1,1589 @@
+{
+  "reviewed": "2026-11-15",
+  "source": "https://annasnotebook.net/en/mechanics/support-conditions/",
+  "note": "이스마르(Eshmel) 쌍 제외. Anna’s Notebook ‘Look up by character’ 전체(초안, 게임 미확인). 루트별 지원 대화 표의 빠진 쌍 검사(verify)에 쓴다. 값: P1=1부, P1-2=1·2부, P2=2부, P2-3=2부부터, P1|P3=1부 또는 3부, P3=3부, any=어느 부, none=없음.",
+  "names": {
+    "게이츠": "Gaitz",
+    "골라이어스": "Goliath",
+    "그자람": "Guzran",
+    "나타": "Nezha",
+    "네이선": "Nathan",
+    "녹투라": "Noctula",
+    "누디누": "Nydine",
+    "누조": "Nuzzuo",
+    "단테": "Dante",
+    "대도": "Dadao",
+    "디에고": "Diego",
+    "디트리히": "Dietrich",
+    "라이선더": "Lysander",
+    "레다": "Leda",
+    "로레타": "Loretta",
+    "루루디아": "Ludia",
+    "리네": "Ninae",
+    "릴리안": "Lilian",
+    "마지데": "Majide",
+    "무우": "Mu",
+    "미카엘라": "Mikaela",
+    "밴디츠": "Benditz",
+    "버커니어": "Buccar",
+    "베르트랑": "Bertrand",
+    "보나파르트": "Bonaventure",
+    "사란": "Sha Lan",
+    "세오도라": "Theodora",
+    "세테스": "Seteth",
+    "센트리온": "Centurio",
+    "소피아": "Sofia",
+    "시로코": "Sirocco",
+    "시몬": "Simon",
+    "아나톨리아": "Anatolia",
+    "아스완": "Aswan",
+    "알렉산드라": "Alexandra",
+    "양계": "Yang Jie",
+    "에스메랄다": "Esmeralda",
+    "오르헬": "Orchel",
+    "올림피아": "Olympia",
+    "우술라": "Ursula",
+    "울턴드": "Ultand",
+    "이니오니": "Inyoni",
+    "이오": "Io",
+    "자스민": "Jasmine",
+    "자코네": "Zarcone",
+    "제스터": "Jester",
+    "카이": "Cai",
+    "카타냐": "Catania",
+    "키로이카": "Kiroc",
+    "키릭": "Creek",
+    "타리문": "Talimun",
+    "토비아스": "Tobias",
+    "트로이아": "Troy",
+    "티아라": "Tialla",
+    "파비오": "Fabio",
+    "페페": "Peppe",
+    "피아나": "Fianna",
+    "피터르": "Peter",
+    "하르빈": "Halvin",
+    "홍화": "Hong Hua"
+  },
+  "pairs": [
+    {
+      "a": "Cai",
+      "b": "Tialla",
+      "C": "P1-2",
+      "B": "P1-2",
+      "A": "P1-2",
+      "raw": "Cai’s story only, both characters recruited. C: Parts 1 and 2; B: from Part 1 Chapter 3 onward, through Part 2; A: from Part 1 Chapter 12 onward, through Part 2"
+    },
+    {
+      "a": "Cai",
+      "b": "Peter",
+      "C": "P1-2",
+      "B": "P1-2",
+      "A": "P1-2",
+      "raw": "Cai’s story only, both characters recruited. C and B: Parts 1 and 2; A: from Part 1 Chapter 3 onward, through Part 2"
+    },
+    {
+      "a": "Cai",
+      "b": "Ultand",
+      "C": "P1",
+      "B": "P1",
+      "A": "P1",
+      "raw": "C: Part 1 only, after the Heroic Games open; B: Part 1 only; A: from Part 1 Chapter 10 onward, Part 1 only, Cai’s story only, both characters recruited"
+    },
+    {
+      "a": "Bertrand",
+      "b": "Cai",
+      "C": "none",
+      "B": "P3",
+      "A": "P3",
+      "raw": "Cai must have completed or skipped the War story. B and A: Part 3 only"
+    },
+    {
+      "a": "Cai",
+      "b": "Goliath",
+      "C": "P1-2",
+      "B": "P1-2",
+      "A": "none",
+      "raw": "after the aptitude test for additional Heroic Games entrants ends. C and B: Parts 1 and 2"
+    },
+    {
+      "a": "Cai",
+      "b": "Dietrich",
+      "C": "none",
+      "B": "P3",
+      "A": "P3",
+      "raw": "B: Part 3 only; A: Part 3 only, Cai and Dietrich must have completed or skipped their War stories"
+    },
+    {
+      "a": "Cai",
+      "b": "Esmeralda",
+      "C": "P1-2",
+      "B": "P1-2",
+      "A": "P1-2",
+      "raw": "after the battle with Benditz. C and B: Parts 1 and 2, Dietrich must be present; A: Parts 1 and 2"
+    },
+    {
+      "a": "Cai",
+      "b": "Ninae",
+      "C": "P3",
+      "B": "P3",
+      "A": "none",
+      "raw": "after Aurora returns to Dagsion, Cai must have completed or skipped the War story. C and B: Part 3 only"
+    },
+    {
+      "a": "Cai",
+      "b": "Theodora",
+      "C": "none",
+      "B": "P3",
+      "A": "P3",
+      "raw": "B: Part 3 only; A: Part 3 only, Cai and Theodora must have completed or skipped their War stories"
+    },
+    {
+      "a": "Cai",
+      "b": "Leda",
+      "C": "none",
+      "B": "P3",
+      "A": "P3",
+      "raw": "B: Part 3 only; A: Part 3 only, Cai and Leda must have completed or skipped their War stories"
+    },
+    {
+      "a": "Cai",
+      "b": "Mu",
+      "C": "P1",
+      "B": "P3",
+      "A": "none",
+      "raw": "C: Part 1 only, before the Heroic Games match in which Cai loses begins in Cai’s story; B: Part 3 only, Centurio must be present"
+    },
+    {
+      "a": "Anatolia",
+      "b": "Cai",
+      "C": "none",
+      "B": "P3",
+      "A": "P3",
+      "raw": "B and A: Part 3 only"
+    },
+    {
+      "a": "Alexandra",
+      "b": "Cai",
+      "C": "P1",
+      "B": "P1",
+      "A": "P1",
+      "raw": "both characters recruited. C, B, and A: Part 1 only"
+    },
+    {
+      "a": "Cai",
+      "b": "Centurio",
+      "C": "P3",
+      "B": "none",
+      "A": "none",
+      "raw": "C: Part 3 only, after Aurora returns to Dagsion, Cai must have completed or skipped the War story"
+    },
+    {
+      "a": "Peter",
+      "b": "Tialla",
+      "C": "P1-2",
+      "B": "P1-2",
+      "A": "P1",
+      "raw": "both characters recruited. C and B: Parts 1 and 2; A: Part 1 only, watch Peter–Ultand B first"
+    },
+    {
+      "a": "Tialla",
+      "b": "Ultand",
+      "C": "P1-2",
+      "B": "P1-2",
+      "A": "P1-2",
+      "raw": "C: Parts 1 and 2, after the Heroic Games open; B: Parts 1 and 2, unavailable while Tialla and Peter are quarreling; A: Parts 1 and 2"
+    },
+    {
+      "a": "Seteth",
+      "b": "Tialla",
+      "C": "P1-2",
+      "B": "P1-2",
+      "A": "none",
+      "raw": "C and B: Parts 1 and 2"
+    },
+    {
+      "a": "Theodora",
+      "b": "Tialla",
+      "C": "P3",
+      "B": "P3",
+      "A": "none",
+      "raw": "Cai must be present. C and B: Part 3 only"
+    },
+    {
+      "a": "Bonaventure",
+      "b": "Tialla",
+      "C": "P1-2",
+      "B": "P1-2",
+      "A": "P1-2",
+      "raw": "C: Parts 1 and 2, watch Theodora–Bonaventure B first; B and A: Parts 1 and 2"
+    },
+    {
+      "a": "Talimun",
+      "b": "Tialla",
+      "C": "P1-2",
+      "B": "P1-2",
+      "A": "none",
+      "raw": "C and B: Parts 1 and 2"
+    },
+    {
+      "a": "Ludia",
+      "b": "Tialla",
+      "C": "P1-2",
+      "B": "P1-2",
+      "A": "none",
+      "raw": "C and B: Parts 1 and 2"
+    },
+    {
+      "a": "Io",
+      "b": "Tialla",
+      "C": "P1-2",
+      "B": "P3",
+      "A": "none",
+      "raw": "C: Parts 1 and 2; B: Part 3 only"
+    },
+    {
+      "a": "Creek",
+      "b": "Tialla",
+      "C": "P3",
+      "B": "none",
+      "A": "none",
+      "raw": "C: Part 3 only"
+    },
+    {
+      "a": "Peter",
+      "b": "Ultand",
+      "C": "P1",
+      "B": "P1",
+      "A": "P1",
+      "raw": "C: Part 1 only, after the Heroic Games open; B: Part 1 only, watch Tialla–Peter B first; A: Part 1 only"
+    },
+    {
+      "a": "Jester",
+      "b": "Peter",
+      "C": "P1",
+      "B": "P3",
+      "A": "none",
+      "raw": "C: Part 1 only, both characters recruited, after Jester appears as Jester; B: Part 3 only"
+    },
+    {
+      "a": "Ninae",
+      "b": "Peter",
+      "C": "P1-2",
+      "B": "P1-2",
+      "A": "none",
+      "raw": "C and B: Parts 1 and 2"
+    },
+    {
+      "a": "Peter",
+      "b": "Ursula",
+      "C": "P1",
+      "B": "P1",
+      "A": "none",
+      "raw": "C and B: Part 1 only"
+    },
+    {
+      "a": "Mu",
+      "b": "Peter",
+      "C": "P1",
+      "B": "P1",
+      "A": "P3",
+      "raw": "C and B: Part 1 only, after arriving in Dagsion; A: Part 3 only"
+    },
+    {
+      "a": "Dadao",
+      "b": "Peter",
+      "C": "P1-2",
+      "B": "P3",
+      "A": "none",
+      "raw": "C: Parts 1 and 2; B: Part 3 only"
+    },
+    {
+      "a": "Peter",
+      "b": "Sofia",
+      "C": "P1-2",
+      "B": "P1-2",
+      "A": "none",
+      "raw": "C: Parts 1 and 2; B: Parts 1 and 2, both characters recruited"
+    },
+    {
+      "a": "Goliath",
+      "b": "Ultand",
+      "C": "any",
+      "B": "any",
+      "A": "any",
+      "raw": "C: after the Heroic Games open; B and A: any part"
+    },
+    {
+      "a": "Orchel",
+      "b": "Ultand",
+      "C": "P1",
+      "B": "none",
+      "A": "none",
+      "raw": "C: Part 1 only, after the Heroic Games open"
+    },
+    {
+      "a": "Loretta",
+      "b": "Ultand",
+      "C": "P1",
+      "B": "P1-2",
+      "A": "none",
+      "raw": "C: Part 1 only, after the Heroic Games open; B: Parts 1 and 2"
+    },
+    {
+      "a": "Tobias",
+      "b": "Ultand",
+      "C": "any",
+      "B": "any",
+      "A": "none",
+      "raw": "C: after the Heroic Games open; B: any part"
+    },
+    {
+      "a": "Nezha",
+      "b": "Ultand",
+      "C": "P1",
+      "B": "P2",
+      "A": "none",
+      "raw": "C: Part 1 only, after the Heroic Games open; B: Part 2 only"
+    },
+    {
+      "a": "Peppe",
+      "b": "Ultand",
+      "C": "P1-2",
+      "B": "P1-2",
+      "A": "none",
+      "raw": "C: Parts 1 and 2, after the Heroic Games open, after completing Bertrand's Paralogue: Friendly Match with Brigid's King; B: Parts 1 and 2, both characters recruited"
+    },
+    {
+      "a": "Centurio",
+      "b": "Ultand",
+      "C": "P1",
+      "B": "none",
+      "A": "none",
+      "raw": "C: Part 1 only, after the Heroic Games open"
+    },
+    {
+      "a": "Bertrand",
+      "b": "Theodora",
+      "C": "none",
+      "B": "P3",
+      "A": "none",
+      "raw": "B: Part 3 only"
+    },
+    {
+      "a": "Bertrand",
+      "b": "Talimun",
+      "C": "none",
+      "B": "P3",
+      "A": "P3",
+      "raw": "B and A: Part 3 only"
+    },
+    {
+      "a": "Gaitz",
+      "b": "Goliath",
+      "C": "P1",
+      "B": "P2-3",
+      "A": "P2-3",
+      "raw": "C: Part 1 only, both characters recruited, after the Heroic Games open, before Gaitz’s identity is revealed; B and A: from Part 2 onward"
+    },
+    {
+      "a": "Dante",
+      "b": "Gaitz",
+      "C": "P1",
+      "B": "none",
+      "A": "none",
+      "raw": "C: Part 1 only, both characters recruited, after the Heroic Games open, before Gaitz’s identity is revealed"
+    },
+    {
+      "a": "Gaitz",
+      "b": "Lilian",
+      "C": "P2",
+      "B": "P2-3",
+      "A": "none",
+      "raw": "C: from Part 2 Chapter 2 onward, Part 2 only; B: from Part 2 Chapter 2 onward"
+    },
+    {
+      "a": "Gaitz",
+      "b": "Ursula",
+      "C": "any",
+      "B": "any",
+      "A": "P2-3",
+      "raw": "C and B: any part; A: from Part 2 onward"
+    },
+    {
+      "a": "Gaitz",
+      "b": "Ludia",
+      "C": "P1",
+      "B": "P2-3",
+      "A": "none",
+      "raw": "C: Part 1 only, both characters recruited, after the Heroic Games open, before Gaitz’s identity is revealed; B: from Part 2 onward"
+    },
+    {
+      "a": "Gaitz",
+      "b": "Zarcone",
+      "C": "P2-3",
+      "B": "none",
+      "A": "none",
+      "raw": "C: from Part 2 onward"
+    },
+    {
+      "a": "Alexandra",
+      "b": "Gaitz",
+      "C": "P1",
+      "B": "P2-3",
+      "A": "P2-3",
+      "raw": "C: Part 1 only; B and A: from Part 2 onward"
+    },
+    {
+      "a": "Goliath",
+      "b": "Jester",
+      "C": "P1-2",
+      "B": "P1-2",
+      "A": "P1-2",
+      "raw": "C: Parts 1 and 2, after Jester appears as Jester; B and A: Parts 1 and 2"
+    },
+    {
+      "a": "Dante",
+      "b": "Jester",
+      "C": "P1-2",
+      "B": "P1-2",
+      "A": "P3",
+      "raw": "C and B: Parts 1 and 2; A: Part 3 only"
+    },
+    {
+      "a": "Jester",
+      "b": "Mikaela",
+      "C": "P1",
+      "B": "P1-2",
+      "A": "none",
+      "raw": "C: Part 1 only; B: Parts 1 and 2"
+    },
+    {
+      "a": "Jester",
+      "b": "Leda",
+      "C": "P1",
+      "B": "P3",
+      "A": "none",
+      "raw": "C: Part 1 Chapters 4–10, Leda’s story only, both characters recruited; B: Part 3 only, Bertrand must be present, Leda must have completed or skipped the War story"
+    },
+    {
+      "a": "Buccar",
+      "b": "Jester",
+      "C": "P3",
+      "B": "P3",
+      "A": "none",
+      "raw": "Leda and Bertrand must be present. C and B: Part 3 only"
+    },
+    {
+      "a": "Halvin",
+      "b": "Jester",
+      "C": "P1-2",
+      "B": "P1-2",
+      "A": "P3",
+      "raw": "C and B: Parts 1 and 2; A: Part 3 only"
+    },
+    {
+      "a": "Jester",
+      "b": "Noctula",
+      "C": "P1-2",
+      "B": "P3",
+      "A": "none",
+      "raw": "C: Parts 1 and 2, both characters recruited; B: Part 3 only, Bertrand must be present"
+    },
+    {
+      "a": "Dante",
+      "b": "Goliath",
+      "C": "P1",
+      "B": "any",
+      "A": "any",
+      "raw": "both characters recruited. C: Part 1 only, after the Heroic Games open; B and A: any part"
+    },
+    {
+      "a": "Goliath",
+      "b": "Loretta",
+      "C": "P1",
+      "B": "P1",
+      "A": "P3",
+      "raw": "C and B: Part 1 only; A: Part 3 only"
+    },
+    {
+      "a": "Goliath",
+      "b": "Olympia",
+      "C": "P1-2",
+      "B": "P1-2",
+      "A": "any",
+      "raw": "C and B: Parts 1 and 2; A: any part"
+    },
+    {
+      "a": "Goliath",
+      "b": "Noctula",
+      "C": "P1-2",
+      "B": "P1-2",
+      "A": "none",
+      "raw": "C: Parts 1 and 2; B: Parts 1 and 2, both characters recruited"
+    },
+    {
+      "a": "Dante",
+      "b": "Seteth",
+      "C": "P1",
+      "B": "any",
+      "A": "none",
+      "raw": "C: Part 1 only; B: after the Heroic Games open"
+    },
+    {
+      "a": "Dante",
+      "b": "Talimun",
+      "C": "P1-2",
+      "B": "P1-2",
+      "A": "none",
+      "raw": "C and B: Parts 1 and 2"
+    },
+    {
+      "a": "Dante",
+      "b": "Leda",
+      "C": "P2-3",
+      "B": "P2-3",
+      "A": "none",
+      "raw": "Bertrand must be present. C and B: from Part 2 onward"
+    },
+    {
+      "a": "Dante",
+      "b": "Sirocco",
+      "C": "P1",
+      "B": "P1",
+      "A": "none",
+      "raw": "C and B: Part 1 only"
+    },
+    {
+      "a": "Anatolia",
+      "b": "Dante",
+      "C": "P1",
+      "B": "none",
+      "A": "none",
+      "raw": "C: Part 1 only, after Anatolia begins fortune-telling in Dagsion"
+    },
+    {
+      "a": "Dante",
+      "b": "Nydine",
+      "C": "P1-2",
+      "B": "P1-2",
+      "A": "none",
+      "raw": "C and B: Parts 1 and 2"
+    },
+    {
+      "a": "Dietrich",
+      "b": "Fabio",
+      "C": "P1",
+      "B": "any",
+      "A": "P2-3",
+      "raw": "C: Part 1 only; B: both characters recruited, after learning Fabio’s true identity in Dietrich’s story, in Part 3, Dietrich must have completed or skipped the War story; A: from Part 2 onward, in Part 3, Dietrich must have completed or skipped the War story"
+    },
+    {
+      "a": "Dietrich",
+      "b": "Esmeralda",
+      "C": "P1",
+      "B": "P1",
+      "A": "P1",
+      "raw": "C, B, and A: Part 1 only"
+    },
+    {
+      "a": "Dietrich",
+      "b": "Mikaela",
+      "C": "any",
+      "B": "any",
+      "A": "any",
+      "raw": "C and B: any part; A: both characters recruited, in Part 3, Dietrich must have completed or skipped the War story"
+    },
+    {
+      "a": "Dietrich",
+      "b": "Seteth",
+      "C": "P3",
+      "B": "none",
+      "A": "none",
+      "raw": "C: Part 3 only"
+    },
+    {
+      "a": "Dietrich",
+      "b": "Theodora",
+      "C": "none",
+      "B": "P3",
+      "A": "P3",
+      "raw": "B and A: Part 3 only"
+    },
+    {
+      "a": "Dietrich",
+      "b": "Talimun",
+      "C": "none",
+      "B": "P3",
+      "A": "P3",
+      "raw": "B and A: Part 3 only"
+    },
+    {
+      "a": "Dietrich",
+      "b": "Leda",
+      "C": "none",
+      "B": "P3",
+      "A": "P3",
+      "raw": "Dietrich and Leda must have completed or skipped their War stories. B and A: Part 3 only"
+    },
+    {
+      "a": "Buccar",
+      "b": "Dietrich",
+      "C": "P1|P3",
+      "B": "P3",
+      "A": "none",
+      "raw": "Leda must be present. C: Parts 1 or 3 only; B: Part 3 only"
+    },
+    {
+      "a": "Dietrich",
+      "b": "Halvin",
+      "C": "P1",
+      "B": "P1-2",
+      "A": "any",
+      "raw": "C: Part 1 only, after word spreads of Dietrich’s duel with Mars; B: Parts 1 and 2; A: both characters recruited, in Part 3, Dietrich must have completed or skipped the War story"
+    },
+    {
+      "a": "Catania",
+      "b": "Dietrich",
+      "C": "any",
+      "B": "any",
+      "A": "none",
+      "raw": "both characters recruited. C: after word spreads that Cetus, the Sea Tyrant, has been slain; B: any part"
+    },
+    {
+      "a": "Esmeralda",
+      "b": "Fabio",
+      "C": "any",
+      "B": "any",
+      "A": "any",
+      "raw": "C: Dietrich’s story only, both characters recruited, after the stone monument event in The Grand Megalith, in Part 3, Dietrich must have completed or skipped the War story; B: any part; A: from Part 1 Chapter 7 onward, Dietrich’s story only, both characters recruited, in Part 3, Dietrich must have completed or skipped the War story"
+    },
+    {
+      "a": "Fabio",
+      "b": "Mikaela",
+      "C": "any",
+      "B": "any",
+      "A": "any",
+      "raw": "C: Dietrich’s story only, both characters recruited, in Part 3, Dietrich must have completed or skipped the War story; B: Dietrich’s story only, both characters recruited, after the battle with Alexandra, in Part 3, Dietrich must have completed or skipped the War story; A: any part"
+    },
+    {
+      "a": "Fabio",
+      "b": "Tobias",
+      "C": "P3",
+      "B": "P3",
+      "A": "P3",
+      "raw": "C, B, and A: Part 3 only"
+    },
+    {
+      "a": "Anatolia",
+      "b": "Fabio",
+      "C": "P3",
+      "B": "P3",
+      "A": "none",
+      "raw": "C and B: Part 3 only"
+    },
+    {
+      "a": "Fabio",
+      "b": "Nezha",
+      "C": "P2-3",
+      "B": "P2-3",
+      "A": "none",
+      "raw": "C and B: from Part 2 onward"
+    },
+    {
+      "a": "Fabio",
+      "b": "Halvin",
+      "C": "any",
+      "B": "any",
+      "A": "none",
+      "raw": "C: Dietrich’s story only, before the main tournament match between Dietrich and Anatolia ends, in Part 3, Dietrich must have completed or skipped the War story; B: after the main tournament match between Dietrich and Anatolia ends"
+    },
+    {
+      "a": "Esmeralda",
+      "b": "Mikaela",
+      "C": "P1",
+      "B": "P1-2",
+      "A": "P1-2",
+      "raw": "Dietrich’s story only, both characters recruited. C: Part 1 only; B and A: Parts 1 and 2, Mu must be present"
+    },
+    {
+      "a": "Diego",
+      "b": "Esmeralda",
+      "C": "any",
+      "B": "any",
+      "A": "P1|P3",
+      "raw": "C and B: any part; A: Part 1 only (both characters recruited, after Orchel removes his mask) or Part 3 only (after Orchel removes his mask, Orchel must be present)"
+    },
+    {
+      "a": "Esmeralda",
+      "b": "Lysander",
+      "C": "P1",
+      "B": "P1",
+      "A": "P1",
+      "raw": "C, B, and A: Part 1 only"
+    },
+    {
+      "a": "Esmeralda",
+      "b": "Ludia",
+      "C": "any",
+      "B": "any",
+      "A": "none",
+      "raw": "C and B: any part"
+    },
+    {
+      "a": "Esmeralda",
+      "b": "Leda",
+      "C": "P1",
+      "B": "P1-2",
+      "A": "none",
+      "raw": "after the battle with Alexandra. C: Part 1 only; B: before Part 2 Chapter 4 begins, Dietrich must be present"
+    },
+    {
+      "a": "Dadao",
+      "b": "Esmeralda",
+      "C": "P1",
+      "B": "P1-2",
+      "A": "none",
+      "raw": "C: from Part 1 Chapter 3 onward, Part 1 only, Dietrich’s story only, after the stone monument event in The Grand Megalith; B: Parts 1 and 2"
+    },
+    {
+      "a": "Esmeralda",
+      "b": "Kiroc",
+      "C": "P1-2",
+      "B": "none",
+      "A": "none",
+      "raw": "C: Parts 1 and 2, both characters recruited"
+    },
+    {
+      "a": "Loretta",
+      "b": "Mikaela",
+      "C": "P1",
+      "B": "P1",
+      "A": "none",
+      "raw": "C and B: Part 1 only"
+    },
+    {
+      "a": "Mikaela",
+      "b": "Simon",
+      "C": "P1",
+      "B": "P1",
+      "A": "P2-3",
+      "raw": "C and B: Part 1 only; A: from Part 2 onward"
+    },
+    {
+      "a": "Mikaela",
+      "b": "Mu",
+      "C": "P1-2",
+      "B": "P3",
+      "A": "none",
+      "raw": "C: Parts 1 and 2, Dietrich’s or Leda’s story only, after watching Mikaela and Mu’s conversation in town; B: Part 3 only"
+    },
+    {
+      "a": "Guzran",
+      "b": "Mikaela",
+      "C": "any",
+      "B": "any",
+      "A": "none",
+      "raw": "C: Part 1 only (Dietrich must be present) or from Part 2 onward (Dietrich’s story only, Dietrich must be present, in Part 3, Dietrich must have completed or skipped the War story); B: both characters recruited"
+    },
+    {
+      "a": "Mikaela",
+      "b": "Sofia",
+      "C": "any",
+      "B": "any",
+      "A": "none",
+      "raw": "C and B: any part"
+    },
+    {
+      "a": "Ninae",
+      "b": "Orchel",
+      "C": "P1",
+      "B": "none",
+      "A": "none",
+      "raw": "C: Part 1 only"
+    },
+    {
+      "a": "Bonaventure",
+      "b": "Orchel",
+      "C": "P1",
+      "B": "P1",
+      "A": "none",
+      "raw": "after the Heroic Games open. C and B: Part 1 only"
+    },
+    {
+      "a": "Fianna",
+      "b": "Orchel",
+      "C": "P1",
+      "B": "none",
+      "A": "none",
+      "raw": "C: Part 1 only, after Orchel removes his mask"
+    },
+    {
+      "a": "Leda",
+      "b": "Orchel",
+      "C": "none",
+      "B": "P3",
+      "A": "none",
+      "raw": "B: Part 3 only"
+    },
+    {
+      "a": "Majide",
+      "b": "Orchel",
+      "C": "P3",
+      "B": "none",
+      "A": "none",
+      "raw": "C: Part 3 only"
+    },
+    {
+      "a": "Diego",
+      "b": "Seteth",
+      "C": "P1",
+      "B": "none",
+      "A": "none",
+      "raw": "C: Part 1 only"
+    },
+    {
+      "a": "Diego",
+      "b": "Ninae",
+      "C": "any",
+      "B": "any",
+      "A": "any",
+      "raw": "C and B: Orchel must be present; A: any part"
+    },
+    {
+      "a": "Diego",
+      "b": "Theodora",
+      "C": "P2-3",
+      "B": "none",
+      "A": "none",
+      "raw": "C: from Part 2 onward, in Part 3, Theodora must have completed or skipped the War story"
+    },
+    {
+      "a": "Diego",
+      "b": "Lilian",
+      "C": "any",
+      "B": "any",
+      "A": "none",
+      "raw": "C: Orchel must be present; B: any part"
+    },
+    {
+      "a": "Diego",
+      "b": "Sha Lan",
+      "C": "P1",
+      "B": "none",
+      "A": "none",
+      "raw": "C: Part 1 only"
+    },
+    {
+      "a": "Diego",
+      "b": "Halvin",
+      "C": "P1",
+      "B": "P1",
+      "A": "none",
+      "raw": "C and B: Part 1 only"
+    },
+    {
+      "a": "Diego",
+      "b": "Io",
+      "C": "P1|P3",
+      "B": "P1|P3",
+      "A": "none",
+      "raw": "Orchel must be present. C and B: Parts 1 or 3 only"
+    },
+    {
+      "a": "Diego",
+      "b": "Nuzzuo",
+      "C": "any",
+      "B": "none",
+      "A": "none",
+      "raw": "C: both characters recruited"
+    },
+    {
+      "a": "Loretta",
+      "b": "Seteth",
+      "C": "P1",
+      "B": "P1",
+      "A": "P1",
+      "raw": "C, B, and A: Part 1 only"
+    },
+    {
+      "a": "Loretta",
+      "b": "Tobias",
+      "C": "P1",
+      "B": "P1",
+      "A": "none",
+      "raw": "C and B: Part 1 only"
+    },
+    {
+      "a": "Loretta",
+      "b": "Sha Lan",
+      "C": "P1",
+      "B": "P1-2",
+      "A": "none",
+      "raw": "C: Part 1 only; B: Parts 1 and 2"
+    },
+    {
+      "a": "Loretta",
+      "b": "Yang Jie",
+      "C": "P1",
+      "B": "P1",
+      "A": "none",
+      "raw": "C and B: Part 1 only"
+    },
+    {
+      "a": "Ludia",
+      "b": "Seteth",
+      "C": "P1",
+      "B": "P1",
+      "A": "none",
+      "raw": "C: Part 1 only; B: Part 1 only, both characters recruited"
+    },
+    {
+      "a": "Dadao",
+      "b": "Seteth",
+      "C": "any",
+      "B": "P2-3",
+      "A": "P2-3",
+      "raw": "C: any part; B and A: from Part 2 onward"
+    },
+    {
+      "a": "Lysander",
+      "b": "Ninae",
+      "C": "any",
+      "B": "any",
+      "A": "none",
+      "raw": "C and B: any part"
+    },
+    {
+      "a": "Ninae",
+      "b": "Simon",
+      "C": "any",
+      "B": "any",
+      "A": "none",
+      "raw": "C and B: any part"
+    },
+    {
+      "a": "Ninae",
+      "b": "Sirocco",
+      "C": "any",
+      "B": "any",
+      "A": "none",
+      "raw": "C and B: any part"
+    },
+    {
+      "a": "Ninae",
+      "b": "Peppe",
+      "C": "P1-2",
+      "B": "P1-2",
+      "A": "none",
+      "raw": "C: Parts 1 and 2, after completing Bertrand's Paralogue: Friendly Match with Brigid's King; B: Parts 1 and 2, both characters recruited"
+    },
+    {
+      "a": "Bonaventure",
+      "b": "Theodora",
+      "C": "any",
+      "B": "any",
+      "A": "none",
+      "raw": "in Part 3, Theodora must have completed or skipped the War story. C and B: any part"
+    },
+    {
+      "a": "Theodora",
+      "b": "Tobias",
+      "C": "any",
+      "B": "any",
+      "A": "any",
+      "raw": "in Part 3, Theodora must have completed or skipped the War story. C, B, and A: any part"
+    },
+    {
+      "a": "Lilian",
+      "b": "Theodora",
+      "C": "any",
+      "B": "any",
+      "A": "any",
+      "raw": "C, B, and A: any part"
+    },
+    {
+      "a": "Lysander",
+      "b": "Theodora",
+      "C": "P1-2",
+      "B": "P1-2",
+      "A": "P1-2",
+      "raw": "both characters recruited. C, B, and A: Parts 1 and 2"
+    },
+    {
+      "a": "Talimun",
+      "b": "Theodora",
+      "C": "none",
+      "B": "P3",
+      "A": "none",
+      "raw": "B: Part 3 only, after defeating Brimstone Lord Dagda in Part 3"
+    },
+    {
+      "a": "Simon",
+      "b": "Theodora",
+      "C": "any",
+      "B": "any",
+      "A": "none",
+      "raw": "C and B: any part"
+    },
+    {
+      "a": "Leda",
+      "b": "Theodora",
+      "C": "none",
+      "B": "P3",
+      "A": "P3",
+      "raw": "B and A: Part 3 only"
+    },
+    {
+      "a": "Nezha",
+      "b": "Theodora",
+      "C": "P1",
+      "B": "P2-3",
+      "A": "P2-3",
+      "raw": "C: Part 1 only, both characters recruited, after Theodora returns to Dagsion; B and A: from Part 2 onward"
+    },
+    {
+      "a": "Theodora",
+      "b": "Troy",
+      "C": "P3",
+      "B": "none",
+      "A": "none",
+      "raw": "C: Part 3 only"
+    },
+    {
+      "a": "Alexandra",
+      "b": "Theodora",
+      "C": "P1",
+      "B": "none",
+      "A": "none",
+      "raw": "C: Part 1 only, after the battle with Alexandra"
+    },
+    {
+      "a": "Bonaventure",
+      "b": "Tobias",
+      "C": "any",
+      "B": "any",
+      "A": "any",
+      "raw": "C, B, and A: any part"
+    },
+    {
+      "a": "Bonaventure",
+      "b": "Lilian",
+      "C": "P1",
+      "B": "P1",
+      "A": "P1",
+      "raw": "C: Part 1 only, watch before Theodora–Lilian B; B: Part 1 only; A: Part 1 only, watch Theodora–Lilian B first"
+    },
+    {
+      "a": "Bonaventure",
+      "b": "Lysander",
+      "C": "any",
+      "B": "any",
+      "A": "any",
+      "raw": "C, B, and A: any part"
+    },
+    {
+      "a": "Bonaventure",
+      "b": "Ursula",
+      "C": "P1",
+      "B": "P1",
+      "A": "none",
+      "raw": "C and B: Part 1 only"
+    },
+    {
+      "a": "Bonaventure",
+      "b": "Halvin",
+      "C": "P1",
+      "B": "P1",
+      "A": "none",
+      "raw": "C and B: Part 1 only"
+    },
+    {
+      "a": "Bonaventure",
+      "b": "Troy",
+      "C": "P3",
+      "B": "none",
+      "A": "none",
+      "raw": "C: Part 3 only"
+    },
+    {
+      "a": "Bonaventure",
+      "b": "Nydine",
+      "C": "P2-3",
+      "B": "none",
+      "A": "none",
+      "raw": "C: from Part 2 onward, Theodora must be present"
+    },
+    {
+      "a": "Lilian",
+      "b": "Tobias",
+      "C": "any",
+      "B": "any",
+      "A": "any",
+      "raw": "C, B, and A: any part"
+    },
+    {
+      "a": "Lysander",
+      "b": "Tobias",
+      "C": "any",
+      "B": "any",
+      "A": "any",
+      "raw": "C, B, and A: any part"
+    },
+    {
+      "a": "Olympia",
+      "b": "Tobias",
+      "C": "any",
+      "B": "any",
+      "A": "any",
+      "raw": "C, B, and A: any part"
+    },
+    {
+      "a": "Anatolia",
+      "b": "Tobias",
+      "C": "P1",
+      "B": "P1",
+      "A": "none",
+      "raw": "C and B: Part 1 only"
+    },
+    {
+      "a": "Sofia",
+      "b": "Tobias",
+      "C": "P1-2",
+      "B": "none",
+      "A": "none",
+      "raw": "C: Parts 1 and 2, both characters recruited"
+    },
+    {
+      "a": "Lilian",
+      "b": "Lysander",
+      "C": "P1-2",
+      "B": "P1-2",
+      "A": "P1-2",
+      "raw": "C and B: Parts 1 and 2, watch before either Theodora–Lilian B or Theodora–Lysander B; A: Parts 1 and 2, watch both Theodora–Lilian B and Theodora–Lysander B first"
+    },
+    {
+      "a": "Lilian",
+      "b": "Talimun",
+      "C": "any",
+      "B": "any",
+      "A": "none",
+      "raw": "C and B: any part"
+    },
+    {
+      "a": "Lilian",
+      "b": "Simon",
+      "C": "P1",
+      "B": "P1|P3",
+      "A": "P2-3",
+      "raw": "C: Part 1 only; B: Parts 1 or 3 only; A: from Part 2 onward"
+    },
+    {
+      "a": "Lilian",
+      "b": "Mu",
+      "C": "P1-2",
+      "B": "P1-2",
+      "A": "none",
+      "raw": "C and B: Parts 1 and 2"
+    },
+    {
+      "a": "Lilian",
+      "b": "Nydine",
+      "C": "P1-2",
+      "B": "P1-2",
+      "A": "none",
+      "raw": "C and B: Parts 1 and 2"
+    },
+    {
+      "a": "Fianna",
+      "b": "Lysander",
+      "C": "P1",
+      "B": "P1",
+      "A": "none",
+      "raw": "before Fianna regains her memories. C and B: Part 1 only"
+    },
+    {
+      "a": "Catania",
+      "b": "Lysander",
+      "C": "P2-3",
+      "B": "P2-3",
+      "A": "none",
+      "raw": "C: from Part 2 Chapter 2 onward, Bertrand must be present; B: from Part 2 Chapter 2 onward"
+    },
+    {
+      "a": "Simon",
+      "b": "Talimun",
+      "C": "P1",
+      "B": "any",
+      "A": "none",
+      "raw": "C: Part 1 only; B: any part"
+    },
+    {
+      "a": "Fianna",
+      "b": "Talimun",
+      "C": "P1-2",
+      "B": "P1-2",
+      "A": "none",
+      "raw": "before Fianna regains her memories. C and B: Parts 1 and 2"
+    },
+    {
+      "a": "Leda",
+      "b": "Talimun",
+      "C": "none",
+      "B": "P3",
+      "A": "P3",
+      "raw": "B: Part 3 only, Leda must have completed or skipped the War story; A: Part 3 only"
+    },
+    {
+      "a": "Simon",
+      "b": "Ursula",
+      "C": "P1",
+      "B": "any",
+      "A": "P3",
+      "raw": "C: Part 1 only; B: Talimun must be present; A: Part 3 only, Talimun must be present"
+    },
+    {
+      "a": "Fianna",
+      "b": "Ursula",
+      "C": "P1",
+      "B": "any",
+      "A": "any",
+      "raw": "C: Part 1 only; B and A: Talimun must be present"
+    },
+    {
+      "a": "Sirocco",
+      "b": "Ursula",
+      "C": "P1",
+      "B": "P1",
+      "A": "none",
+      "raw": "C and B: Part 1 only"
+    },
+    {
+      "a": "Jasmine",
+      "b": "Ursula",
+      "C": "P1-2",
+      "B": "P1-2",
+      "A": "none",
+      "raw": "C and B: Parts 1 and 2"
+    },
+    {
+      "a": "Ludia",
+      "b": "Simon",
+      "C": "any",
+      "B": "any",
+      "A": "any",
+      "raw": "C, B, and A: any part"
+    },
+    {
+      "a": "Fianna",
+      "b": "Ludia",
+      "C": "P1-2",
+      "B": "P1-2",
+      "A": "none",
+      "raw": "both characters recruited, before Fianna regains her memories. C: Parts 1 and 2, before Part 2 Chapter 4 begins, Talimun and Ursula must be present; B: Parts 1 and 2"
+    },
+    {
+      "a": "Buccar",
+      "b": "Ludia",
+      "C": "P1-2",
+      "B": "P1-2",
+      "A": "any",
+      "raw": "C and B: Parts 1 and 2; A: any part"
+    },
+    {
+      "a": "Benditz",
+      "b": "Ludia",
+      "C": "any",
+      "B": "any",
+      "A": "none",
+      "raw": "C and B: any part"
+    },
+    {
+      "a": "Fianna",
+      "b": "Simon",
+      "C": "P1-2",
+      "B": "P1-2",
+      "A": "P1-2",
+      "raw": "both characters recruited. C and B: Parts 1 and 2, before Fianna regains her memories; A: before Part 2 Chapter 4 begins, Talimun must be present"
+    },
+    {
+      "a": "Simon",
+      "b": "Zarcone",
+      "C": "any",
+      "B": "none",
+      "A": "none",
+      "raw": "C: any part"
+    },
+    {
+      "a": "Fianna",
+      "b": "Olympia",
+      "C": "P1",
+      "B": "P3",
+      "A": "none",
+      "raw": "C: Part 1 only; B: Part 3 only"
+    },
+    {
+      "a": "Buccar",
+      "b": "Leda",
+      "C": "P1",
+      "B": "P2",
+      "A": "P3",
+      "raw": "C: Part 1 Chapters 4–8, Leda’s story only, both characters recruited; B: Part 2 only; A: Part 3 only, Leda must have completed or skipped the War story"
+    },
+    {
+      "a": "Leda",
+      "b": "Sirocco",
+      "C": "P1",
+      "B": "P1",
+      "A": "P2-3",
+      "raw": "C and B: Part 1 Chapters 4–10, Leda’s story only, both characters recruited; A: from Part 2 onward, in Part 3, Leda must have completed or skipped the War story"
+    },
+    {
+      "a": "Leda",
+      "b": "Olympia",
+      "C": "P1",
+      "B": "P1-2",
+      "A": "P2-3",
+      "raw": "C: Part 1 only; B: Parts 1 and 2; A: from Part 2 onward, in Part 3, Leda must have completed or skipped the War story"
+    },
+    {
+      "a": "Leda",
+      "b": "Mu",
+      "C": "P1",
+      "B": "P1-2",
+      "A": "P1-2",
+      "raw": "C: from Part 1 Chapter 9 onward, Part 1 only, Leda’s story only, both characters recruited; B: from Part 1 Chapter 10 onward, through Part 2, Leda’s story only, both characters recruited; A: Parts 1 and 2"
+    },
+    {
+      "a": "Guzran",
+      "b": "Leda",
+      "C": "any",
+      "B": "any",
+      "A": "none",
+      "raw": "C: any part; B: Leda’s story only, both characters recruited, in Part 3, Leda must have completed or skipped the War story"
+    },
+    {
+      "a": "Aswan",
+      "b": "Leda",
+      "C": "P3",
+      "B": "none",
+      "A": "none",
+      "raw": "C: Part 3 only, Bertrand must be present, Leda must have completed or skipped the War story"
+    },
+    {
+      "a": "Buccar",
+      "b": "Sirocco",
+      "C": "P1",
+      "B": "P1",
+      "A": "P2-3",
+      "raw": "Leda’s story only. C and B: Part 1 Chapters 4–8, both characters recruited; A: from Part 2 onward, Leda must be present, in Part 3, Leda must have completed or skipped the War story"
+    },
+    {
+      "a": "Buccar",
+      "b": "Olympia",
+      "C": "any",
+      "B": "any",
+      "A": "any",
+      "raw": "C, B, and A: any part"
+    },
+    {
+      "a": "Buccar",
+      "b": "Mu",
+      "C": "P1-2",
+      "B": "P1-2",
+      "A": "P1-2",
+      "raw": "C, B, and A: Parts 1 and 2"
+    },
+    {
+      "a": "Buccar",
+      "b": "Dadao",
+      "C": "P1-2",
+      "B": "any",
+      "A": "none",
+      "raw": "C: Parts 1 and 2; B: any part"
+    },
+    {
+      "a": "Buccar",
+      "b": "Jasmine",
+      "C": "any",
+      "B": "P2-3",
+      "A": "none",
+      "raw": "C: both characters recruited; B: from Part 2 onward"
+    },
+    {
+      "a": "Olympia",
+      "b": "Sirocco",
+      "C": "P1",
+      "B": "P1",
+      "A": "P1",
+      "raw": "C, B, and A: Part 1 only"
+    },
+    {
+      "a": "Mu",
+      "b": "Sirocco",
+      "C": "P1",
+      "B": "P1",
+      "A": "P3",
+      "raw": "C and B: Part 1 only; A: Part 3 only"
+    },
+    {
+      "a": "Anatolia",
+      "b": "Sirocco",
+      "C": "P1-2",
+      "B": "none",
+      "A": "none",
+      "raw": "C: Parts 1 and 2"
+    },
+    {
+      "a": "Sha Lan",
+      "b": "Sirocco",
+      "C": "P1",
+      "B": "P1-2",
+      "A": "P3",
+      "raw": "C: Part 1 only, after the Heroic Games open; B: Parts 1 and 2; A: from Part 3 Section 2 onward, Part 3 only"
+    },
+    {
+      "a": "Alexandra",
+      "b": "Sirocco",
+      "C": "any",
+      "B": "none",
+      "A": "none",
+      "raw": "C: any part"
+    },
+    {
+      "a": "Mu",
+      "b": "Olympia",
+      "C": "P1",
+      "B": "P1",
+      "A": "P3",
+      "raw": "C and B: Part 1 only; A: Part 3 only, after defeating Brimstone Lord Dagda in Part 3"
+    },
+    {
+      "a": "Jasmine",
+      "b": "Olympia",
+      "C": "any",
+      "B": "none",
+      "A": "none",
+      "raw": "C: both characters recruited, Leda must be present"
+    },
+    {
+      "a": "Alexandra",
+      "b": "Olympia",
+      "C": "P1-2",
+      "B": "any",
+      "A": "none",
+      "raw": "C: Parts 1 and 2, Dietrich’s, Theodora’s, or Leda’s story only, after the battle with Alexandra; B: both characters recruited"
+    },
+    {
+      "a": "Creek",
+      "b": "Olympia",
+      "C": "P2-3",
+      "B": "none",
+      "A": "none",
+      "raw": "C: from Part 2 onward"
+    },
+    {
+      "a": "Guzran",
+      "b": "Mu",
+      "C": "P1-2",
+      "B": "none",
+      "A": "none",
+      "raw": "C: Parts 1 and 2, Mikaela must be present"
+    },
+    {
+      "a": "Mu",
+      "b": "Peppe",
+      "C": "P1-2",
+      "B": "P1-2",
+      "A": "none",
+      "raw": "after completing Bertrand's Paralogue: Friendly Match with Brigid's King. C: Parts 1 and 2; B: Parts 1 and 2, both characters recruited"
+    },
+    {
+      "a": "Anatolia",
+      "b": "Yang Jie",
+      "C": "any",
+      "B": "any",
+      "A": "none",
+      "raw": "C and B: any part"
+    },
+    {
+      "a": "Nezha",
+      "b": "Sha Lan",
+      "C": "any",
+      "B": "P1|P3",
+      "A": "none",
+      "raw": "C: any part; B: Parts 1 or 3 only, Anatolia must be present"
+    },
+    {
+      "a": "Halvin",
+      "b": "Sha Lan",
+      "C": "P1",
+      "B": "any",
+      "A": "P2-3",
+      "raw": "C: Part 1 only; B: any part; A: from Part 2 onward"
+    },
+    {
+      "a": "Hong Hua",
+      "b": "Sha Lan",
+      "C": "P3",
+      "B": "none",
+      "A": "none",
+      "raw": "C: Part 3 only"
+    },
+    {
+      "a": "Sha Lan",
+      "b": "Yang Jie",
+      "C": "P2-3",
+      "B": "P2-3",
+      "A": "none",
+      "raw": "C: from Part 2 onward, after Sha Lan’s birthday; B: from Part 2 onward"
+    },
+    {
+      "a": "Dadao",
+      "b": "Nezha",
+      "C": "P1",
+      "B": "P1",
+      "A": "P2-3",
+      "raw": "C and B: Part 1 only, after arriving in Dagsion; A: from Part 2 onward"
+    },
+    {
+      "a": "Halvin",
+      "b": "Nezha",
+      "C": "P1",
+      "B": "none",
+      "A": "none",
+      "raw": "C: Part 1 only"
+    },
+    {
+      "a": "Majide",
+      "b": "Nezha",
+      "C": "any",
+      "B": "none",
+      "A": "none",
+      "raw": "C: any part"
+    },
+    {
+      "a": "Dadao",
+      "b": "Inyoni",
+      "C": "any",
+      "B": "any",
+      "A": "none",
+      "raw": "C: any part; B: both characters recruited"
+    },
+    {
+      "a": "Halvin",
+      "b": "Zarcone",
+      "C": "any",
+      "B": "none",
+      "A": "none",
+      "raw": "C: any part"
+    },
+    {
+      "a": "Creek",
+      "b": "Nathan",
+      "C": "P3",
+      "B": "P3",
+      "A": "none",
+      "raw": "C and B: Part 3 only"
+    }
+  ]
+}

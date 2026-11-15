@@ -69,7 +69,7 @@
     {
       "source": "data/multi-route-audit.json",
       "target": "content/data/multi-route-audit.json",
-      "sha256": "3a97616fd72be140224298a4c7dbdf38a87d9baaf02e7049f1e3864140d33810"
+      "sha256": "6bc017ce7dbdbf7c9d1cc8058175e7c8f94af59c65571f5762e97428b9dec4e5"
     },
     {
       "source": "data/optional-growth-review.json",
@@ -94,7 +94,7 @@
     {
       "source": "data/playbook.json",
       "target": "content/data/playbook.json",
-      "sha256": "5fec738c8910535e3dfd5b1d0d4aa4f32beac728e68d3ef683f7fea866cb9bd8"
+      "sha256": "1beab49e23d7ef7841698af3d1948f992610cf482f3b9da49c55ab9df8deff1b"
     },
     {
       "source": "data/purchase-plan.json",
@@ -109,7 +109,7 @@
     {
       "source": "data/recruit-all-plan.json",
       "target": "content/data/recruit-all-plan.json",
-      "sha256": "7904f4f280ccb7eea74ae1745dffdbc14fb3b213bf0c1907af50324d318ba791"
+      "sha256": "596dcbeb78775b7fe5f0783c15b6bf9c885dc09dd7bfbc153b258db4742b74a7"
     },
     {
       "source": "data/recruit-materials.json",
@@ -129,7 +129,7 @@
     {
       "source": "data/roster-plan.json",
       "target": "content/data/roster-plan.json",
-      "sha256": "10f4c62455c447f60da81c2fbc60fcd773b40c2bf25867688c38fddada1a8592"
+      "sha256": "a0b12559518207cf1d2756c53311ecdd0122e089c9ac5d6a03ba7a36c27d51aa"
     },
     {
       "source": "data/roster-selection-sources.json",
@@ -224,7 +224,7 @@
     {
       "source": "data/weekly-training.json",
       "target": "content/data/weekly-training.json",
-      "sha256": "3be78011c276bb8000be3c4d59e310030abf11755dca0518287ffca0904d0fa0"
+      "sha256": "3747444522e014f93be415e6be4f03f45ffe9f9ceab821840e54aaf4d41b115f"
     },
     {
       "source": "notes/arena-training-review.md",
@@ -1019,12 +1019,12 @@
     {
       "source": "notes/knowledge/preferences.md",
       "target": "content/notes/knowledge/preferences.md",
-      "sha256": "7ebfa02d3f222f0c3bb3ba0907ff83b33af6c76d8abf7174faaec53d9c0c7d46"
+      "sha256": "a46a094fd81c2b1c7f4d3b38e949200b0d6e192ea3e9e08afd96f12a92150b35"
     },
     {
       "source": "notes/knowledge/README.md",
       "target": "content/notes/knowledge/README.md",
-      "sha256": "3c6496a4ecefedba7a09db5ae969c1badf0a2f5d9f073ca547ff45c9c875b72d"
+      "sha256": "8bd612dc0f608c2a0dd8b144257324281dfa8cfd9c024b119ff78306b123fbf1"
     },
     {
       "source": "notes/knowledge/session-review-20261104.md",
@@ -1244,7 +1244,7 @@
     {
       "source": "notes/recruit-all-review.md",
       "target": "content/notes/recruit-all-review.md",
-      "sha256": "09a4220b5fd3e887aae9dfea0b82949f53ecd2167cb4d8d8c3d5fe93dcc3ebf2"
+      "sha256": "34bf127968f327817850c5f25af3de1515a139006c153f922fa9c6eff8a73e34"
     },
     {
       "source": "notes/recruit-material-review.md",
@@ -1374,7 +1374,7 @@
     {
       "source": "notes/roster-selection-review.md",
       "target": "content/notes/roster-selection-review.md",
-      "sha256": "5ebc69dbc94849e0d1abe0d950d8bf2547929bc15c5141f4c9785ab32ec40d45"
+      "sha256": "bc1d82e2f16b5fcffa53db97ccc8b424829d6aa0a696c575f1b7c7cebcd1cc96"
     },
     {
       "source": "notes/sequential-routes-apply-plan.md",
@@ -1419,7 +1419,7 @@
     {
       "source": "notes/support-pairs-by-route.md",
       "target": "content/notes/support-pairs-by-route.md",
-      "sha256": "ec15487b9743a002d76d4732e5f9b0b2619a43792c12f5be2157527da124c604"
+      "sha256": "e572100d1b8fdbd73a54c9f4936e9e8781e348c1e2f927068d7560dccece7ded"
     },
     {
       "source": "notes/sword-xp-review.md",
@@ -1804,7 +1804,7 @@
     {
       "source": "personalized-app/src/content.json",
       "target": "content/source/react-content.json",
-      "sha256": "9ce8ca975aeee610f127f5637652c23299d12a9684275b2a76907a1e71b6f194"
+      "sha256": "d788144d36a7fd3cc21779c290e3b7c31ef3701209d9dbba115e7b17b4b4e2df"
     },
     {
       "source": "personalized-app/src/timeskip-portraits.json",
@@ -1977,7 +1977,7 @@
       "sha256": "b6601f69a8318359991d5fadc11c27348b0df451ecddba9df142e5f979e508ca"
     }
   ],
-  "generatedSourceSha256": "9ce8ca975aeee610f127f5637652c23299d12a9684275b2a76907a1e71b6f194",
+  "generatedSourceSha256": "d788144d36a7fd3cc21779c290e3b7c31ef3701209d9dbba115e7b17b4b4e2df",
   "activeActions": 1899,
   "checkIds": 2881,
   "peopleByRoute": {
