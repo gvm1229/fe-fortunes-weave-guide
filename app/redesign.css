@@ -517,7 +517,7 @@ html:has(.date-odometer){scroll-padding-bottom:72px}
   html:has(.date-odometer){scroll-padding-bottom:56px}
 }
 /* 제목 초상화 단추(2026-11-15): 그림 크기는 그대로, 누를 곳만 넓힌다. */
-.portrait-button{display:inline-flex;padding:4px;margin:-4px;border:0;border-radius:10px;background:none;cursor:pointer}
+.portrait-button{display:inline-flex;padding:4px;margin:0;border:0;border-radius:10px;background:none;cursor:pointer}
 .portrait-button:focus-visible{outline:3px solid var(--text);outline-offset:0}
 /* 이 장의 인물 아래 「루트별 지원 대화」 단추(2026-11-15). */
 .context-rail .support-doc-button{display:inline-flex;align-items:center;gap:8px;margin-block-start:16px;min-block-size:44px}
@@ -526,7 +526,7 @@ progress{background:#FFFFFF;color:#1E8E3E;accent-color:#1E8E3E;border:1px solid 
 progress::-webkit-progress-bar{background:#FFFFFF}
 progress::-webkit-progress-value{background:#1E8E3E}
 progress::-moz-progress-bar{background:#1E8E3E}
-/* 초상화 단추가 44px(36+4+4)이 되도록 간격 8px(검토 11 L6). 단추가 있는 묶음만. */
+/* 초상화 단추가 44px(36+4+4)이 되도록 간격 8px(검토 11 L6). 2026-11-15부터 음수 여백 없이 단추 사이도 8px. 단추가 있는 묶음만. */
 .group-portraits:has(.portrait-button){gap:8px}
 /* 그림이 없는 선물 물품의 일반 아이콘(2026-11-15): 다른 물품 그림과 같은 22px 자리. */
 .game-badge>.gift-fallback{inline-size:22px;block-size:22px;flex-shrink:0;color:var(--badge-ink,currentColor)}
@@ -565,3 +565,31 @@ progress::-moz-progress-bar{background:#1E8E3E}
 @keyframes import-spin{to{transform:rotate(360deg)}}
 @media(prefers-reduced-motion:reduce){.import-spinner{animation:none}}
 .import-toast{position:fixed;z-index:60;inset-inline:16px;inset-block-start:calc(var(--task-header-height,64px) + 12px);margin:0 auto;inline-size:fit-content;max-inline-size:calc(100% - 32px);padding:12px 16px;border-radius:12px;background:var(--primary);color:var(--primary-fg);font-weight:700;box-shadow:0 8px 24px #0002}
+/* 단추 간격(2026-11-15 사용자 지시: 어떤 단추도 서로 붙지 않게, 사이에 여백). 모든 단추끼리 최소 4px(scripts/button-gap-check.mjs). */
+.person-inline{display:inline-block;margin:2px}
+.image-open{margin-block:4px}
+@media(max-width:767px){.view-nav{gap:4px}}
+@media(max-width:767px){.guide-navigation{gap:4px}}
+:is(.source-markup,.semantic,.readable-body) .button{margin:2px}
+.reference-chip,:is(.source-markup,.semantic) :is(.reference-chip,.text-link){margin:3px 2px}
+/* 테마 단추 하나만(2026-11-15 사용자 지시). 머리 막대가 붙기 전: 오른쪽 위 단추만. 붙은 뒤: 오른쪽 위 단추는 사라지고 막대 오른쪽 끝에 나타난다. 폭·투명도를 함께 바꿔 스크롤 중 튀지 않게 한다. */
+.guide-topbar>.icon-button{transition:opacity .2s ease,visibility .2s}
+:root[data-head-stuck] .guide-topbar>.icon-button{opacity:0;visibility:hidden}
+.route-theme{overflow:hidden;transition:max-inline-size .2s ease,opacity .2s ease,visibility .2s,margin .2s ease;max-inline-size:64px}
+:root:not([data-head-stuck]) .route-theme{max-inline-size:0;opacity:0;visibility:hidden;margin:0}
+/* 넓은 화면은 막대 칸 사이 24px이 숨은 단추 앞에 남는다. 숨은 동안 그만큼 당긴다. */
+@media(min-width:1100px){:root:not([data-head-stuck]) .route-head-bar>.route-theme{margin-inline-start:-24px}}
+@media(prefers-reduced-motion:reduce){.guide-topbar>.icon-button,.route-theme{transition:none}}
+/* 첫 화면 위쪽 단추가 화면 맨 위에 붙지 않게(2026-11-15 사용자 지시). */
+.home{padding-top:12px}
+/* 세로 화면(9:16 등)에서는 군주 카드를 위아래로 쌓는다(2026-11-15 사용자 지시). 카드는 윗몸이 보이는 높이로 줄인다. */
+@media(orientation:portrait){
+  .home{height:auto;min-height:100dvh;grid-template-rows:auto auto auto}
+  .route-deck{grid-template-columns:1fr;grid-template-rows:none;gap:16px}
+  .route-card{block-size:clamp(320px,42vh,560px)}
+  .route-card:hover{transform:none}
+  /* 그림은 카드 전체를 채우고 이름·진행은 아래쪽 어두운 띠 위에 얹는다(그림이 가로로 잘려 보이지 않게). */
+  .home .lord-portrait,.home [data-route] .lord-portrait{position:absolute;inset:0;block-size:100%;padding-top:48px;object-position:center top}
+  .home .route-card-content{margin-block-start:auto;background:linear-gradient(transparent,rgb(0 0 0 / .6) 40%)}
+}
+.sheet-scroll .text-link{margin:3px 2px}

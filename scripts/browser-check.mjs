@@ -105,7 +105,7 @@ async function measure(page,{route='home',view='home',theme,width,height,screens
   const label=`${route}-${view}-${width}x${height}-${theme}`;
   Object.assign(row,{label,route,view,width,height,theme,expectedBackground:expected,backgroundMatches:row.background===expected&&(route!=='home'||row.bgToken===expected)});
   results.push(row);
-  for(const [ok,message] of [[row.horizontalScroll===0,'가로 스크롤'],[row.minimumFont>=(width<768&&route==='team'?14:18),'최소 글자'],[row.dashboardVerticalScroll===null||row.dashboardVerticalScroll===0||width<768,'첫 화면 세로 스크롤'],[row.overlapCount===0,'요소 겹침'],[row.brokenImages.length===0,'그림 로딩'],[row.transparentButtons.length===0,'채운 버튼'],[row.backgroundMatches,'body 배경']])if(!ok)failures.push(`${label}: ${message}`);
+  for(const [ok,message] of [[row.horizontalScroll===0,'가로 스크롤'],[row.minimumFont>=(width<768&&route==='team'?14:18),'최소 글자'],[row.dashboardVerticalScroll===null||row.dashboardVerticalScroll===0||height>width,'첫 화면 세로 스크롤'],[row.overlapCount===0,'요소 겹침'],[row.brokenImages.length===0,'그림 로딩'],[row.transparentButtons.length===0,'채운 버튼'],[row.backgroundMatches,'body 배경']])if(!ok)failures.push(`${label}: ${message}`);
   for(const [items,message]of [[row.aspectRatioViolations,'원본 그림 비율'],[row.faceSizeViolations,'얼굴 크기'],[row.paragraphViolations,'2문장 문단'],[row.groupLineViolations,'3줄 묶음'],[row.eraViolations,'타임스킵 시대'],[row.croppedScenes,'그림 전체 표시']])if(items.length)failures.push(`${label}: ${message}`);
   if(row.personTables.some(t=>t.columns!==2||Math.abs(t.labelWidth-(width<768?100:120))>1))failures.push(`${label}: 인물 2열 표 너비`);
   if(row.goldTables.some(t=>t.columns!==3||!t.amountRight))failures.push(`${label}: 골드 3열 표·금액 정렬`);
@@ -116,7 +116,8 @@ async function measure(page,{route='home',view='home',theme,width,height,screens
     if(JSON.stringify(row.order.map(r=>r.route))!==JSON.stringify(['cai','dietrich','theodora','leda']))failures.push(`${label}: 오벨리스크 순서`);
     const badges=['4th','3rd','1st','2nd'];
     if(row.order.some((r,i)=>r.badge!==`루트 진행 순서: ${badges[i]}`||!r.badgeVisible||!r.src.includes('/pre-timeskip/large/')))failures.push(`${label}: 배지·타임스킵 전 큰 그림`);
-    if(width===375&&(row.order[0].rect.y!==row.order[1].rect.y||row.order[2].rect.y!==row.order[3].rect.y||row.order[2].rect.y<=row.order[0].rect.y))failures.push(`${label}: 휴대폰 2×2`);
+    // 2026-11-15 사용자 지시: 세로 화면(9:16 등)은 카드 4장을 위아래로 쌓는다(이전 휴대폰 2×2 대체). 세로 화면의 첫 화면 세로 스크롤은 허용.
+    if(height>width&&!(row.order.every((r,i)=>i===0||(r.rect.y>row.order[i-1].rect.y&&r.rect.x===row.order[0].rect.x))))failures.push(`${label}: 세로 화면 카드 쌓기`);
   }
   // docs에 PNG를 계속 쓰면 개발 서버가 다시 불러와지므로 검사 뒤 복사한다.
   if(screenshot){row.png=`${screenshots}/${label}.png`;await page.screenshot({path:`${staging}/${label}.png`,fullPage:false});}

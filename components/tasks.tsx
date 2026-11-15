@@ -57,9 +57,12 @@ export function Tasks({route,label,part,chapters,groups,onDoc,onMaterial,onPerso
     const measure=()=>{host?.style.setProperty('--task-header-height',`${element.getBoundingClientRect().height}px`);document.documentElement.style.setProperty('--task-header-height',`${element.getBoundingClientRect().height}px`);};
     const observer=new ResizeObserver(measure);observer.observe(element);measure();
     // scroll-state 쿼리를 모르는 브라우저: 붙은 상태를 IntersectionObserver로 표시한다(같은 모양을 .is-stuck에 둔다).
+    // 테마 단추는 하나만(2026-11-15 사용자 지시): 머리 막대가 맨 위에 붙기 전에는 오른쪽 위(첫 줄) 단추, 붙으면 막대 오른쪽 끝 단추. <html data-head-stuck>로 바꾼다.
+    let stuck=false;const flag=()=>{const now=element.getBoundingClientRect().top<=0.5&&scrollY>0;if(now!==stuck){stuck=now;document.documentElement.toggleAttribute('data-head-stuck',now);}};
+    addEventListener('scroll',flag,{passive:true});addEventListener('resize',flag);flag();
     let io:IntersectionObserver|undefined;
     if(!CSS.supports('container-type: scroll-state')){io=new IntersectionObserver(([e])=>element.classList.toggle('is-stuck',e.intersectionRatio<1&&e.boundingClientRect.top<1),{threshold:[1],rootMargin:'-1px 0px 0px 0px'});io.observe(element);}
-    return ()=>{observer.disconnect();io?.disconnect();document.documentElement.style.removeProperty('--task-header-height');};},[]);
+    return ()=>{observer.disconnect();io?.disconnect();removeEventListener('scroll',flag);removeEventListener('resize',flag);document.documentElement.removeAttribute('data-head-stuck');document.documentElement.style.removeProperty('--task-header-height');};},[]);
   const active=chapters.find(c=>chapterGroups(c,groups).some(g=>g.actions.some(a=>!checked(a,g.id,checks.effective))))||chapters.at(-1)!;
   useEffect(()=>{
     if(!checks.ready||scrolled.current)return;

@@ -13,7 +13,9 @@
     "transfer": "node scripts/transfer.mjs",
     "verify": "node scripts/verify.mjs",
     "test:browser": "node scripts/browser-check.mjs",
-    "test:status": "node scripts/status-browser-check.mjs"
+    "test:status": "node scripts/status-browser-check.mjs",
+    "test:gaps": "node scripts/button-gap-check.mjs",
+    "test:layout": "node scripts/layout-browser-check.mjs"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.3.1",

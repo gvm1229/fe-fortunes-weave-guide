@@ -100,7 +100,7 @@
           "src": "/assets/portraits/pre-timeskip/large/cai.webp",
           "rect": {
             "x": 24,
-            "y": 72
+            "y": 84
           },
           "badgeVisible": true
         },
@@ -110,7 +110,7 @@
           "src": "/assets/portraits/pre-timeskip/large/dietrich.webp",
           "rect": {
             "x": 378,
-            "y": 72
+            "y": 84
           },
           "badgeVisible": true
         },
@@ -120,7 +120,7 @@
           "src": "/assets/portraits/pre-timeskip/large/theodora.webp",
           "rect": {
             "x": 732,
-            "y": 72
+            "y": 84
           },
           "badgeVisible": true
         },
@@ -130,7 +130,7 @@
           "src": "/assets/portraits/pre-timeskip/large/leda.webp",
           "rect": {
             "x": 1086,
-            "y": 72
+            "y": 84
           },
           "badgeVisible": true
         }
@@ -3674,7 +3674,7 @@
           "src": "/assets/portraits/pre-timeskip/large/cai.webp",
           "rect": {
             "x": 24,
-            "y": 72
+            "y": 84
           },
           "badgeVisible": true
         },
@@ -3684,7 +3684,7 @@
           "src": "/assets/portraits/pre-timeskip/large/dietrich.webp",
           "rect": {
             "x": 378,
-            "y": 72
+            "y": 84
           },
           "badgeVisible": true
         },
@@ -3694,7 +3694,7 @@
           "src": "/assets/portraits/pre-timeskip/large/theodora.webp",
           "rect": {
             "x": 732,
-            "y": 72
+            "y": 84
           },
           "badgeVisible": true
         },
@@ -3704,7 +3704,7 @@
           "src": "/assets/portraits/pre-timeskip/large/leda.webp",
           "rect": {
             "x": 1086,
-            "y": 72
+            "y": 84
           },
           "badgeVisible": true
         }
@@ -7248,7 +7248,7 @@
           "src": "/assets/portraits/pre-timeskip/large/cai.webp",
           "rect": {
             "x": 24,
-            "y": 72
+            "y": 84
           },
           "badgeVisible": true
         },
@@ -7258,7 +7258,7 @@
           "src": "/assets/portraits/pre-timeskip/large/dietrich.webp",
           "rect": {
             "x": 498,
-            "y": 72
+            "y": 84
           },
           "badgeVisible": true
         },
@@ -7268,7 +7268,7 @@
           "src": "/assets/portraits/pre-timeskip/large/theodora.webp",
           "rect": {
             "x": 972,
-            "y": 72
+            "y": 84
           },
           "badgeVisible": true
         },
@@ -7278,7 +7278,7 @@
           "src": "/assets/portraits/pre-timeskip/large/leda.webp",
           "rect": {
             "x": 1446,
-            "y": 72
+            "y": 84
           },
           "badgeVisible": true
         }
@@ -10822,7 +10822,7 @@
           "src": "/assets/portraits/pre-timeskip/large/cai.webp",
           "rect": {
             "x": 24,
-            "y": 72
+            "y": 84
           },
           "badgeVisible": true
         },
@@ -10832,7 +10832,7 @@
           "src": "/assets/portraits/pre-timeskip/large/dietrich.webp",
           "rect": {
             "x": 498,
-            "y": 72
+            "y": 84
           },
           "badgeVisible": true
         },
@@ -10842,7 +10842,7 @@
           "src": "/assets/portraits/pre-timeskip/large/theodora.webp",
           "rect": {
             "x": 972,
-            "y": 72
+            "y": 84
           },
           "badgeVisible": true
         },
@@ -10852,7 +10852,7 @@
           "src": "/assets/portraits/pre-timeskip/large/leda.webp",
           "rect": {
             "x": 1446,
-            "y": 72
+            "y": 84
           },
           "badgeVisible": true
         }
@@ -14349,7 +14349,7 @@
       "horizontalScroll": 0,
       "minimumFont": 18,
       "small": [],
-      "dashboardVerticalScroll": 414,
+      "dashboardVerticalScroll": 836,
       "overlapCount": 0,
       "overlaps": [],
       "brokenImages": [],
@@ -14396,7 +14396,7 @@
           "src": "/assets/portraits/pre-timeskip/large/cai.webp",
           "rect": {
             "x": 16,
-            "y": 68
+            "y": 72
           },
           "badgeVisible": true
         },
@@ -14405,8 +14405,8 @@
           "badge": "루트 진행 순서: 3rd",
           "src": "/assets/portraits/pre-timeskip/large/dietrich.webp",
           "rect": {
-            "x": 193.5,
-            "y": 68
+            "x": 16,
+            "y": 429.03125
           },
           "badgeVisible": true
         },
@@ -14416,7 +14416,7 @@
           "src": "/assets/portraits/pre-timeskip/large/theodora.webp",
           "rect": {
             "x": 16,
-            "y": 570.921875
+            "y": 786.0625
           },
           "badgeVisible": true
         },
@@ -14425,8 +14425,8 @@
           "badge": "루트 진행 순서: 2nd",
           "src": "/assets/portraits/pre-timeskip/large/leda.webp",
           "rect": {
-            "x": 193.5,
-            "y": 570.921875
+            "x": 16,
+            "y": 1143.09375
           },
           "badgeVisible": true
         }
@@ -18649,7 +18649,7 @@
       "horizontalScroll": 0,
       "minimumFont": 18,
       "small": [],
-      "dashboardVerticalScroll": 414,
+      "dashboardVerticalScroll": 836,
       "overlapCount": 0,
       "overlaps": [],
       "brokenImages": [],
@@ -18696,7 +18696,7 @@
           "src": "/assets/portraits/pre-timeskip/large/cai.webp",
           "rect": {
             "x": 16,
-            "y": 68
+            "y": 72
           },
           "badgeVisible": true
         },
@@ -18705,8 +18705,8 @@
           "badge": "루트 진행 순서: 3rd",
           "src": "/assets/portraits/pre-timeskip/large/dietrich.webp",
           "rect": {
-            "x": 193.5,
-            "y": 68
+            "x": 16,
+            "y": 429.03125
           },
           "badgeVisible": true
         },
@@ -18716,7 +18716,7 @@
           "src": "/assets/portraits/pre-timeskip/large/theodora.webp",
           "rect": {
             "x": 16,
-            "y": 570.921875
+            "y": 786.0625
           },
           "badgeVisible": true
         },
@@ -18725,8 +18725,8 @@
           "badge": "루트 진행 순서: 2nd",
           "src": "/assets/portraits/pre-timeskip/large/leda.webp",
           "rect": {
-            "x": 193.5,
-            "y": 570.921875
+            "x": 16,
+            "y": 1143.09375
           },
           "badgeVisible": true
         }
@@ -22949,7 +22949,7 @@
       "horizontalScroll": 0,
       "minimumFont": 18,
       "small": [],
-      "dashboardVerticalScroll": 0,
+      "dashboardVerticalScroll": 988,
       "overlapCount": 0,
       "overlaps": [],
       "brokenImages": [],
@@ -22996,7 +22996,7 @@
           "src": "/assets/portraits/pre-timeskip/large/cai.webp",
           "rect": {
             "x": 24,
-            "y": 72
+            "y": 76
           },
           "badgeVisible": true
         },
@@ -23005,8 +23005,8 @@
           "badge": "루트 진행 순서: 3rd",
           "src": "/assets/portraits/pre-timeskip/large/dietrich.webp",
           "rect": {
-            "x": 210,
-            "y": 72
+            "x": 24,
+            "y": 522.078125
           },
           "badgeVisible": true
         },
@@ -23015,8 +23015,8 @@
           "badge": "루트 진행 순서: 1st",
           "src": "/assets/portraits/pre-timeskip/large/theodora.webp",
           "rect": {
-            "x": 396,
-            "y": 72
+            "x": 24,
+            "y": 968.15625
           },
           "badgeVisible": true
         },
@@ -23025,8 +23025,8 @@
           "badge": "루트 진행 순서: 2nd",
           "src": "/assets/portraits/pre-timeskip/large/leda.webp",
           "rect": {
-            "x": 582,
-            "y": 72
+            "x": 24,
+            "y": 1414.234375
           },
           "badgeVisible": true
         }
@@ -26523,7 +26523,7 @@
       "horizontalScroll": 0,
       "minimumFont": 18,
       "small": [],
-      "dashboardVerticalScroll": 0,
+      "dashboardVerticalScroll": 988,
       "overlapCount": 0,
       "overlaps": [],
       "brokenImages": [],
@@ -26570,7 +26570,7 @@
           "src": "/assets/portraits/pre-timeskip/large/cai.webp",
           "rect": {
             "x": 24,
-            "y": 72
+            "y": 76
           },
           "badgeVisible": true
         },
@@ -26579,8 +26579,8 @@
           "badge": "루트 진행 순서: 3rd",
           "src": "/assets/portraits/pre-timeskip/large/dietrich.webp",
           "rect": {
-            "x": 210,
-            "y": 72
+            "x": 24,
+            "y": 522.078125
           },
           "badgeVisible": true
         },
@@ -26589,8 +26589,8 @@
           "badge": "루트 진행 순서: 1st",
           "src": "/assets/portraits/pre-timeskip/large/theodora.webp",
           "rect": {
-            "x": 396,
-            "y": 72
+            "x": 24,
+            "y": 968.15625
           },
           "badgeVisible": true
         },
@@ -26599,8 +26599,8 @@
           "badge": "루트 진행 순서: 2nd",
           "src": "/assets/portraits/pre-timeskip/large/leda.webp",
           "rect": {
-            "x": 582,
-            "y": 72
+            "x": 24,
+            "y": 1414.234375
           },
           "badgeVisible": true
         }
@@ -30144,7 +30144,7 @@
           "src": "/assets/portraits/pre-timeskip/large/cai.webp",
           "rect": {
             "x": 24,
-            "y": 72
+            "y": 84
           },
           "badgeVisible": true
         },
@@ -30154,7 +30154,7 @@
           "src": "/assets/portraits/pre-timeskip/large/dietrich.webp",
           "rect": {
             "x": 338,
-            "y": 72
+            "y": 84
           },
           "badgeVisible": true
         },
@@ -30164,7 +30164,7 @@
           "src": "/assets/portraits/pre-timeskip/large/theodora.webp",
           "rect": {
             "x": 652,
-            "y": 72
+            "y": 84
           },
           "badgeVisible": true
         },
@@ -30174,7 +30174,7 @@
           "src": "/assets/portraits/pre-timeskip/large/leda.webp",
           "rect": {
             "x": 966,
-            "y": 72
+            "y": 84
           },
           "badgeVisible": true
         }
@@ -30272,7 +30272,7 @@
           "src": "/assets/portraits/pre-timeskip/large/cai.webp",
           "rect": {
             "x": 24,
-            "y": 72
+            "y": 84
           },
           "badgeVisible": true
         },
@@ -30282,7 +30282,7 @@
           "src": "/assets/portraits/pre-timeskip/large/dietrich.webp",
           "rect": {
             "x": 338,
-            "y": 72
+            "y": 84
           },
           "badgeVisible": true
         },
@@ -30292,7 +30292,7 @@
           "src": "/assets/portraits/pre-timeskip/large/theodora.webp",
           "rect": {
             "x": 652,
-            "y": 72
+            "y": 84
           },
           "badgeVisible": true
         },
@@ -30302,7 +30302,7 @@
           "src": "/assets/portraits/pre-timeskip/large/leda.webp",
           "rect": {
             "x": 966,
-            "y": 72
+            "y": 84
           },
           "badgeVisible": true
         }
