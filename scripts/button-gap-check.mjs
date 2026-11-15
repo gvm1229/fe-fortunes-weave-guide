@@ -1,4 +1,5 @@
 // 2026-11-15 사용자 지시: 모든 단추는 서로 붙지 않고 간격이 있어야 한다.
+// 사용자 규칙: [U37] 단추끼리 4px 이상, 화면 가장자리에서 8px 이상.
 // 홈·팀·네 루트 1·2부·3부의 모든 화면(할 일·인물·준비·재료·문서), 모든 장을 펼친 상태, 열리는 서랍·메뉴에서
 // 보이는 단추끼리(가로·세로) 간격이 MIN px 이상인지 본다. 겹친 것도 붙은 것으로 센다.
 // 맨 위(스크롤 0)에서 잰다. fixed 층(아래 날짜·맨 위로·서랍 바탕)과 본문은 서로 재지 않는다. 닫힌 접기 안처럼 보이지 않는 단추는 뺀다.
@@ -21,6 +22,8 @@ function audit({ SEL, MIN, scope }) {
     if (e.tagName === 'A' && getComputedStyle(e).display === 'inline' && !e.className) return false;
     // 단추나 라벨 안의 체크 칸은 그 단추의 일부다.
     if (e.tagName === 'INPUT' && e.closest('label,.check-control')) return false;
+    // 폭 0으로 접힌 칸(overflow hidden) 안에 숨은 단추는 보이지 않는다(붙기 전 막대 테마 단추).
+    for (let x = e.parentElement; x && x !== document.body; x = x.parentElement) { const cs = getComputedStyle(x); if (cs.overflowX !== 'visible' && x.getBoundingClientRect().width < 1) return false; }
     const r = e.getBoundingClientRect(); return r.width > 1 && r.height > 1;
   });
   const out = [];
@@ -45,6 +48,8 @@ async function check(p, label, scope) {
 /** 지금 화면의 모든 접기를 펼치고 맨 위로 올린 뒤 잰다. */
 async function checkAll(p, label) {
   await p.evaluate(() => { document.querySelectorAll('main details:not(.backup-menu)').forEach(d => { d.open = true; }); scrollTo(0, 0); }); await p.waitForTimeout(300);
+  // 처음 열 때 현재 장으로 내려가 머리가 붙었다가 맨 위로 올라오면 테마 단추가 0.2초에 걸쳐 바뀐다. 바뀜이 끝난 뒤 잰다.
+  await p.waitForFunction(() => !document.documentElement.hasAttribute('data-head-stuck')).catch(() => {}); await p.waitForTimeout(400);
   await check(p, label);
 }
 /** 화면 안 단추 종류마다 하나씩 눌러 서랍이 열리면 그 서랍을 잰다. */

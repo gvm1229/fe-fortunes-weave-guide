@@ -56,5 +56,5 @@ assert.deepEqual(spell('.game-badge').map((_,e)=>spell(e).attr('data-kind')).get
 console.log('통과: 문장 오탐 없음 · 수량 포함 · 마법은 기능 배지');
 
 const f25=load(renderToStaticMarkup(createElement(GameText,{text:'세오도라 · 토비아스'})),null,false);
-assert.deepEqual(f25('.named-person img').map((_,e)=>f25(e).attr('class')||'').get(),['final25-portrait',''],'최종 25인 범위만 금색 테두리');
-console.log('통과: 최종 25인 초상화 금색 테두리');
+assert.deepEqual(f25('.named-person img').map((_,e)=>f25(e).attr('class')||'').get(),['final25-portrait',''],'최종 25인 범위만 빨간 테두리(2026-11-14 금색→빨강)');
+console.log('통과: 최종 25인 초상화 빨간 테두리');

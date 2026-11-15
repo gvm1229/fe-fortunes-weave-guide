@@ -1,4 +1,5 @@
 // 최종 25인: 16:9·9:16 등 여러 화면에서 스크롤 없이 25명이 보이고, 교체 카드만 6px 테두리와 같은 색 배지를 갖는지 검사한다.
+// 사용자 규칙: [U43] 휴대폰 좁은 칸 최소 글자 14px(그 밖 18px) · [U04] 최종 25인은 16:9·9:16에서 스크롤 없이 다 보임 · [U05] 교체 카드 6px 테두리와 같은 색 오른쪽 위 배지.
 // 실행: BROWSER_BASE_URL=http://localhost:18763 node scripts/team-fit-check.mjs (정적 빌드 권장, 격리된 Playwright 저장소 사용)
 import { chromium } from '@playwright/test';
 import assert from 'node:assert/strict';

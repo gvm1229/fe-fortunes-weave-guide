@@ -1,4 +1,5 @@
 import {chromium} from '@playwright/test';
+// 사용자 규칙: [U02] 인물 정보는 표, 시험 조건 등은 제목·설명 쌍(줄 수 제한) · [U17] 배지 겹친 바탕 없음 · [U18] 루트 머리 고정, 도구 줄 진행 막대 없음 · [U19] 넓은 화면 할 일 칸.
 import {mkdirSync,writeFileSync,copyFileSync} from 'node:fs';
 import {resolve} from 'node:path';
 import assert from 'node:assert/strict';

@@ -10,6 +10,7 @@ assert.equal(avoid.length,10,'지양 10명');
 const paths=[];
 for(const [route,people]of Object.entries(goals))for(const [name,phases]of Object.entries(people))for(const part of ['1','2','3'])paths.push([route,name,part,(route==='cai'&&cai.people[name]?.[part]?.classes)||phases[part]?.classes||[]]);
 for(const [route,name,part,classes]of paths)for(const c of classes){assert.ok(manifest[c],`${route}/${name} ${part}부 병종 그림 없음: ${c}`);assert.ok(details[c],`${route}/${name} ${part}부 시험 자료 없음: ${c}`);}
+// [U13] 카이 루트: 마법·회복 담당이 아니면 1·2부 전차병(2부 끝까지 유지). 알렉산드라(고유 탈것은 비행 병종)·누조(투자 없음)는 예외.
 for(const [name,phases]of Object.entries(cai.people)){assert.ok(goals.cai[name],`카이 루트 인물 아님: ${name}`);assert.ok(!cai.excluded.includes(name));assert.ok(phases['1'].classes.includes('전차병')&&phases['2'].classes.includes('전차병'),`${name} 전차병 경로`);assert.equal(phases['2'].next,goals.cai[name]['3'].classes.at(-1),`${name} 3부 최종 병종 유지`);}
 for(const name of cai.excluded)assert.ok(goals.cai[name]['1'].classes.some(c=>/프리스트|비숍/.test(c)),`${name} 마법·회복 담당`);
 for(const [name,phases]of Object.entries(goals.cai))if(!cai.excluded.includes(name)&&!['알렉산드라','누조'].includes(name)){const c=[...(cai.people[name]?.['1']?.classes||phases['1'].classes),...(cai.people[name]?.['2']?.classes||phases['2'].classes)];assert.ok(c.includes('전차병'),`카이 루트 ${name}은 전차병 경로가 있어야 함`);}

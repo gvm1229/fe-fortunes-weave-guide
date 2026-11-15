@@ -1,4 +1,5 @@
 import { readFileSync, existsSync, readdirSync } from 'node:fs';
+// 사용자 규칙(docs/user-rules.md) 중 이 파일이 검사하는 것: [U16] 장 묶음은 그 장 할 일만(장 제목 검사) · [U21] 12장 연회 반복·외전 반복 없음 · [U23] 이오는 탈것 보존 루트만(이오 없음) · [U25] 사이트에 개인 진행 없음 · [U26] 영입만 카드 싼 선물 6개 · [U29] 바닥 날짜 계산 · [U31] 같은 말 되풀이 · [U32] 지원 대화 인물 거르기. 나머지 자료 규칙은 rules-check.mjs.
 import { createHash } from 'node:crypto';
 import assert from 'node:assert/strict';
 import { checked, validateChecks, sanitizeStatus } from '../lib/check-state.ts';
@@ -15,6 +16,7 @@ import './verify-design-assets.mjs';
  const f=filterPairs(t,['디에고']).split('\n').filter(l=>l.startsWith('| 세오도라 |'));assert.ok(f.length>0&&f.every(l=>l.includes('디에고')),'디에고 거르기');}
 import './verify-feature-parity.mjs';
 import './verify-redesign.mjs';
+import './rules-check.mjs';
 import './verify-character-copy.mjs';
 import './verify-character-data.mjs';
 const read=p=>JSON.parse(readFileSync(p,'utf8'));
@@ -96,6 +98,7 @@ if(progress)assert.deepEqual(validateChecks(JSON.parse(JSON.stringify(progress))
     for(const name of plan.pairCoverage.routeRoster[r])assert.ok(text.includes(name),`${r} 합류 확인에 ${name}`);
     assert.ok(plan.pairCoverage.routeRoster[r].includes('울턴드'),r+' 울턴드');
   }
+  // [U40] 3부 인과 융합은 지원 반복(연회)을 모두 끝낸 뒤(구간 다시 하기로 파편이 돌아오지 않는다). [U41] 울턴드는 던전 반복 네 루트 모두(위 assert).
   const order=checklist.stages.find(s=>s.id==='part3-plan').chapters.flatMap(c=>c.blocks.map(b=>b.id));
   assert.ok(order.indexOf('p3-feast-loop-20261114')>=0&&order.indexOf('p3-feast-loop-20261114')<order.indexOf('p3-merge'),'3부 연회 반복이 융합보다 먼저');
   // 주의 글·골드 블록도 본다(검토 6 M2: 묶음 글만 보면 놓친다).
