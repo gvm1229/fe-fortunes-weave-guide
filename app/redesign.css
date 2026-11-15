@@ -378,9 +378,8 @@ td .readable-body :is(ul,ol){gap:4px}td .readable-body li{margin:0}
   :is(td,th) .game-badge:is([data-kind=gift],[data-kind=item]),:is(td,th) .game-badge:is([data-kind=gift],[data-kind=item])>.badge-label{white-space:normal}
   :is(.source-markup,.semantic) [data-gold-table]{display:table;inline-size:100%;table-layout:auto}
   :is(.source-markup,.semantic) :is(td,th) .button{flex-wrap:wrap;row-gap:0}
-  /* 준비 화면 얼굴 줄(초상화 + 이름)도 칸이 좁으면 얼굴과 이름 사이에서만 나뉜다. 이름은 끊지 않는다. */
-  :is(td,th) [data-face-row]{flex-wrap:wrap;row-gap:0;margin-inline-end:0}
-  :is(td,th) [data-face-row]>span{white-space:nowrap}
+  /* 표 칸 안 얼굴 줄(48px 얼굴 + 오른쪽 이름, 한 줄)은 줄 끝 여백 16px을 뺀다(얼굴 크기·이름 위치는 그대로). */
+  .prep-content :is(td,th) [data-face-row]{margin-inline-end:0}
   /* 표 하나만 든 목록 칸(글머리표 없음)은 들여쓰기를 빼 표가 화면 폭을 쓴다. */
   .semantic :is(ul,ol)>li:has(>table:only-child){margin-inline-start:-24px}
   .readable-body :is(ul,ol)>li{min-inline-size:0}
