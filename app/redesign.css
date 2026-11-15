@@ -129,6 +129,13 @@ html body:has(.app-shell),html body:has(.team-page){background:#F4F3F0}html.dark
 .app-shell :focus-visible{outline:3px solid var(--accent);outline-offset:4px}
 .app-shell{scrollbar-color:var(--line) var(--bg)}
 summary::-webkit-details-marker{display:none}
+/* 접기 표시 한 모양(2026-11-15 일관성 정리): 기본 ▶ 대신 오른쪽 아래 화살표 22px, 높이 56px 이상. 자체 화살표 그림이 있는 제목(장·묶음·기록 관리)은 그대로. */
+details>summary{list-style:none}
+details:not(.backup-menu)>summary:not(:has(>svg)){position:relative;min-block-size:56px;align-content:center;padding-inline-end:34px}
+details:not(.backup-menu)>summary:not(:has(>svg))::after{content:'';position:absolute;inset-inline-end:0;inset-block-start:50%;inline-size:22px;block-size:22px;translate:0 -50%;background:var(--muted);mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") center/contain no-repeat}
+details[open]:not(.backup-menu)>summary:not(:has(>svg))::after{rotate:180deg}
+@media(prefers-reduced-motion:no-preference){details:not(.backup-menu)>summary:not(:has(>svg))::after{transition:rotate .15s}}
+details.person-full-details>summary:not(:has(>svg)){padding-inline-end:50px}details.person-full-details>summary:not(:has(>svg))::after{inset-inline-end:16px}
 @container checklist (max-width:580px){
   .checklist>li{padding:20px;gap:12px}
   .action-group>summary{display:grid;grid-template-columns:22px minmax(0,1fr);padding:20px;gap:12px 8px}
