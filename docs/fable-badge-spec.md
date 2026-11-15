@@ -35,7 +35,8 @@
 ```css
 .game-badge{display:inline-flex;align-items:center;gap:4px;min-block-size:28px;padding:1px 8px 1px 4px;border-radius:8px;background:var(--badge-bg);color:inherit;font-size:inherit;font-weight:500;line-height:1.3;white-space:nowrap;vertical-align:middle;margin-inline:2px;max-inline-size:100%}
 .game-badge[data-kind=bond]{--badge-bg:var(--badge-bond);--badge-ink:var(--badge-bond-ink)}  /* 종류마다 같은 식 */
-.game-badge>svg{inline-size:20px;block-size:20px;flex-shrink:0;color:var(--badge-ink);stroke-width:1.8}
+/* 2026-11-15: 일반 아이콘은 채운다(design-spec.md "일관성 정리"). 속무늬 없는 하트·반짝임은 stroke도 --badge-ink */
+.game-badge>svg{inline-size:22px;block-size:22px;flex-shrink:0;color:var(--badge-ink);fill:var(--badge-ink);stroke:var(--badge-bg);stroke-width:1.2}
 .game-badge>img{inline-size:22px;block-size:22px;object-fit:contain;flex-shrink:0}
 .game-badge[data-kind=person]>img{inline-size:24px;block-size:24px;border-radius:6px}
 .game-badge .badge-value{font-weight:700;font-variant-numeric:tabular-nums}
