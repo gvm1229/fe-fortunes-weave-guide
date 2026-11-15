@@ -48,7 +48,7 @@
 | U35 | 가져오는 동안 화면 전체를 막는 창과 돌아가는 표시 | 11-15 | `scripts/status-browser-check.mjs` |
 | U36 | 지원 순서 잠금은 줄마다 근거와 확인 여부, 출처 주소 | 11-15 | `scripts/rules-check.mjs` |
 | U37 | 단추끼리 붙지 않는다(4px 이상), 화면 가장자리에서 8px 이상 | 11-15 | `scripts/button-gap-check.mjs` |
-| U38 | 세로 화면(9:16 등) 첫 화면 군주 카드는 위아래로 쌓는다. 가로 화면은 네 오벨리스크가 나란히(첫 화면 구성 보존) | 11-15, 11-13 | `scripts/layout-browser-check.mjs` |
+| U38 | 세로 화면(9:16 등) 첫 화면 군주 카드는 위아래로 쌓는다. 가로 화면은 네 오벨리스크가 나란히(첫 화면 구성 보존) | 11-15, 11-13 | `scripts/layout-browser-check.mjs` `scripts/home-visual-check.mjs` |
 | U39 | 루트별 지원 대화에 빠진 쌍이 하나도 없다. 전체 목록 190쌍과 한 쌍씩, 단계 값까지 같다. 자료·할 일 글의 쌍 이름도 190쌍 안 | 11-15 | `scripts/rules-check.mjs` |
 | U40 | 3부 인과 융합은 지원 반복을 모두 끝낸 뒤(구간 다시 하기로 파편이 돌아오지 않는다) | 11-14("꼭 기억") | `scripts/verify.mjs` |
 | U41 | 한 인물은 한 루트(겹치지 않게). 여러 루트 영입은 스탯 융합·그 루트에서만 보는 대화·울턴드(던전 반복 루트 전부)·누조(선더 소드)만. 지원 대화 손실은 하나도 없게 | 11-14 | `scripts/rules-check.mjs` `scripts/verify.mjs` |
