@@ -35,8 +35,26 @@ try {
       const file = JSON.parse(readFileSync(await dl.path(), 'utf8')); assert.deepEqual(file.status, saved.status, '내보내기에 내 상태');
       await p.getByRole('button', { name: '기록 지우기' }).click(); await p.waitForTimeout(200);
       assert.equal(await step.isChecked(), false, '지우기 뒤 미완료');
-      await p.locator('.route-head .backup-menu input[type=file]').setInputFiles(await dl.path()); await p.waitForTimeout(300);
-      assert.ok(await step.isChecked(), '가져오기 뒤 다시 완료');
+      // 가져오는 동안 전체 화면을 막는 창(2026-11-15 사용자 지시): 열린 모달 + 뒤 화면 클릭이 창에 걸림 + 불러오는 아이콘.
+      await p.locator('.route-head .backup-menu input[type=file]').setInputFiles(await dl.path());
+      const ov = p.locator('dialog.import-overlay'); await ov.waitFor({ state: 'visible' });
+      const blocked = await p.evaluate(() => { const d = document.querySelector('dialog.import-overlay'); const el = document.elementFromPoint(20, innerHeight - 20); return { open: d.open, modal: d.matches(':modal'), hit: el === d || d.contains(el), spinner: !!d.querySelector('.import-spinner'), busy: d.getAttribute('aria-busy') }; });
+      assert.deepEqual(blocked, { open: true, modal: true, hit: true, spinner: true, busy: 'true' }, '가져오기 중 화면 막기');
+      await p.keyboard.press('Escape'); await p.keyboard.press('Escape'); assert.ok(await ov.evaluate(d => d.open), '가져오기 중 Escape를 거듭 눌러도 닫히지 않음');
+      await ov.waitFor({ state: 'hidden' }); assert.ok(await step.isChecked(), '가져오기 뒤 다시 완료');
+      assert.match(await p.locator('.import-toast').textContent(), /가져왔습니다 · 체크 \d+개 · 내 상태 포함/);
+      assert.ok(await p.evaluate(() => document.activeElement?.matches('.route-head .backup-menu summary')), '가져온 뒤 초점은 기록 관리');
+      // 깨진 파일: 막는 창에 이유를 보이고 기존 기록은 그대로.
+      const before = await p.evaluate(() => localStorage.getItem('fortunes-weave-checklist-v1'));
+      await p.locator('.route-head .backup-menu summary').click();
+      await p.locator('.route-head .backup-menu input[type=file]').setInputFiles({ name: 'broken.json', mimeType: 'application/octet-stream', buffer: Buffer.from('{oops') });
+      await ov.getByRole('alert').waitFor(); assert.match(await ov.textContent(), /가져오지 못했습니다.*JSON 파일이 아니거나/);
+      assert.equal(await p.evaluate(() => localStorage.getItem('fortunes-weave-checklist-v1')), before, '실패해도 기존 기록 유지');
+      await ov.getByRole('button', { name: '확인' }).click(); await ov.waitFor({ state: 'hidden' });
+      // 앞에 BOM이 붙은 파일(메모장 등으로 저장)도 가져온다.
+      await p.locator('.route-head .backup-menu summary').click();
+      await p.locator('.route-head .backup-menu input[type=file]').setInputFiles({ name: 'bom.json', mimeType: 'text/plain', buffer: Buffer.concat([Buffer.from([0xEF, 0xBB, 0xBF]), Buffer.from(before)]) });
+      await ov.waitFor({ state: 'visible' }); await ov.waitFor({ state: 'hidden' }); assert.match(await p.locator('.import-toast').textContent(), /가져왔습니다/, 'BOM 파일 가져오기');
       await p.locator('.route-head .status-button').click(); await sheet.waitFor();
       assert.equal(await sheet.getByLabel('골드').inputValue(), '500');
       await sheet.getByRole('button', { name: '병과 경험치 증가 단계 낮추기' }).click(); await p.keyboard.press('Escape');

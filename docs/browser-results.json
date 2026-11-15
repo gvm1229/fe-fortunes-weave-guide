@@ -27637,8 +27637,112 @@
       "order": [],
       "eraViolations": [],
       "croppedScenes": [],
-      "sceneHeights": [],
-      "goldTables": [],
+      "sceneHeights": [
+        279.625,
+        279.625,
+        279.625,
+        279.625,
+        300,
+        300
+      ],
+      "goldTables": [
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        }
+      ],
       "accentContrast": [
         {
           "route": "leda",
@@ -31277,6 +31381,7 @@
     },
     "체크 재로딩 보존",
     "잘못된 JSON은 기존 기록 보존",
+    "가져오기 실패 창",
     "JSON 내보내기",
     "가져오기·상속 true보다 개별 false 우선",
     "저장 실패 시 체크 미반영",

@@ -553,3 +553,15 @@ progress::-moz-progress-bar{background:#1E8E3E}
 .status-owned{display:inline-block;margin-inline-start:8px;font-size:16px;padding:0 8px;border-radius:999px;background:var(--secondary-soft);color:var(--text)}
 .status-summary{margin:0 0 12px;padding:12px 16px;border-radius:12px;background:var(--secondary-soft);font-weight:700}
 .status-unit{inline-size:1.25em}
+/* 가져오기 막는 창(2026-11-15): 화면 전체를 덮는 모달. 뒤 화면은 inert라 눌리지 않는다. */
+.import-overlay{inset:0;inline-size:100vw;block-size:100dvh;max-inline-size:none;max-block-size:none;margin:0;padding:16px;border:0;background:transparent;display:grid;place-items:center;color:var(--text)}
+.import-overlay:not([open]){display:none}
+.import-overlay::backdrop{background:rgb(0 0 0 / .6);cursor:progress}
+.import-overlay[aria-busy=true]{cursor:progress}
+.import-overlay-box{display:grid;justify-items:center;gap:12px;inline-size:min(420px,100%);padding:32px 24px;border-radius:16px;background:var(--surface);box-shadow:0 8px 24px #0003;text-align:center;font-size:18px}
+.import-overlay-box p{margin:0}.import-overlay-title{font-size:22px;font-weight:700}
+.import-overlay-box .button{min-block-size:48px;min-inline-size:120px;justify-content:center}
+.import-spinner{color:var(--primary);animation:import-spin 1s linear infinite}
+@keyframes import-spin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.import-spinner{animation:none}}
+.import-toast{position:fixed;z-index:60;inset-inline:16px;inset-block-start:calc(var(--task-header-height,64px) + 12px);margin:0 auto;inline-size:fit-content;max-inline-size:calc(100% - 32px);padding:12px 16px;border-radius:12px;background:var(--primary);color:var(--primary-fg);font-weight:700;box-shadow:0 8px 24px #0002}

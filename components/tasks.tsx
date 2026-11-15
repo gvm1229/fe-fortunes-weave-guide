@@ -10,6 +10,7 @@ import { chapterGroups } from '@/lib/checklist';
 import { checked } from '@/lib/check-state';
 import { autoChecked, groupSteps } from '@/lib/status';
 import { StatusButton, BoonSummary } from './status';
+import { ImportOverlay, type ImportPhase } from './import-overlay';
 import { useChecks } from './checks';
 import { usePreference } from './preferences';
 import { Button } from './ui/button';
@@ -21,7 +22,20 @@ import overrides from '@/content/display-overrides.json';
 import { GuideImage } from './image-viewer';
 import { final25Class } from '@/lib/final25';
 export function Tasks({route,label,part,chapters,groups,onDoc,onMaterial,onPerson,people=[],context}:{route:string;label:string;part:string;chapters:Chapter[];groups:Group[];onDoc:(url:string)=>void;onMaterial?:(id:string)=>void;onPerson?:(name:string)=>void;people?:string[];context?:(chapter:Chapter)=>React.ReactNode}){
-  const checks=useChecks(),[announce,setAnnounce]=useState(''),[selected,setSelected]=useState<string|null>(null),[importError,setImportError]=useState(''),upload=useRef<HTMLInputElement>(null);
+  const checks=useChecks(),[announce,setAnnounce]=useState(''),[selected,setSelected]=useState<string|null>(null),[importPhase,setImportPhase]=useState<ImportPhase>({state:'idle'}),[imported,setImported]=useState(''),upload=useRef<HTMLInputElement>(null),toastTimer=useRef<ReturnType<typeof setTimeout>|undefined>(undefined);
+  /** 가져오기: 전체 화면을 막고(최소 0.6초 보여 깜빡이지 않게) 파일을 읽어 검사한 뒤 저장한다. 실패 이유는 막는 창에 보인다.
+   *  성공 알림은 파일 내용으로 만든다: 파일에 내 상태가 없으면 '내 상태 없음'이라고 알려 예전 파일·오래된 탭을 구별할 수 있게 한다. */
+  async function importFile(file:File){
+    setImportPhase({state:'busy'});const start=performance.now();let error='',message='';
+    try{const raw=await file.text(),text=raw.charCodeAt(0)===0xFEFF?raw.slice(1):raw;/* 앞의 BOM 제거 */let value:unknown;try{value=JSON.parse(text);}catch{throw new Error('JSON 파일이 아니거나 내용이 깨졌습니다. 기록 관리 → 내보내기로 만든 파일을 고르세요.');}
+      checks.importData(value);const d=value as {checks:Record<string,boolean>;status?:unknown};
+      message=`가져왔습니다 · 체크 ${Object.values(d.checks).filter(Boolean).length}개 · ${d.status?'내 상태 포함':'파일에 내 상태 없음(기존 내 상태 유지)'}`;}
+    catch(e){error=e instanceof Error?e.message:'파일을 읽지 못했습니다.';}
+    await new Promise(r=>setTimeout(r,Math.max(0,600-(performance.now()-start))));
+    if(error){setImportPhase({state:'error',message:error});return;}
+    document.querySelector<HTMLDetailsElement>('.route-head .backup-menu')?.removeAttribute('open');setImportPhase({state:'idle'});
+    clearTimeout(toastTimer.current);setImported(message);toastTimer.current=setTimeout(()=>setImported(''),5000);
+  }
   /** 장의 마지막 항목을 체크해 그 장이 처음 완료되는 순간에만 색종이를 터뜨린다. 열기·가져오기·해제에서는 부르지 않는다. */
   async function celebrate(cg:Group[],title:string,id:string,value:boolean,target:HTMLElement){
     if(!value)return;
@@ -88,9 +102,9 @@ export function Tasks({route,label,part,chapters,groups,onDoc,onMaterial,onPerso
     <Button className="jump-next" onClick={goNext} disabled={!next} aria-label="다음 할 일로 이동"><ArrowDown size={20}/><span className="jump-label">이동</span></Button>
     {!checks.error&&<span role="status" className="save-status"><Check size={20} aria-label="저장됨"/></span>}
     <StatusButton route={route}/>
-    <details className="backup-menu"><summary title="기록 관리"><Archive size={20} aria-hidden="true" className="backup-icon"/><span className="backup-label">기록 관리</span></summary><div className="toolbar-actions"><StatusButton route={route} menu/><Button variant="secondary" onClick={exportFile}><Download size={20}/> 내보내기</Button><Button variant="secondary" onClick={()=>upload.current?.click()}><Upload size={20}/> 가져오기</Button><Button variant="secondary" onClick={()=>{if(window.confirm('이 브라우저의 체크 기록과 내 상태를 모두 지웁니다. 되돌릴 수 없으니 먼저 내보내기로 백업하세요. 지울까요?'))checks.clear();}}><Trash2 size={20}/> 기록 지우기</Button><input ref={upload} type="file" accept="application/json,.json" className="sr-only" aria-label="체크·내 상태 JSON 가져오기" onChange={async e=>{const file=e.target.files?.[0];if(!file)return;try{checks.importData(JSON.parse(await file.text()));setImportError('');}catch(error){setImportError(error instanceof Error?error.message:'파일을 읽지 못했습니다.');}e.target.value='';}}/></div></details>
+    <details className="backup-menu"><summary title="기록 관리"><Archive size={20} aria-hidden="true" className="backup-icon"/><span className="backup-label">기록 관리</span></summary><div className="toolbar-actions"><StatusButton route={route} menu/><Button variant="secondary" onClick={exportFile}><Download size={20}/> 내보내기</Button><Button variant="secondary" onClick={()=>upload.current?.click()}><Upload size={20}/> 가져오기</Button><Button variant="secondary" onClick={()=>{if(window.confirm('이 브라우저의 체크 기록과 내 상태를 모두 지웁니다. 되돌릴 수 없으니 먼저 내보내기로 백업하세요. 지울까요?'))checks.clear();}}><Trash2 size={20}/> 기록 지우기</Button>{/* accept를 두지 않는다: 휴대폰 파일 선택기는 내려받은 .json의 형식을 몰라 고를 수 없게 막는 일이 있다(2026-11-15). 내용은 가져올 때 검사한다. */}<input ref={upload} type="file" className="sr-only" aria-label="체크·내 상태 JSON 가져오기" onChange={e=>{const file=e.target.files?.[0];e.target.value='';if(file)void importFile(file);}}/></div></details>
   </div>{/* 테마 바꾸기도 고정 머리에 둔다(2026-11-14 사용자 지시). */}<div className="route-theme"><ThemeSwitch/></div></div></div>
-  <div className="tasks-layout"><div className="tasks-main">{checks.error&&<div role="status" className="save-status error">{checks.status}<Button variant="secondary" onClick={checks.retry}>저장소 다시 읽기</Button></div>}{importError&&<p role="alert" className="error">{importError}</p>}
+  <div className="tasks-layout"><div className="tasks-main">{checks.error&&<div role="status" className="save-status error">{checks.status}<Button variant="secondary" onClick={checks.retry}>저장소 다시 읽기</Button></div>}
   {next&&<section className="next-action"><h2>다음 할 일</h2><p><GameText text={next.a.text} withSkills/></p></section>}
   <p className="sr-only" aria-live="polite">{announce}</p><div data-checklist-source>{chapters.map(c=>{const cg=chapterGroups(c,groups),total=cg.reduce((n,g)=>n+g.actions.length,0),done=cg.reduce((n,g)=>n+g.actions.filter(a=>checked(a,g.id,checks.effective)).length,0),date=chapterDates(c),complete=total>0&&done===total;return <details key={`${c.title}-${chapter.title}`} className="chapter-section" data-chapter={c.title} data-current={c.title===active.title} data-completed={complete} hidden={hideDone&&complete} open={c.title===chapter.title&&!complete}>
     <summary><ChevronDown size={24}/><span className="chapter-title">{c.title}</span>{!complete&&c.title===active.title&&<span className="progress-chip current-chip">현재</span>}{total>0&&<span className="progress-chip">{done}/{total}</span>}{!complete&&date&&<span className="chapter-date">{date}</span>}</summary>
@@ -100,7 +114,7 @@ export function Tasks({route,label,part,chapters,groups,onDoc,onMaterial,onPerso
       {g&&groupSteps(g.actions.map(a=>a.id)).length>0&&<BoonSummary ids={g.actions.map(a=>a.id)}/>}{g&&<ol className="checklist">{g.actions.map(a=><li key={a.id} tabIndex={-1} hidden={hideDone&&checked(a,g.id,checks.effective)} data-complete={checked(a,g.id,checks.effective)}><input id={a.id} type="checkbox" checked={checked(a,g.id,checks.effective)} disabled={!checks.ready||autoChecked(a.id,checks.data.status)} aria-label={a.text} onChange={e=>{const value=e.target.checked;void celebrate(cg,c.title,a.id,value,e.currentTarget);checks.toggle(a.id,value);}}/><div><span className="action-category">{a.category}</span>{autoChecked(a.id,checks.data.status)&&<span className="status-owned">내 상태에서 보유</span>}<div className="action-text"><SourceMarkup nodes={actionNodes(c,g,a)} {...markupProps}/></div></div></li>)}</ol>}
       <div className="action-notes">{Object.hasOwn(overrides.notes,b.id)?(overrides.notes as Record<string,Group['notes']>)[b.id].map((n,i)=><p key={i}>{n.text}</p>):<SourceMarkup nodes={b.notes} {...markupProps}/>}</div>
     </Container>;})}
-  </details>;})}</div></div>{context&&context(chapter)}</div>{gameDate&&<DateOdometer value={formatGameDate(PART1_YEAR,gameDate)} label={`게임 날짜 ${PART1_YEAR}년 ${gameDate.m}월 ${gameDate.d}일`}/>}</>;
+  </details>;})}</div></div>{context&&context(chapter)}</div>{gameDate&&<DateOdometer value={formatGameDate(PART1_YEAR,gameDate)} label={`게임 날짜 ${PART1_YEAR}년 ${gameDate.m}월 ${gameDate.d}일`}/>}<ImportOverlay phase={importPhase} onClose={()=>setImportPhase({state:'idle'})}/>{/* 알림 칸은 늘 두어 화면 읽기 프로그램이 새 문구를 읽게 한다. */}<p className={imported?'import-toast':'sr-only'} aria-live="polite">{imported}</p></>;
 }
 export function chapterDates(chapter:Chapter){const dates=chapter.blocks.flatMap(b=>b.title.match(/\d{1,2}\/\d{1,2}(?:\s*~\s*\d{1,2}\/\d{1,2})?/g)||[]);return [...new Set(dates)].join(' · ');}
 

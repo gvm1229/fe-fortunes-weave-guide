@@ -18,10 +18,12 @@ function load(){
   emit();
 }
 function subscribe(fn:()=>void){listeners.add(fn);return()=>{listeners.delete(fn);};}
-function save(data:CheckState){
+/** 저장에 성공하면 true. 가져오기는 실패를 알 수 있게 이 값을 본다. */
+function save(data:CheckState):boolean{
+  let ok=true;
   try{localStorage.setItem(key,JSON.stringify(data));snapshot={data,ready:true,status:'체크를 이 브라우저에 저장했습니다.',error:false};}
-  catch{snapshot={...snapshot,status:'저장하지 못했습니다. 체크는 바뀌지 않았습니다. 저장 공간을 확인한 뒤 다시 시도하세요.',error:true};}
-  emit();
+  catch{ok=false;snapshot={...snapshot,status:'저장하지 못했습니다. 체크는 바뀌지 않았습니다. 저장 공간을 확인한 뒤 다시 시도하세요.',error:true};}
+  emit();return ok;
 }
 export function useChecks(){
   const state=useSyncExternalStore(subscribe,()=>snapshot,()=>initial);
@@ -30,5 +32,5 @@ export function useChecks(){
   // effective: 저장된 체크 + 내 상태의 축복 단계로 끝난 구매 체크(2026-11-15). 화면의 완료·진행률·날짜는 이것을 쓴다.
   return {...state,effective:effectiveChecks(state.data.checks,state.data.status),
     setStatus:(patch:Partial<Status>)=>{if(!snapshot.ready)return;const next={...emptyStatus,...snapshot.data.status,...patch};bump({...snapshot.data,status:validateStatus(next,limits)});},
-    toggle:(id:string,value:boolean)=>{if(snapshot.ready)save({...snapshot.data,checks:{...snapshot.data.checks,[id]:value},revision:snapshot.data.revision+1,updatedAt:new Date().toISOString()});},importData:(value:unknown)=>{const data=validateChecks(value,limits);/* 내 상태가 없는 예전 파일은 지금의 내 상태를 지우지 않는다. */save({...data,...(!data.status&&snapshot.data.status?{status:snapshot.data.status}:{}),revision:Math.max(data.revision,snapshot.data.revision)+1,updatedAt:new Date().toISOString()});},retry:()=>{snapshot=initial;load();},clear:()=>{if(snapshot.ready)save({...empty,revision:snapshot.data.revision+1,updatedAt:new Date().toISOString()});}};
+    toggle:(id:string,value:boolean)=>{if(snapshot.ready)save({...snapshot.data,checks:{...snapshot.data.checks,[id]:value},revision:snapshot.data.revision+1,updatedAt:new Date().toISOString()});},importData:(value:unknown)=>{const data=validateChecks(value,limits);/* 내 상태가 없는 예전 파일은 지금의 내 상태를 지우지 않는다. */if(!save({...data,...(!data.status&&snapshot.data.status?{status:snapshot.data.status}:{}),revision:Math.max(data.revision,snapshot.data.revision)+1,updatedAt:new Date().toISOString()}))throw new Error('이 브라우저에 저장하지 못했습니다. 저장 공간이나 사생활 보호 모드를 확인하세요.');},retry:()=>{snapshot=initial;load();},clear:()=>{if(snapshot.ready)save({...empty,revision:snapshot.data.revision+1,updatedAt:new Date().toISOString()});}};
 }
