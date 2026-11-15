@@ -94,7 +94,7 @@
     {
       "source": "data/playbook.json",
       "target": "content/data/playbook.json",
-      "sha256": "e36b9e669299b2f250043344abfd0dd0a0b76d649b09d11f7f5f0afb11e68ed2"
+      "sha256": "b4077fd7fdc1bc0eade3a946c36e0a04d1169dc955436af0c4e85cb063c34510"
     },
     {
       "source": "data/purchase-plan.json",
@@ -109,7 +109,7 @@
     {
       "source": "data/recruit-all-plan.json",
       "target": "content/data/recruit-all-plan.json",
-      "sha256": "142ba59c6dadbcbc5ff3e5825cc2f309b843cac8b46fb63d108313ac62a0d70b"
+      "sha256": "47e4ed82935696d03dd53efe155c81cced78b8874a6fe6d3f556c77b359df7b2"
     },
     {
       "source": "data/recruit-materials.json",
@@ -294,7 +294,7 @@
     {
       "source": "notes/chapter-route-plan.md",
       "target": "content/notes/chapter-route-plan.md",
-      "sha256": "ba92bd3bffb443e543c9b47dc7ad9258bef2fc5cf79066d21e54f37674cea3e3"
+      "sha256": "dd84e48aa57ab9518ae6d6889a1ee72de8f941c232323044b8ceee77cc9d2137"
     },
     {
       "source": "notes/checklist-full-review.md",
@@ -1419,7 +1419,7 @@
     {
       "source": "notes/support-pairs-by-route.md",
       "target": "content/notes/support-pairs-by-route.md",
-      "sha256": "7dbdd2559c87c8c56e1e3bf8b221b2c1203c0ed126253244531e90677cd5f51a"
+      "sha256": "963083dadaae7b3c9969feeb4e4923094effb5b12357ad2c95f9d753649dc2d4"
     },
     {
       "source": "notes/sword-xp-review.md",
@@ -1804,7 +1804,7 @@
     {
       "source": "personalized-app/src/content.json",
       "target": "content/source/react-content.json",
-      "sha256": "abeb77743f156e9bad96ad98155c11b2c8cdd686c88b770307907c50b1281981"
+      "sha256": "ac0623ab8a139428fe925ac783fc03fea099bdb41dea9cb3849d09087a2f3bf2"
     },
     {
       "source": "personalized-app/src/timeskip-portraits.json",
@@ -1977,7 +1977,7 @@
       "sha256": "b6601f69a8318359991d5fadc11c27348b0df451ecddba9df142e5f979e508ca"
     }
   ],
-  "generatedSourceSha256": "abeb77743f156e9bad96ad98155c11b2c8cdd686c88b770307907c50b1281981",
+  "generatedSourceSha256": "ac0623ab8a139428fe925ac783fc03fea099bdb41dea9cb3849d09087a2f3bf2",
   "activeActions": 1899,
   "checkIds": 2881,
   "peopleByRoute": {
