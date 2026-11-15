@@ -120,7 +120,7 @@ progress{appearance:none;border:0;border-radius:8px;overflow:hidden;height:8px;b
   .check-toolbar{grid-template-columns:auto minmax(0,1fr) auto}
   .chapter-section{scroll-margin-top:calc(56px + var(--task-header-height,112px) + 8px)}
   .person>.person-info{width:calc(100% - 32px)}
-  .person-info th,.records th,[data-info-table] th{width:96px}
+  .person-info th,.records th,[data-info-table] th{width:100px}
   .records td,.records th,.person-info td,.person-info th,.gold-table td,.gold-table th,[data-gold-table] td,[data-gold-table] th,[data-info-table] td,[data-info-table] th{padding:10px 12px}
   .image-open>img,.chapter-event,.source-markup .media-guide,.semantic .image-open>img{max-height:60vh}
   .map-thumbnail img{max-height:80px}
