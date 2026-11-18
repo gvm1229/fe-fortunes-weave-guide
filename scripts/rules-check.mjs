@@ -140,6 +140,12 @@ for (const f of [...walk('app', ['.ts', '.tsx', '.css']), ...walk('components', 
     assert.equal(u['아나톨리아'].class, '드루이드', `[U57] ${f} 아나톨리아 드루이드`); assert.ok(u['아나톨리아'].signatureWeapons.some(w => w.name === '샐러맨더'), `[U57] ${f} 아나톨리아 샐러맨더`);
     assert.equal(u['그자람'].class, '소드 마스터', `[U57] ${f} 그자람 소드 마스터`); } }
 
+// [U58] 사이트 아이콘은 네 오벨리스크 하나: 진한 바탕 #16272D, 기둥 색은 카이·디트리히·세오도라·레다 순서. 탭(icon.svg)·홈 화면(apple-icon.png)·/favicon.ico 파일 셋, 다른 아이콘 지정 없음.
+{ const svg = readFileSync('app/icon.svg', 'utf8'), fills = [...svg.matchAll(/fill="(#[0-9A-Fa-f]{6})"/g)].map(m => m[1].toUpperCase());
+  assert.deepEqual(fills, ['#16272D', '#7AA5F7', '#F5F5F2', '#F2C230', '#F06292'], '[U58] 아이콘 바탕·기둥 색 순서');
+  for (const f of ['app/apple-icon.png', 'app/favicon.ico']) assert.ok(existsSync(f) && statSync(f).size > 100, `[U58] ${f} 있음`);
+  assert.ok(!/icons:/.test(readFileSync('app/layout.tsx', 'utf8')), '[U58] layout에 다른 아이콘 지정 없음'); }
+
 // 규칙 문서: 모든 규칙 줄은 '검사' 칸에 하나 이상의 파일을 적고, 그 파일에는 규칙 번호가 있다.
 { const doc = readFileSync('docs/user-rules.md', 'utf8'), rows = doc.split('\n').filter(l => /^\| [UP]\d\d \|/.test(l)), ids = new Set();
   assert.ok(rows.length >= 40, '규칙 줄 수');

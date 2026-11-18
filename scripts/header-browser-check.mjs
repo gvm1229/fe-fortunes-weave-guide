@@ -54,5 +54,11 @@ try {
     const before=f.label;await p.locator('.chapter-section[data-current=true] .checklist input:not(:checked)').first().check().catch(()=>{});
     await p.goto(base+'/theodora/2/');await p.locator('.route-head').waitFor();await p.waitForTimeout(400);assert.equal(await p.locator('.date-odometer').count(),0,'2부는 바닥 날짜 없음');
     n++;await ctx.close();}}
+  // [U58] 첫 화면 <head>의 탭 아이콘·홈 화면 아이콘 주소가 그림으로 열리고, /favicon.ico도 404가 아니다(검사 서버는 .ico 형식 이름이 없어 ICO 머리 바이트로 확인).
+  {const ctx=await browser.newContext();const p=await ctx.newPage();await p.goto(base+'/');
+   const links=await p.evaluate(()=>[...document.querySelectorAll('head link[rel=icon], head link[rel=apple-touch-icon]')].map(l=>({rel:l.rel,href:l.href})));
+   assert.ok(links.some(l=>l.rel==='icon'),'[U58] 탭 아이콘 링크');assert.ok(links.some(l=>l.rel==='apple-touch-icon'),'[U58] 홈 화면 아이콘 링크');
+   for(const u of [...links.map(l=>l.href),base+'/favicon.ico']){const r=await p.request.get(u);assert.equal(r.status(),200,`[U58] ${u} 상태`);if(/\.ico(\?|$)/.test(u))assert.deepEqual([...(await r.body()).subarray(0,4)],[0,0,1,0],`[U58] ${u} ICO 아님`);else assert.match(r.headers()['content-type']||'',/^image\//,`[U58] ${u} 그림 아님`);}
+   n++;await ctx.close();}
   console.log(`통과: 고정 머리·맨 위로·선물·빈 체크 기록 ${n}개 화면`);
 } finally { await browser.close(); }

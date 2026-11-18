@@ -68,6 +68,7 @@
 | U55 | 같은 종류는 같은 모양: 단추·입력 모서리 10px, 장 선택·완료 숨기기도 채운 조작 요소, 접기 표시는 아래 화살표 하나(기본 ▶ 없음)(첫 화면 단추는 8px 그대로) | 11-15 | `scripts/consistency-browser-check.mjs` |
 | U56 | 배지는 이름 중간에서 줄이 바뀌지 않고 이름과 값 사이 간격이 보인다. 휴대폰에서 표는 칸 안에 들어간다 | 11-15 | `scripts/consistency-browser-check.mjs` |
 | U57 | 아나톨리아 최종 병종은 드루이드(샐러맨더를 든다 · 공략 자료 기준, 게임 확인 전). 그자람 최종 병종은 소드 마스터(드래군 검토 뒤 유지) | 11-15 | `scripts/rules-check.mjs` |
+| U58 | 사이트 아이콘은 네 오벨리스크(루트 색 기둥 4개, 진한 바탕) 하나. 탭·휴대폰 홈 화면 모두, /favicon.ico 404 없음 | 11-19 | `scripts/rules-check.mjs` `scripts/header-browser-check.mjs` |
 
 ## 작업 방식 규칙
 
