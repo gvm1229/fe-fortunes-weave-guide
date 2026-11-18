@@ -37,11 +37,15 @@ try {
       await p.getByRole('button', { name: '기록 지우기' }).click(); await p.waitForTimeout(200);
       assert.equal(await step.isChecked(), false, '지우기 뒤 미완료');
       // 가져오는 동안 전체 화면을 막는 창(2026-11-15 사용자 지시): 열린 모달 + 뒤 화면 클릭이 창에 걸림 + 불러오는 아이콘.
+      // 성공한 가져오기는 0.6초 뒤 스스로 닫힌다. 바쁜 관문에서는 아래 Escape 확인이 그보다 늦어 경주가 났다. 이 검사에서만 파일 읽기를 3초 늦춰 가져오는 중에 누른다(제품 시간은 그대로).
+      await p.evaluate(() => { const read = File.prototype.text; File.prototype.text = function () { File.prototype.text = read; return new Promise(r => setTimeout(r, 3000)).then(() => read.call(this)); }; });
       await p.locator('.route-head .backup-menu input[type=file]').setInputFiles(await dl.path());
       const ov = p.locator('dialog.import-overlay'); await ov.waitFor({ state: 'visible' });
       const blocked = await p.evaluate(() => { const d = document.querySelector('dialog.import-overlay'); const el = document.elementFromPoint(20, innerHeight - 20); return { open: d.open, modal: d.matches(':modal'), hit: el === d || d.contains(el), spinner: !!d.querySelector('.import-spinner'), busy: d.getAttribute('aria-busy') }; });
       assert.deepEqual(blocked, { open: true, modal: true, hit: true, spinner: true, busy: 'true' }, '가져오기 중 화면 막기');
-      await p.keyboard.press('Escape'); await p.keyboard.press('Escape'); assert.ok(await ov.evaluate(d => d.open), '가져오기 중 Escape를 거듭 눌러도 닫히지 않음');
+      await ov.evaluate(d => { d.closes = 0; d.addEventListener('close', () => d.closes++); }); // 잠깐 닫혔다 다시 열려도 잡는다.
+      await p.keyboard.press('Escape'); await p.keyboard.press('Escape'); // 잇달아 누르면 Chrome이 막은 창도 닫는다.
+      assert.deepEqual(await ov.evaluate(d => [d.open, d.getAttribute('aria-busy'), d.closes]), [true, 'true', 0], '가져오기 중 Escape를 거듭 눌러도 닫히지 않음(잠깐 닫힘 포함)');
       await ov.waitFor({ state: 'hidden' }); assert.ok(await step.isChecked(), '가져오기 뒤 다시 완료');
       assert.match(await p.locator('.import-toast').textContent(), /가져왔습니다 · 체크 \d+개 · 내 상태 포함/);
       assert.ok(await p.evaluate(() => document.activeElement?.matches('.route-head .backup-menu summary')), '가져온 뒤 초점은 기록 관리');
