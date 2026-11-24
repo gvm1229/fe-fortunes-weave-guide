@@ -4741,8 +4741,112 @@
       "order": [],
       "eraViolations": [],
       "croppedScenes": [],
-      "sceneHeights": [],
-      "goldTables": [],
+      "sceneHeights": [
+        300,
+        300,
+        300,
+        300,
+        300,
+        300
+      ],
+      "goldTables": [
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        }
+      ],
       "accentContrast": [
         {
           "route": "leda",
@@ -5248,110 +5352,8 @@
       "order": [],
       "eraViolations": [],
       "croppedScenes": [],
-      "sceneHeights": [
-        300,
-        300,
-        300,
-        300,
-        300,
-        300,
-        300,
-        300
-      ],
-      "goldTables": [
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        }
-      ],
+      "sceneHeights": [],
+      "goldTables": [],
       "accentContrast": [
         {
           "route": "dietrich",
@@ -8822,8 +8824,110 @@
       "order": [],
       "eraViolations": [],
       "croppedScenes": [],
-      "sceneHeights": [],
-      "goldTables": [],
+      "sceneHeights": [
+        300,
+        300,
+        300,
+        300,
+        300,
+        300,
+        300,
+        300
+      ],
+      "goldTables": [
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        }
+      ],
       "accentContrast": [
         {
           "route": "dietrich",
@@ -9293,8 +9397,218 @@
       "order": [],
       "eraViolations": [],
       "croppedScenes": [],
-      "sceneHeights": [],
-      "goldTables": [],
+      "sceneHeights": [
+        300,
+        300,
+        300,
+        300,
+        300,
+        300,
+        300,
+        300
+      ],
+      "goldTables": [
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        }
+      ],
       "accentContrast": [
         {
           "route": "cai",
@@ -10063,60 +10377,7 @@
       "eraViolations": [],
       "croppedScenes": [],
       "sceneHeights": [],
-      "goldTables": [
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        }
-      ],
+      "goldTables": [],
       "accentContrast": [
         {
           "route": "part3",
@@ -10786,216 +11047,8 @@
       "order": [],
       "eraViolations": [],
       "croppedScenes": [],
-      "sceneHeights": [
-        300,
-        300
-      ],
-      "goldTables": [
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        }
-      ],
+      "sceneHeights": [],
+      "goldTables": [],
       "accentContrast": [
         {
           "route": "theodora",
@@ -14360,216 +14413,8 @@
       "order": [],
       "eraViolations": [],
       "croppedScenes": [],
-      "sceneHeights": [
-        115.125,
-        115.125
-      ],
-      "goldTables": [
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        }
-      ],
+      "sceneHeights": [],
+      "goldTables": [],
       "accentContrast": [
         {
           "route": "theodora",
@@ -15936,110 +15781,8 @@
       "order": [],
       "eraViolations": [],
       "croppedScenes": [],
-      "sceneHeights": [
-        115.125,
-        115.125,
-        115.125,
-        115.125,
-        115.125,
-        115.125,
-        115.125,
-        115.125
-      ],
-      "goldTables": [
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        }
-      ],
+      "sceneHeights": [],
+      "goldTables": [],
       "accentContrast": [
         {
           "route": "dietrich",
@@ -22752,216 +22495,8 @@
       "order": [],
       "eraViolations": [],
       "croppedScenes": [],
-      "sceneHeights": [
-        279.625,
-        279.625
-      ],
-      "goldTables": [
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        }
-      ],
+      "sceneHeights": [],
+      "goldTables": [],
       "accentContrast": [
         {
           "route": "theodora",
@@ -24050,8 +23585,110 @@
       "order": [],
       "eraViolations": [],
       "croppedScenes": [],
-      "sceneHeights": [],
-      "goldTables": [],
+      "sceneHeights": [
+        279.625,
+        279.625,
+        279.625,
+        279.625,
+        279.625,
+        279.625,
+        279.625,
+        279.625
+      ],
+      "goldTables": [
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        }
+      ],
       "accentContrast": [
         {
           "route": "dietrich",
@@ -24521,218 +24158,8 @@
       "order": [],
       "eraViolations": [],
       "croppedScenes": [],
-      "sceneHeights": [
-        279.625,
-        279.625,
-        273.734375,
-        273.75,
-        279.625,
-        279.625,
-        279.625,
-        279.625
-      ],
-      "goldTables": [
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        }
-      ],
+      "sceneHeights": [],
+      "goldTables": [],
       "accentContrast": [
         {
           "route": "cai",
@@ -26224,216 +25651,8 @@
       "order": [],
       "eraViolations": [],
       "croppedScenes": [],
-      "sceneHeights": [
-        279.625,
-        279.625
-      ],
-      "goldTables": [
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        }
-      ],
+      "sceneHeights": [],
+      "goldTables": [],
       "accentContrast": [
         {
           "route": "theodora",
@@ -27522,38 +26741,8 @@
       "order": [],
       "eraViolations": [],
       "croppedScenes": [],
-      "sceneHeights": [
-        279.625,
-        279.625,
-        279.625,
-        279.625,
-        279.625,
-        279.625,
-        279.625,
-        279.625
-      ],
-      "goldTables": [
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        }
-      ],
+      "sceneHeights": [],
+      "goldTables": [],
       "accentContrast": [
         {
           "route": "dietrich",
