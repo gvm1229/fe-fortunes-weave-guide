@@ -94,7 +94,7 @@
     {
       "source": "data/playbook.json",
       "target": "content/data/playbook.json",
-      "sha256": "1beab49e23d7ef7841698af3d1948f992610cf482f3b9da49c55ab9df8deff1b"
+      "sha256": "318c0ae0a1f2b0880f0406b17c296adeda59a12e3ccb49e147b100f71c3161ea"
     },
     {
       "source": "data/purchase-plan.json",
@@ -109,7 +109,7 @@
     {
       "source": "data/recruit-all-plan.json",
       "target": "content/data/recruit-all-plan.json",
-      "sha256": "596dcbeb78775b7fe5f0783c15b6bf9c885dc09dd7bfbc153b258db4742b74a7"
+      "sha256": "280d043fd1aa4f9d2d14da7e02a8ae67ebc78a9387459711ed1149f36653a644"
     },
     {
       "source": "data/recruit-materials.json",
@@ -124,12 +124,12 @@
     {
       "source": "data/recruitment-gates.json",
       "target": "content/data/recruitment-gates.json",
-      "sha256": "c1156b2c53f9671b2b530661c6f4da6d53afee1786dd79deac488a056bff44b2"
+      "sha256": "f047f72f795869c281d3b50c1ddd8622a18fbcd2aea4eab388cc95262fae5b6d"
     },
     {
       "source": "data/roster-plan.json",
       "target": "content/data/roster-plan.json",
-      "sha256": "a0b12559518207cf1d2756c53311ecdd0122e089c9ac5d6a03ba7a36c27d51aa"
+      "sha256": "66fe3c66622abfd0088b770afcbcf13053712c60e4411029f9bbef41647d8c91"
     },
     {
       "source": "data/roster-selection-sources.json",
@@ -294,7 +294,7 @@
     {
       "source": "notes/chapter-route-plan.md",
       "target": "content/notes/chapter-route-plan.md",
-      "sha256": "36d90333c9c4ed517763dcd949116c56f5da4792bac6cac1d40540ac5748d3c0"
+      "sha256": "aa68e3e9d8f541f1daaaefed393d2aecdbbf2b71e867a53fcf593bf15f637bbe"
     },
     {
       "source": "notes/checklist-full-review.md",
@@ -1244,7 +1244,7 @@
     {
       "source": "notes/recruit-all-review.md",
       "target": "content/notes/recruit-all-review.md",
-      "sha256": "34bf127968f327817850c5f25af3de1515a139006c153f922fa9c6eff8a73e34"
+      "sha256": "0fb791b0baf8875cf3dccabcc9a01d202fb35de6f1ba1f6aff266048b3ab949c"
     },
     {
       "source": "notes/recruit-material-review.md",
@@ -1419,7 +1419,7 @@
     {
       "source": "notes/support-pairs-by-route.md",
       "target": "content/notes/support-pairs-by-route.md",
-      "sha256": "e572100d1b8fdbd73a54c9f4936e9e8781e348c1e2f927068d7560dccece7ded"
+      "sha256": "8bd944c50c59e3d9772f633392dc25831922b1fb6aa6eb3142841cec34f34c43"
     },
     {
       "source": "notes/sword-xp-review.md",
@@ -1804,7 +1804,7 @@
     {
       "source": "personalized-app/src/content.json",
       "target": "content/source/react-content.json",
-      "sha256": "d788144d36a7fd3cc21779c290e3b7c31ef3701209d9dbba115e7b17b4b4e2df"
+      "sha256": "8bfb3da2f37ca203ac4a9494a391a2d0a0ae8e1b16d9a63b86007da06b712f51"
     },
     {
       "source": "personalized-app/src/timeskip-portraits.json",
@@ -1977,7 +1977,7 @@
       "sha256": "b6601f69a8318359991d5fadc11c27348b0df451ecddba9df142e5f979e508ca"
     }
   ],
-  "generatedSourceSha256": "d788144d36a7fd3cc21779c290e3b7c31ef3701209d9dbba115e7b17b4b4e2df",
+  "generatedSourceSha256": "8bfb3da2f37ca203ac4a9494a391a2d0a0ae8e1b16d9a63b86007da06b712f51",
   "activeActions": 1899,
   "checkIds": 2881,
   "peopleByRoute": {

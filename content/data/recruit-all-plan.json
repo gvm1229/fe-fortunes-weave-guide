@@ -1971,7 +1971,7 @@
       "file": "data/recruitment-gates.json",
       "path": "characters.양계.gates[*].localCondition",
       "current": "치즈 → 보름달이 뜬 밤 → 과일",
-      "correct": "상충: KeenGamer·RPG Site는 치즈·달·감자(Potatoes). 세 번째 답은 게임 화면 확인",
+      "correct": "치즈 → 보름달이 뜬 밤 → 아무 답이나(GameWith). KeenGamer·RPG Site의 감자(Potatoes)도 통과하는 답이다(2026-11-25 재조사)",
       "sources": [
         "https://www.keengamer.com/articles/guides/fire-emblem-fortunes-weave-all-characters-recruitment-guide/",
         "https://www.rpgsite.net/guide/21391-fire-emblem-fortunes-weave-recruitment-guide-all-characters-in-game-how-to-recruit-them"
@@ -2124,7 +2124,6 @@
     "A 잠금 목록: Anna 20개, Game8 15개. 셋째 인물 동석 같은 추가 조건은 전부 확인하지 못했다.",
     "아스완·타호니아가 어느 루트 2부 3장에 나오는지(로컬: 세오도라, Game8: 카이/레다 가능성).",
     "클라프카의 루트 조건.",
-    "양계 질문 세 번째 답(과일 vs 감자).",
     "Game8 영입표는 행마다 루트 이름이 붙어 있지 않아 페이지 순서(카이·디트리히·세오도라·레다)로 대응했다. RPG Site의 루트 표기·로컬 값과 대부분 일치해 신뢰하지만 화면 확인이 우선이다.",
     "Game8·KeenGamer·RPG Site 영입표는 서로 같은 원자료를 옮겼을 수 있어 독립 근거 3개로 세지 않는다.",
     "세오도라 12장에서 카이 외전 클리어 뒤 10/24 안에 티아라 영입이 가능한지(티아라–보나파르트 A).",
@@ -2888,7 +2887,7 @@
         "A": "없음",
         "window": "1·2부 한정 단계 있음",
         "status": "불가",
-        "reason": "센트리온은 3부에서만 합류 · 1부 C 조건을 영입으로 맞출 수 없음(카이 1부 이야기 등장 여부 미확인)"
+        "reason": "센트리온은 3부에서만 합류 · 1부 C 조건을 영입으로 맞출 수 없음(카이 1부 이야기에는 4장 지도 등으로 나오지만 동료 합류는 3부 2구간뿐, RPG Site·GameWith)"
       },
       {
         "pair": "베르트랑–세오도라",
