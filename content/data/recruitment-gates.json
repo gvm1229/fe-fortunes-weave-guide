@@ -1066,11 +1066,11 @@
       "gates": [
         {
           "route": "theodora",
-          "localCondition": "선택지질문 3개에 「치즈」 → 「보름달이 뜬 밤」 → 「과일」 순으로 답한다"
+          "localCondition": "선택지질문 3개에 「치즈」 → 「보름달이 뜬 밤」 순으로 답하고, 셋째는 아무 답이나 통과한다(GameWith)"
         },
         {
           "route": "leda",
-          "localCondition": "선택지질문 3개에 「치즈」 → 「보름달이 뜬 밤」 → 「과일」 순으로 답한다"
+          "localCondition": "선택지질문 3개에 「치즈」 → 「보름달이 뜬 밤」 순으로 답하고, 셋째는 아무 답이나 통과한다(GameWith)"
         },
         {
           "route": "dietrich",
@@ -1079,7 +1079,7 @@
         },
         {
           "route": "cai",
-          "localCondition": "선택지질문 3개에 「치즈」 → 「보름달이 뜬 밤」 → 「과일」 순으로 답한다"
+          "localCondition": "선택지질문 3개에 「치즈」 → 「보름달이 뜬 밤」 순으로 답하고, 셋째는 아무 답이나 통과한다(GameWith)"
         }
       ]
     },
