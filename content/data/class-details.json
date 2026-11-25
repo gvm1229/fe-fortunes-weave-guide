@@ -1034,13 +1034,11 @@
       "tier": "상급직",
       "recommendedLevel": "35",
       "renown": "–",
-      "required": "기마술 D, 흑마술 B  우리 공략  필수 기술이 기마술 D가 아니라  기마술 B  + 흑마술 B일 수 있다. 카이편 명성 7 카스톨 훈련 뒤 시험 화면에서 확인하고, D로 응시가 안 되면 기마술 B까지 올린다",
+      "required": "기마술 D, 흑마술 B",
       "choice": "–",
       "license": "상급 시험 증표",
       "unlock": "· 명성 Lv.7에서 카스톨의 의뢰 클리어",
-      "conditionNotes": [
-        "필수 기술이 기마술 D가 아니라 기마술 B + 흑마술 B일 수 있다. 카이편 명성 7 카스톨 훈련 뒤 시험 화면에서 확인하고, D로 응시가 안 되면 기마술 B까지 올린다"
-      ],
+      "conditionNotes": [],
       "skills": [
         {
           "name": "타기 내리기",
@@ -1192,7 +1190,7 @@
       ],
       "master": [
         {
-          "name": "활을 장비한 상태에서 추격 시 공격력 +3",
+          "name": "사냥꾼의 눈",
           "effect": "활 장비 중 추격 공격을 할 때 공격력 +3.",
           "originalName": "Hunter's Eye",
           "originalEffect": "When equipped with a bow, grants Atk +3 when making a follow-up.",
@@ -1262,6 +1260,12 @@
           "effect": "타기·내리기 명령을 사용할 수 있습니다.",
           "originalName": "Mount/Dismount",
           "originalEffect": "Allows use of Mount and Dismount commands."
+        },
+        {
+          "name": "후공 수비 +5",
+          "effect": "후공 전투 시 물리 내성 +5.",
+          "originalName": "Defense +5 (defending)",
+          "originalEffect": "Grants physical resistance +5 when attacked first."
         }
       ],
       "master": [
@@ -1289,8 +1293,8 @@
       "conditionNotes": [],
       "skills": [
         {
-          "name": "전투 기술 장비 +1",
-          "effect": "장비 가능한 전투 기술 수 +1.",
+          "name": "전투 기술 장비 +2",
+          "effect": "장비 가능한 전투 기술 수 +2.",
           "originalName": "Combat Arts +2",
           "originalEffect": "Unit can equip +2 combat arts."
         },
@@ -1412,6 +1416,12 @@
           "effect": "마법으로 아군을 회복할 때 회복량 +10.",
           "originalName": "Magic Heal +10",
           "originalEffect": "When healing an ally with magic, restores +10 HP."
+        },
+        {
+          "name": "마법 명중 +5",
+          "effect": "마법 장비 시 명중 +5.",
+          "originalName": "Magic Hit +5",
+          "originalEffect": "When using magic, grants Hit +5."
         }
       ],
       "master": [
@@ -1439,8 +1449,8 @@
       "conditionNotes": [],
       "skills": [
         {
-          "name": "전투 기술 장비 +2",
-          "effect": "장비 가능한 전투 기술 수 +2.",
+          "name": "전투 기술 장비 +3",
+          "effect": "장비 가능한 전투 기술 수 +3.",
           "originalName": "Combat Arts +3",
           "originalEffect": "Unit can equip +3 combat arts."
         },

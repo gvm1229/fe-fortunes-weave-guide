@@ -953,7 +953,7 @@
       "localSource": "classes.html#class-forest-knight",
       "masterRewards": [
         {
-          "name": "활을 장비한 상태에서 추격 시 공격력 +3",
+          "name": "사냥꾼의 눈",
           "effect": "활 장비 중 추격 공격을 할 때 공격력 +3.",
           "originalName": "Hunter's Eye",
           "originalEffect": "When equipped with a bow, grants Atk +3 when making a follow-up.",
@@ -8444,7 +8444,7 @@
               "masterRequired": false,
               "masterRewards": [
                 {
-                  "name": "활을 장비한 상태에서 추격 시 공격력 +3",
+                  "name": "사냥꾼의 눈",
                   "effect": "활 장비 중 추격 공격을 할 때 공격력 +3.",
                   "originalName": "Hunter's Eye",
                   "originalEffect": "When equipped with a bow, grants Atk +3 when making a follow-up.",
@@ -8482,7 +8482,7 @@
               "masterRequired": false,
               "masterRewards": [
                 {
-                  "name": "활을 장비한 상태에서 추격 시 공격력 +3",
+                  "name": "사냥꾼의 눈",
                   "effect": "활 장비 중 추격 공격을 할 때 공격력 +3.",
                   "originalName": "Hunter's Eye",
                   "originalEffect": "When equipped with a bow, grants Atk +3 when making a follow-up.",
@@ -8520,7 +8520,7 @@
               "masterRequired": false,
               "masterRewards": [
                 {
-                  "name": "활을 장비한 상태에서 추격 시 공격력 +3",
+                  "name": "사냥꾼의 눈",
                   "effect": "활 장비 중 추격 공격을 할 때 공격력 +3.",
                   "originalName": "Hunter's Eye",
                   "originalEffect": "When equipped with a bow, grants Atk +3 when making a follow-up.",
@@ -12817,7 +12817,7 @@
               "masterRequired": false,
               "masterRewards": [
                 {
-                  "name": "활을 장비한 상태에서 추격 시 공격력 +3",
+                  "name": "사냥꾼의 눈",
                   "effect": "활 장비 중 추격 공격을 할 때 공격력 +3.",
                   "originalName": "Hunter's Eye",
                   "originalEffect": "When equipped with a bow, grants Atk +3 when making a follow-up.",
@@ -13097,7 +13097,7 @@
               "masterRequired": false,
               "masterRewards": [
                 {
-                  "name": "활을 장비한 상태에서 추격 시 공격력 +3",
+                  "name": "사냥꾼의 눈",
                   "effect": "활 장비 중 추격 공격을 할 때 공격력 +3.",
                   "originalName": "Hunter's Eye",
                   "originalEffect": "When equipped with a bow, grants Atk +3 when making a follow-up.",
@@ -13379,7 +13379,7 @@
               "masterRequired": false,
               "masterRewards": [
                 {
-                  "name": "활을 장비한 상태에서 추격 시 공격력 +3",
+                  "name": "사냥꾼의 눈",
                   "effect": "활 장비 중 추격 공격을 할 때 공격력 +3.",
                   "originalName": "Hunter's Eye",
                   "originalEffect": "When equipped with a bow, grants Atk +3 when making a follow-up.",

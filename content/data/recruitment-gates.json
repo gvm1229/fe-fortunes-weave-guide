@@ -1789,7 +1789,7 @@
     "클라프카": {
       "routes": {},
       "gates": [],
-      "join": "3부 5구간 게스트로 생존 → 6구간 자동 합류(Game8·RPG Site) · 루트 조건 미확인 · 로컬 도감에 없음",
+      "join": "3부 5구간 게스트로 생존 → 6구간 자동 합류(Game8·RPG Site) · 세오도라 2부 완료 필요(altema·한국어 도감) · 로컬 도감에 없음",
       "sources": [
         "https://game8.co/games/Fire-Emblem-Fortunes-Weave/archives/618838"
       ]
