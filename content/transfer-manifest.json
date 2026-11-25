@@ -94,7 +94,7 @@
     {
       "source": "data/playbook.json",
       "target": "content/data/playbook.json",
-      "sha256": "c69d337050282a90869d1c367578e18f2462240633d1597e87b86b9fc9f40005"
+      "sha256": "4376f188cb44157b9da23615fb4874c37f58b23b17f0faf61f46d70bb1b955e7"
     },
     {
       "source": "data/purchase-plan.json",
@@ -1804,7 +1804,7 @@
     {
       "source": "personalized-app/src/content.json",
       "target": "content/source/react-content.json",
-      "sha256": "e178dadeec12c08cc283d99a56836a09f38c9b7047eb6b4221e45079863adf03"
+      "sha256": "7728d481e4e70cb68d2e386a0bd89588650d51a9b4a68256bfb8e318b6abe641"
     },
     {
       "source": "personalized-app/src/timeskip-portraits.json",
@@ -1977,7 +1977,7 @@
       "sha256": "b6601f69a8318359991d5fadc11c27348b0df451ecddba9df142e5f979e508ca"
     }
   ],
-  "generatedSourceSha256": "e178dadeec12c08cc283d99a56836a09f38c9b7047eb6b4221e45079863adf03",
+  "generatedSourceSha256": "7728d481e4e70cb68d2e386a0bd89588650d51a9b4a68256bfb8e318b6abe641",
   "activeActions": 1953,
   "checkIds": 2945,
   "peopleByRoute": {
