@@ -94,7 +94,7 @@
     {
       "source": "data/playbook.json",
       "target": "content/data/playbook.json",
-      "sha256": "baaa58c125ee0130cbd6e9706196d906bbc46dc9dc69d680838dbb71bbb244d0"
+      "sha256": "e7c35c290c73ddd54a4a3709ab7c77987f2fefea1c3776175d9bf777539e2135"
     },
     {
       "source": "data/purchase-plan.json",
@@ -1019,7 +1019,7 @@
     {
       "source": "notes/knowledge/preferences.md",
       "target": "content/notes/knowledge/preferences.md",
-      "sha256": "a46a094fd81c2b1c7f4d3b38e949200b0d6e192ea3e9e08afd96f12a92150b35"
+      "sha256": "d28a39c639dcc6f4ab7b5b1b86534f96fbb5985a437e0c8ce150acf7a6561d01"
     },
     {
       "source": "notes/knowledge/README.md",
@@ -1579,7 +1579,7 @@
     {
       "source": "notes/underworld-merge-safety.md",
       "target": "content/notes/underworld-merge-safety.md",
-      "sha256": "41b2f3d73499d2f7000c731a6e01284dbf41e1c083f831ff4109cc17f4e78f5c"
+      "sha256": "2a947d76e7ede22448c6ede4f2e5ae1f682199004386e01c8cc864b17a17707d"
     },
     {
       "source": "notes/visual-review.md",
@@ -1804,7 +1804,7 @@
     {
       "source": "personalized-app/src/content.json",
       "target": "content/source/react-content.json",
-      "sha256": "48b22fb41fd10737b63cb272040d67b320d64c3cd36bec272f2f0a69cc68d59e"
+      "sha256": "b934828c231baf1080c3bdbd172bbf40cb0ccbd115a69b411df9f2c92f72339a"
     },
     {
       "source": "personalized-app/src/timeskip-portraits.json",
@@ -1977,9 +1977,9 @@
       "sha256": "b6601f69a8318359991d5fadc11c27348b0df451ecddba9df142e5f979e508ca"
     }
   ],
-  "generatedSourceSha256": "48b22fb41fd10737b63cb272040d67b320d64c3cd36bec272f2f0a69cc68d59e",
-  "activeActions": 1950,
-  "checkIds": 2942,
+  "generatedSourceSha256": "b934828c231baf1080c3bdbd172bbf40cb0ccbd115a69b411df9f2c92f72339a",
+  "activeActions": 1953,
+  "checkIds": 2945,
   "peopleByRoute": {
     "theodora": 15,
     "leda": 15,

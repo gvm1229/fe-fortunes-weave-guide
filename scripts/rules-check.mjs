@@ -140,6 +140,12 @@ for (const f of [...walk('app', ['.ts', '.tsx', '.css']), ...walk('components', 
     assert.equal(u['아나톨리아'].class, '드루이드', `[U57] ${f} 아나톨리아 드루이드`); assert.ok(u['아나톨리아'].signatureWeapons.some(w => w.name === '샐러맨더'), `[U57] ${f} 아나톨리아 샐러맨더`);
     assert.equal(u['그자람'].class, '소드 마스터', `[U57] ${f} 그자람 소드 마스터`); } }
 
+// [U59] 3부 기준판은 카이판이 먼저다. 다른 루트판은 카이판에 합친다(할 일·덮어쓰기·3부 문서).
+{ const pb = read('content/data/playbook.json'), ov = read('content/display-overrides.json'), ids = pb.groups.flatMap(g => g.actions.map(a => a.id));
+  for (const id of ['p3-import-base-safety--cai-list', 'p3-import-base-safety--cai-merge', 'p3-merge--20261125-cai-base']) assert.ok(ids.includes(id), '[U59] ' + id);
+  assert.ok(ov.actions['p3-import-base-safety--compare-first'].includes('카이판을 기준판'), '[U59] 기준판 고르기 글');
+  assert.ok(readFileSync('content/notes/part3-gates-freetime.md', 'utf8').includes('카이판이 있으면 언제나 카이판을 고른다'), '[U59] 3부 문서'); }
+
 // [U58] 사이트 아이콘은 네 오벨리스크 하나: 진한 바탕 #16272D, 기둥 색은 카이·디트리히·세오도라·레다 순서. 탭(icon.svg)·홈 화면(apple-icon.png)·/favicon.ico 파일 셋, 다른 아이콘 지정 없음.
 { const svg = readFileSync('app/icon.svg', 'utf8'), fills = [...svg.matchAll(/fill="(#[0-9A-Fa-f]{6})"/g)].map(m => m[1].toUpperCase());
   assert.deepEqual(fills, ['#16272D', '#7AA5F7', '#F5F5F2', '#F2C230', '#F06292'], '[U58] 아이콘 바탕·기둥 색 순서');
