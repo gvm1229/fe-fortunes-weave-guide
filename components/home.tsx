@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import { ViewTransition } from 'react';
+import { Fragment, ViewTransition } from 'react';
 import { Progress } from './progress';
 import { ArrowRight } from 'lucide-react';
 import { ThemeSwitch } from './theme';
@@ -8,7 +8,7 @@ import type { Group, Route } from '@/lib/content';
 import { useChecks } from './checks';
 import { checked } from '@/lib/check-state';
 import { lordFiles, lordPortrait } from '@/lib/portraits';
-const playOrder:Record<string,string>={theodora:'1st',leda:'2nd',dietrich:'3rd',cai:'4th'};
+const playOrder:Record<string,string>={theodora:'1부 1st · 2부 5th',leda:'1부 2nd · 2부 6th',dietrich:'1부 3rd · 2부 7th',cai:'1부 4th · 2부 8th'};
 export function Home({routes}:{routes:{id:Route;label:string;parts:{part:string;groups:Group[]}[]}[]}){
   const checks=useChecks();
   function progress(groups:Group[]){return {total:groups.reduce((n,g)=>n+g.actions.length,0),done:groups.reduce((n,g)=>n+g.actions.filter(a=>checked(a,g.id,checks.effective)).length,0)};}
@@ -21,7 +21,7 @@ export function Home({routes}:{routes:{id:Route;label:string;parts:{part:string;
       return <Link className="route-card" key={r.id} data-route={r.id} href={`/${r.id}/${current.part}/`} aria-label={`${r.label} ${current.part}부 이어하기`}>
         <img className="route-emblem" src={`/assets/design/emblems/${lordFiles[r.id]}.webp`} alt=""/>
         <ViewTransition name={`lord-${r.id}`} share="morph" default="none"><img className="lord-portrait" src={lordPortrait(r.id,'1',true)} alt={r.label}/></ViewTransition>
-        <span className="route-order">루트 진행 순서: {playOrder[r.id]}</span>
+        <span className="route-order"><span className="route-order-unit">루트 진행 순서:</span> {playOrder[r.id].split(' · ').map((s,i)=><Fragment key={s}>{i>0&&' · '}<span className="route-order-unit">{s}</span></Fragment>)}</span>
         <div className="route-card-content"><h2>{r.label}</h2>{r.parts.map(p=>{const x=progress(p.groups);return <div className="route-progress" key={p.part}><span>{p.part}부</span><Progress value={x.done} max={x.total} label={`${r.label} ${p.part}부 진행률`}/><span>{x.done}/{x.total}</span></div>;})}<span className="button button-accent">이어하기</span></div>
       </Link>;
     })}</div>

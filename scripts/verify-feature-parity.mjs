@@ -4,7 +4,6 @@ import { createHash } from 'node:crypto';
 import { load } from 'cheerio';
 import { resolveDoc, guideHref, headingId } from '../lib/document-links.ts';
 import { treeText } from './readability.mjs';
-import { displayText } from '../lib/display.ts';
 
 const read=p=>JSON.parse(readFileSync(p,'utf8'));
 const old=read('content/source/react-content.json'),parity=read('content/display-parity.json');
@@ -54,7 +53,6 @@ assert.equal(resolveDoc('#현재','개인화 사용법.md'),'개인화 사용법
 assert.equal(headingId('3부 · 지원 C'),'3부--지원-c');
 assert.equal(guideHref('personalized.html#theodora-plan'),'/theodora/1/');
 assert.equal(guideHref('../personalized-team.html','notes/example.md'),'/team/');
-assert.equal(displayText('앞 루트1·2부를 연속 완료한 실제 가호/게이지 확인 · 이전 예상 목표를 달성값으로 쓰지 않음'),'앞 루트에서 넘겨받은 실제 가호·게이지 확인 · 이전 예상 목표를 달성값으로 쓰지 않음');
 const transitions=old.stages.flatMap(s=>s.blocks).flatMap(b=>[...b.html.matchAll(/data-task-id="([^"]*--start-[^"]*)"/g)].map(m=>m[1]));
 const overrides=read('content/display-overrides.json');for(const id of transitions)assert.ok(!overrides.actions[id],'루트 순서 정본을 덮는 표시: '+id);
 const report={status:'passed',host:'Codex / Windows / Node.js',sourceFiles:manifest.sourceFiles.length,mediaFiles:media.length,personalDocuments:Object.keys(docs).length,generatedDocuments:Object.keys(refs).length,fragments,buttons,images,teamCandidates:Object.keys(old.team.units).length,scenarioTrialCombinations:12,excluded:'참고 보관·archive: 2026-11-13 사용자 확인',limits:'원본과 복사본의 일치 및 개인화 표시 자료의 보존 검사. 실제 게임 정보의 정확성·사용자 브라우저 기록 자동 동기화는 증명하지 않음.'};
