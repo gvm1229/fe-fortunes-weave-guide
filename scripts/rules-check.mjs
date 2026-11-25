@@ -172,6 +172,17 @@ for (const f of [...walk('app', ['.ts', '.tsx', '.css']), ...walk('components', 
   for (const f of ['app/apple-icon.png', 'app/favicon.ico']) assert.ok(existsSync(f) && statSync(f).size > 100, `[U58] ${f} 있음`);
   assert.ok(!/icons:/.test(readFileSync('app/layout.tsx', 'utf8')), '[U58] layout에 다른 아이콘 지정 없음'); }
 
+// [U61] 첫 화면 루트 진행 순서는 부마다 따로 1~4로 센다(2부를 5~8로 잇지 않는다).
+{ const po = readFileSync('components/home.tsx', 'utf8').match(/const playOrder[^;]*;/)?.[0] || '';
+  for (const o of ['1st', '2nd', '3rd', '4th']) assert.ok(po.includes('2부 ' + o), '[U61] playOrder에 2부 ' + o);
+  for (const o of ['5th', '6th', '7th', '8th']) assert.ok(!po.includes('2부 ' + o), '[U61] playOrder에 2부 ' + o + ' 없음'); }
+
+// [U62] 3부 띠의 네 군주 초상화는 같은 칸을 같은 방식(cover, 위 기준)으로 채운다.
+{ const css = readFileSync('app/redesign.css', 'utf8') + readFileSync('app/globals.css', 'utf8'), rules = [...css.matchAll(/([^{}]*\.third-band \.lord-faces img[^{}]*)\{([^}]*)\}/g)].map(m => m[2]);
+  assert.ok(rules.some(r => /object-fit:\s*cover/.test(r)), '[U62] 3부 띠 초상화 object-fit:cover');
+  assert.ok(rules.every(r => !/object-fit:\s*contain/.test(r)), '[U62] 3부 띠 초상화에 object-fit:contain 없음');
+  assert.ok(!/\.lord-faces img\{[^}]*object-fit:\s*contain/.test(css), '[U62] lord-faces img에 contain 없음'); }
+
 // 규칙 문서: 모든 규칙 줄은 '검사' 칸에 하나 이상의 파일을 적고, 그 파일에는 규칙 번호가 있다.
 { const doc = readFileSync('docs/user-rules.md', 'utf8'), rows = doc.split('\n').filter(l => /^\| [UP]\d\d \|/.test(l)), ids = new Set();
   assert.ok(rows.length >= 40, '규칙 줄 수');

@@ -121,7 +121,7 @@ html body:has(.app-shell),html body:has(.team-page){background:#F4F3F0}html.dark
 .home{grid-template-rows:56px minmax(0,1fr) 144px}
 .third-band{text-decoration:none;padding:20px 32px;transition:background-color .15s}
 .third-band:hover{background:var(--primary)}
-.third-band .lord-faces img{width:72px;height:96px;object-fit:contain}
+.third-band .lord-faces img{width:72px;height:96px;object-fit:cover;object-position:50% 0%}
 .third-heading{display:flex;align-items:baseline;justify-content:space-between;gap:16px}
 .third-heading strong{font-size:30px}
 .third-band progress{height:10px}

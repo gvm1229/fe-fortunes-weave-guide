@@ -8,7 +8,7 @@ import type { Group, Route } from '@/lib/content';
 import { useChecks } from './checks';
 import { checked } from '@/lib/check-state';
 import { lordFiles, lordPortrait } from '@/lib/portraits';
-const playOrder:Record<string,string>={theodora:'1부 1st · 2부 5th',leda:'1부 2nd · 2부 6th',dietrich:'1부 3rd · 2부 7th',cai:'1부 4th · 2부 8th'};
+const playOrder:Record<string,string>={theodora:'1부 1st · 2부 1st',leda:'1부 2nd · 2부 2nd',dietrich:'1부 3rd · 2부 3rd',cai:'1부 4th · 2부 4th'};
 export function Home({routes}:{routes:{id:Route;label:string;parts:{part:string;groups:Group[]}[]}[]}){
   const checks=useChecks();
   function progress(groups:Group[]){return {total:groups.reduce((n,g)=>n+g.actions.length,0),done:groups.reduce((n,g)=>n+g.actions.filter(a=>checked(a,g.id,checks.effective)).length,0)};}
