@@ -2385,26 +2385,26 @@
       "part": "3",
       "chapter": "2구간",
       "old": {
-        "portraits": 28,
-        "skills": 63,
+        "portraits": 47,
+        "skills": 65,
         "gods": 0,
-        "classes": 6,
+        "classes": 11,
         "guides": 20,
         "locations": 31
       },
       "expected": {
-        "portraits": 28,
-        "skills": 63,
+        "portraits": 47,
+        "skills": 65,
         "gods": 0,
-        "classes": 6,
+        "classes": 11,
         "guides": 20,
         "locations": 31
       },
       "rendered": {
-        "portraits": 28,
-        "skills": 63,
+        "portraits": 47,
+        "skills": 65,
         "gods": 0,
-        "classes": 6,
+        "classes": 11,
         "guides": 20,
         "locations": 31
       }
@@ -2414,26 +2414,26 @@
       "part": "3",
       "chapter": "3구간",
       "old": {
-        "portraits": 5,
-        "skills": 7,
+        "portraits": 7,
+        "skills": 5,
         "gods": 0,
-        "classes": 7,
+        "classes": 1,
         "guides": 3,
         "locations": 5
       },
       "expected": {
-        "portraits": 5,
-        "skills": 7,
+        "portraits": 7,
+        "skills": 5,
         "gods": 0,
-        "classes": 7,
+        "classes": 1,
         "guides": 3,
         "locations": 5
       },
       "rendered": {
-        "portraits": 5,
-        "skills": 7,
+        "portraits": 7,
+        "skills": 5,
         "gods": 0,
-        "classes": 7,
+        "classes": 1,
         "guides": 3,
         "locations": 5
       }
@@ -2472,7 +2472,7 @@
       "part": "3",
       "chapter": "5구간",
       "old": {
-        "portraits": 37,
+        "portraits": 45,
         "skills": 3,
         "gods": 0,
         "classes": 27,
@@ -2480,7 +2480,7 @@
         "locations": 2
       },
       "expected": {
-        "portraits": 37,
+        "portraits": 45,
         "skills": 3,
         "gods": 0,
         "classes": 27,
@@ -2488,7 +2488,7 @@
         "locations": 2
       },
       "rendered": {
-        "portraits": 37,
+        "portraits": 45,
         "skills": 3,
         "gods": 0,
         "classes": 27,

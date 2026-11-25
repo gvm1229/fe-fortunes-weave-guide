@@ -1372,7 +1372,7 @@
         {
           "id": "theo-04--ba8ae962e1",
           "category": "행동",
-          "text": "6장에는 실제 열린 교환소를 확인한다. 선더 소드는 아래 재료 계산→발레리 협곡→다마센 곶→귀환·재고 확인→교환 순서로 준비하며6장 재고를 확정하지 않는다.",
+          "text": "6장에는 실제 열린 교환소를 확인한다. 선더 소드는 아래 재료 계산→발레리 협곡→다마센 곶→귀환·재고 확인→교환 순서로 준비한다. 교환은 8장부터 연다(GameWith·한국어 도감).",
           "inheritLegacy": true
         },
         {
@@ -1729,7 +1729,7 @@
     {
       "id": "theo-levin-plan",
       "stage": "theodora-plan",
-      "title": "6장 이후 · 선더 소드 교환 재료 계산",
+      "title": "6장 이후 · 선더 소드 교환 재료 계산(교환은 8장부터)",
       "people": [],
       "actions": [
         {
@@ -1809,7 +1809,7 @@
         {
           "id": "theo-04--b7a376bf19",
           "category": "교환 재고 확인",
-          "text": "다그시온의 반다르 상회에서 선더 소드가 실제 교환 목록에 있고 현재 교환 가능한 수량이 얼마인지 확인한다.6장 확보를 확정하지 않으며 없으면 재료를 보관하고 진행 뒤 또는8장 이후에 다시 확인한다.",
+          "text": "다그시온의 반다르 상회에서 선더 소드가 실제 교환 목록에 있고 현재 교환 가능한 수량이 얼마인지 확인한다.교환은8장부터 열리므로 그 전에는 재료만 보관하고8장 이후에 확인한다.",
           "inheritLegacy": true,
           "legacyParent": "theo-04"
         },
@@ -7046,7 +7046,7 @@
         {
           "id": "buy-leda--levin-stock",
           "category": "상점 재고",
-          "text": "선더 소드 보유량 확인 · 6장 이후 반다르 상회에서 태양 열매10·유나메이1 교환 · 당장 쓸2자루 우선, 여유3자루 · 다른 루트의 지참품 영입을 이 동선에 추가하지 않음",
+          "text": "선더 소드 보유량 확인 · 8장부터 반다르 상회에서 태양 열매10·유나메이1 교환 · 당장 쓸2자루 우선, 여유3자루 · 다른 루트의 지참품 영입을 이 동선에 추가하지 않음",
           "inheritLegacy": false
         },
         {
@@ -7825,7 +7825,7 @@
         {
           "id": "leda-04--739e3a3951",
           "category": "끝내기 전",
-          "text": "선더 소드 교환은 6장부터 장마다 목록을 확인한다. 없으면 진행 후 다시 보고, 8장에 다시 점검한다.",
+          "text": "선더 소드 교환은 8장부터 열린다. 그 전에는 재료만 모으고 8장에 목록을 확인한다.",
           "inheritLegacy": true
         },
         {
@@ -8209,7 +8209,7 @@
         {
           "id": "leda-05--d73d94905a",
           "category": "행동",
-          "text": "이오(명성 6·지원 1·800G)를 영입하고, 알렉산드라가 보이면 지원 3을 준비합니다.",
+          "text": "이오(명성 6·지원 1·1,500G)를 영입하고, 알렉산드라가 보이면 지원 3을 준비합니다.",
           "inheritLegacy": true
         },
         {
@@ -9485,7 +9485,7 @@
         },
         {
           "id": "team-leda-inyoni--2",
-          "text": "영입금은 안전하게6,000G를 남기되 실제 레다 교섭창을 우선한다. Game8은 레다3,000G, 로컬 공통 표는6,000G라 차이가 있다.",
+          "text": "영입금3,000G를 남긴다(GameWith·RPG Site·한국어 도감).",
           "category": "준비",
           "inheritLegacy": false
         },
@@ -10479,7 +10479,7 @@
         {
           "id": "leda-11--reserve-dietrich",
           "category": "10/16 수락",
-          "text": "카이 외전을 예약한 뒤 파비오의 디트리히 외전도 수락한다. 수락은 10/22 전, 완료는 11/1까지다.",
+          "text": "카이 외전을 예약한 뒤 파비오의 디트리히 외전도 수락한다. 10/22 뒤에도 수락할 수 있지만 완료는 11/1까지다.",
           "inheritLegacy": false
         },
         {
@@ -10817,7 +10817,7 @@
         {
           "id": "leda-12--e2024626da",
           "category": "행동",
-          "text": "10/16에 파비오에게 수락한 디트리히 외전을 11/1까지 끝낸다. 10/22가 지난 뒤 새로 수락하려 하지 않는다.",
+          "text": "10/16에 파비오에게 수락한 디트리히 외전을 11/1까지 끝낸다. 수락을 마지막 주까지 미루지 않는다.",
           "inheritLegacy": true,
           "legacyParent": "leda-12"
         }
@@ -12626,7 +12626,7 @@
         },
         {
           "category": "주의",
-          "text": "이 장은 4/7~4/10로 짧다."
+          "text": "이 장 자유행동은 4/10까지로 짧다."
         }
       ],
       "curated": true
@@ -12794,7 +12794,7 @@
         {
           "id": "buy-dietrich--levin-stock",
           "category": "상점 재고",
-          "text": "선더 소드가 이미 있는지 확인한다. 반다르 상회 교환은6장 이후 태양 열매10·유나메이1로 확인하고, 다른 확정 경로는 늦은 누조·제스터 지참품이다. 당장 쓸2자루가 먼저다.",
+          "text": "선더 소드가 이미 있는지 확인한다. 반다르 상회 교환은8장부터 태양 열매10·유나메이1로 확인하고, 다른 확정 경로는 늦은 누조·제스터 지참품이다. 당장 쓸2자루가 먼저다.",
           "inheritLegacy": false
         },
         {
@@ -19424,7 +19424,7 @@
         {
           "id": "buy-cai--levin-stock",
           "category": "상점 재고",
-          "text": "선더 소드가 이미 있는지 확인한다. 반다르 상회 교환은6장 이후 태양 열매10·유나메이1로 확인하고, 다른 확정 경로는 늦은 누조·제스터 지참품이다. 당장 쓸2자루가 먼저다.",
+          "text": "선더 소드가 이미 있는지 확인한다. 반다르 상회 교환은8장부터 태양 열매10·유나메이1로 확인하고, 다른 확정 경로는 늦은 누조·제스터 지참품이다. 당장 쓸2자루가 먼저다.",
           "inheritLegacy": false
         },
         {
@@ -20716,7 +20716,7 @@
         },
         {
           "category": "주의",
-          "text": "알렉산드라는 명성 7·지원 2, 이오는 명성 10·지원 3·800G에 챙깁니다."
+          "text": "알렉산드라는 명성 7·지원 2, 이오는 명성 10·지원 3·4,000G에 챙깁니다."
         },
         {
           "category": "주의",
@@ -22251,7 +22251,7 @@
         {
           "id": "recruit-cai-io--reserve-gold",
           "category": "영입금",
-          "text": "명성10·카이와의 지원3을 확인하고 이오 교섭 직전800G를 남긴다. 이미 영입했다면 이 비용은 제외한다.",
+          "text": "명성10·카이와의 지원3을 확인하고 이오 교섭 직전4,000G를 남긴다. 이미 영입했다면 이 비용은 제외한다.",
           "inheritLegacy": false
         },
         {
@@ -22264,7 +22264,7 @@
         {
           "id": "cai-route-10--7e6ce53b58",
           "category": "미리 준비",
-          "text": "조건을 충족한 이오에게800G를 지급해 영입하고 동료 목록의 합류를 확인한다.",
+          "text": "조건을 충족한 이오에게4,000G를 지급해 영입하고 동료 목록의 합류를 확인한다.",
           "inheritLegacy": true
         },
         {
@@ -23060,7 +23060,7 @@
         {
           "id": "cai-route-11--2a2240f701",
           "category": "이동 순서",
-          "text": "10/18에 오르헬 외전을 수락하고10/21까지 끝낸다. 실제 수락창10/18~10/19과 완료 마감을 구분하고 마지막 날까지 미루지 않는다.",
+          "text": "10/18에 오르헬 외전을 수락하고10/21까지 끝낸다. 수락은10/20까지 열린다. 마지막 날까지 미루지 않는다.",
           "inheritLegacy": true,
           "legacyParent": "cai-route-11"
         }
@@ -26276,6 +26276,66 @@
       "curated": true
     },
     {
+      "id": "p3-free02-20261125",
+      "stage": "part3-plan",
+      "title": "2구간 자유행동 36턴(2/10까지) · 할 일 순서",
+      "people": [],
+      "actions": [
+        {
+          "id": "p3-free02-20261125--zero",
+          "category": "턴 안 드는 일",
+          "text": "재영입·상점·시험·병종 변경처럼 턴이 들지 않는 일부터 한다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-free02-20261125--rebuild",
+          "category": "복구 순서",
+          "text": "복구는 역참 → 신전 → 마을 순서로 한다. 재건 자재는 복구한 마을에서 1개 500G에 사고, 탐색 파견·재배로도 모은다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-free02-20261125--temple",
+          "category": "전용 최상급",
+          "text": "신전을 복구하고 그 신의 부탁을 끝내 전용 최상급을 연다: 스미르노스 하이 에피타프, 칼라 보우 나이트, 크레르 그레이트 나이트, 오로라 배틀 몽크, 마르스 소드 마스터, 쥬라 발키리움.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-free02-20261125--dagsion",
+          "category": "다그시온 시설",
+          "text": "다그시온 투기장(재건 자재 3개)과 여관(재건 자재 2개)을 복구해 훈련과 식사를 연다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-free02-20261125--weekly",
+          "category": "주 1회",
+          "text": "주 1회 일을 한다: 선물, 훈련(토·일 반값), 식사(일요일 반값), 봉사, 극장, 테르마이.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-free02-20261125--lord-scenes",
+          "category": "선택 장면",
+          "text": "아래 네 주인공 선택 장면은 그 주인공의 2부를 스킵하지 않고 끝냈을 때만 나온다(GameWith).",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-free02-20261125--leftover",
+          "category": "남는 턴",
+          "text": "남는 턴은 던전·탐색으로 레벨·기능·재건 자재를 모은다. 부대에 넣지 않은 동료도 턴이 끝날 때 경험치를 받는다.",
+          "inheritLegacy": false
+        }
+      ],
+      "figures": [],
+      "notes": [],
+      "curated": true,
+      "referenceLinks": [
+        {
+          "url": "notes/part3-gates-freetime.md",
+          "label": "3부 구간별 문·자유행동"
+        }
+      ],
+      "route": "part3"
+    },
+    {
       "id": "p3-feast-loop-20261114",
       "stage": "part3-plan",
       "title": "2구간 · 다그시온 재영입 뒤 · 연회 반복(융합보다 먼저)",
@@ -26399,6 +26459,71 @@
       ]
     },
     {
+      "id": "p3-squads-20261125",
+      "stage": "part3-plan",
+      "title": "2구간 · 3부 부대 세 개 미리 짜기(춤 둘은 다른 부대)",
+      "people": [
+        "세오도라",
+        "올림피아",
+        "이니오니",
+        "로레타",
+        "알렉산드라",
+        "무우",
+        "그자람",
+        "티아라",
+        "카이",
+        "레다",
+        "카타냐",
+        "파비오",
+        "단테",
+        "울턴드",
+        "릴리안",
+        "피아나"
+      ],
+      "actions": [
+        {
+          "id": "p3-squads-20261125--s1",
+          "category": "1조",
+          "text": "1조(문 공략): 디트리히·에스메랄다·미카엘라·시로코·우술라·피터르·소피아·리네. 활 2명·리브로 2명.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-squads-20261125--s2",
+          "category": "2조",
+          "text": "2조: 세오도라·올림피아·이니오니·로레타·알렉산드라·무우·그자람·티아라. 비행·활 2명·회복 2명·티아라 춤.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-squads-20261125--s3",
+          "category": "3조",
+          "text": "3조: 카이·레다·카타냐·파비오·단테·울턴드·릴리안·피아나. 기병·비행·마법·회복 3명·레다 춤. 2구간에는 부대가 2개라 3조는 부대 밖에서 턴 끝 경험치를 받는다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-squads-20261125--rule",
+          "category": "부대 원칙",
+          "text": "부대마다 앞줄 2명·회복 1명 이상을 둔다. 한 부대가 정화와 방위를 같이 하지 못하므로 강한 인원을 한 부대에 몰지 않는다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-squads-20261125--lords",
+          "category": "주인공 행동",
+          "text": "카이 동물 포획·세오도라 군단·레다 공연 같은 지도 행동은 그 주인공이 부대에 있을 때만 쓴다(1곳).",
+          "inheritLegacy": false
+        }
+      ],
+      "figures": [],
+      "notes": [],
+      "curated": true,
+      "referenceLinks": [
+        {
+          "url": "notes/part3-gates-freetime.md",
+          "label": "3부 구간별 문·자유행동"
+        }
+      ],
+      "route": "part3"
+    },
+    {
       "id": "p3-merge-safety",
       "stage": "part3-plan",
       "title": "유료 융합 직전 · 재시작 작업 종료",
@@ -26474,6 +26599,24 @@
           "category": "행동",
           "text": "3부 구간 재시작 시 융합 결과가 되돌아가도 사용한 파편은 미환급이라는 반복 보고 · 재시작할 일을 끝낸 뒤 지출",
           "inheritLegacy": true
+        },
+        {
+          "id": "p3-merge--20261125-before-exam",
+          "category": "가장 좋은 때",
+          "text": "연회 반복의 마지막 회차가 끝난 직후, 최상급 시험을 보기 전에 융합한다. 기능 레벨은 높은 값이 남으므로 다른 판에서 올린 기능으로 바로 시험 조건을 채운다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-merge--20261125-limited",
+          "category": "파편 한정",
+          "text": "인과의 파편은 위업록으로만 얻고 모을 수 있는 양이 정해져 있다. 최종 25명 가운데 다른 루트판이 실제로 더 높은 동료만 합친다(altema·GameWith).",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-merge--20261125-remerge",
+          "category": "다시 융합",
+          "text": "한 번 융합한 동료도 다시 융합할 수 있다. 더할 루트의 1부 12장과 2부를 다시 끝내야 한다(altema).",
+          "inheritLegacy": false
         }
       ],
       "figures": [],
@@ -27462,6 +27605,51 @@
       ]
     },
     {
+      "id": "p3-gate02-split-20261125",
+      "stage": "part3-plan",
+      "title": "2구간 문 작전(2/15까지 16턴) · 1조 문 공략, 2조 정화",
+      "people": [
+        "디트리히",
+        "세오도라"
+      ],
+      "actions": [
+        {
+          "id": "p3-gate02-split-20261125--s1",
+          "category": "1조",
+          "text": "1조는 문 공략조다. 문 주변 정화가 끝나면 문 위나 옆 칸에 모은다. 멀리 있는 동료는 전투에 부르지 못한다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-gate02-split-20261125--s2",
+          "category": "2조",
+          "text": "2조는 정화조다. 3단계 숲을 맡아 3턴 머물고, 남은 장기는 1조와 나눠 없앤다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-gate02-split-20261125--blaze",
+          "category": "지도 장기",
+          "text": "지도 위 장기 칸은 방어를 0으로 만들고 다음 턴에 HP를 절반으로 깎는다. 블레이즈 아츠로 지울 수 있다(1곳).",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-gate02-split-20261125--early",
+          "category": "남은 턴",
+          "text": "문 전투를 이긴 뒤 「문 파괴」를 바로 누르지 않는다. 기한이 되면 저절로 부서지므로 남은 턴을 탐색·복구에 쓴다.",
+          "inheritLegacy": false
+        }
+      ],
+      "figures": [],
+      "notes": [],
+      "curated": true,
+      "referenceLinks": [
+        {
+          "url": "notes/part3-gates-freetime.md",
+          "label": "3부 구간별 문·자유행동"
+        }
+      ],
+      "route": "part3"
+    },
+    {
       "id": "p3-gate02-deploy",
       "stage": "part3-plan",
       "title": "첫 문 진입·배치 · 실제 참전 인원 확인",
@@ -27582,9 +27770,51 @@
       ]
     },
     {
+      "id": "p3-free03-20261125",
+      "stage": "part3-plan",
+      "title": "3구간 자유행동 36턴(2/25까지) · 방위 준비",
+      "people": [],
+      "actions": [
+        {
+          "id": "p3-free03-20261125--none",
+          "category": "병종",
+          "text": "3구간에 새로 열리는 병종은 없다. 남은 신전 부탁과 최상급 시험을 마친다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-free03-20261125--weekly",
+          "category": "주 1회",
+          "text": "주 1회 일을 한다: 선물, 훈련(토·일 반값), 식사(일요일 반값), 봉사, 극장, 테르마이.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-free03-20261125--arena",
+          "category": "다그시온",
+          "text": "다그시온 투기장 다음 부탁에는 재건 자재 20개가 든다(1곳). 자재는 복구한 마을에서 산다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-free03-20261125--forts",
+          "category": "방위 준비",
+          "text": "다그시온으로 오는 길목과 옛 관문 요새 위치를 미리 본다. 작전 때 2조가 지킬 곳이다.",
+          "inheritLegacy": false
+        }
+      ],
+      "figures": [],
+      "notes": [],
+      "curated": true,
+      "referenceLinks": [
+        {
+          "url": "notes/part3-gates-freetime.md",
+          "label": "3부 구간별 문·자유행동"
+        }
+      ],
+      "route": "part3"
+    },
+    {
       "id": "team-p3-lilian-bow-knight-20261107",
       "stage": "part3-plan",
-      "title": "3부3구간 이후 · 릴리안 보우 나이트 시험",
+      "title": "3부 2구간 이후 · 릴리안 보우 나이트 시험",
       "people": [
         "릴리안"
       ],
@@ -27713,6 +27943,58 @@
       ]
     },
     {
+      "id": "p3-gate03-split-20261125",
+      "stage": "part3-plan",
+      "title": "3구간 문 작전(3/6까지 36턴) · 공격·방위·정화 3부대",
+      "people": [
+        "디트리히",
+        "세오도라",
+        "카이"
+      ],
+      "actions": [
+        {
+          "id": "p3-gate03-split-20261125--s1",
+          "category": "1조 공격",
+          "text": "1조는 활과 가장 강한 인원으로 문을 친다. 날개 달린 적이 많다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-gate03-split-20261125--s2",
+          "category": "2조 방위",
+          "text": "2조는 다그시온으로 오는 적을 길에서 막는다. 적이 다그시온에 닿으면 아주 어려운 방위전이 열린다. 옛 관문 요새에 「방위 파병」을 두면 지나가는 적을 정해진 횟수만큼 쓰러뜨린다(1곳).",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-gate03-split-20261125--s3",
+          "category": "3조 정화",
+          "text": "3조는 문과 같은 주의 장기를 모두 없앤 뒤 1조 옆으로 온다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-gate03-split-20261125--durability",
+          "category": "내구",
+          "text": "지도 위 장기는 무기 내구를 깎는다. 1조에 예비 무기를 챙긴다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-gate03-split-20261125--thief",
+          "category": "달아나는 적",
+          "text": "상자를 든 적은 북서쪽으로 달아난다. 물품을 지키려면 먼저 쓰러뜨린다(1곳).",
+          "inheritLegacy": false
+        }
+      ],
+      "figures": [],
+      "notes": [],
+      "curated": true,
+      "referenceLinks": [
+        {
+          "url": "notes/part3-gates-freetime.md",
+          "label": "3부 구간별 문·자유행동"
+        }
+      ],
+      "route": "part3"
+    },
+    {
       "id": "miss-p3-04-fortuna",
       "stage": "part3-plan",
       "title": "4구간 · 3구간 장면을 본 뒤 포트나",
@@ -27733,6 +28015,48 @@
       "eventGuides": [
         "miss-p3-04-fortuna"
       ]
+    },
+    {
+      "id": "p3-free04-20261125",
+      "stage": "part3-plan",
+      "title": "4구간 자유행동 56턴(3/21까지) · 천관의 열쇠 5개",
+      "people": [],
+      "actions": [
+        {
+          "id": "p3-free04-20261125--keys",
+          "category": "열쇠",
+          "text": "신장직에 필요한 천관의 열쇠 5개를 던전 5곳에서 하나씩 모은다: 이교도의 동굴, 모래 그림자 요새, 쿠거 대삼림, 거인의 발자국 요새, 아누 섬(일본어 공략 이름을 옮김).",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-free04-20261125--divine",
+          "category": "신장직",
+          "text": "천관의 신전에서 신장직에 오른다. 레벨 45가 필요하고 한 병종에 한 명만 오른다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-free04-20261125--s4",
+          "category": "4조",
+          "text": "부대가 4개가 된다. 4조는 예비 동료(게이츠·녹투라·누조·라이선더·루루디아·하르빈·보나파르트·세테스·토비아스 등)로 정화·방위를 맡긴다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-free04-20261125--weekly",
+          "category": "주 1회",
+          "text": "주 1회 일을 한다: 선물, 훈련(토·일 반값), 식사(일요일 반값), 봉사, 극장, 테르마이.",
+          "inheritLegacy": false
+        }
+      ],
+      "figures": [],
+      "notes": [],
+      "curated": true,
+      "referenceLinks": [
+        {
+          "url": "notes/part3-gates-freetime.md",
+          "label": "3부 구간별 문·자유행동"
+        }
+      ],
+      "route": "part3"
     },
     {
       "id": "p3-divine-mastery-20261112",
@@ -27876,6 +28200,54 @@
       ]
     },
     {
+      "id": "p3-gate04-split-20261125",
+      "stage": "part3-plan",
+      "title": "4구간 문 작전(4/5까지 56턴) · 17인 문 2곳 부대 나누기",
+      "people": [],
+      "actions": [
+        {
+          "id": "p3-gate04-split-20261125--same-tile",
+          "category": "두 부대",
+          "text": "두 문 모두 두 부대를 같은 칸에 모아 시작한다. 한 문씩 차례로 깬다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-gate04-split-20261125--ere",
+          "category": "에일 산지",
+          "text": "에일 산지 문은 1조+2조로 간다. 안개로 1칸 앞까지만 보이고, 비행이 유리하며 기병은 힘들다. 크레르의 가호가 돕는다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-gate04-split-20261125--daimos",
+          "category": "다이모스 고원",
+          "text": "다이모스 고원 문은 3조와, 보충을 마친 1조·2조 중 레벨이 높은 쪽으로 간다. 레벨이 낮은 적을 칠 때 명중이 절반이 되므로 레벨 높은 인원을 쓴다. 북동쪽 회복 적을 먼저 쓰러뜨린다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-gate04-split-20261125--others",
+          "category": "나머지 부대",
+          "text": "첫 문을 치는 동안 3조는 둘째 문 주의 장기를 정화하고 4조는 다그시온 길목을 지킨다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-gate04-split-20261125--cap",
+          "category": "출격 수",
+          "text": "다이모스 고원의 17인은 공략 한 곳만 적었다. 배치창 숫자를 먼저 본다.",
+          "inheritLegacy": false
+        }
+      ],
+      "figures": [],
+      "notes": [],
+      "curated": true,
+      "referenceLinks": [
+        {
+          "url": "notes/part3-gates-freetime.md",
+          "label": "3부 구간별 문·자유행동"
+        }
+      ],
+      "route": "part3"
+    },
+    {
       "id": "p3-guest-survival-20261112",
       "stage": "part3-plan",
       "title": "5구간 · 객원 생존과 합류",
@@ -27887,13 +28259,13 @@
         {
           "id": "p3-guest-survival-20261112--aswan",
           "category": "합류 확인",
-          "text": "2부 3장에서 살린 아스완·타호니아가 5구간에 합류했는지 본다. 어느 루트 2부 3장이 필요한지는 자료가 엇갈린다.",
+          "text": "아스완·타호니아가 5구간 시작에 합류했는지 본다. 필요한 루트(레다 또는 카이 2부)와 2부 생존 조건은 자료가 엇갈린다.",
           "inheritLegacy": false
         },
         {
           "id": "p3-guest-survival-20261112--klafka",
           "category": "객원 생존",
-          "text": "5구간 게스트 클라프카를 쓰러지지 않게 둔다. 살리면 6구간에 합류한다(루트 조건 미확인).",
+          "text": "5구간 게스트 클라프카를 쓰러지지 않게 둔다. 살리면 6구간에 합류한다. 세오도라 2부 완료도 필요하다(altema·한국어 도감).",
           "inheritLegacy": false
         }
       ],
@@ -27959,6 +28331,42 @@
       "eventGuides": [
         "miss-p3-05-fortuna"
       ]
+    },
+    {
+      "id": "p3-free05-20261125",
+      "stage": "part3-plan",
+      "title": "5구간 자유행동 76턴(4/25까지) · 5부대 채우기",
+      "people": [],
+      "actions": [
+        {
+          "id": "p3-free05-20261125--s5",
+          "category": "5조",
+          "text": "부대가 5개가 된다. 4조·5조를 남은 동료와 새로 합류한 동료로 채워 정화·방위를 맡긴다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-free05-20261125--rest",
+          "category": "남은 일",
+          "text": "남은 열쇠·복구·신전 부탁을 끝낸다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-free05-20261125--weekly",
+          "category": "주 1회",
+          "text": "주 1회 일을 한다: 선물, 훈련(토·일 반값), 식사(일요일 반값), 봉사, 극장, 테르마이.",
+          "inheritLegacy": false
+        }
+      ],
+      "figures": [],
+      "notes": [],
+      "curated": true,
+      "referenceLinks": [
+        {
+          "url": "notes/part3-gates-freetime.md",
+          "label": "3부 구간별 문·자유행동"
+        }
+      ],
+      "route": "part3"
     },
     {
       "id": "p3-gate05-preflight",
@@ -28027,6 +28435,63 @@
           "label": "융합·부대 준비표"
         }
       ]
+    },
+    {
+      "id": "p3-gate05-split-20261125",
+      "stage": "part3-plan",
+      "title": "5구간 문 작전(5/15까지 77턴) · 문마다 보낼 부대",
+      "people": [
+        "세오도라",
+        "에스메랄다",
+        "리네",
+        "울턴드",
+        "카타냐",
+        "알렉산드라",
+        "카이",
+        "소피아"
+      ],
+      "actions": [
+        {
+          "id": "p3-gate05-split-20261125--desert",
+          "category": "사막 골짜기",
+          "text": "사막 골짜기 문(17인)은 1조+2조로 간다. 사막이라 기병을 빼고 비행·마법을 쓴다. 해적왕의 보물을 주우면 지도 효과가 사라진다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-gate05-split-20261125--fort",
+          "category": "헤카톤케일 요새",
+          "text": "헤카톤케일 요새 문(17인)은 3조와 회복한 1조나 2조로 간다. 동쪽과 남쪽으로 한 조씩 나눠 가고, 양쪽에 활 쓰는 적이 있다. 책·대장간 상자를 든 적이 달아난다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-gate05-split-20261125--ruins",
+          "category": "쿠르델린데 유적",
+          "text": "쿠르델린데 유적 문(1부대)은 창 부대를 새로 짠다: 세오도라·에스메랄다·리네·울턴드·카타냐·알렉산드라·카이·소피아. 덤불은 회피 +30~40이다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-gate05-split-20261125--klafka",
+          "category": "클라프카",
+          "text": "쿠르델린데 유적에서 같이 싸우는 클라프카를 살린다. 살아서 5구간을 끝내면 6구간에 합류한다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-gate05-split-20261125--defense",
+          "category": "나머지 부대",
+          "text": "4조·5조는 정화와 다그시온 방위를 맡는다.",
+          "inheritLegacy": false
+        }
+      ],
+      "figures": [],
+      "notes": [],
+      "curated": true,
+      "referenceLinks": [
+        {
+          "url": "notes/part3-gates-freetime.md",
+          "label": "3부 구간별 문·자유행동"
+        }
+      ],
+      "route": "part3"
     },
     {
       "id": "p3-support-talks-20261112",
@@ -28272,6 +28737,60 @@
         }
       ],
       "curated": true
+    },
+    {
+      "id": "p3-free06-20261125",
+      "stage": "part3-plan",
+      "title": "6구간 자유행동 84턴(6/6까지) · 마지막 준비",
+      "people": [],
+      "actions": [
+        {
+          "id": "p3-free06-20261125--last",
+          "category": "마지막 자유행동",
+          "text": "마지막 자유행동이다. 육성·탐색·부탁을 모두 끝낸다. 모든 부탁은 6/6에 끝난다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-free06-20261125--no-return",
+          "category": "돌아올 수 없음",
+          "text": "마지막 신전 던전에 들어가면 마을로 돌아오지 못한다(1곳). 들어가기 전에 모든 일을 끝내고 저장한다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-free06-20261125--aurora",
+          "category": "지름길",
+          "text": "오로라 신전을 복구했다면 다그시온에서 마지막 신전까지 약 6턴에 가는 길을 쓴다(1곳).",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-free06-20261125--leda-arts",
+          "category": "레다 강화",
+          "text": "레다 2부를 끝냈다면 주점 주인의 특별 부탁으로 레다의 블레이즈 아츠를 강화한다. 마을 복구도 필요하다(altema).",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-free06-20261125--final",
+          "category": "마지막 전투",
+          "text": "마지막 전투는 25명이 나간다. 문을 부술 비행 인원(알렉산드라·카타냐)을 따로 둔다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "p3-free06-20261125--after",
+          "category": "끝난 뒤",
+          "text": "3부를 끝내면 저장이 마지막 전투 전 상태로 돌아간다. 마지막 전투에서 오른 성장은 남지 않는다(altema).",
+          "inheritLegacy": false
+        }
+      ],
+      "figures": [],
+      "notes": [],
+      "curated": true,
+      "referenceLinks": [
+        {
+          "url": "notes/part3-gates-freetime.md",
+          "label": "3부 구간별 문·자유행동"
+        }
+      ],
+      "route": "part3"
     },
     {
       "id": "miss-post-prologue",

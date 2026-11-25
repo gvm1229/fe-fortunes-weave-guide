@@ -24,12 +24,12 @@
     {
       "source": "data/chapter-gold.json",
       "target": "content/data/chapter-gold.json",
-      "sha256": "a398fc8bc3c3de79ad398e6b07b022a7c1df77f3b826efeeea9a486ff11088e8"
+      "sha256": "86f1ae4bc86bb40fd925b36a04e7410f2fca8a5be0ccf0f7e3b303c7d1a385cc"
     },
     {
       "source": "data/chapter-progression.json",
       "target": "content/data/chapter-progression.json",
-      "sha256": "7b5da366b66a1f6cfa1cf8c2649b74791492ccbae235985d6960f2673de6f608"
+      "sha256": "e3418eac1cf99887815832ba59aee7bb6b98ab7dea5bedb7902ca32678e29b15"
     },
     {
       "source": "data/checklist-display-names.json",
@@ -39,12 +39,12 @@
     {
       "source": "data/class-details.json",
       "target": "content/data/class-details.json",
-      "sha256": "252169ca229fb4e9987e838bed54c5cf5c10eeb74f57cf75f5733d3f2087e575"
+      "sha256": "e60d77e177f8f3c5d1dbe64349dd50ca29db91c70a8e60b03ccf02daebf86f09"
     },
     {
       "source": "data/class-path-reasons.json",
       "target": "content/data/class-path-reasons.json",
-      "sha256": "c9b118f3234f1b951f2d7bf0257c3272c80f21fea2a53e4183134895478ac435"
+      "sha256": "af2d23102a0e8f825d424c4443b2b80ac0937266d235aec963a7f07254642ec8"
     },
     {
       "source": "data/final-roster.json",
@@ -94,7 +94,7 @@
     {
       "source": "data/playbook.json",
       "target": "content/data/playbook.json",
-      "sha256": "0727c4f9b4ff8fb6ba0311d7361908695c182778a189cafaf4f92153d67eff95"
+      "sha256": "95182a4d3babb1a8867e52a1874292233441d4879fa41c98fcbf64f8d200e2b6"
     },
     {
       "source": "data/purchase-plan.json",
@@ -124,7 +124,7 @@
     {
       "source": "data/recruitment-gates.json",
       "target": "content/data/recruitment-gates.json",
-      "sha256": "d69ceac61085b361851692f4a95c6e70f1d50eadfbe151f5b0abe167e98e1e68"
+      "sha256": "e21225bf40bf3b3159ff98e9aedeb18acc2d0bc296a0eddf8cc8f7479f0a45d2"
     },
     {
       "source": "data/roster-plan.json",
@@ -159,12 +159,12 @@
     {
       "source": "data/team-signature-learning.json",
       "target": "content/data/team-signature-learning.json",
-      "sha256": "3b1c66aa865c601bc3e60cb33e3a176c1f834aa2474fdd27149ab0f095beba95"
+      "sha256": "6dd090cac14b4686e4373bacba52130dc49eda957cdcc3821ead8855b7a6438a"
     },
     {
       "source": "data/team-signature-weapons.json",
       "target": "content/data/team-signature-weapons.json",
-      "sha256": "01c129cf7f95e99980092f700fb2860980d00e0275837760182252a4e29e5e7a"
+      "sha256": "a869b0eadc75d8dccabc5a42f31cd04eedd3436caed5a841c764e899e6bb51be"
     },
     {
       "source": "data/team-specialty-review.json",
@@ -179,7 +179,7 @@
     {
       "source": "data/team-white-highlights.json",
       "target": "content/data/team-white-highlights.json",
-      "sha256": "2548bd6efebf25816e03dbdca817f9f0855220dc356df519ea6d7edce3d97d01"
+      "sha256": "b089d4fa238206796dc1a21c17ec6f7b221cfcc6b9dd869bedef031c26bd7cde"
     },
     {
       "source": "data/team-white-spells.json",
@@ -294,7 +294,7 @@
     {
       "source": "notes/chapter-route-plan.md",
       "target": "content/notes/chapter-route-plan.md",
-      "sha256": "aa68e3e9d8f541f1daaaefed393d2aecdbbf2b71e867a53fcf593bf15f637bbe"
+      "sha256": "1e6709233f95e702514aefcc9fcfbc81e01ee1d1a1c3fd284d2146c48662ab8c"
     },
     {
       "source": "notes/checklist-full-review.md",
@@ -454,7 +454,7 @@
     {
       "source": "notes/classes/forest-knight.md",
       "target": "content/notes/classes/forest-knight.md",
-      "sha256": "dfd957b15db32a86768f9e28be56df5f9d3280085761f0832f771fc5aba0c56e"
+      "sha256": "81cf2d8ea55663beb2552ddb8095aaf62a3efcfa7912e15475a2ad8d0c8a8894"
     },
     {
       "source": "notes/classes/gladiator.md",
@@ -1369,7 +1369,7 @@
     {
       "source": "notes/roster-build-review.md",
       "target": "content/notes/roster-build-review.md",
-      "sha256": "fb915f3bbbed87d16fcce6eac9c2a50eab8b415f3c56fd785e4487188c2db03c"
+      "sha256": "919f59c40777f81ff86d5d8461bae3412063b4bdc7fcd132ae75f2e80f9784f8"
     },
     {
       "source": "notes/roster-selection-review.md",
@@ -1804,7 +1804,7 @@
     {
       "source": "personalized-app/src/content.json",
       "target": "content/source/react-content.json",
-      "sha256": "3fe53329d5e37d7a2569900412423b2c8bd7b8cf928ef182f4567c942f20965a"
+      "sha256": "61167ca5d54d0b7638dda8d964ac0a748d05d757ef825fd959d27f5050ce85fb"
     },
     {
       "source": "personalized-app/src/timeskip-portraits.json",
@@ -1977,7 +1977,7 @@
       "sha256": "b6601f69a8318359991d5fadc11c27348b0df451ecddba9df142e5f979e508ca"
     }
   ],
-  "generatedSourceSha256": "3fe53329d5e37d7a2569900412423b2c8bd7b8cf928ef182f4567c942f20965a",
+  "generatedSourceSha256": "61167ca5d54d0b7638dda8d964ac0a748d05d757ef825fd959d27f5050ce85fb",
   "activeActions": 1899,
   "checkIds": 2881,
   "peopleByRoute": {
@@ -2008,6 +2008,6 @@
     "leda-war-plan": 24,
     "dietrich-war-plan": 16,
     "cai-war-plan": 17,
-    "part3-plan": 72
+    "part3-plan": 82
   }
 }
