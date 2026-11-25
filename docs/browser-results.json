@@ -96,7 +96,7 @@
       "order": [
         {
           "route": "cai",
-          "badge": "루트 진행 순서: 4th",
+          "badge": "루트 진행 순서: 1부 4th · 2부 4th",
           "src": "/assets/portraits/pre-timeskip/large/cai.webp",
           "rect": {
             "x": 24,
@@ -106,7 +106,7 @@
         },
         {
           "route": "dietrich",
-          "badge": "루트 진행 순서: 3rd",
+          "badge": "루트 진행 순서: 1부 3rd · 2부 3rd",
           "src": "/assets/portraits/pre-timeskip/large/dietrich.webp",
           "rect": {
             "x": 378,
@@ -116,7 +116,7 @@
         },
         {
           "route": "theodora",
-          "badge": "루트 진행 순서: 1st",
+          "badge": "루트 진행 순서: 1부 1st · 2부 1st",
           "src": "/assets/portraits/pre-timeskip/large/theodora.webp",
           "rect": {
             "x": 732,
@@ -126,7 +126,7 @@
         },
         {
           "route": "leda",
-          "badge": "루트 진행 순서: 2nd",
+          "badge": "루트 진행 순서: 1부 2nd · 2부 2nd",
           "src": "/assets/portraits/pre-timeskip/large/leda.webp",
           "rect": {
             "x": 1086,
@@ -480,8 +480,216 @@
       "order": [],
       "eraViolations": [],
       "croppedScenes": [],
-      "sceneHeights": [],
-      "goldTables": [],
+      "sceneHeights": [
+        300,
+        300
+      ],
+      "goldTables": [
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        }
+      ],
       "accentContrast": [
         {
           "route": "theodora",
@@ -3462,7 +3670,7 @@
       "order": [
         {
           "route": "cai",
-          "badge": "루트 진행 순서: 4th",
+          "badge": "루트 진행 순서: 1부 4th · 2부 4th",
           "src": "/assets/portraits/pre-timeskip/large/cai.webp",
           "rect": {
             "x": 24,
@@ -3472,7 +3680,7 @@
         },
         {
           "route": "dietrich",
-          "badge": "루트 진행 순서: 3rd",
+          "badge": "루트 진행 순서: 1부 3rd · 2부 3rd",
           "src": "/assets/portraits/pre-timeskip/large/dietrich.webp",
           "rect": {
             "x": 378,
@@ -3482,7 +3690,7 @@
         },
         {
           "route": "theodora",
-          "badge": "루트 진행 순서: 1st",
+          "badge": "루트 진행 순서: 1부 1st · 2부 1st",
           "src": "/assets/portraits/pre-timeskip/large/theodora.webp",
           "rect": {
             "x": 732,
@@ -3492,7 +3700,7 @@
         },
         {
           "route": "leda",
-          "badge": "루트 진행 순서: 2nd",
+          "badge": "루트 진행 순서: 1부 2nd · 2부 2nd",
           "src": "/assets/portraits/pre-timeskip/large/leda.webp",
           "rect": {
             "x": 1086,
@@ -7036,7 +7244,7 @@
       "order": [
         {
           "route": "cai",
-          "badge": "루트 진행 순서: 4th",
+          "badge": "루트 진행 순서: 1부 4th · 2부 4th",
           "src": "/assets/portraits/pre-timeskip/large/cai.webp",
           "rect": {
             "x": 24,
@@ -7046,7 +7254,7 @@
         },
         {
           "route": "dietrich",
-          "badge": "루트 진행 순서: 3rd",
+          "badge": "루트 진행 순서: 1부 3rd · 2부 3rd",
           "src": "/assets/portraits/pre-timeskip/large/dietrich.webp",
           "rect": {
             "x": 498,
@@ -7056,7 +7264,7 @@
         },
         {
           "route": "theodora",
-          "badge": "루트 진행 순서: 1st",
+          "badge": "루트 진행 순서: 1부 1st · 2부 1st",
           "src": "/assets/portraits/pre-timeskip/large/theodora.webp",
           "rect": {
             "x": 972,
@@ -7066,7 +7274,7 @@
         },
         {
           "route": "leda",
-          "badge": "루트 진행 순서: 2nd",
+          "badge": "루트 진행 순서: 1부 2nd · 2부 2nd",
           "src": "/assets/portraits/pre-timeskip/large/leda.webp",
           "rect": {
             "x": 1446,
@@ -10610,7 +10818,7 @@
       "order": [
         {
           "route": "cai",
-          "badge": "루트 진행 순서: 4th",
+          "badge": "루트 진행 순서: 1부 4th · 2부 4th",
           "src": "/assets/portraits/pre-timeskip/large/cai.webp",
           "rect": {
             "x": 24,
@@ -10620,7 +10828,7 @@
         },
         {
           "route": "dietrich",
-          "badge": "루트 진행 순서: 3rd",
+          "badge": "루트 진행 순서: 1부 3rd · 2부 3rd",
           "src": "/assets/portraits/pre-timeskip/large/dietrich.webp",
           "rect": {
             "x": 498,
@@ -10630,7 +10838,7 @@
         },
         {
           "route": "theodora",
-          "badge": "루트 진행 순서: 1st",
+          "badge": "루트 진행 순서: 1부 1st · 2부 1st",
           "src": "/assets/portraits/pre-timeskip/large/theodora.webp",
           "rect": {
             "x": 972,
@@ -10640,7 +10848,7 @@
         },
         {
           "route": "leda",
-          "badge": "루트 진행 순서: 2nd",
+          "badge": "루트 진행 순서: 1부 2nd · 2부 2nd",
           "src": "/assets/portraits/pre-timeskip/large/leda.webp",
           "rect": {
             "x": 1446,
@@ -12895,186 +13103,6 @@
         {
           "columns": 3,
           "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
         }
       ],
       "accentContrast": [
@@ -14184,7 +14212,7 @@
       "order": [
         {
           "route": "cai",
-          "badge": "루트 진행 순서: 4th",
+          "badge": "루트 진행 순서: 1부 4th · 2부 4th",
           "src": "/assets/portraits/pre-timeskip/large/cai.webp",
           "rect": {
             "x": 16,
@@ -14194,7 +14222,7 @@
         },
         {
           "route": "dietrich",
-          "badge": "루트 진행 순서: 3rd",
+          "badge": "루트 진행 순서: 1부 3rd · 2부 3rd",
           "src": "/assets/portraits/pre-timeskip/large/dietrich.webp",
           "rect": {
             "x": 16,
@@ -14204,7 +14232,7 @@
         },
         {
           "route": "theodora",
-          "badge": "루트 진행 순서: 1st",
+          "badge": "루트 진행 순서: 1부 1st · 2부 1st",
           "src": "/assets/portraits/pre-timeskip/large/theodora.webp",
           "rect": {
             "x": 16,
@@ -14214,7 +14242,7 @@
         },
         {
           "route": "leda",
-          "badge": "루트 진행 순서: 2nd",
+          "badge": "루트 진행 순서: 1부 2nd · 2부 2nd",
           "src": "/assets/portraits/pre-timeskip/large/leda.webp",
           "rect": {
             "x": 16,
@@ -17975,7 +18003,60 @@
       "eraViolations": [],
       "croppedScenes": [],
       "sceneHeights": [],
-      "goldTables": [],
+      "goldTables": [
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        }
+      ],
       "accentContrast": [
         {
           "route": "part3",
@@ -18431,7 +18512,7 @@
       "order": [
         {
           "route": "cai",
-          "badge": "루트 진행 순서: 4th",
+          "badge": "루트 진행 순서: 1부 4th · 2부 4th",
           "src": "/assets/portraits/pre-timeskip/large/cai.webp",
           "rect": {
             "x": 16,
@@ -18441,7 +18522,7 @@
         },
         {
           "route": "dietrich",
-          "badge": "루트 진행 순서: 3rd",
+          "badge": "루트 진행 순서: 1부 3rd · 2부 3rd",
           "src": "/assets/portraits/pre-timeskip/large/dietrich.webp",
           "rect": {
             "x": 16,
@@ -18451,7 +18532,7 @@
         },
         {
           "route": "theodora",
-          "badge": "루트 진행 순서: 1st",
+          "badge": "루트 진행 순서: 1부 1st · 2부 1st",
           "src": "/assets/portraits/pre-timeskip/large/theodora.webp",
           "rect": {
             "x": 16,
@@ -18461,7 +18542,7 @@
         },
         {
           "route": "leda",
-          "badge": "루트 진행 순서: 2nd",
+          "badge": "루트 진행 순서: 1부 2nd · 2부 2nd",
           "src": "/assets/portraits/pre-timeskip/large/leda.webp",
           "rect": {
             "x": 16,
@@ -18815,8 +18896,216 @@
       "order": [],
       "eraViolations": [],
       "croppedScenes": [],
-      "sceneHeights": [],
-      "goldTables": [],
+      "sceneHeights": [
+        115.125,
+        115.125
+      ],
+      "goldTables": [
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        }
+      ],
       "accentContrast": [
         {
           "route": "theodora",
@@ -22523,7 +22812,7 @@
       "order": [
         {
           "route": "cai",
-          "badge": "루트 진행 순서: 4th",
+          "badge": "루트 진행 순서: 1부 4th · 2부 4th",
           "src": "/assets/portraits/pre-timeskip/large/cai.webp",
           "rect": {
             "x": 24,
@@ -22533,7 +22822,7 @@
         },
         {
           "route": "dietrich",
-          "badge": "루트 진행 순서: 3rd",
+          "badge": "루트 진행 순서: 1부 3rd · 2부 3rd",
           "src": "/assets/portraits/pre-timeskip/large/dietrich.webp",
           "rect": {
             "x": 24,
@@ -22543,7 +22832,7 @@
         },
         {
           "route": "theodora",
-          "badge": "루트 진행 순서: 1st",
+          "badge": "루트 진행 순서: 1부 1st · 2부 1st",
           "src": "/assets/portraits/pre-timeskip/large/theodora.webp",
           "rect": {
             "x": 24,
@@ -22553,7 +22842,7 @@
         },
         {
           "route": "leda",
-          "badge": "루트 진행 순서: 2nd",
+          "badge": "루트 진행 순서: 1부 2nd · 2부 2nd",
           "src": "/assets/portraits/pre-timeskip/large/leda.webp",
           "rect": {
             "x": 24,
@@ -22912,202 +23201,6 @@
         279.625
       ],
       "goldTables": [
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
         {
           "columns": 3,
           "amountRight": true
@@ -24205,8 +24298,110 @@
       "order": [],
       "eraViolations": [],
       "croppedScenes": [],
-      "sceneHeights": [],
-      "goldTables": [],
+      "sceneHeights": [
+        279.625,
+        279.625,
+        279.625,
+        279.625,
+        279.625,
+        279.625,
+        279.625,
+        279.625
+      ],
+      "goldTables": [
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        }
+      ],
       "accentContrast": [
         {
           "route": "dietrich",
@@ -25995,7 +26190,7 @@
       "order": [
         {
           "route": "cai",
-          "badge": "루트 진행 순서: 4th",
+          "badge": "루트 진행 순서: 1부 4th · 2부 4th",
           "src": "/assets/portraits/pre-timeskip/large/cai.webp",
           "rect": {
             "x": 24,
@@ -26005,7 +26200,7 @@
         },
         {
           "route": "dietrich",
-          "badge": "루트 진행 순서: 3rd",
+          "badge": "루트 진행 순서: 1부 3rd · 2부 3rd",
           "src": "/assets/portraits/pre-timeskip/large/dietrich.webp",
           "rect": {
             "x": 24,
@@ -26015,7 +26210,7 @@
         },
         {
           "route": "theodora",
-          "badge": "루트 진행 순서: 1st",
+          "badge": "루트 진행 순서: 1부 1st · 2부 1st",
           "src": "/assets/portraits/pre-timeskip/large/theodora.webp",
           "rect": {
             "x": 24,
@@ -26025,7 +26220,7 @@
         },
         {
           "route": "leda",
-          "badge": "루트 진행 순서: 2nd",
+          "badge": "루트 진행 순서: 1부 2nd · 2부 2nd",
           "src": "/assets/portraits/pre-timeskip/large/leda.webp",
           "rect": {
             "x": 24,
@@ -26384,6 +26579,202 @@
         279.625
       ],
       "goldTables": [
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
         {
           "columns": 3,
           "amountRight": true
@@ -27481,8 +27872,110 @@
       "order": [],
       "eraViolations": [],
       "croppedScenes": [],
-      "sceneHeights": [],
-      "goldTables": [],
+      "sceneHeights": [
+        279.625,
+        279.625,
+        279.625,
+        279.625,
+        279.625,
+        279.625,
+        279.625,
+        279.625
+      ],
+      "goldTables": [
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        }
+      ],
       "accentContrast": [
         {
           "route": "dietrich",
@@ -28932,7 +29425,60 @@
       "eraViolations": [],
       "croppedScenes": [],
       "sceneHeights": [],
-      "goldTables": [],
+      "goldTables": [
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        }
+      ],
       "accentContrast": [
         {
           "route": "part3",
@@ -29218,7 +29764,7 @@
       "order": [
         {
           "route": "cai",
-          "badge": "루트 진행 순서: 4th",
+          "badge": "루트 진행 순서: 1부 4th · 2부 4th",
           "src": "/assets/portraits/pre-timeskip/large/cai.webp",
           "rect": {
             "x": 24,
@@ -29228,7 +29774,7 @@
         },
         {
           "route": "dietrich",
-          "badge": "루트 진행 순서: 3rd",
+          "badge": "루트 진행 순서: 1부 3rd · 2부 3rd",
           "src": "/assets/portraits/pre-timeskip/large/dietrich.webp",
           "rect": {
             "x": 338,
@@ -29238,7 +29784,7 @@
         },
         {
           "route": "theodora",
-          "badge": "루트 진행 순서: 1st",
+          "badge": "루트 진행 순서: 1부 1st · 2부 1st",
           "src": "/assets/portraits/pre-timeskip/large/theodora.webp",
           "rect": {
             "x": 652,
@@ -29248,7 +29794,7 @@
         },
         {
           "route": "leda",
-          "badge": "루트 진행 순서: 2nd",
+          "badge": "루트 진행 순서: 1부 2nd · 2부 2nd",
           "src": "/assets/portraits/pre-timeskip/large/leda.webp",
           "rect": {
             "x": 966,
@@ -29346,7 +29892,7 @@
       "order": [
         {
           "route": "cai",
-          "badge": "루트 진행 순서: 4th",
+          "badge": "루트 진행 순서: 1부 4th · 2부 4th",
           "src": "/assets/portraits/pre-timeskip/large/cai.webp",
           "rect": {
             "x": 24,
@@ -29356,7 +29902,7 @@
         },
         {
           "route": "dietrich",
-          "badge": "루트 진행 순서: 3rd",
+          "badge": "루트 진행 순서: 1부 3rd · 2부 3rd",
           "src": "/assets/portraits/pre-timeskip/large/dietrich.webp",
           "rect": {
             "x": 338,
@@ -29366,7 +29912,7 @@
         },
         {
           "route": "theodora",
-          "badge": "루트 진행 순서: 1st",
+          "badge": "루트 진행 순서: 1부 1st · 2부 1st",
           "src": "/assets/portraits/pre-timeskip/large/theodora.webp",
           "rect": {
             "x": 652,
@@ -29376,7 +29922,7 @@
         },
         {
           "route": "leda",
-          "badge": "루트 진행 순서: 2nd",
+          "badge": "루트 진행 순서: 1부 2nd · 2부 2nd",
           "src": "/assets/portraits/pre-timeskip/large/leda.webp",
           "rect": {
             "x": 966,
