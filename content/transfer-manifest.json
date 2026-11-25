@@ -94,7 +94,7 @@
     {
       "source": "data/playbook.json",
       "target": "content/data/playbook.json",
-      "sha256": "59f2e723be68775da54f13571c368a8e704c1889b315a7e5d244233bac0d2e11"
+      "sha256": "e02cd767636dd285b3bcf4211600444649ff8071842d4b241bce32ca42062426"
     },
     {
       "source": "data/purchase-plan.json",
@@ -209,7 +209,7 @@
     {
       "source": "data/unit-readiness.json",
       "target": "content/data/unit-readiness.json",
-      "sha256": "e2831bd805780f4c99796b4193d0d28d7421771c4d0dfdfba7750f61933b8893"
+      "sha256": "0134dcb1769454e50b79bd46573e1c195240c9d789537490d9e86ca6b85e8d0e"
     },
     {
       "source": "data/weapon-buy-sources.json",
@@ -1019,7 +1019,7 @@
     {
       "source": "notes/knowledge/preferences.md",
       "target": "content/notes/knowledge/preferences.md",
-      "sha256": "d28a39c639dcc6f4ab7b5b1b86534f96fbb5985a437e0c8ce150acf7a6561d01"
+      "sha256": "2265ffcad99a93cb4f1817d83fc9380aa283c40843342acb28729532974ed19c"
     },
     {
       "source": "notes/knowledge/README.md",
@@ -1579,7 +1579,7 @@
     {
       "source": "notes/underworld-merge-safety.md",
       "target": "content/notes/underworld-merge-safety.md",
-      "sha256": "2a947d76e7ede22448c6ede4f2e5ae1f682199004386e01c8cc864b17a17707d"
+      "sha256": "e648d5d10e57233bd62e799a32a745ac00fb7d78ba967473014e19cdb36afc45"
     },
     {
       "source": "notes/visual-review.md",
@@ -1804,7 +1804,7 @@
     {
       "source": "personalized-app/src/content.json",
       "target": "content/source/react-content.json",
-      "sha256": "30e1004b6c4fe111aa63ac1466305b70a8a5ae13831a3178bb3f107e3ac1c702"
+      "sha256": "4b15e493c644e2fb140be3e11129ea53b4aadca72085628a7f86486534c023ea"
     },
     {
       "source": "personalized-app/src/timeskip-portraits.json",
@@ -1977,7 +1977,7 @@
       "sha256": "b6601f69a8318359991d5fadc11c27348b0df451ecddba9df142e5f979e508ca"
     }
   ],
-  "generatedSourceSha256": "30e1004b6c4fe111aa63ac1466305b70a8a5ae13831a3178bb3f107e3ac1c702",
+  "generatedSourceSha256": "4b15e493c644e2fb140be3e11129ea53b4aadca72085628a7f86486534c023ea",
   "activeActions": 1953,
   "checkIds": 2945,
   "peopleByRoute": {

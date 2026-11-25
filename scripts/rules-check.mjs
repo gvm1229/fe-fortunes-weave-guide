@@ -151,6 +151,15 @@ for (const f of [...walk('app', ['.ts', '.tsx', '.css']), ...walk('components', 
   for (const n of cai) assert.ok(listed.includes(n), '[U59] 카이판 목록에 ' + n);
   for (const [route, people] of Object.entries(read('content/data/unit-readiness.json').routes)) for (const [n, v] of Object.entries(people)) if (cai.includes(n) && route !== 'cai') assert.ok(!/^(현재 루트 기준판|기준 (세오도라|레다|디트리히)판)/.test(v.merge || ''), '[U59] 육성판 글 ' + route + ' ' + n); }
 
+// [U60] 융합은 최종 25명만 한다. 25명 밖 동료에게 융합을 권하지 않는다(할 일·인물 카드·3부 문서 표).
+{ const pb = read('content/data/playbook.json'), ov = read('content/display-overrides.json'), text = id => ov.actions[id] || pb.groups.flatMap(g => g.actions).find(a => a.id === id)?.text || '';
+  for (const id of ['p3-import-base-safety--cai-merge', 'p3-merge--20261125-cai-base', 'p3-merge--20261125-limited']) assert.ok(text(id).includes('최종 25명'), '[U60] ' + id);
+  assert.ok(text('p3-io-pick--b8ae039641').includes('합치지 않는다'), '[U60] 이오 기준판 글');
+  const final = new Set(read('content/data/final-roster.json').final25Example.map(x => x.name));
+  for (const [route, people] of Object.entries(read('content/data/unit-readiness.json').routes)) for (const [n, v] of Object.entries(people)) if (!final.has(n)) assert.ok(!/필요할 때만|합침|합친다/.test(v.merge || ''), '[U60] 25명 밖 육성판 글 ' + route + ' ' + n);
+  const doc = readFileSync('content/notes/part3-gates-freetime.md', 'utf8').replace(/\r/g, ''), sec = doc.split('## 3부 기준판')[1].split('\n## ')[0];
+  for (const row of sec.split('\n').filter(l => /^\| [^-동]/.test(l))) { const c = row.split('|').map(s => s.trim()); if (!c[1].includes('★')) assert.ok(/융합하지 않는다|^없음$/.test(c[4]), '[U60] 3부 문서 표 ' + c[1]); } }
+
 // [U58] 사이트 아이콘은 네 오벨리스크 하나: 진한 바탕 #16272D, 기둥 색은 카이·디트리히·세오도라·레다 순서. 탭(icon.svg)·홈 화면(apple-icon.png)·/favicon.ico 파일 셋, 다른 아이콘 지정 없음.
 { const svg = readFileSync('app/icon.svg', 'utf8'), fills = [...svg.matchAll(/fill="(#[0-9A-Fa-f]{6})"/g)].map(m => m[1].toUpperCase());
   assert.deepEqual(fills, ['#16272D', '#7AA5F7', '#F5F5F2', '#F2C230', '#F06292'], '[U58] 아이콘 바탕·기둥 색 순서');
