@@ -2151,7 +2151,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E5DBF6",
-      "imageCount": 674,
+      "imageCount": 702,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -5048,7 +5048,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#170C2B",
-      "imageCount": 674,
+      "imageCount": 702,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -7945,7 +7945,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E5DBF6",
-      "imageCount": 674,
+      "imageCount": 702,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -10842,7 +10842,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#170C2B",
-      "imageCount": 674,
+      "imageCount": 702,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -14295,7 +14295,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E5DBF6",
-      "imageCount": 674,
+      "imageCount": 702,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -17918,7 +17918,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#170C2B",
-      "imageCount": 674,
+      "imageCount": 702,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -20771,8 +20771,38 @@
       "order": [],
       "eraViolations": [],
       "croppedScenes": [],
-      "sceneHeights": [],
-      "goldTables": [],
+      "sceneHeights": [
+        279.625,
+        279.625,
+        273.734375,
+        273.75,
+        279.625,
+        279.625,
+        279.625,
+        279.625
+      ],
+      "goldTables": [
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        }
+      ],
       "accentContrast": [
         {
           "route": "cai",
@@ -20985,7 +21015,7 @@
       "transparentButtons": [],
       "background": "#F4F3F0",
       "bgToken": "#E5DBF6",
-      "imageCount": 674,
+      "imageCount": 702,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
@@ -23882,7 +23912,7 @@
       "transparentButtons": [],
       "background": "#191918",
       "bgToken": "#170C2B",
-      "imageCount": 674,
+      "imageCount": 702,
       "aspectRatioViolations": [],
       "faceSizes": [
         {
