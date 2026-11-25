@@ -39,7 +39,7 @@
     {
       "source": "data/class-details.json",
       "target": "content/data/class-details.json",
-      "sha256": "e60d77e177f8f3c5d1dbe64349dd50ca29db91c70a8e60b03ccf02daebf86f09"
+      "sha256": "bde9d8971abd44d716062892818a6e40d59ea01ef885aca434f2b50a3d0b73ce"
     },
     {
       "source": "data/class-path-reasons.json",
@@ -94,12 +94,12 @@
     {
       "source": "data/playbook.json",
       "target": "content/data/playbook.json",
-      "sha256": "95182a4d3babb1a8867e52a1874292233441d4879fa41c98fcbf64f8d200e2b6"
+      "sha256": "7d9571a154039920bd60dd611b034aff908f8a035b48d303b4afbce33bd71709"
     },
     {
       "source": "data/purchase-plan.json",
       "target": "content/data/purchase-plan.json",
-      "sha256": "538228b53e91407382fe08c46e7dfed4906edb225e541d6019c8beaa577d3b7e"
+      "sha256": "a884986b0510944351505cf718d72e0464ff6a6c1b3a4551621b62662727482f"
     },
     {
       "source": "data/readiness-profile-sources.json",
@@ -124,7 +124,7 @@
     {
       "source": "data/recruitment-gates.json",
       "target": "content/data/recruitment-gates.json",
-      "sha256": "e21225bf40bf3b3159ff98e9aedeb18acc2d0bc296a0eddf8cc8f7479f0a45d2"
+      "sha256": "e12c15a737b7fb9b4f1f87649fcae8cb87cf8afe47431ddec1ecf9506a6f8ac9"
     },
     {
       "source": "data/roster-plan.json",
@@ -289,12 +289,12 @@
     {
       "source": "notes/chapter-gold-review.md",
       "target": "content/notes/chapter-gold-review.md",
-      "sha256": "80deb7b0b2405d1a765949a389e152de878b698fae987d63bba4933a7e736c27"
+      "sha256": "5240b701464a8e064e5b845a8e1c8b68eb223258859e7e549756000f5f18abb5"
     },
     {
       "source": "notes/chapter-route-plan.md",
       "target": "content/notes/chapter-route-plan.md",
-      "sha256": "1e6709233f95e702514aefcc9fcfbc81e01ee1d1a1c3fd284d2146c48662ab8c"
+      "sha256": "8804064e14da738846fd405635411ed8b5a33eccf7a0f2f3ec1fa30e51ff25d4"
     },
     {
       "source": "notes/checklist-full-review.md",
@@ -364,12 +364,12 @@
     {
       "source": "notes/classes/battlemaster.md",
       "target": "content/notes/classes/battlemaster.md",
-      "sha256": "e3eba76bbc8d97f60d76a2a2e83f5b8ae649594489dc7c91998bce9673f5f554"
+      "sha256": "88d7772ea6b59df7e2f904fc5af230071411a30de6c37ad02a4120a5afef0b9a"
     },
     {
       "source": "notes/classes/bau-lord.md",
       "target": "content/notes/classes/bau-lord.md",
-      "sha256": "3557e2df713147002aa23f33a1878d2f5c768334bce19fdbe88b840228ee23c0"
+      "sha256": "deeda4173e941ebbd11cd287ef2ee78d3c076cc3dfd962324cbfe48e435dc673"
     },
     {
       "source": "notes/classes/bishop.md",
@@ -399,7 +399,7 @@
     {
       "source": "notes/classes/caladrius.md",
       "target": "content/notes/classes/caladrius.md",
-      "sha256": "85af9447517c0bd1b29aa82b4424b8e1aad7cc84943125335bfc2d9dc389b0e8"
+      "sha256": "4418b011c9c3dbe7dec3f3f2fb97bfd8836e46d97c5607ca7a18e0fa2f808585"
     },
     {
       "source": "notes/classes/castle-knight.md",
@@ -464,7 +464,7 @@
     {
       "source": "notes/classes/great-knight.md",
       "target": "content/notes/classes/great-knight.md",
-      "sha256": "a3d201d6b9e6d63626d7f8ff42565145065af152dec4d58e9798520d9dae2c48"
+      "sha256": "378ec0d5df6eadb33c20c962f4ea358a1e73ba92c493c18c81a70faada871c63"
     },
     {
       "source": "notes/classes/guardian.md",
@@ -609,7 +609,7 @@
     {
       "source": "notes/classes/valkyrium.md",
       "target": "content/notes/classes/valkyrium.md",
-      "sha256": "5e294c31966f546922316c60b38122491a49b9692aef6d3be959002c521588bf"
+      "sha256": "d00c2e4173b50cb1a206f7af2c305995d59b60284d63ea4d3bdda7dab3484589"
     },
     {
       "source": "notes/classes/war-monk.md",
@@ -1109,7 +1109,7 @@
     {
       "source": "notes/missables-shopping-review.md",
       "target": "content/notes/missables-shopping-review.md",
-      "sha256": "2738f85ebdff5ef6955caa12cbc3e6f6583fc61774d34e60e81292c2a340f4fc"
+      "sha256": "cc573059665c7d73a43ff22a8ee808a86c88ee986b4bd4aa5d2310820c74b45b"
     },
     {
       "source": "notes/modal-reading-review.md",
@@ -1164,7 +1164,7 @@
     {
       "source": "notes/personalized-fact-check.md",
       "target": "content/notes/personalized-fact-check.md",
-      "sha256": "f56006a3f094f8213b4783458afdb15bba7171e17a3fa5b3f66b4afcb9826287"
+      "sha256": "77bf6f8a07d0144e0c072e25fbcc1d1fce528a3a583aa22671cc237be10ba4ad"
     },
     {
       "source": "notes/personalized-readability-review.md",
@@ -1804,7 +1804,7 @@
     {
       "source": "personalized-app/src/content.json",
       "target": "content/source/react-content.json",
-      "sha256": "61167ca5d54d0b7638dda8d964ac0a748d05d757ef825fd959d27f5050ce85fb"
+      "sha256": "a916982fe4ef23ee825b79170d2d3122799b605d4625796d2af754f81414b590"
     },
     {
       "source": "personalized-app/src/timeskip-portraits.json",
@@ -1977,9 +1977,9 @@
       "sha256": "b6601f69a8318359991d5fadc11c27348b0df451ecddba9df142e5f979e508ca"
     }
   ],
-  "generatedSourceSha256": "61167ca5d54d0b7638dda8d964ac0a748d05d757ef825fd959d27f5050ce85fb",
-  "activeActions": 1899,
-  "checkIds": 2881,
+  "generatedSourceSha256": "a916982fe4ef23ee825b79170d2d3122799b605d4625796d2af754f81414b590",
+  "activeActions": 1950,
+  "checkIds": 2942,
   "peopleByRoute": {
     "theodora": 15,
     "leda": 15,
