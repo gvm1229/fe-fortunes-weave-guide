@@ -115,7 +115,7 @@ async function measure(page,{route='home',view='home',theme,width,height,screens
   if(row.accentContrast.some(c=>c.ratio<4.5))failures.push(`${label}: accent 글자 대비`);
   if(route==='home'){
     if(JSON.stringify(row.order.map(r=>r.route))!==JSON.stringify(['cai','dietrich','theodora','leda']))failures.push(`${label}: 오벨리스크 순서`);
-    const badges=['4th','3rd','1st','2nd'];
+    const badges=['4th','3rd','1st','2nd'].map(o=>`1부 ${o} · 2부 ${o}`); // U61: 부마다 1~4
     if(row.order.some((r,i)=>r.badge!==`루트 진행 순서: ${badges[i]}`||!r.badgeVisible||!r.src.includes('/pre-timeskip/large/')))failures.push(`${label}: 배지·타임스킵 전 큰 그림`);
     // 2026-11-15 사용자 지시: 세로 화면(9:16 등)은 카드 4장을 위아래로 쌓는다(이전 휴대폰 2×2 대체). 세로 화면의 첫 화면 세로 스크롤은 허용.
     if(height>width&&!(row.order.every((r,i)=>i===0||(r.rect.y>row.order[i-1].rect.y&&r.rect.x===row.order[0].rect.x))))failures.push(`${label}: 세로 화면 카드 쌓기`);
