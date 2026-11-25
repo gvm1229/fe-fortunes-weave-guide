@@ -77,7 +77,7 @@ try{
  for(const route of ['theodora','leda','dietrich','cai']){
    await visit('/'+route+'/2/');for(const view of ['인물','준비','재료와 구매','참고 문서']){await nav(view).click();await layout(route+' 2부 '+view);}
  }
- await visit('/part3/3/');await nav('인물').click();assert.ok(await page.locator('.person-heading img[src*="post-timeskip"]').count()>0);
+ await visit('/part3/3/');await nav('인물').click();await page.locator('.person-heading img[src*="post-timeskip"]').first().waitFor({timeout:15000});assert.ok(await page.locator('.person-heading img[src*="post-timeskip"]').count()>0);
  checks.push('3부 인물 시간 경과 후 초상화');
  assert.deepEqual(errors,[]);
  console.log('통과: '+checks.length+'개 복원 기능·추가 화면 검사');
