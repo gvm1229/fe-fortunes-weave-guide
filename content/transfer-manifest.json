@@ -94,7 +94,7 @@
     {
       "source": "data/playbook.json",
       "target": "content/data/playbook.json",
-      "sha256": "7d9571a154039920bd60dd611b034aff908f8a035b48d303b4afbce33bd71709"
+      "sha256": "baaa58c125ee0130cbd6e9706196d906bbc46dc9dc69d680838dbb71bbb244d0"
     },
     {
       "source": "data/purchase-plan.json",
@@ -289,7 +289,7 @@
     {
       "source": "notes/chapter-gold-review.md",
       "target": "content/notes/chapter-gold-review.md",
-      "sha256": "5240b701464a8e064e5b845a8e1c8b68eb223258859e7e549756000f5f18abb5"
+      "sha256": "6b9308b5483c39968fb9d361633eeebe66fb7c4b60a99629021d3de1d6d4e22f"
     },
     {
       "source": "notes/chapter-route-plan.md",
@@ -304,12 +304,12 @@
     {
       "source": "notes/checklist-order-plan.md",
       "target": "content/notes/checklist-order-plan.md",
-      "sha256": "0e83fae3803c62e621812cdf97dfee850ce4ffd5ac2a3ee3416901fa9e241b79"
+      "sha256": "18375962ae2078ace0d1d3be06871709f2c6858078443607c592705f7049a3c7"
     },
     {
       "source": "notes/checklist-order-review.md",
       "target": "content/notes/checklist-order-review.md",
-      "sha256": "e61abd3f4279db497230d41756e32ca180f4f4f09795c850be2eac800507139c"
+      "sha256": "7b89192e89ae30f4e05fe16761c57ec01eb0880f6a9aae64d7d82d28d1d621da"
     },
     {
       "source": "notes/class-capabilities-review.md",
@@ -1109,7 +1109,7 @@
     {
       "source": "notes/missables-shopping-review.md",
       "target": "content/notes/missables-shopping-review.md",
-      "sha256": "cc573059665c7d73a43ff22a8ee808a86c88ee986b4bd4aa5d2310820c74b45b"
+      "sha256": "746edbcf81d5156550298d3609470c432dccfc9328ec69942035f59464a694a5"
     },
     {
       "source": "notes/modal-reading-review.md",
@@ -1804,7 +1804,7 @@
     {
       "source": "personalized-app/src/content.json",
       "target": "content/source/react-content.json",
-      "sha256": "a916982fe4ef23ee825b79170d2d3122799b605d4625796d2af754f81414b590"
+      "sha256": "48b22fb41fd10737b63cb272040d67b320d64c3cd36bec272f2f0a69cc68d59e"
     },
     {
       "source": "personalized-app/src/timeskip-portraits.json",
@@ -1977,7 +1977,7 @@
       "sha256": "b6601f69a8318359991d5fadc11c27348b0df451ecddba9df142e5f979e508ca"
     }
   ],
-  "generatedSourceSha256": "a916982fe4ef23ee825b79170d2d3122799b605d4625796d2af754f81414b590",
+  "generatedSourceSha256": "48b22fb41fd10737b63cb272040d67b320d64c3cd36bec272f2f0a69cc68d59e",
   "activeActions": 1950,
   "checkIds": 2942,
   "peopleByRoute": {

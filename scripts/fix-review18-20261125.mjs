@@ -77,16 +77,7 @@ sub([P3], '| 쿠르델린데 유적 | 1부대(1곳).', '| 쿠르델린데 유적
   pb.groups.splice(pb.groups.findIndex(x => x.id === 'p3-merge') + 1, 0, lg);
   raw[PB] = JSON.stringify(pb, null, 2) + '\n'; raw[RC] = JSON.stringify(rc); log.push('5구간 얼굴 단테→티아라 · 릴리안 묶음 p3-merge 뒤로');
 }
-// 14. 레다 5장 이오 영입금 추가 줄
-{
-  const G = 'content/data/chapter-gold.json'; const cg = JSON.parse(get(G)); const ch = cg.routes.leda.find(c => c.chapter === 5);
-  if (!ch.extras.some(e => e.label === '이오가 아직 미영입이면')) ch.extras.unshift({ label: '이오가 아직 미영입이면', amount: 1500, note: '레다 루트 영입금(지원 1·명성 6). 이미 영입했으면 제외.' });
-  raw[G] = JSON.stringify(cg, null, 2) + '\n';
-  const rc = JSON.parse(get(RC)); const b = rc.stages.find(s => s.id === 'leda-plan').blocks.find(x => x.id === 'gold-leda-05');
-  const io = (() => { for (const s of rc.stages) for (const bb of s.blocks) { const m = bb.html.match(/<span class="inline-person"><img alt="" height="26" loading="lazy" src="assets\/portraits\/c35\.webp" width="22"\/><span>이오<\/span><\/span>/); if (m) return m[0]; } fail('io inline'); })();
-  const h0 = b.html; b.html = b.html.replace('<ul class="gold-extras">', `<ul class="gold-extras"><li>${io}가 아직 미영입이면 <b>+<span class="number-token money-token">1,500G</span></b><small>레다 루트 영입금(지원 1·명성 6). 이미 영입했으면 제외.</small></li>`);
-  if (b.html === h0) fail('leda05 extras'); raw[RC] = JSON.stringify(rc); log.push('레다 5장 이오 +1,500G 추가 줄');
-}
+// 14. 레다 5장 이오 골드 줄은 넣지 않는다: 세오도라·레다 화면에는 이오를 쓰지 않는 규칙(verify.mjs)이 우선한다.
 // 15. 매니페스트 숫자
 { const f = 'content/transfer-manifest.json'; const j = JSON.parse(get(f)); let n = 0;
   const walk = o => { if (o && typeof o === 'object') for (const k of Object.keys(o)) { if (k === 'activeActions' && o[k] === 1899) { o[k] = 1950; n++; } else if (k === 'checkIds' && o[k] === 2881) { o[k] = 2942; n++; } else walk(o[k]); } };
