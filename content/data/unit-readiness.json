@@ -296,7 +296,7 @@
       "리네": {
         "kind": "기준 육성",
         "baseRoute": "theodora",
-        "merge": "현재 루트 기준판",
+        "merge": "3부 기준은 카이판 · 이 판은 필요할 때만 카이판에 합침",
         "reason": "수비·마방으로 물리·마법 공격을 받아내는 전열 겸 리브로 회복 담당",
         "supportStartChapter": 5,
         "joinTargetChapter": 7,
@@ -392,7 +392,7 @@
       "알렉산드라": {
         "kind": "기준 육성",
         "baseRoute": "theodora",
-        "merge": "현재 루트 기준판",
+        "merge": "3부 기준은 카이판 · 이 판은 필요할 때만 카이판에 합침",
         "reason": "전용 탈것으로 지형을 넘고 검·창으로 후열·고립 적 공략",
         "supportStartChapter": 5,
         "joinTargetChapter": 8,
@@ -781,7 +781,7 @@
       "무우": {
         "kind": "기준 육성",
         "baseRoute": "leda",
-        "merge": "현재 루트 기준판",
+        "merge": "3부 기준은 카이판 · 이 판은 필요할 때만 카이판에 합침",
         "reason": "격투로 전열을 뚫고 백마법으로 회복·이동 보조",
         "supportStartChapter": 1,
         "joinTargetChapter": 1,
@@ -974,7 +974,7 @@
       "에스메랄다": {
         "kind": "능력·기능 보완",
         "baseRoute": "dietrich",
-        "merge": "기준 디트리히판 · 마방 · 가디언 성장",
+        "merge": "3부 기준은 카이판 · 마방 · 가디언 성장",
         "reason": "기준 디트리히판 · 마방 · 가디언 성장 · 해당 성장·기능을 확보할 추가 판",
         "supportStartChapter": 4,
         "joinTargetChapter": 7,
@@ -1512,7 +1512,7 @@
       "에스메랄다": {
         "kind": "기준 육성",
         "baseRoute": "dietrich",
-        "merge": "현재 루트 기준판",
+        "merge": "3부 기준은 카이판 · 이 판은 필요할 때만 카이판에 합침",
         "reason": "고유 창을 유지하고 중갑 수비로 물리 공격을 받아내는 전열",
         "supportStartChapter": 2,
         "joinTargetChapter": 2,
@@ -1705,7 +1705,7 @@
       "리네": {
         "kind": "능력·기능 보완",
         "baseRoute": "theodora",
-        "merge": "기준 세오도라판 · 수비 · 중갑 성장",
+        "merge": "3부 기준은 카이판 · 수비 · 중갑 성장",
         "reason": "기준 세오도라판 · 수비 · 중갑 성장 · 해당 성장·기능을 확보할 추가 판",
         "supportStartChapter": 4,
         "joinTargetChapter": 9,
@@ -1754,7 +1754,7 @@
       "알렉산드라": {
         "kind": "능력·기능 보완",
         "baseRoute": "theodora",
-        "merge": "기준 세오도라판 · 현재 루트 비행 전력·탈것 등록",
+        "merge": "3부 기준은 카이판 · 현재 루트 비행 전력·탈것 등록",
         "reason": "기준 세오도라판 · 현재 루트 비행 전력·탈것 등록 · 해당 성장·기능을 확보할 추가 판",
         "supportStartChapter": 4,
         "joinTargetChapter": 9,
@@ -2535,7 +2535,7 @@
       "녹투라": {
         "kind": "능력·기능 보완",
         "baseRoute": "theodora",
-        "merge": "기준 세오도라판 · 현재 루트 실전·기능 보완",
+        "merge": "3부 기준판 · 현재 루트 실전·기능 보완",
         "reason": "기준 세오도라판 · 현재 루트 실전·기능 보완 · 해당 성장·기능을 확보할 추가 판",
         "supportStartChapter": 3,
         "joinTargetChapter": 4,
@@ -2681,7 +2681,7 @@
       "이오": {
         "kind": "보존·수집",
         "baseRoute": "cai",
-        "merge": "최종 성장 자료 아님 · 탈것·지참품 보존",
+        "merge": "3부 기준판 · 탈것 유대 레벨 · 탈것·지참품 보존",
         "reason": "전용 말 보존 · 디트리히 초반 레버·기동 담당 · 보존판의 반복 육성 불필요",
         "supportStartChapter": 3,
         "joinTargetChapter": 11,
@@ -2730,7 +2730,7 @@
       "알렉산드라": {
         "kind": "보존·수집",
         "baseRoute": "theodora",
-        "merge": "최종 성장 자료 아님 · 탈것·지참품 보존",
+        "merge": "3부 기준판 · 탈것 유대 레벨 · 탈것·지참품 보존",
         "reason": "전용 탈것으로 지형을 넘고 검·창으로 후열·고립 적 공략",
         "supportStartChapter": 3,
         "joinTargetChapter": 8,
@@ -2828,7 +2828,7 @@
       "리네": {
         "kind": "실전 회복",
         "baseRoute": "theodora",
-        "merge": "기준 세오도라판 · 카이는 두 번째 리브로 실전,스탯 반복 없음",
+        "merge": "3부 기준판 · 카이는 두 번째 리브로 실전,스탯 반복 없음",
         "reason": "티아라의 원격 회복을 분담 · 2부 계획 정원13 중 여유 칸을 회복으로 보강",
         "supportStartChapter": 3,
         "joinTargetChapter": 6,

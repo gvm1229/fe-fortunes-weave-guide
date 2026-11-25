@@ -144,7 +144,12 @@ for (const f of [...walk('app', ['.ts', '.tsx', '.css']), ...walk('components', 
 { const pb = read('content/data/playbook.json'), ov = read('content/display-overrides.json'), ids = pb.groups.flatMap(g => g.actions.map(a => a.id));
   for (const id of ['p3-import-base-safety--cai-list', 'p3-import-base-safety--cai-merge', 'p3-merge--20261125-cai-base']) assert.ok(ids.includes(id), '[U59] ' + id);
   assert.ok(ov.actions['p3-import-base-safety--compare-first'].includes('카이판을 기준판'), '[U59] 기준판 고르기 글');
-  assert.ok(readFileSync('content/notes/part3-gates-freetime.md', 'utf8').includes('카이판이 있으면 언제나 카이판을 고른다'), '[U59] 3부 문서'); }
+  assert.ok(readFileSync('content/notes/part3-gates-freetime.md', 'utf8').includes('카이판이 있으면 언제나 카이판을 고른다'), '[U59] 3부 문서');
+  const plan = read('content/data/recruit-all-plan.json'), routes = {}; for (const x of plan.assignments) (routes[x.name] ??= new Set()).add(x.route); for (const d of plan.duplicates) for (const r of d.routes) (routes[d.name] ??= new Set()).add(r);
+  const cai = Object.keys(routes).filter(n => routes[n].has('cai') && !['카이', '세오도라', '레다', '디트리히'].includes(n));
+  const listed = pb.groups.flatMap(g => g.actions).find(x => x.id === 'p3-import-base-safety--cai-list').text;
+  for (const n of cai) assert.ok(listed.includes(n), '[U59] 카이판 목록에 ' + n);
+  for (const [route, people] of Object.entries(read('content/data/unit-readiness.json').routes)) for (const [n, v] of Object.entries(people)) if (cai.includes(n) && route !== 'cai') assert.ok(!/^(현재 루트 기준판|기준 (세오도라|레다|디트리히)판)/.test(v.merge || ''), '[U59] 육성판 글 ' + route + ' ' + n); }
 
 // [U58] 사이트 아이콘은 네 오벨리스크 하나: 진한 바탕 #16272D, 기둥 색은 카이·디트리히·세오도라·레다 순서. 탭(icon.svg)·홈 화면(apple-icon.png)·/favicon.ico 파일 셋, 다른 아이콘 지정 없음.
 { const svg = readFileSync('app/icon.svg', 'utf8'), fills = [...svg.matchAll(/fill="(#[0-9A-Fa-f]{6})"/g)].map(m => m[1].toUpperCase());

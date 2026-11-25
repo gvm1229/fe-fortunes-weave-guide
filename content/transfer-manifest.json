@@ -94,7 +94,7 @@
     {
       "source": "data/playbook.json",
       "target": "content/data/playbook.json",
-      "sha256": "c07c93f97a26960852cb60f9c17cac876c666fb5b202e25680e3f1455b3bbcf4"
+      "sha256": "59f2e723be68775da54f13571c368a8e704c1889b315a7e5d244233bac0d2e11"
     },
     {
       "source": "data/purchase-plan.json",
@@ -209,7 +209,7 @@
     {
       "source": "data/unit-readiness.json",
       "target": "content/data/unit-readiness.json",
-      "sha256": "aa5f9cb34ee604fbc68c68beaa3e441ca0cb9100b63b4f56e18c820591991217"
+      "sha256": "e2831bd805780f4c99796b4193d0d28d7421771c4d0dfdfba7750f61933b8893"
     },
     {
       "source": "data/weapon-buy-sources.json",
@@ -294,7 +294,7 @@
     {
       "source": "notes/chapter-route-plan.md",
       "target": "content/notes/chapter-route-plan.md",
-      "sha256": "8804064e14da738846fd405635411ed8b5a33eccf7a0f2f3ec1fa30e51ff25d4"
+      "sha256": "51bf58f3d56593ea32676b6c0717d03c9a0cc9f7b908d58e40a3267e5642707e"
     },
     {
       "source": "notes/checklist-full-review.md",
@@ -1414,7 +1414,7 @@
     {
       "source": "notes/support-follow-along.md",
       "target": "content/notes/support-follow-along.md",
-      "sha256": "b39e4ee6bb4a9ccfbff01512e9bef36b7af4ab89cde5c049000b3572f3964d43"
+      "sha256": "a39be6d269665cf983a0dab234133f1ef78ab064bfbb9e44d05c1c5c66f4a474"
     },
     {
       "source": "notes/support-pairs-by-route.md",
@@ -1574,7 +1574,7 @@
     {
       "source": "notes/underworld-merge-safety-review.md",
       "target": "content/notes/underworld-merge-safety-review.md",
-      "sha256": "c8bdd97c93faf0c820057a55e7c1331058a7164dd2ff125473707739d94e13d1"
+      "sha256": "22a1022c5e1b32fa6cee9a2acd12df1e68994ba25f2c02710813b297a066c8c5"
     },
     {
       "source": "notes/underworld-merge-safety.md",
@@ -1804,7 +1804,7 @@
     {
       "source": "personalized-app/src/content.json",
       "target": "content/source/react-content.json",
-      "sha256": "259d906e1d1b77b94e91447452adab4ee6b72b7570a2efb1f14302cbf8fa265b"
+      "sha256": "30e1004b6c4fe111aa63ac1466305b70a8a5ae13831a3178bb3f107e3ac1c702"
     },
     {
       "source": "personalized-app/src/timeskip-portraits.json",
@@ -1977,7 +1977,7 @@
       "sha256": "b6601f69a8318359991d5fadc11c27348b0df451ecddba9df142e5f979e508ca"
     }
   ],
-  "generatedSourceSha256": "259d906e1d1b77b94e91447452adab4ee6b72b7570a2efb1f14302cbf8fa265b",
+  "generatedSourceSha256": "30e1004b6c4fe111aa63ac1466305b70a8a5ae13831a3178bb3f107e3ac1c702",
   "activeActions": 1953,
   "checkIds": 2945,
   "peopleByRoute": {
