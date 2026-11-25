@@ -156,9 +156,15 @@ for (const f of [...walk('app', ['.ts', '.tsx', '.css']), ...walk('components', 
   for (const id of ['p3-import-base-safety--cai-merge', 'p3-merge--20261125-cai-base', 'p3-merge--20261125-limited']) assert.ok(text(id).includes('최종 25명'), '[U60] ' + id);
   assert.ok(text('p3-io-pick--b8ae039641').includes('합치지 않는다'), '[U60] 이오 기준판 글');
   const final = new Set(read('content/data/final-roster.json').final25Example.map(x => x.name));
-  for (const [route, people] of Object.entries(read('content/data/unit-readiness.json').routes)) for (const [n, v] of Object.entries(people)) if (!final.has(n)) assert.ok(!/필요할 때만|합침|합친다/.test(v.merge || ''), '[U60] 25명 밖 육성판 글 ' + route + ' ' + n);
-  const doc = readFileSync('content/notes/part3-gates-freetime.md', 'utf8').replace(/\r/g, ''), sec = doc.split('## 3부 기준판')[1].split('\n## ')[0];
-  for (const row of sec.split('\n').filter(l => /^\| [^-동]/.test(l))) { const c = row.split('|').map(s => s.trim()); if (!c[1].includes('★')) assert.ok(/융합하지 않는다|^없음$/.test(c[4]), '[U60] 3부 문서 표 ' + c[1]); } }
+  // 25명 밖 인물의 모든 글(인물 카드·목표·선발·훈련 자료): 융합 말이 있으면 '융합하지 않'·'융합 없음'·'융합 대상으로 삼지 않' 같은 부정이 같이 있어야 한다.
+  const okNeg = /융합하지 않|융합 없음|대상으로 삼지 않|합치지 않/, strs = o => typeof o === 'string' ? [o] : o && typeof o === 'object' ? Object.values(o).flatMap(strs) : [];
+  for (const f of ['unit-readiness', 'phase-goals', 'roster-selection', 'training-priorities']) for (const [route, r] of Object.entries(read(`content/data/${f}.json`).routes)) for (const [n, v] of Object.entries(r.people || r)) if (!final.has(n) && /^[가-힣]+$/.test(n))
+    for (const s of strs(v)) if (/융합|합침|합친다|합치/.test(s)) assert.ok(okNeg.test(s), `[U60] 25명 밖 ${f} ${route} ${n}: ${s.slice(0, 40)}`);
+  const doc = readFileSync('content/notes/part3-gates-freetime.md', 'utf8').replace(/\r/g, ''), sec = doc.split('## 3부 기준판')[1].split('\n## ')[0], rows = sec.split('\n').filter(l => /^\| [^-동]/.test(l));
+  assert.ok(rows.length > 20, '[U60] 3부 문서 표 행 수');
+  for (const row of rows) { const c = row.split('|').map(s => s.trim()), names = c[1].replace('★', '').trim().split('·');
+    for (const n of names) assert.equal(final.has(n), c[1].includes('★'), '[U60] 3부 문서 표 ★와 최종 25명 ' + n);
+    if (!c[1].includes('★')) assert.ok(/융합하지 않는다|^없음$/.test(c[4]), '[U60] 3부 문서 표 ' + c[1]); } }
 
 // [U58] 사이트 아이콘은 네 오벨리스크 하나: 진한 바탕 #16272D, 기둥 색은 카이·디트리히·세오도라·레다 순서. 탭(icon.svg)·홈 화면(apple-icon.png)·/favicon.ico 파일 셋, 다른 아이콘 지정 없음.
 { const svg = readFileSync('app/icon.svg', 'utf8'), fills = [...svg.matchAll(/fill="(#[0-9A-Fa-f]{6})"/g)].map(m => m[1].toUpperCase());

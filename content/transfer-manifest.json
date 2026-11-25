@@ -89,12 +89,12 @@
     {
       "source": "data/phase-goals.json",
       "target": "content/data/phase-goals.json",
-      "sha256": "60293c688ebeef71f7b35093057f61babc095f7dc412c2bc66ca93f44939ca8c"
+      "sha256": "0ed37c5ba4b8376dda282000f1395095d5049729bf5fa43c1fd2fd218511882d"
     },
     {
       "source": "data/playbook.json",
       "target": "content/data/playbook.json",
-      "sha256": "e02cd767636dd285b3bcf4211600444649ff8071842d4b241bce32ca42062426"
+      "sha256": "c69d337050282a90869d1c367578e18f2462240633d1597e87b86b9fc9f40005"
     },
     {
       "source": "data/purchase-plan.json",
@@ -129,7 +129,7 @@
     {
       "source": "data/roster-plan.json",
       "target": "content/data/roster-plan.json",
-      "sha256": "66fe3c66622abfd0088b770afcbcf13053712c60e4411029f9bbef41647d8c91"
+      "sha256": "2f95c9c05211c3d57e0f7d442579c323ef869a9ad6e244155162ad1205241494"
     },
     {
       "source": "data/roster-selection-sources.json",
@@ -139,7 +139,7 @@
     {
       "source": "data/roster-selection.json",
       "target": "content/data/roster-selection.json",
-      "sha256": "a1ab9d5e856d93b379e5a349cf32ca358756fe298868025c1d74c857c013a863"
+      "sha256": "c5a5e63ad3ea3e69ecb68771a7fd21f1f0e90210615b6b3f344fde1dd0d71002"
     },
     {
       "source": "data/starter-handoffs.json",
@@ -199,7 +199,7 @@
     {
       "source": "data/training-priorities.json",
       "target": "content/data/training-priorities.json",
-      "sha256": "b7598b15177bde4964bc0847caabdd7e7857ee33bcb2b11c4bd3adeb2da44afe"
+      "sha256": "cc15be9411c447a6d4784bf8219a839d9e365589bc3f090e551fdb60ed63b07a"
     },
     {
       "source": "data/training-sources.json",
@@ -209,7 +209,7 @@
     {
       "source": "data/unit-readiness.json",
       "target": "content/data/unit-readiness.json",
-      "sha256": "0134dcb1769454e50b79bd46573e1c195240c9d789537490d9e86ca6b85e8d0e"
+      "sha256": "b70ee51f625daa3784c71047a02d80259336f587d4f809c246bb05c0f57152f7"
     },
     {
       "source": "data/weapon-buy-sources.json",
@@ -294,7 +294,7 @@
     {
       "source": "notes/chapter-route-plan.md",
       "target": "content/notes/chapter-route-plan.md",
-      "sha256": "51bf58f3d56593ea32676b6c0717d03c9a0cc9f7b908d58e40a3267e5642707e"
+      "sha256": "92f822e15b43614dfb44a6a767b38c30649af69c2720733b25e3af2578561afc"
     },
     {
       "source": "notes/checklist-full-review.md",
@@ -1174,7 +1174,7 @@
     {
       "source": "notes/phase-goals-review.md",
       "target": "content/notes/phase-goals-review.md",
-      "sha256": "fff9095ba7c70ad5057e1a0805a80d74ed8276485565cf4276238b539ad3c805"
+      "sha256": "faa1c9c455e6c758a9e25cc0651cb8b281318131be53372e5638c99f490e5592"
     },
     {
       "source": "notes/plan.md",
@@ -1244,7 +1244,7 @@
     {
       "source": "notes/recruit-all-review.md",
       "target": "content/notes/recruit-all-review.md",
-      "sha256": "0fb791b0baf8875cf3dccabcc9a01d202fb35de6f1ba1f6aff266048b3ab949c"
+      "sha256": "049136816665ae9d8f2e55637f6330dbea14c73e997671ed63effd82b5e1838f"
     },
     {
       "source": "notes/recruit-material-review.md",
@@ -1369,7 +1369,7 @@
     {
       "source": "notes/roster-build-review.md",
       "target": "content/notes/roster-build-review.md",
-      "sha256": "919f59c40777f81ff86d5d8461bae3412063b4bdc7fcd132ae75f2e80f9784f8"
+      "sha256": "b6113dcbb2a8d28ec9d8494859f850c6ddfd60feb622c02d8b5dbac9bafbf1ac"
     },
     {
       "source": "notes/roster-selection-review.md",
@@ -1559,7 +1559,7 @@
     {
       "source": "notes/training-priorities-review.md",
       "target": "content/notes/training-priorities-review.md",
-      "sha256": "124d1d92faaa76704761494f8400a10f1f528d532fd9318292b3e5c6936abeb3"
+      "sha256": "f561bcffc76ee4ae7a776dfb7b10c4dd33f32750653f6728949852a16e269e53"
     },
     {
       "source": "notes/ui-alignment-review.md",
@@ -1804,7 +1804,7 @@
     {
       "source": "personalized-app/src/content.json",
       "target": "content/source/react-content.json",
-      "sha256": "4b15e493c644e2fb140be3e11129ea53b4aadca72085628a7f86486534c023ea"
+      "sha256": "d4964967a8fce9799cbe9591299c96b454d392b0122a6edfbb4ef37331782b4f"
     },
     {
       "source": "personalized-app/src/timeskip-portraits.json",
@@ -1977,7 +1977,7 @@
       "sha256": "b6601f69a8318359991d5fadc11c27348b0df451ecddba9df142e5f979e508ca"
     }
   ],
-  "generatedSourceSha256": "4b15e493c644e2fb140be3e11129ea53b4aadca72085628a7f86486534c023ea",
+  "generatedSourceSha256": "d4964967a8fce9799cbe9591299c96b454d392b0122a6edfbb4ef37331782b4f",
   "activeActions": 1953,
   "checkIds": 2945,
   "peopleByRoute": {
