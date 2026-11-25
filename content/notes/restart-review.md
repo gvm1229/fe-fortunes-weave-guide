@@ -189,6 +189,8 @@ Game8 장별7문서·군비증강·병종·시험·물품·영입 상세, GameWi
 
 ### 레다 1부 뒤 바로 2부를 하는 이유
 
+> 대체됨(2026-11-12): 지금 순서는 네 1부를 모두 끝낸 뒤 같은 순서로 네 2부, 그다음 3부다. 아래는 옛 검토 기록이다. [현재 실행 기준](sequential-routes-apply-review.md)
+
 레다 1부 뒤 필요한 축복이 열렸다면 아우로라·칼라의 50% 할인은 추가 600개, 병과 경험치 +2는 추가 2,000개다. 이 예산은 카이의 첫 완료 보상 5,000개를 앞당기지 않아도 마련할 수 있다. 네 1부를 먼저 끝내면 추가 파편과 새로 해금한 공유 병종을 앞쪽 2부에도 쓸 수 있다. 새 디트리히·카이의 육성 수치나 탈것은 세오도라·레다 2부의 부대에 합쳐지지 않는다. 나중 루트에서 봉사로 올린 가호 레벨도 앞 루트의 2부에 자동 반영되지 않았다는 별도 플레이 사례가 두 건 있다. [축복 해금·가격](https://annasnotebook.net/en/mechanics/bird-time/), [2부 부대와 준비](https://annasnotebook.net/en/guides/part2-war/), [가호 이월 사례 1](https://www.reddit.com/r/FE_Fortunes_Weave/comments/1xfi7hv/blessing_carry_over_to_part_2/), [가호 이월 사례 2](https://www.reddit.com/r/FE_Fortunes_Weave/comments/1x97e2e/advice_for_part_2/)
 
 먼저 2부를 해 보는 이득은 반복 전투의 지형·회복·기동 요구를 직접 보고 디트리히와 카이 1부 준비에 써먹을 수 있다는 점이다. 레다 2부까지 이어 하는 것은 이야기와 편성의 흐름을 살리기 위한 선택이다. 레다 2부도 이때 완료해야 3부가 강해지는 조건은 확인되지 않았다. 이번 대조는 11월 10일 Windows에서 자료를 읽어 비교한 것이며, 두 순서의 실제 하드·캐주얼 난이도 차이는 실측하지 않았다. [연속 진행 경험담](https://www.reddit.com/r/fireemblem/comments/1xonssh/if_you_plan_to_do_all_four_part_2s_doing_part_1/)
