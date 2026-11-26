@@ -65,9 +65,10 @@ try {
     const badge = await p.evaluate(() => { const b = document.querySelector('[role=dialog] .final25-badge'); return b && { t: b.textContent.trim(), bg: getComputedStyle(b).backgroundColor }; });
     assert.ok(badge && /최종 25/.test(badge.t) && hue(badge.bg) >= 30 && hue(badge.bg) <= 60, `[U24] ${theme} 서랍 금색 배지 ${JSON.stringify(badge)}`);
     await p.keyboard.press('Escape'); await p.waitForTimeout(200);
-    await p.getByRole('navigation', { name: '공략 화면' }).getByRole('button', { name: '인물', exact: true }).click(); await p.waitForTimeout(500);
+    // 2026-11-27(U68): 인물 탭 카드는 서랍 머리 카드(큰 초상화 + '최종 25인' 배지)라 얼굴 테두리는 할 일 화면의 얼굴에서 잰다.
     const ring = await p.evaluate(() => [...document.querySelectorAll('img.final25-portrait')].filter(e => e.checkVisibility()).slice(0, 5).map(e => getComputedStyle(e).outlineWidth + ' ' + getComputedStyle(e).outlineColor));
     assert.ok(ring.length && ring.every(r => r === '4px ' + RED), `[U24] ${theme} 최종 25인 얼굴 테두리 ${ring}`);
+    await p.getByRole('navigation', { name: '공략 화면' }).getByRole('button', { name: '인물', exact: true }).click(); await p.waitForTimeout(500);
     // [U09] 배경 없는 초상화는 한 가지 바탕색(불러온 뒤. 불러오기 전 자리 색은 뺀다).
     const bgs = await p.evaluate(() => [...new Set([...document.querySelectorAll('main img[src*="portraits"], .context-rail img[src*="portraits"]')].filter(e => e.checkVisibility() && e.hasAttribute('data-loaded')).map(e => getComputedStyle(e).backgroundColor))]);
     assert.equal(bgs.length, 1, `[U09] ${theme} 초상화 바탕색 ${bgs}`);
@@ -173,7 +174,7 @@ try {
       const g = await eachPersonSheet(p, async (d, n) => ({ n, c: await d.locator('.y-gift[data-cheap], .gift-chips li').count() }));
       assert.ok(g.length > 5, `[U26] ${r} 인물 카드 수`); const miss = g.filter(x => !x.c).map(x => x.n); assert.deepEqual(miss, [], `[U26] ${r} 싼 선물 없는 인물`);
       // [U42] 누조 서랍은 '영입만·투자 없음'으로 보이고, 전력·실전 주력 같은 말이 없다(접기를 펼쳐도).
-      const nz = (await eachPersonSheet(p, async d => { for (const t of await d.locator('button[aria-expanded=false]').all()) await t.click(); return d.innerText(); }, ['누조']))[0] || null;
+      const nz = (await eachPersonSheet(p, async d => { for (let i = 0; i < 6 && await d.locator('.person-more button[aria-expanded=false]').count(); i++) await d.locator('.person-more button[aria-expanded=false]').first().click(); return d.innerText(); }, ['누조']))[0] || null;
       if (nz) { assert.ok(/투자하지 않습니다/.test(nz), `[U42] ${r} 누조 카드 투자 없음 표시`); assert.ok(!/활 전력|실전 주력/.test(nz), `[U42] ${r} 누조 카드에 전력 문구`); } }
     await ctx.close(); }
   // [U10] 장의 마지막 항목을 체크하면 색종이가 터진다(움직임 줄이기가 아닐 때). 새 브라우저 저장소에서만 누른다.

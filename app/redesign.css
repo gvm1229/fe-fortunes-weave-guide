@@ -944,7 +944,7 @@ html.dark body:has(.app-shell),html.dark body:has(.team-page),html.dark body:has
 .y-section-title{margin:20px 0 8px;font-size:18px;color:#FFE8C4}
 /* 3. 선호 선물 탭 §3: 리본 그림 제목, 선물 줄 격자(점수 색), 음식 타일. */
 .y-tab-link{margin:4px 0 8px}
-.y-ribbon{display:block;block-size:32px;inline-size:auto;margin-block:12px 0;border:1px solid #383D38}
+.y-ribbon{display:block;block-size:32px;inline-size:auto;margin-block:12px 0;outline:1px solid #383D38;outline-offset:-1px}
 .y-ribbon-text{margin:8px 0 0;font-size:15px;color:#E8C66A}
 .y-part{margin:16px 0 0;font-size:15px;color:#ACAAB9}
 .y-gift-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,280px),1fr));gap:8px;margin:8px 0 0;padding:0;list-style:none}

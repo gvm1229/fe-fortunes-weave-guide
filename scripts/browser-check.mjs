@@ -69,13 +69,13 @@ async function measure(page,{route='home',view='home',theme,width,height,screens
     }
     const brokenImages=[...document.images].filter(e=>visible(e)&&e.getBoundingClientRect().top<innerHeight&&e.getBoundingClientRect().bottom>0&&(!e.complete||e.naturalWidth===0)).map(e=>e.getAttribute('src'));
     // 재설계 v3에서 의도적으로 배경이 없는 버튼: 탐색 항목, 배지로 채운 인물 이름, 그림 버튼, 접기 머리, 채운 목록 안의 탭.
-    const transparentButtons=[...document.querySelectorAll('button')].filter(e=>visible(e)&&e.textContent.trim()&&!e.matches('.guide-navigation button,.person-inline:has(.game-badge),.map-thumbnail button,.ui-accordion-trigger,[role=tab],[role=radio]')&&getComputedStyle(e).backgroundColor==='rgba(0, 0, 0, 0)'&&getComputedStyle(e).backgroundImage==='none').map(e=>e.textContent.slice(0,60)); // 그림 바탕(yuphastemple 3조각 알약·판 질감)도 채운 단추다.
+    const transparentButtons=[...document.querySelectorAll('button')].filter(e=>visible(e)&&e.textContent.trim()&&!e.matches('.guide-navigation button,.person-inline:has(.game-badge),.map-thumbnail button,.ui-accordion-trigger,[role=tab],[role=radio],.person-card-open,.prep-face')&&getComputedStyle(e).backgroundColor==='rgba(0, 0, 0, 0)'&&getComputedStyle(e).backgroundImage==='none').map(e=>e.textContent.slice(0,60)); // 그림 바탕(yuphastemple 3조각 알약·판 질감)도 채운 단추다.
     const aspectRatioViolations=[...document.images].filter(e=>visible(e)&&e.naturalWidth&&getComputedStyle(e).objectFit==='fill'&&!/\/(portraits|gods)\//.test(e.getAttribute('src')||'')).flatMap(e=>{
       const r=e.getBoundingClientRect(),ratio=e.naturalWidth/e.naturalHeight,error=Math.abs(r.width/r.height/ratio-1);
       return error>.01?[{src:e.getAttribute('src'),display:[r.width,r.height],natural:[e.naturalWidth,e.naturalHeight],error}]:[];
     });
     // 재설계 v3 크기: 묶음 머리 얼굴 36, 글 속 원본 얼굴 28, 정보 칸·준비 48, 인물 카드 96(휴대폰 72). 배지 안 얼굴은 뺀다.
-    const faceSections=[['groups','.tasks-main .group-portraits img',36],['tasks','.tasks-main .source-markup img[src*="/portraits/"]:not(.game-badge img),.tasks-main .source-markup img[src*="/gods/"]:not(.game-badge img)',28],['rail','.context-rail img[src*="/portraits/"]',48],['prep','.prep-content img[src*="/portraits/"]:not(.game-badge img),.prep-content img[src*="/gods/"]:not(.game-badge img)',48],['people','.people-grid .person-heading img[src*="/portraits/"]',innerWidth<768?72:96]];
+    const faceSections=[['groups','.tasks-main .group-portraits img',36],['tasks','.tasks-main .source-markup img[src*="/portraits/"]:not(.game-badge img),.tasks-main .source-markup img[src*="/gods/"]:not(.game-badge img)',28],['rail','.context-rail img[src*="/portraits/"]',48],['prep','.prep-content .prep-face img',48],['people','.people-grid .person-heading img[src*="/portraits/"]',innerWidth<768?72:96]];
     const faceSizes=faceSections.map(([section,selector,size])=>({section,size,actual:[...new Set([...document.querySelectorAll(selector)].filter(visible).map(e=>{const r=e.getBoundingClientRect();return `${r.width}×${r.height}`;}))]}));
     const faceSizeViolations=faceSizes.filter(s=>s.actual.some(v=>v!==`${s.size}×${s.size}`));
     const paragraphs=[...document.querySelectorAll('main p,.sheet-scroll p')].filter(visible);

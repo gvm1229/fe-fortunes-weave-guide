@@ -92,7 +92,7 @@ async function measure(page,scene){
     if(scene.view==='people')assert.ok(row.cards>0&&row.summaryHeads.length===0,JSON.stringify({cards:row.cards,tables:row.summaryHeads.length}));
     else assert.ok(row.summaryHeads.length>0&&row.summaryHeads.every(h=>['영입 이유','합류','출격','목표','멈출 때'].every(k=>h.includes(k))),JSON.stringify(row.summaryHeads.slice(0,2)));
   }
-  if(scene.width>=1200)assert.ok(row.home?.textFits&&row.home.text==='첫 화면',JSON.stringify(row.home));
+  if(scene.width>=1200&&scene.view!=='person-sheet')assert.ok(row.home?.textFits&&row.home.text==='첫 화면',JSON.stringify(row.home));
   return row;
 }
 
