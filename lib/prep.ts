@@ -7,6 +7,7 @@ import peopleDisplay from '@/content/data/people-display.json';
 import { personPortrait } from './portraits';
 import { yuphasItem } from './yuphas';
 import type { Tree } from './content';
+import { displayText } from './display';
 import classData from '@/content/data/yuphas-classes.json';
 /**
  * 준비 탭 다섯 묶음의 자료(2026-11-27 사용자 결정 Q2, U69): 가호 봉사 · 이번 주 식사 · 시험 단계 · 장을 넘기기 전 · 바로가기.
@@ -50,9 +51,9 @@ export function prepPanels(route: string, part: string, prepTree: Tree[]): PrepP
   const w = part === '1' ? (weekly as unknown as Record<string, { lord: string; rows: [string, string, string, string][]; nextLord: string | null; nextTarget: string | null; nextText: string | null; recruitmentQueue?: { targets: string[] } }>)[route] : undefined;
   if (w) {
     const seen = new Set<string>(); const once = (n: string) => (seen.has(n) ? null : (seen.add(n), face(n, part)));
-    const rows = w.rows.map(([label, a, b, note]) => ({ label, people: [a, b].map(once).filter((x): x is PrepFace => !!x), note }));
+    const rows = w.rows.map(([label, a, b, note]) => ({ label, people: [a, b].map(once).filter((x): x is PrepFace => !!x), note: displayText(note) }));
     const waiting = (w.recruitmentQueue?.targets || []).map(once).filter((x): x is PrepFace => !!x);
-    meals = { kind: 'weekly', rows, waiting, next: w.nextLord && w.nextTarget ? { lord: w.nextLord, target: face(w.nextTarget, part), text: w.nextText || '' } : null };
+    meals = { kind: 'weekly', rows, waiting, next: w.nextLord && w.nextTarget ? { lord: w.nextLord, target: face(w.nextTarget, part), text: displayText(w.nextText || '') } : null };
   } else {
     const s = section(prepTree, (h) => /^(2부에는 주간 식사 없음|3부는 출격할 세 명만)/.test(h));
     meals = { kind: 'text', title: s ? text(kids(s, 'h3')[0]).trim() : (part === '2' ? '2부에는 주간 식사 없음' : '3부 준비'), lines: s ? [...kids(s, 'p').map((x) => text(x).replace(/\s+/g, ' ').trim()), ...lis(s)].filter(Boolean) : [] };
@@ -60,7 +61,7 @@ export function prepPanels(route: string, part: string, prepTree: Tree[]): PrepP
   const withItem = (e: PrepExam): PrepExam => { const y = yuphasItem(e.item); return { ...e, en: y?.en || null, slug: y?.slug || null }; };
   return {
     chain: godPlan.priority,
-    queue: part === '1' ? plan?.queue || null : null, end: part === '1' ? plan?.end || null : null,
+    queue: part === '1' ? plan?.queue || null : null, end: part === '1' && plan?.end ? displayText(plan.end) : null,
     boons: part === '1' ? (plan?.boons || []).map(([name, price]) => ({ name, price })) : [],
     gods: boonCatalog.gods.map((g) => ({ name: g.name, file: '/' + (godManifest.portraits as Record<string, { file: string }>)[g.name].file, max: g.max, target: target(g.name) })),
     meals,

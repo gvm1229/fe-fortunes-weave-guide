@@ -1024,8 +1024,10 @@ html.dark body:has(.app-shell),html.dark body:has(.team-page),html.dark body:has
 .prep-panel>h2.y-section-title{margin:0 0 12px;padding-block-end:8px;font-size:16.2px;letter-spacing:.08em;font-weight:700;background:var(--y-divider) left bottom/100% 4px no-repeat}
 .prep-chain{display:flex;flex-wrap:wrap;align-items:center;gap:6px 0;list-style:none;margin:0 0 12px;padding:0}
 .prep-chip{display:inline-flex;align-items:center;gap:6px;min-block-size:32px;padding:0 10px;border:2px solid #39484F;background:#192D34;font-size:15px}
-.prep-chip+.prep-chip::before{content:'→';margin-inline:-4px 2px;color:#ACAAB9;position:relative;inset-inline-start:-14px;inline-size:0}
-.prep-chip+.prep-chip{margin-inline-start:20px}
+/* 화살표는 앞 칩 뒤에 붙여 줄을 넘겨도 줄 머리가 칩으로 시작한다(Fable 검토 21 지적 17). */
+.prep-chip{position:relative}
+.prep-chip:not(:last-child){margin-inline-end:22px}
+.prep-chip:not(:last-child)::after{content:'→';position:absolute;inset-block:0;inset-inline-end:-22px;inline-size:22px;display:grid;place-items:center;color:#ACAAB9;opacity:1}
 .prep-chip b{font-weight:700;color:#FFE8C4}
 .prep-chip[data-done]{opacity:.55}
 .prep-chip[data-next]{background:#3B453A;border-color:#60593E}
@@ -1054,7 +1056,7 @@ html.dark body:has(.app-shell),html.dark body:has(.team-page),html.dark body:has
 .exam-tile .y-link{max-inline-size:100%;white-space:normal}
 .prep-links{display:flex;flex-wrap:wrap;gap:8px}.prep-links>*{min-block-size:36px}
 @media(max-width:999px){.prep-content{grid-template-columns:minmax(0,1fr)}}
-@media(max-width:359px){.god-tiles{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:359px){.god-tiles{grid-template-columns:repeat(3,minmax(0,1fr))}.exam-tiles{grid-template-columns:minmax(0,1fr)}}
 /* 고침 F(2026-11-27, U72): 인물 서랍 '내 기록' — 병종 단추·레벨 칸·숙련 등급 6×2·메모. 입력 글자 16px(휴대폰 Safari 확대 방지), 누를 곳 32px 이상. */
 .build-editor{display:grid;gap:10px;margin-block-end:16px}
 .build-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px}
