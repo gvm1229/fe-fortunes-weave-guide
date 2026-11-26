@@ -100,7 +100,7 @@ async function measure(page,{route='home',view='home',theme,width,height,screens
       overlapCount:overlaps.length,overlaps,brokenImages,transparentButtons,background,bgToken:getComputedStyle(document.body).getPropertyValue('--bg').trim().toUpperCase(),
       imageCount:document.querySelectorAll('img').length,aspectRatioViolations,faceSizes,faceSizeViolations,paragraphViolations,groupLineViolations,personTables,order,eraViolations,croppedScenes,sceneHeights,goldTables,accentContrast,disclosureImageClips};
   });
-  // 2026-11-27 yuphastemple 통합(docs/design-spec.md 맨 위 절, 승인한 견본): 첫 화면·루트·팀 화면 body는 모두 tileBg2 질감 + #05171B. 어두운 화면만(U63).
+  // 2026-11-27 yuphastemple 통합(docs/design-spec.md 맨 위 절, 승인한 견본): 첫 화면·루트·팀 화면 body는 모두 tileBg2 질감 + #05171B. 어두운 화면만(U64).
   const expected='#05171B';
   const label=`${route}-${view}-${width}x${height}-${theme}`;
   Object.assign(row,{label,route,view,width,height,theme,expectedBackground:expected,backgroundMatches:row.background===expected});
@@ -180,7 +180,7 @@ try {
         }
         await measure(page,{route,view,theme,width,height});
         if(view==='materials'&&route!=='part3'){
-          // 2026-11-27: 재료 서랍·지도 사진 대신 재료마다 yuphastemple 물품·지도 단추(U64).
+          // 2026-11-27: 재료 서랍·지도 사진 대신 재료마다 yuphastemple 물품·지도 단추(U65).
           const rows=page.locator('[data-material]');
           if(!await rows.count()||await page.locator('[data-material] [data-yuphas-link]').count()<await rows.count())failures.push(`${route}: 재료별 yuphastemple 단추 누락`);
         }
@@ -229,7 +229,7 @@ try {
   await page.reload();await ready(page);
   // 2026-11-27: 참고 문서 화면은 없앴다. 같은 문서를 할 일 본문의 문서 단추에서 연다.
   await page.evaluate(()=>document.querySelectorAll('main details').forEach(d=>{d.open=true;}));
-  // 지원 루프 문서의 '근거' 절 링크는 화면에서 뺐으므로(U36·U65) 본문에 문서 링크가 있는 '축복 순서·예산' 문서로 되돌아오기를 본다.
+  // 지원 루프 문서의 '근거' 절 링크는 화면에서 뺐으므로(U36·U66) 본문에 문서 링크가 있는 '축복 순서·예산' 문서로 되돌아오기를 본다.
   await page.getByRole('button',{name:'축복 순서·예산',exact:false}).first().click();await page.getByRole('dialog').waitFor();
   const link=page.locator('[data-doc-url="level-renown-review.md"]').first();await link.scrollIntoViewIfNeeded();const scroll=await page.locator('.sheet-scroll').evaluate(e=>e.scrollTop);await link.click();await page.getByRole('button',{name:'뒤로',exact:true}).click();await page.waitForTimeout(100);assert.ok(Math.abs(await page.locator('.sheet-scroll').evaluate(e=>e.scrollTop)-scroll)<2);await page.keyboard.press('Escape');functionality.push('문서 뒤로·읽던 위치 복원');
   await page.goto(base+'/team/');for(const name of ['네 진영장 포함','역할 균형 추천','현재 25인·병과 수정']){await page.getByRole('radiogroup',{name:'편성안'}).getByRole('radio',{name,exact:true}).click();assert.equal(await page.locator('.unit-card').count(),25);}functionality.push('팀 세 편성 각각 25명');

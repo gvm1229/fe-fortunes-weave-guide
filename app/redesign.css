@@ -651,7 +651,8 @@ body{word-break:keep-all;overflow-wrap:break-word}
   .team-page .team-head .ui-tabs-list button{flex:1 1 auto;padding:0 4px}
 }
 /* 360px 미만(320px 등)에서는 글 폭 합이 탭 상자보다 넓어 화면이 가로로 넘쳤다. 탭 안 여백을 빼고 줄어들 수 있게(2026-11-26 검토 4). */
-@media(max-width:359px){.team-page .team-head .ui-tabs-list button{padding:0;min-inline-size:0}}
+/* 2026-11-26 검토 N2(사용자 결정): 여백 0이면 탭 글자끼리 붙었다. 359px 이하에서는 네 탭을 2×2 격자로 두고 탭 안 여백은 기본값(16px)으로. 360px 이상은 위 규칙 그대로. */
+@media(max-width:359px){.team-page .team-head .ui-tabs-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.team-page .team-head .ui-tabs-list button{padding:0 16px;min-inline-size:0}}
 /* 8. 팀 '루트 편성'·'비교 근거' 표의 병종 이름 단추: 옆 배지("상급직")와 같은 높이·여백·바탕·글자(단추라 모서리는 U55의 10px). 비교 근거 표의 인물 칩은 이름이 한 글자씩 세로로 꺾이지 않게 한 줄로. */
 /* 높이는 본문 속 참고 칩 최소 30px(사양 일관성 표, 2026-11-26 검토 5). */
 :is(.route-unit-class,.team-panel .semantic td) .text-link{min-block-size:30px;padding:3px 8px;background:var(--secondary-soft);color:var(--text);font-size:18px;font-weight:600;line-height:24px}
@@ -674,9 +675,13 @@ body{word-break:keep-all;overflow-wrap:break-word}
 .dot-glue{white-space:nowrap}
 /* 요소 바로 뒤 "·" 묶음(검토 3): 요소와 "·" 사이만 막고 글만 든 요소(굵은 글 등)는 안에서 그대로 줄을 나눈다. 배지·얼굴 칩을 품은 요소는 nowrap을 그대로 물려받는다: Chrome은 배지(inline-flex) 뒤 줄 나눔을 배지 부모의 white-space로 정하기 때문. */
 :where(.dot-glue>:not(.dot-lead,:has(.game-badge,[data-face-row],img))){white-space:normal}
+/* 문단 text-wrap:pretty는 글만 든 요소(white-space:normal) 끝과 " ·" 사이에서도 줄을 나눴다(320px 세오도라 1부 할 일 "Lv35 ·"의 "·"가 줄 머리). "·" 앞에 보이지 않는 단어 결합자(U+2060)를 그려 그 자리를 막는다(글자·복사되는 글은 그대로). */
+.dot-lead::before{content:"\2060"}
 /* 표 칸 안 배지·얼굴 칩+"·" 묶음은 줄 안 상자(inline-flex, 줄 넘김 허용)로: 칸이 묶음보다 좁을 때만 "·"가 상자 안에서 아래로 내려간다. nowrap 그대로면 휴대폰 금액·재료 표의 좁은 칸(약 85~100px)에서 "명성 5·"가 2~5px 넘치고 얼굴 칩 "알렉산드라·"가 표를 40px 넓혔다. 상자 안은 nowrap을 풀어 칩·배지 안 글은 전처럼 칸 폭에 맞춰 줄을 나눈다(상자의 칸 사이에서는 줄을 나누지 않으므로 "·" 앞은 그대로 묶임). 앞 빈칸(" ·")은 상자 안에서도 보이게 pre. */
-:is(td,th) .dot-glue:has(.game-badge,[data-face-row]){display:inline-flex;flex-wrap:wrap;align-items:baseline;white-space:normal}
-:is(td,th) .dot-glue:has(.game-badge,[data-face-row])>.dot-lead{white-space:pre}
+/* 2026-11-26 검토 N1(U63): 그림만 든 요소(본문 그림+글 "검B")도 같은 상자로. 상자는 줄 폭을 넘지 않고(max-inline-size:100%) 상자 안 요소는 최소 폭 0(줄어들 수 있게): 칸이 요소보다 좁아도 묶기 전처럼 요소만 칸 폭으로 줄고(320px "검B·"가 목록 줄 43~54px보다 6~13px, "알렉산드라·"가 칸 밖으로 15px 넘치던 것), "·"는 다음 줄로 내려간다. */
+:is(td,th) .dot-glue:has(.game-badge,[data-face-row],img){display:inline-flex;flex-wrap:wrap;align-items:baseline;white-space:normal;max-inline-size:100%}
+:is(td,th) .dot-glue:has(.game-badge,[data-face-row],img)>:not(.dot-lead){min-inline-size:0}
+:is(td,th) .dot-glue:has(.game-badge,[data-face-row],img)>.dot-lead{white-space:pre}
 
 /* ===== yuphas 견본 시작 (2026-11-26, docs/yuphas-sample-plan.md · 근거 docs/yuphas-design-teardown.md §5·§7·§9) =====
    견본이다. 사용자 승인 전. 2026-11-26 사용자 결정으로 yuphastemple.com UI 그림·글꼴(public/yuphas/, 출처 assets/design/SOURCES.md)을 그 사이트와 같은 방식으로 쓴다.

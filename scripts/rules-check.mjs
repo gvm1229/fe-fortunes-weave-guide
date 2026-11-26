@@ -189,27 +189,32 @@ for (const f of [...walk('app', ['.ts', '.tsx', '.css']), ...walk('components', 
   assert.ok(rules.every(r => !/object-fit:\s*contain/.test(r)), '[U62] 3부 띠 초상화에 object-fit:contain 없음');
   assert.ok(!/\.lord-faces img\{[^}]*object-fit:\s*contain/.test(css), '[U62] lord-faces img에 contain 없음'); }
 
-// [U63] 어두운 화면만(2026-11-27): 밝은 화면 전용 선택자(:not(.dark))와 next-themes가 없고, <html>에 dark가 고정이다.
+// [U63] 표 칸이 '배지(얼굴 칩·그림 포함) + ·'보다 좁으면 "·"는 칸 안에서 다음 줄로 내려가도 된다(칸 밖 넘침은 안 됨). 표 칸 안 요소+"·" 묶음은 줄 넘김을 허용하는 줄 안 상자로, 상자는 줄 폭을 넘지 않고 안의 요소는 줄어들 수 있다.
+{ const css = readFileSync('app/redesign.css', 'utf8'), rule = sel => [...css.matchAll(/([^{}]*)\{([^}]*)\}/g)].filter(m => m[1].includes(':is(td,th) .dot-glue:has(') && m[1].includes('img') && sel(m[1])).map(m => m[2]).join(';');
+  const box = rule(s => !s.includes('>'));
+  assert.ok(/display:\s*inline-flex/.test(box) && /flex-wrap:\s*wrap/.test(box) && /white-space:\s*normal/.test(box) && /max-inline-size:\s*100%/.test(box), '[U63] 표 칸 안 "·" 묶음 상자: inline-flex·줄 넘김·줄 폭 안');
+  assert.ok(/min-inline-size:\s*0/.test(rule(s => s.includes('>:not(.dot-lead)'))), '[U63] 표 칸 안 묶음 속 요소는 줄어들 수 있음'); }
+// [U64] 어두운 화면만(2026-11-27): 밝은 화면 전용 선택자(:not(.dark))와 next-themes가 없고, <html>에 dark가 고정이다.
 { for (const f of [...walk('app', ['.ts', '.tsx', '.css']), ...walk('components', ['.ts', '.tsx'])]) { const t = readFileSync(f, 'utf8');
-    assert.ok(!t.includes(':not(.dark)'), `[U63] ${f}: :not(.dark) 남음`); assert.ok(!/from ['"]next-themes['"]/.test(t), `[U63] ${f}: next-themes 가져오기 남음`); }
-  assert.ok(/<html[^>]*className="dark"/.test(readFileSync('app/layout.tsx', 'utf8')), '[U63] layout <html className="dark"> 고정');
-  assert.ok(!Object.hasOwn(read('package.json').dependencies || {}, 'next-themes'), '[U63] package.json에 next-themes 없음'); }
+    assert.ok(!t.includes(':not(.dark)'), `[U64] ${f}: :not(.dark) 남음`); assert.ok(!/from ['"]next-themes['"]/.test(t), `[U64] ${f}: next-themes 가져오기 남음`); }
+  assert.ok(/<html[^>]*className="dark"/.test(readFileSync('app/layout.tsx', 'utf8')), '[U64] layout <html className="dark"> 고정');
+  assert.ok(!Object.hasOwn(read('package.json').dependencies || {}, 'next-themes'), '[U64] package.json에 next-themes 없음'); }
 
 // [U28] 폐지(2026-11-27 어두운 화면만): 테마 단추가 어디에도 없다.
 { for (const f of walk('components', ['.tsx'])) { const t = readFileSync(f, 'utf8'); assert.ok(!/ThemeSwitch|화면 테마 바꾸기/.test(t), `[U28] ${f}: 테마 단추 남음`); } }
 
-// [U64] yuphastemple 이름 규칙(2026-11-27): 누를 수 없는 이름 배지는 한국어, yuphastemple 새 탭 단추는 영어 이름. 화면용 이름표는 정본(yuphas-names.json)에서 만든 그대로이고,
+// [U65] yuphastemple 이름 규칙(2026-11-27): 누를 수 없는 이름 배지는 한국어, yuphastemple 새 탭 단추는 영어 이름. 화면용 이름표는 정본(yuphas-names.json)에서 만든 그대로이고,
 //       단추 글은 영어(한글 없음)다. 지도 링크는 game8이 아니라 yuphastemple 지도로 간다. 재료 서랍·지도 사진은 없다.
 { const links = read('content/data/yuphas-links.json');
-  for (const [ko, [en, slug]] of Object.entries(links.items)) { assert.ok(en && !/[가-힣]/.test(en), `[U64] ${ko} 영어 이름 ${en}`); assert.ok(/^[a-z0-9]+(-[a-z0-9]+)*$/.test(slug), `[U64] ${ko} 슬러그 ${slug}`); }
-  const sm = readFileSync('components/source-markup.tsx', 'utf8'); assert.ok(sm.includes('<YLink en="World Map" href={mapUrl(route)}'), '[U64] 본문 지도 링크 → yuphastemple 지도');
-  const y = readFileSync('components/yuphas.tsx', 'utf8'); assert.ok(y.includes('target="_blank" rel="noreferrer" lang="en"') && y.includes('function YuphasGroup'), '[U64] 영어 새 탭 단추·묶음 첫 번만');
-  assert.ok(!/MapSheet|MapThumbnail/.test(walk('components', ['.tsx']).map(f => readFileSync(f, 'utf8')).join('')), '[U64] 재료 서랍·지도 사진 없음'); }
+  for (const [ko, [en, slug]] of Object.entries(links.items)) { assert.ok(en && !/[가-힣]/.test(en), `[U65] ${ko} 영어 이름 ${en}`); assert.ok(/^[a-z0-9]+(-[a-z0-9]+)*$/.test(slug), `[U65] ${ko} 슬러그 ${slug}`); }
+  const sm = readFileSync('components/source-markup.tsx', 'utf8'); assert.ok(sm.includes('<YLink en="World Map" href={mapUrl(route)}'), '[U65] 본문 지도 링크 → yuphastemple 지도');
+  const y = readFileSync('components/yuphas.tsx', 'utf8'); assert.ok(y.includes('target="_blank" rel="noreferrer" lang="en"') && y.includes('function YuphasGroup'), '[U65] 영어 새 탭 단추·묶음 첫 번만');
+  assert.ok(!/MapSheet|MapThumbnail/.test(walk('components', ['.tsx']).map(f => readFileSync(f, 'utf8')).join('')), '[U65] 재료 서랍·지도 사진 없음'); }
 
-// [U65] 화면에 근거·기록용 글이 없다(2026-11-27): 원문 기록·비교 근거 탭·참고 문서 화면·그림 출처·입수 원문·특기 검토 문서·조심 문구. 옮긴 곳은 docs/reference/.
+// [U66] 화면에 근거·기록용 글이 없다(2026-11-27): 원문 기록·비교 근거 탭·참고 문서 화면·그림 출처·입수 원문·특기 검토 문서·조심 문구. 옮긴 곳은 docs/reference/.
 { const code = walk('components', ['.tsx']).map(f => readFileSync(f, 'utf8')).join('');
-  for (const w of ['>원문 기록<', "'비교 근거'", "label:'참고 문서'", '특기 검토 문서', '전체 참고 문서', '실제 합류와 출격 자리는 게임 화면을 먼저 확인하세요']) assert.ok(!code.includes(w), `[U65] 화면 코드에 ${w}`);
-  for (const f of ['README.md', 'people-original.md', 'team-comparison.md', 'image-sources.md', 'unverified.md', 'support-evidence.md']) assert.ok(existsSync('docs/reference/' + f), `[U65] docs/reference/${f}`); }
+  for (const w of ['>원문 기록<', "'비교 근거'", "label:'참고 문서'", '특기 검토 문서', '전체 참고 문서', '실제 합류와 출격 자리는 게임 화면을 먼저 확인하세요']) assert.ok(!code.includes(w), `[U66] 화면 코드에 ${w}`);
+  for (const f of ['README.md', 'people-original.md', 'team-comparison.md', 'image-sources.md', 'unverified.md', 'support-evidence.md']) assert.ok(existsSync('docs/reference/' + f), `[U66] docs/reference/${f}`); }
 
 // 규칙 문서: 모든 규칙 줄은 '검사' 칸에 하나 이상의 파일을 적고, 그 파일에는 규칙 번호가 있다.
 { const doc = readFileSync('docs/user-rules.md', 'utf8'), rows = doc.split('\n').filter(l => /^\| [UP]\d\d \|/.test(l)), ids = new Set();

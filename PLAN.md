@@ -144,3 +144,15 @@ Codex 대신 Claude(Opus 5.5)가 구현하고 Fable 5.2가 계획·검토한다.
 - [x] T13 검사 갱신·선호 기록
 - [x] Fable 코드 검토와 시각 검토(docs/fable-review.md) · 높음 3·중간 9·낮음 일부 반영. 남은 낮음: L2 시트 백마술 제목 반복, L6 자료 검사 2종, L7 시험 쌍 수, L8 정적 미리 읽기 404
 - [ ] 검토 통과 후 Netlify 운영 배포(사용자 승인됨)
+
+## yuphastemple 통합·배포 · 2026-11-27
+
+사용자 승인(2026-11-27): yuphastemple.com 디자인을 정본으로 들이고 배포한다. 계획·값: [docs/yuphas-integration-plan.md](docs/yuphas-integration-plan.md), 사양 맨 위 절 [docs/design-spec.md](docs/design-spec.md).
+
+- [x] 자료·그림 받기(scripts/yuphas/, content/data/yuphas-*.json, public/yuphas/)
+- [x] 한국어 이름 배지 + 영어 yuphastemple 새 탭 단추·지도 링크(U65)
+- [x] 인물 머리 카드·선호 선물·음식·지원 표(U67)
+- [x] 근거·기록용 글을 화면에서 빼고 docs/reference/로(U66)
+- [x] 어두운 화면만(U64, U28 폐지)
+- [x] main(5ae8fd4) 합치기: main의 U63(표 칸 "·" 줄 넘김)을 그대로 두고 견본 규칙을 U64~U67로 번호 이동
+- [ ] `node scripts/release.mjs check` → Fable 5.2 검토 → `node scripts/release.mjs deploy`

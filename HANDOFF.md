@@ -123,7 +123,7 @@
 
 ### 2026-11-27 yuphastemple 통합(작업 폴더 claude/yuphas-design-sample, 커밋 전·사용자 검토 대기)
 
-- 계획 docs/yuphas-integration-plan.md, 디자인 정본 docs/design-spec.md 맨 위 절, 규칙 U63~U66(U28 폐지, U02·U05·U07·U14·U24·U26·U36·U43·U46·U48·U55 대체).
+- 계획 docs/yuphas-integration-plan.md, 디자인 정본 docs/design-spec.md 맨 위 절, 규칙 U64~U67(U28 폐지, U02·U05·U07·U14·U24·U26·U36·U43·U46·U48·U55 대체).
 - 어두운 화면만. 이름 규칙: 누를 수 없는 배지 = 한국어, yuphastemple 새 탭 단추 = 영어(lib/yuphas.ts, components/yuphas.tsx, 이름표 content/data/yuphas-links.json은 scripts/yuphas/build-links.mjs가 만든다).
 - 인물 서랍·팀 인물 서랍은 yuphastemple 인물 카드 + 선호 선물·음식 + 지원 표(lib/yuphas-profile.ts가 서버에서 줄임). 재료 서랍·지도 사진·참고 문서 화면·비교 근거 탭·원문 기록 삭제. 옮긴 글은 docs/reference/(scripts/yuphas/reference-docs.mjs).
 - 비교 사진 docs/screens/yuphas-compare.html.
