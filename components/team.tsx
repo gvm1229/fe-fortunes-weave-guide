@@ -1,6 +1,6 @@
 'use client';
 import { characterReason } from '@/lib/character-summary';
-import { GameText } from './game-text';
+import { GameText, glueDots } from './game-text';
 import type { Tree } from '@/lib/content';
 import { Sheet,SheetContent,SheetTitle } from './ui/sheet';
 import { useState, ViewTransition } from 'react';
@@ -93,7 +93,7 @@ export function Team({data,classes,docs}:{data:Data;classes:Record<string,ClassI
       <ol className="final-grid" id="final-25" aria-label="최종 25인">{names.map(name=>{const u=data.units[name],out=outgoingOf(name);return <li key={name} className="unit-cell" style={{viewTransitionName:`team-unit-${Object.keys(data.units).indexOf(name)}`}}>
         <button type="button" className="unit-card" data-swapped={out?true:undefined} aria-label={`${name}, ${u.class}, ${u.role}${out?`, ${out} 대신`:''}`} onClick={()=>setUnit(name)}>
           <img className="unit-face" src={'/'+personPortrait(u.portrait,part,name)} alt="" loading="eager"/>
-          <span className="unit-text"><strong className="unit-name">{name}</strong><span className="unit-class">{classes[u.class]&&<img src={'/'+classes[u.class].file} alt=""/>}{u.class}</span><span className="unit-role">{u.role}</span><span className="unit-weapons">{(u.usableWeapons||u.weapons).map(w=><Tooltip key={w.label}><TooltipTrigger asChild><img src={'/'+w.icon} alt={w.label.replace('백마법','백마술')} tabIndex={-1}/></TooltipTrigger><TooltipContent>{w.label.replace('백마법','백마술')}</TooltipContent></Tooltip>)}</span></span>
+          <span className="unit-text"><strong className="unit-name">{name}</strong><span className="unit-class">{classes[u.class]&&<img src={'/'+classes[u.class].file} alt=""/>}{u.class}</span><span className="unit-role">{glueDots(u.role)}</span><span className="unit-weapons">{(u.usableWeapons||u.weapons).map(w=><Tooltip key={w.label}><TooltipTrigger asChild><img src={'/'+w.icon} alt={w.label.replace('백마법','백마술')} tabIndex={-1}/></TooltipTrigger><TooltipContent>{w.label.replace('백마법','백마술')}</TooltipContent></Tooltip>)}</span></span>
         </button>
         {out&&<span className="swap-badge" aria-hidden="true"><img src={'/'+personPortrait(data.units[out].portrait,part,out)} alt=""/><span>{out}</span><span>대신</span></span>}
       </li>;})}</ol>

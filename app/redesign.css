@@ -618,3 +618,48 @@ progress::-moz-progress-bar{background:#1E8E3E}
   .home .route-card-content{margin-block-start:auto;background:linear-gradient(transparent,rgb(0 0 0 / .6) 40%)}
 }
 .sheet-scroll .text-link{margin:3px 2px}
+/* 화면 다듬기 2026-11-26 (docs/ui-improvement-plan-20261126.md) */
+/* 1. 한국어는 낱말(어절) 단위로 줄을 바꾼다. 긴 주소·영문은 칸을 넘지 않게 끊는다. 문단은 끝줄 한 낱말 남기기를 줄이고, 제목은 줄 길이를 고르게. */
+body{word-break:keep-all;overflow-wrap:break-word}
+:is(p,li,dd,blockquote,figcaption,.action-text){text-wrap:pretty}
+:is(h1,h2,h3,h4,.chapter-title,.group-title){text-wrap:balance}
+/* 2. 장 머리 설명 글: 한 덩어리 안의 짧은 줄은 8~10px로 붙이고, 덩어리(장 보충 묶음) 사이는 기존 24px을 둔다. */
+.chapter-supplement .readable-body :is(ul,ol){gap:8px}
+.chapter-supplement .readable-group+.readable-group{margin-block-start:10px}
+/* 3. 인물 칩 줄 위의 작은 제목(굵은 글 한 줄 문단): 위 20px > 아래 4px. */
+.source-markup .readable-group:has(>.readable-body>p:only-child>b:only-child):not(:first-child){margin-block-start:20px}
+.source-markup .readable-group:has(>.readable-body>p:only-child>b:only-child)+div:not([class]){margin-block-start:4px}
+/* 4. 오른쪽 정보 칸: 카드 안쪽 여백·간격을 줄이고, 아래로 더 내릴 내용이 있을 때만 아래 끝을 옅게 흐려 잘린 것이 아님을 알린다. */
+.context-rail{gap:12px}
+.context-rail>section{padding:18px 20px}
+.context-rail h2{margin-block-end:8px}
+.context-rail>section>:last-child{margin-block-end:0}
+@property --rail-fade{syntax:'<length>';inherits:false;initial-value:0px}
+@keyframes rail-fade{from,96%{--rail-fade:40px}to{--rail-fade:0px}}
+@media(min-width:1001px){
+  @supports (animation-timeline:scroll()){
+    .context-rail{mask-image:linear-gradient(to bottom,#000 calc(100% - var(--rail-fade)),transparent);animation:rail-fade linear both;animation-timeline:scroll(self)}
+  }
+}
+/* 5. 접힌 장 목록: 날짜를 제목 줄에 함께 두고 위아래 여백을 줄여 장 하나 높이를 절반 가까이로. */
+.chapter-section:not([open]){margin-block-end:4px}
+.chapter-section:not([open])>summary{padding-block:6px;row-gap:0}
+.chapter-section:not([open])>summary .chapter-date{flex-basis:auto;inline-size:auto;margin-inline-start:4px}
+/* 6. 휴대폰 할 일 줄: 왼쪽 여백과 체크 칸–글 간격을 줄여 글 폭을 넓힌다(체크 칸 26px 그대로). 묶음 제목·메모도 같은 왼쪽 선. */
+@media(max-width:599px){
+  .checklist>li{padding:16px 12px;gap:10px}
+  .action-group>summary{padding-inline:12px}
+  .action-group .action-notes{padding-inline:12px}
+}
+/* 7. 팀 화면 휴대폰 탭: 같은 폭 칸 대신 글 길이대로 나누어 긴 탭("비교 근거")도 탭 상자 끝에 붙지 않게(단추 사이 4px, 화면 끝 12px 유지). team.css가 뒤에 오므로 .team-page를 붙인다. */
+@media(max-width:599px){
+  .team-page .team-head .ui-tabs-list{display:flex}
+  .team-page .team-head .ui-tabs-list button{flex:1 1 auto;padding:0 4px}
+}
+/* 8. 팀 '루트 편성'·'비교 근거' 표의 병종 이름 단추: 옆 배지("상급직")와 같은 높이·여백·바탕·글자(단추라 모서리는 U55의 10px). 비교 근거 표의 인물 칩은 이름이 한 글자씩 세로로 꺾이지 않게 한 줄로. */
+:is(.route-unit-class,.team-panel .semantic td) .text-link{min-block-size:28px;padding:2px 8px;background:var(--secondary-soft);color:var(--text);font-size:18px;font-weight:600;line-height:24px}
+.team-panel .semantic [data-face-row]{white-space:nowrap}
+/* 9. 진행 숫자는 자리 폭을 같게 해 숫자가 바뀌어도 흔들리지 않게. */
+:is(.banner-progress,.progress-chip,.group-count,.context-rail p,.team-count){font-variant-numeric:tabular-nums}
+/* 11. keep-all 뒤 "·"가 줄 머리에 오지 않게: "·"를 앞 글자와 한 묶음으로(글자는 그대로, "·" 뒤에서는 나눔). */
+.dot-glue{white-space:nowrap}

@@ -39,6 +39,8 @@ export const classNamesByFile=new Map<string,string>(Object.entries(classImages)
 export function imageName(src:string,alt?:string):string|undefined{const f=fileName(src);return portraitNames.get(f)||classNamesByFile.get(f)||(alt?alt.replace(/ (초상화|병종).*$/,'').trim():undefined)||undefined;}
 /** 글에 나오는 인물·병종 이름(그림이 붙는 이름). */
 export function namesInText(text:string):string[]{return text.split(pattern).filter(w=>w&&(portraits[w]||classImages[w]));}
+/** 줄 머리에 "·"가 오지 않게 "·"를 앞 글자(사이 빈칸 하나 포함)와 묶는다. 글자는 그대로, "·" 뒤에서는 줄을 나눌 수 있다(2026-11-26 화면 다듬기 11). */
+export function glueDots(text:string):React.ReactNode{const parts=text.split(/(\S\s?·)/);return parts.length<2?text:parts.map((p,i)=>i%2?<span key={i} className="dot-glue">{p}</span>:p||null);}
 type BadgeKind='bond'|'renown'|'gold'|'material'|'gift'|'skill'|'item'|'person'|'class';
 /** 배지 하나: 그림 + 이름 + 값. 글은 원문 조각 그대로(이름·공백·값). */
 function Badge({kind,icon,label,rest,className}:{kind:BadgeKind;icon:React.ReactNode;label:string;rest?:string;className?:string}){
@@ -69,8 +71,8 @@ export function GameText({text,withSkills=false,part='1',skip}:{text:string;with
       const Fallback={gem:Gem,box:Package,sword:Sword,fish:Fish,ore:Gem,meat:Beef,gift:Gift,coin:Coins}[entry.fallback||'']||Package;
       return <Badge key={i} kind={kind} icon={entry.file?<img src={'/'+entry.file} alt="" loading="lazy" width={22} height={22}/>:<Fallback className="game-icon game-icon-item" size={22} aria-hidden="true"/>} label={it[1]} rest={it[2]}/>;}
     const c=classify(word);
-    if(!c)return word;
-    if(c.kind==='skill')return withSkills?<Badge key={i} kind="skill" icon={<img className="game-skill" src={`/assets/skills/${skills[c.label]}.webp`} alt="" loading="lazy"/>} label={c.label} rest={c.rest}/>:<Fragment key={i}>{word}</Fragment>;
+    if(!c)return <Fragment key={i}>{glueDots(word)}</Fragment>;
+    if(c.kind==='skill')return withSkills?<Badge key={i} kind="skill" icon={<img className="game-skill" src={`/assets/skills/${skills[c.label]}.webp`} alt="" loading="lazy"/>} label={c.label} rest={c.rest}/>:<Fragment key={i}>{glueDots(word)}</Fragment>;
     return <Badge key={i} kind={c.kind} icon={<GameIcon kind={c.icon as keyof typeof symbols}/>} label={c.label} rest={c.rest}/>;
   })}</>;
 }

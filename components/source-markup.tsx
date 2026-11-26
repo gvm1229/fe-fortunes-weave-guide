@@ -1,5 +1,5 @@
 'use client';
-import { GameText, imageName, classNamesByFile, namesInText } from './game-text';
+import { GameText, glueDots, imageName, classNamesByFile, namesInText } from './game-text';
 import { createElement, Fragment } from 'react';
 import { MapPin } from 'lucide-react';
 import type { Tree } from '@/lib/content';
@@ -38,11 +38,12 @@ export function SourceMarkup({nodes,onDoc,onMaterial,onPerson,part='1',skip:oute
   collectIcons(nodes);
   /** plain: 배경이 있는 칸(표 머리·버튼) 안의 글은 배지 없이 그린다(배경 겹침 방지). */
   function render(n:Tree,i:number,parentSkip:Set<string>=new Set(),inBlock=false,plain=false):React.ReactNode{
-    if(typeof n==='string'&&plain)return displayText(n);
+    if(typeof n==='string'&&plain)return <Fragment key={i}>{glueDots(displayText(n))}</Fragment>;
     if(typeof n==='string')return <GameText key={i} text={displayText(n)} part={part} withSkills={enrichSkills} skip={textSkip(displayText(n),parentSkip)}/>;
     if(movedIcons.has(n))return null;
     const skip=blockSkip(n,parentSkip,inBlock),sub=(c:Tree,j:number)=>render(c,j,skip,inBlock||isBlock(n),plain||n.tag==='th'||n.tag==='button');
-    const a=n.attrs,children=n.children.filter(child=>!['table','thead','tbody','tfoot','tr','colgroup'].includes(n.tag)||typeof child!=='string'||child.trim()).map(sub);
+    // 목록 항목 맨 앞 줄바꿈(<li> <br>글)은 빈 줄만 만든다. 그리지 않아 짧은 줄 사이 간격이 한 줄씩 벌어지지 않게 한다(2026-11-26 화면 다듬기 2).
+    const a=n.attrs,children=n.children.filter(child=>!['table','thead','tbody','tfoot','tr','colgroup'].includes(n.tag)||typeof child!=='string'||child.trim()).filter((child,j,all)=>!(n.tag==='li'&&typeof child!=='string'&&child.tag==='br'&&all.slice(0,j).every(c=>typeof c==='string'&&!c.trim()))).map(sub);
     if(a['data-shared-notice'])return null;
     if(a['data-readable-group'])return <ReadMore key={i}>{a['data-readable-group']==='prose'?createElement(n.tag,{},children):children}</ReadMore>;
     if(n.tag==='br')return <br key={i}/>;
