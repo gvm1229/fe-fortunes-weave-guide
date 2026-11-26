@@ -1,4 +1,4 @@
-import { GameText, imageName, classNamesByFile, namesInText } from './game-text';
+import { GameText, glueDots, imageName, classNamesByFile, namesInText } from './game-text';
 import { createElement, Fragment } from 'react';
 import type { Tree } from '@/lib/content';
 import { displayText } from '@/lib/display';
@@ -17,7 +17,9 @@ function recordNode(value:unknown,disclose:boolean,seen:Set<string>,inCell:boole
   if(typeof value!=='object'){const t=displayText(itemNames[String(value)]||String(value));return <span><GameText text={t} withSkills skip={textSkip(t,seen)}/></span>;}
   if('$prose' in value){const parts=(value as {$prose:string[]}).$prose,joined=parts.map(displayText).join(' '),content=parts.length>2?<ul>{parts.map((s,i)=>{const t=displayText(s);return <li key={i}><GameText text={t} withSkills skip={textSkip(t,seen)}/></li>;})}</ul>:<p><GameText text={joined} withSkills skip={textSkip(joined,seen)}/></p>;return disclose?<ReadMore>{content}</ReadMore>:content;}
   if(Array.isArray(value))return <ul className="record-list">{value.map((v,i)=><li key={i}>{recordNode(v,disclose,inCell?seen:new Set(),true)}</li>)}</ul>;
-  return <table className="records"><tbody>{Object.entries(value).filter(([k,v])=>!hidden.has(k)&&v!==null&&v!==undefined&&(!Array.isArray(v)||v.length>0)).map(([k,v])=><tr key={k}><th scope="row">{labels[k]||(/^[123]$/.test(k)?`${k}부`:/[가-힣]/.test(k)?k:'추가 안내')}</th><td><ReadMore>{recordNode(v,false,inCell?seen:new Set(),true)}</ReadMore></td></tr>)}</tbody></table>;
+  // 다른 이름에서 '이름'과 같은 값은 빼고, 남는 값이 없으면 줄을 뺀다(2026-11-26 화면 다듬기 12).
+  const name=(value as {name?:unknown}).name;
+  return <table className="records"><tbody>{Object.entries(value).map(([k,v]):[string,unknown]=>k==='aliases'&&Array.isArray(v)?[k,v.filter(a=>a!==name)]:[k,v]).filter(([k,v])=>!hidden.has(k)&&v!==null&&v!==undefined&&(!Array.isArray(v)||v.length>0)).map(([k,v])=><tr key={k}><th scope="row">{labels[k]||(/^[123]$/.test(k)?`${k}부`:/[가-힣]/.test(k)?k:'추가 안내')}</th><td><ReadMore>{recordNode(v,false,inCell?seen:new Set(),true)}</ReadMore></td></tr>)}</tbody></table>;
 }
 const blockTags=new Set(['h2','h3','h4','h5','li','p','td','th','summary','figcaption']);
 function namesIn(n:Tree,acc:Set<string>):Set<string>{if(typeof n!=='string'){if(n.tag==='img'&&n.attrs.src&&/\/(portraits|classes)\//.test(n.attrs.src)){const name=imageName(n.attrs.src,n.attrs.alt);if(name)acc.add(name);}if(n.tag==='button'){const t=flat(n.children);if(classNamesByFile.size&&[...classNamesByFile.values()].includes(t))acc.add(t);}n.children.forEach(c=>namesIn(c,acc));}return acc;}
@@ -34,7 +36,7 @@ export function Semantic({nodes,route,part,onDoc,onSpell,hidePortraits=false,hid
   const enrichSkills=!JSON.stringify(nodes).includes("/skills/");
   /** plain: 표 머리 칸 안의 글은 배지 없이 그린다(칸 배경과 배지 배경 겹침 방지). */
   function render(n:Tree,i:number,parentSkip:Set<string>=new Set(),inBlock=false,plain=false):React.ReactNode {
-    if(typeof n==='string'&&plain)return displayText(n);
+    if(typeof n==='string'&&plain)return <Fragment key={i}>{glueDots(displayText(n))}</Fragment>;
     if(typeof n==='string')return <GameText key={i} text={displayText(n)} part={part} withSkills={enrichSkills} skip={textSkip(displayText(n),parentSkip)}/>;
     const a=n.attrs,skip=blockSkip(n,parentSkip,inBlock),sub=(c:Tree,j:number)=>render(c,j,skip,inBlock||isBlock(n),plain||n.tag==='th'||n.tag==='button'||(n.tag==='a'&&!!a.href));
     if(changesOnly&&a['data-change']==='keep')return null;
