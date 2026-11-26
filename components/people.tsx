@@ -90,7 +90,8 @@ export function People({people,part,onDoc,onPerson}:{people:Person[];part:string
   const roles=['본대','보완','선택','수집'];
   const buildRoute=(part==='3'?'part3':people[0]?.route) as BuildRoute,builds=useChecks().data.builds?.[buildRoute];
   // AI용 복사(2026-11-27 U72): 이 루트에서 기록이 있는 인물 전부를 글로. 복사가 막히면 그 자리에 글 상자를 편다(창을 하나 더 띄우지 않음).
-  const recorded=people.filter(p=>p.yuphas&&builds?.[p.yuphas.slug]);
+  // 3부 화면은 같은 인물 카드가 루트판마다 있지만 기록은 인물마다 하나라 슬러그로 한 번씩만(Fable 검토 21 지적 3).
+  const recorded=people.filter((p,i)=>p.yuphas&&builds?.[p.yuphas.slug]&&people.findIndex(q=>q.yuphas?.slug===p.yuphas!.slug)===i);
   const [copyState,setCopyState]=useState<{message:string;text?:string}>({message:''});
   const copyText=()=>buildText({routeEn:routeEn[buildRoute]||buildRoute,routeKo:routeNames[buildRoute]||buildRoute,date:new Date().toISOString().slice(0,10),rows:recorded.map(p=>{const y=p.yuphas!,b=builds![y.slug],c=classBySlug(b.classId);return {en:y.en,ko:p.name,level:b.level,cls:c?{en:c.en,ko:c.ko}:undefined,skills:y.skills.filter(s=>b.skills?.[s.id]).map(s=>[s.skill,b.skills![s.id]!] as [string,string]),boons:y.skills.filter(s=>s.state==='boon').map(s=>s.skill),banes:y.skills.filter(s=>s.state==='bane').map(s=>s.skill),finalClasses:p.data.finalClasses,needs:p.data.skills.map(s=>`${s.skill} ${s.target}`),note:b.note};})});
   const copy=async()=>{const text=copyText();try{await navigator.clipboard.writeText(text);setCopyState({message:`${recorded.length}명 기록을 복사했습니다.`});}catch{setCopyState({message:'복사가 막혔습니다. 아래 글을 직접 복사하세요.',text});}};

@@ -157,6 +157,13 @@ try {
     await p.keyboard.press('Escape');
     await p.goto(base + '/part3/3/'); await p.locator('.route-head').waitFor(); await nav('인물').click(); await p.locator('.person-card:has(.y-card-en) .person-card-open').first().click(); d = p.getByRole('dialog'); await d.waitFor();
     assert.equal(await d.getByLabel('레벨(1~99)').inputValue(), '', '[U72] 3부는 따로');
+    await p.keyboard.press('Escape'); await d.waitFor({ state: 'detached' });
+    // 3부 AI용 복사: 같은 인물 카드가 여러 장(누조 등)이어도 한 번만 쓴다.
+    { const dup = p.locator('.person-card[data-person="누조"] .person-card-open'); assert.ok(await dup.count() > 1, '[U72] 3부 누조 카드 여러 장');
+      await dup.first().click(); d = p.getByRole('dialog'); await d.waitFor(); await d.getByLabel('레벨(1~99)').fill('5'); await p.keyboard.press('Escape'); await d.waitFor({ state: 'detached' });
+      await p.getByRole('button', { name: 'AI용 복사' }).click(); await p.locator('.ai-copy-status').waitFor(); assert.match(await p.locator('.ai-copy-status').textContent(), /1명 기록을 복사했습니다/, '[U72] 3부 복사 1명');
+      const lines = (await p.evaluate(() => navigator.clipboard.readText())).split('\n').filter(l => / \(누조\)/.test(l)); assert.equal(lines.length, 1, '[U72] 3부 복사 글 인물 겹침 ' + lines.join(' / ')); }
+    d = p.getByRole('dialog'); await p.locator('.person-card-open').first().click(); await d.waitFor();
     await p.keyboard.press('Escape');
     n++; await ctx.close();
   }
