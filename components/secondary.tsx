@@ -21,7 +21,7 @@ function Note({text}:{text:string}){const s=text.split(/(?<=[.!?])\s+/).filter(B
 /** 준비 탭 얼굴: 이 루트 인물이면 누르면 인물 서랍(U50과 같은 동작), 아니면 그림과 이름만. */
 function Face({f,people,onPerson}:{f:PrepFace;people:string[];onPerson:(name:string)=>void}){const img=<img src={f.portrait} alt="" width={48} height={48} loading="lazy"/>;return people.includes(f.name)?<button type="button" className="prep-face portrait-button" aria-label={`${f.name} 인물 보기`} onClick={()=>onPerson(f.name)}>{img}<span>{f.name}</span></button>:<span className="prep-face">{img}<span>{f.name}</span></span>;}
 /** 준비 탭(2026-11-27 사용자 결정 Q2, U69): 그림 다섯 묶음. 표·문서 나무 없음. 자료는 서버의 lib/prep.ts. */
-export function Preparation({data,route,onDoc,onPerson,people}:{data:Secondary;route:string;part?:string;onDoc:(url:string)=>void;onPerson:(name:string)=>void;people:string[]}){
+export function Preparation({data,route,onDoc,onPerson,people}:{data:Secondary;route:string;onDoc:(url:string)=>void;onPerson:(name:string)=>void;people:string[]}){
   const p=data.panels,status=useChecks().data.status,levels=status&&Object.keys(status.gods).length?status.gods:null;
   const next=levels?p.chain.findIndex(c=>(levels[c.god]||0)<c.level):-1;
   const face=(f:PrepFace)=><Face key={f.name} f={f} people={people} onPerson={onPerson}/>;

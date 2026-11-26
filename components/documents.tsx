@@ -4,14 +4,14 @@ import Markdown from 'react-markdown';
 import Link from 'next/link';
 import remarkGfm from 'remark-gfm';
 import type { Root, RootContent } from 'mdast';
-import { ArrowLeft, BookOpen, Search } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import type { ReferenceDoc } from '@/lib/documents';
 import { resolveDoc, headingId, guideHref } from '@/lib/document-links';
 import { Sheet, SheetContent, SheetTitle } from './ui/sheet';
 import { Button } from './ui/button';
 import { GuideImage } from './image-viewer';
 import { ReadMore } from './read-more';
-import { GameText, glueDots } from './game-text';
+import { GameText } from './game-text';
 import classManifest from '@/assets/classes/manifest.json';
 import { Semantic } from './records';
 import { pairNames, filterPairs } from '@/lib/pair-filter';
@@ -40,10 +40,6 @@ function documentAnchors(){
     }
     walk(tree);
   };
-}
-export function DocList({docs,onOpen}:{docs:ReferenceDoc[];onOpen:(url:string)=>void}){
-  const [query,setQuery]=useState('');
-  return <><label className="search"><Search size={22}/><input placeholder="문서 제목으로 찾기" aria-label="참고 문서 검색" value={query} onChange={e=>setQuery(e.target.value)}/></label><p className="muted">현재 루트·부에 맞게 읽습니다. 루트 간 비교는 최종 팀 화면에서 볼 수 있습니다.</p><ul className="document-list">{docs.filter(d=>d.title.includes(query)).map(d=><li key={d.path}><button onClick={()=>onOpen(d.path)}><BookOpen size={20}/>{glueDots(d.title)}</button></li>)}</ul></>;
 }
 function DocumentTable({children}:{children?:ReactNode}){
   const elements=(nodes:ReactNode)=>Children.toArray(nodes).filter(isValidElement<{children?:ReactNode}>);
@@ -101,6 +97,6 @@ export function DocumentSheet({docs,current,onOpen,onClose,route,part='3'}:{docs
   }
   return <Sheet open={current!==null} onOpenChange={open=>{if(!open)close();}}><SheetContent themeRoute={route}><div className="sheet-heading"><Button variant="ghost" onClick={back} disabled={!history.length}><ArrowLeft size={20}/> 뒤로</Button><SheetTitle>{doc?.title||'문서 확인'}</SheetTitle></div><div className="sheet-scroll" ref={scroll} onScroll={e=>{if(url)positions.current.set(url,e.currentTarget.scrollTop);}}>
     {names.length>1&&<div className="pair-filter" role="group" aria-label="인물로 거르기"><p className="pair-filter-label">인물로 거르기{selected.length>0&&<> · {selected.length}명</>}</p><div className="pair-filter-chips"><button type="button" className="pair-chip" aria-pressed={!selected.length} onClick={()=>setPick({path,names:[]})}>전체</button>{names.map(n=>{const src=(people as Record<string,{portrait:string}>)[n]?.portrait;return <button type="button" key={n} className="pair-chip" aria-pressed={selected.includes(n)} onClick={()=>toggle(n)}>{src&&<img src={'/'+personPortrait(src,part,n)} alt="" loading="lazy"/>}{n}</button>;})}</div></div>}
-    {classInfo&&<div className="class-document-heading"><img src={'/'+classInfo.file} alt=""/><span className="role-chip">{classInfo.tier}</span></div>}{doc?.profile&&<section className="document-profile"><div className="person-heading"><img className="portrait" src={'/'+doc.profile.portrait} alt=""/><strong>{doc.profile.name}</strong><span className="role-chip">{doc.profile.selected?'최종 25명 목표':'편성 비교 후보'}</span></div><table><tbody><tr><th>역할</th><td>{doc.profile.reason}</td></tr><tr><th>목표 병종</th><td><GameText text={doc.profile.className} part={part}/><span className="role-chip">{doc.profile.tier}</span></td></tr><tr><th>출격 시기</th><td>{['센트리온','타호니아'].includes(doc.profile.name)?'영입만 하며 전투·훈련·시험에서는 제외합니다.':'3부 실제 합류와 병종 해금 뒤, 출격 칸과 필요한 역할을 확인합니다.'}</td></tr><tr><th>육성 기준</th><td>이미 준비한 기능·병종의 시험과 훈련을 반복하지 않습니다. 세부 조건은 아래 원문에서 확인합니다.</td></tr></tbody></table></section>}{doc?.profile?<details className="person-full-details"><summary>전체 비교·육성 근거 읽기</summary><Markdown remarkPlugins={[remarkGfm,documentAnchors]} components={{table:DocumentTable,p:({children})=><p>{annotated(children,part)}</p>,li:({children})=><li>{annotated(children,part)}</li>,td:({children})=><td>{annotated(children,part)}</td>,a:({href,children})=>link(href||'',children)}}>{body}</Markdown></details>:doc?doc.tree?<Semantic nodes={doc.tree} route={route} part={part} onDoc={follow}/>:<Markdown remarkPlugins={[remarkGfm,documentAnchors]} components={{table:DocumentTable,h1:({children})=>classInfo?null:<h1>{annotated(children,part)}</h1>,h2:({children})=>classInfo&&Children.toArray(children).join('')===classInfo.tier?null:<h2>{annotated(children,part)}</h2>,strong:({children})=><strong>{annotated(children,part)}</strong>,td:({children})=><td>{Children.map(children,c=>typeof c==='string'?<GameText text={c} withSkills part={part}/>:c)}</td>,p:({children})=><ReadMore><p>{annotated(children,part)}</p></ReadMore>,li:({children})=><li>{annotated(children,part)}</li>,th:({children})=><th>{annotated(children,part)}</th>,a:({href,children})=>link(href||'',children),img:({src,alt})=>{const s=String(src||'');return <GuideImage src={s.includes('assets/')?'/'+s.slice(s.indexOf('assets/')):s} alt={alt||'참고 그림'}/>;}}}>{body}</Markdown>:<p>이 문서는 현재 루트·부에 없습니다.</p>}
+    {classInfo&&<div className="class-document-heading"><img src={'/'+classInfo.file} alt=""/><span className="role-chip">{classInfo.tier}</span></div>}{doc?doc.tree?<Semantic nodes={doc.tree} route={route} part={part} onDoc={follow}/>:<Markdown remarkPlugins={[remarkGfm,documentAnchors]} components={{table:DocumentTable,h1:({children})=>classInfo?null:<h1>{annotated(children,part)}</h1>,h2:({children})=>classInfo&&Children.toArray(children).join('')===classInfo.tier?null:<h2>{annotated(children,part)}</h2>,strong:({children})=><strong>{annotated(children,part)}</strong>,td:({children})=><td>{Children.map(children,c=>typeof c==='string'?<GameText text={c} withSkills part={part}/>:c)}</td>,p:({children})=><ReadMore><p>{annotated(children,part)}</p></ReadMore>,li:({children})=><li>{annotated(children,part)}</li>,th:({children})=><th>{annotated(children,part)}</th>,a:({href,children})=>link(href||'',children),img:({src,alt})=>{const s=String(src||'');return <GuideImage src={s.includes('assets/')?'/'+s.slice(s.indexOf('assets/')):s} alt={alt||'참고 그림'}/>;}}}>{body}</Markdown>:<p>이 문서는 현재 루트·부에 없습니다.</p>}
   </div></SheetContent></Sheet>;
 }

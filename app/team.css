@@ -101,7 +101,7 @@
 .team-panel .semantic .media-portrait,.team-panel .semantic .god-portrait{inline-size:40px;block-size:40px;object-fit:contain;border-radius:8px;margin:0}
 .team-controls{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-block-end:24px}
 .team-controls .button{margin-inline-start:auto}
-.route-intro,.chosen-plan,.detail-section{padding:24px;margin-block-end:24px}
+.route-intro{padding:24px;margin-block-end:24px}
 .route-intro .muted{font-size:18px}
 .priority-chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:12px 0}
 .priority-chips li{display:inline-flex;align-items:center;gap:6px;min-block-size:28px;background:var(--secondary-soft);color:var(--text);border:0;border-radius:8px;padding:2px 8px;font-size:18px;font-weight:600;line-height:24px}
@@ -125,15 +125,10 @@
 .swap-list{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:12px}
 .swap-list li{border-block-start:1px solid var(--line);padding-block-start:12px}
 .swap-list p{margin:4px 0 0}
-.detail-accordion{background:var(--surface);border-radius:16px;padding:0 24px;margin-block-end:24px}
-.detail-accordion .ui-accordion-item:last-child{border-bottom:0}
-.detail-accordion .semantic{max-inline-size:880px}
-.reference-docs{display:grid;gap:16px;justify-items:start}
 .spell-book .semantic{max-inline-size:none}
 .spell-book .semantic>section{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;align-items:start}.spell-book .semantic>section>:not([id^="spell-"]){grid-column:1/-1}
 .team-panel [id^="spell-"]{padding:20px;margin:0;border:0;border-radius:16px;background:var(--surface)}
 .team-panel [id^="spell-"] h4{font-size:22px;font-weight:700;text-decoration:none;margin:0 0 8px}
-.unit-sheet .person-heading{display:flex;gap:16px;align-items:center;margin-block-end:16px}
 .unit-sheet .portrait{inline-size:96px;block-size:96px;border-radius:12px;object-fit:contain}
 .unit-sheet-role{margin:0 0 8px;font-weight:600}
 .unit-sheet .signature p{margin:0}

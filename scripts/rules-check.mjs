@@ -226,7 +226,7 @@ for (const f of [...walk('app', ['.ts', '.tsx', '.css']), ...walk('components', 
 
 // [U66] 화면에 근거·기록용 글이 없다(2026-11-27): 원문 기록·비교 근거 탭·참고 문서 화면·그림 출처·입수 원문·특기 검토 문서·조심 문구. 옮긴 곳은 docs/reference/.
 { const code = walk('components', ['.tsx']).map(f => readFileSync(f, 'utf8')).join('');
-  for (const w of ['>원문 기록<', "'비교 근거'", "label:'참고 문서'", '특기 검토 문서', '전체 참고 문서', '실제 합류와 출격 자리는 게임 화면을 먼저 확인하세요']) assert.ok(!code.includes(w), `[U66] 화면 코드에 ${w}`);
+  for (const w of ['>원문 기록<', '전체 비교·육성 근거 읽기', "'비교 근거'", "label:'참고 문서'", '특기 검토 문서', '전체 참고 문서', '실제 합류와 출격 자리는 게임 화면을 먼저 확인하세요']) assert.ok(!code.includes(w), `[U66] 화면 코드에 ${w}`);
   for (const f of ['README.md', 'people-original.md', 'team-comparison.md', 'image-sources.md', 'unverified.md', 'support-evidence.md']) assert.ok(existsSync('docs/reference/' + f), `[U66] docs/reference/${f}`); }
 
 // 규칙 문서: 모든 규칙 줄은 '검사' 칸에 하나 이상의 파일을 적고, 그 파일에는 규칙 번호가 있다.

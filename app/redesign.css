@@ -94,16 +94,10 @@ html.dark body:has(.app-shell),html.dark body:has(.team-page){background:#191918
 .map-thumbnail>button:first-child{background:transparent;padding:0;flex-wrap:wrap;font-weight:600}
 .map-thumbnail .button{background:var(--secondary-soft);color:var(--text)}
 .people-grid,.material-grid{gap:24px}
-.person,.material-entry{border-radius:24px;background:var(--surface)}
-.person>.person-heading{background:var(--surface);padding-block:28px}
-.person-info th,.records th{background:var(--surface-2)}
-.person-info tr:nth-child(even){background:transparent}
-.person>.person-info{font-size:18px}
-.person .portrait{object-fit:contain}
-.person details{font-size:18px}
+.material-entry{border-radius:24px;background:var(--surface)}
+.records th{background:var(--surface-2)}
 .prep-content{max-inline-size:900px}
 .prep-content>.records,.gold-table{background:var(--surface)}
-.reference-disclosure>summary{padding:20px 0;font-weight:600}
 .filters{gap:12px;margin-block-end:24px}
 .search{background:var(--surface);padding:12px 16px}
 .document-list button{background:var(--surface);color:var(--text);padding:20px 24px;border-radius:16px}
@@ -130,7 +124,6 @@ details:not(.backup-menu)>summary:not(:has(>svg)){position:relative;min-block-si
 details:not(.backup-menu)>summary:not(:has(>svg))::after{content:'';position:absolute;inset-inline-end:0;inset-block-start:50%;inline-size:22px;block-size:22px;translate:0 -50%;background:var(--muted);mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") center/contain no-repeat}
 details[open]:not(.backup-menu)>summary:not(:has(>svg))::after{rotate:180deg}
 @media(prefers-reduced-motion:no-preference){details:not(.backup-menu)>summary:not(:has(>svg))::after{transition:rotate .15s}}
-details.person-full-details>summary:not(:has(>svg)){padding-inline-end:50px}details.person-full-details>summary:not(:has(>svg))::after{inset-inline-end:16px}
 @container checklist (max-width:580px){
   .checklist>li{padding:20px;gap:12px}
   .action-group>summary{display:grid;grid-template-columns:22px minmax(0,1fr);padding:20px;gap:12px 8px}
@@ -190,8 +183,6 @@ details.person-full-details>summary:not(:has(>svg)){padding-inline-end:50px}deta
   .third-heading strong{font-size:26px;width:100%}
   .third-band>svg{margin:0}
   .material-entry{padding:20px}
-  .person>.person-heading{padding:20px;align-items:flex-start}
-  .person .portrait{width:72px;height:96px}
 }
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}
@@ -202,10 +193,8 @@ details.person-full-details>summary:not(:has(>svg)){padding-inline-end:50px}deta
 /* 표 머리 칸 한 규칙(2026-11-15 일관성 정리): 왼쪽·위 정렬, 폭 120px(휴대폰 100px), 칸 여백 12px 16px(휴대폰 10px 12px). */
 th[scope=row],tbody>tr>th:first-child{text-align:left;vertical-align:top}
 @media(min-width:768px){:is(.sheet-scroll,.source-markup,.semantic) th[scope=row]{width:120px}}
-.person-summary td,.person-summary th,.person-info td,.person-info th,.records td,.records th,.sheet-scroll td,.sheet-scroll th,.source-markup td,.source-markup th,.semantic td,.semantic th{border:1px solid var(--table-line);padding:12px 16px;vertical-align:top}
+.person-summary td,.person-summary th,.records td,.records th,.sheet-scroll td,.sheet-scroll th,.source-markup td,.source-markup th,.semantic td,.semantic th{border:1px solid var(--table-line);padding:12px 16px;vertical-align:top}
 .person-summary td{background:var(--surface)}
-.person-full-details{margin-block:24px}
-.person-full-details>summary{padding:16px;background:var(--secondary-soft);border-radius:8px;font-weight:600}
 .class-path{gap:12px;margin:0;align-items:center}
 .class-path li{gap:8px;align-items:center}
 .class-path .text-link{padding:8px 12px;min-height:44px;line-height:28px}
@@ -217,24 +206,20 @@ th[scope=row],tbody>tr>th:first-child{text-align:left;vertical-align:top}
 .spell-panel .semantic h3{font-weight:700;text-decoration:underline;text-underline-offset:5px}
 .spell-panel .semantic p{margin-block:12px}
 .sheet-scroll strong,.source-markup strong{font-weight:700}
-@media(max-width:767px){.person-summary th{width:100px;white-space:normal}:is(.person-summary,.person-info,.records,.sheet-scroll,.source-markup,.semantic) :is(td,th){padding:10px 12px}.person-summary{font-size:18px}.class-path{gap:8px}.class-path li{flex-wrap:wrap}.sheet-scroll .document-table{display:table}.sheet-scroll .document-definitions{display:none}}
+@media(max-width:767px){.person-summary th{width:100px;white-space:normal}:is(.person-summary,.records,.sheet-scroll,.source-markup,.semantic) :is(td,th){padding:10px 12px}.person-summary{font-size:18px}.class-path{gap:8px}.class-path li{flex-wrap:wrap}.sheet-scroll .document-table{display:table}.sheet-scroll .document-definitions{display:none}}
 :is(.team-reference,.spell-panel) [id^="spell-"]{padding:24px;margin-block:20px;border:1px solid var(--table-line);border-radius:16px;background:var(--surface)}
 :is(.team-reference,.spell-panel) [id^="spell-"]>div:not(.readable-group){display:flex;align-items:center;flex-wrap:wrap;gap:8px;font-weight:600;margin-block:12px}
 :is(.team-reference,.spell-panel) [id^="spell-"] h4{font-size:22px;text-decoration:underline;text-underline-offset:5px}
 :is(.team-reference,.spell-panel) .inline-icon{width:28px;height:28px;object-fit:contain}
 
-.person>.person-summary{width:calc(100% - 48px)}
-@media(max-width:767px){.person>.person-summary{width:calc(100% - 32px)}}
-.summary-points{margin:0;padding:0;list-style:none;display:grid;gap:8px}.person-summary td{line-height:1.7}.person-summary strong{font-weight:600}.document-profile .person-heading{flex-wrap:wrap}.document-profile .role-chip{margin-inline:8px}.person-full-details{max-width:100%;min-width:0}.person-full-details table{table-layout:fixed}.person-full-details :is(td,th){overflow-wrap:anywhere}
+.summary-points{margin:0;padding:0;list-style:none;display:grid;gap:8px}.person-summary td{line-height:1.7}.person-summary strong{font-weight:600}
 .sheet-overlay{background:#171717}
 
 :is(.app-shell,.team-page) table :is(th,td){border:1px solid var(--table-line)}
 @media(max-width:767px){.gold-table,[data-gold-table]{table-layout:fixed;font-size:18px}.gold-table :is(th,td),[data-gold-table] :is(th,td){padding:10px 12px;overflow-wrap:anywhere}.gold-table th:nth-child(2){width:24%}.gold-table .amount,[data-gold-table] [data-amount]{white-space:normal}}
 
-:is(.person-summary,.person-info,.records) th,.group-title{word-break:keep-all;overflow-wrap:normal}
+:is(.person-summary,.records) th,.group-title{word-break:keep-all;overflow-wrap:normal}
 @media(max-width:767px){.gold-table th:nth-child(2){width:104px}.gold-table .amount{white-space:nowrap}}
-.document-profile table{table-layout:fixed}.document-profile th{width:120px;word-break:keep-all;overflow-wrap:normal}
-@media(max-width:767px){.document-profile th{width:100px}.document-profile .named-class{flex-wrap:wrap;gap:6px}.document-profile .role-chip{margin:8px 0 0}}
 /* 개별 마법 패널은 짧은 효과와 수치를 모두 보여 준다. */
 
 
@@ -243,14 +228,6 @@ th[scope=row],tbody>tr>th:first-child{text-align:left;vertical-align:top}
 /* 2026-11-14 v3: 인물 카드 — 요약 표 하나 + 접는 제목–설명 쌍 */
 .people-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:start}
 @media(max-width:1000px){.people-grid{grid-template-columns:minmax(0,1fr)}}
-.person.ui-card{border-radius:16px;overflow:clip;padding:0}
-.person .person-heading{display:flex;gap:16px;align-items:center;padding:24px 24px 8px;background:transparent}
-.person .person-heading h2{font-size:22px;font-weight:700;margin:0 0 8px}
-.person .person-heading .tags{display:flex;flex-wrap:wrap;gap:6px}
-/* 3부 카드의 긴 배지("…에서 준비 · 능력·기능 보완")가 좁은 화면에서 잘리지 않게 줄바꿈 */
-.person .person-heading>div{min-inline-size:0}.person .person-heading .tags>.ui-badge{white-space:normal;max-inline-size:100%}
-.person .portrait{inline-size:96px;block-size:96px;border-radius:12px;object-fit:contain}
-.person>.person-summary{margin:16px 24px;inline-size:calc(100% - 48px)}
 .person-summary .class-path{display:flex;flex-wrap:wrap;gap:8px 16px;list-style:none;padding:0;margin:0}
 .person-summary .class-path li{display:flex;align-items:center;flex-wrap:wrap;gap:6px}
 .person-summary .class-path img{inline-size:32px;block-size:32px;object-fit:contain}
@@ -269,7 +246,7 @@ th[scope=row],tbody>tr>th:first-child{text-align:left;vertical-align:top}
 .detail-pairs dd p{margin:0}
 .detail-pairs dd p+p{margin-block-start:6px}
 .ui-accordion-content .semantic{font-size:18px}
-@media(max-width:767px){.person .person-heading{padding:16px 16px 4px;align-items:flex-start}.person .portrait{inline-size:72px;block-size:72px}.person>.person-summary{margin:12px 16px;inline-size:calc(100% - 32px)}.person-more{margin:0 16px 12px}}
+@media(max-width:767px){.person-more{margin:0 16px 12px}}
 /* 2026-11-14 v3 T10: 루트 화면 면·간격·고정 */
 .action-group,.route-banner,.context-rail>section,.material-entry{border-radius:16px}
 .guide-navigation button[aria-current]{background:var(--primary);color:var(--primary-fg)}
@@ -317,8 +294,8 @@ th[scope=row],tbody>tr>th:first-child{text-align:left;vertical-align:top}
   .sheet-overlay[data-state=closed]{animation:overlay-out 150ms ease-in}
   @supports (interpolate-size:allow-keywords){
     :root{interpolate-size:allow-keywords}
-    .action-group::details-content,.reference-disclosure::details-content{block-size:0;overflow:clip;transition:block-size .2s,content-visibility .2s allow-discrete}
-    .action-group[open]::details-content,.reference-disclosure[open]::details-content{block-size:auto}
+    .action-group::details-content{block-size:0;overflow:clip;transition:block-size .2s,content-visibility .2s allow-discrete}
+    .action-group[open]::details-content{block-size:auto}
   }
   @supports ((animation-timeline:view()) and (animation-range:0% 100%)){
     .banner-lord{animation:lord-drift linear both;animation-timeline:view();animation-range:exit 0% exit 100%}
@@ -715,14 +692,14 @@ html.dark body:has(.app-shell),html.dark body:has(.team-page),html.dark body:has
 .dark .app-shell,.dark .team-page{scrollbar-color:#8A7F6C transparent}
 
 /* 2. 제목 글꼴: 라틴·숫자 = Nocturne, 한글 = Gowun Batang 700. 본문은 Pretendard 그대로. */
-:is(.route-banner-art h1,.page-heading h1,.chapter-title,.group-title,.context-rail h2,.person-heading h2,.prep-content>h2,.workspace main>h2,.sheet-heading h2,.team-title,.home .route-card-content h2,.third-heading strong,.gold-tables>section>h3){font-family:'Nocturne',var(--font-heading),var(--font-pretendard),serif;font-weight:700;letter-spacing:0}
+:is(.route-banner-art h1,.page-heading h1,.chapter-title,.group-title,.context-rail h2,.prep-content>h2,.workspace main>h2,.sheet-heading h2,.team-title,.home .route-card-content h2,.third-heading strong,.gold-tables>section>h3){font-family:'Nocturne',var(--font-heading),var(--font-pretendard),serif;font-weight:700;letter-spacing:0}
 .next-action h2,.action-category{letter-spacing:.08em;color:var(--heading-ink)}
 
 /* 3. 각진 모서리(두 테마) */
-:is(.route-banner,.action-group,.context-rail>section,.material-entry,.person,.document-list button,.team-reference .semantic article,.spell-panel .semantic article,.backup-menu .toolbar-actions,.route-card,.third-band,.unit-card,.ui-tabs-list){border-radius:var(--r-panel)}
+:is(.route-banner,.action-group,.context-rail>section,.material-entry,.document-list button,.team-reference .semantic article,.spell-panel .semantic article,.backup-menu .toolbar-actions,.route-card,.third-band,.unit-card,.ui-tabs-list){border-radius:var(--r-panel)}
 .route-head-bar{border-radius:0 0 var(--r-panel) var(--r-panel)}
 .route-banner{border-end-start-radius:0;border-end-end-radius:0}
-:is(.button,.text-link,.guide-navigation,.guide-navigation button,select,.check-control,.route-head .check-control,.backup-menu>summary,.search,.progress-chip,.condition-chip,[data-condition-chip],.source-markup .reference-chip,.source-markup .text-link,.reference-chip,.person-inline,.person-full-details>summary,.pair-chip,.team-page .ui-tabs-list button,.team-page .scenario-toggles button,.portrait-button,.checklist input){border-radius:var(--r-control)}
+:is(.button,.text-link,.guide-navigation,.guide-navigation button,select,.check-control,.route-head .check-control,.backup-menu>summary,.search,.progress-chip,.condition-chip,[data-condition-chip],.source-markup .reference-chip,.source-markup .text-link,.reference-chip,.person-inline,.pair-chip,.team-page .ui-tabs-list button,.team-page .scenario-toggles button,.portrait-button,.checklist input){border-radius:var(--r-control)}
 :is(.app-shell,.team-page,.sheet) :is(img[src*="/portraits/"],img[src*="/gods/"]):not(.banner-lord),.unit-face,.guide-scope>img{border-radius:var(--r-control)}
 .to-top{border-radius:50%}
 
@@ -787,7 +764,7 @@ html.dark body:has(.app-shell),html.dark body:has(.team-page),html.dark body:has
 .dark .checklist [data-complete=true]{background:rgb(25 45 52 / .7)}
 
 /* 12. 오른쪽 칸 카드·인물 카드·재료 카드: 9조각 팝업 틀을 절반 크기로(모서리 84×44) */
-.dark :is(.context-rail>section,.person,.material-entry,.document-list button){
+.dark :is(.context-rail>section,.material-entry,.document-list button){
   border:0;min-block-size:88px;
   background:
     url('/yuphas/popup/top-left.webp') left top/84px 44px no-repeat,
@@ -800,7 +777,6 @@ html.dark body:has(.app-shell),html.dark body:has(.team-page),html.dark body:has
     url('/yuphas/popup/middle-right.webp') right top 43px/85px calc(100% - 86px) no-repeat,
     url('/yuphas/popup/center.webp') left 83px top 43px/calc(100% - 166px) calc(100% - 86px) no-repeat;
 }
-.dark .person>.person-heading{background:transparent}
 
 /* 13. 인물 서랍: 9조각 팝업 틀 원래 크기(모서리 168×88) */
 .dark .sheet[data-route]{
@@ -859,14 +835,13 @@ html.dark body:has(.app-shell),html.dark body:has(.team-page),html.dark body:has
 /* 19b. 글 크기: 그 사이트 1440px 기준값(본문 15~16px, 작은 글 92%, 장 이름 28.8px, 탭·단추 15.84~16px, 구역 제목 16.2px 700 자간 .08em).
    휴대폰에서 글을 0.78배로 줄이는 맞춤 축소 스크립트는 화면 배치 장치라 가져오지 않고, 같은 px를 그대로 쓴다. */
 :is(.app-shell,.sheet,.team-page,.home){font-size:16px;line-height:1.5}
-:is(.app-shell,.sheet,.team-page) :is(.action-text,.next-action p,.readable-body,.source-markup,.semantic,.records,.person-info,.person-summary,.gold-table,[data-gold-table],[data-info-table],.sheet-scroll){font-size:16px;line-height:1.6}
+:is(.app-shell,.sheet,.team-page) :is(.action-text,.next-action p,.readable-body,.source-markup,.semantic,.records,.person-summary,.gold-table,[data-gold-table],[data-info-table],.sheet-scroll){font-size:16px;line-height:1.6}
 :is(.app-shell,.sheet,.team-page) :is(.action-category,.group-count,.chapter-date,.context-rail p,.check-control,.action-notes,.next-action h2,.info-notice){font-size:14px}
 .chapter-title{font-size:28.8px}
 .route-banner-art h1{font-size:28.8px}
 .page-heading h1{font-size:28.8px}
 .group-title{font-size:18px}
 .context-rail h2,.prep-content>h2,.workspace main>h2,.gold-tables>section>h3{font-size:16.2px;letter-spacing:.08em;color:var(--heading-ink)}
-.person-heading h2{font-size:22px}
 :is(.app-shell,.sheet,.team-page,.home) :is(.button,.text-link,select,.check-control,.backup-menu>summary,.guide-navigation button,.ui-press,.search,.search input){font-size:16px}
 :is(.app-shell,.sheet,.team-page) :is(.reference-chip,.condition-chip,[data-condition-chip],.game-badge,.progress-chip,.person-inline,.source-markup .text-link){font-size:15px}
 
@@ -890,7 +865,7 @@ html.dark body:has(.app-shell),html.dark body:has(.team-page),html.dark body:has
    탭 호버·본문 링크 호버도 빛. */
 .dark :is(.app-shell,.sheet,.team-page,.home){text-shadow:-1px -1px 0 #0000007a,1px -1px 0 #0000007a,-1px 1px 0 #0000007a,1px 1px 0 #0000007a}
 .dark .unit-name{text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000}
-.dark :is(.route-banner-art h1,.home .route-card-content h2,.person-heading h2){text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,0 0 2px #CAB99D,0 0 5px #CAB99D,0 0 10px #CAB99D,0 0 20px #CAB99D}
+.dark :is(.route-banner-art h1,.home .route-card-content h2){text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,0 0 2px #CAB99D,0 0 5px #CAB99D,0 0 10px #CAB99D,0 0 20px #CAB99D}
 .dark :is(.guide-navigation button,.team-page .ui-tabs-list button):hover,.dark :is(.reference-chip,.person-inline,.source-markup .text-link,.text-link):hover{text-shadow:0 0 2px #CAB99D,0 0 4px #CAB99D,0 0 5px #CAB99D}
 .dark .guide-topbar :is(.part-links a,.guide-home){text-shadow:0 0 2px #CAB99D,0 0 5px #CAB99D,0 0 10px #CAB99D,0 0 20px #CAB99D}
 
@@ -1126,7 +1101,6 @@ html.dark body:has(.app-shell),html.dark body:has(.team-page),html.dark body:has
 .people-filters{align-items:center}
 .people-filters .search{flex:1 1 240px;min-block-size:32px}
 .role-tabs .ui-press{min-block-size:32px;padding-inline:14px;font-size:16px;border-radius:0}
-.dark .app-shell .role-tabs button[data-state=on]{padding-inline:22px}
 .people-count{font-size:14px;color:#ACAAB9}
 .ai-copy-status{margin:-12px 0 12px;font-size:14px;color:#ACAAB9}
 .ai-copy-text{display:block;inline-size:100%;margin:0 0 16px;padding:8px;border:1px solid #383D38;background:#192D34;color:var(--text);font:14px/1.5 ui-monospace,monospace;resize:vertical}

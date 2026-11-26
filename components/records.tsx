@@ -32,7 +32,7 @@ const isBlock=(n:Exclude<Tree,string>)=>blockTags.has(n.tag)||!!n.attrs['data-fa
 function textSkip(text:string,skip:Set<string>):ReadonlySet<string>{const before=new Set(skip);namesInText(text).forEach(name=>skip.add(name));return before;}
 const evidence=/근거|검토|원문|출처|확인$|^공개 자료/;
 const allowed=new Set(['nav','section','article','div','p','span','strong','b','em','small','h2','h3','h4','h5','ul','ol','li','dl','dt','dd','table','caption','colgroup','col','thead','tbody','tfoot','tr','th','td','figure','figcaption','br','details','summary','a','img']);
-export function Semantic({nodes,route,part,onDoc,onSpell,hidePortraits=false,hideGodPortraits=false,changesOnly=false}:{nodes:Tree[];route:string;part:string;onDoc?:(url:string)=>void;onSpell?:(id:string)=>void;hidePortraits?:boolean;hideGodPortraits?:boolean;changesOnly?:boolean}){
+export function Semantic({nodes,route,part,onDoc,onSpell,hidePortraits=false,changesOnly=false}:{nodes:Tree[];route:string;part:string;onDoc?:(url:string)=>void;onSpell?:(id:string)=>void;hidePortraits?:boolean;changesOnly?:boolean}){
   const seen=new Set<string>();
   const enrichSkills=!JSON.stringify(nodes).includes("/skills/");
   /** plain: 표 머리 칸 안의 글은 배지 없이 그린다(칸 배경과 배지 배경 겹침 방지). */
@@ -53,7 +53,7 @@ export function Semantic({nodes,route,part,onDoc,onSpell,hidePortraits=false,hid
     for(const key of ['data-goal-phase','data-modal-parts'])if(a[key]&&!a[key].split(' ').includes(part))return null;
     if(a['data-modal-all-only']&&route!=='all')return null;
     if(n.tag==='img'){
-      if(!a.src||hidePortraits&&a.src.includes('/portraits/')||hideGodPortraits&&a.src.includes('/gods/'))return null;
+      if(!a.src||hidePortraits&&a.src.includes('/portraits/'))return null;
       if(a.src.includes('/gods/')||a.src.includes('/portraits/')){if(seen.has(a.src))return null;seen.add(a.src);}
       if(!/\/(portraits|gods|classes|skills|weapons|traits)\//.test(a.src))return <GuideImage key={i} src={`/${a.src.replace(/^\/+/, '')}`} alt={a.alt}/>;
       return <img key={i} src={`/${personPortrait(a.src,part,a.alt?.replace(/ 초상화.*$/,''))}`} alt={a.alt||''} title={a.title} loading="lazy" className={a.src.includes('/classes/')||a.src.includes('/skills/')||a.src.includes('/traits/')?'inline-icon':a.src.includes('/gods/')?'god-portrait':'media-portrait'}/>;
