@@ -8,7 +8,7 @@ import { GuideImage } from './image-viewer';
 import { personPortrait } from '@/lib/portraits';
 const itemNames=Object.fromEntries(Object.entries(weaponData.weapons).map(([id,item])=>[id,item.name]));
 const labels:Record<string,string>={text:'내용',aliases:'다른 이름',people:'사용 인물',mapKey:'지도 표기',classes:'병종',next:'다음 목표',entryClass:'가입 병종',entryTier:'가입 단계',entryBasis:'가입 기준',pathNotes:'경로 안내',qualificationsOnly:'자격만 준비',optionalClasses:'선택 병종',role:'역할',reason:'이유',kind:'육성 구분',merge:'기준판',schedule:'운용 일정',floorLabel:'최소 준비',middleClass:'중급 병종',middleExam:'시험 기능',middleBy:'준비 기한',skillsBy:'기능 기한',part1Skills:'1부 기능',joinPlan:'합류 계획',joinTargetChapter:'영입 권장 장',supportStartChapter:'지원 준비 장',starts:'시작 시점',stops:'중단 시점',end:'종료 목표',queue:'봉사 순서',start:'시작 확인',carry:'이월 확인',boons:'축복',god:'신',level:'레벨',effect:'효과',name:'이름',place:'장소',method:'획득 방법',quantity:'수량',steps:'순서',warning:'주의',target:'목표',condition:'조건',users:'사용자',weapon:'무기',chapter:'장',items:'준비 항목',extras:'추가 비용',notes:'안내',afterScheduledSpend:'지출 뒤 여유',label:'항목',amount:'금액',gold:'골드',cost:'비용',renown:'명성',fame:'명성',sup:'지원',init:'가입 병종',localCondition:'추가 조건',prerequisite:'선행 조건',deadline:'기한',dates:'날짜',roleReason:'역할 이유',preparation:'준비',aim:'목표',recruitment:'영입',pathMeaning:'경로의 뜻',usage:'운용',investmentByPhase:'투자 시기',usageByPhase:'부별 운용',fusion:'융합 역할',requirements:'필요 기능',skill:'기능',rank:'등급',priority:'우선순위',current:'현재',total:'합계',reserve:'여유금',support:'지원',renownGate:'명성 조건',routeDetails:'루트별 안내',search:'지도 검색어'};
-const hidden=new Set(['source','sources','url','sourceType','reviewed','version','anchor','baseRoute','route','portrait','classIcon','icon','file','images','lowerMasteryRequired','joinIsPlanningTarget','floorRequired','sourceBasis']);
+const hidden=new Set(['source','sources','url','sourceType','reviewed','version','anchor','baseRoute','route','portrait','classIcon','icon','file','images','lowerMasteryRequired','joinIsPlanningTarget','floorRequired','sourceBasis','start','carry','pathMeaning','reason','roleReason','acquisitionKind','questRules','questName','sequence','mapKey','search']);
 export function Records({value,disclose=true}:{value:unknown;disclose?:boolean}){return recordNode(value,disclose,new Set(),false);}
 /** 한 칸·한 항목 안에서는 같은 얼굴 그림을 한 번만 붙인다. 모음은 그릴 때마다 새로 만든다. */
 function recordNode(value:unknown,disclose:boolean,seen:Set<string>,inCell:boolean):React.ReactNode{
@@ -19,7 +19,7 @@ function recordNode(value:unknown,disclose:boolean,seen:Set<string>,inCell:boole
   if(Array.isArray(value))return <ul className="record-list">{value.map((v,i)=><li key={i}>{recordNode(v,disclose,inCell?seen:new Set(),true)}</li>)}</ul>;
   // 다른 이름에서 '이름'과 같은 값은 빼고, 남는 값이 없으면 줄을 뺀다(2026-11-26 화면 다듬기 12).
   const name=(value as {name?:unknown}).name;
-  return <table className="records"><tbody>{Object.entries(value).map(([k,v]):[string,unknown]=>k==='aliases'&&Array.isArray(v)?[k,v.filter(a=>a!==name)]:[k,v]).filter(([k,v])=>!hidden.has(k)&&v!==null&&v!==undefined&&(!Array.isArray(v)||v.length>0)).map(([k,v])=><tr key={k}><th scope="row">{labels[k]||(/^[123]$/.test(k)?`${k}부`:/[가-힣]/.test(k)?k:'추가 안내')}</th><td><ReadMore>{recordNode(v,false,inCell?seen:new Set(),true)}</ReadMore></td></tr>)}</tbody></table>;
+  return <table className="records"><tbody>{Object.entries(value).map(([k,v]):[string,unknown]=>k==='aliases'&&Array.isArray(v)?[k,v.filter(a=>a!==name)]:[k,v]).filter(([k,v])=>!hidden.has(k)&&(labels[k]||/^[123]$/.test(k)||/[가-힣]/.test(k))&&v!==null&&v!==undefined&&(!Array.isArray(v)||v.length>0)).map(([k,v])=><tr key={k}><th scope="row">{labels[k]||(/^[123]$/.test(k)?`${k}부`:/[가-힣]/.test(k)?k:'추가 안내')}</th><td><ReadMore>{recordNode(v,false,inCell?seen:new Set(),true)}</ReadMore></td></tr>)}</tbody></table>;
 }
 const blockTags=new Set(['h2','h3','h4','h5','li','p','td','th','summary','figcaption']);
 function namesIn(n:Tree,acc:Set<string>):Set<string>{if(typeof n!=='string'){if(n.tag==='img'&&n.attrs.src&&/\/(portraits|classes)\//.test(n.attrs.src)){const name=imageName(n.attrs.src,n.attrs.alt);if(name)acc.add(name);}if(n.tag==='button'){const t=flat(n.children);if(classNamesByFile.size&&[...classNamesByFile.values()].includes(t))acc.add(t);}n.children.forEach(c=>namesIn(c,acc));}return acc;}
@@ -30,6 +30,7 @@ function blockSkip(n:Exclude<Tree,string>,skip:Set<string>,inBlock:boolean):Set<
 const isBlock=(n:Exclude<Tree,string>)=>blockTags.has(n.tag)||!!n.attrs['data-face-row'];
 /** 글 조각을 그릴 때 이미 그림이 붙은 이름을 같은 묶음에서 다시 붙이지 않는다. */
 function textSkip(text:string,skip:Set<string>):ReadonlySet<string>{const before=new Set(skip);namesInText(text).forEach(name=>skip.add(name));return before;}
+const evidence=/근거|검토|원문|출처|확인$|^공개 자료/;
 const allowed=new Set(['nav','section','article','div','p','span','strong','b','em','small','h2','h3','h4','h5','ul','ol','li','dl','dt','dd','table','caption','colgroup','col','thead','tbody','tfoot','tr','th','td','figure','figcaption','br','details','summary','a','img']);
 export function Semantic({nodes,route,part,onDoc,onSpell,hidePortraits=false,hideGodPortraits=false,changesOnly=false}:{nodes:Tree[];route:string;part:string;onDoc?:(url:string)=>void;onSpell?:(id:string)=>void;hidePortraits?:boolean;hideGodPortraits?:boolean;changesOnly?:boolean}){
   const seen=new Set<string>();
@@ -58,6 +59,8 @@ export function Semantic({nodes,route,part,onDoc,onSpell,hidePortraits=false,hid
       return <img key={i} src={`/${personPortrait(a.src,part,a.alt?.replace(/ 초상화.*$/,''))}`} alt={a.alt||''} title={a.title} loading="lazy" className={a.src.includes('/classes/')||a.src.includes('/skills/')||a.src.includes('/traits/')?'inline-icon':a.src.includes('/gods/')?'god-portrait':'media-portrait'}/>;
     }
     if(n.tag==='a'&&n.children.some(child=>typeof child!=='string'&&child.tag==='img'&&!/\/(portraits|gods|classes|skills|weapons|traits)\//.test(child.attrs.src||'')))return <span key={i}>{n.children.map(sub)}</span>;
+    // 근거·출처 단추와 링크는 화면에서 뺀다(2026-11-27, docs/reference/). 마법 이름은 yuphastemple 단추가 대신한다.
+    if((n.tag==='button'||n.tag==='a')&&evidence.test(flat(n.children).trim()))return null;
     if(n.tag==='button'){
       const url=a['data-reference-url']||a['data-unit-review']||(a['data-class-slug']?`notes/classes/${a['data-class-slug']}.md`:undefined);
       if(url||a['data-spell-jump'])return <button key={i} className="text-link" title={a.title} onClick={()=>a['data-spell-jump']?onSpell?.(a['data-spell-jump']):onDoc?.(url!)}>{children()}</button>;
