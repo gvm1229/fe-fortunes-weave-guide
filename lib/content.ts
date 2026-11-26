@@ -7,6 +7,7 @@ import { displayText } from './display';
 import { personPortrait } from './portraits';
 import type { Chapter } from './checklist';
 import { characterData, type CharacterData } from './character-data';
+import { yuphasProfile, type YuphasProfile } from './yuphas-profile';
 export type Route = 'theodora' | 'leda' | 'dietrich' | 'cai' | 'part3';
 export type Part = '1' | '2' | '3';
 export type Action = { id: string; category: string; text: string; inheritLegacy: boolean };
@@ -31,7 +32,7 @@ export function chaptersForRoute(route:Route,part:Part):Chapter[]{return json<{s
 export function routeParams() { return routes.flatMap(r => (r.id === 'part3' ? ['3'] : ['1','2']).map(part => ({ route: r.id, part }))); }
 export function validScope(route: string, part: string): route is Route { return routeParams().some(p => p.route === route && p.part === part); }
 export type CheapGift = { name:string; cost:number|null; icon?:string; reaction:string; url?:string };
-export type Person = { id:string; name: string; route: Route; role: string; kind:string; order:string; portrait: string; gifts:string[]; cheapGifts:CheapGift[]; classes: string[]; goal: unknown; readiness: unknown; recruitment: unknown; gates: unknown; joinLabel?:string; joinPlan?:string; badge?:string; details?: Tree[]; data: CharacterData };
+export type Person = { id:string; name: string; route: Route; role: string; kind:string; order:string; portrait: string; gifts:string[]; cheapGifts:CheapGift[]; classes: string[]; goal: unknown; readiness: unknown; recruitment: unknown; gates: unknown; joinLabel?:string; joinPlan?:string; badge?:string; details?: Tree[]; data: CharacterData; yuphas?: YuphasProfile };
 type Goals = Record<string, Record<string, Record<string, unknown>>>;
 export function peopleFor(route: Route, part: Part): Person[] {
   const goals = json<{ routes: Goals }>('data/phase-goals').routes;
@@ -56,7 +57,7 @@ export function peopleFor(route: Route, part: Part): Person[] {
     const assignment=assignments.find(a=>a.name===p.name&&a.route===p.route),automatic=assignment&&(/자동/.test(assignment.prerequisite)||assignment.prerequisite==='진영장');
     const data=characterData(p.route,p.name,part);
     const joinLabel=automatic?(assignment.deadline.chapter==='1장'?'시작 동료':`자동 합류 ${assignment.deadline.chapter}`):undefined;
-    return { id:p.id,name:p.name,route:p.route,role:selections[p.route]?.people[p.name]?.roles[part] || '미확인',kind:p.kind,order:p.order,portrait:personPortrait(portraits[p.name]?.portrait || '',part,p.name),gifts:expensive(p.name),cheapGifts:cheapGifts(p.name),classes:data.classes.length?data.classes:goal?.classes || [],goal:data.goalText?{...(readableGoals[p.route]?.[p.name]?.[part] as object|undefined),text:data.goalText}:readableGoals[p.route]?.[p.name]?.[part] || '미확인',readiness:readableReady[p.route]?.[p.name] || ready[p.route]?.[p.name] || '미확인',recruitment:readableGates[p.name]?.routes[p.route] || gates[p.name]?.routes[p.route] || '미확인',gates:readableGates[p.name]?.gates.filter(g=>g.route===p.route) || [],joinLabel,details:scopeTree(p.tree,p.route,part),data };
+    return { id:p.id,name:p.name,route:p.route,role:selections[p.route]?.people[p.name]?.roles[part] || '미확인',kind:p.kind,order:p.order,portrait:personPortrait(portraits[p.name]?.portrait || '',part,p.name),gifts:expensive(p.name),cheapGifts:cheapGifts(p.name),classes:data.classes.length?data.classes:goal?.classes || [],goal:data.goalText?{...(readableGoals[p.route]?.[p.name]?.[part] as object|undefined),text:data.goalText}:readableGoals[p.route]?.[p.name]?.[part] || '미확인',readiness:readableReady[p.route]?.[p.name] || ready[p.route]?.[p.name] || '미확인',recruitment:readableGates[p.name]?.routes[p.route] || gates[p.name]?.routes[p.route] || '미확인',gates:readableGates[p.name]?.gates.filter(g=>g.route===p.route) || [],joinLabel,details:scopeTree(p.tree,p.route,part),data,yuphas:yuphasProfile(p.name) };
   });
   // 카드가 없던 지원 대화용 영입 동료(2026-11-15 사용자 지시: 13명 모두 서랍과 선물). 육성 자료 없이 영입·대화·선물만 보인다.
   // 2026-11-15 Fable 검토 11 M3: 다른 루트에 카드가 있어도 이 루트에서 영입하면 같은 꼴의 카드를 단다(울턴드 던전 회복·융합용 사본 포함).
@@ -68,7 +69,7 @@ export function peopleFor(route: Route, part: Part): Person[] {
     // 3부 화면은 3부 대화를, 1·2부 화면은 그 루트의 1·2부 대화를 먼저 보인다(검토 11 L4).
     const talks=part==='3'?(later||`1·2부에 ${routeKo[c.route]}에서 지원 대화를 보려고 영입한 동료입니다.`):c.pairs.length?`이 루트에서 지원 대화를 보려고 영입합니다: ${c.pairs.join(', ')}.`:`이 루트에서 1·2부에 볼 지원 대화는 없습니다. ${later}`.trim();
     const reasonText=[dungeon&&'던전 반복 전투에서 매 전투 상시 회복을 하려고 영입합니다.',talks,merge&&'3부 능력 융합 후보이기도 합니다.'].filter(Boolean).join(' ');
-    return { id:`person-${c.route}-recruit-${c.name}`,name:c.name,route:c.route,role:'수집',kind:'보존·수집',order:`9-${parseInt(c.chapter,10)}`,portrait:personPortrait(portraits[c.name]?.portrait || '',part,c.name),gifts:expensive(c.name),cheapGifts:cheapGifts(c.name),classes:[],goal:{},readiness:{},recruitment:readableGates[c.name]?.routes[c.route] || gates[c.name]?.routes[c.route] || '미확인',gates:readableGates[c.name]?.gates.filter(g=>g.route===c.route) || [],joinLabel:automatic?`자동 합류 ${c.chapter}`:undefined,joinPlan:automatic?undefined:`할 일 목록 ${c.chapter}에서 영입합니다.`,badge:dungeon?'던전 회복용 영입':undefined,details:[],data:{...characterData(c.route,c.name,part),avoid:true,classes:[],finalClasses:[],skills:[],reasonText} };
+    return { id:`person-${c.route}-recruit-${c.name}`,name:c.name,route:c.route,role:'수집',kind:'보존·수집',order:`9-${parseInt(c.chapter,10)}`,portrait:personPortrait(portraits[c.name]?.portrait || '',part,c.name),gifts:expensive(c.name),cheapGifts:cheapGifts(c.name),classes:[],goal:{},readiness:{},recruitment:readableGates[c.name]?.routes[c.route] || gates[c.name]?.routes[c.route] || '미확인',gates:readableGates[c.name]?.gates.filter(g=>g.route===c.route) || [],joinLabel:automatic?`자동 합류 ${c.chapter}`:undefined,joinPlan:automatic?undefined:`할 일 목록 ${c.chapter}에서 영입합니다.`,badge:dungeon?'던전 회복용 영입':undefined,details:[],data:{...characterData(c.route,c.name,part),avoid:true,classes:[],finalClasses:[],skills:[],reasonText},yuphas:yuphasProfile(c.name) };
   });
   return [...cards, ...recruitOnly];
 }

@@ -1,8 +1,9 @@
 import { json, type Tree } from './content';
 import { examFor, charioteerGoal, charioteerPart2Goal, type Exam } from './character-data';
 import manifest from '@/assets/classes/manifest.json';
+import { yuphasProfile, type YuphasProfile } from './yuphas-profile';
 export type Scenario={id:string;title:string;description:string;swaps:Record<string,string>};
-export type TeamUnit={name:string;role:string;class:string;classSlug:string;classTier:string;portrait:string;female:boolean;favorite?:boolean;reviewUrl:string;classReason:string;overviewReason:string;growthGoal:{via:string;skill:string;rank:string;unlock:string}|null;displayGroupRank:number;displayPriority:number;loss?:string;weapons:{label:string;icon:string}[];usableWeapons?:{label:string;icon:string}[];specialtyIcons:{skill:string;icon:string}[];signatureWeapons:{name:string;icon:string;rank:string;note:string}[];route?:string;exam?:Exam};
+export type TeamUnit={name:string;role:string;class:string;classSlug:string;classTier:string;portrait:string;female:boolean;favorite?:boolean;reviewUrl:string;classReason:string;overviewReason:string;growthGoal:{via:string;skill:string;rank:string;unlock:string}|null;displayGroupRank:number;displayPriority:number;loss?:string;weapons:{label:string;icon:string}[];usableWeapons?:{label:string;icon:string}[];specialtyIcons:{skill:string;icon:string}[];signatureWeapons:{name:string;icon:string;rank:string;note:string}[];route?:string;exam?:Exam;yuphas?:YuphasProfile};
 type Section={tree:Tree[]};
 type TeamSource={team:{baseline:string[];units:Record<string,TeamUnit>;proposal:{scenarios:Scenario[];trials:{id:string;outgoing:string;incoming:string;label:string}[];roleTradeoffs:Record<string,string>}};teamSections:Record<'spells'|'routes'|'details',Section>;teamWhite:Record<string,Section>;routeTeams:Record<string,{intro:Section;parts:Record<string,Section>}>};
 export type RouteSpell={id:string;name:string;rank:string;title:string};
@@ -50,7 +51,7 @@ export function teamData(){
   const source=json<{parity:TeamSource}>('derived/presentation').parity;
   const origins=Object.values(json<{routes:Record<string,Record<string,{baseRoute?:string}>>}>('data/unit-readiness').routes);
   const cai=json<{people:Record<string,Record<string,{classes:string[]}>>}>('cai-charioteer').people;
-  const units=Object.fromEntries(Object.entries(source.team.units).map(([name,unit])=>[name,{...unit,route:origins.map(p=>p[name]?.baseRoute).find(Boolean),exam:examFor(unit.class)}]));
+  const units=Object.fromEntries(Object.entries(source.team.units).map(([name,unit])=>[name,{...unit,route:origins.map(p=>p[name]?.baseRoute).find(Boolean),exam:examFor(unit.class),yuphas:yuphasProfile(name)}]));
   const routeParts=Object.fromEntries(Object.entries(source.routeTeams).map(([route,t])=>[route,{intro:routeIntro(t.intro.tree),parts:Object.fromEntries((['1','2'] as const).map(p=>[p,routePart(t.parts[p]?.tree||[],route,p,cai)]))}]));
   return {...source.team,units,sections:source.teamSections,white:source.teamWhite,routeTeams:source.routeTeams,routeParts};
 }

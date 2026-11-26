@@ -1,13 +1,6 @@
 /* Checklist Design is the reading surface; route colors belong to the artwork. */
 .app-shell[data-route],.sheet[data-route],.team-page {
-  --bg:#F4F3F0; --surface:#FFFFFF; --surface-2:#F0EEEA;
-  --text:#26251F; --muted:#62605A; --line:#E3E1DB; --table-line:#D5D2CA;
-  --primary:#4A4658; --primary-fg:#FFFFFF; --secondary:#E7E5E0;
-  --secondary-fg:#2B2A25; --secondary-soft:#EFEDE8;
-  --accent:#4A4658; --accent-fg:#FFFFFF;
-  --swap:#E3001B; --swap-fg:#FFFFFF; --portrait-bg:#16272D;
-  --route-ink-fg:#FFFFFF;
-  --badge-bond:#F6DCE6;--badge-bond-ink:#A83866; --badge-renown:#D9E8F5;--badge-renown-ink:#2A6FA3; --badge-gold:#F5E7B8;--badge-gold-ink:#7D5A10; --badge-material:#DCEBDD;--badge-material-ink:#3C7A4B; --badge-gift:#F0E0D2;--badge-gift-ink:#8F5A36; --badge-skill:#E6E3EE;--badge-skill-ink:currentColor; --badge-item:#E2E6EA;--badge-item-ink:#4C5B69; --badge-person:#EFEDE8;--badge-person-ink:currentColor; --badge-class:#EFEDE8;--badge-class-ink:currentColor;
+  --portrait-bg:#16272D;
   color:var(--text); background:var(--bg);
 }
 .dark .app-shell[data-route],.dark .sheet[data-route],.dark .team-page {
@@ -20,12 +13,12 @@
   --route-ink-fg:#191918;
   --badge-bond:#45222F;--badge-bond-ink:#F0A3C1; --badge-renown:#1E3347;--badge-renown-ink:#94C4EA; --badge-gold:#40351A;--badge-gold-ink:#E6C766; --badge-material:#20382A;--badge-material-ink:#9CD0A8; --badge-gift:#3D2C20;--badge-gift-ink:#DDB08C; --badge-skill:#2F2C3A;--badge-skill-ink:currentColor; --badge-item:#2A3036;--badge-item-ink:#AFC0CF; --badge-person:#2E2E2C;--badge-person-ink:currentColor; --badge-class:#2E2E2C;--badge-class-ink:currentColor;
 }
-:is(.app-shell,.sheet)[data-route=cai]{--route-tint:#DCE5F2;--route-ink:#3F64A8}.dark :is(.app-shell,.sheet)[data-route=cai]{--route-tint:#1D2A40;--route-ink:#8FAEE6}
-:is(.app-shell,.sheet)[data-route=dietrich]{--route-tint:#E4E2DE;--route-ink:#3A3A3E}.dark :is(.app-shell,.sheet)[data-route=dietrich]{--route-tint:#262628;--route-ink:#C9C9C4}
-:is(.app-shell,.sheet)[data-route=theodora]{--route-tint:#F1E6C4;--route-ink:#8F6F1E}.dark :is(.app-shell,.sheet)[data-route=theodora]{--route-tint:#3A3118;--route-ink:#E0C36A}
-:is(.app-shell,.sheet)[data-route=leda]{--route-tint:#F2DCE3;--route-ink:#B0486E}.dark :is(.app-shell,.sheet)[data-route=leda]{--route-tint:#3D2029;--route-ink:#E596B2}
-:is(.app-shell,.sheet)[data-route=part3]{--route-tint:#E3DCF0;--route-ink:#6A52A3}.dark :is(.app-shell,.sheet)[data-route=part3]{--route-tint:#2A2140;--route-ink:#B9A6E6}
-html body:has(.app-shell),html body:has(.team-page){background:#F4F3F0}html.dark body:has(.app-shell),html.dark body:has(.team-page){background:#191918}
+.dark :is(.app-shell,.sheet)[data-route=cai]{--route-tint:#1D2A40;--route-ink:#8FAEE6}
+.dark :is(.app-shell,.sheet)[data-route=dietrich]{--route-tint:#262628;--route-ink:#C9C9C4}
+.dark :is(.app-shell,.sheet)[data-route=theodora]{--route-tint:#3A3118;--route-ink:#E0C36A}
+.dark :is(.app-shell,.sheet)[data-route=leda]{--route-tint:#3D2029;--route-ink:#E596B2}
+.dark :is(.app-shell,.sheet)[data-route=part3]{--route-tint:#2A2140;--route-ink:#B9A6E6}
+html.dark body:has(.app-shell),html.dark body:has(.team-page){background:#191918}
 .app-shell{display:block;min-block-size:100dvh}
 .guide-topbar{max-inline-size:1184px;margin-inline:auto;min-block-size:80px;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:16px 24px}
 .guide-home{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-size:18px}
@@ -684,3 +677,332 @@ body{word-break:keep-all;overflow-wrap:break-word}
 /* 표 칸 안 배지·얼굴 칩+"·" 묶음은 줄 안 상자(inline-flex, 줄 넘김 허용)로: 칸이 묶음보다 좁을 때만 "·"가 상자 안에서 아래로 내려간다. nowrap 그대로면 휴대폰 금액·재료 표의 좁은 칸(약 85~100px)에서 "명성 5·"가 2~5px 넘치고 얼굴 칩 "알렉산드라·"가 표를 40px 넓혔다. 상자 안은 nowrap을 풀어 칩·배지 안 글은 전처럼 칸 폭에 맞춰 줄을 나눈다(상자의 칸 사이에서는 줄을 나누지 않으므로 "·" 앞은 그대로 묶임). 앞 빈칸(" ·")은 상자 안에서도 보이게 pre. */
 :is(td,th) .dot-glue:has(.game-badge,[data-face-row]){display:inline-flex;flex-wrap:wrap;align-items:baseline;white-space:normal}
 :is(td,th) .dot-glue:has(.game-badge,[data-face-row])>.dot-lead{white-space:pre}
+
+/* ===== yuphas 견본 시작 (2026-11-26, docs/yuphas-sample-plan.md · 근거 docs/yuphas-design-teardown.md §5·§7·§9) =====
+   견본이다. 사용자 승인 전. 2026-11-26 사용자 결정으로 yuphastemple.com UI 그림·글꼴(public/yuphas/, 출처 assets/design/SOURCES.md)을 그 사이트와 같은 방식으로 쓴다.
+   그림 조각(질감·목록 틀·9조각 팝업 틀·3조각 알약 단추·머리띠·구분선). 2026-11-27 사용자 결정으로 어두운 화면만 쓴다(밝은 화면 폐지).
+   U55(단추·입력 10px)와 부딪친다 → 승인 시 U55를 고친다. */
+
+/* 0. 글꼴: Nocturne은 라틴·숫자·문장부호만(한글 제외). 굵기 범위를 열어 두어 가짜 굵기를 만들지 않는다. */
+@font-face{font-family:'Nocturne';src:url('/yuphas/NocturneSerif-Regular.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap;ascent-override:95%;descent-override:25%;line-gap-override:0%;unicode-range:U+0020-007E,U+00A0-00FF,U+2010-2027,U+2030-205E,U+20AC,U+2122}
+
+/* 1. 토큰 */
+.app-shell[data-route],.sheet[data-route],.team-page,.home{
+  --tab-open:var(--surface);
+  --r-panel:0px; --r-control:0px;
+  --y-divider:url('/yuphas/dividerT.png');
+}
+.dark .app-shell[data-route],.dark .sheet[data-route],.dark .team-page{
+  --bg:#05171B; --surface:#142324; --surface-2:#192D34;
+  --text:#FFE8C4; --muted:#ACAAB9; --line:#383D38; --table-line:#484E44;
+  --primary:#CAB99D; --primary-fg:#142324; --secondary:#192D34;
+  --secondary-fg:#FFE8C4; --secondary-soft:#1F353B;
+  --accent:#CAB99D; --accent-fg:#142324; --route-ink-fg:#142324;
+  --frame:#60593E; --frame-2:#3C4A44;
+  --edge:#8A7F6C; --edge-hi:#B3A688; --sel:#3B453A; --heading-ink:#BEAD91;
+}
+.dark .home{--bg:#05171B; --secondary:#192D34; --secondary-fg:#FFE8C4; --text:#FFE8C4; --frame:#60593E; --frame-2:#E3E1DB; --edge:#8A7F6C; --edge-hi:transparent; --heading-ink:var(--muted)}
+/* 바탕 질감: 그 사이트의 --bg와 같은 반복 그림 */
+html.dark body:has(.app-shell),html.dark body:has(.team-page),html.dark body:has(.home){background:url('/yuphas/tileBg2.png') #05171B}
+.dark .app-shell[data-route],.dark .team-page,.dark .home{background:url('/yuphas/tileBg2.png') #05171B}
+.dark .app-shell,.dark .team-page{scrollbar-color:#8A7F6C transparent}
+
+/* 2. 제목 글꼴: 라틴·숫자 = Nocturne, 한글 = Gowun Batang 700. 본문은 Pretendard 그대로. */
+:is(.route-banner-art h1,.page-heading h1,.chapter-title,.group-title,.context-rail h2,.person-heading h2,.prep-content>h2,.workspace main>h2,.sheet-heading h2,.team-title,.home .route-card-content h2,.third-heading strong,.gold-tables>section>h3){font-family:'Nocturne',var(--font-heading),var(--font-pretendard),serif;font-weight:700;letter-spacing:0}
+.next-action h2,.action-category{letter-spacing:.08em;color:var(--heading-ink)}
+
+/* 3. 각진 모서리(두 테마) */
+:is(.route-banner,.action-group,.context-rail>section,.material-entry,.person,.document-list button,.team-reference .semantic article,.spell-panel .semantic article,.backup-menu .toolbar-actions,.route-card,.third-band,.unit-card,.ui-tabs-list){border-radius:var(--r-panel)}
+.route-head-bar{border-radius:0 0 var(--r-panel) var(--r-panel)}
+.route-banner{border-end-start-radius:0;border-end-end-radius:0}
+:is(.button,.text-link,.guide-navigation,.guide-navigation button,select,.check-control,.route-head .check-control,.backup-menu>summary,.search,.progress-chip,.condition-chip,[data-condition-chip],.source-markup .reference-chip,.source-markup .text-link,.reference-chip,.person-inline,.person-full-details>summary,.pair-chip,.team-page .ui-tabs-list button,.team-page .scenario-toggles button,.portrait-button,.checklist input){border-radius:var(--r-control)}
+:is(.app-shell,.team-page,.sheet) :is(img[src*="/portraits/"],img[src*="/gods/"]):not(.banner-lord),.unit-face,.guide-scope>img{border-radius:var(--r-control)}
+.to-top{border-radius:50%}
+
+/* 4. 구분선 그림(dividerT, 두 테마): 장 제목·쪽 제목·오른쪽 칸 제목·준비 제목 아래 4px */
+:is(.chapter-section[open]>summary,.page-heading,.context-rail h2,.prep-content>h2){background-image:var(--y-divider);background-repeat:no-repeat;background-position:left bottom;background-size:100% 4px}
+.chapter-section[open]>summary{padding-block-end:10px;margin-block-end:6px}
+.page-heading{padding-block-end:12px;margin-block-end:24px}
+.context-rail h2{padding-block-end:10px}
+.dark :is(.chapter-section[open]>summary,.page-heading,.context-rail h2,.prep-content>h2){filter:none}
+
+/* 6. 탭(두 테마 공통 모양): 판 없이 위아래 선, 같은 폭 */
+.guide-navigation{inline-size:100%;background:transparent;padding:4px 0;gap:4px;border-block:1px solid var(--frame)}
+.guide-navigation button{position:relative;flex:1 1 0;border:1px solid transparent;color:var(--text)}
+.guide-navigation button:hover{background:var(--surface-2);color:var(--text)}
+.guide-navigation button[aria-current],.guide-navigation button[aria-current]:hover{background:var(--tab-open);color:var(--text);border-color:var(--frame);opacity:1}
+.team-page .ui-tabs-list{background:transparent;border-block:1px solid var(--frame)}
+.team-page .ui-tabs-list button{position:relative;border:1px solid transparent;color:var(--text)}
+.team-page .ui-tabs-list button[data-state=active]{background:var(--tab-open);color:var(--text);border-color:var(--frame)}
+
+/* ---------- 여기부터 어두운 테마 그림 조각 ---------- */
+
+/* 7. 3조각 알약(buttonLeft 왼쪽 끝 + buttonCenter 늘림 + 뒤집은 buttonLeft 오른쪽 끝): 열린 탭·주 단추 */
+.dark :is(.guide-navigation button[aria-current],.team-page .ui-tabs-list button[data-state=active],:is(.app-shell,.sheet,.team-page,.home) .button-primary:not(.to-top),.team-page .scenario-toggles button[data-state=on]){
+  position:relative;border-color:transparent;
+  background:url('/yuphas/buttonLeft.png') left top/18px 100% no-repeat,url('/yuphas/buttonCenter.png') center/calc(100% - 34px) 100% no-repeat;
+  color:#FFF4D9;
+}
+.dark :is(.guide-navigation button[aria-current],.team-page .ui-tabs-list button[data-state=active],:is(.app-shell,.sheet,.team-page,.home) .button-primary:not(.to-top),.team-page .scenario-toggles button[data-state=on])::after{
+  content:'';position:absolute;inset-block:0;inset-inline-end:0;inline-size:18px;background:url('/yuphas/buttonLeft.png') 0 0/100% 100% no-repeat;transform:scaleX(-1);pointer-events:none;
+}
+.dark :is(.app-shell,.sheet,.team-page,.home) .button-primary:not(.to-top):hover{filter:brightness(1.12);text-shadow:0 0 2px #CAB99D,0 0 8px rgb(202 185 157 / .6)}
+.dark .team-page .scenario-toggles button[data-state=on]{padding-inline:22px}
+/* 휴대폰 아래 탭 줄: 안 고른 탭 = 그 사이트 좁은 화면 메뉴 단추 그림 */
+@media(max-width:767px){.dark .guide-navigation button:not([aria-current]){background:url('/yuphas/buttonInactiveBG5.png') 0 0/100% 100% no-repeat}}
+
+/* 8. 판 단추(tileBg3 질감 + 1px 테두리), 호버 = 올리브 바탕 */
+.dark :is(.app-shell,.sheet,.team-page,.home) :is(.button:not(.button-primary):not(.button-accent),select,.check-control,.backup-menu>summary,.team-page .ui-press:not([data-state=active]):not([data-state=on])){background:url('/yuphas/tileBg3.png') center/cover #192D34;border:1px solid var(--edge)}
+.dark .team-page .ui-tabs-list button.ui-press:not([data-state=active]):not([data-state=on]){background:transparent;border-color:transparent}
+.dark :is(.app-shell,.sheet,.team-page,.home) :is(.button:not(.button-primary):not(.button-accent),.backup-menu>summary,select):hover{background:#3B453A;border-color:var(--edge-hi);color:var(--text)}
+.dark :is(.app-shell,.sheet) .checklist input{border-color:var(--accent)}
+.dark .to-top{border:1px solid var(--edge)}
+
+/* 9. 검색칸: searchboxRepeat 가로 반복 + searchboxRight 양 끝(왼쪽은 뒤집음) */
+.dark :is(.app-shell,.sheet) .search{position:relative;background:url('/yuphas/searchboxRepeat.png') left center/auto 100% repeat-x;border:0;padding-inline:28px;box-shadow:0 2px 5px rgb(0 0 0 / .6)}
+.dark :is(.app-shell,.sheet) .search::before,.dark :is(.app-shell,.sheet) .search::after{content:'';position:absolute;inset-block:0;inline-size:31px;background:url('/yuphas/searchboxRight.png') 0 0/100% 100% no-repeat;pointer-events:none}
+.dark :is(.app-shell,.sheet) .search::before{inset-inline-start:0;transform:scaleX(-1)}
+.dark :is(.app-shell,.sheet) .search::after{inset-inline-end:0}
+.dark :is(.app-shell,.sheet) .search>*{position:relative;z-index:1}
+.dark :is(.app-shell,.sheet) .search input{background:transparent;color:var(--text)}
+.dark :is(.app-shell,.sheet) .search:focus-within{filter:brightness(1.2)}
+
+/* 10. 루트 머리: 위 = 목록 틀 윗조각(listTop), 아래 고정 띠 = 머리띠(headerBG) */
+.dark .route-banner{background:#0F1E20}
+.dark .route-banner-art{background:url('/yuphas/listTop.png') top center/100% auto no-repeat,#142324}
+.dark .route-head-bar{background:url('/yuphas/headerBG.png') center bottom/100% 100% no-repeat,#0A1719;border:0}
+.dark .route-banner-art h1{color:#FFF4D9}
+
+/* 11. 할 일 묶음: 목록 틀 3조각(listTop 위 · listCenter2 가운데 반복 · listBottom 아래) */
+.dark .action-group{background:url('/yuphas/listTop.png') top center/100% auto no-repeat,url('/yuphas/listBottom.png') bottom center/100% auto no-repeat,url('/yuphas/listCenter2.png') center top/100% auto repeat-y,#172221;border:0}
+.dark .action-group>summary{padding-block-start:28px}
+.dark .checklist>li{border-block-start-color:rgb(72 78 68 / .7)}
+.dark .checklist [data-complete=true]{background:rgb(25 45 52 / .7)}
+
+/* 12. 오른쪽 칸 카드·인물 카드·재료 카드: 9조각 팝업 틀을 절반 크기로(모서리 84×44) */
+.dark :is(.context-rail>section,.person,.material-entry,.document-list button){
+  border:0;min-block-size:88px;
+  background:
+    url('/yuphas/popup/top-left.webp') left top/84px 44px no-repeat,
+    url('/yuphas/popup/top-right.webp') right top/84px 44px no-repeat,
+    url('/yuphas/popup/bottom-left.webp') left bottom/84px 44px no-repeat,
+    url('/yuphas/popup/bottom-right.webp') right bottom/84px 44px no-repeat,
+    url('/yuphas/popup/top-center.webp') left 83px top/calc(100% - 166px) 45px no-repeat,
+    url('/yuphas/popup/bottom-center.webp') left 83px bottom/calc(100% - 166px) 45px no-repeat,
+    url('/yuphas/popup/middle-left.webp') left top 43px/85px calc(100% - 86px) no-repeat,
+    url('/yuphas/popup/middle-right.webp') right top 43px/85px calc(100% - 86px) no-repeat,
+    url('/yuphas/popup/center.webp') left 83px top 43px/calc(100% - 166px) calc(100% - 86px) no-repeat;
+}
+.dark .person>.person-heading{background:transparent}
+
+/* 13. 인물 서랍: 9조각 팝업 틀 원래 크기(모서리 168×88) */
+.dark .sheet[data-route]{
+  border:0;
+  background:
+    url('/yuphas/popup/top-left.webp') left top/168px 88px no-repeat,
+    url('/yuphas/popup/top-right.webp') right top/168px 88px no-repeat,
+    url('/yuphas/popup/bottom-left.webp') left bottom/168px 88px no-repeat,
+    url('/yuphas/popup/bottom-right.webp') right bottom/168px 88px no-repeat,
+    url('/yuphas/popup/top-center.webp') left 167px top/calc(100% - 334px) 89px no-repeat,
+    url('/yuphas/popup/bottom-center.webp') left 167px bottom/calc(100% - 334px) 89px no-repeat,
+    url('/yuphas/popup/middle-left.webp') left top 87px/169px calc(100% - 174px) no-repeat,
+    url('/yuphas/popup/middle-right.webp') right top 87px/169px calc(100% - 174px) no-repeat,
+    url('/yuphas/popup/center.webp') left 167px top 87px/calc(100% - 334px) calc(100% - 174px) no-repeat,
+    #151D1C;
+}
+.dark .sheet[data-route] .sheet-heading{background:transparent}
+.dark .sheet-close{background:#3A1D1D;border:2px solid #60593E;color:#FFE8C4;min-inline-size:48px;min-block-size:48px}
+.dark .sheet-close:hover{background:#4D2424}
+@media(prefers-reduced-motion:no-preference){.sheet-close{transition:transform .15s,background-color .15s}.sheet-close:hover,.sheet-close:focus-visible{transform:rotate(90deg)}}
+
+/* 14. 표: 머리 줄 = 머리띠 그림(headerBG), 줄 머리 칸 = 안쪽 명찰 상자 */
+.dark :is(.app-shell,.team-page,.sheet) thead{background:url('/yuphas/headerBG.png') center bottom/100% 100% no-repeat,#0A1719}
+.dark :is(.app-shell,.team-page,.sheet) thead th{background:transparent}
+:is(.app-shell,.team-page,.sheet) :is(th[scope=row],tbody>tr>th:first-child){box-shadow:inset 0 0 0 2px var(--surface-2),inset 0 0 0 3px var(--frame-2)}
+
+/* 15. 글 빛: 큰 제목·현재 탭만, 어두운 테마만 */
+.dark :is(.route-banner-art h1,.page-heading h1,.team-title,.home .route-card-content h2,.third-heading strong){text-shadow:0 0 2px #CAB99D,0 0 12px rgb(202 185 157 / .45)}
+.dark :is(.guide-navigation button[aria-current],.team-page .ui-tabs-list button[data-state=active]){text-shadow:0 0 2px #CAB99D,0 0 8px rgb(202 185 157 / .6)}
+
+/* 16. 루트 머리 군주 그림 왼쪽 15% 녹이기(두 테마) */
+.banner-lord{-webkit-mask-image:linear-gradient(to right,transparent,#000 15%);mask-image:linear-gradient(to right,transparent,#000 15%)}
+
+/* 17. 팀: 머리 = 머리띠 그림, 25인 타일 = tileBg3 질감 + 2px 상자 선(교체 카드 빨간 6px 테두리는 그대로) */
+.dark .team-head{background:url('/yuphas/headerBG.png') center bottom/100% 100% no-repeat;padding-block-end:10px}
+.dark .unit-card{background:url('/yuphas/tileBg3.png') center/cover #192D34}
+.dark .unit-card:not([data-swapped]){box-shadow:inset 0 0 0 2px #39484F}
+.dark .unit-card:not([data-swapped]):hover{background:#3B453A;box-shadow:inset 0 0 0 2px #60593E}
+
+/* 18. 첫 화면: 루트 색 면은 그대로, 카드 둘레 청동 이중 선, 위 띠 = 머리띠 그림, 4칸과 3부 띠 사이 = 구분선 그림 */
+.route-card{outline:1px solid rgb(255 232 196 / .2);outline-offset:-6px}
+.dark .route-card{box-shadow:inset 0 0 0 2px #60593E;outline-color:rgb(190 173 145 / .35)}
+.dark .home-top{background:url('/yuphas/headerBG.png') center bottom/100% 100% no-repeat;margin-inline:-24px;padding-inline:24px}
+.third-band{position:relative}
+.dark .third-band{box-shadow:inset 0 0 0 2px #60593E}
+.third-band::before{content:'';position:absolute;inset-inline:4%;inset-block-start:-10px;block-size:4px;background:url('/yuphas/dividerT.png') 0 0/100% 100% no-repeat;pointer-events:none}
+@media(max-width:767px){.dark .home-top{margin-inline:-16px;padding-inline:16px}}
+
+/* ---------- 19. 사이트 우선(2026-11-26 사용자 결정: 프로젝트 디자인 규칙과 부딪치면 yuphastemple.com을 따른다) ----------
+   뒤집은 규칙 목록은 docs/yuphas-sample-plan.md '사이트 우선' 절. 내용·자료·동작은 그대로. */
+
+/* 19a. 글꼴: 그 사이트는 글 전체가 명조 한 벌 → 본문도 Nocturne(라틴·숫자) + Gowun Batang 400(한글) */
+:is(.app-shell,.sheet,.team-page,.home){font-family:'Nocturne',var(--font-heading),var(--font-pretendard),serif}
+:is(.app-shell,.sheet,.team-page,.home) :is(input,select,textarea,button){font-family:inherit}
+
+/* 19b. 글 크기: 그 사이트 1440px 기준값(본문 15~16px, 작은 글 92%, 장 이름 28.8px, 탭·단추 15.84~16px, 구역 제목 16.2px 700 자간 .08em).
+   휴대폰에서 글을 0.78배로 줄이는 맞춤 축소 스크립트는 화면 배치 장치라 가져오지 않고, 같은 px를 그대로 쓴다. */
+:is(.app-shell,.sheet,.team-page,.home){font-size:16px;line-height:1.5}
+:is(.app-shell,.sheet,.team-page) :is(.action-text,.next-action p,.readable-body,.source-markup,.semantic,.records,.person-info,.person-summary,.gold-table,[data-gold-table],[data-info-table],.sheet-scroll){font-size:16px;line-height:1.6}
+:is(.app-shell,.sheet,.team-page) :is(.action-category,.group-count,.chapter-date,.context-rail p,.check-control,.action-notes,.next-action h2,.info-notice){font-size:14px}
+.chapter-title{font-size:28.8px}
+.route-banner-art h1{font-size:28.8px}
+.page-heading h1{font-size:28.8px}
+.group-title{font-size:18px}
+.context-rail h2,.prep-content>h2,.workspace main>h2,.gold-tables>section>h3{font-size:16.2px;letter-spacing:.08em;color:var(--heading-ink)}
+.person-heading h2{font-size:22px}
+:is(.app-shell,.sheet,.team-page,.home) :is(.button,.text-link,select,.check-control,.backup-menu>summary,.guide-navigation button,.ui-press,.search,.search input){font-size:16px}
+:is(.app-shell,.sheet,.team-page) :is(.reference-chip,.condition-chip,[data-condition-chip],.game-badge,.progress-chip,.person-inline,.source-markup .text-link){font-size:15px}
+
+/* 19c. 누를 곳 크기: 그 사이트 값(채운 단추 36px, 탭 32px, 목록 줄 위아래 .3em) */
+:is(.app-shell,.sheet,.team-page,.home) :is(.button,.text-link,select,.check-control,.route-head .check-control,.backup-menu>summary,.ui-press,.route-head .status-button){min-block-size:36px;padding-block:4px}
+.guide-navigation button{min-block-size:32px;padding-block:4px}
+.checklist>li{padding-block:.3em}
+.checklist input{inline-size:18px;block-size:18px;min-inline-size:18px}
+.action-group>summary{min-block-size:56px}
+
+/* 19d. 표: 칸 4px 8px, 16px, 머리 줄 가운데 정렬 */
+:is(.app-shell,.team-page,.sheet) :is(td,th){padding:4px 8px}
+:is(.app-shell,.team-page,.sheet) thead th{text-align:center}
+
+/* 19e. 인물 탭 앞 삼각형: 닫힘 ▶, 열림 ▼(90° 회전). 휴대폰 세로 탭은 왼쪽 위에 둔다 */
+.guide-navigation button::before{content:'';inline-size:0;block-size:0;border-inline-start:.45em solid currentColor;border-block:.4em solid transparent;margin-inline-end:.5em;flex:none}
+.guide-navigation button[aria-current]::before{transform:rotate(90deg)}
+@media(max-width:767px){.guide-navigation button::before{position:absolute;inset-block-start:6px;inset-inline-start:8px;margin:0;font-size:14px}}
+
+/* 19f. 글 외곽선·빛(어두운 테마, 그 사이트에는 어두운 테마만 있음): 모든 글에 4방향 검정 48% 외곽선, 이름에는 두꺼운 외곽선 + 빛.
+   탭 호버·본문 링크 호버도 빛. */
+.dark :is(.app-shell,.sheet,.team-page,.home){text-shadow:-1px -1px 0 #0000007a,1px -1px 0 #0000007a,-1px 1px 0 #0000007a,1px 1px 0 #0000007a}
+.dark .unit-name{text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000}
+.dark :is(.route-banner-art h1,.home .route-card-content h2,.person-heading h2){text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,0 0 2px #CAB99D,0 0 5px #CAB99D,0 0 10px #CAB99D,0 0 20px #CAB99D}
+.dark :is(.guide-navigation button,.team-page .ui-tabs-list button):hover,.dark :is(.reference-chip,.person-inline,.source-markup .text-link,.text-link):hover{text-shadow:0 0 2px #CAB99D,0 0 4px #CAB99D,0 0 5px #CAB99D}
+.dark .guide-topbar :is(.part-links a,.guide-home){text-shadow:0 0 2px #CAB99D,0 0 5px #CAB99D,0 0 10px #CAB99D,0 0 20px #CAB99D}
+
+/* 밝은 바탕 위 글(금색 단추·배지·현재 표시)에는 외곽선을 넣지 않는다(그 사이트에는 밝은 바탕 글이 없다) */
+.dark :is(.button-accent,.route-order,.current-chip,.part-links a[aria-current],.ui-badge,.game-badge,.final25-badge,.swap-badge),.dark :is(.button-accent,.route-order,.current-chip,.part-links a[aria-current],.ui-badge,.final25-badge,.swap-badge) *{text-shadow:none}
+
+/* 19g. 루트 머리 뒤 문장: 밝기 .45, 투명도 .7 */
+.banner-emblem{opacity:.7;filter:brightness(.45)}
+
+/* 19h. 완료 줄: 그 사이트의 '못 쓰는 것' 표현(회색·어둡게·대비) */
+.checklist [data-complete=true]{filter:grayscale(1) brightness(.7) contrast(1.5)}
+
+/* 19i. 서랍 뒤 덮개: 검정 55% + 흐림 4px */
+.sheet-overlay{background:rgb(0 0 0 / .55);opacity:1;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+
+/* 19j. '이동' 뒤 강조: idFlash(1.8s ease-out, 앞 25% 밝은 양피지 바탕 + 4px 테두리 빛, 뒤 사라짐). 동작 줄이기는 3s steps(1) */
+.checklist>li.target-highlight::after{display:none}
+.checklist>li.target-highlight{animation:yp-flash 1.8s ease-out}
+@keyframes yp-flash{0%,25%{background-color:rgb(255 213 154 / .16);box-shadow:0 0 0 4px rgb(255 213 154 / .16),0 0 14px rgb(255 213 154 / .35)}100%{background-color:transparent;box-shadow:0 0 0 4px transparent,0 0 14px transparent}}
+@media(prefers-reduced-motion:reduce){.checklist>li.target-highlight{animation:yp-flash 3s steps(1)!important;animation-duration:3s!important}}
+/* ===== yuphas 견본 끝 ===== */
+
+/* ===== yuphas 통합 (2026-11-27, docs/yuphas-integration-plan.md 2단계 · 근거 docs/yuphas-pages-teardown.md §1~§4) ===== */
+/* 1. 이름 규칙: 한국어 배지(누를 수 없음) + 영어 단추(yuphastemple 새 탭). */
+.y-pair{display:inline}
+.y-pair>.y-link{margin-inline:6px 2px;margin-block:2px}
+.y-link{word-break:keep-all;overflow-wrap:normal;display:inline-flex;align-items:center;gap:4px;min-block-size:32px;padding:2px 10px;border:1px solid #383D38;background:url('/yuphas/tileBg3.png') center/cover #192D34;color:#FFE8C4;font-family:'Nocturne',var(--font-heading),serif;font-size:15px;line-height:1.2;text-decoration:none;white-space:nowrap;vertical-align:middle}
+.y-link:hover,.y-link:focus-visible{background:#3B453A;border-color:#60593E;text-shadow:0 0 2px #CAB99D,0 0 6px rgb(202 185 157 / .6)}
+.y-link svg{flex:none}
+.y-link-mark{font-size:12px;color:#ACAAB9}
+.y-material{display:inline}
+.dot-glue:has(> .y-pair),:is(td,th,p,li) .dot-glue:has(> .y-pair){display:inline;white-space:normal}
+.y-unverified{font-size:14px;color:#ACAAB9}
+/* 2. 인물 머리 카드 §1: 큰 이름 + 빛, 병종 줄, 6×2 장점·약점, 뒤 소속 문장(.7·밝기 .45), 오른쪽 큰 초상화(왼쪽 사라짐). */
+.y-card{position:relative;isolation:isolate;display:flex;min-block-size:250px;overflow:hidden;margin-block-end:16px;border-block-end:1px solid #383D38}
+.y-card::before{content:'';position:absolute;inset:0;background:var(--faction,none) 72% center/contain no-repeat;opacity:.7;filter:brightness(.45);pointer-events:none;z-index:-1}
+.y-card-portrait{position:absolute;inset-block:0;inset-inline-end:0;inline-size:min(250px,48%);block-size:100%;object-fit:cover;object-position:center top;-webkit-mask-image:linear-gradient(to right,transparent,#000 15%);mask-image:linear-gradient(to right,transparent,#000 15%);background:transparent!important;z-index:-1}
+.y-card-body{position:relative;display:flex;flex-direction:column;gap:6px;padding:8px 4px 10px;max-inline-size:calc(100% - min(150px,30%))}
+.y-card-name{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;margin:0;font-family:'Nocturne',var(--font-heading),serif;font-size:32px;line-height:1.2;color:#FFE8C4;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,0 0 2px #CAB99D,0 0 5px #CAB99D,0 0 10px #CAB99D,0 0 20px #CAB99D}
+.y-card-name .y-link{text-shadow:none}
+.y-card-class{display:flex;align-items:center;gap:6px;margin:0;padding-inline-start:4px;font-size:16px;filter:drop-shadow(0 0 1px #000)}
+.y-class-icon{inline-size:36px;block-size:36px;object-fit:contain;image-rendering:pixelated;margin-block:-4px}
+.y-move-icon{inline-size:18px;block-size:18px}
+.y-skills{display:grid;grid-template-columns:repeat(6,32px);gap:6px;margin:4px 0;padding:6px;list-style:none;inline-size:max-content;background:rgb(0 0 0 / .35)}
+.y-skills li{position:relative;inline-size:32px;block-size:32px}
+.y-skills img{inline-size:32px;block-size:32px;image-rendering:auto}
+.y-skills li span{position:absolute;inset-block-end:-4px;inset-inline-end:-3px;font-size:11px;line-height:1;text-shadow:0 0 2px #000,0 0 2px #000}
+.y-skills li[data-state=boon] span{color:#E8C66A}
+.y-skills li[data-state=bane] span{color:#B9A6E6}
+.y-card .tags{margin-block-start:4px}
+.y-section-title{margin:20px 0 8px;font-size:18px;color:#FFE8C4}
+/* 3. 선호 선물 탭 §3: 리본 그림 제목, 선물 줄 격자(점수 색), 음식 타일. */
+.y-tab-link{margin:4px 0 8px}
+.y-ribbon{display:block;block-size:32px;inline-size:auto;margin-block:12px 0;border:1px solid #383D38}
+.y-ribbon-text{margin:8px 0 0;font-size:15px;color:#E8C66A}
+.y-part{margin:16px 0 0;font-size:15px;color:#ACAAB9}
+.y-gift-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,280px),1fr));gap:8px;margin:8px 0 0;padding:0;list-style:none}
+.y-gift{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:4px 6px;padding:4px 6px;border:1px solid #383D38;background:url('/yuphas/tileBg3.png') center/cover #192D34}
+.y-gift[data-cheap]{box-shadow:inset 0 0 0 2px #60593E}
+.y-gift .game-badge{background:transparent;padding:0;border:0}
+.y-gift .game-badge{grid-column:1;grid-row:1;min-inline-size:0}
+.y-gift .y-link{grid-column:1/-1;grid-row:2;justify-self:start;min-block-size:28px;font-size:14px;padding:0 8px}
+.y-gift-pts{grid-column:2;grid-row:1;padding-inline-start:10px;font-size:14px;color:color-mix(in srgb,#5EDC7A var(--g),#ACAAB9)}
+.y-food-list{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0;padding:0;list-style:none}
+.y-food{display:flex;flex-direction:column;align-items:center;gap:4px;inline-size:140px;padding:4px;text-align:center;border:1px solid #383D38;background:url('/yuphas/tileBg3.png') center/cover #192D34}
+.y-food-ribbon{block-size:40px;inline-size:auto;margin-block-end:-16px;position:relative;z-index:1}
+.y-food-photo{inline-size:72px;block-size:72px;object-fit:cover;border-radius:8px}
+.y-food .game-badge{background:transparent;padding:0;border:0;font-size:14px}
+.y-food .y-link{white-space:normal;text-align:center;font-size:14px;min-block-size:28px}
+/* 4. 지원 탭 §2: 2열, 얼굴을 칸 배경으로, 등급 글자 + 괄호 속 시기. */
+.y-support-table{inline-size:100%;border-collapse:collapse;font-size:15px}
+.y-support-table thead th{position:relative;isolation:isolate;padding:4px 8px;text-align:center;font-weight:400;background:transparent}
+.y-support-table thead th::before{content:'';position:absolute;inset:2px;border:2px solid #39484F;background:#192D34;z-index:-1}
+.y-support-ch{inline-size:11em;min-inline-size:9em;padding:.5em 8px 6px calc(5em - 4px)!important;text-align:start;vertical-align:top;background-size:auto 3.6em;background-position:-6px top;background-repeat:no-repeat;border-block-end:1px solid #383D38;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;white-space:normal!important}
+.y-support-table td{padding:6px 8px!important;text-align:start;vertical-align:top;border-block-end:1px solid #383D38;white-space:normal!important}
+.y-rank{display:inline-block;margin-inline-end:10px;color:#FFE8C4}
+.y-rank small{font-size:13.8px;color:#ACAAB9}
+.y-paired{margin-inline-start:6px;color:#F0B9C4}
+.y-pair-name{display:block;font-weight:700;white-space:nowrap}
+.y-support-table[data-support-pairs] .y-support-ch{inline-size:1%}
+.y-pair-route{display:block;font-size:13px;color:#ACAAB9}
+.y-pair-links{display:flex;flex-wrap:wrap;gap:4px;margin-block-start:4px}
+.y-pair-links .y-link{min-block-size:26px;font-size:13px;padding:0 6px}
+.y-pair-note{display:block;margin-block-start:4px;font-size:13.8px;color:#ACAAB9}
+.document-table-scroll:has(> [data-support-pairs]){overflow:visible}
+/* 5. 재료 줄(사진·서랍 없음). */
+.y-material-row{display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:6px 0;border-block-end:1px solid #383D38}
+.y-material-for{font-size:14px;color:#ACAAB9}
+.material-grid:has(.y-material-row){display:block}
+/* 6. 남는 문서(병종·시험 등): yuphastemple 병종 팝업 머리(§4.2) — 점 그림 + 이름 + 종류 작은 글. */
+.class-document-heading{display:flex;align-items:center;gap:10px;padding:6px 0 10px;border-block-end:1px solid #383D38}
+.class-document-heading img{inline-size:48px;block-size:48px;image-rendering:pixelated;object-fit:contain}
+.class-document-heading .role-chip{background:transparent;border:2px solid #39484FC4;background-color:#192D34C7;padding:2px 10px;font-size:13px;color:#ACAAB9}
+@media(max-width:767px){
+  .y-card{min-block-size:220px}
+  .y-card-name{font-size:26px}
+  .y-card-portrait{inline-size:min(200px,52%)}
+  .y-card-body{max-inline-size:100%}
+  .y-skills{grid-template-columns:repeat(6,30px);gap:4px}
+  .y-skills li,.y-skills img{inline-size:30px;block-size:30px}
+  .y-support-ch{inline-size:8.5em;min-inline-size:7.5em;padding-inline-start:calc(4.4em - 4px)!important;background-size:auto 3em}
+  .y-food{inline-size:calc(50% - 4px)}
+  .y-support-ch{inline-size:50%;padding-inline-start:calc(3.4em - 4px)!important;background-size:auto 2.6em}
+  .y-gift-list{grid-template-columns:1fr}
+  .y-link{white-space:normal;max-inline-size:100%}
+  .y-pair{max-inline-size:100%}
+  :is(td,th) .y-link{overflow-wrap:anywhere;font-size:14px;padding-inline:6px}
+}
+/* 7. 팀 교체 배지가 이름을 가리지 않게 3px 더 위로(Nocturne 줄 높이 때문에 이름이 배지 아래 끝에 닿았다). */
+@media(min-width:768px){.unit-cell .swap-badge{inset-block-start:-15px}}
+/* 8. 테마 단추를 빼면서(어두운 화면만) 붙기 전 머리 첫 줄이 낮아졌다. 붙은 뒤(작은 루트 이름 36px)와 높이가 같게 진행 줄을 36px로 둔다(U18). */
+.route-head .banner-progress{min-block-size:36px}
+/* 9. 팀 체험·시간 경과 토글도 모서리 0(U55). */
+.team-page .ui-press{border-radius:0}
+/* 10. 단추끼리 4px 이상(U37): 본문 지도 단추 위아래, 오른쪽 칸 재료 줄 둘레. */
+.source-markup [data-source-location]>.y-link{margin-block:4px}
+/* 본문 재료 단추 바로 뒤의 문서 단추(루트별 지원 대화 등)와도 4px 이상. */
+.source-markup .y-link,.source-markup .y-pair>.y-link{margin-block:3px;margin-inline-end:4px}
+.context-rail .y-material-row{margin:4px}
+/* 휴대폰 오른쪽 칸(가로 띠)에서 지원 대화 단추가 얼굴 줄 옆으로 밀려 다음 칸(재료) 위로 넘치지 않게 한 줄을 차지한다. */
+.context-rail .support-doc-button{display:flex;inline-size:fit-content;max-inline-size:100%}
+/* ===== yuphas 통합 끝 ===== */
