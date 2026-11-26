@@ -30,7 +30,7 @@ function PickerBody({ profile, value, onPick }: { profile: YuphasProfile; value?
   const boon = new Set(profile.skills.filter((s) => s.state === 'boon').map((s) => s.id));
   const q = fold(query.trim());
   const shown = all.filter((c) => (weapon === 'all' || (c.license !== 'default' && c.weapons.includes(weapon))) && (!q || fold([c.ko, c.en, licenses.find((l) => l.id === c.license)?.ko, licenses.find((l) => l.id === c.license)?.en].filter(Boolean).join(' ')).includes(q)));
-  const chip = (c: YClass) => <button key={c.slug} type="button" className="class-chip" aria-pressed={c.slug === value} title={c.en} ref={c.slug === value ? selected : undefined} onClick={() => onPick(c.slug)}>
+  const chip = (c: YClass) => <button key={c.slug} type="button" className="class-chip" aria-pressed={c.slug === value} title={c.ko ? `${c.ko} · ${c.en}` : c.en} style={{ '--wn': c.weapons.length } as React.CSSProperties} ref={c.slug === value ? selected : undefined} onClick={() => onPick(c.slug)}>
     <span className="class-chip-icon"><img src={classIcon(c.slug, profile.gender)} alt="" loading="lazy" />{c.moves[0] !== 'infantry' && <img className="class-chip-move" src={`/yuphas/icons/skills/${c.moves[0]}-flat.png`} alt="" />}</span>
     <span className="class-chip-name">{c.ko || c.en}</span>
     <span className="class-chip-weapons" aria-hidden="true">{c.weapons.map((w) => <img key={w} src={`/yuphas/icons/skills/${w}${boon.has(w as never) ? '_boon' : ''}.png`} alt="" />)}</span>

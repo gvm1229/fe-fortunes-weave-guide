@@ -1066,8 +1066,8 @@ html.dark body:has(.app-shell),html.dark body:has(.team-page),html.dark body:has
 .build-class>span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .build-level{display:inline-flex;align-items:center;gap:6px;font-weight:700}
 .build-level input{inline-size:44px;block-size:36px;padding:0;border:1px solid #383D38;background:transparent;color:var(--text);font-size:16px;text-align:center}
-.build-steps{display:inline-flex;flex-direction:column;gap:4px}
-.build-steps button{display:grid;place-items:center;inline-size:28px;block-size:16px;padding:0;border:1px solid #383D38;background:transparent;color:var(--text);cursor:pointer}
+.build-steps{display:inline-flex;gap:4px}
+.build-steps button{display:grid;place-items:center;inline-size:32px;block-size:32px;padding:0;border:1px solid #383D38;background:transparent;color:var(--text);cursor:pointer}
 .build-steps button:hover:not(:disabled){background:#3B453A}
 .build-skills{display:grid;grid-template-columns:repeat(6,44px);gap:6px;list-style:none;margin:0;padding:0}
 .build-skills li{display:flex;flex-direction:column;align-items:center;gap:2px}
@@ -1102,21 +1102,22 @@ html.dark body:has(.app-shell),html.dark body:has(.team-page),html.dark body:has
 .class-group h3{margin:12px 0 4px;font-size:13.8px;font-weight:400;color:#ACAAB9}
 .class-cols{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0 8px;align-items:start}
 .class-col{display:flex;flex-direction:column;gap:4px;min-inline-size:0}
-.class-chip{display:flex;align-items:center;gap:4px;min-inline-size:0;inline-size:100%;block-size:34px;padding:0 8px 0 0;border:2px solid #39484F;background:#192D34;color:var(--text);font-size:15px;text-align:start;cursor:pointer;position:relative}
+.class-chip{display:flex;align-items:center;gap:4px;min-inline-size:0;inline-size:100%;min-block-size:34px;padding:2px 8px 2px 0;border:2px solid #39484F;background:#192D34;color:var(--text);font-size:15px;text-align:start;cursor:pointer;position:relative}
 .class-picker-own .class-chip{inline-size:auto;min-inline-size:200px}
 .class-chip:hover,.class-chip[aria-pressed=true]{background:#3B453A;border-color:#60593E}
 .class-chip:focus-visible,.class-picker-tabs button:focus-visible,.class-picker-close:focus-visible{outline:2px solid #FFE8C4;outline-offset:1px}
 .class-chip-icon{position:relative;flex-shrink:0;inline-size:30px;block-size:30px}
 .class-chip-icon>img:first-child{inline-size:30px;block-size:30px;image-rendering:pixelated;object-fit:contain}
 .class-chip-move{position:absolute;inset-block-start:0;inset-inline-start:0;inline-size:10px;block-size:10px}
-.class-chip-name{flex:1;min-inline-size:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+/* 긴 이름은 말줄임 대신 두 줄로, 오른쪽 위 무기 그림(개수 --wn × 11px)과 겹치지 않게 비켜 둔다(Fable 검토 21 지적 10). */
+.class-chip-name{flex:1;min-inline-size:0;overflow-wrap:anywhere;word-break:keep-all;white-space:normal;line-height:1.2;padding-inline-end:calc(var(--wn,0) * 11px)}
 .class-chip-weapons{position:absolute;inset-block-start:1px;inset-inline-end:2px;display:flex;gap:1px}
 .class-chip-weapons img{inline-size:10px;block-size:10px}
 .class-chip-clear{padding-inline-start:10px;color:#ACAAB9}
 .class-picker-none{margin:16px 0;color:#ACAAB9}
 @media(max-width:1100px){.class-cols{grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:4px 8px}.class-col{display:contents}.class-col[data-empty]{display:none}}
 @media(max-width:767px){.class-picker-search{inline-size:100%;order:5;margin-inline-start:0}.class-picker-close{margin-inline-start:auto}}
-@media(max-width:359px){.class-cols{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:359px){.class-cols{grid-template-columns:minmax(0,1fr)}.class-picker-own .class-chip{inline-size:100%;min-inline-size:0}}
 
 /* 고침 C(2026-11-27, U68): 인물 탭 = 서랍 머리 카드 격자. 카드 전체가 서랍을 여는 단추(이름 단추의 ::after가 카드를 덮는다), 영어 이름 단추만 그 위. */
 .people-filters{align-items:center}

@@ -79,6 +79,8 @@ try {
     const lv = d.getByLabel('레벨(1~99)');
     await lv.fill('0'); await lv.press('Tab'); assert.equal(await lv.inputValue(), '1', '[U72] 레벨 0 → 1');
     await lv.focus(); await lv.press('ArrowUp'); await p.waitForTimeout(100); assert.equal(await lv.inputValue(), '2', '[U72] ↑ 키로 +1');
+    // 저장해도 초점이 레벨 칸에 남아 ↑를 이어 누를 수 있다(Fable 검토 21 지적 1).
+    await p.keyboard.press('ArrowUp'); await p.waitForTimeout(100); assert.equal(await lv.inputValue(), '3', '[U72] ↑ 두 번'); assert.ok(await lv.evaluate(e => document.activeElement === e), '[U72] ↑ 뒤 초점은 레벨 칸');
     await lv.fill('99'); await lv.press('Enter'); await d.getByRole('button', { name: '레벨 올리기' }).click(); assert.equal(await lv.inputValue(), '99', '[U72] 99 위로 안 감');
     await lv.fill('22'); await lv.press('Enter');
     await d.getByLabel('창술 등급', { exact: true }).selectOption('C'); await d.getByLabel(/^메모/).fill('검사 메모'); await d.getByLabel(/^메모/).press('Tab'); await p.waitForTimeout(200);
@@ -103,7 +105,9 @@ try {
     await d.locator('.build-class').click(); await picker.waitFor(); await picker.getByLabel('병종 검색').fill('Guardian'); await picker.locator('.class-chip', { hasText: '가디언' }).click(); await picker.waitFor({ state: 'detached' });
     assert.ok(/가디언/.test(await d.locator('[data-character-header] .y-card-class').textContent()) && await p.evaluate(() => document.activeElement?.classList.contains('build-class')), '[U72] 고른 병종이 머리 카드에·초점 복귀');
     assert.equal((await stored()).builds.theodora.theodora.classId, 'guardian', '[U72] 병종 저장');
-    await p.keyboard.press('Escape');
+    // 메모를 쓰고 칸을 떠나지 않은 채 서랍을 닫아도 저장된다(Fable 검토 21 지적 2).
+    await d.getByLabel(/^메모/).fill('닫기 메모'); await p.keyboard.press('Escape'); await d.waitFor({ state: 'detached' }); await p.waitForTimeout(200);
+    assert.equal((await stored()).builds.theodora.theodora.note, '닫기 메모', '[U72] 서랍을 닫으면 메모 저장');
     // 남성(디트리히)에게 여성 전용 병종(천익병) 칩이 없다.
     { const dd = await openSheet('/dietrich/1/', '디트리히'); await dd.locator('.build-class').click(); await picker.waitFor();
       assert.equal(await picker.locator('.class-chip', { hasText: '천익병' }).count(), 0, '[U72] 남성에 천익병'); assert.equal(await picker.locator('.class-chip:not(.class-chip-clear)').count(), allowedFor(cdata.classes, cdata.characters.dietrich).length);
@@ -116,7 +120,7 @@ try {
     // 내보내기 파일에 builds. 저장소를 비우고 그 파일을 가져오면(서랍을 연 채로도) 화면이 돌아온다.
     await p.locator('.route-head .backup-menu summary').click();
     const [dl] = await Promise.all([p.waitForEvent('download'), p.getByRole('button', { name: '내보내기' }).click()]);
-    const exported = JSON.parse(readFileSync(await dl.path(), 'utf8')); assert.deepEqual(exported.builds?.theodora?.theodora, { level: 22, skills: { spear: 'C' }, note: '검사 메모', classId: 'guardian' }, '[U72] 내보내기에 builds');
+    const exported = JSON.parse(readFileSync(await dl.path(), 'utf8')); assert.deepEqual(exported.builds?.theodora?.theodora, { level: 22, skills: { spear: 'C' }, note: '닫기 메모', classId: 'guardian' }, '[U72] 내보내기에 builds');
     // '기록 지우기'는 체크·내 상태만 지운다.
     await p.getByRole('button', { name: '기록 지우기' }).click(); await p.waitForTimeout(200);
     const cleared = await stored(); assert.deepEqual(cleared.checks, {}, '[U72] 기록 지우기 체크'); assert.equal(cleared.builds?.theodora?.theodora?.level, 22, '[U72] 기록 지우기 뒤 육성 기록 유지');

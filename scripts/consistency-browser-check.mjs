@@ -91,11 +91,24 @@ try {
         // 2026-11-27(U68): 인물 표는 서랍에 있다. [U54] 표 머리 칸 폭을 서랍에서 잰다(표가 1개 이상인지도 본다).
         if (v === '인물') { await p.locator('.person-card-open').first().click(); await p.getByRole('dialog').waitFor(); await p.waitForTimeout(300);
           if (!await p.locator('.sheet .person-summary th[scope=row]').count()) { failed++; console.log(`실패: ${w} 인물 서랍 표 없음`); }
-          await check(p, `${w} ${route} 인물 서랍`, phone); await p.keyboard.press('Escape'); await p.getByRole('dialog').waitFor({ state: 'detached' }); }
+          await check(p, `${w} ${route} 인물 서랍`, phone);
+          // [U55] 내 기록(U72)의 누를 곳은 32px 이상(병종 단추·레벨 ▼▲·등급 칸).
+          const small = await p.evaluate(() => [...document.querySelectorAll('.sheet :is(.build-class,.build-steps button,.build-skills select)')].map(e => e.getBoundingClientRect()).filter(r => r.width < 32 || r.height < 32).length);
+          if (small) { failed++; console.log(`실패  ${w} 내 기록 누를 곳 32px 미만 ${small}개`); }
+          await p.keyboard.press('Escape'); await p.getByRole('dialog').waitFor({ state: 'detached' }); }
       }
     }
     await ctx.close();
   }
+  // [U55] 병종 고르기 창(U72) 320·390·1440: 칩 이름이 잘리지 않고(말줄임 없음) 오른쪽 위 무기 그림과 겹치지 않는다(Fable 검토 21 지적 10).
+  for (const [w, h] of [[320, 640], [390, 844], [1440, 900]]) {
+    const ctx = await browser.newContext({ viewport: { width: w, height: h } }); const p = await ctx.newPage();
+    await p.goto(base + '/theodora/1/'); await p.waitForLoadState('networkidle'); await p.waitForTimeout(400);
+    await p.getByRole('navigation', { name: '공략 화면' }).getByRole('button', { name: '인물', exact: true }).click(); await p.waitForTimeout(400);
+    await p.locator('.person-card[data-person="세오도라"] .person-card-open').click(); await p.getByRole('dialog').waitFor(); await p.locator('.build-class').click(); await p.getByRole('dialog', { name: '병종 고르기' }).waitFor(); await p.waitForTimeout(300);
+    const chips = await p.evaluate(() => [...document.querySelectorAll('.class-picker .class-chip')].map(c => { const n = c.querySelector('.class-chip-name'), wp = c.querySelector('.class-chip-weapons'); if (!n) return null; const a = document.createRange(); a.selectNodeContents(n); const t = a.getBoundingClientRect(), b = wp?.getBoundingClientRect(); return { name: n.textContent, cut: n.scrollWidth > n.clientWidth + 1, hit: !!b && b.width > 0 && t.right > b.left && t.top < b.bottom && t.bottom > b.top }; }).filter(x => x && (x.cut || x.hit)));
+    screens++; if (chips.length) { failed++; console.log(`실패  ${w} 병종 창 칩 이름 잘림·겹침 ${JSON.stringify(chips.slice(0, 5))}`); }
+    await ctx.close(); }
   // [U56] 360×800: 표가 칸 안에 들어가는지만 본다(폭 389px 이하 금액 표 칸 여백 8px).
   { const ctx = await browser.newContext({ viewport: { width: 360, height: 800 } }); const p = await ctx.newPage();
     for (const [route, v] of [['/theodora/1/', null], ['/theodora/1/', '준비'], ['/part3/3/', null]]) {
