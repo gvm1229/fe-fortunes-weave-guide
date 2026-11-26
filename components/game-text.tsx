@@ -39,8 +39,22 @@ export const classNamesByFile=new Map<string,string>(Object.entries(classImages)
 export function imageName(src:string,alt?:string):string|undefined{const f=fileName(src);return portraitNames.get(f)||classNamesByFile.get(f)||(alt?alt.replace(/ (초상화|병종).*$/,'').trim():undefined)||undefined;}
 /** 글에 나오는 인물·병종 이름(그림이 붙는 이름). */
 export function namesInText(text:string):string[]{return text.split(pattern).filter(w=>w&&(portraits[w]||classImages[w]));}
-/** 줄 머리에 "·"가 오지 않게 "·"를 앞 글자(사이 빈칸 하나 포함)와 묶는다. 글자는 그대로, "·" 뒤에서는 줄을 나눌 수 있다(2026-11-26 화면 다듬기 11). */
-export function glueDots(text:string):React.ReactNode{const parts=text.split(/(\S\s?·)/);return parts.length<2?text:parts.map((p,i)=>i%2?<span key={i} className="dot-glue">{p}</span>:p||null);}
+/** 줄 머리에 "·"가 오지 않게 "·"를 앞 글자(사이 빈칸 하나 포함)와 묶는다. 글자는 그대로, "·" 뒤에서는 줄을 나눌 수 있다(2026-11-26 화면 다듬기 11).
+ * 묶을 때는 결과 전체를 바깥 span 하나(.dot-run)로 감싼다. flex·grid 부모(.button, 목록 grid)가 글을 여러 칸으로 쪼개 칸 사이 간격이 생기지 않게(2026-11-26 검토 1). */
+export function glueDots(text:string):React.ReactNode{const parts=text.split(/(\S\s?·)/);return parts.length<2?text:<span className="dot-run">{parts.map((p,i)=>i%2?<span key={i} className="dot-glue">{p}</span>:p||null)}</span>;}
+const leadDot=/^\s?·/;
+/** 글줄 안 요소만 묶는다. 목록(ul·ol, list=true) 바로 안이나 li 같은 덩어리 요소는 묶지 않는다: span 안에 li를 넣지 않고 grid 목록(data-face-list)의 칸을 바꾸지 않게. */
+const inlineTags=new Set(['span','strong','b','em','small','a','img','button']);
+/** 요소(배지·굵은 글·단추) 바로 뒤 글이 "·"(앞 빈칸 하나 포함)로 시작하면 그 요소와 "·"를 한 묶음(.dot-glue)으로 그린다. 글자는 그대로(2026-11-26 검토 3). */
+export function glueLeadDots<T extends string|{tag:string}>(kids:T[],draw:(c:T,j:number)=>React.ReactNode,list=false):React.ReactNode[]{
+  if(list)return kids.map(draw);
+  const out:React.ReactNode[]=[];
+  kids.forEach((c,j)=>{const prev=kids[j-1],m=typeof c==='string'&&prev!==undefined&&typeof prev!=='string'&&inlineTags.has(prev.tag)?c.match(leadDot):null,last=out[out.length-1];
+    if(!m||typeof c!=='string'||last==null||last===false){out.push(draw(c,j));return;}
+    out[out.length-1]=<span key={'dot'+j} className="dot-glue">{last}<span className="dot-lead">{m[0]}</span></span>;
+    if(c.length>m[0].length)out.push(draw(c.slice(m[0].length) as T,j));});
+  return out;
+}
 type BadgeKind='bond'|'renown'|'gold'|'material'|'gift'|'skill'|'item'|'person'|'class';
 /** 배지 하나: 그림 + 이름 + 값. 글은 원문 조각 그대로(이름·공백·값). */
 function Badge({kind,icon,label,rest,className}:{kind:BadgeKind;icon:React.ReactNode;label:string;rest?:string;className?:string}){
@@ -59,8 +73,8 @@ function classify(word:string):{kind:BadgeKind;icon:keyof typeof symbols|'skill'
   return null;
 }
 export function GameText({text,withSkills=false,part='1',skip}:{text:string;withSkills?:boolean;part?:string;skip?:ReadonlySet<string>}) {
-  const shown=new Set<string>();
-  return <>{text.replaceAll('백마법','백마술').split(pattern).map((word,i)=>{
+  const shown=new Set<string>(),words=text.replaceAll('백마법','백마술').split(pattern);
+  const nodes=words.map((word,i)=>{
     if(!word)return null;
     if((portraits[word]||classImages[word])&&(skip?.has(word)||shown.has(word)))return classImages[word]&&!portraits[word]?<strong key={i}>{word}</strong>:word;
     if(portraits[word]||classImages[word])shown.add(word);
@@ -74,5 +88,8 @@ export function GameText({text,withSkills=false,part='1',skip}:{text:string;with
     if(!c)return <Fragment key={i}>{glueDots(word)}</Fragment>;
     if(c.kind==='skill')return withSkills?<Badge key={i} kind="skill" icon={<img className="game-skill" src={`/assets/skills/${skills[c.label]}.webp`} alt="" loading="lazy"/>} label={c.label} rest={c.rest}/>:<Fragment key={i}>{glueDots(word)}</Fragment>;
     return <Badge key={i} kind={c.kind} icon={<GameIcon kind={c.icon as keyof typeof symbols}/>} label={c.label} rest={c.rest}/>;
-  })}</>;
+  });
+  // 배지·이름 바로 뒤 글이 "·"로 시작하면 앞 조각과 "·"를 묶는다(검토 3).
+  for(let i=1;i<words.length;i++){const m=words[i].match(leadDot);if(!m||nodes[i-1]==null)continue;nodes[i-1]=<span key={'dot'+i} className="dot-glue">{nodes[i-1]}<span className="dot-lead">{m[0]}</span></span>;const rest=words[i].slice(m[0].length);nodes[i]=rest?<Fragment key={i}>{glueDots(rest)}</Fragment>:null;}
+  return <>{nodes}</>;
 }

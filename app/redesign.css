@@ -643,7 +643,8 @@ body{word-break:keep-all;overflow-wrap:break-word}
 }
 /* 5. 접힌 장 목록: 날짜를 제목 줄에 함께 두고 위아래 여백을 줄여 장 하나 높이를 절반 가까이로. */
 .chapter-section:not([open]){margin-block-end:4px}
-.chapter-section:not([open])>summary{padding-block:6px;row-gap:0}
+/* 접기 제목 높이는 56px 이상(사양 일관성 표, 2026-11-26 검토 2). */
+.chapter-section:not([open])>summary{padding-block:6px;row-gap:0;min-block-size:56px}
 .chapter-section:not([open])>summary .chapter-date{flex-basis:auto;inline-size:auto;margin-inline-start:4px}
 /* 6. 휴대폰 할 일 줄: 왼쪽 여백과 체크 칸–글 간격을 줄여 글 폭을 넓힌다(체크 칸 26px 그대로). 묶음 제목·메모도 같은 왼쪽 선. */
 @media(max-width:599px){
@@ -656,8 +657,11 @@ body{word-break:keep-all;overflow-wrap:break-word}
   .team-page .team-head .ui-tabs-list{display:flex}
   .team-page .team-head .ui-tabs-list button{flex:1 1 auto;padding:0 4px}
 }
+/* 360px 미만(320px 등)에서는 글 폭 합이 탭 상자보다 넓어 화면이 가로로 넘쳤다. 탭 안 여백을 빼고 줄어들 수 있게(2026-11-26 검토 4). */
+@media(max-width:359px){.team-page .team-head .ui-tabs-list button{padding:0;min-inline-size:0}}
 /* 8. 팀 '루트 편성'·'비교 근거' 표의 병종 이름 단추: 옆 배지("상급직")와 같은 높이·여백·바탕·글자(단추라 모서리는 U55의 10px). 비교 근거 표의 인물 칩은 이름이 한 글자씩 세로로 꺾이지 않게 한 줄로. */
-:is(.route-unit-class,.team-panel .semantic td) .text-link{min-block-size:28px;padding:2px 8px;background:var(--secondary-soft);color:var(--text);font-size:18px;font-weight:600;line-height:24px}
+/* 높이는 본문 속 참고 칩 최소 30px(사양 일관성 표, 2026-11-26 검토 5). */
+:is(.route-unit-class,.team-panel .semantic td) .text-link{min-block-size:30px;padding:3px 8px;background:var(--secondary-soft);color:var(--text);font-size:18px;font-weight:600;line-height:24px}
 .team-panel .semantic [data-face-row]{white-space:nowrap}
 /* 14. 위 인물 칩: 물려받은 overflow-wrap:anywhere(.semantic) 때문에 표가 칸 최소 폭을 한 글자로 계산해 칩이 좁아지고 이름이 칩 밖으로 넘쳤다. 칩 안은 끊지 않고, 얼굴·이름은 줄어들지 않게. */
 .team-panel .semantic [data-face-row]{overflow-wrap:normal}
@@ -675,3 +679,8 @@ body{word-break:keep-all;overflow-wrap:break-word}
 :is(.banner-progress,.progress-chip,.group-count,.context-rail p,.team-count){font-variant-numeric:tabular-nums}
 /* 11. keep-all 뒤 "·"가 줄 머리에 오지 않게: "·"를 앞 글자와 한 묶음으로(글자는 그대로, "·" 뒤에서는 나눔). */
 .dot-glue{white-space:nowrap}
+/* 요소 바로 뒤 "·" 묶음(검토 3): 요소와 "·" 사이만 막고 글만 든 요소(굵은 글 등)는 안에서 그대로 줄을 나눈다. 배지·얼굴 칩을 품은 요소는 nowrap을 그대로 물려받는다: Chrome은 배지(inline-flex) 뒤 줄 나눔을 배지 부모의 white-space로 정하기 때문. */
+:where(.dot-glue>:not(.dot-lead,:has(.game-badge,[data-face-row],img))){white-space:normal}
+/* 표 칸 안 배지·얼굴 칩+"·" 묶음은 줄 안 상자(inline-flex, 줄 넘김 허용)로: 칸이 묶음보다 좁을 때만 "·"가 상자 안에서 아래로 내려간다. nowrap 그대로면 휴대폰 금액·재료 표의 좁은 칸(약 85~100px)에서 "명성 5·"가 2~5px 넘치고 얼굴 칩 "알렉산드라·"가 표를 40px 넓혔다. 상자 안은 nowrap을 풀어 칩·배지 안 글은 전처럼 칸 폭에 맞춰 줄을 나눈다(상자의 칸 사이에서는 줄을 나누지 않으므로 "·" 앞은 그대로 묶임). 앞 빈칸(" ·")은 상자 안에서도 보이게 pre. */
+:is(td,th) .dot-glue:has(.game-badge,[data-face-row]){display:inline-flex;flex-wrap:wrap;align-items:baseline;white-space:normal}
+:is(td,th) .dot-glue:has(.game-badge,[data-face-row])>.dot-lead{white-space:pre}

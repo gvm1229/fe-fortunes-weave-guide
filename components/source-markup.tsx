@@ -1,5 +1,5 @@
 'use client';
-import { GameText, glueDots, imageName, classNamesByFile, namesInText } from './game-text';
+import { GameText, glueDots, glueLeadDots, imageName, classNamesByFile, namesInText } from './game-text';
 import { createElement, Fragment } from 'react';
 import { MapPin } from 'lucide-react';
 import type { Tree } from '@/lib/content';
@@ -43,7 +43,7 @@ export function SourceMarkup({nodes,onDoc,onMaterial,onPerson,part='1',skip:oute
     if(movedIcons.has(n))return null;
     const skip=blockSkip(n,parentSkip,inBlock),sub=(c:Tree,j:number)=>render(c,j,skip,inBlock||isBlock(n),plain||n.tag==='th'||n.tag==='button');
     // 목록 항목 맨 앞 줄바꿈(<li> <br>글)은 빈 줄만 만든다. 그리지 않아 짧은 줄 사이 간격이 한 줄씩 벌어지지 않게 한다(2026-11-26 화면 다듬기 2).
-    const a=n.attrs,children=n.children.filter(child=>!['table','thead','tbody','tfoot','tr','colgroup'].includes(n.tag)||typeof child!=='string'||child.trim()).filter((child,j,all)=>!(n.tag==='li'&&typeof child!=='string'&&child.tag==='br'&&all.slice(0,j).every(c=>typeof c==='string'&&!c.trim()))).map(sub);
+    const a=n.attrs,children=glueLeadDots(n.children.filter(child=>!['table','thead','tbody','tfoot','tr','colgroup'].includes(n.tag)||typeof child!=='string'||child.trim()).filter((child,j,all)=>!(n.tag==='li'&&typeof child!=='string'&&child.tag==='br'&&all.slice(0,j).every(c=>typeof c==='string'&&!c.trim()))),sub,n.tag==='ul'||n.tag==='ol');
     if(a['data-shared-notice'])return null;
     if(a['data-readable-group'])return <ReadMore key={i}>{a['data-readable-group']==='prose'?createElement(n.tag,{},children):children}</ReadMore>;
     if(n.tag==='br')return <br key={i}/>;
@@ -57,6 +57,6 @@ export function SourceMarkup({nodes,onDoc,onMaterial,onPerson,part='1',skip:oute
     if(a['data-condition-chip']&&/^(명성|지원)/.test(text(n.children).trim()))return <Fragment key={i}>{children}</Fragment>;
     return createElement(n.tag,{key:i,...Object.fromEntries(Object.entries(a).filter(([key])=>key.startsWith('data-')))},children);
   }
-  return <div className="source-markup">{nodes.map((n,i)=>render(n,i,new Set(outerSkip)))}</div>;
+  return <div className="source-markup">{glueLeadDots(nodes,(n,i)=>render(n,i,new Set(outerSkip)))}</div>;
 }
 function text(nodes:Tree[]):string{return nodes.map(n=>typeof n==='string'?n:text(n.children)).join('');}

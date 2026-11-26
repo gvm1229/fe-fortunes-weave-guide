@@ -11,7 +11,7 @@ import { Sheet, SheetContent, SheetTitle } from './ui/sheet';
 import { Button } from './ui/button';
 import { GuideImage } from './image-viewer';
 import { ReadMore } from './read-more';
-import { GameText } from './game-text';
+import { GameText, glueDots } from './game-text';
 import classManifest from '@/assets/classes/manifest.json';
 import { Semantic } from './records';
 import { pairNames, filterPairs } from '@/lib/pair-filter';
@@ -40,7 +40,7 @@ function documentAnchors(){
 }
 export function DocList({docs,onOpen}:{docs:ReferenceDoc[];onOpen:(url:string)=>void}){
   const [query,setQuery]=useState('');
-  return <><label className="search"><Search size={22}/><input placeholder="문서 제목으로 찾기" aria-label="참고 문서 검색" value={query} onChange={e=>setQuery(e.target.value)}/></label><p className="muted">현재 루트·부에 맞게 읽습니다. 루트 간 비교는 최종 팀 화면에서 볼 수 있습니다.</p><ul className="document-list">{docs.filter(d=>d.title.includes(query)).map(d=><li key={d.path}><button onClick={()=>onOpen(d.path)}><BookOpen size={20}/>{d.title}</button></li>)}</ul></>;
+  return <><label className="search"><Search size={22}/><input placeholder="문서 제목으로 찾기" aria-label="참고 문서 검색" value={query} onChange={e=>setQuery(e.target.value)}/></label><p className="muted">현재 루트·부에 맞게 읽습니다. 루트 간 비교는 최종 팀 화면에서 볼 수 있습니다.</p><ul className="document-list">{docs.filter(d=>d.title.includes(query)).map(d=><li key={d.path}><button onClick={()=>onOpen(d.path)}><BookOpen size={20}/>{glueDots(d.title)}</button></li>)}</ul></>;
 }
 function DocumentTable({children}:{children?:ReactNode}){
   const elements=(nodes:ReactNode)=>Children.toArray(nodes).filter(isValidElement<{children?:ReactNode}>);

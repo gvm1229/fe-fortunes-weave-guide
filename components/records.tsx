@@ -1,4 +1,4 @@
-import { GameText, glueDots, imageName, classNamesByFile, namesInText } from './game-text';
+import { GameText, glueDots, glueLeadDots, imageName, classNamesByFile, namesInText } from './game-text';
 import { createElement, Fragment } from 'react';
 import type { Tree } from '@/lib/content';
 import { displayText } from '@/lib/display';
@@ -41,7 +41,7 @@ export function Semantic({nodes,route,part,onDoc,onSpell,hidePortraits=false,hid
     const a=n.attrs,skip=blockSkip(n,parentSkip,inBlock),sub=(c:Tree,j:number)=>render(c,j,skip,inBlock||isBlock(n),plain||n.tag==='th'||n.tag==='button'||(n.tag==='a'&&!!a.href));
     if(changesOnly&&a['data-change']==='keep')return null;
     if(a['data-shared-notice'])return null;
-    const children=()=>n.children.filter(child=>!['table','thead','tbody','tfoot','tr','colgroup'].includes(n.tag)||typeof child!=='string'||child.trim()).map(sub);
+    const children=()=>glueLeadDots(n.children.filter(child=>!['table','thead','tbody','tfoot','tr','colgroup'].includes(n.tag)||typeof child!=='string'||child.trim()),sub,n.tag==='ul'||n.tag==='ol');
     if(a['data-face-list'])return <ReadMore key={i}><ul data-face-list>{children()}</ul></ReadMore>;
     if(a['data-readable-group'])return <ReadMore key={i}>{a['data-readable-group']==='prose'?createElement(n.tag,{},children()):children()}</ReadMore>;
     if(!inBlock&&(n.tag==='tr'||isBlock(n)))seen.clear();
@@ -68,5 +68,5 @@ export function Semantic({nodes,route,part,onDoc,onSpell,hidePortraits=false,hid
     if(a['data-condition-chip']&&/^(명성|지원)/.test(flat(n.children).trim()))return <Fragment key={i}>{children()}</Fragment>;
     return createElement(allowed.has(n.tag)?n.tag:'div',{key:i,...Object.fromEntries(Object.entries(a).filter(([key])=>key.startsWith('data-')||['id','title','aria-label'].includes(key))),...(a.colspan?{colSpan:Number(a.colspan)}:{}),...(a.rowspan?{rowSpan:Number(a.rowspan)}:{})},children());
   }
-  return <div className="semantic">{nodes.map((n,i)=>render(n,i))}</div>;
+  return <div className="semantic">{glueLeadDots(nodes,(n,i)=>render(n,i))}</div>;
 }

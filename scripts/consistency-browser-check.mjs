@@ -8,6 +8,7 @@
 // 6) [U56] 390×844에서 4글자 이하인 배지 이름(.badge-label)은 한 줄(상자 높이 32px 이하). 배지는 이름과 값 사이에서만 줄을 넘긴다.
 // 7) [U56] 배지 이름과 값이 같은 줄에 있으면 둘 사이가 3px 이상("반짝반짝어 1마리"가 "반짝반짝어1마리"로 붙지 않게)
 // 8) [U56] 390×844(그리고 360×800의 할 일·준비·3부)에서 금액 표([data-gold-table])·본문 표(.source-markup·.semantic table)는 칸 폭 안에 들어감(가로로 넘치거나 부모보다 넓지 않음)
+// 9) 줄 머리 "·" 막기 묶음(.dot-glue)의 부모는 flex·grid가 아님. flex·grid 부모는 묶음을 따로 칸으로 떼어 글 사이에 간격·줄바꿈을 만든다(2026-11-26 검토 1: 단추 "루트별 육 성· 중단 기준")
 import { chromium } from '@playwright/test';
 import { resolve } from 'node:path';
 process.env.TEMP = process.env.TMP = resolve('.tmp');
@@ -27,7 +28,7 @@ const EXCEPTIONS = [
 function audit({ EXCEPTIONS, phone, fitOnly }) {
   const visible = e => e.checkVisibility({ visibilityProperty: true, opacityProperty: true }) && (r => r.width > 0 && r.height > 0)(e.getBoundingClientRect());
   const name = e => `${e.tagName.toLowerCase()}${typeof e.className === 'string' && e.className.trim() ? '.' + e.className.trim().split(/\s+/).slice(0, 2).join('.') : ''} «${(e.getAttribute('aria-label') || e.textContent || '').trim().slice(0, 16)}»`;
-  const out = { fill: [], font: [], th: [], thWidth: [], radius: [], filled: [], marker: [], wrap: [], valueGap: [], tableFit: [] };
+  const out = { fill: [], font: [], th: [], thWidth: [], radius: [], filled: [], marker: [], wrap: [], valueGap: [], tableFit: [], dotGlue: [] };
   // [U53]
   for (const s of document.querySelectorAll('.game-badge>svg')) if (visible(s) && getComputedStyle(s).fill === 'none') out.fill.push(name(s.parentElement));
   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
@@ -58,11 +59,12 @@ function audit({ EXCEPTIONS, phone, fitOnly }) {
   // [U56]
   for (const b of document.querySelectorAll('.game-badge')) { const l = b.querySelector(':scope>.badge-label'), v = b.querySelector(':scope>.badge-value'); if (!l || !v || !visible(b)) continue; const a = l.getBoundingClientRect(), c = v.getBoundingClientRect(); if (Math.min(a.bottom, c.bottom) - Math.max(a.top, c.top) > 2 && c.left - a.right < 3) out.valueGap.push(`${name(b)} ${Math.round(c.left - a.right)}px`); }
   if (phone) for (const l of document.querySelectorAll('.game-badge .badge-label')) { if (!visible(l)) continue; const h = l.getBoundingClientRect().height; if (l.textContent.trim().length <= 4 && h > 32) out.wrap.push(`${name(l.closest('.game-badge'))} ${Math.round(h)}px`); }
+  for (const g of document.querySelectorAll('.dot-glue')) { const d = getComputedStyle(g.parentElement).display; if (/flex|grid/.test(d)) out.dotGlue.push(`${name(g.parentElement)} ${d} «${g.textContent.trim().slice(0, 12)}»`); }
   if (fitOnly) { for (const k of Object.keys(out)) if (k !== 'tableFit') out[k] = []; }
   if (phone || fitOnly) for (const t of document.querySelectorAll('[data-gold-table], .source-markup table, .semantic table')) { if (!visible(t)) continue; const w = t.getBoundingClientRect().width, pw = t.parentElement.clientWidth; if (t.scrollWidth > t.clientWidth + 1 || w > pw + 1) out.tableFit.push(`${name(t.rows[1]?.cells[0] || t)} 표 ${Math.round(Math.max(w, t.scrollWidth))}px > 칸 ${pw}px`); }
   return out;
 }
-const LABELS = { fill: '배지 아이콘 채움', font: '글자 18px 이상', th: '표 머리 칸 왼쪽·위', thWidth: '인물 표 머리 칸 폭', radius: '단추 모서리 10px', filled: '장 선택·완료 숨기기 채움', marker: '기본 ▶ 없음', wrap: '짧은 배지 이름 한 줄', tableFit: '표가 칸 안에 들어감', valueGap: '배지 이름·값 간격 3px 이상' };
+const LABELS = { fill: '배지 아이콘 채움', font: '글자 18px 이상', th: '표 머리 칸 왼쪽·위', thWidth: '인물 표 머리 칸 폭', radius: '단추 모서리 10px', filled: '장 선택·완료 숨기기 채움', marker: '기본 ▶ 없음', wrap: '짧은 배지 이름 한 줄', tableFit: '표가 칸 안에 들어감', valueGap: '배지 이름·값 간격 3px 이상', dotGlue: '"·" 묶음 부모가 flex·grid 아님' };
 let failed = 0, screens = 0;
 async function check(p, label, phone, fitOnly = false) {
   await p.evaluate(() => { document.querySelectorAll('details:not(.backup-menu)').forEach(d => { d.open = true; }); scrollTo(0, 0); });
