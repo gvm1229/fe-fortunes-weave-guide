@@ -1,5 +1,4 @@
 'use client';
-import { ThemeSwitch } from './theme';
 import { DateOdometer } from './date-odometer';
 import { currentGameDate, formatGameDate, PART1_YEAR } from '@/lib/game-date';
 import { useEffect, useRef, useState, ViewTransition } from 'react';
@@ -15,13 +14,16 @@ import { useChecks } from './checks';
 import { usePreference } from './preferences';
 import { Button } from './ui/button';
 import { SourceMarkup } from './source-markup';
-import { personPortrait, lordPortrait, lordFiles } from '@/lib/portraits';
+import { personPortrait, lordPortrait } from '@/lib/portraits';
 import { Progress } from './progress';
 import { GameText, glueDots } from './game-text';
 import overrides from '@/content/display-overrides.json';
 import { GuideImage } from './image-viewer';
 import { final25Class } from '@/lib/final25';
-export function Tasks({route,label,part,chapters,groups,onDoc,onMaterial,onPerson,people=[],context}:{route:string;label:string;part:string;chapters:Chapter[];groups:Group[];onDoc:(url:string)=>void;onMaterial?:(id:string)=>void;onPerson?:(name:string)=>void;people?:string[];context?:(chapter:Chapter)=>React.ReactNode}){
+import { YuphasGroup } from './yuphas';
+import { verificationTail } from '@/lib/display';
+import { lordEmblems } from '@/lib/yuphas';
+export function Tasks({route,label,part,chapters,groups,onDoc,onPerson,people=[],context}:{route:string;label:string;part:string;chapters:Chapter[];groups:Group[];onDoc:(url:string)=>void;onPerson?:(name:string)=>void;people?:string[];context?:(chapter:Chapter)=>React.ReactNode}){
   const checks=useChecks(),[announce,setAnnounce]=useState(''),[selected,setSelected]=useState<string|null>(null),[importPhase,setImportPhase]=useState<ImportPhase>({state:'idle'}),[imported,setImported]=useState(''),upload=useRef<HTMLInputElement>(null),toastTimer=useRef<ReturnType<typeof setTimeout>|undefined>(undefined);
   /** 가져오기: 전체 화면을 막고(최소 0.6초 보여 깜빡이지 않게) 파일을 읽어 검사한 뒤 저장한다. 실패 이유는 막는 창에 보인다.
    *  성공 알림은 파일 내용으로 만든다: 파일에 내 상태가 없으면 '내 상태 없음'이라고 알려 예전 파일·오래된 탭을 구별할 수 있게 한다. */
@@ -47,9 +49,9 @@ export function Tasks({route,label,part,chapters,groups,onDoc,onMaterial,onPerso
     if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
     const r=target.closest('details.chapter-section')?.querySelector('summary')?.getBoundingClientRect();
     const origin=r&&r.height&&r.bottom>0&&r.top<innerHeight?{x:(r.left+r.width/2)/innerWidth,y:(r.top+r.height/2)/innerHeight}:{x:.5,y:.6};
-    const dark=document.documentElement.classList.contains('dark'),ink=getComputedStyle(target).getPropertyValue('--route-ink').trim();
+    const ink=getComputedStyle(target).getPropertyValue('--route-ink').trim();
     const confetti=(await import('canvas-confetti')).default;
-    confetti({particleCount:90,spread:70,startVelocity:38,ticks:160,scalar:.9,disableForReducedMotion:true,origin,colors:[dark?'#94C4AB':'#4E8469',ink||'#4A4658',dark?'#9DB8D4':'#D2A97F']});
+    confetti({particleCount:90,spread:70,startVelocity:38,ticks:160,scalar:.9,disableForReducedMotion:true,origin,colors:['#94C4AB',ink||'#4A4658','#9DB8D4']});
   }
   const [hideDone,setHideDone]=usePreference<boolean>('tasks-hide-done',false);
   const head=useRef<HTMLDivElement>(null),scrolled=useRef(false);
@@ -81,7 +83,7 @@ export function Tasks({route,label,part,chapters,groups,onDoc,onMaterial,onPerso
   const currentGroups=chapterGroups(chapter,groups);
   const next=currentGroups.flatMap(g=>g.actions.map(a=>({a,g}))).find(({a,g})=>!checked(a,g.id,checks.effective));
   const actions=groups.flatMap(g=>g.actions.map(a=>({a,g}))),count=actions.filter(({a,g})=>checked(a,g.id,checks.effective)).length;
-  const markupProps={onDoc,onMaterial,onPerson,part};
+  const markupProps={onDoc,onPerson,part,route};
   /** 이번 장의 첫 미완료 항목으로 이동한다. 고정 도구 줄에 있어 어느 위치에서나 쓸 수 있다. */
   const goNext=()=>{if(!next)return;setSelected(chapter.title);requestAnimationFrame(()=>{
     const row=document.getElementById(next.a.id)?.closest('li');if(!row)return;
@@ -94,7 +96,7 @@ export function Tasks({route,label,part,chapters,groups,onDoc,onMaterial,onPerso
   function exportFile(){const blob=new Blob([JSON.stringify(checks.data,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='checklist.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
   // 바닥 날짜: 처음으로 체크가 남은 묶음의 게임 날짜(스크롤과 무관). 1부만(2부·3부는 달력 날짜 없음). 기록을 읽은 뒤에만 보여 첫 화면에서 헛구르지 않는다.
   const gameDate=checks.ready&&part==='1'?currentGameDate(chapters.flatMap(c=>chapterGroups(c,groups)),(a,g)=>checked(a,g.id,checks.effective)):null;
-  return <><section className="route-banner" aria-label={`${label} ${part}부 진행`}><div className="route-banner-art" data-route={route}><img className="banner-emblem" src={`/assets/design/emblems/${lordFiles[route]}.webp`} alt=""/><h1>{label}{route==='part3'?'':<span> {part}부</span>}</h1>{route==='part3'?<img className="banner-lord" src={lordPortrait(route,part,true)} alt=""/>:<ViewTransition name={`lord-${route}`} share="morph" default="none"><img className="banner-lord" src={lordPortrait(route,part,true)} alt=""/></ViewTransition>}</div></section>
+  return <><section className="route-banner" aria-label={`${label} ${part}부 진행`}><div className="route-banner-art" data-route={route}><img className="banner-emblem" src={lordEmblems[route]} alt=""/><h1>{label}{route==='part3'?'':<span> {part}부</span>}</h1>{route==='part3'?<img className="banner-lord" src={lordPortrait(route,part,true)} alt=""/>:<ViewTransition name={`lord-${route}`} share="morph" default="none"><img className="banner-lord" src={lordPortrait(route,part,true)} alt=""/></ViewTransition>}</div></section>
   {/* 루트 머리 막대: 스크롤해도 맨 위에 고정된다(2026-11-14 사용자 지시). 붙어 있는 동안 작은 루트 이름이 보인다. 막대 높이는 바뀌지 않아 화면이 튀지 않는다. */}
   <div ref={head} className="route-head"><div className="route-head-bar">
     <p className="route-head-title" aria-hidden="true"><img src={lordPortrait(route,part)} alt=""/><span>{label}{route==='part3'?'':` ${part}부`}</span></p>
@@ -106,17 +108,17 @@ export function Tasks({route,label,part,chapters,groups,onDoc,onMaterial,onPerso
     {!checks.error&&<span role="status" className="save-status"><Check size={20} aria-label="저장됨"/></span>}
     <StatusButton route={route}/>
     <details className="backup-menu"><summary title="기록 관리"><Archive size={20} aria-hidden="true" className="backup-icon"/><span className="backup-label">기록 관리</span></summary><div className="toolbar-actions"><StatusButton route={route} menu/><Button variant="secondary" onClick={exportFile}><Download size={20}/> 내보내기</Button><Button variant="secondary" onClick={()=>upload.current?.click()}><Upload size={20}/> 가져오기</Button><Button variant="secondary" onClick={()=>{if(window.confirm('이 브라우저의 체크 기록과 내 상태를 모두 지웁니다. 되돌릴 수 없으니 먼저 내보내기로 백업하세요. 지울까요?'))checks.clear();}}><Trash2 size={20}/> 기록 지우기</Button>{/* accept를 두지 않는다: 휴대폰 파일 선택기는 내려받은 .json의 형식을 몰라 고를 수 없게 막는 일이 있다(2026-11-15). 내용은 가져올 때 검사한다. */}<input ref={upload} type="file" className="sr-only" aria-label="체크·내 상태 JSON 가져오기" onChange={e=>{const file=e.target.files?.[0];e.target.value='';if(file)void importFile(file);}}/></div></details>
-  </div>{/* 테마 바꾸기도 고정 머리에 둔다(2026-11-14 사용자 지시). */}<div className="route-theme"><ThemeSwitch/></div></div></div>
+  </div></div></div>
   <div className="tasks-layout"><div className="tasks-main">{checks.error&&<div role="status" className="save-status error">{checks.status}<Button variant="secondary" onClick={checks.retry}>저장소 다시 읽기</Button></div>}
   {next&&<section className="next-action"><h2>다음 할 일</h2><p><GameText text={next.a.text} withSkills/></p></section>}
   <p className="sr-only" aria-live="polite">{announce}</p><div data-checklist-source>{chapters.map(c=>{const cg=chapterGroups(c,groups),total=cg.reduce((n,g)=>n+g.actions.length,0),done=cg.reduce((n,g)=>n+g.actions.filter(a=>checked(a,g.id,checks.effective)).length,0),date=chapterDates(c),complete=total>0&&done===total;return <details key={`${c.title}-${chapter.title}`} className="chapter-section" data-chapter={c.title} data-current={c.title===active.title} data-completed={complete} hidden={hideDone&&complete} open={c.title===chapter.title&&!complete}>
     <summary><ChevronDown size={22}/><span className="chapter-title">{c.title}</span>{!complete&&c.title===active.title&&<span className="progress-chip current-chip">현재</span>}{total>0&&<span className="progress-chip">{done}/{total}</span>}{!complete&&date&&<span className="chapter-date">{glueDots(date)}</span>}</summary>
     {c.event&&<GuideImage className="chapter-event" source src={'/'+c.event.src} alt={c.event.alt}/>}
-    {c.blocks.map(b=>{const g=groups.find(g=>g.id===b.id),Container=g?'details':'section',Header=g?'summary':'header';return <Container open={g?true:undefined} className={g?'action-group':'chapter-supplement'} key={b.id} data-source-block={b.id} id={b.id}>
+    {c.blocks.map(b=>{const g=groups.find(g=>g.id===b.id),Container=g?'details':'section',Header=g?'summary':'header';return <YuphasGroup key={b.id}><Container open={g?true:undefined} className={g?'action-group':'chapter-supplement'} data-source-block={b.id} id={b.id}>
       {(g||b.portraits.length>0)&&<Header>{g&&<ChevronDown size={22}/ >}{g&&<span className="group-title">{b.heading.length&&!Object.hasOwn(overrides.groups,g.id)?<SourceMarkup nodes={b.heading} {...markupProps} skip={new Set(b.portraits.map(p=>p.name.replace(/ 초상화.*$/,'')))}/>:<GameText text={g.title} skip={new Set(b.portraits.map(p=>p.name.replace(/ 초상화.*$/,'')))}/>}</span>}<div className="group-portraits">{b.portraits.map(p=>{const name=p.name.replace(/ 초상화.*$/,''),img=<img key={p.src} data-source-image className={final25Class(p.name)} src={'/'+personPortrait(p.src,part,p.name)} alt={p.name} title={p.name} loading="lazy"/>;/* 제목 초상화도 인물 서랍을 연다(2026-11-15 사용자 결정). 접기 단추(summary)는 움직이지 않는다. */return onPerson&&people.includes(name)?<button type="button" key={p.src} className="portrait-button" aria-label={`${name} 인물 보기`} onClick={e=>{e.preventDefault();e.stopPropagation();onPerson(name);}}>{img}</button>:img;})}</div>{g&&<span className="group-count">{g.actions.filter(a=>checked(a,g.id,checks.effective)).length}/{g.actions.length}</span>}</Header>}
       {g&&groupSteps(g.actions.map(a=>a.id)).length>0&&<BoonSummary ids={g.actions.map(a=>a.id)}/>}{g&&<ol className="checklist">{g.actions.map(a=><li key={a.id} tabIndex={-1} hidden={hideDone&&checked(a,g.id,checks.effective)} data-complete={checked(a,g.id,checks.effective)}><input id={a.id} type="checkbox" checked={checked(a,g.id,checks.effective)} disabled={!checks.ready||autoChecked(a.id,checks.data.status)} aria-label={a.text} onChange={e=>{const value=e.target.checked;void celebrate(cg,c.title,a.id,value,e.currentTarget);checks.toggle(a.id,value);}}/><div><span className="action-category">{a.category}</span>{autoChecked(a.id,checks.data.status)&&<span className="status-owned">내 상태에서 보유</span>}<div className="action-text"><SourceMarkup nodes={actionNodes(c,g,a)} {...markupProps}/></div></div></li>)}</ol>}
-      <div className="action-notes">{Object.hasOwn(overrides.notes,b.id)?(overrides.notes as Record<string,Group['notes']>)[b.id].map((n,i)=><p key={i}>{n.text}</p>):<SourceMarkup nodes={b.notes} {...markupProps}/>}</div>
-    </Container>;})}
+      <div className="action-notes">{Object.hasOwn(overrides.notes,b.id)?(overrides.notes as Record<string,Group['notes']>)[b.id].map((n,i)=><p key={i}>{verificationTail(n.text)}</p>):<SourceMarkup nodes={b.notes} {...markupProps}/>}</div>
+    </Container></YuphasGroup>;})}
   </details>;})}</div></div>{context&&context(chapter)}</div>{gameDate&&<DateOdometer value={formatGameDate(PART1_YEAR,gameDate)} label={`게임 날짜 ${PART1_YEAR}년 ${gameDate.m}월 ${gameDate.d}일`}/>}<ImportOverlay phase={importPhase} onClose={()=>setImportPhase({state:'idle'})}/>{/* 알림 칸은 늘 두어 화면 읽기 프로그램이 새 문구를 읽게 한다. */}<p className={imported?'import-toast':'sr-only'} aria-live="polite">{imported}</p></>;
 }
 export function chapterDates(chapter:Chapter){const dates=chapter.blocks.flatMap(b=>b.title.match(/\d{1,2}\/\d{1,2}(?:\s*~\s*\d{1,2}\/\d{1,2})?/g)||[]);return [...new Set(dates)].join(' · ');}

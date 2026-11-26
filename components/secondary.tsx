@@ -1,9 +1,9 @@
 'use client';
-import { GameText, GameIcon } from './game-text';
+import { GameIcon } from './game-text';
 import type { Secondary } from '@/lib/secondary';
 import { Records, Semantic } from './records';
 import godManifest from '@/assets/gods/manifest.json';
-import { MapThumbnail } from './detail-sheets';
+import { MaterialChip } from './yuphas';
 import { Info } from 'lucide-react';
 import { ReadMore } from './read-more';
 import { useChecks } from './checks';
@@ -20,6 +20,6 @@ export function Preparation({data,route,part,onDoc}:{data:Secondary;route:string
   const status=useChecks().data.status,levels=status&&Object.keys(status.gods).length?status.gods:null,target=levels?godPlan.priority.find(p=>(levels[p.god]||0)<p.level):undefined;
   return <div className="prep-content"><h2>가호와 주간 봉사</h2>{levels&&<p className="status-summary" role="status">{target?<>다음 봉사 목표: {target.god} {target.level} · {target.effect}</>:'봉사 순서의 목표를 모두 달성했습니다'}</p>}<div className="god-list">{Object.entries(godManifest.portraits).filter(([name])=>text.includes(name)).map(([name,god])=><span key={name}><img src={'/'+god.file} alt={name} width={48} height={48}/>{name}{levels&&<span className="status-owned">현재 {levels[name]||0}</span>}</span>)}</div><Records value={data.service}/><details className="reference-disclosure"><summary>축복·보존·시험의 공통 기준</summary><Semantic nodes={data.prepTree} route={route} part={part} onDoc={onDoc} hideGodPortraits/><Semantic nodes={data.exam} route={route} part={part} onDoc={onDoc} hideGodPortraits/></details><details className="reference-disclosure"><summary>이 구간의 준비와 운영 안내</summary>{data.blocks.map((b,i)=><Semantic key={i} nodes={b.tree} route={route} part={part} onDoc={onDoc} hideGodPortraits/>)}</details></div>;
 }
-export function Materials({data,route,part,onDoc,onMaterial}:{data:Secondary;route:string;part:string;onDoc:(url:string)=>void;onMaterial:(id:string)=>void}){
-  return <><h2>재료와 위치</h2>{part==='1'?<><div className="material-grid">{data.materials.map(m=><article className="material-entry" key={m.id}><h3><GameText text={m.name}/></h3><MapThumbnail material={m} title={m.name} onOpen={()=>onMaterial(m.id)}/><Records value={m.info}/></article>)}</div><details className="reference-disclosure"><summary>재료 조건 원문</summary><Semantic nodes={data.materialsTree} route={route} part={part} onDoc={onDoc}/></details></>:<p>이 부의 입수·귀환·기한은 할 일의 본문 체크를 따르세요. 1부 영입 재료는 1부 화면에서 확인할 수 있습니다.</p>}<h2>구매 계획</h2><Records value={data.purchases}/><details><summary>구매 판단 기준</summary><Records value={data.rules}/></details><h2>장별 골드</h2><p className="info-notice"><Info size={20}/>이미 끝낸 항목의 예산은 빼세요. 고정 진입 조건이나 실제 잔액이 아닙니다.</p><GoldTables value={data.gold} notice={<Semantic nodes={data.notices} route={route} part={part}/>}/></>;
+export function Materials({data,route,part}:{data:Secondary;route:string;part:string;onDoc?:(url:string)=>void}){
+  return <><h2>재료와 위치</h2>{part==='1'?<><div className="material-grid">{data.materials.map(m=><MaterialChip key={m.id} name={m.name} quantity={m.quantity} people={(m.info as {people?:string[]}|undefined)?.people} route={route}/>)}</div></>:<p>이 부의 입수·귀환·기한은 할 일의 본문 체크를 따르세요. 1부 영입 재료는 1부 화면에서 확인할 수 있습니다.</p>}<h2>구매 계획</h2><Records value={data.purchases}/><details><summary>구매 판단 기준</summary><Records value={data.rules}/></details><h2>장별 골드</h2><p className="info-notice"><Info size={20}/>이미 끝낸 항목의 예산은 빼세요.</p><GoldTables value={data.gold} notice={<Semantic nodes={data.notices} route={route} part={part}/>}/></>;
 }

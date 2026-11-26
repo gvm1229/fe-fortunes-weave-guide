@@ -3,11 +3,11 @@ import Link from 'next/link';
 import { Fragment, ViewTransition } from 'react';
 import { Progress } from './progress';
 import { ArrowRight } from 'lucide-react';
-import { ThemeSwitch } from './theme';
 import type { Group, Route } from '@/lib/content';
 import { useChecks } from './checks';
 import { checked } from '@/lib/check-state';
 import { lordFiles, lordPortrait } from '@/lib/portraits';
+import { lordEmblems } from '@/lib/yuphas';
 const playOrder:Record<string,string>={theodora:'1부 1st · 2부 1st',leda:'1부 2nd · 2부 2nd',dietrich:'1부 3rd · 2부 3rd',cai:'1부 4th · 2부 4th'};
 export function Home({routes}:{routes:{id:Route;label:string;parts:{part:string;groups:Group[]}[]}[]}){
   const checks=useChecks();
@@ -15,11 +15,11 @@ export function Home({routes}:{routes:{id:Route;label:string;parts:{part:string;
   const lords=['cai','dietrich','theodora','leda'].map(id=>routes.find(r=>r.id===id)!);
   const third=routes.find(r=>r.id==='part3')!,thirdProgress=progress(third.parts[0].groups);
   return <ViewTransition default="page-fade"><main className="home">
-    <header className="home-top"><h1 className="brand">만자천홍 개인화 공략</h1><div className="home-actions"><Link className="button" href="/team/">최종 25명</Link><ThemeSwitch/></div></header>
+    <header className="home-top"><h1 className="brand">만자천홍 개인화 공략</h1><div className="home-actions"><Link className="button" href="/team/">최종 25명</Link></div></header>
     <div className="route-deck">{lords.map(r=>{
       const current=r.parts.find(p=>{const x=progress(p.groups);return x.done>0&&x.done<x.total;})||r.parts.find(p=>{const x=progress(p.groups);return x.done<x.total;})||r.parts.at(-1)!;
       return <Link className="route-card" key={r.id} data-route={r.id} href={`/${r.id}/${current.part}/`} aria-label={`${r.label} ${current.part}부 이어하기`}>
-        <img className="route-emblem" src={`/assets/design/emblems/${lordFiles[r.id]}.webp`} alt=""/>
+        <img className="route-emblem" src={lordEmblems[r.id]} alt=""/>
         <ViewTransition name={`lord-${r.id}`} share="morph" default="none"><img className="lord-portrait" src={lordPortrait(r.id,'1',true)} alt={r.label}/></ViewTransition>
         <span className="route-order"><span className="route-order-unit">루트 진행 순서:</span> {playOrder[r.id].split(' · ').map((s,i)=><Fragment key={s}>{i>0&&' · '}<span className="route-order-unit">{s}</span></Fragment>)}</span>
         <div className="route-card-content"><h2>{r.label}</h2>{r.parts.map(p=>{const x=progress(p.groups);return <div className="route-progress" key={p.part}><span>{p.part}부</span><Progress value={x.done} max={x.total} label={`${r.label} ${p.part}부 진행률`}/><span>{x.done}/{x.total}</span></div>;})}<span className="button button-accent">이어하기</span></div>

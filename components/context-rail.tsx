@@ -7,11 +7,11 @@ import type { Secondary } from '@/lib/secondary';
 import { checked } from '@/lib/check-state';
 import { useChecks } from './checks';
 import { chapterDates } from './tasks';
-import { MapThumbnail } from './detail-sheets';
+import { MaterialChip } from './yuphas';
 import { personPortrait } from '@/lib/portraits';
 import { final25Class } from '@/lib/final25';
 import { MessagesSquare } from 'lucide-react';
-export function ContextRail({chapter,groups,people,data,onPerson,onMaterial,onDoc}:{chapter:Chapter;groups:Group[];people:Person[];data:Secondary;onPerson:(name:string)=>void;onMaterial:(id:string)=>void;onDoc?:(url:string)=>void}){
+export function ContextRail({chapter,groups,people,data,onPerson,onDoc,route}:{chapter:Chapter;groups:Group[];people:Person[];data:Secondary;onPerson:(name:string)=>void;onDoc?:(url:string)=>void;route:string}){
   const checks=useChecks(),cg=chapterGroups(chapter,groups),total=cg.reduce((n,g)=>n+g.actions.length,0),done=cg.reduce((n,g)=>n+g.actions.filter(a=>checked(a,g.id,checks.effective)).length,0);
   const part=groups[0]?.stage==='part3-plan'?'3':'1';
   const portraits=new Set(chapter.blocks.flatMap(b=>b.portraits.map(p=>personPortrait(p.src,part,p.name)))),members=[...new Map(people.filter(p=>portraits.has(p.portrait)).map(p=>[p.name,p])).values()],materialIds=new Set<string>();
@@ -19,5 +19,5 @@ export function ContextRail({chapter,groups,people,data,onPerson,onMaterial,onDo
   const materials=data.materials.filter(m=>materialIds.has(m.id));
   // 목표 금액이 없는 자료(3부 구간 등)는 0G가 아니라 미확인으로 둔다.
   const gold=Array.isArray(data.gold)?data.gold.find(g=>String(g.chapter)===chapter.title.replace(/\D/g,'')&&g.target!==undefined):undefined;
-  return <aside className="context-rail" aria-label="이 장의 정보"><section><h2>{chapter.title}</h2>{chapterDates(chapter)&&<p>{glueDots(chapterDates(chapter))}</p>}{total>0&&<p>이 장 완료 <strong>{done}/{total}</strong></p>}</section><section><h2>이 장의 인물</h2><div className="context-people">{members.map(p=><button className="icon-button" key={p.name} onClick={()=>onPerson(p.name)} aria-label={`${p.name} 인물 보기`}><img className={final25Class(p.name)} src={'/'+p.portrait} alt={p.name} loading="lazy"/></button>)}</div>{!members.length&&<p>0명</p>}{/* 2026-11-15 사용자 지시: 할 일을 뒤지지 않고 지원 대화 목록을 연다. */}{onDoc&&<button type="button" className="button button-outline support-doc-button" aria-haspopup="dialog" onClick={()=>onDoc('notes/support-pairs-by-route.html')}><MessagesSquare size={20} aria-hidden="true"/>루트별 지원 대화</button>}</section><section><h2>골드 목표</h2><p>{gold?<span className="game-badge" data-kind="gold"><GameIcon kind="gold"/><b className="badge-value">{Number(gold.target||0).toLocaleString()}G</b></span>:'미확인'}</p></section><section><h2>이 장의 재료</h2>{materials.map(m=><MapThumbnail key={m.id} material={m} onOpen={()=>onMaterial(m.id)}/>)}{!materials.length&&<p>0개</p>}</section></aside>;
+  return <aside className="context-rail" aria-label="이 장의 정보"><section><h2>{chapter.title}</h2>{chapterDates(chapter)&&<p>{glueDots(chapterDates(chapter))}</p>}{total>0&&<p>이 장 완료 <strong>{done}/{total}</strong></p>}</section><section><h2>이 장의 인물</h2><div className="context-people">{members.map(p=><button className="icon-button" key={p.name} onClick={()=>onPerson(p.name)} aria-label={`${p.name} 인물 보기`}><img className={final25Class(p.name)} src={'/'+p.portrait} alt={p.name} loading="lazy"/></button>)}</div>{!members.length&&<p>0명</p>}{/* 2026-11-15 사용자 지시: 할 일을 뒤지지 않고 지원 대화 목록을 연다. */}{onDoc&&<button type="button" className="button button-outline support-doc-button" aria-haspopup="dialog" onClick={()=>onDoc('notes/support-pairs-by-route.html')}><MessagesSquare size={20} aria-hidden="true"/>루트별 지원 대화</button>}</section><section><h2>골드 목표</h2><p>{gold?<span className="game-badge" data-kind="gold"><GameIcon kind="gold"/><b className="badge-value">{Number(gold.target||0).toLocaleString()}G</b></span>:'미확인'}</p></section><section><h2>이 장의 재료</h2>{materials.map(m=><MaterialChip key={m.id} name={m.name} quantity={m.quantity} route={route}/>)}{!materials.length&&<p>0개</p>}</section></aside>;
 }

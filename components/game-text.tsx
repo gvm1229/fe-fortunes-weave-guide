@@ -3,6 +3,8 @@ import classes from '@/assets/classes/manifest.json';
 import { personPortrait } from '@/lib/portraits';
 import items from '@/assets/items/manifest.json';
 import { Fragment } from 'react';
+import { yuphasItem, yuphasItemNames, itemUrl } from '@/lib/yuphas';
+import { YLink, useFirstLink } from './yuphas';
 import { final25Class } from '@/lib/final25';
 import { Heart, Sparkles, Coins, Fish, Gem, Beef, Gift, Sword, Package } from 'lucide-react';
 const symbols={bond:Heart,renown:Sparkles,gold:Coins,fish:Fish,ore:Gem,meat:Beef,gift:Gift};
@@ -23,13 +25,15 @@ const basePattern=new RegExp(String.raw`(?:지원|유대)(?:\s*(?:Lv\.?\s*)?\d+|
 const portraits=people as Record<string,{portrait:string}>;
 const classImages=classes.classes as Record<string,{file:string}>;
 const names=[...Object.keys(portraits),...Object.keys(classImages)].sort((a,b)=>b.length-a.length);
-type ItemEntry={file:string|null;kind:string;fallback?:string;aliases?:string[]};
+type ItemEntry={file:string|null;kind:string;fallback?:string;aliases?:string[];bounded?:boolean};
 /** 공식 물품 그림(assets/items/manifest.json). 게임은 종류·등급별 공용 그림을 쓴다. 별칭도 같은 그림으로 잡는다. */
 const itemByName=new Map<string,ItemEntry>();
 for(const [name,entry] of Object.entries((items as {items:Record<string,ItemEntry>}).items))for(const n of [name,...(entry.aliases||[])])if(n.length>=2&&!portraits[n]&&!classImages[n]&&!skills[n]&&!itemByName.has(n))itemByName.set(n,entry);
+/** yuphastemple 이름표에만 있는 무기·마법·선물 이름(2026-11-27). 다른 낱말 속에서 잡히지 않게 한글 경계를 둔다. */
+for(const n of yuphasItemNames)if(n.length>=2&&!portraits[n]&&!classImages[n]&&!skills[n]&&!itemByName.has(n))itemByName.set(n,{file:null,kind:yuphasItem(n)!.kind,fallback:yuphasItem(n)!.kind==='weapon'?'sword':yuphasItem(n)!.kind==='gift'?'gift':undefined,bounded:true});
 const escape=(n:string)=>n.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
 /** 두 글자 물품 이름(로카·성수·루나 등)은 다른 낱말 속에서 잡히지 않게 한글 경계를 둔다. */
-const itemPattern=Array.from(itemByName.keys()).sort((a,b)=>b.length-a.length).map(n=>(n.length<=2?`(?<![가-힣])${escape(n)}(?![가-힣])`:escape(n))+(itemByName.get(n)!.kind==='seal'?sealCount:count)).join('|');
+const itemPattern=Array.from(itemByName.keys()).sort((a,b)=>b.length-a.length).map(n=>(n.length<=2||itemByName.get(n)!.bounded?`(?<![가-힣])${escape(n)}(?![가-힣])`:escape(n))+(itemByName.get(n)!.kind==='seal'?sealCount:count)).join('|');
 const pattern=new RegExp('('+names.map(escape).join('|')+'|'+itemPattern+'|'+basePattern.source+')','g');
 const itemNameRe=new RegExp('^('+Array.from(itemByName.keys()).sort((a,b)=>b.length-a.length).map(escape).join('|')+')(\\s*(?:[×x]\\s*)?\\d+(?:개|마리|자루|장|매)?)?$');
 const fileName=(src:string)=>src.replace(/^\/+/,'').replace(/^assets\/portraits\/post-timeskip\//,'assets/portraits/');
@@ -73,7 +77,7 @@ function classify(word:string):{kind:BadgeKind;icon:keyof typeof symbols|'skill'
   return null;
 }
 export function GameText({text,withSkills=false,part='1',skip}:{text:string;withSkills?:boolean;part?:string;skip?:ReadonlySet<string>}) {
-  const shown=new Set<string>(),words=text.replaceAll('백마법','백마술').split(pattern);
+  const shown=new Set<string>(),words=text.replaceAll('백마법','백마술').split(pattern),first=useFirstLink();
   const nodes=words.map((word,i)=>{
     if(!word)return null;
     if((portraits[word]||classImages[word])&&(skip?.has(word)||shown.has(word)))return classImages[word]&&!portraits[word]?<strong key={i}>{word}</strong>:word;
@@ -83,7 +87,10 @@ export function GameText({text,withSkills=false,part='1',skip}:{text:string;with
     const it=word.match(itemNameRe);
     if(it){const entry=itemByName.get(it[1])!,kind=/^(fish|ore|meat|material)$/.test(entry.kind)?'material':entry.kind==='gift'?'gift':entry.kind==='spell'?'skill':'item';
       const Fallback={gem:Gem,box:Package,sword:Sword,fish:Fish,ore:Gem,meat:Beef,gift:Gift,coin:Coins}[entry.fallback||'']||Package;
-      return <Badge key={i} kind={kind} icon={entry.file?<img src={'/'+entry.file} alt="" loading="lazy" width={22} height={22}/>:<Fallback className="game-icon game-icon-item" size={22} aria-hidden="true"/>} label={it[1]} rest={it[2]}/>;}
+      const y=yuphasItem(it[1]),icon=y?.icon||(entry.file?'/'+entry.file:null);
+      // 이름 규칙: 한국어 배지(누를 수 없음) + 묶음에서 처음 나올 때만 영어 단추(yuphastemple 새 탭).
+      const badge=<Badge key={i} kind={kind} icon={icon?<img src={icon} alt="" loading="lazy" width={22} height={22}/>:<Fallback className="game-icon game-icon-item" size={22} aria-hidden="true"/>} label={it[1]} rest={it[2]}/>;
+      return y&&first(y.slug,i)?<span key={i} className="y-pair">{badge}<YLink en={y.en} href={itemUrl(y.slug)}/></span>:badge;}
     const c=classify(word);
     if(!c)return <Fragment key={i}>{glueDots(word)}</Fragment>;
     if(c.kind==='skill')return withSkills?<Badge key={i} kind="skill" icon={<img className="game-skill" src={`/assets/skills/${skills[c.label]}.webp`} alt="" loading="lazy"/>} label={c.label} rest={c.rest}/>:<Fragment key={i}>{glueDots(word)}</Fragment>;
