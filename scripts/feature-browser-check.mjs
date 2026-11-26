@@ -29,10 +29,11 @@ try{
  assert.ok(await page.locator('.people-grid>.person').count()>0);
  await page.reload();await nav('인물').click();assert.equal(await page.getByLabel('육성판 목적').inputValue(),'기준 육성');
  await page.getByRole('button',{name:'시험 안내',exact:true}).click();await page.getByRole('dialog').waitFor();assert.ok((await page.locator('.sheet-scroll').innerText()).length>100);await page.keyboard.press('Escape');
- const detail=page.locator('.person').first();await detail.getByRole('button',{name:'원문 기록'}).click();
- const classButton=detail.locator('button.text-link').filter({hasText:'경기병'}).first();await classButton.click();
+ // 2026-11-27: 원문 기록 접이는 docs/reference로 옮겼다. 인물 카드의 선호 선물·음식 접이에 yuphastemple 영어 단추가 있고, 병종 문서는 할 일 본문의 병종 단추에서 열린다.
+ const detail=page.locator('.person').first();await detail.getByRole('button',{name:'선호 선물·음식'}).click();assert.ok(await detail.locator('[data-yuphas-link]').count()>3,'선호 선물 영어 단추');
+ await nav('할 일').click();await page.evaluate(()=>document.querySelectorAll('main details').forEach(d=>{d.open=true;}));const classButton=page.locator('.tasks-main button.reference-chip').first();await classButton.click();
  await page.getByRole('dialog').waitFor();assert.ok((await page.locator('.sheet-scroll').innerText()).includes('시험'));await page.keyboard.press('Escape');
- checks.push('육성판 필터·기억·시험 안내·인물 안 병종 버튼');
+ checks.push('육성판 필터·기억·시험 안내·선호 선물 링크·본문 병종 버튼');
  assert.equal(await page.evaluate(()=>localStorage.getItem('fortunes-weave-checklist-v1')),initial);
  await visit('/team/');
  const tab=name=>page.getByRole('tab',{name,exact:true});
@@ -65,17 +66,15 @@ try{
  checks.push('네 루트 × 두 부 편성·카드당 초상화 하나');
  for(const [width,height]of [[375,812],[768,1024],[3840,2160]]){
    await page.setViewportSize({width,height});
-   for(const name of ['백마술','루트 편성','비교 근거']){
+   for(const name of ['백마술','루트 편성']){
      await tab(name).click();await page.waitForTimeout(150);await layout(name+' '+width);
-     const path='.tmp/feature-'+width+'-'+({'백마술':'spells','루트 편성':'routes','비교 근거':'details'}[name])+'.png';await page.screenshot({path});screens.push(path);
+     const path='.tmp/feature-'+width+'-'+({'백마술':'spells','루트 편성':'routes'}[name])+'.png';await page.screenshot({path});screens.push(path);
    }
  }
- await page.setViewportSize({width:1440,height:900});await page.getByRole('tab',{name:'비교 근거',exact:true}).click();await page.getByRole('button',{name:'전체 참고 문서',exact:true}).click();
- await page.getByLabel('참고 문서 검색').fill('명시 발화');await page.locator('.document-list button').first().click();await page.getByRole('dialog').waitFor();
- assert.equal(await page.locator('.sheet-scroll [id="s01"]').count(),1);await page.keyboard.press('Escape');
- checks.push('Markdown 명시 앵커 보존');
+ await page.setViewportSize({width:1440,height:900});
+ // 2026-11-27: 비교 근거 탭과 전체 참고 문서 목록은 화면에서 뺐다(docs/reference). 앵커 검사는 그 목록으로만 열 수 있던 문서라 뺐다.
  for(const route of ['theodora','leda','dietrich','cai']){
-   await visit('/'+route+'/2/');for(const view of ['인물','준비','재료와 구매','참고 문서']){await nav(view).click();await layout(route+' 2부 '+view);}
+   await visit('/'+route+'/2/');for(const view of ['인물','준비','재료와 구매']){await nav(view).click();await layout(route+' 2부 '+view);}
  }
  await visit('/part3/3/');await nav('인물').click();await page.locator('.person-heading img[src*="post-timeskip"]').first().waitFor({timeout:15000});assert.ok(await page.locator('.person-heading img[src*="post-timeskip"]').count()>0);
  checks.push('3부 인물 시간 경과 후 초상화');

@@ -11,7 +11,7 @@ const browser = await chromium.launch({ executablePath: process.env.CHROME_PATH 
 const ROUTES = ['theodora', 'leda', 'dietrich', 'cai'], done = [];
 const hue = rgb => { const [r, g, b] = rgb.match(/\d+/g).map(Number).map(v => v / 255), mx = Math.max(r, g, b), mn = Math.min(r, g, b), d = mx - mn; if (!d) return -1; const h = mx === r ? ((g - b) / d) % 6 : mx === g ? (b - r) / d + 2 : (r - g) / d + 4; return (h * 60 + 360) % 360; };
 try {
-  for (const theme of ['light', 'dark']) {
+  for (const theme of ['dark']) {
     const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 }, colorScheme: theme, reducedMotion: 'reduce' }); const p = await ctx.newPage();
     const errors = []; p.on('pageerror', e => errors.push(e.message));
     // [U34] 모든 진행 막대는 흰 바탕·초록 막대. 반쯤 채워 그린 화면의 색을 직접 잰다.
@@ -41,7 +41,7 @@ try {
     await p.locator('.context-rail .support-doc-button').click(); const dlg = p.getByRole('dialog'); await dlg.waitFor();
     assert.ok(/루트별 지원 대화/.test(await dlg.innerText()), '[U33] 지원 대화 문서가 열림');
     const chips = dlg.locator('.pair-chip'); assert.ok(await chips.count() > 2, '[U32] 인물 거르기 단추');
-    const lines = () => dlg.evaluate(d => [...d.querySelectorAll('table')].filter(t => [...t.querySelectorAll('th')].some(h => h.textContent.trim() === '대화')).flatMap(t => { const i = [...t.querySelectorAll('th')].findIndex(h => h.textContent.trim() === '대화'); return [...t.querySelectorAll('tbody tr')].map(tr => tr.children[i]); }).filter(Boolean).map(td => { const w = document.createTreeWalker(td, NodeFilter.SHOW_TEXT), rects = []; for (let n; (n = w.nextNode());) if (n.textContent.trim()) { const r = document.createRange(); r.selectNodeContents(n); rects.push(...r.getClientRects()); } const fs = parseFloat(getComputedStyle(td).fontSize), span = rects.length ? Math.max(...rects.map(x => x.bottom)) - Math.min(...rects.map(x => x.top)) : 0; return { t: td.textContent.trim(), rows: span < fs * 2 ? 1 : Math.round(span / fs) }; }));
+    const lines = () => dlg.evaluate(d => [...d.querySelectorAll('table')].filter(t => [...t.querySelectorAll('th')].some(h => h.textContent.trim() === '대화')).flatMap(t => { const i = [...t.querySelectorAll('th')].findIndex(h => h.textContent.trim() === '대화'); return [...t.querySelectorAll('tbody tr')].map(tr => tr.children[i]?.querySelector('.y-pair-name') || tr.children[i]); }).filter(Boolean).map(td => { const w = document.createTreeWalker(td, NodeFilter.SHOW_TEXT), rects = []; for (let n; (n = w.nextNode());) if (n.textContent.trim()) { const r = document.createRange(); r.selectNodeContents(n); rects.push(...r.getClientRects()); } const fs = parseFloat(getComputedStyle(td).fontSize), span = rects.length ? Math.max(...rects.map(x => x.bottom)) - Math.min(...rects.map(x => x.top)) : 0; return { t: td.textContent.trim(), rows: span < fs * 2 ? 1 : Math.round(span / fs) }; }));
     const all = await lines(); assert.ok(all.length > 20, '[U32] 대화 칸'); for (const l of all) assert.equal(l.rows, 1, `[U32] ${theme} 짝 이름이 두 줄 이상: ${l.t}`);
     const pick = (await chips.nth(1).innerText()).trim(); await chips.nth(1).click(); await p.waitForTimeout(200);
     const kept = await lines(); assert.ok(kept.length > 0 && kept.length < all.length && kept.every(l => l.t.includes(pick)), `[U32] '${pick}' 거르기 ${kept.length}/${all.length}`);
@@ -58,7 +58,7 @@ try {
     await p.evaluate(() => scrollTo(0, 3000)); await p.waitForTimeout(500);
     const tt = await p.evaluate(() => { const e = document.querySelector('.to-top'), r = e.getBoundingClientRect(), cs = getComputedStyle(e); return { round: parseFloat(cs.borderRadius) >= r.width / 2 - 1, text: e.textContent.trim(), title: e.title, svg: !!e.querySelector('svg'), right: innerWidth - r.right < 48, bottom: innerHeight - r.bottom < 120 }; });
     assert.ok(tt.round && !tt.text && tt.title && tt.svg && tt.right && tt.bottom, `[U27] 맨 위로 ${JSON.stringify(tt)}`);
-    // [U24] 최종 25인: 서랍에 금색 '최종 25인' 배지, 얼굴에 4px 빨간 테두리(밝게·어둡게 같음).
+    // [U24] 최종 25인: 서랍에 금색 '최종 25인' 배지, 얼굴에 4px 빨간 테두리(어두운 화면만, 2026-11-27).
     await p.evaluate(() => scrollTo(0, 0));
     await p.locator('main button:has(img.final25-portrait):visible').first().click(); await p.getByRole('dialog').waitFor(); await p.waitForTimeout(300);
     const badge = await p.evaluate(() => { const b = document.querySelector('[role=dialog] .final25-badge'); return b && { t: b.textContent.trim(), bg: getComputedStyle(b).backgroundColor }; });
@@ -73,7 +73,7 @@ try {
     // [U08] 같은 묶음 안에서 같은 얼굴을 되풀이하지 않는다.
     const dup = await p.evaluate(() => [...document.querySelectorAll('.group-portraits,.context-people,.people-grid')].flatMap(g => { const s = [...g.querySelectorAll('img[src*="/portraits/"]')].filter(i => !i.closest('.person > :not(.person-heading)')).map(i => i.getAttribute('src')); return s.filter((x, i) => s.indexOf(x) !== i); }));
     assert.deepEqual(dup, [], `[U08] 묶음 안 같은 얼굴`);
-    // [U05] 팀 화면 교체 카드: 6px 빨간 테두리(밝게·어둡게 같음), 배지에 누구 대신인지. [U06] 카드 순서는 역할 묶음 → 우선순위. [U08] 같은 얼굴 없음.
+    // [U05] 팀 화면 교체 카드: 6px 빨간 테두리, 배지에 누구 대신인지. [U06] 카드 순서는 역할 묶음 → 우선순위. [U08] 같은 얼굴 없음.
     for (const sc of team.proposal.scenarios) {
       await p.goto(base + '/team/'); await p.evaluate(s => localStorage.setItem('fortunes-weave-view-v1', JSON.stringify({ 'team-tab': 'final', 'team-scenario': s, 'team-trials': [] })), sc.id); await p.reload(); await p.waitForLoadState('networkidle');
       const r = await p.evaluate(() => ({ names: [...document.querySelectorAll('.unit-card .unit-name')].map(e => e.textContent.trim()), swapped: [...document.querySelectorAll('.unit-card[data-swapped]')].map(c => ({ b: getComputedStyle(c).borderTopWidth + ' ' + getComputedStyle(c).borderTopColor, badge: c.closest('.unit-cell')?.querySelector('.swap-badge')?.textContent || c.querySelector('.swap-badge')?.textContent || '' })), imgs: [...document.querySelectorAll('.unit-card img[src*="portraits"]')].map(i => i.getAttribute('src')) }));
@@ -82,8 +82,8 @@ try {
       assert.equal(new Set(r.imgs).size, r.imgs.length, `[U08] ${sc.id} 팀 화면 같은 얼굴`);
       for (const s of r.swapped) { assert.equal(s.b, '6px ' + RED, `[U05] ${theme} ${sc.id} 교체 테두리`); assert.ok(/대신/.test(s.badge) && Object.keys(swaps).some(o => s.badge.includes(o)), `[U05] ${sc.id} 배지에 누구 대신인지: ${s.badge}`); }
     }
-    // [U48] 팀 '루트 편성'·'비교 근거': 같은 단계 제목의 왼쪽 여백이 한 가지(여러 열 배치면 각 열 안에서 같은 위치), 같은 칸 안 얼굴 되풀이 없음.
-    for (const tab of ['루트 편성', '비교 근거']) {
+    // [U48] 팀 '루트 편성': 같은 단계 제목의 왼쪽 여백이 한 가지(여러 열 배치면 각 열 안에서 같은 위치), 같은 칸 안 얼굴 되풀이 없음('비교 근거' 탭은 2026-11-27 삭제).
+    for (const tab of ['루트 편성']) {
       await p.goto(base + '/team/'); await p.waitForLoadState('networkidle'); await p.getByRole('tab', { name: tab, exact: true }).click(); await p.waitForTimeout(400);
       const r = await p.evaluate(() => { const panel = document.querySelector('[role=tabpanel]:not([hidden])'), hs = [...panel.querySelectorAll('h2,h3')].filter(e => e.checkVisibility());
         const off = hs.map(h => { const col = () => { for (let x = h; x && x !== panel; x = x.parentElement) { const p = x.parentElement, cs = p && getComputedStyle(p); if (cs && cs.display.includes('grid') && cs.gridTemplateColumns.trim().split(/\s+/).length > 1) return x; } return panel; }, box = col(); return h.tagName + ':' + Math.round(h.getBoundingClientRect().left - box.getBoundingClientRect().left); });
@@ -96,6 +96,58 @@ try {
     const gp = p.locator('.group-portraits button:visible').first(); assert.ok(await gp.count(), '[U50] 묶음 얼굴 단추'); await gp.click(); await p.getByRole('dialog').waitFor({ timeout: 3000 }); await p.keyboard.press('Escape');
     assert.deepEqual(errors, [], '페이지 오류'); done.push(theme); await ctx.close();
   }
+  // [U63] 어두운 화면만(2026-11-27): 운영체제가 밝게여도 <html class="dark">, color-scheme dark, 바탕이 어둡고, "화면 테마 바꾸기" 단추가 0개.
+  { const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 }, colorScheme: 'light' }), p = await ctx.newPage();
+    for (const u of ['/', '/theodora/1/', '/team/']) {
+      await p.goto(base + u); await p.waitForLoadState('networkidle');
+      const r = await p.evaluate(() => {
+        // 바탕색: body가 투명이면 html 색을 본다. 상대 휘도(0 검정 ~ 1 흰색).
+        const bg = [document.body, document.documentElement].map(e => getComputedStyle(e).backgroundColor.match(/[\d.]+/g).map(Number)).find(c => c.length < 4 || c[3] > 0) || [255, 255, 255];
+        const lin = v => (v /= 255) <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4;
+        return { dark: document.documentElement.classList.contains('dark'), scheme: getComputedStyle(document.documentElement).colorScheme, bg: bg.slice(0, 3).join(','), lum: 0.2126 * lin(bg[0]) + 0.7152 * lin(bg[1]) + 0.0722 * lin(bg[2]) };
+      });
+      assert.ok(r.dark, `[U63] ${u} 밝게 설정에서도 html에 dark`); assert.equal(r.scheme, 'dark', `[U63] ${u} color-scheme`);
+      assert.ok(r.lum < 0.05, `[U63] ${u} 바탕이 어둡지 않음 rgb(${r.bg}) 휘도 ${r.lum.toFixed(3)}`);
+      assert.equal(await p.getByRole('button', { name: '화면 테마 바꾸기' }).count(), 0, `[U63] ${u} 테마 바꾸기 단추 남음`);
+    }
+    await ctx.close(); }
+  // [U64] 이름 규칙(2026-11-27): yuphastemple 단추는 영어 글·새 탭·yuphastemple 주소이고, 한국어 이름 배지는 누를 수 없다(단추·링크 안에 없다).
+  //       한 할 일 묶음 안에서 같은 물품 주소의 영어 단추는 한 번만. 본문 지도 링크는 game8이 아니라 yuphastemple 지도.
+  // [U65] 근거·기록용 글이 화면에 없다: 원문 기록·비교 근거·참고 문서·그림 출처·입수 원문·특기 검토 문서·근거/검토 문서 단추·조심 문구.
+  // [U66] 인물 서랍·팀 인물 서랍 머리는 yuphastemple 인물 카드(이름 빛·병종 줄·장점·약점 12칸·소속 문장·큰 초상화), 선호 선물·음식 목록과 지원 표가 있다.
+  { const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 }, reducedMotion: 'reduce' }), p = await ctx.newPage();
+    const BLOAT = ['원문 기록', '비교 근거', '참고 문서', '그림 출처', '입수 원문', '특기 검토 문서', '전체 참고 문서', '훈련 순서·시설Lv·스승 근거', '전원 영입 검토', '평준화·증서 근거', '한 곳에서만 확인', '확인되지 않았다', '실제 합류와 출격 자리는 게임 화면을 먼저 확인하세요', '고정 진입 조건이나 실제 잔액이 아닙니다'];
+    const bloat = async (u) => { await p.evaluate(() => document.querySelectorAll('main details').forEach(d => { d.open = true; })); const t = await p.evaluate(() => document.body.innerText); for (const w of BLOAT) assert.ok(!t.includes(w), `[U65] ${u} 화면에 '${w}'`); };
+    for (const r of ROUTES) {
+      await p.goto(base + `/${r}/1/`); await p.locator('.route-head').waitFor(); await p.evaluate(() => document.querySelectorAll('main details').forEach(d => { d.open = true; })); await p.waitForTimeout(300);
+      const navs = await p.getByRole('navigation', { name: '공략 화면' }).getByRole('button').allInnerTexts(); assert.equal(navs.length, 4, `[U65] ${r} 탐색 화면 넷(할 일·인물·준비·재료와 구매) ${navs}`);
+      assert.ok(!navs.some(x => /문서/.test(x)), `[U65] ${r} 참고 문서 화면 단추`);
+      const y = await p.evaluate(() => { const links = [...document.querySelectorAll('[data-yuphas-link]')]; return {
+        n: links.length,
+        bad: links.filter(a => /[가-힣]/.test(a.textContent) || a.target !== '_blank' || !a.href.startsWith('https://yuphastemple.com/')).map(a => a.textContent + ' ' + a.href).slice(0, 5),
+        dupe: [...document.querySelectorAll('.action-group,.chapter-supplement')].flatMap(g => { const h = [...g.querySelectorAll('[data-yuphas-link]')].map(a => a.href).filter(x => x.includes('?item=')); return h.filter((x, i) => h.indexOf(x) !== i); }).slice(0, 5),
+        clickableKo: [...document.querySelectorAll('.game-badge[data-kind=item],.game-badge[data-kind=gift],.game-badge[data-kind=material],[data-ko-badge]')].filter(b => b.closest('a,button')).length,
+        game8: [...document.querySelectorAll('main a[href*="game8"],main a[href*="gamewith"]')].length,
+        map: links.filter(a => a.href.startsWith('https://yuphastemple.com/map/')).length }; });
+      assert.ok(y.n > 20, `[U64] ${r} yuphastemple 단추 수 ${y.n}`); assert.deepEqual(y.bad, [], `[U64] ${r} 영어·새 탭·주소`); assert.deepEqual(y.dupe, [], `[U64] ${r} 묶음 안 같은 물품 영어 단추 되풀이`);
+      assert.equal(y.clickableKo, 0, `[U64] ${r} 누를 수 있는 한국어 배지`); assert.equal(y.game8, 0, `[U64] ${r} game8·gamewith 링크`); assert.ok(y.map > 0, `[U64] ${r} yuphastemple 지도 링크`);
+      await bloat(`/${r}/1/ 할 일`);
+      for (const v of ['인물', '준비', '재료와 구매']) { await p.getByRole('navigation', { name: '공략 화면' }).getByRole('button', { name: v, exact: true }).click(); await p.waitForTimeout(500); await bloat(`/${r}/1/ ${v}`); }
+      assert.equal(await p.locator('.map-thumbnail').count(), 0, `[U64] ${r} 지도 사진`);
+    }
+    await p.goto(base + '/theodora/1/'); await p.locator('.route-head').waitFor(); await p.waitForTimeout(300);
+    await p.locator('.group-portraits button:visible').first().click(); const dlg = p.getByRole('dialog'); await dlg.waitFor();
+    const card = await dlg.evaluate(d => { const c = d.querySelector('[data-character-header]'); return c && { name: !!c.querySelector('.y-card-name'), glow: getComputedStyle(c.querySelector('.y-card-name')).textShadow.includes('202, 185, 157'), cls: !!c.querySelector('.y-card-class img'), skills: c.querySelectorAll('.y-skills li').length, marks: c.querySelectorAll('.y-skills li[data-state=boon],.y-skills li[data-state=bane]').length, faction: getComputedStyle(c, '::before').backgroundImage.includes('/yuphas/emblems/'), portrait: c.querySelector('.y-card-portrait')?.naturalWidth >= 400, gifts: d.querySelectorAll('.y-gift').length, ribbons: d.querySelectorAll('.y-ribbon').length, food: d.querySelectorAll('.y-food').length, sup: d.querySelectorAll('.y-support-table tbody tr').length, special: [...d.querySelectorAll('dt')].some(x => x.textContent.trim() === '특기') }; });
+    assert.ok(card && card.name && card.glow && card.cls && card.skills === 12 && card.marks > 0 && card.faction && card.portrait, `[U66] 인물 서랍 머리 ${JSON.stringify(card)}`);
+    assert.ok(card.gifts > 5 && card.ribbons > 0 && card.food > 0 && card.sup > 0 && !card.special, `[U66] 인물 서랍 선물·음식·지원 ${JSON.stringify(card)}`);
+    await p.keyboard.press('Escape');
+    for (const tab of ['최종 25인', '백마술', '루트 편성']) { await p.goto(base + '/team/'); await p.waitForLoadState('networkidle'); await p.getByRole('tab', { name: tab, exact: true }).click(); await p.waitForTimeout(400); await bloat(`/team/ ${tab}`); }
+    assert.equal(await p.getByRole('tab').count(), 3, '[U65] 팀 탭 셋');
+    await p.getByRole('tab', { name: '최종 25인', exact: true }).click(); await p.locator('.unit-card').first().click(); const td = p.getByRole('dialog'); await td.waitFor(); await p.waitForTimeout(300);
+    const tcard = await td.evaluate(d => ({ head: d.querySelectorAll('[data-character-header] .y-skills li').length, special: [...d.querySelectorAll('dt')].some(x => x.textContent.trim() === '특기'), review: /특기 검토 문서/.test(d.innerText), gifts: d.querySelectorAll('.y-gift').length }));
+    assert.ok(tcard.head === 12 && !tcard.special && !tcard.review && tcard.gifts > 0, `[U66] 팀 인물 서랍 ${JSON.stringify(tcard)}`);
+    await p.goto(base + '/'); await p.waitForLoadState('networkidle'); await bloat('/');
+    await ctx.close(); }
   // [U51] 휴대폰에서 고정 머리는 얇게(붙은 머리 높이 120px 이하, 화면의 1/6 이하). 바닥 날짜 40px은 header-browser-check.
   { const ctx = await browser.newContext({ viewport: { width: 360, height: 740 } }), p = await ctx.newPage();
     await p.goto(base + '/theodora/1/'); await p.locator('.route-head').waitFor(); await p.evaluate(() => scrollTo(0, 2500)); await p.waitForTimeout(500);
@@ -113,14 +165,11 @@ try {
   // [U10] 장의 마지막 항목을 체크하면 색종이가 터진다(움직임 줄이기가 아닐 때). 새 브라우저 저장소에서만 누른다.
   { const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 }, reducedMotion: 'no-preference' }), p = await ctx.newPage();
     await p.goto(base + '/theodora/1/'); await p.locator('.route-head').waitFor(); await p.waitForTimeout(400);
-    // [U28] 테마 단추 바뀜은 부드럽게(투명도 전환). 움직임 줄이기가 아닐 때만 전환이 있다.
-    const tr = await p.evaluate(() => [getComputedStyle(document.querySelector('.guide-topbar>.icon-button')).transitionProperty, getComputedStyle(document.querySelector('.route-theme')).transitionProperty]);
-    for (const t of tr) assert.ok(/opacity|all/.test(t), `[U28] 전환 없음 ${t}`);
     const sec = p.locator('details.chapter-section').nth(1); await sec.evaluate(d => { d.open = true; });
     const boxes = sec.locator('input[type=checkbox]:not(:disabled)'); const n = await boxes.count(); assert.ok(n > 0, '[U10] 1장 체크 칸');
     for (let i = 0; i < n; i++) { const b = boxes.nth(i); if (!await b.isChecked()) { await b.scrollIntoViewIfNeeded(); await b.click(); } }
     await p.waitForFunction(() => [...document.querySelectorAll('canvas')].some(c => getComputedStyle(c).position === 'fixed'), null, { timeout: 4000 }).catch(() => {});
     assert.ok(await p.evaluate(() => [...document.querySelectorAll('canvas')].some(c => getComputedStyle(c).position === 'fixed')), '[U10] 장 완료 색종이');
     await ctx.close(); }
-  console.log(`통과: 사용자 규칙 화면 검사(${done.join('·')} + 네 루트 선물 + 색종이)`);
+  console.log(`통과: 사용자 규칙 화면 검사(${done.join('·')} + 어두운 화면만 + 이름 규칙·근거 글 없음·인물 머리 + 네 루트 선물 + 색종이)`);
 } finally { await browser.close(); }

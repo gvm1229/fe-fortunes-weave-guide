@@ -20,9 +20,10 @@ for (const f of [...walk('app', ['.ts', '.tsx', '.css']), ...walk('components', 
   const paths = JSON.stringify(read('content/source/react-content.json').people.filter(p => p.name === '세오도라'));
   assert.ok(paths.includes('가디언') && paths.includes('홀리 랜서'), '[U03] 세오도라 경로에 가디언·홀리 랜서'); }
 
-// [U07] 팀 화면 탭은 정확히 이 넷, 이 순서다.
+// [U07] 팀 화면 탭은 정확히 이 셋, 이 순서다(2026-11-27: 비교 근거 탭은 docs/reference/team-comparison.md로).
 { const t = readFileSync('components/team.tsx', 'utf8').match(/const tabs=\[(.*?)\] as const/)?.[1] || '';
-  assert.deepEqual([...t.matchAll(/'([^']+)'\]/g)].map(m => m[1]), ['최종 25인', '백마술', '루트 편성', '비교 근거'], '[U07] 팀 화면 탭'); }
+  assert.deepEqual([...t.matchAll(/'([^']+)'\]/g)].map(m => m[1]), ['최종 25인', '백마술', '루트 편성'], '[U07] 팀 화면 탭');
+  assert.ok(existsSync('docs/reference/team-comparison.md'), '[U07] 옮긴 비교 근거 문서'); }
 
 // [U13] 카이 루트 알렉산드라는 전차병이 아니다(고유 탈것은 비행 병종에서만).
 { const c = read('content/cai-charioteer.json'); assert.ok(!Object.keys(c.people).includes('알렉산드라'), '[U13] 알렉산드라 전차병 아님'); }
@@ -57,12 +58,13 @@ for (const f of [...walk('app', ['.ts', '.tsx', '.css']), ...walk('components', 
     const a = t.match(/([가-힣][가-힣 ]{0,15}[가-힣])\(\1\)/), b = t.match(/(?<![가-힣])([가-힣][가-힣 ]{1,12}?)(?:가|이|는|은) \1(?:이?다|입니다)/);
     assert.ok(!a, `[U31] ${k} 같은 말 괄호: ${a?.[0]}`); assert.ok(!b, `[U31] ${k} 같은 말 되풀이: ${b?.[0]}`); } }
 
-// [U36] 지원 대화 순서 잠금은 줄마다 근거(확인 여부 표시)가 있고, 출처 목록에 주소가 있다.
+// [U36] 지원 대화 순서 잠금은 줄마다 근거(확인 여부 표시)가 있고, 출처 목록에 주소가 있다. 근거 열과 '## 근거' 절은 파일(content/notes)에만 두고 화면에서 뺀다(2026-11-27, docs/reference/support-evidence.md).
 { const md = readFileSync('content/notes/support-pairs-by-route.md', 'utf8'), sec = md.split('## 순서 잠금')[1].split('\n## ')[0];
   const rows = sec.split('\n').filter(l => l.startsWith('| ') && !l.startsWith('| 순서') && !l.startsWith('|---'));
   assert.ok(rows.length >= 8, '[U36] 순서 잠금 줄 수');
   for (const r of rows) { const c = r.split('|').map(s => s.trim()); assert.ok(/^(확인|공동체 자료|초안)/.test(c[3]), `[U36] 근거 표시 없음: ${c[1]}`); }
-  assert.ok((sec.match(/\]\(https:\/\//g) || []).length >= 4, '[U36] 출처 주소'); }
+  assert.ok((sec.match(/\]\(https:\/\//g) || []).length >= 4, '[U36] 출처 주소');
+  const doc = readFileSync('components/documents.tsx', 'utf8'); assert.ok(doc.includes('withoutEvidence') && doc.includes('(근거|출처)'), '[U36] 문서 화면이 근거 절·근거 열을 거른다'); assert.ok(existsSync('docs/reference/support-evidence.md'), '[U36] 옮긴 근거 문서'); }
 
 // [U20] 영입 루트는 조건(명성·지원)이 가장 쉬운 곳. 더 쉬운 루트가 있는데 다른 루트에 둔 인물은 이유(대화 상대·융합·지참품 등)를 적는다.
 { const p = read('content/data/recruit-all-plan.json'), g = read('content/data/recruitment-gates.json').characters, cost = x => (+x.fame || 0) * 10 + (+x.sup || 0);
@@ -82,11 +84,15 @@ for (const f of [...walk('app', ['.ts', '.tsx', '.css']), ...walk('components', 
   // 화면에 나가는 자료(파생 표시·문서)에도 카이 누조를 전력으로 적지 않는다. 카드 화면은 rules-browser-check.mjs.
   for (const n of ['presentation', 'documents', 'checklist']) assert.ok(!readFileSync(`content/derived/${n}.json`, 'utf8').includes('카이의 실제 활 전력'), `[U42] ${n}: 카이 누조를 전력으로 적음`); }
 
-// [U46] 사용자가 확인한 사실은 사실로(여관 식사는 영입 전 두 사람끼리도 지원이 오른다), 한 곳에서만 나온 사실은 '확인되지 않음'을 붙인다(누조 선더 소드 지참·제스터–레다 명성 10).
+// [U46] 사용자가 확인한 사실은 사실로(여관 식사는 영입 전 두 사람끼리도 지원이 오른다), 한 곳에서만 나온 사실은 자료에 그 꼬리말을 두고(누조 선더 소드 지참·제스터–레다 명성 10),
+//       화면에는 한 낱말 '미확인'만 보인다(2026-11-27, lib/display.ts verificationTail). 설명은 docs/reference/unverified.md.
 { const p = JSON.stringify(read('content/data/playbook.json')), txt = id => (p.match(new RegExp('"id":"' + id + '"[^{}]*?"text":"([^"]*)"')) || [])[1] || '';
   const inn = txt('feast-loop-theodora-part1-20261114--inn-pair'); assert.ok(/아직 영입하지 않은 두 사람도 함께 식사하면 서로 지원이 오른다/.test(inn) && !/확인되지|미확인|추정/.test(inn), '[U46] 여관 식사 지원은 사실로');
   for (const id of ['theo-recruit-nujo--join', 'recruit-all-leda-nujo-20261114--scout', 'recruit-all-cai-nujo-20261114--scout']) assert.ok(/한 곳에서만 확인/.test(txt(id)), `[U46] ${id} 선더 소드 미확인 표시`);
-  assert.ok(/아직 확인되지 않았다/.test(txt('recruit-all-leda-jester-20261112--renown10-20261114')), '[U46] 제스터–레다 명성 10 미확인 표시'); }
+  assert.ok(/아직 확인되지 않았다/.test(txt('recruit-all-leda-jester-20261112--renown10-20261114')), '[U46] 제스터–레다 명성 10 미확인 표시');
+  const { verificationTail } = await import('../lib/display.ts');
+  for (const id of ['theo-recruit-nujo--join', 'recruit-all-leda-nujo-20261114--scout', 'recruit-all-cai-nujo-20261114--scout', 'recruit-all-leda-jester-20261112--renown10-20261114']) { const shown = verificationTail(txt(id)); assert.ok(/미확인/.test(shown) && !/한 곳에서만 확인|확인되지 않았다/.test(shown), `[U46] ${id} 화면 글은 '미확인' 한 낱말: ${shown}`); }
+  assert.ok(existsSync('docs/reference/unverified.md'), '[U46] 미확인 설명 문서'); }
 
 // [U47] 2026-11-13 요청 화면 기능: 반응형·카드·스크롤 맞춤·작은 움직임·화면 전환(View Transition)·고정·스크롤 연동 움직임. 색종이는 U10.
 { const css = readFileSync('app/redesign.css', 'utf8') + readFileSync('app/globals.css', 'utf8'), code = [...walk('components', ['.tsx']), ...walk('lib', ['.ts'])].map(f => readFileSync(f, 'utf8')).join(' ');
@@ -182,6 +188,28 @@ for (const f of [...walk('app', ['.ts', '.tsx', '.css']), ...walk('components', 
   assert.ok(rules.some(r => /object-fit:\s*cover/.test(r)), '[U62] 3부 띠 초상화 object-fit:cover');
   assert.ok(rules.every(r => !/object-fit:\s*contain/.test(r)), '[U62] 3부 띠 초상화에 object-fit:contain 없음');
   assert.ok(!/\.lord-faces img\{[^}]*object-fit:\s*contain/.test(css), '[U62] lord-faces img에 contain 없음'); }
+
+// [U63] 어두운 화면만(2026-11-27): 밝은 화면 전용 선택자(:not(.dark))와 next-themes가 없고, <html>에 dark가 고정이다.
+{ for (const f of [...walk('app', ['.ts', '.tsx', '.css']), ...walk('components', ['.ts', '.tsx'])]) { const t = readFileSync(f, 'utf8');
+    assert.ok(!t.includes(':not(.dark)'), `[U63] ${f}: :not(.dark) 남음`); assert.ok(!/from ['"]next-themes['"]/.test(t), `[U63] ${f}: next-themes 가져오기 남음`); }
+  assert.ok(/<html[^>]*className="dark"/.test(readFileSync('app/layout.tsx', 'utf8')), '[U63] layout <html className="dark"> 고정');
+  assert.ok(!Object.hasOwn(read('package.json').dependencies || {}, 'next-themes'), '[U63] package.json에 next-themes 없음'); }
+
+// [U28] 폐지(2026-11-27 어두운 화면만): 테마 단추가 어디에도 없다.
+{ for (const f of walk('components', ['.tsx'])) { const t = readFileSync(f, 'utf8'); assert.ok(!/ThemeSwitch|화면 테마 바꾸기/.test(t), `[U28] ${f}: 테마 단추 남음`); } }
+
+// [U64] yuphastemple 이름 규칙(2026-11-27): 누를 수 없는 이름 배지는 한국어, yuphastemple 새 탭 단추는 영어 이름. 화면용 이름표는 정본(yuphas-names.json)에서 만든 그대로이고,
+//       단추 글은 영어(한글 없음)다. 지도 링크는 game8이 아니라 yuphastemple 지도로 간다. 재료 서랍·지도 사진은 없다.
+{ const links = read('content/data/yuphas-links.json');
+  for (const [ko, [en, slug]] of Object.entries(links.items)) { assert.ok(en && !/[가-힣]/.test(en), `[U64] ${ko} 영어 이름 ${en}`); assert.ok(/^[a-z0-9]+(-[a-z0-9]+)*$/.test(slug), `[U64] ${ko} 슬러그 ${slug}`); }
+  const sm = readFileSync('components/source-markup.tsx', 'utf8'); assert.ok(sm.includes('<YLink en="World Map" href={mapUrl(route)}'), '[U64] 본문 지도 링크 → yuphastemple 지도');
+  const y = readFileSync('components/yuphas.tsx', 'utf8'); assert.ok(y.includes('target="_blank" rel="noreferrer" lang="en"') && y.includes('function YuphasGroup'), '[U64] 영어 새 탭 단추·묶음 첫 번만');
+  assert.ok(!/MapSheet|MapThumbnail/.test(walk('components', ['.tsx']).map(f => readFileSync(f, 'utf8')).join('')), '[U64] 재료 서랍·지도 사진 없음'); }
+
+// [U65] 화면에 근거·기록용 글이 없다(2026-11-27): 원문 기록·비교 근거 탭·참고 문서 화면·그림 출처·입수 원문·특기 검토 문서·조심 문구. 옮긴 곳은 docs/reference/.
+{ const code = walk('components', ['.tsx']).map(f => readFileSync(f, 'utf8')).join('');
+  for (const w of ['>원문 기록<', "'비교 근거'", "label:'참고 문서'", '특기 검토 문서', '전체 참고 문서', '실제 합류와 출격 자리는 게임 화면을 먼저 확인하세요']) assert.ok(!code.includes(w), `[U65] 화면 코드에 ${w}`);
+  for (const f of ['README.md', 'people-original.md', 'team-comparison.md', 'image-sources.md', 'unverified.md', 'support-evidence.md']) assert.ok(existsSync('docs/reference/' + f), `[U65] docs/reference/${f}`); }
 
 // 규칙 문서: 모든 규칙 줄은 '검사' 칸에 하나 이상의 파일을 적고, 그 파일에는 규칙 번호가 있다.
 { const doc = readFileSync('docs/user-rules.md', 'utf8'), rows = doc.split('\n').filter(l => /^\| [UP]\d\d \|/.test(l)), ids = new Set();

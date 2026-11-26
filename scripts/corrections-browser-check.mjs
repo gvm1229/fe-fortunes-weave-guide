@@ -20,7 +20,7 @@ try{
  for(const width of [1024,1100,1199]){const page=await browser.newPage({viewport:{width,height:800}});await page.goto(`${base}/theodora/1/`);await page.locator('.check-toolbar').waitFor();
   const w=await page.evaluate(()=>({main:document.querySelector('.tasks-main').getBoundingClientRect().width,rail:document.querySelector('.context-rail').getBoundingClientRect().width,overflow:document.documentElement.scrollWidth-innerWidth}));
   assert.ok(w.main>w.rail*1.5&&w.overflow===0,width+' '+JSON.stringify(w));await page.close();}
- for(const [width,height]of [[1440,900],[375,812]])for(const theme of ['light','dark']){
+ for(const [width,height]of [[1440,900],[375,812]])for(const theme of ['dark']){
   const page=await browser.newPage({viewport:{width,height},colorScheme:theme});
   page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error'&&!m.text().startsWith('Failed to load resource:'))errors.push(m.text());});
   const scopes=[...['cai','dietrich','theodora','leda'].flatMap(route=>['1','2'].map(part=>({route,part}))),{route:'part3',part:'3'}];
@@ -36,7 +36,7 @@ try{
     const row=await page.evaluate(()=>{
      const visible=e=>e.checkVisibility()&&e.getBoundingClientRect().width>0;
      return {eraViolations:document.querySelector('.app-shell')?.getAttribute('data-route')==='part3'?[]:[...document.querySelectorAll('img[src*="/post-timeskip/"]')].map(e=>e.src),horizontalScroll:document.documentElement.scrollWidth-innerWidth,amountWrapViolations:[...document.querySelectorAll('[data-amount],.gold-table .amount')].filter(e=>getComputedStyle(e).whiteSpace!=='nowrap').length,
-      tableFontViolations:[...document.querySelectorAll('main .records,main .person-summary,main [data-info-table],main [data-gold-table],main .gold-table')].filter(visible).filter(e=>parseFloat(getComputedStyle(e).fontSize)!==(innerWidth<768&&e.matches('.person-summary,.gold-table,[data-gold-table]')?18:20)).length,
+      tableFontViolations:[...document.querySelectorAll('main .records,main .person-summary,main [data-info-table],main [data-gold-table],main .gold-table')].filter(visible).filter(e=>parseFloat(getComputedStyle(e).fontSize)!==16).length,
       groupLineViolations:[...document.querySelectorAll('.readable-group[data-expanded=false]>.readable-body')].filter(visible).filter(e=>e.getBoundingClientRect().height>parseFloat(getComputedStyle(e).lineHeight)*3+1).length,
       // 배지를 감싼 칩·버튼·표 머리에 배경이 있으면 배경이 겹친다(2026-11-14 사용자 지적). 카드·칸 같은 큰 면은 제외.
       doubledBadges:[...document.querySelectorAll('.game-badge')].filter(b=>{for(let e=b.parentElement;e&&!e.matches('p,li,td,dd,div,section,main,table,article,details');e=e.parentElement){const bg=getComputedStyle(e).backgroundColor;if(bg!=='rgba(0, 0, 0, 0)'&&bg!=='transparent')return true;}return false;}).map(b=>b.textContent).slice(0,5),
@@ -46,10 +46,10 @@ try{
     assert.equal(row.horizontalScroll,0,JSON.stringify(row));assert.equal(row.eraViolations.length,0,JSON.stringify(row));
     assert.equal(row.amountWrapViolations,0,JSON.stringify(row));assert.deepEqual(row.doubledBadges,[],JSON.stringify(row));
     assert.equal(row.tableFontViolations,0,JSON.stringify(row));assert.equal(row.groupLineViolations,0,JSON.stringify(row));
-    // 재설계 뒤 휴대폰은 표 글자 18px, 인물 얼굴 72px(app/redesign.css).
+    // 표 글자는 yuphastemple 값 16px(2026-11-27, [U43] 대체), 인물 얼굴 데스크톱 96px·휴대폰 72px(app/redesign.css).
     if(view==='people')assert.deepEqual(row.faceSizes,[width<768?'72×72':'96×96']);
     // 인물 카드: 계획 쌍은 14개 이하. 카이 루트 전차병 4명(누조 제외, 2026-11-14 영입만)은 옛 경로 병종을 말하지 않는다(마스터 기술용 줄만 예외, 2026-11-14 사용자 결정).
-    if(view==='people'&&width===1440&&theme==='light'){
+    if(view==='people'&&width===1440&&theme==='dark'){
      for(const t of await page.getByRole('button',{name:/시험 조건·시기별 계획/}).all())if(await t.getAttribute('aria-expanded')!=='true')await t.click();
      const cards=await page.evaluate(()=>[...document.querySelectorAll('.person')].map(p=>({name:p.querySelector('h2')?.textContent,pairs:p.querySelectorAll('.detail-pairs>div').length,text:[...p.querySelectorAll('.person-summary td,.detail-pairs>div')].filter(e=>e.querySelector('dt')?.textContent!=='전차병 육성').map(e=>e.innerText).join(' '),goal:[...p.querySelectorAll('.person-summary tr')].find(r=>r.querySelector('th')?.textContent==='목표')?.querySelector('td')?.innerText||''})));
      assert.ok(cards.every(c=>c.pairs<=14),JSON.stringify(cards.filter(c=>c.pairs>14).map(c=>c.name+' '+c.pairs)));

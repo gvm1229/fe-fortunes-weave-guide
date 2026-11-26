@@ -29,11 +29,14 @@ function audit({ SEL, MIN, scope }) {
   const out = [];
   // 화면 가장자리(문서 위·왼쪽·오른쪽)에 붙은 단추도 막는다(2026-11-15 사용자 지시: 첫 화면 '최종 25명'이 맨 위에 붙음). 8px 이상.
   if (!modal && !scope) for (const e of els) { const r = e.getBoundingClientRect(), top = r.top + scrollY; if (r.left < -1 || r.right > innerWidth + 1) continue; /* 가로로 넘기는 띠(overflow) 안에서 잘린 단추는 가장자리가 아니라 띠 끝에 걸린 것이다 */ let clipped = false; for (let x = e.parentElement; x && x !== document.body; x = x.parentElement) { const ov = getComputedStyle(x).overflowX; if (ov !== 'visible') { const c = x.getBoundingClientRect(); if (r.right > c.right + 1 || r.left < c.left - 1) { clipped = true; break; } } } if (clipped) continue; if (top < 8 || r.left < 8 || innerWidth - r.right < 8) out.push(`${name(e)} ↔ 화면 가장자리 (위 ${Math.round(top)} 왼쪽 ${Math.round(r.left)} 오른쪽 ${Math.round(innerWidth - r.right)})`); }
+  // 2026-11-27: yuphastemple 영어 단추로 단추 수가 크게 늘어 쌍마다 조상 스타일·위치를 다시 읽으면 수십 분이 걸린다. 재는 동안 화면은 바뀌지 않으므로 미리 한 번씩 읽어 둔다(판정은 같다).
+  const layer = new Map(els.map(e => [e, fixedLayer(e)])), rect = new Map(els.map(e => [e, e.getBoundingClientRect()]));
   for (let i = 0; i < els.length; i++) for (let j = i + 1; j < els.length; j++) {
-    const a = els[i], b = els[j]; if (a.contains(b) || b.contains(a) || fixedLayer(a) !== fixedLayer(b)) continue;
+    const a = els[i], b = els[j]; if (layer.get(a) !== layer.get(b) || a.contains(b) || b.contains(a)) continue;
     // 같은 행동 줄의 체크 칸과 그 글(label for) 같은 한 묶음은 뺀다.
     if ((a.tagName === 'INPUT' && b.closest('li') === a.closest('li') && b.closest('li')) || (b.tagName === 'INPUT' && a.closest('li') === b.closest('li') && a.closest('li'))) continue;
-    const r = a.getBoundingClientRect(), q = b.getBoundingClientRect();
+    const r = rect.get(a), q = rect.get(b);
+    if (r.top - q.bottom > MIN && r.left - q.right > MIN || q.top - r.bottom > MIN && q.left - r.right > MIN) continue;
     const vOverlap = Math.min(r.bottom, q.bottom) - Math.max(r.top, q.top), hOverlap = Math.min(r.right, q.right) - Math.max(r.left, q.left);
     const hGap = Math.max(q.left - r.right, r.left - q.right), vGap = Math.max(q.top - r.bottom, r.top - q.bottom);
     if ((vOverlap > 2 && hGap < MIN) || (hOverlap > 2 && vGap < MIN)) out.push(`${name(a)} ↔ ${name(b)} (가로 ${Math.round(hGap)} 세로 ${Math.round(vGap)})`);
@@ -48,7 +51,7 @@ async function check(p, label, scope) {
 /** 지금 화면의 모든 접기를 펼치고 맨 위로 올린 뒤 잰다. */
 async function checkAll(p, label) {
   await p.evaluate(() => { document.querySelectorAll('main details:not(.backup-menu)').forEach(d => { d.open = true; }); scrollTo(0, 0); }); await p.waitForTimeout(300);
-  // 처음 열 때 현재 장으로 내려가 머리가 붙었다가 맨 위로 올라오면 테마 단추가 0.2초에 걸쳐 바뀐다. 바뀜이 끝난 뒤 잰다.
+  // 처음 열 때 현재 장으로 내려가 머리가 붙었다가 맨 위로 올라오면 머리 모양이 0.2초에 걸쳐 바뀐다. 바뀜이 끝난 뒤 잰다.
   await p.waitForFunction(() => !document.documentElement.hasAttribute('data-head-stuck')).catch(() => {}); await p.waitForTimeout(400);
   await check(p, label);
 }
@@ -70,7 +73,7 @@ try {
       await checkAll(p, `${w} ${r}`); await checkSheets(p, `${w} ${r}`);
       const nav = p.getByRole('navigation', { name: '공략 화면' });
       if (await nav.count()) {
-        for (const v of ['인물', '준비', '재료', '문서']) {
+        for (const v of ['인물', '준비', '재료']) {
           const btn = nav.getByRole('button', { name: v, exact: true }); if (!await btn.count()) continue;
           await btn.click(); await p.waitForTimeout(400); await checkAll(p, `${w} ${r} ${v}`); await checkSheets(p, `${w} ${r} ${v}`);
         }

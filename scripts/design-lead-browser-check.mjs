@@ -72,7 +72,7 @@ async function measure(page,scene){
   });
   rows.push({...scene,...row});
   assert.equal(row.horizontalOverflow,0,`${scene.label} 가로 넘침`);
-  assert.ok(row.minimumFont>=18,`${scene.label} 최소 글자 ${row.minimumFont}`);
+  assert.ok(row.minimumFont>=13,`${scene.label} 최소 글자 ${row.minimumFont} ([U43] 13px 이상)`);
   assert.deepEqual(row.imageRatioViolations,[],`${scene.label} 그림 비율`);
   assert.deepEqual(row.brokenImages,[],`${scene.label} 그림 로딩`);
   assert.deepEqual(row.partialLines,[],`${scene.label} 반만 보이는 줄`);
@@ -83,7 +83,7 @@ async function measure(page,scene){
     assert.equal(row.orphanStatusLines,0);assert.equal(row.certificateNoticeInTasks,false);
     assert.ok(row.saveInToolbar&&(scene.width<768||row.saveRightOfProgress));// 휴대폰은 저장 상태를 숨긴다(app/redesign.css).
     assert.ok(row.chipSizes.length>0);
-    assert.ok(row.chipSizes.every(c=>c.height<=30&&c.font===18&&c.padding==='8px'),JSON.stringify(row.chipSizes.filter(c=>c.height>30)));
+    assert.ok(row.chipSizes.every(c=>c.height<=30&&c.font===15&&c.padding==='8px'),JSON.stringify(row.chipSizes.filter(c=>c.height>30)));
     assert.ok(row.chipSizes.every(c=>c.icons.length===1&&c.icons.every(i=>i.width===20&&i.height<=20)));
     // 완료 장은 한 줄로 접는다. 사양은 48px이지만 B 재설계 코드(app/redesign.css)가 최소 56px로 정했고 코드를 따른다(2026-11-14 문서·코드 불일치 목록).
     assert.ok(row.completed.length>0&&row.completed.every(c=>!c.open&&c.height===c.summary&&c.summary>=56&&c.summary<=64&&c.children.length===3&&c.children.includes('svg')),JSON.stringify(row.completed));
@@ -97,9 +97,8 @@ async function measure(page,scene){
 
 const fixture=(()=>{const st=JSON.parse(readFileSync('content/derived/checklist.json')).stages.find(s=>s.id==='theodora-plan'),pb=JSON.parse(readFileSync('content/data/playbook.json')),checks={};for(const c of st.chapters.slice(0,st.chapters.findIndex(c=>c.title==='7장')))for(const b of c.blocks)for(const a of pb.groups.find(g=>g.id===b.id)?.actions||[])checks[a.id]=true;return JSON.stringify({schemaVersion:1,revision:1,checks});})();
 try{
-  for(const [width,height]of [[1440,900],[375,812]])for(const theme of ['light','dark']){
+  for(const [width,height]of [[1440,900],[375,812]])for(const theme of ['dark']){
     const context=await browser.newContext({viewport:{width,height},colorScheme:theme});
-    await context.addInitScript(value=>localStorage.setItem('theme',value),theme);
     // 사이트에는 체크 기록이 없다(2026-11-14). 검사용 기록: 세오도라 1부 7장 앞까지 모두 체크(현재 장 7장, 완료 장 접힘을 잰다).
     await context.addInitScript(state=>{if(!localStorage.getItem('fortunes-weave-checklist-v1'))localStorage.setItem('fortunes-weave-checklist-v1',state);},fixture);
     const page=await context.newPage();
@@ -126,10 +125,9 @@ try{
     });
     assert.ok(targetViewport.top>=targetViewport.toolbarBottom&&targetViewport.bottom<=targetViewport.visibleBottom,JSON.stringify(targetViewport));
     await capture(page,`${label}-jump`);
-    await page.waitForFunction(()=>document.querySelector('.target-highlight')?.getAnimations({subtree:true}).some(a=>a.currentTime>=1900&&a.currentTime<2000));
-    assert.equal(await target.evaluate(e=>getComputedStyle(e,'::after').opacity),'1');
-    await page.waitForFunction(()=>{const e=document.querySelector('.target-highlight');return e&&Number(getComputedStyle(e,'::after').opacity)>0&&Number(getComputedStyle(e,'::after').opacity)<1;});
-    const fading=await target.evaluate(e=>Number(getComputedStyle(e,'::after').opacity));assert.ok(fading>0&&fading<1);
+    // 2026-11-27 yuphastemple 견본(승인): '이동' 뒤 강조는 2초 테두리 대신 idFlash(yp-flash 1.8s, 동작 줄이기 3s steps(1)) 한 번. 옛 ::after 테두리 검사를 대체한다.
+    const fading=await page.evaluate(()=>{const e=document.querySelector('.target-highlight');return e?e.getAnimations().map(a=>a.animationName).join(','):'';});
+    assert.ok(/yp-flash/.test(fading),`이동 뒤 강조 애니메이션 ${fading}`);
     await page.waitForFunction(()=>!document.querySelector('.target-highlight'));
     interactions.push({width,height,theme,check:'jump-focus-highlight',...highlight,targetViewport,fading,removed:true});
     // 접힌 설명까지 펼쳐 모든 병종 칩의 실제 크기와 문서 열기를 확인한다.
@@ -165,5 +163,5 @@ try{
 finally{
   await browser.close();
   for(const file of screens)copyFileSync(`${staging}/${file}`,`${destination}/${file}`);
-  writeFileSync('docs/design-lead-browser-results.json',JSON.stringify({status:errors.length?'failed':'passed',host:'Codex / Windows / installed Chrome / Playwright',base,rows,interactions,errors,screens:screens.map(s=>`${destination}/${s}`),limits:'세오도라 1부의 1440×900·375×812, 밝게·어둡게. 얼굴 토큰은 그림 비율 검사에서 제외한다. 다른 루트·운영체제·브라우저·배포 빌드는 증명하지 않는다.'},null,2));
+  writeFileSync('docs/design-lead-browser-results.json',JSON.stringify({status:errors.length?'failed':'passed',host:'Codex / Windows / installed Chrome / Playwright',base,rows,interactions,errors,screens:screens.map(s=>`${destination}/${s}`),limits:'세오도라 1부의 1440×900·375×812, 어두운 화면만, 2026-11-27. 얼굴 토큰은 그림 비율 검사에서 제외한다. 다른 루트·운영체제·브라우저·배포 빌드는 증명하지 않는다.'},null,2));
 }

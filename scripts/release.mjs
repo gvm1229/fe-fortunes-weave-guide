@@ -25,7 +25,7 @@ function hashOf(paths) {
 }
 const sourceHash = () => hashOf(HASHED);
 const run = (cmd, args, opts = {}) => { console.log('\n== ' + [cmd, ...args].join(' ')); const r = spawnSync(cmd, args, { stdio: 'inherit', shell: process.platform === 'win32' && cmd !== process.execPath, ...opts }); if (r.status !== 0) throw new Error(`${cmd} ${args.join(' ')} 실패(${r.status})`); };
-const DATA = ['scripts/verify.mjs', 'scripts/verify-character-copy.mjs', 'scripts/verify-character-data.mjs'];
+const DATA = ['scripts/verify.mjs', 'scripts/verify-character-copy.mjs', 'scripts/verify-character-data.mjs', 'scripts/yuphas-links-check.mjs'];
 const BROWSER = ['layout-browser-check', 'button-gap-check', 'status-browser-check', 'header-browser-check', 'feature-browser-check', 'rules-browser-check', 'team-fit-check', 'design-lead-browser-check', 'browser-check', 'corrections-browser-check', 'consistency-browser-check', 'home-visual-check'].map(n => `scripts/${n}.mjs`);
 
 async function check() {

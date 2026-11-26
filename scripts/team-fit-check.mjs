@@ -1,5 +1,5 @@
 // 최종 25인: 16:9·9:16 등 여러 화면에서 스크롤 없이 25명이 보이고, 교체 카드만 6px 테두리와 같은 색 배지를 갖는지 검사한다.
-// 사용자 규칙: [U43] 휴대폰 좁은 칸 최소 글자 14px(그 밖 18px) · [U04] 최종 25인은 16:9·9:16에서 스크롤 없이 다 보임 · [U05] 교체 카드 6px 테두리와 같은 색 오른쪽 위 배지.
+// 사용자 규칙: [U43] 최소 글자 13px(2026-11-27 yuphastemple 값: 본문 16·작은 글 14·점수 13.8. 옛 '휴대폰 14px·그 밖 18px' 대체) · [U04] 최종 25인은 16:9·9:16에서 스크롤 없이 다 보임 · [U05] 교체 카드 6px 테두리와 같은 색 오른쪽 위 배지.
 // 실행: BROWSER_BASE_URL=http://localhost:18763 node scripts/team-fit-check.mjs (정적 빌드 권장, 격리된 Playwright 저장소 사용)
 import { chromium } from '@playwright/test';
 import assert from 'node:assert/strict';
@@ -10,7 +10,7 @@ const viewports=[[1920,1080],[1440,810],[1280,720],[1080,1920],[768,1024],[390,6
 const browser=await chromium.launch({executablePath:process.env.CHROME_PATH||'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
 const results=[],errors=[];
 try{
-  for(const theme of ['light','dark'])for(const [width,height]of viewports){
+  for(const theme of ['dark'])for(const [width,height]of viewports){
     const context=await browser.newContext({viewport:{width,height},colorScheme:theme,reducedMotion:'reduce'});
     const page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));
     for(const scenario of raw.team.proposal.scenarios)for(const trials of [[],raw.team.proposal.trials]){
@@ -35,7 +35,7 @@ try{
       assert.equal(r.sh,height,label+' 세로 스크롤');assert.equal(r.sw,width,label+' 가로 스크롤');assert.equal(r.scrolled,0,label+' 스크롤 가능');
       assert.equal(r.count,25,label);assert.ok(r.inView,label+' 화면 밖 칸');assert.ok(r.sameSize,label+' 칸 크기');
       assert.equal(r.overflow,0,label+' 카드 넘침');assert.equal(r.textOut,0,label+' 글자 넘침');
-      assert.ok(r.minFont>=(width<=599?14:18),label+' 최소 글자 '+r.minFont);
+      assert.ok(r.minFont>=13,label+' 최소 글자 '+r.minFont);
       assert.equal(r.swapped,incoming.length,label+' 교체 수');assert.ok(r.plainBorder,label+' 나머지 테두리');
       for(const [i,b] of r.badges.entries()){assert.ok(r.border[i].startsWith('6px'),label+' 6px');assert.ok(r.border[i].endsWith(b.color.replace('rgb(','rgb(')),label+' 배지 색=테두리 색');assert.ok(b.right&&b.top,label+' 배지 위치');assert.ok(!b.covers,label+' 배지가 이름을 가림');}
       results.push(label);

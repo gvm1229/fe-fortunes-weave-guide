@@ -3,7 +3,7 @@
 // 1) [U53] 보이는 배지 일반 아이콘(.game-badge>svg)은 채움(fill이 none이 아님)
 // 2) 보이는 글은 18px 이상(예외: 휴대폰 크기의 팀 격자 칸 .unit-card·.final-grid 14px)
 // 3) [U54] 보이는 표 머리 칸(행 머리 th)은 왼쪽·위 정렬, 인물 표 머리 칸 폭은 데스크톱 120px·휴대폰 100px
-// 4) [U55] 폭 60px 이상인 단추·단추 링크·접기 제목·선택 상자는 모서리 10px(아래 EXCEPTIONS 제외). 장 선택·완료 숨기기는 채운 조작 요소(390px 미만 예외는 사양)
+// 4) [U55] 폭 60px 이상인 단추·단추 링크·접기 제목·선택 상자는 모서리 0px(2026-11-27 yuphastemple 값, 옛 10px 대체. 아래 EXCEPTIONS 제외). 장 선택·완료 숨기기는 채운 조작 요소(390px 미만 예외는 사양)
 // 5) [U55] 접기 제목(details>summary)에 브라우저 기본 ▶ 표시가 없음(list-style-type: none)
 // 6) [U56] 390×844에서 4글자 이하인 배지 이름(.badge-label)은 한 줄(상자 높이 32px 이하). 배지는 이름과 값 사이에서만 줄을 넘긴다.
 // 7) [U56] 배지 이름과 값이 같은 줄에 있으면 둘 사이가 3px 이상("반짝반짝어 1마리"가 "반짝반짝어1마리"로 붙지 않게)
@@ -35,7 +35,8 @@ function audit({ EXCEPTIONS, phone, fitOnly }) {
   for (let n = walker.nextNode(); n; n = walker.nextNode()) {
     const el = n.parentElement; if (!el || !n.textContent.trim() || /^(SCRIPT|STYLE|NOSCRIPT|OPTION)$/.test(el.tagName)) continue;
     if (phone && el.closest('.unit-card,.final-grid')) continue;
-    const size = parseFloat(getComputedStyle(el).fontSize); if (size >= 18 || !visible(el)) continue;
+    // [U43] 글자 크기는 yuphastemple 값(2026-11-27): 가장 작은 읽는 글 13px 이상(점수·시기 13.8px). 읽어 주지 않는 장식(aria-hidden: ↗·▲▼)은 뺀다. 옛 '18px 이상' 대체.
+    const size = parseFloat(getComputedStyle(el).fontSize); if (size >= 13 || !visible(el) || el.closest('[aria-hidden=true]')) continue;
     out.font.push(`${name(el)} ${size}px`);
   }
   for (const th of document.querySelectorAll('th')) {
@@ -53,7 +54,7 @@ function audit({ EXCEPTIONS, phone, fitOnly }) {
     const c = getComputedStyle(e);
     // 바탕이 투명한 것(장·묶음 접기 제목, 아코디언 제목, 그림 열기 단추, 배지 안 글 단추)은 모양이 없어 모서리를 재지 않는다.
     if (c.backgroundColor === 'rgba(0, 0, 0, 0)' || c.backgroundColor === 'transparent') continue;
-    if (c.borderTopLeftRadius !== '10px') out.radius.push(`${name(e)} ${c.borderTopLeftRadius}`);
+    if (c.borderTopLeftRadius !== '0px') out.radius.push(`${name(e)} ${c.borderTopLeftRadius}`);
   }
   for (const s of document.querySelectorAll('details>summary')) if (visible(s) && getComputedStyle(s).listStyleType !== 'none') out.marker.push(`${name(s)} ${getComputedStyle(s).listStyleType}`);
   // [U56]
@@ -64,7 +65,7 @@ function audit({ EXCEPTIONS, phone, fitOnly }) {
   if (phone || fitOnly) for (const t of document.querySelectorAll('[data-gold-table], .source-markup table, .semantic table')) { if (!visible(t)) continue; const w = t.getBoundingClientRect().width, pw = t.parentElement.clientWidth; if (t.scrollWidth > t.clientWidth + 1 || w > pw + 1) out.tableFit.push(`${name(t.rows[1]?.cells[0] || t)} 표 ${Math.round(Math.max(w, t.scrollWidth))}px > 칸 ${pw}px`); }
   return out;
 }
-const LABELS = { fill: '배지 아이콘 채움', font: '글자 18px 이상', th: '표 머리 칸 왼쪽·위', thWidth: '인물 표 머리 칸 폭', radius: '단추 모서리 10px', filled: '장 선택·완료 숨기기 채움', marker: '기본 ▶ 없음', wrap: '짧은 배지 이름 한 줄', tableFit: '표가 칸 안에 들어감', valueGap: '배지 이름·값 간격 3px 이상', dotGlue: '"·" 묶음 부모가 flex·grid 아님' };
+const LABELS = { fill: '배지 아이콘 채움', font: '글자 13px 이상', th: '표 머리 칸 왼쪽·위', thWidth: '인물 표 머리 칸 폭', radius: '단추 모서리 0px', filled: '장 선택·완료 숨기기 채움', marker: '기본 ▶ 없음', wrap: '짧은 배지 이름 한 줄', tableFit: '표가 칸 안에 들어감', valueGap: '배지 이름·값 간격 3px 이상', dotGlue: '"·" 묶음 부모가 flex·grid 아님' };
 let failed = 0, screens = 0;
 async function check(p, label, phone, fitOnly = false) {
   await p.evaluate(() => { document.querySelectorAll('details:not(.backup-menu)').forEach(d => { d.open = true; }); scrollTo(0, 0); });
@@ -84,7 +85,7 @@ try {
       await check(p, `${w} ${route}`, phone);
       if (route !== '/theodora/1/') continue;
       const nav = p.getByRole('navigation', { name: '공략 화면' });
-      for (const v of ['인물', '준비', '재료', '문서']) {
+      for (const v of ['인물', '준비', '재료']) {
         await nav.getByRole('button', { name: v }).first().click(); await p.waitForTimeout(500);
         await check(p, `${w} ${route} ${v}`, phone);
       }

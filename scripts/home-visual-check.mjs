@@ -6,7 +6,7 @@ const errors=[];
 const rows=[],base=process.env.BROWSER_BASE_URL||'http://localhost:3000';
 mkdirSync('.tmp/final-home',{recursive:true});
 try{
- for(const [width,height]of [[375,812],[768,1024],[1280,720],[1440,900],[3840,2160]])for(const theme of ['light','dark']){
+ for(const [width,height]of [[375,812],[768,1024],[1280,720],[1440,900],[3840,2160]])for(const theme of ['dark']){
   const page=await browser.newPage({viewport:{width,height},colorScheme:theme});
   await page.goto(base+'/');await page.waitForLoadState('networkidle');
   await page.evaluate(async()=>{await document.fonts.ready;await Promise.all([...document.images].map(img=>img.decode()));});

@@ -7,74 +7,36 @@
     {
       "width": 375,
       "height": 812,
-      "theme": "light",
-      "horizontal": 0,
-      "vertical": 836,
-      "cards": [
-        {
-          "route": "cai",
-          "left": 16,
-          "top": 72,
-          "bottom": 413.03125,
-          "clearance": 8.609375
-        },
-        {
-          "route": "dietrich",
-          "left": 16,
-          "top": 429.03125,
-          "bottom": 770.0625,
-          "clearance": 8.609375
-        },
-        {
-          "route": "theodora",
-          "left": 16,
-          "top": 786.0625,
-          "bottom": 1127.09375,
-          "clearance": 8.609375
-        },
-        {
-          "route": "leda",
-          "left": 16,
-          "top": 1143.09375,
-          "bottom": 1484.125,
-          "clearance": 8.609375
-        }
-      ],
-      "screenshot": ".tmp/final-home/375-light.png"
-    },
-    {
-      "width": 375,
-      "height": 812,
       "theme": "dark",
       "horizontal": 0,
-      "vertical": 836,
+      "vertical": 824,
       "cards": [
         {
           "route": "cai",
           "left": 16,
-          "top": 72,
-          "bottom": 413.03125,
+          "top": 60,
+          "bottom": 401.03125,
           "clearance": 8.609375
         },
         {
           "route": "dietrich",
           "left": 16,
-          "top": 429.03125,
-          "bottom": 770.0625,
+          "top": 417.03125,
+          "bottom": 758.0625,
           "clearance": 8.609375
         },
         {
           "route": "theodora",
           "left": 16,
-          "top": 786.0625,
-          "bottom": 1127.09375,
+          "top": 774.0625,
+          "bottom": 1115.09375,
           "clearance": 8.609375
         },
         {
           "route": "leda",
           "left": 16,
-          "top": 1143.09375,
-          "bottom": 1484.125,
+          "top": 1131.09375,
+          "bottom": 1472.125,
           "clearance": 8.609375
         }
       ],
@@ -83,116 +45,40 @@
     {
       "width": 768,
       "height": 1024,
-      "theme": "light",
-      "horizontal": 0,
-      "vertical": 988,
-      "cards": [
-        {
-          "route": "cai",
-          "left": 24,
-          "top": 76,
-          "bottom": 506.078125,
-          "clearance": 8.609375
-        },
-        {
-          "route": "dietrich",
-          "left": 24,
-          "top": 522.078125,
-          "bottom": 952.15625,
-          "clearance": 8.609375
-        },
-        {
-          "route": "theodora",
-          "left": 24,
-          "top": 968.15625,
-          "bottom": 1398.234375,
-          "clearance": 8.609375
-        },
-        {
-          "route": "leda",
-          "left": 24,
-          "top": 1414.234375,
-          "bottom": 1844.3125,
-          "clearance": 8.609375
-        }
-      ],
-      "screenshot": ".tmp/final-home/768-light.png"
-    },
-    {
-      "width": 768,
-      "height": 1024,
       "theme": "dark",
       "horizontal": 0,
-      "vertical": 988,
+      "vertical": 976,
       "cards": [
         {
           "route": "cai",
           "left": 24,
-          "top": 76,
-          "bottom": 506.078125,
+          "top": 64,
+          "bottom": 494.078125,
           "clearance": 8.609375
         },
         {
           "route": "dietrich",
           "left": 24,
-          "top": 522.078125,
-          "bottom": 952.15625,
+          "top": 510.078125,
+          "bottom": 940.15625,
           "clearance": 8.609375
         },
         {
           "route": "theodora",
           "left": 24,
-          "top": 968.15625,
-          "bottom": 1398.234375,
+          "top": 956.15625,
+          "bottom": 1386.234375,
           "clearance": 8.609375
         },
         {
           "route": "leda",
           "left": 24,
-          "top": 1414.234375,
-          "bottom": 1844.3125,
+          "top": 1402.234375,
+          "bottom": 1832.3125,
           "clearance": 8.609375
         }
       ],
       "screenshot": ".tmp/final-home/768-dark.png"
-    },
-    {
-      "width": 1280,
-      "height": 720,
-      "theme": "light",
-      "horizontal": 0,
-      "vertical": 0,
-      "cards": [
-        {
-          "route": "cai",
-          "left": 24,
-          "top": 84,
-          "bottom": 544,
-          "clearance": 16.609375
-        },
-        {
-          "route": "dietrich",
-          "left": 338,
-          "top": 84,
-          "bottom": 544,
-          "clearance": 16.609375
-        },
-        {
-          "route": "theodora",
-          "left": 652,
-          "top": 84,
-          "bottom": 544,
-          "clearance": 16.609375
-        },
-        {
-          "route": "leda",
-          "left": 966,
-          "top": 84,
-          "bottom": 544,
-          "clearance": 16.609375
-        }
-      ],
-      "screenshot": ".tmp/final-home/1280-light.png"
     },
     {
       "width": 1280,
@@ -235,44 +121,6 @@
     {
       "width": 1440,
       "height": 900,
-      "theme": "light",
-      "horizontal": 0,
-      "vertical": 0,
-      "cards": [
-        {
-          "route": "cai",
-          "left": 24,
-          "top": 84,
-          "bottom": 724,
-          "clearance": 16.609375
-        },
-        {
-          "route": "dietrich",
-          "left": 378,
-          "top": 84,
-          "bottom": 724,
-          "clearance": 16.609375
-        },
-        {
-          "route": "theodora",
-          "left": 732,
-          "top": 84,
-          "bottom": 724,
-          "clearance": 16.609375
-        },
-        {
-          "route": "leda",
-          "left": 1086,
-          "top": 84,
-          "bottom": 724,
-          "clearance": 16.609375
-        }
-      ],
-      "screenshot": ".tmp/final-home/1440-light.png"
-    },
-    {
-      "width": 1440,
-      "height": 900,
       "theme": "dark",
       "horizontal": 0,
       "vertical": 0,
@@ -307,44 +155,6 @@
         }
       ],
       "screenshot": ".tmp/final-home/1440-dark.png"
-    },
-    {
-      "width": 3840,
-      "height": 2160,
-      "theme": "light",
-      "horizontal": 0,
-      "vertical": 0,
-      "cards": [
-        {
-          "route": "cai",
-          "left": 24,
-          "top": 84,
-          "bottom": 1984,
-          "clearance": 16.609375
-        },
-        {
-          "route": "dietrich",
-          "left": 978,
-          "top": 84,
-          "bottom": 1984,
-          "clearance": 16.609375
-        },
-        {
-          "route": "theodora",
-          "left": 1932,
-          "top": 84,
-          "bottom": 1984,
-          "clearance": 16.609375
-        },
-        {
-          "route": "leda",
-          "left": 2886,
-          "top": 84,
-          "bottom": 1984,
-          "clearance": 16.609375
-        }
-      ],
-      "screenshot": ".tmp/final-home/3840-light.png"
     },
     {
       "width": 3840,

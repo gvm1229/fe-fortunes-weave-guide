@@ -17,7 +17,7 @@ const results = [], parity = [], functionality = [], errors = [], failures = [],
 const browser = await chromium.launch({ executablePath:process.env.CHROME_PATH || 'C:/Program Files/Google/Chrome/Application/chrome.exe', headless:true });
 const report = (final=false) => writeFileSync(final?'docs/browser-results.json':'.tmp/browser-progress.json',JSON.stringify({
   status:failures.length?'failed':'passed',host:'Codex / Windows / installed Chrome / Playwright',base,
-  coverage:{sizes,themes:['light','dark'],routes:['/',...Object.keys(routeNames).map(r=>`/${r}/${r==='part3'?'3':'1'}/`),'/team/'],views:['할 일','인물','준비','재료와 구매','참고 문서'],screenshots},
+  coverage:{sizes,themes:['dark'],routes:['/',...Object.keys(routeNames).map(r=>`/${r}/${r==='part3'?'3':'1'}/`),'/team/'],views:['할 일','인물','준비','재료와 구매'],screenshots},
   method:{overlap:'보이는 형제 요소의 사각형 교차: 화면 구역·탐색·도구 줄·장 제목·묶음 제목·인물·표·목록·시트. 부모/자식 포함과 스크롤 내용/고정 탭은 제외한다.',images:'접힌 장도 포함한 할 일 DOM만 원본과 비교. 다음 행동·보조 칸의 추가 그림은 제외. 같은 묶음의 같은 얼굴만 중복 제거.',limits:'Windows Chrome에서 정적 배포 빌드를 로컬 HTTP 서버로 검사. 다른 운영체제·브라우저·실제 기기·게임 사실은 증명하지 않는다.'},
   results,parity,functionality,errors,failures,recoveries
 },null,2));
@@ -53,7 +53,7 @@ async function measure(page,{route='home',view='home',theme,width,height,screens
     };
     const text=[...document.querySelectorAll('body *')].filter(e=>visible(e)&&[...e.childNodes].some(n=>n.nodeType===3&&n.textContent.trim()));
     const minimumFont=Math.min(...text.map(e=>parseFloat(getComputedStyle(e).fontSize)));
-    const small=text.filter(e=>parseFloat(getComputedStyle(e).fontSize)<18).map(e=>({text:e.textContent.slice(0,60),font:getComputedStyle(e).fontSize}));
+    const small=text.filter(e=>parseFloat(getComputedStyle(e).fontSize)<13).map(e=>({text:e.textContent.slice(0,60),font:getComputedStyle(e).fontSize}));
     const overlaps=[];
     const selector='.home,.home-top,.home-actions,.route-deck,.route-card-content,.route-progress,.third-band,.lord-faces,.app-shell,.sidebar,.part-links,.view-nav,.view-nav button,.workspace main,.tasks-layout,.check-toolbar,.toolbar-actions,.context-rail,.context-people,.chapter-section>summary,.action-group>header,.group-portraits,.people-grid,.person-heading,.filters,.search,.records,.scenario-tabs,.team-grid,.god-list,.sheet-heading';
     for(const container of document.querySelectorAll(selector)){
@@ -69,7 +69,7 @@ async function measure(page,{route='home',view='home',theme,width,height,screens
     }
     const brokenImages=[...document.images].filter(e=>visible(e)&&e.getBoundingClientRect().top<innerHeight&&e.getBoundingClientRect().bottom>0&&(!e.complete||e.naturalWidth===0)).map(e=>e.getAttribute('src'));
     // 재설계 v3에서 의도적으로 배경이 없는 버튼: 탐색 항목, 배지로 채운 인물 이름, 그림 버튼, 접기 머리, 채운 목록 안의 탭.
-    const transparentButtons=[...document.querySelectorAll('button')].filter(e=>visible(e)&&e.textContent.trim()&&!e.matches('.guide-navigation button,.person-inline:has(.game-badge),.map-thumbnail button,.ui-accordion-trigger,[role=tab],[role=radio]')&&getComputedStyle(e).backgroundColor==='rgba(0, 0, 0, 0)').map(e=>e.textContent.slice(0,60));
+    const transparentButtons=[...document.querySelectorAll('button')].filter(e=>visible(e)&&e.textContent.trim()&&!e.matches('.guide-navigation button,.person-inline:has(.game-badge),.map-thumbnail button,.ui-accordion-trigger,[role=tab],[role=radio]')&&getComputedStyle(e).backgroundColor==='rgba(0, 0, 0, 0)'&&getComputedStyle(e).backgroundImage==='none').map(e=>e.textContent.slice(0,60)); // 그림 바탕(yuphastemple 3조각 알약·판 질감)도 채운 단추다.
     const aspectRatioViolations=[...document.images].filter(e=>visible(e)&&e.naturalWidth&&getComputedStyle(e).objectFit==='fill'&&!/\/(portraits|gods)\//.test(e.getAttribute('src')||'')).flatMap(e=>{
       const r=e.getBoundingClientRect(),ratio=e.naturalWidth/e.naturalHeight,error=Math.abs(r.width/r.height/ratio-1);
       return error>.01?[{src:e.getAttribute('src'),display:[r.width,r.height],natural:[e.naturalWidth,e.naturalHeight],error}]:[];
@@ -100,12 +100,12 @@ async function measure(page,{route='home',view='home',theme,width,height,screens
       overlapCount:overlaps.length,overlaps,brokenImages,transparentButtons,background,bgToken:getComputedStyle(document.body).getPropertyValue('--bg').trim().toUpperCase(),
       imageCount:document.querySelectorAll('img').length,aspectRatioViolations,faceSizes,faceSizeViolations,paragraphViolations,groupLineViolations,personTables,order,eraViolations,croppedScenes,sceneHeights,goldTables,accentContrast,disclosureImageClips};
   });
-  // 재설계 v3(docs/design-spec.md "재설계 v3" 표): 루트·팀 화면 body는 공통 --bg(#F4F3F0 / #191918). 첫 화면은 이전 색 그대로.
-  const expected=route==='home'?(theme==='light'?'#EFEBE3':'#121116'):(theme==='light'?'#F4F3F0':'#191918');
+  // 2026-11-27 yuphastemple 통합(docs/design-spec.md 맨 위 절, 승인한 견본): 첫 화면·루트·팀 화면 body는 모두 tileBg2 질감 + #05171B. 어두운 화면만(U63).
+  const expected='#05171B';
   const label=`${route}-${view}-${width}x${height}-${theme}`;
-  Object.assign(row,{label,route,view,width,height,theme,expectedBackground:expected,backgroundMatches:row.background===expected&&(route!=='home'||row.bgToken===expected)});
+  Object.assign(row,{label,route,view,width,height,theme,expectedBackground:expected,backgroundMatches:row.background===expected});
   results.push(row);
-  for(const [ok,message] of [[row.horizontalScroll===0,'가로 스크롤'],[row.minimumFont>=(width<768&&route==='team'?14:18),'최소 글자'],[row.dashboardVerticalScroll===null||row.dashboardVerticalScroll===0||height>width,'첫 화면 세로 스크롤'],[row.overlapCount===0,'요소 겹침'],[row.brokenImages.length===0,'그림 로딩'],[row.transparentButtons.length===0,'채운 버튼'],[row.backgroundMatches,'body 배경']])if(!ok)failures.push(`${label}: ${message}`);
+  for(const [ok,message] of [[row.horizontalScroll===0,'가로 스크롤'],[row.minimumFont>=13,'최소 글자 13px([U43] yuphastemple 값)'],[row.dashboardVerticalScroll===null||row.dashboardVerticalScroll===0||height>width,'첫 화면 세로 스크롤'],[row.overlapCount===0,'요소 겹침'],[row.brokenImages.length===0,'그림 로딩'],[row.transparentButtons.length===0,'채운 버튼'],[row.backgroundMatches,'body 배경']])if(!ok)failures.push(`${label}: ${message}`);
   for(const [items,message]of [[row.aspectRatioViolations,'원본 그림 비율'],[row.faceSizeViolations,'얼굴 크기'],[row.paragraphViolations,'2문장 문단'],[row.groupLineViolations,'3줄 묶음'],[row.eraViolations,'타임스킵 시대'],[row.croppedScenes,'그림 전체 표시']])if(items.length)failures.push(`${label}: ${message}`);
   // [U54] 인물 표 머리 칸 폭: 데스크톱 120px, 휴대폰 100px.
   if(row.personTables.some(t=>t.columns!==2||Math.abs(t.labelWidth-(width<768?100:120))>1))failures.push(`${label}: 인물 2열 표 너비 ${row.personTables.map(t=>t.labelWidth).join(",")}`);
@@ -159,7 +159,7 @@ async function compareImages(page,route,part='1') {
 }
 
 try {
-  for(const [width,height] of sizes)for(const theme of ['light','dark']){
+  for(const [width,height] of sizes)for(const theme of ['dark']){
     const context=await browser.newContext({viewport:{width,height},colorScheme:theme});
     const page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));
     page.on('console',m=>{if(m.type()==='error'&&!m.text().startsWith('Failed to load resource:'))errors.push(m.text());});
@@ -169,8 +169,8 @@ try {
       await visit(page,`/${route}/${route==='part3'?'3':'1'}/`);
       await measure(page,{route,view:'tasks',theme,width,height});
       await stickyCheck(page,route,width,theme);
-      if(width===1440&&theme==='light')await compareImages(page,route);
-      for(const [name,view] of [['인물','people'],['준비','prep'],['재료와 구매','materials'],['참고 문서','docs']]){
+      if(width===1440&&theme==='dark')await compareImages(page,route);
+      for(const [name,view] of [['인물','people'],['준비','prep'],['재료와 구매','materials']]){
         await page.getByRole('navigation',{name:'공략 화면'}).getByRole('button',{name,exact:true}).click();
         await page.getByRole('heading',{name,level:1,exact:true}).waitFor();
         if(view==='prep'){
@@ -180,12 +180,9 @@ try {
         }
         await measure(page,{route,view,theme,width,height});
         if(view==='materials'&&route!=='part3'){
-          const maps=page.locator('.material-entry .map-thumbnail');
-          if(await maps.count()!==await page.locator('.material-entry').count())failures.push(`${route}: 재료별 지도 누락`);
-          if(width===375){
-            await page.getByRole('button',{name:'지도 보기',exact:true}).first().click();await page.getByRole('dialog').waitFor();
-            await measure(page,{route,view:'map-sheet',theme,width,height});await page.keyboard.press('Escape');
-          }
+          // 2026-11-27: 재료 서랍·지도 사진 대신 재료마다 yuphastemple 물품·지도 단추(U64).
+          const rows=page.locator('[data-material]');
+          if(!await rows.count()||await page.locator('[data-material] [data-yuphas-link]').count()<await rows.count())failures.push(`${route}: 재료별 yuphastemple 단추 누락`);
         }
         if(view==='docs'&&width===375){
           await page.locator('.document-list button').first().click();await page.getByRole('dialog').waitFor();
@@ -200,9 +197,9 @@ try {
   }
 
   const context=await browser.newContext({viewport:{width:1280,height:720}}),page=await context.newPage();
-  for(const theme of ['light','dark']){await page.emulateMedia({colorScheme:theme});await page.goto(base+'/');await measure(page,{theme,width:1280,height:720});}
+  for(const theme of ['dark']){await page.emulateMedia({colorScheme:theme});await page.goto(base+'/');await measure(page,{theme,width:1280,height:720});}
   for(const route of ['theodora','leda','dietrich','cai']){await page.goto(`${base}/${route}/2/`);await ready(page);await compareImages(page,route,'2');}
-  for(const [width,height]of [[1440,900],[375,812]])for(const theme of ['light','dark']){
+  for(const [width,height]of [[1440,900],[375,812]])for(const theme of ['dark']){
     await page.setViewportSize({width,height});await page.emulateMedia({colorScheme:theme});
     await page.goto(base+'/theodora/1/');await ready(page);await page.getByLabel('장 선택',{exact:true}).selectOption({label:'6장'});await ready(page);
     const toggle=page.locator('.chapter-section[open] .prose-toggle:visible').first();
@@ -216,7 +213,7 @@ try {
     const original=await page.locator('.image-original>img').evaluate(async e=>{await e.decode();return {natural:[e.naturalWidth,e.naturalHeight],display:[Math.round(e.getBoundingClientRect().width),Math.round(e.getBoundingClientRect().height)]};});
     assert.deepEqual(original.display,original.natural);functionality.push({check:'image-enlargement',width,theme,...original,passed:true});await page.keyboard.press('Escape');
   }
-  await page.setViewportSize({width:1280,height:720});await page.emulateMedia({colorScheme:'light'});
+  await page.setViewportSize({width:1280,height:720});await page.emulateMedia({colorScheme:'dark'});
   await page.goto(base+'/theodora/1/');await ready(page);
   const box=page.locator('.chapter-section[open] .checklist input').first(),before=await box.isChecked(),boxId=await box.getAttribute('id');
   await box.click();await page.reload();await ready(page);assert.equal(await page.locator(`[id="${boxId}"]`).isChecked(),!before);functionality.push('체크 재로딩 보존');
@@ -230,9 +227,11 @@ try {
   assert.equal(await page.locator('[id="prep-boons--83c6deded0"]').isChecked(),false);assert.equal(await page.locator('[id="prep-boons--5d107be39e"]').isChecked(),true);functionality.push('가져오기·상속 true보다 개별 false 우선');
   const currentBox=page.locator('.chapter-section[open] .checklist input').first(),current=await currentBox.isChecked();await page.evaluate(()=>{Storage.prototype.setItem=()=>{throw new DOMException('시험 저장 실패','QuotaExceededError');};});await currentBox.click();assert.equal(await currentBox.isChecked(),current);assert.ok((await page.getByRole('status').innerText()).includes('저장하지 못했습니다'));functionality.push('저장 실패 시 체크 미반영');
   await page.reload();await ready(page);
-  await page.getByRole('navigation',{name:'공략 화면'}).getByRole('button',{name:'참고 문서',exact:true}).click();
-  await page.getByRole('button',{name:'지원 루프 따라하기',exact:false}).first().click();await page.getByRole('dialog').waitFor();
-  const link=page.locator('[data-doc-url="weekly-support-review.md"]').first();await link.scrollIntoViewIfNeeded();const scroll=await page.locator('.sheet-scroll').evaluate(e=>e.scrollTop);await link.click();await page.getByRole('button',{name:'뒤로',exact:true}).click();await page.waitForTimeout(100);assert.ok(Math.abs(await page.locator('.sheet-scroll').evaluate(e=>e.scrollTop)-scroll)<2);await page.keyboard.press('Escape');functionality.push('문서 뒤로·읽던 위치 복원');
+  // 2026-11-27: 참고 문서 화면은 없앴다. 같은 문서를 할 일 본문의 문서 단추에서 연다.
+  await page.evaluate(()=>document.querySelectorAll('main details').forEach(d=>{d.open=true;}));
+  // 지원 루프 문서의 '근거' 절 링크는 화면에서 뺐으므로(U36·U65) 본문에 문서 링크가 있는 '축복 순서·예산' 문서로 되돌아오기를 본다.
+  await page.getByRole('button',{name:'축복 순서·예산',exact:false}).first().click();await page.getByRole('dialog').waitFor();
+  const link=page.locator('[data-doc-url="level-renown-review.md"]').first();await link.scrollIntoViewIfNeeded();const scroll=await page.locator('.sheet-scroll').evaluate(e=>e.scrollTop);await link.click();await page.getByRole('button',{name:'뒤로',exact:true}).click();await page.waitForTimeout(100);assert.ok(Math.abs(await page.locator('.sheet-scroll').evaluate(e=>e.scrollTop)-scroll)<2);await page.keyboard.press('Escape');functionality.push('문서 뒤로·읽던 위치 복원');
   await page.goto(base+'/team/');for(const name of ['네 진영장 포함','역할 균형 추천','현재 25인·병과 수정']){await page.getByRole('radiogroup',{name:'편성안'}).getByRole('radio',{name,exact:true}).click();assert.equal(await page.locator('.unit-card').count(),25);}functionality.push('팀 세 편성 각각 25명');
   await context.close();
   assert.deepEqual(errors,[],'브라우저 실행 오류');

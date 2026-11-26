@@ -1,6 +1,6 @@
 // 2026-11-15 내 상태 검사: 새 브라우저에서 축복 단계를 올리면 해당 구매 체크가 자동 완료(눌러 바꿀 수 없음)되고,
 // 사용자 규칙: [U25] 내 상태(축복·가호·파편·골드) 편집·가져오기 · [U35] 가져오는 동안 화면 전체를 막는 창과 돌아가는 표시.
-// 내보내기 파일에 status가 들어가며, 지우기 뒤 가져오기로 되돌아온다. 서랍은 폰·태블릿·데스크톱, 밝게·어둡게에서 넘치지 않는다.
+// 내보내기 파일에 status가 들어가며, 지우기 뒤 가져오기로 되돌아온다. 서랍은 폰·태블릿·데스크톱(어두운 화면만, 2026-11-27)에서 넘치지 않는다.
 import { chromium } from '@playwright/test';
 import { resolve } from 'node:path';
 import { readFileSync } from 'node:fs';
@@ -10,7 +10,7 @@ const base = process.env.BROWSER_BASE_URL || 'http://localhost:3000';
 const browser = await chromium.launch({ executablePath: process.env.CHROME_PATH || 'C:/Program Files/Google/Chrome/Application/chrome.exe', headless: true });
 let n = 0;
 try {
-  for (const [w, h] of [[360, 740], [390, 844], [768, 1024], [1440, 900]]) for (const scheme of ['light', 'dark']) {
+  for (const [w, h] of [[360, 740], [390, 844], [768, 1024], [1440, 900]]) for (const scheme of ['dark']) {
     const ctx = await browser.newContext({ viewport: { width: w, height: h }, colorScheme: scheme, acceptDownloads: true }); const p = await ctx.newPage();
     p.on('dialog', d => d.accept());
     await p.goto(base + '/theodora/1/'); await p.locator('.route-head').waitFor(); await p.waitForTimeout(500);
@@ -22,15 +22,15 @@ try {
     await sheet.getByRole('button', { name: '병과 경험치 증가 단계 올리기' }).click();
     await sheet.getByRole('button', { name: '아우로라 가호 레벨 올리기' }).click();
     await sheet.getByLabel('인과의 파편').fill('1000'); await sheet.getByLabel('골드').fill('500');
-    const lay = await sheet.evaluate(el => ({ over: el.scrollWidth - el.clientWidth, small: [...el.querySelectorAll('.stepper .button, .status-amount input')].filter(b => { const r = b.getBoundingClientRect(); return r.width && (r.width < 44 || r.height < 44); }).length, right: Math.max(...[...el.querySelectorAll('.status-list li')].map(li => li.getBoundingClientRect().right)) - el.getBoundingClientRect().right }));
-    assert.ok(lay.over <= 0 && lay.right <= 0.5, `${w} 서랍 가로 넘침 ${JSON.stringify(lay)}`); assert.equal(lay.small, 0, `${w} 누를 크기 44px 미만`);
+    const lay = await sheet.evaluate(el => ({ over: el.scrollWidth - el.clientWidth, small: [...el.querySelectorAll('.stepper .button, .status-amount input')].filter(b => { const r = b.getBoundingClientRect(); return r.width && (r.width < 32 || r.height < 32); }).length, right: Math.max(...[...el.querySelectorAll('.status-list li')].map(li => li.getBoundingClientRect().right)) - el.getBoundingClientRect().right }));
+    assert.ok(lay.over <= 0 && lay.right <= 0.5, `${w} 서랍 가로 넘침 ${JSON.stringify(lay)}`); assert.equal(lay.small, 0, `${w} 누를 크기 32px 미만([U55] yuphastemple 단추 36px)`);
     await p.keyboard.press('Escape'); await sheet.waitFor({ state: 'hidden' });
     assert.ok(await step.isChecked(), '축복 단계로 구매 체크 자동 완료'); assert.ok(await step.isDisabled(), '자동 완료는 눌러 바꿀 수 없음');
     assert.match(await p.locator('#prep-boons .status-summary').textContent(), /남은 추천 축복 12개 · 3,800파편 · 보유 1,000 → 2,800 부족/);
     const saved = JSON.parse(await p.evaluate(() => localStorage.getItem('fortunes-weave-checklist-v1')));
     assert.deepEqual(saved.status, { boons: { 'class-exp': 1 }, gods: { '아우로라': 1 }, shards: 1000, gold: 500 });
     assert.ok(!Object.hasOwn(saved.checks, 'prep-boons--class-exp-i'), '자동 완료는 체크 기록에 쓰지 않음');
-    if (w === 1440 && scheme === 'light') {
+    if (w === 1440 && scheme === 'dark') {
       await p.locator('.route-head .backup-menu summary').click();
       const [dl] = await Promise.all([p.waitForEvent('download'), p.getByRole('button', { name: '내보내기' }).click()]);
       const file = JSON.parse(readFileSync(await dl.path(), 'utf8')); assert.deepEqual(file.status, saved.status, '내보내기에 내 상태');
