@@ -91,6 +91,17 @@ try {
     }
     await ctx.close();
   }
+  // 2026-11-27: 320px(루트 머리 팀 단추·팀 탭 한 줄 3칸)와 인물 서랍 → 병종 고르기 창([U72]) 장면.
+  for (const [w, h] of [[320, 640], [390, 844], [1440, 900]]) {
+    const ctx = await browser.newContext({ viewport: { width: w, height: h } }); const p = await ctx.newPage();
+    if (w === 320) for (const r of ['/team/', '/theodora/1/']) { await p.goto(base + r); await p.waitForLoadState('networkidle'); await p.waitForTimeout(400); await checkAll(p, `${w} ${r}`); }
+    await p.goto(base + '/theodora/1/'); await p.waitForLoadState('networkidle'); await p.waitForTimeout(400);
+    await p.getByRole('navigation', { name: '공략 화면' }).getByRole('button', { name: '인물', exact: true }).click(); await p.waitForTimeout(400);
+    if (w === 320) await checkAll(p, `${w} 인물`);
+    await p.locator('.person-card-open').first().click(); await p.getByRole('dialog').waitFor(); await p.waitForTimeout(300); await check(p, `${w} 인물 서랍(내 기록)`);
+    await p.locator('.build-class').click(); await p.getByRole('dialog', { name: '병종 고르기' }).waitFor(); await p.waitForTimeout(300); await check(p, `${w} 병종 고르기 창`);
+    await ctx.close();
+  }
   if (REPORT) console.log([...problems.values()].join('\n'));
   assert.equal(problems.size, 0, `붙은 단추 ${problems.size}쌍:\n` + [...problems.values()].slice(0, 40).join('\n'));
   console.log(`통과: 단추 간격 ${MIN}px 이상 ${screens}개 화면`);

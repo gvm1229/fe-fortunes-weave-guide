@@ -1,5 +1,6 @@
 'use client';
-import { useState, type ReactNode } from 'react';
+import { useState } from 'react';
+import { ClassPicker } from './class-picker';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import { useChecks } from './checks';
 import { YLink, skillKo } from './yuphas';
@@ -34,7 +35,7 @@ function NoteField({ value, disabled, onSave }: { value?: string; disabled: bool
   return <input className="build-note" type="text" maxLength={NOTE_MAX} value={text} disabled={disabled} placeholder="메모" aria-label={`메모(${NOTE_MAX}자 이하)`}
     onChange={(e) => setText(e.target.value)} onBlur={() => { const v = text.trim() || undefined; if (v !== (value || undefined)) onSave(v); }} />;
 }
-export function BuildEditor({ route, profile, classButton }: { route: string; profile: YuphasProfile; classButton?: (button: ReactNode) => ReactNode }) {
+export function BuildEditor({ route, profile }: { route: string; profile: YuphasProfile }) {
   const checks = useChecks(), build = useBuild(route, profile.slug), disabled = !checks.ready;
   const save = (patch: Partial<Build> | null) => checks.setBuild(route as BuildRoute, profile.slug, patch);
   const picked = classBySlug(build?.classId);
@@ -45,7 +46,7 @@ export function BuildEditor({ route, profile, classButton }: { route: string; pr
     <ChevronDown size={18} aria-hidden="true" />
   </button>;
   return <div className="build-editor" data-build-editor>
-    <div className="build-row">{classButton ? classButton(button) : button}
+    <div className="build-row"><ClassPicker profile={profile} value={build?.classId} onPick={(classId) => save({ classId })}>{button}</ClassPicker>
       <LevelField key={`lv-${build?.level ?? ''}`} value={build?.level} disabled={disabled} onSave={(level) => save({ level })} /></div>
     <ul className="build-skills" aria-label="숙련 등급">{profile.skills.map((s) => {
       const value = build?.skills?.[s.id] || '', label = skillKo[s.skill];

@@ -90,7 +90,25 @@ try {
     assert.ok(sel.fit && sel.h >= 32 && Math.round(sel.w) === 44 && sel.font === '16px' && sel.ap === 'none', '[U72] 등급 칸 ' + JSON.stringify(sel));
     assert.ok(await p.evaluate(() => document.documentElement.scrollWidth <= innerWidth), '[U72] 320 서랍 가로 넘침');
     await d.getByLabel('창술 등급', { exact: true }).selectOption('C'); await p.setViewportSize({ width: 1440, height: 900 });
+    // 병종 고르기 창: 그 인물이 고를 수 있는 병종 수만큼 칩, Esc는 창만 닫고 초점은 병종 단추로, 고르면 닫히고 머리 카드 병종이 바뀐다. 320·390·1440 넘침 0.
+    const { allowedFor } = await import('../lib/class-rules.ts'); const cdata = JSON.parse(readFileSync('content/data/yuphas-classes.json', 'utf8'));
+    const picker = p.getByRole('dialog', { name: '병종 고르기' });
+    for (const [vw, vh] of [[320, 640], [390, 844], [1440, 900]]) {
+      await p.setViewportSize({ width: vw, height: vh }); await d.locator('.build-class').click(); await picker.waitFor(); await p.waitForTimeout(200);
+      const pm = await picker.evaluate(e => ({ chips: e.querySelectorAll('.class-chip:not(.class-chip-clear)').length, inside: e.getBoundingClientRect().left >= 0 && e.getBoundingClientRect().right <= innerWidth, bodyX: e.querySelector('.class-picker-body').scrollWidth - e.querySelector('.class-picker-body').clientWidth, doc: document.documentElement.scrollWidth - innerWidth }));
+      assert.ok(pm.chips === allowedFor(cdata.classes, cdata.characters.theodora).length && pm.inside && pm.bodyX <= 0 && pm.doc <= 0, `[U72] ${vw} 병종 고르기 창 ${JSON.stringify(pm)}`);
+      await p.keyboard.press('Escape'); await picker.waitFor({ state: 'detached' });
+      assert.ok(await d.isVisible() && await p.evaluate(() => document.activeElement?.classList.contains('build-class')), `[U72] ${vw} Esc는 창만 닫고 초점은 병종 단추`);
+    }
+    await d.locator('.build-class').click(); await picker.waitFor(); await picker.getByLabel('병종 검색').fill('Guardian'); await picker.locator('.class-chip', { hasText: '가디언' }).click(); await picker.waitFor({ state: 'detached' });
+    assert.ok(/가디언/.test(await d.locator('[data-character-header] .y-card-class').textContent()) && await p.evaluate(() => document.activeElement?.classList.contains('build-class')), '[U72] 고른 병종이 머리 카드에·초점 복귀');
+    assert.equal((await stored()).builds.theodora.theodora.classId, 'guardian', '[U72] 병종 저장');
     await p.keyboard.press('Escape');
+    // 남성(디트리히)에게 여성 전용 병종(천익병) 칩이 없다.
+    { const dd = await openSheet('/dietrich/1/', '디트리히'); await dd.locator('.build-class').click(); await picker.waitFor();
+      assert.equal(await picker.locator('.class-chip', { hasText: '천익병' }).count(), 0, '[U72] 남성에 천익병'); assert.equal(await picker.locator('.class-chip:not(.class-chip-clear)').count(), allowedFor(cdata.classes, cdata.characters.dietrich).length);
+      await p.keyboard.press('Escape'); await p.keyboard.press('Escape'); await p.goto(base + '/theodora/1/'); await p.locator('.route-head').waitFor(); }
+    d = p.getByRole('dialog');
     // 새로 고친 뒤 유지, 체크 칸을 눌러도 육성 기록 유지.
     await p.reload(); await p.locator('.route-head').waitFor(); await p.waitForTimeout(400);
     await p.locator('.checklist input[type=checkbox]:not([disabled])').first().check(); await p.waitForTimeout(200);
@@ -98,7 +116,7 @@ try {
     // 내보내기 파일에 builds. 저장소를 비우고 그 파일을 가져오면(서랍을 연 채로도) 화면이 돌아온다.
     await p.locator('.route-head .backup-menu summary').click();
     const [dl] = await Promise.all([p.waitForEvent('download'), p.getByRole('button', { name: '내보내기' }).click()]);
-    const exported = JSON.parse(readFileSync(await dl.path(), 'utf8')); assert.deepEqual(exported.builds?.theodora?.theodora, { level: 22, skills: { spear: 'C' }, note: '검사 메모' }, '[U72] 내보내기에 builds');
+    const exported = JSON.parse(readFileSync(await dl.path(), 'utf8')); assert.deepEqual(exported.builds?.theodora?.theodora, { level: 22, skills: { spear: 'C' }, note: '검사 메모', classId: 'guardian' }, '[U72] 내보내기에 builds');
     // '기록 지우기'는 체크·내 상태만 지운다.
     await p.getByRole('button', { name: '기록 지우기' }).click(); await p.waitForTimeout(200);
     const cleared = await stored(); assert.deepEqual(cleared.checks, {}, '[U72] 기록 지우기 체크'); assert.equal(cleared.builds?.theodora?.theodora?.level, 22, '[U72] 기록 지우기 뒤 육성 기록 유지');
