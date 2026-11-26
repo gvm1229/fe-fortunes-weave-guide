@@ -72,7 +72,9 @@ try {
   if (/localhost:3000|127\.0\.0\.1:3000/.test(base)) throw new Error('[U72] 육성 기록 검사는 localhost:3000(사용자 미리보기)에서 돌리지 않습니다. BROWSER_BASE_URL에 검사용 서버를 주세요.');
   {
     const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 }, acceptDownloads: true }); const p = await ctx.newPage(); p.on('dialog', d => d.accept());
-    const KEY = 'fortunes-weave-checklist-v1', stored = async () => JSON.parse(await p.evaluate(k => localStorage.getItem(k), KEY));
+    // 육성 기록은 체크 열쇠와 다른 열쇠(fortunes-weave-builds-v1)에 둔다(Fable 검토 21 지적 4). stored()는 둘을 합쳐 본다.
+    const KEY = 'fortunes-weave-checklist-v1', BKEY = 'fortunes-weave-builds-v1';
+    const stored = async () => p.evaluate(([k, bk]) => { const c = JSON.parse(localStorage.getItem(k)), b = localStorage.getItem(bk); return { ...c, ...(b ? { builds: JSON.parse(b) } : {}), inChecksKey: 'builds' in c }; }, [KEY, BKEY]);
     const nav = (v) => p.getByRole('navigation', { name: '공략 화면' }).getByRole('button', { name: v, exact: true });
     const openSheet = async (route, name) => { await p.goto(base + route); await p.locator('.route-head').waitFor(); await p.waitForTimeout(400); await nav('인물').click(); await p.locator(`.person-card[data-person="${name}"] .person-card-open`).click(); const d = p.getByRole('dialog'); await d.waitFor(); await d.locator('[data-build-editor] select:not([disabled])').first().waitFor(); return d; };
     let d = await openSheet('/theodora/1/', '세오도라');
@@ -116,7 +118,14 @@ try {
     // 새로 고친 뒤 유지, 체크 칸을 눌러도 육성 기록 유지.
     await p.reload(); await p.locator('.route-head').waitFor(); await p.waitForTimeout(400);
     await p.locator('.checklist input[type=checkbox]:not([disabled])').first().check(); await p.waitForTimeout(200);
-    assert.equal((await stored()).builds?.theodora?.theodora?.level, 22, '[U72] 체크 뒤 육성 기록 유지');
+    assert.equal((await stored()).builds?.theodora?.theodora?.level, 22, '[U72] 체크 뒤 육성 기록 유지'); assert.equal((await stored()).inChecksKey, false, '[U72] 체크 열쇠에 builds 없음');
+    // 육성 기록을 모르는 옛 탭이 체크 열쇠를 builds 없이 덮어써도 육성 기록은 남는다.
+    await p.evaluate(k => localStorage.setItem(k, JSON.stringify({ schemaVersion: 1, revision: 999, checks: {} })), KEY); await p.reload(); await p.locator('.route-head').waitFor(); await p.waitForTimeout(400);
+    assert.equal((await stored()).builds?.theodora?.theodora?.level, 22, '[U72] 옛 탭이 체크 열쇠를 덮어써도 육성 기록 유지');
+    // 예전에 체크 열쇠 안에 들어간 builds는 처음 읽을 때 육성 기록 열쇠로 옮긴다.
+    { const keep = await p.evaluate(bk => localStorage.getItem(bk), BKEY);
+      await p.evaluate(([k, bk, b]) => { localStorage.removeItem(bk); localStorage.setItem(k, JSON.stringify({ schemaVersion: 1, revision: 1000, checks: {}, builds: JSON.parse(b) })); }, [KEY, BKEY, keep]); await p.reload(); await p.locator('.route-head').waitFor(); await p.waitForTimeout(400);
+      const s = await stored(); assert.ok(s.builds?.theodora?.theodora?.level === 22 && !s.inChecksKey, '[U72] 체크 열쇠의 옛 builds 옮김 ' + JSON.stringify(s)); }
     // 내보내기 파일에 builds. 저장소를 비우고 그 파일을 가져오면(서랍을 연 채로도) 화면이 돌아온다.
     await p.locator('.route-head .backup-menu summary').click();
     const [dl] = await Promise.all([p.waitForEvent('download'), p.getByRole('button', { name: '내보내기' }).click()]);
@@ -131,7 +140,7 @@ try {
       const s = await stored(); assert.ok(s.checks['imported-check'] === true && s.builds?.theodora?.theodora?.level === 22, `[U72] ${name} 가져오기 뒤 육성 기록 유지 ${JSON.stringify(s.builds)}`);
     }
     // 저장소를 비운 뒤 내보낸 파일 가져오기 → 서랍을 연 채로 레벨 칸이 따라온다(Fable 검토 11).
-    await p.evaluate(k => localStorage.removeItem(k), KEY); await p.reload(); await p.locator('.route-head').waitFor(); await p.waitForTimeout(400);
+    await p.evaluate(ks => ks.forEach(k => localStorage.removeItem(k)), [KEY, BKEY]); await p.reload(); await p.locator('.route-head').waitFor(); await p.waitForTimeout(400);
     d = await openSheet('/theodora/1/', '세오도라'); assert.equal(await d.getByLabel('레벨(1~99)').inputValue(), '', '[U72] 빈 저장소 레벨 빈칸');
     await p.keyboard.press('Escape'); await nav('할 일').click(); await p.locator('.route-head .backup-menu summary').click();
     await p.locator('.route-head .backup-menu input[type=file]').setInputFiles(await dl.path()); await p.locator('dialog.import-overlay').waitFor({ state: 'hidden' });

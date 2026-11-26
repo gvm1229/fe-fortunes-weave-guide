@@ -1,6 +1,5 @@
 import data from '@/content/data/yuphas-classes.json';
 import { allowedFor, type YClass, type YCharacter } from './class-rules';
-import type { BuildCatalog } from './check-state';
 /** yuphastemple 병종 60개·증서·인물 62명의 병종 조건(content/data/yuphas-classes.json, scripts/yuphas/classes.mjs가 만든 작은 표). 브라우저에서 써도 되는 크기. */
 export type { YClass };
 export const classes = data.classes as YClass[];
@@ -10,5 +9,3 @@ const bySlug = new Map(classes.map((c) => [c.slug, c]));
 export const classBySlug = (slug?: string) => (slug ? bySlug.get(slug) : undefined);
 export const allowedClasses = (personSlug: string) => allowedFor(classes, characters[personSlug]);
 export const classIcon = (slug: string, gender: string) => `/yuphas/classes/${gender === 'male' ? 'male' : 'female'}/${slug}.webp`;
-/** 가져오기 파일을 엄격하게 검사할 때 쓰는 이름 목록(인물 슬러그·병종 슬러그). */
-export const buildCatalog: BuildCatalog = { people: Object.keys(characters), classes: classes.map((c) => c.slug) };

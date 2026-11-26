@@ -31,8 +31,8 @@ export function Tasks({route,label,part,chapters,groups,onDoc,onPerson,people=[]
   async function importFile(file:File){
     setImportPhase({state:'busy'});const start=performance.now();let error='',message='';
     try{const raw=await file.text(),text=raw.charCodeAt(0)===0xFEFF?raw.slice(1):raw;/* 앞의 BOM 제거 */let value:unknown;try{value=JSON.parse(text);}catch{throw new Error('JSON 파일이 아니거나 내용이 깨졌습니다. 기록 관리 → 내보내기로 만든 파일을 고르세요.');}
-      checks.importData(value);const d=value as {checks:Record<string,boolean>;status?:unknown;builds?:Record<string,unknown>};
-      message=`가져왔습니다 · 체크 ${Object.values(d.checks).filter(Boolean).length}개 · ${d.status?'내 상태 포함':'파일에 내 상태 없음(기존 내 상태 유지)'} · ${d.builds&&Object.keys(d.builds).length?'육성 기록 포함':'파일에 육성 기록 없음(기존 육성 기록 유지)'}`;}
+      const usedBuilds=checks.importData(value);const d=value as {checks:Record<string,boolean>;status?:unknown};
+      message=`가져왔습니다 · 체크 ${Object.values(d.checks).filter(Boolean).length}개 · ${d.status?'내 상태 포함':'파일에 내 상태 없음(기존 내 상태 유지)'} · ${usedBuilds?'육성 기록 포함':'파일에 육성 기록 없음(기존 육성 기록 유지)'}`;}
     catch(e){error=e instanceof Error?e.message:'파일을 읽지 못했습니다.';}
     await new Promise(r=>setTimeout(r,Math.max(0,600-(performance.now()-start))));
     if(error){setImportPhase({state:'error',message:error});return;}

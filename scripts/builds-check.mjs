@@ -37,26 +37,30 @@ assert.deepEqual(data.licenses.filter((l) => l.level != null).map((l) => [l.id, 
 
 // 4. 저장·가져오기(lib/check-state.ts): 예전 파일·체크 기록·내 상태를 깨지 않고, 육성 기록을 지우지 않는다.
 { const { validateChecks, validateBuilds, sanitizeBuilds, nextBuilds } = await import('../lib/check-state.ts');
-  const catalog = { people: Object.keys(data.characters), classes: data.classes.map((c) => c.slug) };
   const base = { schemaVersion: 1, revision: 3, checks: { a: true, 'kai-1': false }, status: { boons: {}, gods: { 칼라: 2 } } };
   const good = { theodora: { loretta: { level: 20, classId: 'wing-soldier', skills: { sword: 'C', spear: 'D+', flying: 'D' }, note: '창술 C+ 되면 시험' }, theodora: { level: 22, classId: 'noble' } }, part3: { cai: { skills: { white_magic: 'S+' } } } };
   // (가) builds 없는 예전 파일 통과·결과에 builds 없음. builds: {}도 없는 것과 같다(가져오기에서 지금 기록 유지).
-  for (const file of [base, { ...base, builds: {} }, { ...base, builds: { theodora: {} } }]) assert.ok(!('builds' in validateChecks(file, undefined, catalog)), '[U72] 빈·없는 builds는 결과에 없음');
+  for (const file of [base, { ...base, builds: {} }, { ...base, builds: { theodora: {} } }]) assert.ok(!('builds' in validateChecks(file, undefined, true)), '[U72] 빈·없는 builds는 결과에 없음');
   // (나) 올바른 builds 통과·그대로.
-  assert.deepEqual(validateChecks({ ...base, builds: good }, undefined, catalog).builds, good, '[U72] 올바른 builds 그대로');
+  assert.deepEqual(validateChecks({ ...base, builds: good }, undefined, true).builds, good, '[U72] 올바른 builds 그대로');
+  // 모르는 인물·병종 슬러그는 가져오기에서도 거절하지 않고 보관한다(자료가 바뀐 뒤 내가 내보낸 파일을 다시 가져올 수 있게, Fable 검토 21 지적 6).
+  const renamed = { theodora: { nobody: { level: 1 }, loretta: { classId: 'wing-solder' } } };
+  assert.deepEqual(validateChecks({ ...base, builds: renamed }, undefined, true).builds, renamed, '[U72] 모르는 인물·병종 보관');
   // (다) 틀린 값 각각 거절(가져오기 엄격 검사).
-  const bad = [{ nowhere: {} }, { theodora: { nobody: { level: 1 } } }, { theodora: { loretta: { classId: 'wing-solder' } } }, { theodora: { loretta: { level: 0 } } }, { theodora: { loretta: { level: 100 } } }, { theodora: { loretta: { level: 1.5 } } },
+  const bad = [{ nowhere: {} }, { theodora: { loretta: { classId: 5 } } }, { theodora: { loretta: { level: 0 } } }, { theodora: { loretta: { level: 100 } } }, { theodora: { loretta: { level: 1.5 } } },
     { theodora: { loretta: { skills: { sword: 'F' } } } }, { theodora: { loretta: { skills: { lance: 'C' } } } }, { theodora: { loretta: { note: 'x'.repeat(201) } } }, { theodora: { loretta: { stats: {} } } }, [], 'x'];
-  for (const b of bad) assert.throws(() => validateChecks({ ...base, builds: b }, undefined, catalog), undefined, '[U72] 거절 ' + JSON.stringify(b).slice(0, 60));
-  assert.throws(() => validateBuilds({ theodora: { loretta: { classId: 'wing-solder' } } }, catalog), /theodora › loretta의 병종 "wing-solder"를 모릅니다/, '[U72] 이유를 말하는 오류');
+  for (const b of bad) assert.throws(() => validateChecks({ ...base, builds: b }, undefined, true), undefined, '[U72] 거절 ' + JSON.stringify(b).slice(0, 60));
+  assert.throws(() => validateBuilds({ theodora: { loretta: { level: 0 } } }), /theodora › loretta의 레벨은 1~99 정수여야 합니다/, '[U72] 이유를 말하는 오류');
   // (라) checks·status 결과는 builds를 더해도 같다.
-  const a = validateChecks(base), b2 = validateChecks({ ...base, builds: good }, undefined, catalog);
+  const a = validateChecks(base), b2 = validateChecks({ ...base, builds: good }, undefined, true);
   assert.deepEqual([b2.checks, b2.status, b2.revision], [a.checks, a.status, a.revision], '[U72] 체크·내 상태 결과 같음');
-  // (마) 저장소 읽기(catalog 없음)는 던지지 않고 모양만 고친다. 모르는 인물·병종은 보관(Fable 검토 2).
+  // (마) 저장소 읽기(strict 아님)는 던지지 않고 모양만 고친다. 모르는 인물·병종은 보관(Fable 검토 2).
   const stored = { ...base, builds: { theodora: { 'renamed-slug': { level: 30, classId: 'unknown-class' }, loretta: { level: 0, note: 5, skills: { sword: 'C', spear: 3 } } }, cai: 'x' } };
   const read = validateChecks(stored);
   assert.deepEqual(read.builds, { theodora: { 'renamed-slug': { level: 30, classId: 'unknown-class' }, loretta: { skills: { sword: 'C' } } } }, '[U72] 저장소 읽기 모양만 고침·모르는 항목 보관');
   assert.equal(sanitizeBuilds('x'), undefined);
+  // 저장소 읽기 결과(= 내보내기 파일)를 그대로 가져오면 통과한다.
+  assert.deepEqual(validateChecks(JSON.parse(JSON.stringify(read)), undefined, true).builds, read.builds, '[U72] 저장소 읽기 결과 다시 가져오기');
   // 읽은 뒤 다른 인물을 고쳐도 모르는 항목이 남는다(다음 저장 때 지워지지 않음).
   const after = nextBuilds(read.builds, 'theodora', 'loretta', { level: 21 });
   assert.deepEqual(after.theodora['renamed-slug'], { level: 30, classId: 'unknown-class' }, '[U72] 고쳐도 모르는 항목 남음');

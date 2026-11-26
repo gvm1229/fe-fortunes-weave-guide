@@ -58,7 +58,7 @@ assert.deepEqual(scopeTree([{tag:'section',attrs:{'data-weekly-route':'war'},chi
 assert.equal(scopeMarkdown('## 세오도라 1부\n현재\n## 레다 1부\n다른 자료','theodora','1').trim(),'## 세오도라 1부\n현재');
 assert.throws(()=>validateChecks({schemaVersion:1,revision:0,checks:{a:'true'}}));
 assert.throws(()=>validateChecks({schemaVersion:1,revision:-1,checks:{}}));
-if(progress)assert.deepEqual(validateChecks(JSON.parse(JSON.stringify(progress))),progress);
+if(progress)assert.deepEqual(validateChecks(JSON.parse(JSON.stringify(progress)),undefined,true),progress);
 // 내 상태(2026-11-15): 축복 목록·추천 구매 연결·status 검사. 공개 자료에는 구매 여부·잔액을 두지 않는다.
 {const cat=read('content/data/boon-catalog.json'),lim={boons:Object.fromEntries(cat.boons.map(b=>[b.id,b.tiers.length])),gods:Object.fromEntries(cat.gods.map(g=>[g.name,g.max]))};
  assert.ok(cat.boons.length>=13&&new Set(cat.boons.map(b=>b.id)).size===cat.boons.length,'축복 ID 중복');
@@ -74,7 +74,7 @@ if(progress)assert.deepEqual(validateChecks(JSON.parse(JSON.stringify(progress))
  for(const bad of [{boons:{'class-exp':9},gods:{}},{boons:{nope:1},gods:{}},{boons:{},gods:{'아우로라':-1}},{boons:{},gods:{},shards:1.5},[]])assert.throws(()=>validateChecks({schemaVersion:1,revision:1,checks:{},status:bad},lim),JSON.stringify(bad));
  assert.deepEqual(sanitizeStatus({boons:{gone:2,'class-exp':9},gods:{'없는신':1,'주라':5},gold:3},lim),{boons:{'class-exp':lim.boons['class-exp']},gods:{'주라':lim.gods['주라']},gold:3},'저장소 내 상태는 버리고 줄여 읽음');
  const pp=readFileSync('content/data/purchase-plan.json','utf8');for(const k of ['"purchased"','purchasedPackageCount','purchasedDiscountsUserConfirmed','currentPercent'])assert.ok(!pp.includes(k),'구매 계획에 개인 구매 기록 '+k);
- const mine='progress/my-progress.json';if(existsSync(mine)){const m=JSON.parse(readFileSync(mine,'utf8'));assert.deepEqual(validateChecks(m,lim),m);}}
+ const mine='progress/my-progress.json';if(existsSync(mine)){const m=JSON.parse(readFileSync(mine,'utf8'));/* 사이트 가져오기와 같은 엄격 검사(육성 기록 포함, Fable 검토 21 지적 8) */assert.deepEqual(validateChecks(m,lim,true),m);}}
 // 원래 이름을 한국어로 바꾸며 생긴 "X(X)"·"X가 X다" 같은 말 되풀이 금지(2026-11-15 사용자 지적: "반짝반짝어가 반짝반짝어 위치입니다").
 {const rcT=read('content/source/react-content.json'),strip=h=>h.replace(/<svg.*?<\/svg>/gs,'').replace(/<small class="recruit-material-hint">위치<\/small>/g,'').replace(/<[^>]+>/g,'');
  const texts=[...rcT.stages.flatMap(s=>s.blocks.map(b=>[s.id+':'+b.id,strip(b.html)+' '+[...b.html.matchAll(/(?:alt|aria-label)="([^"]*)"/g)].map(m=>m[1]).join(' ')])),['prep',strip(rcT.prep)],['materials',strip(rcT.materials)]];
