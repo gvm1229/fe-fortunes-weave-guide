@@ -659,6 +659,18 @@ body{word-break:keep-all;overflow-wrap:break-word}
 /* 8. 팀 '루트 편성'·'비교 근거' 표의 병종 이름 단추: 옆 배지("상급직")와 같은 높이·여백·바탕·글자(단추라 모서리는 U55의 10px). 비교 근거 표의 인물 칩은 이름이 한 글자씩 세로로 꺾이지 않게 한 줄로. */
 :is(.route-unit-class,.team-panel .semantic td) .text-link{min-block-size:28px;padding:2px 8px;background:var(--secondary-soft);color:var(--text);font-size:18px;font-weight:600;line-height:24px}
 .team-panel .semantic [data-face-row]{white-space:nowrap}
+/* 14. 위 인물 칩: 물려받은 overflow-wrap:anywhere(.semantic) 때문에 표가 칸 최소 폭을 한 글자로 계산해 칩이 좁아지고 이름이 칩 밖으로 넘쳤다. 칩 안은 끊지 않고, 얼굴·이름은 줄어들지 않게. */
+.team-panel .semantic [data-face-row]{overflow-wrap:normal}
+.team-panel .semantic [data-face-row]>*{flex-shrink:0}
+/* 같은 원인(휴대폰): 골드 표(자동 폭)의 칸 안 문장 목록 줄은 최소 폭 0(위 767px 이하 규칙)이라 배지 폭이 칸 계산에서 빠져 "1,500G" 배지가 칸 밖으로 4px 넘쳤다. 골드 표 칸에서만 내용 폭을 되살린다. */
+@media(max-width:767px){[data-gold-table] .readable-body :is(ul,ol)>li{min-inline-size:auto}}
+/* 휴대폰(≤599px) 재료 카드 안 겹친 표: 375px에서 세 겹 표가 칸 밖으로 11px 넘쳤다. 인물 정보의 겹친 표(globals.css .person-info .records)와 같은 모양으로 이름 칸을 값 위에 쌓는다. */
+@media(max-width:599px){
+  .material-entry .records .records{display:block;margin:0}
+  .material-entry .records .records>tbody,.material-entry .records .records>tbody>tr,.material-entry .records .records>tbody>tr>:is(th,td){display:block;width:auto;padding-left:0;padding-right:0}
+  .material-entry .records .records>tbody>tr>th{background:transparent;padding-bottom:4px;border-bottom:0}
+  .material-entry .records .records>tbody>tr>td{padding-top:0}
+}
 /* 9. 진행 숫자는 자리 폭을 같게 해 숫자가 바뀌어도 흔들리지 않게. */
 :is(.banner-progress,.progress-chip,.group-count,.context-rail p,.team-count){font-variant-numeric:tabular-nums}
 /* 11. keep-all 뒤 "·"가 줄 머리에 오지 않게: "·"를 앞 글자와 한 묶음으로(글자는 그대로, "·" 뒤에서는 나눔). */
