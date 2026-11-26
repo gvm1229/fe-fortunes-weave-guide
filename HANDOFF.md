@@ -121,6 +121,14 @@
 
 ## 6. 사이트 상태와 남은 일
 
+### 2026-11-27 고침 5건(작업 폴더 claude/yuphas-design-sample, 배포 전·Fable 검토 대기)
+
+- 계획 docs/fixes-impl-plan.md(끝에 Fable 검토), 자문 docs/fixes-round-plan.md, 디자인 값 docs/design-spec.md "고침 5건" 절. 규칙 U68~U72(U02·U25·U26·U65·U66 대체 표시).
+- 인물 탭 = 서랍 머리 카드 격자(components/people.tsx), 준비 탭 = 그림 다섯 묶음(lib/prep.ts, 뺀 글 docs/reference/prep-common.md), 지원 표 얼굴 줄 높이, 루트 머리 '팀 25인' 단추, 휴대폰 팀·루트 탭 빈 칸 없앰.
+- 할 일 지도 단추: 장소 주소 → 물품 검색 → 루트 지도(lib/map-target.ts, 장소 표 scripts/yuphas/places.mjs → content/data/yuphas-place-routes.json). 개수는 scripts/yuphas-links-check.mjs가 출력.
+- 인물 육성 기록: 체크 기록 파일의 선택 필드 `builds`(lib/check-state.ts validateBuilds·sanitizeBuilds·nextBuilds, components/checks.tsx setBuild). 서랍 '내 기록'(components/build-editor.tsx), 병종 고르기 창(components/class-picker.tsx, 자료 content/data/yuphas-classes.json ← scripts/yuphas/classes.mjs), AI용 복사(lib/build-text.ts). 검사 scripts/builds-check.mjs(배포 관문 DATA), status-browser-check.mjs [U72](3000번 서버에서는 멈춤).
+- 비교 사진 docs/screens/fixes-compare.html(git 무시 폴더).
+
 ### 2026-11-27 yuphastemple 통합(작업 폴더 claude/yuphas-design-sample, 커밋 전·사용자 검토 대기)
 
 - 계획 docs/yuphas-integration-plan.md, 디자인 정본 docs/design-spec.md 맨 위 절, 규칙 U64~U67(U28 폐지, U02·U05·U07·U14·U24·U26·U36·U43·U46·U48·U55 대체).

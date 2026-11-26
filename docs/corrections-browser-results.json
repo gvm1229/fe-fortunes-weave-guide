@@ -31,7 +31,8 @@
       "groupLineViolations": 0,
       "doubledBadges": [],
       "faceSizes": [
-        "96×96"
+        "215.671875×224.390625",
+        "215.671875×260.390625"
       ],
       "route": "cai",
       "part": "1",
@@ -48,6 +49,8 @@
       "groupLineViolations": 0,
       "doubledBadges": [],
       "faceSizes": [
+        "97.53125×97.53125",
+        "97.546875×97.546875",
         "48×48"
       ],
       "route": "cai",
@@ -99,7 +102,8 @@
       "groupLineViolations": 0,
       "doubledBadges": [],
       "faceSizes": [
-        "96×96"
+        "215.671875×224.390625",
+        "215.671875×260.390625"
       ],
       "route": "cai",
       "part": "2",
@@ -116,7 +120,8 @@
       "groupLineViolations": 0,
       "doubledBadges": [],
       "faceSizes": [
-        "48×48"
+        "97.53125×97.53125",
+        "97.546875×97.546875"
       ],
       "route": "cai",
       "part": "2",
@@ -134,143 +139,6 @@
       "doubledBadges": [],
       "faceSizes": [],
       "route": "cai",
-      "part": "2",
-      "view": "materials",
-      "width": 1440,
-      "height": 900,
-      "theme": "dark"
-    },
-    {
-      "eraViolations": [],
-      "horizontalScroll": 0,
-      "amountWrapViolations": 0,
-      "tableFontViolations": 0,
-      "groupLineViolations": 0,
-      "doubledBadges": [],
-      "faceSizes": [
-        "360×480",
-        "36×36",
-        "28×28",
-        "48×48"
-      ],
-      "route": "dietrich",
-      "part": "1",
-      "view": "tasks",
-      "width": 1440,
-      "height": 900,
-      "theme": "dark"
-    },
-    {
-      "eraViolations": [],
-      "horizontalScroll": 0,
-      "amountWrapViolations": 0,
-      "tableFontViolations": 0,
-      "groupLineViolations": 0,
-      "doubledBadges": [],
-      "faceSizes": [
-        "96×96"
-      ],
-      "route": "dietrich",
-      "part": "1",
-      "view": "people",
-      "width": 1440,
-      "height": 900,
-      "theme": "dark"
-    },
-    {
-      "eraViolations": [],
-      "horizontalScroll": 0,
-      "amountWrapViolations": 0,
-      "tableFontViolations": 0,
-      "groupLineViolations": 0,
-      "doubledBadges": [],
-      "faceSizes": [
-        "48×48"
-      ],
-      "route": "dietrich",
-      "part": "1",
-      "view": "prep",
-      "width": 1440,
-      "height": 900,
-      "theme": "dark"
-    },
-    {
-      "eraViolations": [],
-      "horizontalScroll": 0,
-      "amountWrapViolations": 0,
-      "tableFontViolations": 0,
-      "groupLineViolations": 0,
-      "doubledBadges": [],
-      "faceSizes": [],
-      "route": "dietrich",
-      "part": "1",
-      "view": "materials",
-      "width": 1440,
-      "height": 900,
-      "theme": "dark"
-    },
-    {
-      "eraViolations": [],
-      "horizontalScroll": 0,
-      "amountWrapViolations": 0,
-      "tableFontViolations": 0,
-      "groupLineViolations": 0,
-      "doubledBadges": [],
-      "faceSizes": [
-        "360×480",
-        "36×36",
-        "48×48"
-      ],
-      "route": "dietrich",
-      "part": "2",
-      "view": "tasks",
-      "width": 1440,
-      "height": 900,
-      "theme": "dark"
-    },
-    {
-      "eraViolations": [],
-      "horizontalScroll": 0,
-      "amountWrapViolations": 0,
-      "tableFontViolations": 0,
-      "groupLineViolations": 0,
-      "doubledBadges": [],
-      "faceSizes": [
-        "96×96"
-      ],
-      "route": "dietrich",
-      "part": "2",
-      "view": "people",
-      "width": 1440,
-      "height": 900,
-      "theme": "dark"
-    },
-    {
-      "eraViolations": [],
-      "horizontalScroll": 0,
-      "amountWrapViolations": 0,
-      "tableFontViolations": 0,
-      "groupLineViolations": 0,
-      "doubledBadges": [],
-      "faceSizes": [
-        "48×48"
-      ],
-      "route": "dietrich",
-      "part": "2",
-      "view": "prep",
-      "width": 1440,
-      "height": 900,
-      "theme": "dark"
-    },
-    {
-      "eraViolations": [],
-      "horizontalScroll": 0,
-      "amountWrapViolations": 0,
-      "tableFontViolations": 0,
-      "groupLineViolations": 0,
-      "doubledBadges": [],
-      "faceSizes": [],
-      "route": "dietrich",
       "part": "2",
       "view": "materials",
       "width": 1440,
@@ -290,6 +158,148 @@
         "28×28",
         "48×48"
       ],
+      "route": "dietrich",
+      "part": "1",
+      "view": "tasks",
+      "width": 1440,
+      "height": 900,
+      "theme": "dark"
+    },
+    {
+      "eraViolations": [],
+      "horizontalScroll": 0,
+      "amountWrapViolations": 0,
+      "tableFontViolations": 0,
+      "groupLineViolations": 0,
+      "doubledBadges": [],
+      "faceSizes": [
+        "215.671875×224.390625",
+        "215.671875×260.390625"
+      ],
+      "route": "dietrich",
+      "part": "1",
+      "view": "people",
+      "width": 1440,
+      "height": 900,
+      "theme": "dark"
+    },
+    {
+      "eraViolations": [],
+      "horizontalScroll": 0,
+      "amountWrapViolations": 0,
+      "tableFontViolations": 0,
+      "groupLineViolations": 0,
+      "doubledBadges": [],
+      "faceSizes": [
+        "97.53125×97.53125",
+        "97.546875×97.546875",
+        "48×48"
+      ],
+      "route": "dietrich",
+      "part": "1",
+      "view": "prep",
+      "width": 1440,
+      "height": 900,
+      "theme": "dark"
+    },
+    {
+      "eraViolations": [],
+      "horizontalScroll": 0,
+      "amountWrapViolations": 0,
+      "tableFontViolations": 0,
+      "groupLineViolations": 0,
+      "doubledBadges": [],
+      "faceSizes": [],
+      "route": "dietrich",
+      "part": "1",
+      "view": "materials",
+      "width": 1440,
+      "height": 900,
+      "theme": "dark"
+    },
+    {
+      "eraViolations": [],
+      "horizontalScroll": 0,
+      "amountWrapViolations": 0,
+      "tableFontViolations": 0,
+      "groupLineViolations": 0,
+      "doubledBadges": [],
+      "faceSizes": [
+        "360×480",
+        "36×36",
+        "48×48"
+      ],
+      "route": "dietrich",
+      "part": "2",
+      "view": "tasks",
+      "width": 1440,
+      "height": 900,
+      "theme": "dark"
+    },
+    {
+      "eraViolations": [],
+      "horizontalScroll": 0,
+      "amountWrapViolations": 0,
+      "tableFontViolations": 0,
+      "groupLineViolations": 0,
+      "doubledBadges": [],
+      "faceSizes": [
+        "215.671875×260.390625",
+        "215.671875×296.390625"
+      ],
+      "route": "dietrich",
+      "part": "2",
+      "view": "people",
+      "width": 1440,
+      "height": 900,
+      "theme": "dark"
+    },
+    {
+      "eraViolations": [],
+      "horizontalScroll": 0,
+      "amountWrapViolations": 0,
+      "tableFontViolations": 0,
+      "groupLineViolations": 0,
+      "doubledBadges": [],
+      "faceSizes": [
+        "97.53125×97.53125",
+        "97.546875×97.546875"
+      ],
+      "route": "dietrich",
+      "part": "2",
+      "view": "prep",
+      "width": 1440,
+      "height": 900,
+      "theme": "dark"
+    },
+    {
+      "eraViolations": [],
+      "horizontalScroll": 0,
+      "amountWrapViolations": 0,
+      "tableFontViolations": 0,
+      "groupLineViolations": 0,
+      "doubledBadges": [],
+      "faceSizes": [],
+      "route": "dietrich",
+      "part": "2",
+      "view": "materials",
+      "width": 1440,
+      "height": 900,
+      "theme": "dark"
+    },
+    {
+      "eraViolations": [],
+      "horizontalScroll": 0,
+      "amountWrapViolations": 0,
+      "tableFontViolations": 0,
+      "groupLineViolations": 0,
+      "doubledBadges": [],
+      "faceSizes": [
+        "360×480",
+        "36×36",
+        "28×28",
+        "48×48"
+      ],
       "route": "theodora",
       "part": "1",
       "view": "tasks",
@@ -305,7 +315,8 @@
       "groupLineViolations": 0,
       "doubledBadges": [],
       "faceSizes": [
-        "96×96"
+        "215.671875×224.390625",
+        "215.671875×260.390625"
       ],
       "route": "theodora",
       "part": "1",
@@ -322,6 +333,8 @@
       "groupLineViolations": 0,
       "doubledBadges": [],
       "faceSizes": [
+        "97.53125×97.53125",
+        "97.546875×97.546875",
         "48×48"
       ],
       "route": "theodora",
@@ -373,7 +386,8 @@
       "groupLineViolations": 0,
       "doubledBadges": [],
       "faceSizes": [
-        "96×96"
+        "215.671875×224.390625",
+        "215.671875×260.390625"
       ],
       "route": "theodora",
       "part": "2",
@@ -390,7 +404,8 @@
       "groupLineViolations": 0,
       "doubledBadges": [],
       "faceSizes": [
-        "48×48"
+        "97.53125×97.53125",
+        "97.546875×97.546875"
       ],
       "route": "theodora",
       "part": "2",
@@ -442,7 +457,8 @@
       "groupLineViolations": 0,
       "doubledBadges": [],
       "faceSizes": [
-        "96×96"
+        "215.671875×224.390625",
+        "215.671875×260.390625"
       ],
       "route": "leda",
       "part": "1",
@@ -459,6 +475,8 @@
       "groupLineViolations": 0,
       "doubledBadges": [],
       "faceSizes": [
+        "97.53125×97.53125",
+        "97.546875×97.546875",
         "48×48"
       ],
       "route": "leda",
@@ -510,7 +528,8 @@
       "groupLineViolations": 0,
       "doubledBadges": [],
       "faceSizes": [
-        "96×96"
+        "215.671875×224.390625",
+        "215.671875×260.390625"
       ],
       "route": "leda",
       "part": "2",
@@ -527,7 +546,8 @@
       "groupLineViolations": 0,
       "doubledBadges": [],
       "faceSizes": [
-        "48×48"
+        "97.53125×97.53125",
+        "97.546875×97.546875"
       ],
       "route": "leda",
       "part": "2",
@@ -577,7 +597,9 @@
       "groupLineViolations": 0,
       "doubledBadges": [],
       "faceSizes": [
-        "96×96"
+        "215.671875×296.390625",
+        "215.671875×260.390625",
+        "215.671875×332.390625"
       ],
       "route": "part3",
       "part": "3",
@@ -594,7 +616,8 @@
       "groupLineViolations": 0,
       "doubledBadges": [],
       "faceSizes": [
-        "48×48"
+        "97.53125×97.53125",
+        "97.546875×97.546875"
       ],
       "route": "part3",
       "part": "3",
@@ -630,498 +653,36 @@
           "name": "우술라",
           "width": 48,
           "height": 48,
-          "nameToRight": true,
-          "sameLine": true
+          "nameBelow": true,
+          "centered": true
         },
         {
-          "name": "로레타",
+          "name": "루루디아",
           "width": 48,
           "height": 48,
-          "nameToRight": true,
-          "sameLine": true
+          "nameBelow": true,
+          "centered": true
         },
         {
-          "name": "그자람",
+          "name": "이오",
           "width": 48,
           "height": 48,
-          "nameToRight": true,
-          "sameLine": true
+          "nameBelow": true,
+          "centered": true
         },
         {
-          "name": "세오도라",
+          "name": "누조",
           "width": 48,
           "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "단테",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "리네",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "시로코",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "로레타",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "단테",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "리네",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "시로코",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "로레타",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "레다",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
+          "nameBelow": true,
+          "centered": true
         },
         {
           "name": "에스메랄다",
           "width": 48,
           "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "시로코",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "로레타",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "단테",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "보나파르트",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "알렉산드라",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "단테",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "토비아스",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "보나파르트",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "단테",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "릴리안",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "릴리안",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "세오도라",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "알렉산드라",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "토비아스",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "녹투라",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "알렉산드라",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "세오도라",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "보나파르트",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "토비아스",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "녹투라",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "릴리안",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "소피아",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "단테",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "리네",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "알렉산드라",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "시로코",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "로레타",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "우술라",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "단테",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "시로코",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "단테",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "로레타",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "시로코",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "로레타",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "자코네",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "시로코",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "단테",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "로레타",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "단테",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "로레타",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "단테",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "누조",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "로레타",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "누조",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "단테",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "로레타",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "누조",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "단테",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "로레타",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "피아나",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "자스민",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "누조",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "단테",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "알렉산드라",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "로레타",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "티아라",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "카이",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
+          "nameBelow": true,
+          "centered": true
         }
       ]
     },
@@ -1153,7 +714,8 @@
       "groupLineViolations": 0,
       "doubledBadges": [],
       "faceSizes": [
-        "72×72"
+        "176.265625×212",
+        "176.265625×248"
       ],
       "route": "cai",
       "part": "1",
@@ -1170,6 +732,8 @@
       "groupLineViolations": 0,
       "doubledBadges": [],
       "faceSizes": [
+        "106.328125×106.328125",
+        "106.34375×106.34375",
         "48×48"
       ],
       "route": "cai",
@@ -1222,7 +786,8 @@
       "groupLineViolations": 0,
       "doubledBadges": [],
       "faceSizes": [
-        "72×72"
+        "176.265625×212",
+        "176.265625×248"
       ],
       "route": "cai",
       "part": "2",
@@ -1239,7 +804,8 @@
       "groupLineViolations": 0,
       "doubledBadges": [],
       "faceSizes": [
-        "48×48"
+        "106.328125×106.328125",
+        "106.34375×106.34375"
       ],
       "route": "cai",
       "part": "2",
@@ -1291,7 +857,8 @@
       "groupLineViolations": 0,
       "doubledBadges": [],
       "faceSizes": [
-        "72×72"
+        "176.265625×212",
+        "176.265625×248"
       ],
       "route": "dietrich",
       "part": "1",
@@ -1308,6 +875,8 @@
       "groupLineViolations": 0,
       "doubledBadges": [],
       "faceSizes": [
+        "106.328125×106.328125",
+        "106.34375×106.34375",
         "48×48"
       ],
       "route": "dietrich",
@@ -1360,7 +929,8 @@
       "groupLineViolations": 0,
       "doubledBadges": [],
       "faceSizes": [
-        "72×72"
+        "176.265625×212",
+        "176.265625×248"
       ],
       "route": "dietrich",
       "part": "2",
@@ -1377,7 +947,8 @@
       "groupLineViolations": 0,
       "doubledBadges": [],
       "faceSizes": [
-        "48×48"
+        "106.328125×106.328125",
+        "106.34375×106.34375"
       ],
       "route": "dietrich",
       "part": "2",
@@ -1429,7 +1000,8 @@
       "groupLineViolations": 0,
       "doubledBadges": [],
       "faceSizes": [
-        "72×72"
+        "176.265625×212",
+        "176.265625×248"
       ],
       "route": "theodora",
       "part": "1",
@@ -1446,6 +1018,8 @@
       "groupLineViolations": 0,
       "doubledBadges": [],
       "faceSizes": [
+        "106.328125×106.328125",
+        "106.34375×106.34375",
         "48×48"
       ],
       "route": "theodora",
@@ -1498,7 +1072,8 @@
       "groupLineViolations": 0,
       "doubledBadges": [],
       "faceSizes": [
-        "72×72"
+        "176.265625×212",
+        "176.265625×248"
       ],
       "route": "theodora",
       "part": "2",
@@ -1515,7 +1090,8 @@
       "groupLineViolations": 0,
       "doubledBadges": [],
       "faceSizes": [
-        "48×48"
+        "106.328125×106.328125",
+        "106.34375×106.34375"
       ],
       "route": "theodora",
       "part": "2",
@@ -1534,75 +1110,6 @@
       "faceSizes": [],
       "route": "theodora",
       "part": "2",
-      "view": "materials",
-      "width": 375,
-      "height": 812,
-      "theme": "dark"
-    },
-    {
-      "eraViolations": [],
-      "horizontalScroll": 0,
-      "amountWrapViolations": 0,
-      "tableFontViolations": 0,
-      "groupLineViolations": 0,
-      "doubledBadges": [],
-      "faceSizes": [
-        "200×340",
-        "28×28",
-        "36×36",
-        "48×48"
-      ],
-      "route": "leda",
-      "part": "1",
-      "view": "tasks",
-      "width": 375,
-      "height": 812,
-      "theme": "dark"
-    },
-    {
-      "eraViolations": [],
-      "horizontalScroll": 0,
-      "amountWrapViolations": 0,
-      "tableFontViolations": 0,
-      "groupLineViolations": 0,
-      "doubledBadges": [],
-      "faceSizes": [
-        "72×72"
-      ],
-      "route": "leda",
-      "part": "1",
-      "view": "people",
-      "width": 375,
-      "height": 812,
-      "theme": "dark"
-    },
-    {
-      "eraViolations": [],
-      "horizontalScroll": 0,
-      "amountWrapViolations": 0,
-      "tableFontViolations": 0,
-      "groupLineViolations": 0,
-      "doubledBadges": [],
-      "faceSizes": [
-        "48×48"
-      ],
-      "route": "leda",
-      "part": "1",
-      "view": "prep",
-      "width": 375,
-      "height": 812,
-      "theme": "dark"
-    },
-    {
-      "eraViolations": [],
-      "horizontalScroll": 0,
-      "amountWrapViolations": 0,
-      "tableFontViolations": 0,
-      "groupLineViolations": 0,
-      "doubledBadges": [],
-      "faceSizes": [],
-      "route": "leda",
-      "part": "1",
       "view": "materials",
       "width": 375,
       "height": 812,
@@ -1622,6 +1129,78 @@
         "48×48"
       ],
       "route": "leda",
+      "part": "1",
+      "view": "tasks",
+      "width": 375,
+      "height": 812,
+      "theme": "dark"
+    },
+    {
+      "eraViolations": [],
+      "horizontalScroll": 0,
+      "amountWrapViolations": 0,
+      "tableFontViolations": 0,
+      "groupLineViolations": 0,
+      "doubledBadges": [],
+      "faceSizes": [
+        "176.265625×212",
+        "176.265625×248"
+      ],
+      "route": "leda",
+      "part": "1",
+      "view": "people",
+      "width": 375,
+      "height": 812,
+      "theme": "dark"
+    },
+    {
+      "eraViolations": [],
+      "horizontalScroll": 0,
+      "amountWrapViolations": 0,
+      "tableFontViolations": 0,
+      "groupLineViolations": 0,
+      "doubledBadges": [],
+      "faceSizes": [
+        "106.328125×106.328125",
+        "106.34375×106.34375",
+        "48×48"
+      ],
+      "route": "leda",
+      "part": "1",
+      "view": "prep",
+      "width": 375,
+      "height": 812,
+      "theme": "dark"
+    },
+    {
+      "eraViolations": [],
+      "horizontalScroll": 0,
+      "amountWrapViolations": 0,
+      "tableFontViolations": 0,
+      "groupLineViolations": 0,
+      "doubledBadges": [],
+      "faceSizes": [],
+      "route": "leda",
+      "part": "1",
+      "view": "materials",
+      "width": 375,
+      "height": 812,
+      "theme": "dark"
+    },
+    {
+      "eraViolations": [],
+      "horizontalScroll": 0,
+      "amountWrapViolations": 0,
+      "tableFontViolations": 0,
+      "groupLineViolations": 0,
+      "doubledBadges": [],
+      "faceSizes": [
+        "200×340",
+        "28×28",
+        "36×36",
+        "48×48"
+      ],
+      "route": "leda",
       "part": "2",
       "view": "tasks",
       "width": 375,
@@ -1636,7 +1215,8 @@
       "groupLineViolations": 0,
       "doubledBadges": [],
       "faceSizes": [
-        "72×72"
+        "176.265625×212",
+        "176.265625×248"
       ],
       "route": "leda",
       "part": "2",
@@ -1653,7 +1233,8 @@
       "groupLineViolations": 0,
       "doubledBadges": [],
       "faceSizes": [
-        "48×48"
+        "106.328125×106.328125",
+        "106.34375×106.34375"
       ],
       "route": "leda",
       "part": "2",
@@ -1703,7 +1284,8 @@
       "groupLineViolations": 0,
       "doubledBadges": [],
       "faceSizes": [
-        "72×72"
+        "176.265625×284",
+        "176.265625×248"
       ],
       "route": "part3",
       "part": "3",
@@ -1720,7 +1302,8 @@
       "groupLineViolations": 0,
       "doubledBadges": [],
       "faceSizes": [
-        "48×48"
+        "106.328125×106.328125",
+        "106.34375×106.34375"
       ],
       "route": "part3",
       "part": "3",
@@ -1756,498 +1339,36 @@
           "name": "우술라",
           "width": 48,
           "height": 48,
-          "nameToRight": true,
-          "sameLine": true
+          "nameBelow": true,
+          "centered": true
         },
         {
-          "name": "로레타",
+          "name": "루루디아",
           "width": 48,
           "height": 48,
-          "nameToRight": true,
-          "sameLine": true
+          "nameBelow": true,
+          "centered": true
         },
         {
-          "name": "그자람",
+          "name": "이오",
           "width": 48,
           "height": 48,
-          "nameToRight": true,
-          "sameLine": true
+          "nameBelow": true,
+          "centered": true
         },
         {
-          "name": "세오도라",
+          "name": "누조",
           "width": 48,
           "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "단테",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "리네",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "시로코",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "로레타",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "단테",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "리네",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "시로코",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "로레타",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "레다",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
+          "nameBelow": true,
+          "centered": true
         },
         {
           "name": "에스메랄다",
           "width": 48,
           "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "시로코",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "로레타",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "단테",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "보나파르트",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "알렉산드라",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "단테",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "토비아스",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "보나파르트",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "단테",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "릴리안",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "릴리안",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "세오도라",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "알렉산드라",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "토비아스",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "녹투라",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "알렉산드라",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "세오도라",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "보나파르트",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "토비아스",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "녹투라",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "릴리안",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "소피아",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "단테",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "리네",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "알렉산드라",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "시로코",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "로레타",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "우술라",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "단테",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "시로코",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "단테",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "로레타",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "시로코",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "로레타",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "자코네",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "시로코",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "단테",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "로레타",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "단테",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "로레타",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "단테",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "누조",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "로레타",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "누조",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "단테",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "로레타",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "누조",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "단테",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "로레타",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "피아나",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "자스민",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "누조",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "단테",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "알렉산드라",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "로레타",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "티아라",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
-        },
-        {
-          "name": "카이",
-          "width": 48,
-          "height": 48,
-          "nameToRight": true,
-          "sameLine": true
+          "nameBelow": true,
+          "centered": true
         }
       ]
     }
