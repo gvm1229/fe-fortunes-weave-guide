@@ -1082,6 +1082,7 @@ html.dark body:has(.app-shell),html.dark body:has(.team-page),html.dark body:has
 .y-skills li .y-skill-rank{position:absolute;inset-block-end:-4px;inset-inline-start:-3px;font-size:11px;line-height:1;font-weight:700;color:#FFE8C4;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000}
 @media(max-width:359px){.build-skills{gap:4px}}
 /* 병종 고르기 창(2026-11-27, U72): yuphastemple "Choose a class" 창 값(docs/fixes-round-plan.md §A3). 인물 서랍(z 50·51) 위에 겹친다. */
+.class-picker:focus{outline:none}
 .class-picker-overlay{position:fixed;inset:0;z-index:60;background:rgb(0 0 0 / .55);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
 .class-picker{position:fixed;z-index:61;inset-block-start:8px;inset-inline:0;margin-inline:auto;inline-size:min(1100px,calc(100vw - 16px));max-block-size:calc(100dvh - 16px);display:flex;flex-direction:column;background:#142324 url('/yuphas/listCenter2.png') center/100% auto;color:var(--text);box-shadow:0 8px 32px rgb(0 0 0 / .6)}
 .class-picker::before{content:'';display:block;block-size:12px;background:url('/yuphas/listTop.png') center top/100% 100% no-repeat;flex-shrink:0}

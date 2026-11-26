@@ -160,6 +160,10 @@ try {
     const ppl = await p.evaluate(() => ({ cards: document.querySelectorAll('.people-grid .person-card').length, heads: document.querySelectorAll('.people-grid .person-card [data-character-header]').length, tables: document.querySelectorAll('main table').length, folds: document.querySelectorAll('main details, main [data-radix-collection-item][aria-expanded]').length, selects: document.querySelectorAll('main select').length, roles: [...document.querySelectorAll('.role-tabs [role=radio]')].map(e => e.textContent) }));
     assert.ok(ppl.cards > 5 && ppl.heads === ppl.cards && ppl.tables === 0 && ppl.folds === 0 && ppl.selects === 0 && ppl.roles[0] === '전체', `[U68] 인물 탭 ${JSON.stringify(ppl)}`);
     await p.locator('.person-card-open').first().click(); await p.getByRole('dialog').waitFor(); assert.ok(await p.getByRole('dialog').locator('.person-summary').count() > 0, '[U68] 카드 → 인물 서랍'); await p.keyboard.press('Escape'); await p.getByRole('dialog').waitFor({ state: 'detached' });
+    assert.ok(await p.evaluate(() => document.activeElement?.matches('.people-grid .person-card:first-child .person-card-open')), '[U68] 서랍을 닫으면 초점이 그 카드로');
+    // 키보드로 연 카드(셋째)도 그 카드로 돌아온다.
+    await p.locator('.people-grid .person-card').nth(2).locator('.person-card-open').focus(); await p.keyboard.press('Enter'); await p.getByRole('dialog').waitFor(); await p.keyboard.press('Escape'); await p.getByRole('dialog').waitFor({ state: 'detached' });
+    assert.ok(await p.evaluate(() => document.activeElement === document.querySelectorAll('.people-grid .person-card-open')[2]), '[U68] 키보드로 연 카드로 초점 복귀');
     for (const tab of ['최종 25인', '백마술', '루트 편성']) { await p.goto(base + '/team/'); await p.waitForLoadState('networkidle'); await p.getByRole('tab', { name: tab, exact: true }).click(); await p.waitForTimeout(400); await bloat(`/team/ ${tab}`); }
     assert.equal(await p.getByRole('tab').count(), 3, '[U66] 팀 탭 셋');
     await p.getByRole('tab', { name: '최종 25인', exact: true }).click(); await p.locator('.unit-card').first().click(); const td = p.getByRole('dialog'); await td.waitFor(); await p.waitForTimeout(300);

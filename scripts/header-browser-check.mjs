@@ -67,7 +67,7 @@ try {
     const ctx = await browser.newContext({ viewport: { width: w, height: h } }); const p = await ctx.newPage();
     await p.goto(base + '/theodora/1/'); await p.locator('.route-head').waitFor(); await p.waitForTimeout(400);
     const t = await p.evaluate(() => { const a = document.querySelector('.guide-topbar a.guide-team[href="/team/"]'), bar = document.querySelector('.guide-topbar').getBoundingClientRect(); const r = a?.getBoundingClientRect(); const nav = document.querySelector('.guide-navigation'), btns = [...nav.querySelectorAll('button')]; return { ok: !!a && r.width >= 32 && r.left >= bar.left && r.right <= bar.right, label: a?.getAttribute('aria-label'), overflowX: document.documentElement.scrollWidth - innerWidth, grid: getComputedStyle(nav).display === 'grid', gap: nav.getBoundingClientRect().right - btns.at(-1).getBoundingClientRect().right }; });
-    assert.ok(t.ok && t.label === '최종 25인 팀 화면', `[U71] ${w} 팀 화면 단추 ${JSON.stringify(t)}`); assert.ok(t.overflowX <= 0, `[U71] ${w} 가로 넘침`);
+    assert.ok(t.ok && t.label === '팀 25인 화면', `[U71] ${w} 팀 화면 단추 ${JSON.stringify(t)}`); assert.ok(t.overflowX <= 0, `[U71] ${w} 가로 넘침`);
     if (t.grid) assert.ok(t.gap <= 8, `${w} 루트 탭 줄 빈 칸 ${t.gap}px`);
     await p.goto(base + '/team/'); await p.waitForLoadState('networkidle'); await p.waitForTimeout(300);
     const tt = await p.evaluate(() => { const l = document.querySelector('.team-head [role=tablist]'), b = [...l.querySelectorAll('[role=tab]')]; return { n: b.length, gap: l.getBoundingClientRect().right - b.at(-1).getBoundingClientRect().right, top: new Set(b.map(x => Math.round(x.getBoundingClientRect().top))).size, overflowX: document.documentElement.scrollWidth - innerWidth }; });

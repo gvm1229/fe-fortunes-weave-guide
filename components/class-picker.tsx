@@ -25,7 +25,7 @@ export function ClassPicker({ profile, value, onPick, children }: { profile: Yup
 function PickerBody({ profile, value, onPick }: { profile: YuphasProfile; value?: string; onPick: (slug: string | undefined) => void }) {
   const [weapon, setWeapon] = useState<string>('all');
   const [query, setQuery] = useState('');
-  const selected = useRef<HTMLButtonElement>(null), search = useRef<HTMLInputElement>(null);
+  const selected = useRef<HTMLButtonElement>(null), search = useRef<HTMLInputElement>(null), content = useRef<HTMLDivElement>(null);
   const all = useMemo(() => allowedClasses(profile.slug), [profile.slug]);
   const boon = new Set(profile.skills.filter((s) => s.state === 'boon').map((s) => s.id));
   const q = fold(query.trim());
@@ -38,7 +38,8 @@ function PickerBody({ profile, value, onPick }: { profile: YuphasProfile; value?
   const own = shown.filter((c) => c.license === 'default');
   return <Dialog.Portal>
     <Dialog.Overlay className="class-picker-overlay" />
-    <Dialog.Content className="class-picker" aria-describedby={undefined} onOpenAutoFocus={(e) => { e.preventDefault(); (selected.current || search.current)?.focus(); }}>
+    {/* 처음 초점: 고른 칩, 없으면 마우스 기기에서만 검색 칸. 터치 기기는 화면 자판이 칩을 가리지 않게 창 자체에 둔다(Fable 검토 21 지적 11). */}
+    <Dialog.Content ref={content} tabIndex={-1} className="class-picker" aria-describedby={undefined} onOpenAutoFocus={(e) => { e.preventDefault(); (selected.current || (matchMedia('(hover: hover) and (pointer: fine)').matches ? search.current : content.current))?.focus(); }}>
       <div className="class-picker-head">
         <Dialog.Title className="class-picker-title">병종 고르기</Dialog.Title>
         <div className="class-picker-tabs" role="group" aria-label="무기로 거르기">
