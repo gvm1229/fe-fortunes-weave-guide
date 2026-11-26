@@ -211,6 +211,9 @@ for (const f of [...walk('app', ['.ts', '.tsx', '.css']), ...walk('components', 
   const y = readFileSync('components/yuphas.tsx', 'utf8'); assert.ok(y.includes('target="_blank" rel="noreferrer" lang="en"') && y.includes('function YuphasGroup'), '[U65] 영어 새 탭 단추·묶음 첫 번만');
   assert.ok(!/MapSheet|MapThumbnail/.test(walk('components', ['.tsx']).map(f => readFileSync(f, 'utf8')).join('')), '[U65] 재료 서랍·지도 사진 없음'); }
 
+// [U71] 루트 머리 왼쪽 '첫 화면' 옆에 팀 화면(/team/) 단추(2026-11-27).
+{ const sh = readFileSync('components/shell.tsx', 'utf8'); assert.ok(sh.includes('href="/team/"') && sh.includes('guide-team'), '[U71] 루트 머리 팀 화면 단추'); }
+
 // [U66] 화면에 근거·기록용 글이 없다(2026-11-27): 원문 기록·비교 근거 탭·참고 문서 화면·그림 출처·입수 원문·특기 검토 문서·조심 문구. 옮긴 곳은 docs/reference/.
 { const code = walk('components', ['.tsx']).map(f => readFileSync(f, 'utf8')).join('');
   for (const w of ['>원문 기록<', "'비교 근거'", "label:'참고 문서'", '특기 검토 문서', '전체 참고 문서', '실제 합류와 출격 자리는 게임 화면을 먼저 확인하세요']) assert.ok(!code.includes(w), `[U66] 화면 코드에 ${w}`);

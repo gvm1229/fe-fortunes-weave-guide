@@ -59,5 +59,19 @@ try {
    assert.ok(links.some(l=>l.rel==='icon'),'[U58] 탭 아이콘 링크');assert.ok(links.some(l=>l.rel==='apple-touch-icon'),'[U58] 홈 화면 아이콘 링크');
    for(const u of [...links.map(l=>l.href),base+'/favicon.ico']){const r=await p.request.get(u);assert.equal(r.status(),200,`[U58] ${u} 상태`);if(/\.ico(\?|$)/.test(u))assert.deepEqual([...(await r.body()).subarray(0,4)],[0,0,1,0],`[U58] ${u} ICO 아님`);else assert.match(r.headers()['content-type']||'',/^image\//,`[U58] ${u} 그림 아님`);}
    n++;await ctx.close();}
+  // [U71] 루트 머리 왼쪽 '첫 화면' 옆에 팀 화면(/team/) 단추. 320·390·1440에서 보이고 머리 안에 있으며 가로 넘침 없음.
+  // 탭 줄 빈 칸 없음(2026-11-27 Fable 검토 6): 루트 탭·팀 탭의 마지막 탭 오른쪽 끝이 탭 상자 오른쪽 끝에서 8px 안(휴대폰 격자일 때).
+  for (const [w, h] of [[320, 640], [390, 844], [1440, 900]]) {
+    const ctx = await browser.newContext({ viewport: { width: w, height: h } }); const p = await ctx.newPage();
+    await p.goto(base + '/theodora/1/'); await p.locator('.route-head').waitFor(); await p.waitForTimeout(400);
+    const t = await p.evaluate(() => { const a = document.querySelector('.guide-topbar a.guide-team[href="/team/"]'), bar = document.querySelector('.guide-topbar').getBoundingClientRect(); const r = a?.getBoundingClientRect(); const nav = document.querySelector('.guide-navigation'), btns = [...nav.querySelectorAll('button')]; return { ok: !!a && r.width >= 32 && r.left >= bar.left && r.right <= bar.right, label: a?.getAttribute('aria-label'), overflowX: document.documentElement.scrollWidth - innerWidth, grid: getComputedStyle(nav).display === 'grid', gap: nav.getBoundingClientRect().right - btns.at(-1).getBoundingClientRect().right }; });
+    assert.ok(t.ok && t.label === '최종 25인 팀 화면', `[U71] ${w} 팀 화면 단추 ${JSON.stringify(t)}`); assert.ok(t.overflowX <= 0, `[U71] ${w} 가로 넘침`);
+    if (t.grid) assert.ok(t.gap <= 8, `${w} 루트 탭 줄 빈 칸 ${t.gap}px`);
+    await p.goto(base + '/team/'); await p.waitForLoadState('networkidle'); await p.waitForTimeout(300);
+    const tt = await p.evaluate(() => { const l = document.querySelector('.team-head [role=tablist]'), b = [...l.querySelectorAll('[role=tab]')]; return { n: b.length, gap: l.getBoundingClientRect().right - b.at(-1).getBoundingClientRect().right, top: new Set(b.map(x => Math.round(x.getBoundingClientRect().top))).size, overflowX: document.documentElement.scrollWidth - innerWidth }; });
+    if (w < 768) { assert.ok(tt.gap <= 8, `${w} 팀 탭 줄 빈 칸 ${JSON.stringify(tt)}`); if (w < 360) assert.equal(tt.top, 1, `${w} 팀 탭 한 줄 3칸`); }
+    assert.ok(tt.overflowX <= 0, `${w} 팀 화면 가로 넘침`);
+    n++; await ctx.close();
+  }
   console.log(`통과: 고정 머리·맨 위로·선물·빈 체크 기록 ${n}개 화면`);
 } finally { await browser.close(); }

@@ -23,6 +23,8 @@ html.dark body:has(.app-shell),html.dark body:has(.team-page){background:#191918
 .guide-topbar{max-inline-size:1184px;margin-inline:auto;min-block-size:80px;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:16px 24px}
 .guide-home{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-size:18px}
 .guide-scope{display:flex;align-items:center;gap:16px;font-size:20px}
+/* 고침 E(2026-11-27, U71): 첫 화면 + 팀 25인 단추 묶음. */
+.guide-links{display:flex;align-items:center;gap:8px}
 .guide-scope>img{inline-size:40px;block-size:40px;object-fit:contain}
 .guide-scope .part-links{gap:4px;font-size:18px}
 .guide-scope .part-links a{display:inline-flex;align-items:center;justify-content:center;min-inline-size:54px;min-block-size:44px;padding:6px 10px}
@@ -151,7 +153,7 @@ details.person-full-details>summary:not(:has(>svg)){padding-inline-end:50px}deta
   .guide-scope>img{inline-size:32px;block-size:32px}
   .guide-scope .part-links a{min-inline-size:44px;padding:8px}
   .app-shell .workspace{padding:12px 16px 40px}
-  .guide-navigation{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));inline-size:100%;gap:2px;padding:4px;margin-block-end:24px;border-radius:12px}
+  .guide-navigation{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));inline-size:100%;gap:2px;padding:4px;margin-block-end:24px;border-radius:12px}
   .guide-navigation button{flex-direction:column;gap:4px;padding:8px 0;font-size:18px;line-height:1.4;border-radius:10px}
   .guide-navigation .nav-full{display:none}
   .guide-navigation .nav-short{display:block}
@@ -651,8 +653,8 @@ body{word-break:keep-all;overflow-wrap:break-word}
   .team-page .team-head .ui-tabs-list button{flex:1 1 auto;padding:0 4px}
 }
 /* 360px 미만(320px 등)에서는 글 폭 합이 탭 상자보다 넓어 화면이 가로로 넘쳤다. 탭 안 여백을 빼고 줄어들 수 있게(2026-11-26 검토 4). */
-/* 2026-11-26 검토 N2(사용자 결정): 여백 0이면 탭 글자끼리 붙었다. 359px 이하에서는 네 탭을 2×2 격자로 두고 탭 안 여백은 기본값(16px)으로. 360px 이상은 위 규칙 그대로. */
-@media(max-width:359px){.team-page .team-head .ui-tabs-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.team-page .team-head .ui-tabs-list button{padding:0 16px;min-inline-size:0}}
+/* 2026-11-27 고침(Fable 검토 6): 팀 탭이 셋이 되어 2×2 격자의 넷째 칸이 비었다. 359px 이하는 세 탭 한 줄 3칸(높이 44px 유지, 칸 안 여백 4px). 360px 이상은 위 규칙 그대로. */
+@media(max-width:359px){.team-page .team-head .ui-tabs-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}.team-page .team-head .ui-tabs-list button{padding:0 4px;min-inline-size:0;white-space:nowrap}}
 /* 8. 팀 '루트 편성'·'비교 근거' 표의 병종 이름 단추: 옆 배지("상급직")와 같은 높이·여백·바탕·글자(단추라 모서리는 U55의 10px). 비교 근거 표의 인물 칩은 이름이 한 글자씩 세로로 꺾이지 않게 한 줄로. */
 /* 높이는 본문 속 참고 칩 최소 30px(사양 일관성 표, 2026-11-26 검토 5). */
 :is(.route-unit-class,.team-panel .semantic td) .text-link{min-block-size:30px;padding:3px 8px;background:var(--secondary-soft);color:var(--text);font-size:18px;font-weight:600;line-height:24px}
@@ -1014,3 +1016,4 @@ html.dark body:has(.app-shell),html.dark body:has(.team-page),html.dark body:has
 /* 휴대폰 오른쪽 칸(가로 띠)에서 지원 대화 단추가 얼굴 줄 옆으로 밀려 다음 칸(재료) 위로 넘치지 않게 한 줄을 차지한다. */
 .context-rail .support-doc-button{display:flex;inline-size:fit-content;max-inline-size:100%}
 /* ===== yuphas 통합 끝 ===== */
+@media(max-width:359px){.guide-links .guide-home{min-inline-size:36px;min-block-size:36px}}

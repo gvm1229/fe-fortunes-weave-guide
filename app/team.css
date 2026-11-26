@@ -78,7 +78,7 @@
   .team-back-label{display:none}
   .team-head .team-title{display:block;font-size:18px}
   .team-row:first-child{flex-wrap:wrap}
-  .team-head .ui-tabs-list{order:3;flex:1 0 100%;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+  .team-head .ui-tabs-list{order:3;flex:1 0 100%;display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
   .team-head .ui-tabs-list button{padding:0 4px}
   .team-row:first-child>.icon-button{margin-inline-start:auto}
   .final-grid{grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:repeat(7,minmax(0,1fr));gap:4px;padding:14px 8px 8px}
