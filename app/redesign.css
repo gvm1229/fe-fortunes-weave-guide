@@ -959,11 +959,13 @@ html.dark body:has(.app-shell),html.dark body:has(.team-page),html.dark body:has
 .y-food .game-badge{background:transparent;padding:0;border:0;font-size:14px}
 .y-food .y-link{white-space:normal;text-align:center;font-size:14px;min-block-size:28px}
 /* 4. 지원 탭 §2: 2열, 얼굴을 칸 배경으로, 등급 글자 + 괄호 속 시기. */
-.y-support-table{inline-size:100%;border-collapse:collapse;font-size:15px}
+.y-support-table{--face-h:54px;inline-size:100%;border-collapse:collapse;font-size:15px}
+/* 고침 D(2026-11-27): 96×64 얼굴을 높이 --face-h로 맞추고 줄 높이를 얼굴보다 낮게 두지 않는다(표 칸 block-size는 최소 높이로 동작). 얼굴은 칸 왼쪽 아래. */
+.y-support-table tbody :is(th,td){block-size:calc(var(--face-h) + 2px)}
 .y-support-table thead th{position:relative;isolation:isolate;padding:4px 8px;text-align:center;font-weight:400;background:transparent}
 .y-support-table thead th::before{content:'';position:absolute;inset:2px;border:2px solid #39484F;background:#192D34;z-index:-1}
-.y-support-ch{inline-size:11em;min-inline-size:9em;padding:.5em 8px 6px calc(5em - 4px)!important;text-align:start;vertical-align:top;background-size:auto 3.6em;background-position:-6px top;background-repeat:no-repeat;border-block-end:1px solid #383D38;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;white-space:normal!important}
-.y-support-table td{padding:6px 8px!important;text-align:start;vertical-align:top;border-block-end:1px solid #383D38;white-space:normal!important}
+.y-support-ch{inline-size:11em;min-inline-size:9em;padding:.5em 8px 6px calc(5em - 4px)!important;text-align:start;vertical-align:middle;background-size:auto var(--face-h);background-position:-6px bottom;background-repeat:no-repeat;border-block-end:1px solid #383D38;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;white-space:normal!important}
+.y-support-table td{padding:6px 8px!important;text-align:start;vertical-align:middle;border-block-end:1px solid #383D38;white-space:normal!important}
 .y-rank{display:inline-block;margin-inline-end:10px;color:#FFE8C4}
 .y-rank small{font-size:13.8px;color:#ACAAB9}
 .y-paired{margin-inline-start:6px;color:#F0B9C4}
@@ -989,9 +991,10 @@ html.dark body:has(.app-shell),html.dark body:has(.team-page),html.dark body:has
   .y-card-body{max-inline-size:100%}
   .y-skills{grid-template-columns:repeat(6,30px);gap:4px}
   .y-skills li,.y-skills img{inline-size:30px;block-size:30px}
-  .y-support-ch{inline-size:8.5em;min-inline-size:7.5em;padding-inline-start:calc(4.4em - 4px)!important;background-size:auto 3em}
+  .y-support-ch{inline-size:8.5em;min-inline-size:7.5em;padding-inline-start:calc(4.4em - 4px)!important}
   .y-food{inline-size:calc(50% - 4px)}
-  .y-support-ch{inline-size:50%;padding-inline-start:calc(3.4em - 4px)!important;background-size:auto 2.6em}
+  .y-support-table{--face-h:40px}
+  .y-support-ch{inline-size:50%;padding-inline-start:58px!important}
   .y-gift-list{grid-template-columns:1fr}
   .y-link{white-space:normal;max-inline-size:100%}
   .y-pair{max-inline-size:100%}

@@ -78,6 +78,7 @@
 | U65 | yuphastemple 이름 규칙: 누를 수 없는 이름 배지는 한국어, yuphastemple 새 탭으로 가는 실제 단추는 영어 이름. 한 할 일 묶음에서 같은 물품의 영어 단추는 처음 한 번만. 한국어 이름이 없으면(미확인) 영어 단추만. 물품·재료·무기·마법·선물·음식·지원·지도는 yuphastemple 링크이고 재료 서랍·지도 사진은 없다. 본문 지도 링크는 yuphastemple 지도 | 11-27(사용자 결정) | `scripts/rules-check.mjs` `scripts/rules-browser-check.mjs` |
 | U66 | 화면에 근거·기록용 글이 없다: 원문 기록, 팀 비교 근거 탭, 참고 문서 화면, 그림 출처·입수 원문 링크, 근거·검토 문서 단추, 특기 검토 문서, 조심 문구. 옮긴 곳 docs/reference/(목차 README.md) | 11-27(사용자 결정) | `scripts/rules-check.mjs` `scripts/rules-browser-check.mjs` |
 | U67 | 인물 서랍·팀 인물 서랍 머리는 yuphastemple 인물 머리 카드: 큰 이름 + 빛, 병종 줄(그림·이름·이동 아이콘), 장점·약점 6×2 그림(▲·▼ 표식), 뒤 소속 문장, 오른쪽 큰 초상화. '특기' 글 대신 그림. 그 아래 선호 선물·음식 전체(리본·점수 색·음식 타일)와 지원 표(2열, 얼굴 배경, 등급과 시기) | 11-27(사용자 결정: 글보다 그림) | `scripts/rules-browser-check.mjs` |
+| U70 | 서랍 지원 표 얼굴은 모든 줄에서 잘리지 않는다: 줄 높이 ≥ 얼굴 높이(데스크톱 54px·휴대폰 40px), 얼굴은 칸 왼쪽 아래 | 11-27(사용자 요청: 얼굴이 들쭉날쭉 잘림) | `scripts/rules-browser-check.mjs` |
 
 ## 작업 방식 규칙
 

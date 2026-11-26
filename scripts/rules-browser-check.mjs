@@ -140,6 +140,13 @@ try {
     const card = await dlg.evaluate(d => { const c = d.querySelector('[data-character-header]'); return c && { name: !!c.querySelector('.y-card-name'), glow: getComputedStyle(c.querySelector('.y-card-name')).textShadow.includes('202, 185, 157'), cls: !!c.querySelector('.y-card-class img'), skills: c.querySelectorAll('.y-skills li').length, marks: c.querySelectorAll('.y-skills li[data-state=boon],.y-skills li[data-state=bane]').length, faction: getComputedStyle(c, '::before').backgroundImage.includes('/yuphas/emblems/'), portrait: c.querySelector('.y-card-portrait')?.naturalWidth >= 400, gifts: d.querySelectorAll('.y-gift').length, ribbons: d.querySelectorAll('.y-ribbon').length, food: d.querySelectorAll('.y-food').length, sup: d.querySelectorAll('.y-support-table tbody tr').length, special: [...d.querySelectorAll('dt')].some(x => x.textContent.trim() === '특기') }; });
     assert.ok(card && card.name && card.glow && card.cls && card.skills === 12 && card.marks > 0 && card.faction && card.portrait, `[U67] 인물 서랍 머리 ${JSON.stringify(card)}`);
     assert.ok(card.gifts > 5 && card.ribbons > 0 && card.food > 0 && card.sup > 0 && !card.special, `[U67] 인물 서랍 선물·음식·지원 ${JSON.stringify(card)}`);
+    // [U70] 서랍 지원 표 얼굴은 모든 줄에서 잘리지 않는다(줄 높이 ≥ 얼굴 높이 --face-h). 1440과 390에서 본다.
+    for (const w of [1440, 390]) {
+      await p.setViewportSize({ width: w, height: w > 800 ? 900 : 844 }); await p.waitForTimeout(300);
+      const faces = await dlg.evaluate(d => { const t = d.querySelector('.y-support-table'); if (!t) return null; const h = parseFloat(getComputedStyle(t).getPropertyValue('--face-h')); return { h, short: [...t.querySelectorAll('tbody th')].map(th => th.getBoundingClientRect().height).filter(x => x < h).length, rows: t.querySelectorAll('tbody th').length }; });
+      assert.ok(faces && faces.rows > 0 && faces.h > 0 && faces.short === 0, `[U70] ${w} 지원 표 얼굴 잘림 ${JSON.stringify(faces)}`);
+    }
+    await p.setViewportSize({ width: 1440, height: 900 });
     await p.keyboard.press('Escape');
     for (const tab of ['최종 25인', '백마술', '루트 편성']) { await p.goto(base + '/team/'); await p.waitForLoadState('networkidle'); await p.getByRole('tab', { name: tab, exact: true }).click(); await p.waitForTimeout(400); await bloat(`/team/ ${tab}`); }
     assert.equal(await p.getByRole('tab').count(), 3, '[U66] 팀 탭 셋');
