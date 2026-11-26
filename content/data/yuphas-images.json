@@ -1,0 +1,2867 @@
+{
+  "reviewed": "2026-11-27",
+  "note": "왼쪽 = 지금 우리 그림(저장소 경로), 오른쪽 = public/yuphas/에 받은 yuphastemple 그림(사이트 경로). 화면 교체는 다음 단계에서 한다. 출처: assets/design/SOURCES.md",
+  "portraits": {
+    "세오도라": {
+      "en": "Theodora",
+      "ours": [
+        "assets/portraits/c06.webp",
+        "assets/portraits/large/theodora.png",
+        "assets/portraits/pre-timeskip/large/theodora.webp"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/theodora.webp",
+        "thumb": "/yuphas/thumbs/theodora.webp",
+        "face": "/yuphas/faces/theodora.png"
+      }
+    },
+    "보나파르트": {
+      "en": "Bonaventure",
+      "ours": [
+        "assets/portraits/c14.webp",
+        "assets/portraits/large/bonaventure.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/bonaventure.webp",
+        "thumb": "/yuphas/thumbs/bonaventure.webp",
+        "face": "/yuphas/faces/bonaventure.png"
+      }
+    },
+    "토비아스": {
+      "en": "Tobias",
+      "ours": [
+        "assets/portraits/c15.webp",
+        "assets/portraits/large/tobias.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/tobias.webp",
+        "thumb": "/yuphas/thumbs/tobias.webp",
+        "face": "/yuphas/faces/tobias.png"
+      }
+    },
+    "라이선더": {
+      "en": "Lysander",
+      "ours": [
+        "assets/portraits/c17.webp",
+        "assets/portraits/large/lysander.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/lysander.webp",
+        "thumb": "/yuphas/thumbs/lysander.webp",
+        "face": "/yuphas/faces/lysander.png"
+      }
+    },
+    "릴리안": {
+      "en": "Lilian",
+      "ours": [
+        "assets/portraits/c16.webp",
+        "assets/portraits/large/lilian.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/lilian.webp",
+        "thumb": "/yuphas/thumbs/lilian.webp",
+        "face": "/yuphas/faces/lilian.png"
+      }
+    },
+    "소피아": {
+      "en": "Sofia",
+      "ours": [
+        "assets/portraits/c42.webp",
+        "assets/portraits/large/sofia.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/sofia.webp",
+        "thumb": "/yuphas/thumbs/sofia.webp",
+        "face": "/yuphas/faces/sofia.png"
+      }
+    },
+    "녹투라": {
+      "en": "Noctula",
+      "ours": [
+        "assets/portraits/c41.webp",
+        "assets/portraits/large/noctula.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/noctula.webp",
+        "thumb": "/yuphas/thumbs/noctula.webp",
+        "face": "/yuphas/faces/noctula.png"
+      }
+    },
+    "자코네": {
+      "en": "Zarcone",
+      "ours": [
+        "assets/portraits/c52.webp"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/zarcone.webp",
+        "thumb": "/yuphas/thumbs/zarcone.webp",
+        "face": "/yuphas/faces/zarcone.png"
+      }
+    },
+    "시로코": {
+      "en": "Sirocco",
+      "ours": [
+        "assets/portraits/c19.webp",
+        "assets/portraits/large/sirocco.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/sirocco.webp",
+        "thumb": "/yuphas/thumbs/sirocco.webp",
+        "face": "/yuphas/faces/sirocco.png"
+      }
+    },
+    "대도": {
+      "en": "Dadao",
+      "ours": [
+        "assets/portraits/c49.webp",
+        "assets/portraits/large/dadao.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/dadao.webp",
+        "thumb": "/yuphas/thumbs/dadao.webp",
+        "face": "/yuphas/faces/dadao.png"
+      }
+    },
+    "누디누": {
+      "en": "Nydine",
+      "ours": [
+        "assets/portraits/c37.webp",
+        "assets/portraits/large/nydine.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/nydine.webp",
+        "thumb": "/yuphas/thumbs/nydine.webp",
+        "face": "/yuphas/faces/nydine.png"
+      }
+    },
+    "로레타": {
+      "en": "Loretta",
+      "ours": [
+        "assets/portraits/c45.webp",
+        "assets/portraits/large/loretta.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/loretta.webp",
+        "thumb": "/yuphas/thumbs/loretta.webp",
+        "face": "/yuphas/faces/loretta.png"
+      }
+    },
+    "나타": {
+      "en": "Nezha",
+      "ours": [
+        "assets/portraits/c33.webp"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/nezha.webp",
+        "thumb": "/yuphas/thumbs/nezha.webp",
+        "face": "/yuphas/faces/nezha.png"
+      }
+    },
+    "단테": {
+      "en": "Dante",
+      "ours": [
+        "assets/portraits/c24.webp",
+        "assets/portraits/large/dante.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/dante.webp",
+        "thumb": "/yuphas/thumbs/dante.webp",
+        "face": "/yuphas/faces/dante.png"
+      }
+    },
+    "리네": {
+      "en": "Ninae",
+      "ours": [
+        "assets/portraits/c30.webp",
+        "assets/portraits/large/ninae.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/ninae.webp",
+        "thumb": "/yuphas/thumbs/ninae.webp",
+        "face": "/yuphas/faces/ninae.png"
+      }
+    },
+    "세테스": {
+      "en": "Seteth",
+      "ours": [
+        "assets/portraits/c44.webp",
+        "assets/portraits/large/seteth.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/seteth.webp",
+        "thumb": "/yuphas/thumbs/seteth.webp",
+        "face": "/yuphas/faces/seteth.png"
+      }
+    },
+    "울턴드": {
+      "en": "Ultand",
+      "ours": [
+        "assets/portraits/c10.webp",
+        "assets/portraits/large/ultand.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/ultand.webp",
+        "thumb": "/yuphas/thumbs/ultand.webp",
+        "face": "/yuphas/faces/ultand.png"
+      }
+    },
+    "페페": {
+      "en": "Peppe",
+      "ours": [
+        "assets/portraits/c43.webp"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/peppe.webp",
+        "thumb": "/yuphas/thumbs/peppe.webp",
+        "face": "/yuphas/faces/peppe.png"
+      }
+    },
+    "루루디아": {
+      "en": "Ludia",
+      "ours": [
+        "assets/portraits/c48.webp"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/ludia.webp",
+        "thumb": "/yuphas/thumbs/ludia.webp",
+        "face": "/yuphas/faces/ludia.png"
+      }
+    },
+    "시몬": {
+      "en": "Simon",
+      "ours": [
+        "assets/portraits/c27.webp"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/simon.webp",
+        "thumb": "/yuphas/thumbs/simon.webp",
+        "face": "/yuphas/faces/simon.png"
+      }
+    },
+    "카타냐": {
+      "en": "Catania",
+      "ours": [
+        "assets/portraits/c36.webp",
+        "assets/portraits/large/catania.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/catania.webp",
+        "thumb": "/yuphas/thumbs/catania.webp",
+        "face": "/yuphas/faces/catania.png"
+      }
+    },
+    "피터르": {
+      "en": "Peter",
+      "ours": [
+        "assets/portraits/c09.webp",
+        "assets/portraits/large/peter.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/peter.webp",
+        "thumb": "/yuphas/thumbs/peter.webp",
+        "face": "/yuphas/faces/peter.png"
+      }
+    },
+    "하르빈": {
+      "en": "Halvin",
+      "ours": [
+        "assets/portraits/c51.webp"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/halvin.webp",
+        "thumb": "/yuphas/thumbs/halvin.webp",
+        "face": "/yuphas/faces/halvin.png"
+      }
+    },
+    "디에고": {
+      "en": "Diego",
+      "ours": [
+        "assets/portraits/c29.webp",
+        "assets/portraits/large/diego.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/diego.webp",
+        "thumb": "/yuphas/thumbs/diego.webp",
+        "face": "/yuphas/faces/diego.png"
+      }
+    },
+    "그자람": {
+      "en": "Guzran",
+      "ours": [
+        "assets/portraits/c34.webp",
+        "assets/portraits/large/guzran.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/guzran.webp",
+        "thumb": "/yuphas/thumbs/guzran.webp",
+        "face": "/yuphas/faces/guzran.png"
+      }
+    },
+    "미카엘라": {
+      "en": "Mikaela",
+      "ours": [
+        "assets/portraits/c13.webp",
+        "assets/portraits/large/mikaela.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/mikaela.webp",
+        "thumb": "/yuphas/thumbs/mikaela.webp",
+        "face": "/yuphas/faces/mikaela.png"
+      }
+    },
+    "버커니어": {
+      "en": "Buccar",
+      "ours": [
+        "assets/portraits/c18.webp",
+        "assets/portraits/large/buccar.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/buccar.webp",
+        "thumb": "/yuphas/thumbs/buccar.webp",
+        "face": "/yuphas/faces/buccar.png"
+      }
+    },
+    "골라이어스": {
+      "en": "Goliath",
+      "ours": [
+        "assets/portraits/c47.webp"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/goliath.webp",
+        "thumb": "/yuphas/thumbs/goliath.webp",
+        "face": "/yuphas/faces/goliath.png"
+      }
+    },
+    "무우": {
+      "en": "Mu",
+      "ours": [
+        "assets/portraits/c21.webp",
+        "assets/portraits/large/mu.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/mu.webp",
+        "thumb": "/yuphas/thumbs/mu.webp",
+        "face": "/yuphas/faces/mu.png"
+      }
+    },
+    "양계": {
+      "en": "Yang Jie",
+      "ours": [
+        "assets/portraits/c40.webp",
+        "assets/portraits/large/yang-jie.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/yang-jie.webp",
+        "thumb": "/yuphas/thumbs/yang-jie.webp",
+        "face": "/yuphas/faces/yang-jie.png"
+      }
+    },
+    "에스메랄다": {
+      "en": "Esmeralda",
+      "ours": [
+        "assets/portraits/c12.webp",
+        "assets/portraits/large/esmeralda.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/esmeralda.webp",
+        "thumb": "/yuphas/thumbs/esmeralda.webp",
+        "face": "/yuphas/faces/esmeralda.png"
+      }
+    },
+    "올림피아": {
+      "en": "Olympia",
+      "ours": [
+        "assets/portraits/c20.webp",
+        "assets/portraits/large/olympia.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/olympia.webp",
+        "thumb": "/yuphas/thumbs/olympia.webp",
+        "face": "/yuphas/faces/olympia.png"
+      }
+    },
+    "우술라": {
+      "en": "Ursula",
+      "ours": [
+        "assets/portraits/c26.webp",
+        "assets/portraits/large/ursula.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/ursula.webp",
+        "thumb": "/yuphas/thumbs/ursula.webp",
+        "face": "/yuphas/faces/ursula.png"
+      }
+    },
+    "제스터": {
+      "en": "Jester",
+      "ours": [
+        "assets/portraits/c46.webp"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/jester.webp",
+        "thumb": "/yuphas/thumbs/jester.webp",
+        "face": "/yuphas/faces/jester.png"
+      }
+    },
+    "피아나": {
+      "en": "Fianna",
+      "ours": [
+        "assets/portraits/c50.webp"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/fianna.webp",
+        "thumb": "/yuphas/thumbs/fianna.webp",
+        "face": "/yuphas/faces/fianna.png"
+      }
+    },
+    "이오": {
+      "en": "Io",
+      "ours": [
+        "assets/portraits/c35.webp"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/io.webp",
+        "thumb": "/yuphas/thumbs/io.webp",
+        "face": "/yuphas/faces/io.png"
+      }
+    },
+    "티아라": {
+      "en": "Tialla",
+      "ours": [
+        "assets/portraits/c08.webp",
+        "assets/portraits/large/tialla.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/tialla.webp",
+        "thumb": "/yuphas/thumbs/tialla.webp",
+        "face": "/yuphas/faces/tialla.png"
+      }
+    },
+    "마지데": {
+      "en": "Majide",
+      "ours": [
+        "assets/portraits/c53.webp"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/majide.webp",
+        "thumb": "/yuphas/thumbs/majide.webp",
+        "face": "/yuphas/faces/majide.png"
+      }
+    },
+    "밴디츠": {
+      "en": "Benditz",
+      "ours": [
+        "assets/portraits/c38.webp",
+        "assets/portraits/large/benditz.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/benditz.webp",
+        "thumb": "/yuphas/thumbs/benditz.webp",
+        "face": "/yuphas/faces/benditz.png"
+      }
+    },
+    "키로이카": {
+      "en": "Kiroc",
+      "ours": [
+        "assets/portraits/c55.webp"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/kiroc.webp",
+        "thumb": "/yuphas/thumbs/kiroc.webp",
+        "face": "/yuphas/faces/kiroc.png"
+      }
+    },
+    "자스민": {
+      "en": "Jasmine",
+      "ours": [
+        "assets/portraits/c56.webp"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/jasmine.webp",
+        "thumb": "/yuphas/thumbs/jasmine.webp",
+        "face": "/yuphas/faces/jasmine.png"
+      }
+    },
+    "알렉산드라": {
+      "en": "Alexandra",
+      "ours": [
+        "assets/portraits/c39.webp",
+        "assets/portraits/large/alexandra.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/alexandra.webp",
+        "thumb": "/yuphas/thumbs/alexandra.webp",
+        "face": "/yuphas/faces/alexandra.png"
+      }
+    },
+    "누조": {
+      "en": "Nuzzuo",
+      "ours": [
+        "assets/portraits/c57.webp",
+        "assets/portraits/large/nuzzuo.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/nuzzuo.webp",
+        "thumb": "/yuphas/thumbs/nuzzuo.webp",
+        "face": "/yuphas/faces/nuzzuo.png"
+      }
+    },
+    "이니오니": {
+      "en": "Inyoni",
+      "ours": [
+        "assets/portraits/c58.webp"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/inyoni.webp",
+        "thumb": "/yuphas/thumbs/inyoni.webp",
+        "face": "/yuphas/faces/inyoni.png"
+      }
+    },
+    "레다": {
+      "en": "Leda",
+      "ours": [
+        "assets/portraits/c07.webp",
+        "assets/portraits/large/leda.png",
+        "assets/portraits/pre-timeskip/large/leda.webp"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/leda.webp",
+        "thumb": "/yuphas/thumbs/leda.webp",
+        "face": "/yuphas/faces/leda.png"
+      }
+    },
+    "파비오": {
+      "en": "Fabio",
+      "ours": [
+        "assets/portraits/c11.webp",
+        "assets/portraits/large/fabio.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/fabio.webp",
+        "thumb": "/yuphas/thumbs/fabio.webp",
+        "face": "/yuphas/faces/fabio.png"
+      }
+    },
+    "사란": {
+      "en": "Sha Lan",
+      "ours": [
+        "assets/portraits/c32.webp",
+        "assets/portraits/large/sha-lan.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/sha-lan.webp",
+        "thumb": "/yuphas/thumbs/sha-lan.webp",
+        "face": "/yuphas/faces/sha-lan.png"
+      }
+    },
+    "디트리히": {
+      "en": "Dietrich",
+      "ours": [
+        "assets/portraits/c05.webp",
+        "assets/portraits/large/dietrich.png",
+        "assets/portraits/pre-timeskip/large/dietrich.webp"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/dietrich.webp",
+        "thumb": "/yuphas/thumbs/dietrich.webp",
+        "face": "/yuphas/faces/dietrich.png"
+      }
+    },
+    "게이츠": {
+      "en": "Gaitz",
+      "ours": [
+        "assets/portraits/c23.webp",
+        "assets/portraits/large/gaitz.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/gaitz.webp",
+        "thumb": "/yuphas/thumbs/gaitz.webp",
+        "face": "/yuphas/faces/gaitz.png"
+      }
+    },
+    "이스마르": {
+      "en": "Eshmel",
+      "ours": [
+        "assets/portraits/c01.webp",
+        "assets/portraits/large/eshmel.png",
+        "assets/portraits/eshmel-female.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/eshmel.webp",
+        "thumb": "/yuphas/thumbs/eshmel.webp",
+        "face": "/yuphas/faces/eshmel.png"
+      }
+    },
+    "홍화": {
+      "en": "Hong Hua",
+      "ours": [
+        "assets/portraits/c02.webp",
+        "assets/portraits/large/hong-hua.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/hong-hua.webp",
+        "thumb": "/yuphas/thumbs/hong-hua.webp",
+        "face": "/yuphas/faces/hong-hua.png"
+      }
+    },
+    "트로이아": {
+      "en": "Troy",
+      "ours": [
+        "assets/portraits/c03.webp",
+        "assets/portraits/large/troy.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/troy.webp",
+        "thumb": "/yuphas/thumbs/troy.webp",
+        "face": "/yuphas/faces/troy.png"
+      }
+    },
+    "카이": {
+      "en": "Cai",
+      "ours": [
+        "assets/portraits/c04.webp",
+        "assets/portraits/large/cai.png",
+        "assets/portraits/pre-timeskip/large/cai.webp"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/cai.webp",
+        "thumb": "/yuphas/thumbs/cai.webp",
+        "face": "/yuphas/faces/cai.png"
+      }
+    },
+    "베르트랑": {
+      "en": "Bertrand",
+      "ours": [
+        "assets/portraits/c22.webp",
+        "assets/portraits/large/bertrand.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/bertrand.webp",
+        "thumb": "/yuphas/thumbs/bertrand.webp",
+        "face": "/yuphas/faces/bertrand.png"
+      }
+    },
+    "아나톨리아": {
+      "en": "Anatolia",
+      "ours": [
+        "assets/portraits/c31.webp",
+        "assets/portraits/large/anatolia.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/anatolia.webp",
+        "thumb": "/yuphas/thumbs/anatolia.webp",
+        "face": "/yuphas/faces/anatolia.png"
+      }
+    },
+    "오르헬": {
+      "en": "Orchel",
+      "ours": [
+        "assets/portraits/c28.webp",
+        "assets/portraits/large/orchel.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/orchel.webp",
+        "thumb": "/yuphas/thumbs/orchel.webp",
+        "face": "/yuphas/faces/orchel.png"
+      }
+    },
+    "타리문": {
+      "en": "Talimun",
+      "ours": [
+        "assets/portraits/c25.webp",
+        "assets/portraits/large/talimun.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/talimun.webp",
+        "thumb": "/yuphas/thumbs/talimun.webp",
+        "face": "/yuphas/faces/talimun.png"
+      }
+    },
+    "센트리온": {
+      "en": "Centurio",
+      "ours": [
+        "assets/portraits/c54.webp",
+        "assets/portraits/large/centurio.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/centurio.webp",
+        "thumb": "/yuphas/thumbs/centurio.webp",
+        "face": "/yuphas/faces/centurio.png"
+      }
+    },
+    "키릭": {
+      "en": "Creek",
+      "ours": [
+        "assets/portraits/c59.webp",
+        "assets/portraits/large/creek.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/creek.webp",
+        "thumb": "/yuphas/thumbs/creek.webp",
+        "face": "/yuphas/faces/creek.png"
+      }
+    },
+    "네이선": {
+      "en": "Nathan",
+      "ours": [
+        "assets/portraits/c60.webp",
+        "assets/portraits/large/nathan.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/nathan.webp",
+        "thumb": "/yuphas/thumbs/nathan.webp",
+        "face": "/yuphas/faces/nathan.png"
+      }
+    },
+    "아스완": {
+      "en": "Aswan",
+      "ours": [
+        "assets/portraits/c61.webp",
+        "assets/portraits/large/aswan.png"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/aswan.webp",
+        "thumb": "/yuphas/thumbs/aswan.webp",
+        "face": "/yuphas/faces/aswan.png"
+      }
+    },
+    "타호니아": {
+      "en": "Tahonia",
+      "ours": [
+        "assets/portraits/c62.webp"
+      ],
+      "yuphas": {
+        "portrait": "/yuphas/portraits/tahonia.webp",
+        "thumb": "/yuphas/thumbs/tahonia.webp",
+        "face": "/yuphas/faces/tahonia.png"
+      }
+    }
+  },
+  "items": {
+    "태양 열매": {
+      "en": "Thry Fruit",
+      "ours": "assets/items/vegetable-common.webp",
+      "yuphas": "/yuphas/items/thry-fruit.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/vegetable_common-v2.png"
+    },
+    "유나메이": {
+      "en": "Yuna Mei",
+      "ours": "assets/items/vegetable-epic.webp",
+      "yuphas": "/yuphas/items/yuna-mei.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/vegetable_rare-v2.png"
+    },
+    "멜라라": {
+      "en": "Melara",
+      "ours": "assets/items/vegetable-rare.webp",
+      "yuphas": "/yuphas/items/melara.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/vegetable_uncommon-v2.png"
+    },
+    "리나리아": {
+      "en": "Linaria",
+      "ours": "assets/items/vegetable-common.webp",
+      "yuphas": "/yuphas/items/linaria.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/vegetable_common-v2.png"
+    },
+    "리가네트": {
+      "en": "Liganet",
+      "ours": "assets/items/vegetable-epic.webp",
+      "yuphas": "/yuphas/items/liganet.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/vegetable_rare-v2.png"
+    },
+    "마름쇠꽃": {
+      "en": "Caltrop Flower",
+      "ours": "assets/items/vegetable-rare.webp",
+      "yuphas": "/yuphas/items/caltrop-flower.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/vegetable_uncommon-v2.png"
+    },
+    "사막기장": {
+      "en": "Desert Millet",
+      "ours": "assets/items/vegetable-common.webp",
+      "yuphas": "/yuphas/items/desert-millet.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/vegetable_common-v2.png"
+    },
+    "로카": {
+      "en": "Roca",
+      "ours": "assets/items/vegetable-common.webp",
+      "yuphas": "/yuphas/items/roca.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/vegetable_common-v2.png"
+    },
+    "대추야자": {
+      "en": "Dates",
+      "ours": "assets/items/vegetable-common.webp",
+      "yuphas": "/yuphas/items/dates.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/vegetable_common-v2.png"
+    },
+    "글루마오사": {
+      "en": "Glirmosa",
+      "ours": "assets/items/vegetable-rare.webp",
+      "yuphas": "/yuphas/items/glirmosa.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/vegetable_uncommon-v2.png"
+    },
+    "힝가샤": {
+      "en": "Hingosh",
+      "ours": "assets/items/vegetable-epic.webp",
+      "yuphas": "/yuphas/items/hingosh.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/vegetable_rare-v2.png"
+    },
+    "원더 리프": {
+      "en": "Wonder Leaves",
+      "ours": "assets/items/vegetable-common.webp",
+      "yuphas": "/yuphas/items/wonder-leaves.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/vegetable_common-v2.png"
+    },
+    "스위트 리프": {
+      "en": "Sweet Leaves",
+      "ours": "assets/items/vegetable-common.webp",
+      "yuphas": "/yuphas/items/sweet-leaves.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/vegetable_common-v2.png"
+    },
+    "비터 리프": {
+      "en": "Bitter Leaves",
+      "ours": "assets/items/vegetable-common.webp",
+      "yuphas": "/yuphas/items/bitter-leaves.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/vegetable_common-v2.png"
+    },
+    "스파이스 리프": {
+      "en": "Pepper Leaves",
+      "ours": "assets/items/vegetable-common.webp",
+      "yuphas": "/yuphas/items/pepper-leaves.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/vegetable_common-v2.png"
+    },
+    "흰송어": {
+      "en": "White Trout",
+      "ours": "assets/items/fish-common.webp",
+      "yuphas": "/yuphas/items/white-trout.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/fish_common-v2.png"
+    },
+    "코샬루 가아": {
+      "en": "Kothar Gar",
+      "ours": "assets/items/fish-common.webp",
+      "yuphas": "/yuphas/items/kothar-gar.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/fish_common-v2.png"
+    },
+    "라돈 잉어": {
+      "en": "Ladon Loach",
+      "ours": "assets/items/fish-common.webp",
+      "yuphas": "/yuphas/items/ladon-loach.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/fish_common-v2.png"
+    },
+    "라돈 꼬치고기": {
+      "en": "Ladon Pike",
+      "ours": "assets/items/fish-common.webp",
+      "yuphas": "/yuphas/items/ladon-pike.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/fish_common-v2.png"
+    },
+    "카르나가다랑어": {
+      "en": "Carna Bonito",
+      "ours": "assets/items/fish-common.webp",
+      "yuphas": "/yuphas/items/carna-bonito.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/fish_common-v2.png"
+    },
+    "릴피시": {
+      "en": "Lir Fish",
+      "ours": "assets/items/fish-common.webp",
+      "yuphas": "/yuphas/items/lir-fish.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/fish_common-v2.png"
+    },
+    "강철어": {
+      "en": "Steelfish",
+      "ours": "assets/items/fish-common.webp",
+      "yuphas": "/yuphas/items/steelfish.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/fish_common-v2.png"
+    },
+    "반짝반짝어": {
+      "en": "Paradise Fish",
+      "ours": "assets/items/fish-epic.webp",
+      "yuphas": "/yuphas/items/paradise-fish.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/fish_rare-v2.png"
+    },
+    "옥강": {
+      "en": "Black-Sand Steel",
+      "ours": "assets/items/ore-common.webp",
+      "yuphas": "/yuphas/items/black-sand-steel.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/ore_common-v2.png"
+    },
+    "독석": {
+      "en": "Venomstone",
+      "ours": "assets/items/ore-common.webp",
+      "yuphas": "/yuphas/items/venomstone.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/ore_common-v2.png"
+    },
+    "해성석": {
+      "en": "Sea-Star Stone",
+      "ours": "assets/items/ore-common.webp",
+      "yuphas": "/yuphas/items/sea-star-stone.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/ore_common-v2.png"
+    },
+    "뇌석": {
+      "en": "Thunderstone",
+      "ours": "assets/items/ore-rare.webp",
+      "yuphas": "/yuphas/items/thunderstone.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/ore_uncommon-v2.png"
+    },
+    "모래벌레 고기": {
+      "en": "Sandworm Meat",
+      "ours": "assets/items/meat-epic.webp",
+      "yuphas": "/yuphas/items/sandworm-meat.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/meat_rare-v2.png"
+    },
+    "거대 고기": {
+      "en": "Giants' Meat",
+      "ours": "assets/items/meat-epic.webp",
+      "yuphas": "/yuphas/items/giants-meat.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/meat_rare-v2.png"
+    },
+    "전혼석": {
+      "en": "Warrior's Soulstone",
+      "ours": "assets/items/ore-rare.webp",
+      "yuphas": "/yuphas/items/warriors-soulstone.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/ore_rare-v2.png"
+    },
+    "성수": {
+      "en": "Pure Water",
+      "ours": "assets/items/holy-water.webp",
+      "yuphas": "/yuphas/items/pure-water.webp",
+      "yuphasTypeIcon": null
+    },
+    "시인의 비문 사본": {
+      "en": "Monument Verse",
+      "ours": "assets/items/monument-verse.png",
+      "yuphas": "/yuphas/items/monument-verse.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/quest_item.png"
+    },
+    "아우람 로즈": {
+      "en": "Aurum Rose",
+      "ours": "assets/items/key-item.png",
+      "yuphas": "/yuphas/items/aurum-rose.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/quest_item.png"
+    },
+    "푸른 심장": {
+      "en": "Azure Heart",
+      "ours": "assets/items/key-item.png",
+      "yuphas": "/yuphas/items/azure-heart.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/quest_item.png"
+    },
+    "비작의 물방울": {
+      "en": "Scarlet Firedrops",
+      "ours": "assets/items/key-item.png",
+      "yuphas": "/yuphas/items/scarlet-firedrops.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/quest_item.png"
+    },
+    "선물 상자": {
+      "en": "Gift Box",
+      "ours": "assets/items/crate.png",
+      "yuphas": "/yuphas/items/gift-box.webp",
+      "yuphasTypeIcon": null
+    },
+    "재건자재": {
+      "en": "Building Materials",
+      "ours": "assets/items/building-materials.png",
+      "yuphas": "/yuphas/items/building-materials.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/building_materials.png"
+    },
+    "고기 상자": {
+      "en": "Meat Crate",
+      "ours": "assets/items/crate.png",
+      "yuphas": "/yuphas/items/meat-crate.webp",
+      "yuphasTypeIcon": null
+    },
+    "고급 고기 상자": {
+      "en": "Luxury Meat Crate",
+      "ours": "assets/items/crate.png",
+      "yuphas": "/yuphas/items/luxury-meat-crate.webp",
+      "yuphasTypeIcon": null
+    },
+    "초급 시험 증표": {
+      "en": "Beginner License",
+      "ours": "assets/items/license-basic.png",
+      "yuphas": "/yuphas/items/beginner-license.webp",
+      "yuphasTypeIcon": null
+    },
+    "중급 시험 증표": {
+      "en": "Specialty License",
+      "ours": "assets/items/license-basic.png",
+      "yuphas": "/yuphas/items/specialty-license.webp",
+      "yuphasTypeIcon": null
+    },
+    "상급 시험 증표": {
+      "en": "Advanced License",
+      "ours": "assets/items/license-advanced.png",
+      "yuphas": "/yuphas/items/advanced-license.webp",
+      "yuphasTypeIcon": null
+    },
+    "최상급 시험 증표": {
+      "en": "Master License",
+      "ours": "assets/items/license-master.png",
+      "yuphas": "/yuphas/items/master-license.webp",
+      "yuphasTypeIcon": null
+    },
+    "무희의 목걸이": {
+      "en": "Dancer's Necklace",
+      "ours": "assets/items/dancers-necklace.png",
+      "yuphas": null,
+      "yuphasTypeIcon": null
+    },
+    "코끼리병 시험 증표": {
+      "en": "Elephant License",
+      "ours": null,
+      "yuphas": "/yuphas/items/elephant-license.webp",
+      "yuphasTypeIcon": null
+    },
+    "무사의 목걸이": {
+      "en": "Muses' Necklace",
+      "ours": null,
+      "yuphas": "/yuphas/items/muses-necklace.webp",
+      "yuphasTypeIcon": null
+    },
+    "대제의 복대": {
+      "en": "Emperor's Sash",
+      "ours": null,
+      "yuphas": "/yuphas/items/emperors-sash.webp",
+      "yuphasTypeIcon": null
+    },
+    "신철의 안장": {
+      "en": "Divinium Saddle",
+      "ours": null,
+      "yuphas": "/yuphas/items/divinium-saddle.webp",
+      "yuphasTypeIcon": null
+    },
+    "어둠의 결정": {
+      "en": "Crystal of Darkness",
+      "ours": null,
+      "yuphas": "/yuphas/items/crystal-of-darkness.webp",
+      "yuphasTypeIcon": null
+    },
+    "심판의 천칭": {
+      "en": "Scales of Judgment",
+      "ours": null,
+      "yuphas": "/yuphas/items/scales-of-judgment.webp",
+      "yuphasTypeIcon": null
+    },
+    "환상의 긴지": {
+      "en": "Phantom Ginji",
+      "ours": null,
+      "yuphas": "/yuphas/items/phantom-ginji.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/quest_item.png"
+    },
+    "소렐의 휘창": {
+      "en": "Shining Spear",
+      "ours": "assets/weapons/item-1474739a52a9.webp",
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/spear.webp"
+    },
+    "아살": {
+      "en": "Assal",
+      "ours": "assets/weapons/item-1474739a52a9.webp",
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/spear.webp"
+    },
+    "강화 앤서러": {
+      "en": "Answerer Arisen",
+      "ours": "assets/weapons/item-3e8974379abc.webp",
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/sword.webp"
+    },
+    "재계의 검": {
+      "en": "Cleansing Blade",
+      "ours": "assets/weapons/item-3e8974379abc.webp",
+      "yuphas": "/yuphas/items/cleansing-blade.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/sword.webp"
+    },
+    "아우로라의 성창": {
+      "en": "Star Spear",
+      "ours": "assets/weapons/item-1474739a52a9.webp",
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/spear.webp"
+    },
+    "나이트 킬러": {
+      "en": "Ridersbane",
+      "ours": "assets/weapons/item-1474739a52a9.webp",
+      "yuphas": "/yuphas/items/ridersbane.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/spear.webp"
+    },
+    "마하마두의 창": {
+      "en": "Mahadu's Spear",
+      "ours": "assets/weapons/item-1474739a52a9.webp",
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/spear.webp"
+    },
+    "슬렌드 스피어": {
+      "en": "Pilum",
+      "ours": "assets/weapons/item-1474739a52a9.webp",
+      "yuphas": "/yuphas/items/pilum.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/spear.webp"
+    },
+    "칼라의 활": {
+      "en": "Kalla's Bow",
+      "ours": "assets/weapons/item-d36f4cad9901.webp",
+      "yuphas": "/yuphas/items/kallas-bow.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/bow.webp"
+    },
+    "잘목시스": {
+      "en": "Zalmoxis",
+      "ours": "assets/weapons/item-10bcdf2e5f08.webp",
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/axe.webp"
+    },
+    "반격의 건틀릿": {
+      "en": "Counter Gauntlets",
+      "ours": "assets/weapons/item-d377c1b7902a.webp",
+      "yuphas": "/yuphas/items/counter-gauntlets.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gauntlets.webp"
+    },
+    "다 미나의 건틀릿": {
+      "en": "Da Mina Gauntlets",
+      "ours": "assets/weapons/item-d377c1b7902a.webp",
+      "yuphas": "/yuphas/items/da-mina-gauntlets.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gauntlets.webp"
+    },
+    "건곤권": {
+      "en": "Qiankun Circles",
+      "ours": "assets/weapons/item-d377c1b7902a.webp",
+      "yuphas": "/yuphas/items/qiankun-circles.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gauntlets.webp"
+    },
+    "큰 곰의 오른 발톱": {
+      "en": "Ursa's Right Claw",
+      "ours": "assets/weapons/item-fffc003ab338.webp",
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/gauntlets.webp"
+    },
+    "킬 소드": {
+      "en": "Killing Edge",
+      "ours": "assets/weapons/item-3e8974379abc.webp",
+      "yuphas": "/yuphas/items/killing-edge.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/sword.webp"
+    },
+    "플리사": {
+      "en": "Flyssa",
+      "ours": "assets/weapons/item-3e8974379abc.webp",
+      "yuphas": "/yuphas/items/flyssa.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/sword.webp"
+    },
+    "마창 그라시더": {
+      "en": "Grasitha",
+      "ours": "assets/weapons/item-1474739a52a9.webp",
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/spear.webp"
+    },
+    "신자의 작살": {
+      "en": "Sinza's Trident",
+      "ours": "assets/weapons/item-1474739a52a9.webp",
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/spear.webp"
+    },
+    "선더 소드": {
+      "en": "Levin Sword",
+      "ours": "assets/weapons/item-3e8974379abc.webp",
+      "yuphas": "/yuphas/items/levin-sword.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/sword.webp"
+    },
+    "언월도": {
+      "en": "Guandao",
+      "ours": "assets/weapons/item-1474739a52a9.webp",
+      "yuphas": "/yuphas/items/guandao.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/spear.webp"
+    },
+    "다 미나의 창": {
+      "en": "Da Mina Spear",
+      "ours": "assets/weapons/item-1474739a52a9.webp",
+      "yuphas": "/yuphas/items/da-mina-spear.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/spear.webp"
+    },
+    "쇼트 스피어": {
+      "en": "Short Spear",
+      "ours": "assets/weapons/item-1474739a52a9.webp",
+      "yuphas": "/yuphas/items/short-spear.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/spear.webp"
+    },
+    "수렵의 활": {
+      "en": "Hunter's Bow",
+      "ours": "assets/weapons/item-d36f4cad9901.webp",
+      "yuphas": "/yuphas/items/hunters-bow.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/bow.webp"
+    },
+    "롱 보우": {
+      "en": "Longbow",
+      "ours": "assets/weapons/item-d36f4cad9901.webp",
+      "yuphas": "/yuphas/items/longbow.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/bow.webp"
+    },
+    "다 미나의 활": {
+      "en": "Da Mina Bow",
+      "ours": "assets/weapons/item-d36f4cad9901.webp",
+      "yuphas": "/yuphas/items/da-mina-bow.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/bow.webp"
+    },
+    "배틀 보우": {
+      "en": "War Bow",
+      "ours": "assets/weapons/item-d36f4cad9901.webp",
+      "yuphas": "/yuphas/items/war-bow.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/bow.webp"
+    },
+    "말 킬러의 활": {
+      "en": "Horsekiller Bow",
+      "ours": "assets/weapons/item-d36f4cad9901.webp",
+      "yuphas": "/yuphas/items/horsekiller-bow.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/bow.webp"
+    },
+    "미니 보우": {
+      "en": "Mini Bow",
+      "ours": "assets/weapons/item-d36f4cad9901.webp",
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/bow.webp"
+    },
+    "독의 활": {
+      "en": "Venin Bow",
+      "ours": "assets/weapons/item-d36f4cad9901.webp",
+      "yuphas": "/yuphas/items/venin-bow.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/bow.webp"
+    },
+    "이데아의 활": {
+      "en": "Idah's Bow",
+      "ours": "assets/weapons/item-d36f4cad9901.webp",
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/bow.webp"
+    },
+    "체르베루스": {
+      "en": "Zerberus",
+      "ours": "assets/weapons/item-d377c1b7902a.webp",
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/gauntlets.webp"
+    },
+    "트론": {
+      "en": "Thoron",
+      "ours": "assets/weapons/item-08c97b353f3f.webp",
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/black_magic.webp"
+    },
+    "셰이버": {
+      "en": "Cutting Gale",
+      "ours": "assets/weapons/item-08c97b353f3f.webp",
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/black_magic.webp"
+    },
+    "데스": {
+      "en": null,
+      "ours": "assets/weapons/item-08c97b353f3f.webp",
+      "yuphas": null,
+      "yuphasTypeIcon": null
+    },
+    "루나": {
+      "en": null,
+      "ours": "assets/weapons/item-08c97b353f3f.webp",
+      "yuphas": null,
+      "yuphasTypeIcon": null
+    },
+    "엑스칼리버": {
+      "en": "Excalibur",
+      "ours": "assets/weapons/item-08c97b353f3f.webp",
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/black_magic.webp"
+    },
+    "리브로": {
+      "en": "Physic",
+      "ours": "assets/weapons/item-cae5fd8b4ffa.webp",
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/white_magic.webp"
+    },
+    "리자이어": {
+      "en": "Nosferatu",
+      "ours": "assets/weapons/item-cae5fd8b4ffa.webp",
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/white_magic.webp"
+    },
+    "엔젤": {
+      "en": "Seraphim",
+      "ours": "assets/weapons/item-cae5fd8b4ffa.webp",
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/white_magic.webp"
+    },
+    "레스큐": {
+      "en": "Rescue",
+      "ours": "assets/weapons/item-cae5fd8b4ffa.webp",
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/white_magic.webp"
+    },
+    "워프": {
+      "en": "Warp",
+      "ours": "assets/weapons/item-cae5fd8b4ffa.webp",
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/white_magic.webp"
+    },
+    "사일런스": {
+      "en": "Silence",
+      "ours": "assets/weapons/item-cae5fd8b4ffa.webp",
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/white_magic.webp"
+    },
+    "사검 벨로키네": {
+      "en": "Veroquine",
+      "ours": "assets/weapons/item-ea9379ad0d17.webp",
+      "yuphas": "/yuphas/items/veroquine.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/sword.webp"
+    },
+    "스미르노스 보상 건틀릿": {
+      "en": "Smyrnos's Channels",
+      "ours": "assets/weapons/item-d377c1b7902a.webp",
+      "yuphas": "/yuphas/items/smyrnoss-channels.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gauntlets.webp"
+    },
+    "참마도": {
+      "en": "Zanbato",
+      "ours": "assets/weapons/item-3e8974379abc.webp",
+      "yuphas": "/yuphas/items/zanbato.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/sword.webp"
+    },
+    "극": {
+      "en": "Ji",
+      "ours": "assets/weapons/item-1474739a52a9.webp",
+      "yuphas": "/yuphas/items/ji.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/spear.webp"
+    },
+    "해머": {
+      "en": "Hammer",
+      "ours": "assets/weapons/item-10bcdf2e5f08.webp",
+      "yuphas": "/yuphas/items/hammer.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/axe.webp"
+    },
+    "크레르 시련 보상 도끼": {
+      "en": "Credna's Mallet",
+      "ours": "assets/weapons/item-10bcdf2e5f08.webp",
+      "yuphas": "/yuphas/items/crednas-mallet.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/axe.webp"
+    },
+    "그레이트 소드": {
+      "en": "Greatsword",
+      "ours": "assets/weapons/item-3e8974379abc.webp",
+      "yuphas": "/yuphas/items/greatsword.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/sword.webp"
+    },
+    "핼버드": {
+      "en": "Halberd",
+      "ours": "assets/weapons/item-1474739a52a9.webp",
+      "yuphas": "/yuphas/items/halberd.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/spear.webp"
+    },
+    "메이스": {
+      "en": "Mace",
+      "ours": "assets/weapons/item-10bcdf2e5f08.webp",
+      "yuphas": "/yuphas/items/mace.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/axe.webp"
+    },
+    "바르디슈": {
+      "en": "Bardiche",
+      "ours": "assets/weapons/item-10bcdf2e5f08.webp",
+      "yuphas": "/yuphas/items/bardiche.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/axe.webp"
+    },
+    "풍화륜": {
+      "en": "Windfire Rings",
+      "ours": "assets/weapons/item-d377c1b7902a.webp",
+      "yuphas": "/yuphas/items/windfire-rings.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gauntlets.webp"
+    },
+    "앤서러": {
+      "en": "Answerer",
+      "ours": "assets/weapons/item-3e8974379abc.webp",
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/sword.webp"
+    },
+    "다 미나의 검": {
+      "en": "Da Mina Sword",
+      "ours": "assets/weapons/item-3e8974379abc.webp",
+      "yuphas": "/yuphas/items/da-mina-sword.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/sword.webp"
+    },
+    "질풍의 검": {
+      "en": "Whirlwind Blade",
+      "ours": "assets/weapons/item-3e8974379abc.webp",
+      "yuphas": "/yuphas/items/whirlwind-blade.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/sword.webp"
+    },
+    "요창 벤데타": {
+      "en": "Vendetta",
+      "ours": "assets/items/cursed-lance.webp",
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/spear.webp"
+    },
+    "매 발톱 도끼": {
+      "en": "You Sou Fu",
+      "ours": "assets/weapons/item-10bcdf2e5f08.webp",
+      "yuphas": "/yuphas/items/you-sou-fu.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/axe.webp"
+    },
+    "사창 무엔": {
+      "en": "Muen",
+      "ours": "assets/items/cursed-lance.webp",
+      "yuphas": "/yuphas/items/muen.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/spear.webp"
+    },
+    "사창 하노어": {
+      "en": "Onoa",
+      "ours": "assets/items/cursed-lance.webp",
+      "yuphas": "/yuphas/items/onoa.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/spear.webp"
+    },
+    "철의 검": {
+      "en": "Iron Sword",
+      "ours": "assets/weapons/item-3e8974379abc.webp",
+      "yuphas": "/yuphas/items/iron-sword.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/sword.webp"
+    },
+    "철의 창": {
+      "en": "Iron Spear",
+      "ours": "assets/weapons/item-1474739a52a9.webp",
+      "yuphas": "/yuphas/items/iron-spear.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/spear.webp"
+    },
+    "철의 도끼": {
+      "en": "Iron Axe",
+      "ours": "assets/weapons/item-10bcdf2e5f08.webp",
+      "yuphas": "/yuphas/items/iron-axe.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/axe.webp"
+    },
+    "철의 활": {
+      "en": "Iron Bow",
+      "ours": "assets/weapons/item-d36f4cad9901.webp",
+      "yuphas": "/yuphas/items/iron-bow.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/bow.webp"
+    },
+    "청동 도끼": {
+      "en": "Bronze Axe",
+      "ours": "assets/weapons/item-10bcdf2e5f08.webp",
+      "yuphas": "/yuphas/items/bronze-axe.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/axe.webp"
+    },
+    "정화의 검": {
+      "en": null,
+      "ours": "assets/weapons/item-3e8974379abc.webp",
+      "yuphas": null,
+      "yuphasTypeIcon": null
+    },
+    "테프 페이스트리": {
+      "en": "Coffee Pastries",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/coffee-pastries.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "보통 테프": {
+      "en": "Common Coffee",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/common-coffee.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "여행 노사의 구전록": {
+      "en": "History of a Master",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/history-of-a-master.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_rare-v2.png"
+    },
+    "엄선 테프": {
+      "en": "Select Coffee",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/select-coffee.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "오르구스 테프": {
+      "en": "Orgus Coffee",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/orgus-coffee.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "남방 테프": {
+      "en": "Southern Coffee",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/southern-coffee.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "모험 이야기": {
+      "en": "Tales of Adventure",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/tales-of-adventure.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_rare-v2.png"
+    },
+    "유파스의 초상화": {
+      "en": "Portrait of Yu Phas",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_rare-v2.png"
+    },
+    "바다 저편의 고서": {
+      "en": "Tome from Away",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/tome-from-away.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_uncommon-v2.png"
+    },
+    "햇홍소": {
+      "en": "Young Ghosh",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/young-ghosh.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "생선 내장 절임": {
+      "en": "Brined Fish Guts",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/brined-fish-guts.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "가벼운 창소": {
+      "en": "Light Shosh",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/light-shosh.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "진홍 홍소": {
+      "en": "Crimson Ghosh",
+      "ours": "assets/gifts/gift-2.png",
+      "yuphas": "/yuphas/items/crimson-ghosh.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_uncommon-v2.png"
+    },
+    "의장용 창": {
+      "en": "Ceremonial Spear",
+      "ours": "assets/gifts/gift-2.png",
+      "yuphas": "/yuphas/items/ceremonial-spear.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_uncommon-v2.png"
+    },
+    "투박한 명검": {
+      "en": "Rugged Blade",
+      "ours": "assets/gifts/gift-2.png",
+      "yuphas": "/yuphas/items/rugged-blade.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_uncommon-v2.png"
+    },
+    "수호 인형": {
+      "en": "Protection Figurine",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/protection-figurine.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "골동품 전공 훈장": {
+      "en": "Antique Medal",
+      "ours": "assets/gifts/gift-2.png",
+      "yuphas": "/yuphas/items/antique-medal.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "관절 보호용 장갑": {
+      "en": "Joint-Relief Gloves",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/joint-relief-gloves.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "쿰쿰한 가룸": {
+      "en": "Rancid Garum",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/rancid-garum.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_rare-v2.png"
+    },
+    "환상의 가룸": {
+      "en": "Legendary Garum",
+      "ours": "assets/gifts/gift-2.png",
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_rare-v2.png"
+    },
+    "가룸": {
+      "en": "Garum",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/garum.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "기묘한 채소 씨앗": {
+      "en": "Odd Vegetable Seeds",
+      "ours": "assets/gifts/gift-2.png",
+      "yuphas": "/yuphas/items/odd-vegetable-seeds.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "남부의 희귀 종자": {
+      "en": "Rare Southern Seeds",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/rare-southern-seeds.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "향긋한 페이스트리": {
+      "en": "Fragrant Pastries",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/fragrant-pastries.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "꿀 페이스트리": {
+      "en": "Honey Pastries",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/honey-pastries.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "부드러운 페이스트리": {
+      "en": "Mellow Pastries",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/mellow-pastries.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "소박한 구운 과자": {
+      "en": "Simple Pastries",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/simple-pastries.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "벌꿀 젖": {
+      "en": "Honey Milk",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/honey-milk.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "수정 사탕": {
+      "en": "Candy Crystals",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/candy-crystals.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_uncommon-v2.png"
+    },
+    "예리한 낚싯바늘": {
+      "en": "Sharp Fishhook",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/sharp-fishhook.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "다그다 수염풀": {
+      "en": "Dagda Beard Grass",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/dagda-beard-grass.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "새끼 고양이 장식": {
+      "en": "Kitten Figurine",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/kitten-figurine.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "숙성 홍소": {
+      "en": "Mature Ghosh",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/mature-ghosh.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "파스텔 세트": {
+      "en": "Pack of Pastels",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/pack-of-pastels.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "거장들의 시집": {
+      "en": "Poems of the Greats",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/poems-of-the-greats.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "진귀한 향신료": {
+      "en": "Rare Spices",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/rare-spices.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "동방의 칠흑 비단": {
+      "en": "Eastern Black Silk",
+      "ours": "assets/gifts/gift-2.png",
+      "yuphas": "/yuphas/items/eastern-black-silk.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_uncommon-v2.png"
+    },
+    "자극적인 홍소": {
+      "en": "Energizing Ghosh",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/energizing-ghosh.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "화산 홍소": {
+      "en": "Volcano Ghosh",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/volcano-ghosh.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "보드게임 정석집": {
+      "en": "Board-Game Tactics",
+      "ours": "assets/gifts/gift-2.png",
+      "yuphas": "/yuphas/items/board-game-tactics.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "페이스트리 요리책": {
+      "en": "Pastry Cookbook",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/pastry-cookbook.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "교직원 사건부": {
+      "en": "School Scandal",
+      "ours": "assets/gifts/gift-2.png",
+      "yuphas": "/yuphas/items/school-scandal.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "화살촉 모양 보석": {
+      "en": "Arrowhead Gem",
+      "ours": "assets/gifts/gift-2.png",
+      "yuphas": "/yuphas/items/arrowhead-gem.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_uncommon-v2.png"
+    },
+    "동방의 찻잎": {
+      "en": "Eastern Tea Leaves",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/eastern-tea-leaves.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "갈기 장식": {
+      "en": "Mane Ornament",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/mane-ornament.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "바람을 가르는 깃": {
+      "en": "Wing Fletching",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/wing-fletching.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "말 손질 키트": {
+      "en": "Horse-Grooming Kit",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/horse-grooming-kit.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "아무 르 직물": {
+      "en": "Ahm Lu Cloth",
+      "ours": "assets/gifts/gift-2.png",
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_uncommon-v2.png"
+    },
+    "모르피스 연감": {
+      "en": "Morfis Almanac",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/morfis-almanac.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_uncommon-v2.png"
+    },
+    "소박한 홍소": {
+      "en": "Rustic Ghosh",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/rustic-ghosh.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "부드러운 가룸": {
+      "en": "Smooth Garum",
+      "ours": "assets/gifts/gift-2.png",
+      "yuphas": "/yuphas/items/smooth-garum.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "농후한 가룸": {
+      "en": "Concentrated Garum",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/concentrated-garum.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "환상의 솔로몬 테프": {
+      "en": "Solomon Coffee",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/solomon-coffee.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "작고 흰 꽃 그림": {
+      "en": "Flower Painting",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/flower-painting.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_uncommon-v2.png"
+    },
+    "활 손질 도구": {
+      "en": "Bow Repair Kit",
+      "ours": "assets/gifts/gift-2.png",
+      "yuphas": "/yuphas/items/bow-repair-kit.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "동방의 연애 이야기": {
+      "en": "Eastern Love Story",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/eastern-love-story.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "자멜의 젖": {
+      "en": "Jamel Milk",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/jamel-milk.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "연한 세르비": {
+      "en": "Weak Cervi",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/weak-cervi.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "야크의 젖": {
+      "en": "Yarc Milk",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/yarc-milk.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "알뿌리 식초 절임": {
+      "en": "Pickled Bulbs",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/pickled-bulbs.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "예쁜 장식용 화살": {
+      "en": "Decorative Arrows",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/decorative-arrows.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "흑단제 보드게임": {
+      "en": "Ebony Game Board",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/ebony-game-board.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "방패들의 초상화": {
+      "en": "Shield Portrait",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/shield-portrait.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "페가수스 풍경화": {
+      "en": "Pegasus Panorama",
+      "ours": "assets/gifts/gift-2.png",
+      "yuphas": "/yuphas/items/pegasus-panorama.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "약초 요리 대백과": {
+      "en": "Herbal Recipe Guide",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/herbal-recipe-guide.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "가정 요리책": {
+      "en": "Home-Recipe Book",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/home-recipe-book.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "단테 작품집": {
+      "en": "The Works of Dante",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/the-works-of-dante.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "튼튼한 배낭": {
+      "en": "Sturdy Rucksack",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/sturdy-rucksack.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "단련용 돌기둥": {
+      "en": "Training Pillar",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/training-pillar.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "정령 보드게임": {
+      "en": "Spirit Board Game",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/spirit-board-game.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "날카로운 조각도": {
+      "en": "Crafting Knives",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/crafting-knives.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "날카로운 소형 단검": {
+      "en": "Sharp Dagger",
+      "ours": "assets/gifts/gift-2.png",
+      "yuphas": "/yuphas/items/sharp-dagger.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "이국의 두꺼운 책": {
+      "en": "Thick Foreign Tome",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/thick-foreign-tome.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "무술 훈련용 추": {
+      "en": "Training Weights",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/training-weights.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "진홍색 황소 조각상": {
+      "en": "Crimson Bull Figure",
+      "ours": "assets/gifts/gift-2.png",
+      "yuphas": "/yuphas/items/crimson-bull-figure.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "비취색 표범 조각상": {
+      "en": "Jade Panther Figure",
+      "ours": "assets/gifts/gift-2.png",
+      "yuphas": "/yuphas/items/jade-panther-figure.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "포드라 홍차": {
+      "en": "Fódlan Tea",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/fodlan-tea.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "모르피스 홍차": {
+      "en": "Morfis Tea",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/morfis-tea.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "전략 원고": {
+      "en": "Strategy Manuscript",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/strategy-manuscript.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "백약의 물방울": {
+      "en": "Special “Medicine”",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/special-medicine.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "비취 홍소": {
+      "en": "Jade Ghosh",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/jade-ghosh.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "남방 홍소": {
+      "en": "Southern Ghosh",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/southern-ghosh.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "생선 눈알": {
+      "en": "Huge Fish Eyeball",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/huge-fish-eyeball.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "향긋한 창소": {
+      "en": "Aromatic Shosh",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/aromatic-shosh.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "비밀의 홍소": {
+      "en": "Secret Ghosh",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/secret-ghosh.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "창공의 창소": {
+      "en": "Blue Shosh",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "태양의 홍소": {
+      "en": "Sun Ghosh",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/sun-ghosh.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "농후 조미료": {
+      "en": "Strong Seasonings",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/strong-seasonings.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "파란 장미 꽃다발": {
+      "en": "Blue-Rose Bouquet",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/blue-rose-bouquet.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "햇창소": {
+      "en": "Young Shosh",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/young-shosh.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "숙성 창소": {
+      "en": "Mature Shosh",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/mature-shosh.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "훈련 팔찌": {
+      "en": "Training Bracelet",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/training-bracelet.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "한 쌍의 회칼": {
+      "en": "Dual Fish Knives",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/dual-fish-knives.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "채소 병절임": {
+      "en": "Pickled Vegetables",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/pickled-vegetables.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "화분 채소": {
+      "en": "Potted Vegetables",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/potted-vegetables.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "알렉토 가룸": {
+      "en": "Alecto Garum",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/alecto-garum.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "니자산 가룸": {
+      "en": "Niiza Garum",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/niiza-garum.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "야외용 조리 도구": {
+      "en": "Outdoor Cooking Set",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/outdoor-cooking-set.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "투기장 이야기 사본": {
+      "en": "Tales of the Arena",
+      "ours": "assets/gifts/gift-2.png",
+      "yuphas": "/yuphas/items/tales-of-the-arena.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "간단한 마술 도구": {
+      "en": "Magic-Trick Set",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/magic-trick-set.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "서민 요모조모": {
+      "en": "Everyday Scenes",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "살라미스 과자": {
+      "en": "Saraminian Sweets",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/saraminian-sweets.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "긴지 세르비": {
+      "en": "Ginji Cervi",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/ginji-cervi.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "순백의 세르비": {
+      "en": "Pure-White Cervi",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/pure-white-cervi.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "모조 무공 훈장": {
+      "en": "Imitation Medal",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/imitation-medal.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "동양식 귀걸이": {
+      "en": "Eastern Earrings",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/eastern-earrings.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "화려한 팔찌": {
+      "en": "Gaudy Bangle",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/gaudy-bangle.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "피부 연고": {
+      "en": "Skin Balm",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/skin-balm.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "화려한 보석 반지": {
+      "en": "Exquisite Ring",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/exquisite-ring.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "실용적인 재봉 도구": {
+      "en": "Full Sewing Kit",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/full-sewing-kit.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "주홍빛 머리장식": {
+      "en": "Red Hair Clip",
+      "ours": "assets/gifts/gift-2.png",
+      "yuphas": "/yuphas/items/red-hair-clip.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "시골 요리 모음집": {
+      "en": "Village Recipes",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/village-recipes.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "진홍빛 장미 꽃다발": {
+      "en": "Red-Rose Bouquet",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "진한 세르비": {
+      "en": "Strong Cervi",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/strong-cervi.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "숙성 건조 세르비": {
+      "en": "Mature Dried Cervi",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/mature-dried-cervi.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "유연한 낚싯대": {
+      "en": "Flexible Fishing Rod",
+      "ours": "assets/gifts/gift-1.png",
+      "yuphas": "/yuphas/items/flexible-fishing-rod.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "짐승고기와 모래벌레 진미": {
+      "en": "Meaty Delicacy",
+      "ours": null,
+      "yuphas": "/yuphas/items/meaty-delicacy.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_uncommon-v2.png"
+    },
+    "리저브": {
+      "en": "Fortify",
+      "ours": null,
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/white_magic.webp"
+    },
+    "레스트": {
+      "en": "Restore",
+      "ours": null,
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/white_magic.webp"
+    },
+    "리커버": {
+      "en": "Recover",
+      "ours": null,
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/white_magic.webp"
+    },
+    "라이브": {
+      "en": "Heal",
+      "ours": null,
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/white_magic.webp"
+    },
+    "라이아": {
+      "en": "Laia",
+      "ours": null,
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/white_magic.webp"
+    },
+    "리제네라": {
+      "en": "Regenera",
+      "ours": null,
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/white_magic.webp"
+    },
+    "레스키아": {
+      "en": "Resquia",
+      "ours": null,
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/white_magic.webp"
+    },
+    "프리즈": {
+      "en": "Freeze",
+      "ours": null,
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/white_magic.webp"
+    },
+    "버서크": {
+      "en": "Berserk",
+      "ours": null,
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/white_magic.webp"
+    },
+    "이머지스": {
+      "en": "Emergis",
+      "ours": null,
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/white_magic.webp"
+    },
+    "매직 실드": {
+      "en": "Ward",
+      "ours": null,
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/white_magic.webp"
+    },
+    "배리어": {
+      "en": "Barrier",
+      "ours": null,
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/white_magic.webp"
+    },
+    "토치": {
+      "en": "Torch",
+      "ours": null,
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/white_magic.webp"
+    },
+    "스타라이트": {
+      "en": "Starlight",
+      "ours": null,
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/white_magic.webp"
+    },
+    "오라": {
+      "en": "Aura",
+      "ours": null,
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/white_magic.webp"
+    },
+    "크레르 의뢰 강화창": {
+      "en": "Shining Spear",
+      "ours": null,
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/spear.webp"
+    },
+    "카이 9장 지급창": {
+      "en": "Star Spear",
+      "ours": null,
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/spear.webp"
+    },
+    "아스완 지참 활": {
+      "en": "Idah's Bow",
+      "ours": null,
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/bow.webp"
+    },
+    "무료 식사권": {
+      "en": "Meal Voucher",
+      "ours": null,
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "여기사와 구혼자": {
+      "en": "The Knight's Suitors",
+      "ours": null,
+      "yuphas": "/yuphas/items/the-knights-suitors.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "상인 안내서": {
+      "en": "Trader's Handbook",
+      "ours": null,
+      "yuphas": "/yuphas/items/traders-handbook.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "검은 꼬리 깃털": {
+      "en": "Black Tail Feathers",
+      "ours": null,
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_rare-v2.png"
+    },
+    "간식 상자": {
+      "en": "Box of Treats",
+      "ours": null,
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_rare-v2.png"
+    },
+    "고급 팔괘 점술 도구": {
+      "en": "Divination Bagua",
+      "ours": null,
+      "yuphas": "/yuphas/items/divination-bagua.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "비우엘라 관리 도구": {
+      "en": "Vihuela-Care Tools",
+      "ours": null,
+      "yuphas": null,
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_rare-v2.png"
+    },
+    "Salt-Crusted Ham": {
+      "en": "Salt-Crusted Ham",
+      "ours": null,
+      "yuphas": "/yuphas/meals/salt-crusted-ham.webp",
+      "yuphasTypeIcon": null
+    },
+    "Fish-Sauce Soup": {
+      "en": "Fish-Sauce Soup",
+      "ours": null,
+      "yuphas": "/yuphas/meals/fish-sauce-soup.webp",
+      "yuphasTypeIcon": null
+    },
+    "Goat Roast": {
+      "en": "Goat Roast",
+      "ours": null,
+      "yuphas": "/yuphas/meals/goat-roast.webp",
+      "yuphasTypeIcon": null
+    },
+    "Garlic-Seared Scallops": {
+      "en": "Garlic-Seared Scallops",
+      "ours": null,
+      "yuphas": "/yuphas/meals/garlic-seared-scallops.webp",
+      "yuphasTypeIcon": null
+    },
+    "Sand Boar and Beans": {
+      "en": "Sand Boar and Beans",
+      "ours": null,
+      "yuphas": "/yuphas/meals/sand-boar-and-beans.webp",
+      "yuphasTypeIcon": null
+    },
+    "Cheese-Coated Crayfish": {
+      "en": "Cheese-Coated Crayfish",
+      "ours": null,
+      "yuphas": "/yuphas/meals/cheese-coated-crayfish.webp",
+      "yuphasTypeIcon": null
+    },
+    "Charred Fish Grill": {
+      "en": "Charred Fish Grill",
+      "ours": null,
+      "yuphas": "/yuphas/meals/charred-fish-grill.webp",
+      "yuphasTypeIcon": null
+    },
+    "Eastern Board Game": {
+      "en": "Eastern Board Game",
+      "ours": null,
+      "yuphas": "/yuphas/items/eastern-board-game.webp",
+      "yuphasTypeIcon": "/yuphas/icons/items/gift_common-v2.png"
+    },
+    "Honey-Poached Pear": {
+      "en": "Honey-Poached Pear",
+      "ours": null,
+      "yuphas": "/yuphas/meals/honey-poached-pear.webp",
+      "yuphasTypeIcon": null
+    },
+    "Pumpkin Soup": {
+      "en": "Pumpkin Soup",
+      "ours": null,
+      "yuphas": "/yuphas/meals/pumpkin-soup.webp",
+      "yuphasTypeIcon": null
+    },
+    "Sweet-and-Sour Stick Bugs": {
+      "en": "Sweet-and-Sour Stick Bugs",
+      "ours": null,
+      "yuphas": "/yuphas/meals/sweet-and-sour-stick-bugs.webp",
+      "yuphasTypeIcon": null
+    },
+    "Coffee-Berry Paste": {
+      "en": "Coffee-Berry Paste",
+      "ours": null,
+      "yuphas": "/yuphas/meals/coffee-berry-paste.webp",
+      "yuphasTypeIcon": null
+    },
+    "Madazins": {
+      "en": "Madazins",
+      "ours": null,
+      "yuphas": "/yuphas/meals/madazins.webp",
+      "yuphasTypeIcon": null
+    }
+  },
+  "classes": {
+    "assets/classes/archer.webp": {
+      "female": "/yuphas/classes/female/archer.webp",
+      "male": "/yuphas/classes/male/archer.webp"
+    },
+    "assets/classes/armored-knight.webp": {
+      "female": "/yuphas/classes/female/armored-knight.webp",
+      "male": "/yuphas/classes/male/armored-knight.webp"
+    },
+    "assets/classes/armored-ornius-rider.webp": {
+      "female": "/yuphas/classes/female/armored-ornius-rider.webp",
+      "male": "/yuphas/classes/male/armored-ornius-rider.webp"
+    },
+    "assets/classes/bardinger.webp": {
+      "female": "/yuphas/classes/female/bardinger.webp",
+      "male": "/yuphas/classes/male/bardinger.webp"
+    },
+    "assets/classes/battlemaster.webp": {
+      "female": "/yuphas/classes/female/battlemaster.webp",
+      "male": "/yuphas/classes/male/battlemaster.webp"
+    },
+    "assets/classes/bau-lord.webp": {
+      "female": "/yuphas/classes/female/bau-lord.webp",
+      "male": "/yuphas/classes/male/bau-lord.webp"
+    },
+    "assets/classes/bishop.webp": {
+      "female": "/yuphas/classes/female/bishop.webp",
+      "male": "/yuphas/classes/male/bishop.webp"
+    },
+    "assets/classes/blacksmith.webp": {
+      "female": "/yuphas/classes/female/blacksmith.webp",
+      "male": "/yuphas/classes/male/blacksmith.webp"
+    },
+    "assets/classes/bow-adept.webp": {
+      "female": "/yuphas/classes/female/bow-adept.webp",
+      "male": "/yuphas/classes/male/bow-adept.webp"
+    },
+    "assets/classes/bow-knight.webp": {
+      "female": "/yuphas/classes/female/bow-knight.webp",
+      "male": "/yuphas/classes/male/bow-knight.webp"
+    },
+    "assets/classes/brigand.webp": {
+      "female": "/yuphas/classes/female/brigand.webp",
+      "male": "/yuphas/classes/male/brigand.webp"
+    },
+    "assets/classes/caladrius.webp": {
+      "female": "/yuphas/classes/female/caladrius.webp",
+      "male": "/yuphas/classes/male/caladrius.webp"
+    },
+    "assets/classes/castle-knight.webp": {
+      "female": "/yuphas/classes/female/castle-knight.webp",
+      "male": "/yuphas/classes/male/castle-knight.webp"
+    },
+    "assets/classes/cataphract.webp": {
+      "female": "/yuphas/classes/female/cataphract.webp",
+      "male": "/yuphas/classes/male/cataphract.webp"
+    },
+    "assets/classes/celestial-trooper.webp": {
+      "female": "/yuphas/classes/female/celestial-trooper.webp",
+      "male": null
+    },
+    "assets/classes/charioteer.webp": {
+      "female": "/yuphas/classes/female/charioteer.webp",
+      "male": "/yuphas/classes/male/charioteer.webp"
+    },
+    "assets/classes/dancer.webp": {
+      "female": "/yuphas/classes/female/dancer.webp",
+      "male": "/yuphas/classes/male/dancer.webp"
+    },
+    "assets/classes/diviner.webp": {
+      "female": "/yuphas/classes/female/diviner.webp",
+      "male": "/yuphas/classes/male/diviner.webp"
+    },
+    "assets/classes/dragoon.webp": {
+      "female": "/yuphas/classes/female/dragoon.webp",
+      "male": "/yuphas/classes/male/dragoon.webp"
+    },
+    "assets/classes/dreadnought.webp": {
+      "female": "/yuphas/classes/female/dreadnought.webp",
+      "male": "/yuphas/classes/male/dreadnought.webp"
+    },
+    "assets/classes/druid.webp": {
+      "female": "/yuphas/classes/female/druid.webp",
+      "male": "/yuphas/classes/male/druid.webp"
+    },
+    "assets/classes/elephant-rider.webp": {
+      "female": "/yuphas/classes/female/elephant-rider.webp",
+      "male": "/yuphas/classes/male/elephant-rider.webp"
+    },
+    "assets/classes/forest-knight.webp": {
+      "female": "/yuphas/classes/female/forest-knight.webp",
+      "male": "/yuphas/classes/male/forest-knight.webp"
+    },
+    "assets/classes/gladiator.webp": {
+      "female": "/yuphas/classes/female/gladiator.webp",
+      "male": "/yuphas/classes/male/gladiator.webp"
+    },
+    "assets/classes/great-knight.webp": {
+      "female": "/yuphas/classes/female/great-knight.webp",
+      "male": "/yuphas/classes/male/great-knight.webp"
+    },
+    "assets/classes/guardian.webp": {
+      "female": "/yuphas/classes/female/guardian.webp",
+      "male": "/yuphas/classes/male/guardian.webp"
+    },
+    "assets/classes/high-savant.webp": {
+      "female": "/yuphas/classes/female/high-savant.webp",
+      "male": "/yuphas/classes/male/high-savant.webp"
+    },
+    "assets/classes/hunter.webp": {
+      "female": "/yuphas/classes/female/hunter.webp",
+      "male": "/yuphas/classes/male/hunter.webp"
+    },
+    "assets/classes/light-cavalry.webp": {
+      "female": "/yuphas/classes/female/light-cavalry.webp",
+      "male": "/yuphas/classes/male/light-cavalry.webp"
+    },
+    "assets/classes/myrmidon.webp": {
+      "female": "/yuphas/classes/female/myrmidon.webp",
+      "male": "/yuphas/classes/male/myrmidon.webp"
+    },
+    "assets/classes/orichalda.webp": {
+      "female": "/yuphas/classes/female/orichaldia.webp",
+      "male": "/yuphas/classes/male/orichaldia.webp",
+      "note": "우리 orichalda = yuphastemple Orichaldia(이름 일치 미확인, name-review.md)"
+    },
+    "assets/classes/ornius-rider.webp": {
+      "female": "/yuphas/classes/female/ornius-rider.webp",
+      "male": "/yuphas/classes/male/ornius-rider.webp"
+    },
+    "assets/classes/ovate.webp": {
+      "female": "/yuphas/classes/female/ovate.webp",
+      "male": "/yuphas/classes/male/ovate.webp"
+    },
+    "assets/classes/priest.webp": {
+      "female": "/yuphas/classes/female/priest.webp",
+      "male": "/yuphas/classes/male/priest.webp"
+    },
+    "assets/classes/pugilist.webp": {
+      "female": "/yuphas/classes/female/pugilist.webp",
+      "male": "/yuphas/classes/male/pugilist.webp"
+    },
+    "assets/classes/ranger.webp": {
+      "female": "/yuphas/classes/female/ranger.webp",
+      "male": "/yuphas/classes/male/ranger.webp"
+    },
+    "assets/classes/rogue.webp": {
+      "female": "/yuphas/classes/female/rogue.webp",
+      "male": "/yuphas/classes/male/rogue.webp"
+    },
+    "assets/classes/sentinel.webp": {
+      "female": "/yuphas/classes/female/sentinel.webp",
+      "male": "/yuphas/classes/male/sentinel.webp"
+    },
+    "assets/classes/shadow-seeker.webp": {
+      "female": "/yuphas/classes/female/shadow-seeker.webp",
+      "male": "/yuphas/classes/male/shadow-seeker.webp"
+    },
+    "assets/classes/shaman.webp": {
+      "female": "/yuphas/classes/female/shaman.webp",
+      "male": "/yuphas/classes/male/shaman.webp"
+    },
+    "assets/classes/shido.webp": {
+      "female": "/yuphas/classes/female/shido.webp",
+      "male": "/yuphas/classes/male/shido.webp"
+    },
+    "assets/classes/sniper.webp": {
+      "female": "/yuphas/classes/female/sniper.webp",
+      "male": "/yuphas/classes/male/sniper.webp"
+    },
+    "assets/classes/soldier.webp": {
+      "female": "/yuphas/classes/female/soldier.webp",
+      "male": "/yuphas/classes/male/soldier.webp"
+    },
+    "assets/classes/swordmaster.webp": {
+      "female": "/yuphas/classes/female/swordmaster.webp",
+      "male": "/yuphas/classes/male/swordmaster.webp"
+    },
+    "assets/classes/the-apsara.webp": {
+      "female": "/yuphas/classes/female/the-apsara.webp",
+      "male": "/yuphas/classes/male/the-apsara.webp"
+    },
+    "assets/classes/the-avatar.webp": {
+      "female": "/yuphas/classes/female/the-avatar.webp",
+      "male": "/yuphas/classes/male/the-avatar.webp"
+    },
+    "assets/classes/the-blade.webp": {
+      "female": "/yuphas/classes/female/the-blade.webp",
+      "male": "/yuphas/classes/male/the-blade.webp"
+    },
+    "assets/classes/the-calamity.webp": {
+      "female": "/yuphas/classes/female/the-calamity.webp",
+      "male": "/yuphas/classes/male/the-calamity.webp"
+    },
+    "assets/classes/the-cavalier.webp": {
+      "female": "/yuphas/classes/female/the-cavalier.webp",
+      "male": "/yuphas/classes/male/the-cavalier.webp"
+    },
+    "assets/classes/the-eternal.webp": {
+      "female": "/yuphas/classes/female/the-eternal.webp",
+      "male": "/yuphas/classes/male/the-eternal.webp"
+    },
+    "assets/classes/the-godhand.webp": {
+      "female": "/yuphas/classes/female/the-godhand.webp",
+      "male": "/yuphas/classes/male/the-godhand.webp"
+    },
+    "assets/classes/the-trident.webp": {
+      "female": "/yuphas/classes/female/the-trident.webp",
+      "male": "/yuphas/classes/male/the-trident.webp"
+    },
+    "assets/classes/troubadour.webp": {
+      "female": "/yuphas/classes/female/troubadour.webp",
+      "male": "/yuphas/classes/male/troubadour.webp"
+    },
+    "assets/classes/valkyrium.webp": {
+      "female": "/yuphas/classes/female/valkyrium.webp",
+      "male": "/yuphas/classes/male/valkyrium.webp"
+    },
+    "assets/classes/war-monk.webp": {
+      "female": "/yuphas/classes/female/war-monk.webp",
+      "male": "/yuphas/classes/male/war-monk.webp"
+    },
+    "assets/classes/warrior.webp": {
+      "female": "/yuphas/classes/female/warrior.webp",
+      "male": "/yuphas/classes/male/warrior.webp"
+    },
+    "assets/classes/wing-soldier.webp": {
+      "female": "/yuphas/classes/female/wing-soldier.webp",
+      "male": null
+    },
+    "assets/classes/wiseman.webp": {
+      "female": "/yuphas/classes/female/wiseman.webp",
+      "male": "/yuphas/classes/male/wiseman.webp"
+    }
+  },
+  "skills": {
+    "assets/skills/sword.webp": {
+      "plain": "/yuphas/icons/skills/sword.png",
+      "boon": "/yuphas/icons/skills/sword_boon.png",
+      "bane": "/yuphas/icons/skills/sword_bane.png"
+    },
+    "assets/skills/lance.webp": {
+      "plain": "/yuphas/icons/skills/spear.png",
+      "boon": "/yuphas/icons/skills/spear_boon.png",
+      "bane": "/yuphas/icons/skills/spear_bane.png"
+    },
+    "assets/skills/axe.webp": {
+      "plain": "/yuphas/icons/skills/axe.png",
+      "boon": "/yuphas/icons/skills/axe_boon.png",
+      "bane": "/yuphas/icons/skills/axe_bane.png"
+    },
+    "assets/skills/bow.webp": {
+      "plain": "/yuphas/icons/skills/bow.png",
+      "boon": "/yuphas/icons/skills/bow_boon.png",
+      "bane": "/yuphas/icons/skills/bow_bane.png"
+    },
+    "assets/skills/brawl.webp": {
+      "plain": "/yuphas/icons/skills/gauntlet.png",
+      "boon": "/yuphas/icons/skills/gauntlet_boon.png",
+      "bane": "/yuphas/icons/skills/gauntlet_bane.png"
+    },
+    "assets/skills/black-magic.webp": {
+      "plain": "/yuphas/icons/skills/black_magic.png",
+      "boon": "/yuphas/icons/skills/black_magic_boon.png",
+      "bane": "/yuphas/icons/skills/black_magic_bane.png"
+    },
+    "assets/skills/white-magic.webp": {
+      "plain": "/yuphas/icons/skills/white_magic.png",
+      "boon": "/yuphas/icons/skills/white_magic_boon.png",
+      "bane": "/yuphas/icons/skills/white_magic_bane.png"
+    },
+    "assets/skills/authority.webp": {
+      "plain": "/yuphas/icons/skills/authority.png",
+      "boon": "/yuphas/icons/skills/authority_boon.png",
+      "bane": "/yuphas/icons/skills/authority_bane.png"
+    },
+    "assets/skills/infantry.webp": {
+      "plain": "/yuphas/icons/skills/infantry.png",
+      "boon": "/yuphas/icons/skills/infantry_boon.png",
+      "bane": "/yuphas/icons/skills/infantry_bane.png",
+      "flat": "/yuphas/icons/skills/infantry-flat.png"
+    },
+    "assets/skills/riding.webp": {
+      "plain": "/yuphas/icons/skills/riding.png",
+      "boon": "/yuphas/icons/skills/riding_boon.png",
+      "bane": "/yuphas/icons/skills/riding_bane.png",
+      "flat": "/yuphas/icons/skills/riding-flat.png"
+    },
+    "assets/skills/armor.webp": {
+      "plain": "/yuphas/icons/skills/armor.png",
+      "boon": "/yuphas/icons/skills/armor_boon.png",
+      "bane": "/yuphas/icons/skills/armor_bane.png",
+      "flat": "/yuphas/icons/skills/armor-flat.png"
+    },
+    "assets/skills/flying.webp": {
+      "plain": "/yuphas/icons/skills/flying.png",
+      "boon": "/yuphas/icons/skills/flying_boon.png",
+      "bane": "/yuphas/icons/skills/flying_bane.png",
+      "flat": "/yuphas/icons/skills/flying-flat.png"
+    }
+  },
+  "emblems": {
+    "assets/design/emblems/cai.webp": {
+      "faction": "Ribeira Winds",
+      "yuphas": "/yuphas/emblems/ribeira-winds.webp",
+      "note": "우리 그림은 닌텐도 공식 클랜 문장(글자 포함), yuphastemple 그림은 게임 안 소속 문장"
+    },
+    "assets/design/emblems/dietrich.webp": {
+      "faction": "House Lamine",
+      "yuphas": "/yuphas/emblems/house-lamine.webp",
+      "note": "우리 그림은 닌텐도 공식 클랜 문장(글자 포함), yuphastemple 그림은 게임 안 소속 문장"
+    },
+    "assets/design/emblems/theodora.webp": {
+      "faction": "Megaira's Beacon",
+      "yuphas": "/yuphas/emblems/megairas-beacon.webp",
+      "note": "우리 그림은 닌텐도 공식 클랜 문장(글자 포함), yuphastemple 그림은 게임 안 소속 문장"
+    },
+    "assets/design/emblems/leda.webp": {
+      "faction": "Rose Tempest",
+      "yuphas": "/yuphas/emblems/rose-tempest.webp",
+      "note": "우리 그림은 닌텐도 공식 클랜 문장(글자 포함), yuphastemple 그림은 게임 안 소속 문장"
+    }
+  },
+  "extra": {
+    "emblems": [
+      "/yuphas/emblems/anatolias-army.webp",
+      "/yuphas/emblems/aragonian-army.webp",
+      "/yuphas/emblems/bandits.webp",
+      "/yuphas/emblems/bertrands-army.webp",
+      "/yuphas/emblems/brigid-army.webp",
+      "/yuphas/emblems/house-lamine.webp",
+      "/yuphas/emblems/linaria-dewdrops.webp",
+      "/yuphas/emblems/megairas-beacon.webp",
+      "/yuphas/emblems/mosa-army.webp",
+      "/yuphas/emblems/neutral.webp",
+      "/yuphas/emblems/promised-ones-army.webp",
+      "/yuphas/emblems/ribeira-winds.webp",
+      "/yuphas/emblems/rose-tempest.webp",
+      "/yuphas/emblems/tale-of-the-moon.webp",
+      "/yuphas/emblems/temple-army.webp"
+    ],
+    "mounts": [
+      "/yuphas/mounts/black-bau.webp",
+      "/yuphas/mounts/black-horse.webp",
+      "/yuphas/mounts/black-magonius.webp",
+      "/yuphas/mounts/bucephalus.webp",
+      "/yuphas/mounts/dark-pegasus.webp",
+      "/yuphas/mounts/falicorn.webp",
+      "/yuphas/mounts/ferghanan-horse.webp",
+      "/yuphas/mounts/magonius.webp",
+      "/yuphas/mounts/meganius.webp",
+      "/yuphas/mounts/monoceros.webp",
+      "/yuphas/mounts/red-bau.webp",
+      "/yuphas/mounts/red-falicorn.webp",
+      "/yuphas/mounts/red-meganius.webp",
+      "/yuphas/mounts/rocinan.webp",
+      "/yuphas/mounts/saramis-war-elephant.webp",
+      "/yuphas/mounts/species-bau.png",
+      "/yuphas/mounts/species-elephant.png",
+      "/yuphas/mounts/species-horse.png",
+      "/yuphas/mounts/species-ornius.png",
+      "/yuphas/mounts/species-pegasus.png",
+      "/yuphas/mounts/white-ornius.webp",
+      "/yuphas/mounts/wild-bau.webp",
+      "/yuphas/mounts/wild-horse.webp",
+      "/yuphas/mounts/wild-ornius.webp",
+      "/yuphas/mounts/wild-pegasus.webp"
+    ],
+    "meals": [
+      "/yuphas/meals/charred-fish-grill.webp",
+      "/yuphas/meals/cheese-coated-crayfish.webp",
+      "/yuphas/meals/coffee-berry-paste.webp",
+      "/yuphas/meals/fish-sauce-soup.webp",
+      "/yuphas/meals/garlic-seared-scallops.webp",
+      "/yuphas/meals/goat-roast.webp",
+      "/yuphas/meals/honey-poached-pear.webp",
+      "/yuphas/meals/madazins.webp",
+      "/yuphas/meals/pumpkin-soup.webp",
+      "/yuphas/meals/salt-crusted-ham.webp",
+      "/yuphas/meals/sand-boar-and-beans.webp",
+      "/yuphas/meals/sweet-and-sour-stick-bugs.webp"
+    ],
+    "artIcons": [
+      "/yuphas/icons/arts/assist.png",
+      "/yuphas/icons/arts/axe.png",
+      "/yuphas/icons/arts/bow.png",
+      "/yuphas/icons/arts/gauntlet.png",
+      "/yuphas/icons/arts/spear.png",
+      "/yuphas/icons/arts/sword.png"
+    ],
+    "itemTypeIcons": [
+      "/yuphas/icons/items/axe.webp",
+      "/yuphas/icons/items/battalion_physical.webp",
+      "/yuphas/icons/items/black_magic.webp",
+      "/yuphas/icons/items/bow.webp",
+      "/yuphas/icons/items/building_materials.png",
+      "/yuphas/icons/items/crate.webp",
+      "/yuphas/icons/items/elixir.webp",
+      "/yuphas/icons/items/fish_common-v2.png",
+      "/yuphas/icons/items/fish_rare-v2.png",
+      "/yuphas/icons/items/fish_uncommon-v2.png",
+      "/yuphas/icons/items/gauntlets.webp",
+      "/yuphas/icons/items/gift_common-v2.png",
+      "/yuphas/icons/items/gift_rare-v2.png",
+      "/yuphas/icons/items/gift_uncommon-v2.png",
+      "/yuphas/icons/items/key.png",
+      "/yuphas/icons/items/link.webp",
+      "/yuphas/icons/items/magic_echo_shard.png",
+      "/yuphas/icons/items/mask.webp",
+      "/yuphas/icons/items/material_box.png",
+      "/yuphas/icons/items/meat_common-v2.png",
+      "/yuphas/icons/items/meat_rare-v2.png",
+      "/yuphas/icons/items/meat_uncommon-v2.png",
+      "/yuphas/icons/items/ore_common-v2.png",
+      "/yuphas/icons/items/ore_rare-v2.png",
+      "/yuphas/icons/items/ore_uncommon-v2.png",
+      "/yuphas/icons/items/quest_item.png",
+      "/yuphas/icons/items/ring.webp",
+      "/yuphas/icons/items/shield.webp",
+      "/yuphas/icons/items/spear.webp",
+      "/yuphas/icons/items/staff.webp",
+      "/yuphas/icons/items/sword.webp",
+      "/yuphas/icons/items/treasure-v2.png",
+      "/yuphas/icons/items/treasure_rare-v2.png",
+      "/yuphas/icons/items/treasure_very_rare-v2.png",
+      "/yuphas/icons/items/uai_blood-pattern-v2.png",
+      "/yuphas/icons/items/uai_dhabas-compass-v2.png",
+      "/yuphas/icons/items/uai_ink-black-wen-v2.png",
+      "/yuphas/icons/items/uai_leaders-heart-core-v2.png",
+      "/yuphas/icons/items/uai_mahadus-right-arm-v2.png",
+      "/yuphas/icons/items/uai_mysterious-form-v2.png",
+      "/yuphas/icons/items/uai_obsidian-v2.png",
+      "/yuphas/icons/items/uai_red-jewel-v2.png",
+      "/yuphas/icons/items/uai_seven-star-engine-v2.png",
+      "/yuphas/icons/items/vegetable_common-v2.png",
+      "/yuphas/icons/items/vegetable_rare-v2.png",
+      "/yuphas/icons/items/vegetable_uncommon-v2.png",
+      "/yuphas/icons/items/white_magic.webp"
+    ],
+    "uiIcons": [
+      "/yuphas/icons/ui/foodHeaders-bad.png",
+      "/yuphas/icons/ui/foodHeaders-good.png",
+      "/yuphas/icons/ui/foodHeaders-great.png",
+      "/yuphas/icons/ui/gifts-giftLiked.png",
+      "/yuphas/icons/ui/gifts-giftLoved.png"
+    ],
+    "note": "지금 우리에게 맞는 그림이 없는 새 그림(탈것·음식·기술 종류·선물 반응 머리 등)"
+  },
+  "noReplacement": [
+    "assets/portraits/post-timeskip/theodora.png",
+    "assets/portraits/post-timeskip/bonaventure.png",
+    "assets/portraits/post-timeskip/tobias.png",
+    "assets/portraits/post-timeskip/lysander.png",
+    "assets/portraits/post-timeskip/lilian.png",
+    "assets/portraits/post-timeskip/sofia.png",
+    "assets/portraits/post-timeskip/noctula.png",
+    "assets/portraits/post-timeskip/sirocco.png",
+    "assets/portraits/post-timeskip/dadao.png",
+    "assets/portraits/post-timeskip/nydine.png",
+    "assets/portraits/post-timeskip/loretta.png",
+    "assets/portraits/post-timeskip/nezha.png",
+    "assets/portraits/post-timeskip/dante.png",
+    "assets/portraits/post-timeskip/seteth.png",
+    "assets/portraits/post-timeskip/ultand.png",
+    "assets/portraits/post-timeskip/peppe.png",
+    "assets/portraits/post-timeskip/ludia.png",
+    "assets/portraits/post-timeskip/simon.png",
+    "assets/portraits/post-timeskip/catania.png",
+    "assets/portraits/post-timeskip/peter.png",
+    "assets/portraits/post-timeskip/halvin.png",
+    "assets/portraits/post-timeskip/diego.png",
+    "assets/portraits/post-timeskip/mikaela.png",
+    "assets/portraits/post-timeskip/buccar.png",
+    "assets/portraits/post-timeskip/goliath.png",
+    "assets/portraits/post-timeskip/mu.png",
+    "assets/portraits/post-timeskip/esmeralda.png",
+    "assets/portraits/post-timeskip/olympia.png",
+    "assets/portraits/post-timeskip/ursula.png",
+    "assets/portraits/post-timeskip/fianna.png",
+    "assets/portraits/post-timeskip/io.png",
+    "assets/portraits/post-timeskip/tialla.png",
+    "assets/portraits/post-timeskip/alexandra.png",
+    "assets/portraits/post-timeskip/inyoni.png",
+    "assets/portraits/post-timeskip/leda.png",
+    "assets/portraits/post-timeskip/sha-lan.png",
+    "assets/portraits/post-timeskip/dietrich.png",
+    "assets/portraits/post-timeskip/gaitz.png",
+    "assets/portraits/post-timeskip/cai.png",
+    "assets/portraits/post-timeskip/bertrand.png",
+    "assets/portraits/post-timeskip/anatolia.png",
+    "assets/portraits/post-timeskip/orchel.png",
+    "assets/portraits/post-timeskip/talimun.png"
+  ]
+}

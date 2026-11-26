@@ -1,0 +1,206 @@
+{
+ "note": "scripts/yuphas/class-moves.mjs가 yuphastemple data.json에서 만든 표(병종 슬러그 → 이동 아이콘).",
+ "classes": {
+  "commoner": [
+   "infantry"
+  ],
+  "noble": [
+   "infantry"
+  ],
+  "god": [
+   "infantry"
+  ],
+  "gladiator": [
+   "infantry"
+  ],
+  "hunter": [
+   "infantry"
+  ],
+  "soldier": [
+   "infantry",
+   "armor"
+  ],
+  "ornius-rider": [
+   "riding"
+  ],
+  "diviner": [
+   "infantry"
+  ],
+  "myrmidon": [
+   "infantry"
+  ],
+  "brigand": [
+   "infantry"
+  ],
+  "pugilist": [
+   "infantry"
+  ],
+  "archer": [
+   "infantry"
+  ],
+  "rogue": [
+   "infantry"
+  ],
+  "armored-knight": [
+   "infantry",
+   "armor"
+  ],
+  "light-cavalry": [
+   "riding"
+  ],
+  "charioteer": [
+   "riding"
+  ],
+  "armored-ornius-rider": [
+   "riding"
+  ],
+  "wing-soldier": [
+   "flying"
+  ],
+  "shaman": [
+   "infantry"
+  ],
+  "priest": [
+   "infantry"
+  ],
+  "shido": [
+   "infantry"
+  ],
+  "dancer": [
+   "infantry"
+  ],
+  "warrior": [
+   "infantry"
+  ],
+  "blacksmith": [
+   "infantry"
+  ],
+  "sniper": [
+   "infantry"
+  ],
+  "forest-knight": [
+   "riding"
+  ],
+  "ranger": [
+   "infantry"
+  ],
+  "guardian": [
+   "infantry"
+  ],
+  "dreadnought": [
+   "infantry",
+   "armor"
+  ],
+  "bardinger": [
+   "riding"
+  ],
+  "cataphract": [
+   "riding",
+   "armor"
+  ],
+  "caladrius": [
+   "riding"
+  ],
+  "elephant-rider": [
+   "riding"
+  ],
+  "dragoon": [
+   "flying"
+  ],
+  "ovate": [
+   "infantry"
+  ],
+  "bishop": [
+   "infantry"
+  ],
+  "troubadour": [
+   "riding"
+  ],
+  "swordmaster": [
+   "infantry"
+  ],
+  "high-savant": [
+   "riding"
+  ],
+  "battlemaster": [
+   "infantry"
+  ],
+  "war-monk": [
+   "infantry"
+  ],
+  "bow-adept": [
+   "infantry"
+  ],
+  "bow-knight": [
+   "riding"
+  ],
+  "shadow-seeker": [
+   "infantry"
+  ],
+  "sentinel": [
+   "infantry"
+  ],
+  "castle-knight": [
+   "infantry",
+   "armor"
+  ],
+  "orichaldia": [
+   "riding"
+  ],
+  "great-knight": [
+   "riding",
+   "armor"
+  ],
+  "celestial-trooper": [
+   "flying"
+  ],
+  "bau-lord": [
+   "flying"
+  ],
+  "druid": [
+   "infantry"
+  ],
+  "wiseman": [
+   "infantry"
+  ],
+  "valkyrium": [
+   "riding"
+  ],
+  "the-blade": [
+   "infantry"
+  ],
+  "the-apsara": [
+   "infantry"
+  ],
+  "the-eternal": [
+   "infantry"
+  ],
+  "the-godhand": [
+   "infantry"
+  ],
+  "the-calamity": [
+   "infantry"
+  ],
+  "the-trident": [
+   "infantry"
+  ],
+  "the-cavalier": [
+   "riding"
+  ],
+  "the-avatar": [
+   "infantry"
+  ],
+  "awakened": [
+   "infantry"
+  ],
+  "badhbh-cath": [
+   "flying"
+  ],
+  "seere": [
+   "riding"
+  ],
+  "trickster": [
+   "infantry"
+  ]
+ }
+}
