@@ -1,5 +1,5 @@
 // 2026-11-15 내 상태 검사: 새 브라우저에서 축복 단계를 올리면 해당 구매 체크가 자동 완료(눌러 바꿀 수 없음)되고,
-// 사용자 규칙: [U25] 내 상태(축복·가호·파편·골드) 편집·가져오기 · [U35] 가져오는 동안 화면 전체를 막는 창과 돌아가는 표시.
+// 사용자 규칙: [U25] 내 상태(축복·가호·파편·골드) 편집·가져오기 · [U72] 인물 육성 기록 · [U35] 가져오는 동안 화면 전체를 막는 창과 돌아가는 표시.
 // 내보내기 파일에 status가 들어가며, 지우기 뒤 가져오기로 되돌아온다. 서랍은 폰·태블릿·데스크톱(어두운 화면만, 2026-11-27)에서 넘치지 않는다.
 import { chromium } from '@playwright/test';
 import { resolve } from 'node:path';
@@ -67,5 +67,62 @@ try {
     }
     n++; await ctx.close();
   }
-  console.log(`통과: 내 상태 ${n}개 화면`);
+  // [U72] 인물 육성 기록(2026-11-27): 서랍 '내 기록' 입력·저장·내보내기·가져오기·기록 지우기·루트별 분리.
+  // 체크 칸을 누르고 저장소를 비우는 단계라 사용자 실제 기록이 있는 3000번 서버에서는 멈춘다(P05, Fable 검토 14).
+  if (/localhost:3000|127\.0\.0\.1:3000/.test(base)) throw new Error('[U72] 육성 기록 검사는 localhost:3000(사용자 미리보기)에서 돌리지 않습니다. BROWSER_BASE_URL에 검사용 서버를 주세요.');
+  {
+    const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 }, acceptDownloads: true }); const p = await ctx.newPage(); p.on('dialog', d => d.accept());
+    const KEY = 'fortunes-weave-checklist-v1', stored = async () => JSON.parse(await p.evaluate(k => localStorage.getItem(k), KEY));
+    const nav = (v) => p.getByRole('navigation', { name: '공략 화면' }).getByRole('button', { name: v, exact: true });
+    const openSheet = async (route, name) => { await p.goto(base + route); await p.locator('.route-head').waitFor(); await p.waitForTimeout(400); await nav('인물').click(); await p.locator(`.person-card[data-person="${name}"] .person-card-open`).click(); const d = p.getByRole('dialog'); await d.waitFor(); await d.locator('[data-build-editor] select:not([disabled])').first().waitFor(); return d; };
+    let d = await openSheet('/theodora/1/', '세오도라');
+    const lv = d.getByLabel('레벨(1~99)');
+    await lv.fill('0'); await lv.press('Tab'); assert.equal(await lv.inputValue(), '1', '[U72] 레벨 0 → 1');
+    await lv.focus(); await lv.press('ArrowUp'); await p.waitForTimeout(100); assert.equal(await lv.inputValue(), '2', '[U72] ↑ 키로 +1');
+    await lv.fill('99'); await lv.press('Enter'); await d.getByRole('button', { name: '레벨 올리기' }).click(); assert.equal(await lv.inputValue(), '99', '[U72] 99 위로 안 감');
+    await lv.fill('22'); await lv.press('Enter');
+    await d.getByLabel('창술 등급', { exact: true }).selectOption('C'); await d.getByLabel(/^메모/).fill('검사 메모'); await d.getByLabel(/^메모/).press('Tab'); await p.waitForTimeout(200);
+    assert.deepEqual((await stored()).builds, { theodora: { theodora: { level: 22, skills: { spear: 'C' }, note: '검사 메모' } } }, '[U72] 저장 값');
+    assert.ok(await d.locator('[data-character-header] .y-skill-rank').count() === 1 && /Lv 22/.test(await d.locator('[data-character-header] .y-card-class').textContent()), '[U72] 머리 카드에 레벨·등급');
+    // 등급 칸: 320px에서 S+가 칸 안에 들어간다(화살표 없음, Fable 검토 7).
+    await p.setViewportSize({ width: 320, height: 640 }); await d.getByLabel('창술 등급', { exact: true }).selectOption('S+');
+    const sel = await d.getByLabel('창술 등급', { exact: true }).evaluate(e => ({ fit: e.scrollWidth <= e.clientWidth, h: e.getBoundingClientRect().height, w: e.getBoundingClientRect().width, font: getComputedStyle(e).fontSize, ap: getComputedStyle(e).appearance }));
+    assert.ok(sel.fit && sel.h >= 32 && Math.round(sel.w) === 44 && sel.font === '16px' && sel.ap === 'none', '[U72] 등급 칸 ' + JSON.stringify(sel));
+    assert.ok(await p.evaluate(() => document.documentElement.scrollWidth <= innerWidth), '[U72] 320 서랍 가로 넘침');
+    await d.getByLabel('창술 등급', { exact: true }).selectOption('C'); await p.setViewportSize({ width: 1440, height: 900 });
+    await p.keyboard.press('Escape');
+    // 새로 고친 뒤 유지, 체크 칸을 눌러도 육성 기록 유지.
+    await p.reload(); await p.locator('.route-head').waitFor(); await p.waitForTimeout(400);
+    await p.locator('.checklist input[type=checkbox]:not([disabled])').first().check(); await p.waitForTimeout(200);
+    assert.equal((await stored()).builds?.theodora?.theodora?.level, 22, '[U72] 체크 뒤 육성 기록 유지');
+    // 내보내기 파일에 builds. 저장소를 비우고 그 파일을 가져오면(서랍을 연 채로도) 화면이 돌아온다.
+    await p.locator('.route-head .backup-menu summary').click();
+    const [dl] = await Promise.all([p.waitForEvent('download'), p.getByRole('button', { name: '내보내기' }).click()]);
+    const exported = JSON.parse(readFileSync(await dl.path(), 'utf8')); assert.deepEqual(exported.builds?.theodora?.theodora, { level: 22, skills: { spear: 'C' }, note: '검사 메모' }, '[U72] 내보내기에 builds');
+    // '기록 지우기'는 체크·내 상태만 지운다.
+    await p.getByRole('button', { name: '기록 지우기' }).click(); await p.waitForTimeout(200);
+    const cleared = await stored(); assert.deepEqual(cleared.checks, {}, '[U72] 기록 지우기 체크'); assert.equal(cleared.builds?.theodora?.theodora?.level, 22, '[U72] 기록 지우기 뒤 육성 기록 유지');
+    // builds 없는 파일 가져오기 → 체크는 파일 것, 육성 기록 유지. builds: {}도 같다.
+    for (const [name, extra] of [['old.json', {}], ['empty.json', { builds: {} }]]) {
+      await p.locator('.route-head .backup-menu input[type=file]').setInputFiles({ name, mimeType: 'application/json', buffer: Buffer.from(JSON.stringify({ schemaVersion: 1, revision: 1, checks: { 'imported-check': true }, ...extra })) });
+      await p.locator('dialog.import-overlay').waitFor({ state: 'hidden' }); await p.waitForTimeout(200);
+      const s = await stored(); assert.ok(s.checks['imported-check'] === true && s.builds?.theodora?.theodora?.level === 22, `[U72] ${name} 가져오기 뒤 육성 기록 유지 ${JSON.stringify(s.builds)}`);
+    }
+    // 저장소를 비운 뒤 내보낸 파일 가져오기 → 서랍을 연 채로 레벨 칸이 따라온다(Fable 검토 11).
+    await p.evaluate(k => localStorage.removeItem(k), KEY); await p.reload(); await p.locator('.route-head').waitFor(); await p.waitForTimeout(400);
+    d = await openSheet('/theodora/1/', '세오도라'); assert.equal(await d.getByLabel('레벨(1~99)').inputValue(), '', '[U72] 빈 저장소 레벨 빈칸');
+    await p.keyboard.press('Escape'); await nav('할 일').click(); await p.locator('.route-head .backup-menu summary').click();
+    await p.locator('.route-head .backup-menu input[type=file]').setInputFiles(await dl.path()); await p.locator('dialog.import-overlay').waitFor({ state: 'hidden' });
+    await nav('인물').click(); await p.locator('.person-card[data-person="세오도라"] .person-card-open').click(); d = p.getByRole('dialog'); await d.waitFor();
+    assert.equal(await d.getByLabel('레벨(1~99)').inputValue(), '22', '[U72] 가져온 뒤 서랍 복원'); assert.equal(await d.getByLabel('창술 등급', { exact: true }).inputValue(), 'C');
+    await p.keyboard.press('Escape');
+    // 1·2부는 한 기록, 다른 루트·3부는 따로(Q4).
+    d = await openSheet('/theodora/2/', '세오도라'); assert.equal(await d.getByLabel('레벨(1~99)').inputValue(), '22', '[U72] 2부도 같은 기록');
+    await p.keyboard.press('Escape');
+    await p.goto(base + '/part3/3/'); await p.locator('.route-head').waitFor(); await nav('인물').click(); await p.locator('.person-card:has(.y-card-en) .person-card-open').first().click(); d = p.getByRole('dialog'); await d.waitFor();
+    assert.equal(await d.getByLabel('레벨(1~99)').inputValue(), '', '[U72] 3부는 따로');
+    await p.keyboard.press('Escape');
+    n++; await ctx.close();
+  }
+  console.log(`통과: 내 상태·육성 기록 ${n}개 화면`);
 } finally { await browser.close(); }

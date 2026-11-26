@@ -1055,6 +1055,32 @@ html.dark body:has(.app-shell),html.dark body:has(.team-page),html.dark body:has
 .prep-links{display:flex;flex-wrap:wrap;gap:8px}.prep-links>*{min-block-size:36px}
 @media(max-width:999px){.prep-content{grid-template-columns:minmax(0,1fr)}}
 @media(max-width:359px){.god-tiles{grid-template-columns:repeat(3,minmax(0,1fr))}}
+/* 고침 F(2026-11-27, U72): 인물 서랍 '내 기록' — 병종 단추·레벨 칸·숙련 등급 6×2·메모. 입력 글자 16px(휴대폰 Safari 확대 방지), 누를 곳 32px 이상. */
+.build-editor{display:grid;gap:10px;margin-block-end:16px}
+.build-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px}
+.build-class{display:inline-flex;align-items:center;gap:6px;min-block-size:40px;padding:0 10px 0 4px;border:2px solid #39484F;background:#192D34;color:var(--text);font-size:16px;cursor:pointer;max-inline-size:100%}
+.build-class:hover:not(:disabled){background:#3B453A;border-color:#60593E}
+.build-class:not([data-recorded]){color:#ACAAB9}
+.build-class>img:first-child{inline-size:36px;block-size:36px;image-rendering:pixelated;object-fit:contain}
+.build-class .y-move-icon{inline-size:18px;block-size:18px}
+.build-class>span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.build-level{display:inline-flex;align-items:center;gap:6px;font-weight:700}
+.build-level input{inline-size:44px;block-size:36px;padding:0;border:1px solid #383D38;background:transparent;color:var(--text);font-size:16px;text-align:center}
+.build-steps{display:inline-flex;flex-direction:column;gap:2px}
+.build-steps button{display:grid;place-items:center;inline-size:28px;block-size:17px;padding:0;border:1px solid #383D38;background:transparent;color:var(--text);cursor:pointer}
+.build-steps button:hover:not(:disabled){background:#3B453A}
+.build-skills{display:grid;grid-template-columns:repeat(6,44px);gap:6px;list-style:none;margin:0;padding:0}
+.build-skills li{display:flex;flex-direction:column;align-items:center;gap:2px}
+.build-skills img{inline-size:32px;block-size:32px}
+.build-skills select{appearance:none;-webkit-appearance:none;inline-size:44px;block-size:32px;min-block-size:32px;padding:0 2px;border:1px solid #383D38;background:#192D34;color:var(--text);font-size:16px;text-align:center;text-align-last:center;border-radius:0;cursor:pointer}
+.build-skills select[data-empty]{color:#ACAAB9}
+.build-note{inline-size:100%;block-size:36px;padding:0 10px;border:1px solid #383D38;background:transparent;color:var(--text);font-size:16px}
+.build-foot{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px}
+.build-clear{min-block-size:32px;font-size:15px}
+:is(.build-class,.build-level input,.build-skills select,.build-note,.build-steps button):focus-visible{outline:2px solid #FFE8C4;outline-offset:1px}
+.y-card-level{margin-inline-start:6px;font-size:15px;color:#ACAAB9}
+.y-skills li .y-skill-rank{position:absolute;inset-block-end:-4px;inset-inline-start:-3px;font-size:11px;line-height:1;font-weight:700;color:#FFE8C4;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000}
+@media(max-width:359px){.build-skills{gap:4px}}
 
 /* 고침 C(2026-11-27, U68): 인물 탭 = 서랍 머리 카드 격자. 카드 전체가 서랍을 여는 단추(이름 단추의 ::after가 카드를 덮는다), 영어 이름 단추만 그 위. */
 .people-filters{align-items:center}

@@ -1,6 +1,8 @@
 'use client';
 import { createContext, useContext, useId, useState, type ReactNode } from 'react';
 import type { YuphasProfile, YName, YGift } from '@/lib/yuphas-profile';
+import type { Build } from '@/lib/check-state';
+import { classBySlug, classIcon } from '@/lib/yuphas-classes';
 import { giftUrl, itemUrl, mapUrl, personUrl, yuphasItem as yuphasItemFor, yuphasPerson } from '@/lib/yuphas';
 /**
  * yuphastemple 이름 규칙(2026-11-27 사용자 결정): 누를 수 없는 이름 배지는 한국어, yuphastemple 새 탭으로 가는 실제 단추는 영어 이름.
@@ -23,17 +25,20 @@ export function KoBadge({ ko, icon, kind = 'item', value }: { ko: string; icon?:
 }
 
 /** 숙련 이름(그 사이트 영어) → 우리 말. 그림 말풍선·읽어 주는 이름에 쓴다. */
-const skillKo: Record<string, string> = { Sword: '검술', Spear: '창술', Axe: '도끼술', Bow: '궁술', Gauntlet: '격투술', 'Black Magic': '흑마술', 'White Magic': '백마술', Authority: '지휘술', Infantry: '보병술', Riding: '기마술', Armor: '중갑술', Flying: '비행술' };
+export const skillKo: Record<string, string> = { Sword: '검술', Spear: '창술', Axe: '도끼술', Bow: '궁술', Gauntlet: '격투술', 'Black Magic': '흑마술', 'White Magic': '백마술', Authority: '지휘술', Infantry: '보병술', Riding: '기마술', Armor: '중갑술', Flying: '비행술' };
 const moveKo: Record<string, string> = { infantry: '보병', riding: '기마', flying: '비행', armor: '중갑' };
-/** 인물 머리: yuphastemple /<인물>/ 머리 카드 모양(docs/yuphas-pages-teardown.md §1). 큰 이름 + 빛, 병종 줄, 6×2 장점·약점 그림, 뒤 소속 문장, 오른쪽 큰 초상화. */
-export function CharacterHeader({ name, profile, portrait, children, nameSlot, lazy }: { name: string; profile?: YuphasProfile; portrait: string; children?: ReactNode; nameSlot?: ReactNode; lazy?: boolean }) {
+/** 인물 머리: yuphastemple /<인물>/ 머리 카드 모양(docs/yuphas-pages-teardown.md §1). 큰 이름 + 빛, 병종 줄, 6×2 장점·약점 그림, 뒤 소속 문장, 오른쪽 큰 초상화.
+ *  build(이 루트의 내 육성 기록, U72)가 있으면 병종 줄을 기록한 병종으로 바꾸고 레벨과 숙련 등급 글자를 읽기 전용으로 보인다. */
+export function CharacterHeader({ name, profile, portrait, children, nameSlot, lazy, build }: { name: string; profile?: YuphasProfile; portrait: string; children?: ReactNode; nameSlot?: ReactNode; lazy?: boolean; build?: Build }) {
   const style = profile?.emblem ? { '--faction': `url('${profile.emblem}')` } as React.CSSProperties : undefined;
+  const picked = profile && classBySlug(build?.classId);
+  const cls = picked ? { ko: picked.ko || picked.en, icon: classIcon(picked.slug, profile.gender), moves: picked.moves } : profile?.cls;
   return <div className="y-card" style={style} data-character-header>
     <img className="y-card-portrait" src={profile?.portrait || portrait} alt={nameSlot ? '' : name} loading={lazy ? 'lazy' : undefined} />
     <div className="y-card-body">
       <p className="y-card-name">{nameSlot ?? name}{profile && <YLink en={profile.en} href={personUrl(profile.slug)} className="y-card-en" />}</p>
-      {profile?.cls && <p className="y-card-class"><img className="y-class-icon" src={profile.cls.icon || ''} alt="" />{profile.cls.ko}{profile.cls.moves.map((m) => <img key={m} className="y-move-icon" src={`/yuphas/icons/skills/${m}-flat.png`} alt={moveKo[m]} title={moveKo[m]} />)}</p>}
-      {profile && <ul className="y-skills" aria-label="숙련 장점·약점">{profile.skills.map((s) => <li key={s.skill} data-state={s.state} title={`${skillKo[s.skill]}${s.state === 'boon' ? ' · 장점' : s.state === 'bane' ? ' · 약점' : ''}`}><img src={s.icon} alt={`${skillKo[s.skill]}${s.state === 'boon' ? ' 장점' : s.state === 'bane' ? ' 약점' : ''}`} /><span aria-hidden="true">{s.state === 'boon' ? '▲' : s.state === 'bane' ? '▼' : ''}</span></li>)}</ul>}
+      {cls && <p className="y-card-class" data-recorded={picked ? true : undefined}><img className="y-class-icon" src={cls.icon || ''} alt="" />{cls.ko}{cls.moves.map((m) => <img key={m} className="y-move-icon" src={`/yuphas/icons/skills/${m}-flat.png`} alt={moveKo[m]} title={moveKo[m]} />)}{build?.level && <span className="y-card-level">Lv {build.level}</span>}</p>}
+      {profile && <ul className="y-skills" aria-label="숙련 장점·약점">{profile.skills.map((s) => <li key={s.skill} data-state={s.state} title={`${skillKo[s.skill]}${s.state === 'boon' ? ' · 장점' : s.state === 'bane' ? ' · 약점' : ''}`}><img src={s.icon} alt={`${skillKo[s.skill]}${s.state === 'boon' ? ' 장점' : s.state === 'bane' ? ' 약점' : ''}`} /><span aria-hidden="true">{s.state === 'boon' ? '▲' : s.state === 'bane' ? '▼' : ''}</span>{build?.skills?.[s.id] && <b className="y-skill-rank" aria-label={`${skillKo[s.skill]} 기록 ${build.skills[s.id]}`}>{build.skills[s.id]}</b>}</li>)}</ul>}
       {children}
     </div>
   </div>;

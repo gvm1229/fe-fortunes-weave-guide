@@ -6,6 +6,8 @@ import { Gift, Search } from 'lucide-react';
 import type { Person } from '@/lib/content';
 import { CharacterHeader, YLink } from './yuphas';
 import { ToggleGroup, ToggleGroupItem } from './ui/toggle-group';
+import { useChecks } from './checks';
+import type { BuildRoute } from '@/lib/check-state';
 import { yuphasItem, giftUrl } from '@/lib/yuphas';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
@@ -82,7 +84,8 @@ export function People({people,part,onDoc,onPerson}:{people:Person[];part:string
   const scope=`people-${people[0]?.route}-${part}`;
   const [query,setQuery]=usePreference<string>(scope+'-query','');const [role,setRole]=usePreference<string>(scope+'-role','전체');
   const roles=['본대','보완','선택','수집'];
+  const builds=useChecks().data.builds?.[people[0]?.route==='part3'||part==='3'?'part3':people[0]?.route as BuildRoute];
   const list=people.filter(p=>p.name.normalize('NFKC').includes(query.normalize('NFKC').trim())&&(role==='전체'||p.role===role)).sort((a,b)=>roles.indexOf(a.role)-roles.indexOf(b.role)||a.order.localeCompare(b.order,undefined,{numeric:true}));
   return <><div className="filters people-filters"><label className="search"><Search size={22}/><input aria-label="인물 이름 검색" placeholder="이름으로 찾기" value={query} onChange={e=>setQuery(e.target.value)}/></label><ToggleGroup type="single" className="role-tabs" aria-label="역할" value={role} onValueChange={v=>v&&setRole(v)}>{['전체',...roles.filter(r=>people.some(p=>p.role===r))].map(r=><ToggleGroupItem key={r} value={r}>{r}</ToggleGroupItem>)}</ToggleGroup><span className="people-count" aria-live="polite">{list.length}명</span><Button variant="secondary" onClick={()=>onDoc('notes/exam.md')}>시험 안내</Button></div>
-    <div className="people-grid">{list.map(p=><article className="person-card" key={`${p.route}-${p.name}`} data-person={p.name}><CharacterHeader name={p.name} profile={p.yuphas&&part==='3'?{...p.yuphas,portrait:''}:p.yuphas} portrait={'/'+p.portrait} lazy nameSlot={<button type="button" className="person-card-open" onClick={()=>onPerson(p.id)}>{p.name}</button>}><PersonTags person={p} part={part}/></CharacterHeader></article>)}</div>{!list.length&&<p>맞는 인물이 없습니다. 이름이나 역할을 바꿔 보세요.</p>}</>;
+    <div className="people-grid">{list.map(p=><article className="person-card" key={`${p.route}-${p.name}`} data-person={p.name}><CharacterHeader name={p.name} profile={p.yuphas&&part==='3'?{...p.yuphas,portrait:''}:p.yuphas} portrait={'/'+p.portrait} lazy build={p.yuphas?builds?.[p.yuphas.slug]:undefined} nameSlot={<button type="button" className="person-card-open" onClick={()=>onPerson(p.id)}>{p.name}</button>}><PersonTags person={p} part={part}/></CharacterHeader></article>)}</div>{!list.length&&<p>맞는 인물이 없습니다. 이름이나 역할을 바꿔 보세요.</p>}</>;
 }
