@@ -218,6 +218,12 @@ for (const f of [...walk('app', ['.ts', '.tsx', '.css']), ...walk('components', 
 // [U71] 루트 머리 왼쪽 '첫 화면' 옆에 팀 화면(/team/) 단추(2026-11-27).
 { const sh = readFileSync('components/shell.tsx', 'utf8'); assert.ok(sh.includes('href="/team/"') && sh.includes('guide-team'), '[U71] 루트 머리 팀 화면 단추'); }
 
+// [U66] 출처 사이트 이름은 화면에 그릴 때 뺀다(lib/display.ts stripSources, Fable 검토 21 지적 5). 자료 원문은 그대로.
+{ const { displayText } = await import('../lib/display.ts');
+  for (const [a, b] of [['본다(Game8 확인). 다음', '본다. 다음'], ['막힌다(세오도라·릴리안 B는 Game8, 둘 다는 Anna\'s Notebook 초안).', '막힌다(미확인).'], ['합친다(altema·GameWith). 25명', '합친다. 25명'], ['Game8 다그시온 기본 1,500G', '다그시온 기본 1,500G'], ['Game8은 복귀까지', '공략 자료는 복귀까지'], ['Anna’s Notebook·allthings.how · 열리는 장은 미확인', '열리는 장은 미확인']]) assert.equal(displayText(a), b, '[U66] 출처 이름 빼기 ' + a);
+  const texts = [read('content/derived/checklist.json'), read('content/derived/presentation.json')].map(JSON.stringify).join('');
+  for (const s of texts.match(/"[^"]*(?:Game8|GameWith|Anna['’]s Notebook|allthings\.how|altema)[^"]*"/g) || []) { const t = JSON.parse(s); if (/^https?:|\.(?:jpg|png|webp)$/.test(t)) continue; assert.ok(!/Game8|GameWith|Anna['’]s Notebook|allthings|altema/.test(displayText(t)), '[U66] 화면 글에 출처 이름 남음: ' + displayText(t).slice(0, 80)); } }
+
 // [U66] 화면에 근거·기록용 글이 없다(2026-11-27): 원문 기록·비교 근거 탭·참고 문서 화면·그림 출처·입수 원문·특기 검토 문서·조심 문구. 옮긴 곳은 docs/reference/.
 { const code = walk('components', ['.tsx']).map(f => readFileSync(f, 'utf8')).join('');
   for (const w of ['>원문 기록<', "'비교 근거'", "label:'참고 문서'", '특기 검토 문서', '전체 참고 문서', '실제 합류와 출격 자리는 게임 화면을 먼저 확인하세요']) assert.ok(!code.includes(w), `[U66] 화면 코드에 ${w}`);
