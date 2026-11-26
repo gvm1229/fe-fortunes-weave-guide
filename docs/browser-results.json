@@ -10479,60 +10479,7 @@
       "eraViolations": [],
       "croppedScenes": [],
       "sceneHeights": [],
-      "goldTables": [
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        },
-        {
-          "columns": 3,
-          "amountRight": true
-        }
-      ],
+      "goldTables": [],
       "accentContrast": [
         {
           "route": "part3",
@@ -24674,8 +24621,110 @@
       "order": [],
       "eraViolations": [],
       "croppedScenes": [],
-      "sceneHeights": [],
-      "goldTables": [],
+      "sceneHeights": [
+        279.625,
+        279.625,
+        279.625,
+        279.625,
+        279.625,
+        279.625,
+        279.625,
+        279.625
+      ],
+      "goldTables": [
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        },
+        {
+          "columns": 3,
+          "amountRight": true
+        }
+      ],
       "accentContrast": [
         {
           "route": "dietrich",

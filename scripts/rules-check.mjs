@@ -183,6 +183,12 @@ for (const f of [...walk('app', ['.ts', '.tsx', '.css']), ...walk('components', 
   assert.ok(rules.every(r => !/object-fit:\s*contain/.test(r)), '[U62] 3부 띠 초상화에 object-fit:contain 없음');
   assert.ok(!/\.lord-faces img\{[^}]*object-fit:\s*contain/.test(css), '[U62] lord-faces img에 contain 없음'); }
 
+// [U63] 표 칸이 '배지(얼굴 칩·그림 포함) + ·'보다 좁으면 "·"는 칸 안에서 다음 줄로 내려가도 된다(칸 밖 넘침은 안 됨). 표 칸 안 요소+"·" 묶음은 줄 넘김을 허용하는 줄 안 상자로, 상자는 줄 폭을 넘지 않고 안의 요소는 줄어들 수 있다.
+{ const css = readFileSync('app/redesign.css', 'utf8'), rule = sel => [...css.matchAll(/([^{}]*)\{([^}]*)\}/g)].filter(m => m[1].includes(':is(td,th) .dot-glue:has(') && m[1].includes('img') && sel(m[1])).map(m => m[2]).join(';');
+  const box = rule(s => !s.includes('>'));
+  assert.ok(/display:\s*inline-flex/.test(box) && /flex-wrap:\s*wrap/.test(box) && /white-space:\s*normal/.test(box) && /max-inline-size:\s*100%/.test(box), '[U63] 표 칸 안 "·" 묶음 상자: inline-flex·줄 넘김·줄 폭 안');
+  assert.ok(/min-inline-size:\s*0/.test(rule(s => s.includes('>:not(.dot-lead)'))), '[U63] 표 칸 안 묶음 속 요소는 줄어들 수 있음'); }
+
 // 규칙 문서: 모든 규칙 줄은 '검사' 칸에 하나 이상의 파일을 적고, 그 파일에는 규칙 번호가 있다.
 { const doc = readFileSync('docs/user-rules.md', 'utf8'), rows = doc.split('\n').filter(l => /^\| [UP]\d\d \|/.test(l)), ids = new Set();
   assert.ok(rows.length >= 40, '규칙 줄 수');
