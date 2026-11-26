@@ -134,6 +134,11 @@ try {
     await nav('인물').click(); await p.locator('.person-card[data-person="세오도라"] .person-card-open').click(); d = p.getByRole('dialog'); await d.waitFor();
     assert.equal(await d.getByLabel('레벨(1~99)').inputValue(), '22', '[U72] 가져온 뒤 서랍 복원'); assert.equal(await d.getByLabel('창술 등급', { exact: true }).inputValue(), 'C');
     await p.keyboard.press('Escape');
+    // AI용 복사: 기록이 있으면 단추가 켜지고, 복사하면 알림 한 줄(클립보드 권한을 준 검사 브라우저).
+    await ctx.grantPermissions(['clipboard-read', 'clipboard-write'], { origin: base });
+    await p.getByRole('button', { name: 'AI용 복사' }).click(); await p.locator('.ai-copy-status').waitFor();
+    assert.match(await p.locator('.ai-copy-status').textContent(), /1명 기록을 복사했습니다/, '[U72] AI용 복사 알림');
+    assert.match(await p.evaluate(() => navigator.clipboard.readText()), /Theodora \(세오도라\) \| Lv 22 \| Guardian \(가디언\)/, '[U72] AI용 복사 글');
     // 1·2부는 한 기록, 다른 루트·3부는 따로(Q4).
     d = await openSheet('/theodora/2/', '세오도라'); assert.equal(await d.getByLabel('레벨(1~99)').inputValue(), '22', '[U72] 2부도 같은 기록');
     await p.keyboard.press('Escape');

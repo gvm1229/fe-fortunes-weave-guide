@@ -2,7 +2,10 @@
 import { usePreference } from './preferences';
 import { characterSummary, plainCharacterText } from '@/lib/character-summary';
 import { GameText, GameIcon } from './game-text';
-import { Gift, Search } from 'lucide-react';
+import { ClipboardCopy, Gift, Search } from 'lucide-react';
+import { useState } from 'react';
+import { buildText } from '@/lib/build-text';
+import { classBySlug } from '@/lib/yuphas-classes';
 import type { Person } from '@/lib/content';
 import { CharacterHeader, YLink } from './yuphas';
 import { ToggleGroup, ToggleGroupItem } from './ui/toggle-group';
@@ -16,6 +19,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './
 export type ClassInfo={file:string;tier:string;slug?:string;weapons?:string[];traits?:string[]};
 const skillIcons:Record<string,string>={'검술':'sword','창술':'lance','도끼술':'axe','궁술':'bow','격투술':'brawl','지휘술':'authority','기마술':'riding','비행술':'flying','중갑술':'armor','중장술':'armor','보병술':'infantry','흑마술':'black-magic','백마술':'white-magic'};
 const routeNames:Record<string,string>={theodora:'세오도라',leda:'레다',dietrich:'디트리히',cai:'카이',part3:'3부'};
+const routeEn:Record<string,string>={theodora:'Theodora route',leda:'Leda route',dietrich:'Dietrich route',cai:'Cai route',part3:'Part 3'};
 export function ClassPath({classes,manifest,onDoc}:{classes:string[];manifest:Record<string,ClassInfo>;onDoc?:(url:string)=>void}){return <ol className="class-path">{classes.map(c=><li key={c}><span className="game-badge" data-kind="class">{manifest[c]&&<img src={`/${manifest[c].file}`} alt="" loading="lazy"/>}{onDoc&&manifest[c]?.slug?<button className="text-link" onClick={()=>onDoc(`notes/classes/${manifest[c].slug}.md`)}>{c}</button>:<strong>{c}</strong>}</span><span className="role-chip">{manifest[c]?.tier||'단계 미확인'}</span></li>)}</ol>;}
 function Skill({name,value}:{name:string;value?:string}){return <span className="skill-name game-badge" data-kind="skill">{skillIcons[name]&&<img className="game-skill" src={`/assets/skills/${skillIcons[name]}.webp`} alt="" loading="lazy"/>}{name}{value&&<> <b className="badge-value">{value}</b></>}</span>;}
 function words(value:unknown):string{if(value===null||value===undefined)return '';if(typeof value==='string'||typeof value==='number')return String(value);if(Array.isArray(value))return value.map(words).filter(Boolean).join(' · ');if(typeof value==='object'&&'$prose' in value)return (value as {$prose:string[]}).$prose.join(' ');return '';}
@@ -84,8 +88,14 @@ export function People({people,part,onDoc,onPerson}:{people:Person[];part:string
   const scope=`people-${people[0]?.route}-${part}`;
   const [query,setQuery]=usePreference<string>(scope+'-query','');const [role,setRole]=usePreference<string>(scope+'-role','전체');
   const roles=['본대','보완','선택','수집'];
-  const builds=useChecks().data.builds?.[people[0]?.route==='part3'||part==='3'?'part3':people[0]?.route as BuildRoute];
+  const buildRoute=(part==='3'?'part3':people[0]?.route) as BuildRoute,builds=useChecks().data.builds?.[buildRoute];
+  // AI용 복사(2026-11-27 U72): 이 루트에서 기록이 있는 인물 전부를 글로. 복사가 막히면 그 자리에 글 상자를 편다(창을 하나 더 띄우지 않음).
+  const recorded=people.filter(p=>p.yuphas&&builds?.[p.yuphas.slug]);
+  const [copyState,setCopyState]=useState<{message:string;text?:string}>({message:''});
+  const copyText=()=>buildText({routeEn:routeEn[buildRoute]||buildRoute,routeKo:routeNames[buildRoute]||buildRoute,date:new Date().toISOString().slice(0,10),rows:recorded.map(p=>{const y=p.yuphas!,b=builds![y.slug],c=classBySlug(b.classId);return {en:y.en,ko:p.name,level:b.level,cls:c?{en:c.en,ko:c.ko}:undefined,skills:y.skills.filter(s=>b.skills?.[s.id]).map(s=>[s.skill,b.skills![s.id]!] as [string,string]),boons:y.skills.filter(s=>s.state==='boon').map(s=>s.skill),banes:y.skills.filter(s=>s.state==='bane').map(s=>s.skill),finalClasses:p.data.finalClasses,needs:p.data.skills.map(s=>`${s.skill} ${s.target}`),note:b.note};})});
+  const copy=async()=>{const text=copyText();try{await navigator.clipboard.writeText(text);setCopyState({message:`${recorded.length}명 기록을 복사했습니다.`});}catch{setCopyState({message:'복사가 막혔습니다. 아래 글을 직접 복사하세요.',text});}};
   const list=people.filter(p=>p.name.normalize('NFKC').includes(query.normalize('NFKC').trim())&&(role==='전체'||p.role===role)).sort((a,b)=>roles.indexOf(a.role)-roles.indexOf(b.role)||a.order.localeCompare(b.order,undefined,{numeric:true}));
-  return <><div className="filters people-filters"><label className="search"><Search size={22}/><input aria-label="인물 이름 검색" placeholder="이름으로 찾기" value={query} onChange={e=>setQuery(e.target.value)}/></label><ToggleGroup type="single" className="role-tabs" aria-label="역할" value={role} onValueChange={v=>v&&setRole(v)}>{['전체',...roles.filter(r=>people.some(p=>p.role===r))].map(r=><ToggleGroupItem key={r} value={r}>{r}</ToggleGroupItem>)}</ToggleGroup><span className="people-count" aria-live="polite">{list.length}명</span><Button variant="secondary" onClick={()=>onDoc('notes/exam.md')}>시험 안내</Button></div>
+  return <><div className="filters people-filters"><label className="search"><Search size={22}/><input aria-label="인물 이름 검색" placeholder="이름으로 찾기" value={query} onChange={e=>setQuery(e.target.value)}/></label><ToggleGroup type="single" className="role-tabs" aria-label="역할" value={role} onValueChange={v=>v&&setRole(v)}>{['전체',...roles.filter(r=>people.some(p=>p.role===r))].map(r=><ToggleGroupItem key={r} value={r}>{r}</ToggleGroupItem>)}</ToggleGroup><span className="people-count" aria-live="polite">{list.length}명</span><Button variant="secondary" onClick={()=>onDoc('notes/exam.md')}>시험 안내</Button><Button variant="secondary" className="ai-copy" disabled={!recorded.length} title={recorded.length?undefined:'기록이 없습니다'} onClick={copy}><ClipboardCopy size={20} aria-hidden="true"/> AI용 복사</Button></div>
+    {copyState.message&&<p className="ai-copy-status" role="status">{copyState.message}</p>}{copyState.text&&<textarea className="ai-copy-text" readOnly value={copyState.text} aria-label="AI용 육성 기록 글" rows={8} onFocus={e=>e.currentTarget.select()}/>}
     <div className="people-grid">{list.map(p=><article className="person-card" key={`${p.route}-${p.name}`} data-person={p.name}><CharacterHeader name={p.name} profile={p.yuphas&&part==='3'?{...p.yuphas,portrait:''}:p.yuphas} portrait={'/'+p.portrait} lazy build={p.yuphas?builds?.[p.yuphas.slug]:undefined} nameSlot={<button type="button" className="person-card-open" onClick={()=>onPerson(p.id)}>{p.name}</button>}><PersonTags person={p} part={part}/></CharacterHeader></article>)}</div>{!list.length&&<p>맞는 인물이 없습니다. 이름이나 역할을 바꿔 보세요.</p>}</>;
 }

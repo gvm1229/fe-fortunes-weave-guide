@@ -68,4 +68,9 @@ assert.deepEqual(data.licenses.filter((l) => l.level != null).map((l) => [l.id, 
   assert.deepEqual(nextBuilds({ leda: { a: { level: 5 } }, cai: { b: { level: 2 } } }, 'leda', 'a', null), { cai: { b: { level: 2 } } });
 }
 
-console.log('통과: 병종 60개·인물 62명 병종 조건·시험 단계 표·육성 기록 저장·가져오기');
+// 5. AI용 복사 글(lib/build-text.ts): 고정 예시 한 명의 글 전체.
+{ const { buildText } = await import('../lib/build-text.ts');
+  const text = buildText({ routeEn: 'Theodora route', routeKo: '세오도라', date: '2026-11-27', rows: [{ en: 'Loretta', ko: '로레타', level: 20, cls: { en: 'Wing Soldier', ko: '천익병' }, skills: [['Sword', 'C'], ['Spear', 'D+']], boons: ['Sword', 'Spear', 'Flying'], banes: ['Armor'], finalClasses: ['홀리 랜서'], needs: ['창술 B'], note: '창술 C+ 되면 시험' }] });
+  assert.equal(text, "Fire Emblem: Fortune's Weave — Theodora route (세오도라) builds, exported 2026-11-27\nSkill ranks: E < E+ < D < D+ < C < C+ < B < B+ < A < A+ < S < S+\n\nLoretta (로레타) | Lv 20 | Wing Soldier (천익병)\n  skills: Sword C, Spear D+ | boon: Sword, Spear, Flying | bane: Armor\n  plan: final class 홀리 랜서 | needs: 창술 B\n  note: 창술 C+ 되면 시험\n", '[U72] AI용 복사 글'); }
+
+console.log('통과: 병종 60개·인물 62명 병종 조건·시험 단계 표·육성 기록 저장·가져오기·AI용 복사 글');
