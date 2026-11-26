@@ -73,5 +73,15 @@ const all = groups.flatMap(count);
 console.log(`yuphas 이름표: ${all.length}개 · 링크 ${all.filter((r) => r.slug).length} · 미확인 한국어 ${all.filter((r) => r.koGrade === 'unverified').length} · 임시 표기 ${all.filter((r) => r.koGrade === 'wiki-temp').length}`);
 // 화면용 작은 이름표(content/data/yuphas-links.json)가 정본에서 만든 그대로인지(scripts/yuphas/build-links.mjs --check).
 { const { spawnSync } = await import('node:child_process'); const r = spawnSync(process.execPath, ['scripts/yuphas/build-links.mjs', '--check'], { encoding: 'utf8' }); if (r.status !== 0) fail('yuphas-links.json이 정본과 다름: node scripts/yuphas/build-links.mjs'); else console.log(r.stdout.trim()); }
+// [U65] 할 일 지도 단추(2026-11-27): 장소 행마다 지도 루트가 있고 슬러그가 정본과 같다. 장소 주소·물품 검색·루트 지도 개수를 출력한다(lib/map-target.ts).
+{ const links = read('content/data/yuphas-links.json');
+  for (const [ko, [en, slug, routes]] of Object.entries(links.places || {})) { if (!Array.isArray(routes) || !routes.length) fail(`장소 ${ko}: 지도 루트 없음`); if (T.places[ko]?.slug !== slug || T.places[ko]?.en !== en) fail(`장소 ${ko}: 정본과 다른 이름·슬러그`); }
+  const { mapTarget } = await import('../lib/map-target.ts');
+  const places = Object.entries(links.places).map(([ko, [en, slug, routes]]) => ({ ko, en, slug, routes })), items = Object.entries(links.items).map(([ko, [en, slug]]) => ({ ko, en, slug }));
+  const d = read('content/derived/checklist.json'), txt = (n) => typeof n === 'string' ? n : (n.children || []).map(txt).join(''), has = (n) => typeof n !== 'string' && (n.attrs?.['data-map-link'] || (n.children || []).some(has));
+  const tiers = { place: 0, item: 0, route: 0 };
+  for (const st of d.stages) for (const ch of st.chapters) for (const b of ch.blocks) { const n = b.notes.filter(has).length; if (n) tiers[mapTarget([...b.heading, ...Object.values(b.actions).flat(), ...b.notes].map(txt).join(' '), st.id.split('-')[0], places, items).tier] += n; }
+  if (!tiers.place || !tiers.item) fail(`[U65] 지도 단추 장소·검색 0개 ${JSON.stringify(tiers)}`);
+  console.log(`지도 단추: 장소 ${tiers.place} · 검색 ${tiers.item} · 루트 지도 ${tiers.route}`); }
 if (errors.length) { console.error(errors.join('\n')); console.error(`yuphas-links-check 실패 ${errors.length}건`); process.exit(1); }
 console.log('yuphas-links-check 통과');

@@ -3,7 +3,7 @@ import { DateOdometer } from './date-odometer';
 import { currentGameDate, formatGameDate, PART1_YEAR } from '@/lib/game-date';
 import { useEffect, useRef, useState, ViewTransition } from 'react';
 import { Check, Download, Upload, ArrowDown, ChevronDown, Archive, Trash2 } from 'lucide-react';
-import type { Group } from '@/lib/content';
+import type { Group, Tree } from '@/lib/content';
 import type { Chapter } from '@/lib/checklist';
 import { chapterGroups } from '@/lib/checklist';
 import { checked } from '@/lib/check-state';
@@ -22,7 +22,8 @@ import { GuideImage } from './image-viewer';
 import { final25Class } from '@/lib/final25';
 import { YuphasGroup } from './yuphas';
 import { verificationTail } from '@/lib/display';
-import { lordEmblems } from '@/lib/yuphas';
+import { lordEmblems, blockMapTarget } from '@/lib/yuphas';
+const treeText=(n:Tree):string=>typeof n==='string'?n:n.children.map(treeText).join('');
 export function Tasks({route,label,part,chapters,groups,onDoc,onPerson,people=[],context}:{route:string;label:string;part:string;chapters:Chapter[];groups:Group[];onDoc:(url:string)=>void;onPerson?:(name:string)=>void;people?:string[];context?:(chapter:Chapter)=>React.ReactNode}){
   const checks=useChecks(),[announce,setAnnounce]=useState(''),[selected,setSelected]=useState<string|null>(null),[importPhase,setImportPhase]=useState<ImportPhase>({state:'idle'}),[imported,setImported]=useState(''),upload=useRef<HTMLInputElement>(null),toastTimer=useRef<ReturnType<typeof setTimeout>|undefined>(undefined);
   /** 가져오기: 전체 화면을 막고(최소 0.6초 보여 깜빡이지 않게) 파일을 읽어 검사한 뒤 저장한다. 실패 이유는 막는 창에 보인다.
@@ -117,7 +118,7 @@ export function Tasks({route,label,part,chapters,groups,onDoc,onPerson,people=[]
     {c.blocks.map(b=>{const g=groups.find(g=>g.id===b.id),Container=g?'details':'section',Header=g?'summary':'header';return <YuphasGroup key={b.id}><Container open={g?true:undefined} className={g?'action-group':'chapter-supplement'} data-source-block={b.id} id={b.id}>
       {(g||b.portraits.length>0)&&<Header>{g&&<ChevronDown size={22}/ >}{g&&<span className="group-title">{b.heading.length&&!Object.hasOwn(overrides.groups,g.id)?<SourceMarkup nodes={b.heading} {...markupProps} skip={new Set(b.portraits.map(p=>p.name.replace(/ 초상화.*$/,'')))}/>:<GameText text={g.title} skip={new Set(b.portraits.map(p=>p.name.replace(/ 초상화.*$/,'')))}/>}</span>}<div className="group-portraits">{b.portraits.map(p=>{const name=p.name.replace(/ 초상화.*$/,''),img=<img key={p.src} data-source-image className={final25Class(p.name)} src={'/'+personPortrait(p.src,part,p.name)} alt={p.name} title={p.name} loading="lazy"/>;/* 제목 초상화도 인물 서랍을 연다(2026-11-15 사용자 결정). 접기 단추(summary)는 움직이지 않는다. */return onPerson&&people.includes(name)?<button type="button" key={p.src} className="portrait-button" aria-label={`${name} 인물 보기`} onClick={e=>{e.preventDefault();e.stopPropagation();onPerson(name);}}>{img}</button>:img;})}</div>{g&&<span className="group-count">{g.actions.filter(a=>checked(a,g.id,checks.effective)).length}/{g.actions.length}</span>}</Header>}
       {g&&groupSteps(g.actions.map(a=>a.id)).length>0&&<BoonSummary ids={g.actions.map(a=>a.id)}/>}{g&&<ol className="checklist">{g.actions.map(a=><li key={a.id} tabIndex={-1} hidden={hideDone&&checked(a,g.id,checks.effective)} data-complete={checked(a,g.id,checks.effective)}><input id={a.id} type="checkbox" checked={checked(a,g.id,checks.effective)} disabled={!checks.ready||autoChecked(a.id,checks.data.status)} aria-label={a.text} onChange={e=>{const value=e.target.checked;void celebrate(cg,c.title,a.id,value,e.currentTarget);checks.toggle(a.id,value);}}/><div><span className="action-category">{a.category}</span>{autoChecked(a.id,checks.data.status)&&<span className="status-owned">내 상태에서 보유</span>}<div className="action-text"><SourceMarkup nodes={actionNodes(c,g,a)} {...markupProps}/></div></div></li>)}</ol>}
-      <div className="action-notes">{Object.hasOwn(overrides.notes,b.id)?(overrides.notes as Record<string,Group['notes']>)[b.id].map((n,i)=><p key={i}>{verificationTail(n.text)}</p>):<SourceMarkup nodes={b.notes} {...markupProps}/>}</div>
+      <div className="action-notes">{Object.hasOwn(overrides.notes,b.id)?(overrides.notes as Record<string,Group['notes']>)[b.id].map((n,i)=><p key={i}>{verificationTail(n.text)}</p>):<SourceMarkup nodes={b.notes} {...markupProps} map={blockMapTarget([...b.heading,...Object.values(b.actions).flat(),...b.notes].map(treeText).join(' '),route)}/>}</div>
     </Container></YuphasGroup>;})}
   </details>;})}</div></div>{context&&context(chapter)}</div>{gameDate&&<DateOdometer value={formatGameDate(PART1_YEAR,gameDate)} label={`게임 날짜 ${PART1_YEAR}년 ${gameDate.m}월 ${gameDate.d}일`}/>}<ImportOverlay phase={importPhase} onClose={()=>setImportPhase({state:'idle'})}/>{/* 알림 칸은 늘 두어 화면 읽기 프로그램이 새 문구를 읽게 한다. */}<p className={imported?'import-toast':'sr-only'} aria-live="polite">{imported}</p></>;
 }

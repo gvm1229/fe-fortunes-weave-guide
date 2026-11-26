@@ -207,7 +207,7 @@ for (const f of [...walk('app', ['.ts', '.tsx', '.css']), ...walk('components', 
 //       단추 글은 영어(한글 없음)다. 지도 링크는 game8이 아니라 yuphastemple 지도로 간다. 재료 서랍·지도 사진은 없다.
 { const links = read('content/data/yuphas-links.json');
   for (const [ko, [en, slug]] of Object.entries(links.items)) { assert.ok(en && !/[가-힣]/.test(en), `[U65] ${ko} 영어 이름 ${en}`); assert.ok(/^[a-z0-9]+(-[a-z0-9]+)*$/.test(slug), `[U65] ${ko} 슬러그 ${slug}`); }
-  const sm = readFileSync('components/source-markup.tsx', 'utf8'); assert.ok(sm.includes('<YLink en="World Map" href={mapUrl(route)}'), '[U65] 본문 지도 링크 → yuphastemple 지도');
+  const sm = readFileSync('components/source-markup.tsx', 'utf8'); assert.ok(sm.includes("href={map?.href||mapUrl(route)}") && readFileSync('components/tasks.tsx', 'utf8').includes('map={blockMapTarget('), '[U65] 본문 지도 링크 → yuphastemple 장소 주소·물품 검색·루트 지도');
   const y = readFileSync('components/yuphas.tsx', 'utf8'); assert.ok(y.includes('target="_blank" rel="noreferrer" lang="en"') && y.includes('function YuphasGroup'), '[U65] 영어 새 탭 단추·묶음 첫 번만');
   assert.ok(!/MapSheet|MapThumbnail/.test(walk('components', ['.tsx']).map(f => readFileSync(f, 'utf8')).join('')), '[U65] 재료 서랍·지도 사진 없음'); }
 

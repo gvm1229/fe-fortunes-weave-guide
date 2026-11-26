@@ -9,7 +9,7 @@ import { GuideImage } from './image-viewer';
 import classManifest from '@/assets/classes/manifest.json';
 import { personPortrait } from '@/lib/portraits';
 import { final25Class } from '@/lib/final25';
-import { yuphasItem, itemUrl, mapUrl } from '@/lib/yuphas';
+import { yuphasItem, itemUrl, mapUrl, type MapTarget } from '@/lib/yuphas';
 import { YLink, useFirstLink } from './yuphas';
 /** 근거·기록용 글(2026-11-27 사용자 결정: 화면에서 빼고 docs/reference/로). 자료는 그대로 두고 그릴 때 거른다. */
 export const evidenceLabel=/근거|검토|원문|출처|확인$/;
@@ -22,7 +22,7 @@ function blockSkip(n:Exclude<Tree,string>,skip:Set<string>,inBlock:boolean):Set<
 const isBlock=(n:Exclude<Tree,string>)=>blockTags.has(n.tag)||!!n.attrs['data-face-row'];
 /** 글 조각을 그릴 때 이미 그림이 붙은 이름을 같은 묶음에서 다시 붙이지 않는다. */
 function textSkip(text:string,skip:Set<string>):ReadonlySet<string>{const before=new Set(skip);namesInText(text).forEach(name=>skip.add(name));return before;}
-export function SourceMarkup({nodes,onDoc,onPerson,part='1',route='all',skip:outerSkip}:{nodes:Tree[];onDoc:(url:string)=>void;onMaterial?:(id:string)=>void;onPerson?:(name:string)=>void;part?:string;route?:string;skip?:ReadonlySet<string>}){
+export function SourceMarkup({nodes,onDoc,onPerson,part='1',route='all',skip:outerSkip,map}:{nodes:Tree[];onDoc:(url:string)=>void;onMaterial?:(id:string)=>void;onPerson?:(name:string)=>void;part?:string;route?:string;skip?:ReadonlySet<string>;map?:MapTarget}){
   const first=useFirstLink();let seq=0;
   const enrichSkills=!JSON.stringify(nodes).includes("/skills/");
   const classIcons=new Map<Tree,Exclude<Tree,string>>(),movedIcons=new Set<Tree>();
@@ -65,7 +65,7 @@ export function SourceMarkup({nodes,onDoc,onPerson,part='1',route='all',skip:out
       if(evidenceLabel.test(label))return null;
           {const location=!!(a['data-recruit-material']||a['data-acquisition-modal']),classInfo=(classManifest.classes as Record<string,{file:string}>)[text(n.children)],chip=!location&&(/\/classes\//.test(a['data-reference-url']||'')||!!classInfo),icon=classIcons.get(n);return <button key={i} type="button" className={chip?'reference-chip':'button button-outline'} data-source-location={location||undefined} data-reference-url={a['data-reference-url']} aria-label={a['aria-label']} onClick={()=>onDoc(a['data-reference-url']||'notes/index.md')}>{location&&<MapPin size={20}/ >}{chip&&classInfo&&<img className="inline-class-icon" src={'/'+classInfo.file} alt={icon?.attrs.alt||''} title={icon?.attrs.title} data-source-image={icon?true:undefined} loading="lazy"/>}{chip?text(n.children):children}</button>;}}
     if(n.tag==='a'&&n.children.some(child=>typeof child!=='string'&&child.tag==='img'&&!/\/(portraits|gods|classes|skills|weapons)\//.test(child.attrs.src||'')))return <span key={i} data-source-location={a['data-map-link']||undefined}>{n.children.map(sub)}</span>;
-    if(n.tag==='a'){if(/^\s*(그림 출처|입수 원문)/.test(text(n.children)))return null;if(a['data-map-link'])return <span key={i} data-source-location><YLink en="World Map" href={mapUrl(route)} icon={<MapPin size={18} aria-hidden="true"/>}/></span>;if(a.href?.startsWith('#person-'))return <button className="person-inline" key={i} onClick={()=>onPerson?.(a.href!.slice(1))}>{children}</button>;if(a.href?.startsWith('http')||a.href?.startsWith('assets/'))return <a key={i} href={a.href.startsWith('assets/')?'/'+a.href:a.href} className={a['data-map-link']?'button button-outline':undefined} data-source-location={a['data-map-link']||undefined} target="_blank" rel="noreferrer">{a['data-map-link']&&<MapPin size={20}/ >}{children}</a>;return <button key={i} className="text-link" onClick={()=>onDoc(a.href||'notes/index.md')}>{children}</button>;}
+    if(n.tag==='a'){if(/^\s*(그림 출처|입수 원문)/.test(text(n.children)))return null;if(a['data-map-link'])/* 지도 단추: 묶음 글로 고른 장소 주소 → 물품 검색 → 루트 지도(2026-11-27, U65). map이 없으면 루트 지도. */return <span key={i} data-source-location data-map-tier={map?.tier||'route'}><YLink en={map?.label||'World Map'} href={map?.href||mapUrl(route)} icon={<MapPin size={18} aria-hidden="true"/>}/></span>;if(a.href?.startsWith('#person-'))return <button className="person-inline" key={i} onClick={()=>onPerson?.(a.href!.slice(1))}>{children}</button>;if(a.href?.startsWith('http')||a.href?.startsWith('assets/'))return <a key={i} href={a.href.startsWith('assets/')?'/'+a.href:a.href} className={a['data-map-link']?'button button-outline':undefined} data-source-location={a['data-map-link']||undefined} target="_blank" rel="noreferrer">{a['data-map-link']&&<MapPin size={20}/ >}{children}</a>;return <button key={i} className="text-link" onClick={()=>onDoc(a.href||'notes/index.md')}>{children}</button>;}
     // 명성·지원 조건 칩은 안의 배지가 이미 배경을 가진다. 칩 껍데기를 빼 배경이 겹치지 않게 한다(2026-11-14 사용자 지적).
     if(a['data-condition-chip']&&/^(명성|지원)/.test(text(n.children).trim()))return <Fragment key={i}>{children}</Fragment>;
     return createElement(n.tag,{key:i,...Object.fromEntries(Object.entries(a).filter(([key])=>key.startsWith('data-')))},children);

@@ -129,9 +129,9 @@ try {
         dupe: [...document.querySelectorAll('.action-group,.chapter-supplement')].flatMap(g => { const h = [...g.querySelectorAll('[data-yuphas-link]')].map(a => a.href).filter(x => x.includes('?item=')); return h.filter((x, i) => h.indexOf(x) !== i); }).slice(0, 5),
         clickableKo: [...document.querySelectorAll('.game-badge[data-kind=item],.game-badge[data-kind=gift],.game-badge[data-kind=material],[data-ko-badge]')].filter(b => b.closest('a,button')).length,
         game8: [...document.querySelectorAll('main a[href*="game8"],main a[href*="gamewith"]')].length,
-        map: links.filter(a => a.href.startsWith('https://yuphastemple.com/map/')).length }; });
+        map: links.filter(a => a.href.startsWith('https://yuphastemple.com/map/')).length, place: [...document.querySelectorAll('[data-map-tier=place] a')].filter(a => /\/map\/[a-z0-9-]+\/[a-z0-9-]+\//.test(a.href) && !/[가-힣]/.test(a.textContent)).length }; });
       assert.ok(y.n > 20, `[U65] ${r} yuphastemple 단추 수 ${y.n}`); assert.deepEqual(y.bad, [], `[U65] ${r} 영어·새 탭·주소`); assert.deepEqual(y.dupe, [], `[U65] ${r} 묶음 안 같은 물품 영어 단추 되풀이`);
-      assert.equal(y.clickableKo, 0, `[U65] ${r} 누를 수 있는 한국어 배지`); assert.equal(y.game8, 0, `[U65] ${r} game8·gamewith 링크`); assert.ok(y.map > 0, `[U65] ${r} yuphastemple 지도 링크`);
+      assert.equal(y.clickableKo, 0, `[U65] ${r} 누를 수 있는 한국어 배지`); assert.equal(y.game8, 0, `[U65] ${r} game8·gamewith 링크`); assert.ok(y.map > 0, `[U65] ${r} yuphastemple 지도 링크`); if (r === 'theodora') assert.ok(y.place > 0, `[U65] ${r} 장소 주소 지도 단추`);
       await bloat(`/${r}/1/ 할 일`);
       for (const v of ['인물', '준비', '재료와 구매']) { await p.getByRole('navigation', { name: '공략 화면' }).getByRole('button', { name: v, exact: true }).click(); await p.waitForTimeout(500); await bloat(`/${r}/1/ ${v}`); }
       assert.equal(await p.locator('.map-thumbnail').count(), 0, `[U65] ${r} 지도 사진`);

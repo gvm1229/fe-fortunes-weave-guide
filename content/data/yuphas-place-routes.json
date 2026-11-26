@@ -1,0 +1,1911 @@
+{
+ "note": "scripts/yuphas/places.mjs가 yuphastemple locations.json에서 만든 표(장소 슬러그 → 그 장소가 있는 지도 루트).",
+ "places": {
+  "abandoned-fort-moldo": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "ada-fort-ruins": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "aditis-cave": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "aesobos-plain": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "afar-gate": [
+   "theodora",
+   "part3"
+  ],
+  "agris-stronghold": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "aguino": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "ahm-lu": [
+   "cai",
+   "theodora",
+   "part3"
+  ],
+  "alcineus-span": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "alecto": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "alma-greatplains": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "ancient-city-of-tristan": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "ancient-tower-of-ash": [
+   "leda",
+   "part3"
+  ],
+  "aragona-posthouse": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "areus-stronghold": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "arrecif-saltmarsh": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "atla-peak": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "auroras-temple": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "axion-gorge": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "baina-oasis": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "barsk-post-town": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "bau-callers-cape": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "beasts-path": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "benetnasch": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "benyera-stronghold": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "bernard-pass": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "blue-grotto": [
+   "theodora",
+   "part3"
+  ],
+  "bombae": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "bottomless-pit-of-sand": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "bran-plains": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "breston": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "brigadier-pass": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "bugs-burrow": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "callianeira-port": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "callisto-posthouse": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "cape-damasen": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "cape-nereus": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "carmenta-posthouse": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "carmenta-stronghold": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "cartodo-posthouse": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "cassopeia": [
+   "part3"
+  ],
+  "cave-behind-the-falls": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "chiron-posthouse": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "choking-wind-valley": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "cindered-road-cave": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "closed-oasis": [
+   "theodora",
+   "part3"
+  ],
+  "cohens-mausoleum": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "collapsed-fort": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "coris-mine": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "corpses-gutter": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "corroios-fort-ruins": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "cougar-canopy": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "cougar-woodlands": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "crednas-temple": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "da-mina": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "dada-plains": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "dagsion": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "daimon": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "daimos-plateau": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "daybreak-plains": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "dead-amethyst-garden": [
+   "cai",
+   "part3"
+  ],
+  "demons-seawaters": [
+   "theodora",
+   "part3"
+  ],
+  "desert-entrance": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "desert-escapeway": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "devils-bridge-of-sodan": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "dione-current": [
+   "dietrich",
+   "theodora",
+   "part3"
+  ],
+  "dione-fort": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "djole-fort-ruins": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "dragdon-pass": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "dragons-eye-tower": [
+   "theodora",
+   "part3"
+  ],
+  "dragonbone-tangle": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "dubhe-ridge": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "east-amalthea-posthouse": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "eastern-passage": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "edne-whirlpools": [
+   "theodora",
+   "part3"
+  ],
+  "eif-channel": [
+   "dietrich",
+   "theodora",
+   "part3"
+  ],
+  "elissa-pass": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "enceladus-bridge": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "enno-isle": [
+   "theodora",
+   "part3"
+  ],
+  "eochaid-posthouse": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "ere-mountains": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "evermist-plain": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "fallen-generals-barrows": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "farewell-stone": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "faro-forest": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "fauns-forest": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "feronia-posthouse": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "fezzan-gate": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "fina": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "fina-reef": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "fish-schools-reef": [
+   "theodora",
+   "part3"
+  ],
+  "forest-of-enigmas": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "forest-of-no-return": [
+   "leda",
+   "part3"
+  ],
+  "forsaken-lakehouse": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "fort-galcar": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "fort-hayn": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "fort-hecatoncheires": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "fort-theed": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "fort-zanbar": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "fortunas-temple": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "galen-fort-ruins": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "garamantes-lake": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "garden-in-the-sands": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "gaura-grassland": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "ge-tower-cemetery": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "giants-print-fort": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "giants-mount": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "gleaming-hill": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "goddesss-gateway": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "gorbea-stronghold-ruins": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "granada-fort-ruins": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "grand-aragon": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "grania-stronghold": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "great-sharks-den": [
+   "dietrich",
+   "theodora",
+   "part3"
+  ],
+  "great-tartarus-ruins": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "green-crystal-caves": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "hannibal": [
+   "dietrich",
+   "part3"
+  ],
+  "headsmans-rock": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "heretics-cave": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "heros-spirit-monument": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "homeros-outcrop": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "horizons-crossing": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "horus-channel": [
+   "theodora",
+   "part3"
+  ],
+  "howling-gorge": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "hugo-stronghold": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "hundred-hole-cave": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "hypatia": [
+   "part3"
+  ],
+  "iapetus-cavern": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "isle-of-balor": [
+   "cai",
+   "theodora",
+   "part3"
+  ],
+  "jurahs-temple": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "kallas-temple": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "kassite": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "katarina": [
+   "dietrich",
+   "part3"
+  ],
+  "kavala-stronghold": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "kayen-stronghold": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "kira": [
+   "cai",
+   "part3"
+  ],
+  "klytius-plains": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "knohr-hollow": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "kothar-lake": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "krove-ditch": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "kunlun": [
+   "dietrich",
+   "theodora",
+   "part3"
+  ],
+  "kurdelind-ruins": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "kyklops-stronghold": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "la-mancha-fort-ruins": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "ladon-lake": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "lake-baldr": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "lake-brontes": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "lake-menor": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "lands-limit-tower": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "leiria-stronghold": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "lemont-stronghold": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "libertas-stronghold": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "lindrake-rock-belt": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "liza-hold": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "ludria-stronghold": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "luminaria-pass": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "lyoshan-fort": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "madieu-vestige": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "magellan": [
+   "part3"
+  ],
+  "magnus-plateau": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "maharipa-garden": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "mahdels-shrine": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "mahon-castle-town": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "marss-temple": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "masked-woods": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "megaira": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "megaira-lighthouse": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "memorial-garden": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "merak-pass": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "messalina-orchards": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "midnight-turn": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "mintaka-rockway": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "mons": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "montastraea-sea": [
+   "dietrich",
+   "theodora",
+   "part3"
+  ],
+  "moonwatch-pass": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "mount-aegina": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "mount-orgus-trail": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "mount-ouranos": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "mountainside-hermitage": [
+   "part3"
+  ],
+  "mulciber-marshlands": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "musta-bridge": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "muzura-death-cave": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "myugria-great-tree": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "naimi-lake": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "napier-woods": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "necropolis-of-silence": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "nemea-cavern": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "niiza-gate": [
+   "dietrich",
+   "theodora",
+   "part3"
+  ],
+  "niiza-port": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "niraga-mine": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "north-zorto-stronghold": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "northern-passage": [
+   "theodora",
+   "part3"
+  ],
+  "nowahs-cave": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "oleance-plains": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "oracle-falls": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "orens": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "orion-canyon": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "osiris": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "palace-of-sand": [
+   "part3"
+  ],
+  "pale-ravens-perch": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "pallas-bridge": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "pandora-shoal": [
+   "dietrich",
+   "theodora",
+   "part3"
+  ],
+  "pasha-bay": [
+   "dietrich",
+   "theodora",
+   "part3"
+  ],
+  "pasha-currents": [
+   "dietrich",
+   "theodora",
+   "part3"
+  ],
+  "pebble-mountain": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "pegasis-peak": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "peluza-cape": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "peluza-gulf": [
+   "theodora",
+   "part3"
+  ],
+  "phyrgia-stronghold": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "port-of-pandora": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "ptolemaios": [
+   "part3"
+  ],
+  "purification-shrine": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "pyroxene-cave": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "raivo-port": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "raptors-throat": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "rear-mountain-path": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "regia": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "resurgence-stone": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "ribeira": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "ries-north-stronghold": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "ries-south-stronghold": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "rolling-breeze-hill": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "rotwood-pass": [
+   "cai",
+   "part3"
+  ],
+  "rubess-forest": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "ruins-of-megrez": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "ruins-of-nyassa": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "ruins-of-ys": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "salacia-posthouse": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "sand-pillars": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "sand-shadow-fort": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "sandflow-road": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "sandworm-nest": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "santana-bridge": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "scorched-grass-dunes": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "sea-of-screams": [
+   "dietrich",
+   "theodora",
+   "part3"
+  ],
+  "secret-altar": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "shadowy-cave": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "shama-port": [
+   "theodora",
+   "part3"
+  ],
+  "ship-aground": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "shore-of-ceaseless-winds": [
+   "theodora",
+   "part3"
+  ],
+  "showdown-square": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "shrine-of-osiris": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "silent-sea": [
+   "theodora",
+   "part3"
+  ],
+  "smiling-stone": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "smyrnoss-temple": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "socie-bay": [
+   "theodora",
+   "part3"
+  ],
+  "solels-temple": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "sonai-pass": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "south-zorto-stronghold": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "southern-passage": [
+   "dietrich",
+   "theodora",
+   "part3"
+  ],
+  "sparrows-thoroughfare": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "starbirth-garden": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "starwatch-pass": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "staying-stone": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "stoppered-shrine": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "sunfall-path": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "sunlit-garden": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "sunlit-pass": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "sunset-fortress": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "sunwatch-pass": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "sylvas-hold": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "tarvos": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "tarvos-north-road": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "tarvos-south-road": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "tasit-plain": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "temple-of-balor": [
+   "cai",
+   "part3"
+  ],
+  "temple-of-the-diadem": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "the-valley-of-death": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "thiere-island": [
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "tower-of-ikaros": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "towering-sands": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "travelers-garden": [
+   "leda",
+   "part3"
+  ],
+  "travelers-hill": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "tritopater-corridor": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "troys-shrine": [
+   "part3"
+  ],
+  "twalinn": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "uncharted-isle": [
+   "dietrich",
+   "theodora",
+   "part3"
+  ],
+  "underwater-cave": [
+   "theodora",
+   "part3"
+  ],
+  "unmanned-storehouse": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "unmarked-graves": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "urka-posthouse": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "urkulu-stronghold": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "utuna-pass": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "uzmali-shore": [
+   "cai",
+   "part3"
+  ],
+  "valeri-gorge": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "valhalla-mine": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "valley-of-black-wings": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "valley-of-sedden": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "vataha-reef": [
+   "theodora",
+   "part3"
+  ],
+  "velatori-valley": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "veletta-range-stronghold": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "verdant-hollow": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "wailing-woods": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "walles-woodlands": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "wandering-whirlpool": [
+   "dietrich",
+   "theodora",
+   "part3"
+  ],
+  "wandering-wood": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "warriors-road": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "west-amalthea-posthouse": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "whill": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "whispering-rock": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "windless-waste": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "wodan-pass": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "wordless-graves": [
+   "cai",
+   "leda",
+   "part3"
+  ],
+  "xantha-stronghold": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "yaaman": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "yashiro-fort": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "zeet-lake": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "zethus-falls": [
+   "cai",
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "zorto-lake": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ],
+  "zoste": [
+   "dietrich",
+   "theodora",
+   "leda",
+   "part3"
+  ]
+ }
+}
