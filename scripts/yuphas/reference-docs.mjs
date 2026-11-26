@@ -64,11 +64,29 @@ const head = (title, note) => `# ${title}\n\n${note}\n`;
   const lock = doc.match(/## 순서 잠금[\s\S]*?(?=\n## )/)?.[0] || '', basis = doc.match(/\n## 근거[\s\S]*$/)?.[0] || '';
   write('support-evidence.md', head('루트별 지원 대화 근거', '"루트별 지원 대화" 문서의 순서 잠금 표 근거 열과 "## 근거" 절을 옮겼다(2026-11-27). 화면은 이 열·절을 그리지 않고, 파일 content/notes/support-pairs-by-route.md는 그대로다(검사 U36·U39가 읽음).') + '\n' + lock.replace(/^## /m, '## ') + '\n' + basis.replace(/^\n/, '')); }
 
+// 7. 준비 탭에서 뺀 공통 기준·운영 안내(2026-11-27 사용자 결정 Q2, U69). 화면은 그림 다섯 묶음만(lib/prep.ts). 같은 글은 한 번만 적는다.
+{ const { scopeTree } = await import('../../lib/scope.ts');
+  const P = R('content/derived/presentation.json').parity;
+  const keep = /^(장을 넘기기 전|이번 주|남은 미영입 대상|다음 로드 선행 식사|2부에는 주간 식사 없음|3부는 출격할 세 명만)/;
+  const names = { theodora: '세오도라', leda: '레다', dietrich: '디트리히', cai: '카이', part3: '3부' };
+  const seen = new Set();
+  let text = head('준비 탭 공통 기준·운영 안내', '준비 탭을 그림 다섯 묶음(가호 봉사·이번 주 식사·시험 단계·장을 넘기기 전·바로가기)으로 다시 그리면서 화면에서 뺀 글을 옮겼다(2026-11-27, 사용자 결정). 자료 content/derived/presentation.json(parity.prep·exam·stages)은 그대로다. 같은 글이 여러 루트에 나오면 처음 한 번만 적었다.');
+  const sections = (nodes, out = []) => { for (const n of nodes) { if (typeof n === 'string') continue; if (n.tag === 'section' && n.children.some((c) => typeof c !== 'string' && c.tag === 'h3')) out.push(n); else sections(n.children || [], out); } return out; };
+  const add = (title, body) => { body = body.trim(); if (!body || seen.has(body)) return ''; seen.add(body); return (title ? `### ${title}\n\n` : '') + body + '\n\n'; };
+  for (const [route, part, stage] of [['theodora', '1', 'theodora-plan'], ['leda', '1', 'leda-plan'], ['dietrich', '1', 'dietrich-plan'], ['cai', '1', 'cai-plan'], ['theodora', '2', 'theodora-war-plan'], ['leda', '2', 'leda-war-plan'], ['dietrich', '2', 'dietrich-war-plan'], ['cai', '2', 'cai-war-plan'], ['part3', '3', 'part3-plan']]) {
+    let body = '';
+    for (const s of sections(scopeTree(P.prep, route, part))) { const title = flat(s.children.find((c) => typeof c !== 'string' && c.tag === 'h3')).trim(); if (!keep.test(title)) body += add('', md([s])); }
+    body += add('시험 기준', md(scopeTree(P.exam, route, part)));
+    for (const b of P.stages.find((x) => x.id === stage)?.blocks || []) body += add(b.title, md(scopeTree(b.tree, route, part)));
+    if (body) text += `\n## ${names[route]} ${part}부\n\n` + body;
+  }
+  write('prep-common.md', text); }
+
 // 6. 목차
 { const notes = `${REPO}/content/notes`, list = [];
   const walkDir = (d) => { for (const e of fs.readdirSync(d, { withFileTypes: true }).sort((a, b) => a.name.localeCompare(b.name))) { const p = path.join(d, e.name); if (e.isDirectory()) walkDir(p); else if (e.name.endsWith('.md')) { const t = fs.readFileSync(p, 'utf8').match(/^# (.+)$/m)?.[1] || e.name; list.push([path.relative(REPO, p).replaceAll('\\', '/'), t]); } } };
   walkDir(notes);
   let text = head('참고 문서 목차', '사이트의 "참고 문서" 화면을 없앴다(2026-11-27). 문서 파일은 content/notes/에 그대로 있고(검사가 해시로 지킨다), 이 목차로 찾아간다. 플레이어용 문서(루트별 지원 대화, 병종, 시험 안내)는 사이트의 단추에서 계속 열린다.');
-  text += '\n## 화면에서 옮긴 근거·기록\n\n- [인물 원문 기록](people-original.md)\n- [팀 비교 근거](team-comparison.md)\n- [그림 출처·입수 원문 링크](image-sources.md)\n- [확인되지 않은 내용](unverified.md)\n- [루트별 지원 대화 근거](support-evidence.md)\n- [이름 검토 목록](name-review.md)\n';
+  text += '\n## 화면에서 옮긴 근거·기록\n\n- [인물 원문 기록](people-original.md)\n- [팀 비교 근거](team-comparison.md)\n- [그림 출처·입수 원문 링크](image-sources.md)\n- [확인되지 않은 내용](unverified.md)\n- [준비 탭 공통 기준·운영 안내](prep-common.md)\n- [루트별 지원 대화 근거](support-evidence.md)\n- [이름 검토 목록](name-review.md)\n';
   text += `\n## content/notes (${list.length}건)\n\n` + list.map(([p, t]) => `- [${t.replace(/[[\]]/g, '')}](../../${p})`).join('\n');
   write('README.md', text); }

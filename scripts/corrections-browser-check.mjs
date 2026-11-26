@@ -32,7 +32,6 @@ try{
     if(view!=='tasks')await page.getByRole('navigation',{name:'공략 화면'}).getByRole('button',{name,exact:true}).click();
     // 재설계 뒤 할 일 화면의 h1은 루트 띠(예: 세오도라 1부)다. 할 일은 도구 줄로 확인한다.
     if(view==='tasks')await page.locator('.check-toolbar').waitFor();else await page.getByRole('heading',{name,exact:true,level:1}).waitFor();
-    if(view==='prep')await page.locator('.reference-disclosure').evaluateAll(es=>es.forEach(e=>e.open=true));
     const row=await page.evaluate(()=>{
      const visible=e=>e.checkVisibility()&&e.getBoundingClientRect().width>0;
      return {eraViolations:document.querySelector('.app-shell')?.getAttribute('data-route')==='part3'?[]:[...document.querySelectorAll('img[src*="/post-timeskip/"]')].map(e=>e.src),horizontalScroll:document.documentElement.scrollWidth-innerWidth,amountWrapViolations:[...document.querySelectorAll('[data-amount],.gold-table .amount')].filter(e=>getComputedStyle(e).whiteSpace!=='nowrap').length,
@@ -57,7 +56,8 @@ try{
      if(route==='cai'&&part!=='3')for(const c of cards.filter(c=>/^(카이|녹투라|세테스|이오)$/.test(c.name)))assert.ok(!/바딩거|워리어|브리건드|스나이퍼|아처|창의 범위 공격|기준판에 레벨업|현재 병종의 주력/.test(c.text),c.name+' '+part+'부 옛 경로 글');
      if(route==='cai'&&part==='2')assert.ok(!cards.some(c=>/^(카이|녹투라|세테스|이오)$/.test(c.name)&&/권장 Lv20/.test(c.goal)),'2부 목표에 전차병 시험 조건');
     }
-    if(view==='prep')assert.ok(row.faceSizes.every(size=>size==='48×48'));
+    // 준비 탭(2026-11-27 U69): 얼굴 48×48, 신 타일 초상화는 칸 폭(정사각, 84px 이상).
+    if(view==='prep')assert.ok(row.faceSizes.every(size=>{const [w,h]=size.split('×').map(Number);return (w===48&&h===48)||(w===h&&w>=84);}),JSON.stringify(row.faceSizes));
     if(part!=='2'){
       await page.evaluate(()=>scrollTo(0,0));
       const file=`${route}-${view}-${width}x${height}-${theme}.png`;await page.screenshot({path:`.tmp/corrections-screens/${file}`});screens.push(file);
@@ -68,13 +68,13 @@ try{
   await page.waitForFunction(()=>!document.querySelector('.checklist input[disabled]'));
   await page.getByRole('navigation',{name:'공략 화면'}).getByRole('button',{name:'준비',exact:true}).click();
   await page.getByRole('heading',{name:'준비',exact:true,level:1}).waitFor();
-  await page.locator('.reference-disclosure').evaluateAll(es=>es.forEach(e=>e.open=true));
-  const heading=page.getByRole('heading',{name:'1부 · 실전과 보충 육성',exact:true}).first();await heading.scrollIntoViewIfNeeded();
-  const faceRows=await page.locator('.prep-content [data-face-row]').evaluateAll(es=>es.filter(e=>e.checkVisibility()&&e.textContent.trim()).map(e=>{
-   const image=e.querySelector('img'),name=[...e.children].find(c=>c!==image&&c.textContent.trim());if(!image||!name)return null;
-   const a=image.getBoundingClientRect(),b=name.getBoundingClientRect();return {name:name.textContent,width:a.width,height:a.height,nameToRight:b.left>=a.right,sameLine:Math.abs((a.top+a.bottom-b.top-b.bottom)/2)<1};
+  // 2026-11-27(U69): 준비 탭 '이번 주 식사' 얼굴 타일. 얼굴 48×48, 이름은 얼굴 아래 가운데.
+  await page.locator('[data-panel=meals]').scrollIntoViewIfNeeded();
+  const faceRows=await page.locator('.prep-content .prep-face').evaluateAll(es=>es.filter(e=>e.checkVisibility()).map(e=>{
+   const image=e.querySelector('img'),name=e.querySelector('span');if(!image||!name)return null;
+   const a=image.getBoundingClientRect(),b=name.getBoundingClientRect();return {name:name.textContent,width:a.width,height:a.height,nameBelow:b.top>=a.bottom-1,centered:Math.abs((a.left+a.right-b.left-b.right)/2)<2};
   }).filter(Boolean));
-  assert.ok(faceRows.length>0);assert.ok(faceRows.every(r=>r.width===48&&r.height===48&&r.nameToRight&&r.sameLine),JSON.stringify(faceRows.filter(r=>!r.sameLine||!r.nameToRight)));
+  assert.ok(faceRows.length>0);assert.ok(faceRows.every(r=>r.width===48&&r.height===48&&r.nameBelow&&r.centered),JSON.stringify(faceRows.filter(r=>!r.nameBelow||!r.centered)));
   rows.push({route:'theodora',part:'1',view:'prep-training',width,height,theme,faceRows});
   const file=`prep-training-${width}x${height}-${theme}.png`;await page.screenshot({path:`.tmp/corrections-screens/${file}`});screens.push(file);
   await page.close();console.log(`통과: 1·2·3부 전 루트·표·준비 줄 목록 ${width}×${height} ${theme}`);

@@ -211,6 +211,10 @@ for (const f of [...walk('app', ['.ts', '.tsx', '.css']), ...walk('components', 
   const y = readFileSync('components/yuphas.tsx', 'utf8'); assert.ok(y.includes('target="_blank" rel="noreferrer" lang="en"') && y.includes('function YuphasGroup'), '[U65] 영어 새 탭 단추·묶음 첫 번만');
   assert.ok(!/MapSheet|MapThumbnail/.test(walk('components', ['.tsx']).map(f => readFileSync(f, 'utf8')).join('')), '[U65] 재료 서랍·지도 사진 없음'); }
 
+// [U69] 준비 탭은 그림 다섯 묶음(lib/prep.ts): 옛 기록 표(Records)·문서 나무(Semantic)를 그리지 않는다. 뺀 글은 docs/reference/prep-common.md.
+{ const s = readFileSync('components/secondary.tsx', 'utf8'), body = s.slice(s.indexOf('export function Preparation'), s.indexOf('export function Materials'));
+  assert.ok(body.length > 100 && !/<Records|<Semantic|<table/.test(body), '[U69] 준비 탭에 표·문서 나무'); assert.ok(existsSync('docs/reference/prep-common.md'), '[U69] 뺀 글 docs/reference/prep-common.md'); }
+
 // [U71] 루트 머리 왼쪽 '첫 화면' 옆에 팀 화면(/team/) 단추(2026-11-27).
 { const sh = readFileSync('components/shell.tsx', 'utf8'); assert.ok(sh.includes('href="/team/"') && sh.includes('guide-team'), '[U71] 루트 머리 팀 화면 단추'); }
 

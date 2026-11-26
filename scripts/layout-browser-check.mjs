@@ -20,5 +20,15 @@ try {
     assert.ok(top >= 8, `${w} 첫 화면 위쪽 단추가 맨 위에 붙음 ${top}`);
     n++; await ctx.close();
   }
-  console.log(`통과: 세로 화면 카드 쌓기 ${n}개 화면`);
+  // [U69] 준비 탭은 그림 다섯 묶음, 표 0개, 1440·390·320에서 가로 넘침 0·화면 밖 요소 0.
+  for (const [w, h] of [[320, 640], [390, 844], [1440, 900]]) {
+    const ctx = await browser.newContext({ viewport: { width: w, height: h } }); const p = await ctx.newPage();
+    for (const r of ['/theodora/1/', '/leda/2/', '/part3/3/']) {
+      await p.goto(base + r); await p.locator('.route-head').waitFor(); await p.getByRole('navigation', { name: '공략 화면' }).getByRole('button', { name: '준비', exact: true }).click(); await p.waitForTimeout(600);
+      const m = await p.evaluate(() => ({ panels: [...document.querySelectorAll('.prep-content > .prep-panel')].map(e => e.dataset.panel).join(','), tables: document.querySelectorAll('.prep-content table').length, overflow: document.documentElement.scrollWidth - document.documentElement.clientWidth, off: [...document.querySelectorAll('.prep-content *')].filter(e => e.checkVisibility() && e.getBoundingClientRect().right > document.documentElement.clientWidth + 0.5).map(e => e.className).slice(0, 3) }));
+      assert.ok(m.panels === 'gods,meals,exams,before,links' && m.tables === 0 && m.overflow <= 0 && !m.off.length, `[U69] ${w} ${r} 준비 탭 ${JSON.stringify(m)}`);
+    }
+    n++; await ctx.close();
+  }
+  console.log(`통과: 세로 화면 카드 쌓기·준비 탭 ${n}개 화면`);
 } finally { await browser.close(); }

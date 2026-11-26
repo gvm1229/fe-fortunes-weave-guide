@@ -34,7 +34,7 @@ progress{appearance:none;border:0;border-radius:8px;overflow:hidden;height:8px;b
 .context-rail{position:sticky;top:0;height:100dvh;overflow:auto;overscroll-behavior:contain;align-content:start;scrollbar-color:var(--line) var(--surface-2)}
 .rail-lord img,.mobile-header img,.portrait,.group-portraits img,.context-people img,.god-list img,.media-portrait,.god-portrait,.lord-faces img{border-radius:8px}
 .group-portraits img,.tasks-main .source-markup .media-portrait,.tasks-main .source-markup img[src*="/gods/"]{width:var(--face-inline);height:var(--face-inline);object-fit:contain;object-position:top}
-.context-people img,.prep-content img[src*="/portraits/"],.prep-content img[src*="/gods/"],.god-list img{width:var(--face-list);height:var(--face-list);max-height:var(--face-list);object-fit:contain;object-position:top;border-radius:8px;flex-shrink:0}
+.context-people img,.god-list img{width:var(--face-list);height:var(--face-list);max-height:var(--face-list);object-fit:contain;object-position:top;border-radius:8px;flex-shrink:0}
 .person-heading .portrait{width:var(--face-card);height:var(--face-card);object-fit:contain;object-position:top;border-radius:8px}
 .prep-content [data-face-row]{display:inline-flex;align-items:center;gap:12px;min-height:48px;margin:4px 16px 4px 0}
 .records,.person-info{display:table;width:100%;border-collapse:collapse;table-layout:fixed;margin:16px 0;font-size:20px}

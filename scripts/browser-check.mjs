@@ -175,9 +175,9 @@ try {
         await page.getByRole('navigation',{name:'공략 화면'}).getByRole('button',{name,exact:true}).click();
         await page.getByRole('heading',{name,level:1,exact:true}).waitFor();
         if(view==='prep'){
-          for(const detail of await page.locator('.reference-disclosure').all())await detail.evaluate(e=>{e.open=true;});
+          // 2026-11-27(U69): 신 초상화는 신 타일에서 한 번씩(봉사 순서 칩에는 그림 없음), 정사각 84px 이상.
           const gods=await page.locator('main img[src*="/gods/"]').evaluateAll(es=>es.map(e=>({src:e.getAttribute('src'),width:e.getBoundingClientRect().width,height:e.getBoundingClientRect().height})));
-          if(new Set(gods.map(g=>g.src)).size!==gods.length||gods.some(g=>g.width!==48||g.height!==48))failures.push(`${route} ${theme} ${width}: 신별 초상 48px 한 번`);
+          if(!gods.length||new Set(gods.map(g=>g.src)).size!==gods.length||gods.some(g=>g.width<84||Math.abs(g.width-g.height)>1))failures.push(`${route} ${theme} ${width}: 신별 초상 한 번·정사각`);
         }
         await measure(page,{route,view,theme,width,height});
         // 2026-11-27(U68): 인물 요약 표는 서랍에 있다. 첫 카드의 서랍을 열어 [U54] 표 폭을 잰다.

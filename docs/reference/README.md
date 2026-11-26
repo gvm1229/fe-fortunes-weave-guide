@@ -8,6 +8,7 @@
 - [팀 비교 근거](team-comparison.md)
 - [그림 출처·입수 원문 링크](image-sources.md)
 - [확인되지 않은 내용](unverified.md)
+- [준비 탭 공통 기준·운영 안내](prep-common.md)
 - [루트별 지원 대화 근거](support-evidence.md)
 - [이름 검토 목록](name-review.md)
 

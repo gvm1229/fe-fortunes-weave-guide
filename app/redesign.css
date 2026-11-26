@@ -1017,6 +1017,44 @@ html.dark body:has(.app-shell),html.dark body:has(.team-page),html.dark body:has
 .context-rail .support-doc-button{display:flex;inline-size:fit-content;max-inline-size:100%}
 /* ===== yuphas 통합 끝 ===== */
 @media(max-width:359px){.guide-links .guide-home{min-inline-size:36px;min-block-size:36px}}
+/* 고침 B(2026-11-27, U69): 준비 탭 다섯 묶음. 표·고정 폭 없음, 모든 줄 flex-wrap, 격자 칸은 minmax(0,1fr)/auto-fill. 1440 2열(가호 묶음은 두 열), 999px 이하 1열. */
+.prep-content{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 24px;max-inline-size:none}
+.prep-panel{min-inline-size:0}
+.prep-panel[data-panel=gods]{grid-column:1/-1}
+.prep-panel>h2.y-section-title{margin:0 0 12px;padding-block-end:8px;font-size:16.2px;letter-spacing:.08em;font-weight:700;background:var(--y-divider) left bottom/100% 4px no-repeat}
+.prep-chain{display:flex;flex-wrap:wrap;align-items:center;gap:6px 0;list-style:none;margin:0 0 12px;padding:0}
+.prep-chip{display:inline-flex;align-items:center;gap:6px;min-block-size:32px;padding:0 10px;border:2px solid #39484F;background:#192D34;font-size:15px}
+.prep-chip+.prep-chip::before{content:'→';margin-inline:-4px 2px;color:#ACAAB9;position:relative;inset-inline-start:-14px;inline-size:0}
+.prep-chip+.prep-chip{margin-inline-start:20px}
+.prep-chip b{font-weight:700;color:#FFE8C4}
+.prep-chip[data-done]{opacity:.55}
+.prep-chip[data-next]{background:#3B453A;border-color:#60593E}
+.prep-chip small{font-size:13px;color:#FFE8C4}
+.god-tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:6px;list-style:none;margin:0 0 12px;padding:0}
+.god-tile{display:flex;flex-direction:column;align-items:center;gap:4px;padding:0 0 6px;border:2px solid #39484F;background:#192D34;min-inline-size:0}
+.god-tile img{inline-size:100%;aspect-ratio:1;object-fit:cover;object-position:center top;display:block}
+.god-tile strong{font-size:16px;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000}
+.god-target{font-size:14px;color:#ACAAB9}
+.god-dots{display:flex;gap:4px}.god-dots i{inline-size:8px;block-size:8px;border-radius:50%;background:#39484F}.god-dots i[data-on]{background:#FFE8C4}
+.prep-line{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;font-size:15px}
+.prep-note{margin:6px 0 0;font-size:14px;color:#ACAAB9}
+.prep-row{margin-block-end:14px}.prep-row h3{margin:0 0 6px;font-size:15px;font-weight:700}
+.prep-faces{display:flex;flex-wrap:wrap;gap:8px}
+.prep-face{display:inline-flex;flex-direction:column;align-items:center;gap:2px;inline-size:64px;padding:0;font-size:14px;text-align:center;color:inherit}
+.prep-face img{inline-size:48px;block-size:48px;object-fit:contain;object-position:top;border:1px solid rgb(60 77 80 / .5);background:rgb(39 68 78 / .35)}
+.prep-face>span{max-inline-size:100%;overflow-wrap:anywhere;word-break:keep-all}
+.prep-list,.prep-before{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.prep-before li{display:flex;gap:8px;align-items:flex-start;font-size:16px}.prep-before svg{flex-shrink:0;margin-block-start:3px;color:#ACAAB9}
+.prep-list li{font-size:15px}
+.exam-tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px;list-style:none;margin:0 0 12px;padding:0}
+.exam-tile{display:flex;gap:8px;align-items:flex-start;padding:8px;border:2px solid #39484F;background:#192D34;min-inline-size:0}
+.exam-tile>div{display:flex;flex-direction:column;align-items:flex-start;gap:4px;min-inline-size:0}
+.exam-tile svg{flex-shrink:0;color:#ACAAB9}
+.exam-req{font-size:14px;color:#ACAAB9}
+.exam-tile .y-link{max-inline-size:100%;white-space:normal}
+.prep-links{display:flex;flex-wrap:wrap;gap:8px}.prep-links>*{min-block-size:36px}
+@media(max-width:999px){.prep-content{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:359px){.god-tiles{grid-template-columns:repeat(3,minmax(0,1fr))}}
 
 /* 고침 C(2026-11-27, U68): 인물 탭 = 서랍 머리 카드 격자. 카드 전체가 서랍을 여는 단추(이름 단추의 ::after가 카드를 덮는다), 영어 이름 단추만 그 위. */
 .people-filters{align-items:center}
