@@ -12,7 +12,7 @@
 | 번호 | 규칙(최신) | 날짜·대체 | 검사 |
 |---|---|---|---|
 | U01 | 주인공 이름은 Cai(카이). 'Kai' 이름과 `kai` 루트 ID를 쓰지 않는다(옛 기록 옮기기만 예외) | 11-13 | `scripts/rules-check.mjs` |
-| U02 | 인물 주요 정보는 표, 시험 조건·시기별 계획은 세로 제목–설명 쌍. 중복 없음. 원문 기록은 화면에 두지 않는다(docs/reference/people-original.md) | 11-13, 11-27 '원문 기록' 쌍 → docs로 옮김(사용자 결정: 근거·기록용 글은 화면에서 뺀다) | `scripts/corrections-browser-check.mjs` |
+| U02 | 인물 주요 정보는 표, 시험 조건·시기별 계획은 세로 제목–설명 쌍. 중복 없음. 원문 기록은 화면에 두지 않는다(docs/reference/people-original.md) | 11-13, 11-27 '원문 기록' 쌍 → docs로 옮김(사용자 결정: 근거·기록용 글은 화면에서 뺀다), 11-27 인물 탭은 머리 카드만이고 표·쌍은 인물 서랍(U68) | `scripts/corrections-browser-check.mjs` |
 | U03 | 인물 자료가 정확하고 빠짐없다. 예: 세오도라 가디언 → 홀리 랜서, 둘 다 백마술. 시험 조건과 병종 무기·기능 목표를 구분해 둘 다 보인다 | 11-13 | `scripts/rules-check.mjs` |
 | U04 | 팀 화면 최종 25인은 16:9·9:16에서 스크롤 없이 모두 보이고 스크롤이 안 된다 | 11-13 | `scripts/team-fit-check.mjs` |
 | U05 | 팀 화면 교체 카드: 6px 테두리, 같은 색 오른쪽 위 배지에 누구 대신인지. 색은 밝은 빨강 | 11-13, 색은 11-14, 11-27 '밝게·어둡게 모두' → 어두운 화면만(U64) | `scripts/team-fit-check.mjs` `scripts/rules-browser-check.mjs` |
@@ -36,7 +36,7 @@
 | U23 | 이오는 탈것을 보존할 수 있는 루트만. 알렉산드라는 두 루트 이상 영입 | 11-14 | `scripts/verify.mjs` `scripts/rules-check.mjs` |
 | U24 | 최종 25인(대체 포함): 서랍에 금색 '최종 25인' 배지, 얼굴에 4px 테두리. 테두리 색은 밝은 빨강 | 11-14, 금색 테두리 → 빨강(11-14), 11-27 '밝게·어둡게 모두' → 어두운 화면만(U64) | `scripts/header-browser-check.mjs` `scripts/rules-browser-check.mjs` |
 | U25 | 사이트에 개인 진행(체크·골드·축복 등) 없음. 새 브라우저는 빈 기록. 개인 값은 git 무시 progress/ JSON에만 두고, 사이트는 그것을 가져오고 축복 단계·가호 레벨·파편·골드를 고칠 수 있다 | 11-14, 11-15 | `scripts/header-browser-check.mjs` `scripts/status-browser-check.mjs` `scripts/verify.mjs` |
-| U26 | 모든 영입 동료에 싼 선호 선물(지원 1 영입·영입만 카드 포함). 서랍·인물 카드의 '선호 선물·음식' 목록 맨 앞에 '싸게 살 수 있는 선물'로 강조한다 | 11-14, 11-27 선물 줄 → yuphastemple 선호 선물 탭 모양 목록(U67) | `scripts/verify.mjs` `scripts/rules-browser-check.mjs` |
+| U26 | 모든 영입 동료에 싼 선호 선물(지원 1 영입·영입만 카드 포함). 인물 서랍의 '선호 선물·음식' 목록 맨 앞에 '싸게 살 수 있는 선물'로 강조한다 | 11-14, 11-27 선물 줄 → yuphastemple 선호 선물 탭 모양 목록(U67), 11-27 인물 탭 카드 → 서랍(U68) | `scripts/verify.mjs` `scripts/rules-browser-check.mjs` |
 | U27 | '완료 숨기기'는 고정 머리 안. 오른쪽 아래 둥근 '맨 위로' 단추(그림만, 풍선 도움말) | 11-14 | `scripts/header-browser-check.mjs` `scripts/rules-browser-check.mjs` |
 | U28 | **폐지**: 테마 단추를 두지 않는다(옛 규칙: 테마 단추는 하나, 머리가 붙기 전 오른쪽 위·붙은 뒤 막대 오른쪽 끝) | 11-15(11-14 '머리에 고정'을 대체), 11-27 폐지 → U64 어두운 화면만(사용자 결정) | `scripts/rules-check.mjs` |
 | U29 | 바닥 고정 게임 날짜(YYYY/MM/DD, 가운데, 주행계 움직임). 날짜는 첫 미완료 항목 기준 | 11-14(2안 선택) | `scripts/header-browser-check.mjs` `scripts/verify.mjs` |
@@ -78,6 +78,7 @@
 | U65 | yuphastemple 이름 규칙: 누를 수 없는 이름 배지는 한국어, yuphastemple 새 탭으로 가는 실제 단추는 영어 이름. 한 할 일 묶음에서 같은 물품의 영어 단추는 처음 한 번만. 한국어 이름이 없으면(미확인) 영어 단추만. 물품·재료·무기·마법·선물·음식·지원·지도는 yuphastemple 링크이고 재료 서랍·지도 사진은 없다. 본문 지도 링크는 yuphastemple 지도 | 11-27(사용자 결정) | `scripts/rules-check.mjs` `scripts/rules-browser-check.mjs` |
 | U66 | 화면에 근거·기록용 글이 없다: 원문 기록, 팀 비교 근거 탭, 참고 문서 화면, 그림 출처·입수 원문 링크, 근거·검토 문서 단추, 특기 검토 문서, 조심 문구. 옮긴 곳 docs/reference/(목차 README.md) | 11-27(사용자 결정) | `scripts/rules-check.mjs` `scripts/rules-browser-check.mjs` |
 | U67 | 인물 서랍·팀 인물 서랍 머리는 yuphastemple 인물 머리 카드: 큰 이름 + 빛, 병종 줄(그림·이름·이동 아이콘), 장점·약점 6×2 그림(▲·▼ 표식), 뒤 소속 문장, 오른쪽 큰 초상화. '특기' 글 대신 그림. 그 아래 선호 선물·음식 전체(리본·점수 색·음식 타일)와 지원 표(2열, 얼굴 배경, 등급과 시기) | 11-27(사용자 결정: 글보다 그림) | `scripts/rules-browser-check.mjs` |
+| U68 | 인물 탭은 인물 서랍 머리 카드 모양의 카드 격자(이름 검색 + 역할 탭 전체·본대·보완·선택·수집, '육성판 목적'·'필터 지우기' 없음). 카드를 누르면 인물 서랍. 탭 안에 표·접기 없음 | 11-27(사용자 요청: 인물 탭을 서랍 디자인으로) | `scripts/rules-browser-check.mjs` |
 | U70 | 서랍 지원 표 얼굴은 모든 줄에서 잘리지 않는다: 줄 높이 ≥ 얼굴 높이(데스크톱 54px·휴대폰 40px), 얼굴은 칸 왼쪽 아래 | 11-27(사용자 요청: 얼굴이 들쭉날쭉 잘림) | `scripts/rules-browser-check.mjs` |
 | U71 | 루트 머리 왼쪽 '첫 화면' 옆에 팀 화면(/team/) 단추 '팀 25인'(같은 모양). 휴대폰은 아이콘만(359px 이하 36px). 휴대폰 루트 탭·팀 탭 줄에 빈 칸이 없다(359px 이하 팀 탭은 한 줄 3칸) | 11-27(사용자 요청) | `scripts/rules-check.mjs` `scripts/header-browser-check.mjs` |
 

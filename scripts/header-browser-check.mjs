@@ -5,6 +5,7 @@ import { chromium } from '@playwright/test';
 import { resolve } from 'node:path';
 import { readFileSync } from 'node:fs';
 import assert from 'node:assert/strict';
+import { eachPersonSheet } from './people-sheets.mjs';
 process.env.TEMP = process.env.TMP = resolve('.tmp');
 const base = process.env.BROWSER_BASE_URL || 'http://localhost:3000';
 const browser = await chromium.launch({ executablePath: process.env.CHROME_PATH || 'C:/Program Files/Google/Chrome/Application/chrome.exe', headless: true });
@@ -37,8 +38,9 @@ try {
     await p.locator('.route-head .check-control input').check(); assert.ok(await p.locator('.route-head .check-control input').isChecked());
     await tt.click(); await p.waitForTimeout(1200); assert.ok(await p.evaluate(() => scrollY) < 5, '맨 위로 이동');
     await p.getByRole('navigation', { name: '공략 화면' }).getByRole('button', { name: '인물', exact: true }).click(); await p.waitForTimeout(800);
-    const gifts = await p.evaluate(() => [...document.querySelectorAll('.person')].map(x => ({ n: x.querySelector('h2')?.textContent, c: x.querySelectorAll('.gift-chips li').length })));
-    assert.ok(gifts.length && gifts.every(g => g.c > 0), '모든 인물 카드에 싼 선물');
+    // 2026-11-27(U68): 싼 선물은 인물 서랍에 있다. 서랍을 모두 여는 검사는 390에서 한 번(네 루트 1440은 rules-browser-check [U26]).
+    if (w === 390) { const gifts = await eachPersonSheet(p, async (d, n) => ({ n, c: await d.locator('.y-gift[data-cheap], .gift-chips li').count() }));
+      assert.ok(gifts.length && gifts.every(g => g.c > 0), '모든 인물 서랍에 싼 선물 ' + gifts.filter(g => !g.c).map(g => g.n)); }
     n++; await ctx.close();
   }
   // 바닥 게임 날짜(2026-11-14): 새 브라우저(시작 전, 날짜 없음)는 숨김. 7장 앞까지 체크한 기록이면 7장 첫 날짜, 2부는 숨김. 맨 위로 버튼은 바닥 위.

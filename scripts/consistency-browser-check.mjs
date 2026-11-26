@@ -88,6 +88,10 @@ try {
       for (const v of ['인물', '준비', '재료']) {
         await nav.getByRole('button', { name: v }).first().click(); await p.waitForTimeout(500);
         await check(p, `${w} ${route} ${v}`, phone);
+        // 2026-11-27(U68): 인물 표는 서랍에 있다. [U54] 표 머리 칸 폭을 서랍에서 잰다(표가 1개 이상인지도 본다).
+        if (v === '인물') { await p.locator('.person-card-open').first().click(); await p.getByRole('dialog').waitFor(); await p.waitForTimeout(300);
+          if (!await p.locator('.sheet .person-summary th[scope=row]').count()) { failed++; console.log(`실패: ${w} 인물 서랍 표 없음`); }
+          await check(p, `${w} ${route} 인물 서랍`, phone); await p.keyboard.press('Escape'); await p.getByRole('dialog').waitFor({ state: 'detached' }); }
       }
     }
     await ctx.close();

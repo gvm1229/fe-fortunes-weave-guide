@@ -26,12 +26,12 @@ export function KoBadge({ ko, icon, kind = 'item', value }: { ko: string; icon?:
 const skillKo: Record<string, string> = { Sword: '검술', Spear: '창술', Axe: '도끼술', Bow: '궁술', Gauntlet: '격투술', 'Black Magic': '흑마술', 'White Magic': '백마술', Authority: '지휘술', Infantry: '보병술', Riding: '기마술', Armor: '중갑술', Flying: '비행술' };
 const moveKo: Record<string, string> = { infantry: '보병', riding: '기마', flying: '비행', armor: '중갑' };
 /** 인물 머리: yuphastemple /<인물>/ 머리 카드 모양(docs/yuphas-pages-teardown.md §1). 큰 이름 + 빛, 병종 줄, 6×2 장점·약점 그림, 뒤 소속 문장, 오른쪽 큰 초상화. */
-export function CharacterHeader({ name, profile, portrait, children }: { name: string; profile?: YuphasProfile; portrait: string; children?: ReactNode }) {
+export function CharacterHeader({ name, profile, portrait, children, nameSlot, lazy }: { name: string; profile?: YuphasProfile; portrait: string; children?: ReactNode; nameSlot?: ReactNode; lazy?: boolean }) {
   const style = profile?.emblem ? { '--faction': `url('${profile.emblem}')` } as React.CSSProperties : undefined;
   return <div className="y-card" style={style} data-character-header>
-    <img className="y-card-portrait" src={profile?.portrait || portrait} alt={name} />
+    <img className="y-card-portrait" src={profile?.portrait || portrait} alt={nameSlot ? '' : name} loading={lazy ? 'lazy' : undefined} />
     <div className="y-card-body">
-      <p className="y-card-name">{name}{profile && <YLink en={profile.en} href={personUrl(profile.slug)} className="y-card-en" />}</p>
+      <p className="y-card-name">{nameSlot ?? name}{profile && <YLink en={profile.en} href={personUrl(profile.slug)} className="y-card-en" />}</p>
       {profile?.cls && <p className="y-card-class"><img className="y-class-icon" src={profile.cls.icon || ''} alt="" />{profile.cls.ko}{profile.cls.moves.map((m) => <img key={m} className="y-move-icon" src={`/yuphas/icons/skills/${m}-flat.png`} alt={moveKo[m]} title={moveKo[m]} />)}</p>}
       {profile && <ul className="y-skills" aria-label="숙련 장점·약점">{profile.skills.map((s) => <li key={s.skill} data-state={s.state} title={`${skillKo[s.skill]}${s.state === 'boon' ? ' · 장점' : s.state === 'bane' ? ' · 약점' : ''}`}><img src={s.icon} alt={`${skillKo[s.skill]}${s.state === 'boon' ? ' 장점' : s.state === 'bane' ? ' 약점' : ''}`} /><span aria-hidden="true">{s.state === 'boon' ? '▲' : s.state === 'bane' ? '▼' : ''}</span></li>)}</ul>}
       {children}

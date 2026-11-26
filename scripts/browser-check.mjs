@@ -108,6 +108,7 @@ async function measure(page,{route='home',view='home',theme,width,height,screens
   for(const [ok,message] of [[row.horizontalScroll===0,'가로 스크롤'],[row.minimumFont>=13,'최소 글자 13px([U43] yuphastemple 값)'],[row.dashboardVerticalScroll===null||row.dashboardVerticalScroll===0||height>width,'첫 화면 세로 스크롤'],[row.overlapCount===0,'요소 겹침'],[row.brokenImages.length===0,'그림 로딩'],[row.transparentButtons.length===0,'채운 버튼'],[row.backgroundMatches,'body 배경']])if(!ok)failures.push(`${label}: ${message}`);
   for(const [items,message]of [[row.aspectRatioViolations,'원본 그림 비율'],[row.faceSizeViolations,'얼굴 크기'],[row.paragraphViolations,'2문장 문단'],[row.groupLineViolations,'3줄 묶음'],[row.eraViolations,'타임스킵 시대'],[row.croppedScenes,'그림 전체 표시']])if(items.length)failures.push(`${label}: ${message}`);
   // [U54] 인물 표 머리 칸 폭: 데스크톱 120px, 휴대폰 100px.
+  if(view==='person-sheet'&&!row.personTables.length)failures.push(`${label}: 인물 서랍 요약 표 없음`);
   if(row.personTables.some(t=>t.columns!==2||Math.abs(t.labelWidth-(width<768?100:120))>1))failures.push(`${label}: 인물 2열 표 너비 ${row.personTables.map(t=>t.labelWidth).join(",")}`);
   if(row.goldTables.some(t=>t.columns!==3||!t.amountRight))failures.push(`${label}: 골드 3열 표·금액 정렬`);
   if(row.sceneHeights.some(h=>h>(width<768?height*.6:480)+1))failures.push(`${label}: 그림 최대 높이`);
@@ -179,6 +180,8 @@ try {
           if(new Set(gods.map(g=>g.src)).size!==gods.length||gods.some(g=>g.width!==48||g.height!==48))failures.push(`${route} ${theme} ${width}: 신별 초상 48px 한 번`);
         }
         await measure(page,{route,view,theme,width,height});
+        // 2026-11-27(U68): 인물 요약 표는 서랍에 있다. 첫 카드의 서랍을 열어 [U54] 표 폭을 잰다.
+        if(view==='people'){await page.locator('.person-card-open').first().click();await page.getByRole('dialog').waitFor();await page.waitForTimeout(300);await measure(page,{route,view:'person-sheet',theme,width,height});await page.keyboard.press('Escape');await page.getByRole('dialog').waitFor({state:'detached'});}
         if(view==='materials'&&route!=='part3'){
           // 2026-11-27: 재료 서랍·지도 사진 대신 재료마다 yuphastemple 물품·지도 단추(U65).
           const rows=page.locator('[data-material]');

@@ -4,10 +4,10 @@ import { characterSummary, plainCharacterText } from '@/lib/character-summary';
 import { GameText, GameIcon } from './game-text';
 import { Gift, Search } from 'lucide-react';
 import type { Person } from '@/lib/content';
-import { LikedGifts, SupportTable, YLink } from './yuphas';
+import { CharacterHeader, YLink } from './yuphas';
+import { ToggleGroup, ToggleGroupItem } from './ui/toggle-group';
 import { yuphasItem, giftUrl } from '@/lib/yuphas';
 import { Button } from './ui/button';
-import { Card } from './ui/card';
 import { Badge } from './ui/badge';
 import { isFinal25 } from '@/lib/final25';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './ui/accordion';
@@ -48,11 +48,11 @@ function pairs(person:Person,part:string,summaryText:string[],classes:Record<str
   const seen=new Set(summaryText.map(norm));
   return list.map(p=>({...p,lines:p.lines.filter(l=>{const k=norm(l.replace(/^[^:]{1,12}: /,''));if(seen.has(k)&&!p.keep)return false;seen.add(k);return true;})})).filter(p=>p.lines.length);
 }
-export function PersonInfo({person,classes,part="1",openKey,more=false}:{person:Person;classes:Record<string,ClassInfo>;part?:string;onDoc?:(url:string)=>void;openKey?:string;more?:boolean}){
+export function PersonInfo({person,classes,part="1"}:{person:Person;classes:Record<string,ClassInfo>;part?:string}){
   const summary=characterSummary(person,part),d=person.data,self=new Set([person.name]);
   const goals=summary.goals.map(line=>line.replace(/주력 무기 ([SABCDE])/,(m,rank)=>{const main=d.skills.find(s=>s.kind==='주력');return main?`${main.skill} ${rank}`:m;}));
   const detail=pairs(person,part,[summary.reason,summary.join,summary.battle,...goals,...summary.stop,...summary.caution],classes);
-  const [open,setOpen]=usePreference<string[]>(openKey||`person-open-${person.route}-${part}`,[]);
+  const [open,setOpen]=usePreference<string[]>(`person-open-${person.route}-${part}`,[]);
   const mine=open.filter(k=>k.startsWith(person.name+':'));
   return <><table className="person-summary"><tbody>
     <tr><th scope="row">영입 이유</th><td><GameText text={summary.reason} part={part} skip={self}/></td></tr>
@@ -64,14 +64,12 @@ export function PersonInfo({person,classes,part="1",openKey,more=false}:{person:
     <tr><th scope="row">목표</th><td><ul className="summary-points">{goals.map((line,i)=><li key={i}><strong><GameText text={line} withSkills part={part} skip={self}/></strong></li>)}</ul></td></tr>
     <tr><th scope="row">멈출 때</th><td><ul className="summary-points">{summary.stop.map((line,i)=><li key={i}><GameText text={line} part={part} skip={self}/></li>)}</ul></td></tr>
     {/* 선물: 싸게 살 수 있는 선호 선물과 비싼 선물. 지원 대화를 모두 보려고 지원 1 영입 동료도 보여 준다(2026-11-14 사용자 지시). */}
-    {(more||!person.yuphas)&&(person.cheapGifts.length>0||(!person.yuphas&&person.gifts.length>0))&&<tr><th scope="row">선물</th><td>{person.cheapGifts.length>0&&<><p className="gift-label">싸게 살 수 있는 선물</p><ul className="gift-chips">{person.cheapGifts.map(g=><li key={g.name}><span className="game-badge" data-kind="gift">{g.icon?<img src={'/'+g.icon} alt="" loading="lazy"/>:<Gift className="gift-fallback" size={22} aria-hidden="true"/>/* 공식 그림을 못 구한 물품은 일반 선물 아이콘(interface.md 규칙) */}<span className="badge-label">{g.name}</span>{g.cost!=null&&<b className="badge-value">{g.cost.toLocaleString('en-US')}G</b>}</span>{(()=>{const y=yuphasItem(g.name);return y&&person.yuphas?<YLink en={y.en} href={giftUrl(person.yuphas.slug,y.slug)}/>:null;})()}{g.reaction==='매우 좋아함'&&<Badge>매우 좋아함</Badge>}</li>)}</ul></>}{!person.yuphas&&person.gifts.length>0&&<><p className="gift-label">비싼 선물</p><ul className="expensive-gifts">{person.gifts.map(g=><li key={g}><span className="game-badge" data-kind="gift"><Gift className="gift-fallback" size={22} aria-hidden="true"/><span className="badge-label">{g}</span></span></li>)}</ul></>}</td></tr>}
+    {!person.yuphas&&(person.cheapGifts.length>0||(!person.yuphas&&person.gifts.length>0))&&<tr><th scope="row">선물</th><td>{person.cheapGifts.length>0&&<><p className="gift-label">싸게 살 수 있는 선물</p><ul className="gift-chips">{person.cheapGifts.map(g=><li key={g.name}><span className="game-badge" data-kind="gift">{g.icon?<img src={'/'+g.icon} alt="" loading="lazy"/>:<Gift className="gift-fallback" size={22} aria-hidden="true"/>/* 공식 그림을 못 구한 물품은 일반 선물 아이콘(interface.md 규칙) */}<span className="badge-label">{g.name}</span>{g.cost!=null&&<b className="badge-value">{g.cost.toLocaleString('en-US')}G</b>}</span>{(()=>{const y=yuphasItem(g.name);return y&&person.yuphas?<YLink en={y.en} href={giftUrl(person.yuphas.slug,y.slug)}/>:null;})()}{g.reaction==='매우 좋아함'&&<Badge>매우 좋아함</Badge>}</li>)}</ul></>}{!person.yuphas&&person.gifts.length>0&&<><p className="gift-label">비싼 선물</p><ul className="expensive-gifts">{person.gifts.map(g=><li key={g}><span className="game-badge" data-kind="gift"><Gift className="gift-fallback" size={22} aria-hidden="true"/><span className="badge-label">{g}</span></span></li>)}</ul></>}</td></tr>}
     {!!summary.caution.length&&<tr><th scope="row">보존 주의</th><td>{summary.caution.map(line=><strong key={line}>{line}</strong>)}</td></tr>}
     </tbody></table>
     <Accordion type="multiple" className="person-more" value={mine.map(k=>k.slice(person.name.length+1))} onValueChange={v=>setOpen(prev=>[...prev.filter(k=>!k.startsWith(person.name+':')),...v.map(k=>person.name+':'+k)])}>
       {detail.length>0&&<AccordionItem value="plan"><AccordionTrigger>{d.avoid?'영입 조건':'시험 조건·시기별 계획'}</AccordionTrigger><AccordionContent><dl className="detail-pairs">{detail.map((p,i)=><div key={i}><dt>{p.title}</dt><dd>{p.lines.map((l,j)=><p key={j}><GameText text={l} withSkills part={part} skip={self}/></p>)}</dd></div>)}</dl></AccordionContent></AccordionItem>}
       {/* 원문 기록은 화면에서 뺐다(docs/reference/people-original.md, 2026-11-27). 선호 선물·음식과 지원은 yuphastemple 모양. */}
-      {more&&person.yuphas&&<AccordionItem value="gifts"><AccordionTrigger>선호 선물·음식</AccordionTrigger><AccordionContent><LikedGifts profile={person.yuphas} cheap={person.cheapGifts.map(g=>g.name)}/></AccordionContent></AccordionItem>}
-      {more&&!!person.yuphas?.supports.length&&<AccordionItem value="supports"><AccordionTrigger>지원</AccordionTrigger><AccordionContent><SupportTable profile={person.yuphas}/></AccordionContent></AccordionItem>}
     </Accordion></>;
 }
 /** 역할·최종 25인·영입 목적·지원/명성 배지. 카드 머리와 인물 서랍이 함께 쓴다(2026-11-15 검토 11 L3). */
@@ -79,12 +77,12 @@ export function PersonTags({person,part}:{person:Person;part:string}){
   const gate=person.recruitment as {sup?:string|number;fame?:string|number};
   return <div className="tags"><Badge variant="strong">{person.role}</Badge>{isFinal25(person.name)&&<span className="final25-badge">최종 25인</span>}{part==='3'&&<Badge>{routeNames[person.route]}에서 준비 · {person.kind}</Badge>}{person.data.avoid&&<Badge>{person.badge||(person.name==='누조'?'선더 소드 지참품용 영입':'지원 대화용 영입')}</Badge>}{person.joinLabel&&<Badge>{part==='1'?person.joinLabel:`1부: ${person.joinLabel}`}</Badge>}{gate?.sup!=='0'&&gate?.sup!==0&&<span className="game-badge" data-kind="bond"><GameIcon kind="bond"/><span className="badge-label">지원</span> <b className="badge-value">{gate?.sup??'미확인'}</b></span>}{gate?.fame!=='0'&&gate?.fame!==0&&<span className="game-badge" data-kind="renown"><GameIcon kind="renown"/><span className="badge-label">명성</span> <b className="badge-value">{gate?.fame??'미확인'}</b></span>}</div>;
 }
-export function PersonHeading({person,part}:{person:Person;part:string}){
-  return <div className="person-heading">{person.portrait&&<img className={'portrait'+(isFinal25(person.name)?' final25-portrait':'')} src={`/${person.portrait}`} alt={person.name} loading="lazy"/>}<div><h2>{person.name}</h2><PersonTags person={person} part={part}/></div></div>;
-}
-export function People({people,classes,part,onDoc}:{people:Person[];classes:Record<string,ClassInfo>;part:string;onDoc:(url:string)=>void}){
+export function People({people,part,onDoc,onPerson}:{people:Person[];part:string;onDoc:(url:string)=>void;onPerson:(id:string)=>void}){
+  // 인물 탭(2026-11-27 사용자 요청, U68): 서랍 머리 카드 격자. 자세한 표·선물·지원은 카드를 눌러 여는 인물 서랍에만 둔다.
   const scope=`people-${people[0]?.route}-${part}`;
-  const [query,setQuery]=usePreference<string>(scope+'-query','');const [role,setRole]=usePreference<string>(scope+'-role','전체');const [kind,setKind]=usePreference<string>(scope+'-kind','전체');
-  const list=people.filter(p=>p.name.normalize('NFKC').includes(query.normalize('NFKC').trim())&&(role==='전체'||p.role===role)&&(kind==='전체'||p.kind===kind)).sort((a,b)=>['본대','보완','선택','수집'].indexOf(a.role)-['본대','보완','선택','수집'].indexOf(b.role)||a.order.localeCompare(b.order,undefined,{numeric:true}));
-  return <><div className="filters people-filters"><label className="search"><Search size={22}/><input aria-label="인물 이름 검색" placeholder="이름으로 찾기" value={query} onChange={e=>setQuery(e.target.value)}/></label><select aria-label="역할 필터" value={role} onChange={e=>setRole(e.target.value)}>{['전체',...new Set(people.map(p=>p.role))].map(r=><option key={r} value={r}>{r==='전체'?'모든 역할':r}</option>)}</select><select aria-label="육성판 목적" value={kind} onChange={e=>setKind(e.target.value)}>{["전체",...new Set(people.map(p=>p.kind))].map(k=><option key={k} value={k}>{k==='전체'?'모든 목적':k}</option>)}</select><Button variant="secondary" onClick={()=>{setQuery('');setRole('전체');setKind('전체');}}>필터 지우기</Button><Button variant="secondary" onClick={()=>onDoc('notes/exam.md')}>시험 안내</Button></div><p className="muted">{list.length}명</p><div className="people-grid">{list.map(p=><Card className="person" key={`${p.route}-${p.name}`}><PersonHeading person={p} part={part}/><PersonInfo person={p} classes={classes} part={part} onDoc={onDoc} more openKey={`people-open-${people[0]?.route}-${part}`}/></Card>)}</div>{!list.length&&<p>맞는 인물이 없습니다. 이름이나 역할을 바꿔 보세요.</p>}</>;
+  const [query,setQuery]=usePreference<string>(scope+'-query','');const [role,setRole]=usePreference<string>(scope+'-role','전체');
+  const roles=['본대','보완','선택','수집'];
+  const list=people.filter(p=>p.name.normalize('NFKC').includes(query.normalize('NFKC').trim())&&(role==='전체'||p.role===role)).sort((a,b)=>roles.indexOf(a.role)-roles.indexOf(b.role)||a.order.localeCompare(b.order,undefined,{numeric:true}));
+  return <><div className="filters people-filters"><label className="search"><Search size={22}/><input aria-label="인물 이름 검색" placeholder="이름으로 찾기" value={query} onChange={e=>setQuery(e.target.value)}/></label><ToggleGroup type="single" className="role-tabs" aria-label="역할" value={role} onValueChange={v=>v&&setRole(v)}>{['전체',...roles.filter(r=>people.some(p=>p.role===r))].map(r=><ToggleGroupItem key={r} value={r}>{r}</ToggleGroupItem>)}</ToggleGroup><span className="people-count" aria-live="polite">{list.length}명</span><Button variant="secondary" onClick={()=>onDoc('notes/exam.md')}>시험 안내</Button></div>
+    <div className="people-grid">{list.map(p=><article className="person-card" key={`${p.route}-${p.name}`} data-person={p.name}><CharacterHeader name={p.name} profile={p.yuphas&&part==='3'?{...p.yuphas,portrait:''}:p.yuphas} portrait={'/'+p.portrait} lazy nameSlot={<button type="button" className="person-card-open" onClick={()=>onPerson(p.id)}>{p.name}</button>}><PersonTags person={p} part={part}/></CharacterHeader></article>)}</div>{!list.length&&<p>맞는 인물이 없습니다. 이름이나 역할을 바꿔 보세요.</p>}</>;
 }

@@ -745,21 +745,21 @@ html.dark body:has(.app-shell),html.dark body:has(.team-page),html.dark body:has
 /* ---------- 여기부터 어두운 테마 그림 조각 ---------- */
 
 /* 7. 3조각 알약(buttonLeft 왼쪽 끝 + buttonCenter 늘림 + 뒤집은 buttonLeft 오른쪽 끝): 열린 탭·주 단추 */
-.dark :is(.guide-navigation button[aria-current],.team-page .ui-tabs-list button[data-state=active],:is(.app-shell,.sheet,.team-page,.home) .button-primary:not(.to-top),.team-page .scenario-toggles button[data-state=on]){
+.dark :is(.guide-navigation button[aria-current],.team-page .ui-tabs-list button[data-state=active],:is(.app-shell,.sheet,.team-page,.home) .button-primary:not(.to-top),.team-page .scenario-toggles button[data-state=on],.app-shell .role-tabs button[data-state=on]){
   position:relative;border-color:transparent;
   background:url('/yuphas/buttonLeft.png') left top/18px 100% no-repeat,url('/yuphas/buttonCenter.png') center/calc(100% - 34px) 100% no-repeat;
   color:#FFF4D9;
 }
-.dark :is(.guide-navigation button[aria-current],.team-page .ui-tabs-list button[data-state=active],:is(.app-shell,.sheet,.team-page,.home) .button-primary:not(.to-top),.team-page .scenario-toggles button[data-state=on])::after{
+.dark :is(.guide-navigation button[aria-current],.team-page .ui-tabs-list button[data-state=active],:is(.app-shell,.sheet,.team-page,.home) .button-primary:not(.to-top),.team-page .scenario-toggles button[data-state=on],.app-shell .role-tabs button[data-state=on])::after{
   content:'';position:absolute;inset-block:0;inset-inline-end:0;inline-size:18px;background:url('/yuphas/buttonLeft.png') 0 0/100% 100% no-repeat;transform:scaleX(-1);pointer-events:none;
 }
 .dark :is(.app-shell,.sheet,.team-page,.home) .button-primary:not(.to-top):hover{filter:brightness(1.12);text-shadow:0 0 2px #CAB99D,0 0 8px rgb(202 185 157 / .6)}
-.dark .team-page .scenario-toggles button[data-state=on]{padding-inline:22px}
+.dark .team-page .scenario-toggles button[data-state=on],.app-shell .role-tabs button[data-state=on]{padding-inline:22px}
 /* 휴대폰 아래 탭 줄: 안 고른 탭 = 그 사이트 좁은 화면 메뉴 단추 그림 */
 @media(max-width:767px){.dark .guide-navigation button:not([aria-current]){background:url('/yuphas/buttonInactiveBG5.png') 0 0/100% 100% no-repeat}}
 
 /* 8. 판 단추(tileBg3 질감 + 1px 테두리), 호버 = 올리브 바탕 */
-.dark :is(.app-shell,.sheet,.team-page,.home) :is(.button:not(.button-primary):not(.button-accent),select,.check-control,.backup-menu>summary,.team-page .ui-press:not([data-state=active]):not([data-state=on])){background:url('/yuphas/tileBg3.png') center/cover #192D34;border:1px solid var(--edge)}
+.dark :is(.app-shell,.sheet,.team-page,.home) :is(.button:not(.button-primary):not(.button-accent),select,.check-control,.backup-menu>summary,.team-page .ui-press:not([data-state=active]):not([data-state=on]),.role-tabs .ui-press:not([data-state=on])){background:url('/yuphas/tileBg3.png') center/cover #192D34;border:1px solid var(--edge)}
 .dark .team-page .ui-tabs-list button.ui-press:not([data-state=active]):not([data-state=on]){background:transparent;border-color:transparent}
 .dark :is(.app-shell,.sheet,.team-page,.home) :is(.button:not(.button-primary):not(.button-accent),.backup-menu>summary,select):hover{background:#3B453A;border-color:var(--edge-hi);color:var(--text)}
 .dark :is(.app-shell,.sheet) .checklist input{border-color:var(--accent)}
@@ -1017,3 +1017,20 @@ html.dark body:has(.app-shell),html.dark body:has(.team-page),html.dark body:has
 .context-rail .support-doc-button{display:flex;inline-size:fit-content;max-inline-size:100%}
 /* ===== yuphas 통합 끝 ===== */
 @media(max-width:359px){.guide-links .guide-home{min-inline-size:36px;min-block-size:36px}}
+
+/* 고침 C(2026-11-27, U68): 인물 탭 = 서랍 머리 카드 격자. 카드 전체가 서랍을 여는 단추(이름 단추의 ::after가 카드를 덮는다), 영어 이름 단추만 그 위. */
+.people-filters{align-items:center}
+.people-filters .search{flex:1 1 240px;min-block-size:32px}
+.role-tabs .ui-press{min-block-size:32px;padding-inline:14px;font-size:16px;border-radius:0}
+.dark .app-shell .role-tabs button[data-state=on]{padding-inline:22px}
+.people-count{font-size:14px;color:#ACAAB9}
+.people-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(420px,100%),1fr));gap:16px;align-items:stretch}
+.person-card{position:relative;min-inline-size:0;border:2px solid transparent;transition:border-color .15s,background-color .15s}
+.person-card .y-card{min-block-size:220px;margin:0;block-size:100%}
+.person-card-open{all:unset;cursor:pointer;font:inherit;color:inherit}
+.person-card-open::after{content:'';position:absolute;inset:0;z-index:1}
+.person-card .y-card-en{position:relative;z-index:2}
+.person-card:hover{border-color:#60593E;background-color:#3B453A}
+.person-card:has(.person-card-open:focus-visible){outline:2px solid #FFE8C4;outline-offset:2px}
+@media(max-width:767px){.person-card .y-card{min-block-size:200px}.role-tabs{flex-wrap:wrap}}
+@media(prefers-reduced-motion:reduce){.person-card{transition:none}}

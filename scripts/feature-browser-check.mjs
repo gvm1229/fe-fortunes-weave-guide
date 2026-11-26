@@ -23,17 +23,19 @@ try{
  await page.getByLabel('완료 숨기기',{exact:true}).uncheck();
  checks.push('완료 숨기기·새로 고침 기억');
  await nav('인물').click();await page.getByLabel('인물 이름 검색').fill('리네');
- assert.equal(await page.locator('.people-grid>.person').count(),1);
- await page.getByRole('button',{name:'필터 지우기',exact:true}).click();
- await page.getByLabel('육성판 목적').selectOption({label:'기준 육성'});
- assert.ok(await page.locator('.people-grid>.person').count()>0);
- await page.reload();await nav('인물').click();assert.equal(await page.getByLabel('육성판 목적').inputValue(),'기준 육성');
+ assert.equal(await page.locator('.people-grid>.person-card').count(),1);
+ // 2026-11-27(U68): 육성판 목적·필터 지우기 대신 역할 탭. 고른 탭은 새로 고친 뒤에도 남는다.
+ const roleTab=name=>page.locator('.role-tabs').getByRole('radio',{name,exact:true});
+ await page.getByLabel('인물 이름 검색').fill('');await roleTab('본대').click();
+ const main=await page.locator('.people-grid>.person-card').count();assert.ok(main>0);
+ await page.reload();await nav('인물').click();assert.equal(await roleTab('본대').getAttribute('data-state'),'on');assert.equal(await page.locator('.people-grid>.person-card').count(),main);
+ await roleTab('전체').click();
  await page.getByRole('button',{name:'시험 안내',exact:true}).click();await page.getByRole('dialog').waitFor();assert.ok((await page.locator('.sheet-scroll').innerText()).length>100);await page.keyboard.press('Escape');
  // 2026-11-27: 원문 기록 접이는 docs/reference로 옮겼다. 인물 카드의 선호 선물·음식 접이에 yuphastemple 영어 단추가 있고, 병종 문서는 할 일 본문의 병종 단추에서 열린다.
- const detail=page.locator('.person').first();await detail.getByRole('button',{name:'선호 선물·음식'}).click();assert.ok(await detail.locator('[data-yuphas-link]').count()>3,'선호 선물 영어 단추');
+ await page.locator('.person-card-open').first().click();const detail=page.getByRole('dialog');await detail.waitFor();assert.ok(await detail.locator('[data-yuphas-link]').count()>3,'서랍 선호 선물 영어 단추');await page.keyboard.press('Escape');await detail.waitFor({state:'detached'});
  await nav('할 일').click();await page.evaluate(()=>document.querySelectorAll('main details').forEach(d=>{d.open=true;}));const classButton=page.locator('.tasks-main button.reference-chip').first();await classButton.click();
  await page.getByRole('dialog').waitFor();assert.ok((await page.locator('.sheet-scroll').innerText()).includes('시험'));await page.keyboard.press('Escape');
- checks.push('육성판 필터·기억·시험 안내·선호 선물 링크·본문 병종 버튼');
+ checks.push('역할 탭·기억·시험 안내·서랍 선호 선물 링크·본문 병종 버튼');
  assert.equal(await page.evaluate(()=>localStorage.getItem('fortunes-weave-checklist-v1')),initial);
  await visit('/team/');
  const tab=name=>page.getByRole('tab',{name,exact:true});
@@ -76,7 +78,7 @@ try{
  for(const route of ['theodora','leda','dietrich','cai']){
    await visit('/'+route+'/2/');for(const view of ['인물','준비','재료와 구매']){await nav(view).click();await layout(route+' 2부 '+view);}
  }
- await visit('/part3/3/');await nav('인물').click();await page.locator('.person-heading img[src*="post-timeskip"]').first().waitFor({timeout:15000});assert.ok(await page.locator('.person-heading img[src*="post-timeskip"]').count()>0);
+ await visit('/part3/3/');await nav('인물').click();await page.locator('.person-card .y-card-portrait[src*="post-timeskip"]').first().waitFor({timeout:15000});assert.ok(await page.locator('.person-card .y-card-portrait[src*="post-timeskip"]').count()>0);
  checks.push('3부 인물 시간 경과 후 초상화');
  assert.deepEqual(errors,[]);
  console.log('통과: '+checks.length+'개 복원 기능·추가 화면 검사');

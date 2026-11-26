@@ -57,16 +57,16 @@ async function measure(page,scene){
       horizontalOverflow:Math.max(0,document.documentElement.scrollWidth-innerWidth),
       minimumFont:Math.min(...text.map(e=>parseFloat(getComputedStyle(e).fontSize))),
       imageCount:imageRatios.length,maxImageRatioError:Math.max(0,...imageRatios.map(e=>e.error)),imageRatioViolations:imageRatios.filter(e=>e.error>.01),
-      brokenImages:images.filter(e=>!e.naturalWidth).map(e=>e.src),chipSizes,completed,partialLines,sourceCounts,duplicateChipIcons,
+      brokenImages:images.filter(e=>!e.naturalWidth&&!(e.loading==='lazy'&&!e.complete)).map(e=>e.src),chipSizes,completed,partialLines,sourceCounts,duplicateChipIcons,
       orphanStatusLines:document.querySelectorAll('.tasks-main>.save-status:not(.error)').length,
       certificateNoticeInTasks:[...document.querySelectorAll('.tasks-main .info-notice')].some(e=>e.textContent.includes('증서 수량은 준비 슬롯')),
       saveInToolbar:!!save,saveRightOfProgress:save&&bar?(rect(save).left>=rect(bar).right||rect(save).top>=rect(bar).bottom):null,// 768~1099px는 머리가 두 줄이라 저장 표시가 진행 줄 아래(2026-11-14)
 
-      zeroChips:[...document.querySelectorAll('.person .tags>span')].map(e=>e.textContent).filter(s=>/^(지원|명성)\s*0$/.test(s.trim())),
+      zeroChips:[...document.querySelectorAll('.person-card .tags>span, .sheet .tags>span')].map(e=>e.textContent).filter(s=>/^(지원|명성)\s*0$/.test(s.trim())),
       rawTierRows:personRows.filter(e=>e.querySelector('th')?.textContent==='가입 단계'&&/^\d+$/.test(e.querySelector('td')?.textContent.trim()||'')).map(e=>e.textContent),
       tierLabels:[...new Set(personRows.filter(e=>e.querySelector('th')?.textContent==='가입 단계').map(e=>e.querySelector('td').textContent))],
-      joinLabels:[...document.querySelectorAll('.person .tags>.role-chip')].map(e=>e.textContent),
-      summaryHeads:[...document.querySelectorAll('.person-summary')].map(t=>[...t.querySelectorAll('th')].map(th=>th.textContent)),
+      joinLabels:[...document.querySelectorAll('.person-card .tags>.role-chip')].map(e=>e.textContent),
+      summaryHeads:[...document.querySelectorAll('.person-summary')].map(t=>[...t.querySelectorAll('th')].map(th=>th.textContent)),cards:document.querySelectorAll('.people-grid .person-card').length,
       home:home&&visible(home)?{width:homeRect.width,text:home.textContent,textFits:!!homeTextRect&&homeTextRect.left>=homeRect.left&&homeTextRect.right<=homeRect.right}:null,
     };
   });
@@ -88,8 +88,9 @@ async function measure(page,scene){
     // 완료 장은 한 줄로 접는다. 사양은 48px이지만 B 재설계 코드(app/redesign.css)가 최소 56px로 정했고 코드를 따른다(2026-11-14 문서·코드 불일치 목록).
     assert.ok(row.completed.length>0&&row.completed.every(c=>!c.open&&c.height===c.summary&&c.summary>=56&&c.summary<=64&&c.children.length===3&&c.children.includes('svg')),JSON.stringify(row.completed));
   }else{
-    // 재설계 v3 인물 요약 표(components/people.tsx): 모든 카드에 기본 다섯 줄이 있다.
-    assert.ok(row.summaryHeads.length>0&&row.summaryHeads.every(h=>['영입 이유','합류','출격','목표','멈출 때'].every(k=>h.includes(k))),JSON.stringify(row.summaryHeads.slice(0,2)));
+    // 2026-11-27(U68): 인물 탭은 머리 카드 격자(표 없음). 요약 표 다섯 줄은 인물 서랍에서 본다(아래 서랍 장면).
+    if(scene.view==='people')assert.ok(row.cards>0&&row.summaryHeads.length===0,JSON.stringify({cards:row.cards,tables:row.summaryHeads.length}));
+    else assert.ok(row.summaryHeads.length>0&&row.summaryHeads.every(h=>['영입 이유','합류','출격','목표','멈출 때'].every(k=>h.includes(k))),JSON.stringify(row.summaryHeads.slice(0,2)));
   }
   if(scene.width>=1200)assert.ok(row.home?.textFits&&row.home.text==='첫 화면',JSON.stringify(row.home));
   return row;
@@ -147,6 +148,9 @@ try{
     await page.getByRole('heading',{name:'인물',level:1,exact:true}).waitFor();await ready(page);
     await measure(page,{label:label.replace('-todo-','-people-'),width,height,theme,view:'people'});
     await capture(page,label.replace('-todo-','-people-'));
+    await page.locator('.person-card-open').first().click();await page.getByRole('dialog').waitFor();await page.waitForTimeout(300);
+    await measure(page,{label:label.replace('-todo-','-person-sheet-'),width,height,theme,view:'person-sheet'});
+    await page.keyboard.press('Escape');await page.getByRole('dialog').waitFor({state:'detached'});
     assert.equal(await page.locator('.prose-toggle').count(),0,'자세히 접기 없음');
     interactions.push({width,height,theme,check:'person-disclosure-preserves-content',passed:true});
     await page.getByRole('navigation',{name:'공략 화면'}).getByRole('button',{name:'준비',exact:true}).click();

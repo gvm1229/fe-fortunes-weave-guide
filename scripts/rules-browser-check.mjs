@@ -4,6 +4,7 @@ import { chromium } from '@playwright/test';
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import assert from 'node:assert/strict';
+import { eachPersonSheet } from './people-sheets.mjs';
 process.env.TEMP = process.env.TMP = resolve('.tmp');
 const base = process.env.BROWSER_BASE_URL || 'http://localhost:3000', RED = 'rgb(227, 0, 27)';
 const team = JSON.parse(readFileSync('content/source/react-content.json', 'utf8')).team;
@@ -71,7 +72,7 @@ try {
     const bgs = await p.evaluate(() => [...new Set([...document.querySelectorAll('main img[src*="portraits"], .context-rail img[src*="portraits"]')].filter(e => e.checkVisibility() && e.hasAttribute('data-loaded')).map(e => getComputedStyle(e).backgroundColor))]);
     assert.equal(bgs.length, 1, `[U09] ${theme} 초상화 바탕색 ${bgs}`);
     // [U08] 같은 묶음 안에서 같은 얼굴을 되풀이하지 않는다.
-    const dup = await p.evaluate(() => [...document.querySelectorAll('.group-portraits,.context-people,.people-grid')].flatMap(g => { const s = [...g.querySelectorAll('img[src*="/portraits/"]')].filter(i => !i.closest('.person > :not(.person-heading)')).map(i => i.getAttribute('src')); return s.filter((x, i) => s.indexOf(x) !== i); }));
+    const dup = await p.evaluate(() => [...document.querySelectorAll('.group-portraits,.context-people,.people-grid')].flatMap(g => { const s = [...g.querySelectorAll('img[src*="/portraits/"]')].map(i => i.getAttribute('src')); return s.filter((x, i) => s.indexOf(x) !== i); }));
     assert.deepEqual(dup, [], `[U08] 묶음 안 같은 얼굴`);
     // [U05] 팀 화면 교체 카드: 6px 빨간 테두리, 배지에 누구 대신인지. [U06] 카드 순서는 역할 묶음 → 우선순위. [U08] 같은 얼굴 없음.
     for (const sc of team.proposal.scenarios) {
@@ -148,6 +149,11 @@ try {
     }
     await p.setViewportSize({ width: 1440, height: 900 });
     await p.keyboard.press('Escape');
+    // [U68] 인물 탭은 서랍 머리 카드 격자(이름 검색 + 역할 탭). 카드를 누르면 인물 서랍. 탭 안에 표·접기 없음.
+    await p.goto(base + '/theodora/1/'); await p.locator('.route-head').waitFor(); await p.getByRole('navigation', { name: '공략 화면' }).getByRole('button', { name: '인물', exact: true }).click(); await p.waitForTimeout(500);
+    const ppl = await p.evaluate(() => ({ cards: document.querySelectorAll('.people-grid .person-card').length, heads: document.querySelectorAll('.people-grid .person-card [data-character-header]').length, tables: document.querySelectorAll('main table').length, folds: document.querySelectorAll('main details, main [data-radix-collection-item][aria-expanded]').length, selects: document.querySelectorAll('main select').length, roles: [...document.querySelectorAll('.role-tabs [role=radio]')].map(e => e.textContent) }));
+    assert.ok(ppl.cards > 5 && ppl.heads === ppl.cards && ppl.tables === 0 && ppl.folds === 0 && ppl.selects === 0 && ppl.roles[0] === '전체', `[U68] 인물 탭 ${JSON.stringify(ppl)}`);
+    await p.locator('.person-card-open').first().click(); await p.getByRole('dialog').waitFor(); assert.ok(await p.getByRole('dialog').locator('.person-summary').count() > 0, '[U68] 카드 → 인물 서랍'); await p.keyboard.press('Escape'); await p.getByRole('dialog').waitFor({ state: 'detached' });
     for (const tab of ['최종 25인', '백마술', '루트 편성']) { await p.goto(base + '/team/'); await p.waitForLoadState('networkidle'); await p.getByRole('tab', { name: tab, exact: true }).click(); await p.waitForTimeout(400); await bloat(`/team/ ${tab}`); }
     assert.equal(await p.getByRole('tab').count(), 3, '[U66] 팀 탭 셋');
     await p.getByRole('tab', { name: '최종 25인', exact: true }).click(); await p.locator('.unit-card').first().click(); const td = p.getByRole('dialog'); await td.waitFor(); await p.waitForTimeout(300);
@@ -163,10 +169,11 @@ try {
   // [U26] 네 루트 1부 인물 화면의 모든 인물 카드에 싼 선물이 있다.
   { const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 } }), p = await ctx.newPage();
     for (const r of ROUTES) { await p.goto(base + `/${r}/1/`); await p.locator('.route-head').waitFor(); await p.getByRole('navigation', { name: '공략 화면' }).getByRole('button', { name: '인물', exact: true }).click(); await p.waitForTimeout(600);
-      const g = await p.evaluate(() => [...document.querySelectorAll('.person')].map(x => ({ n: x.querySelector('h2')?.textContent, c: x.querySelectorAll('.gift-chips li').length })));
+      // 2026-11-27(U68): 인물 탭 카드는 머리 카드만이라 싼 선물·계획 글은 서랍에서 본다.
+      const g = await eachPersonSheet(p, async (d, n) => ({ n, c: await d.locator('.y-gift[data-cheap], .gift-chips li').count() }));
       assert.ok(g.length > 5, `[U26] ${r} 인물 카드 수`); const miss = g.filter(x => !x.c).map(x => x.n); assert.deepEqual(miss, [], `[U26] ${r} 싼 선물 없는 인물`);
-      // [U42] 누조 카드는 '영입만·투자 없음'으로 보이고, 전력·실전 주력 같은 말이 없다(원문 기록을 펼쳐도).
-      const nz = await p.evaluate(() => { const c = [...document.querySelectorAll('.person')].find(x => x.querySelector('h2')?.textContent.trim() === '누조'); if (!c) return null; c.querySelectorAll('details').forEach(d => { d.open = true; }); return c.innerText; });
+      // [U42] 누조 서랍은 '영입만·투자 없음'으로 보이고, 전력·실전 주력 같은 말이 없다(접기를 펼쳐도).
+      const nz = (await eachPersonSheet(p, async d => { for (const t of await d.locator('button[aria-expanded=false]').all()) await t.click(); return d.innerText(); }, ['누조']))[0] || null;
       if (nz) { assert.ok(/투자하지 않습니다/.test(nz), `[U42] ${r} 누조 카드 투자 없음 표시`); assert.ok(!/활 전력|실전 주력/.test(nz), `[U42] ${r} 누조 카드에 전력 문구`); } }
     await ctx.close(); }
   // [U10] 장의 마지막 항목을 체크하면 색종이가 터진다(움직임 줄이기가 아닐 때). 새 브라우저 저장소에서만 누른다.

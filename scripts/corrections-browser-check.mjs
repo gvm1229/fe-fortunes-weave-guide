@@ -3,6 +3,7 @@ import {chromium} from '@playwright/test';
 import {mkdirSync,writeFileSync,copyFileSync} from 'node:fs';
 import {resolve} from 'node:path';
 import assert from 'node:assert/strict';
+import {eachPersonSheet} from './people-sheets.mjs';
 process.env.TEMP=process.env.TMP=resolve('.tmp');
 const base=process.env.BROWSER_BASE_URL||'http://localhost:3000';
 const browser=await chromium.launch({executablePath:process.env.CHROME_PATH||'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
@@ -31,7 +32,6 @@ try{
     if(view!=='tasks')await page.getByRole('navigation',{name:'공략 화면'}).getByRole('button',{name,exact:true}).click();
     // 재설계 뒤 할 일 화면의 h1은 루트 띠(예: 세오도라 1부)다. 할 일은 도구 줄로 확인한다.
     if(view==='tasks')await page.locator('.check-toolbar').waitFor();else await page.getByRole('heading',{name,exact:true,level:1}).waitFor();
-    if(view==='people')await page.locator('.person>details').evaluateAll(es=>es.forEach(e=>e.open=true));
     if(view==='prep')await page.locator('.reference-disclosure').evaluateAll(es=>es.forEach(e=>e.open=true));
     const row=await page.evaluate(()=>{
      const visible=e=>e.checkVisibility()&&e.getBoundingClientRect().width>0;
@@ -47,11 +47,12 @@ try{
     assert.equal(row.amountWrapViolations,0,JSON.stringify(row));assert.deepEqual(row.doubledBadges,[],JSON.stringify(row));
     assert.equal(row.tableFontViolations,0,JSON.stringify(row));assert.equal(row.groupLineViolations,0,JSON.stringify(row));
     // 표 글자는 yuphastemple 값 16px(2026-11-27, [U43] 대체), 인물 얼굴 데스크톱 96px·휴대폰 72px(app/redesign.css).
-    if(view==='people')assert.deepEqual(row.faceSizes,[width<768?'72×72':'96×96']);
+    // 2026-11-27(U68): 인물 탭은 서랍 머리 카드 격자. 카드마다 큰 초상화 하나.
+    if(view==='people')assert.ok(await page.locator('.people-grid .person-card').count()>0&&await page.locator('.people-grid .person-card').evaluateAll(es=>es.every(e=>e.querySelectorAll('.y-card-portrait').length===1)),'인물 카드 초상화 하나');
     // 인물 카드: 계획 쌍은 14개 이하. 카이 루트 전차병 4명(누조 제외, 2026-11-14 영입만)은 옛 경로 병종을 말하지 않는다(마스터 기술용 줄만 예외, 2026-11-14 사용자 결정).
     if(view==='people'&&width===1440&&theme==='dark'){
-     for(const t of await page.getByRole('button',{name:/시험 조건·시기별 계획/}).all())if(await t.getAttribute('aria-expanded')!=='true')await t.click();
-     const cards=await page.evaluate(()=>[...document.querySelectorAll('.person')].map(p=>({name:p.querySelector('h2')?.textContent,pairs:p.querySelectorAll('.detail-pairs>div').length,text:[...p.querySelectorAll('.person-summary td,.detail-pairs>div')].filter(e=>e.querySelector('dt')?.textContent!=='전차병 육성').map(e=>e.innerText).join(' '),goal:[...p.querySelectorAll('.person-summary tr')].find(r=>r.querySelector('th')?.textContent==='목표')?.querySelector('td')?.innerText||''})));
+     // 계획 표·쌍은 인물 서랍에 있다(2026-11-27, U68). 서랍마다 접기를 열어 읽는다.
+     const cards=await eachPersonSheet(page,async d=>{for(const t of await d.getByRole('button',{name:/시험 조건·시기별 계획/}).all())if(await t.getAttribute('aria-expanded')!=='true')await t.click();return d.evaluate(p=>({name:p.querySelector('.sheet-heading h2')?.textContent,pairs:p.querySelectorAll('.detail-pairs>div').length,text:[...p.querySelectorAll('.person-summary td,.detail-pairs>div')].filter(e=>e.querySelector('dt')?.textContent!=='전차병 육성').map(e=>e.innerText).join(' '),goal:[...p.querySelectorAll('.person-summary tr')].find(r=>r.querySelector('th')?.textContent==='목표')?.querySelector('td')?.innerText||''}));});
      assert.ok(cards.every(c=>c.pairs<=14),JSON.stringify(cards.filter(c=>c.pairs>14).map(c=>c.name+' '+c.pairs)));
      if(route==='cai'&&part!=='3')for(const c of cards.filter(c=>/^(카이|녹투라|세테스|이오)$/.test(c.name)))assert.ok(!/바딩거|워리어|브리건드|스나이퍼|아처|창의 범위 공격|기준판에 레벨업|현재 병종의 주력/.test(c.text),c.name+' '+part+'부 옛 경로 글');
      if(route==='cai'&&part==='2')assert.ok(!cards.some(c=>/^(카이|녹투라|세테스|이오)$/.test(c.name)&&/권장 Lv20/.test(c.goal)),'2부 목표에 전차병 시험 조건');
