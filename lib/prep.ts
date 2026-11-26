@@ -7,12 +7,13 @@ import peopleDisplay from '@/content/data/people-display.json';
 import { personPortrait } from './portraits';
 import { yuphasItem } from './yuphas';
 import type { Tree } from './content';
+import classData from '@/content/data/yuphas-classes.json';
 /**
  * 준비 탭 다섯 묶음의 자료(2026-11-27 사용자 결정 Q2, U69): 가호 봉사 · 이번 주 식사 · 시험 단계 · 장을 넘기기 전 · 바로가기.
  * 화면이 표·문서 나무를 그리지 않도록 서버에서 필요한 값만 뽑는다. 뺀 공통 기준 글은 docs/reference/prep-common.md.
  */
 export type PrepFace = { name: string; portrait: string };
-export type PrepExam = { ko: string; item: string; en: string | null; slug: string | null; level: number; renown: number | null; note?: string };
+export type PrepExam = { ko: string; item: string; en: string | null; slug: string | null; level: number; renown: number | null; part3?: boolean; note?: string };
 export type PrepPanels = {
   chain: { god: string; level: number; effect: string }[];
   queue: string | null; end: string | null; boons: { name: string; price: number }[];
@@ -22,18 +23,11 @@ export type PrepPanels = {
   exams: PrepExam[];
   before: string[];
 };
-/** 시험 단계 값(yuphastemple 병종 고르기 창 머리 · content/data/yuphas-classes.json licenses와 같아야 한다 — scripts/builds-check.mjs가 대조). */
-const EXAMS: PrepExam[] = [
-  { ko: '초급', item: '초급 시험 증서', level: 5, renown: 1, en: null, slug: null },
-  { ko: '중급', item: '중급 시험 증서', level: 20, renown: 4, en: null, slug: null },
-  { ko: '상급', item: '상급 시험 증서', level: 35, renown: 8, en: null, slug: null },
-];
-const EXAMS_PART3: PrepExam[] = [
-  { ko: '코끼리', item: '코끼리병 시험 증서', level: 35, renown: null, en: null, slug: null },
-  { ko: '최상급', item: '최상급 시험 증서', level: 45, renown: null, en: null, slug: null },
-  { ko: '신장직', item: '신장직 시험 증서', level: 45, renown: null, note: '한 번에 1명', en: null, slug: null },
-];
-export const prepExamLevels = [...EXAMS, ...EXAMS_PART3].map((e) => [e.ko, e.level, e.renown] as const);
+/** 시험 단계 값은 병종 고르기 창과 같은 표(content/data/yuphas-classes.json licenses, yuphastemple 창 머리 값)에서 읽는다. 증서 물품 이름은 우리 이름표 이름. */
+const LICENSE_ITEM: Record<string, string> = { beginner: '초급 시험 증서', specialty: '중급 시험 증서', advanced: '상급 시험 증서', elephant: '코끼리병 시험 증서', master: '최상급 시험 증서', divine: '신장직 시험 증서' };
+const EXAMS: PrepExam[] = (classData.licenses as { id: string; ko: string; level: number | null; renown: number | null; part3?: boolean; single?: boolean }[])
+  .filter((l) => l.id !== 'default' && l.level != null)
+  .map((l) => ({ ko: l.ko, item: LICENSE_ITEM[l.id], level: l.level!, renown: l.renown, part3: !!l.part3, ...(l.single ? { note: '한 번에 1명' } : {}), en: null, slug: null }));
 const text = (n: Tree): string => (typeof n === 'string' ? n : n.children.map(text).join(''));
 const kids = (n: Tree, tag: string) => (typeof n === 'string' ? [] : n.children.filter((c): c is Exclude<Tree, string> => typeof c !== 'string' && c.tag === tag));
 function section(nodes: Tree[], title: (h: string) => boolean): Exclude<Tree, string> | undefined {
@@ -70,7 +64,7 @@ export function prepPanels(route: string, part: string, prepTree: Tree[]): PrepP
     boons: part === '1' ? (plan?.boons || []).map(([name, price]) => ({ name, price })) : [],
     gods: boonCatalog.gods.map((g) => ({ name: g.name, file: '/' + (godManifest.portraits as Record<string, { file: string }>)[g.name].file, max: g.max, target: target(g.name) })),
     meals,
-    exams: (part === '3' ? [...EXAMS, ...EXAMS_PART3] : EXAMS).map(withItem),
+    exams: EXAMS.filter((e) => part === '3' || !e.part3).map(withItem),
     before: lines,
   };
 }

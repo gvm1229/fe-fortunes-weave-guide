@@ -1,0 +1,1439 @@
+{
+ "note": "scripts/yuphas/classes.mjs가 yuphastemple data.json에서 만든 표. 고치지 말고 다시 만든다.",
+ "reviewed": "2026-11-27",
+ "site": "https://yuphastemple.com",
+ "licenses": [
+  {
+   "id": "default",
+   "en": "Default",
+   "ko": "기본",
+   "level": null,
+   "renown": null
+  },
+  {
+   "id": "beginner",
+   "en": "Beginner",
+   "ko": "초급",
+   "level": 5,
+   "renown": 1
+  },
+  {
+   "id": "specialty",
+   "en": "Specialty",
+   "ko": "중급",
+   "level": 20,
+   "renown": 4
+  },
+  {
+   "id": "advanced",
+   "en": "Advanced",
+   "ko": "상급",
+   "level": 35,
+   "renown": 8
+  },
+  {
+   "id": "elephant",
+   "en": "Elephant",
+   "ko": "코끼리",
+   "level": 35,
+   "renown": null,
+   "part3": true
+  },
+  {
+   "id": "master",
+   "en": "Master",
+   "ko": "최상급",
+   "level": 45,
+   "renown": null,
+   "part3": true
+  },
+  {
+   "id": "divine",
+   "en": "Divine",
+   "ko": "신장직",
+   "level": 45,
+   "renown": null,
+   "part3": true,
+   "single": true
+  }
+ ],
+ "classes": [
+  {
+   "slug": "commoner",
+   "en": "Commoner",
+   "ko": "평민",
+   "license": "default",
+   "level": null,
+   "renown": null,
+   "part3": false,
+   "column": "magic",
+   "mounted": false,
+   "moves": [
+    "infantry"
+   ],
+   "weapons": [
+    "sword",
+    "spear",
+    "axe",
+    "bow",
+    "gauntlet",
+    "black_magic",
+    "white_magic"
+   ]
+  },
+  {
+   "slug": "noble",
+   "en": "Noble",
+   "ko": "귀족",
+   "license": "default",
+   "level": null,
+   "renown": null,
+   "part3": false,
+   "column": "magic",
+   "mounted": false,
+   "moves": [
+    "infantry"
+   ],
+   "weapons": [
+    "sword",
+    "spear",
+    "axe",
+    "bow",
+    "gauntlet",
+    "black_magic",
+    "white_magic"
+   ]
+  },
+  {
+   "slug": "gladiator",
+   "en": "Gladiator",
+   "ko": "투사",
+   "license": "beginner",
+   "level": 5,
+   "renown": 1,
+   "part3": false,
+   "column": "infantry",
+   "mounted": false,
+   "moves": [
+    "infantry"
+   ],
+   "weapons": [
+    "sword",
+    "axe",
+    "gauntlet"
+   ]
+  },
+  {
+   "slug": "hunter",
+   "en": "Hunter",
+   "ko": "사냥병",
+   "license": "beginner",
+   "level": 5,
+   "renown": 1,
+   "part3": false,
+   "column": "ranged",
+   "mounted": false,
+   "moves": [
+    "infantry"
+   ],
+   "weapons": [
+    "sword",
+    "bow"
+   ]
+  },
+  {
+   "slug": "soldier",
+   "en": "Soldier",
+   "ko": "병사",
+   "license": "beginner",
+   "level": 5,
+   "renown": 1,
+   "part3": false,
+   "column": "armor",
+   "mounted": false,
+   "moves": [
+    "infantry",
+    "armor"
+   ],
+   "weapons": [
+    "sword",
+    "spear",
+    "axe"
+   ]
+  },
+  {
+   "slug": "ornius-rider",
+   "en": "Ornius Rider",
+   "ko": "비약 타조병",
+   "license": "beginner",
+   "level": 5,
+   "renown": 1,
+   "part3": false,
+   "column": "riding",
+   "mounted": true,
+   "moves": [
+    "riding"
+   ],
+   "weapons": [
+    "sword",
+    "spear",
+    "axe"
+   ]
+  },
+  {
+   "slug": "diviner",
+   "en": "Diviner",
+   "ko": "주술사",
+   "license": "beginner",
+   "level": 5,
+   "renown": 1,
+   "part3": false,
+   "column": "magic",
+   "mounted": false,
+   "moves": [
+    "infantry"
+   ],
+   "weapons": [
+    "sword",
+    "axe",
+    "gauntlet",
+    "black_magic",
+    "white_magic"
+   ]
+  },
+  {
+   "slug": "myrmidon",
+   "en": "Myrmidon",
+   "ko": "검사",
+   "license": "specialty",
+   "level": 20,
+   "renown": 4,
+   "part3": false,
+   "column": "infantry",
+   "mounted": false,
+   "moves": [
+    "infantry"
+   ],
+   "weapons": [
+    "sword",
+    "spear"
+   ]
+  },
+  {
+   "slug": "brigand",
+   "en": "Brigand",
+   "ko": "브리건드",
+   "license": "specialty",
+   "level": 20,
+   "renown": 4,
+   "part3": false,
+   "column": "infantry",
+   "mounted": false,
+   "moves": [
+    "infantry"
+   ],
+   "weapons": [
+    "sword",
+    "axe",
+    "gauntlet"
+   ]
+  },
+  {
+   "slug": "pugilist",
+   "en": "Pugilist",
+   "ko": "세스타스",
+   "license": "specialty",
+   "level": 20,
+   "renown": 4,
+   "part3": false,
+   "column": "infantry",
+   "mounted": false,
+   "moves": [
+    "infantry"
+   ],
+   "weapons": [
+    "gauntlet"
+   ]
+  },
+  {
+   "slug": "archer",
+   "en": "Archer",
+   "ko": "아처",
+   "license": "specialty",
+   "level": 20,
+   "renown": 4,
+   "part3": false,
+   "column": "ranged",
+   "mounted": false,
+   "moves": [
+    "infantry"
+   ],
+   "weapons": [
+    "bow"
+   ]
+  },
+  {
+   "slug": "rogue",
+   "en": "Rogue",
+   "ko": "로그",
+   "license": "specialty",
+   "level": 20,
+   "renown": 4,
+   "part3": false,
+   "column": "ranged",
+   "mounted": false,
+   "moves": [
+    "infantry"
+   ],
+   "weapons": [
+    "sword",
+    "bow"
+   ]
+  },
+  {
+   "slug": "armored-knight",
+   "en": "Armored Knight",
+   "ko": "중갑 보병",
+   "license": "specialty",
+   "level": 20,
+   "renown": 4,
+   "part3": false,
+   "column": "armor",
+   "mounted": false,
+   "moves": [
+    "infantry",
+    "armor"
+   ],
+   "weapons": [
+    "sword",
+    "spear",
+    "axe"
+   ]
+  },
+  {
+   "slug": "light-cavalry",
+   "en": "Light Cavalry",
+   "ko": "경기병",
+   "license": "specialty",
+   "level": 20,
+   "renown": 4,
+   "part3": false,
+   "column": "armor",
+   "mounted": true,
+   "moves": [
+    "riding"
+   ],
+   "weapons": [
+    "sword",
+    "spear",
+    "axe"
+   ]
+  },
+  {
+   "slug": "charioteer",
+   "en": "Charioteer",
+   "ko": "전차병",
+   "license": "specialty",
+   "level": 20,
+   "renown": 4,
+   "part3": false,
+   "column": "armor",
+   "mounted": true,
+   "moves": [
+    "riding"
+   ],
+   "weapons": [
+    "bow"
+   ]
+  },
+  {
+   "slug": "armored-ornius-rider",
+   "en": "Armored Ornius Rider",
+   "ko": "기갑 타조병",
+   "license": "specialty",
+   "level": 20,
+   "renown": 4,
+   "part3": false,
+   "column": "riding",
+   "mounted": true,
+   "moves": [
+    "riding"
+   ],
+   "weapons": [
+    "sword",
+    "spear",
+    "axe"
+   ]
+  },
+  {
+   "slug": "wing-soldier",
+   "en": "Wing Soldier",
+   "ko": "천익병",
+   "license": "specialty",
+   "level": 20,
+   "renown": 4,
+   "part3": false,
+   "column": "riding",
+   "gender": "female",
+   "mounted": true,
+   "moves": [
+    "flying"
+   ],
+   "weapons": [
+    "sword",
+    "spear"
+   ]
+  },
+  {
+   "slug": "shaman",
+   "en": "Shaman",
+   "ko": "샤먼",
+   "license": "specialty",
+   "level": 20,
+   "renown": 4,
+   "part3": false,
+   "column": "magic",
+   "mounted": false,
+   "moves": [
+    "infantry"
+   ],
+   "weapons": [
+    "sword",
+    "gauntlet",
+    "black_magic",
+    "white_magic"
+   ]
+  },
+  {
+   "slug": "priest",
+   "en": "Priest",
+   "ko": "프리스트",
+   "license": "specialty",
+   "level": 20,
+   "renown": 4,
+   "part3": false,
+   "column": "magic",
+   "mounted": false,
+   "moves": [
+    "infantry"
+   ],
+   "weapons": [
+    "axe",
+    "gauntlet",
+    "black_magic",
+    "white_magic"
+   ]
+  },
+  {
+   "slug": "shido",
+   "en": "Shido",
+   "ko": "사도",
+   "license": "advanced",
+   "level": 35,
+   "renown": 8,
+   "part3": false,
+   "column": "infantry",
+   "mounted": false,
+   "moves": [
+    "infantry"
+   ],
+   "weapons": [
+    "sword",
+    "spear"
+   ]
+  },
+  {
+   "slug": "dancer",
+   "en": "Dancer",
+   "ko": "무희",
+   "license": "advanced",
+   "level": 35,
+   "renown": 8,
+   "part3": false,
+   "column": "infantry",
+   "mounted": false,
+   "moves": [
+    "infantry"
+   ],
+   "weapons": [
+    "sword",
+    "bow"
+   ]
+  },
+  {
+   "slug": "warrior",
+   "en": "Warrior",
+   "ko": "워리어",
+   "license": "advanced",
+   "level": 35,
+   "renown": 8,
+   "part3": false,
+   "column": "infantry",
+   "mounted": false,
+   "moves": [
+    "infantry"
+   ],
+   "weapons": [
+    "sword",
+    "axe",
+    "gauntlet"
+   ]
+  },
+  {
+   "slug": "blacksmith",
+   "en": "Blacksmith",
+   "ko": "대장장이",
+   "license": "advanced",
+   "level": 35,
+   "renown": 8,
+   "part3": false,
+   "column": "infantry",
+   "mounted": false,
+   "moves": [
+    "infantry"
+   ],
+   "weapons": [
+    "axe",
+    "black_magic"
+   ]
+  },
+  {
+   "slug": "sniper",
+   "en": "Sniper",
+   "ko": "스나이퍼",
+   "license": "advanced",
+   "level": 35,
+   "renown": 8,
+   "part3": false,
+   "column": "ranged",
+   "mounted": false,
+   "moves": [
+    "infantry"
+   ],
+   "weapons": [
+    "bow"
+   ]
+  },
+  {
+   "slug": "forest-knight",
+   "en": "Forest Knight",
+   "ko": "포레스트 나이트",
+   "license": "advanced",
+   "level": 35,
+   "renown": 8,
+   "part3": false,
+   "column": "ranged",
+   "mounted": true,
+   "moves": [
+    "riding"
+   ],
+   "weapons": [
+    "sword",
+    "bow"
+   ]
+  },
+  {
+   "slug": "ranger",
+   "en": "Ranger",
+   "ko": "레인저",
+   "license": "advanced",
+   "level": 35,
+   "renown": 8,
+   "part3": false,
+   "column": "ranged",
+   "mounted": false,
+   "moves": [
+    "infantry"
+   ],
+   "weapons": [
+    "sword",
+    "bow"
+   ]
+  },
+  {
+   "slug": "guardian",
+   "en": "Guardian",
+   "ko": "가디언",
+   "license": "advanced",
+   "level": 35,
+   "renown": 8,
+   "part3": false,
+   "column": "armor",
+   "mounted": false,
+   "moves": [
+    "infantry"
+   ],
+   "weapons": [
+    "spear",
+    "white_magic"
+   ]
+  },
+  {
+   "slug": "dreadnought",
+   "en": "Dreadnought",
+   "ko": "헤비 아머",
+   "license": "advanced",
+   "level": 35,
+   "renown": 8,
+   "part3": false,
+   "column": "armor",
+   "mounted": false,
+   "moves": [
+    "infantry",
+    "armor"
+   ],
+   "weapons": [
+    "spear",
+    "axe"
+   ]
+  },
+  {
+   "slug": "bardinger",
+   "en": "Bardinger",
+   "ko": "바딩거",
+   "license": "advanced",
+   "level": 35,
+   "renown": 8,
+   "part3": false,
+   "column": "armor",
+   "mounted": true,
+   "moves": [
+    "riding"
+   ],
+   "weapons": [
+    "sword",
+    "spear",
+    "axe"
+   ]
+  },
+  {
+   "slug": "cataphract",
+   "en": "Cataphract",
+   "ko": "카타프락토스",
+   "license": "advanced",
+   "level": 35,
+   "renown": 8,
+   "part3": false,
+   "column": "armor",
+   "mounted": true,
+   "moves": [
+    "riding",
+    "armor"
+   ],
+   "weapons": [
+    "sword",
+    "spear",
+    "axe"
+   ]
+  },
+  {
+   "slug": "caladrius",
+   "en": "Caladrius",
+   "ko": "칼라드리오스",
+   "license": "advanced",
+   "level": 35,
+   "renown": 8,
+   "part3": false,
+   "column": "riding",
+   "mounted": true,
+   "moves": [
+    "riding"
+   ],
+   "weapons": [
+    "sword",
+    "spear",
+    "axe",
+    "black_magic"
+   ]
+  },
+  {
+   "slug": "elephant-rider",
+   "en": "Elephant Rider",
+   "ko": "코끼리병",
+   "license": "elephant",
+   "level": 35,
+   "renown": null,
+   "part3": true,
+   "column": "armor",
+   "mounted": true,
+   "moves": [
+    "riding"
+   ],
+   "weapons": []
+  },
+  {
+   "slug": "dragoon",
+   "en": "Dragoon",
+   "ko": "드래군",
+   "license": "advanced",
+   "level": 35,
+   "renown": 8,
+   "part3": false,
+   "column": "riding",
+   "mounted": true,
+   "moves": [
+    "flying"
+   ],
+   "weapons": [
+    "sword",
+    "spear",
+    "axe"
+   ]
+  },
+  {
+   "slug": "ovate",
+   "en": "Ovate",
+   "ko": "바테스",
+   "license": "advanced",
+   "level": 35,
+   "renown": 8,
+   "part3": false,
+   "column": "magic",
+   "mounted": false,
+   "moves": [
+    "infantry"
+   ],
+   "weapons": [
+    "sword",
+    "gauntlet",
+    "black_magic",
+    "white_magic"
+   ]
+  },
+  {
+   "slug": "bishop",
+   "en": "Bishop",
+   "ko": "비숍",
+   "license": "advanced",
+   "level": 35,
+   "renown": 8,
+   "part3": false,
+   "column": "magic",
+   "mounted": false,
+   "moves": [
+    "infantry"
+   ],
+   "weapons": [
+    "axe",
+    "gauntlet",
+    "black_magic",
+    "white_magic"
+   ]
+  },
+  {
+   "slug": "troubadour",
+   "en": "Troubadour",
+   "ko": "트루바두르",
+   "license": "advanced",
+   "level": 35,
+   "renown": 8,
+   "part3": false,
+   "column": "magic",
+   "mounted": true,
+   "moves": [
+    "riding"
+   ],
+   "weapons": [
+    "black_magic",
+    "white_magic"
+   ]
+  },
+  {
+   "slug": "swordmaster",
+   "en": "Swordmaster",
+   "ko": "소드 마스터",
+   "license": "master",
+   "level": 45,
+   "renown": null,
+   "part3": true,
+   "column": "infantry",
+   "mounted": false,
+   "moves": [
+    "infantry"
+   ],
+   "weapons": [
+    "sword",
+    "spear"
+   ]
+  },
+  {
+   "slug": "high-savant",
+   "en": "High Savant",
+   "ko": "하이 에피타프",
+   "license": "master",
+   "level": 45,
+   "renown": null,
+   "part3": true,
+   "column": "infantry",
+   "mounted": true,
+   "moves": [
+    "riding"
+   ],
+   "weapons": [
+    "sword",
+    "black_magic"
+   ]
+  },
+  {
+   "slug": "battlemaster",
+   "en": "Battlemaster",
+   "ko": "배틀 마스터",
+   "license": "master",
+   "level": 45,
+   "renown": null,
+   "part3": true,
+   "column": "infantry",
+   "mounted": false,
+   "moves": [
+    "infantry"
+   ],
+   "weapons": [
+    "sword",
+    "axe",
+    "gauntlet"
+   ]
+  },
+  {
+   "slug": "war-monk",
+   "en": "War Monk",
+   "ko": "배틀 몽크",
+   "license": "master",
+   "level": 45,
+   "renown": null,
+   "part3": true,
+   "column": "infantry",
+   "mounted": false,
+   "moves": [
+    "infantry"
+   ],
+   "weapons": [
+    "gauntlet",
+    "white_magic"
+   ]
+  },
+  {
+   "slug": "bow-adept",
+   "en": "Bow Adept",
+   "ko": "마스터 아치",
+   "license": "master",
+   "level": 45,
+   "renown": null,
+   "part3": true,
+   "column": "ranged",
+   "mounted": false,
+   "moves": [
+    "infantry"
+   ],
+   "weapons": [
+    "bow"
+   ]
+  },
+  {
+   "slug": "bow-knight",
+   "en": "Bow Knight",
+   "ko": "보우 나이트",
+   "license": "master",
+   "level": 45,
+   "renown": null,
+   "part3": true,
+   "column": "ranged",
+   "mounted": true,
+   "moves": [
+    "riding"
+   ],
+   "weapons": [
+    "sword",
+    "bow"
+   ]
+  },
+  {
+   "slug": "shadow-seeker",
+   "en": "Shadow Seeker",
+   "ko": "섀도 시커",
+   "license": "master",
+   "level": 45,
+   "renown": null,
+   "part3": true,
+   "column": "ranged",
+   "mounted": false,
+   "moves": [
+    "infantry"
+   ],
+   "weapons": [
+    "sword",
+    "bow"
+   ]
+  },
+  {
+   "slug": "sentinel",
+   "en": "Sentinel",
+   "ko": "홀리 랜서",
+   "license": "master",
+   "level": 45,
+   "renown": null,
+   "part3": true,
+   "column": "armor",
+   "mounted": false,
+   "moves": [
+    "infantry"
+   ],
+   "weapons": [
+    "spear",
+    "white_magic"
+   ]
+  },
+  {
+   "slug": "castle-knight",
+   "en": "Castle Knight",
+   "ko": "포트리스",
+   "license": "master",
+   "level": 45,
+   "renown": null,
+   "part3": true,
+   "column": "armor",
+   "mounted": false,
+   "moves": [
+    "infantry",
+    "armor"
+   ],
+   "weapons": [
+    "spear",
+    "axe"
+   ]
+  },
+  {
+   "slug": "orichaldia",
+   "en": "Orichaldia",
+   "ko": null,
+   "license": "master",
+   "level": 45,
+   "renown": null,
+   "part3": true,
+   "column": "armor",
+   "mounted": true,
+   "moves": [
+    "riding"
+   ],
+   "weapons": [
+    "sword",
+    "spear",
+    "axe"
+   ]
+  },
+  {
+   "slug": "great-knight",
+   "en": "Great Knight",
+   "ko": "그레이트 나이트",
+   "license": "master",
+   "level": 45,
+   "renown": null,
+   "part3": true,
+   "column": "armor",
+   "mounted": true,
+   "moves": [
+    "riding",
+    "armor"
+   ],
+   "weapons": [
+    "sword",
+    "spear",
+    "axe"
+   ]
+  },
+  {
+   "slug": "celestial-trooper",
+   "en": "Celestial Trooper",
+   "ko": "성천익병",
+   "license": "master",
+   "level": 45,
+   "renown": null,
+   "part3": true,
+   "column": "riding",
+   "gender": "female",
+   "mounted": true,
+   "moves": [
+    "flying"
+   ],
+   "weapons": [
+    "sword",
+    "spear"
+   ]
+  },
+  {
+   "slug": "bau-lord",
+   "en": "Bau Lord",
+   "ko": "드래곤 마스터",
+   "license": "master",
+   "level": 45,
+   "renown": null,
+   "part3": true,
+   "column": "riding",
+   "mounted": true,
+   "moves": [
+    "flying"
+   ],
+   "weapons": [
+    "sword",
+    "spear",
+    "axe"
+   ]
+  },
+  {
+   "slug": "druid",
+   "en": "Druid",
+   "ko": "드루이드",
+   "license": "master",
+   "level": 45,
+   "renown": null,
+   "part3": true,
+   "column": "magic",
+   "mounted": false,
+   "moves": [
+    "infantry"
+   ],
+   "weapons": [
+    "sword",
+    "gauntlet",
+    "black_magic"
+   ]
+  },
+  {
+   "slug": "wiseman",
+   "en": "Wiseman",
+   "ko": "와이즈맨",
+   "license": "master",
+   "level": 45,
+   "renown": null,
+   "part3": true,
+   "column": "magic",
+   "mounted": false,
+   "moves": [
+    "infantry"
+   ],
+   "weapons": [
+    "axe",
+    "gauntlet",
+    "white_magic"
+   ]
+  },
+  {
+   "slug": "valkyrium",
+   "en": "Valkyrium",
+   "ko": "발키리움",
+   "license": "master",
+   "level": 45,
+   "renown": null,
+   "part3": true,
+   "column": "magic",
+   "mounted": true,
+   "moves": [
+    "riding"
+   ],
+   "weapons": [
+    "black_magic",
+    "white_magic"
+   ]
+  },
+  {
+   "slug": "the-blade",
+   "en": "The Blade",
+   "ko": "더 블레이드",
+   "license": "divine",
+   "level": 45,
+   "renown": null,
+   "part3": true,
+   "column": "infantry",
+   "mounted": false,
+   "moves": [
+    "infantry"
+   ],
+   "weapons": [
+    "sword",
+    "spear"
+   ]
+  },
+  {
+   "slug": "the-apsara",
+   "en": "The Apsara",
+   "ko": "디 압사라스",
+   "license": "divine",
+   "level": 45,
+   "renown": null,
+   "part3": true,
+   "column": "infantry",
+   "mounted": false,
+   "moves": [
+    "infantry"
+   ],
+   "weapons": [
+    "sword",
+    "bow"
+   ]
+  },
+  {
+   "slug": "the-eternal",
+   "en": "The Eternal",
+   "ko": "디 이터널",
+   "license": "divine",
+   "level": 45,
+   "renown": null,
+   "part3": true,
+   "column": "infantry",
+   "mounted": false,
+   "moves": [
+    "infantry"
+   ],
+   "weapons": [
+    "sword",
+    "axe",
+    "gauntlet"
+   ]
+  },
+  {
+   "slug": "the-godhand",
+   "en": "The Godhand",
+   "ko": "더 갓 핸드",
+   "license": "divine",
+   "level": 45,
+   "renown": null,
+   "part3": true,
+   "column": "infantry",
+   "mounted": false,
+   "moves": [
+    "infantry"
+   ],
+   "weapons": [
+    "gauntlet",
+    "white_magic"
+   ]
+  },
+  {
+   "slug": "the-calamity",
+   "en": "The Calamity",
+   "ko": "더 캘러미티",
+   "license": "divine",
+   "level": 45,
+   "renown": null,
+   "part3": true,
+   "column": "ranged",
+   "mounted": false,
+   "moves": [
+    "infantry"
+   ],
+   "weapons": [
+    "sword",
+    "bow"
+   ]
+  },
+  {
+   "slug": "the-trident",
+   "en": "The Trident",
+   "ko": "더 트라이던트",
+   "license": "divine",
+   "level": 45,
+   "renown": null,
+   "part3": true,
+   "column": "armor",
+   "mounted": false,
+   "moves": [
+    "infantry"
+   ],
+   "weapons": [
+    "spear",
+    "white_magic"
+   ]
+  },
+  {
+   "slug": "the-cavalier",
+   "en": "The Cavalier",
+   "ko": "더 캐벌리어",
+   "license": "divine",
+   "level": 45,
+   "renown": null,
+   "part3": true,
+   "column": "armor",
+   "mounted": true,
+   "moves": [
+    "riding"
+   ],
+   "weapons": [
+    "sword",
+    "spear",
+    "axe"
+   ]
+  },
+  {
+   "slug": "the-avatar",
+   "en": "The Avatar",
+   "ko": "디 아바타르",
+   "license": "divine",
+   "level": 45,
+   "renown": null,
+   "part3": true,
+   "column": "magic",
+   "mounted": false,
+   "moves": [
+    "infantry"
+   ],
+   "weapons": [
+    "sword",
+    "axe",
+    "gauntlet",
+    "black_magic",
+    "white_magic"
+   ]
+  }
+ ],
+ "characters": {
+  "theodora": {
+   "gender": "female",
+   "unique": "noble"
+  },
+  "bonaventure": {
+   "gender": "male",
+   "unique": "noble"
+  },
+  "tobias": {
+   "gender": "male",
+   "unique": "noble"
+  },
+  "lysander": {
+   "gender": "male",
+   "unique": "noble"
+  },
+  "lilian": {
+   "gender": "female",
+   "unique": "commoner"
+  },
+  "sofia": {
+   "gender": "female",
+   "unique": "commoner"
+  },
+  "noctula": {
+   "gender": "female",
+   "unique": "commoner"
+  },
+  "zarcone": {
+   "gender": "male",
+   "unique": "commoner"
+  },
+  "sirocco": {
+   "gender": "male",
+   "unique": "commoner"
+  },
+  "dadao": {
+   "gender": "male",
+   "unique": "commoner"
+  },
+  "nydine": {
+   "gender": "female",
+   "unique": "commoner"
+  },
+  "loretta": {
+   "gender": "female",
+   "unique": "commoner"
+  },
+  "nezha": {
+   "gender": "male",
+   "unique": "commoner"
+  },
+  "dante": {
+   "gender": "female",
+   "unique": "commoner"
+  },
+  "ninae": {
+   "gender": "female",
+   "unique": "commoner"
+  },
+  "seteth": {
+   "gender": "male",
+   "unique": "commoner"
+  },
+  "ultand": {
+   "gender": "female",
+   "unique": "commoner"
+  },
+  "peppe": {
+   "gender": "male",
+   "unique": "noble"
+  },
+  "ludia": {
+   "gender": "female",
+   "unique": "noble"
+  },
+  "simon": {
+   "gender": "male",
+   "unique": "commoner"
+  },
+  "catania": {
+   "gender": "female",
+   "unique": "commoner"
+  },
+  "peter": {
+   "gender": "male",
+   "unique": "commoner"
+  },
+  "halvin": {
+   "gender": "female",
+   "unique": "commoner"
+  },
+  "diego": {
+   "gender": "male",
+   "unique": "commoner"
+  },
+  "guzran": {
+   "gender": "male",
+   "unique": "commoner"
+  },
+  "mikaela": {
+   "gender": "female",
+   "unique": "commoner"
+  },
+  "buccar": {
+   "gender": "male",
+   "unique": "commoner"
+  },
+  "goliath": {
+   "gender": "male",
+   "unique": "commoner",
+   "noRide": true
+  },
+  "mu": {
+   "gender": "female",
+   "unique": "commoner"
+  },
+  "yang-jie": {
+   "gender": "male",
+   "unique": "commoner"
+  },
+  "esmeralda": {
+   "gender": "female",
+   "unique": "commoner"
+  },
+  "olympia": {
+   "gender": "female",
+   "unique": "noble"
+  },
+  "ursula": {
+   "gender": "female",
+   "unique": "commoner"
+  },
+  "jester": {
+   "gender": "male",
+   "unique": "commoner"
+  },
+  "fianna": {
+   "gender": "female",
+   "unique": "commoner"
+  },
+  "io": {
+   "gender": "male",
+   "unique": "commoner"
+  },
+  "tialla": {
+   "gender": "female",
+   "unique": "commoner"
+  },
+  "majide": {
+   "gender": "male",
+   "unique": "commoner"
+  },
+  "benditz": {
+   "gender": "male",
+   "unique": "commoner"
+  },
+  "kiroc": {
+   "gender": "male",
+   "unique": "commoner"
+  },
+  "jasmine": {
+   "gender": "female",
+   "unique": "commoner"
+  },
+  "alexandra": {
+   "gender": "female",
+   "unique": "commoner"
+  },
+  "nuzzuo": {
+   "gender": "male",
+   "unique": "commoner"
+  },
+  "inyoni": {
+   "gender": "female",
+   "unique": "commoner"
+  },
+  "leda": {
+   "gender": "female",
+   "unique": "commoner"
+  },
+  "fabio": {
+   "gender": "male",
+   "unique": "commoner"
+  },
+  "sha-lan": {
+   "gender": "female",
+   "unique": "commoner"
+  },
+  "dietrich": {
+   "gender": "male",
+   "unique": "commoner"
+  },
+  "gaitz": {
+   "gender": "male",
+   "unique": "commoner"
+  },
+  "eshmel": {
+   "gender": "female",
+   "unique": "commoner"
+  },
+  "hong-hua": {
+   "gender": "female",
+   "unique": "commoner"
+  },
+  "troy": {
+   "gender": "female",
+   "unique": "commoner"
+  },
+  "cai": {
+   "gender": "male",
+   "unique": "commoner"
+  },
+  "bertrand": {
+   "gender": "male",
+   "unique": "noble"
+  },
+  "anatolia": {
+   "gender": "female",
+   "unique": "commoner"
+  },
+  "orchel": {
+   "gender": "female",
+   "unique": "commoner",
+   "noRide": true
+  },
+  "talimun": {
+   "gender": "male",
+   "unique": "commoner"
+  },
+  "centurio": {
+   "gender": "male",
+   "unique": "commoner"
+  },
+  "creek": {
+   "gender": "male",
+   "unique": "commoner"
+  },
+  "nathan": {
+   "gender": "male",
+   "unique": "noble"
+  },
+  "aswan": {
+   "gender": "female",
+   "unique": "commoner"
+  },
+  "tahonia": {
+   "gender": "female",
+   "unique": "commoner"
+  }
+ }
+}
