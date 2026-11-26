@@ -31,8 +31,8 @@ export function Tasks({route,label,part,chapters,groups,onDoc,onPerson,people=[]
   async function importFile(file:File){
     setImportPhase({state:'busy'});const start=performance.now();let error='',message='';
     try{const raw=await file.text(),text=raw.charCodeAt(0)===0xFEFF?raw.slice(1):raw;/* 앞의 BOM 제거 */let value:unknown;try{value=JSON.parse(text);}catch{throw new Error('JSON 파일이 아니거나 내용이 깨졌습니다. 기록 관리 → 내보내기로 만든 파일을 고르세요.');}
-      checks.importData(value);const d=value as {checks:Record<string,boolean>;status?:unknown};
-      message=`가져왔습니다 · 체크 ${Object.values(d.checks).filter(Boolean).length}개 · ${d.status?'내 상태 포함':'파일에 내 상태 없음(기존 내 상태 유지)'}`;}
+      checks.importData(value);const d=value as {checks:Record<string,boolean>;status?:unknown;builds?:Record<string,unknown>};
+      message=`가져왔습니다 · 체크 ${Object.values(d.checks).filter(Boolean).length}개 · ${d.status?'내 상태 포함':'파일에 내 상태 없음(기존 내 상태 유지)'} · ${d.builds&&Object.keys(d.builds).length?'육성 기록 포함':'파일에 육성 기록 없음(기존 육성 기록 유지)'}`;}
     catch(e){error=e instanceof Error?e.message:'파일을 읽지 못했습니다.';}
     await new Promise(r=>setTimeout(r,Math.max(0,600-(performance.now()-start))));
     if(error){setImportPhase({state:'error',message:error});return;}
@@ -108,7 +108,7 @@ export function Tasks({route,label,part,chapters,groups,onDoc,onPerson,people=[]
     <Button className="jump-next" onClick={goNext} disabled={!next} aria-label="다음 할 일로 이동"><ArrowDown size={20}/><span className="jump-label">이동</span></Button>
     {!checks.error&&<span role="status" className="save-status"><Check size={20} aria-label="저장됨"/></span>}
     <StatusButton route={route}/>
-    <details className="backup-menu"><summary title="기록 관리"><Archive size={20} aria-hidden="true" className="backup-icon"/><span className="backup-label">기록 관리</span></summary><div className="toolbar-actions"><StatusButton route={route} menu/><Button variant="secondary" onClick={exportFile}><Download size={20}/> 내보내기</Button><Button variant="secondary" onClick={()=>upload.current?.click()}><Upload size={20}/> 가져오기</Button><Button variant="secondary" onClick={()=>{if(window.confirm('이 브라우저의 체크 기록과 내 상태를 모두 지웁니다. 되돌릴 수 없으니 먼저 내보내기로 백업하세요. 지울까요?'))checks.clear();}}><Trash2 size={20}/> 기록 지우기</Button>{/* accept를 두지 않는다: 휴대폰 파일 선택기는 내려받은 .json의 형식을 몰라 고를 수 없게 막는 일이 있다(2026-11-15). 내용은 가져올 때 검사한다. */}<input ref={upload} type="file" className="sr-only" aria-label="체크·내 상태 JSON 가져오기" onChange={e=>{const file=e.target.files?.[0];e.target.value='';if(file)void importFile(file);}}/></div></details>
+    <details className="backup-menu"><summary title="기록 관리"><Archive size={20} aria-hidden="true" className="backup-icon"/><span className="backup-label">기록 관리</span></summary><div className="toolbar-actions"><StatusButton route={route} menu/><Button variant="secondary" onClick={exportFile}><Download size={20}/> 내보내기</Button><Button variant="secondary" onClick={()=>upload.current?.click()}><Upload size={20}/> 가져오기</Button><Button variant="secondary" onClick={()=>{if(window.confirm('이 브라우저의 체크 기록과 내 상태를 모두 지웁니다(인물 육성 기록은 남깁니다). 되돌릴 수 없으니 먼저 내보내기로 백업하세요. 지울까요?'))checks.clear();}}><Trash2 size={20}/> 기록 지우기</Button>{/* accept를 두지 않는다: 휴대폰 파일 선택기는 내려받은 .json의 형식을 몰라 고를 수 없게 막는 일이 있다(2026-11-15). 내용은 가져올 때 검사한다. */}<input ref={upload} type="file" className="sr-only" aria-label="체크·내 상태 JSON 가져오기" onChange={e=>{const file=e.target.files?.[0];e.target.value='';if(file)void importFile(file);}}/></div></details>
   </div></div></div>
   <div className="tasks-layout"><div className="tasks-main">{checks.error&&<div role="status" className="save-status error">{checks.status}<Button variant="secondary" onClick={checks.retry}>저장소 다시 읽기</Button></div>}
   {next&&<section className="next-action"><h2>다음 할 일</h2><p><GameText text={next.a.text} withSkills/></p></section>}

@@ -1,13 +1,14 @@
 'use client';
 import { useEffect, useSyncExternalStore } from 'react';
-import { validateChecks, validateStatus, sanitizeStatus, type CheckState, type Status } from '@/lib/check-state';
+import { validateChecks, validateStatus, sanitizeStatus, nextBuilds, type CheckState, type Status, type Build, type BuildRoute } from '@/lib/check-state';
+import { buildCatalog } from '@/lib/yuphas-classes';
 import { limits, effectiveChecks, emptyStatus } from '@/lib/status';
 const key='fortunes-weave-checklist-v1';
 // 사이트에는 체크 기록을 넣지 않는다(2026-11-14 사용자 지시). 처음 여는 브라우저는 빈 기록에서 시작하고, 기록은 그 브라우저 저장소와 JSON 백업에만 있다.
 const empty:CheckState={schemaVersion:1,revision:0,checks:{}};
 const initial={data:empty,ready:false,status:'체크 기록을 불러오는 중입니다.',error:false};
 let snapshot=initial;
-/** 저장소 값은 느슨하게 읽는다(모르는 축복은 버림). 가져오기 파일만 엄격하게 검사한다. */
+/** 저장소 값은 느슨하게 읽는다(모르는 축복은 버림. 육성 기록은 모양만 고치고 모르는 인물·병종도 보관). 가져오기 파일만 엄격하게 검사한다. */
 function readStored(value:unknown):CheckState{const d=validateChecks(value);return d.status?{...d,status:sanitizeStatus(d.status,limits)}:d;}
 const listeners=new Set<()=>void>();
 function emit(){listeners.forEach(fn=>fn());}
@@ -32,5 +33,7 @@ export function useChecks(){
   // effective: 저장된 체크 + 내 상태의 축복 단계로 끝난 구매 체크(2026-11-15). 화면의 완료·진행률·날짜는 이것을 쓴다.
   return {...state,effective:effectiveChecks(state.data.checks,state.data.status),
     setStatus:(patch:Partial<Status>)=>{if(!snapshot.ready)return;const next={...emptyStatus,...snapshot.data.status,...patch};bump({...snapshot.data,status:validateStatus(next,limits)});},
-    toggle:(id:string,value:boolean)=>{if(snapshot.ready)save({...snapshot.data,checks:{...snapshot.data.checks,[id]:value},revision:snapshot.data.revision+1,updatedAt:new Date().toISOString()});},importData:(value:unknown)=>{const data=validateChecks(value,limits);/* 내 상태가 없는 예전 파일은 지금의 내 상태를 지우지 않는다. */if(!save({...data,...(!data.status&&snapshot.data.status?{status:snapshot.data.status}:{}),revision:Math.max(data.revision,snapshot.data.revision)+1,updatedAt:new Date().toISOString()}))throw new Error('이 브라우저에 저장하지 못했습니다. 저장 공간이나 사생활 보호 모드를 확인하세요.');},retry:()=>{snapshot=initial;load();},clear:()=>{if(snapshot.ready)save({...empty,revision:snapshot.data.revision+1,updatedAt:new Date().toISOString()});}};
+    toggle:(id:string,value:boolean)=>{if(snapshot.ready)save({...snapshot.data,checks:{...snapshot.data.checks,[id]:value},revision:snapshot.data.revision+1,updatedAt:new Date().toISOString()});},importData:(value:unknown)=>{const data=validateChecks(value,limits,buildCatalog);/* 내 상태가 없는 예전 파일은 지금의 내 상태를 지우지 않는다. 육성 기록이 없는(또는 빈) 파일도 지금 육성 기록을 지우지 않고, 있으면 파일 것으로 통째로 바꾼다(2026-11-27 U72). */if(!save({...data,...(!data.status&&snapshot.data.status?{status:snapshot.data.status}:{}),...(!data.builds&&snapshot.data.builds?{builds:snapshot.data.builds}:{}),revision:Math.max(data.revision,snapshot.data.revision)+1,updatedAt:new Date().toISOString()}))throw new Error('이 브라우저에 저장하지 못했습니다. 저장 공간이나 사생활 보호 모드를 확인하세요.');},retry:()=>{snapshot=initial;load();},clear:()=>{/* 기록 지우기는 체크와 내 상태만 지우고 인물 육성 기록은 남긴다(2026-11-27 U72). */if(snapshot.ready)save({...empty,...(snapshot.data.builds?{builds:snapshot.data.builds}:{}),revision:snapshot.data.revision+1,updatedAt:new Date().toISOString()});},
+    /** 인물 육성 기록 한 사람 고치기. patch가 null이면 그 사람 기록을 지운다. 읽기 실패 때는 덮어쓰지 않는다. */
+    setBuild:(route:BuildRoute,slug:string,patch:Partial<Build>|null)=>{if(!snapshot.ready)return;const {builds:_old,...rest}=snapshot.data;void _old;const builds=nextBuilds(snapshot.data.builds,route,slug,patch);bump({...rest,...(builds?{builds}:{})});}};
 }
