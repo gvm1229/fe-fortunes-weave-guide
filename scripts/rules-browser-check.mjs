@@ -148,6 +148,8 @@ try {
       const seenDocs = new Set();
       const inspect = async (label, depth) => { const d = p.getByRole('dialog'); await p.waitForTimeout(250); await p.evaluate(() => document.querySelectorAll('[role=dialog] details').forEach(x => { x.open = true; }));
         const title = await d.locator('.sheet-heading h2').textContent(); assert.ok(title !== '문서 확인', `[U66] ${label} 빈 문서`);
+        // 물결표 하나(1~3장)가 취소선이 되지 않는다(remark-gfm singleTilde:false, Fable 재검토 Q).
+        assert.equal(await d.locator('del, s').count(), 0, `[U66] ${label} 취소선`);
         const t = await d.innerText(); for (const w of DOC_BLOAT) assert.ok(!t.includes(w), `[U66] ${label} 문서에 '${w}'`);
         const out = await d.locator('a[href^="http"]').evaluateAll(es => es.map(e => e.href).filter(h => !h.startsWith('https://yuphastemple.com/'))); assert.deepEqual(out, [], `[U66] ${label} 바깥 링크`);
         if (depth > 3) return;

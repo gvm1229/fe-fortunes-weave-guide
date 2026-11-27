@@ -5,6 +5,8 @@ import path from 'node:path';
 import { json, type Part, type Route, type Tree } from './content';
 export type ReferenceDoc={path:string;title:string;body:string;tree?:Tree[]};
 const names:Record<string,string>={theodora:'세오도라',leda:'레다',dietrich:'디트리히',cai:'카이'};
+/** 숫자 범위의 물결표가 자료에서 "1~~3장"처럼 겹쳐 저장돼 취소선이 됐다. 숫자 사이 겹친 물결표는 하나로(remark-gfm singleTilde:false와 함께, Fable 재검토 Q). */
+const rangeTildes=(md:string)=>md.replace(/(\d)\\?~~?(?=\d)/g,'$1~');
 export function documentsFor(route:Route|'all',part:Part):ReferenceDoc[]{
   const result:ReferenceDoc[]=[];
   const derived=JSON.parse(fs.readFileSync(path.join(process.cwd(),'content/derived/documents.json'),'utf8')) as Record<string,{body:string}>;
@@ -12,7 +14,7 @@ export function documentsFor(route:Route|'all',part:Part):ReferenceDoc[]{
     const owner=rel.match(/^routes\/([^/]+)\//)?.[1];
     if(route!=='all'&&owner&&owner!==route)continue;
     const scoped=scopeMarkdown(body,route,part),title=body.match(/^#\s+(.+)/m)?.[1]||path.basename(rel,'.md');
-    if(route==='all'||!Object.entries(names).some(([r,n])=>r!==route&&title.includes(n)))result.push({path:rel,title,body:displayText(stripSourceLists(plainDocLinks(evidenceSections(scoped))))});
+    if(route==='all'||!Object.entries(names).some(([r,n])=>r!==route&&title.includes(n)))result.push({path:rel,title,body:displayText(stripSourceLists(plainDocLinks(evidenceSections(rangeTildes(scoped)))))});
   }
   const parity=json<{parity:{exam:Tree[];budgets:Record<string,Tree[]>}}>('derived/presentation').parity;
   const references=json<Record<string,{title:string;tree:Tree[]}>>('derived/reference-documents');
