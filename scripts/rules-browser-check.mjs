@@ -152,7 +152,7 @@ try {
         assert.equal(await d.locator('del, s').count(), 0, `[U66] ${label} 취소선`);
         const t = await d.innerText(); for (const w of DOC_BLOAT) assert.ok(!t.includes(w), `[U66] ${label} 문서에 '${w}'`);
         // yuphastemple과 따라하기 영상(YouTube)만 바깥 링크로 허용(Fable 재검토 S).
-        const out = await d.locator('a[href^="http"]').evaluateAll(es => es.map(e => e.href).filter(h => !/^https:\/\/(?:www\.|m\.)?(?:yuphastemple\.com|youtu\.be|youtube\.com)\//.test(h))); assert.deepEqual(out, [], `[U66] ${label} 바깥 링크`);
+        const out = await d.locator('a[href^="http"]').evaluateAll(es => es.map(e => e.href).filter(h => !/^https:\/\/(?:www\.|m\.)?(?:yuphastemple\.com|youtu\.be|youtube\.com)\//.test(h))); assert.deepEqual(out, [], `[U66][U73] ${label} 바깥 링크`);
         if (depth > 3) return;
         const sel = '[role=dialog] .sheet-scroll button.text-link, [role=dialog] .sheet-scroll button[data-doc-url]';
         for (let i = 0; i < await p.locator(sel).count(); i++) { const btn = p.locator(sel).nth(i), key = (await btn.getAttribute('data-doc-url')) || (await btn.textContent()).trim(); if (seenDocs.has(key)) continue; seenDocs.add(key);
