@@ -36,9 +36,15 @@ export function stripSourceLists(md:string){
   return md.replace(/^[ \t]*(?:\*\*)?출처(?:\*\*)?\s*[:：][^\n]*\n(?:[ \t]*\n)*(?:[ \t]*[-*+] [^\n]*\n?)*/gm,'')
     .replace(/(^|[.。]\s+)([^.。\n]*(?:대조|검증|확인|검토)했다[.。])[ \t]*/gm,(m,start:string,sentence:string)=>hasSource.test(sentence)?start:m)
     // 제목 줄(#)은 건드리지 않는다: 근거·출처 절은 evidenceSections가 절째 뺀다(Fable 재검토 L).
-    .split('\n').filter(line=>/^\s*#/.test(line)||!/^\s*[-*+]\s.*(?:출처|원문|확인일)/.test(line)).map(line=>/^\s*(?:\||#)/.test(line)?line:line
+    // 확인 꼬리말("(… 단일 출처)" → "(미확인)")을 먼저 바꿔 그 문장이 통째로 지워지지 않게 한다(Fable 재검토 R).
+    .split('\n').map(line=>/^\s*#/.test(line)?line:verificationTail(line))
+    .filter(line=>/^\s*#/.test(line)||!/^\s*[-*+]\s.*(?:출처|확인일)/.test(line)).map(line=>/^\s*(?:\||#)/.test(line)?line:line
       .replace(/^\s*(?:\*\*)?확인일(?:\*\*)?\s*[:：].*$/,'')
-      .replace(/(?<=^|[.。]\s+|^\s*[-*+]\s+)[^.。\n]*(?:출처|원문|Windows|Codex)[^.。\n]*(?:[.。]|$)[ \t]*/g,'')).join('\n');
+      .replace(/(?<=^|[.。]\s+|^\s*[-*+]\s+)[^.。\n]*(?:출처|Windows|Codex)[^.。\n]*(?:[.。]|$)[ \t]*/g,'')
+      // "원문"은 문장을 지우지 않고 낱말만 뺀다("원문 판매처 후보" → "판매처 후보").
+      .replace(/원문(?:의|에서)?\s+/g,''))
+    // 글을 지워 표식만 남은 목록 줄("4.")은 줄째 뺀다.
+    .filter(line=>!/^\s*(?:[-*+]|\d+\.)\s*(?:&#x20;)?\s*$/.test(line)).join('\n');
 }
 /**
  * 문서의 근거·검증 절을 절째 뺀다(제목부터 같은 단계 이하의 다음 제목 전까지): 근거·출처·검증과 한계·읽은 인터넷 원문·원문에서 읽은 …(U66, Fable 재검토 L·M).

@@ -231,7 +231,9 @@ for (const f of [...walk('app', ['.ts', '.tsx', '.css']), ...walk('components', 
     assert.ok(!/출처|원문|Windows|Codex|세부|목록/.test(shown) && /본문 문장/.test(shown) && /남는 글/.test(shown), '[U66] 근거·검증 절째 빼기 ' + JSON.stringify(shown));
     assert.equal(plainDocLinks('않는다. [장별 인터넷 대조](routes/x-review.md). 명성.\n- [실제 사례](notes/a-review.html)\n[궁병](classes/archer.md)과 [도전](notes/b.md)을 본다.'), '않는다. 명성.\n[궁병](classes/archer.md)과 도전을 본다.', '[U66] 문서 안 검토 문서 링크');
     assert.equal(displayText('가격 300은 hyperWiki 축복 표를 따른다.'), '가격 300은 축복 표를 따른다.', '[U66] hyperWiki 대소문자');
-    assert.equal(displayText('티아라·보나파르트 C(초안 1곳, 상충 있음)'), '티아라·보나파르트 C(미확인)', '[U46] 초안 1곳 → 미확인'); }
+    assert.equal(displayText('티아라·보나파르트 C(초안 1곳, 상충 있음)'), '티아라·보나파르트 C(미확인)', '[U46] 초안 1곳 → 미확인');
+    // Fable 재검토 R: "원문"은 낱말만 빼고 문장은 남긴다. 확인 꼬리말은 먼저 (미확인)으로 바꿔 문장이 사라지지 않는다.
+    for (const [a, b] of [['- 카이5장의 원문 추천 전투 레벨11처럼 이야기별 추천 전투 레벨과도 구분한다.', '- 카이5장의 추천 전투 레벨11처럼 이야기별 추천 전투 레벨과도 구분한다.'], ['1. 원문 판매처 후보: Dagsion Vandahl Merchant · Aguino Armory.', '1. 판매처 후보: Dagsion Vandahl Merchant · Aguino Armory.'], ["- 놓치면 그 쌍은 3부에서 전부 막힌다(Anna's Notebook 단일 출처).", '- 놓치면 그 쌍은 3부에서 전부 막힌다(미확인).']]) assert.equal(displayText(stripSourceLists(a)), b, '[U66] 문서 문장 보존 ' + a); }
   for (const [a, b] of [['본다(Game8 확인). 다음', '본다. 다음'], ['막힌다(세오도라·릴리안 B는 Game8, 둘 다는 Anna\'s Notebook 초안).', '막힌다(미확인).'], ['합친다(altema·GameWith). 25명', '합친다. 25명'], ['Game8 다그시온 기본 1,500G', '다그시온 기본 1,500G'], ['Game8은 복귀까지', '공략 자료는 복귀까지'], ['Anna’s Notebook·allthings.how · 열리는 장은 미확인', '열리는 장은 미확인'],
     // 괄호 안 이름 + 조사(Fable 재검토 B): 조사만 남지 않는다.
     ['합류한다(Game8은 4장 표기).', '합류한다(공략 자료는 4장 표기).'], ['값(Game8의 표기와 다름).', '값(공략 자료의 표기와 다름).'], ['단계(Game8에서 4장 표기).', '단계(공략 자료에서 4장 표기).'],
