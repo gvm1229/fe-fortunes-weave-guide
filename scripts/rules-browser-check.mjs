@@ -142,6 +142,12 @@ try {
       await p.goto(base + r); await p.locator('.route-head').waitFor(); await p.waitForTimeout(300); await bloat(`${r} 할 일`);
       for (const v of ['인물', '준비', '재료와 구매']) { await p.getByRole('navigation', { name: '공략 화면' }).getByRole('button', { name: v, exact: true }).click(); await p.waitForTimeout(500); await bloat(`${r} ${v}`); }
     }
+    // [U66] 인물 서랍(접기를 모두 연 상태)에도 출처 이름·근거 글·조사만 남은 괄호가 없다. 네 루트 1·2부와 3부의 모든 인물(Fable 재검토 A·C).
+    for (const r of [...ROUTES.flatMap(x => [`/${x}/1/`, `/${x}/2/`]), '/part3/3/']) {
+      await p.goto(base + r); await p.locator('.route-head').waitFor(); await p.getByRole('navigation', { name: '공략 화면' }).getByRole('button', { name: '인물', exact: true }).click(); await p.waitForTimeout(400);
+      await eachPersonSheet(p, async (d, name) => { for (let i = 0; i < 6 && await d.locator('.person-more button[aria-expanded=false]').count(); i++) await d.locator('.person-more button[aria-expanded=false]').first().click();
+        const t = await d.innerText(); for (const w of BLOAT) assert.ok(!t.includes(w), `[U66] ${r} ${name} 서랍에 '${w}'`); assert.ok(!/\((?:은|는|의|에서) /.test(t), `[U66] ${r} ${name} 서랍에 조사만 남은 괄호`); });
+    }
     await p.goto(base + '/theodora/1/'); await p.locator('.route-head').waitFor(); await p.waitForTimeout(300);
     await p.locator('.group-portraits button:visible').first().click(); const dlg = p.getByRole('dialog'); await dlg.waitFor();
     const card = await dlg.evaluate(d => { const c = d.querySelector('[data-character-header]'); return c && { name: !!c.querySelector('.y-card-name'), glow: getComputedStyle(c.querySelector('.y-card-name')).textShadow.includes('202, 185, 157'), cls: !!c.querySelector('.y-card-class img'), skills: c.querySelectorAll('.y-skills li').length, marks: c.querySelectorAll('.y-skills li[data-state=boon],.y-skills li[data-state=bane]').length, faction: getComputedStyle(c, '::before').backgroundImage.includes('/yuphas/emblems/'), portrait: c.querySelector('.y-card-portrait')?.naturalWidth >= 400, gifts: d.querySelectorAll('.y-gift').length, ribbons: d.querySelectorAll('.y-ribbon').length, food: d.querySelectorAll('.y-food').length, sup: d.querySelectorAll('.y-support-table tbody tr').length, special: [...d.querySelectorAll('dt')].some(x => x.textContent.trim() === '특기') }; });

@@ -9,6 +9,9 @@ const SOURCE='(?:Game8|GameWith|Anna[\'’]s Notebook|allthings\\.how|altema|RPG
 const hasSource=new RegExp(SOURCE);
 const sourceRun=new RegExp(`${SOURCE}(?:\\s*[·,]\\s*${SOURCE})*`,'g');
 const particle:Record<string,string>={은:'는',이:'가',과:'와'};
+/** 이름 + 조사 → "공략 자료" + 맞춘 조사(받침 없는 말이라 은→는, 이→가, 과→와). */
+const withParticle=new RegExp(`${sourceRun.source}(의|은|는|에서|에|이|가|와|과|로)(?=[\\s.,·)]|$)\\s*`,'g');
+const named=(_m:string,p:string)=>`공략 자료${particle[p]||p} `;
 export function stripSources(text:string){
   if(!hasSource.test(text))return text;
   return text
@@ -16,10 +19,12 @@ export function stripSources(text:string){
     .replace(/(\s*)\(([^()]*)\)/g,(m,space:string,inner:string)=>{
       if(!hasSource.test(inner))return m;
       if(/초안|미검증|추정/.test(inner))return `${space}(미확인)`;
-      const rest=inner.replace(sourceRun,'').replace(/^\s*(?:확인|기준|설명|표기)(?=$|[\s·,])/,'').replace(/한국어 도감|로컬 도감/g,'').replace(/^[\s·,]+|[\s·,]+$/g,'').replace(/\s*[·,]\s*(?=[·,])/g,'');
+      // 조사가 붙은 이름("Game8은 4장 표기")은 먼저 "공략 자료는"으로 바꿔 조사만 남지 않게 한다(Fable 재검토 B).
+      const rest=inner.replace(withParticle,named).replace(sourceRun,'').replace(/^\s*(?:확인|기준|설명|표기)(?=$|[\s·,])/,'').replace(/한국어 도감|로컬 도감/g,'').replace(/^[\s·,]+|[\s·,]+$/g,'').replace(/\s*[·,]\s*(?=[·,])/g,'');
       return rest?`${space}(${rest})`:'';
     })
-    .replace(new RegExp(`${sourceRun.source}(의|은|는|에서|에|이|가|와|과|로)?(?=[\\s.,·)]|$)\\s*(?:기준\\s*)?`,'g'),(_m,p?:string)=>p?`공략 자료${particle[p]||p} `:'')
+    .replace(withParticle,named)
+    .replace(new RegExp(`${sourceRun.source}(?=[\\s.,·)]|$)\\s*(?:기준\\s*)?`,'g'),'')
     .replace(/^[\s·,]+/,'').replace(/\s+([.,)])/g,'$1').replace(/ {2,}/g,' ');
 }
 export function verificationTail(text:string){

@@ -1,6 +1,7 @@
 'use client';
 import { usePreference } from './preferences';
 import { characterSummary, plainCharacterText } from '@/lib/character-summary';
+import { displayText } from '@/lib/display';
 import { GameText, GameIcon } from './game-text';
 import { ClipboardCopy, Gift, Search } from 'lucide-react';
 import { useState } from 'react';
@@ -28,14 +29,14 @@ const norm=(text:string)=>text.replace(/[\s·.,]/g,'');
 function pairs(person:Person,part:string,summaryText:string[],classes:Record<string,ClassInfo>){
   const d=person.data,ready=(person.readiness&&typeof person.readiness==='object'?person.readiness:{}) as Record<string,unknown>,goal=(person.goal&&typeof person.goal==='object'?person.goal:{}) as Record<string,unknown>;
   const list:{title:string;lines:string[];keep?:boolean}[]=[];
-  const add=(title:string,...lines:(string|undefined)[])=>{const kept=lines.map(l=>l?plainCharacterText(l).trim():'').filter(Boolean);if(kept.length)list.push({title,lines:kept,keep:title.endsWith(' 시험')});};
+  const add=(title:string,...lines:(string|undefined)[])=>{const kept=lines.map(l=>l?displayText(plainCharacterText(l)).trim():'').filter(Boolean);if(kept.length)list.push({title,lines:kept,keep:title.endsWith(' 시험')});};
   /** 묶은 쌍 안의 줄 이름표("가입 병종: …"). 중복 비교는 이름표를 뺀 글로 한다. */
   const lab=(label:string,text:string)=>text.trim()?`${label}: ${text.trim()}`:undefined;
   if(!d.avoid){
     // 최종 병종 시험은 3부 카드에만 둔다(검토 L7: 쌍 수 줄이기).
     for(const c of [...new Set([...d.classes,...(part==='3'?d.finalClasses:[])])]){const e=d.exams[c];if(!e)continue;const weapons=e.weapons.length?e.weapons:classes[c]?.weapons||[],unlock=e.unlock.replace(/^[\s·]+/,'');add(`${c} 시험`,[e.tier,/^\d/.test(e.level)?`권장 Lv${e.level}`:'',/^\d/.test(e.renown)?`명성 ${e.renown}`:'',e.required&&`필수 ${e.required}`,e.choice&&`선택 ${e.choice}`].filter(Boolean).join(' · '),weapons.length?`무기 ${weapons.join(' · ')}`:undefined,unlock?`해금 ${unlock}`:undefined,d.steps[c]);}
     // 기능 쌍은 설명이 같아도 지우지 않는다(검토 4 M3: 같은 "3부 최종 병종 시험 전"이라 둘째 기능이 사라졌다).
-    for(const s of d.skills){const line=plainCharacterText([s.when,s.why].filter(Boolean).join('. ')).trim();if(line)list.push({title:`${s.skill} ${s.target} · ${s.kind}`,lines:[line],keep:true});}
+    for(const s of d.skills){const line=displayText(plainCharacterText([s.when,s.why].filter(Boolean).join('. '))).trim();if(line)list.push({title:`${s.skill} ${s.target} · ${s.kind}`,lines:[line],keep:true});}
     add('기능 메모',d.skillNote);
     // 전차병 안내는 쌍 하나로 묶는다(검토 3 M3: 쌍이 너무 많다).
     if(d.caiAdvice)add('전차병 육성',d.charioteer,part!=='3'?`마스터 기술용으로 잠깐 바꿀 병종: ${d.caiAdvice.dip}`:undefined,`3부 병종 바꾸는 때: ${d.caiAdvice.rule} ${d.caiAdvice.part3}`,`무기 등급: ${d.caiAdvice.weapon}`);

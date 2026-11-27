@@ -220,9 +220,12 @@ for (const f of [...walk('app', ['.ts', '.tsx', '.css']), ...walk('components', 
 
 // [U66] 출처 사이트 이름은 화면에 그릴 때 뺀다(lib/display.ts stripSources, Fable 검토 21 지적 5). 자료 원문은 그대로.
 { const { displayText } = await import('../lib/display.ts');
-  for (const [a, b] of [['본다(Game8 확인). 다음', '본다. 다음'], ['막힌다(세오도라·릴리안 B는 Game8, 둘 다는 Anna\'s Notebook 초안).', '막힌다(미확인).'], ['합친다(altema·GameWith). 25명', '합친다. 25명'], ['Game8 다그시온 기본 1,500G', '다그시온 기본 1,500G'], ['Game8은 복귀까지', '공략 자료는 복귀까지'], ['Anna’s Notebook·allthings.how · 열리는 장은 미확인', '열리는 장은 미확인']]) assert.equal(displayText(a), b, '[U66] 출처 이름 빼기 ' + a);
-  const texts = [read('content/derived/checklist.json'), read('content/derived/presentation.json')].map(JSON.stringify).join('');
-  for (const s of texts.match(/"[^"]*(?:Game8|GameWith|Anna['’]s Notebook|allthings\.how|altema)[^"]*"/g) || []) { const t = JSON.parse(s); if (/^https?:|\.(?:jpg|png|webp)$/.test(t)) continue; assert.ok(!/Game8|GameWith|Anna['’]s Notebook|allthings|altema/.test(displayText(t)), '[U66] 화면 글에 출처 이름 남음: ' + displayText(t).slice(0, 80)); } }
+  for (const [a, b] of [['본다(Game8 확인). 다음', '본다. 다음'], ['막힌다(세오도라·릴리안 B는 Game8, 둘 다는 Anna\'s Notebook 초안).', '막힌다(미확인).'], ['합친다(altema·GameWith). 25명', '합친다. 25명'], ['Game8 다그시온 기본 1,500G', '다그시온 기본 1,500G'], ['Game8은 복귀까지', '공략 자료는 복귀까지'], ['Anna’s Notebook·allthings.how · 열리는 장은 미확인', '열리는 장은 미확인'],
+    // 괄호 안 이름 + 조사(Fable 재검토 B): 조사만 남지 않는다.
+    ['합류한다(Game8은 4장 표기).', '합류한다(공략 자료는 4장 표기).'], ['값(Game8의 표기와 다름).', '값(공략 자료의 표기와 다름).'], ['단계(Game8에서 4장 표기).', '단계(공략 자료에서 4장 표기).']]) assert.equal(displayText(a), b, '[U66] 출처 이름 빼기 ' + a);
+  // 화면에 그리는 자료 글(할 일·준비·인물 서랍의 영입 조건·기능 메모·병종 시험)에서 출처 이름과 조사만 남은 괄호가 없다(Fable 재검토 C).
+  const texts = ['content/derived/checklist.json', 'content/derived/presentation.json', 'content/data/recruitment-gates.json', 'content/data/training-priorities.json', 'content/data/class-details.json'].map(f => JSON.stringify(read(f))).join('');
+  for (const s of texts.match(/"(?:[^"\\]|\\.)*(?:Game8|GameWith|Anna['’]s Notebook|allthings\.how|altema)(?:[^"\\]|\\.)*"/g) || []) { const t = JSON.parse(s); if (/^https?:|\.(?:jpg|png|webp)$|^(?:Game8|GameWith)\s*·/.test(t)) continue; const shown = displayText(t); assert.ok(!/Game8|GameWith|Anna['’]s Notebook|allthings|altema/.test(shown), '[U66] 화면 글에 출처 이름 남음: ' + shown.slice(0, 80)); assert.ok(!/\((?:은|는|의|에서) /.test(shown), '[U66] 조사만 남은 괄호: ' + shown.slice(0, 80)); } }
 
 // [U66] 화면에 근거·기록용 글이 없다(2026-11-27): 원문 기록·비교 근거 탭·참고 문서 화면·그림 출처·입수 원문·특기 검토 문서·조심 문구. 옮긴 곳은 docs/reference/.
 { const code = walk('components', ['.tsx']).map(f => readFileSync(f, 'utf8')).join('');
