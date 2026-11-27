@@ -5,12 +5,13 @@
  * 괄호 안이 출처뿐이면 괄호째 지우고, 초안·미검증·추정이면 "(미확인)" 한 낱말(U46), 다른 글이 섞이면 출처 이름만 뺀다.
  * 괄호 밖은 이름을 빼고, 조사가 붙은 이름("Game8은")은 "공략 자료는"처럼 읽히게 바꾼다.
  */
-const SOURCE='(?:Game8|GameWith|Anna[\'’]s Notebook|allthings\\.how|altema|RPG Site|KeenGamer|Fextralife|Serenes Forest|Serenes|hyperwiki)';
-const hasSource=new RegExp(SOURCE);
-const sourceRun=new RegExp(`${SOURCE}(?:\\s*[·,]\\s*${SOURCE})*`,'g');
+// 대소문자를 가리지 않는다(자료에 hyperWiki·hyperwiki가 섞여 있다, Fable 재검토 N).
+const SOURCE='(?:Game8|GameWith|Anna[\'’]s Notebook|allthings\\.how|altema|RPG Site|KeenGamer|Fextralife|Serenes Forest|Serenes|hyperwiki|Reddit|Siliconera)';
+const hasSource=new RegExp(SOURCE,'i');
+const sourceRun=new RegExp(`${SOURCE}(?:\\s*[·,]\\s*${SOURCE})*`,'gi');
 const particle:Record<string,string>={은:'는',이:'가',과:'와'};
 /** 이름 + 조사 → "공략 자료" + 맞춘 조사(받침 없는 말이라 은→는, 이→가, 과→와). */
-const withParticle=new RegExp(`${sourceRun.source}(의|은|는|에서|에|이|가|와|과|로)(?=[\\s.,·)]|$)\\s*`,'g');
+const withParticle=new RegExp(`${sourceRun.source}(의|은|는|에서|에|이|가|와|과|로)(?=[\\s.,·)]|$)\\s*`,'gi');
 const named=(_m:string,p:string)=>`공략 자료${particle[p]||p} `;
 export function stripSources(text:string){
   if(!hasSource.test(text))return text;
@@ -24,7 +25,7 @@ export function stripSources(text:string){
       return rest?`${space}(${rest})`:'';
     })
     .replace(withParticle,named)
-    .replace(new RegExp(`${sourceRun.source}(?=[\\s.,·)]|$)\\s*(?:기준\\s*)?`,'g'),'')
+    .replace(new RegExp(`${sourceRun.source}(?=[\\s.,·)]|$)\\s*(?:기준\\s*)?`,'gi'),'')
     .replace(/^[\s·,]+/,'').replace(/\s+([.,)])/g,'$1').replace(/ {2,}/g,' ');
 }
 /**
@@ -34,8 +35,32 @@ export function stripSources(text:string){
 export function stripSourceLists(md:string){
   return md.replace(/^[ \t]*(?:\*\*)?출처(?:\*\*)?\s*[:：][^\n]*\n(?:[ \t]*\n)*(?:[ \t]*[-*+] [^\n]*\n?)*/gm,'')
     .replace(/(^|[.。]\s+)([^.。\n]*(?:대조|검증|확인|검토)했다[.。])[ \t]*/gm,(m,start:string,sentence:string)=>hasSource.test(sentence)?start:m)
-    .split('\n').filter(line=>!/^\s*[-*+]\s.*출처/.test(line)).map(line=>/^\s*\|/.test(line)?line:line
-      .replace(/(?<=^|[.。]\s+|^\s*[-*+]\s+)[^.。\n]*출처[^.。\n]*(?:[.。]|$)[ \t]*/g,'')).join('\n');
+    // 제목 줄(#)은 건드리지 않는다: 근거·출처 절은 evidenceSections가 절째 뺀다(Fable 재검토 L).
+    .split('\n').filter(line=>/^\s*#/.test(line)||!/^\s*[-*+]\s.*(?:출처|원문|확인일)/.test(line)).map(line=>/^\s*(?:\||#)/.test(line)?line:line
+      .replace(/^\s*(?:\*\*)?확인일(?:\*\*)?\s*[:：].*$/,'')
+      .replace(/(?<=^|[.。]\s+|^\s*[-*+]\s+)[^.。\n]*(?:출처|원문|Windows|Codex)[^.。\n]*(?:[.。]|$)[ \t]*/g,'')).join('\n');
+}
+/**
+ * 문서의 근거·검증 절을 절째 뺀다(제목부터 같은 단계 이하의 다음 제목 전까지): 근거·출처·검증과 한계·읽은 인터넷 원문·원문에서 읽은 …(U66, Fable 재검토 L·M).
+ * stripSourceLists보다 먼저 쓴다(그쪽이 제목 안 낱말을 지우면 절을 찾을 수 없다).
+ */
+export function evidenceSections(md:string){
+  const lines=md.split('\n'),out:string[]=[];let skip=0;
+  for(const line of lines){
+    const h=line.match(/^(#{2,6})\s+(.*)$/);
+    if(h){ if(skip&&h[1].length<=skip)skip=0; if(!skip&&/^(?:근거|출처|검증|읽은 인터넷 원문|원문)/.test(h[2].trim()))skip=h[1].length; }
+    if(!skip)out.push(line);
+  }
+  return out.join('\n');
+}
+/** 문서 안 다른 문서 링크: 병종 문서만 링크로 두고, 검토·근거 문서 링크는 글자만 남긴다. 링크만 있는 줄은 줄째 뺀다(Fable 재검토 M). */
+export function plainDocLinks(md:string){
+  // 할 일로 가는 링크(personalized·guide·personalized-team, lib/document-links.ts guideHref)와 병종 문서·그림은 그대로 둔다.
+  const isDoc=(u:string)=>!/^(?:https?:|#|mailto:)/.test(u)&&!/(?:^|\/)classes\//.test(u)&&!/assets\//.test(u)&&!/(?:^|\/)(?:personalized|guide|personalized-team)\.(?:md|html)(?:#|$)/.test(u);
+  return md.split('\n').filter(line=>{const m=line.match(/^\s*(?:[-*+]\s+)?(?:&#x20;|\s)*\[[^\]]*\]\(([^)\s]+)\)[.。]?\s*$/);return !(m&&isDoc(m[1]));})
+    // 링크 하나가 한 문장인 것("장별 인터넷 대조.")은 문장째, 문장 속 링크는 글자만.
+    .map(line=>line.replace(/(?<=^|[.。]\s+|^\s*[-*+]\s+)\[[^\]]*\]\(([^)\s]+)\)[.。][ \t]*/g,(m,url:string)=>isDoc(url)?'':m)
+      .replace(/\[([^\]]*)\]\(([^)\s]+)\)/g,(m,text:string,url:string)=>isDoc(url)?text:m)).join('\n');
 }
 /** 근거 글 "원문…" 말투는 화면에서 줄인다(U66, Fable 재검토 I). 자료는 그대로. */
 function stripEvidenceWords(text:string){
@@ -48,7 +73,7 @@ function stripEvidenceWords(text:string){
     .replace(/원문의 /g,'');
 }
 export function verificationTail(text:string){
-  return stripEvidenceWords(stripSources(text)).replace(/\((?:원래 공략 한 곳에서만 확인|출처 한 곳|단일 출처)\)/g,'(미확인)').replace(/\([^()]*Anna's Notebook 초안, 미검증\)/g,'(미확인)').replace(/[^.。]*팀 화면의 전체 참고 문서에서 확인한다\.\s*/g,'').replace(/(?:은|는|이|가) (?:원래 공략 한 곳에서만 확인됐다|아직 확인되지 않았다|확인되지 않았다)(?=[.。]|$)/g,': 미확인');
+  return stripEvidenceWords(stripSources(text)).replace(/\((?:원래 공략 한 곳에서만 확인|출처 한 곳|단일 출처)\)/g,'(미확인)').replace(/\((?:초안 )?1곳[^()]*\)/g,'(미확인)').replace(/\([^()]*Anna's Notebook 초안, 미검증\)/g,'(미확인)').replace(/[^.。]*팀 화면의 전체 참고 문서에서 확인한다\.\s*/g,'').replace(/(?:은|는|이|가) (?:원래 공략 한 곳에서만 확인됐다|아직 확인되지 않았다|확인되지 않았다)(?=[.。]|$)/g,': 미확인');
 }
 export function displayText(text:string){
   return verificationTail(text).replace(/(세오도라|레다|디트리히|카이)\s*([123])부/g,'$1 $2부').replace(/([123])부(\d+)장/g,'$1부 $2장').replace(/(최종|현재)(\d+)(명|인)/g,'$1 $2$3').replace(/(명성|지원)(\d+)/g,'$1 $2').replaceAll('백마법','백마술');

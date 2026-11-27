@@ -18,8 +18,6 @@ import { pairNames, filterPairs } from '@/lib/pair-filter';
 import people from '@/content/data/people-display.json';
 import { personPortrait } from '@/lib/portraits';
 import { SupportLink } from './yuphas';
-/** 문서의 "## 근거" 절은 화면에서 뺀다(파일은 content/notes/ 그대로, 2026-11-27). */
-const withoutEvidence=(md:string)=>md.replace(/\n## (?:근거|출처)[^\n]*\n[\s\S]*?(?=\n## |$)/g,'\n');
 function annotated(children:ReactNode,part:string){return Children.map(children,c=>typeof c==='string'?<GameText text={c} withSkills part={part}/>:c);}
 export { resolveDoc } from '@/lib/document-links';
 
@@ -64,7 +62,7 @@ export function DocumentSheet({docs,current,onOpen,onClose,route,part='3'}:{docs
   const doc=docs.find(d=>d.path===path);
   // 지원 대화 표의 인물 거르기(2026-11-15): 이 화면 문서의 '대화' 열에 나오는 인물만 고를 수 있다. 문서를 바꾸면 풀린다.
   const [pick,setPick]=useState<{path?:string;names:string[]}>({names:[]}),selected=pick.path===path?pick.names:[];
-  const names=doc?.body?pairNames(doc.body):[],body=doc?.body?withoutEvidence(filterPairs(doc.body,selected)):'';
+  const names=doc?.body?pairNames(doc.body):[],body=doc?.body?filterPairs(doc.body,selected):'';
   const toggle=(name:string)=>setPick({path,names:selected.includes(name)?selected.filter(n=>n!==name):[...selected,name]});
   const classInfo=Object.values(classManifest.classes).find(c=>'slug' in c&&path===`notes/classes/${c.slug}.md`);
   useLayoutEffect(()=>{
@@ -84,6 +82,7 @@ export function DocumentSheet({docs,current,onOpen,onClose,route,part='3'}:{docs
     requestAnimationFrame(()=>{if(scroll.current)scroll.current.scrollTop=previous.scroll;});
   }
   function close(){if(url)positions.current.set(url,scroll.current?.scrollTop||0);setHistory([]);onClose();}
+  function canOpen(href:string){const resolved=resolveDoc(href,path).split('#')[0];return (resolved===path||/^notes\/classes\//.test(resolved))&&docs.some(d=>d.path===resolved);}
   function link(href:string,children:ReactNode){
     const destination=guideHref(href,path);
     if(destination)return <Link href={destination} onClick={()=>{close();window.dispatchEvent(new Event('guide-jump'));}}>{children}</Link>;
@@ -92,12 +91,12 @@ export function DocumentSheet({docs,current,onOpen,onClose,route,part='3'}:{docs
     if(href.includes('assets/'))return <a href={'/'+href.slice(href.indexOf('assets/'))} target="_blank" rel="noreferrer">{children}</a>;
     // 원본 자료 JSON·검증 기록·작업 화면 사진은 공개하지 않는다(개인 진행이 섞여 있음, 2026-11-15 Fable 검토 12 H1). 링크 글자만 남긴다.
     if(/(?:^|\/)data\//.test(href)||/\.(?:json|png|jpe?g|webp)(?:#.*)?$/.test(href))return <span title="공개하지 않는 작업 자료">{children}</span>;
-    const resolved=resolveDoc(href,path).split('#')[0];
-    if(!docs.some(d=>d.path===resolved)&&/^(?:index|tips|units|part[23]|theodora|leda|dietrich|cai|classes|characters|paralogues|sources)\.md$/.test(resolved))return <span title="참고 보관의 원본 공략">{children}</span>;
+    // 문서 안에서는 병종 문서·같은 문서 안 자리만 단추로 연다. 검토·근거 문서와 이 루트에 없는 문서는 글자만 남긴다(Fable 재검토 M·O).
+    if(!canOpen(href))return <span>{children}</span>;
     return <button data-doc-url={href} className="text-link" onClick={()=>follow(href)}>{children}</button>;
   }
   return <Sheet open={current!==null} onOpenChange={open=>{if(!open)close();}}><SheetContent themeRoute={route}><div className="sheet-heading"><Button variant="ghost" onClick={back} disabled={!history.length}><ArrowLeft size={20}/> 뒤로</Button><SheetTitle>{doc?.title||'문서 확인'}</SheetTitle></div><div className="sheet-scroll" ref={scroll} onScroll={e=>{if(url)positions.current.set(url,e.currentTarget.scrollTop);}}>
     {names.length>1&&<div className="pair-filter" role="group" aria-label="인물로 거르기"><p className="pair-filter-label">인물로 거르기{selected.length>0&&<> · {selected.length}명</>}</p><div className="pair-filter-chips"><button type="button" className="pair-chip" aria-pressed={!selected.length} onClick={()=>setPick({path,names:[]})}>전체</button>{names.map(n=>{const src=(people as Record<string,{portrait:string}>)[n]?.portrait;return <button type="button" key={n} className="pair-chip" aria-pressed={selected.includes(n)} onClick={()=>toggle(n)}>{src&&<img src={'/'+personPortrait(src,part,n)} alt="" loading="lazy"/>}{n}</button>;})}</div></div>}
-    {classInfo&&<div className="class-document-heading"><img src={'/'+classInfo.file} alt=""/><span className="role-chip">{classInfo.tier}</span></div>}{doc?doc.tree?<Semantic nodes={doc.tree} route={route} part={part} onDoc={follow}/>:<Markdown remarkPlugins={[remarkGfm,documentAnchors]} components={{table:DocumentTable,h1:({children})=>classInfo?null:<h1>{annotated(children,part)}</h1>,h2:({children})=>classInfo&&Children.toArray(children).join('')===classInfo.tier?null:<h2>{annotated(children,part)}</h2>,strong:({children})=><strong>{annotated(children,part)}</strong>,td:({children})=><td>{Children.map(children,c=>typeof c==='string'?<GameText text={c} withSkills part={part}/>:c)}</td>,p:({children})=><ReadMore><p>{annotated(children,part)}</p></ReadMore>,li:({children})=><li>{annotated(children,part)}</li>,th:({children})=><th>{annotated(children,part)}</th>,a:({href,children})=>link(href||'',children),img:({src,alt})=>{const s=String(src||'');return <GuideImage src={s.includes('assets/')?'/'+s.slice(s.indexOf('assets/')):s} alt={alt||'참고 그림'}/>;}}}>{body}</Markdown>:<p>이 문서는 현재 루트·부에 없습니다.</p>}
+    {classInfo&&<div className="class-document-heading"><img src={'/'+classInfo.file} alt=""/><span className="role-chip">{classInfo.tier}</span></div>}{doc?doc.tree?<Semantic nodes={doc.tree} route={route} part={part} onDoc={follow} canOpen={canOpen}/>:<Markdown remarkPlugins={[remarkGfm,documentAnchors]} components={{table:DocumentTable,h1:({children})=>classInfo?null:<h1>{annotated(children,part)}</h1>,h2:({children})=>classInfo&&Children.toArray(children).join('')===classInfo.tier?null:<h2>{annotated(children,part)}</h2>,strong:({children})=><strong>{annotated(children,part)}</strong>,td:({children})=><td>{Children.map(children,c=>typeof c==='string'?<GameText text={c} withSkills part={part}/>:c)}</td>,p:({children})=><ReadMore><p>{annotated(children,part)}</p></ReadMore>,li:({children})=><li>{annotated(children,part)}</li>,th:({children})=><th>{annotated(children,part)}</th>,a:({href,children})=>link(href||'',children),img:({src,alt})=>{const s=String(src||'');return <GuideImage src={s.includes('assets/')?'/'+s.slice(s.indexOf('assets/')):s} alt={alt||'참고 그림'}/>;}}}>{body}</Markdown>:<p>이 문서는 현재 루트·부에 없습니다.</p>}
   </div></SheetContent></Sheet>;
 }

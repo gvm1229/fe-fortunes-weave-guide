@@ -1,6 +1,7 @@
 import { GameText, glueDots, glueLeadDots, imageName, classNamesByFile, namesInText } from './game-text';
 import { createElement, Fragment } from 'react';
 import type { Tree } from '@/lib/content';
+import { useDocAvailable } from './doc-available';
 import { displayText } from '@/lib/display';
 import weaponData from '@/content/data/weapon-buy-sources.json';
 import { ReadMore } from './read-more';
@@ -32,8 +33,9 @@ const isBlock=(n:Exclude<Tree,string>)=>blockTags.has(n.tag)||!!n.attrs['data-fa
 function textSkip(text:string,skip:Set<string>):ReadonlySet<string>{const before=new Set(skip);namesInText(text).forEach(name=>skip.add(name));return before;}
 const evidence=/근거|검토|원문|출처|확인$|^공개 자료/;
 const allowed=new Set(['nav','section','article','div','p','span','strong','b','em','small','h2','h3','h4','h5','ul','ol','li','dl','dt','dd','table','caption','colgroup','col','thead','tbody','tfoot','tr','th','td','figure','figcaption','br','details','summary','a','img']);
-export function Semantic({nodes,route,part,onDoc,onSpell,hidePortraits=false,changesOnly=false}:{nodes:Tree[];route:string;part:string;onDoc?:(url:string)=>void;onSpell?:(id:string)=>void;hidePortraits?:boolean;changesOnly?:boolean}){
-  const seen=new Set<string>();
+/** canOpen: 문서 서랍 안에서는 병종 문서처럼 열어도 되는 문서만 단추로, 나머지는 글자만(Fable 재검토 M). */
+export function Semantic({nodes,route,part,onDoc,onSpell,hidePortraits=false,changesOnly=false,canOpen}:{nodes:Tree[];route:string;part:string;onDoc?:(url:string)=>void;onSpell?:(id:string)=>void;hidePortraits?:boolean;changesOnly?:boolean;canOpen?:(url:string)=>boolean}){
+  const seen=new Set<string>(),docAvailable=useDocAvailable();
   const enrichSkills=!JSON.stringify(nodes).includes("/skills/");
   /** plain: 표 머리 칸 안의 글은 배지 없이 그린다(칸 배경과 배지 배경 겹침 방지). */
   function render(n:Tree,i:number,parentSkip:Set<string>=new Set(),inBlock=false,plain=false):React.ReactNode {
@@ -63,10 +65,11 @@ export function Semantic({nodes,route,part,onDoc,onSpell,hidePortraits=false,cha
     if((n.tag==='button'||n.tag==='a')&&evidence.test(flat(n.children).trim()))return null;
     if(n.tag==='button'){
       const url=a['data-reference-url']||a['data-unit-review']||(a['data-class-slug']?`notes/classes/${a['data-class-slug']}.md`:undefined);
+      if(url&&((canOpen&&!canOpen(url))||!docAvailable(url)))return <span key={i}>{children()}</span>;
       if(url||a['data-spell-jump'])return <button key={i} className="text-link" title={a.title} onClick={()=>a['data-spell-jump']?onSpell?.(a['data-spell-jump']):onDoc?.(url!)}>{children()}</button>;
       return <span key={i}>{children()}</span>;
     }
-    if(n.tag==='a'&&a.href){if(/^https?:/.test(a.href))return <a key={i} href={a.href} target="_blank" rel="noreferrer">{n.children.map(sub)}</a>;return <button key={i} className="text-link" onClick={()=>onDoc?.(a.href!)}>{n.children.map(sub)}</button>;}
+    if(n.tag==='a'&&a.href){if(/^https?:/.test(a.href))return a.href.startsWith('https://yuphastemple.com/')?<a key={i} href={a.href} target="_blank" rel="noreferrer">{n.children.map(sub)}</a>:<span key={i}>{n.children.map(sub)}</span>;if(canOpen&&!canOpen(a.href))return <span key={i}>{n.children.map(sub)}</span>;return <button key={i} className="text-link" onClick={()=>onDoc?.(a.href!)}>{n.children.map(sub)}</button>;}
     // 명성·지원 조건 칩은 안의 배지가 이미 배경을 가진다. 칩 껍데기를 뺀다.
     if(a['data-condition-chip']&&/^(명성|지원)/.test(flat(n.children).trim()))return <Fragment key={i}>{children()}</Fragment>;
     return createElement(allowed.has(n.tag)?n.tag:'div',{key:i,...Object.fromEntries(Object.entries(a).filter(([key])=>key.startsWith('data-')||['id','title','aria-label'].includes(key))),...(a.colspan?{colSpan:Number(a.colspan)}:{}),...(a.rowspan?{rowSpan:Number(a.rowspan)}:{})},children());

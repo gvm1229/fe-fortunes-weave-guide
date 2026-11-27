@@ -64,7 +64,7 @@ for (const f of [...walk('app', ['.ts', '.tsx', '.css']), ...walk('components', 
   assert.ok(rows.length >= 8, '[U36] 순서 잠금 줄 수');
   for (const r of rows) { const c = r.split('|').map(s => s.trim()); assert.ok(/^(확인|공동체 자료|초안)/.test(c[3]), `[U36] 근거 표시 없음: ${c[1]}`); }
   assert.ok((sec.match(/\]\(https:\/\//g) || []).length >= 4, '[U36] 출처 주소');
-  const doc = readFileSync('components/documents.tsx', 'utf8'); assert.ok(doc.includes('withoutEvidence') && doc.includes('(근거|출처)'), '[U36] 문서 화면이 근거 절·근거 열을 거른다'); assert.ok(existsSync('docs/reference/support-evidence.md'), '[U36] 옮긴 근거 문서'); }
+  const doc = readFileSync('components/documents.tsx', 'utf8'); assert.ok(doc.includes('(근거|출처)') && readFileSync('lib/documents.ts', 'utf8').includes('evidenceSections('), '[U36] 문서 화면이 근거 절(lib/documents.ts evidenceSections)·근거 열을 거른다'); assert.ok(existsSync('docs/reference/support-evidence.md'), '[U36] 옮긴 근거 문서'); }
 
 // [U20] 영입 루트는 조건(명성·지원)이 가장 쉬운 곳. 더 쉬운 루트가 있는데 다른 루트에 둔 인물은 이유(대화 상대·융합·지참품 등)를 적는다.
 { const p = read('content/data/recruit-all-plan.json'), g = read('content/data/recruitment-gates.json').characters, cost = x => (+x.fame || 0) * 10 + (+x.sup || 0);
@@ -224,6 +224,14 @@ for (const f of [...walk('app', ['.ts', '.tsx', '.css']), ...walk('components', 
   { const md = readFileSync('content/notes/support-pairs-by-route.md', 'utf8').replace(/\n## 근거[\s\S]*$/, ''); const shown = displayText(stripSourceLists(md)).split('\n').filter(l => !/^\s*\|/.test(l)).join('\n');
     for (const w of ['출처', 'Fextralife', 'Serenes', 'Game8', 'Anna', 'hatenablog', 'annasnotebook', '대조했다']) assert.ok(!shown.includes(w), `[U66] 루트별 지원 대화 문서에 '${w}'`);
     assert.equal(stripSourceLists('앞 문단.\n\n출처:\n\n- [A](https://x)\n- [B](https://y)\n\n## 다음'), '앞 문단.\n\n\n## 다음', '[U66] 출처 목록 빼기'); }
+  // Fable 재검토 L·M·N·P: "## 출처"·"## 검증과 한계" 절은 절째 빠지고(제목을 먼저 지워 절이 드러나지 않게), 검토 문서 링크는 글자만·링크 한 문장은 문장째, hyperWiki도 빠지고, "(초안 1곳, …)"은 (미확인).
+  { const { evidenceSections, plainDocLinks } = await import('../lib/display.ts');
+    const doc = '# 제목\n\n본문 문장.\n\n## 출처\n\n공개 웹 읽기로 원문을 읽었다.\n\n### 세부\n\n- 목록\n\n## 검증과 한계\n\nWindows·Codex에서 읽었다.\n\n## 다음 절\n\n남는 글.';
+    const shown = displayText(stripSourceLists(plainDocLinks(evidenceSections(doc))));
+    assert.ok(!/출처|원문|Windows|Codex|세부|목록/.test(shown) && /본문 문장/.test(shown) && /남는 글/.test(shown), '[U66] 근거·검증 절째 빼기 ' + JSON.stringify(shown));
+    assert.equal(plainDocLinks('않는다. [장별 인터넷 대조](routes/x-review.md). 명성.\n- [실제 사례](notes/a-review.html)\n[궁병](classes/archer.md)과 [도전](notes/b.md)을 본다.'), '않는다. 명성.\n[궁병](classes/archer.md)과 도전을 본다.', '[U66] 문서 안 검토 문서 링크');
+    assert.equal(displayText('가격 300은 hyperWiki 축복 표를 따른다.'), '가격 300은 축복 표를 따른다.', '[U66] hyperWiki 대소문자');
+    assert.equal(displayText('티아라·보나파르트 C(초안 1곳, 상충 있음)'), '티아라·보나파르트 C(미확인)', '[U46] 초안 1곳 → 미확인'); }
   for (const [a, b] of [['본다(Game8 확인). 다음', '본다. 다음'], ['막힌다(세오도라·릴리안 B는 Game8, 둘 다는 Anna\'s Notebook 초안).', '막힌다(미확인).'], ['합친다(altema·GameWith). 25명', '합친다. 25명'], ['Game8 다그시온 기본 1,500G', '다그시온 기본 1,500G'], ['Game8은 복귀까지', '공략 자료는 복귀까지'], ['Anna’s Notebook·allthings.how · 열리는 장은 미확인', '열리는 장은 미확인'],
     // 괄호 안 이름 + 조사(Fable 재검토 B): 조사만 남지 않는다.
     ['합류한다(Game8은 4장 표기).', '합류한다(공략 자료는 4장 표기).'], ['값(Game8의 표기와 다름).', '값(공략 자료의 표기와 다름).'], ['단계(Game8에서 4장 표기).', '단계(공략 자료에서 4장 표기).'],

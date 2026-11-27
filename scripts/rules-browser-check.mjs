@@ -118,7 +118,7 @@ try {
   // [U66] 근거·기록용 글이 화면에 없다: 원문 기록·비교 근거·참고 문서·그림 출처·입수 원문·특기 검토 문서·근거/검토 문서 단추·조심 문구.
   // [U67] 인물 서랍·팀 인물 서랍 머리는 yuphastemple 인물 카드(이름 빛·병종 줄·장점·약점 12칸·소속 문장·큰 초상화), 선호 선물·음식 목록과 지원 표가 있다.
   { const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 }, reducedMotion: 'reduce' }), p = await ctx.newPage();
-    const BLOAT = ['원문 기록', '비교 근거', '참고 문서', '그림 출처', '입수 원문', '특기 검토 문서', '전체 참고 문서', '훈련 순서·시설Lv·스승 근거', '전원 영입 검토', '평준화·증서 근거', '한 곳에서만 확인', '확인되지 않았다', '실제 합류와 출격 자리는 게임 화면을 먼저 확인하세요', '고정 진입 조건이나 실제 잔액이 아닙니다', 'Game8', 'GameWith', 'Anna', 'allthings', 'altema', 'RPG Site', 'KeenGamer', '전체 비교·육성 근거 읽기', '원문'];
+    const BLOAT = ['원문 기록', '비교 근거', '참고 문서', '그림 출처', '입수 원문', '특기 검토 문서', '전체 참고 문서', '훈련 순서·시설Lv·스승 근거', '전원 영입 검토', '평준화·증서 근거', '한 곳에서만 확인', '확인되지 않았다', '실제 합류와 출격 자리는 게임 화면을 먼저 확인하세요', '고정 진입 조건이나 실제 잔액이 아닙니다', 'Game8', 'GameWith', 'Anna', 'allthings', 'altema', 'RPG Site', 'KeenGamer', '전체 비교·육성 근거 읽기', '원문', 'hyperWiki', 'hyperwiki', 'Reddit', 'Siliconera'];
     const bloat = async (u) => { await p.evaluate(() => document.querySelectorAll('main details').forEach(d => { d.open = true; })); const t = await p.evaluate(() => document.body.innerText); for (const w of BLOAT) assert.ok(!t.includes(w), `[U66] ${u} 화면에 '${w}'`); };
     for (const r of ROUTES) {
       await p.goto(base + `/${r}/1/`); await p.locator('.route-head').waitFor(); await p.evaluate(() => document.querySelectorAll('main details').forEach(d => { d.open = true; })); await p.waitForTimeout(300);
@@ -143,13 +143,25 @@ try {
       for (const v of ['인물', '준비', '재료와 구매']) { await p.getByRole('navigation', { name: '공략 화면' }).getByRole('button', { name: v, exact: true }).click(); await p.waitForTimeout(500); await bloat(`${r} ${v}`); }
     }
     // [U66] 문서 서랍(루트별 지원 대화·시험 안내·병종 문서)에 출처 목록·출처 사이트 이름이 없고, yuphastemple 밖으로 가는 링크가 0개(Fable 재검토 K).
-    { const DOC_BLOAT = [...BLOAT, '출처', 'Fextralife', 'Serenes', 'hyperwiki'];
-      const docCheck = async (label) => { const d = p.getByRole('dialog'); await d.waitFor(); await p.waitForTimeout(300); await p.evaluate(() => document.querySelectorAll('[role=dialog] details').forEach(x => { x.open = true; }));
+    // 문서 안 단추는 끝까지 따라가 같은 검사를 하고, 빈 문서("문서 확인")로 가는 단추가 없는지 본다(Fable 재검토 L·M·N·O).
+    { const DOC_BLOAT = [...BLOAT, '출처', 'Fextralife', 'Serenes', 'hyperwiki', 'hyperWiki', 'Reddit', 'Siliconera', 'Windows', 'Codex', '확인일', '인터넷 대조'];
+      const seenDocs = new Set();
+      const inspect = async (label, depth) => { const d = p.getByRole('dialog'); await p.waitForTimeout(250); await p.evaluate(() => document.querySelectorAll('[role=dialog] details').forEach(x => { x.open = true; }));
+        const title = await d.locator('.sheet-heading h2').textContent(); assert.ok(title !== '문서 확인', `[U66] ${label} 빈 문서`);
         const t = await d.innerText(); for (const w of DOC_BLOAT) assert.ok(!t.includes(w), `[U66] ${label} 문서에 '${w}'`);
         const out = await d.locator('a[href^="http"]').evaluateAll(es => es.map(e => e.href).filter(h => !h.startsWith('https://yuphastemple.com/'))); assert.deepEqual(out, [], `[U66] ${label} 바깥 링크`);
-        await p.keyboard.press('Escape'); await d.waitFor({ state: 'detached' }); };
+        if (depth > 3) return;
+        const sel = '[role=dialog] .sheet-scroll button.text-link, [role=dialog] .sheet-scroll button[data-doc-url]';
+        for (let i = 0; i < await p.locator(sel).count(); i++) { const btn = p.locator(sel).nth(i), key = (await btn.getAttribute('data-doc-url')) || (await btn.textContent()).trim(); if (seenDocs.has(key)) continue; seenDocs.add(key);
+          await btn.scrollIntoViewIfNeeded().catch(() => {}); await btn.click(); await p.waitForTimeout(250);
+          if (await d.locator('.sheet-heading h2').textContent() !== title) { await inspect(`${label} → ${key}`, depth + 1); await p.getByRole('button', { name: '뒤로' }).click(); await p.waitForTimeout(200); } } };
+      const docCheck = async (label) => { const d = p.getByRole('dialog'); await d.waitFor(); await inspect(label, 0); await p.keyboard.press('Escape'); await d.waitFor({ state: 'detached' }); };
       for (const r of ['/theodora/1/', '/cai/1/']) {
         await p.goto(base + r); await p.locator('.route-head').waitFor(); await p.waitForTimeout(300);
+        // 할 일 본문의 문서 단추(검토 문서 포함)를 모두 연다.
+        await p.evaluate(() => document.querySelectorAll('main details').forEach(d => { d.open = true; }));
+        const urls = [...new Set(await p.locator('.tasks-main button[data-reference-url]').evaluateAll(es => es.map(e => e.getAttribute('data-reference-url'))))];
+        for (const u of urls) { const btn = p.locator(`.tasks-main button[data-reference-url="${u}"]`).first(); await btn.scrollIntoViewIfNeeded(); await btn.click(); await docCheck(`${r} ${u}`); }
         await p.locator('.context-rail button', { hasText: '루트별 지원 대화' }).first().click(); await docCheck(`${r} 루트별 지원 대화`);
         await p.evaluate(() => document.querySelectorAll('main details').forEach(d => { d.open = true; })); const chip = p.locator('.tasks-main button.reference-chip').first(); await chip.scrollIntoViewIfNeeded(); await chip.click(); await docCheck(`${r} 병종 문서`);
         await p.getByRole('navigation', { name: '공략 화면' }).getByRole('button', { name: '인물', exact: true }).click(); await p.getByRole('button', { name: '시험 안내', exact: true }).click(); await docCheck(`${r} 시험 안내`);
