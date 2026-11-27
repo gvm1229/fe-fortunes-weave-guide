@@ -21,25 +21,29 @@ export function useBuild(route: string, slug?: string): Build | undefined {
 /**
  * 편집 중인 글을 저장 값에 맞추고(가져오기·다른 탭에서 바뀌면 따라감), 칸이 화면에서 없어질 때(서랍 닫기) 아직 저장하지 않은 글을 저장한다.
  * key로 칸을 다시 만들지 않는다: 다시 만들면 저장할 때마다 초점을 잃었다(2026-11-27 Fable 검토 21 지적 1·2).
+ * 닫을 때 저장은 사용자가 고친 뒤 아직 저장하지 않은 글만 한다(고치지 않은 메모를 다시 다듬어 저장하거나 칸 떠남·닫기로 두 번 저장하지 않게, Fable 재검토 F).
+ * edit = 사용자가 고침(저장 대기), settle = 저장했거나 저장 값으로 맞춤.
  */
 function useDraft<T>(value: T | undefined, toText: (v: T | undefined) => string, parse: (text: string) => T | undefined, onSave: (v: T | undefined) => void) {
   const [text, setText] = useState(toText(value));
   const [seen, setSeen] = useState(value);
   if (seen !== value) { setSeen(value); setText(toText(value)); }
-  const latest = useRef({ text, value, parse, onSave });
+  const latest = useRef({ text, value, parse, onSave }), edited = useRef(false);
   useEffect(() => { latest.current = { text, value, parse, onSave }; });
-  useEffect(() => () => { const { text: t, value: v, parse: p, onSave: save } = latest.current; const next = p(t); if (next !== v) save(next); }, []);
-  return [text, setText] as const;
+  useEffect(() => () => { if (!edited.current) return; const { text: t, value: v, parse: p, onSave: save } = latest.current; const next = p(t); if (next !== v) save(next); }, []);
+  const edit = (t: string) => { edited.current = true; setText(t); };
+  const settle = (t: string) => { edited.current = false; setText(t); };
+  return [text, edit, settle] as const;
 }
 const levelText = (v?: number) => (v ? String(v) : '');
 const parseLevel = (raw: string) => { const n = parseInt(raw, 10); return raw.trim() === '' || Number.isNaN(n) ? undefined : clamp(n); };
 function LevelField({ value, disabled, onSave }: { value?: number; disabled: boolean; onSave: (v: number | undefined) => void }) {
-  const [text, setText] = useDraft(value, levelText, parseLevel, onSave);
-  const commit = (raw: string) => { const next = parseLevel(raw); setText(levelText(next)); if (next !== value) onSave(next); };
-  const step = (d: number) => { const n = clamp((parseInt(text, 10) || value || (d > 0 ? 0 : 2)) + d); setText(String(n)); if (n !== value) onSave(n); };
+  const [text, edit, settle] = useDraft(value, levelText, parseLevel, onSave);
+  const commit = (raw: string) => { const next = parseLevel(raw); settle(levelText(next)); if (next !== value) onSave(next); };
+  const step = (d: number) => { const n = clamp((parseInt(text, 10) || value || (d > 0 ? 0 : 2)) + d); settle(String(n)); if (n !== value) onSave(n); };
   return <span className="build-level"><label htmlFor="build-level-input">Lv</label>
     <input id="build-level-input" type="text" inputMode="numeric" pattern="[0-9]*" maxLength={2} value={text} disabled={disabled} aria-label="레벨(1~99)" placeholder="–"
-      onChange={(e) => setText(e.target.value.replace(/\D/g, ''))} onBlur={(e) => commit(e.target.value)}
+      onChange={(e) => edit(e.target.value.replace(/\D/g, ''))} onBlur={(e) => commit(e.target.value)}
       onKeyDown={(e) => { if (e.key === 'Enter') commit(e.currentTarget.value); else if (e.key === 'ArrowUp') { e.preventDefault(); step(1); } else if (e.key === 'ArrowDown') { e.preventDefault(); step(-1); } }} />
     {/* ▲▼ 단추는 누를 곳 32×32px(U55), 가로로 나란히. 키보드는 칸에서 ↑↓. */}
     <span className="build-steps"><button type="button" tabIndex={-1} disabled={disabled} aria-label="레벨 내리기" onClick={() => step(-1)}><ChevronDown size={16} aria-hidden="true" /></button><button type="button" tabIndex={-1} disabled={disabled} aria-label="레벨 올리기" onClick={() => step(1)}><ChevronUp size={16} aria-hidden="true" /></button></span>
@@ -48,9 +52,9 @@ function LevelField({ value, disabled, onSave }: { value?: number; disabled: boo
 const noteText = (v?: string) => v || '';
 const parseNote = (t: string) => t.trim() || undefined;
 function NoteField({ value, disabled, onSave }: { value?: string; disabled: boolean; onSave: (v: string | undefined) => void }) {
-  const [text, setText] = useDraft(value, noteText, parseNote, onSave);
+  const [text, edit, settle] = useDraft(value, noteText, parseNote, onSave);
   return <input className="build-note" type="text" maxLength={NOTE_MAX} value={text} disabled={disabled} placeholder="메모" aria-label={`메모(${NOTE_MAX}자 이하)`}
-    onChange={(e) => setText(e.target.value)} onBlur={() => { const v = parseNote(text); if (v !== value) onSave(v); }} />;
+    onChange={(e) => edit(e.target.value)} onBlur={() => { const v = parseNote(text); settle(text); if (v !== value) onSave(v); }} />;
 }
 export function BuildEditor({ route, profile }: { route: string; profile: YuphasProfile }) {
   const checks = useChecks(), build = useBuild(route, profile.slug), disabled = !checks.ready;

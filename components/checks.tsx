@@ -29,7 +29,10 @@ function subscribe(fn:()=>void){listeners.add(fn);return()=>{listeners.delete(fn
 /** 저장에 성공하면 true. 가져오기는 실패를 알 수 있게 이 값을 본다. */
 function save(data:CheckState):boolean{
   let ok=true;
-  try{const {builds,...checksData}=data;localStorage.setItem(key,JSON.stringify(checksData));if(builds&&Object.keys(builds).length)localStorage.setItem(buildsKey,JSON.stringify(builds));else localStorage.removeItem(buildsKey);snapshot={data,ready:true,status:'체크를 이 브라우저에 저장했습니다.',error:false};}
+  // 육성 기록 열쇠를 먼저 쓰고, 실패하면 체크 열쇠도 쓰지 않는다(알림 '바뀌지 않았습니다'가 참이 되게). 기록이 비면 열쇠를 지우지 않고 {}를 둔다:
+  // 열쇠가 없으면 처음 읽을 때 체크 열쇠의 옛 builds를 옮겨 오므로, 지운 기록이 옛 탭 값으로 되살아나지 않게 한다(Fable 재검토 E).
+  try{const {builds,...checksData}=data,before=localStorage.getItem(buildsKey);localStorage.setItem(buildsKey,JSON.stringify(builds&&Object.keys(builds).length?builds:{}));
+    try{localStorage.setItem(key,JSON.stringify(checksData));}catch(e){try{if(before===null)localStorage.removeItem(buildsKey);else localStorage.setItem(buildsKey,before);}catch{/* 되돌리기도 실패하면 그대로 둔다 */}throw e;}snapshot={data,ready:true,status:'체크를 이 브라우저에 저장했습니다.',error:false};}
   catch{ok=false;snapshot={...snapshot,status:'저장하지 못했습니다. 체크는 바뀌지 않았습니다. 저장 공간을 확인한 뒤 다시 시도하세요.',error:true};}
   emit();return ok;
 }

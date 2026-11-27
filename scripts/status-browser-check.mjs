@@ -110,6 +110,9 @@ try {
     // 메모를 쓰고 칸을 떠나지 않은 채 서랍을 닫아도 저장된다(Fable 검토 21 지적 2).
     await d.getByLabel(/^메모/).fill('닫기 메모'); await p.keyboard.press('Escape'); await d.waitFor({ state: 'detached' }); await p.waitForTimeout(200);
     assert.equal((await stored()).builds.theodora.theodora.note, '닫기 메모', '[U72] 서랍을 닫으면 메모 저장');
+    // 고치지 않고 열었다 닫으면 다시 저장하지 않는다(기록 번호 그대로, Fable 재검토 F).
+    { const rev = (await stored()).revision; await p.locator('.person-card[data-person="세오도라"] .person-card-open').click(); const dd = p.getByRole('dialog'); await dd.waitFor(); await dd.getByLabel(/^메모/).focus(); await p.keyboard.press('Escape'); await dd.waitFor({ state: 'detached' }); await p.waitForTimeout(200);
+      assert.equal((await stored()).revision, rev, '[U72] 고치지 않은 서랍 닫기는 저장 안 함'); }
     // 남성(디트리히)에게 여성 전용 병종(천익병) 칩이 없다.
     { const dd = await openSheet('/dietrich/1/', '디트리히'); await dd.locator('.build-class').click(); await picker.waitFor();
       assert.equal(await picker.locator('.class-chip', { hasText: '천익병' }).count(), 0, '[U72] 남성에 천익병'); assert.equal(await picker.locator('.class-chip:not(.class-chip-clear)').count(), allowedFor(cdata.classes, cdata.characters.dietrich).length);
@@ -163,6 +166,11 @@ try {
       await dup.first().click(); d = p.getByRole('dialog'); await d.waitFor(); await d.getByLabel('레벨(1~99)').fill('5'); await p.keyboard.press('Escape'); await d.waitFor({ state: 'detached' });
       await p.getByRole('button', { name: 'AI용 복사' }).click(); await p.locator('.ai-copy-status').waitFor(); assert.match(await p.locator('.ai-copy-status').textContent(), /1명 기록을 복사했습니다/, '[U72] 3부 복사 1명');
       const lines = (await p.evaluate(() => navigator.clipboard.readText())).split('\n').filter(l => / \(누조\)/.test(l)); assert.equal(lines.length, 1, '[U72] 3부 복사 글 인물 겹침 ' + lines.join(' / ')); }
+    // 기록을 모두 지우면 육성 기록 열쇠는 지워지지 않고 {}로 남는다(옛 탭 값이 되살아나지 않게, Fable 재검토 E).
+    { const clearOne = async (route, name) => { await p.goto(base + route); await p.locator('.route-head').waitFor(); await p.getByRole('navigation', { name: '공략 화면' }).getByRole('button', { name: '인물', exact: true }).click(); await p.locator(`.person-card[data-person="${name}"] .person-card-open`).first().click(); const dd = p.getByRole('dialog'); await dd.waitFor(); await dd.getByRole('button', { name: '이 인물 기록 지우기' }).click(); await p.waitForTimeout(200); await p.keyboard.press('Escape'); await dd.waitFor({ state: 'detached' }); };
+      await clearOne('/part3/3/', '누조'); await clearOne('/theodora/1/', '세오도라');
+      assert.equal(await p.evaluate(bk => localStorage.getItem(bk), BKEY), '{}', '[U72] 모두 지우면 육성 기록 열쇠는 {}'); }
+    await p.goto(base + '/part3/3/'); await p.locator('.route-head').waitFor(); await p.getByRole('navigation', { name: '공략 화면' }).getByRole('button', { name: '인물', exact: true }).click();
     d = p.getByRole('dialog'); await p.locator('.person-card-open').first().click(); await d.waitFor();
     await p.keyboard.press('Escape');
     n++; await ctx.close();
