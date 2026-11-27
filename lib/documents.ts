@@ -1,5 +1,5 @@
 import { scopeMarkdown, scopeTree } from './scope';
-import { displayText } from './display';
+import { displayText, stripSourceLists } from './display';
 import fs from 'node:fs';
 import path from 'node:path';
 import { json, type Part, type Route, type Tree } from './content';
@@ -12,7 +12,7 @@ export function documentsFor(route:Route|'all',part:Part):ReferenceDoc[]{
     const owner=rel.match(/^routes\/([^/]+)\//)?.[1];
     if(route!=='all'&&owner&&owner!==route)continue;
     const scoped=scopeMarkdown(body,route,part),title=body.match(/^#\s+(.+)/m)?.[1]||path.basename(rel,'.md');
-    if(route==='all'||!Object.entries(names).some(([r,n])=>r!==route&&title.includes(n)))result.push({path:rel,title,body:displayText(scoped)});
+    if(route==='all'||!Object.entries(names).some(([r,n])=>r!==route&&title.includes(n)))result.push({path:rel,title,body:displayText(stripSourceLists(scoped))});
   }
   const parity=json<{parity:{exam:Tree[];budgets:Record<string,Tree[]>}}>('derived/presentation').parity;
   const references=json<Record<string,{title:string;tree:Tree[]}>>('derived/reference-documents');

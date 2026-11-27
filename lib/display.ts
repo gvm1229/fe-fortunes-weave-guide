@@ -5,7 +5,7 @@
  * 괄호 안이 출처뿐이면 괄호째 지우고, 초안·미검증·추정이면 "(미확인)" 한 낱말(U46), 다른 글이 섞이면 출처 이름만 뺀다.
  * 괄호 밖은 이름을 빼고, 조사가 붙은 이름("Game8은")은 "공략 자료는"처럼 읽히게 바꾼다.
  */
-const SOURCE='(?:Game8|GameWith|Anna[\'’]s Notebook|allthings\\.how|altema|RPG Site|KeenGamer)';
+const SOURCE='(?:Game8|GameWith|Anna[\'’]s Notebook|allthings\\.how|altema|RPG Site|KeenGamer|Fextralife|Serenes Forest|Serenes|hyperwiki)';
 const hasSource=new RegExp(SOURCE);
 const sourceRun=new RegExp(`${SOURCE}(?:\\s*[·,]\\s*${SOURCE})*`,'g');
 const particle:Record<string,string>={은:'는',이:'가',과:'와'};
@@ -27,12 +27,24 @@ export function stripSources(text:string){
     .replace(new RegExp(`${sourceRun.source}(?=[\\s.,·)]|$)\\s*(?:기준\\s*)?`,'g'),'')
     .replace(/^[\s·,]+/,'').replace(/\s+([.,)])/g,'$1').replace(/ {2,}/g,' ');
 }
+/**
+ * 문서(마크다운)의 출처 목록은 화면에서 뺀다(U66, Fable 재검토 K): "출처:" 줄과 바로 뒤 목록(빈 줄·다른 문단 전까지),
+ * 출처 사이트와 "…대조했다/확인했다." 같은 검증 기록 문장, "출처"를 말하는 문장(표 줄 밖), "원문" 말투. 파일(content/notes)은 그대로.
+ */
+export function stripSourceLists(md:string){
+  return md.replace(/^[ \t]*(?:\*\*)?출처(?:\*\*)?\s*[:：][^\n]*\n(?:[ \t]*\n)*(?:[ \t]*[-*+] [^\n]*\n?)*/gm,'')
+    .replace(/(^|[.。]\s+)([^.。\n]*(?:대조|검증|확인|검토)했다[.。])[ \t]*/gm,(m,start:string,sentence:string)=>hasSource.test(sentence)?start:m)
+    .split('\n').filter(line=>!/^\s*[-*+]\s.*출처/.test(line)).map(line=>/^\s*\|/.test(line)?line:line
+      .replace(/(?<=^|[.。]\s+|^\s*[-*+]\s+)[^.。\n]*출처[^.。\n]*(?:[.。]|$)[ \t]*/g,'')).join('\n');
+}
 /** 근거 글 "원문…" 말투는 화면에서 줄인다(U66, Fable 재검토 I). 자료는 그대로. */
 function stripEvidenceWords(text:string){
   if(!text.includes('원문'))return text;
   return text.replace(/\s*·?\s*원문 검증과 사용자 저장 미실측 구별/g,'')
     .replace(/원문은 ([^,]+?)(?:을|를) 설명하지만, .*?확인이 필요하다\./g,'$1(미확인).')
     .replace(/된다는 원문 설명입니다\./g,'된다(미확인).')
+    .replace(/원문에 구체 수치는 없습니다\./g,'구체 수치는 미확인입니다.')
+    .replace(/원문 (?=추천)/g,'')
     .replace(/원문의 /g,'');
 }
 export function verificationTail(text:string){

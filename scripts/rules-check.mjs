@@ -219,7 +219,11 @@ for (const f of [...walk('app', ['.ts', '.tsx', '.css']), ...walk('components', 
 { const sh = readFileSync('components/shell.tsx', 'utf8'); assert.ok(sh.includes('href="/team/"') && sh.includes('guide-team'), '[U71] 루트 머리 팀 화면 단추'); }
 
 // [U66] 출처 사이트 이름은 화면에 그릴 때 뺀다(lib/display.ts stripSources, Fable 검토 21 지적 5). 자료 원문은 그대로.
-{ const { displayText } = await import('../lib/display.ts');
+// 문서의 "출처:" 목록·"…대조했다." 검증 문장·출처를 말하는 문장도 그릴 때 뺀다(stripSourceLists, Fable 재검토 K). 루트별 지원 대화 문서로 확인.
+{ const { displayText, stripSourceLists } = await import('../lib/display.ts');
+  { const md = readFileSync('content/notes/support-pairs-by-route.md', 'utf8').replace(/\n## 근거[\s\S]*$/, ''); const shown = displayText(stripSourceLists(md)).split('\n').filter(l => !/^\s*\|/.test(l)).join('\n');
+    for (const w of ['출처', 'Fextralife', 'Serenes', 'Game8', 'Anna', 'hatenablog', 'annasnotebook', '대조했다']) assert.ok(!shown.includes(w), `[U66] 루트별 지원 대화 문서에 '${w}'`);
+    assert.equal(stripSourceLists('앞 문단.\n\n출처:\n\n- [A](https://x)\n- [B](https://y)\n\n## 다음'), '앞 문단.\n\n\n## 다음', '[U66] 출처 목록 빼기'); }
   for (const [a, b] of [['본다(Game8 확인). 다음', '본다. 다음'], ['막힌다(세오도라·릴리안 B는 Game8, 둘 다는 Anna\'s Notebook 초안).', '막힌다(미확인).'], ['합친다(altema·GameWith). 25명', '합친다. 25명'], ['Game8 다그시온 기본 1,500G', '다그시온 기본 1,500G'], ['Game8은 복귀까지', '공략 자료는 복귀까지'], ['Anna’s Notebook·allthings.how · 열리는 장은 미확인', '열리는 장은 미확인'],
     // 괄호 안 이름 + 조사(Fable 재검토 B): 조사만 남지 않는다.
     ['합류한다(Game8은 4장 표기).', '합류한다(공략 자료는 4장 표기).'], ['값(Game8의 표기와 다름).', '값(공략 자료의 표기와 다름).'], ['단계(Game8에서 4장 표기).', '단계(공략 자료에서 4장 표기).'],

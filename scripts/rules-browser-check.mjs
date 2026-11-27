@@ -142,6 +142,18 @@ try {
       await p.goto(base + r); await p.locator('.route-head').waitFor(); await p.waitForTimeout(300); await bloat(`${r} 할 일`);
       for (const v of ['인물', '준비', '재료와 구매']) { await p.getByRole('navigation', { name: '공략 화면' }).getByRole('button', { name: v, exact: true }).click(); await p.waitForTimeout(500); await bloat(`${r} ${v}`); }
     }
+    // [U66] 문서 서랍(루트별 지원 대화·시험 안내·병종 문서)에 출처 목록·출처 사이트 이름이 없고, yuphastemple 밖으로 가는 링크가 0개(Fable 재검토 K).
+    { const DOC_BLOAT = [...BLOAT, '출처', 'Fextralife', 'Serenes', 'hyperwiki'];
+      const docCheck = async (label) => { const d = p.getByRole('dialog'); await d.waitFor(); await p.waitForTimeout(300); await p.evaluate(() => document.querySelectorAll('[role=dialog] details').forEach(x => { x.open = true; }));
+        const t = await d.innerText(); for (const w of DOC_BLOAT) assert.ok(!t.includes(w), `[U66] ${label} 문서에 '${w}'`);
+        const out = await d.locator('a[href^="http"]').evaluateAll(es => es.map(e => e.href).filter(h => !h.startsWith('https://yuphastemple.com/'))); assert.deepEqual(out, [], `[U66] ${label} 바깥 링크`);
+        await p.keyboard.press('Escape'); await d.waitFor({ state: 'detached' }); };
+      for (const r of ['/theodora/1/', '/cai/1/']) {
+        await p.goto(base + r); await p.locator('.route-head').waitFor(); await p.waitForTimeout(300);
+        await p.locator('.context-rail button', { hasText: '루트별 지원 대화' }).first().click(); await docCheck(`${r} 루트별 지원 대화`);
+        await p.evaluate(() => document.querySelectorAll('main details').forEach(d => { d.open = true; })); const chip = p.locator('.tasks-main button.reference-chip').first(); await chip.scrollIntoViewIfNeeded(); await chip.click(); await docCheck(`${r} 병종 문서`);
+        await p.getByRole('navigation', { name: '공략 화면' }).getByRole('button', { name: '인물', exact: true }).click(); await p.getByRole('button', { name: '시험 안내', exact: true }).click(); await docCheck(`${r} 시험 안내`);
+      } }
     // [U66] 인물 서랍(접기를 모두 연 상태)에도 출처 이름·근거 글·조사만 남은 괄호가 없다. 네 루트 1·2부와 3부의 모든 인물(Fable 재검토 A·C).
     for (const r of [...ROUTES.flatMap(x => [`/${x}/1/`, `/${x}/2/`]), '/part3/3/']) {
       await p.goto(base + r); await p.locator('.route-head').waitFor(); await p.getByRole('navigation', { name: '공략 화면' }).getByRole('button', { name: '인물', exact: true }).click(); await p.waitForTimeout(400);

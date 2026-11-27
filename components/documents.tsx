@@ -87,7 +87,8 @@ export function DocumentSheet({docs,current,onOpen,onClose,route,part='3'}:{docs
   function link(href:string,children:ReactNode){
     const destination=guideHref(href,path);
     if(destination)return <Link href={destination} onClick={()=>{close();window.dispatchEvent(new Event('guide-jump'));}}>{children}</Link>;
-    if(/^https?:/.test(href))return <a href={href} target="_blank" rel="noreferrer">{children}</a>;
+    // 바깥 링크는 yuphastemple만 연다. 다른 공략·출처 사이트 링크는 글자만 남긴다(U66, Fable 재검토 K).
+    if(/^https?:/.test(href))return href.startsWith('https://yuphastemple.com/')?<a href={href} target="_blank" rel="noreferrer">{children}</a>:<span>{children}</span>;
     if(href.includes('assets/'))return <a href={'/'+href.slice(href.indexOf('assets/'))} target="_blank" rel="noreferrer">{children}</a>;
     // 원본 자료 JSON·검증 기록·작업 화면 사진은 공개하지 않는다(개인 진행이 섞여 있음, 2026-11-15 Fable 검토 12 H1). 링크 글자만 남긴다.
     if(/(?:^|\/)data\//.test(href)||/\.(?:json|png|jpe?g|webp)(?:#.*)?$/.test(href))return <span title="공개하지 않는 작업 자료">{children}</span>;
