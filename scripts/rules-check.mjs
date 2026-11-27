@@ -222,7 +222,9 @@ for (const f of [...walk('app', ['.ts', '.tsx', '.css']), ...walk('components', 
 { const { displayText } = await import('../lib/display.ts');
   for (const [a, b] of [['본다(Game8 확인). 다음', '본다. 다음'], ['막힌다(세오도라·릴리안 B는 Game8, 둘 다는 Anna\'s Notebook 초안).', '막힌다(미확인).'], ['합친다(altema·GameWith). 25명', '합친다. 25명'], ['Game8 다그시온 기본 1,500G', '다그시온 기본 1,500G'], ['Game8은 복귀까지', '공략 자료는 복귀까지'], ['Anna’s Notebook·allthings.how · 열리는 장은 미확인', '열리는 장은 미확인'],
     // 괄호 안 이름 + 조사(Fable 재검토 B): 조사만 남지 않는다.
-    ['합류한다(Game8은 4장 표기).', '합류한다(공략 자료는 4장 표기).'], ['값(Game8의 표기와 다름).', '값(공략 자료의 표기와 다름).'], ['단계(Game8에서 4장 표기).', '단계(공략 자료에서 4장 표기).']]) assert.equal(displayText(a), b, '[U66] 출처 이름 빼기 ' + a);
+    ['합류한다(Game8은 4장 표기).', '합류한다(공략 자료는 4장 표기).'], ['값(Game8의 표기와 다름).', '값(공략 자료의 표기와 다름).'], ['단계(Game8에서 4장 표기).', '단계(공략 자료에서 4장 표기).'],
+    // 근거 글 "원문…" 말투(Fable 재검토 I).
+    ['원문은 원본+최대 네 복사본을 설명하지만, 버전 1.1.0에서 실제 개수 확인이 필요하다.', '원본+최대 네 복사본(미확인).'], ['영구 추가된다는 원문 설명입니다.', '영구 추가된다(미확인).'], ['해제 시점 확인 · 원문 검증과 사용자 저장 미실측 구별', '해제 시점 확인'], ['정화 지점 · 원문의 붉은 표시', '정화 지점 · 붉은 표시']]) assert.equal(displayText(a), b, '[U66] 출처 이름 빼기 ' + a);
   // 화면에 그리는 자료 글(할 일·준비·인물 서랍의 영입 조건·기능 메모·병종 시험)에서 출처 이름과 조사만 남은 괄호가 없다(Fable 재검토 C).
   const texts = ['content/derived/checklist.json', 'content/derived/presentation.json', 'content/data/recruitment-gates.json', 'content/data/training-priorities.json', 'content/data/class-details.json'].map(f => JSON.stringify(read(f))).join('');
   for (const s of texts.match(/"(?:[^"\\]|\\.)*(?:Game8|GameWith|Anna['’]s Notebook|allthings\.how|altema)(?:[^"\\]|\\.)*"/g) || []) { const t = JSON.parse(s); if (/^https?:|\.(?:jpg|png|webp)$|^(?:Game8|GameWith)\s*·/.test(t)) continue; const shown = displayText(t); assert.ok(!/Game8|GameWith|Anna['’]s Notebook|allthings|altema/.test(shown), '[U66] 화면 글에 출처 이름 남음: ' + shown.slice(0, 80)); assert.ok(!/\((?:은|는|의|에서) /.test(shown), '[U66] 조사만 남은 괄호: ' + shown.slice(0, 80)); } }

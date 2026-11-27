@@ -118,7 +118,7 @@ try {
   // [U66] 근거·기록용 글이 화면에 없다: 원문 기록·비교 근거·참고 문서·그림 출처·입수 원문·특기 검토 문서·근거/검토 문서 단추·조심 문구.
   // [U67] 인물 서랍·팀 인물 서랍 머리는 yuphastemple 인물 카드(이름 빛·병종 줄·장점·약점 12칸·소속 문장·큰 초상화), 선호 선물·음식 목록과 지원 표가 있다.
   { const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 }, reducedMotion: 'reduce' }), p = await ctx.newPage();
-    const BLOAT = ['원문 기록', '비교 근거', '참고 문서', '그림 출처', '입수 원문', '특기 검토 문서', '전체 참고 문서', '훈련 순서·시설Lv·스승 근거', '전원 영입 검토', '평준화·증서 근거', '한 곳에서만 확인', '확인되지 않았다', '실제 합류와 출격 자리는 게임 화면을 먼저 확인하세요', '고정 진입 조건이나 실제 잔액이 아닙니다', 'Game8', 'GameWith', 'Anna', 'allthings', 'altema', 'RPG Site', 'KeenGamer', '전체 비교·육성 근거 읽기'];
+    const BLOAT = ['원문 기록', '비교 근거', '참고 문서', '그림 출처', '입수 원문', '특기 검토 문서', '전체 참고 문서', '훈련 순서·시설Lv·스승 근거', '전원 영입 검토', '평준화·증서 근거', '한 곳에서만 확인', '확인되지 않았다', '실제 합류와 출격 자리는 게임 화면을 먼저 확인하세요', '고정 진입 조건이나 실제 잔액이 아닙니다', 'Game8', 'GameWith', 'Anna', 'allthings', 'altema', 'RPG Site', 'KeenGamer', '전체 비교·육성 근거 읽기', '원문'];
     const bloat = async (u) => { await p.evaluate(() => document.querySelectorAll('main details').forEach(d => { d.open = true; })); const t = await p.evaluate(() => document.body.innerText); for (const w of BLOAT) assert.ok(!t.includes(w), `[U66] ${u} 화면에 '${w}'`); };
     for (const r of ROUTES) {
       await p.goto(base + `/${r}/1/`); await p.locator('.route-head').waitFor(); await p.evaluate(() => document.querySelectorAll('main details').forEach(d => { d.open = true; })); await p.waitForTimeout(300);

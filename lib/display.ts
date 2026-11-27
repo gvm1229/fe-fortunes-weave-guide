@@ -27,8 +27,16 @@ export function stripSources(text:string){
     .replace(new RegExp(`${sourceRun.source}(?=[\\s.,·)]|$)\\s*(?:기준\\s*)?`,'g'),'')
     .replace(/^[\s·,]+/,'').replace(/\s+([.,)])/g,'$1').replace(/ {2,}/g,' ');
 }
+/** 근거 글 "원문…" 말투는 화면에서 줄인다(U66, Fable 재검토 I). 자료는 그대로. */
+function stripEvidenceWords(text:string){
+  if(!text.includes('원문'))return text;
+  return text.replace(/\s*·?\s*원문 검증과 사용자 저장 미실측 구별/g,'')
+    .replace(/원문은 ([^,]+?)(?:을|를) 설명하지만, .*?확인이 필요하다\./g,'$1(미확인).')
+    .replace(/된다는 원문 설명입니다\./g,'된다(미확인).')
+    .replace(/원문의 /g,'');
+}
 export function verificationTail(text:string){
-  return stripSources(text).replace(/\((?:원래 공략 한 곳에서만 확인|출처 한 곳|단일 출처)\)/g,'(미확인)').replace(/\([^()]*Anna's Notebook 초안, 미검증\)/g,'(미확인)').replace(/[^.。]*팀 화면의 전체 참고 문서에서 확인한다\.\s*/g,'').replace(/(?:은|는|이|가) (?:원래 공략 한 곳에서만 확인됐다|아직 확인되지 않았다|확인되지 않았다)(?=[.。]|$)/g,': 미확인');
+  return stripEvidenceWords(stripSources(text)).replace(/\((?:원래 공략 한 곳에서만 확인|출처 한 곳|단일 출처)\)/g,'(미확인)').replace(/\([^()]*Anna's Notebook 초안, 미검증\)/g,'(미확인)').replace(/[^.。]*팀 화면의 전체 참고 문서에서 확인한다\.\s*/g,'').replace(/(?:은|는|이|가) (?:원래 공략 한 곳에서만 확인됐다|아직 확인되지 않았다|확인되지 않았다)(?=[.。]|$)/g,': 미확인');
 }
 export function displayText(text:string){
   return verificationTail(text).replace(/(세오도라|레다|디트리히|카이)\s*([123])부/g,'$1 $2부').replace(/([123])부(\d+)장/g,'$1부 $2장').replace(/(최종|현재)(\d+)(명|인)/g,'$1 $2$3').replace(/(명성|지원)(\d+)/g,'$1 $2').replaceAll('백마법','백마술');
