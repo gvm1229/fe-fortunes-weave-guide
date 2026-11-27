@@ -230,7 +230,11 @@ try {
   await page.evaluate(()=>document.querySelectorAll('main details').forEach(d=>{d.open=true;}));
   // 문서 안에서는 병종 문서 링크만 단추로 남는다(검토 문서 링크는 글자, 2026-11-27 Fable 재검토 M). 병종 문서 링크가 있는 '루트별 육성·중단 기준' 문서로 되돌아오기를 본다.
   await page.getByRole('button',{name:'루트별 육성·중단 기준',exact:false}).first().click();await page.getByRole('dialog').waitFor();
-  const link=page.locator('[role=dialog] [data-doc-url*="classes/"]').first();await link.scrollIntoViewIfNeeded();const scroll=await page.locator('.sheet-scroll').evaluate(e=>e.scrollTop);await link.click();await page.getByRole('button',{name:'뒤로',exact:true}).click();await page.waitForTimeout(100);assert.ok(Math.abs(await page.locator('.sheet-scroll').evaluate(e=>e.scrollTop)-scroll)<2);await page.keyboard.press('Escape');functionality.push('문서 뒤로·읽던 위치 복원');
+  // 서랍을 300px 내린 뒤 병종 문서 링크를 스크립트로 눌러 열고, 뒤로 오면 같은 300px에 돌아오는지 본다(Fable 재검토 T: 맨 위에서는 아무것도 증명하지 못한다).
+  await page.waitForTimeout(300);const scroll=await page.locator('.sheet-scroll').evaluate(e=>{e.scrollTop=300;return e.scrollTop;});assert.ok(scroll>=290,`문서가 300px 내려가지 않음 ${scroll}`);
+  const first=await page.locator('[role=dialog] .sheet-heading h2').textContent();
+  await page.locator('[role=dialog] [data-doc-url*="classes/"]').first().evaluate(e=>e.click());await page.waitForTimeout(300);assert.notEqual(await page.locator('[role=dialog] .sheet-heading h2').textContent(),first,'병종 문서로 이동');
+  await page.getByRole('button',{name:'뒤로',exact:true}).click();await page.waitForTimeout(300);{const back=await page.locator('.sheet-scroll').evaluate(e=>e.scrollTop);assert.ok(back>0&&Math.abs(back-scroll)<=2,`읽던 위치 복원 ${scroll}→${back}`);}await page.keyboard.press('Escape');functionality.push('문서 뒤로·읽던 위치 복원');
   await page.goto(base+'/team/');for(const name of ['네 진영장 포함','역할 균형 추천','현재 25인·병과 수정']){await page.getByRole('radiogroup',{name:'편성안'}).getByRole('radio',{name,exact:true}).click();assert.equal(await page.locator('.unit-card').count(),25);}functionality.push('팀 세 편성 각각 25명');
   await context.close();
   assert.deepEqual(errors,[],'브라우저 실행 오류');
