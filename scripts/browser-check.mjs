@@ -55,7 +55,7 @@ async function measure(page,{route='home',view='home',theme,width,height,screens
     const minimumFont=Math.min(...text.map(e=>parseFloat(getComputedStyle(e).fontSize)));
     const small=text.filter(e=>parseFloat(getComputedStyle(e).fontSize)<13).map(e=>({text:e.textContent.slice(0,60),font:getComputedStyle(e).fontSize}));
     const overlaps=[];
-    const selector='.home,.home-top,.home-actions,.route-deck,.route-card-content,.route-progress,.third-band,.lord-faces,.app-shell,.sidebar,.part-links,.view-nav,.view-nav button,.workspace main,.tasks-layout,.check-toolbar,.toolbar-actions,.context-rail,.context-people,.chapter-section>summary,.action-group>header,.group-portraits,.people-grid,.person-heading,.filters,.search,.records,.scenario-tabs,.team-grid,.god-list,.sheet-heading';
+    const selector='.home,.home-top,.home-actions,.route-deck,.route-card-content,.route-progress,.third-band,.lord-faces,.app-shell,.sidebar,.part-links,.view-nav,.view-nav button,.workspace main,.tasks-layout,.check-toolbar,.toolbar-actions,.context-rail,.context-people,.chapter-section>summary,.action-group>header,.group-portraits,.people-grid,.person-card,.filters,.search,.records,.scenario-tabs,.team-grid,.sheet-heading';
     for(const container of document.querySelectorAll(selector)){
       if(!visible(container))continue;
       // 붙는(sticky) 머리는 아래 글 위에 겹쳐 보이는 것이 정상이다(루트 머리 막대, 2026-11-14).
@@ -74,8 +74,8 @@ async function measure(page,{route='home',view='home',theme,width,height,screens
       const r=e.getBoundingClientRect(),ratio=e.naturalWidth/e.naturalHeight,error=Math.abs(r.width/r.height/ratio-1);
       return error>.01?[{src:e.getAttribute('src'),display:[r.width,r.height],natural:[e.naturalWidth,e.naturalHeight],error}]:[];
     });
-    // 재설계 v3 크기: 묶음 머리 얼굴 36, 글 속 원본 얼굴 28, 정보 칸·준비 48, 인물 카드 96(휴대폰 72). 배지 안 얼굴은 뺀다.
-    const faceSections=[['groups','.tasks-main .group-portraits img',36],['tasks','.tasks-main .source-markup img[src*="/portraits/"]:not(.game-badge img),.tasks-main .source-markup img[src*="/gods/"]:not(.game-badge img)',28],['rail','.context-rail img[src*="/portraits/"]',48],['prep','.prep-content .prep-face img',48],['people','.people-grid .person-heading img[src*="/portraits/"]',innerWidth<768?72:96]];
+    // 재설계 v3 크기: 묶음 머리 얼굴 36, 글 속 원본 얼굴 28, 정보 칸·준비 얼굴 48(인물 탭은 2026-11-27 머리 카드 격자라 뺐다). 배지 안 얼굴은 뺀다.
+    const faceSections=[['groups','.tasks-main .group-portraits img',36],['tasks','.tasks-main .source-markup img[src*="/portraits/"]:not(.game-badge img),.tasks-main .source-markup img[src*="/gods/"]:not(.game-badge img)',28],['rail','.context-rail img[src*="/portraits/"]',48],['prep','.prep-content .prep-face img',48]];
     const faceSizes=faceSections.map(([section,selector,size])=>({section,size,actual:[...new Set([...document.querySelectorAll(selector)].filter(visible).map(e=>{const r=e.getBoundingClientRect();return `${r.width}×${r.height}`;}))]}));
     const faceSizeViolations=faceSizes.filter(s=>s.actual.some(v=>v!==`${s.size}×${s.size}`));
     const paragraphs=[...document.querySelectorAll('main p,.sheet-scroll p')].filter(visible);
@@ -186,10 +186,6 @@ try {
           // 2026-11-27: 재료 서랍·지도 사진 대신 재료마다 yuphastemple 물품·지도 단추(U65).
           const rows=page.locator('[data-material]');
           if(!await rows.count()||await page.locator('[data-material] [data-yuphas-link]').count()<await rows.count())failures.push(`${route}: 재료별 yuphastemple 단추 누락`);
-        }
-        if(view==='docs'&&width===375){
-          await page.locator('.document-list button').first().click();await page.getByRole('dialog').waitFor();
-          await measure(page,{route,view:'document-sheet',theme,width,height});await page.keyboard.press('Escape');
         }
       }
       assert.deepEqual(errors,[],`${route} 브라우저 실행·HTML 구조 오류`);

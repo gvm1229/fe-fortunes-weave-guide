@@ -94,13 +94,11 @@ html.dark body:has(.app-shell),html.dark body:has(.team-page){background:#191918
 .map-thumbnail>button:first-child{background:transparent;padding:0;flex-wrap:wrap;font-weight:600}
 .map-thumbnail .button{background:var(--secondary-soft);color:var(--text)}
 .people-grid,.material-grid{gap:24px}
-.material-entry{border-radius:24px;background:var(--surface)}
 .records th{background:var(--surface-2)}
 .prep-content{max-inline-size:900px}
 .prep-content>.records,.gold-table{background:var(--surface)}
 .filters{gap:12px;margin-block-end:24px}
 .search{background:var(--surface);padding:12px 16px}
-.document-list button{background:var(--surface);color:var(--text);padding:20px 24px;border-radius:16px}
 .sheet{border-inline-start:1px solid var(--line)}
 .sheet-heading{background:var(--surface);flex-shrink:0}
 .sheet-close{z-index:2}
@@ -182,7 +180,6 @@ details[open]:not(.backup-menu)>summary:not(:has(>svg))::after{rotate:180deg}
   .third-heading{flex-wrap:wrap;gap:0}
   .third-heading strong{font-size:26px;width:100%}
   .third-band>svg{margin:0}
-  .material-entry{padding:20px}
 }
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}
@@ -201,16 +198,16 @@ th[scope=row],tbody>tr>th:first-child{text-align:left;vertical-align:top}
 .class-document-heading{display:flex;align-items:center;gap:16px;margin-block-end:24px}
 .class-document-heading>img{width:80px;height:80px;object-fit:contain}
 
-.team-reference .semantic article,.spell-panel .semantic article{padding:24px;margin-block:16px;border:1px solid var(--line);background:var(--surface);border-radius:16px}
+.spell-panel .semantic article{padding:24px;margin-block:16px;border:1px solid var(--line);background:var(--surface);border-radius:16px}
 .spell-panel .semantic img{width:28px;height:28px;object-fit:contain;display:inline-block;vertical-align:middle;margin:0 8px 0 0}
 .spell-panel .semantic h3{font-weight:700;text-decoration:underline;text-underline-offset:5px}
 .spell-panel .semantic p{margin-block:12px}
 .sheet-scroll strong,.source-markup strong{font-weight:700}
 @media(max-width:767px){.person-summary th{width:100px;white-space:normal}:is(.person-summary,.records,.sheet-scroll,.source-markup,.semantic) :is(td,th){padding:10px 12px}.person-summary{font-size:18px}.class-path{gap:8px}.class-path li{flex-wrap:wrap}.sheet-scroll .document-table{display:table}.sheet-scroll .document-definitions{display:none}}
-:is(.team-reference,.spell-panel) [id^="spell-"]{padding:24px;margin-block:20px;border:1px solid var(--table-line);border-radius:16px;background:var(--surface)}
-:is(.team-reference,.spell-panel) [id^="spell-"]>div:not(.readable-group){display:flex;align-items:center;flex-wrap:wrap;gap:8px;font-weight:600;margin-block:12px}
-:is(.team-reference,.spell-panel) [id^="spell-"] h4{font-size:22px;text-decoration:underline;text-underline-offset:5px}
-:is(.team-reference,.spell-panel) .inline-icon{width:28px;height:28px;object-fit:contain}
+:is(.spell-panel) [id^="spell-"]{padding:24px;margin-block:20px;border:1px solid var(--table-line);border-radius:16px;background:var(--surface)}
+:is(.spell-panel) [id^="spell-"]>div:not(.readable-group){display:flex;align-items:center;flex-wrap:wrap;gap:8px;font-weight:600;margin-block:12px}
+:is(.spell-panel) [id^="spell-"] h4{font-size:22px;text-decoration:underline;text-underline-offset:5px}
+:is(.spell-panel) .inline-icon{width:28px;height:28px;object-fit:contain}
 
 .summary-points{margin:0;padding:0;list-style:none;display:grid;gap:8px}.person-summary td{line-height:1.7}.person-summary strong{font-weight:600}
 .sheet-overlay{background:#171717}
@@ -248,7 +245,7 @@ th[scope=row],tbody>tr>th:first-child{text-align:left;vertical-align:top}
 .ui-accordion-content .semantic{font-size:18px}
 @media(max-width:767px){.person-more{margin:0 16px 12px}}
 /* 2026-11-14 v3 T10: 루트 화면 면·간격·고정 */
-.action-group,.route-banner,.context-rail>section,.material-entry{border-radius:16px}
+.action-group,.route-banner,.context-rail>section{border-radius:16px}
 .guide-navigation button[aria-current]{background:var(--primary);color:var(--primary-fg)}
 .guide-navigation button[aria-current]:hover{background:var(--primary);color:var(--primary-fg);opacity:.92}
 .prep-content>h2,.workspace main>h2{font-size:22px;font-weight:700;margin:32px 0 16px}
@@ -283,8 +280,8 @@ th[scope=row],tbody>tr>th:first-child{text-align:left;vertical-align:top}
   :is(.ui-press,.button,.guide-navigation button,.part-links a):active{transform:scale(.97)}
   .checklist input:checked{animation:check-pop 180ms ease-out}
   .checklist>li{transition:background-color .2s,color .2s}
-  :is(.unit-card,.document-list button,.context-people button){transition:translate .15s,background-color .15s}
-  :is(.unit-card,.document-list button,.context-people button):hover{translate:0 -2px;background:var(--surface-2)}
+  :is(.unit-card,.context-people button){transition:translate .15s,background-color .15s}
+  :is(.unit-card,.context-people button):hover{translate:0 -2px;background:var(--surface-2)}
   .ui-accordion-chevron,.action-group>summary>svg,.chapter-section>summary>svg{transition:rotate .15s,transform .15s}
   .ui-accordion-content[data-state=open]{animation:accordion-down .2s ease-out}
   .ui-accordion-content[data-state=closed]{animation:accordion-up .2s ease-out}
@@ -641,13 +638,6 @@ body{word-break:keep-all;overflow-wrap:break-word}
 .team-panel .semantic [data-face-row]>*{flex-shrink:0}
 /* 같은 원인(휴대폰): 골드 표(자동 폭)의 칸 안 문장 목록 줄은 최소 폭 0(위 767px 이하 규칙)이라 배지 폭이 칸 계산에서 빠져 "1,500G" 배지가 칸 밖으로 4px 넘쳤다. 골드 표 칸에서만 내용 폭을 되살린다. */
 @media(max-width:767px){[data-gold-table] .readable-body :is(ul,ol)>li{min-inline-size:auto}}
-/* 휴대폰(≤599px) 재료 카드 안 겹친 표: 375px에서 세 겹 표가 칸 밖으로 11px 넘쳤다. 인물 정보의 겹친 표(globals.css .person-info .records)와 같은 모양으로 이름 칸을 값 위에 쌓는다. */
-@media(max-width:599px){
-  .material-entry .records .records{display:block;margin:0}
-  .material-entry .records .records>tbody,.material-entry .records .records>tbody>tr,.material-entry .records .records>tbody>tr>:is(th,td){display:block;width:auto;padding-left:0;padding-right:0}
-  .material-entry .records .records>tbody>tr>th{background:transparent;padding-bottom:4px;border-bottom:0}
-  .material-entry .records .records>tbody>tr>td{padding-top:0}
-}
 /* 9. 진행 숫자는 자리 폭을 같게 해 숫자가 바뀌어도 흔들리지 않게. */
 :is(.banner-progress,.progress-chip,.group-count,.context-rail p,.team-count){font-variant-numeric:tabular-nums}
 /* 11. keep-all 뒤 "·"가 줄 머리에 오지 않게: "·"를 앞 글자와 한 묶음으로(글자는 그대로, "·" 뒤에서는 나눔). */
@@ -696,7 +686,7 @@ html.dark body:has(.app-shell),html.dark body:has(.team-page),html.dark body:has
 .next-action h2,.action-category{letter-spacing:.08em;color:var(--heading-ink)}
 
 /* 3. 각진 모서리(두 테마) */
-:is(.route-banner,.action-group,.context-rail>section,.material-entry,.document-list button,.team-reference .semantic article,.spell-panel .semantic article,.backup-menu .toolbar-actions,.route-card,.third-band,.unit-card,.ui-tabs-list){border-radius:var(--r-panel)}
+:is(.route-banner,.action-group,.context-rail>section,.spell-panel .semantic article,.backup-menu .toolbar-actions,.route-card,.third-band,.unit-card,.ui-tabs-list){border-radius:var(--r-panel)}
 .route-head-bar{border-radius:0 0 var(--r-panel) var(--r-panel)}
 .route-banner{border-end-start-radius:0;border-end-end-radius:0}
 :is(.button,.text-link,.guide-navigation,.guide-navigation button,select,.check-control,.route-head .check-control,.backup-menu>summary,.search,.progress-chip,.condition-chip,[data-condition-chip],.source-markup .reference-chip,.source-markup .text-link,.reference-chip,.person-inline,.pair-chip,.team-page .ui-tabs-list button,.team-page .scenario-toggles button,.portrait-button,.checklist input){border-radius:var(--r-control)}
@@ -763,8 +753,8 @@ html.dark body:has(.app-shell),html.dark body:has(.team-page),html.dark body:has
 .dark .checklist>li{border-block-start-color:rgb(72 78 68 / .7)}
 .dark .checklist [data-complete=true]{background:rgb(25 45 52 / .7)}
 
-/* 12. 오른쪽 칸 카드·인물 카드·재료 카드: 9조각 팝업 틀을 절반 크기로(모서리 84×44) */
-.dark :is(.context-rail>section,.material-entry,.document-list button){
+/* 12. 오른쪽 칸 카드: 9조각 팝업 틀을 절반 크기로(모서리 84×44) */
+.dark :is(.context-rail>section){
   border:0;min-block-size:88px;
   background:
     url('/yuphas/popup/top-left.webp') left top/84px 44px no-repeat,

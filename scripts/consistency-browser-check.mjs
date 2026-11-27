@@ -19,10 +19,8 @@ const EXCEPTIONS = [
   '.reference-chip', // 본문 줄 안의 참고 칩: 칩 모서리 8px(사양 "본문 줄 안의 참고 칩 30px")
   '.source-markup .text-link', '.sheet-scroll .text-link', // 같은 참고 칩 모양의 글 링크 단추(8px)
   '.pair-chip', // 지원 대화 인물 거르기 칩: 칩 모서리 8px
-  '.document-list button', // 참고 문서 목록 한 줄은 카드 모양: 카드 모서리 16px
   '.unit-card', // 팀 격자 칸은 카드(사양의 팀 칸 예외)
   '.person-inline', // 글줄 안의 인물 이름 단추(글처럼 줄을 넘긴다)
-  '.person-full-details>summary', // 접기 제목(단추가 아니라 제목 줄)
   '.chapter-section>summary', // 장 제목 줄: 붙어 있을 때 아래 글을 가리려고 쪽 바탕색(--bg)을 깐 제목 줄이라 모서리가 없다
 ];
 function audit({ EXCEPTIONS, phone, fitOnly }) {
