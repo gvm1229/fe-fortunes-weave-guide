@@ -24,3 +24,7 @@ export function guideHref(url:string,current?:string){
   if(/(?:^|\/)(?:personalized|guide)\.md$/.test(path))return '/theodora/1/';
   return null;
 }
+/** 문서·자료에서 링크로 열어 주는 바깥 사이트: yuphastemple과 따라하기 영상(YouTube)만. 나머지 공략·출처 사이트는 글자만(U66, Fable 재검토 K·S). */
+export function allowedOutbound(href: string) {
+  try { const host = new URL(href).hostname.replace(/^www\./, ''); return host === 'yuphastemple.com' || host === 'youtu.be' || host === 'youtube.com' || host === 'm.youtube.com'; } catch { return false; }
+}

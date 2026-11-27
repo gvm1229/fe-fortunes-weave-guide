@@ -2,6 +2,7 @@ import { GameText, glueDots, glueLeadDots, imageName, classNamesByFile, namesInT
 import { createElement, Fragment } from 'react';
 import type { Tree } from '@/lib/content';
 import { useDocAvailable } from './doc-available';
+import { allowedOutbound } from '@/lib/document-links';
 import { displayText } from '@/lib/display';
 import weaponData from '@/content/data/weapon-buy-sources.json';
 import { ReadMore } from './read-more';
@@ -69,7 +70,7 @@ export function Semantic({nodes,route,part,onDoc,onSpell,hidePortraits=false,cha
       if(url||a['data-spell-jump'])return <button key={i} className="text-link" title={a.title} onClick={()=>a['data-spell-jump']?onSpell?.(a['data-spell-jump']):onDoc?.(url!)}>{children()}</button>;
       return <span key={i}>{children()}</span>;
     }
-    if(n.tag==='a'&&a.href){if(/^https?:/.test(a.href))return a.href.startsWith('https://yuphastemple.com/')?<a key={i} href={a.href} target="_blank" rel="noreferrer">{n.children.map(sub)}</a>:<span key={i}>{n.children.map(sub)}</span>;if(canOpen&&!canOpen(a.href))return <span key={i}>{n.children.map(sub)}</span>;return <button key={i} className="text-link" onClick={()=>onDoc?.(a.href!)}>{n.children.map(sub)}</button>;}
+    if(n.tag==='a'&&a.href){if(/^https?:/.test(a.href))return allowedOutbound(a.href)?<a key={i} href={a.href} target="_blank" rel="noopener noreferrer">{n.children.map(sub)}</a>:<span key={i}>{n.children.map(sub)}</span>;if(canOpen&&!canOpen(a.href))return <span key={i}>{n.children.map(sub)}</span>;return <button key={i} className="text-link" onClick={()=>onDoc?.(a.href!)}>{n.children.map(sub)}</button>;}
     // 명성·지원 조건 칩은 안의 배지가 이미 배경을 가진다. 칩 껍데기를 뺀다.
     if(a['data-condition-chip']&&/^(명성|지원)/.test(flat(n.children).trim()))return <Fragment key={i}>{children()}</Fragment>;
     return createElement(allowed.has(n.tag)?n.tag:'div',{key:i,...Object.fromEntries(Object.entries(a).filter(([key])=>key.startsWith('data-')||['id','title','aria-label'].includes(key))),...(a.colspan?{colSpan:Number(a.colspan)}:{}),...(a.rowspan?{rowSpan:Number(a.rowspan)}:{})},children());

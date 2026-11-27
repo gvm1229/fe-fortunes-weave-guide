@@ -6,7 +6,7 @@ import remarkGfm from 'remark-gfm';
 import type { Root, RootContent } from 'mdast';
 import { ArrowLeft } from 'lucide-react';
 import type { ReferenceDoc } from '@/lib/documents';
-import { resolveDoc, headingId, guideHref } from '@/lib/document-links';
+import { resolveDoc, headingId, guideHref, allowedOutbound } from '@/lib/document-links';
 import { Sheet, SheetContent, SheetTitle } from './ui/sheet';
 import { Button } from './ui/button';
 import { GuideImage } from './image-viewer';
@@ -87,7 +87,8 @@ export function DocumentSheet({docs,current,onOpen,onClose,route,part='3'}:{docs
     const destination=guideHref(href,path);
     if(destination)return <Link href={destination} onClick={()=>{close();window.dispatchEvent(new Event('guide-jump'));}}>{children}</Link>;
     // 바깥 링크는 yuphastemple만 연다. 다른 공략·출처 사이트 링크는 글자만 남긴다(U66, Fable 재검토 K).
-    if(/^https?:/.test(href))return href.startsWith('https://yuphastemple.com/')?<a href={href} target="_blank" rel="noreferrer">{children}</a>:<span>{children}</span>;
+    // 따라하기 영상(YouTube)은 근거가 아니라 방법 안내라 링크로 둔다(Fable 재검토 S).
+    if(/^https?:/.test(href))return allowedOutbound(href)?<a href={href} target="_blank" rel="noopener noreferrer">{children}</a>:<span>{children}</span>;
     if(href.includes('assets/'))return <a href={'/'+href.slice(href.indexOf('assets/'))} target="_blank" rel="noreferrer">{children}</a>;
     // 원본 자료 JSON·검증 기록·작업 화면 사진은 공개하지 않는다(개인 진행이 섞여 있음, 2026-11-15 Fable 검토 12 H1). 링크 글자만 남긴다.
     if(/(?:^|\/)data\//.test(href)||/\.(?:json|png|jpe?g|webp)(?:#.*)?$/.test(href))return <span title="공개하지 않는 작업 자료">{children}</span>;
