@@ -1094,7 +1094,8 @@ html.dark body:has(.app-shell),html.dark body:has(.team-page),html.dark body:has
 .class-chip-clear{padding-inline-start:10px;color:#ACAAB9}
 .class-picker-none{margin:16px 0;color:#ACAAB9}
 @media(max-width:1100px){.class-cols{grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:4px 8px}.class-col{display:contents}.class-col[data-empty]{display:none}}
-@media(max-width:767px){.class-picker-search{inline-size:100%;order:5;margin-inline-start:0}.class-picker-close{margin-inline-start:auto}}
+/* 좁은 화면: 닫기 단추를 머리 오른쪽 위에 붙여 혼자 한 줄을 차지하지 않게(Fable 재검토 J). 무기 탭 줄은 단추 자리만큼 비운다. */
+@media(max-width:767px){.class-picker-head{position:relative;padding-inline-end:56px}.class-picker-search{inline-size:100%;order:5;margin-inline-start:0}.class-picker-close{position:absolute;inset-block-start:4px;inset-inline-end:12px;inline-size:40px;block-size:40px}}
 @media(max-width:359px){.class-cols{grid-template-columns:minmax(0,1fr)}.class-picker-own .class-chip{inline-size:100%;min-inline-size:0}}
 
 /* 고침 C(2026-11-27, U68): 인물 탭 = 서랍 머리 카드 격자. 카드 전체가 서랍을 여는 단추(이름 단추의 ::after가 카드를 덮는다), 영어 이름 단추만 그 위. */
