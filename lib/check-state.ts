@@ -59,27 +59,28 @@ export function validateBuilds(value: unknown): Builds {
         }
         if (Object.keys(skills).length) row.skills = skills;
       }
-      if (b.note !== undefined) { if (typeof b.note !== 'string' || b.note.length > NOTE_MAX) throw new Error(`${at}의 메모는 ${NOTE_MAX}자 이하 글이어야 합니다.`); if (b.note) row.note = b.note; }
+      if (b.note !== undefined) { const note = typeof b.note === 'string' ? b.note.trim() : b.note; if (typeof note !== 'string' || note.length > NOTE_MAX) throw new Error(`${at}의 메모는 ${NOTE_MAX}자 이하 글이어야 합니다.`); if (note) row.note = note; }
       if (Object.keys(row).length) rows[slug] = row;
     }
     if (Object.keys(rows).length) out[route as BuildRoute] = rows;
   }
   return out;
 }
-/** 저장소 값 읽기: 모양이 틀린 칸만 버린다. 모르는 루트·인물·병종·숙련 이름은 그대로 보관한다(오류를 던지지 않음). */
+/** 저장소 값 읽기: 모양이 틀린 칸만 버린다(오류를 던지지 않음). 모르는 인물·병종 슬러그(자료에 따라 바뀜)는 보관하고, 코드가 정한 루트·숙련·등급 밖의 값과 200자 넘는 메모 뒷부분은
+ *  가져오기가 거절하는 값이라 버린다. 그래서 읽은 결과(= 내보내기 파일)를 다시 가져오면 언제나 통과한다(Fable 재검토 D). */
 export function sanitizeBuilds(value: unknown): Builds | undefined {
   if (!isObj(value)) return undefined;
   const out: Record<string, Record<string, Build>> = {};
   for (const [route, list] of Object.entries(value)) {
-    if (!isObj(list)) continue;
+    if (!isObj(list) || !(BUILD_ROUTES as readonly string[]).includes(route)) continue;
     const rows: Record<string, Build> = {};
     for (const [slug, raw] of Object.entries(list)) {
       if (!isObj(raw)) continue;
       const row: Build = {};
       if (Number.isInteger(raw.level) && (raw.level as number) >= 1 && (raw.level as number) <= 99) row.level = raw.level as number;
       if (typeof raw.classId === 'string' && raw.classId) row.classId = raw.classId;
-      if (isObj(raw.skills)) { const s = Object.fromEntries(Object.entries(raw.skills).filter(([, r]) => typeof r === 'string')) as Partial<Record<SkillId, Rank>>; if (Object.keys(s).length) row.skills = s; }
-      if (typeof raw.note === 'string' && raw.note) row.note = raw.note;
+      if (isObj(raw.skills)) { const s = Object.fromEntries(Object.entries(raw.skills).filter(([s, r]) => (SKILL_IDS as readonly string[]).includes(s) && (RANKS as readonly unknown[]).includes(r))) as Partial<Record<SkillId, Rank>>; if (Object.keys(s).length) row.skills = s; }
+      if (typeof raw.note === 'string' && raw.note.trim()) row.note = raw.note.trim().slice(0, NOTE_MAX);
       if (Object.keys(row).length) rows[slug] = row;
     }
     if (Object.keys(rows).length) out[route] = rows;

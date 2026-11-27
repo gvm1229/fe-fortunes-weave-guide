@@ -55,12 +55,14 @@ assert.deepEqual(data.licenses.filter((l) => l.level != null).map((l) => [l.id, 
   const a = validateChecks(base), b2 = validateChecks({ ...base, builds: good }, undefined, true);
   assert.deepEqual([b2.checks, b2.status, b2.revision], [a.checks, a.status, a.revision], '[U72] 체크·내 상태 결과 같음');
   // (마) 저장소 읽기(strict 아님)는 던지지 않고 모양만 고친다. 모르는 인물·병종은 보관(Fable 검토 2).
-  const stored = { ...base, builds: { theodora: { 'renamed-slug': { level: 30, classId: 'unknown-class' }, loretta: { level: 0, note: 5, skills: { sword: 'C', spear: 3 } } }, cai: 'x' } };
+  const stored = { ...base, builds: { theodora: { 'renamed-slug': { level: 30, classId: 'unknown-class' }, loretta: { level: 0, note: 5, skills: { sword: 'C', spear: 3, lance: 'C', axe: 'F' } }, diego: { note: '  ' + 'x'.repeat(205) + ' ' } }, cai: 'x', nowhere: { loretta: { level: 3 } } } };
   const read = validateChecks(stored);
-  assert.deepEqual(read.builds, { theodora: { 'renamed-slug': { level: 30, classId: 'unknown-class' }, loretta: { skills: { sword: 'C' } } } }, '[U72] 저장소 읽기 모양만 고침·모르는 항목 보관');
+  assert.deepEqual(read.builds, { theodora: { 'renamed-slug': { level: 30, classId: 'unknown-class' }, loretta: { skills: { sword: 'C' } }, diego: { note: 'x'.repeat(200) } } }, '[U72] 저장소 읽기 모양만 고침·모르는 인물·병종 보관·모르는 루트·숙련·등급 버림·메모 200자');
   assert.equal(sanitizeBuilds('x'), undefined);
   // 저장소 읽기 결과(= 내보내기 파일)를 그대로 가져오면 통과한다.
   assert.deepEqual(validateChecks(JSON.parse(JSON.stringify(read)), undefined, true).builds, read.builds, '[U72] 저장소 읽기 결과 다시 가져오기');
+  // 가져오기는 메모 앞뒤 빈칸을 지운다(서랍 저장과 같게, Fable 재검토 F).
+  assert.equal(validateChecks({ ...base, builds: { leda: { loretta: { note: '  메모 ' } } } }, undefined, true).builds.leda.loretta.note, '메모', '[U72] 가져오기 메모 다듬기');
   // 읽은 뒤 다른 인물을 고쳐도 모르는 항목이 남는다(다음 저장 때 지워지지 않음).
   const after = nextBuilds(read.builds, 'theodora', 'loretta', { level: 21 });
   assert.deepEqual(after.theodora['renamed-slug'], { level: 30, classId: 'unknown-class' }, '[U72] 고쳐도 모르는 항목 남음');
