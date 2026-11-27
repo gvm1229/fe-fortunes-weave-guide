@@ -2,7 +2,7 @@
 import { chromium } from '@playwright/test';
 import { mkdirSync, readFileSync } from 'node:fs';
 const url = p => 'data:' + ({ webp: 'image/webp', png: 'image/png', otf: 'font/otf' })[p.split('.').pop()] + ';base64,' + readFileSync(p).toString('base64');
-const lords = ['theodora', 'leda', 'dietrich', 'cai'].map(n => `assets/portraits/pre-timeskip/large/${n}.webp`);
+const lords = ['cai', 'dietrich', 'theodora', 'leda'].map(n => `assets/portraits/pre-timeskip/large/${n}.webp`);
 for (const p of lords) if (/post-timeskip/.test(p)) throw new Error('시간 경과 뒤 초상화 금지');
 const html = `<!doctype html><html><head><meta charset="utf-8"><style>
 @font-face{font-family:P;src:url('${url('assets/fonts/Pretendard-Bold.otf')}');font-weight:700}

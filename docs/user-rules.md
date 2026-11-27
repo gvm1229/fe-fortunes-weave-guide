@@ -40,7 +40,7 @@
 | U27 | '완료 숨기기'는 고정 머리 안. 오른쪽 아래 둥근 '맨 위로' 단추(그림만, 풍선 도움말) | 11-14 | `scripts/header-browser-check.mjs` `scripts/rules-browser-check.mjs` |
 | U28 | **폐지**: 테마 단추를 두지 않는다(옛 규칙: 테마 단추는 하나, 머리가 붙기 전 오른쪽 위·붙은 뒤 막대 오른쪽 끝) | 11-15(11-14 '머리에 고정'을 대체), 11-27 폐지 → U64 어두운 화면만(사용자 결정) | `scripts/rules-check.mjs` |
 | U29 | 바닥 고정 게임 날짜(YYYY/MM/DD, 가운데, 주행계 움직임). 날짜는 첫 미완료 항목 기준 | 11-14(2안 선택) | `scripts/header-browser-check.mjs` `scripts/verify.mjs` |
-| U30 | 공유 미리보기 그림에 시간 경과 뒤 초상화 금지 | 11-14 | `scripts/rules-check.mjs` |
+| U30 | 공유 미리보기 그림에 시간 경과 뒤 초상화 금지. 초상화 순서는 첫 화면 오벨리스크 순서(카이·디트리히·세오도라·레다) | 11-14, 11-27(사용자 요청: 순서 맞춤) | `scripts/rules-check.mjs` |
 | U31 | "X가 X 위치입니다"·"X(X)" 같은 말 되풀이 금지 | 11-14 | `scripts/verify.mjs` `scripts/rules-check.mjs` |
 | U32 | 루트별 지원 대화: 짝 이름이 세로로 깨지지 않고 한 줄, 인물 거르기 | 11-14 | `scripts/verify.mjs` `scripts/rules-browser-check.mjs` |
 | U33 | '이 장의 인물' 얼굴 아래에도 '루트별 지원 대화' 단추 | 11-14 | `scripts/rules-browser-check.mjs` |

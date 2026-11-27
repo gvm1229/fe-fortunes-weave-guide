@@ -49,7 +49,8 @@ for (const f of [...walk('app', ['.ts', '.tsx', '.css']), ...walk('components', 
 { const lay = readFileSync('app/layout.tsx', 'utf8'), gen = readFileSync('scripts/make-og-image.mjs', 'utf8');
   assert.ok(/url: '\/og\.png'/.test(lay) && !/post-timeskip/.test(lay), '[U30] 공유 그림 = /og.png');
   assert.ok(existsSync('public/og.png') && statSync('public/og.png').size > 10000, '[U30] public/og.png 있음');
-  assert.ok(!/post-timeskip/.test(gen.replace(/\/post-timeskip\/\.test\(p\)/, '')) && /pre-timeskip/.test(gen), '[U30] 생성기는 시간 경과 전 그림만'); }
+  assert.ok(!/post-timeskip/.test(gen.replace(/\/post-timeskip\/\.test\(p\)/, '')) && /pre-timeskip/.test(gen), '[U30] 생성기는 시간 경과 전 그림만');
+  assert.ok(gen.includes("['cai', 'dietrich', 'theodora', 'leda']") && /카이·디트리히·세오도라·레다/.test(lay), '[U30] 공유 그림 순서 = 오벨리스크 순서'); }
 
 // [U31] "X가 X 위치입니다"·"X(X)" 같은 말 되풀이 금지. 할 일·표시·덮어쓰기·문서 전부.
 { const text = t => Array.isArray(t) ? t.map(text).join(' ') : typeof t === 'string' ? t : t && typeof t === 'object' ? ('tag' in t ? text(t.children) : Object.values(t).map(text).join(' ¦ ')) : '';
