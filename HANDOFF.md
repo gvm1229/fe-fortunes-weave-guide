@@ -67,7 +67,7 @@
   - 형식은 `<type>: <간결한 한국어 설명>`이며 끝에 문장부호를 쓰지 않는다. type은 feat, fix, docs, style, refactor, perf, test, build, delete, revert다.
 - **기록:**
   - 사용자의 새 선호·결정은 같은 응답 안에서 `notes/knowledge/`(이전 프로젝트)에 날짜와 출처를 붙여 기록한다.
-  - 진행 수치는 git 무시 폴더 `progress/docs/progress.md`·`progress/docs/routes/*/progress.md`에 기록한다(2026-11-15부터 사이트에 넣지 않음). 실제 한 일·계획·미확인을 구분한다. 할 일·인물·준비 글에는 개인 진행(현재 N장·잔액·구매 완료)을 쓰지 않는다(`verify.mjs`가 막는다).
+  - 진행 수치는 git 무시 폴더 `progress/docs/progress.md`·`progress/docs/routes/*/progress.md`에 기록한다(2026-11-15부터 사이트에 넣지 않음). 실제 한 일·계획·미확인을 구분한다. 할 일·인물·준비 글의 개인 진행 문장 금지는 2026-11-28 사용자 결정으로 없앴다(개인화 공략이라 개인 사정을 써도 된다). 개인 값(잔액·체크)은 여전히 progress/에 둔다.
 - **금지:**
   - `hive` 명령과 전역 지식 저장소 기록. 이 프로젝트 내용을 전역·외부로 보내지 않는다.
   - 사용자 체크 기록을 테스트 값으로 덮어쓰기.

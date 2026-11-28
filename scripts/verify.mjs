@@ -143,14 +143,9 @@ for(const st of read('content/derived/checklist.json').stages)for(const ch of st
 // 2026-11-15: 그 루트 카드가 없던 영입 동료(처음 13명 18장 + 다른 루트 주 카드가 있는 18장 = 36장)에 싼 선물이 있고, 할 일 목록에서 그 루트에 영입한다.
 {const cards=read('content/data/recruit-only-cards.json').cards,gifts=read('content/data/affordable-gifts.json');assert.equal(cards.length,36,'영입만 카드 36장');assert.equal(new Set(cards.map(c=>c.route+':'+c.name)).size,36,'루트·이름 중복');
  const have=new Set(read('content/source/react-content.json').people.map(p=>p.route+':'+p.name));for(const c of cards){assert.ok(!have.has(c.route+':'+c.name),'카드 중복 '+c.name);const g=gifts.people[c.name];assert.ok(g?.cheap?.length===6&&g.cheap.every(id=>gifts.items[id]&&gifts.items[id].cost<=500),c.name+' 싼 선물 6개');}}
-// 2026-11-15: 사이트에 개인 진행 문서·문장이 없다(progress.md는 git 무시 progress/docs/).
-// Fable 검토 11 H3: 태그로 나뉜 글도 잡도록 나무의 글자만 이어 붙여 보고, 문서 본문·참고 문서도 본다.
-{const documents=read('content/derived/documents.json');assert.ok(!Object.keys(documents).some(d=>/(^|\/)progress\.md$/.test(d)),'진행 문서가 사이트에 있음');
- const text=t=>Array.isArray(t)?t.map(text).join(''):typeof t==='string'?t:t&&typeof t==='object'?('tag' in t?text(t.children):Object.values(t).map(text).join(' ¦ ')):String(t??'');
- const places={할일:read('content/derived/checklist.json'),표시:read('content/derived/presentation.json'),덮어쓰기:read('content/display-overrides.json'),참고문서:read('content/derived/reference-documents.json'),문서:Object.fromEntries(Object.entries(documents).map(([k,v])=>[k,v.body]))};
- // 개인 값 자체(잔액·레벨·가호 수치)는 저장소에 남기지 않으려고 숫자 대신 말투로 찾는다(2026-11-15 저장소 정리).
- const bad=[/현재\s*\d+장/,/현재\s*Lv\s*\d/,/구매 완료다/,/13개(?: 축복)? 구매(?:는)? 완료/,/이미 수령했다/,/마지막 (?:실제 )?(?:보고|가호)/,/사용자의 마지막/,/옛 디트리히판/,/사용자 확인값|사용자 직접 보고/,/옛 디트리히|옛 ?2부/,/현재 부대/,/1부 ?12장 완료·2부 첫 전투 전/,/사용자 (?:상태|잔액)가? 아[니닌]/,/progress\.md|진행 기록/,/첫 전투 전이다/,/7장 ?후반/,/이전 디트리히판|기존 디트리히/,/이번 재육성|새 재육성/];
- for(const [k,v] of Object.entries(places)){const t=text(v);for(const re of bad){const m=t.match(new RegExp(`.{0,40}(?:${re.source}).{0,40}`));assert.ok(!m,`개인 진행 글 남음(${k}): ${m?.[0]}`);}}}
+// 2026-11-15: 진행 기록 문서(progress.md, git 무시)는 사이트에 없다.
+// 2026-11-28 사용자 결정(U25 수정): 개인 진행 문장 금지 검사를 없앴다. 개인화 공략이라 개인 사정(예: 진행 중인 디트리히 2부 먼저 완료)을 글로 써도 된다.
+{const documents=read('content/derived/documents.json');assert.ok(!Object.keys(documents).some(d=>/(^|\/)progress\.md$/.test(d)),'진행 문서가 사이트에 있음');}
 // 2026-11-15: 바닥 게임 날짜는 순서가 날짜와 어긋나도 뒤로 가지 않고, 체크가 남은 첫 묶음까지의 가장 늦은 날짜를 보인다.
 {const g=(id,title,done)=>({id,title,actions:[{id:id+'-a',done}]});const isDone=(a)=>a.done;
  assert.deepEqual(currentGameDate([g('a','5/1 출발',true),g('b','5/10 결투',true),g('c','5/3 의뢰',false),g('d','5/12 전투',false)],isDone),{m:5,d:10},'어긋난 순서에서 날짜가 뒤로 감');

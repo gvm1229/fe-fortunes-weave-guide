@@ -221,7 +221,7 @@ for (const f of [...walk('app', ['.ts', '.tsx', '.css']), ...walk('components', 
   const gi = id => pb.groups.findIndex(g => g.id === id);
   assert.ok(gi('old-dietrich-war-clear-20261128') >= 0 && gi('old-dietrich-war-clear-20261128') < gi('start-dietrich-route'), '[U74] 먼저 하는 디트리히 2부 묶음이 1장 새로 시작 앞');
   assert.ok(text('old-dietrich-war-clear-20261128--why').includes('직접 완료'), '[U74] 먼저 한 2부 완료 글');
-  assert.ok(text('leda-post-clear-boons-20261110--start-dietrich-part1').includes('진행 중인 디트리히 2부 저장이 있으면'), '[U74] 레다 뒤 이동 글');
+  assert.ok(text('leda-post-clear-boons-20261110--start-dietrich-part1').includes('진행 중인 디트리히 2부 저장을 먼저 완료'), '[U74] 레다 뒤 이동 글');
   for (const id of ['war-di-new--c61f2d01d5', 'war-di-new--9957d94d2b', 'war-dietrich-restart--mounts', 'sequential-dietrich-war06-preserve-20261108--1', 'di-26--0786e0be37']) assert.ok(!/첫 (보관 )?스킵을 합니다|비탑승 중급으로 바꾼다|첫 보관 스킵 뒤/.test(text(id)), '[U74] 옛 첫 보관 절차 글 ' + id);
   assert.ok(readFileSync('content/notes/dietrich-old-war-clear.md', 'utf8').includes('먼저 하는 디트리히 2부 완료'), '[U74] 근거 문서'); }
 

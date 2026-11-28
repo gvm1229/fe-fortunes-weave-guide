@@ -35,7 +35,7 @@
 | U22 | 누조는 네 루트 모두 영입(선더 소드). 게임 용어는 고기·연회 | 11-14 | `scripts/rules-check.mjs` |
 | U23 | 이오는 탈것을 보존할 수 있는 루트만. 알렉산드라는 두 루트 이상 영입 | 11-14 | `scripts/verify.mjs` `scripts/rules-check.mjs` |
 | U24 | 최종 25인(대체 포함): 서랍에 금색 '최종 25인' 배지, 얼굴에 4px 테두리. 테두리 색은 밝은 빨강 | 11-14, 금색 테두리 → 빨강(11-14), 11-27 '밝게·어둡게 모두' → 어두운 화면만(U64), 11-27 인물 탭 카드는 큰 초상화 + '최종 25인' 배지(U68), 테두리는 할 일·정보 칸 얼굴 | `scripts/header-browser-check.mjs` `scripts/rules-browser-check.mjs` |
-| U25 | 사이트에 개인 진행(체크·골드·축복 등) 없음. 새 브라우저는 빈 기록. 개인 값은 git 무시 progress/ JSON에만 두고, 사이트는 그것을 가져오고 축복 단계·가호 레벨·파편·골드·인물 육성 기록을 고칠 수 있다 | 11-14, 11-15, 11-27 인물 육성 기록(U72) | `scripts/header-browser-check.mjs` `scripts/status-browser-check.mjs` `scripts/verify.mjs` |
+| U25 | 사이트에 개인 진행 값(체크·골드·축복 등) 없음. 개인 사정을 담은 공략 글(예: 진행 중인 디트리히 2부 먼저 완료)은 써도 된다(2026-11-28 대체: 개인 진행 문장 금지 검사 삭제). 새 브라우저는 빈 기록. 개인 값은 git 무시 progress/ JSON에만 두고, 사이트는 그것을 가져오고 축복 단계·가호 레벨·파편·골드·인물 육성 기록을 고칠 수 있다 | 11-14, 11-15, 11-27 인물 육성 기록(U72) | `scripts/header-browser-check.mjs` `scripts/status-browser-check.mjs` `scripts/verify.mjs` |
 | U26 | 모든 영입 동료에 싼 선호 선물(지원 1 영입·영입만 카드 포함). 인물 서랍의 '선호 선물·음식' 목록 맨 앞에 '싸게 살 수 있는 선물'로 강조한다 | 11-14, 11-27 선물 줄 → yuphastemple 선호 선물 탭 모양 목록(U67), 11-27 인물 탭 카드 → 서랍(U68) | `scripts/verify.mjs` `scripts/rules-browser-check.mjs` |
 | U27 | '완료 숨기기'는 고정 머리 안. 오른쪽 아래 둥근 '맨 위로' 단추(그림만, 풍선 도움말) | 11-14 | `scripts/header-browser-check.mjs` `scripts/rules-browser-check.mjs` |
 | U28 | **폐지**: 테마 단추를 두지 않는다(옛 규칙: 테마 단추는 하나, 머리가 붙기 전 오른쪽 위·붙은 뒤 막대 오른쪽 끝) | 11-15(11-14 '머리에 고정'을 대체), 11-27 폐지 → U64 어두운 화면만(사용자 결정) | `scripts/rules-check.mjs` |
