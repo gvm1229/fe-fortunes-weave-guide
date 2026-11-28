@@ -48,8 +48,18 @@ try {
   { const [last, first] = r.body.items; assert.equal(last.revision, 3); assert.deepEqual(last.changes.find(c => c.type === 'check'), { type: 'check', id: 'a', from: true, to: false, label: '시험 체크' }, '체크 변경과 이름');
     assert.deepEqual(last.changes.find(c => c.type === 'status'), { type: 'status', key: 'gold', from: null, to: 500 }, '내 상태 변경'); assert.equal(first.revision, 1); assert.equal(first.changes[0].to, true); }
   r = await call('GET', '/api/history?before=nope'); assert.equal(r.status, 400, '틀린 before');
+  // 같은 칸(골드)을 15초 안에 이어 고치면 한 건으로 합친다.
+  const st = (gold, builds) => ({ ...state(0), checks: { a: false }, status: { boons: {}, gods: {}, gold }, ...(builds ? { builds } : {}) });
+  r = await call('PUT', '/api/progress', { cookie, body: { baseRevision: 3, data: st(600) } }); assert.equal(r.status, 200);
+  r = await call('PUT', '/api/progress', { cookie, body: { baseRevision: 4, data: st(700) } }); assert.equal(r.status, 200);
+  r = await call('GET', '/api/history?limit=10'); assert.equal(r.body.items.length, 3, '이어 고친 골드는 한 건');
+  assert.equal(r.body.items[0].revision, 5); assert.deepEqual(r.body.items[0].changes, [{ type: 'status', key: 'gold', from: 500, to: 700 }], '합친 기록의 처음·끝 값');
+  // 육성 기록은 추가·삭제·수정과 인물 이름만(메모 글은 남기지 않음).
+  r = await call('PUT', '/api/progress', { cookie, body: { baseRevision: 5, data: st(700, { theodora: { 'test-person': { level: 5, note: '비밀 메모' } } }), labels: { 'build:theodora/test-person': '시험 인물' } } }); assert.equal(r.status, 200);
+  r = await call('GET', '/api/history?limit=1'); assert.deepEqual(r.body.items[0].changes, [{ type: 'build', route: 'theodora', slug: 'test-person', op: 'add', label: '시험 인물' }], '육성 기록 추가'); assert.ok(!JSON.stringify(r.body).includes('비밀 메모'), '메모 글 없음');
+  r = await call('GET', '/api/history?limit=2&before=6'); assert.deepEqual(r.body.items.map(e => e.revision), [5, 3], 'revision 커서');
   r = await call('POST', '/api/logout', { cookie }); assert.match(r.cookie, /Max-Age=0/);
   for (let i = 0; i < 8; i++) await call('POST', '/api/login', { body: { username: user, password: 'x' } });
   r = await call('POST', '/api/login', { body: { username: user, password } }); assert.equal(r.status, 429, '실패 10번 뒤 막기');
-  console.log('통과: 진행 기록 API 시험 21개(변경 기록 포함)');
+  console.log('통과: 진행 기록 API 시험 28개(변경 기록·합치기 포함)');
 } finally { await test.dropDatabase(); await client.close(); process.exit(); }

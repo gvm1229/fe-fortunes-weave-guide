@@ -228,7 +228,7 @@ for (const f of [...walk('app', ['.ts', '.tsx', '.css']), ...walk('components', 
 
 // [U76] 저장할 때마다 변경 기록(바뀐 칸만)을 남기고, 변경 기록은 누구나 본다.
 { const api = readFileSync('netlify/functions/api.ts', 'utf8'), h = readFileSync('netlify/lib/history.ts', 'utf8');
-  assert.ok(api.includes("collection<HistoryEntry>('history').insertOne(entry(revision, changes))") && api.includes("returnDocument: 'before'"), '[U76] 저장 때 변경 기록');
+  assert.ok(api.includes('await logChanges(revision, changes)') && api.includes('col.insertOne(entry(revision, changes, now))') && api.includes("returnDocument: 'before'"), '[U76] 저장 때 변경 기록');
   assert.ok(api.includes("path === '/api/history' && req.method === 'GET') return await getHistory(url)"), '[U76] 변경 기록 보기');
   assert.ok(/MAX_CHANGES = \d+/.test(h) &&!/data: doc/.test(h), '[U76] 바뀐 칸만(전체 사본 없음)');
   assert.ok(readFileSync('components/tasks.tsx', 'utf8').includes('<HistoryButton route={route}/>'), '[U76] 기록 관리 → 변경 기록'); }

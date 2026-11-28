@@ -56,9 +56,9 @@ function NoteField({ value, disabled, onSave }: { value?: string; disabled: bool
   return <input className="build-note" type="text" maxLength={NOTE_MAX} value={text} disabled={disabled} placeholder="메모" aria-label={`메모(${NOTE_MAX}자 이하)`}
     onChange={(e) => edit(e.target.value)} onBlur={() => { const v = parseNote(text); settle(text); if (v !== value) onSave(v); }} />;
 }
-export function BuildEditor({ route, profile }: { route: string; profile: YuphasProfile }) {
+export function BuildEditor({ route, profile, name }: { route: string; profile: YuphasProfile; name?: string }) {
   const checks = useChecks(), build = useBuild(route, profile.slug), disabled = !checks.ready;
-  const save = (patch: Partial<Build> | null) => checks.setBuild(route as BuildRoute, profile.slug, patch);
+  const save = (patch: Partial<Build> | null) => checks.setBuild(route as BuildRoute, profile.slug, patch, name);
   const picked = classBySlug(build?.classId);
   const button = <button type="button" className="build-class" disabled={disabled} data-recorded={picked ? true : undefined} aria-label={`병종 고르기, 지금 ${picked ? picked.ko || picked.en : '기록 없음'}`}>
     {picked ? <img src={classIcon(picked.slug, profile.gender)} alt="" /> : profile.cls?.icon && <img src={profile.cls.icon} alt="" />}

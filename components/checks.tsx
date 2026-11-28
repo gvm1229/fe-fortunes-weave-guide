@@ -187,7 +187,7 @@ export function useChecks() {
     /** 기록 지우기는 체크와 내 상태만 지우고 인물 육성 기록은 남긴다(2026-11-27 U72). */
     clear: () => commit(d => ({ ...empty, ...(d.builds ? { builds: d.builds } : {}) })),
     /** 인물 육성 기록 한 사람 고치기. patch가 null이면 그 사람 기록을 지운다. */
-    setBuild: (route: BuildRoute, slug: string, patch: Partial<Build> | null) => commit(d => { const { builds: old, ...rest } = d; const builds = nextBuilds(old, route, slug, patch); return { ...rest, ...(builds ? { builds } : {}) }; }),
+    setBuild: (route: BuildRoute, slug: string, patch: Partial<Build> | null, name?: string) => commit(d => { const { builds: old, ...rest } = d; const builds = nextBuilds(old, route, slug, patch); return { ...rest, ...(builds ? { builds } : {}) }; }, undefined, true, name ? { [`build:${route}/${slug}`]: name } : undefined),
     /** 로그인 창을 연다. then이 있으면 로그인 뒤 이어서 한다. */
     login: (then?: () => void) => requestLogin(then),
     logout,

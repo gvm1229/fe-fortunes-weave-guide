@@ -4,12 +4,21 @@
 //   GET  /api/session    { loggedIn }
 //   POST /api/login      { username, password } → 로그인 쿠키(HttpOnly, 30일)
 //   POST /api/logout
-//   GET  /api/history    ?before=<ISO 시각>&limit=<1~100> 변경 기록(새것부터, 누구나 봄, U76)
+//   GET  /api/history    ?before=<revision>&limit=<1~50> 변경 기록(새것부터, 누구나 봄, U76)
 import { validateChecks, type StatusLimits } from '../../lib/check-state';
 import catalog from '../../content/data/boon-catalog.json';
 import { makeSession, readSession, sessionCookie, verifyLogin } from '../lib/auth';
 import { db, PROGRESS_ID, type ProgressDoc } from '../lib/db';
-import { diff, entry, type HistoryEntry } from '../lib/history';
+import { diff, entry, sameField, MERGE_MS, type HistoryEntry } from '../lib/history';
+
+// 변경 기록 색인은 함수가 처음 쓸 때 한 번만 만든다. 실패해도 보기·저장은 계속한다(Fable 검토 지적 5).
+let historyIndex: Promise<unknown> | undefined;
+async function historyCol() {
+  const col = (await db()).collection<HistoryEntry>('history');
+  historyIndex ??= col.createIndex({ revision: -1 }).catch(() => { historyIndex = undefined; });
+  await historyIndex;
+  return col;
+}
 
 const limits: StatusLimits = {
   boons: Object.fromEntries(catalog.boons.map(b => [b.id, b.tiers.length])),
@@ -56,20 +65,34 @@ async function putProgress(req: Request) {
   if (before !== undefined && (base === 0 || before)) {
     const changes = diff(before?.data as Parameters<typeof diff>[0], doc, labels);
     // 기록 쓰기가 실패해도 저장은 이미 끝났으니 성공으로 답한다(기록은 보조).
-    if (changes.length) await (await db()).collection<HistoryEntry>('history').insertOne(entry(revision, changes)).catch(e => console.error('history', e instanceof Error ? e.message : e));
+    if (changes.length) await logChanges(revision, changes).catch(e => console.error('history', e instanceof Error ? e.message : e));
     return json(200, { revision, updatedAt });
   }
   const now = await col.findOne({ _id: PROGRESS_ID });
   return json(409, { error: '다른 기기에서 기록이 바뀌었습니다.', revision: now?.revision ?? 0 });
 }
 
+/** 변경 기록 쓰기. 바로 앞 기록(revision-1)이 같은 칸을 15초 안에 고친 것이면 새로 쓰지 않고 그 기록의 끝 값·시각·revision만 고친다. */
+async function logChanges(revision: number, changes: ReturnType<typeof diff>) {
+  const col = await historyCol(), now = new Date();
+  const last = await col.findOne({ revision: revision - 1 });
+  if (last && now.getTime() - new Date(last.at).getTime() < MERGE_MS && sameField(last.changes, changes)) {
+    const [prev, next] = [last.changes[0], changes[0]];
+    const merged = prev.type === 'status' && next.type === 'status' ? { ...prev, to: next.to }
+      : prev.type === 'build' && next.type === 'build' ? { ...next, op: prev.op === 'add' && next.op !== 'remove' ? 'add' as const : next.op } : next;
+    await col.updateOne({ _id: last._id }, { $set: { at: now, revision, changes: [merged], total: 1 } });
+    return;
+  }
+  await col.insertOne(entry(revision, changes, now));
+}
+
 async function getHistory(url: URL) {
-  const limit = Math.min(100, Math.max(1, Number(url.searchParams.get('limit')) || 30));
-  const beforeAt = url.searchParams.get('before'), at = beforeAt ? new Date(beforeAt) : null;
-  if (at && Number.isNaN(at.getTime())) return json(400, { error: 'before가 시각이 아닙니다.' });
-  const col = (await db()).collection<HistoryEntry>('history');
-  await col.createIndex({ at: -1 });
-  const items = await col.find(at ? { at: { $lt: at } } : {}, { projection: { _id: 0 } }).sort({ at: -1 }).limit(limit + 1).toArray();
+  const limit = Math.min(50, Math.max(1, Number(url.searchParams.get('limit')) || 30));
+  const raw = url.searchParams.get('before'), before = raw === null ? null : Number(raw);
+  if (before !== null && (!Number.isInteger(before) || before < 0)) return json(400, { error: 'before는 revision 숫자여야 합니다.' });
+  const col = await historyCol();
+  // revision은 저장마다 하나씩 커지므로 겹치지 않는 커서가 된다(같은 시각 기록이 쪽 경계에서 빠지지 않게, Fable 검토 지적 4).
+  const items = await col.find(before !== null ? { revision: { $lt: before } } : {}, { projection: { _id: 0 } }).sort({ revision: -1 }).limit(limit + 1).toArray();
   return json(200, { items: items.slice(0, limit), more: items.length > limit });
 }
 
