@@ -26,7 +26,7 @@ export function StatusButton({route,menu=false}:{route:string;menu?:boolean}){
   return <Sheet open={open} onOpenChange={setOpen}>
     {menu?<Button variant="secondary" className="status-menu-item" onClick={e=>{e.currentTarget.closest("details")?.removeAttribute("open");setOpen(true);}} disabled={!checks.ready}><UserRound size={20} aria-hidden="true"/> 내 상태</Button>:<Button variant="secondary" className="status-button" onClick={()=>setOpen(true)} disabled={!checks.ready} aria-label="내 상태"><UserRound size={20} aria-hidden="true"/><span className="status-label">내 상태</span></Button>}
     <SheetContent themeRoute={route} onCloseAutoFocus={menu?e=>{e.preventDefault();document.querySelector<HTMLElement>('.route-head .backup-menu summary')?.focus();}:undefined}><div className="sheet-heading"><SheetTitle>내 상태</SheetTitle></div><div className="sheet-scroll status-sheet">
-      <p className="muted">이 브라우저에만 저장됩니다. 기록 관리 → 내보내기 파일에 체크와 함께 들어갑니다. 가진 축복 단계는 해당 구매 체크를 자동으로 완료합니다.</p>
+      <p className="muted">서버에 저장되어 모든 기기에서 보입니다. 고치려면 로그인이 필요합니다. 기록 관리 → 내보내기 파일에 체크와 함께 들어갑니다. 가진 축복 단계는 해당 구매 체크를 자동으로 완료합니다.</p>
       <section><h3>파편·골드</h3><div className="status-amounts">
         <Amount label="인과의 파편" unit="개" value={s?.shards} onChange={v=>checks.setStatus({shards:v})}/>
         <Amount label="골드" unit="G" value={s?.gold} onChange={v=>checks.setStatus({gold:v})}/>

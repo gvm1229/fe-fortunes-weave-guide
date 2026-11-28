@@ -22,7 +22,7 @@ export function ImportOverlay({ phase, onClose }: { phase: ImportPhase; onClose:
       <TriangleAlert size={40} aria-hidden="true" />
       <p id="import-overlay-title" className="import-overlay-title">가져오지 못했습니다</p>
       <p>{phase.message}</p>
-      <p className="muted">이 브라우저의 기존 기록은 그대로입니다.</p>
+      <p className="muted">서버의 기존 기록은 그대로입니다.</p>
       <Button onClick={onClose} autoFocus>확인</Button>
     </div> : <div className="import-overlay-box" role="status">
       <LoaderCircle size={48} aria-hidden="true" className="import-spinner" />

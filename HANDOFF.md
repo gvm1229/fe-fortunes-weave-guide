@@ -65,6 +65,10 @@
   - 작성자는 `gvm1229 <hojini1229@gmail.com>`(저장소 로컬 설정)다.
   - **공동 작성자(Co-Authored-By)·세션 링크·도구 이름 금지.**
   - 형식은 `<type>: <간결한 한국어 설명>`이며 끝에 문장부호를 쓰지 않는다. type은 feat, fix, docs, style, refactor, perf, test, build, delete, revert다.
+- **진행 기록 데이터베이스(2026-11-28, U75):**
+  - 체크·내 상태·인물 육성 기록은 MongoDB Atlas(데이터베이스 `fefw`, 문서 `progress/main`)에 있다. 누구나 보고, 고치기는 로그인(아이디 gvm1229) 뒤에만.
+  - API: `netlify/functions/api.ts`(`/api/progress`·`/api/session`·`/api/login`·`/api/logout`). 비밀 값은 Netlify 환경 변수 `MONGODB_URI`·`AUTH_USER`·`AUTH_PASS_HASH`·`SESSION_SECRET`에만 있다. 비밀번호를 바꾸려면 `scripts/hash-password.mjs`로 해시를 만들어 `AUTH_PASS_HASH`를 바꾼다.
+  - 시험: `scripts/api-check.mjs`(시험용 DB `fefw_check`). 개발 서버·검사용 정적 서버에는 API가 없어 예전처럼 브라우저 저장소에만 쓴다.
 - **기록:**
   - 사용자의 새 선호·결정은 같은 응답 안에서 `notes/knowledge/`(이전 프로젝트)에 날짜와 출처를 붙여 기록한다.
   - 진행 수치는 git 무시 폴더 `progress/docs/progress.md`·`progress/docs/routes/*/progress.md`에 기록한다(2026-11-15부터 사이트에 넣지 않음). 실제 한 일·계획·미확인을 구분한다. 할 일·인물·준비 글의 개인 진행 문장 금지는 2026-11-28 사용자 결정으로 없앴다(개인화 공략이라 개인 사정을 써도 된다). 개인 값(잔액·체크)은 여전히 progress/에 둔다.
