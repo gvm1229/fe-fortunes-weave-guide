@@ -56,7 +56,8 @@ function localSave(data: CheckState): boolean {
  * 변경은 하나씩 보내고, 보낼 때 confirmed 위에 다시 계산한다. 그래서 앞 변경이 실패해도 뒤 변경의 revision이 꼬이지 않고, 실패한 것만 화면에서 빠진다(Fable 검토 지적 3).
  */
 type Done = (ok: boolean, message?: string) => void;
-type Job = { make: (d: CheckState) => CheckState; done?: Done; prompt: boolean };
+/** labels: 변경 기록(U76)에 남길 체크 이름. 화면의 체크 칸 이름을 보낸다. */
+type Job = { make: (d: CheckState) => CheckState; done?: Done; prompt: boolean; labels?: Record<string, string> };
 let confirmed: CheckState = empty;
 let jobs: Job[] = [];
 let running = false;
@@ -121,7 +122,7 @@ async function drain() {
     while (jobs.length) {
       const job = jobs[0], next = { ...job.make(confirmed), revision: confirmed.revision + 1, updatedAt: new Date().toISOString() };
       let r: Awaited<ReturnType<typeof api>> | undefined;
-      try { r = await api('/api/progress', { method: 'PUT', body: JSON.stringify({ baseRevision: confirmed.revision, data: next }) }); } catch { r = undefined; }
+      try { r = await api('/api/progress', { method: 'PUT', body: JSON.stringify({ baseRevision: confirmed.revision, data: next, ...(job.labels ? { labels: job.labels } : {}) }) }); } catch { r = undefined; }
       if (r?.ok) { confirmed = { ...next, revision: r.body.revision as number }; writeCache(confirmed); jobs.shift(); settle(jobs.length ? '저장하는 중입니다.' : '서버에 저장했습니다.'); job.done?.(true); continue; }
       if (r?.status === 401) {
         // 로그인이 풀렸다: 남은 변경을 모두 내려놓고, 로그인하면 같은 순서로 다시 한다.
@@ -146,16 +147,16 @@ async function drain() {
 function enqueue(job: Job) { jobs.push(job); settle('저장하는 중입니다.'); void drain(); }
 
 /** 변경 하나. 화면은 먼저 바뀌고 서버가 거절하면 되돌아간다. prompt=false면 로그인 창을 띄우지 않고 실패로 끝낸다(가져오기). */
-function commit(make: (d: CheckState) => CheckState, done?: Done, prompt = true): void {
-  if (loading) { void loading.then(() => commit(make, done, prompt)); return; }
+function commit(make: (d: CheckState) => CheckState, done?: Done, prompt = true, labels?: Record<string, string>): void {
+  if (loading) { void loading.then(() => commit(make, done, prompt, labels)); return; }
   if (!snapshot.ready) { done?.(false, '기록을 아직 불러오지 못했습니다.'); return; }
   if (snapshot.local) { const made = make(snapshot.data); /* 가져온 파일의 revision이 더 크면 그것을 이어 간다(예전 그대로) */ const ok = localSave({ ...made, revision: Math.max(made.revision, snapshot.data.revision) + 1, updatedAt: new Date().toISOString() }); done?.(ok, ok ? undefined : '이 브라우저에 저장하지 못했습니다. 저장 공간이나 사생활 보호 모드를 확인하세요.'); return; }
   if (!snapshot.online) { done?.(false, '기록 서버에 연결하지 못해 고칠 수 없습니다.'); set({ error: true, status: '기록 서버에 연결하지 못해 고칠 수 없습니다. 다시 읽기를 눌러 보세요.' }); return; }
   if (!snapshot.loggedIn) {
     if (!prompt) { done?.(false, '로그인이 필요합니다.'); return; }
-    requestLogin(() => commit(make, done, prompt), () => done?.(false, '로그인하지 않아 저장하지 않았습니다.')); return;
+    requestLogin(() => commit(make, done, prompt, labels), () => done?.(false, '로그인하지 않아 저장하지 않았습니다.')); return;
   }
-  enqueue({ make, done, prompt });
+  enqueue({ make, done, prompt, labels });
 }
 
 export function useChecks() {
@@ -171,7 +172,7 @@ export function useChecks() {
     /** 고치려면 로그인이 필요한가(서버 방식이고 아직 로그인 전). */
     needsLogin: !state.local && !state.loggedIn,
     setStatus: (patch: Partial<Status>) => commit(d => ({ ...d, status: validateStatus({ ...emptyStatus, ...d.status, ...patch }, limits) })),
-    toggle: (id: string, value: boolean) => commit(d => ({ ...d, checks: { ...d.checks, [id]: value } })),
+    toggle: (id: string, value: boolean) => { const label = typeof document !== 'undefined' ? document.getElementById(id)?.getAttribute('aria-label') : null; commit(d => ({ ...d, checks: { ...d.checks, [id]: value } }), undefined, true, label ? { [id]: label } : undefined); },
     /** 파일을 검사해 저장한다. 파일의 육성 기록을 썼으면 true(알림 문구용). 로그인 창은 띄우지 않는다(가져오기 덮개 아래에 깔리므로, Fable 검토 지적 1): 로그인은 가져오기 전에 확인한다. */
     importData: (value: unknown): Promise<boolean> => {
       const data = validateChecks(value, limits, true);

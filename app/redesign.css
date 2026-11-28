@@ -785,8 +785,8 @@ html.dark body:has(.app-shell),html.dark body:has(.team-page),html.dark body:has
 }
 .dark .sheet[data-route] .sheet-heading{background:transparent}
 .dark .sheet-close{background:#3A1D1D;border:2px solid #60593E;color:#FFE8C4;min-inline-size:48px;min-block-size:48px}
-.dark .sheet-close:hover{background:#4D2424}
-@media(prefers-reduced-motion:no-preference){.sheet-close{transition:transform .15s,background-color .15s}.sheet-close:hover,.sheet-close:focus-visible{transform:rotate(90deg)}}
+/* 닫기 단추는 돌지 않고 바탕색만 바뀐다(2026-11-28 사용자 요청, U77). */.dark .sheet-close:hover,.dark .sheet-close:focus-visible{background:#5C2B2B}
+@media(prefers-reduced-motion:no-preference){.sheet-close{transition:background-color .15s}}
 
 /* 14. 표: 머리 줄 = 머리띠 그림(headerBG), 줄 머리 칸 = 안쪽 명찰 상자 */
 .dark :is(.app-shell,.team-page,.sheet) thead{background:url('/yuphas/headerBG.png') center bottom/100% 100% no-repeat,#0A1719}
@@ -1115,3 +1115,5 @@ html.dark body:has(.app-shell),html.dark body:has(.team-page),html.dark body:has
 .login-form input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .login-error{color:#ff9b8f;font-weight:600}
 .login-actions{display:flex;gap:12px;justify-content:flex-end;flex-wrap:wrap}.login-actions .button{min-block-size:48px;min-inline-size:120px;justify-content:center}
+/* 변경 기록(2026-11-28, U76) */
+.history-list{list-style:none;margin:16px 0;padding:0;display:grid;gap:16px}.history-list>li{border-block-start:1px solid var(--line);padding-block-start:12px}.history-when{margin:0 0 6px;font-weight:700}.history-list ul{margin:0;padding-inline-start:20px;display:grid;gap:4px}.history-list a{color:inherit;text-decoration:underline}

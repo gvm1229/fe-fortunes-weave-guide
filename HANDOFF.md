@@ -69,6 +69,7 @@
   - 체크·내 상태·인물 육성 기록은 MongoDB Atlas(데이터베이스 `fefw`, 문서 `progress/main`)에 있다. 누구나 보고, 고치기는 로그인(아이디 gvm1229) 뒤에만.
   - API: `netlify/functions/api.ts`(`/api/progress`·`/api/session`·`/api/login`·`/api/logout`). 비밀 값은 Netlify 환경 변수 `MONGODB_URI`·`AUTH_USER`·`AUTH_PASS_HASH`·`SESSION_SECRET`에만 있다. 비밀번호를 바꾸려면 `scripts/hash-password.mjs`로 해시를 만들어 `AUTH_PASS_HASH`를 바꾼다.
   - 시험: `scripts/api-check.mjs`(시험용 DB `fefw_check`, 비밀 값이 필요해 배포 관문 밖에서 손으로 돌린다: `CHECK_PASSWORD` 환경 변수). 배포(`release.mjs deploy`)는 초안 배포에서 API를 확인한 뒤 본 배포하고 실제 주소도 확인한다.
+  - 변경 기록(U76): 저장할 때마다 `history` 모음에 바뀐 칸만 남긴다(한 건 150~300바이트, 512MB에 수백만 건). 기록 관리 → 변경 기록에서 본다(`/api/history`).
   - 모든 기기 로그아웃(쿠키를 잃어버렸을 때): `SESSION_SECRET`을 새 무작위 값으로 바꾼다. 로그인 실패 제한은 IP별 15분 10번·전체 100번이다. 비밀번호가 길고 무작위면 추측 위험이 낮다.
   - Atlas Network Access는 Netlify 함수 IP가 바뀌므로 0.0.0.0/0 허용이 필요하다(접속은 사용자 이름·비밀번호로 막힌다). 개발 서버·검사용 정적 서버에는 API가 없어 예전처럼 브라우저 저장소에만 쓴다.
 - **기록:**

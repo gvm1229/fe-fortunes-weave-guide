@@ -4,10 +4,12 @@
 //   GET  /api/session    { loggedIn }
 //   POST /api/login      { username, password } → 로그인 쿠키(HttpOnly, 30일)
 //   POST /api/logout
+//   GET  /api/history    ?before=<ISO 시각>&limit=<1~100> 변경 기록(새것부터, 누구나 봄, U76)
 import { validateChecks, type StatusLimits } from '../../lib/check-state';
 import catalog from '../../content/data/boon-catalog.json';
 import { makeSession, readSession, sessionCookie, verifyLogin } from '../lib/auth';
 import { db, PROGRESS_ID, type ProgressDoc } from '../lib/db';
+import { diff, entry, type HistoryEntry } from '../lib/history';
 
 const limits: StatusLimits = {
   boons: Object.fromEntries(catalog.boons.map(b => [b.id, b.tiers.length])),
@@ -34,7 +36,8 @@ async function getProgress() {
 }
 
 async function putProgress(req: Request) {
-  const body = await readBody(req) as { baseRevision?: unknown; data?: unknown };
+  const body = await readBody(req) as { baseRevision?: unknown; data?: unknown; labels?: unknown };
+  const labels = body?.labels && typeof body.labels === 'object' && !Array.isArray(body.labels) ? body.labels as Record<string, unknown> : {};
   const base = body?.baseRevision;
   if (!Number.isInteger(base) || (base as number) < 0) return json(400, { error: 'baseRevision이 없습니다.' });
   let data;
@@ -42,15 +45,32 @@ async function putProgress(req: Request) {
   const revision = (base as number) + 1, updatedAt = new Date().toISOString();
   const doc = { ...data, revision, updatedAt };
   const col = (await db()).collection<ProgressDoc>('progress');
+  // 바꾸기 직전 값을 같은 연산에서 받아 변경 기록을 만든다(그 사이 다른 저장이 끼어들 수 없다).
+  let before: ProgressDoc | null | undefined;
   if (base === 0) {
-    try { await col.insertOne({ _id: PROGRESS_ID, revision, updatedAt, data: doc }); return json(200, { revision, updatedAt }); }
+    try { await col.insertOne({ _id: PROGRESS_ID, revision, updatedAt, data: doc }); before = null; }
     catch { /* 이미 있음 → 아래 충돌 처리 */ }
   } else {
-    const r = await col.updateOne({ _id: PROGRESS_ID, revision: base as number }, { $set: { revision, updatedAt, data: doc } });
-    if (r.matchedCount === 1) return json(200, { revision, updatedAt });
+    before = await col.findOneAndUpdate({ _id: PROGRESS_ID, revision: base as number }, { $set: { revision, updatedAt, data: doc } }, { returnDocument: 'before' });
+  }
+  if (before !== undefined && (base === 0 || before)) {
+    const changes = diff(before?.data as Parameters<typeof diff>[0], doc, labels);
+    // 기록 쓰기가 실패해도 저장은 이미 끝났으니 성공으로 답한다(기록은 보조).
+    if (changes.length) await (await db()).collection<HistoryEntry>('history').insertOne(entry(revision, changes)).catch(e => console.error('history', e instanceof Error ? e.message : e));
+    return json(200, { revision, updatedAt });
   }
   const now = await col.findOne({ _id: PROGRESS_ID });
   return json(409, { error: '다른 기기에서 기록이 바뀌었습니다.', revision: now?.revision ?? 0 });
+}
+
+async function getHistory(url: URL) {
+  const limit = Math.min(100, Math.max(1, Number(url.searchParams.get('limit')) || 30));
+  const beforeAt = url.searchParams.get('before'), at = beforeAt ? new Date(beforeAt) : null;
+  if (at && Number.isNaN(at.getTime())) return json(400, { error: 'before가 시각이 아닙니다.' });
+  const col = (await db()).collection<HistoryEntry>('history');
+  await col.createIndex({ at: -1 });
+  const items = await col.find(at ? { at: { $lt: at } } : {}, { projection: { _id: 0 } }).sort({ at: -1 }).limit(limit + 1).toArray();
+  return json(200, { items: items.slice(0, limit), more: items.length > limit });
 }
 
 async function login(req: Request, secure: boolean) {
@@ -76,6 +96,7 @@ export default async function handler(req: Request): Promise<Response> {
     if (req.method !== 'GET' && req.headers.get('x-fefw') !== '1') return json(403, { error: '허용되지 않은 요청입니다.' });
     if (path === '/api/progress' && req.method === 'GET') return await getProgress();
     if (path === '/api/progress' && req.method === 'PUT') return session() ? await putProgress(req) : json(401, { error: '로그인이 필요합니다.' });
+    if (path === '/api/history' && req.method === 'GET') return await getHistory(url);
     if (path === '/api/session' && req.method === 'GET') return json(200, { loggedIn: session() });
     if (path === '/api/login' && req.method === 'POST') return await login(req, secure);
     if (path === '/api/logout' && req.method === 'POST') return json(200, { loggedIn: false }, { 'set-cookie': sessionCookie('', secure) });
@@ -88,4 +109,4 @@ export default async function handler(req: Request): Promise<Response> {
   }
 }
 
-export const config = { path: ['/api/progress', '/api/session', '/api/login', '/api/logout'] };
+export const config = { path: ['/api/progress', '/api/session', '/api/login', '/api/logout', '/api/history'] };
