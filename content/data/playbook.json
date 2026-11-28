@@ -11924,7 +11924,7 @@
         {
           "id": "leda-post-clear-boons-20261110--start-dietrich-part1",
           "category": "다음 루트",
-          "text": "구매를 마치면 방첨탑에서 새 디트리히 1부를 1장부터 시작한다.",
+          "text": "구매를 마치면 방첨탑에서 새 디트리히 1부를 1장부터 시작한다. 진행 중인 디트리히 2부 저장이 있으면 그 전에 먼저 완료한다.",
           "inheritLegacy": false
         }
       ],
@@ -11998,6 +11998,67 @@
       "figures": [],
       "curated": true,
       "boonGuide": true
+    },
+    {
+      "id": "old-dietrich-war-clear-20261128",
+      "stage": "dietrich-plan",
+      "title": "1장 새로 시작 전 · 진행 중인 디트리히 2부 먼저 완료(능력치 보존)",
+      "people": [],
+      "actions": [
+        {
+          "id": "old-dietrich-war-clear-20261128--why",
+          "category": "먼저 완료",
+          "text": "진행 중인 디트리히 2부 저장이 있으면 이어서 직접 완료한다. 1부를 1장부터 다시 시작하면 이 2부 진행이 덮어써지므로 그 전에 끝낸다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "old-dietrich-war-clear-20261128--mounts",
+          "category": "탈것 보관",
+          "text": "첫 전투 전 거점에서 이오는 비기병, 알렉산드라는 비탑승 병종으로 바꾼다. 이 루트의 첫 완료라 로시난·부케팔라스가 3부 마구간으로 넘어간다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "old-dietrich-war-clear-20261128--items",
+          "category": "물품 고정",
+          "text": "이 완료로 디트리히 루트의 3부 물품이 그 저장의 1부 끝 소지품으로 고정된다. 판 물건은 빠지고 앤서러는 지금 강화 단계 그대로다. 새 1부에서 얻는 물건은 떠도는 성궤에서 파편으로 산다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "old-dietrich-war-clear-20261128--boosters",
+          "category": "아이템 보존",
+          "text": "능력치 아이템·마법 두루마리는 2부에서 쓸 수 없다. 쓰지 않은 채 두면 3부 물품으로 넘어간다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "old-dietrich-war-clear-20261128--check",
+          "category": "자료 확인",
+          "text": "완료 뒤 방첨탑의 완료 자료에서 디트리히·에스메랄다 등의 능력치가 남았는지 확인한다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "old-dietrich-war-clear-20261128--ch12",
+          "category": "선택",
+          "text": "고정 뒤 그 저장의 1부 12장을 다시 시작해 능력치 아이템·두루마리를 쓰고 12장을 완료한다. 그다음 2부를 스킵으로 끝내면 효과는 완료 자료에 쌓이고 물건은 3부 물품에 남는다.",
+          "inheritLegacy": false
+        }
+      ],
+      "notes": [
+        {
+          "category": "근거",
+          "text": "같은 루트를 다시 완료하면 레벨·능력치·기능·병종·전투 기술·두루마리 흑마법이 높은 값으로 쌓인다. 일반 동료도 3부에서 아직 영입하지 않았으면 파편이 들지 않는다."
+        },
+        {
+          "category": "주의",
+          "text": "알렉산드라는 이미 상급에 합격해 완료 자료가 상급 병종으로 바뀔 수 있다. 3부 기준판은 카이판(U59)이라 이 판에는 영향이 작다."
+        },
+        {
+          "category": "참고",
+          "text": "이 완료가 전체 첫 2부 완료이므로 이후 2부 스킵이 열린다. 직접 완료 보상 무기 3개도 받는다."
+        }
+      ],
+      "figures": [],
+      "showMap": false,
+      "curated": true
     },
     {
       "id": "start-dietrich-route",
@@ -18517,13 +18578,13 @@
         {
           "id": "di-26--0786e0be37",
           "category": "행동",
-          "text": "이오는 보유한 최고 등급과 같은 비기병, 알렉산드라는 비탑승 중급으로 바꾼다. 로시난·부케팔라스의 마구간 보관을 확인한다.",
+          "text": "이오·알렉산드라의 탈것 보관은 먼저 완료한 디트리히 2부에서 끝났다. 원래 전투 병종을 유지한다.",
           "inheritLegacy": true
         },
         {
           "id": "di-26--3067643235",
           "category": "행동",
-          "text": "검사가 없다면 합격률 100%인 비탑승 중급을 사용합니다.",
+          "text": "다시 보관하려고 비탑승 병종으로 바꾸지 않는다.",
           "inheritLegacy": true
         }
       ],
@@ -18616,6 +18677,12 @@
           "id": "di-27--save-hard-casual",
           "category": "저장",
           "text": "방첨탑에 저장하고 하드·캐주얼을 유지한 새1부 자료로 다음 단계에 간다. 난이도 전환·복귀는 하지 않는다.",
+          "inheritLegacy": false
+        },
+        {
+          "id": "di-27--use-items-20261128",
+          "category": "아이템",
+          "text": "이번 1부에서 얻은 능력치 아이템·마법 두루마리는 써도 된다. 디트리히 루트 3부 물품은 먼저 한 2부 완료로 이미 고정되어 있다.",
           "inheritLegacy": false
         },
         {
@@ -25112,13 +25179,13 @@
         {
           "id": "war-di-new--c61f2d01d5",
           "category": "행동",
-          "text": "이오·알렉산드라의 탈것이 보관 상태인지 확인하고 첫 스킵을 합니다.",
+          "text": "탈것 보관은 먼저 한 2부 완료에서 끝났다. 첫 보관 스킵 없이 2부 1장부터 직접 진행한다.",
           "inheritLegacy": true
         },
         {
           "id": "war-di-new--9957d94d2b",
           "category": "행동",
-          "text": "이번 스킵은 새 물품을 다 준비한 뒤 하므로 폐기한 ‘옛 자료 선스킵’과 다릅니다.",
+          "text": "이번 완료는 다시 완료라 인물 자료가 앞 완료 자료 위에 쌓인다(높은 값 유지, 파편 없음). 3부에서 그 동료를 영입하기 전에 끝낸다.",
           "inheritLegacy": true
         }
       ],

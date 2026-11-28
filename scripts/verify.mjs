@@ -27,8 +27,8 @@ for(const id of Object.keys(overrides.actions))assert.ok(playbook.groups.some(g=
 const parity=read('content/display-parity.json');
 const ids=read('content/check-ids.json');
 const hash=p=>createHash('sha256').update(readFileSync(p)).digest('hex');
-assert.equal(playbook.groups.flatMap(g=>g.actions).length,1953);
-assert.equal(new Set(ids).size,2945);
+assert.equal(playbook.groups.flatMap(g=>g.actions).length,1960);
+assert.equal(new Set(ids).size,2953);
 assert.equal(read('content/data/recruit-all-plan.json').assignments.length,63);
 assert.equal(playbook.stages.length,9);
 {const old=read('content/source/react-content.json');assert.deepEqual(new Set(ids),new Set(old.allTaskIds));const actionIds=[...old.stages.flatMap(s=>s.blocks.flatMap(b=>[...b.html.matchAll(/data-task-id="([^"]+)"/g)].map(m=>m[1])))];assert.deepEqual(new Set(actionIds),new Set(playbook.groups.flatMap(g=>g.actions.map(a=>a.id))));}
@@ -159,4 +159,4 @@ for(const st of read('content/derived/checklist.json').stages)for(const ch of st
 // 2026-11-15: 문서의 Markdown 표는 머리줄이 있고, 줄마다 칸 수가 같다(진행 글을 지우다 표가 깨지지 않게).
 {const walkMd=d=>readdirSync(d,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walkMd(d+'/'+e.name):e.name.endsWith('.md')?[d+'/'+e.name]:[]);
  for(const f of [...walkMd('content/notes'),...walkMd('content/routes')]){const L=readFileSync(f,'utf8').split(/\r?\n/);L.forEach((l,i)=>{const t=l.trim();if(/^\|?\s*:?-{3,}/.test(t)&&t.includes('|'))assert.ok((L[i-1]||'').trim().startsWith('|'),f+':'+(i+1)+' 표 머리줄 없음');if(t.startsWith('|')&&(L[i-1]||'').trim().startsWith('|'))assert.equal(l.split('|').length,L[i-1].split('|').length,f+':'+(i+1)+' 표 칸 수');});}}
-console.log(JSON.stringify({status:'passed',host:'Windows / Node.js',activeActions:1953,checkIds:2945,recruitAssignments:63,referenceDocs:318,peopleByStage:manifest.peopleByStage,sourceFiles:manifest.sourceFiles.length,referencedMedia:media.size,sourceCompared:'content/source 사본',checks:'개별 false 우선·상속 거부·형식 검사·JSON 왕복 통과'},null,2));
+console.log(JSON.stringify({status:'passed',host:'Windows / Node.js',activeActions:1960,checkIds:2953,recruitAssignments:63,referenceDocs:318,peopleByStage:manifest.peopleByStage,sourceFiles:manifest.sourceFiles.length,referencedMedia:media.size,sourceCompared:'content/source 사본',checks:'개별 false 우선·상속 거부·형식 검사·JSON 왕복 통과'},null,2));

@@ -94,7 +94,7 @@
     {
       "source": "data/playbook.json",
       "target": "content/data/playbook.json",
-      "sha256": "4376f188cb44157b9da23615fb4874c37f58b23b17f0faf61f46d70bb1b955e7"
+      "sha256": "800c033b910ee112bc8fb8e1a469998fff44cdda18abda8822466cfd66a9e05b"
     },
     {
       "source": "data/purchase-plan.json",
@@ -989,7 +989,7 @@
     {
       "source": "notes/inventory-mount-review.md",
       "target": "content/notes/inventory-mount-review.md",
-      "sha256": "d4508ef98522aa2a279aaf825fd16edb6c774e367d28d5da4efd23dec857c5db"
+      "sha256": "f7aed55dcbacfe6745f0554f2a9a2f05d7e5e30b5eaa06a6dafe9b07c90f6784"
     },
     {
       "source": "notes/knowledge/auto-capture.md",
@@ -1019,7 +1019,7 @@
     {
       "source": "notes/knowledge/preferences.md",
       "target": "content/notes/knowledge/preferences.md",
-      "sha256": "2265ffcad99a93cb4f1817d83fc9380aa283c40843342acb28729532974ed19c"
+      "sha256": "7062be82fb489a627fc0c146d5fecb4e65171e2db21997c4d4b43d4403d0ea5b"
     },
     {
       "source": "notes/knowledge/README.md",
@@ -1804,7 +1804,7 @@
     {
       "source": "personalized-app/src/content.json",
       "target": "content/source/react-content.json",
-      "sha256": "7728d481e4e70cb68d2e386a0bd89588650d51a9b4a68256bfb8e318b6abe641"
+      "sha256": "274a6245d02b6e29af029e1422cbca2464eeeaa8d81f9317acd80b46d9969202"
     },
     {
       "source": "personalized-app/src/timeskip-portraits.json",
@@ -1977,9 +1977,9 @@
       "sha256": "b6601f69a8318359991d5fadc11c27348b0df451ecddba9df142e5f979e508ca"
     }
   ],
-  "generatedSourceSha256": "7728d481e4e70cb68d2e386a0bd89588650d51a9b4a68256bfb8e318b6abe641",
-  "activeActions": 1953,
-  "checkIds": 2945,
+  "generatedSourceSha256": "274a6245d02b6e29af029e1422cbca2464eeeaa8d81f9317acd80b46d9969202",
+  "activeActions": 1960,
+  "checkIds": 2953,
   "peopleByRoute": {
     "theodora": 15,
     "leda": 15,
@@ -2002,7 +2002,7 @@
   "oldBlockCounts": {
     "theodora-plan": 180,
     "leda-plan": 179,
-    "dietrich-plan": 200,
+    "dietrich-plan": 201,
     "cai-plan": 169,
     "theodora-war-plan": 17,
     "leda-war-plan": 24,

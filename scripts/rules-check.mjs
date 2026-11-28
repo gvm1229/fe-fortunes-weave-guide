@@ -216,6 +216,15 @@ for (const f of [...walk('app', ['.ts', '.tsx', '.css']), ...walk('components', 
 { const s = readFileSync('components/secondary.tsx', 'utf8'), body = s.slice(s.indexOf('export function Preparation'), s.indexOf('export function Materials'));
   assert.ok(body.length > 100 && !/<Records|<Semantic|<table/.test(body), '[U69] 준비 탭에 표·문서 나무'); assert.ok(existsSync('docs/reference/prep-common.md'), '[U69] 뺀 글 docs/reference/prep-common.md'); }
 
+// [U74] 디트리히 1부를 1장부터 다시 하기 전에 진행 중인 디트리히 2부를 먼저 완료한다. 새 디트리히 2부는 다시 완료(첫 보관 스킵 없음).
+{ const pb = read('content/data/playbook.json'), ov = read('content/display-overrides.json'), text = id => ov.actions[id] || pb.groups.flatMap(g => g.actions).find(a => a.id === id)?.text || '';
+  const gi = id => pb.groups.findIndex(g => g.id === id);
+  assert.ok(gi('old-dietrich-war-clear-20261128') >= 0 && gi('old-dietrich-war-clear-20261128') < gi('start-dietrich-route'), '[U74] 먼저 하는 디트리히 2부 묶음이 1장 새로 시작 앞');
+  assert.ok(text('old-dietrich-war-clear-20261128--why').includes('직접 완료'), '[U74] 먼저 한 2부 완료 글');
+  assert.ok(text('leda-post-clear-boons-20261110--start-dietrich-part1').includes('진행 중인 디트리히 2부 저장이 있으면'), '[U74] 레다 뒤 이동 글');
+  for (const id of ['war-di-new--c61f2d01d5', 'war-di-new--9957d94d2b', 'war-dietrich-restart--mounts', 'sequential-dietrich-war06-preserve-20261108--1', 'di-26--0786e0be37']) assert.ok(!/첫 (보관 )?스킵을 합니다|비탑승 중급으로 바꾼다|첫 보관 스킵 뒤/.test(text(id)), '[U74] 옛 첫 보관 절차 글 ' + id);
+  assert.ok(readFileSync('content/notes/dietrich-old-war-clear.md', 'utf8').includes('먼저 하는 디트리히 2부 완료'), '[U74] 근거 문서'); }
+
 // [U71] 루트 머리 왼쪽 '첫 화면' 옆에 팀 화면(/team/) 단추(2026-11-27).
 { const sh = readFileSync('components/shell.tsx', 'utf8'); assert.ok(sh.includes('href="/team/"') && sh.includes('guide-team'), '[U71] 루트 머리 팀 화면 단추'); }
 
