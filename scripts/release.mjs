@@ -10,7 +10,7 @@ import { cpSync, existsSync, readFileSync, readdirSync, rmSync, statSync, writeF
 import { join, resolve } from 'node:path';
 import { spawn, spawnSync } from 'node:child_process';
 const SITE = 'ca844312-b942-4708-a9a2-7bcf0c812fe5', PREVIEW = '.tmp/complete-preview', OUT = join(PREVIEW, 'out'), PORT = 18764, GATE = '.tmp/release-gate.json';
-const HASHED = ['app', 'components', 'lib', 'content', 'scripts', 'public', 'assets', 'package.json', 'next.config.ts', 'tsconfig.json', 'postcss.config.mjs', 'components.json', 'docs/user-rules.md', 'AGENTS.md'];
+const HASHED = ['app', 'components', 'lib', 'content', 'scripts', 'public', 'assets', 'package.json', 'next.config.ts', 'tsconfig.json', 'postcss.config.mjs', 'components.json', 'docs/user-rules.md', 'AGENTS.md', 'netlify', 'netlify.toml'];
 const IGNORED = new Set(['public/assets', 'public/reference-data', 'public/reference-files']);
 const CONFIG = ['package.json', 'next.config.ts', 'tsconfig.json', 'postcss.config.mjs', 'components.json'];
 process.env.TEMP = process.env.TMP = resolve('.tmp');
@@ -65,7 +65,7 @@ function deploy() {
   const review = readdirSync('docs').filter(f => /^fable-review.*\.md$/.test(f)).map(f => join('docs', f)).find(f => { const t = readFileSync(f, 'utf8'); return t.includes('검토 대상 해시: ' + hash) && /남은 지적\(낮음 포함\): 0(?!\d)/.test(t); });
   if (!review) throw new Error(`Fable 5.2 검토 기록이 없다. docs/fable-review-*.md에 '검토 대상 해시: ${hash}'와 '남은 지적(낮음 포함): 0'이 있어야 한다.`);
   console.log('Fable 검토: ' + review);
-  run('npx', ['netlify-cli', 'deploy', '--prod', '--dir', OUT, '--site', SITE, '--no-build']);
+  run('npx', ['netlify-cli', 'deploy', '--prod', '--dir', OUT, '--functions', 'netlify/functions', '--site', SITE, '--no-build']);
   try { run('git', ['push', 'origin', 'main']); } catch (e) { console.error('배포는 끝났지만 git push가 실패했다. 원인을 고치고 git push origin main을 다시 한다.'); throw e; }
   console.log('\n배포·푸시 완료 · 원본 해시 ' + hash);
 }

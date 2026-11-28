@@ -3,3 +3,8 @@ command = "npm run build"
 publish = "out"
 [build.environment]
 NODE_VERSION = "22"
+
+# 진행 기록 API(2026-11-28): netlify/functions/api.ts가 /api/progress·/api/session·/api/login·/api/logout을 맡는다.
+[functions]
+directory = "netlify/functions"
+node_bundler = "esbuild"
