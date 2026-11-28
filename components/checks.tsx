@@ -149,7 +149,7 @@ function enqueue(job: Job) { jobs.push(job); settle('저장하는 중입니다.'
 function commit(make: (d: CheckState) => CheckState, done?: Done, prompt = true): void {
   if (loading) { void loading.then(() => commit(make, done, prompt)); return; }
   if (!snapshot.ready) { done?.(false, '기록을 아직 불러오지 못했습니다.'); return; }
-  if (snapshot.local) { const ok = localSave({ ...make(snapshot.data), revision: snapshot.data.revision + 1, updatedAt: new Date().toISOString() }); done?.(ok, ok ? undefined : '이 브라우저에 저장하지 못했습니다. 저장 공간이나 사생활 보호 모드를 확인하세요.'); return; }
+  if (snapshot.local) { const made = make(snapshot.data); /* 가져온 파일의 revision이 더 크면 그것을 이어 간다(예전 그대로) */ const ok = localSave({ ...made, revision: Math.max(made.revision, snapshot.data.revision) + 1, updatedAt: new Date().toISOString() }); done?.(ok, ok ? undefined : '이 브라우저에 저장하지 못했습니다. 저장 공간이나 사생활 보호 모드를 확인하세요.'); return; }
   if (!snapshot.online) { done?.(false, '기록 서버에 연결하지 못해 고칠 수 없습니다.'); set({ error: true, status: '기록 서버에 연결하지 못해 고칠 수 없습니다. 다시 읽기를 눌러 보세요.' }); return; }
   if (!snapshot.loggedIn) {
     if (!prompt) { done?.(false, '로그인이 필요합니다.'); return; }
