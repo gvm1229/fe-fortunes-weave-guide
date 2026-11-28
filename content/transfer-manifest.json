@@ -94,7 +94,7 @@
     {
       "source": "data/playbook.json",
       "target": "content/data/playbook.json",
-      "sha256": "e3ebea6379921b8c1cb5720931fcd0c5effe5b121d1422d1dde0277a2dd87292"
+      "sha256": "2e0c73d80d19ee64b97e9b7ffdee3cebfdd488a768c445f3ec54b0defced0841"
     },
     {
       "source": "data/purchase-plan.json",
@@ -234,7 +234,7 @@
     {
       "source": "notes/army-readiness-review.md",
       "target": "content/notes/army-readiness-review.md",
-      "sha256": "31cb0a9df536c69bc411c4316fc65f53e70607add566a0905551b5a919218e5f"
+      "sha256": "1a3c2aa3d08a26e536f46d4844aac37af7295c07ff09b3c53a14e4bf4fc50b13"
     },
     {
       "source": "notes/aurora-price-review.md",
@@ -284,7 +284,7 @@
     {
       "source": "notes/carry-hard-review.md",
       "target": "content/notes/carry-hard-review.md",
-      "sha256": "7a88efa77ad1d72fd6f6575d03c6730a30a2c2202f6ae35ba89993e16deafed5"
+      "sha256": "099599d3fa389b7b35d73b816a4acc7ffedee99d292858391974b886509f572a"
     },
     {
       "source": "notes/chapter-gold-review.md",
@@ -294,7 +294,7 @@
     {
       "source": "notes/chapter-route-plan.md",
       "target": "content/notes/chapter-route-plan.md",
-      "sha256": "92f822e15b43614dfb44a6a767b38c30649af69c2720733b25e3af2578561afc"
+      "sha256": "1ad28189eae1cc0f26cb17f17676034d0c80d996cd9d799a16c92fb2462dc0ec"
     },
     {
       "source": "notes/checklist-full-review.md",
@@ -924,7 +924,7 @@
     {
       "source": "notes/final25-team-guide.md",
       "target": "content/notes/final25-team-guide.md",
-      "sha256": "ba053fbc12144de58770a2cba85fe287e1b65de862a8045ff3b9da871e954093"
+      "sha256": "67341d03b862bb6d3e8a4423b66b9b59f7a22167f7934a76d071e3d0119fff98"
     },
     {
       "source": "notes/game8-final25-review-plan.md",
@@ -989,7 +989,7 @@
     {
       "source": "notes/inventory-mount-review.md",
       "target": "content/notes/inventory-mount-review.md",
-      "sha256": "f7aed55dcbacfe6745f0554f2a9a2f05d7e5e30b5eaa06a6dafe9b07c90f6784"
+      "sha256": "14790f0a33ce668dc59495a9c6032eba8ff5a86cef4a1db55291ce14cec5e88a"
     },
     {
       "source": "notes/knowledge/auto-capture.md",
@@ -1179,7 +1179,7 @@
     {
       "source": "notes/plan.md",
       "target": "content/notes/plan.md",
-      "sha256": "63ae8c118ec3103672b341168d0caaaeaa05f47d2eb3c30f1b67c440593051a3"
+      "sha256": "3eb7125710779a860a2ba496543983658688db2e30878e340b129d577767ed67"
     },
     {
       "source": "notes/playbook-review.md",
@@ -1224,7 +1224,7 @@
     {
       "source": "notes/react-canonical-review.md",
       "target": "content/notes/react-canonical-review.md",
-      "sha256": "86a887cc90d9e81e6574493d1f8603ce34005d789219d03e2f950d345d454fae"
+      "sha256": "dded5b4ad3c1de6432f6b4b3254ebb7a20a0cd2f55dd6577dce3565d9c26e089"
     },
     {
       "source": "notes/react-personalized-plan.md",
@@ -1384,12 +1384,12 @@
     {
       "source": "notes/sequential-routes-apply-review.md",
       "target": "content/notes/sequential-routes-apply-review.md",
-      "sha256": "9467ef5a415ac8d86bfaeb8afd2225e1263169b9cc953a9d1f85b3f74293c378"
+      "sha256": "3521fbe3b1ef2a1154789f76796c1ecbcc6bfa7936e0be1450f95174a2c3f7ac"
     },
     {
       "source": "notes/sequential-routes-training-review.md",
       "target": "content/notes/sequential-routes-training-review.md",
-      "sha256": "06a1bd3930771803866b21ad7e6bb8c0c538000abaa0cd7c22430bfaaab84530"
+      "sha256": "3685dc14b1a67ce54839f3d07f8907483bc937b9fc9acdaa57e1a706d212dd6e"
     },
     {
       "source": "notes/shadow-calamity-plan.md",
@@ -1519,7 +1519,7 @@
     {
       "source": "notes/theodora-first-war-preservation.md",
       "target": "content/notes/theodora-first-war-preservation.md",
-      "sha256": "50549137bc052235773cc72b01965cd0336df1311db93ae6dfde11bf608a9f2e"
+      "sha256": "d8fa1341ed03b5c66fb346f839f5765903c68c26727b930d9f6c107fb98b8cbe"
     },
     {
       "source": "notes/theodora-inn-versus-field-exp-review.md",
@@ -1804,7 +1804,7 @@
     {
       "source": "personalized-app/src/content.json",
       "target": "content/source/react-content.json",
-      "sha256": "834775f025259b53a18e849302668bd3cdc1c813194612b2261fed3aff06a6e6"
+      "sha256": "298311ee9253944a4c4d64820820d2ac17b7e802e771b746f77611c31140823c"
     },
     {
       "source": "personalized-app/src/timeskip-portraits.json",
@@ -1977,9 +1977,9 @@
       "sha256": "b6601f69a8318359991d5fadc11c27348b0df451ecddba9df142e5f979e508ca"
     }
   ],
-  "generatedSourceSha256": "834775f025259b53a18e849302668bd3cdc1c813194612b2261fed3aff06a6e6",
-  "activeActions": 1960,
-  "checkIds": 2953,
+  "generatedSourceSha256": "298311ee9253944a4c4d64820820d2ac17b7e802e771b746f77611c31140823c",
+  "activeActions": 1961,
+  "checkIds": 2954,
   "peopleByRoute": {
     "theodora": 15,
     "leda": 15,

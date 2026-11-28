@@ -222,7 +222,23 @@ for (const f of [...walk('app', ['.ts', '.tsx', '.css']), ...walk('components', 
   assert.ok(gi('old-dietrich-war-clear-20261128') >= 0 && gi('old-dietrich-war-clear-20261128') < gi('start-dietrich-route'), '[U74] 먼저 하는 디트리히 2부 묶음이 1장 새로 시작 앞');
   assert.ok(text('old-dietrich-war-clear-20261128--why').includes('직접 완료'), '[U74] 먼저 한 2부 완료 글');
   assert.ok(text('leda-post-clear-boons-20261110--start-dietrich-part1').includes('진행 중인 디트리히 2부 저장을 먼저 완료'), '[U74] 레다 뒤 이동 글');
-  for (const id of ['war-di-new--c61f2d01d5', 'war-di-new--9957d94d2b', 'war-dietrich-restart--mounts', 'sequential-dietrich-war06-preserve-20261108--1', 'di-26--0786e0be37']) assert.ok(!/첫 (보관 )?스킵을 합니다|비탑승 중급으로 바꾼다|첫 보관 스킵 뒤/.test(text(id)), '[U74] 옛 첫 보관 절차 글 ' + id);
+  const G = 'old-dietrich-war-clear-20261128', gIdx = gi(G);
+  assert.equal(pb.groups[gIdx - 1]?.id, 'entry-dietrich-boons', '[U74] 묶음이 entry-dietrich-boons 바로 뒤');
+  assert.equal(pb.groups[gIdx].stage, 'dietrich-plan', '[U74] 묶음 단계');
+  for (const s of ['--mounts', '--timing', '--items', '--ch12']) assert.ok(text(G + s), '[U74] 행동 ' + s);
+  assert.ok(text(G + '--mounts').includes('마구간에 있는지 확인'), '[U74] 탈것 보관은 확인으로');
+  assert.ok(text(G + '--ch12').includes('1장부터 다시 시작하기 전에만'), '[U74] 12장 아이템 기한');
+  assert.ok(text('war-di-new--9957d94d2b').includes('다시 완료'), '[U74] 새 2부는 다시 완료');
+  assert.ok((ov.groups['war-di-new'] || '').includes('다시 완료'), '[U74] 새 2부 제목');
+  assert.ok(text('di-27--use-items-20261128'), '[U74] 새 1부 아이템 사용 줄');
+  assert.ok(!pb.groups[gIdx].notes.some(n => /\(U\d+\)/.test(n.text)), '[U74] 화면 메모에 규칙 번호 없음');
+  // 디트리히 루트의 옛 첫 보관 절차 말이 남지 않는다(id가 바뀌어 빈 글이면 실패).
+  const oldWords = /첫 (보관 )?스킵을 합니다|비탑승 중급으로 바꾼다|첫 보관 스킵 뒤|비탑승 보관|보관용 비탑승|계속하지 않고|상급 시험.{0,6}보류|첫 반입/;
+  for (const id of ['war-di-new--c61f2d01d5', 'war-di-new--9957d94d2b', 'war-dietrich-restart--mounts', 'sequential-dietrich-war06-preserve-20261108--1', 'di-26--0786e0be37', 'mount-prep-dietrich--io-class', 'mount-prep-dietrich--alex-class', 'finish-dietrich-part1--battle', 'di-27--394e7fead1', 'war-di-play--b6f5c789f0', 'di-08--f0187602fe', 'recruit-dietrich-alexandra--hold-advanced']) {
+    assert.ok(text(id), '[U74] 글 없음 ' + id); assert.ok(!oldWords.test(text(id)), '[U74] 옛 첫 보관 절차 글 ' + id); }
+  for (const g of pb.groups.filter(g => g.stage === 'dietrich-plan' || g.stage === 'dietrich-war-plan')) {
+    assert.ok(!/첫 반입|첫 보관 뒤/.test(ov.groups[g.id] || g.title), '[U74] 옛 첫 보관 제목 ' + g.id);
+    for (const n of ov.notes[g.id] || g.notes) assert.ok(!/먼저 스킵하지 않는다|보관판/.test(n.text), '[U74] 옛 첫 보관 메모 ' + g.id); }
   assert.ok(readFileSync('content/notes/dietrich-old-war-clear.md', 'utf8').includes('먼저 하는 디트리히 2부 완료'), '[U74] 근거 문서'); }
 
 // [U71] 루트 머리 왼쪽 '첫 화면' 옆에 팀 화면(/team/) 단추(2026-11-27).

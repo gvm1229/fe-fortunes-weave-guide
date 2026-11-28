@@ -1,3 +1,4 @@
+// 주의: 실행 뒤 글을 손으로 고침(진행 중인 2부 표현, 근거 단추 삭제, Fable 검토 23 반영). 다시 실행 금지.
 // 2026-11-28 사용자 규칙 U74(한 번만 실행): 디트리히 1부를 1장부터 다시 하기 전에 지금 저장의 옛 디트리히 2부를 먼저 완료해
 // 운 좋은 능력치를 완료 자료로 남긴다. 새 디트리히 2부는 '다시 완료'라 자료가 쌓인다. 근거 문서: content/notes/dietrich-old-war-clear.md
 // 실행 뒤: node scripts/regen-parity-20261115.mjs → npm run derive:checklist → node scripts/refresh-manifest.mjs → npm run verify
