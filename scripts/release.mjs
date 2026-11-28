@@ -54,7 +54,17 @@ async function check() {
   console.log(`\n통과: 배포 관문 검사 ${DATA.length + BROWSER.length}개 · 원본 해시 ${hash}`);
 }
 
-function deploy() {
+// 진행 기록 API(U75)가 그 주소에서 실제로 도는지 본다: 보기 200 JSON(revision 숫자), 머리 없는 로그인 403(Fable 검토 지적 2·5).
+async function probeApi(base) {
+  const p = await fetch(base + '/api/progress'); let body = {}; try { body = await p.json(); } catch { /* HTML이면 아래에서 실패 */ }
+  if (p.status !== 200 || typeof body.revision !== 'number') throw new Error(`${base}/api/progress가 기록을 주지 않는다(응답 ${p.status}). 함수 배포·환경 변수·Atlas 접근을 확인한다.`);
+  const l = await fetch(base + '/api/login', { method: 'POST', headers: { 'content-type': 'application/json' }, body: '{}' });
+  if (l.status !== 403) throw new Error(`${base}/api/login이 머리 없는 요청을 막지 않는다(응답 ${l.status}).`);
+  console.log(`API 확인: ${base} · revision ${body.revision}`);
+}
+const CLI = 'netlify-cli@27.20.1', LIVE = 'https://fe-fortunes-weave-guide-megi.netlify.app';
+
+async function deploy() {
   const dirty = spawnSync('git', ['status', '--porcelain'], { encoding: 'utf8' }).stdout.split('\n').filter(l => l.trim() && !/^\?\? \.(claude|omc)\//.test(l));
   if (dirty.length) throw new Error('커밋 안 된 변경이 있다:\n' + dirty.join('\n'));
   const hash = sourceHash();
@@ -65,10 +75,18 @@ function deploy() {
   const review = readdirSync('docs').filter(f => /^fable-review.*\.md$/.test(f)).map(f => join('docs', f)).find(f => { const t = readFileSync(f, 'utf8'); return t.includes('검토 대상 해시: ' + hash) && /남은 지적\(낮음 포함\): 0(?!\d)/.test(t); });
   if (!review) throw new Error(`Fable 5.2 검토 기록이 없다. docs/fable-review-*.md에 '검토 대상 해시: ${hash}'와 '남은 지적(낮음 포함): 0'이 있어야 한다.`);
   console.log('Fable 검토: ' + review);
-  run('npx', ['netlify-cli', 'deploy', '--prod', '--dir', OUT, '--functions', 'netlify/functions', '--site', SITE, '--no-build']);
+  // 먼저 미리보기(초안) 배포로 함수가 묶이고 연결되는지 본 뒤 본 배포를 한다.
+  const args = ['-y', CLI, 'deploy', '--dir', OUT, '--functions', 'netlify/functions', '--site', SITE, '--no-build'];
+  console.log('\n== 초안 배포');
+  const draft = spawnSync('npx', [...args, '--json'], { encoding: 'utf8', shell: process.platform === 'win32' });
+  if (draft.status !== 0) throw new Error('초안 배포 실패:\n' +(draft.stderr || '').slice(-2000));
+  const draftUrl = JSON.parse(draft.stdout.slice(draft.stdout.indexOf('{'))).deploy_url;
+  await probeApi(draftUrl);
+  run('npx', [...args, '--prod']);
+  await probeApi(LIVE);
   try { run('git', ['push', 'origin', 'main']); } catch (e) { console.error('배포는 끝났지만 git push가 실패했다. 원인을 고치고 git push origin main을 다시 한다.'); throw e; }
   console.log('\n배포·푸시 완료 · 원본 해시 ' + hash);
 }
 
 const cmd = process.argv[2];
-if (cmd === 'check') await check(); else if (cmd === 'deploy') deploy(); else if (cmd === 'hash') console.log(sourceHash()); else { console.error('사용: node scripts/release.mjs check|deploy|hash'); process.exit(2); }
+if (cmd === 'check') await check(); else if (cmd === 'deploy') await deploy(); else if (cmd === 'hash') console.log(sourceHash()); else { console.error('사용: node scripts/release.mjs check|deploy|hash'); process.exit(2); }

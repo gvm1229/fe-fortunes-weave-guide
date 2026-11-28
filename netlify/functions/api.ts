@@ -13,15 +13,18 @@ const limits: StatusLimits = {
   boons: Object.fromEntries(catalog.boons.map(b => [b.id, b.tiers.length])),
   gods: Object.fromEntries(catalog.gods.map(g => [g.name, g.max])),
 };
-const MAX_BODY = 512 * 1024;
-const FAIL_WINDOW_MS = 15 * 60 * 1000, FAIL_LIMIT = 10;
+const MAX_BODY = 512 * 1024, MAX_LOGIN_BODY = 4 * 1024;
+// 로그인 실패 제한(Fable 검토 지적 4): 시도를 먼저 기록한 뒤 세어 동시 요청으로 뚫리지 않게 한다. IP별 10번, 전체 100번(다른 사람이 주인을 막기 어렵게).
+const FAIL_WINDOW_MS = 15 * 60 * 1000, FAIL_LIMIT_IP = 10, FAIL_LIMIT_ALL = 100;
 
 const json = (status: number, body: unknown, headers: Record<string, string> = {}) =>
   new Response(JSON.stringify(body), { status, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store', ...headers } });
 
-async function readBody(req: Request): Promise<unknown> {
+async function readBody(req: Request, max = MAX_BODY): Promise<unknown> {
+  const tooBig = () => Object.assign(new Error('요청이 너무 큽니다.'), { status: 413 });
+  if (Number(req.headers.get('content-length') || 0) > max) throw tooBig();
   const text = await req.text();
-  if (text.length > MAX_BODY) throw Object.assign(new Error('기록이 너무 큽니다.'), { status: 413 });
+  if (Buffer.byteLength(text) > max) throw tooBig();
   try { return JSON.parse(text); } catch { throw Object.assign(new Error('JSON이 아닙니다.'), { status: 400 }); }
 }
 
@@ -51,24 +54,29 @@ async function putProgress(req: Request) {
 }
 
 async function login(req: Request, secure: boolean) {
-  const fails = (await db()).collection<{ at: Date }>('login_failures');
-  await fails.createIndex({ at: 1 }, { expireAfterSeconds: FAIL_WINDOW_MS / 1000 });
-  if (await fails.countDocuments({ at: { $gt: new Date(Date.now() - FAIL_WINDOW_MS) } }) >= FAIL_LIMIT)
-    return json(429, { error: '로그인 실패가 많아 15분 동안 막았습니다. 잠시 뒤 다시 시도하세요.' });
-  const body = await readBody(req) as { username?: unknown; password?: unknown };
+  const body = await readBody(req, MAX_LOGIN_BODY) as { username?: unknown; password?: unknown };
+  const attempts = (await db()).collection<{ at: Date; ip: string }>('login_attempts');
+  await attempts.createIndex({ at: 1 }, { expireAfterSeconds: FAIL_WINDOW_MS / 1000 });
+  const ip = req.headers.get('x-nf-client-connection-ip') || req.headers.get('x-forwarded-for')?.split(',')[0].trim() || 'unknown';
+  const mine = await attempts.insertOne({ at: new Date(), ip });
+  const since = { $gt: new Date(Date.now() - FAIL_WINDOW_MS) };
+  const [byIp, all] = await Promise.all([attempts.countDocuments({ ip, at: since }), attempts.countDocuments({ at: since })]);
+  if (byIp > FAIL_LIMIT_IP || all > FAIL_LIMIT_ALL) return json(429, { error: '로그인 실패가 많아 잠시 막았습니다. 15분 뒤 다시 시도하세요.' });
   const ok = typeof body?.username === 'string' && typeof body?.password === 'string' && verifyLogin(body.username, body.password);
-  if (!ok) { await fails.insertOne({ at: new Date() }); return json(401, { error: '아이디 또는 비밀번호가 틀렸습니다.' }); }
+  if (!ok) return json(401, { error: '아이디 또는 비밀번호가 틀렸습니다.' });
+  await attempts.deleteOne({ _id: mine.insertedId });
   return json(200, { loggedIn: true }, { 'set-cookie': sessionCookie(makeSession(), secure) });
 }
 
 export default async function handler(req: Request): Promise<Response> {
   const url = new URL(req.url), path = url.pathname.replace(/\/+$/, ''), secure = url.protocol === 'https:';
-  const loggedIn = readSession(req.headers.get('cookie'));
   try {
+    // 세션 확인도 try 안에서 한다: 환경 변수가 빠져도 보기(GET /api/progress)는 계속 된다(Fable 검토 지적 6).
+    const session = () => readSession(req.headers.get('cookie'));
     if (req.method !== 'GET' && req.headers.get('x-fefw') !== '1') return json(403, { error: '허용되지 않은 요청입니다.' });
     if (path === '/api/progress' && req.method === 'GET') return await getProgress();
-    if (path === '/api/progress' && req.method === 'PUT') return loggedIn ? await putProgress(req) : json(401, { error: '로그인이 필요합니다.' });
-    if (path === '/api/session' && req.method === 'GET') return json(200, { loggedIn });
+    if (path === '/api/progress' && req.method === 'PUT') return session() ? await putProgress(req) : json(401, { error: '로그인이 필요합니다.' });
+    if (path === '/api/session' && req.method === 'GET') return json(200, { loggedIn: session() });
     if (path === '/api/login' && req.method === 'POST') return await login(req, secure);
     if (path === '/api/logout' && req.method === 'POST') return json(200, { loggedIn: false }, { 'set-cookie': sessionCookie('', secure) });
     return json(404, { error: '없는 주소입니다.' });

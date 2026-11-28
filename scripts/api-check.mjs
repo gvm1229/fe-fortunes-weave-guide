@@ -7,9 +7,10 @@ import { pathToFileURL } from 'node:url';
 import { resolve } from 'node:path';
 import { MongoClient } from 'mongodb';
 for (const l of readFileSync('.env', 'utf8').split(/\r?\n/)) { const i = l.indexOf('='); if (i > 0 && !process.env[l.slice(0, i)]) process.env[l.slice(0, i)] = l.slice(i + 1); }
-process.env.DB_NAME ||= 'fefw_check';
-assert.notEqual(process.env.DB_NAME, 'fefw', '실제 데이터베이스로 시험하지 않는다');
-const password = process.env.CHECK_PASSWORD; assert.ok(password, 'CHECK_PASSWORD 환경 변수가 필요합니다');
+// 시험은 언제나 전용 데이터베이스에서 하고 끝나면 지운다. .env의 DB_NAME(개발용)은 쓰지 않는다.
+process.env.DB_NAME = process.env.CHECK_DB_NAME || 'fefw_check';
+assert.ok(/^fefw_check/.test(process.env.DB_NAME), '시험은 fefw_check… 데이터베이스에서만 한다(지우기 때문)');
+const password = process.env.CHECK_PASSWORD, user = process.env.AUTH_USER; assert.ok(password, 'CHECK_PASSWORD 환경 변수가 필요합니다');
 mkdirSync('.tmp', { recursive: true });
 const out = resolve('.tmp/api-check.mjs');
 const b = spawnSync('npx', ['-y', 'esbuild@0.24.2', 'netlify/functions/api.ts', '--bundle', '--platform=node', '--format=esm', '--external:mongodb', `--outfile=${out}`], { stdio: 'inherit', shell: true });
@@ -28,10 +29,10 @@ try {
   let r = await call('GET', '/api/progress'); assert.equal(r.status, 200); assert.equal(r.body.revision, 0); assert.equal(r.body.data, null);
   r = await call('GET', '/api/session'); assert.equal(r.body.loggedIn, false);
   r = await call('PUT', '/api/progress', { body: { baseRevision: 0, data: state(1) } }); assert.equal(r.status, 401, '로그인 없이 저장 막기');
-  r = await call('POST', '/api/login', { body: { username: 'gvm1229', password: 'wrong' } }); assert.equal(r.status, 401, '틀린 비밀번호');
+  r = await call('POST', '/api/login', { body: { username: user, password: 'wrong' } }); assert.equal(r.status, 401, '틀린 비밀번호');
   r = await call('POST', '/api/login', { body: { username: 'someone', password } }); assert.equal(r.status, 401, '틀린 아이디');
-  r = await call('POST', '/api/login', { body: { username: 'gvm1229', password }, header: false }); assert.equal(r.status, 403, '머리 없는 요청 막기');
-  r = await call('POST', '/api/login', { body: { username: 'gvm1229', password } }); assert.equal(r.status, 200, '로그인');
+  r = await call('POST', '/api/login', { body: { username: user, password }, header: false }); assert.equal(r.status, 403, '머리 없는 요청 막기');
+  r = await call('POST', '/api/login', { body: { username: user, password } }); assert.equal(r.status, 200, '로그인');
   assert.match(r.cookie, /HttpOnly/); assert.match(r.cookie, /Secure/); assert.match(r.cookie, /SameSite=Strict/);
   const cookie = r.cookie.split(';')[0];
   r = await call('GET', '/api/session', { cookie }); assert.equal(r.body.loggedIn, true);
@@ -42,7 +43,7 @@ try {
   r = await call('PUT', '/api/progress', { cookie, body: { baseRevision: 1, data: state(2) } }); assert.equal(r.status, 200); assert.equal(r.body.revision, 2);
   r = await call('GET', '/api/progress'); assert.equal(r.body.revision, 2); assert.equal(r.body.data.checks.a, true, '로그인 없이 보기');
   r = await call('POST', '/api/logout', { cookie }); assert.match(r.cookie, /Max-Age=0/);
-  for (let i = 0; i < 8; i++) await call('POST', '/api/login', { body: { username: 'gvm1229', password: 'x' } });
-  r = await call('POST', '/api/login', { body: { username: 'gvm1229', password } }); assert.equal(r.status, 429, '실패 10번 뒤 막기');
+  for (let i = 0; i < 8; i++) await call('POST', '/api/login', { body: { username: user, password: 'x' } });
+  r = await call('POST', '/api/login', { body: { username: user, password } }); assert.equal(r.status, 429, '실패 10번 뒤 막기');
   console.log('통과: 진행 기록 API 시험 15개');
 } finally { await test.dropDatabase(); await client.close(); process.exit(); }

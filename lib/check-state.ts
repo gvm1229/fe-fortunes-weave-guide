@@ -1,4 +1,4 @@
-/** 내 상태(2026-11-15 사용자 요청): 축복 단계·가호 레벨·파편·골드. 사이트에는 넣지 않고 브라우저 저장소와 JSON 백업에만 있다. */
+/** 내 상태(2026-11-15 사용자 요청): 축복 단계·가호 레벨·파편·골드. 사이트 자료에는 넣지 않고 진행 기록 서버(2026-11-28 U75)와 JSON 백업에 있다. */
 export type Status = { boons: Record<string, number>; gods: Record<string, number>; shards?: number; gold?: number };
 export type CheckState = { schemaVersion: 1; revision: number; updatedAt?: string; checks: Record<string, boolean>; status?: Status; builds?: Builds };
 /**

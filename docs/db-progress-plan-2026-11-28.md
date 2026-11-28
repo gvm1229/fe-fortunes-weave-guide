@@ -22,9 +22,9 @@
   - 브라우저 저장소는 마지막으로 받은 기록의 사본(서버가 안 될 때 보기용)으로만 쓴다.
   - JSON 가져오기·내보내기는 남긴다. 가져오기도 로그인이 필요하다.
 - **배포:**
-  - `netlify.toml`에 functions 폴더와 `/api/*` 연결을 넣는다.
+  - `netlify.toml`에 functions 폴더를 넣고, 주소 연결은 함수의 `config.path`로 한다.
   - `release.mjs deploy`에 `--functions`를 더한다.
-- **비밀 보호:** `.gitignore`에 `.env*`를 넣고, 로컬 시험용 `.env.local`은 커밋하지 않는다.
+- **비밀 보호:** `.gitignore`에 `.env`·`.env.*`를 넣고, 로컬 시험용 `.env`는 커밋하지 않는다.
 
 ## 열린 결정(사용자에게 묻기)
 

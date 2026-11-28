@@ -218,8 +218,8 @@ for (const f of [...walk('app', ['.ts', '.tsx', '.css']), ...walk('components', 
 
 // [U75] 진행 기록 고치기는 로그인한 사람만(netlify/functions/api.ts). 비밀 값은 저장소에 없다(.env는 git 무시, 추적 파일에 DB 주소·비밀번호 해시 없음). API 동작은 scripts/api-check.mjs가 시험한다.
 { const api = readFileSync('netlify/functions/api.ts', 'utf8'), ck = readFileSync('components/checks.tsx', 'utf8');
-  assert.ok(api.includes("if (path === '/api/progress' && req.method === 'PUT') return loggedIn ?"), '[U75] 저장은 로그인 확인 뒤');
-  assert.ok(ck.includes('if (!snapshot.loggedIn) { requestLogin('), '[U75] 로그인 전 고치기는 로그인 창');
+  assert.ok(api.includes("if (path === '/api/progress' && req.method === 'PUT') return session() ?"), '[U75] 저장은 로그인 확인 뒤');
+  assert.ok(ck.includes('requestLogin(() => commit(make, done, prompt)') && ck.includes('&& localHost()'), '[U75] 로그인 전 고치기는 로그인 창');
   assert.ok(/^\.env$/m.test(readFileSync('.gitignore', 'utf8')), '[U75] .env는 git 무시');
   const { execFileSync } = await import('node:child_process');
   const tracked = execFileSync('git', ['ls-files', '-z'], { encoding: 'utf8' }).split('\0').filter(f => f && existsSync(f) && !/\.(webp|png|jpg|jpeg|gif|ico|otf|woff2?|ttf|pdf|bundle)$/i.test(f));

@@ -68,7 +68,9 @@
 - **진행 기록 데이터베이스(2026-11-28, U75):**
   - 체크·내 상태·인물 육성 기록은 MongoDB Atlas(데이터베이스 `fefw`, 문서 `progress/main`)에 있다. 누구나 보고, 고치기는 로그인(아이디 gvm1229) 뒤에만.
   - API: `netlify/functions/api.ts`(`/api/progress`·`/api/session`·`/api/login`·`/api/logout`). 비밀 값은 Netlify 환경 변수 `MONGODB_URI`·`AUTH_USER`·`AUTH_PASS_HASH`·`SESSION_SECRET`에만 있다. 비밀번호를 바꾸려면 `scripts/hash-password.mjs`로 해시를 만들어 `AUTH_PASS_HASH`를 바꾼다.
-  - 시험: `scripts/api-check.mjs`(시험용 DB `fefw_check`). 개발 서버·검사용 정적 서버에는 API가 없어 예전처럼 브라우저 저장소에만 쓴다.
+  - 시험: `scripts/api-check.mjs`(시험용 DB `fefw_check`, 비밀 값이 필요해 배포 관문 밖에서 손으로 돌린다: `CHECK_PASSWORD` 환경 변수). 배포(`release.mjs deploy`)는 초안 배포에서 API를 확인한 뒤 본 배포하고 실제 주소도 확인한다.
+  - 모든 기기 로그아웃(쿠키를 잃어버렸을 때): `SESSION_SECRET`을 새 무작위 값으로 바꾼다. 로그인 실패 제한은 IP별 15분 10번·전체 100번이다. 비밀번호가 길고 무작위면 추측 위험이 낮다.
+  - Atlas Network Access는 Netlify 함수 IP가 바뀌므로 0.0.0.0/0 허용이 필요하다(접속은 사용자 이름·비밀번호로 막힌다). 개발 서버·검사용 정적 서버에는 API가 없어 예전처럼 브라우저 저장소에만 쓴다.
 - **기록:**
   - 사용자의 새 선호·결정은 같은 응답 안에서 `notes/knowledge/`(이전 프로젝트)에 날짜와 출처를 붙여 기록한다.
   - 진행 수치는 git 무시 폴더 `progress/docs/progress.md`·`progress/docs/routes/*/progress.md`에 기록한다(2026-11-15부터 사이트에 넣지 않음). 실제 한 일·계획·미확인을 구분한다. 할 일·인물·준비 글의 개인 진행 문장 금지는 2026-11-28 사용자 결정으로 없앴다(개인화 공략이라 개인 사정을 써도 된다). 개인 값(잔액·체크)은 여전히 progress/에 둔다.
@@ -120,9 +122,9 @@
 
 개인 게임 진행(장·레벨·자원·영입 현황)은 공개 저장소에 두지 않는다(2026-11-15 사용자 결정). git 무시 폴더 `progress/docs/`(`handoff-game-state.md`, `progress.md`, `routes/*/progress.md`)에만 있다. 사이트·저장소의 어떤 글에도 옮겨 적지 않는다.
 
-- 체크 기록: 사이트·저장소에 넣지 않는다(2026-11-14 사용자 지시). 새 브라우저는 빈 기록에서 시작하고, 기록은 각 브라우저 저장소와 `기록 관리 → 내보내기` JSON에만 있다.
+- 체크 기록: 저장소의 사이트 자료에는 넣지 않는다. 2026-11-28부터 진행 기록 데이터베이스에 있고(U75, 위 「진행 기록 데이터베이스」), 개발·검사 서버(localhost, API 없음)에서만 예전처럼 브라우저 저장소에 쓴다. `기록 관리 → 내보내기` JSON은 백업용이다.
 - 내 상태(2026-11-15 사용자 요청): 머리 막대 `내 상태`(600px 미만은 기록 관리 메뉴 안) 서랍에서 축복 단계·가호 레벨·인과의 파편·골드를 고친다. 같은 저장 키의 `status` 필드로 체크와 함께 내보내기·가져오기한다(`lib/check-state.ts` `validateStatus`). 축복 목록은 `content/data/boon-catalog.json`(hyperwiki 31종·신 6명, `steps`가 시작 전 13개와 레다·디트리히·카이 축복 구매 체크까지 35개와 연결). 저장소 값은 느슨하게 읽고(모르는 축복은 버림) 가져오기 파일만 엄격하게 검사한다. 내 상태가 없는 예전 파일을 가져오면 지금의 내 상태를 유지한다. 브라우저 검사: `npm run test:status`. 가진 단계의 구매 체크는 자동 완료로 보이고 체크 기록에는 쓰지 않는다. 공개 자료에 개인 구매 여부·잔액을 넣지 않는다(verify가 검사).
-  - 개인 사본: git 무시 폴더 `progress/checklist.json`(이전 `content/checklist-seed.json`·`content/data/checklist.json`·`content/theodora-progress-import.json`을 옮김, revision 237). 최신 기록은 브라우저에서 내보내 이 파일을 덮어쓴다. `verify.mjs`는 이 파일이 있을 때만 읽는다.
+  - 개인 사본: git 무시 폴더 `progress/checklist.json`(이전 `content/checklist-seed.json`·`content/data/checklist.json`·`content/theodora-progress-import.json`을 옮김, revision 237). 2026-11-28에 `my-progress-with-builds.json`(revision 240)을 데이터베이스에 넣었다. 이제 정본은 데이터베이스다. `verify.mjs`는 이 파일이 있을 때만 읽는다.
 
 ## 6. 사이트 상태와 남은 일
 
